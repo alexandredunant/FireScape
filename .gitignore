@@ -1,0 +1,282 @@
+# FireScape Project - Git Ignore File
+# =====================================
+# Large data files are stored locally but not pushed to GitHub
+
+# =============================================================================
+# DATA DIRECTORIES - IGNORE ALL LARGE DATA FILES
+# =============================================================================
+
+# All data directories (too large for GitHub)
+Data/00_QGIS/
+Data/01_Topographic_Features/
+Data/02_Land_Cover/
+Data/03_Human_Infrastructure/
+Data/04_Electrical_Infrastructure/
+Data/05_Meteorological_Data/
+Data/06_Administrative_Boundaries/
+Data/07_Demographics/
+Data/08_Climate_Data/
+Data/ML/
+Data/STATIC_INPUT/
+Data/WILDFIRE_INVENTORY/
+Data/Bayesian_model/
+
+# Keep README files in Data directory
+!Data/README.md
+!Data/*/README.md
+!Data/*/*.md
+
+# =============================================================================
+# OUTPUT DIRECTORIES - MODEL RESULTS AND FIGURES
+# =============================================================================
+
+# Model output directories (large files, regenerate from scripts)
+Scripts/OUTPUT/
+/mnt/CEPH_PROJECTS/FACT_CLIMAX/tmp_data_Firescape/
+
+# But keep the final publication figures
+!Scripts/05_Lightning_Comparison/03_Model_Comparison/Results/*.png
+!Scripts/05_Lightning_Comparison/03_Model_Comparison/Results/*.pdf
+!Scripts/05_Lightning_Comparison/03_Model_Comparison/Results/*.csv
+!Scripts/05_Lightning_Comparison/03_Model_Comparison/Results/*.txt
+!Scripts/05_Lightning_Comparison/03_Model_Comparison/Results/*.md
+
+# =============================================================================
+# LOGS AND TEMPORARY FILES
+# =============================================================================
+
+# Log files
+*.log
+logs/
+Logs/
+/tmp/
+*.tmp
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# =============================================================================
+# R (if applicable)
+# =============================================================================
+
+# R history and data
+.Rhistory
+.RData
+.Rproj.user
+
+# =============================================================================
+# LATEX
+# =============================================================================
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.brf
+*.lol
+*.nav
+*.snm
+*.vrb
+*.xdy
+*.run.xml
+*-blx.bib
+
+# LaTeX build directories
+Scripts/WRITEUP/*.aux
+Scripts/WRITEUP/*.log
+Scripts/WRITEUP/*.out
+Scripts/WRITEUP/*.synctex.gz
+
+# But keep the PDF
+!Scripts/WRITEUP/*.pdf
+
+# =============================================================================
+# IDE AND EDITOR FILES
+# =============================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Spyder
+.spyderproject
+.spyproject
+
+# =============================================================================
+# OS GENERATED FILES
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# ARCHIVE DIRECTORY - NOT FOR GITHUB
+# =============================================================================
+
+# Entire Archive directory (deprecated/old code)
+Archive/
+
+# Deprecated scripts in Scripts/Archive
+Scripts/Archive/
+
+# =============================================================================
+# NETCDF AND LARGE BINARY FILES
+# =============================================================================
+
+# Large model files
+*.nc
+*.nc4
+*.hdf5
+*.h5
+
+# Large raster files
+*.tif
+*.tiff
+*.geotiff
+
+# Shapefiles (can be large)
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.sbn
+*.sbx
+
+# =============================================================================
+# TEMPORARY PROCESSING FILES
+# =============================================================================
+
+# Temporary processing files
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+
+# But keep small model metadata files
+!Scripts/**/model_results.joblib
+!Scripts/**/temporal_groups.joblib
+!Scripts/**/group_names.joblib
+
+# =============================================================================
+# BACKUP FILES
+# =============================================================================
+
+# Backup files
+*_backup_*
+*.bak
+*.backup
+*~
+
+# =============================================================================
+# KEEP THESE IMPORTANT FILES
+# =============================================================================
+
+# Always include README files
+!README.md
+!**/README.md
+
+# Always include documentation
+!Documentation/**
+!*.md
+
+# Always include gitignore itself
+!.gitignore

@@ -1,0 +1,29 @@
+corine_code,description,fire_risk,risk_category
+111,Continuous urban fabric,1,Very low
+112,Discontinuous urban fabric,1,Very low
+121,Industrial or commercial units,1,Very low
+122,Road and rail networks,1,Very low
+124,Airports,1,Very low
+131,Mineral extraction sites,1,Very low
+133,Construction sites,1,Very low
+142,Sport and leisure facilities,1,Very low
+211,Non-irrigated arable land,2,Low
+221,Vineyards,2,Low
+222,Fruit trees and berry plantations,2,Low
+231,Pastures,2,Low
+242,Complex cultivation patterns,2,Low
+243,Land principally occupied by agriculture with significant natural vegetation,2,Low
+311,Broad-leaved forest,3,Moderate
+312,Coniferous forest,5,Very high
+313,Mixed forest,4,High
+321,Natural grasslands,3,Moderate
+322,Moors and heathland,4,High
+324,Transitional woodland-shrub,4,High
+331,"Beaches, dunes, sands",1,Very low
+332,Bare rocks,1,Very low
+333,Sparsely vegetated areas,3,Moderate
+335,Glaciers and perpetual snow,0,No risk
+411,Inland marshes,0,No risk
+412,Peat bogs,0,No risk
+511,Water courses,0,No risk
+512,Water bodies,0,No risk

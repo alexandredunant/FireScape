@@ -1,0 +1,43 @@
+CLEANUP PLAN - Lightning Comparison Directory
+==============================================
+
+FILES TO REMOVE (outdated/unused):
+
+1. Data Preparation:
+   - create_raster_stacks_baseline_2012plus.py (unused - we filtered instead)
+   - create_raster_stacks_with_lightning.py (unused - we filtered instead)
+   - create_raster_stacks_with_lightning_backup_20251028_174731.py (backup)
+
+2. Model Training:
+   - train_baseline_2012plus.py (not needed - using original baseline)
+   - train_relative_probability_model_with_lightning_backup_20251028_174731.py (backup)
+
+3. Documentation:
+   - RUN_ANALYSIS_2012PLUS.md (superseded by READY_TO_TRAIN.md)
+
+4. Output Directories (BAD DATA - pre-2012 filtering):
+   - /OUTPUT/01_Training_Data_Lightning/ (contains NaN values)
+   - /OUTPUT/02_Model_RelativeProbability_Lightning/ (trained on bad data)
+
+FILES TO KEEP (current/needed):
+
+1. Data Preparation:
+   ✓ filter_baseline_stack_2012plus.py (USED to create filtered data)
+   ✓ filter_lightning_stack_2012plus.py (USED to create filtered data)
+
+2. Model Training:
+   ✓ train_relative_probability_model_with_lightning.py (CURRENT version)
+
+3. Model Comparison:
+   ✓ compare_models.py (CURRENT version with trade-off plot)
+   ✓ create_tradeoff_visualization.py (standalone tool)
+   ✓ Results/ (all current plots and CSVs)
+
+4. Documentation:
+   ✓ README.md (original overview)
+   ✓ READY_TO_TRAIN.md (current instructions)
+
+5. Output Directories (GOOD DATA - 2012+ only):
+   ✓ /OUTPUT/01_Training_Data_Lightning_2012plus/ (filtered, no NaN)
+   ✓ /OUTPUT/02_Model_RelativeProbability_Lightning_2012plus/ (trained on clean data)
+
