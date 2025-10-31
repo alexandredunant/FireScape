@@ -10,30 +10,9 @@
 
 FireScape is a probabilistic wildfire risk modeling system developed for the Bolzano/Alto Adige region (Italian Alps). The project addresses three key questions:
 
-1. **Can we quantify wildfire risk with full uncertainty?** → Yes, using Bayesian hierarchical models with attention mechanisms
-2. **Does lightning data improve predictions?** → Yes, +38-41% improvement in temporal fit (but -4% to -21% in discrimination)
-3. **What does climate change mean for fire services?** → Projected 45% increase in activity post-2018
-
-## Key Results
-
-### Lightning Model Performance (2012-2024)
-
-| Metric | Baseline (T+P) | Lightning (T+P+L) | Change |
-|--------|----------------|-------------------|--------|
-| **Monthly R²** | 0.556 | 0.767 | **+38.0%** ✓ |
-| **Seasonal R²** | 0.579 | 0.814 | **+40.7%** ✓ |
-| **ROC-AUC** | 0.835 | 0.804 | -3.8% ✗ |
-| **PR-AUC** | 0.654 | 0.516 | -21.1% ✗ |
-
-**Interpretation:** Lightning model excels at predicting **WHEN** fires occur (temporal patterns) but shows moderate decline in predicting **WHICH specific days** (discrimination). This trade-off is appropriate for climate projection applications.
-
-### Model Visualization
-
-<img src="Scripts/05_Lightning_Comparison/03_Model_Comparison/Results/fig1_monthly_temporal_fit.png" width="600">
-
-*Figure: Monthly fire predictions comparing Baseline (Temperature + Precipitation) vs Lightning (T+P+Lightning) models. Lightning model (orange) matches observed patterns (black) much better than baseline (blue).*
-
----
+1. **Can we quantify wildfire risk with full uncertainty?**
+2. **Does lightning data improve predictions?**
+3. **What does climate change mean for fire services?**
 
 ## Repository Structure
 
@@ -100,69 +79,7 @@ python compare_models.py
 
 ---
 
-## Scientific Background
-
-### The Problem
-
-Alpine regions historically experienced low wildfire activity due to:
-- High precipitation (800-1600mm annually)
-- Short fire season (April-October)
-- Natural topographic firebreaks
-- Dense forest management
-
-However, recent evidence suggests a **regime shift**:
-- 2018 Vaia windstorm: 6 million m³ windthrow
-- 2019-2023 bark beetle outbreak: 15% of spruce forests affected
-- 2022 extreme drought: Lowest soil moisture in 250 years
-- 2023 fire season: 127% above long-term average
-
-### Our Approach
-
-**Bayesian Hierarchical Model with Attention Mechanism:**
-
-1. **Input Features** (998 fire events, 1999-2024):
-   - Temperature temporal windows (1d, 3d, 5d, 7d, 14d, 30d, 60d)
-   - Precipitation temporal windows (same)
-   - Lightning temporal windows (2012+ only)
-   - Static features (topography, land cover, infrastructure)
-
-2. **Attention Mechanism:**
-   - Learns which feature groups are most important
-   - Dirichlet-distributed attention weights
-   - Allows model interpretability
-
-3. **Uncertainty Quantification:**
-   - Full posterior distributions for all parameters
-   - Prediction intervals for risk forecasts
-   - Bayesian change-point detection for regime shifts
-
-4. **Two-Model Framework:**
-   - **Baseline Model:** Temperature + Precipitation (1999-2024, 3,035 obs)
-   - **Lightning Model:** T + P + Lightning (2012-2024, 1,556 obs)
-   - Fair comparison on 2012-2024 test period
-
-### Key Findings
-
-1. **Lightning Improves Temporal Accuracy (+38-41%)**
-   - Better captures fire seasonality
-   - Stronger performance in summer months
-   - Especially important above 1500m elevation
-
-2. **Trade-off: Temporal vs Discrimination**
-   - Lightning model better at "WHEN" (temporal patterns)
-   - Baseline model better at "WHICH" (specific days)
-   - Different models for different applications
-
-3. **Regime Shift Confirmed**
-   - 83% probability of shift post-2018 (95% CI: 71-92%)
-   - Fire service activity +45% (95% CI: 32-58%)
-   - Change-point at 2018.7 (95% CI: 2018.2-2019.1)
-
----
-
 ## Publication Figures
-
-All figures are publication-ready (600 DPI, scienceplots styling):
 
 **From `Scripts/05_Lightning_Comparison/03_Model_Comparison/Results/`:**
 
@@ -177,44 +94,7 @@ See `Scripts/05_Lightning_Comparison/03_Model_Comparison/Results/PUBLICATION_FIG
 
 ---
 
-## Model Performance Details
 
-### Baseline Model (Temperature + Precipitation, 1999-2024)
-
-**Training:**
-- 3,035 observations (case-control sampled)
-- 70/30 train/test split
-- PyMC NUTS sampler (4 chains, 2000 draws, 2000 tune)
-- 0 divergences, r̂ < 1.01 for all parameters
-
-**Performance (on 2012-2024 test set):**
-- ROC-AUC: 0.835
-- PR-AUC: 0.654
-- Monthly R²: 0.556
-- Seasonal R²: 0.579
-
-### Lightning Model (T + P + Lightning, 2012-2024)
-
-**Training:**
-- 1,556 observations (2012+ only, when lightning data available)
-- Same sampling strategy
-- Same model architecture + 5 lightning attention groups
-- <5% divergences, good convergence
-
-**Performance (on 2012-2024 test set):**
-- ROC-AUC: 0.804
-- PR-AUC: 0.516
-- Monthly R²: 0.767 (+38.0%)
-- Seasonal R²: 0.814 (+40.7%)
-
-### Lightning Contribution
-
-- Only 6.5% of days have lightning activity
-- Fire days: 7.6× more lightning than non-fire days
-- Lightning attention weight: 3.6% (1d), 4.0% (60d)
-- Strongest effect: Summer months, elevations > 1500m
-
----
 
 ## Citation
 
@@ -272,17 +152,6 @@ See `requirements.txt` for complete list.
 
 ---
 
-## Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-For major changes, please open an issue first to discuss.
-
----
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -303,12 +172,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Data Providers:**
   - Bolzano Province Forest Fire Service (wildfire inventory)
-  - ARPAV (Regional Environmental Agency - meteorological data)
-  - EUCLID (European Lightning Detection Network)
-  - Copernicus (land cover and elevation data)
+  - EURAC CCT
 
 - **Funding:**
-  - [Funding source if applicable]
+  - EURAC CCT internal funding 2025
 
 - **Collaborators:**
   - [List key collaborators]
@@ -317,7 +184,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Related Publications
 
-1. [Related paper 1 if applicable]
+1. [M.Moreno 2024]
 2. [Related paper 2 if applicable]
 
 ---
