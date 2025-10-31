@@ -239,10 +239,12 @@ The lightning-enhanced model showed dramatically improved temporal fidelity (Fig
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.48\textwidth]{../output/figures/validation_temporal_baseline.png}
-\hfill
-\includegraphics[width=0.48\textwidth]{../output/figures/validation_temporal_lightning.png}
-\caption{Temporal validation for baseline (left) and lightning (right) models. Top row shows monthly patterns with bar charts and scatter plots. Bottom row shows seasonal aggregation. The lightning model captures temporal dynamics substantially better than baseline.}
+\includegraphics[width=0.95\textwidth]{../output/figures/validation_temporal_baseline.png}
+
+\vspace{0.5cm}
+
+\includegraphics[width=0.95\textwidth]{../output/figures/validation_temporal_lightning.png}
+\caption{Temporal validation for baseline (top) and lightning (bottom) models. Each panel shows: (left) monthly bar chart, (center-left) monthly scatter plot, (center-right) seasonal bar chart, (right) seasonal scatter plot. The lightning model captures temporal dynamics substantially better than baseline, with near-perfect seasonal correlation.}
 \label{fig:temporal_validation}
 \end{figure}
 
@@ -261,10 +263,12 @@ While the lightning model excelled at temporal patterns, it showed slightly redu
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.48\textwidth]{../output/figures/validation_performance_baseline.png}
-\hfill
-\includegraphics[width=0.48\textwidth]{../output/figures/validation_performance_lightning.png}
-\caption{Performance validation showing ROC curves, precision-recall curves, calibration plots, and lift curves for baseline (left) and lightning (right) models. The baseline model shows marginally better discrimination performance at the individual sample level.}
+\includegraphics[width=0.95\textwidth]{../output/figures/validation_performance_baseline.png}
+
+\vspace{0.5cm}
+
+\includegraphics[width=0.95\textwidth]{../output/figures/validation_performance_lightning.png}
+\caption{Performance validation for baseline (top) and lightning (bottom) models. Each panel shows: (left) ROC curve with area under curve, (center-left) precision-recall curve with optimal F1 threshold, (center-right) calibration plot comparing predicted vs observed frequencies, (right) lift curve showing model effectiveness. The baseline model shows marginally better discrimination performance at the individual sample level (ROC-AUC: 0.84 vs 0.81).}
 \label{fig:performance_validation}
 \end{figure}
 
@@ -308,10 +312,12 @@ Using the baseline model, we projected future fire risk for Bolzano zones under 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.48\textwidth]{../output/figures/climate_projection_plot_march.png}
-\hfill
-\includegraphics[width=0.48\textwidth]{../output/figures/climate_projection_plot_august.png}
-\caption{Projected fire risk evolution for selected zones under RCP4.5 and RCP8.5 scenarios for March (left) and August (right). Lines show mean relative risk across different climate model quantiles, demonstrating increasing trend under both scenarios with greater uncertainty under RCP8.5.}
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_projection_plot_march.png}
+
+\vspace{0.5cm}
+
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_projection_plot_august.png}
+\caption{Projected fire risk evolution for selected zones under RCP4.5 and RCP8.5 scenarios for March (top) and August (bottom). Each panel shows multiple zones with mean relative risk trajectories for different climate model quantiles (lines colored by scenario type and styled by quantile). Both months show increasing trends under both scenarios, with greater uncertainty and higher projected risk under RCP8.5.}
 \label{fig:climate_projections}
 \end{figure}
 
