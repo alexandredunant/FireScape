@@ -1,0 +1,5 @@
+metric,baseline_TP,lightning_TPL,improvement,pct_change
+Monthly R²,0.679,0.762,+0.084,+12.3%
+Seasonal R²,0.714,0.806,+0.092,+12.9%
+ROC-AUC,0.805,0.805,+0.000,+0.0%
+PR-AUC,0.540,0.516,-0.024,-4.5%
