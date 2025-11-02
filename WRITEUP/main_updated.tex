@@ -308,31 +308,31 @@ In the lightning model, lightning features collectively received attention weigh
 
 \subsection{Climate Change Projections}
 
-Using the baseline model, we projected future fire risk for Bolzano zones under RCP4.5 and RCP8.5 climate scenarios through 2080. Figure \ref{fig:climate_drivers} shows fire risk evolution alongside the driving climate variables.
+Using the baseline model, we projected future fire risk for Bolzano fire brigade zones under RCP4.5 and RCP8.5 climate scenarios through 2080. Figure \ref{fig:climate_maps} shows the spatial evolution of fire risk across the province.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_projections_with_drivers.png}
-\caption{Projected fire risk evolution with climate drivers (August). Top panel shows relative fire risk for major zones under RCP4.5 (solid) and RCP8.5 (dashed) scenarios. Middle and bottom panels show corresponding temperature and precipitation trends. All scenarios show increasing fire risk, with RCP8.5 projecting substantially higher risk due to combined warming and drying trends.}
-\label{fig:climate_drivers}
+\includegraphics[width=\textwidth]{../output/figures/climate_maps_spatial_risk_evolution.png}
+\caption{Spatial evolution of fire risk by fire brigade zone for August under RCP4.5 (top row) and RCP8.5 (bottom row) scenarios. Maps show projected fire risk for 2020, 2050, and 2080. Both scenarios show increasing risk over time, with RCP8.5 projecting substantially higher risk particularly in central and eastern zones. Color scale represents relative fire risk from low (yellow) to high (dark red).}
+\label{fig:climate_maps}
 \end{figure}
 
-Figure \ref{fig:climate_seasonal} compares seasonal patterns, showing March and August projections across zones.
+Figure \ref{fig:climate_timeseries} quantifies risk evolution for key zones with uncertainty estimates from climate model spread.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_projections_seasonal_comparison.png}
-\caption{Seasonal comparison of projected fire risk for March (top) and August (bottom). Each zone is shown as a colored line, with RCP4.5 (solid) and RCP8.5 (dashed) scenarios. August shows consistently higher risk and stronger increases than March, reflecting the dominant role of summer drought in Alpine fire regimes.}
-\label{fig:climate_seasonal}
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_timeseries_with_uncertainty.png}
+\caption{Projected fire risk evolution (August) for major zones under RCP4.5 (left) and RCP8.5 (right) scenarios. Points show median climate model projection, error bars represent uncertainty range from 25th to 99th percentile climate outcomes. Each zone shown in different color with full legend. RCP8.5 projects substantially higher risk increases than RCP4.5, with median increases of 49\% vs 17\% by 2080.}
+\label{fig:climate_timeseries}
 \end{figure}
 
-Figure \ref{fig:climate_uncertainty} quantifies the uncertainty arising from climate model spread.
+Figure \ref{fig:climate_change} maps the magnitude of projected risk change from present (2020) to future (2080).
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{../output/figures/climate_projections_uncertainty.png}
-\caption{Uncertainty quantification for Bolzano zone August fire risk. Lines show median climate model projection, shaded bands show range across 25th to 99th percentile climate outcomes. RCP8.5 shows both higher risk and greater uncertainty than RCP4.5, reflecting larger climate model divergence in the high-emissions scenario.}
-\label{fig:climate_uncertainty}
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_maps_risk_change.png}
+\caption{Percent change in fire risk from 2020 to 2080 under RCP4.5 (left) and RCP8.5 (right) scenarios. Color scale shows percentage increase (red) or decrease (blue). Under RCP4.5, the median zone experiences 15\% increase with range from -36\% to +139\%. Under RCP8.5, median increase is 45\% with range from -26\% to +176\%. Highest increases projected for central mountain zones (Roncadizza, Merano area).}
+\label{fig:climate_change}
 \end{figure}
 
 \section{Discussion}
