@@ -308,17 +308,31 @@ In the lightning model, lightning features collectively received attention weigh
 
 \subsection{Climate Change Projections}
 
-Using the baseline model, we projected future fire risk for Bolzano zones under RCP4.5 and RCP8.5 climate scenarios (Figure \ref{fig:climate_projections}).
+Using the baseline model, we projected future fire risk for Bolzano zones under RCP4.5 and RCP8.5 climate scenarios through 2080. Figure \ref{fig:climate_drivers} shows fire risk evolution alongside the driving climate variables.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_projection_plot_march.png}
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_projections_with_drivers.png}
+\caption{Projected fire risk evolution with climate drivers (August). Top panel shows relative fire risk for major zones under RCP4.5 (solid) and RCP8.5 (dashed) scenarios. Middle and bottom panels show corresponding temperature and precipitation trends. All scenarios show increasing fire risk, with RCP8.5 projecting substantially higher risk due to combined warming and drying trends.}
+\label{fig:climate_drivers}
+\end{figure}
 
-\vspace{0.5cm}
+Figure \ref{fig:climate_seasonal} compares seasonal patterns, showing March and August projections across zones.
 
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_projection_plot_august.png}
-\caption{Projected fire risk evolution for selected zones under RCP4.5 and RCP8.5 scenarios for March (top) and August (bottom). Each panel shows multiple zones with mean relative risk trajectories for different climate model quantiles (lines colored by scenario type and styled by quantile). Both months show increasing trends under both scenarios, with greater uncertainty and higher projected risk under RCP8.5.}
-\label{fig:climate_projections}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_projections_seasonal_comparison.png}
+\caption{Seasonal comparison of projected fire risk for March (top) and August (bottom). Each zone is shown as a colored line, with RCP4.5 (solid) and RCP8.5 (dashed) scenarios. August shows consistently higher risk and stronger increases than March, reflecting the dominant role of summer drought in Alpine fire regimes.}
+\label{fig:climate_seasonal}
+\end{figure}
+
+Figure \ref{fig:climate_uncertainty} quantifies the uncertainty arising from climate model spread.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../output/figures/climate_projections_uncertainty.png}
+\caption{Uncertainty quantification for Bolzano zone August fire risk. Lines show median climate model projection, shaded bands show range across 25th to 99th percentile climate outcomes. RCP8.5 shows both higher risk and greater uncertainty than RCP4.5, reflecting larger climate model divergence in the high-emissions scenario.}
+\label{fig:climate_uncertainty}
 \end{figure}
 
 \section{Discussion}
