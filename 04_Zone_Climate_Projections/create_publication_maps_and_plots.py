@@ -121,9 +121,12 @@ for i, scenario in enumerate(SCENARIOS):
     for j, year in enumerate(TIME_PERIODS):
         ax = axes[i, j]
 
-        # Get data for this scenario and year
+        # Get data for this scenario and year, aggregate by zone
         df_subset = df_maps[(df_maps['scenario'] == scenario) &
                            (df_maps['year'] == year)]
+
+        # Aggregate by zone (average if multiple records)
+        df_subset = df_subset.groupby('zone_name')['mean_risk'].mean().reset_index()
 
         # Merge with spatial data
         zones_plot = zones_gdf.copy()
@@ -204,22 +207,32 @@ for idx, scenario in enumerate(['RCP4.5', 'RCP8.5']):
             # Get uncertainty from different climate quantiles
             years = []
             mean_risk = []
-            lower_err = []
-            upper_err = []
+            lower_bound = []
+            upper_bound = []
 
             for year in sorted(df_zone['year'].unique()):
                 df_year = df_zone[df_zone['year'] == year]
 
-                pctl25 = df_year[df_year['climate_quantile'] == 'pctl25']['mean_risk'].values
-                pctl50 = df_year[df_year['climate_quantile'] == 'pctl50']['mean_risk'].values
-                pctl99 = df_year[df_year['climate_quantile'] == 'pctl99']['mean_risk'].values
+                # Get values and take mean if multiple records per year
+                pctl25_vals = df_year[df_year['climate_quantile'] == 'pctl25']['mean_risk'].values
+                pctl50_vals = df_year[df_year['climate_quantile'] == 'pctl50']['mean_risk'].values
+                pctl99_vals = df_year[df_year['climate_quantile'] == 'pctl99']['mean_risk'].values
 
-                if len(pctl50) > 0:
+                if len(pctl50_vals) > 0:
+                    pctl25 = pctl25_vals.mean() if len(pctl25_vals) > 0 else pctl50_vals.mean()
+                    pctl50 = pctl50_vals.mean()
+                    pctl99 = pctl99_vals.mean() if len(pctl99_vals) > 0 else pctl50_vals.mean()
+
                     years.append(year)
-                    mean_risk.append(pctl50[0])
-                    # Ensure error bars are always positive
-                    lower_err.append(abs(pctl50[0] - (pctl25[0] if len(pctl25) > 0 else pctl50[0])))
-                    upper_err.append(abs((pctl99[0] if len(pctl99) > 0 else pctl50[0]) - pctl50[0]))
+                    mean_risk.append(pctl50)
+                    lower_bound.append(pctl25)
+                    upper_bound.append(pctl99)
+
+            # Calculate error bars as distance from median
+            # yerr expects: [[lower_errors], [upper_errors]]
+            # where lower_errors = median - lower_bound, upper_errors = upper_bound - median
+            lower_err = [max(0, m - l) for m, l in zip(mean_risk, lower_bound)]
+            upper_err = [max(0, u - m) for u, m in zip(upper_bound, mean_risk)]
 
             # Plot with error bars
             ax.errorbar(
@@ -256,10 +269,11 @@ print("Creating risk change quantification...")
 # Calculate change from 2020 to 2080
 df_change = df[(df['month'] == 8) & (df['climate_quantile'] == 'pctl50')]
 
-df_2020 = df_change[df_change['year'] == 2020][['zone_name', 'scenario', 'mean_risk']]
+# Aggregate by zone (average across any sub-zones or districts)
+df_2020 = df_change[df_change['year'] == 2020].groupby(['zone_name', 'scenario'])['mean_risk'].mean().reset_index()
 df_2020.columns = ['zone_name', 'scenario', 'risk_2020']
 
-df_2080 = df_change[df_change['year'] == 2080][['zone_name', 'scenario', 'mean_risk']]
+df_2080 = df_change[df_change['year'] == 2080].groupby(['zone_name', 'scenario'])['mean_risk'].mean().reset_index()
 df_2080.columns = ['zone_name', 'scenario', 'risk_2080']
 
 df_delta = df_2020.merge(df_2080, on=['zone_name', 'scenario'])
