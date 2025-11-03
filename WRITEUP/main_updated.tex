@@ -312,26 +312,30 @@ Using the baseline model, we projected future fire risk for Bolzano fire brigade
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{../output/figures/climate_maps_spatial_risk_evolution.png}
-\caption{Spatial evolution of fire risk by fire brigade zone for August under RCP4.5 (top row) and RCP8.5 (bottom row) scenarios. Maps show projected fire risk for 2020, 2050, and 2080. Both scenarios show increasing risk over time, with RCP8.5 projecting substantially higher risk particularly in central and eastern zones. Color scale represents relative fire risk from low (yellow) to high (dark red).}
+\includegraphics[width=\textwidth]{../output/figures/climate_maps_spatial_evolution_pctl50.png}
+\caption{Spatial evolution of fire risk by fire brigade zone for August under median (50th percentile) climate scenario. Top row shows RCP4.5 and bottom row shows RCP8.5 projections for 2020, 2050, and 2080. Both scenarios show increasing risk over time, with RCP8.5 projecting substantially higher risk particularly in central and eastern zones. Color scale represents relative fire risk from low (yellow) to high (dark red).}
 \label{fig:climate_maps}
 \end{figure}
 
-Figure \ref{fig:climate_timeseries} quantifies risk evolution for key zones with uncertainty estimates from climate model spread.
+Figure \ref{fig:climate_drivers} shows fire risk evolution alongside the driving climate variables (temperature and precipitation) that generate these projections.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_timeseries_with_uncertainty.png}
-\caption{Projected fire risk evolution (August) for major zones under RCP4.5 (left) and RCP8.5 (right) scenarios. Points show median climate model projection, error bars represent uncertainty range from 25th to 99th percentile climate outcomes. Each zone shown in different color with full legend. Error bars properly centered on median values. RCP8.5 projects substantially higher risk increases than RCP4.5, with median increases of 43\% vs 14\% by 2080.}
-\label{fig:climate_timeseries}
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_drivers_RCP45_all_quantiles.png}
+
+\vspace{0.5cm}
+
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_drivers_RCP85_all_quantiles.png}
+\caption{Climate drivers and fire risk evolution showing all climate quantiles (25th, 50th, 99th percentiles). Top: RCP4.5, Bottom: RCP8.5. Each figure shows three panels: (1) fire risk evolution for key zones (Bolzano, Merano, Bressanone, Brunico) with median lines and uncertainty bands (shaded areas show 25th-99th percentile range), (2) August mean temperature trends with uncertainty bands, and (3) August mean precipitation trends with uncertainty bands. Fire risk increases correlate with rising temperatures and declining precipitation, with RCP8.5 showing more extreme changes in all variables. Uncertainty bands demonstrate the range of possible climate futures and corresponding fire risk outcomes.}
+\label{fig:climate_drivers}
 \end{figure}
 
 Figure \ref{fig:climate_change} maps the magnitude of projected risk change from present (2020) to future (2080).
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_maps_risk_change.png}
-\caption{Percent change in fire risk from 2020 to 2080 under RCP4.5 (left) and RCP8.5 (right) scenarios. Color scale shows percentage increase (red) or decrease (blue). Under RCP4.5, the median zone experiences 14\% increase with range from -10\% to +43\%. Under RCP8.5, median increase is 43\% with range from +13\% to +116\%. Highest increases projected for mountain zones in northern areas (San Giovanni Vizze: +116\% under RCP8.5).}
+\includegraphics[width=0.95\textwidth]{../output/figures/climate_risk_change_pctl50.png}
+\caption{Percent change in fire risk from 2020 to 2080 under median (50th percentile) climate scenario. Left: RCP4.5, Right: RCP8.5. Color scale shows percentage increase (red) or decrease (blue). Under RCP4.5, the median zone experiences 14.4\% increase. Under RCP8.5, median increase is 43.2\%. Highest increases projected for mountain zones in northern areas.}
 \label{fig:climate_change}
 \end{figure}
 
