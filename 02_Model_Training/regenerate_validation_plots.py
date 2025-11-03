@@ -86,9 +86,10 @@ def create_temporal_validation_plot(results, model_name, color, output_path):
            label='Actual', alpha=0.7, color='darkred')
     ax.bar(x + width/2, monthly_stats['predicted_fires'], width,
            label='Predicted (scaled)', alpha=0.7, color=color)
-    ax.set_xlabel('Month')
-    ax.set_ylabel('Fire Count')
-    ax.legend()
+    ax.set_xlabel('Month', fontsize=10)
+    ax.set_ylabel('Fire Count', fontsize=10)
+    ax.set_title(f'Monthly (R$^2$={monthly_r2:.3f})', fontsize=11, pad=10)
+    ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
     ax.set_xticks(x)
 
@@ -105,12 +106,12 @@ def create_temporal_validation_plot(results, model_name, color, output_path):
     for _, row in monthly_stats.iterrows():
         ax.annotate(f"{int(row['month'])}",
                    (row['actual_fires'], row['predicted_fires']),
-                   xytext=(5, 5), textcoords='offset points', fontsize=9,
-                   fontweight='bold')
+                   xytext=(5, 5), textcoords='offset points', fontsize=8)
 
-    ax.set_xlabel('Actual Fires')
-    ax.set_ylabel('Predicted Fires')
-    ax.legend()
+    ax.set_xlabel('Actual Fires', fontsize=10)
+    ax.set_ylabel('Predicted Fires', fontsize=10)
+    ax.set_title(f'Monthly Correlation (R$^2$={monthly_r2:.3f})', fontsize=11, pad=10)
+    ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
     # Seasonal bar plot
@@ -120,11 +121,12 @@ def create_temporal_validation_plot(results, model_name, color, output_path):
            label='Actual', alpha=0.7, color='darkred')
     ax.bar(x_pos + width/2, seasonal_stats['predicted_fires'], width,
            label='Predicted', alpha=0.7, color=color)
-    ax.set_xlabel('Season')
-    ax.set_ylabel('Fire Count')
+    ax.set_xlabel('Season', fontsize=10)
+    ax.set_ylabel('Fire Count', fontsize=10)
+    ax.set_title(f'Seasonal (R$^2$={seasonal_r2:.3f})', fontsize=11, pad=10)
     ax.set_xticks(x_pos)
-    ax.set_xticklabels(seasonal_stats['season'])
-    ax.legend()
+    ax.set_xticklabels(seasonal_stats['season'], fontsize=9)
+    ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
     # Seasonal scatter plot
@@ -140,19 +142,20 @@ def create_temporal_validation_plot(results, model_name, color, output_path):
     for _, row in seasonal_stats.iterrows():
         ax.annotate(row['season'],
                    (row['actual_fires'], row['predicted_fires']),
-                   xytext=(5, 5), textcoords='offset points', fontsize=10,
-                   fontweight='bold')
+                   xytext=(5, 5), textcoords='offset points', fontsize=9)
 
-    ax.set_xlabel('Actual Fires')
-    ax.set_ylabel('Predicted Fires')
-    ax.legend()
+    ax.set_xlabel('Actual Fires', fontsize=10)
+    ax.set_ylabel('Predicted Fires', fontsize=10)
+    ax.set_title(f'Seasonal Correlation (R$^2$={seasonal_r2:.3f})', fontsize=11, pad=10)
+    ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
-    plt.tight_layout()
+    plt.tight_layout(pad=2.0)
     plt.savefig(output_path, bbox_inches='tight')
     plt.close()
 
     print(f"  ✓ Saved: {output_path.name}")
+    print(f"    Monthly R^2: {monthly_r2:.3f}, Seasonal R^2: {seasonal_r2:.3f}")
 
 
 def create_performance_validation_plot(results, model_name, color, output_path):
@@ -175,9 +178,10 @@ def create_performance_validation_plot(results, model_name, color, output_path):
     roc_auc = auc(fpr, tpr)
     ax.plot(fpr, tpr, color=color, lw=3, label=f'Model (AUC = {roc_auc:.3f})')
     ax.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--', label='Random')
-    ax.set_xlabel('False Positive Rate')
-    ax.set_ylabel('True Positive Rate')
-    ax.legend(fontsize=11)
+    ax.set_xlabel('False Positive Rate', fontsize=10)
+    ax.set_ylabel('True Positive Rate', fontsize=10)
+    ax.set_title(f'ROC Curve (AUC={roc_auc:.3f})', fontsize=11, pad=10)
+    ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
     # PLOT 2: PRECISION-RECALL CURVE
@@ -200,9 +204,10 @@ def create_performance_validation_plot(results, model_name, color, output_path):
               color='red', s=200, zorder=5, edgecolors='black', linewidth=1.5,
               label=f'Max F1 ({max_f1:.3f}) @ {optimal_threshold:.4f}')
 
-    ax.set_xlabel('Recall')
-    ax.set_ylabel('Precision')
-    ax.legend(fontsize=10)
+    ax.set_xlabel('Recall', fontsize=10)
+    ax.set_ylabel('Precision', fontsize=10)
+    ax.set_title(f'Precision-Recall (AP={pr_auc:.3f})', fontsize=11, pad=10)
+    ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
     # PLOT 3: CALIBRATION PLOT
@@ -232,9 +237,10 @@ def create_performance_validation_plot(results, model_name, color, output_path):
            label='Model Calibration')
     ax.plot([0, mean_prob.max()], [0, mean_prob.max()],
            color='navy', lw=2, linestyle='--', label='Perfect Calibration')
-    ax.set_xlabel('Predicted Probability')
-    ax.set_ylabel('Observed Frequency')
-    ax.legend(fontsize=11)
+    ax.set_xlabel('Predicted Probability', fontsize=10)
+    ax.set_ylabel('Observed Frequency', fontsize=10)
+    ax.set_title('Calibration Plot', fontsize=11, pad=10)
+    ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
     # PLOT 4: LIFT CURVE
@@ -256,12 +262,13 @@ def create_performance_validation_plot(results, model_name, color, output_path):
 
     ax.plot(percentiles, lift, color=color, lw=3, label='Model Lift')
     ax.axhline(y=1, color='navy', lw=2, linestyle='--', label='Baseline (Random)')
-    ax.set_xlabel('Percentage of Population Targeted (%)')
-    ax.set_ylabel('Lift')
-    ax.legend(fontsize=11)
+    ax.set_xlabel('Percentage of Population Targeted (%)', fontsize=10)
+    ax.set_ylabel('Lift', fontsize=10)
+    ax.set_title('Lift Curve', fontsize=11, pad=10)
+    ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
-    plt.tight_layout()
+    plt.tight_layout(pad=2.0)
     plt.savefig(output_path, bbox_inches='tight')
     plt.close()
 
