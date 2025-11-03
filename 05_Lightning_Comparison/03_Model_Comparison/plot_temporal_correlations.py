@@ -148,13 +148,10 @@ ax1.plot(x_line, p(x_line), "r-", alpha=0.7, linewidth=3,
 
 ax1.set_xlabel("Actual Fire Count", fontsize=13, fontweight="bold")
 ax1.set_ylabel("Predicted Fire Count", fontsize=13, fontweight="bold")
-ax1.set_title(
-    f"Monthly - Baseline (T+P)\n"
-    f"Spearman R={spearman_r:.3f} (R²={spearman_r**2:.3f}) | "
-    f"Pearson R={pearson_r:.3f} (R²={pearson_r**2:.3f})",
-    fontsize=13, fontweight="bold", pad=10
-)
-ax1.legend(loc="upper left", fontsize=10)
+ax1.text(0.02, 0.98, f"(a) Baseline (T+P)\nR$^2$={spearman_r**2:.3f}",
+        transform=ax1.transAxes, fontsize=11, fontweight='bold',
+        va='top', ha='left', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+ax1.legend(loc="upper left", fontsize=10, bbox_to_anchor=(0.0, 0.85))
 ax1.grid(True, alpha=0.3)
 
 # ===================================================================
@@ -181,13 +178,10 @@ ax2.plot(x_line, p(x_line), "r-", alpha=0.7, linewidth=3,
 
 ax2.set_xlabel("Actual Fire Count", fontsize=13, fontweight="bold")
 ax2.set_ylabel("Predicted Fire Count", fontsize=13, fontweight="bold")
-ax2.set_title(
-    f"Monthly - Lightning (T+P+L)\n"
-    f"Spearman R={spearman_r:.3f} (R²={spearman_r**2:.3f}) | "
-    f"Pearson R={pearson_r:.3f} (R²={pearson_r**2:.3f})",
-    fontsize=13, fontweight="bold", pad=10
-)
-ax2.legend(loc="upper left", fontsize=10)
+ax2.text(0.02, 0.98, f"(b) Lightning (T+P+L)\nR$^2$={spearman_r**2:.3f}",
+        transform=ax2.transAxes, fontsize=11, fontweight='bold',
+        va='top', ha='left', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+ax2.legend(loc="upper left", fontsize=10, bbox_to_anchor=(0.0, 0.85))
 ax2.grid(True, alpha=0.3)
 
 # ===================================================================
@@ -214,13 +208,10 @@ ax3.plot(x_line, p(x_line), "r-", alpha=0.7, linewidth=3,
 
 ax3.set_xlabel("Actual Fire Count", fontsize=13, fontweight="bold")
 ax3.set_ylabel("Predicted Fire Count", fontsize=13, fontweight="bold")
-ax3.set_title(
-    f"Seasonal - Baseline (T+P)\n"
-    f"Spearman R={spearman_r:.3f} (R²={spearman_r**2:.3f}) | "
-    f"Pearson R={pearson_r:.3f} (R²={pearson_r**2:.3f})",
-    fontsize=13, fontweight="bold", pad=10
-)
-ax3.legend(loc="upper left", fontsize=10)
+ax3.text(0.02, 0.98, f"(c) Baseline (T+P)\nR$^2$={spearman_r**2:.3f}",
+        transform=ax3.transAxes, fontsize=11, fontweight='bold',
+        va='top', ha='left', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+ax3.legend(loc="upper left", fontsize=10, bbox_to_anchor=(0.0, 0.85))
 ax3.grid(True, alpha=0.3)
 
 # ===================================================================
@@ -247,13 +238,10 @@ ax4.plot(x_line, p(x_line), "r-", alpha=0.7, linewidth=3,
 
 ax4.set_xlabel("Actual Fire Count", fontsize=13, fontweight="bold")
 ax4.set_ylabel("Predicted Fire Count", fontsize=13, fontweight="bold")
-ax4.set_title(
-    f"Seasonal - Lightning (T+P+L)\n"
-    f"Spearman R={spearman_r:.3f} (R²={spearman_r**2:.3f}) | "
-    f"Pearson R={pearson_r:.3f} (R²={pearson_r**2:.3f})",
-    fontsize=13, fontweight="bold", pad=10
-)
-ax4.legend(loc="upper left", fontsize=10)
+ax4.text(0.02, 0.98, f"(d) Lightning (T+P+L)\nR$^2$={spearman_r**2:.3f}",
+        transform=ax4.transAxes, fontsize=11, fontweight='bold',
+        va='top', ha='left', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+ax4.legend(loc="upper left", fontsize=10, bbox_to_anchor=(0.0, 0.85))
 ax4.grid(True, alpha=0.3)
 
 # ===================================================================

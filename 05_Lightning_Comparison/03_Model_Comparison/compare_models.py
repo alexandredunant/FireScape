@@ -419,7 +419,8 @@ ax1.bar(
 )
 ax1.set_xlabel("Month", fontsize=12)
 ax1.set_ylabel("Fire Count", fontsize=12)
-ax1.set_title(f"Monthly Fit Comparison (Overlapping Period 2012-2025)", fontsize=14, fontweight="bold")
+ax1.text(0.02, 0.98, '(a)', transform=ax1.transAxes,
+        fontsize=12, fontweight='bold', va='top', ha='left')
 ax1.legend()
 ax1.grid(True, alpha=0.3)
 
@@ -465,7 +466,8 @@ ax2.bar(
 ax2.set_xticks(x)
 ax2.set_xticklabels(seasonal_data["season"])
 ax2.set_ylabel("Fire Count", fontsize=12)
-ax2.set_title(f"Seasonal Fit Comparison (Overlapping Period 2012-2025)", fontsize=14, fontweight="bold")
+ax2.text(0.02, 0.98, '(b)', transform=ax2.transAxes,
+        fontsize=12, fontweight='bold', va='top', ha='left')
 ax2.legend()
 ax2.grid(True, alpha=0.3)
 
@@ -497,12 +499,14 @@ try:
     ax3.plot([0, 1], [0, 1], "k--", linewidth=1, label="Random")
     ax3.set_xlabel("False Positive Rate", fontsize=12)
     ax3.set_ylabel("True Positive Rate", fontsize=12)
-    ax3.set_title("ROC Curve Comparison", fontsize=14, fontweight="bold")
+    ax3.text(0.02, 0.98, '(c)', transform=ax3.transAxes,
+            fontsize=12, fontweight='bold', va='top', ha='left')
     ax3.legend()
     ax3.grid(True, alpha=0.3)
 except Exception as e:
     ax3.text(0.5, 0.5, f"ROC curves not available\n{str(e)}", ha="center", va="center")
-    ax3.set_title("ROC Curve Comparison", fontsize=14, fontweight="bold")
+    ax3.text(0.02, 0.98, '(c)', transform=ax3.transAxes,
+            fontsize=12, fontweight='bold', va='top', ha='left')
 
 # Attention weights comparison
 ax4 = axes[1, 1]
@@ -556,7 +560,8 @@ ax4.barh(
 ax4.set_yticks(y_pos)
 ax4.set_yticklabels(comparison["group"], fontsize=9)
 ax4.set_xlabel("Attention Weight", fontsize=12)
-ax4.set_title(f"Top {top_n} Feature Group Importance", fontsize=14, fontweight="bold")
+ax4.text(0.02, 0.98, '(d)', transform=ax4.transAxes,
+        fontsize=12, fontweight='bold', va='top', ha='left')
 ax4.legend()
 ax4.grid(True, alpha=0.3, axis="x")
 
