@@ -409,6 +409,10 @@ for idx, scenario in enumerate(['RCP4.5', 'RCP8.5']):
         how='left'
     )
 
+    # Calculate symmetric scale or use data range
+    vmin_val = min(-20, df_delta['risk_change_pct'].min())
+    vmax_val = max(50, df_delta['risk_change_pct'].max())
+
     zones_plot.plot(
         column='risk_change_pct',
         ax=ax,
@@ -416,15 +420,16 @@ for idx, scenario in enumerate(['RCP4.5', 'RCP8.5']):
         edgecolor='black',
         linewidth=0.3,
         legend=False,
-        vmin=-10,
-        vmax=max(50, df_delta['risk_change_pct'].max()),
+        vmin=vmin_val,
+        vmax=vmax_val,
         missing_kwds={'color': 'lightgrey'}
     )
 
     median_change = df_subset['risk_change_pct'].median()
     # Add panel label with scenario and median info
     panel_label = chr(97 + idx)  # a, b
-    ax.text(0.02, 0.98, f'({panel_label}) {scenario}\nMedian: +{median_change:.1f}%',
+    sign = '+' if median_change >= 0 else ''
+    ax.text(0.02, 0.98, f'({panel_label}) {scenario}\nMedian: {sign}{median_change:.1f}%',
            transform=ax.transAxes, fontsize=10, fontweight='bold',
            va='top', ha='left', bbox=dict(boxstyle='round',
            facecolor='white', alpha=0.8, edgecolor='none'))
@@ -432,7 +437,7 @@ for idx, scenario in enumerate(['RCP4.5', 'RCP8.5']):
 
 sm = plt.cm.ScalarMappable(
     cmap='RdYlBu_r',
-    norm=plt.Normalize(vmin=-10, vmax=max(50, df_delta['risk_change_pct'].max()))
+    norm=plt.Normalize(vmin=vmin_val, vmax=vmax_val)
 )
 sm._A = []
 cbar_ax = fig.add_axes([0.92, 0.15, 0.02, 0.7])
