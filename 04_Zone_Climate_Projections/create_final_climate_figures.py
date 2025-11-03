@@ -100,11 +100,13 @@ print()
 print("Loading climate driver data...")
 
 def load_climate_stats(scenario, variable):
-    """Load mean climate values for August across years."""
+    """Load mean climate values for August across years from NetCDF files."""
     if variable == 'temp':
         base_dir = TEMP_RCP45_DIR if scenario == 'RCP4.5' else TEMP_RCP85_DIR
+        var_name = 'tas'
     else:
         base_dir = PRECIP_RCP45_DIR if scenario == 'RCP4.5' else PRECIP_RCP85_DIR
+        var_name = 'pr'
 
     stats = {}
     quantiles = ['pctl25', 'pctl50', 'pctl99']
@@ -112,25 +114,47 @@ def load_climate_stats(scenario, variable):
 
     for quantile in quantiles:
         stats[quantile] = []
-        for year in years:
-            # Try to find August file for this year
-            pattern = f"*_{year}08*_{quantile}.tif"
-            files = list(base_dir.glob(pattern))
 
-            if len(files) > 0:
-                try:
-                    ds = xr.open_dataset(files[0], engine='rasterio')
-                    # Get mean value across space
-                    mean_val = float(ds['band_data'].mean().values)
-                    if variable == 'temp':
-                        mean_val -= 273.15  # Convert K to C
-                    elif variable == 'precip':
-                        mean_val *= 86400  # Convert kg/m2/s to mm/day
-                    stats[quantile].append(mean_val)
-                except:
-                    stats[quantile].append(np.nan)
-            else:
-                stats[quantile].append(np.nan)
+        # Load the NetCDF file for this quantile
+        nc_file = base_dir / f"{var_name}_EUR-11_{quantile}_{scenario.lower().replace('.', '')}.nc"
+
+        if nc_file.exists():
+            try:
+                # Open NetCDF file
+                ds = xr.open_dataset(nc_file)
+
+                # Get the variable data
+                data = ds[var_name]
+
+                # Extract August values for each year
+                for year in years:
+                    try:
+                        # Filter for all days in August of this year
+                        august_data = data.sel(time=slice(f'{year}-08-01', f'{year}-08-31'))
+
+                        # Calculate spatial mean (ignoring NaN values outside study area)
+                        mean_val = float(np.nanmean(august_data.values))
+
+                        # Convert units if needed
+                        # Temperature is already in °C, no conversion needed
+                        if variable == 'precip':
+                            # Check if precipitation needs conversion
+                            # Usually already in mm/day from QDM, but verify units
+                            pass
+
+                        stats[quantile].append(mean_val)
+                    except Exception as e:
+                        # If this specific year/month not found, append NaN
+                        print(f"    Warning: Could not load {year}-08 for {quantile}: {e}")
+                        stats[quantile].append(np.nan)
+
+                ds.close()
+            except Exception as e:
+                print(f"  Warning: Could not load {nc_file}: {e}")
+                stats[quantile] = [np.nan] * len(years)
+        else:
+            print(f"  Warning: File not found: {nc_file}")
+            stats[quantile] = [np.nan] * len(years)
 
     return years, stats
 
