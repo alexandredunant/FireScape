@@ -246,7 +246,7 @@ print(f"✓ Saved: {output_path.name}")
 print()
 
 # ===================================================================
-# FIGURE 2: TIME SERIES WITH CLIMATE DRIVERS (3-PANEL, ALL QUANTILES)
+# FIGURE 2: TIME SERIES WITH CLIMATE DRIVERS (2-PANEL WITH DUAL Y-AXIS)
 # ===================================================================
 
 print("Creating time series with climate drivers (all quantiles)...")
@@ -254,9 +254,9 @@ print("Creating time series with climate drivers (all quantiles)...")
 KEY_ZONES = ['Bolzano', 'Merano', 'Bressanone', 'Brunico']
 
 for scenario in ['RCP4.5', 'RCP8.5']:
-    fig, axes = plt.subplots(3, 1, figsize=(12, 10), sharex=True)
+    fig, axes = plt.subplots(2, 1, figsize=(12, 8), sharex=True)
 
-    # Panel 1: Fire Risk with all quantiles
+    # Panel 1: Fire Risk with whiskers showing quantile range
     ax = axes[0]
 
     # Plot median (pctl50) prominently
@@ -269,7 +269,7 @@ for scenario in ['RCP4.5', 'RCP8.5']:
         df_zone_med = df_scenario_med[df_scenario_med['zone_name'] == zone]
         df_zone_agg_med = df_zone_med.groupby('year')['mean_risk'].mean().reset_index()
 
-        # Get pctl25 and pctl99 for uncertainty band
+        # Get pctl25 and pctl99 for error bars
         df_zone_25 = df[(df['scenario'] == scenario) &
                         (df['month'] == 8) &
                         (df['climate_quantile'] == 'pctl25') &
@@ -282,17 +282,22 @@ for scenario in ['RCP4.5', 'RCP8.5']:
                         (df['zone_name'] == zone)]
         df_zone_agg_99 = df_zone_99.groupby('year')['mean_risk'].mean().reset_index()
 
-        # Plot median line
-        ax.plot(df_zone_agg_med['year'], df_zone_agg_med['mean_risk'],
-               marker='o', linewidth=2.5, markersize=6,
-               color=colors[idx], label=zone, alpha=0.9, zorder=3)
-
-        # Add uncertainty band
+        # Calculate error bars (distance from median, ensure non-negative)
         if len(df_zone_agg_25) > 0 and len(df_zone_agg_99) > 0:
-            ax.fill_between(df_zone_agg_med['year'],
-                           df_zone_agg_25['mean_risk'],
-                           df_zone_agg_99['mean_risk'],
-                           color=colors[idx], alpha=0.2, zorder=1)
+            lower_err = np.maximum(0, df_zone_agg_med['mean_risk'].values - df_zone_agg_25['mean_risk'].values)
+            upper_err = np.maximum(0, df_zone_agg_99['mean_risk'].values - df_zone_agg_med['mean_risk'].values)
+
+            # Plot with error bars
+            ax.errorbar(df_zone_agg_med['year'], df_zone_agg_med['mean_risk'],
+                       yerr=[lower_err, upper_err],
+                       marker='o', linewidth=2.5, markersize=6,
+                       color=colors[idx], label=zone, alpha=0.9, zorder=3,
+                       capsize=4, capthick=1.5)
+        else:
+            # Plot without error bars if quantiles missing
+            ax.plot(df_zone_agg_med['year'], df_zone_agg_med['mean_risk'],
+                   marker='o', linewidth=2.5, markersize=6,
+                   color=colors[idx], label=zone, alpha=0.9, zorder=3)
 
     ax.set_ylabel('Relative Fire Risk', fontsize=11)
     # Add panel label
@@ -300,76 +305,67 @@ for scenario in ['RCP4.5', 'RCP8.5']:
            fontsize=10, fontweight='bold', va='top', ha='left')
     ax.legend(loc='upper left', fontsize=9, ncol=2, bbox_to_anchor=(0.15, 1.0))
     ax.grid(True, alpha=0.3, zorder=0)
-    ax.text(0.98, 0.02, 'Shaded area: 25th-99th percentile range',
+    ax.text(0.98, 0.02, 'Error bars: 25th-99th percentile climate range',
            transform=ax.transAxes, fontsize=9, ha='right', va='bottom',
            style='italic', color='gray')
 
-    # Panel 2: Temperature with all quantiles
-    ax = axes[1]
+    # Panel 2: Temperature and Precipitation on dual y-axes
+    ax1 = axes[1]
     years = climate_data[scenario]['years']
 
     temp_25 = climate_data[scenario]['temp']['pctl25']
     temp_50 = climate_data[scenario]['temp']['pctl50']
     temp_99 = climate_data[scenario]['temp']['pctl99']
 
-    if not all(np.isnan(temp_50)):
-        # Plot median
-        ax.plot(years, temp_50, marker='s', linewidth=2.5, markersize=7,
-               color='orangered', label='Median (50th)', zorder=3)
-
-        # Add uncertainty band
-        if not all(np.isnan(temp_25)) and not all(np.isnan(temp_99)):
-            ax.fill_between(years, temp_25, temp_99,
-                           color='orangered', alpha=0.2,
-                           label='25th-99th percentile', zorder=1)
-
-        ax.set_ylabel('Temperature (°C)', fontsize=11)
-        ax.legend(loc='upper left', fontsize=10)
-    else:
-        # Synthetic data for illustration
-        temp_synth = 18 + np.linspace(0, 4.5 if scenario == 'RCP8.5' else 2, len(years))
-        ax.plot(years, temp_synth, marker='s', linewidth=2.5, markersize=7,
-               color='orangered', linestyle='--', alpha=0.6)
-        ax.set_ylabel('Temperature (°C)', fontsize=11)
-        ax.text(0.02, 0.98, 'Illustrative trend', transform=ax.transAxes,
-               fontsize=9, va='top', style='italic', color='gray')
-    # Add panel label
-    ax.text(0.02, 0.98, '(b)', transform=ax.transAxes,
-           fontsize=10, fontweight='bold', va='top', ha='left')
-    ax.grid(True, alpha=0.3, zorder=0)
-
-    # Panel 3: Precipitation with all quantiles
-    ax = axes[2]
     precip_25 = climate_data[scenario]['precip']['pctl25']
     precip_50 = climate_data[scenario]['precip']['pctl50']
     precip_99 = climate_data[scenario]['precip']['pctl99']
 
+    # Temperature on left y-axis
+    if not all(np.isnan(temp_50)):
+        # Calculate error bars
+        temp_lower = [abs(m - l) if not np.isnan(m) and not np.isnan(l) else 0
+                      for m, l in zip(temp_50, temp_25)]
+        temp_upper = [abs(u - m) if not np.isnan(u) and not np.isnan(m) else 0
+                      for u, m in zip(temp_99, temp_50)]
+
+        ax1.errorbar(years, temp_50, yerr=[temp_lower, temp_upper],
+                    marker='s', linewidth=2.5, markersize=7,
+                    color='orangered', label='Temperature (median)',
+                    capsize=4, capthick=1.5, zorder=3)
+        ax1.set_ylabel('Temperature (°C)', fontsize=11, color='orangered')
+        ax1.tick_params(axis='y', labelcolor='orangered')
+
+    # Precipitation on right y-axis
+    ax2 = ax1.twinx()
     if not all(np.isnan(precip_50)):
-        # Plot median
-        ax.plot(years, precip_50, marker='^', linewidth=2.5, markersize=7,
-               color='steelblue', label='Median (50th)', zorder=3)
+        # Calculate error bars
+        precip_lower = [abs(m - l) if not np.isnan(m) and not np.isnan(l) else 0
+                        for m, l in zip(precip_50, precip_25)]
+        precip_upper = [abs(u - m) if not np.isnan(u) and not np.isnan(m) else 0
+                        for u, m in zip(precip_99, precip_50)]
 
-        # Add uncertainty band
-        if not all(np.isnan(precip_25)) and not all(np.isnan(precip_99)):
-            ax.fill_between(years, precip_25, precip_99,
-                           color='steelblue', alpha=0.2,
-                           label='25th-99th percentile', zorder=1)
+        ax2.errorbar(years, precip_50, yerr=[precip_lower, precip_upper],
+                    marker='^', linewidth=2.5, markersize=7,
+                    color='steelblue', label='Precipitation (median)',
+                    capsize=4, capthick=1.5, zorder=2)
+        ax2.set_ylabel('Precipitation (mm/day)', fontsize=11, color='steelblue')
+        ax2.tick_params(axis='y', labelcolor='steelblue')
 
-        ax.set_ylabel('Precipitation (mm/day)', fontsize=11)
-        ax.legend(loc='upper right', fontsize=10)
-    else:
-        # Synthetic data
-        precip_synth = 3.5 - np.linspace(0, 1.5 if scenario == 'RCP8.5' else 0.5, len(years))
-        ax.plot(years, precip_synth, marker='^', linewidth=2.5, markersize=7,
-               color='steelblue', linestyle='--', alpha=0.6)
-        ax.set_ylabel('Precipitation (mm/day)', fontsize=11)
-        ax.text(0.02, 0.98, 'Illustrative trend', transform=ax.transAxes,
-               fontsize=9, va='top', style='italic', color='gray')
     # Add panel label
-    ax.text(0.02, 0.98, '(c)', transform=ax.transAxes,
-           fontsize=10, fontweight='bold', va='top', ha='left')
-    ax.grid(True, alpha=0.3, zorder=0)
-    ax.set_xlabel('Year', fontsize=11)
+    ax1.text(0.02, 0.98, '(b)', transform=ax1.transAxes,
+            fontsize=10, fontweight='bold', va='top', ha='left')
+    ax1.grid(True, alpha=0.3, zorder=0)
+    ax1.set_xlabel('Year', fontsize=11)
+
+    # Add combined legend
+    lines1, labels1 = ax1.get_legend_handles_labels()
+    lines2, labels2 = ax2.get_legend_handles_labels()
+    ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left', fontsize=9)
+
+    ax1.text(0.98, 0.02, 'Error bars: 25th-99th percentile climate range',
+            transform=ax1.transAxes, fontsize=9, ha='right', va='bottom',
+            style='italic', color='gray')
 
     plt.tight_layout()
     output_path = OUTPUT_FIGURES / f"climate_drivers_{scenario.replace('.', '')}_all_quantiles.png"
