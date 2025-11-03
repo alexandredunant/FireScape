@@ -88,7 +88,9 @@ def create_temporal_validation_plot(results, model_name, color, output_path):
            label='Predicted (scaled)', alpha=0.7, color=color)
     ax.set_xlabel('Month', fontsize=10)
     ax.set_ylabel('Fire Count', fontsize=10)
-    ax.set_title(f'Monthly (R$^2$={monthly_r2:.3f})', fontsize=11, pad=10)
+    ax.text(0.02, 0.98, f'(a) R$^2$={monthly_r2:.3f}',
+           transform=ax.transAxes, fontsize=10, fontweight='bold',
+           va='top', ha='left')
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
     ax.set_xticks(x)
@@ -110,7 +112,9 @@ def create_temporal_validation_plot(results, model_name, color, output_path):
 
     ax.set_xlabel('Actual Fires', fontsize=10)
     ax.set_ylabel('Predicted Fires', fontsize=10)
-    ax.set_title(f'Monthly Correlation (R$^2$={monthly_r2:.3f})', fontsize=11, pad=10)
+    ax.text(0.02, 0.98, f'(b) R$^2$={monthly_r2:.3f}',
+           transform=ax.transAxes, fontsize=10, fontweight='bold',
+           va='top', ha='left')
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
@@ -123,7 +127,9 @@ def create_temporal_validation_plot(results, model_name, color, output_path):
            label='Predicted', alpha=0.7, color=color)
     ax.set_xlabel('Season', fontsize=10)
     ax.set_ylabel('Fire Count', fontsize=10)
-    ax.set_title(f'Seasonal (R$^2$={seasonal_r2:.3f})', fontsize=11, pad=10)
+    ax.text(0.02, 0.98, f'(c) R$^2$={seasonal_r2:.3f}',
+           transform=ax.transAxes, fontsize=10, fontweight='bold',
+           va='top', ha='left')
     ax.set_xticks(x_pos)
     ax.set_xticklabels(seasonal_stats['season'], fontsize=9)
     ax.legend(fontsize=9)
@@ -146,7 +152,9 @@ def create_temporal_validation_plot(results, model_name, color, output_path):
 
     ax.set_xlabel('Actual Fires', fontsize=10)
     ax.set_ylabel('Predicted Fires', fontsize=10)
-    ax.set_title(f'Seasonal Correlation (R$^2$={seasonal_r2:.3f})', fontsize=11, pad=10)
+    ax.text(0.02, 0.98, f'(d) R$^2$={seasonal_r2:.3f}',
+           transform=ax.transAxes, fontsize=10, fontweight='bold',
+           va='top', ha='left')
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
@@ -180,7 +188,9 @@ def create_performance_validation_plot(results, model_name, color, output_path):
     ax.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--', label='Random')
     ax.set_xlabel('False Positive Rate', fontsize=10)
     ax.set_ylabel('True Positive Rate', fontsize=10)
-    ax.set_title(f'ROC Curve (AUC={roc_auc:.3f})', fontsize=11, pad=10)
+    ax.text(0.98, 0.02, f'(a) AUC={roc_auc:.3f}',
+           transform=ax.transAxes, fontsize=10, fontweight='bold',
+           va='bottom', ha='right')
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
@@ -206,7 +216,9 @@ def create_performance_validation_plot(results, model_name, color, output_path):
 
     ax.set_xlabel('Recall', fontsize=10)
     ax.set_ylabel('Precision', fontsize=10)
-    ax.set_title(f'Precision-Recall (AP={pr_auc:.3f})', fontsize=11, pad=10)
+    ax.text(0.98, 0.02, f'(b) AP={pr_auc:.3f}',
+           transform=ax.transAxes, fontsize=10, fontweight='bold',
+           va='bottom', ha='right')
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
@@ -239,7 +251,8 @@ def create_performance_validation_plot(results, model_name, color, output_path):
            color='navy', lw=2, linestyle='--', label='Perfect Calibration')
     ax.set_xlabel('Predicted Probability', fontsize=10)
     ax.set_ylabel('Observed Frequency', fontsize=10)
-    ax.set_title('Calibration Plot', fontsize=11, pad=10)
+    ax.text(0.02, 0.98, '(c)', transform=ax.transAxes,
+           fontsize=10, fontweight='bold', va='top', ha='left')
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 
@@ -264,7 +277,8 @@ def create_performance_validation_plot(results, model_name, color, output_path):
     ax.axhline(y=1, color='navy', lw=2, linestyle='--', label='Baseline (Random)')
     ax.set_xlabel('Percentage of Population Targeted (%)', fontsize=10)
     ax.set_ylabel('Lift', fontsize=10)
-    ax.set_title('Lift Curve', fontsize=11, pad=10)
+    ax.text(0.02, 0.98, '(d)', transform=ax.transAxes,
+           fontsize=10, fontweight='bold', va='top', ha='left')
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
 

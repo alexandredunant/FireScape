@@ -192,7 +192,12 @@ for i, scenario in enumerate(SCENARIOS):
             missing_kwds={'color': 'lightgrey'}
         )
 
-        ax.set_title(f'{scenario} - {year}', fontsize=11, fontweight='bold')
+        # Add panel label (a, b, c, etc.)
+        panel_label = chr(97 + i * len(TIME_PERIODS) + j)  # a, b, c, d, e, f
+        ax.text(0.02, 0.98, f'({panel_label}) {scenario} - {year}',
+               transform=ax.transAxes, fontsize=10, fontweight='bold',
+               va='top', ha='left', bbox=dict(boxstyle='round',
+               facecolor='white', alpha=0.8, edgecolor='none'))
         ax.axis('off')
 
 # Add colorbar
@@ -208,11 +213,7 @@ cbar_ax = fig.add_axes([0.92, 0.15, 0.02, 0.7])
 cbar = fig.colorbar(sm, cax=cbar_ax)
 cbar.set_label('Relative Fire Risk (August)', fontsize=11)
 
-# Add suptitle with quantile info
-fig.suptitle(f'Projected Fire Risk Evolution - {QUANTILE_LABEL} Climate',
-            fontsize=13, fontweight='bold', y=0.98)
-
-plt.tight_layout(rect=[0, 0, 0.90, 0.96])
+plt.tight_layout(rect=[0, 0, 0.90, 1.00])
 output_path = OUTPUT_FIGURES / "climate_maps_spatial_evolution_pctl50.png"
 plt.savefig(output_path, bbox_inches='tight', dpi=300)
 plt.close()
@@ -270,9 +271,10 @@ for scenario in ['RCP4.5', 'RCP8.5']:
                            color=colors[idx], alpha=0.2, zorder=1)
 
     ax.set_ylabel('Relative Fire Risk', fontsize=11)
-    ax.set_title(f'Fire Risk Evolution - {scenario} (August, All Climate Quantiles)',
-                fontsize=12, fontweight='bold', pad=10)
-    ax.legend(loc='upper left', fontsize=9, ncol=2)
+    # Add panel label
+    ax.text(0.02, 0.98, f'(a) {scenario}', transform=ax.transAxes,
+           fontsize=10, fontweight='bold', va='top', ha='left')
+    ax.legend(loc='upper left', fontsize=9, ncol=2, bbox_to_anchor=(0.15, 1.0))
     ax.grid(True, alpha=0.3, zorder=0)
     ax.text(0.98, 0.02, 'Shaded area: 25th-99th percentile range',
            transform=ax.transAxes, fontsize=9, ha='right', va='bottom',
@@ -307,6 +309,9 @@ for scenario in ['RCP4.5', 'RCP8.5']:
         ax.set_ylabel('Temperature (°C)', fontsize=11)
         ax.text(0.02, 0.98, 'Illustrative trend', transform=ax.transAxes,
                fontsize=9, va='top', style='italic', color='gray')
+    # Add panel label
+    ax.text(0.02, 0.98, '(b)', transform=ax.transAxes,
+           fontsize=10, fontweight='bold', va='top', ha='left')
     ax.grid(True, alpha=0.3, zorder=0)
 
     # Panel 3: Precipitation with all quantiles
@@ -336,6 +341,9 @@ for scenario in ['RCP4.5', 'RCP8.5']:
         ax.set_ylabel('Precipitation (mm/day)', fontsize=11)
         ax.text(0.02, 0.98, 'Illustrative trend', transform=ax.transAxes,
                fontsize=9, va='top', style='italic', color='gray')
+    # Add panel label
+    ax.text(0.02, 0.98, '(c)', transform=ax.transAxes,
+           fontsize=10, fontweight='bold', va='top', ha='left')
     ax.grid(True, alpha=0.3, zorder=0)
     ax.set_xlabel('Year', fontsize=11)
 
@@ -394,8 +402,12 @@ for idx, scenario in enumerate(['RCP4.5', 'RCP8.5']):
     )
 
     median_change = df_subset['risk_change_pct'].median()
-    ax.set_title(f'{scenario}: Change 2020→2080\n(Median: +{median_change:.1f}%)',
-                fontsize=11, fontweight='bold')
+    # Add panel label with scenario and median info
+    panel_label = chr(97 + idx)  # a, b
+    ax.text(0.02, 0.98, f'({panel_label}) {scenario}\nMedian: +{median_change:.1f}%',
+           transform=ax.transAxes, fontsize=10, fontweight='bold',
+           va='top', ha='left', bbox=dict(boxstyle='round',
+           facecolor='white', alpha=0.8, edgecolor='none'))
     ax.axis('off')
 
 sm = plt.cm.ScalarMappable(
@@ -405,12 +417,9 @@ sm = plt.cm.ScalarMappable(
 sm._A = []
 cbar_ax = fig.add_axes([0.92, 0.15, 0.02, 0.7])
 cbar = fig.colorbar(sm, cax=cbar_ax)
-cbar.set_label('Fire Risk Change (%)', fontsize=11)
+cbar.set_label('Fire Risk Change 2020-2080 (%)', fontsize=11)
 
-fig.suptitle(f'Projected Risk Change - {QUANTILE_LABEL} Climate',
-            fontsize=13, fontweight='bold', y=0.98)
-
-plt.tight_layout(rect=[0, 0, 0.90, 0.96])
+plt.tight_layout(rect=[0, 0, 0.90, 1.00])
 output_path = OUTPUT_FIGURES / "climate_risk_change_pctl50.png"
 plt.savefig(output_path, bbox_inches='tight', dpi=300)
 plt.close()
