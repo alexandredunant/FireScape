@@ -27,7 +27,7 @@ AOI_PATH = "/mnt/CEPH_PROJECTS/Firescape/Data/00_QGIS/ADMIN/BOLZANO_REGION_UTM32
 STATIC_RASTER_DIR = "/mnt/CEPH_PROJECTS/Firescape/Data/STATIC_INPUT/"
 TEMP_DIR = "/mnt/CEPH_PROJECTS/CLIMATE/GRIDS/TEMPERATURE/TIME_SERIES/UPLOAD/"
 PRECIP_DIR = "/mnt/CEPH_PROJECTS/CLIMATE/GRIDS/PRECIPITATION/TIME_SERIES/UPLOAD/"
-OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/01_Training_Data/"
+OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/output/01_Training_Data/"
 OUTPUT_PATH = os.path.join(OUTPUT_DIR, "spacetime_dataset.parquet")
 
 # Create output directory if it doesn't exist

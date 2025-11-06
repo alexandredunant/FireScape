@@ -1,0 +1,65 @@
+I would like to update the @main_updated.tex so it follow this plan:
+
+Introdution
+-> should give the background information of wildfire research and prediction in the mountain environment moving from Global studies, in other countries and zoming in the Alps then the Bolzano region(Moreno etc.)
+  - Should add a placeholder for the province map with north arrow and scale and main landcover
+-> the need to undertand and project the wildfire risk in the specific contect of mountain environment to help inform and prepare for upcoming hazardous events in the near (early warning) and far (climate induced) futures.
+The current paper is focus on three innovation 
+1) a transparent Bayesian model with a building attention group mechanism. The bayesian prediction allowing to assess the uncertainty and robustness of our predictions and the attention mechanism allowing a nested learning of the pattern of widlfires without compromising the model with colinearity issues.
+2) a comparative study of the addition of lightning to the model prediction capacity and its influence on the temporal accuracy of widlfires
+3) a projection of the climate ensemble members for precipitations and temporatures until 2100 and the potential outlook in activites for the province foresty department and  civil protection
+
+Methodology 
+
+1)Bayesian model with a building attention group mechanism
+  -Training data
+figure of the diagram (diagram.html)
+
+
+2)Addition of lightning to the model
+  - data provenance
+  - training data
+  - how lightning is included in the model
+
+3)Climate projection
+  - data provenance
+    include figure @historical_vs_ensemble_members_bolzano.png
+  - how the bayesian model is used with the climate ensemble members (quantile is not used to keep consistency between temperature and precipitation inside a model)
+
+Results
+
+1)Bayesian model with a building attention group mechanism
+  - Validation plots for baseline model figure
+  - Feature importance figure
+
+2)Addition of lightning to the model
+  - Validation plots for the lightning model figure
+  - Feature importance with lightning figure
+  - Temporal fit comparison baseline and lightning figure 
+
+3)Climate projection per foresty zones and climate ensemble
+  - @timeseries_top_zones_combined.png
+    @spatial_evolution_worst_case_summary.png
+    @ensemble_spread_analysis.png
+    @timeseries_ensemble_min_mean_max.png
+
+    add the result in a table from @Firescape/output/04_Zone_Climate_Projections/rcp85_ensemble_members/ensemble_summary_statistics.csv
+
+detailed explanation and description is required for all the plots 
+
+Discussion
+
+Feature importance and group importance
+Uncertainty quantification
+Effect of lightning on the model performance
+Effect of lightning on the temporal accuracy 
+Climate projection shows disparate results across the different regions and ensemble members
+an overall increase that can range from .. to .. and the consequence for the province
+Limitations
+no wind, no lightning projection. 
+
+
+Conclusion
+
+Recap all paper and open up and fire studies dedicated to mountain environment 
+

@@ -1,0 +1,49 @@
+Ensemble Quantile Files Comparison Summary
+================================================================================
+
+tas/rcp45/pctl25: NEW_MISSING
+tas/rcp45/pctl50: NEW_MISSING
+tas/rcp45/pctl75: NEW_MISSING
+tas/rcp45/pctl99: NEW_MISSING
+tas/rcp85/pctl25: DIFFERENT
+  Mean rel diff: 7232772.5000%
+  Correlation: 0.999348
+tas/rcp85/pctl50: IDENTICAL
+  Mean rel diff: 0.0000%
+  Correlation: 1.000000
+tas/rcp85/pctl75: DIFFERENT
+  Mean rel diff: 4363551.0000%
+  Correlation: 0.999342
+tas/rcp85/pctl99: DIFFERENT
+  Mean rel diff: 1338037.8750%
+  Correlation: 0.999851
+pr/rcp45/pctl25: DIFFERENT
+  Mean rel diff: 14876628992.0000%
+  Correlation: 0.924713
+pr/rcp45/pctl50: IDENTICAL
+  Mean rel diff: 0.0000%
+  Correlation: 1.000000
+pr/rcp45/pctl75: DIFFERENT
+  Mean rel diff: 22.3164%
+  Correlation: 0.974657
+pr/rcp45/pctl99: DIFFERENT
+  Mean rel diff: 4.9101%
+  Correlation: 0.999226
+pr/rcp85/pctl25: IDENTICAL
+  Mean rel diff: 0.0000%
+  Correlation: 1.000000
+pr/rcp85/pctl50: IDENTICAL
+  Mean rel diff: 0.0000%
+  Correlation: 1.000000
+pr/rcp85/pctl75: IDENTICAL
+  Mean rel diff: 0.0000%
+  Correlation: 1.000000
+pr/rcp85/pctl99: DIFFERENT
+  Mean rel diff: 6.9298%
+  Correlation: 0.997692
+
+================================================================================
+Summary Statistics:
+  IDENTICAL: 5
+  DIFFERENT: 7
+  NEW_MISSING: 4

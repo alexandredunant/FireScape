@@ -42,9 +42,9 @@ LANDCOVER_FIRE_RISK_ORDINAL = {
     312: 5
 }
 
-OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/01_Training_Data_Lightning/"
+OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/output/01_Training_Data_Lightning/"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-INPUT_PARQUET_PATH = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/01_Training_Data/spacetime_dataset.parquet"
+INPUT_PARQUET_PATH = "/mnt/CEPH_PROJECTS/Firescape/output/01_Training_Data/spacetime_dataset.parquet"
 
 # Paths to raster data directories
 STATIC_RASTER_DIR = "/mnt/CEPH_PROJECTS/Firescape/Data/STATIC_INPUT/"

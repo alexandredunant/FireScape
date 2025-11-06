@@ -28,7 +28,7 @@ import matplotlib.dates as mdates
 # For the canonical Corine → Fire Risk mapping dictionary, see that script.
 # Values: 0=No risk, 1=Very low, 2=Low, 3=Moderate, 4=High, 5=Very high
 
-OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/01_Training_Data/"
+OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/output/01_Training_Data/"
 INPUT_PARQUET_PATH = os.path.join(OUTPUT_DIR, "spacetime_dataset.parquet")
 
 # Paths to raster data directories

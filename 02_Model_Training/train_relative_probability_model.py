@@ -52,11 +52,11 @@ print(f"Running Bayesian Relative Probability Model on PyMC v{pm.__version__}")
 # Input data paths
 # Note: landcover_fire_risk in the NetCDF is already in ordinal form (0-5 scale)
 # representing fire risk from Corine Land Cover classification
-NETCDF_PATH = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/01_Training_Data/spacetime_stacks.nc"
+NETCDF_PATH = "/mnt/CEPH_PROJECTS/Firescape/output/01_Training_Data/spacetime_stacks.nc"
 WILDFIRE_HISTORY_PATH = "/mnt/CEPH_PROJECTS/Firescape/Data/WILDFIRE_INVENTORY/wildfire_point_Bolzano_Period1999_2025.gpkg"
 
 # Output directory
-ML_OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/02_Model_RelativeProbability/"
+ML_OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/output/02_Model_RelativeProbability/"
 os.makedirs(ML_OUTPUT_DIR, exist_ok=True)
 
 # Feature categories

@@ -1,13 +1,16 @@
-
+import matplotlib
+matplotlib.use('Agg')
 import xarray as xr
 import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
 
+
 def plot_spatial_extents(file1, file2, output_path):
     """
     Plots the spatial extents of two NetCDF files.
     """
+
     with xr.open_dataset(file1) as ds1, xr.open_dataset(file2) as ds2:
         # Extract bounding box from the first file
         lon1_min, lon1_max = ds1.x.min().item(), ds1.x.max().item()
@@ -20,12 +23,30 @@ def plot_spatial_extents(file1, file2, output_path):
         fig, ax = plt.subplots(figsize=(10, 8))
 
         # Plot extent of file 1
-        ax.add_patch(plt.Rectangle((lon1_min, lat1_min), lon1_max - lon1_min, lat1_max - lat1_min,
-                                     fill=True, color='blue', alpha=0.5, label='File 1 Extent'))
+        ax.add_patch(
+            plt.Rectangle(
+                (lon1_min, lat1_min),
+                lon1_max - lon1_min,
+                lat1_max - lat1_min,
+                fill=True,
+                color="blue",
+                alpha=0.5,
+                label="File 1 Extent",
+            )
+        )
 
         # Plot extent of file 2
-        ax.add_patch(plt.Rectangle((lon2_min, lat2_min), lon2_max - lon2_min, lat2_max - lat2_min,
-                                     fill=True, color='red', alpha=0.5, label='File 2 Extent'))
+        ax.add_patch(
+            plt.Rectangle(
+                (lon2_min, lat2_min),
+                lon2_max - lon2_min,
+                lat2_max - lat2_min,
+                fill=True,
+                color="red",
+                alpha=0.5,
+                label="File 2 Extent",
+            )
+        )
 
         ax.set_xlim(min(lon1_min, lon2_min) - 10000, max(lon1_max, lon2_max) + 10000)
         ax.set_ylim(min(lat1_min, lat2_min) - 10000, max(lat1_max, lat2_max) + 10000)
@@ -38,51 +59,61 @@ def plot_spatial_extents(file1, file2, output_path):
         plt.savefig(output_path)
         plt.close()
 
+
 def plot_time_series_comparison(file1, file2, output_path):
     """
-    Plots the mean, min, and max time series for two NetCDF files.
+    Plots the correlation of mean, min, and max time series for two NetCDF files.
     """
-    with xr.open_dataset(file1) as ds1, xr.open_dataset(file2) as ds2:
+    with (
+        xr.open_dataset(file1, chunks="auto") as ds1,
+        xr.open_dataset(file2, chunks="auto") as ds2,
+    ):
         # Calculate aggregates for file 1
-        mean1 = ds1['pr'].mean(dim=['x', 'y']).compute()
-        min1 = ds1['pr'].min(dim=['x', 'y']).compute()
-        max1 = ds1['pr'].max(dim=['x', 'y']).compute()
+        mean1 = ds1["pr"].mean(dim=["x", "y"]).compute()
+        min1 = ds1["pr"].min(dim=["x", "y"]).compute()
+        max1 = ds1["pr"].max(dim=["x", "y"]).compute()
 
         # Calculate aggregates for file 2
-        mean2 = ds2['pr'].mean(dim=['x', 'y']).compute()
-        min2 = ds2['pr'].min(dim=['x', 'y']).compute()
-        max2 = ds2['pr'].max(dim=['x', 'y']).compute()
+        mean2 = ds2["pr"].mean(dim=["x", "y"]).compute()
+        min2 = ds2["pr"].min(dim=["x", "y"]).compute()
+        max2 = ds2["pr"].max(dim=["x", "y"]).compute()
 
-        fig, ax = plt.subplots(3, 1, figsize=(15, 15), sharex=True)
+        fig, axes = plt.subplots(1, 3, figsize=(21, 6))
 
-        # Plot Mean
-        ax[0].plot(ds1.time, mean1, label='File 1 Mean', color='blue')
-        ax[0].plot(ds2.time, mean2, label='File 2 Mean', color='red', linestyle='--')
-        ax[0].set_ylabel("Mean Precipitation")
-        ax[0].set_title("Mean Precipitation Time Series Comparison")
-        ax[0].legend()
-        ax[0].grid(True)
+        # Data for plotting
+        plot_data = [
+            {"title": "Mean", "data1": mean1, "data2": mean2, "color": "blue"},
+            {"title": "Min", "data1": min1, "data2": min2, "color": "green"},
+            {"title": "Max", "data1": max1, "data2": max2, "color": "red"},
+        ]
 
-        # Plot Min
-        ax[1].plot(ds1.time, min1, label='File 1 Min', color='blue')
-        ax[1].plot(ds2.time, min2, label='File 2 Min', color='red', linestyle='--')
-        ax[1].set_ylabel("Min Precipitation")
-        ax[1].set_title("Min Precipitation Time Series Comparison")
-        ax[1].legend()
-        ax[1].grid(True)
+        for ax, p_data in zip(axes, plot_data):
+            ax.scatter(
+                p_data["data1"],
+                p_data["data2"],
+                label=p_data["title"],
+                color=p_data["color"],
+                alpha=0.5,
+            )
 
-        # Plot Max
-        ax[2].plot(ds1.time, max1, label='File 1 Max', color='blue')
-        ax[2].plot(ds2.time, max2, label='File 2 Max', color='red', linestyle='--')
-        ax[2].set_xlabel("Time")
-        ax[2].set_ylabel("Max Precipitation")
-        ax[2].set_title("Max Precipitation Time Series Comparison")
-        ax[2].legend()
-        ax[2].grid(True)
+            # Add 1:1 line
+            lims = [
+                np.min([ax.get_xlim(), ax.get_ylim()]),
+                np.max([ax.get_xlim(), ax.get_ylim()]),
+            ]
+            ax.plot(lims, lims, "k-", alpha=0.75, zorder=0)
+
+            ax.set_xlabel(f"File 1 {p_data['title']} Precipitation")
+            ax.set_ylabel(f"File 2 {p_data['title']} Precipitation")
+            ax.set_title(f"{p_data['title']} Precipitation Correlation")
+            ax.legend()
+            ax.grid(True)
+            ax.set_aspect("equal", "box")
 
         plt.tight_layout()
         plt.savefig(output_path)
         plt.close()
+
 
 if __name__ == "__main__":
     file1_path = "/mnt/CEPH_PROJECTS/FACT_CLIMAX/tmp_data_Firescape/pr/rcp45/pr_EUR-11_pctl50_rcp45.nc"

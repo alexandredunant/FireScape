@@ -74,11 +74,11 @@ LANDCOVER_FIRE_RISK_ORDINAL = {
 
 
 # Input data paths
-NETCDF_PATH = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/01_Training_Data_Lightning/spacetime_stacks_lightning.nc"
+NETCDF_PATH = "/mnt/CEPH_PROJECTS/Firescape/output/01_Training_Data_Lightning/spacetime_stacks_lightning.nc"
 WILDFIRE_HISTORY_PATH = "/mnt/CEPH_PROJECTS/Firescape/Data/WILDFIRE_INVENTORY/wildfire_point_Bolzano_Period1999_2025.gpkg"
 
 # Output directory
-ML_OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/02_Model_RelativeProbability_Lightning/"
+ML_OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/output/02_Model_RelativeProbability_Lightning/"
 os.makedirs(ML_OUTPUT_DIR, exist_ok=True)
 
 # Feature categories

@@ -59,29 +59,42 @@
 
 \section{Introduction}
 
-\subsection{Alpine Fire Regimes Under Change}
+\subsection{Global Context: Wildfire Research in Mountain Environments}
 
-The Alps are experiencing unprecedented changes in wildfire activity. Bolzano Province (South Tyrol/Alto Adige) in the Italian Alps, spanning 7,400 km$^2$ from 200 to 3,900m elevation, has historically been a fire-limited environment due to high precipitation (800--1600mm annually), short fire seasons, and dense forest management \citep{Conedera2018}. Recent climate trends, combined with major disturbances like the 2018 Vaia windstorm and subsequent bark beetle outbreaks, suggest a potential shift toward more fire-prone conditions \citep{Seidl2017}.
+Wildfire activity is intensifying globally under climate change, with mountain regions experiencing particularly rapid transformations. While extensive research has documented fire regime shifts in temperate forests of North America, Australia, and Mediterranean Europe \citep{Seidl2017}, mountain fire systems remain comparatively understudied despite their unique characteristics: steep topography creating localized microclimates, elevation-dependent vegetation zonation, orographic precipitation patterns, and lightning-dominated ignition at high elevations. Traditional fire danger rating systems developed for lowland or Mediterranean climates often fail to capture these mountain-specific processes, necessitating region-specific modeling approaches.
 
-Accurate prediction of wildfire risk in this changing environment is critical for forest management and civil protection agencies. However, traditional fire danger rating systems developed for Mediterranean or continental climates may not capture the unique characteristics of Alpine fire regimes, where topographic complexity, elevation gradients, and convective processes create highly localized ignition patterns.
+\subsection{Alpine Fire Regimes: From Regional Patterns to Bolzano Province}
 
-\subsection{The Role of Lightning in Alpine Fire Systems}
+The Alps represent a critical case study in mountain fire dynamics. Historically fire-limited due to high precipitation, short fire seasons, and intensive forest management, Alpine regions are experiencing unprecedented increases in fire activity \citep{Conedera2018}. In the Italian Alps, fire occurrence has been linked to synoptic weather patterns, elevation gradients, and lightning activity, with distinct fire regimes emerging across sub-regions based on aspect, elevation, and forest type.
 
-Lightning represents a key natural ignition source in mountain environments, particularly at higher elevations where human access is limited. In the Alps, orographic enhancement produces concentrated lightning activity along ridgelines and peaks, with flash densities varying strongly with elevation and exposure \citep{Conedera2006}. Previous studies established relationships between lightning and fires in the region \citep{Conedera2018}, but lacked: (i) high-resolution flash density data, (ii) quantitative comparison of models with/without lightning, and (iii) rigorous uncertainty quantification.
+Bolzano Province (South Tyrol/Alto Adige), spanning 7,400 km$^2$ from 200 to 3,900m elevation in the Eastern Italian Alps, exemplifies this shifting fire regime. The province encompasses diverse landscapes from valley floors to high peaks, with 52\% forest cover (385,000 ha) dominated by Norway spruce, European larch, and various pine species. Precipitation ranges from 800--1600mm annually, with mean annual temperatures from 3°C at high elevations to 12°C in valleys. Recent climate trends, combined with major disturbances like the 2018 Vaia windstorm (6 million m$^3$ windthrow) and subsequent bark beetle outbreaks (affecting 15\% of spruce forests), suggest a potential shift toward more fire-prone conditions.
 
-\subsection{Bayesian Approach to Fire Prediction}
+[PLACEHOLDER: Figure showing Bolzano Province map with north arrow, scale bar, elevation shading, and main land cover types (forest, agriculture, urban, alpine). Inset map showing location within Italy and the Alps.]
 
-Most operational fire danger systems produce deterministic outputs, making it difficult to communicate forecast confidence and make risk-aware decisions. Bayesian approaches offer several advantages: (i) explicit quantification of prediction uncertainty, (ii) incorporation of prior knowledge, (iii) hierarchical modeling of complex processes, and (iv) probabilistic outputs suitable for decision analysis \citep{Kruschke2015}.
+\subsection{The Need for Mountain-Specific Fire Risk Prediction}
 
-\subsection{Research Questions}
-
-This study addresses three key questions:
+Accurate prediction of wildfire risk in mountain environments is essential for both near-term early warning systems (days to weeks ahead) and long-term climate adaptation planning (decades ahead). Forest management and civil protection agencies require:
 
 \begin{enumerate}
-    \item Can Bayesian hierarchical models provide well-calibrated wildfire risk predictions in Alpine environments?
-    \item Does integrating lightning flash density data improve predictive performance, particularly for temporal patterns?
-    \item What are the trade-offs between temporal fidelity and spatial discrimination when adding lightning data?
+    \item \textbf{Spatial risk mapping}: Identifying high-risk zones for targeted fuel treatments, infrastructure protection, and resource pre-positioning.
+    \item \textbf{Temporal forecasting}: Predicting when fire activity will peak to optimize seasonal staffing, equipment deployment, and public awareness campaigns.
+    \item \textbf{Uncertainty quantification}: Communicating forecast confidence to support risk-aware decision making under incomplete information.
+    \item \textbf{Climate projections}: Anticipating long-term fire regime changes to guide strategic investments in firefighting capacity, prevention infrastructure, and community resilience.
 \end{enumerate}
+
+However, traditional fire danger systems face limitations in mountain contexts: (i) they produce deterministic outputs without uncertainty estimates, (ii) they often ignore lightning, a dominant ignition source at high elevations, (iii) they struggle with collinearity among highly correlated weather variables, and (iv) they provide limited interpretability, hindering operational trust and adoption.
+
+\subsection{Three Key Innovations}
+
+This paper presents three innovations addressing these challenges:
+
+\textbf{1) Transparent Bayesian model with hierarchical attention mechanism}: We develop a Bayesian logistic regression model with a novel attention mechanism that automatically learns the relative importance of feature groups (temperature, precipitation, lightning, static variables) organized by temporal scale. The Bayesian framework provides full posterior distributions for uncertainty quantification, while the hierarchical attention structure addresses collinearity by grouping correlated features and learning group-level weights. This yields interpretable feature importance without the instability common in multicollinear fire risk models. The attention weights reveal which processes drive fire risk at different temporal scales, providing transparent insights essential for operational acceptance.
+
+\textbf{2) Rigorous comparative study of lightning integration}: We conduct the first quantitative comparison of wildfire models with and without lightning data in the Alps, moving beyond qualitative associations to measure lightning's contribution to temporal and spatial prediction accuracy. Using overlapping test periods (2012--2025) for fair comparison, we reveal a critical trade-off: lightning dramatically improves temporal pattern prediction (+56\% seasonal R$^2$) but slightly reduces sample-level spatial discrimination (-4\% ROC-AUC). This finding has profound operational implications, clarifying when lightning integration provides value: temporal forecasting (seasonal planning, early warning) versus spatial mapping (fuel treatment prioritization, infrastructure protection).
+
+\textbf{3) Ensemble-based climate projections through 2100}: We project fire risk for each fire brigade zone using the full ensemble of 10 climate model realizations per scenario (RCP4.5, RCP8.5), rather than quantile-based approaches that break physical consistency between temperature and precipitation. By applying the Bayesian model to each complete ensemble member separately, we preserve the co-evolution of climate variables within each model realization while quantifying structural uncertainty across models. This approach reveals substantial spatial heterogeneity (northern mountain zones versus valleys) and temporal divergence (ensemble spread increasing dramatically after 2060), providing forestry and civil protection agencies with both projections and uncertainty bounds essential for adaptive management planning.
+
+Together, these innovations demonstrate that probabilistic modeling frameworks integrating diverse data streams, quantifying multiple sources of uncertainty, and providing interpretable insights are essential for navigating the uncertain future of Alpine fire regimes under climate change.
 
 \section{Study Area}
 
@@ -89,50 +102,72 @@ Bolzano Province (46°--47°N, 10°--12°E) in the Eastern Italian Alps encompas
 
 The study period (1999--2025) encompasses 998 wildfire events recorded by the Bolzano Forest Service Department. This period includes the major 2018 Vaia windstorm that caused extensive windthrow (6 million m$^3$), followed by bark beetle outbreaks affecting 15\% of spruce forests, potentially altering fire regimes in the region.
 
-\section{Data and Methods}
+\section{Methodology}
 
-\subsection{Data Sources}
+\subsection{Bayesian Model with Attention Mechanism}
 
-\subsubsection{Wildfire Inventory}
-The wildfire database from the Bolzano Forest Service contains 998 fire events (1999--2025) with ignition locations ($\pm$50m), dates ($\pm$1 day), burned area, and fire cause when known.
+\subsubsection{Training Data}
 
-\subsubsection{Meteorological Data}
-Daily temperature (T) and precipitation (P) from 1999--2025 were obtained from a network of weather stations and spatially interpolated to 50m resolution using elevation-dependent kriging.
+The wildfire database from the Bolzano Forest Service contains 998 fire events (1999--2025) with ignition locations ($\pm$50m), dates ($\pm$1 day), burned area, and fire cause when known. Daily temperature (T) and precipitation (P) from 1999--2025 were obtained from a network of weather stations and spatially interpolated to 50m resolution using elevation-dependent kriging. Topographic variables (elevation, slope, aspect, terrain ruggedness index, northness, eastness) were derived from NASA DEM (10m). Land cover data from Corine Land Cover (2018) were converted to an ordinal fire risk scale (0--5). Additional variables included tree cover density, walking time to buildings and infrastructure, distance to roads, and a flammability index.
 
-\subsubsection{Lightning Data}
-Daily lightning flash density rasters (2012--2025) at 50m resolution were provided by the South Tyrolean Civil Protection Agency. The detection network has an accuracy of $\pm$12\% with spatial interpolation uncertainty of $\pm$15\% in complex terrain.
+For each fire event and a stratified random sample of non-fire control points (1:10 ratio), we extracted spatiotemporal data cubes with 32×32 pixel windows centered on the location and a 60-day lookback period for dynamic variables. This resulted in spatiotemporal data cubes stored in NetCDF format for efficient processing.
 
-\subsubsection{Static Variables}
-Topographic variables (elevation, slope, aspect, terrain ruggedness index, northness, eastness) were derived from NASA DEM (10m). Land cover data from Corine Land Cover (2018) were converted to an ordinal fire risk scale (0--5). Additional variables included tree cover density, walking time to buildings and infrastructure, distance to roads, and a flammability index.
+\subsubsection{Model Architecture and Workflow}
 
-\subsection{Spatiotemporal Data Cube Construction}
+Figure \ref{fig:workflow_method} shows the complete modeling workflow from data inputs through the Bayesian framework to final outputs.
 
-For each fire event and a stratified random sample of non-fire control points (1:10 ratio), we extracted:
+\begin{figure}[H]
+\centering
+\tikzstyle{data} = [rectangle, rounded corners, draw=black, fill=gray!15,
+                    text width=3.5cm, minimum height=1cm, text centered]
+\tikzstyle{process} = [rectangle, draw=black, fill=blue!10,
+                       text width=4cm, minimum height=1cm, text centered]
+\tikzstyle{output} = [rectangle, draw=black, fill=green!15,
+                      text width=3.5cm, minimum height=1cm, text centered]
+\tikzstyle{arrow} = [thick, -{Latex[length=3mm, width=2mm]}]
 
-\begin{itemize}
-    \item \textbf{Spatial context}: 32×32 pixel windows centered on the location
-    \item \textbf{Temporal context}: 60-day lookback period for dynamic variables
-    \item \textbf{Static features}: Topographic and land cover characteristics
-    \item \textbf{Dynamic features}: Temperature and precipitation time series
-    \item \textbf{Lightning features} (where available): Flash density aggregated at 1, 3, 5, 10, 15, 30, and 60-day windows
-\end{itemize}
+\begin{tikzpicture}[node distance=1.5cm]
 
-This resulted in spatiotemporal data cubes stored in NetCDF format for efficient processing.
+    % Inputs
+    \node (input1) [data] {Meteorological Data \\ (precipitation, temperature)};
+    \node (input2) [data, below=of input1] {Lightning Data \\ (flash density, 2012--2025)};
+    \node (input3) [data, below=of input2] {Topographic \& Land Cover \\ (DEM, vegetation, roads)};
+    \node (input4) [data, below=of input3] {Wildfire Inventory \\ (998 events, 1999--2025)};
 
-\subsection{Feature Engineering}
+    % Pre-processing
+    \node (preproc) [process, right=3.5cm of input2.east] {Spatiotemporal Datacube \\ \small (32×32 pixels, 60-day lookback)};
 
-\subsubsection{Static Features}
-For each location, static variables were aggregated over a 4×4 pixel central window using spatial mean, resulting in 12 static features representing topography, vegetation, and human accessibility.
+    % Feature engineering
+    \node (features) [process, below=of preproc] {Feature Engineering \\ \small (static, temporal, attention groups)};
 
-\subsubsection{Dynamic Features}
-Temperature and precipitation were aggregated over multiple temporal windows (1, 3, 5, 10, 15, 30, 60 days) using both cumulative mean and cumulative maximum operators, creating rich temporal signatures of weather conditions leading up to each observation.
+    % Modelling step
+    \node (model) [process, right=3.5cm of preproc] {Bayesian Hierarchical Model \\ \small (attention mechanism, MCMC)};
 
-\subsubsection{Lightning Features}
-Lightning flash density was aggregated analogously to weather variables, with features grouped into temporal categories: immediate (1d), short-term (3--5d), medium-term (10--15d), and long-term (30--60d).
+    % Parameters
+    \node (param) [data, above=of model] {Priors \& Hyperparameters \\ \small (weakly informative)};
 
-\subsection{Bayesian Hierarchical Model}
+    % Outputs
+    \node (output1) [output, right=3.5cm of model] {Relative Probability \\ (posterior distributions)};
+    \node (output2) [output, below=of output1] {Uncertainty Estimates \\ (credible intervals)};
+    \node (output3) [output, below=of output2] {Feature Importance \\ (attention weights)};
 
-\subsubsection{Model Architecture}
+    % Arrows
+    \draw [arrow] (input1) -- (preproc);
+    \draw [arrow] (input2) -- (preproc);
+    \draw [arrow] (input3) -- (preproc);
+    \draw [arrow] (input4) -- (preproc);
+    \draw [arrow] (preproc) -- (features);
+    \draw [arrow] (features) -- (model);
+    \draw [arrow] (param) -- (model);
+    \draw [arrow] (model) -- (output1);
+    \draw [arrow] (model) -- (output2);
+    \draw [arrow] (model) -- (output3);
+
+\end{tikzpicture}
+
+\caption{Complete modeling workflow from raw data to outputs. The Bayesian hierarchical model with attention mechanism takes spatiotemporal datacubes and produces relative probability estimates with full uncertainty quantification.}
+\label{fig:workflow_method}
+\end{figure}
 
 We implemented a Bayesian logistic regression model with a hierarchical attention mechanism to automatically learn feature group importance:
 
@@ -148,6 +183,8 @@ where $y_i$ indicates fire occurrence, $p_i$ is the probability, $\alpha$ is the
 
 \subsubsection{Feature Groups and Attention Mechanism}
 
+Static variables were aggregated over a 4×4 pixel central window using spatial mean, resulting in 12 static features representing topography, vegetation, and human accessibility. Temperature and precipitation were aggregated over multiple temporal windows (1, 3, 5, 10, 15, 30, 60 days) using both cumulative mean and cumulative maximum operators, creating rich temporal signatures of weather conditions leading up to each observation.
+
 Features were organized into interpretable groups:
 \begin{itemize}
     \item \textbf{Temperature}: 1-day, short-term (3--5d), medium-term (10--15d), 30-day, 60-day
@@ -161,8 +198,6 @@ Attention weights were modeled with a Dirichlet prior to ensure they sum to 1:
 \mathbf{w} = (w_1, ..., w_G) \sim \text{Dirichlet}(\mathbf{1})
 \end{equation}
 
-\subsubsection{Priors}
-
 We used weakly informative priors:
 \begin{align}
 \alpha &\sim \text{Normal}(\text{logit}(0.01), 2) \\
@@ -170,46 +205,38 @@ We used weakly informative priors:
 \sigma_g &\sim \text{HalfCauchy}(1)
 \end{align}
 
-\subsubsection{Implementation}
+Models were implemented in PyMC v5.10 with NUTS sampling: 2000 posterior draws per chain, 1000 tuning steps, 4 independent chains, target acceptance rate 0.99, convergence criteria $\hat{R} < 1.01$ and ESS $>$ 400.
 
-Models were implemented in PyMC v5.10 with NUTS sampling:
-\begin{itemize}
-    \item 2000 posterior draws per chain
-    \item 1000 tuning steps
-    \item 4 independent chains
-    \item Target acceptance rate: 0.99
-    \item Convergence criteria: $\hat{R} < 1.01$, ESS $>$ 400
-\end{itemize}
+\subsection{Addition of Lightning to the Model}
 
-\subsection{Model Comparison Strategy}
+\subsubsection{Data Provenance}
 
-We trained two models:
-\begin{enumerate}
-    \item \textbf{Baseline (T+P)}: Temperature and precipitation only, trained on full period 1999--2025 (911 samples)
-    \item \textbf{Lightning (T+P+L)}: Temperature, precipitation, and lightning, trained on 2012--2025 when lightning data available (467 samples)
-\end{enumerate}
+Daily lightning flash density rasters (2012--2025) at 50m resolution were provided by the South Tyrolean Civil Protection Agency. The detection network has an accuracy of $\pm$12\% with spatial interpolation uncertainty of $\pm$15\% in complex terrain. Lightning data coverage is limited to 2012--2025, constraining the analysis period for the lightning-enhanced model.
 
-For fair comparison, we filtered both models' test sets to the overlapping period (2012--2025) and recomputed all metrics on identical time periods.
+\subsubsection{Training Data}
 
-\subsection{Evaluation Metrics}
+For the lightning model, we used the subset of fire events from 2012--2025 when lightning data were available (467 samples), maintaining the same 1:10 fire to non-fire ratio. The baseline model without lightning was trained on the full 1999--2025 period (911 samples). For fair comparison, both models' test sets were filtered to the overlapping 2012--2025 period and all metrics recomputed on identical time periods.
 
-\subsubsection{Discrimination Performance}
-\begin{itemize}
-    \item ROC-AUC: Area under receiver operating characteristic curve
-    \item PR-AUC: Area under precision-recall curve
-\end{itemize}
+\subsubsection{How Lightning is Included in the Model}
 
-\subsubsection{Temporal Validation}
-\begin{itemize}
-    \item Monthly aggregation: Spearman correlation between predicted and actual fire counts
-    \item Seasonal aggregation: Same, aggregated to Spring/Summer/Fall/Winter
-\end{itemize}
+Lightning flash density was aggregated analogously to meteorological variables, with features grouped into temporal categories: immediate (1d), short-term (3--5d), medium-term (10--15d), and long-term (30--60d). Each temporal window aggregates flash density using cumulative mean and maximum operators over the 60-day lookback period. These lightning features were added as an additional feature group in the attention mechanism, allowing the model to automatically learn the relative importance of lightning compared to temperature, precipitation, and static features.
 
-\subsubsection{Calibration}
-\begin{itemize}
-    \item Calibration plots comparing predicted probabilities to observed frequencies
-    \item Lift curves showing model effectiveness across risk percentiles
-\end{itemize}
+\subsection{Climate Projections}
+
+\subsubsection{Data Provenance}
+
+Climate projections were obtained from the EURO-CORDEX ensemble for RCP4.5 and RCP8.5 scenarios. We used 10 ensemble members per scenario, providing daily temperature and precipitation from 2006--2100 at 12km resolution, downscaled to 50m using the same elevation-dependent kriging approach as historical data. Figure \ref{fig:historical_ensemble} shows the historical baseline (1999--2025) compared to the ensemble member spread for the Bolzano region.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../output/04_Zone_Climate_Projections/historical_vs_ensemble_members_bolzano.png}
+\caption{Historical climate baseline (1999--2025) compared to climate ensemble member projections for the Bolzano region. The left panel shows temperature evolution and the right panel shows precipitation evolution. Gray shading represents the historical period, while colored lines show individual ensemble members projecting into the future under RCP8.5. The ensemble spread quantifies structural uncertainty in climate models.}
+\label{fig:historical_ensemble}
+\end{figure}
+
+\subsubsection{How the Bayesian Model is Used with Climate Ensemble Members}
+
+Rather than using quantiles which would break the physical consistency between temperature and precipitation, we applied the trained Bayesian model to each complete ensemble member separately. For each ensemble member, we reconstructed spatiotemporal data cubes for each fire brigade zone using projected temperature and precipitation while holding static variables constant. The model produces fire risk estimates (relative probability) for each zone, month, year, and ensemble member. This approach preserves the co-evolution of temperature and precipitation within each climate model realization, providing more physically consistent projections than quantile-based methods. Uncertainty in climate projections is captured by the spread across ensemble members, while prediction uncertainty comes from the Bayesian posterior distributions.
 
 \section{Results}
 
@@ -306,130 +333,191 @@ The learned attention weights reveal the relative importance of different featur
 
 In the lightning model, lightning features collectively received attention weights of 0.174 distributed across temporal windows: light\_60d (0.040), light\_1d (0.036), light\_medium (0.034), light\_30d (0.033), light\_short (0.031).
 
-\subsection{Climate Change Projections}
+\subsection{Climate Projections per Forestry Zones and Climate Ensemble}
 
-Using the baseline model, we projected future fire risk for Bolzano fire brigade zones under RCP4.5 and RCP8.5 climate scenarios through 2080. Figure \ref{fig:climate_maps} shows the spatial evolution of fire risk across the province.
+Using the baseline model, we projected future fire risk for Bolzano fire brigade zones under RCP4.5 and RCP8.5 climate scenarios through 2100 using the full ensemble of 10 climate models per scenario.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{../output/figures/climate_maps_spatial_evolution_pctl50.png}
-\caption{Spatial evolution of fire risk by fire brigade zone for August under median (50th percentile) climate scenario. Top row shows RCP4.5 and bottom row shows RCP8.5 projections for 2020, 2050, and 2080. Both scenarios show increasing risk over time, with RCP8.5 projecting substantially higher risk particularly in central and eastern zones. Color scale represents relative fire risk from low (yellow) to high (dark red).}
-\label{fig:climate_maps}
-\end{figure}
+\subsubsection{Zone-Specific Time Series}
 
-Figure \ref{fig:climate_drivers} shows fire risk evolution alongside the driving climate variables (temperature and precipitation) that generate these projections.
+Figure \ref{fig:timeseries_zones} shows fire risk evolution for five representative forestry zones (Predoi, Braies, Nova Ponente, Mazia, San Martino) across four critical fire seasons. Each subplot displays both RCP8.5 (solid lines) and RCP4.5 (dotted lines) ensemble means with shaded uncertainty bands representing one standard deviation across ensemble members.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_drivers_RCP45_all_quantiles.png}
-
-\vspace{0.5cm}
-
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_drivers_RCP85_all_quantiles.png}
-\caption{Climate drivers and fire risk evolution showing all climate quantiles (25th, 50th, 99th percentiles). Top: RCP4.5, Bottom: RCP8.5. Each figure shows three panels: (1) fire risk evolution for key zones (Bolzano, Merano, Bressanone, Brunico) with median lines and uncertainty bands (shaded areas show 25th-99th percentile range), (2) August mean temperature trends with uncertainty bands, and (3) August mean precipitation trends with uncertainty bands. Fire risk increases correlate with rising temperatures and declining precipitation, with RCP8.5 showing more extreme changes in all variables. Uncertainty bands demonstrate the range of possible climate futures and corresponding fire risk outcomes.}
-\label{fig:climate_drivers}
+\includegraphics[width=\textwidth]{../output/04_Zone_Climate_Projections/rcp85_ensemble_members/timeseries_top_zones_combined.png}
+\caption{Fire risk projections (2020--2100) for five forestry zones across four seasons. Each panel shows a different zone with color-coded seasons: Winter (blue), Spring (green), Summer (red), Fall (orange). Solid lines represent RCP8.5 ensemble mean, dotted lines represent RCP4.5 ensemble mean, and shaded regions show $\pm$1 standard deviation across ensemble members. The projections reveal substantial inter-zone and inter-seasonal variability, with generally increasing trends under RCP8.5 and more modest changes under RCP4.5. Uncertainty increases toward the end of the century as ensemble members diverge.}
+\label{fig:timeseries_zones}
 \end{figure}
 
-Figure \ref{fig:climate_change} maps the magnitude of projected risk change from present (2020) to future (2080).
+\subsubsection{Spatial Evolution of Worst-Case Scenarios}
+
+Figure \ref{fig:spatial_evolution} maps the spatial distribution of fire risk under the worst-case ensemble member (highest average risk across all zones) for each season and time period.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{../output/figures/climate_risk_change_pctl50.png}
-\caption{Percent change in fire risk from 2020 to 2080 under median (50th percentile) climate scenario. Left: RCP4.5, Right: RCP8.5. Color scale shows percentage increase (red) or decrease (blue). Under RCP4.5, the median zone experiences 14.4\% increase. Under RCP8.5, median increase is 43.2\%. Highest increases projected for mountain zones in northern areas.}
-\label{fig:climate_change}
+\includegraphics[width=\textwidth]{../output/04_Zone_Climate_Projections/rcp85_ensemble_members/spatial_evolution_worst_case_summary.png}
+\caption{Spatial evolution of fire risk under worst-case ensemble members for RCP8.5. Each row represents a season (Winter, Spring, Summer, Fall), and each column represents a decade (2020, 2050, 2080, 2100). Colors indicate mean fire risk from low (yellow) to high (dark red) on a consistent 0--0.6 scale. The worst-case scenarios show progressive intensification of fire risk across most zones, with particularly dramatic increases in Summer and Fall by 2100. Spatial patterns reveal elevation-dependent responses, with higher-elevation zones in the north showing stronger risk increases than valley zones.}
+\label{fig:spatial_evolution}
 \end{figure}
+
+\subsubsection{Ensemble Spread Analysis}
+
+Figure \ref{fig:ensemble_spread} quantifies the spread and agreement across all 10 ensemble members for each season.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../output/04_Zone_Climate_Projections/rcp85_ensemble_members/timeseries_ensemble_spread_all_seasons.png}
+\caption{Ensemble spread across all zones for four seasons under RCP8.5. Each thin gray line represents the province-averaged fire risk from one ensemble member. The thick solid line shows the ensemble mean. The shaded band represents $\pm$1 standard deviation. This visualization reveals the structural uncertainty in climate projections: some ensemble members project substantially higher fire risk than others. Summer and Fall show the highest absolute risk levels and greatest ensemble spread, indicating both high hazard and high uncertainty. The divergence of ensemble members increases dramatically after 2060, emphasizing the importance of considering multiple climate realizations in long-term planning.}
+\label{fig:ensemble_spread}
+\end{figure}
+
+\subsubsection{Minimum, Mean, and Maximum Zone Risk Evolution}
+
+Figure \ref{fig:min_mean_max} compares fire risk evolution for zones with extreme risk changes (maximum and minimum average change from 2020 to 2100) alongside the worst-case ensemble member.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../output/04_Zone_Climate_Projections/rcp85_ensemble_members/timeseries_ensemble_min_mean_max.png}
+\caption{Comparison of extreme zone trajectories and ensemble scenarios. Each panel shows a season. The RCP8.5 Mean (solid dark blue) shows province-averaged risk, while RCP8.5 Max and Min lines show zones with maximum and minimum average risk change (2020$\to$2100), with zone names in the legend. The RCP8.5 Worst Ensemble (solid orange) shows the ensemble member with highest average risk. RCP4.5 equivalents are shown as dotted lines in matching colors. This reveals substantial spatial heterogeneity: some zones may experience risk decreases while others see dramatic increases. The worst-case ensemble member consistently projects higher risk than the ensemble mean, highlighting the value of considering extreme scenarios in risk management planning. Zone names reveal geographic patterns, with northern mountain zones (e.g., Predoi, Braies) often showing different trajectories than southern or valley zones.}
+\label{fig:min_mean_max}
+\end{figure}
+
+\subsubsection{Ensemble Summary Statistics}
+
+Table \ref{tab:ensemble_stats} provides quantitative summary statistics for province-averaged fire risk under RCP8.5 across all ensemble members and seasons.
+
+\begin{table}[H]
+\centering
+\caption{Province-averaged fire risk statistics across 10 ensemble members under RCP8.5}
+\label{tab:ensemble_stats}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Season} & \textbf{Year} & \textbf{Mean} & \textbf{Std Dev} & \textbf{Ensemble} & \textbf{Relative} \\
+ &  & \textbf{Risk} &  & \textbf{Spread} & \textbf{Uncertainty} \\
+\midrule
+Winter & 2020 & 0.135 & 0.040 & 0.020 & 14.5\% \\
+Winter & 2050 & 0.131 & 0.053 & 0.039 & 29.7\% \\
+Winter & 2100 & 0.196 & 0.063 & 0.051 & 25.7\% \\
+Spring & 2020 & 0.124 & 0.046 & 0.035 & 28.1\% \\
+Spring & 2050 & 0.148 & 0.045 & 0.032 & 21.6\% \\
+Spring & 2100 & 0.111 & 0.074 & 0.069 & 62.2\% \\
+Summer & 2020 & 0.145 & 0.098 & 0.078 & 54.0\% \\
+Summer & 2050 & 0.144 & 0.094 & 0.073 & 50.6\% \\
+Summer & 2100 & 0.188 & 0.106 & 0.075 & 40.1\% \\
+Fall & 2020 & 0.222 & 0.088 & 0.049 & 22.1\% \\
+Fall & 2050 & 0.277 & 0.092 & 0.067 & 24.3\% \\
+Fall & 2100 & 0.280 & 0.106 & 0.076 & 27.1\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The table reveals several key patterns: (1) Fall consistently shows the highest absolute fire risk across all time periods, (2) relative uncertainty (ensemble spread divided by mean risk) varies substantially by season and time period, exceeding 60\% for Spring 2100, (3) ensemble spread generally increases from 2020 to 2100 as climate models diverge, and (4) Summer exhibits the highest absolute uncertainty (standard deviation) due to its high variability across both zones and ensemble members.
 
 \section{Discussion}
 
-\subsection{Complementary Model Strengths}
+\subsection{Feature Importance and Group Importance}
 
-Our results reveal an interesting trade-off between temporal fidelity and spatial discrimination. The lightning-enhanced model dramatically improved temporal pattern prediction (+56\% seasonal R$^2$), making it ideal for applications requiring accurate forecasting of when fires are likely to occur---such as seasonal resource allocation, staffing decisions, and early warning systems.
+The attention mechanism in our Bayesian framework provides interpretable insights into which feature groups drive wildfire risk predictions. In the baseline model, long-term precipitation windows dominate (60-day: 21.8\%, 30-day: 14.3\%), followed by long-term temperature (60-day: 13.0\%) and static vegetation features (10.0\%). This hierarchy reveals that Alpine wildfire risk is primarily driven by cumulative moisture deficits over monthly timescales rather than short-term weather fluctuations.
 
-Conversely, the baseline model maintained slightly better sample-level discrimination (+4\% ROC-AUC), suggesting advantages for applications focused on identifying high-risk locations at any given time---such as spatial prioritization of fuel treatments or infrastructure protection.
+In the lightning-enhanced model, the attention structure shifts: lightning features collectively receive 17.4\% of total attention, distributed across temporal windows with the 60-day window receiving 4.0\% alone. This substantial collective importance demonstrates that lightning contributes not only through direct ignition but also as a proxy for atmospheric conditions conducive to fire activity. The retention of long-term precipitation and temperature as top features (precip\_60d: 17.4\%, temp\_60d: 10.9\%) confirms that moisture deficits remain fundamental drivers even when lightning is included.
 
-This finding has important operational implications: the optimal model choice depends on the primary management objective. For temporal forecasting (when), integrate lightning data. For spatial mapping (where), the simpler baseline may suffice or even outperform.
+The hierarchical attention mechanism successfully addresses collinearity issues common in fire risk models: by grouping temporally correlated features and learning group-level weights, the model avoids instability while maintaining interpretability.
 
-\subsection{Mechanisms of Lightning Contribution}
+\subsection{Uncertainty Quantification}
 
-The strong improvement in temporal fit with lightning data likely reflects several mechanisms:
+The Bayesian framework provides comprehensive uncertainty quantification at multiple levels. At the sample level, posterior predictive distributions yield credible intervals for individual fire risk predictions, enabling probabilistic statements like "this location has 75\% probability of fire risk exceeding 0.3." The calibration plots (Figure \ref{fig:performance_validation}) confirm that these probabilities are well-calibrated: predicted probabilities match observed frequencies across the risk spectrum.
+
+For climate projections, uncertainty emerges from two distinct sources: (1) \textit{climate model uncertainty}, captured by the spread across the 10 ensemble members, and (2) \textit{prediction uncertainty}, captured by Bayesian posterior distributions. The ensemble summary statistics (Table \ref{tab:ensemble_stats}) quantify this uncertainty: relative uncertainty ranges from 14.5\% (Winter 2020) to 62.2\% (Spring 2100), with uncertainty generally increasing toward the end of the century as ensemble members diverge. This quantification is essential for risk management: decision-makers can assess whether uncertainty is acceptable or whether additional scenario planning is warranted.
+
+\subsection{Effect of Lightning on Model Performance}
+
+Adding lightning data produces a nuanced impact on model performance with complementary trade-offs. At the sample level, the lightning model shows slightly reduced discrimination performance: ROC-AUC decreases from 0.836 to 0.805 (-3.7\%) and PR-AUC from 0.654 to 0.516 (-21.1\%). This trade-off likely reflects overfitting to the shorter training period (2012--2025, 467 samples) compared to the baseline's longer period (1999--2025, 911 samples), despite Bayesian regularization.
+
+However, this sample-level reduction is offset by dramatic improvements in temporal pattern recognition, as discussed below. The optimal model choice therefore depends on the primary management objective: spatial risk mapping may favor the baseline model, while temporal forecasting strongly benefits from lightning integration.
+
+\subsection{Effect of Lightning on Temporal Accuracy}
+
+The lightning-enhanced model achieves transformative improvements in temporal fidelity. Monthly correlation (Spearman R$^2$) increases from 0.769 to 0.927 (+20.5\%), and seasonal correlation from 0.640 to 1.000 (+56.3\%). This near-perfect seasonal fit (Figure \ref{fig:temporal_validation}) enables confident seasonal forecasting months in advance---a critical capability for resource allocation and strategic planning.
+
+The mechanisms behind this improvement are multifaceted: (1) \textit{direct ignition} by lightning creates sharp temporal signals, particularly in Summer when convective activity peaks, (2) \textit{atmospheric proxy}: lightning density correlates with atmospheric instability, low humidity, and other fire-conducive conditions, and (3) \textit{elevation effects}: at high elevations where human access is limited, lightning becomes the dominant ignition source, and capturing this process dramatically improves temporal patterns.
+
+The attention weights reveal that lightning's contribution is distributed across temporal windows, with substantial weight on the 60-day aggregation (4.0\%), suggesting that cumulative lightning activity over monthly timescales predicts fire risk better than immediate strikes alone. This finding supports the atmospheric proxy hypothesis: lightning tracks prolonged dry, unstable atmospheric conditions rather than just providing point ignitions.
+
+\subsection{Climate Projections: Disparate Results Across Regions and Ensemble Members}
+
+The climate projections reveal substantial heterogeneity across both geographic zones and ensemble members. Spatially, the worst-case scenarios (Figure \ref{fig:spatial_evolution}) show that northern mountain zones experience stronger risk increases than valley zones, likely reflecting elevation-dependent temperature amplification and shifting precipitation patterns. Zone-specific trajectories (Figure \ref{fig:timeseries_zones}) confirm this heterogeneity: some zones show monotonic risk increases while others exhibit non-linear patterns or even decreases in certain seasons.
+
+Across ensemble members, the spread quantifies irreducible structural uncertainty in climate models. The ensemble spread analysis (Figure \ref{fig:ensemble_spread}) shows individual members diverging dramatically after 2060, with some projecting fire risk increases exceeding 100\% while others project modest changes. This divergence is most pronounced in Summer and Fall, the seasons with highest absolute fire activity. The worst-case ensemble member consistently projects 20--40\% higher risk than the ensemble mean (Figure \ref{fig:min_mean_max}), underscoring the importance of considering extreme scenarios in risk planning.
+
+\subsection{Overall Risk Increase and Consequences for the Province}
+
+Under RCP8.5, province-averaged fire risk shows substantial increases across most seasons. Fall risk increases from 0.222 (2020) to 0.280 (2100) (+26\%), Summer from 0.145 to 0.188 (+30\%), and Winter from 0.135 to 0.196 (+45\%). Spring shows higher variability with no clear trend. The ensemble spread indicates that increases could range from near-zero in optimistic realizations to +60--80\% in pessimistic realizations.
+
+For Bolzano's forestry department and civil protection agencies, these projections have several operational implications:
 
 \begin{enumerate}
-    \item \textbf{Direct ignition}: Lightning provides immediate ignition sources, creating sharp temporal signals
-    \item \textbf{Seasonal proxy}: Lightning activity correlates with convective weather patterns that also promote fire spread
-    \item \textbf{Elevation effects}: Lightning is particularly important at higher elevations where human ignitions are rare
+    \item \textbf{Extended fire season}: Increasing Winter and Fall risk suggests fire activity spreading into traditionally low-risk months, requiring year-round rather than seasonal preparedness.
+    \item \textbf{Resource intensification}: The 26--45\% risk increases in Fall and Winter necessitate proportional increases in firefighting capacity, personnel training, and equipment for these seasons.
+    \item \textbf{Spatial prioritization}: The heterogeneous spatial patterns (Figure \ref{fig:spatial_evolution}) enable targeted investments in high-risk zones, particularly northern mountain areas showing steep increases.
+    \item \textbf{Uncertainty management}: The large ensemble spread (up to 62\% relative uncertainty) necessitates adaptive management strategies that can respond to emerging climate trends rather than fixed long-term plans.
+    \item \textbf{Prevention focus}: With risk increases driven primarily by climatic factors beyond local control, emphasis should shift toward fuel management, ignition prevention, and community preparedness.
 \end{enumerate}
 
-The attention weights show lightning features collectively receiving substantial importance (17.4\% total), particularly at longer temporal windows (60-day: 4\%), suggesting cumulative effects rather than just immediate ignition.
+\subsection{Limitations}
 
-\subsection{Bayesian Framework Advantages}
+\subsubsection{Data and Model Limitations}
 
-The Bayesian approach provided several key advantages over traditional machine learning:
+Several important factors are absent from our analysis:
 
-\begin{enumerate}
-    \item \textbf{Uncertainty quantification}: Full posterior distributions enable probabilistic risk statements
-    \item \textbf{Interpretability}: Hierarchical structure with attention weights reveals which features drive predictions
-    \item \textbf{Calibration}: Posterior predictive checks ensure well-calibrated probability estimates
-    \item \textbf{Small sample robustness}: Regularization via priors prevents overfitting despite limited lightning-era data (467 samples)
-\end{enumerate}
-
-\subsection{Operational Implications}
-
-\subsubsection{Seasonal Planning}
-The lightning model's near-perfect seasonal correlation (R$^2$=1.00) enables confident planning of seasonal resource allocation, staffing levels, and fuel treatment schedules months in advance.
-
-\subsubsection{Early Warning Systems}
-Real-time lightning detection integrated with the model could provide 24--48 hour fire risk forecasts with quantified uncertainty, allowing managers to adjust response levels and public communications.
-
-\subsubsection{Resource Allocation}
-The complementary strengths suggest a two-model approach: use lightning model for temporal forecasting and baseline model for spatial prioritization within forecast periods.
-
-\subsection{Limitations and Future Directions}
-
-\subsubsection{Data Limitations}
 \begin{itemize}
-    \item Lightning data limited to 2012--2025, preventing analysis of longer-term trends
-    \item Spatial resolution (50m) may miss fine-scale fuel-topography interactions
-    \item Human ignition patterns remain incompletely characterized
+    \item \textbf{Wind}: Wind speed and direction strongly influence fire spread and intensity but were unavailable at sufficient spatial-temporal resolution. Future models should integrate wind fields from numerical weather prediction systems.
+    \item \textbf{Lightning projections}: Climate projections include only temperature and precipitation, not lightning. Lightning activity may change under future climates (potentially increasing with atmospheric instability), but we assume constant lightning-climate relationships. Future work should couple lightning projections if they become available.
+    \item \textbf{Vegetation dynamics}: We hold land cover constant, ignoring potential shifts in species composition, forest die-offs from drought/beetles, or management responses. Long-term projections should integrate dynamic vegetation models.
+    \item \textbf{Human factors}: Human ignition patterns may change with population shifts, land use changes, or behavioral adaptations to climate change. Our projections assume constant human activity patterns.
+    \item \textbf{Spatial resolution}: 50m resolution may miss fine-scale topographic effects on microclimate and fire spread. Higher resolution data would improve local-scale predictions.
 \end{itemize}
 
-\subsubsection{Model Limitations}
-\begin{itemize}
-    \item Trade-off between temporal and spatial performance not fully understood mechanistically
-    \item Relative probability outputs require additional calibration for absolute fire count prediction
-    \item Climate projection uncertainty not fully propagated through the modeling chain
-\end{itemize}
+\subsubsection{Model Structure Limitations}
 
-\subsubsection{Future Research}
-\begin{enumerate}
-    \item Extend lightning records through historical reconstruction or proxy data
-    \item Develop hybrid models that optimize both temporal and spatial performance
-    \item Integrate elevation-specific models given strong lightning-elevation relationships
-    \item Couple fire-vegetation feedback for long-term projections
-    \item Implement real-time operational systems with continuous model updating
-\end{enumerate}
+\begin{itemize}
+    \item The trade-off between temporal and spatial performance is not fully understood mechanistically. Hybrid architectures may overcome this limitation.
+    \item Relative probability outputs provide risk rankings but require additional calibration to predict absolute fire counts, limiting operational utility for resource dimensioning.
+    \item The model assumes stationarity in fire-climate relationships, which may not hold as climate moves beyond historical ranges or vegetation communities shift.
+\end{itemize}
 
 \section{Conclusions}
 
-This study demonstrates that integrating lightning flash density data into Bayesian wildfire models substantially improves temporal prediction in Alpine environments, with monthly R$^2$ increasing from 0.77 to 0.93 and seasonal R$^2$ from 0.64 to 1.00. This enhancement comes with a minor trade-off in sample-level discrimination performance, revealing complementary strengths of the two modeling approaches.
+This study demonstrates three key innovations in Alpine wildfire risk prediction: (1) a transparent Bayesian model with a hierarchical attention mechanism that quantifies uncertainty and learns interpretable feature importance without collinearity issues, (2) a rigorous comparative analysis showing that lightning integration dramatically improves temporal accuracy (+56\% seasonal R$^2$) with trade-offs in spatial discrimination, and (3) ensemble-based climate projections through 2100 revealing heterogeneous fire risk trajectories across forestry zones under RCP4.5 and RCP8.5 scenarios.
 
-Key findings include:
+\subsection{Key Findings}
+
+\textbf{Bayesian attention mechanism}: The hierarchical model successfully learns interpretable feature importance while avoiding collinearity problems common in fire risk models. Long-term moisture deficits (precipitation and temperature over 30--60 days) emerge as primary drivers, with static vegetation features and topography playing supporting roles. The attention weights provide transparent insights into model reasoning, essential for operational acceptance.
+
+\textbf{Lightning contribution}: Integrating lightning data transforms temporal prediction capability. Monthly correlation increases from 0.769 to 0.927 (+20.5\%) and seasonal correlation from 0.640 to 1.000 (+56.3\%), enabling near-perfect seasonal forecasting. However, sample-level discrimination shows a small decrease (ROC-AUC: 0.836 $\to$ 0.805, -3.7\%), revealing complementary strengths: lightning excels at temporal forecasting (\textit{when} fires occur), while the baseline model marginally outperforms at spatial discrimination (\textit{where} fires occur). This finding has critical operational implications: model choice should align with primary management objectives.
+
+\textbf{Climate projections}: Under RCP8.5, province-averaged fire risk increases substantially by 2100: Fall +26\%, Summer +30\%, Winter +45\%. However, projections show marked spatial heterogeneity, with northern mountain zones experiencing stronger increases than valley zones. Ensemble spread quantifies irreducible uncertainty, ranging from 14.5\% to 62.2\% relative uncertainty depending on season and time period. The worst-case ensemble member consistently projects 20--40\% higher risk than the ensemble mean, underscoring the importance of considering extreme scenarios in long-term planning.
+
+\subsection{Implications for Fire Management}
+
+For Bolzano's forestry department and civil protection agencies, these results support several strategic directions:
 
 \begin{enumerate}
-    \item \textbf{Lightning dramatically improves temporal fidelity} while maintaining reasonable spatial discrimination, making it valuable for seasonal forecasting and resource planning
-    \item \textbf{Model choice depends on management objectives}: temporal forecasting favors lightning integration, spatial mapping may favor baseline approach
-    \item \textbf{Bayesian framework provides essential uncertainty quantification} enabling risk-aware decision making
-    \item \textbf{Attention mechanism reveals interpretable feature importance} showing precipitation (60-day), temperature (60-day), and lightning (collective) as key drivers
+    \item \textbf{Dual-model operational system}: Deploy lightning-enhanced model for seasonal forecasting and resource planning (4--6 months ahead), and baseline model for daily spatial risk mapping. This exploits complementary strengths.
+    \item \textbf{Extended fire season preparedness}: Increasing Winter and Fall risk necessitates year-round rather than seasonal firefighting capacity, with proportional resource increases (26--45\%) for traditionally low-risk months.
+    \item \textbf{Spatially targeted investments}: The heterogeneous spatial patterns enable focused investments in high-risk zones (northern mountain areas) rather than uniform provincial responses.
+    \item \textbf{Adaptive management under uncertainty}: The large ensemble spread (up to 62\%) necessitates flexible strategies that can adapt to emerging climate trends rather than fixed multi-decade plans. Regular model updating with new observations will refine projections.
+    \item \textbf{Prevention emphasis}: With climate-driven risk increases beyond local control, priority should shift toward fuel management (prescribed burns, mechanical treatments), ignition prevention (lightning rod systems in high-risk zones), and community fire resilience programs.
 \end{enumerate}
 
-Management implications:
-\begin{itemize}
-    \item Implement lightning-aware early warning systems for temporal forecasting
-    \item Consider two-model approach: lightning for temporal, baseline for spatial prioritization
-    \item Use uncertainty estimates for scenario planning and risk communication
-    \item Expand lightning detection networks given demonstrated predictive value
-\end{itemize}
+\subsection{Broader Context}
 
-As Alpine fire regimes continue evolving under climate change, probabilistic modeling frameworks that integrate diverse data streams and quantify uncertainty will become increasingly essential for sustainable forest management and civil protection in mountain environments.
+This work advances wildfire prediction science in mountain environments beyond previous studies by: (1) providing rigorous quantitative comparison of lightning's contribution rather than qualitative associations, (2) demonstrating that Bayesian frameworks yield well-calibrated uncertainty estimates essential for risk-aware decision making, (3) revealing the temporal-spatial performance trade-off when adding lightning, clarifying when lightning integration provides value, and (4) conducting ensemble-based projections that preserve physical consistency between climate variables rather than using quantile-based approaches.
+
+As Alpine fire regimes continue evolving under climate change, the modeling framework developed here---combining Bayesian uncertainty quantification, attention-based feature importance, and ensemble climate projections---provides a template for operational fire risk systems in other mountain regions globally. The transparent architecture and comprehensive uncertainty characterization enable the risk-aware, adaptive management approaches essential for navigating uncertain climate futures.
+
+\subsection{Future Research Directions}
+
+Mountain-specific fire research should prioritize: (1) extending lightning records through historical reconstruction or proxy data to analyze long-term trends, (2) integrating wind fields from numerical weather prediction systems, currently a major gap, (3) coupling dynamic vegetation models to capture forest composition shifts and disturbance legacies, (4) developing lightning projections under future climates to relax the stationarity assumption, and (5) implementing real-time operational systems with continuous model updating and performance monitoring. The transparent Bayesian framework developed here provides a foundation for these extensions.
 
 % Acknowledgments
 \section*{Acknowledgments}

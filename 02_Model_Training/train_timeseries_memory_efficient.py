@@ -55,8 +55,8 @@ LANDCOVER_FIRE_RISK_ORDINAL = {
 }
 
 # Paths
-NETCDF_PATH = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/01_Training_Data/spacetime_stacks.nc"
-ML_OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/Scripts/OUTPUT/02_Model_TimeSeries/"
+NETCDF_PATH = "/mnt/CEPH_PROJECTS/Firescape/output/01_Training_Data/spacetime_stacks.nc"
+ML_OUTPUT_DIR = "/mnt/CEPH_PROJECTS/Firescape/output/02_Model_TimeSeries/"
 os.makedirs(ML_OUTPUT_DIR, exist_ok=True)
 
 # Feature categories
