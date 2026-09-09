@@ -1,0 +1,53 @@
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+
+%-----------------------------------
+% Workflow figure
+%-----------------------------------
+\begin{figure}[ht!]
+    \centering
+    \tikzstyle{data} = [rectangle, rounded corners, draw=black, fill=gray!15, 
+                        text width=3.5cm, minimum height=1cm, text centered]
+    \tikzstyle{process} = [rectangle, draw=black, fill=blue!10, 
+                           text width=4cm, minimum height=1cm, text centered]
+    \tikzstyle{output} = [rectangle, draw=black, fill=green!15, 
+                          text width=3.5cm, minimum height=1cm, text centered]
+    \tikzstyle{arrow} = [thick, -{Latex[length=3mm, width=2mm]}]
+
+    \begin{tikzpicture}[node distance=1.5cm]
+
+        % Inputs
+        \node (input1) [data] {Meteorological Data \\ (precipitation, temperature)};
+        \node (input2) [data, below=of input1] {Topographic Data \\ (DEM, slope, aspect)};
+        \node (input3) [data, below=of input2] {Land Cover \& Soil Data \\ (vegetation, permeability)};
+
+        % Pre-processing
+        \node (preproc) [process, right=3.5cm of input2] {Data Harmonization \\ \small (resampling, normalization, filtering)};
+
+        % Modelling step
+        \node (model) [process, right=4cm of preproc] {Susceptibility / Hazard Model \\ \small (GAM, RF, PyMC - Bayesian inference)};
+
+        % Parameters
+        \node (param) [data, above=of model] {Model Parameters \\ \small (learning rate, priors, regularization)};
+
+        % Outputs
+        \node (output1) [output, right=4cm of model] {Hazard Probability Maps \\ (pixel / slope-unit scale)};
+        \node (output2) [output, below=of output1] {Uncertainty Quantification \\ (posterior distributions)};
+        \node (output3) [output, below=of output2] {Scenario Projections \\ (future climate forcing)};
+
+        % Arrows
+        \draw [arrow] (input1) -- (preproc);
+        \draw [arrow] (input2) -- (preproc);
+        \draw [arrow] (input3) -- (preproc);
+        \draw [arrow] (preproc) -- (model);
+        \draw [arrow] (param) -- (model);
+        \draw [arrow] (model) -- (output1);
+        \draw [arrow] (model) -- (output2);
+        \draw [arrow] (model) -- (output3);
+
+    \end{tikzpicture}
+
+    \caption{Overview of the modelling framework showing all inputs, pre-processing steps, parameterization, and outputs. The workflow integrates physical and statistical components to derive probabilistic hazard maps and quantify uncertainty.}
+    \label{fig:workflow}
+\end{figure}
+

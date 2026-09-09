@@ -1,0 +1,24 @@
+name: firescape-forestry
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - affine
+  - dask
+  - exactextract
+  - geopandas
+  - interpret
+  - joblib
+  - matplotlib
+  - numpy
+  - pandas
+  - pyarrow
+  - rasterio
+  - rioxarray
+  - scikit-learn
+  - scipy
+  - seaborn
+  - tqdm
+  - xarray
+  - netcdf4
+  - psutil

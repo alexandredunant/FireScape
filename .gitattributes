@@ -1,0 +1,5 @@
+report/figures/* linguist-generated=true
+report/*.pdf linguist-generated=true
+archive/** linguist-vendored=true
+*.png binary
+*.pdf binary

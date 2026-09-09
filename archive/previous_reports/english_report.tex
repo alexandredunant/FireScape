@@ -1,0 +1,156 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Page setup
+\geometry{
+    a4paper,
+    left=25mm,
+    right=25mm,
+    top=30mm,
+    bottom=30mm
+}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% Title information
+\title{\textbf{Wildfire Risk Prediction System for South Tyrol}\\
+\large Daily-Resolution Seasonal Risk Assessment}
+
+\author{
+    Firescape Project\\
+    Province of Bolzano -- South Tyrol
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report presents a daily-resolution fire risk prediction system for South Tyrol at 250m spatial resolution. An Explainable Boosting Machine (EBM) baseline model (without lightning data) trained on historical fire occurrence data was applied to meteorological variables from 2015--2024. The model generates predictions for individual days across the 10-year period, which are aggregated to produce seasonal risk maps. This daily prediction approach captures temporal variability that is lost when using seasonal climatological averages.
+\end{abstract}
+
+\section{Introduction}
+
+This analysis presents seasonal fire risk estimates for South Tyrol derived from a daily prediction modeling approach. Rather than calculating seasonal climatological means and making a single prediction per season, the model generates fire risk predictions for every individual day across the 2015--2024 period, then aggregates these daily predictions into seasonal statistics. The system operates at 250m spatial resolution using an Explainable Boosting Machine (baseline model without lightning) trained on historical fire occurrence records and environmental covariates.
+
+\section{Methodology}
+
+\subsection{Model and Features}
+
+The model uses an Explainable Boosting Machine (EBM) baseline configuration without lightning data (trained on 1999--2024 fire occurrence). Input features include daily meteorological variables (temperature T\_daily, precipitation P\_daily), drought indices (SPEI at 30-day and 90-day timescales), topographic features (elevation, slope, aspect, northness, eastness, terrain ruggedness index), vegetation characteristics (tree cover density, flammability index), accessibility metrics (walking time to buildings and electrical infrastructure, distance to roads), and temporal indicators (sine and cosine of day-of-year for seasonal encoding).
+
+\subsection{Daily Prediction Approach}
+
+The implemented approach generates fire risk predictions for each day in the 2015--2024 period, then aggregates these daily predictions into seasonal statistics (mean, standard deviation). This differs from a climatology-based approach where seasonal averages of meteorological variables are calculated first, followed by a single prediction per season. The daily approach preserves information about day-to-day variability, extreme events, and inter-annual trends that would otherwise be lost through pre-aggregation of input features.
+
+\subsection{Validation}
+
+Model performance was evaluated using temporal cross-validation with training on historical years and testing on held-out years to assess generalization to unseen time periods.
+
+\section{Results}
+
+\subsection{Seasonal Risk Maps}
+
+Figure~\ref{fig:maps} shows the spatial distribution of seasonal fire risk across South Tyrol derived from aggregating daily predictions across the 2015--2024 period.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{maps.png}
+    \caption{Seasonal fire risk maps at 250m resolution. Values represent mean daily fire probability aggregated across all days within each season (2015--2024).}
+    \label{fig:maps}
+\end{figure}
+
+\subsection{Model Performance Metrics}
+
+Figure~\ref{fig:metrics} summarizes model performance using ROC-AUC and precision-recall metrics across seasons.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{model_comparison_metrics.png}
+    \caption{Model performance metrics including ROC-AUC and precision-recall statistics by season.}
+    \label{fig:metrics}
+\end{figure}
+
+\subsection{Summer-Autumn Comparison}
+
+Figure~\ref{fig:summer_autumn} presents the comparison between summer and autumn seasonal risk patterns.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{summer_autumn.svg}
+    \caption{Summer and autumn seasonal risk comparison showing spatial patterns for the two highest-risk seasons.}
+    \label{fig:summer_autumn}
+\end{figure}
+
+\subsection{Temporal Validation}
+
+Figure~\ref{fig:temporal_validation} shows model performance across different validation periods and seasons.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{temporal_validation_by_season.png}
+    \caption{Temporal validation results showing model performance by season across different validation years.}
+    \label{fig:temporal_validation}
+\end{figure}
+
+\section{Technical Specifications}
+
+\begin{table}[H]
+\centering
+\caption{System specifications and data characteristics}
+\label{tab:specs}
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Spatial resolution & 250 m × 250 m \\
+Model training period & 1999--2024 (26 years) \\
+Prediction period & 2015--2024 (10 years) \\
+Daily predictions & $\sim$3,650 days × spatial grid \\
+Study area & Province of Bolzano, South Tyrol \\
+Model type & EBM baseline (without lightning) \\
+Validation approach & Temporal cross-validation \\
+Output format & Seasonal risk probabilities (0--1) \\
+Fire brigade zones & 125 operational zones \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Data Sources}
+
+\begin{itemize}
+    \item Fire occurrence: Provincial fire incident database for model training (1999--2024)
+    \item Meteorology: Daily temperature (T\_daily) and precipitation (P\_daily) from ERA5-Land reanalysis
+    \item Drought indices: SPEI-30 and SPEI-90 calculated from temperature and precipitation time series
+    \item Topography: EU-DEM derived features (elevation, slope, aspect, northness, eastness, TRI)
+    \item Vegetation: Tree cover density and flammability index
+    \item Infrastructure: Walking time to buildings and electrical infrastructure, distance to roads
+    \item Administrative boundaries: Fire brigade responsibility areas (125 zones)
+\end{itemize}
+
+\section{Summary}
+
+This analysis implemented a daily prediction approach for seasonal fire risk mapping in South Tyrol. The EBM baseline model (trained on 1999--2024 fire data, without lightning) was applied to daily meteorological data from 2015--2024, generating approximately 3,650 daily predictions. These were aggregated to seasonal statistics at 250m resolution. The daily approach preserves temporal variability information that would be lost through direct use of seasonal climatological averages.
+
+\end{document}
