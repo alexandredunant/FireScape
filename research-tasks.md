@@ -10,4 +10,5 @@ Objective: publish a focused, reviewable, and citable package for the forestry r
 - [x] Add license, citation metadata, environment, and release instructions.
 - [x] Validate the LaTeX build, Python syntax, metadata, links, and repository size.
 - [x] Initialize and commit the clean repository.
-- [ ] Publish `v1.0.0` and archive it on Zenodo (blocked until GitHub authentication and metadata confirmation).
+- [x] Publish GitHub release `v1.0.0` and attach the final PDF and checksums.
+- [ ] Archive `v1.0.0` on Zenodo and add the DOI (requires the repository owner to enable the Zenodo integration).

@@ -7,12 +7,13 @@ The report presents seasonal susceptibility maps at 250 m resolution. An Explain
 ## Read and cite
 
 - [Final report (PDF)](report/FireScape_forestry_report.pdf)
+- [Version 1.0.0 release](https://github.com/alexandredunant/FireScape/releases/tag/v1.0.0)
 - [LaTeX source](report/report.tex)
 - [Citation metadata](CITATION.cff)
 - [BibTeX entry](CITATION.bib)
 - [Release-file checksums](SHA256SUMS)
 
-Please cite a numbered release rather than the moving `main` branch. After the first GitHub release is archived on Zenodo, replace the repository URL in your citation with the release DOI.
+Please cite [version 1.0.0](https://github.com/alexandredunant/FireScape/releases/tag/v1.0.0) rather than the moving `main` branch. A Zenodo DOI will supersede the release URL once archival is enabled.
 
 ## Repository contents
 
@@ -63,13 +64,9 @@ make report
 
 ## Versioning and preservation
 
-The intended first release is `v1.0.0`. Before publishing it:
+Release `v1.0.0` is public and contains the final PDF plus its checksum manifest. The repository state that preceded this refocus is preserved on [`archive/legacy-firescape`](https://github.com/alexandredunant/FireScape/tree/archive/legacy-firescape).
 
-1. verify author/co-author and affiliation metadata in `CITATION.cff`;
-2. make the GitHub repository public;
-3. enable the repository in Zenodo;
-4. create the GitHub release from tag `v1.0.0`;
-5. add the assigned DOI to `CITATION.cff`, `CITATION.bib`, and this README in a follow-up release.
+To add a DOI, enable this repository in the Zenodo GitHub integration. After Zenodo ingests the release, add the assigned version DOI to `CITATION.cff`, `CITATION.bib`, and this README in a metadata-only follow-up release.
 
 ## License
 
