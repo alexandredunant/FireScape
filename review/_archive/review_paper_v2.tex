@@ -1,0 +1,470 @@
+\documentclass[11pt,a4paper]{article}
+
+% -------------------------------------------------------
+% Page layout and typography
+% -------------------------------------------------------
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+% -------------------------------------------------------
+% Tables, figures and maths
+% -------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{gensymb}
+
+% -------------------------------------------------------
+% TikZ figures
+% -------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{
+    arrows.meta,
+    positioning,
+    shapes.geometric,
+    shapes.misc,
+    calc,
+    fit,
+    backgrounds
+}
+
+% -------------------------------------------------------
+% References and links
+% -------------------------------------------------------
+\usepackage[round,authoryear]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+% -------------------------------------------------------
+% Metadata
+% -------------------------------------------------------
+\title{
+Wildfire as an Emerging Systemic Mountain Risk in the European Alps:\\
+Processes, Modelling Requirements and Cascading Impacts
+}
+
+\author{
+Author Name$^{1,*}$ \\
+\small $^{1}$Affiliation, Department, Institution, City, Country \\
+\small $^{*}$Corresponding author: email@domain.org
+}
+
+\date{}
+
+% -------------------------------------------------------
+% Begin document
+% -------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+\noindent
+Wildfire has been treated as a Mediterranean and lowland problem, and the European Alps have accordingly sat at the margin of European fire science. That position is no longer tenable. Fire activity in European mountains has migrated upslope by roughly 72\,m per decade since 2000, fire danger is projected to rise across the whole Alpine arc under every emissions pathway, and land abandonment has assembled a continuity of fuel on steep ground that was open pasture a century ago. This review synthesises evidence across climate, meteorology, fuels, fire behaviour, hazard modelling and governance, and argues that Alpine wildfire is not a scaled-down Mediterranean problem but a structurally different one. Alpine fires are small --- around 80\% burn less than a hectare --- yet they act on forests whose primary managed function is to hold rock, snow and sediment above fixed settlement and transport infrastructure, so that consequence is decoupled from burnt area. We show that the resulting damage pathway is a cascade: a fire alters soil and canopy over a window ranging from three years to, at subalpine elevations, effectively permanent; a subsequent moderate rainfall event then realises a geomorphic hazard at intensities below the pre-fire triggering threshold. We further show that the modelling apparatus inherited from lowland fire science omits, in a consistent direction, processes that add to Alpine hazard, while the Alpine observational record is too sparse to support the obvious remedy of added model complexity. Progress therefore depends on physically structured, parsimonious and locally calibrated models, on distinguishing mechanisms that can be imported from coefficients that must be refitted, and on making existing Alpine hazard infrastructure fire-aware rather than building a parallel one.
+\end{abstract}
+
+\noindent\textbf{Keywords:}
+wildfire; European Alps; mountain risk; fire regime change; post-fire geomorphic cascade; protection forest; fire danger modelling; multi-hazard risk assessment
+
+
+% =======================================================
+\section{Introduction}
+% =======================================================
+
+\subsection{An emerging fire frontier in temperate mountains}
+
+The geography of European fire science has followed the geography of burnt area. Because the Mediterranean basin accounts for most of the continent's burning, it has also supplied most of the continent's fire statistics, operational danger rating and prevention doctrine. Two developments are now unsettling that arrangement. The first is that the continental distribution of fire activity is shifting: burnt area has been declining in the Mediterranean while increasing in mid- and high-latitude regions where fuel is abundant and where plant communities carry little adaptation to fire \citep{miller_compounding_2025}. The second is that the shift has a vertical component. Across eight European mountain regions between 2000 and 2025, the median elevation of fires larger than 30\,ha rose from 910 to 1004\,m, the ninetieth percentile from 1353 to 1460\,m, and the ten largest annual fires from 1451 to 1777\,m, an upslope migration of approximately 72\,m per decade driven principally by vapour pressure deficit \citep{beloiu_climatedriven_2026}.
+
+Fire is therefore arriving in terrain where neither the science, the management apparatus, nor the exposed population has accumulated experience of it. The scale of the projected change is large relative to that baseline. Across the Alps, hazard probability is projected to increase by 15.5\% under SSP1-2.6 and by 35.4\% under SSP5-8.5, with the largest relative increases in the northern and eastern sectors rather than in the already fire-affected south-west \citep{gerberding_mapping_2025}. In adjacent central European landscapes, a regional large ensemble under RCP8.5 places the emergence of the forced fire-danger signal before 2050 in every subregion examined, and shifts present-day hundred-year fire weather to a ten-year recurrence by 2090 \citep{miller_climate_2024}. Both results describe a hazard moving from the anecdotal to the routine within the planning horizon of the institutions that would have to absorb it.
+
+\subsection{Why mountain fire is a distinct problem}
+
+Three features of mountain terrain prevent the Mediterranean toolkit from transferring cleanly.
+
+Terrain reorganises the atmosphere. The assumption of a continuous fire-weather field, interpolable from valley-floor stations, loses validity where upper winds interact with complex relief to produce discontinuous and locally amplified surface conditions \citep{sharples_overview_2009}. The magnitude of this effect has been quantified: atmospheric profiles capable of generating enhanced surface winds occurred in 6.5\% of cases over the least rugged terrain of a Tasmanian study domain but in 40.2\% over the most rugged, and fire simulations driven by surface winds alone degraded systematically as terrain complexity increased \citep{ozaki_impact_2022}.
+
+Terrain reorganises fire behaviour. Rate of spread accelerates non-linearly with upslope angle, roughly two and a half times between 20\degree{} and 30\degree{} in controlled experiments, with the dominant preheating mechanism switching from radiation to convection across that range and flame attachment appearing near 25--30\degree{} in confined geometries \citep{hayajneh_wind_2026}. The landscape-scale consequence is measurable: across 21 Swiss pyroregions, the length of upslope paths within forested area combined with the aggregation of that area explains between 56\% and 65\% of the variance in large-fire statistics, without any weather term \citep{conedera_linking_2024}.
+
+Most importantly, in mountains the fire is rarely the end of the event. Alpine forests are managed substantially for their protective function against rockfall, avalanche and shallow landslide, and fire removes that function over a window measured in years \citep{melzner_wildfire-induced_2025, melzner_brief_2019}. The asset at risk is typically not the stand that burns but the settlement, road or railway beneath it.
+
+\subsection{Objective and argument}
+
+This review assembles the evidence needed to treat Alpine wildfire as a systemic mountain risk rather than as a forest-loss problem. Our argument has three parts. First, the Alpine fire regime is structurally distinct, not merely smaller, than the regimes on which European fire science was built. Second, the dominant damage pathway is a cascade in which fire sets a susceptibility that a later hydro-meteorological event realises, so that Alpine wildfire risk is irreducibly a joint probability over two events separated in time. Third, the current modelling apparatus consistently omits processes that add to hazard, while the Alpine data record is too thin to justify the conventional remedy of added complexity; we use this constraint, rather than any appeal to greater model sophistication, to organise a research agenda.
+
+
+% =======================================================
+\section{Review Design and Scope}
+% =======================================================
+
+\subsection{Scope and inclusion rule}
+
+The geographical core is the Alpine arc as delimited by the Alpine Convention, covering Austria, France, Germany, Italy, Liechtenstein, Monaco, Slovenia and Switzerland. This is the perimeter within which harmonised Alpine fire statistics were first assembled \citep{valese_wildfires_2011, muller_forest_2020}, within which arc-scale hazard mapping has been performed \citep{gerberding_mapping_2025}, and across which the practitioner community is organised \citep{hoang_stakeholders_2026}.
+
+We depart from that perimeter under two controlled conditions. Evidence from other European mountain systems --- Pyrenees, Carpathians, Apennines, Dinarides, Tatras --- is admitted where it addresses a process for which Alpine evidence is absent rather than merely thin. Evidence from non-European mountain systems is admitted where the process is physically general and the Alpine literature is silent; the mountain-meteorological framework of \citet{sharples_overview_2009}, the wind--slope experimental synthesis of \citet{hayajneh_wind_2026}, the post-fire geomorphological syntheses of \citet{santi_wildfire_2022} and \citet{morell_sediment_2021}, and the terrain-conditioned suppression framework of \citet{cardil_assessing_2025} enter on those grounds. Imported material establishes that a process exists and characterises its mechanism; it is never used to quantify Alpine magnitude.
+
+\subsection{Identification, screening and synthesis}
+
+A seed set was compiled from domain knowledge and targeted searching and expanded by one iteration of bidirectional citation snowballing: backward through the reference lists of the seed publications, forward through open citation infrastructure. Backward chaining recovered several thousand unique cited works and forward chaining several hundred more, weighted towards 2019--2026. Screening applied a graded inclusion rule --- fire and the Alps; fire and another mountain system as comparative evidence; Alpine process without fire, or European fire without mountains, as context; generic fire science excluded --- with every decision and its reason recorded in the register reported in Appendix~\ref{app:prisma}.
+
+The synthesis is thematic rather than meta-analytic, and this is a consequence of the evidence rather than a preference. Alpine fire studies are dominated by single events, single countries and single model applications, with heterogeneous definitions of severity, burnt-area thresholds and reporting periods; the same obstacle has been reported for the closely related literature on land abandonment and disturbance, where study sites cluster strongly and coverage is uneven across disturbance types \citep{mantero_influence_2020}. We therefore organise evidence by process, and state throughout whether a claim rests on multiple independent Alpine studies, on a single Alpine case, or on imported mechanism.
+
+\tableofcontents
+\newpage
+
+
+% =======================================================
+\section{The Alpine Fire System}
+\label{sec:system}
+% =======================================================
+
+\subsection{Regime structure: small fires, two seasons, mixed ignition}
+
+The Alpine fire regime is defined less by its magnitude than by its shape. Harmonised statistics for 2006--2017 place annual fire numbers between 37 in Slovenia and 1043 in Italy, and annual burnt area between 64\,ha in Austria and 9984\,ha in Italy; normalised by forest area, the range spans two orders of magnitude, from 0.22 to 44.13\,ha burnt per 10{,}000\,ha of forest per year \citep{muller_forest_2020}. Roughly 80\% of Alpine fires burn less than one hectare, and median fire size falls below 0.1\,ha in Austria, Germany and Switzerland. For comparison, the mean patch size of all detected forest disturbance across Europe over three decades is 1.09\,ha \citep{senf_mapping_2021}, so Alpine fire sits at the fine end of an already fine-grained disturbance regime.
+
+Seasonality is bimodal, and this is the regime's most consequential structural feature. A spring season of fast-spreading surface fires at low elevation peaks in March and April; a summer season peaks in July and August; and winter fires occur in foehn-influenced valleys \citep{valese_wildfires_2011, muller_forest_2020}. The pattern is not confined to the Alpine arc: in the Czech Republic the same bimodality appears with an April peak and a July--August peak, the former attributed to forestry operations resuming after winter and the latter to heat, drought and tourism, with a threshold response above 18\,\degree C \citep{bercak_combination_2024}. The two modes have different controls, and there is no reason to expect them to change in step.
+
+Ignition is mixed in a way that has no Mediterranean analogue. Human causes account for approximately 90\% of Alpine fires, but lightning contributes around 10\% regionally and up to half of summer ignitions in some areas, concentrated on southern slopes and at higher elevation \citep{muller_forest_2020, valese_wildfires_2011}. That lightning frequency emerges as one of the three strongest predictors of fire hazard in Alpine-scale statistical mapping, alongside mean annual temperature and precipitation seasonality \citep{gerberding_mapping_2025}, is diagnostic: no Mediterranean hazard model would rank it so highly.
+
+\subsection{Climatic controls and their relaxation}
+
+The controlling gradients are elevation, the divide between the moist northern and insubric southern slopes, and the contrast between dry continental inner valleys and wetter outer ranges. Elevation currently supplies the hard constraint, through snow cover and through temperature-limited fuel drying, and it is precisely this constraint that warming is relaxing. Mountain warming is elevation-dependent, with the snow- and ice-albedo feedback among the principal mechanisms, in an amplification analogous to that of the Arctic \citep{rangwala_climate_2012}; and reduced snow-cover duration is already reshaping the seasonal economy of high-altitude Alpine municipalities \citep{pede_mountain_2022}.
+
+The proximate mechanism linking climate to fire is fuel moisture rather than temperature. Across European climate regions, multi-month drought indices, soil moisture deficit and vapour pressure deficit are the strongest and most consistent drivers of fire activity, and their interactions are region- and season-specific: productivity deficits matter in southern Europe in summer, whereas in northern Europe summer preconditions combine moisture deficit with productivity \emph{surpluses}, so that fuel production and fuel drying compound rather than trade off \citep{miller_compounding_2025}. The same variable dominates the ignition side. In a five-site European ignition model, the annual anomaly in dead fine fuel moisture content ranked as the most influential predictor at every site \citep{gelabert_assessing_2025}, and vapour pressure deficit is likewise the strongest predictor of burnt area in the mountain upslope analysis \citep{beloiu_climatedriven_2026}.
+
+Two structurally different droughts drive extreme European fire, and the distinction matters for the Alps because the two Alpine seasons plausibly respond to different ones. Analysis of extreme events in south-eastern France separates a press drought, in which a long-lasting water deficit produced by reduced precipitation and elevated evapotranspiration intensifies wind-driven fires, from a hot drought in which a comparable deficit combines with a summer heatwave to intensify heat-induced fires \citep{ruffault_extreme_2018}. Alpine spring fires, carried by cured herbaceous fuel under foehn, correspond mechanistically to the first; the emerging high-elevation summer fires, associated with extreme atmospheric aridity above 1400\,m \citep{beloiu_climatedriven_2026}, correspond to the second. A danger system calibrated on one will not represent the other, and an Alpine climate projection that reports a single aggregate trend conceals which of the two is changing.
+
+The distinction between fire danger and realised fire regime should be kept sharp, because the Alps have much evidence for the first and little for the second. European fire danger showed no clear trend between 1960 and 1999 but a significant increase in southern and eastern Europe from 1980 onward, with correlations between fire-season weather indices and burnt area of order 0.6 \citep{venalainen_temporal_2014}. Detecting a corresponding regime change in the Alps is harder: records are short and administratively fragmented, fires are small enough that recording thresholds dominate the statistics, and the strong seasonal and topographic structure allows compensating changes to cancel in regional aggregates. Under these conditions the absence of a signal is weak evidence of its absence.
+
+\subsection{Fuel accumulation, connectivity and upslope migration}
+
+The landscape now burning is a recent artefact. Centuries of grazing, litter collection and fuelwood extraction held Alpine forests open in a mosaic that limited spread irrespective of weather; the retreat of that regime has reassembled the fuel bed \citep{bebi_changes_2017}. Expansion is not uniform. It is fastest where recent agricultural abandonment coincides with climatically favourable conditions for establishment, so that anticipating future fuel continuity requires knowing how the timing of land-use change intersects with growth conditions, not simply where abandonment occurred \citep{garbarino_contrasting_2020}. The generalisation that abandonment monotonically increases fire hazard should nonetheless be treated as a regionally supported finding rather than a law, since for disturbances other than fire the reported effects of abandonment are inconsistent and sometimes opposite in sign \citep{mantero_influence_2020}.
+
+Quantifying the vertical component, the treeline in a Central Swiss valley advanced by an average of 10\,m per decade between the early 1970s and 2012, with local maxima of 42\,m per decade; decisively, only 21\% of new trees represented advance beyond the former treeline while 79\% were infilling below it \citep{frei_evidence_2023}. Fuel is therefore not merely climbing but densifying, and densification below the treeline is what converts scattered stands into continuous fuel. At Alpine scale, 24\% of the 10.5 million hectares of forest is in an open-canopy structural state, concentrated at high elevations, forest edges and warm dry sites \citep{stritih_alternative_2023} --- the same positions where fuel is now filling in.
+
+The behavioural consequence follows directly. Where fuel connectivity and slope length jointly govern large-fire likelihood \citep{conedera_linking_2024}, expansion onto steep marginal ground that was abandoned first increases exactly the quantity that matters. This is the mechanism by which a landscape can become more fire-prone without any change in weather.
+
+\subsection{Species composition, flammability and vulnerability}
+
+Alpine tree species differ sharply in their capacity to survive fire, and the composition of Alpine forests is being reorganised on a timescale comparable to that of regime change. Simulation of Swiss Alpine landscapes indicates that climate-driven vegetation shifts will exert a larger influence on biomass and species distribution than management, with fire emerging as a property of the simulated landscape that then feeds back on vegetation \citep{schumacher_relative_2006}.
+
+Vulnerability is trait-mediated and now has independent experimental support. Simulation across 4438 French Alpine forest plots showed cold-season fires --- about half of all fires there --- having limited impact except on low-elevation southern stands, average summer conditions producing highest mortality in mixed and broadleaved low-elevation forests with up to 75\% mortality in coppice, and extremely dry summers producing high mortality across all communities, with the lowest mortality in thick-barked, high-canopied larch stands of the inner Alps \citep{dupire_vulnerability_2019}. Controlled heating of stem discs from six Central European species reproduces that ranking from first principles: bark thickness is the most robust predictor of the time taken for the cambium to reach the lethal threshold, placing larch, Douglas-fir and Scots pine above silver fir and Norway spruce, with beech lowest, and thermal resistance declining with bark moisture and with height on the stem \citep{mutterer_bark_2026}. Two very different methods converge, which is a stronger basis than either alone.
+
+Composition is also a fire outcome, not only a fire input. After a stand-replacing fire in the Rhone valley, recruitment favoured pioneer birch, aspen and willow over the pre-fire larch, spruce and Scots pine, and seedling density tracked moisture availability rather than fire intensity, leading to the conclusion that drought is the limiting factor for post-fire recruitment in the Central Alps \citep{moser_potential_2010}. Palaeoecological records extend the same logic across millennia, with fire and grazing rather than temperature alone determining whether the timberline attains its climatic potential \citep{colombaroli_species_2010}, and with regionally distinct Holocene fire--vegetation trajectories reconstructed for the Dinaric ranges \citep{cagliero_effect_nodate}.
+
+\subsection{Mountain meteorology and terrain-driven behaviour}
+
+Alpine wind systems are the mechanism converting small ignitions into fast fires, and they operate in three families: foehn, which can strip tens of percentage points of relative humidity within hours and is associated with the late-winter and spring fires of inner and southern valleys; thermally driven diurnal circulations, whose anabatic day and katabatic night reversal imposes a spread-direction cycle with no lowland analogue; and terrain channelling of the synoptic flow along valley axes and through cols. Steep Alpine topography exerts a controlling influence on all three, and thereby on fire type, intensity and burn severity \citep{melzner_wildfire-induced_2025}.
+
+The observational evidence for terrain-driven behavioural anomaly in the Alps is sparse but pointed. During the 2018 Hallstatt fire, vertical rock walls, anabatic winds and patchy vegetation produced upward jumping of the fire and a spotty burn pattern, generating spatially variable intensity and correspondingly heterogeneous changes in soil and rock mass \citep{melzner_brief_2019}. That heterogeneity is not a curiosity: it propagates into the severity field and from there into post-fire hazard, which is why terrain-driven complexity in fire behaviour is a risk-assessment problem and not only an operational one.
+
+Where Alpine quantification is absent, the process literature supplies both mechanism and magnitude. Wind effects on spread are strongly non-linear, with a crossover from radiation- to convection-led preheating near 1.5\,m\,s$^{-1}$, order-of-magnitude increases in rate of spread by 3\,m\,s$^{-1}$ in controlled fuels, and discrete regimes for ignition of discontinuous fuels: no ignition below about 1\,m\,s$^{-1}$, direct-contact ignition between 1.5 and 2.5\,m\,s$^{-1}$, and spotting above 3\,m\,s$^{-1}$ \citep{hayajneh_wind_2026}. Since Alpine valley winds routinely traverse these thresholds within a diurnal cycle, the regime transitions they imply are not exotic conditions but ordinary ones.
+
+Lightning ignition is itself terrain-structured, through elevation-dependent cloud-to-ground discharge frequency, altitudinal fuel belts and strong vertical gradients in precipitation \citep{baranovskiy_deterministic_2021}. This is reflected in Alpine operational practice, where lightning fire hazard is classified jointly by elevation band, slope, aspect and vegetation type rather than by strike density alone \citep{muller_towards_2020}. Whether ignition potential and fuel receptiveness will increase together is the compounding question: rising extreme fire weather alongside increased thunderstorm activity has been projected for the Dinaric setting, where lightning-induced fires are rare but extremely costly to electricity transmission networks \citep{kyriakopoulos_impact_2023}.
+
+
+\subsection{Comparative evidence and the fire deficit}
+
+Two comparative cases sharpen what is and is not distinctive about the Alps. The first concerns the consequences of fire exclusion. In the southern Appalachian Mountains, decades of suppression preceded a regional outbreak of more than a dozen large wildfires during one of the warmest and driest droughts of the last century, in a landscape whose historical mosaic had been maintained by frequent low- and mixed-severity fire interacting with topographic gradients, and whose composition had already been reorganised by land-use change and by the loss of a dominant species \citep{reilly_drivers_2022}. The trajectory --- accumulated fuel under exclusion, a compositional shift away from fire-tolerant species, and then a drought-driven regional outbreak --- is not the Alpine trajectory, since the Alps never had a frequent-fire regime to suppress, but the intermediate state is similar: a landscape whose fuel structure no longer matches its disturbance history.
+
+The second concerns mountain soils as a resource in their own right. A review of the soils of the Australian Alps found that above-ground ecosystems had received far more scientific attention than the soils supporting them, and that high-elevation soil types are disproportionately important to ecology, hydrology and slope stability while being disproportionately vulnerable \citep{wilson_distribution_2022}. The same asymmetry characterises the European Alps, where the fire literature is dominated by forest response and the soil response is represented by a small number of studies \citep{negri_wildfire_2026}. Given that the Alpine cascade runs through soil condition rather than through canopy loss alone, this imbalance is consequential rather than merely regrettable.
+
+
+% =======================================================
+\section{Post-Fire Cascades and Systemic Risk}
+\label{sec:cascade}
+% =======================================================
+
+\subsection{Soil alteration and the failure of severity as a proxy}
+
+Fire alters mountain soils by removing vegetation and litter, depositing ash, creating or destroying water repellency and physically weathering rock \citep{santi_wildfire_2022}. The Alpine questions are how long those changes persist and whether they can be inferred from the burn severity products that risk assessments actually consume. On present evidence the answer to the second is no.
+
+Sampling of an Alpine Scots pine forest three years after a mixed-severity fire found burnt plots still distinguished by greater bare soil exposure, a pyrogenic surface horizon of elevated pH and pyrogenic carbon, and sub-surface horizons depleted in organic carbon and in sand-sized aggregates --- differences involving properties that normally recover quickly as well as those that do not. Critically, the magnitude of change showed no proportionality to mapped severity class, and the strongest water repellency occurred predominantly in low-severity plots, associated with abundant uncharred organic matter rather than with intense heating \citep{negri_wildfire_2026}. Remote severity mapping, even when calibrated with field measurement, is therefore a poor predictor of the soil condition that governs runoff generation.
+
+This finding cuts against the standard post-fire workflow, in which a severity map is the spatial proxy for hydrological and geomorphic change. It also complicates a common assumption in fuel management, since it implies that a low-intensity burn is not automatically hydrologically benign.
+
+\subsection{Erosion, debris flow and sub-threshold triggering}
+
+Post-fire debris flow carries the highest damage potential in Alpine valleys, and the Alpine record, though small, is now quantitatively informative. Two documented events in the Western Italian Alps --- Pallanzeno in 2005 and Bussoleno in 2018 --- both followed brief, localised, moderate-intensity rainfall over catchments burnt in the preceding months, and both produced deposits unusually rich in fine particles and burnt wood, consistent with a centimetres-thick layer of thermally reworked material generated by the fire and progressively redistributed by intervening rainfall \citep{tiranti_wildfires_2021}.
+
+Numerical analysis of the Bussoleno event supplies the parameters that make this a risk-transfer argument rather than a case description. An October 2017 fire burnt over 95\% of a 1.37\,km$^2$ catchment; after a spring 40\% wetter than normal, a rainfall of 12\,mm in 30 minutes --- an intensity of 24\,mm\,h$^{-1}$ with a five-year return period --- mobilised roughly 20{,}000\,m$^3$ of sediment and woody debris some eight months after the fire, destroying two buildings and flooding around 150 residents from the alluvial fan. The mechanical shear strength of burnt soils was reduced by a factor of three, and the triggering intensity lay below the threshold of more than 30\,mm\,h$^{-1}$ typical of unburnt basins of that type \citep{laporta_postwildfire_2025}. Fire does not simply increase the response to a given rainfall; it lowers the rainfall required, which moves the hazard into a return period that occurs several times per decade.
+
+Sediment supply, rather than runoff alone, sets event magnitude. Lidar differencing of the 2018 Montecito flows showed 550{,}000\,m$^3$ of previously stored channel sediment progressively entrained and partly redeposited, with scour concentrated where coarse colluvium had accumulated and persisting beyond the mountain front, implying that volume is controlled by the reservoir available for scour and hence by catchment history \citep{morell_sediment_2021}. For the Alps this means post-fire debris-flow magnitude is a function of the antecedent state of the channel network as much as of the fire.
+
+\subsection{Rockfall, protective function and its monetised value}
+
+Rockfall is the post-fire process most specific to the Alps and least represented internationally; as recently as 2019 no work on post-wildfire rockfall activity had been published for the eastern Alps, and even in the better-studied western United States the process had received little attention relative to debris flow \citep{melzner_brief_2019}. Two mechanisms operate: direct thermal weakening and loss of the litter and vegetation that arrest small blocks, and the slower loss of standing stems that intercept falling material, which means exposure can rise for years as fire-killed trees decay and fall. Trajectory modelling isolates the vegetation term and shows it to be strongly block-size dependent: small blocks around 0.01\,m$^3$ that mostly came to rest on a vegetated slope travel much further once cover is removed, while for blocks an order of magnitude larger the kinetic energy overwhelms the vegetative resistance \citep{asteriou_assessing_2025}. Protective function is thus lost first for the frequent, small events that dominate long-run exposure.
+
+The economic weight of that function can be put in numbers. For a protection forest above Martigny in the Valais, coupled forest-dynamics and three-dimensional rockfall simulation places annual rockfall risk at 19{,}100\,CHF with the forest present and 95{,}500\,CHF without it, a factor of five; under climate scenarios the risk rises to 59{,}250 and 70{,}100\,CHF per year within 150 years as composition shifts from beech- to pubescent-oak-dominated, and small blocks reaching the railway move from once per decade to once every three years \citep{moos_climate_2021}. Simulation across an elevation gradient in South Tyrol shows the loss is elevation-contingent: montane forests decline drastically in avalanche protection under severe warming, with drought-induced biomass reductions reaching 97\% in dry inner valleys, while subalpine stands remain stable or improve \citep{hillebrand_contrasting_2023}.
+
+\subsection{The consequence window and what closes it}
+
+For risk assessment the decisive parameter is not whether post-fire hazard is elevated but for how long. The general figure from the geomorphological literature is a disturbance window of three to four years, occasionally extending to thirty \citep{santi_wildfire_2022}. Alpine evidence indicates that the short end of that range is optimistic, and that the window is set by biology rather than by geomorphology alone.
+
+Three independent lines converge. Soil properties remained altered three years after an Alpine mixed-severity fire, including properties that ordinarily recover fast \citep{negri_wildfire_2026}. Recovery of the canopy that restores protective function is drought-limited at exactly the low and mid elevations where assets concentrate, requiring precipitation far above the long-term average for successful establishment \citep{moser_potential_2010}. And at Alpine scale, although 72\% of disturbed forests return to a closed-canopy state within 35 years, submediterranean forests remain open for decades \citep{stritih_alternative_2023}. At the upper margin the window may not close at all: on burnt subalpine slopes in the Northern Limestone Alps at 1800--1950\,m, species richness was higher in burnt plots but tree seedlings were nearly absent and no meaningful mountain pine re-establishment occurred over eighty years, a state the authors describe as arrested succession rather than delayed recovery \citep{degiuli_arrested_2024}.
+
+The window is therefore not a physical constant but partly a management outcome, and post-fire restoration practice is not currently calibrated to it. Analysis of short-term recovery after the Susa fire concluded that the restoration techniques most often applied after large Alpine fires are poorly matched to the ecological context and to the consequences of global change, and that intervention can either facilitate recovery or trigger further degradation \citep{mantero_short-term_2023}.
+
+\subsection{Fire, snow and ice: an unquantified Alpine coupling}
+
+Snow is the constraint that currently limits high-elevation Alpine fire, and the coupling between fire and snow runs in both directions. The forward direction is well established: shorter snow cover lengthens the drying window, and does so most strongly at the elevations where fuel is now infilling \citep{rangwala_climate_2012, frei_evidence_2023, pede_mountain_2022}. The reverse direction --- the effect of fire on the cryosphere --- has no Alpine literature at all, and the comparative evidence suggests this is an omission rather than an absence of process.
+
+Fire alters snowpacks through several mechanisms simultaneously: canopy loss changes interception and the radiation balance at the snow surface, burnt debris and black carbon lower albedo, and the resulting changes to accumulation and ablation persist for years while the canopy recovers \citep{koshkin_wildfire_2022}. The magnitude of the radiative term has been measured directly on ice. At a well-instrumented Canadian Rockies glacier, upwind wildfire activity affected melt both through albedo reduction from deposited soot and through the effect of smoke on the overlying atmosphere, with smoky days warmer than clear days and a sustained reduction in surface shortwave irradiance of 103\,W\,m$^{-2}$ at peak \citep{aubrywake_fire_2022}.
+
+Neither mechanism is Alpine-specific in any way that would prevent it operating in the Alps, where snow and ice carry economic weight far beyond their hydrological role \citep{pede_mountain_2022}. The absence of Alpine work here is doubly consequential. It leaves a term missing from the water-resource accounting of a range whose runoff regime supports downstream agriculture, hydropower and navigation, and it leaves unexamined a feedback in which fire shortens the snow season that currently limits fire.
+
+\subsection{Ecological consequences and the framing of loss}
+
+Fire in the Alps is not uniformly destructive, and the review literature is unusually candid about the risk of assuming otherwise. A systematic assessment of mountain wildfire against fifty ecosystem services found that current fire regimes mostly reduce service provision, that effects on cultural services are mixed, that the dominant mechanism is change in vegetation composition and structure, and that a bias toward negative characterisation may be built into how the questions are posed \citep{vukomanovic_systematic_2019}.
+
+The Alpine empirical evidence supports that caution. Following a forest wildfire in an inner-Alpine valley, bird community dynamics were restructured rather than simply depleted, consistent with the general expectation that discrete disturbances maintain rather than only diminish ecological dynamics \citep{rey_effects_2019}. Post-fire subalpine slopes in the Northern Limestone Alps carried significantly higher vascular plant richness than unburnt controls, including alpine specialists absent from the unburnt plots, even as tree regeneration failed entirely \citep{degiuli_arrested_2024}. These are not counterarguments to the risk framing of this review; they are a reminder that the Alpine loss function is specific. What fire threatens in the Alps is not biodiversity in general but the structural, protective function of forest on slopes above assets --- a service that is spatially concentrated, economically quantifiable \citep{moos_climate_2021}, and slow to recover \citep{stritih_alternative_2023, degiuli_arrested_2024}.
+
+\subsection{Exposure, compound risk and the limits of single-hazard assessment}
+
+A single-hazard wildfire assessment asks where fire is likely and how large it might be. In the Alps that is the wrong terminal question. Burnt area is small and weakly related to consequence; the exposed asset usually lies outside the burn perimeter but beneath it; and susceptibility, correctly defined, is a static probability of experiencing fire given the intrinsic characteristics of the territory \citep{trucchia_defining_2022} --- a legitimate quantity, but separated from risk by an unusually wide gap in mountains.
+
+Compound structure enters at three distinct points, which are worth separating because conflating them has caused confusion. Preconditions compound, since European fire activity typically follows moderate but coincident hydro-meteorological and land-surface anomalies rather than single extremes \citep{miller_compounding_2025}. Disturbances compound, since drought, windthrow and bark beetle outbreak load the fuel bed before any fire arrives, a pathway explicitly identified but not represented in Alpine hazard projections \citep{gerberding_mapping_2025, bebi_changes_2017}. And consequences compound, in the cascade described above, for which a research roadmap now exists that treats post-fire and frozen-soil dynamics together and calls for multi-institutional monitoring networks and for governance linking geoscientists, engineers and policymakers \citep{baselt_compound_2026}.
+
+Exposure analysis must accordingly follow the cascade rather than the fire. The literature that does this best is the vulnerability rather than the hazard literature: a participative multi-criteria approach in south-eastern France, distinguishing exposure, sensitivity and adaptive capacity across populations, ecosystems and infrastructure, identified secondary vulnerability hotspots and locations not yet affected by hazard where prevention was nonetheless warranted \citep{riviere_mapping_2023}. Exposure is also dynamic. Human presence in Alpine forests is tourism-driven and seasonal \citep{pede_mountain_2022, abrham_wildfires_2024}, and the leading European ignition model identifies distance to the wildland--urban interface as the strongest human predictor while conceding that its human covariates are static and should be made to vary with commuting and seasonal recreation \citep{gelabert_assessing_2025}. Transboundary simulation in the Saxon--Bohemian borderland illustrates the same point institutionally, with modelled burn probability and flame length at settlements differing across a national border that the hazard does not recognise \citep{avouris_exposure_2025}.
+
+
+% =======================================================
+\section{Modelling and Assessment}
+\label{sec:modelling}
+% =======================================================
+
+\subsection{Fire danger: transfer, recalibration and the terrain deficit}
+
+The Canadian Fire Weather Index is the de facto European standard, and its use outside Canada almost always involves redefining danger classes by local calibration --- a practice documented across 63 danger systems in 16 countries, few of which represent terrain at all beyond coarse slope classes or pressure-level adjustments \citep{zacharakis_environmental_2023}. The Alpine literature contains two distinct responses to this deficit, and the contrast between them is instructive.
+
+The first is local recalibration. A niche-modelling approach developed for Canton Ticino found that meteorological variables alone matched or outperformed the full Fire Weather Index, that the resulting index was not transferable to other regions, and that model selection must be revisited when legislation or socio-economic conditions change the pyrological environment. The same work established that usable indices can be built from small numbers of fires, which matters in regions with sparse records \citep{de_angelis_modelling_2015}.
+
+The second is integration. Austria's integrated system combines daily fire weather with human-ignition hazard, lightning hazard, a high-resolution fuel type map and topography. Validation showed some integrated variants outperforming conventional weather indices for predicting ignitions, and performing better on false alarms, but correlation with burnt area remained low across all variants \citep{muller_towards_2020}. Adding physically motivated layers improved prediction of \emph{whether} a fire starts without improving prediction of \emph{how large} it becomes.
+
+Read together, these results locate the deficit precisely. It is not primarily a deficit of variables: a locally fitted weather-only model can perform well. It is a deficit of local calibration data and of dynamic fuel condition, compounded by the near-total absence of terrain in operational danger systems even though terrain demonstrably controls the surface wind field \citep{ozaki_impact_2022, sharples_overview_2009}.
+
+\subsection{Ignition, spread and severity models}
+
+Ignition modelling has matured fastest, because ignition points are the one Alpine fire observation available in reasonable numbers. A generalized additive model for Trentino--South Tyrol, integrating 2000--2023 records with a deliberately small set of dynamic predictors --- 29-day cumulative precipitation, one-day mean temperature and day of year --- alongside static proxies for fuel, topography and human influence, achieved AUROC above 0.80 under validation designed to account for spatial and temporal structure, and translated its output into operational thresholds rather than a raw probability surface \citep{moreno_1_nodate}. At European scale, a five-site random forest reached site-level AUC between 0.70 and 0.89 but lost approximately 0.10 when pooled across regions \citep{gelabert_assessing_2025}, which quantifies the cost of transfer directly.
+
+Spread modelling is the least mature Alpine domain. The only systematic Alpine evaluation applied two widely used models to three Lombardy fires and found both reproducing perimeter reasonably while disagreeing substantially on fireline intensity and rate of spread, with one better suited to planning through fine-scale fuel--topography interaction and the other to operations through speed and time-varying inputs \citep{malanchini_modeling_2025}. That the disagreement falls on intensity is more serious than it appears, because intensity determines severity and therefore the entire cascade of Section~\ref{sec:cascade}. The experimental literature explains why such disagreement is expected: operational spread models built on separable wind and slope correction factors miss the non-linear interaction between them, underestimate spread on steep slopes with wide fronts, and cannot represent eruptive acceleration in confined geometries \citep{hayajneh_wind_2026} --- that is, they fail in precisely Alpine terrain.
+
+Severity itself is only partly predictable from terrain. Across 113 large Italian fires, pre-fire land cover was the strongest predictor of burn severity, with conifer stands highest, followed by elevation, while slope contributed weakly; distance to roads and railways entered positively, indicating higher uncontrolled severity in remote terrain \citep{malandra_burn_2022}. Fuel type leads, access modulates, and slope --- so dominant for spread --- is secondary for severity.
+
+\subsection{Scenario hazard models and their common blind spot}
+
+Two complementary approaches bracket the Alpine scenario literature. Statistical hazard mapping under shared socio-economic pathways yields increases of 15.5\% to 35.4\%, with lightning frequency, mean annual temperature and precipitation seasonality dominant and the largest relative changes in northern and eastern sectors \citep{gerberding_mapping_2025}. Fire-weather projection using a regional large ensemble under RCP8.5 yields emergence of the forced signal before 2050 and a shift of hundred-year events to ten-year recurrence by 2090 \citep{miller_climate_2024}.
+
+Their limitations coincide, which is what makes them structural rather than incidental. Neither represents the disturbance-driven fuel loading by which drought, storm and bark beetle outbreak increase flammable material; neither represents socio-economic and governance change affecting land use; and both are candid that local application carries far more uncertainty than the regional trend \citep{gerberding_mapping_2025}. Continental fire models report the same boundary from the other side: a European burnt-area simulator explaining 32--36\% of deviance overall states explicitly that its skill is limited in mountainous and temperate regions \citep{forrest_understanding_2024}. A projection driven by climate normals describes the climatic envelope, not the fire regime.
+
+The route out of static fuel representation exists in the Alpine literature but has not been carried forward. Landscape simulation for the Swiss Alps treated fire as an emergent property that fed back on vegetation \citep{schumacher_relative_2006}, and palaeoecological reconstruction has been combined with dynamic simulation to constrain species response to fire and temperature \citep{colombaroli_species_2010}; more recently, forest-dynamics models coupled to hazard simulation have quantified protective-function loss under climate scenarios \citep{hillebrand_contrasting_2023, moos_climate_2021}. Reconnecting that tradition to fire hazard assessment is, on the evidence assembled here, the highest-value methodological opportunity in Alpine fire science.
+
+\subsection{Validation, seasonality and the observational threshold}
+
+Validation practice in Alpine and adjacent fire modelling has improved and is now, by the standards of the field, reasonably rigorous. Spatial cross-validation together with an out-of-sample operational test against a severe subsequent season has been applied to national susceptibility mapping \citep{trucchia_defining_2022}; multi-perspective validation explicitly accounting for spatial and temporal structure has been applied to Alpine ignition modelling \citep{moreno_1_nodate}; and negative results have been reported alongside positive ones, as in the finding that integration improves ignition prediction but not burnt-area correlation \citep{muller_towards_2020}. The residual problem is not rigour but statistical power: in a region with few large fires, the events that dominate risk are the events on which models can least be tested.
+
+Seasonal stratification is one of the few design choices that demonstrably helps. Because the Alpine regime is bimodal, models fitted to annual aggregates average over two processes with different drivers. National susceptibility mapping for Italy accordingly produced separate winter and summer surfaces \citep{trucchia_defining_2022}, and analysis of mountain wildfire in south-west China found that different drivers dominate in fire and non-fire seasons and that including the seasonal dimension improved understanding of lagged effects between drivers and occurrence \citep{wang_seasonal_2023}. The same logic applies to the Alps with greater force, since the seasonal contrast there is not merely between active and quiet periods but between two distinct ignition and fuel systems \citep{muller_forest_2020, bercak_combination_2024}.
+
+The deeper constraint is the observational threshold. Around 80\% of Alpine fires burn less than a hectare \citep{muller_forest_2020}, whereas the analyses that define current understanding of European mountain fire operate above thresholds of 30\,ha for burnt-area detection \citep{beloiu_climatedriven_2026} or 1\,ha for ignition records \citep{gelabert_assessing_2025}, and the continental burnt-area products underpinning European fire modelling resolve at roughly 9\,km \citep{forrest_understanding_2024}. The Alpine regime therefore sits substantially below the resolution of the instruments used to characterise it. This has two consequences that run in opposite directions and are easily confused. Detected trends in large Alpine fires are trends in the tail of the distribution and may not represent the regime; and conversely, an absence of detected change may simply reflect that most of the regime is invisible to the detector. Both possibilities argue for the same remedy, which is that Alpine regime detection requires purpose-built records at sub-hectare resolution rather than the reuse of continental products.
+
+\subsection{Model scope, data scarcity and the choice of complexity}
+\label{sec:complexity}
+
+Two findings recur across the modelling literature reviewed above, and taken together they constrain what an Alpine modelling programme can realistically attempt.
+
+The first is that the models in current use are narrower than the process they represent, and narrower in a consistent direction. Weather-only danger indices omit vegetation, topography, lightning and human influence \citep{muller_towards_2020}; indices calibrated elsewhere lose skill when transferred \citep{de_angelis_modelling_2015, gelabert_assessing_2025}; static fuel maps cannot represent a bimodal seasonal fuel bed or a decadally changing one \citep{bebi_changes_2017, frei_evidence_2023}; scenario models omit disturbance-driven fuel loading and all socio-economic change \citep{gerberding_mapping_2025}; continental burnt-area models report their own failure in mountains \citep{forrest_understanding_2024}; and single-hazard susceptibility is by construction blind to the cascade \citep{trucchia_defining_2022}. Each omission removes a process that adds to hazard rather than subtracting from it, so the resulting estimates should be read as lower bounds.
+
+The second is that the Alpine record cannot support the obvious remedy. Around 80\% of Alpine fires burn less than a hectare and the harmonised regional record is short \citep{muller_forest_2020}; the analysis that establishes upslope migration excludes fires below 30\,ha while conceding that most historical Alpine fires fall below that threshold \citep{beloiu_climatedriven_2026}; post-fire geohydrological observation amounts to a first inventory with no long-term monitoring \citep{melzner_wildfire-induced_2025}; documented post-fire debris flows in the western Italian Alps number two \citep{tiranti_wildfires_2021}; systematic Alpine spread-model evaluation rests on three events \citep{malanchini_modeling_2025}; and the attribution study of the record 2025 European fire season excludes the Alps and central Europe altogether \citep{keeping_attribution_2026}. Adding parameters to fit a record this thin will produce models that describe the observations they were fitted to and little else.
+
+The way through is visible in the Alpine literature itself, and it consists in widening scope through better-chosen structure rather than through more free parameters. Two geometric predictors computable from a digital elevation model and a forest map account for most of the variation in Swiss large-fire statistics \citep{conedera_linking_2024}. A parsimonious additive model with a representative sampling design and threshold-based output achieves high skill on Alpine ignition \citep{moreno_1_nodate}. A locally fitted, low-dimensional index outperforms a transferred complex one \citep{de_angelis_modelling_2015}. And the post-fire debris-flow problem has been tackled operationally by modifying catchment runoff parameters inside an existing warning system rather than by building a coupled model \citep{tiranti_wildfires_2021}.
+
+Transferability, on this reading, is selective rather than uniformly poor, and the distinction is practical. Empirically tuned weather indices do not transfer. Physically grounded process models often do: a post-fire debris-flow likelihood model developed for the western United States, driven by burn severity on slopes steeper than 23\degree{}, soil erodibility and peak fifteen-minute rainfall, reproduced observed debris flows in a Mediterranean post-fire setting with an area under the ROC curve of 0.913 while running on European soil datasets \citep{diakakis_exploring_2023}; and a terrain-conditioned suppression-difficulty framework calibrated on nearly 27{,}000 Californian fires has been validated in several further regions \citep{cardil_assessing_2025}. Import the mechanism, recalibrate the coefficients: this is the operational rule the Alpine evidence supports.
+
+
+% =======================================================
+\section{Governance, Management and Cross-Border Risk}
+\label{sec:governance}
+% =======================================================
+
+\subsection{Suppression under terrain constraint}
+
+Alpine suppression operates under three simultaneous constraints: terrain-driven behavioural unpredictability \citep{sharples_overview_2009, melzner_brief_2019}, low accessibility in steep and remote ground \citep{muller_forest_2020}, and dependence on shared aerial resources whose availability is correlated across the arc precisely when synoptic-scale drought and vapour pressure deficit elevate danger everywhere at once \citep{miller_compounding_2025}.
+
+The quantitative framework for the second constraint now exists, although it has not been applied in the Alps. Combining a terrain difficulty index built from accessibility, penetrability, line-construction difficulty, mean slope and road proximity with a fire behaviour index yields an initial attack assessment whose highest class carries a 90\% reduction in the odds of successful initial attack relative to the lowest, with mean burnt area rising from 18.5 to 1731\,ha across that range, and with response time interacting with terrain difficulty to further reduce containment probability \citep{cardil_assessing_2025}. Since the framework has been validated outside its region of origin, the Alpine gap is one of application rather than of method --- a point worth stating plainly, because it converts an apparently intractable evidence gap into a tractable one.
+
+Where suppression cannot be fast everywhere it must be fast in the right places, and the right places are identifiable in advance from terrain and fuel connectivity, which is the operational argument for targeted placement of pre-suppression infrastructure such as water points for aerial firefighting \citep{conedera_linking_2024}. Alpine fire management is estimated to cost around €75 million annually in direct firefighting and post-fire measures across the arc, against a proposed integrated management framework costing roughly €10 million a year \citep{muller_forest_2020}; whatever the precision of those figures, the ratio frames prevention as cheap relative to response.
+
+\subsection{Prevention, fuel management and the limits of prescribed fire}
+
+Alpine prevention must work against the socio-economic trend that produced the fuel, and must be built in advance of the hazard that would justify it politically. Fire-smart management is already the focus of managers in Mediterranean regions, and the argument for developing pre-fire strategies in the currently less affected Alps rests on anticipation rather than on experience \citep{gerberding_mapping_2025}.
+
+Two instruments are available. Silvicultural intervention targets fuel structure and composition and interacts, not always favourably, with the other functions Alpine forests are managed for \citep{dinca_timber_2025}. Grazing-based fuel management targets accumulation directly and has an unusually favourable policy profile, since agricultural and forest policy could regulate and promote herbivory in forest areas from which herbivores have traditionally been excluded, and direct agri-environmental subsidy towards extensive grazing and pastoralism, with effectiveness contingent on herbivore type, density and feeding behaviour \citep{rouetleduc_effects_2021}. Landscape simulation gives that lever a benchmark: prescribed burning alone reduced subsequent wildfire by up to 36\% over thirty years, but its leverage rose to unity --- one hectare of wildfire avoided per hectare treated --- only when combined with high nature value farmland restoration and fire-smart forest conversion \citep{pais_optimizing_2023}. Fuel treatment works best as part of a land-use policy, not as a standalone operation.
+
+Prescribed fire itself fits the Alps poorly, for structural rather than regulatory reasons. The dominant species carry little fire adaptation, with silver fir, spruce and especially beech ranking lowest in experimentally measured thermal resistance \citep{mutterer_bark_2026, dupire_vulnerability_2019}. The burn window is narrow, coinciding with the spring anthropogenic fire peak \citep{muller_forest_2020}. Escape consequences are severe because the slopes requiring treatment are those above assets. And the assumption that low-intensity burning is hydrologically benign is undermined by the finding that the strongest water repellency occurred in low-severity plots \citep{negri_wildfire_2026}. No Alpine prescribed-burning trial exists in the corpus reviewed here that would allow these concerns to be quantified.
+
+Nature-based solutions are the increasingly common vehicle for such measures, and here the Alpine evidence carries a warning. Of 97 nature-based solutions mapped across the European Alps, most addressed drought or soil instability and aimed at multiple benefits, yet they were generally not located within the hotspots of the hazards they claimed to address, nor where those hotspots coincided with concentrations of the ecosystem contributions they aimed to secure \citep{dubo_nature-based_2023}. Measures are being placed where they are institutionally feasible rather than where they are physically needed.
+
+\subsection{Fragmentation, harmonisation and cross-border coordination}
+
+The Alpine wildfire cascade crosses institutional boundaries at every link: prevention sits with forest administrations, suppression with fire services and civil protection, post-fire rockfall and torrent control with geological surveys and infrastructure operators, and the land-use decisions governing fuel continuity with agricultural and planning authorities. The sequence described in Section~\ref{sec:cascade} passes through all four.
+
+The fragmentation reaches the level of basic factual disagreement. Surveying three stakeholder groups across seven Alpine countries found significant differences in perceptions of fire numbers, burnt area and future trend, even where the groups agreed that precipitation, temperature and wind are the dominant natural drivers and that recreation, rural abandonment and owner awareness are the dominant socio-economic ones \citep{hoang_stakeholders_2026}. A hazard whose practitioner community does not share a factual picture is not one that is ready to grow.
+
+Harmonisation has been attempted and has been project-driven. The first harmonised Alpine fire database and regime characterisation came from a transnational project \citep{valese_wildfires_2011}, whose data layers were subsequently reused in national danger assessment \citep{muller_towards_2020}, and whose synthesis was consolidated into an Alpine-scale white paper setting out prevention, suppression, post-fire and knowledge-transfer priorities with costed estimates \citep{muller_forest_2020}. What does not yet exist at Alpine scale is standing infrastructure: the multi-institutional monitoring networks combining remote sensing, in situ instrumentation and geophysical methods that compound hazard research requires \citep{baselt_compound_2026}, and the systematic post-fire documentation procedures that would make indicator-based integrated fire management operable \citep{melzner_wildfire-induced_2025}. That fire and its consequences cross national borders has been demonstrated directly for a central European transboundary interface \citep{avouris_exposure_2025}.
+
+\subsection{Early warning and the design of integrated fire management}
+
+The most tractable near-term gain is not a new Alpine model but the extension of early warning systems that already exist. The Alps possess dense hydro-meteorological monitoring, mature torrent and avalanche warning services and long institutional experience of gravitational hazard; what those systems lack is a fire term. The concrete proposal in the Alpine literature is to modify catchment runoff parameters automatically for burnt catchments, so that a debris flow early warning system lowers its rainfall thresholds without waiting for a field survey, using thematic layers --- catchment and fan delimitation, geology, bedrock outcrop, land use and satellite-derived fire perimeters --- that are already available in geographic information systems \citep{tiranti_wildfires_2021}. The Bussoleno event supports the need for exactly this, since the triggering intensity fell below the threshold that an unburnt-basin system would have been watching for \citep{laporta_postwildfire_2025}.
+
+Two design principles follow from the modelling evidence. The first is that outputs should be expressed as decision thresholds rather than as probability surfaces, with the asymmetry between missed detections and false alarms treated as part of the specification rather than as a post-hoc consideration; Alpine ignition modelling has already been built this way, deriving dynamic thresholds from combinations of true-positive and false-alarm rates \citep{moreno_1_nodate}, and integrated danger assessment has reported false-alert performance as a first-class result \citep{muller_towards_2020}. In a setting where a missed detection means an unwarned slope above a village, this is not a refinement.
+
+The second is that integrated fire management should be specified around indicators that different institutions can each observe and act on. The Alpine post-fire inventory work proposes precisely that: identification of indicators for burn severity and for subsequent geohydrological processes, with systematic documentation procedures, framed explicitly for use within an integrated fire management strategy by policymakers rather than by researchers \citep{melzner_wildfire-induced_2025}. The costed Alpine framework already allocates roughly a fifth of a proposed annual budget to post-fire management and a further tranche to knowledge transfer \citep{muller_forest_2020}, and the compound-hazard roadmap specifies the monitoring networks that would supply the indicators \citep{baselt_compound_2026}. The components have been separately proposed; what is missing is their assembly.
+
+\subsection{Economic and social distribution}
+
+The economics of Alpine wildfire are dominated by the value of what the forest protects rather than by what it produces. Protective forest preventing rockfall and avalanche from reaching settlement has a replacement cost in engineered works far exceeding the timber value of the stand, and the fivefold difference in annual rockfall risk between a forested and unforested slope above Martigny is the cleanest available expression of that asymmetry \citep{moos_climate_2021}.
+
+Tourism sits on both sides of the ledger, and its seasonal redistribution is a risk-relevant fact rather than a background one. Warming threatens high-altitude winter tourism through reduced snow-cover duration while creating summer opportunity as visitors escape lowland heat \citep{pede_mountain_2022}, which moves people into forested terrain during the season when danger is rising; the wildfire--tourism interaction has been examined in detail for southern Europe, where climatic conditions, vegetation, human activity and topography jointly drive incidence with substantial sectoral consequences \citep{abrham_wildfires_2024}. The services at stake propagate across scales, since the vegetation changes through which fire acts on them operate locally but register regionally \citep{vukomanovic_systematic_2019}, which is one reason the costs and the benefits of Alpine protective forest accrue to different parties.
+
+Distribution is where the social science is thinnest. Alpine valley communities are small, ageing and economically specialised, and they bear the costs of both hazard and prevention while much of the benefit of protective function accrues to through-traffic and downstream regions. The literature gestures at this asymmetry --- through adaptive capacity as an explicit component of vulnerability \citep{riviere_mapping_2023}, through the diagnosis of fragmented governance as a threat to mountain forestscapes and the argument for a shift from sustainability to regeneration \citep{majlingova_sustainability_2025}, and through resilience assessment that incorporates governance influences at each stage \citep{lockwood_biodiversity_2014} --- but we found no Alpine study quantifying the distribution of wildfire costs and benefits across communities.
+
+
+% =======================================================
+\section{Discussion and Conclusions}
+% =======================================================
+
+\subsection{Why the change is qualitative rather than incremental}
+
+Taken individually the changes documented here are modest. Fire danger is rising from a low base; fuel is accumulating slowly; fires remain small; documented post-fire debris flows in the western Italian Alps number two. Each observation on its own supports a cautious conclusion.
+
+The argument of this review is that they should not be taken individually. Four trends converge on the same ground. The climatic envelope is expanding, fastest where fire experience is least \citep{gerberding_mapping_2025, miller_climate_2024}. Fuel is becoming continuous on the steep marginal terrain abandoned first, with infilling below the treeline accounting for four fifths of new tree establishment \citep{frei_evidence_2023, garbarino_contrasting_2020, conedera_linking_2024}. The seasonal constraint imposed by snow is weakening in an elevation-dependent way, and fire activity is measurably migrating upslope \citep{rangwala_climate_2012, beloiu_climatedriven_2026}. And exposure is being redistributed into the fire season by the same warming, through summer tourism \citep{pede_mountain_2022}.
+
+What makes the convergence qualitative is the cascade. In a lowland system a modest increase in fire activity yields a modest increase in loss. In the Alps, fire acts on the protective function of forests standing above fixed, high-value, non-relocatable assets; it lowers the rainfall intensity required to mobilise a debris flow below the return period of ordinary storms \citep{laporta_postwildfire_2025}; and it opens a consequence window that ranges from three years in the soil \citep{negri_wildfire_2026} through thirty-five years for canopy recovery \citep{stritih_alternative_2023} to effectively permanent at subalpine elevations \citep{degiuli_arrested_2024}. The loss function is not linear in burnt area, and what is changing is the frequency with which the non-linear regime is entered.
+
+\subsection{Implications for practice and for research design}
+
+For fire science, the Alpine case tests whether the discipline's tools are general or merely well tuned to where they were built, and the evidence favours the second reading more often than is comfortable: danger indices require recalibration \citep{de_angelis_modelling_2015, zacharakis_environmental_2023}, pooled ignition models lose skill at regional level \citep{gelabert_assessing_2025}, spread models validated on perimeter conceal disagreement on the intensity that drives everything downstream \citep{malanchini_modeling_2025}, severity products do not predict soil condition \citep{negri_wildfire_2026}, and continental models report their own failure in mountains \citep{forrest_understanding_2024}. The constructive reading is that the Alps are a good laboratory for structurally rather than statistically justified tools, because the data will not support anything else.
+
+For mountain geomorphology, fire is arriving as a new preparatory factor in a domain whose frameworks were built around rainfall, snowmelt, freeze--thaw and permafrost degradation, and whose Alpine fire literature is still at the stage of first inventories \citep{melzner_wildfire-induced_2025} and individual documented events \citep{tiranti_wildfires_2021, laporta_postwildfire_2025, melzner_brief_2019}. The efficient path is not a parallel system but making existing infrastructure fire-aware, as in the proposal to modify curve-number values automatically for burnt catchments within an operating debris-flow early warning system \citep{tiranti_wildfires_2021}, and as the transferability of physically grounded post-fire models suggests is feasible \citep{diakakis_exploring_2023}.
+
+For climate adaptation, the finding that Alpine nature-based solutions are not located where their target hazards concentrate \citep{dubo_nature-based_2023} is a general warning about planning that proceeds from institutional feasibility. There is also a specific and awkward interaction: several strands of adaptation and mitigation policy --- carbon sequestration, reduced management intensity, protective forest expansion --- increase standing biomass and fuel continuity, and increasing forest cover extends the area over which fire is possible \citep{gerberding_mapping_2025}. This is not an argument against those policies but an argument that fire hazard should enter their appraisal, which it generally does not.
+
+For governance, the institutional unit of Alpine wildfire risk cannot be the fire service, the forest administration or the geological survey alone. A workable formulation is a temporal one: a prevention and suppression phase owned by forest and fire authorities, and a post-fire susceptibility phase lasting years and owned jointly with torrent, avalanche and infrastructure authorities. The trigger for the handover is the fire itself, and the handover has at present no institutional form.
+
+\subsection{Limitations of this review}
+
+Three limitations bear on how the conclusions above should be read.
+
+The first is compositional. The corpus was built by citation snowballing from a seed set rather than by exhaustive database querying, and one iteration of snowballing inherits the blind spots of its seeds. Backward chaining favours works that the seed authors already considered relevant, and forward chaining favours works indexed in open citation infrastructure, which under-represents grey literature, national reports and non-English publication. Since a substantial part of Alpine fire knowledge exists in Italian, German, French and Slovenian technical reporting, and since the harmonisation of Alpine fire statistics has itself been project-driven \citep{valese_wildfires_2011, muller_forest_2020}, this is a material gap rather than a formality. The expansion phase was further restricted to sources whose full text could be retrieved and archived, which biases towards open-access publication and therefore towards recent work and towards certain publishers.
+
+The second is that the synthesis is thematic and cannot support quantitative pooling. Alpine studies differ in their definitions of severity, in burnt-area thresholds, in reporting periods and in the administrative basis of their fire records, and the same obstacle has been documented for the neighbouring literature on land abandonment and disturbance, where study sites cluster strongly and coverage across disturbance types is uneven \citep{mantero_influence_2020}. Where we report numbers from individual studies, they are illustrative of magnitude rather than estimates of an Alpine parameter, and the two should not be conflated.
+
+The third concerns imported evidence. Several of the mechanisms central to our argument --- terrain effects on the surface wind field, wind and slope effects on rate of spread, post-fire sediment supply, and terrain-conditioned suppression difficulty --- are established primarily outside Europe \citep{sharples_overview_2009, hayajneh_wind_2026, morell_sediment_2021, cardil_assessing_2025}. We have used such work to establish that a process operates and to characterise its mechanism, never to quantify an Alpine magnitude, but the distinction is easier to state than to police, and readers should treat the Alpine magnitude of these processes as unmeasured rather than as inferred. Comparative mountain research programmes have argued for exactly this kind of cross-range synthesis while being explicit about its limits \citep{payne_nature_2020}, and the balance struck here is a judgement rather than a rule.
+
+\subsection{Main findings}
+
+Five conclusions are supported.
+
+First, the Alpine fire regime is structurally distinct from the Mediterranean one: bimodal, with a spring anthropogenic surface-fire season and a summer season in which lightning supplies up to half of ignitions in some areas; dominated by fires under one hectare; carried by largely fire-intolerant species; and defined by exposure that lies below the fire rather than within it \citep{muller_forest_2020, valese_wildfires_2011, bercak_combination_2024, mutterer_bark_2026}.
+
+Second, fire danger is rising across the arc and fire activity is migrating upslope at roughly 72\,m per decade, with the largest projected relative increases where fire experience is least \citep{beloiu_climatedriven_2026, gerberding_mapping_2025, miller_climate_2024}.
+
+Third, the fuel bed is being reorganised by abandonment, forest expansion and treeline dynamics in a way that increases connectivity preferentially on steep terrain, and this is a first-order control on large-fire likelihood independent of weather \citep{frei_evidence_2023, stritih_alternative_2023, conedera_linking_2024}.
+
+Fourth, the dominant Alpine damage pathway is the post-fire geomorphic cascade, which lowers triggering thresholds below ordinary storm intensities, is poorly predicted by remotely sensed severity, and opens a consequence window ranging from three years to effectively permanent depending on elevation \citep{laporta_postwildfire_2025, negri_wildfire_2026, degiuli_arrested_2024, moos_climate_2021}.
+
+Fifth, the modelling apparatus omits, in a consistent direction, processes that add to hazard, while the Alpine record is too sparse to support added complexity, so that progress depends on better-chosen structure rather than more parameters, and on distinguishing mechanisms that can be imported from coefficients that must be refitted \citep{conedera_linking_2024, de_angelis_modelling_2015, diakakis_exploring_2023, cardil_assessing_2025}.
+
+\subsection{Research agenda}
+
+\begin{enumerate}
+    \item \textbf{Systematic post-fire monitoring across the arc.} The Alps have no long-term observational linkage between wildfire and geohydrological process comparable to that of the western United States \citep{melzner_wildfire-induced_2025}; the instrumentation design proposed for compound mountain hazards is a reasonable starting specification \citep{baselt_compound_2026}.
+    \item \textbf{Post-fire soil products that are not severity proxies.} The link on which the entire post-fire hazard chain currently rests is the one shown to fail \citep{negri_wildfire_2026}.
+    \item \textbf{Dynamic fuel coupled to fire.} Reconnect the Alpine dynamic-vegetation tradition to hazard assessment and resolve fuel condition rather than fuel type \citep{schumacher_relative_2006, hillebrand_contrasting_2023, muller_towards_2020}.
+    \item \textbf{Terrain-aware fire weather.} Quantify the departure of Alpine valley fire weather from interpolated fields under foehn, valley-wind and channelling regimes, and test whether corrections improve danger prediction \citep{ozaki_impact_2022, sharples_overview_2009}.
+    \item \textbf{Spread-model validation on intensity.} The only Alpine evaluation disagrees precisely on the quantity that drives the cascade, and the experimental literature predicts that operational formulations will fail in Alpine geometry \citep{malanchini_modeling_2025, hayajneh_wind_2026}.
+    \item \textbf{Application, not invention, for suppression difficulty.} A validated terrain-conditioned initial-attack framework exists and has been transferred between regions; applying it to the Alps would replace an evidence gap with a measurement \citep{cardil_assessing_2025}.
+    \item \textbf{Cascade-explicit assessment for a real Alpine corridor.} No study carries an Alpine fire scenario through to consequences for a settlement or transport corridor via the geomorphic pathway; the operational template of automatic post-fire threshold modification is the natural starting point \citep{tiranti_wildfires_2021}.
+    \item \textbf{Fires below the observational threshold.} The continental and mountain-scale analyses that define current understanding exclude fires below 30\,ha \citep{beloiu_climatedriven_2026}, which is most of the Alpine regime; closing this gap is a prerequisite for detecting Alpine regime change at all.
+\end{enumerate}
+
+
+% =======================================================
+\section*{Acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements}
+% Text here.
+
+\section*{Funding}
+\addcontentsline{toc}{section}{Funding}
+% Text here.
+
+\section*{Competing Interests}
+\addcontentsline{toc}{section}{Competing Interests}
+% Text here.
+
+\section*{Data and Code Availability}
+\addcontentsline{toc}{section}{Data and Code Availability}
+% The screening register underlying this review (all candidate records, tier,
+% inclusion decision and reason) is provided as supplementary material.
+
+
+% =======================================================
+\appendix
+% =======================================================
+
+\section{Search Protocol and Screening Register}
+\label{app:prisma}
+
+\subsection{Information sources}
+
+Seed publications were assembled from domain knowledge and targeted searching. Backward citation chaining was performed on the reference sections of the seed publications; forward chaining used open citation infrastructure. Sources added during the expansion phase were restricted to open-access publications whose full text could be retrieved and archived.
+
+\subsection{Eligibility criteria}
+
+\begin{itemize}
+    \item \textbf{Include:} fire or wildfire content \emph{and} the European Alps or an Alpine Convention country.
+    \item \textbf{Include as comparative:} fire content and another mountain system, where no Alpine equivalent exists for the process concerned.
+    \item \textbf{Retain as context:} Alpine or European mountain process without a fire component; European fire without a mountain component.
+    \item \textbf{Exclude:} generic fire science with no mountain or European anchor.
+\end{itemize}
+
+\subsection{Screening, coding and evidence capture}
+
+Each record was assigned a tier, a decision and a reason, and each retained record was mapped to one or more sections of this review. For every source cited in the text, a structured evidence note recording study region, method, quantitative results and stated limitations was captured and archived alongside the screening register.
+
+\subsection{PRISMA flow diagram}
+% To be inserted.
+
+\subsection{Search strings}
+% To be completed once database searches supplementing the snowball are run.
+
+
+\section{Glossary of Terms}
+
+\begin{description}
+    \item[Fire danger] The meteorological and fuel-condition potential for ignition and spread, expressed by an index; a statement about conditions, not about realised fire.
+    \item[Fire regime] The realised distribution of fire frequency, size, severity, seasonality and cause over a region and period.
+    \item[Burn severity] The degree of fire-induced change to vegetation and soil, commonly estimated remotely; see Section~\ref{sec:cascade} for the limits of this proxy.
+    \item[Fuel connectivity] The extent and spatial aggregation of contiguous burnable vegetation, distinct from fuel load.
+    \item[Protection forest] Forest whose primary managed function is mitigation of gravitational natural hazards affecting assets below.
+    \item[Geohydrological process] Collective term used in the Alpine literature for erosion, rockfall, slides and debris flows driven by the interaction of water and slope material.
+    \item[Cascade] A sequence in which one hazard alters the susceptibility of a system to a subsequent, distinct hazard.
+\end{description}
+
+
+% =======================================================
+% Bibliography
+% =======================================================
+\bibliographystyle{apalike}
+\bibliography{FireScape_master_v2}
+
+\end{document}
