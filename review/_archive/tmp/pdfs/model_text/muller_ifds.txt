@@ -1,0 +1,610 @@
+                                                                          Ecological Informatics 60 (2020) 101151
+
+
+                                                                        Contents lists available at ScienceDirect
+
+
+                                                                         Ecological Informatics
+                                                          journal homepage: www.elsevier.com/locate/ecolinf
+
+
+
+
+Towards an integrated forest fire danger assessment system for the European                                                                                                    T
+Alps
+Mortimer M. Müllera, , Lena Vilà-Vilardellb, Harald Vacika
+                                      ⁎
+
+a
+  University of Natural Resources and Life Sciences, Department of Forest- and Soil Sciences, Institute of Silviculture, Peter Jordan Str. 82, 1190 Vienna, Austria. 2 Joint
+Research Unit CTFC – AGROTECNIO, Ctra de St. Llorenç de Morunys, km 2, 25280 Solsona, Spain.
+b
+  Joint Research Unit CTFC – AGROTECNIO, Ctra de St. Llorenç de Morunys, km 2, 25280 Solsona, Spain
+
+
+
+
+ARTICLE INFO                                                   ABSTRACT
+
+Keywords:                                                      In recent years the European Alps experienced higher temperatures, more heatwaves, and more severe wildfires.
+Alpine region                                                  Improving fire danger assessment for these sensitive ecosystems is a core element of future-oriented fire man-
+Wildfires                                                      agement strategies in the face of climate change. While meteorological systems are common to predict fire
+Forest fires                                                   danger in many countries, other factors such as vegetation, topography, lightning occurrence and human impact
+Fire danger assessment
+                                                               are generally not considered. We introduce an Integrated forest Fire Danger assessment System (IFDS) for the
+Integrated fire danger
+                                                               Alpine country Austria that includes i) daily fire weather index data, ii) a countrywide hazard map for fire
+                                                               ignition through human activities, iii) a lightning fire hazard map, iv) a high-resolution fuel type map, and v) a
+                                                               topography-based estimation of the fire hazard. The system was implemented as an online Web-GIS prototype.
+                                                               The objectives of this contribution are to describe the conceptual approach for the IFDS, to understand the
+                                                               predictive power of different data layers in fire danger rating and to identify potential improvements, especially
+                                                               regarding the role of vegetation and human influence. A first validation was done with 2018–2019 forest fire
+                                                               data. Some variants of the IFDS produced better overall prediction accuracy regarding forest fire ignitions
+                                                               compared to common fire weather indices. They typically performed relatively better when considering the
+                                                               number of false alerts as well. However, correlation between larger burned areas and higher index values was
+                                                               low. Conclusions for the implementation of the IFDS in other Alpine countries are discussed and re-
+                                                               commendations for necessary and reliable datasets at high resolution are given.
+
+
+
+
+1. Introduction                                                                                       avalanche-prone slopes, rockfall events, mudslides and soil erosion. In
+                                                                                                      the future, costs of firefighting, restoration of forests and prevention
+    In recent years, major wildfires in Australia, Brazil, California and                             measures may increase significantly. Many parts of the Alpine forests
+Siberia provided evidence that wildfire occurrence and severity are                                   consist of spruce (Picea abies (L.) H. Karst.), a species that already
+increasing as the climate changes (Abatzoglou and Williams, 2016;                                     suffers from climate change impacts and will become even more af-
+Mariana et al., 2018). Several studies and extraordinary fire events, like                            fected if temperature and dryness rise as expected (Lexer et al., 2014).
+the simultaneous outbreak of large forest fires in the Italian region of                              Another major issue in fire prone regions is the Wildland-Urban-Inter-
+Piemonte in October 2017, demonstrated that wildfires are also an                                     face (WUI), as wildfires affect urban areas more easily as a result of the
+urgent issue in the European Alps and that frequency and severity will                                usual practice of constructing buildings, infrastructure and homes near
+likely increase in the future (Matulla et al., 2004; Moser et al., 2010;                              or in the vegetation zone (Fox et al., 2018; Sarricolea et al., 2020).
+Müller et al., 2015; Valese et al., 2014; Wastl et al., 2013). The prob-                                  Besides the analysis of wildfire data, precaution measures, an
+ability and intensity of forest fires are driven by higher temperatures in                            adapted forest management, awareness raising and the collection of
+combination with longer drought periods, the change in forest man-                                    empirical data on fire behavior, an improved wildfire danger assess-
+agement and a more intensive recreational use of forests (Aldersley                                   ment is a key element to prevent severe fire impacts and high sup-
+et al., 2011; Dupire et al., 2019; Flannigan et al., 2005; Vacchiano et al.,                          pression costs for fires (De Angelis et al., 2015). In most European Al-
+2018; Zumbrunnen et al., 2012). Especially mountain protection forests                                pine countries national weather services or authorities provide an
+on south-facing slopes are at risk. Forest fire impacts can lead to new                               assessment of fire danger at national level. There are also attempts to
+
+
+
+    ⁎
+        Corresponding author.
+        E-mail address: mortimer.mueller@boku.ac.at (M.M. Müller).
+
+https://doi.org/10.1016/j.ecoinf.2020.101151
+Received 17 April 2020; Received in revised form 29 June 2020; Accepted 29 June 2020
+Available online 08 September 2020
+1574-9541/ © 2020 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+M.M. Müller, et al.                                                                                                          Ecological Informatics 60 (2020) 101151
+
+
+
+
+                                       Fig. 1. Schematic illustration of the IFDS prototype and the included data layers.
+
+
+integrate real-time weather data into GIS platforms to support fire                 introduces an Integrated forest Fire Danger assessment System (IFDS)
+brigades in fighting wildfires (Kalabokidis et al., 2013). Current used             for the Alpine region. Austria, situated at the eastern border of the Alps,
+fire danger assessment systems in Europe and worldwide have in                      was chosen as case study region. The aim of this study is to i) under-
+common that, in most cases, only meteorological data (fire weather                  stand the predictive power of the different datasets used and to ii)
+indices respectively) are used to predict wildfire danger (De Angelis               discuss potential data insufficiencies. We hypothesize that i) the IFDS
+et al., 2015). There is a need to assess wildfire danger using an in-               has a better fire prediction accuracy than the stand-alone use of me-
+tegrated and harmonized procedure at European level (Chuvieco et al.,               teorological fire weather indices and ii) including the human factor
+2010; San-Miguel-Ayanz et al., 2018). This procedure has to consider                further improves prediction quality.
+multiple factors, e.g. fire weather, fire causes, vegetation and topo-                  In our study, we mainly refer to the term forest fire, which means an
+graphy. In the present study, all these factors were considered to esti-            uncontrolled fire independent of size, cause and intensity, affecting
+mate fire danger.                                                                   forested area. Forest fires are the most relevant type of uncontrolled
+    For the European Alps, first attempts to include fire causes and                vegetation fires in the Northern Alps and are used synonym to wildfires
+potential vulnerabilities into fire danger assessment were done in                  in forested areas. The term wildfire includes all uncontrolled vegetation
+Switzerland (Conedera et al., 2015). Fire danger modelling in such                  fires and is used in our study where appropriate. Aspect is used as a
+small-scaled landscapes like the European Alps encounters a number of               synonym for topographical aspect.
+difficulties. A spatial resolution of 1 km2 is state of the art of regional
+weather models but might be insufficient when considering narrow                    2. Methodological development of the IFDS
+valleys, mountain peaks, and the corresponding effects of temperature,
+precipitation, wind and solar irradiation on north and south-facing                      The conceptual approach of our IFDS prototype considers the
+slopes (Carrega, 1995). This leads to an inadequate picture of estimated            combined use of factors that influence fire ignition danger and fire
+surface fuel moisture, the crucial part in fire ignition (Schunk et al.,            behavior according to Chuvieco et al. (2010) and San-Miguel-Ayanz
+2013; Zhou and Vacik, 2017). Moreover, (fine) fuel moisture is influ-               et al. (2018). The used datasets and data layers included i) information
+enced by a number of factors. Besides atmospheric variables and to-                 on forest fire occurrence, retrieved from the Austrian wildfire database,
+pography, also tree species, vegetation type and structure can alter the            ii) fire weather indices derived from meteorological data, iii) a spatial
+fuel moisture (Carrega and Geronimo, 2007; Schunk et al., 2013).                    analysis on the human influence on fire ignition, iv) a lightning fire
+    Assessments of wildfire danger often do not consider potential                  hazard map, v) an area-wide classification of vegetation to derive a fuel
+triggers of fires: lightning strikes and human activities. While the direct         type map, and vi) a high-resolution topography map, where we ex-
+or indirect anthropogenic influence accounts for nearly all wildfires in            tracted aspect and slope (Fig. 1). The different combination and
+southern Europe, about 15% of annual forest fires in the Alps are the               weighting of these factors allowed the calculation of several model
+result of lightning strikes (Conedera et al., 2006; Müller et al., 2013;            variants.
+Müller and Vacik, 2017). All other wildfires in the Alpine region are
+most likely anthropogenic caused, often ignited by carelessly discarded
+cigarettes, pile fires out of control, hot ashes, flying sparks from trains,        2.1. Wildfire database
+torn cables of power lines, traditional fires, or arson (Vacik et al., 2011).
+    Another critical point of currently used fire danger assessment                     An Austrian wildfire database was established within the activities
+models in the Alpine region is their inappropriate suitability for the              of European (ALP FFIRS) and national (AFFRI, FIRIA) funded projects,
+winter season and early spring. South-facing slopes are snow-free ear-              as no homogenized and nationwide database on vegetation fire occur-
+lier because of higher temperatures and stronger solar radiation. The               rence existed (Vacik et al., 2011). The database now contains more than
+fine organic matter from the last year (grass, litter) dries out faster than        6500 wildfire incidents, including 5000 forest fires, with an almost
+on north-facing slopes, increasing the probability for an earlier fire              complete documentation of 1300 forest fires larger than 0.1 ha since
+ignition in spring (Conedera et al., 2018; Maxwell et al., 2019). This              1993 (Müller et al., 2020). The mean localization error for all recorded
+phenomenon cannot be described by current fire danger indices such as               forest fires in the Austrian fire database is below 1500 m. Additional
+the Canadian Fire Weather Index (FWI), as these indices are not in-                 information on the recorded fires includes totally burned area, affected
+tended to be used in the cold season (Van Wagner, 1987).                            tree species and forest type, fire causes, fire behavior, altitude, slope
+    To overcome the presented issues and to capture all elements of                 and topographical aspect at ignition point. All fire ignition points are
+forest fire ignition and fire behavior in a holistic way, the present study         georeferenced in WGS 84. The Austrian forest fire database was used as
+                                                                                    empirical basis to define the danger classes of the data layers on fire
+
+                                                                                2
+M.M. Müller, et al.                                                                                                           Ecological Informatics 60 (2020) 101151
+
+
+weather, human influence, lightning induced fires, vegetation, aspect             Table 1
+and slope. The data layers implemented in our IFDS were generated                 Canadian FWI, its sub-index FFMC and the corresponding thresholds of the
+during different projects and in different years (Appendix A). Therefore,         danger classes used for the IFDS prototype.
+the respective forest fire records used differ in terms of accuracy and                                  Very low   Low (2)   Moderate (3)   High (4)    Very
+time span. For the IFDS validation, forest fire data of 2018 and 2019                                    (1)                                             high (5)
+were used.
+                                                                                   FFMC                  < 78       78 < 87   87 < 91        91 < 93     ≥ 93
+                                                                                   FWI (15.04–15.10)     <5         5 < 10    10 < 20        20 < 40     ≥ 50
+                                                                                   FWI (16.10–14.04)     < 2,5      2,5 < 8   8 < 17         17 < 36     ≥ 36
+2.2. Meteorological data
+
+    Weather conditions influence fire ignition and fire behavior. The             2.3. Human impact
+Canadian FWI as predictor of both fire ignition and fire behavior is
+successfully implemented by several European countries, including the                 Human activities are the most relevant ignition source of wildfires
+European Forest Fire Information System (EFFIS) hosted by the Joint               in Europe (Aldersley et al., 2011; Zumbrunnen et al., 2012). In Austria,
+Research Center (JRC). It consists of several sub-indices, which describe         85% of all forest fires are anthropogenic caused (Vacik et al., 2011).
+the fuel moisture and wind dependent fire behavior. Arpaci et al.                 Arndt et al. (2013) estimated human influence on fire ignition by
+(2013) proved that the FWI and its sub-indices performed best re-                 studying the relationship between touristic activities, infrastructure,
+garding the prediction of forest fire occurrence in Austria compared to           forestry and the spatial occurrence of forest fires from 1993 to 2009
+other fire weather indices and meteorological variables.                          using logistic regression. They identified 59 socio-economic variables,
+    We used fuel moisture as the weather-related proxy for ignition               which were validated using different models and subsets of forest fire
+danger (Schunk et al., 2013). In Austria, fire ignition is assumed to be          records. In the final model, the variables that significantly contributed
+more relevant than fire behavior. There are only few forest fires in              to fire ignitions were railroads, forest roads, population density and
+Austria, about 200 per year, 95% of which burn less than one hectare              hiking trail density together with agricultural and forest infrastructure.
+and 85% even stay below 0.1 ha – a size, where forest fire behavior is            The authors could explain around 60% of the forest fires causes and
+not yet of great importance. Even a fire with a burned area of about ten          prepared a fire hazard map for the whole of Austria at municipal level.
+hectares (which occurs on average every three years) is very small on a           This map was used as basis for the human data layer in our model
+global scale. According to forest fire documentation, fire behavior in            (Appendix A).
+Austria depends more on vegetation and topography than on meteor-
+ological conditions (Vacik et al., 2011). Forest structure in Austria and
+                                                                                  2.4. Lightning fires
+in other Alpine regions is heterogeneous and often interrupted by forest
+roads, clear-cuts, alpine pastures or skiing slopes. This enables early and
+                                                                                      Lightning strikes are the only relevant natural cause of fire ignition
+direct intervention and can prevent large fires, where fire behavior
+                                                                                  in Europe (Conedera et al., 2006). In Austria, 15% of all forest fires are
+prediction is crucial for effective and safe firefighting and evacuation
+                                                                                  caused by lightning. During the summer months, the proportion can be
+measures (Beck et al., 2002).
+                                                                                  up to 50% (Müller et al., 2013). After a validation procedure for
+    The Fine Fuel Moisture Code (FFMC), a sub-index of the FWI, shows
+                                                                                  lightning strikes that ignited forest fires in Austria from 1993 to 2012
+better prediction results for fire ignitions than the FWI, also in Austria
+                                                                                  (Müller et al., 2013), spatial lightning fire data was intersected with a
+(Arpaci et al., 2013; Dowdy and Mills, 2012). Daily FFMC data are
+                                                                                  high-resolution topographic map and a vegetation map (Albers, 2012;
+available since 2019. Therefore, we could use the FFMC as a basis for
+                                                                                  Grima, 2011). The parameters used for danger classification were al-
+the calculations of the IFDS variants only in 2019. In 2018, fuel
+                                                                                  titude, slope inclination, aspect and vegetation type. Based on the dis-
+moisture in our model was depicted through the FWI.
+                                                                                  tribution of lightning fires from 1993 to 2012, a static raster layer with
+    The FWI and its sub-indices are estimated by the Austrian Central
+                                                                                  danger classes from 1 to 5 at a spatial resolution of 100 × 100 m was
+Institute of Meteorology and Geodynamics (Zentralanstalt für
+                                                                                  compiled (Appendix B). The combination for the final lightning fire
+Meteorologie und Geodynamik, ZAMG), using the INCA approach
+                                                                                  hazard map was done by equal weights (25% per parameter), as cur-
+(Integrated Nowcasting through Comprehensive Analysis). INCA pro-
+                                                                                  rently no studies on the importance of the different factors are available
+vides short-term forecasts and analysis of temperature, relative air
+                                                                                  for Austrian conditions.
+humidity, rainfall, and other parameters on a spatial resolution of
+1 × 1 km nationwide (ZAMG, 2019). The model requires topographic
+information for a realistic description of the local weather conditions.          2.5. Vegetation
+However, as the resolution is limited to 1 × 1 km, effects of aspect or
+slope inclination cannot be depicted at a fine-scale. Wind is the most                Vegetation type, amount, composition, structure and patchiness
+crucial factor regarding fire propagation (Chuvieco et al., 2010). Yet,           influence fire behavior (San-Miguel-Ayanz et al., 2018) and are referred
+there is no reliable high-resolution wind model for the mountainous               to as fuel characteristics (combustible material). In Austria, there is no
+region of Austria available that could be used to model fire behavior.            such fuel type classification available. In our IFDS model, we used a
+Therefore, the factor wind was excluded in the current approach.                  nationwide vegetation map of Austria as basis for the fuel classification.
+    In our IFDS prototype, we defined the FWI and FFMC danger class               Input datasets were the Austrian National Forest Inventory (BFW 2002)
+thresholds based on the analysis of Austrian forest fire data from 2012           and the Corinne land cover (CLC) map from 2006 with information
+to 2018, literature review and expert judgements. Because of the poor             about forest type (deciduous, coniferous, mixed stands dominated by
+performance of the Canadian FWI in late autumn, winter and early                  deciduous or coniferous) and data on biomass load (low, moderate,
+spring, thresholds for this index were modified using an expert-based             high). Albers (2012) and Arpaci et al. (2011) provided a map with a
+approach to gain better prediction accuracy (Table 1). According to               spatial resolution of 100 × 100 m, where burnable fuels and non-
+international standards, five danger classes were defined from 1 (very            burnable areas (high-mountainous, lakes, sealed surfaces) were dis-
+low) to 5 (very high). Lower thresholds were given to the lower danger            played. All burnable fuels were classified into five danger classes ac-
+classes and higher thresholds to the two highest danger classes, in order         cording to fire occurrence in Austria from 1993 to 2010 and validated
+to record few forest fires in danger class 1 and to avoid a large-scale           by a study in Tyrol (Oettel, 2012) and Carinthia (Grima, 2011). Agri-
+over-warning with high fire danger (Table 1).                                     cultural land and meadows were defined as danger class 1. Pure de-
+                                                                                  ciduous forests, mixed forests dominated by deciduous trees and sparse
+
+                                                                              3
+M.M. Müller, et al.                                                                                                                      Ecological Informatics 60 (2020) 101151
+
+
+vegetation (e.g. alpine tree line, scattered high-altitude vegetation not                    Variant 6 was seen as a control model with equal weighting for all
+mapped as forest) were classified as danger class 2. Danger classes 3 to                     parameters.
+5 were assigned to coniferous forests, where pure coniferous forests
+with high fuel load were given danger class 5.                                               2.8. Technical implementation
+
+2.6. Topography                                                                                  The IFDS prototype runs on an Ubuntu server and is based on the
+                                                                                             Python web framework “Django”, which allows an easy management of
+    Topographical effects are not depicted in the FWI and FFMC cal-                          large amounts of data. The frontend of the Web-GIS application is based
+culations retrieved from ZAMG, but both aspect and slope are essential                       on HTML, CSS and JavaScript. JavaScript with its libraries jQuery and
+parameters for fire ignition danger and fire behavior assessment, re-                        Leaflet are used for the client-side functions of the website. The first is a
+spectively. Aspect and slope were derived from high-resolution topo-                         library for the efficient processing of the so-called “document-object
+graphic maps, available online at the open data center for Austria                           model”, i.e. the structure of the webpage, while the latter is used to
+(https://www.data.gv.at). We resampled these data layers from their                          display the map. Currently, the prototype is available on a password-
+original spatial resolution of 10 × 10 m to 100 × 100 m, to match them                       protected server under https://www.waldbrand.at (“forestfire.at”)
+with the rest of data layers in our IFDS.                                                    (Fig. 2).
+    Because of stronger solar radiation and higher temperatures, south-                          With the exception of the FFMC / FWI values, which are daily up-
+facing slopes are drier than northern ones. This leads to a lower fine fuel                  dated and delivered to the server, the data layers used for the IFDS
+moisture content and therefore a higher ignition probability (Conedera                       prototype are of static nature. All datasets are available at a spatial
+et al., 2018; Maxwell et al., 2019). Fuel moisture also affects fire be-                     resolution of 100 × 100 m, leading to matrices of 5731 × 2951 cells to
+havior, however, we assumed that its relevance in the Alpine region is                       cover all of Austria. We converted the FFMC / FWI calculations from
+higher for fire ignition danger (cf. Section 2.2). We classified the to-                     the original 1 × 1 km grid to the 100 × 100 m spatial resolution used in
+pographical aspect in five danger classes, based on forest fire data from                    the IFDS prototype. For this purpose, the Python framework “Numpy” is
+1993 to 2017. Most fires were recorded on south-facing slopes (danger                        used, which was developed especially for large arrays/matrices. For the
+class 5), followed by southwestern (4) and southeastern slopes (3).                          provision of data layers and calculated indices, “Mapserver”, a free web
+Western, northwestern, northeastern and eastern slopes were categor-                         map tool for converting raw map data into retrievable tiles, was used.
+ized as danger class 2. Northern slopes had the lowest share of forest                           The experimental operation of the IFDS prototype started in spring
+fires; therefore, the danger class was defined as very low (1). We ex-                       2018 and is an ongoing research project. Several improvements have
+cluded all areas with a slope inclination of < 5° from the evaluation, as                    already been implemented on the platform, e.g. a calendar feature, a
+effects of solar radiation were assumed to be less relevant when slope                       function to generate new weighting variants, the georeferenced display
+inclination falls below this value.                                                          of documented forest fires, and an analysis tool (Fig. 3).
+    Slope inclination contributes to fire behavior (Chuvieco et al., 2010;
+San-Miguel-Ayanz et al., 2018). It mainly influences the rate of spread                      3. Validation
+and, thus, the burned area (Csontos and Cseresnyés, 2015). We con-
+verted slope inclination into fire danger classes based on Albers (2012)                     3.1. Fire events and fire danger
+and the evaluation of fire records and burned areas from 1993 to 2017.
+Slopes with an inclination of 40–49° were assessed as danger class 5,                            For our analysis, we used 135 forest fires from the year 2018 (an-
+since fire spreads faster on steeper slopes. Areas with an inclination                       nual total 172) and 195 forest fires from 2019 (annual total 235). We
+of < 10° and ≥ 50° were categorized as danger class 1, because of the                        did not include other vegetation fires in this study. We compared the
+lower propagation danger in flat surfaces (Boboulos and Purvis, 2009)                        number of correct predicted forest fires given by the FFMC, the FWI and
+and the lack of continuous forest cover in very steep areas. An overview                     all mentioned variants. A correct prediction was defined as a fire oc-
+of the classifications and thresholds of the data layers vegetation, slope                   curring in the danger classes 3 (moderate), 4 (high) or 5 (very high). A
+and aspect is given in Table 2.                                                              wrong prediction was defined as a fire occurring in the danger classes 1
+                                                                                             (very low) or 2 (low). Since the mean localization error for documented
+2.7. Combination of factors                                                                  forest fires is several hundred meters, and due to assumed inaccuracies
+                                                                                             in the data layers used, we decided to compare two approaches: First,
+    We combined the data layers shown in Fig. 1 using different                              we analyzed the 100 × 100 m grid cells where ignition points of forest
+weighting approaches (Table 3). This was done to test the sensitivity of                     fires were located. Second, we analyzed the 100 × 100 m grid cells
+the parameters / combinations in predicting forest fire danger. We                           together with the surrounding eight cells, leading to a 300 × 300 m
+based the weighting of the variants on results of previous studies in the                    data grid. This procedure was only implemented for the variants, not
+Alpine context (Albers, 2012; Arpaci et al., 2013; Grima, 2011; Müller                       for the FWI and FFMC data layers with a spatial resolution of 1 × 1 km.
+et al., 2013; Müller and Vacik, 2017). For variants 1 to 5, the weighting                    The nine-cell approach, the results of which are shown in this paper, led
+of the factor lightning was altered according to the season. From May                        to slightly better prediction results of the variants, likely because it
+15th to September 15th, lightning was given high relevance (50%), as                         smoothed existing data inaccuracies within single grid cells.
+lightning strikes may ignite up to 50% of all forest fires in Austria                            To account for the false alert rate, we counted the number of
+during the summer months (Müller and Vacik, 2017). Since almost no                           100 × 100 m grid cells per danger class and variant on all fire days
+lightning fires are documented for the rest of the year, the weighting of                    (days with at least one forest fire). We differentiated between the years
+the factor lightning was set to zero, leading to 100% human cause.                           2018 and 2019, as the FWI was the basis for variant calculation in 2018
+
+Table 2
+Danger classes, classification and thresholds of the data layers vegetation, slope and aspect implemented in the IFDS prototype.
+                      Very low (1)                Low (2)                                   Moderate (3)               High (4)                     Very high (5)
+
+  Vegetation          Agricultural land meadows   Deciduous / mixed sparse vegetation       Coniferous low fuel load   Coniferous med. Fuel load    Coniferous high fuel load
+  Slope               < 10° / ≥ 50°               10–19°                                    20–29°                     30–39°                       40–49°
+  Aspect              N                           W / NW / NE / E                           SE                         SW                           S
+
+
+
+                                                                                        4
+M.M. Müller, et al.                                                                                                               Ecological Informatics 60 (2020) 101151
+
+
+Table 3
+Variants of the IFDS and weighting of fire weather indices and parameters according to the used data layers for the summer term 2019. The weighting is divided into
+Ignition danger (left) and Fire behavior (right). The numbers in bold in the respective left column indicate the weighting for Ignition danger / Fire behavior for the
+listed variant (row total = 100%). Ignition danger is composed of FFMC, Aspect and Cause (row total = 100%), whereby the cause is divided into Human and
+Lightning (row total = 100%). Fire behavior consists of Fuel classes and Slope (row total = 100%).
+                      Ignition danger                                                                                     Fire behavior
+
+                                        FFMC         Aspect           Cause                                                               Fuel classes           Slope
+
+                                                                                      Human            Lightning
+  Variant 1           80%                                                                                                 20%
+                                        60c          20%              20%                                                                 75%                    25%
+                                                                                      50%              50%
+  Variant 2           80%                                                                                                 20%
+                                        30%          20%              50%                                                                 75%                    25%
+                                                                                      50%              50%
+  Variant 3           90%                                                                                                 10%
+                                        70%          20%              10%                                                                 75%                    25%
+                                                                                      50%              50%
+  Variant 4           50%                                                                                                 50%
+                                        60%          20%              20%                                                                 75%                    25%
+                                                                                      50%              50%
+  Variant 5           100%                                                                                                0%
+                                        60%          25%              15%                                                                 0%                     0%
+                                                                                      50%              50%
+  Variant 6           50%                                                                                                 50%
+                                        34%          33%              33%                                                                 50%                    50%
+                                                                                      50%              50%
+
+
+
+
+Fig. 2. Screenshot of the Web-GIS application. The colored map represents the FFMC danger classes for August 26, 2019 in the north of Austria. Green colored fields
+mean a “very low” (1) fire danger, yellow “low” (2) and orange “moderate” (3). (For interpretation of the references to colour in this figure legend, the reader is
+referred to the web version of this article.)
+
+
+and the FFMC was the underlying index in 2019. All cells with a danger                burned area and the classification of forest fire cases into danger classes
+class of 3 to 5 were evaluated as false alerts. Data grid cells above                 according to the different variants. For the linear regressions, we only
+timberline and in non-burnable areas were excluded from this in-                      used forest fires with a burned area greater than or equal to 0.1 ha
+vestigation.                                                                          (n = 22 in 2018; n = 26 in 2019), to filter out the numerous small fires.
+    We applied Pearson's chi square tests to test for significant differ-
+ences in the performance of the FWI, the FFMC and the variants of the
+IFDS. We applied linear regressions to analyze the relationship between
+
+
+                                                                                  5
+M.M. Müller, et al.                                                                                                            Ecological Informatics 60 (2020) 101151
+
+
+
+
+Fig. 3. Screenshot of the Web-GIS prototype for weighting variant 1 on August 19th, 2019. The implemented analysis tool highlights the values of all available data
+layers for the selected 100 × 100 m grid cell and the selected day (box).
+
+
+3.2. Findings                                                                       alert rate (26%). Variant 2 achieved 51% correctly predicted fires and
+                                                                                    had a false alert rate of 27%.
+    We identified clear differences between the performance of the FWI,                 No correlations could be found between the burned forest area and
+the FFMC and the IFDS variants. In 2018, the stand-alone FWI had a                  the calculated values of the fire weather indices / variants. Higher
+correct prediction rate of 37% and a false alert rate of 30% (Fig. 4). In           values of some variants slightly correlated to larger burned areas when
+other words, by using the FWI, 37% of all forest fires were recorded in             applying the nine-cell-approach, however correlation factors were very
+grid cells assessed with the danger classes moderate (3), high (4) or               low (Appendix C).
+very high (5) and 63% were assigned to cells with low (2) or very low
+(1) danger classes. On the other hand, 30% of all grid cells on fire days           4. Discussion
+were assigned to the danger classes 3–5 without occurring fires.
+    In 2018, Variant 4 showed the best absolute performance with 50%                4.1. Validation study
+correct predicted forest fires. This was significantly better (p < 0.05)
+than the FWI, variant 2 and variant 6. Variant 4 also had a lower false                 With the first version of our IFDS prototype and the preliminary
+alert rate of 16%. Variant 2 performed worst with only 34% correct                  weighting variants, we were able to produce significantly better pre-
+predictions, but also had a low false alert rate of 16%.                            diction results than the stand-alone use of the common Canadian fire
+    In 2019, the picture was different (Fig. 5). Pearson's chi square re-           weather index FWI and its sub-index, the FFMC. Variant 4 performed
+sults showed that the performance of all variants was significantly                 the best for both years with a possible correct forest fire prediction rate
+better than the FWI (p < 0.001) while only variant 4 had a sig-                     of up to 60%. There were few significant differences between the var-
+nificantly better performance than the FFMC (p < 0.01). The stand-                  iants. Variant 4 includes ignition danger and fire behavior with 50%
+alone FWI had the worst correct prediction rate (32%) with 35% false                weight each. Fire behavior in our model is primarily driven by the fuel
+alert rate. The stand-alone FFMC (used for variant calculations in 2019)            type. The good performance of variant 4 may be due to the fact that
+performed better with 42% correct predicted forest fires and 36% false              most forest fires in Austria ignite in (high-load) coniferous forests. With
+alert rate. The highest correct prediction rate was again found for                 the current IFDS approach – and especially with variant 4 – it is possible
+variant 4 (58%) with a false alert rate of 28%. Variant 6 showed the                to aim either at a low false alert rate of under 20% by using FWI as basis
+second highest correct prediction rate (52%) and also the lowest false              for calculation, or at a high correct detection rate of about 60% by
+
+                                                                                6
+M.M. Müller, et al.                                                                                                          Ecological Informatics 60 (2020) 101151
+
+
+
+
+Fig. 4. Validation of the IFDS for 2018. The bars depict the distribution of occurred forest fires per variant and danger class (n = 135). The false alert rate,
+respectively the percentage of grid cells on fire days in the danger classes 3–5, is indicated by the line.
+
+
+selecting the FFMC. Both approaches have their justification and can be            was low, resulting in mostly small fires. It is likely that fire prone
+chosen by fire management experts according to their objectives.                   conditions will increase in the coming years, with more days with high
+    Although we filtered out smaller fires, no correlation could be found          fire danger, also in mountainous regions. A recent study from Portugal
+between larger burned areas and higher indices/variant values. Besides             pointed out that larger burned areas can be linked to higher values of
+stochastic effects leading to this picture, Austria has a highly efficient         the Canadian FWI and that resistance to fire spread decreases under
+network of voluntary fire brigades. With more than 300.000 active                  more complex topography (Fernandes, 2019).
+members (of 9 million inhabitants in Austria), about 30 helicopters
+available and fire brigades in almost every village, the average initial
+attack time for reported forest fires is under 20 min even in remote               4.2. Human factor and vegetation
+areas. This fact helps to keep fires small, even under high fire danger
+situations. In addition, the years 2018 and 2019 lacked longer periods                 As shown in the current analysis, variant 2 – which includes the
+of drought in combination with windy conditions in the Austrian                    highest weight of the human factor – had the worst prediction accuracy
+mountain regions. Therefore, the likelihood of severe and/or large fires           in 2018. In 2019, variant 2 led to a higher prediction rate than other
+                                                                                   variants. However, the differences between the variants were not
+
+
+
+
+Fig. 5. Validation of the IFDS for 2019. The bars depict the distribution of occurred forest fires per variant and danger class (n = 195). The false alert rate,
+respectively the percentage of grid cells on fire days in the danger classes 3–5, is indicated by the line.
+
+
+                                                                               7
+M.M. Müller, et al.                                                                                                                  Ecological Informatics 60 (2020) 101151
+
+
+significant, and variant 4, which only partly considers the human in-                        danger assessment in mountainous and heterogeneous landscapes. The
+fluence, had the best overall prediction accuracy of all variants. These                     overall performance is strongly driven by the included data layers and
+findings are contrary to the fact that 85% of forest fires in Austria are                    the accuracy of the high-resolution data. First results indicated that the
+directly or indirectly ignited by humans (Vacik et al., 2011). We assume                     IFDS performs better than the use of fire weather indices alone. For the
+that the assessment of human impact at the community level with a                            current study, we mainly followed an expert-based approach and did
+logistic regression model had some limitations (Arndt et al., 2013). This                    not use machine-learning models, as the spatial data still has some in-
+approach seems to be inadequate because of the highly stochastic                             sufficiencies. We were able to describe the relationship between the
+nature of fire ignitions. A revised approach to estimate the anthro-                         factors that influence fire ignition and fire behavior, and to learn under
+pogenic influence at a spatial resolution of 100 × 100 m would be re-                        which conditions the most accurate results can be achieved. A fire
+quired.                                                                                      danger assessment approach supported by experts was also used in
+    Although weighting variants including the vegetation layer (e.g.                         other studies (Jung et al., 2013; Thompson et al., 2013). As soon as the
+variant 4) showed a good prediction performance, there are some data                         data quality is improved, the IFDS will be updated with new para-
+insufficiencies. Vegetation at the tree line, e.g. mountain pine forests                     meters. Besides scientific and technical optimization, the involvement
+(Pinus mugo Turra), are poorly captured by our data layer but are highly                     of stakeholders (e.g. fire brigades, forest authorities, national warning
+flammable, as a recent study in North Tyrol has shown (Sass, 2019).                          centers) in the development of the system is an essential task for out-
+Small forested (or deforested) areas are sometimes not associated with                       reach, dissemination and operationalization of the system. In this
+the correct type of vegetation. A differentiation by tree species is ne-                     context, we will ask a selected group of experts for feedback on the
+cessary, as studies have shown that some species are more fire prone                         performance, usability and reliability of the system in spring 2020. A
+than others (Müller and Vacik, 2017). Efforts are being made to im-                          future use of the IFDS could also be the integration into a decision
+prove the classification of fuel types for Austria with the help of high-                    support system, similar to the approach of Kalabokidis et al. (2013).
+resolution Sentinel data and aerial laser scan images (Hollaus et al.,                           Some experts believe that it is almost impossible for regions with a
+2007).                                                                                       low intensity fire regime like the Northern Alps to design an IFDS
+                                                                                             (Müller et al., 2020). Together with other experts (Barriopedro et al.,
+4.3. FFMC                                                                                    2011; Seidl et al., 2014; Valese et al., 2014; Wastl et al., 2013;
+                                                                                             Zumbrunnen et al., 2012), we take the view that climate change com-
+    We preferred to use the FFMC instead of the FWI as a basis for the                       bined with changes in forest management and increasing recreational
+variant calculation, because we concentrated on fire ignition and the                        activities will alter the current fire regime towards a more fire prone
+FFMC showed better prediction results for forest fires in Austria.                           one with a higher number of ignitions and more extreme forest fires,
+However, the calculation of the FFMC is calibrated for Canadian con-                         also in the Northern Alps. For this reason, it is important to move to-
+ditions. At the moment, there is no adaption to Austrian forests. A re-                      wards an integrated fire danger assessment system with a high data
+cent study at the University of Natural Resources and Life Sciences                          reliability and a high spatial resolution, to reflect the small-scale
+Vienna aims to determine fine fuel moisture content of different forest                      structure of the European Alps.
+ecosystems and tries to compare the results with the interpolated FFMC
+data from the INCA approach (Zhou and Vacik, 2017). This analysis can
+help to improve the predictive power of the FFMC. A study from                               Funding
+Switzerland demonstrated how the use of only meteorological variables
+produced similar or better results than the Canadian FWI (De Angelis                            This research has been conducted partly within the frame of the
+et al., 2015). However, these results do not seem to be transferable to                      "Austrian Forest Research Initiative II" (AFFRI 2), which is funded by
+Austrian conditions (Arpaci et al., 2013). The German Weather Service                        DaFNE as a "Bund-Länder-Kooperation" (Transaction number LE.3.2.3/
+(DWD) is currently working on a new grassland fire index. Such an                            0019-III/2/2015) and within the project “Copernicus Data for Novel
+index may be particularly useful in the winter half-year for mountain                        High-resolution Wildfire Danger Services in Mountain Regions”
+regions such as the Alps, as it allows a reasonable estimation of fine fuel                  (CONFIRM), which is funded by the Austrian Space Applications
+moisture beyond the scope of the FFMC and FWI (Müller et al., 2020).                         Programme (ASAP) (Project number 873674).
+An improvement of the prediction accuracy of winter and spring fires
+may also be achieved by including a high-resolution data layer of the
+actual snow cover. First attempts of such an approach are currently                          Declaration of Competing Interest
+tested in France and Germany (Müller et al., 2020).
+    Our model is designed to assess forest fire danger and thus predict                         The authors declare no conflict of interest.
+uncontrolled fires in forested area. However, with some adjustments, it
+can also be suitable for predicting wildfires in general, e.g. by including
+a grassland fire index. Currently, the IFDS is not meant to be used for                      Acknowledgments
+prescribed burning purposes, as this fire management technique is
+prohibited in Austria.                                                                           We want to thank ZAMG for their support in providing the data and
+                                                                                             fire weather indices, the graduates of the Polytechnic Donaustadt Mr.
+5. Conclusions                                                                               Patrick Cipot and Mr. Joseph Wilfer for supporting the technical im-
+                                                                                             plementation and Mr. Gergö Dioszegi from the Institute of Geomatics
+    The IFDS is a new and innovative approach to improve forest fire                         for additional analysis of the ZAMG data.
+
+Appendix A
+
+    Data layers, project title, year of creation and timespan of used forest fire data implemented in the current version of the IFDS.
+
+
+  Data layer          Project                                                                                                             Year          Forest fire data
+
+  Human               Austrian Forest Fire Research Initiative (AFFRI) – Master thesis                                                    2012          1993–2009
+
+
+
+                                                                                         8
+M.M. Müller, et al.                                                                                                                                      Ecological Informatics 60 (2020) 101151
+
+
+  Lightning             AFFRI / Fire Risk and Vulnerability of Austrian Forests under the Impact of Climate Change (FIRIA) – Master thesis                     2013            1993–2012
+  Vegetation            AFFRI / FIRIA / Alpine Forest Fire Warning System (ALP FFIRS)                                                                          2013            1993–2010
+  Aspect                AFFRI 2                                                                                                                                2018            1993–2017
+  Slope                 AFFRI 2                                                                                                                                2018            1993–2017
+
+
+
+Appendix B
+
+    Danger classes, classification and thresholds of the variables used for the lightning fire hazard map implemented in the IFDS prototype.
+
+
+                                Very low (1)                        Low (2)                      Moderate (3)                High (4)                                 Very high (5)
+
+  Elevation                     < 500 m                             1800 m –                     500 m –                     1500 m –                                 800 m –
+                                > 2200 m                            2200 m                       800 m                       1800 m                                   1500 m
+  Slope                         > 40°                               < 10°                        30–40°                      10–20°                                   20–30°
+  Aspect                        W / NW / N                          E / SW                       NE                          SE                                       S
+  Vegetation type               Deciduous Sparse veg.               Mixed forests                Mountain pine               Coniferous low fuel load                 Coniferous high fuel load
+
+
+
+Appendix C
+
+    Correlation between burned areas of single fires and values of FFMC, FWI and two selected variants in 2019. Shown are only fires greater or equal
+to 0.1 ha (n = 26). 1C method represents the single-cell-approach, while 9C is the result of the nine-cell-approach.
+
+
+
+
+References                                                                                               on characteristic fuels in Austria and Italy. In: Working on Fire (Eds.), 5th
+                                                                                                         International Wildland Fire Conference, Sun City, May 9-13, 2011.
+                                                                                                     Arpaci, A., Eastaugh, C.S., Vacik, H., 2013. Selecting the best performing fire weather
+Abatzoglou, J.T., Williams, A.P., 2016. Impact of anthropogenic climate change on                        indices for Austrian ecoregions. Theor. Appl. Climatol. 114, 393–406. https://doi.
+    wildfire across western US forests. Proc. Natl. Acad. Sci. 113 (42), 11770–11775.                    org/10.1007/s00704-013-0839-7.
+Albers, J., 2012. Comparative Analysis of the Forest Fire Situation in Central-Eastern               Barriopedro, D., Fischer, E.M., Luterbacher, J., Trigo, R.M., García-Herrera, R., 2011. The
+    Europe. Master thesis. Institute of Silviculture, University of Natural Resources and                hot summer of 2010: redrawing the temperature record map of Europe.
+    Life Sciences, Vienna.                                                                               Scienceexpress. https://doi.org/10.1126/science.1201224.
+Aldersley, A., Murray, S.J., Cornell, S.E., 2011. Global and regional analysis of climate            Beck, J.A., Alexander, M.E., Harvey, S.D., Beaver, A.K., 2002. Forecasting diurnal var-
+    and human drivers of wildfire. Sci. Total Environ. 409 (18), 3472–3481.                              iations in fire intensity to enhance wildland firefighter safety. Int. J. Wildland Fire 11,
+Arndt, N., Vacik, H., Koch, V., Arpaci, A., Gossow, H., 2013. Modelling human-caused                     173–192. http://www.publish.csiro.au/WF/WF02002.
+    forest fire ignition for assessing forest fire danger in Austria. iForest 6, 315–332.            Boboulos, M., Purvis, M.R.I., 2009. Wind and slope effects on ROS during the fire pro-
+Arpaci, A., Valese, E., Vacik, H., 2011. Potential fire intensities in the alpine region based           pagation in East-Mediterranean pine forest litter. Fire Saf. J. 44 (5), 764–769. https://
+
+
+
+                                                                                                 9
+M.M. Müller, et al.                                                                                                                                         Ecological Informatics 60 (2020) 101151
+
+
+    doi.org/10.1016/j.firesaf.2009.03.006.                                                               Maxwell, J.D., Anson Call, A., St. Clair, S.B., 2019. Wildfire and topography impacts on
+Carrega, P., 1995. A method for the reconstruction of mountain air temperatures with                         snow accumulation and retention in montane forests. For. Ecol. Manag. 432,
+    automatic cartographic applications. Theor. Appl. Climatol. 52, 69–84.                                   256–263. ISSN 0378-1127. https://doi.org/10.1016/j.foreco.2018.09.021.
+Carrega, P., Geronimo, N., 2007. Risque meteorologique d'incendie de fôret et methodes                   Moser, B., Temperli, C., Schneiter, G., Wohlgemuth, T., 2010. Potential shift in tree
+    de spatialisation pour une cartographie a fine echelle. In: Actes du XXeme colloque                      species composition after interaction of fire and drought in the Central Alps. Eur. J.
+    international de l'Association Internationale de Climatologie. Tunis, September 2007.                    For. Res. 129, 625–633.
+Chuvieco, E., Aguado, I., Yebra, M., Nieto, H., Salas, J., Martín, M.P., Vilar, L., Martínez,            Müller, M.M., Vacik, H., 2017. Characteristics of lightnings igniting forest fires in Austria.
+    J., Martín, S., Ibarra, P., de la Riva, J., Baeza, J., Rodríguez, F., Molina, J.R., Herrera,             Agric. For. Meteorol. 240-241, 26–34. https://doi.org/10.1016/j.agrformet.2017.03.
+    M.A., Zamora, R., 2010. Development of a framework for fire risk assessment using                        020.
+    remote sensing and geographic information system technologies. Ecol. Model. 221                      Müller, M.M., Vacik, H., Diendorfer, G., Arpaci, A., Formayer, H., Gossow, H., 2013.
+    (1), 46–58. ISSN 0304-3800. https://doi.org/10.1016/j.ecolmodel.2008.11.017.                             Analysis of lightning-induced forest fires in Austria. Theor. Appl. Climatol. 111 (1–2),
+Conedera, M., Cesti, G., Pezzatti, G.B., Zumbrunnen, T., Spinedi, F., 2006. Lightning                        183–193. https://doi.org/10.1007/s00704-012-0653-7.
+    Induced Fires in the Alpine Region: An Increasing Problem. V International                           Müller, M.M., Vacik, H., Valese, E., 2015. Anomalies of the Austrian Forest fire regime in
+    Conference on Forest Fire Research, Coimbra, Portugal.                                                   comparison with other alpine countries: a research note. Forests 6 (4), 903–913.
+Conedera, M., Tonini, M., Oleggini, L., Vega, Orozco C., Leuenberger, M., Pezzatti, G.B.,                    https://doi.org/10.3390/f6040903.
+    2015. Geospatial approach for defining the wildland-urban Interface in the alpine                    Müller, M.M., Vilà-Vilardell, L., Vacik, H., 2020. Forest fires in the Alps – state of
+    environment. Comput. Environ. Urban. Syst. 52, 10–20. https://doi.org/10.1016/j.                         knowledge, future challenges and options for an integrated fire management. In:
+    compenvurbsys.2015.02.003.                                                                               EUSALP Action Group 8, . https://www.alpine-region.eu/results/forest-fires-alps-
+Conedera, M., Krebs, P., Valese, E., Cocca, G., Schun, C., Menzel, A., Vacik, H., Cane, D.,                  state-knowledge-and-further-challenges.
+    Japelj, A., Muri, B., Ricotta, C., Oliveri, S., Pezzatti, G.B., 2018. Characterizing alpine          Oettel, J.K., 2012. Forest Fires and Fuel Characteristics of Tyrol (Based on Case Studies).
+    pyrogeography from fire statistics. Appl. Geogr. 98, 87–99. https://doi.org/10.1016/                     Master thesis. University of Natural Resources and Life Sciences, Vienna.
+    j.apgeog.2018.07.011.                                                                                San-Miguel-Ayanz, J., Costa, H., de Rigo, D., Libertá, G., Vivancos, T.A., Durrant, T.,
+Csontos, P., Cseresnyés, I., 2015. Fire-risk evaluation of Austrian pine stands in Hungary -                 Nuijten, D., Löffler, P., Moore, P., 2018. Basic criteria to assess wildfire risk at the
+    effects of drought conditions and slope aspect on fire spread and fire behaviour.                        pan-European level. In: JRC Technical Reports. EUR 29500 EN, https://doi.org/10.
+    Carpathian J. Earth Environ. Sci. 10 (3), 247–254.                                                       2760/052345. ISBN 978-92-79-98200-2.
+De Angelis, A., Ricotta, C., Conedera, M., Pezzatti, G.B., 2015. Modelling the meteor-                   Sarricolea, P., Serrano-Notivoli, R., Fuentealba, M., Hernández-Mora, M., de la Barrera,
+    ological Forest fire niche in heterogeneous Pyrologic conditions. PLoS One 10 (2),                       F., Smith, P., Meseguer-Ruiz, Ó., 2020. Recent wildfires in Central Chile: detecting
+    e0116875. https://doi.org/10.1371/journal.pone.0116875.                                                  links between burned areas and population exposure in the wildland urban interface.
+Dowdy, A.J., Mills, G.A., 2012. Atmospheric and fuel moisture characteristics associated                     Sci. Total Environ. 706, 135894. https://doi.org/10.1016/j.scitotenv.2019.135894.
+    with lightning-attributed fires. J. Appl. Meteorol. Climatol. 51, 2025–2037. https://                Sass, O. (Ed.), 2019. Sammelband “Waldbrände in den Nordtiroler Kalkalpen –
+    doi.org/10.1175/JAMC-D-11-0219.1.                                                                        Verbreitung, Geschichte, Regeneration”. Innsbrucker Geographische Studien 41.
+Dupire, S., Curt, T., Bigot, S., Fréjaville, T., 2019. Vulnerability of forest ecosystems to fire        Schunk, C., Wastl, C., Leuchner, M., Schuster, C., Menzel, A., 2013. Forest fire danger
+    in the French Alps. Eur. J. For. Res. 1–18.                                                              rating in complex topography – results from a case study in the Bavarian Alps in
+Fernandes, P.M., 2019. Variation in the Canadian fire weather index thresholds for in-                       autumn 2011. Nat. Hazards Earth Syst. Sci. 13, 2157–2167. https://doi.org/10.5194/
+    creasingly larger fires in Portugal. Forests 10 (10), 838. https://doi.org/10.3390/                      nhess-13-2157-2013.
+    f10100838.                                                                                           Seidl, R., Schelhaas, M.J., Rammer, W., Verkerk, P.J., 2014. Increasing forest disturbances
+Flannigan, M.D., Logan, K.A., Amiro, B.D., Skinner, W.R., Stocks, B.J., 2005. Future area                    in Europe and their impact on carbon storage. Nat. Clim. Chang. 4, 806–810. https://
+    burned in Canada. Clim. Chang. 72 (1–2), 1–16.                                                           doi.org/10.1038/nclimate2318.
+Fox, D.M., Carrega, P., Ren, Y., Caillouet, P., Bouillon, C., Robert, S., 2018. How wildfire             Thompson, M.P., Scott, J., Helmbrecht, D., Calkin, D.E., 2013. Integrated wildfire risk
+    risk is related to urban planning and fire weather index in SE France (1990–2013).                       assessment: framework development and application on the Lewis and Clark national
+    Sci. Total Environ. 621, 120–129. https://doi.org/10.1016/j.scitotenv.2017.11.174.                       forest in Montana, USA. Integr. Environ. Assess. Manag. 9 (2), 329–342. https://doi.
+Grima, N., 2011. Forest Fire Hazard Mapping in Carinthia (Southern Austria). Master                          org/10.1002/ieam.1365.
+    thesis. Institute of Silviculture, University of Natural Resources and Life Sciences,                Vacchiano, G., Foderi, C., Berretti, R., Marchi, E., Motta, R., 2018. Modeling anthro-
+    Vienna, pp. 64.                                                                                          pogenic and natural fire ignitions in an inner-alpine valley. Nat. Hazards Earth Syst.
+Hollaus, M., Wagner, W., Maier, B., Schadauer, K., 2007. Airborne laser scanning of                          Sci. 18, 935–948.
+    Forest stem volume in a mountainous environment. Sensors 7 (8), 1559–1577.                           Vacik, H., Arndt, N., Arpaci, A., Koch, V., Müller, M.M., Gossow, H., 2011.
+    https://www.mdpi.com/1424-8220/7/8/1559.                                                                 Characterisation of forest fires in Austria. Aust. J. For. Sci. 128 (1), 1–32.
+Jung, J., Kim, C., Jayakumar, S., et al., 2013. Forest fire risk mapping of Kolli Hills, India,          Valese, E., Conedera, M., Held, A.C., Ascoli, D., 2014. Fire, humans and landscape in the
+    considering subjectivity and inconsistency issues. Nat. Hazards 65 (3), 2129–2146.                       European alpine region during the Holocene. Anthropocene. https://doi.org/10.
+    https://doi.org/10.1007/s11069-012-0465-1.                                                               1016/j.ancene.2014.06.006.
+Kalabokidis, K., Athanasis, N., Gagliardi, F., Karayiannis, F., Palaiologou, P., Parastatidis,           Van Wagner, C.E., 1987. Development and structure of the Canadian Forest fire weather
+    S., Vasilakos, C., 2013. Virtual fire: a web-based GIS platform for forest fire control.                 index system. Canadian forestry service, headquarters, Ottawa. In: Forestry Technical
+    Ecological Informatics 16, 62–69. https://doi.org/10.1016/j.ecoinf.2013.04.007.                          Report 35, (35 p).
+Lexer, M.J., Rabitsch, W., Grabherr, G., Dokulil, M., Dullinger, S., Englisch, J., Essl, F.,             Wastl, C., Schunk, C., Lüpke, M., Cocca, G., Conedera, M., Valese, E., Menzel, A., 2013.
+    Gollmann, G., Gottfried, M., Graf, W., Hoch, G., Jandl, R., Kahrer, A., Kainz, M.,                       Large-scale weather types, forest fire danger, and wildfire occurrence in the Alps.
+    Kirisits, T., Netherer, S., Pauli, H., Rott, E., Schleper, C., Schmidt-Kloiber, A.,                      Agric. For. Meteorol. 168, 15–25.
+    Schmutz, S., Schopf, A., Seidl, R., Vogl, W., Winkler, H., Zechmeister, H., 2014. Der                ZAMG, 2019. Central Institute of Meteorology and Geodynamics Vienna. INCA. https://
+    Einfluss des Klimawandels auf die Biosphäre und Ökosystemleistungen. In: Wien, S.                        www.zamg.ac.at/cms/de/forschung/wetter/inca (accessed on 15. August 2019).
+    (Ed.), Austrian Panel on Climate Change (APCC), Österreichischer Sachstandsbericht                   Zhou, M.J., Vacik, H., 2017. Comparisons of fuel stick moisture among forest cover types
+    Klimawandel 2014. Verlag der Österreichischen Akademie der Wissenschaften, pp.                           in eastern Austria. Aust. J. For. Sci. 134, 301–321 (ISSN 0379-5292).
+    467–556.                                                                                             Zumbrunnen, T., Menéndez, P., Bugmann, H., Conedera, M., Gimmi, U., Bürgi, M., 2012.
+Matulla, C., Formayer, H., Haas, P., Kromp-Kolb, H., 2004. Possible climate trends in                        Human impacts on fire occurrence: a case study of hundred years of forest fires in a
+    Austria in the first half of the 21st century. Österreichische Wasser- und                               dry alpine valley in Switzerland. Reg. Environ. Chang. 12 (4), 935–949.
+    Abfallwirtschaft Vol 56 (1–2), 1–9.
+
+
+
+
+                                                                                                    10
+

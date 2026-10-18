@@ -1,0 +1,334 @@
+PAGE 1
+Impact of Lightning-Induced Wildfires on 
+Power System Based on Satellite Data and 
+Climatological Projections 
+Amalija BOŽIČEKa,1, Marta ĐUROVIĆb, Božidar FILIPOVIĆ-GRČIĆb, Nina 
+STIPETIĆb and Bojan FRANCb 
+a
+ Adnet d.o.o. Kupska ulica 2, 10 000 Zagreb, Croatia 
+b
+ Faculty of Electrical Engineering and Computing, Unska 3, 10 000 Zagreb, Croatia 
+ORCiD ID: Amalija Božiček https://orcid.org/0000-0003-2101-0155 
+Božidar Filipović-Grčić https://orcid.org/0000-0002-2 230-1336 
+Abstract. The Mediterranean is one of the most cyclogenetic regions in the world. 
+One of the most significant cyclone characteristics that can influence power systems 
+is lightning. Except in the Mediterranean basin, favorable conditions for convection 
+development and lightning appearance can be developed in other warm and moist 
+conditions and in the mountain area. Every season, heavy lightning appears in 
+Croatia, a small Mediterranean country through which the Dinaric Alps stretch. 
+Lightning can cause various damages to the power system network, but also cause 
+wildfire that can lead to additional enormous damages. It is well known that 
+lightning can be very well forecasted by combining different meteorological models 
+and satellite data. Various satellite data can also be used in forest fire monitoring, 
+analysis, and risk prediction. Among the others, fire spreading depends on the 
+vegetation and soil moisture conditions that can also be obtained by satellite. Some 
+climate projections indicate that in the future, it is possible to expect more extreme 
+conditions, more thunderstorms on one side, and more droughts on the other side. 
+Thunderstorms can cause fire development and spread, especially when there is not 
+enough humidity for rain and showers. During the drought, due to soil moisture 
+decrease and vegetation dryness, wildfire spreading becomes easier daily. This 
+paper will present the analysis of lightning-induced wildfires, endangered power 
+system components in Croatia, and a climatic review of wildfires. A method for 
+wildfire protection, vegetation growth monitoring, and post-fire landscape recovery 
+monitoring will be suggested. Conducted analysis and suggested methods can be 
+applied in power system planning and everyday operation through N-k (N-1) 
+analysis. In the analysis, various satellite, meteorological, climatological data, 
+lightning location system, and power system data are used. 
+Keywords. Power system, lightning, wildfire, satellite data, meteorological 
+conditions, climatological projection 
+1. Introduction 
+Typical meteorological conditions favorable for wildfire development and spreading are 
+long, hot, and dry periods. Lightning appears when there are favorable conditions for 
+convection, enough moisture in the air accompanied by strong vertical motions. 
+ 
+1 Corresponding Author: Amalija Božiček, amalija.bozicek@adnet.hr. 
+New Energy and Future Energy Systems 
+G.L. Kyriakopoulos (Ed.)
+© 2023 The Authors.
+This article is published online with Open Access by IOS Press and distributed under the terms
+of the Creative Commons Attribution Non-Commercial License 4.0 (CC BY-NC 4.0).
+doi:10.3233/ATDE231070
+1
+
+PAGE 2
+Lightning-induced wildfire events develop and spread when there is a cloud-to-ground 
+lightning strike, and when there is not enough moisture in the air for heavy showers 
+development, that can extinguish the fire.  
+In literature, lightning-induced forest fires are analyzed in the case of the mountain 
+region, Austrian Alps region [1], and continental area, e.g., Continental United States [2]. 
+Also, the combination of lightning-induced forest fires and surface conditions' influence 
+on the fire spreading is analyzed [3]. This paper researches the lightning-ignited fire 
+events and their impact on the power transmission network in Croatia, a small country 
+with various geographical and climatological conditions. There meets the Dinaric Alps, 
+Adriatic Sea, and Pannonian Valley. In the climate context, according to Köppen's 
+classification, there are four climatological classes [4]. In addition to lightning-ignited 
+fire events and their influence on the power system analyses, the article also 
+presents climatological projections of the fire danger index for the area of Croatia and 
+methods for landscape monitoring.   
+2. Materials and Methods 
+This study investigated forest fire events in Croatia and accompanying thunderstorm 
+activity from the beginning of 2017 till the end of 2022. It researched lightning data, 
+information about forest fire events, landscape characteristics before and after the fire 
+events, climate projections, and the power system topology. The primary data sources 
+are the Copernicus Earth Observation Programme, LINET lightning location system 
+data, and Croatian Transmission System Operator (TSO).  
+2.1. Lightning Data 
+Lightning data is provided by the Lightning Location System (LLS) as part of the LINET 
+lightning detection network. The distance between sensors is 150 to 250 km, 
+guaranteeing homogenous high-quality coverage of large areas. Data analysis shows 
+satisfactory detection efficiency of down to 2 kA and location accuracy with an average 
+statistical error of 75 m [5]. In Croatia, there were installed six sensors. Data recorded 
+with sensors installed in Italy, Hungary, Serbia, Bosnia and Herzegovina, Hungary, and 
+Austria are also used to generate overall lightning activity in Croatia [6].  
+The location of each lightning strike is provided as a latitude-longitude point, 
+together with the statistical error in meters. Around each lightning stroke location, a 
+buffer is created with the radius of statistical error. In this way obtained polygon is 
+classified as lightning location. It is well known that lightning can be between cloud and 
+ground and vice versa, inter-cloud, intra-cloud, and between cloud and surrounding air. 
+This research investigated cloud-to-ground (CG) and inter-cloud (IC) lightning activity.   
+2.2. Fire Events Information 
+Fire events information important for this research are fire start and end time, fire 
+location, and surface. This information is provided by the European Forest Fire 
+Information System (EFFIS) [7]. EFFIS is part of the Copernicus Programme. It was 
+established to support the services in charge of the protection of forests against fires. 
+Today EFFIS provides historical data about forest fire events, fire danger assessment, 
+A. Božiˇcek et al. / Impact of Lightning-Induced Wildﬁres on Power System2
+
+PAGE 3
+rapid damage assessment, potential soil loss, vegetation regeneration, and air quality 
+according to fire events, European Forest Fire Information System, official web page.   
+From the overall dataset, it was filtered lightning-induced fire events. The fire event 
+is classified as lightning ignited if: 
+ Lightning location polygon and fire polygon intersect, 
+ Lightning appeared up to 5 days before the fire started or during the fire event. 
+The five days before the fire started were observed because firefighters experienced 
+that the smoldering period can be even 14 days. The smoldering period is usually up to 
+four days [1]. It is decided to consider the most likely smoldering period (up to four days) 
+and one more day for safety’s sake.
+     
+2.3. Landscape Characteristics 
+The landscape characteristics are obtained by calculating the Normalized Burn Ratio 
+(NBR) and delta NBR (dNBR) [8]. The NBR calculation uses satellite data, spectral 
+bands 8A and 12. Those bands represent near-infrared (NIR) wavelengths and short-
+wave infrared (SWIR) wavelengths (Equation 1) [9]. 
+/g1840/g1828/g1844 =  
+/g4666/g3015/g3010/g3019 /g2879 /g3020/g3024/g3010/g3019/g4667
+/g4666/g3015/g3010/g3019 /g2878 /g3020/g3024/g3010/g3019/g4667= 
+/g4666/g3003/g3028/g3041/g3031/g4670/g2876/g3002/g4671 /g2879 /g3003/g3028/g3041/g3031[/g2869/g2870]/g4667
+/g4666/g3003/g3028/g3041/g3031/g4670/g2876/g3002/g4671 /g2878 /g3003/g3028/g3041/g3031[/g2869/g2870]/g4667 ( 1) 
+Satellite data are obtained by the Copernicus SENTINEL-2 mission managed by the 
+European Space Agency (ESA). The data of interest from the SENTINEL-2 mission is 
+recorded by Multi-Spectral Instrument (MSI). The image's spatial resolution is 20 m, and 
+the revisit time is approximately 4.5 days for Croatian latitudes. ESA preprocesses 
+satellite data, and that grantee its reliability to use. Before the NBR and dNBR indices 
+calculation, satellite images were filtered according to cloud coverage. Only images 
+whose cloud coverage at the location of interest was less or equal to 10% were processed 
+in further research [10]. The cloud recognition and the image filtration were done using 
+a cloud mask provided together with other satellite data.      
+2.4. Landscape Characteristics 
+Forest fire danger projection till the end of the 2098 year is provided by Copernicus 
+Climate Change Service (C3S). It is one of the six Copernicus programs for Earth 
+monitoring. C3S provides consistent and authoritative information about climate change. 
+A wide range of data is classified into several categories according to the product type, 
+variable domain, spatial and temporal coverage, sector, and according to provider. 
+The product “Fire danger indicators for Europe from 1907 to 2098 derived from 
+climate projections” is used in this research. It is based on the Canadian Fire Weather 
+Index (FWI) under future climate conditions. The FWI model is incorporated in the 
+Global ECMWF Fire Forecasting model (GEFF), ECMWF significates European Centre 
+for Medium-Range Weather Forecast. The FWI is a meteorological fire danger index 
+used worldwide. In Croatia, it has been in use for many years. Meteorological parameters 
+used as input in the FWI model are air temperature, wind speed, relative humidity, and 
+24-hour accumulated precipitation. The output of the model is fuel moisture indices and 
+fire danger index. The model’s spatial resolution is 0.115 x 0.11°, and temporal 
+resolution is daily, seasonal, and yearly [11]. The model was run according to three 
+A. Božiˇcek et al. / Impact of Lightning-Induced Wildﬁres on Power System 3
+
+PAGE 4
+Representative Concentration Pathway (RCP) scenarios. In the scenario RCP2.6 it is 
+supposed that emissions started declining before 2020. In scenario RCP4.5 emissions 
+declining is beyond 2040, and in the scenario RCP8.5. emissions continue to rise through 
+the century, Fire danger indicators for Europe from 1970 to 2098 derived from climate 
+projections [12]. This research analyses all RCP scenarios from 2006 till 2098. It was 
+compared the same model in different scenarios, and different models in the same 
+scenario. 
+2.5. The Power System Topology 
+Lightning-induced fire events were analyzed in the Croatian transmission network. 
+Croatian TSO provides the type and location of each power system object. The power 
+systems’ objects were classified into three categories: 
+ Objects that can be directly endangered by fire such as transformer substations, 
+power plants, switchyards, traction substations, etc. 
+ Objects that may be endangered in the process of extinguishing the fire such as 
+transmission lines and poles (e.g., fire extinguishing using Canadair). 
+ Objects that may be endangered in both situations, directly by fire and in the 
+process of extinguishing the fire such as transmission lines. 
+The influence of each fire event on the power systems’ object was observed 
+according to the distance from the object. That distance is classified in spatial intervals: 
+0-0.5, 0.5-1, 1-3, 3-5, 5-10, and 10-20 km. Analyzing the fire events and their ignition 
+(e.g., lightning) fire events are essential for near real-time and day-ahead transmission 
+line outage analysis and prediction. The transmission line outage analysis and prediction 
+can be conducted for one line out of function (N-1 analysis) or several lines (N-k 
+analysis). 
+3. Analyses 
+3.1. Lightning Ignited Fire Events Analyses 
+In the analyzed six-year period, 23 lightning-ignited fire events of 681 fire events were 
+observed in Croatia. That is only 3.4%, but the average burnt area of lightning-ignited 
+fire events is double that of all. Additionally, there were 11 IC lightning strokes that are 
+related to the fire events. Lightning strokes/fire events were excluded from the overall 
+statistics. Still, it is worth mentioning them because there is a possibility of LLS system 
+error (CG lightning stroke may be misclassified as IC).  
+It can be concluded that lightning-ignited fire events do not appear often, but their 
+consequences can be enormous even though the average lightning current is less than  
+20 kA. The most favorable year for lightning-ignited fire events was 2022, with 13 
+lightning-ignited fire events. The biggest fire event was developed in 2017. A year 
+without any lightning-ignited fire event is 2019. In the year 2021 only one fire event 
+related to lightning activity, but the lightning type is IC (see Chapter 2.1). Reasons for 
+developing and spreading lightning-ignited fire events can be various, from favorable 
+combustible materials, meteorological conditions, (not)disposable resources for 
+A. Božiˇcek et al. / Impact of Lightning-Induced Wildﬁres on Power System4
+
+PAGE 5
+firefighting, etc. A valid conclusion in that direction requires additional research that is 
+planned.     
+3.2. Power Systems’ Objects Endangered by Fire Events 
+A directly endangered power systems object by a lightning-induced fire event is an object 
+whose location point is inside the fire polygon. The analyses showed that there were not 
+any directly endangered power plants, substations, or similar objects, but there were fire 
+events under the transmission lines. When the fire is under the transmission line, because 
+of the high air temperature, the dynamic thermal rating can be disturbed, and losses on 
+the transmission network increase, and insulators can also be damaged, etc. 
+Mechanically, influenced by winds and convection, embers can approach the wires and 
+damage them.         
+Using buffers around the power systems’ objects, it is found that most fire events 
+are in a 5-10 km buffer. The most dangerous fire events for the power system were near 
+the town of Obrovac, 1823 ha, in a 0.5 km buffer in 2017 (Figure 1.), and near the town 
+of Opuzen, 568 ha, in a 1-3 km buffer in 2018. Both fire events endangered important 
+roads and made traffic communication difficult. The fire event near Opuzen also risked 
+nearby settlements (Figure 1.).  The number of cloud-to-ground lightning strokes per fire 
+event is 7 to 21. 
+ 
+ 
+Figure 1.  Fire in buffer 0.5 km around the transmission network object, Obrovac 2017 (left);  
+fire in buffer 1-3 km around the transmission network object, Opuzen, 2018 (right) 
+3.3. Vegetation Monitoring 
+Vegetation growth and postfire landscape recovery monitoring are done by calculating 
+NBR and dNBR indices using satellite data (see Chapter 2.3). The mechanism of NBR 
+and dNBR indices interpretation is done using an example of an earlier-mentioned fire 
+event near Opuzen, Croatia. 
+Healthy vegetation shows a very high reflectance in the NIR and low reflectance in 
+the SWIR channel. Equation 1 calculates the pre-fire (Figure. 2. (left map)) and post-fire 
+NBR index (Figure 2. (middle map)). Non-burnt areas are attributed to values close to 
+zero. More positive values represent a higher percentage of green vegetation in a 
+particular area. 
+The vegetation damage severity and landscape recovering monitoring are done using 
+the dNBR index, i.e., the difference between the pre-fire and post-fire NBR indices. 
+Positive dNBR values indicate severity level and negative vegetation growth. The dNBR 
+values from the interval [-0.1, 0.99] represent the unburned area. Higher positive values, 
+A. Božiˇcek et al. / Impact of Lightning-Induced Wildﬁres on Power System 5
+
+PAGE 6
+significate more severe damage, and lower negative values mean higher landscape 
+recovery (Figure 2. (right map)) [9], [13]. 
+ 
+ 
+Figure 2. Landscape monitoring, fire in Opuzen, 2018: Pre-fire NBR index (left), post-fire NBR index (middle), 
+dNBR index (right) 
+3.4. Climate Projection of Forest Fire Danger 
+The output of models presented in Chapter 2.4. is observed according to the 
+climatological seasons (December-January-February (DJF), Marth-April-May (MAM), 
+June-July-August (JJA), and September-October-November (SON)). Till the end of the 
+century, during the high fire season (JJA), all scenarios give FWI mean values mostly in 
+the very high or in the extreme class (Figure 3). Notably, FWI maximal values are mostly 
+between 60 and 110 (Figure 4). That values are significantly higher than the minimum 
+value of the extreme class according to the actual EFFIS FWI classification, European 
+Forest Fire Information System, official web page. Models showed pretty similar results 
+for both seasons, MAM, and SON, and it is expected because spring and autumn in 
+Croatia have similar meteorological conditions. The winter season (DJF) constantly 
+shows values that mostly correlate with today's FWI values.  
+Models EC-EARTH (ICHEC, Ireland) and MPI-ESM-LR (MPI, Germany) do not 
+differ significantly. Observing model HadGEM2-ES (UK Met Office, UK), at the 
+beginning and at the end of the century, values are like the previously mentioned models’ 
+values. In the middle of the century, a significant difference is obvious. Considering all 
+seasons, during the JJA, the FWI values are the lowest. In the rest of the seasons, the 
+mean FWI values are between 20 and 60 (Figure 5). Those values correlate to today’s 
+FWI values in the late spring, summer, and early autumn seasons. The reason for that 
+significant disproportion requires wider consideration of the climatological situation and 
+the models’ physical background. It can be done in future papers. 
+According to the IPCC report from 2021, it is very likely to expect an increase in 
+the intensity and frequency of hot extremes and a decrease in cold extremes. At the same 
+time, it is possible to expect an increase in the intensity of severe storm activity [14]. 
+ 
+ 
+Figure 3.  Mean value of FWI climatological projection, season JJA: RCP2.6 (left), RCP 4.5 (middle),  
+RCP8.5 (right) 
+A. Božiˇcek et al. / Impact of Lightning-Induced Wildﬁres on Power System6
+
+PAGE 7
+ 
+Figure 4.  Maximal value of FWI climatological projection, season JJA: RCP2.6 (left), RCP 4.5 (middle), 
+RCP8.5 (right) 
+ 
+   
+Figure 5.  Mean value of FWI climatological projection, season SON: RCP2.6 (left), RCP 4.5 (middle),  
+RCP8.5 (right) 
+4. Conclusion and Future Work 
+The paper presents the lightning-induced wildfire impact on the transmission network in 
+Croatia. It is possible to conclude that lightning-induced wildfires do not appear often in 
+the observed area, but their consequences are enormous. These events can be classified 
+as rare but with high and expensive impacts. Observing the fire danger risk index 
+climatological projection, it was possible to notice that extreme values of the FWI rise 
+significantly in most cases. At the same time, it is possible to expect a higher number of 
+developed thunderstorms. So, the expectation that lightning-induced fire events will 
+appear more often and cause more damage than already analysed fire events is justified. 
+Extremely dangerous can be the JJA season, but in the MAM and SON seasons, FWI 
+values can be like today's summer values. 
+Short-term protection is possible by monitoring landscape and vegetation growth 
+around the transmission network objects using NBR and dNBR indices. For long-term 
+protection, the creation of a fire impact risk model that incorporates climatological 
+conditions, landscape, and transmission system objects’ conditions and significance to 
+the customers is necessary. The next step in creating the fire impact risk model is to 
+research the climatological projection of other parameters significant for the lightning 
+appearance and fire spreading such as air temperature, precipitation, indices of 
+convection, vegetation, etc. To minimize unwanted wildfire consequences, the new 
+model is possible to incorporate in a transmission line outage analysis (N-1, …, N-k 
+analysis) model. Implementing the N-k analysis can significantly increase the network 
+reliability and decrease the losses, and customer dissatisfaction caused by the network 
+outages. The development of the hybrid model that incorporates the fire impact risk 
+model and N-k analysis is planned for future research. 
+A. Božiˇcek et al. / Impact of Lightning-Induced Wildﬁres on Power System 7
+
+PAGE 8
+Acknowledgments 
+This work was partly supported by the European Space Agency within project Advanced 
+Power System Control supported by Copernicus Services, ESA, 4000137701/22/NL/SC, 
+and by Croatian Science Foundation and the European Regional Development Fund 
+within project DESMe, KK 01.1.1.07.0028, and project AACES KK 01.2.1.02.0117. 
+References 
+[1] Muller MM, Vacik H, Diendorfer G. Analysis of lightning-induced forest fires in Austria. Theoretical and 
+Applied Climatology 2013, 111:183-193 
+[2] Schultz CJ, Nauslar NJ, Brent Wachter J. Spatial. Temporal and electrical characteristics of lightning in 
+reported lightning-initiated wildfire events. Fire 2019, 2, 18   
+[3] Zhang Q, Homayouni S, Yao H. Joint analysis of lightning-induced forest fire and surface influence factors 
+in the Great Xing’an Range. Forests 2022, 13(11) 1867 
+[4] Zaninović K, Gajić-Čapka M, Perčec-Tadić M, et. al.  Klimatski atlas Hrvatske / Climate atlas of Croatia 
+1961-1990, 1971-2000, Državni hidrometeorološki zavod, Zagreb, 2008, p. 16-17 
+[5]  Nowcast official web page, https://www.nowcast.de/en/, accessed 09.05.2023. 
+[6]  FER-LLS, official web page, https://www.fer.unizg.hr/lvn/djelatnosti/sustav_za_lociranje_munja#, 
+accessed 09.05.2013. 
+[7] European forest fire information system, official web page, https://effis.jrc.ec.europa.eu/, accessed 
+09.05.2023. 
+[8] Han A, Quing S, Bao Y. Short-term effects of fire severity on vegetation based on sentinel-2 satellite dana. 
+Sustainability 2021 (13)1, 432 
+[9] Ponomarev E, Zabrodin A, Ponomareva T. Classification of fire damage to boreal forests of Siberia in 2021 
+Based on the dNBR Index, Fire 2022 5, 19 
+[10] ESA, Sentinel 2 mission, official web page, https://sentinel.esa.int/web/sentinel/missions/sentinel-2, 
+accessed 09.05.2023. 
+[11] Van Wagner CE, Picket TL. Equations and FORTRAN program for the Canadian forest fire weather 
+index system, Canadian Forestry Service, 1985 
+[12] Fire danger indicators for Europe from 1970 to 2098 derived from climate projections, official web page, 
+https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-tourism-fire-danger-indicators?tab=overview, 
+accessed 09.05.2023. 
+[13] Keeley JE. Fire intensity, fire severity and burn severity: A brief review and suggested 
+usage. International Journal of Wildland Fire 2009, 18(1), 116–126 
+[14] Seneviratne SI, Zhang X, Adnan M et al. Weather and Climate Extreme Events in a Changing Climate, 
+Climate Change 2021: The Physical Science Basis 2021, 1513–1766  
+A. Božiˇcek et al. / Impact of Lightning-Induced Wildﬁres on Power System8

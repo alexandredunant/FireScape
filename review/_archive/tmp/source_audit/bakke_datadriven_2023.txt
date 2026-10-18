@@ -1,0 +1,2283 @@
+PAGE 1
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+https://doi.org/10.5194/nhess-23-65-2023
+© Author(s) 2023. This work is distributed under
+the Creative Commons Attribution 4.0 License.
+A data-driven model for Fennoscandian wildﬁre danger
+Sigrid Jørgensen Bakke1, Niko Wanders2, Karin van der Wiel3, and Lena Merete Tallaksen1
+1Department of Geosciences, University of Oslo, Oslo, Norway
+2Department of Physical Geography, Utrecht University, Utrecht, the Netherlands
+3Research and Development of Weather and Climate models, Royal Netherlands Meteorological Institute,
+De Bilt, the Netherlands
+Correspondence: Sigrid Jørgensen Bakke (s.j.bakke@geo.uio.no)
+Received: 9 December 2021 – Discussion started: 23 December 2021
+Revised: 8 December 2022 – Accepted: 12 December 2022 – Published: 12 January 2023
+Abstract. Wildﬁres are recurrent natural hazards that affect
+terrestrial ecosystems, the carbon cycle, climate and society.
+They are typically hard to predict, as their exact location and
+occurrence are driven by a variety of factors. Identifying a
+selection of dominant controls can ultimately improve pre-
+dictions and projections of wildﬁres in both the current and a
+future climate. Data-driven models are suitable for identiﬁca-
+tion of dominant factors of complex and partly unknown pro-
+cesses and can both help improve process-based models and
+work as independent models. In this study, we applied a data-
+driven machine learning approach to identify dominant hy-
+drometeorological factors determining ﬁre occurrence over
+Fennoscandia and produced spatiotemporally resolved ﬁre
+danger probability maps. A random forest learner was ap-
+plied to predict ﬁre danger probabilities over space and time,
+using a monthly (2001–2019) satellite-based ﬁre occurrence
+dataset at a 0.25◦ spatial grid as the target variable. The ﬁ-
+nal data-driven model slightly outperformed the established
+Canadian Forest Fire Weather Index (FWI) used for compar-
+ison. Half of the 30 potential predictors included in the study
+were automatically selected for the model. Shallow volumet-
+ric soil water anomaly stood out as the dominant predictor,
+followed by predictors related to temperature and deep vol-
+umetric soil water. Using a local ﬁre occurrence record for
+Norway as target data in a separate analysis, the test set per-
+formance increased considerably. This demonstrates the po-
+tential of developing reliable data-driven models for regions
+with a high-quality ﬁre occurrence record and the limitation
+of using satellite-based ﬁre occurrence data in regions sub-
+ject to small ﬁres not identiﬁed by satellites. We conclude
+that data-driven ﬁre danger probability models are promis-
+ing, both as a tool to identify the dominant predictors and for
+ﬁre danger probability mapping. The derived relationships
+between wildﬁres and the selected predictors can further be
+used to assess potential changes in ﬁre danger probability un-
+der different (future) climate scenarios.
+1 Introduction
+Boreal ecosystems, covering large parts of northern North
+America and Eurasia, comprise one of the world’s most ex-
+tensive biomes (Balshi et al., 2009). In the boreal region,
+which have the largest carbon stock of all major global forest
+biomes, ﬁres are the major stand-renewing agent and play a
+major role in carbon storage and emissions (Bradshaw and
+Warkentin, 2015; Flannigan et al., 2009). Boreal ﬁres emit
+up to 9 % of global ﬁre carbon emissions and 15 % of global
+ﬁre methane emissions annually (Van der Werf et al., 2017;
+Flannigan et al., 2009). The ﬁre season length, ﬁre frequency
+and burned area have increased in many parts of the bo-
+real region, and these changes have been linked to climate
+change (Tomshin and Solovyev, 2021; Feurdean et al., 2020;
+Hanes et al., 2019; Balshi et al., 2009; Kasischke and Turet-
+sky, 2006). Accordingly, improved knowledge about boreal
+ﬁres and their occurrence is of high importance, both in the
+current and in future climate scenarios. Fires have been ex-
+tensively studied in the boreal zones of North America and
+Russia (e.g. Tomshin and Solovyev, 2021; Hanes et al., 2019;
+Forkel et al., 2012; Balshi et al., 2009). However, to the best
+of our knowledge, ﬁre studies within the European boreal
+zone are limited.
+The European boreal zone covers Fennoscandia, a penin-
+sula comprising Norway, Sweden and Finland, as well as
+Published by Copernicus Publications on behalf of the European Geosciences Union.
+
+PAGE 2
+66 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+the northwestern part of Russia (Kola Peninsula and Kare-
+lia). Fennoscandia is known for its large spatial heterogeneity
+in hydroclimatological characteristics resulting from a high
+local variability in altitude, soil characteristics and mois-
+ture sources over short distances, to mention a few (Sømme,
+1960). Similar to other boreal regions (Skinner et al., 2002),
+the ﬁre season comprises the warm and dry period of the year
+and is limited by snow during winter. Fires in Fennoscan-
+dia are normally small in size, as well as of shorter duration
+(more quickly distinguished), as compared to boreal regions
+in North America and Siberia (Aalto and Venäläinen, 2021).
+However, there are recent examples of warm and dry sum-
+mers where large areas burned, such as the record-breaking
+area burned in Sweden in 2018 (Krikken et al., 2021; San-
+Miguel-Ayanz et al., 2019). Such extreme ﬁres pose the ques-
+tion of what to expect in the future.
+Wildﬁres are recurrent natural hazards and an integral part
+of all major biomes (Keywood et al., 2013; Bowman et al.,
+2009). Wildﬁres both affect and are being affected by cli-
+mate, emphasising the importance of incorporating ﬁre ac-
+tivity when investigating the earth system. On both short
+and long timescales, wildﬁres affect regional and global cli-
+mate by changing the terrestrial ecosystem composition and
+functioning, surface energy ﬂuxes, and the water and car-
+bon cycle (Walker et al., 2019; López-Saldaña et al., 2015;
+Keywood et al., 2013; Flannigan et al., 2009). Wildﬁres are
+complex phenomena, driven by a combination of available
+biomass to burn, hydrometeorological conditions suitable for
+combusting and propagating the ﬁre and a source of ignition
+(Krawchuk and Moritz, 2011; Krawchuk et al., 2009). The
+hydrometeorological conditions are the most variable and
+largest driver of burned area (Jolly et al., 2015; Abatzoglou
+and Kolden, 2013; Littell et al., 2009; Flannigan et al., 2005;
+Bessie and Johnson, 1995), controlling whether or not an ig-
+nition leads to a ﬁre. The hydrometeorological controls act
+on both seasonal to annual timescales, for example by con-
+trolling the presence of snow and the moisture content of the
+soil and vegetation, and on short timescales, for example by
+concurrent hot, dry and windy weather. This makes wildﬁre
+occurrence a complex hazard that can be caused by a multi-
+tude of, typically statistically dependent, external drivers.
+Research that explicitly takes into account information of
+observed ﬁres are typically either large-scale assessments us-
+ing satellite-based burned area products or limited to regions
+where historical ﬁre records are good and that recently have
+experienced devastating large wildﬁres (e.g. Kuhn-Régnier
+et al., 2021; Hanes et al., 2019; Kganyago and Shikwambana,
+2020; Lizundia-Loiola et al., 2020; Turco et al., 2013; An-
+dela et al., 2017; Aldersley et al., 2011; Kasischke and Turet-
+sky, 2006). Because satellite-based ﬁre information relies on
+reﬂectance changes from medium-resolution sensors, such
+data can be very different compared to national historical ﬁre
+records, which are typically of higher resolution. In partic-
+ular, satellite-based burned area products suffer from a sys-
+tematically underestimation of burnt area due to difﬁculties
+in detecting small ﬁres (Padilla et al., 2015; Randerson et al.,
+2012). On the other hand, the availability and quality of na-
+tional ﬁre datasets varies among countries, whereas satellite
+products allow for consistent transboundary ﬁre data.
+Several ﬁre characteristics are of interest, such as the ﬁre
+regime, emissions, burned area, duration and feedbacks with
+vegetation. The characteristics all have in common that they
+rely on the fundamental question of when and where ﬁres are
+likely to occur. Fire occurrence, or likelihood thereof (i.e. ﬁre
+danger probability), can be used for monitoring, forecasting
+and projections and has been investigated using three main
+approaches: ﬁre weather indices, global ﬁre models and data-
+driven models, as further elaborated below.
+The relation between hydrometeorology and wildﬁres
+have traditionally relied on established ﬁre weather indices
+(e.g. Van Wagner, 1987; Bradshaw et al., 1984; Noble et al.,
+1980). These indices are used for ﬁre danger mapping ap-
+plicable for monitoring, forecasting and projections. Fire
+danger can be deﬁned as the weather conditions that can
+trigger and sustain wildﬁres (Ranasinghe et al., 2021) and
+thus differs from (and is a prerequisite for) ﬁre occurrence
+that additionally require an ignition. Fire weather indices
+are typically based on empirical and semi-physical equa-
+tions relating weather observations to dryness of fuel, with
+the aim of determining the ﬁre danger. Fire weather indices
+can also be calculated based on large-scale gridded reanal-
+ysis and climate model data (e.g. McElhinny et al., 2020),
+allowing for spatially continuous estimates. Such estimates
+are used for assessments of historical and future changes in
+ﬁre danger (Sun et al., 2019; Abatzoglou et al., 2019; Jolly
+et al., 2015; Flannigan et al., 2013), whereas ﬁre weather in-
+dices calculated using numerical weather forecast models are
+used for transnational ﬁre monitoring and forecasting (San-
+Miguel-Ayanz et al., 2012). Despite their widespread use, ﬁre
+weather indices are typically developed for speciﬁc coun-
+tries or biomes and are thus not necessarily well-suited for
+other regions and climates (Arpaci et al., 2013; Dowdy et al.,
+2009).
+Over the last 2 decades, global ﬁre models (ﬁre-enabled
+dynamic global vegetation models; DGVMs) that can be
+coupled with climate models have been developed (Hantson
+et al., 2016). Most global ﬁre models are process-based mod-
+els that estimate fuel load and fuel moisture, based on ﬁre
+weather indices or other atmospheric and simulated moisture
+conditions. These estimates are subsequently combined with
+the probability of lightning and/or anthropogenic ignition to
+determine whether a ﬁre will occur in a grid cell. Lightning
+rates can be constant in time or based on statistics, whereas
+population density is typically used to estimate human ig-
+nition probabilities as well as human suppression of ﬁres.
+An advantage of global ﬁre models is that they allow for ex-
+amining the feedbacks between ﬁre, vegetation and climate
+(Hantson et al., 2016). However, this relies on how well the
+model is able to represent reality. Whereas the global ﬁre
+models have shown to reproduce the seasonality in burned
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 3
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 67
+area well, they vary in their ability to represent the spatial
+pattern in burned area and are generally unable to represent
+interannual variations (Hantson et al., 2020).
+Finally, data-driven models (statistical and machine learn-
+ing models) have been developed to relate wildﬁres to envi-
+ronmental and meteorological conditions (e.g. Gudmundsson
+et al., 2014; Aldersley et al., 2011). Unlike process-based ap-
+proaches (ﬁre weather indices and global ﬁre models) that
+are constructed using predeﬁned equations to relate a set
+of drivers to the ﬁre characteristic of interest; a data-driven
+model follows a bottom-up approach that starts by consid-
+ering the ﬁre characteristic explicitly and relates that char-
+acteristic to the combination of drivers based on the data it-
+self. Many of the data-driven model studies predict spatial
+patterns in ﬁre occurrence or burned area (Krawchuk et al.,
+2009; Parisien and Moritz, 2009; Prasad et al., 2008), some-
+times over a typical ﬁre season (Bedia et al., 2015; Gud-
+mundsson et al., 2014; Aldersley et al., 2011). A few studies
+account for year-to-year variability by predicting the annual
+burned area (Littell et al., 2009; Balshi et al., 2009). Data-
+driven model studies accounting for both seasonal and inter-
+annual variability in ﬁre occurrences are limited. Those that
+exist typically predict monthly global patterns in burned area
+using predictors from observational data (Forkel et al., 2017),
+DGVMs (Forkel et al., 2019), or a combination of observa-
+tional and reanalysis data (Kuhn-Régnier et al., 2021).
+Data-driven methods are restricted to regions and applica-
+tions that have sufﬁcient data to both train the models and
+validate their performance. Although there are multiple ex-
+amples of the opposite, a data-driven model should always
+be evaluated using a (part of the) dataset not used in the
+construction of the model. This is important to avoid over-
+ﬁtting, i.e. to ensure the model is able to predict the system
+of interest and not only the data points it is trained on. An-
+other challenge is the rare occurrence of forest ﬁres implying
+a highly skewed dataset, an imbalance that needs to be ac-
+counted for in the training and evaluation of a model. In ad-
+dition, a bottom-up approach is typically less straightforward
+in its data requirements and methodology as compared to the
+process-based approaches because a bottom-up approach is
+not limited by the physical understanding of the system and
+the number of data, and algorithms implemented are in prin-
+ciple unlimited.
+Despite these challenges, bottom-up approaches are valu-
+able as they facilitate an explicit link between climate sci-
+ence and societal or environmental impacts, as emphasised
+by the compound event framework among others (Van der
+Wiel et al., 2020; Zscheischler et al., 2018; Leonard et al.,
+2014). The approach allows for a high degree of ﬂexibility
+in terms of potential drivers, target variables and models.
+This ﬂexibility allows for both detailed regional investiga-
+tions and constructing models transferable to different (fu-
+ture) climate scenarios (e.g. Goulart et al., 2021). As opposed
+to ﬁre weather indices and global ﬁre models, data-driven
+models do not require a priori assumptions of the dominant
+mechanisms and physical processes controlling ﬁre occur-
+rences (except indirectly in the selection of potential predic-
+tors). This makes data-driven models suitable when the na-
+ture of the processes is complex and/or partly unknown and
+when the emphasis is on accurate predictions or identiﬁcation
+of dominant controlling mechanisms (Parisien and Moritz,
+2009). Data-driven models can in this way both help im-
+prove process-based models and work as independent mod-
+els. A data-driven approach allows us to identify controlling
+factors for ﬁre occurrences for speciﬁc regions. This is es-
+pecially important for regions such as Fennoscandia, which
+possess highly variable hydroclimatological conditions and
+where the current number of (satellite-detected) ﬁres is rela-
+tively low as compared to other regions of the world.
+In this study, we developed a temporally and spatially ex-
+plicit data-driven machine learning model for Fennoscandia
+to reach two main objectives:
+– identify the dominant predictors of wildﬁres
+– construct monthly ﬁre danger probability maps.
+A satellite-based burned area product was used to con-
+struct the target dataset of ﬁre occurrences over the period
+2001–2019 at a monthly time step. We chose a random for-
+est (RF) algorithm to train the model and identify dominant
+predictors from a predeﬁned set of 30 hydrometeorological
+and land-cover-based indices. To have trust in the model, it
+was tested on an independent dataset using the area under the
+curve of the receiver operating characteristic (ROC-AUC). In
+addition, we aim to answer the following research questions:
+1. How well does the data-driven model perform as com-
+pared to the Canadian Forest Fire Weather Index (FWI),
+which is developed for similar biomes and latitudes as
+Fennoscandia?
+2. How well does the data-driven model perform when ap-
+plied to an independent local (Norwegian) ﬁre occur-
+rence dataset?
+3. Does the performance of a data-driven model improve
+when using a local ﬁre occurrence dataset as the target
+variable for training the model?
+Finally, we performed two additional experiments to chal-
+lenge the model choices made:
+4. Does the data-driven model chosen outperform both a
+simpler machine learning algorithm (decision tree), as
+well as a more sophisticated (AdaBoost, adaptive boost-
+ing) machine learning algorithm?
+5. What is the effect of not including a dynamical vegeta-
+tion index?
+The paper is structured as follows: Sect. 2 provides a de-
+tailed description of the data sources and methods applied.
+The results are presented in Sect. 3. A discussion is provided
+in Sect. 4, followed by concluding remarks given in Sect. 5.
+The Supplement comprises Figs. S1–S13.
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 4
+68 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+2 Data and methods
+A general outline of the data-driven approach for Fennoscan-
+dia is shown in Fig. 1. Data and pre-processing of the tar-
+get variable (ﬁre occurrence) and the potential predictors are
+summarised in Table 1 and described in Sect. 2.1–2.3. Sec-
+tion 2.4 describes the data and calculation of the Canadian
+Forest Fire Weather Index (FWI), which was used as an alter-
+native ﬁre danger model. The data-driven model set-up and
+training are described in Sect. 2.5. Section 2.6 describes the
+selection and evaluation of the ﬁnal data-driven model, in-
+cluding the predictor importance estimate, comparison of ﬁre
+danger probability maps produced by the data-driven model
+and FWI, and model evaluation using the Norwegian ﬁre oc-
+currence dataset. Finally, Sect. 2.7 describes the additional
+experiments challenging the model choices made.
+2.1 Data and pre-processing of the target variable
+Two spatiotemporally varying datasets were used as target
+variables for the analysis, a main satellite-based ﬁre occur-
+rence dataset (Sect. 2.1.1) and an additional Norwegian ﬁre
+occurrence dataset (Sect. 2.1.2). The two datasets are fun-
+damentally different; whereas the satellite-based ﬁre occur-
+rence dataset only captures ﬁres large enough to impact the
+reﬂectance captured by the satellite, the Norwegian ﬁre oc-
+currence dataset comprises all wildﬁre occurrences, whereof
+many cover a rather small area.
+2.1.1 Satellite-based ﬁre occurrence dataset
+Data used for the target variable were the gridded ﬁre burned
+area European Space Agency Climate Change Initiative
+(ESA CCI) product version 5.1.1cds, downloaded from the
+Copernicus Data Store (ESA-CCI, 2020). This dataset holds
+the same information as the Fire Essential Climate Variable
+(ECV) Climate Change Initiative project (Fire_cci) burned
+area product version 5.1 and is based on the reﬂectance prod-
+uct of the Moderate Resolution Imaging Spectroradiometer
+(MODIS) sensor. The main reﬂectance data used are daily
+surface reﬂectance information in the red and near-infrared
+bands (more details found in Pettinari et al., 2019). Data un-
+certainties are related to a potential underestimation of the
+actual burned area due to cloud cover, haze or other factors
+inﬂuencing the observations. The ﬁre burned area dataset is
+available both as a 0.25◦× 0.25◦ regular grid product and as
+a pixel product of 250 m resolution. We chose to use the grid
+product to investigate if a data-driven model is applicable for
+use at the spatial scale of the state-of-the-art global climate
+models. Further, spatial dependency of ﬁres (e.g. the same
+ﬁre occurring in two or more cells) is reduced when using
+the coarser scale of the grid product as compared to the pixel
+product.
+From the global ﬁre burned area dataset, Fennoscandia
+was selected, and a two-class target variable of ﬁre occur-
+rence was constructed by classifying each data point as 1
+(ﬁre) if the burned area of the data point exceeded zero and 0
+(no ﬁre) otherwise. Thus, each data point (i.e. each grid cell
+for each time step) was independently considered as either a
+ﬁre occurrence or not, and no merging was performed of ﬁres
+that potentially extended multiple grid cells or months. The
+original monthly time step, in the period 2001–2019, and a
+0.25◦× 0.25◦ regular grid of the dataset were kept to have
+as many data points as possible. However, the months Octo-
+ber to March were omitted each year, as they had less than
+20 ﬁre occurrences over the whole period and all grid cells,
+which was considered too few occurrences for the analysis.
+Figure 2 shows the distribution of the ﬁre occurrences over
+time and space. There is an extreme imbalance between the
+two classes (ﬁre and no ﬁre) in the target variable, with only
+1439 of the 444 030 data points (0.3 %) classiﬁed as ﬁre.
+2.1.2 Norwegian ﬁre occurrence dataset
+A national record of historical wildﬁres in Norway from the
+Norwegian Directorate for Civil Protection (DSB, 2020) was
+used to evaluate the model prediction capability using a dif-
+ferent target dataset. The Norwegian ﬁre occurrence dataset
+covers the point location and date of wildﬁres in Norway
+from 2016 to the near present. The dataset comprises all ﬁres
+registered in grass, cultivated land, forests and uncultivated
+land, regardless of ignition source. The data are based on the
+ﬁre and rescue service reporting system in Norway (brann-
+og redningstjenestens rapporteringssystem; BRIS). There is
+no lower limit of burned area in this dataset, as it is based
+on ﬁre responses of the ﬁre department. The point locations
+in the dataset are the ﬁre response attendance locations. Al-
+though these locations may not overlap with the locations
+where the ﬁre started, we consider this uncertainty of minor
+importance at the 0.25◦ spatial grid applied in the study.
+Each ﬁre was assigned to the nearest grid cell using the
+same spatial grid as the satellite-based ﬁre occurrence dataset
+and to the month of occurrence. All data points were classi-
+ﬁed as 1 (ﬁre) if one or more ﬁres occurred and 0 (no ﬁre)
+otherwise. Because multiple ﬁres can occur within the same
+month and grid cell, the total number of ﬁre occurrences is
+lower for this variable than the original ﬁre record data. Data
+covering the same season and period as the satellite-based
+ﬁre occurrence dataset were selected, i.e. April–September
+2016–2019.
+Figure 3 shows the differences in the spatial and temporal
+distribution of ﬁre data points (i.e. grid cells with recorded
+ﬁre occurrence at a given time step) in the Norwegian ﬁre
+occurrence dataset and the satellite-based ﬁre occurrence
+dataset for the spatial and temporal domain of the Norwegian
+ﬁre occurrence dataset. There are substantial differences be-
+tween the two datasets, mainly arising from the lack of small
+ﬁres in the satellite-based ﬁre occurrence dataset. The Nor-
+wegian dataset has in total 800 ﬁre data points, as opposed
+to 24 in the satellite-based dataset. Whereas the 3 months
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 5
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 69
+Table 1. Target variable (ﬁre occurrence) and potential predictors included in the main analysis. All normalised anomalies are calculated based on each corresponding month’s mean
+and standard deviation from the reference period 1991–2020. The same reference period was used when calculating the SPI (standardised precipitation index) and SPEI (standardised
+precipitation evapotranspiration index) values.
+Category Name Unit Description Source dataset
+Fire occurrence Satellite-based ﬁre
+occurrence
+Class Target variable of the main analysis; classiﬁcation of
+burned area: class 1 (ﬁre) if burned area>0, otherwise 0
+(no ﬁre)
+v5.1.1cds (https://doi.org/10.24381/cds.f333cf85, ESA-CCI, 2020)
+0.25◦×0.25◦
+Norwegian ﬁre occurrence Class Target variable for comparison; classiﬁcation of ﬁre
+record: class 1 (ﬁre) if ﬁre occurred, otherwise 0 (no ﬁre)
+Norwegian record
+point-based
+Precipitation rr_sum (mm) Monthly precipitation sum E-OBS v23.1e
+rr_sum_anomaly (–) Anomalies of rr_sum (https://surfobs.climate.copernicus.eu/dataaccess/access_eobs.php,
+Temperature tg_mean, tn_mean and
+tx_mean
+(◦C) Monthly mean of daily mean, daily minimum and daily
+maximum temperature
+last access: 13 April 2021)
+0.25◦×0.25◦
+tx_max ( ◦C) Monthly maximum of daily maximum temperature
+tg_mean_anomaly,
+tn_mean_anomaly and
+tx_mean_anomaly
+(–) Anomalies of tg_mean, tn_mean and tx_mean
+Meteorological
+drought
+SPI2, SPI3, SPI6 and SPI9 (–) SPI [ −3,3] over 2, 3, 6 and 9 months, calculated from
+rr_sum
+SPEI2, SPEI3, SPEI6 and
+SPEI9
+(–) SPEI [ −3,3] over 2, 3, 6 and 9 months, calculated from
+rr_sum minus monthly potential evapotranspiration,
+calculated based on tg, tn and tx
+Wind speed wspeed_mean (m s −1) Monthly mean 10 m wind speed ERA5-Land hourly (https://doi.org/10.24381/cds.e2161bac,
+wspeed_p10 and
+wspeed_p90
+(m s−1) Monthly 10th and 90th percentile of daily 10 m wind
+speed
+Muñoz Sabater, 2019a)
+0.1◦×0.1◦
+Snow snowc (–) Monthly average fraction of grid cell occupied by snow ERA5-Land monthly (https://doi.org/10.24381/cds.68d2bb30,
+Soil moisture swvl1, swvl2, swvl3 and
+swvl4
+(m3 m−3) Monthly mean volumetric soil water in soil layer 1
+(0–7 cm), layer 2 (7–28 cm), layer 3 (28–100 cm) and
+layer 4 (100–289 cm)
+Muñoz Sabater, 2019b)
+0.1◦×0.1◦
+swvl1_anomaly,
+swvl2_anomaly,
+swvl3_anomaly and
+swvl4_anomaly
+(–) Anomalies of swvl1, swvl2, swvl3 and swvl4
+Land cover fraction_burnable (–) Fraction of the cell corresponding to vegetated land covers
+that could burn
+v5.1.1cds (https://doi.org/10.24381/cds.f333cf85,
+ESA-CCI, 2020)
+0.25◦×0.25◦
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 6
+70 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+Figure 1. Flow chart of the data-driven approach for Fennoscandia. Sections given in the ﬂow chart refer to sections in the text where
+detailed descriptions can be found. Grey, green and dark brown boxes represent steps relevant to model training, model evaluation and both,
+respectively.
+Figure 2. Distribution of ﬁre occurrences in the satellite-based target variable over(a) time (month and year) and(b) space (0.25◦ resolution).
+of the highest number of ﬁre data points in the Norwegian
+dataset are May–July, no ﬁre data points exist for June and
+July in the satellite-based dataset. The unusual high number
+of ﬁres in 2018 is not reﬂected in the satellite-based dataset.
+Finally, the Norwegian dataset show a higher spread in ﬁre
+occurrence across Norway as compared to the satellite-based
+dataset.
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 7
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 71
+Figure 3. Distribution of ﬁre occurrences in Norway using (a) the satellite-based dataset and (b) the Norwegian dataset. The ﬁgures show
+the spatial distribution over Norway (map; 0.25◦ resolution) and the temporal distribution over the period 2016–2019 (bar plot), as deﬁned
+by the spatial and temporal domain of the Norwegian ﬁre occurrence dataset. Note the differenty axes of the two bar plots.
+2.2 Criteria for potential predictors
+The selection of potential predictors was governed by three
+criteria: available in most climate models, transferable to dif-
+ferent climate scenarios, and compatible with the spatiotem-
+poral resolution and domain of the target data. In addition,
+the data should be of high quality and the predictors should
+have a physical interpretation.
+By limiting the selection of potential predictors to the two
+ﬁrst criteria, we allow for investigations of ﬁre danger prob-
+ability as modelled by the data-driven model for different
+potential future climate scenarios. Due to the lack of hu-
+man inﬂuence being represented in many climate models,
+predictors such as human infrastructure, settlement and ig-
+nition sources were excluded from the analysis. Also light-
+ning was excluded, partly due to the lack of such informa-
+tion in most climate models, partly due to the limited infor-
+mation such data can provide at a monthly 0.25 ◦ resolution
+and partly due to the inconsistency in having only one type
+of ignition information. Other categories of potential predic-
+tors that were excluded include predictors that indirectly hold
+hydrometeorological information, such as month number, as
+well as dynamic vegetation-related predictors, such as green-
+ness indices. Dynamic vegetation-related predictors were ex-
+cluded because most climate model outputs are not based on
+runs for which the climate model is coupled with a dynamic
+global vegetation model (DGVM) but rather use prescribed
+vegetation cycles.
+The third criterion ensured compatibility of all data used in
+the analysis. In order to carry out the data-driven approach,
+all potential predictors need to have the same spatiotempo-
+ral domain and resolution as used for the satellite-based tar-
+get variable. Thus, all potential predictors were spatially con-
+strained to Fennoscandia using a spatial resolution of 0.25 ◦
+and consisted of monthly values from April to September
+over the period 2001–2019. After the preparation of the po-
+tential predictors, the spatial domain was further limited to
+grid cells for which all data (including the target variable) had
+values for all time steps and to grid cells where the fraction
+of burnable area (fraction_burnable) was greater than zero.
+2.3 Data and pre-processing of potential predictors
+The ﬁnal selection comprised 30 potential predictors, sev-
+eral of which were highly correlated (Fig. 4). The derivation
+of each potential predictor is described in the following sec-
+tions, ordered by categories as given in Table 1 (ﬁrst column).
+2.3.1 Precipitation, temperature and meteorological
+drought indices
+The precipitation and temperature predictors were calculated
+based on ensemble mean daily precipitation totals (rr), and
+daily minimum, maximum and mean air temperature (tn, tx
+and tg, respectively) at 0.25 ◦× 0.25◦ from E-OBS version
+23.1e (Cornes et al., 2018). E-OBS is a European dataset
+based on the European Climate Assessment & Dataset sta-
+tion information (ECA&D), covering the period 1950 until
+the near present.
+From the daily values, monthly precipitation
+sums (rr_sum) and monthly means of tn, tx and tg
+(tn_mean, tx_mean and tg_mean, respectively) were
+calculated. The corresponding normalised anomalies
+(rr_sum_anomaly, tn_mean_anomaly, tx_mean_anomaly
+and tg_mean_anomaly) were calculated by subtracting the
+1991–2020 mean and dividing by the 1991–2020 standard
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 8
+72 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+Figure 4. Statistical dependency of the potential predictors (abbreviations according to Table 1) using the full dataset: (a) Spearman rank
+correlation and (b) hierarchical clustering using Ward’s method (Ward, 1963).
+deviation of each month separately. The reference period
+1991–2020 was chosen to follow the most recent normal
+period (WMO guidelines; World Meteorological Organi-
+zation). An additional index, tx_max, was constructed by
+extracting the maximum daily tx for each month.
+Two meteorological drought indices were included: the
+standardised precipitation index (SPI; Guttman, 1999; Mc-
+Kee et al., 1993) and standardised precipitation evapotran-
+spiration index (SPEI; Beguería et al., 2014; Vicente-Serrano
+et al., 2010), each calculated for accumulation periods of 2,
+3, 6 and 9 months. The accumulation period is added to the
+abbreviation, e.g. SPI3 (representing a 3-month accumula-
+tion period). Both the SPI and SPEI are indicators of the dry-
+ness/wetness of a site as compared to normal and can be com-
+pared across locations with different climatology and highly
+non-normal precipitation distributions (Stagge et al., 2014).
+Whereas the SPI is an estimate of the precipitation anomaly,
+the SPEI estimates the anomaly in the climatic water bal-
+ance deﬁned as precipitation minus potential evapotranspi-
+ration (PET). We used the Hargreaves equation (Hargreaves
+and Samani, 1985) to estimate PET, following the recom-
+mendation by Stagge et al. (2014). The Hargreaves equation
+estimates daily PET based on each day’s tg, a proxy for net
+radiation (tx minus tn), and an estimate of extraterrestrial
+radiation based on the grid latitude and day of the year. To
+compute the SPI (SPEI), the precipitation (precipitation mi-
+nus PET) for a given accumulation period during the refer-
+ence period is ﬁtted to a parametric distribution, then non-
+exceedance probabilities from the distribution is transformed
+to the standard normal distribution and ﬁnally the standard
+normal distribution is used to estimate anomalies in terms of
+standard deviations over a period of interest. As for the pre-
+cipitation and temperature anomaly calculations, 1991–2020
+was used as the reference period. Following the recommen-
+dations of Stagge et al. (2015), we applied the gamma dis-
+tribution including a “centre of mass” adjustment for zero
+precipitation for the SPI and the generalised extreme value
+distribution for the SPEI. All ﬁnal SPI and SPEI values were
+limited to the range−3 to 3 due to the uncertainty related to
+the extrapolation required for extreme values when based on
+a limited historical record (Stagge et al., 2015).
+2.3.2 Wind speed
+Hourly eastward and northward components of 10 m wind
+were derived from ERA5-Land hourly data, which are avail-
+able from 1981 to the near present at a 0.1 ◦× 0.1◦ regu-
+lar global grid (Muñoz Sabater, 2019a). Daily mean values
+were calculated, and the eastward and northward components
+were combined to derive the daily mean wind speed. Fur-
+ther, the data were remapped using a second-order conserva-
+tive remapping to match the 0.25◦ grid used for the analysis.
+For each month, the daily mean wind speed was used to de-
+rive the monthly mean wind speed (wspeed_mean) and the
+10th and 90th percentile of daily wind speed (wspeed_p10
+and wspeed_p90, respectively).
+2.3.3 Snow and soil moisture
+The fractional snow cover and the volumetric soil water in
+four soil layers were obtained from ERA5-Land monthly
+averaged data, which are available from 1981 to the near
+present at a 0.1◦× 0.1◦ regular global grid (Muñoz Sabater,
+2019b). As Fennoscandia covers a wide range of latitudes
+and altitudes, snow is still present in our dataset for some
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 9
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 73
+months and grid cells, although the months analysed were
+limited to April–October. The volumetric soil water is the
+volume of water in a given soil layer of the ECMWF In-
+tegrated Forecasting System and is associated with the soil
+texture, soil depth and the underlying groundwater level. The
+volumetric soil water in soil layer 1 (0–7 cm) is one of the
+best performing datasets of established satellite- and model-
+based shallow-soil moisture products (Beck et al., 2021).
+As for the wind speed, the fractional snow cover data and
+soil volumetric soil water data were remapped to a 0.25 ◦
+grid using a second-order conservative remapping. This re-
+sulted in four indices: the monthly mean fractional snow
+cover (snowc) and the monthly mean volumetric soil wa-
+ter in soil layer 1 (0–7 cm; swvl1), soil layer 2 (7–28 cm;
+swvl2), soil layer 3 (28–100 cm; swvl3) and soil layer 4
+(100–289 cm; swvl4). Normalised anomalies of the volu-
+metric soil water indices (swvl1_anomaly, swvl1_anomaly,
+swvl3_anomaly and swvl4_anomaly) were calculated by
+subtracting the 1991–2020 mean and dividing by the 1991–
+2020 standard deviation of each month separately.
+2.3.4 Land cover
+The fraction of burnable area (fraction_burnable) was ex-
+tracted from the same dataset as used for the satellite-based
+target variable (ESA-CCI, 2020). This index represents the
+fraction of each grid cell that corresponds to vegetated land
+cover that could burn, i.e. excluding waterbodies; permanent
+snow and ice; urban areas; and bare areas. It is based on
+the Copernicus Climate Change Service (C3S) land cover
+classes. Details are found in Pettinari and Chuvieco (2018).
+2.4 The Canadian Forest Fire Weather Index (FWI)
+The Canadian Forest Fire Weather Index (FWI; Van Wag-
+ner, 1987) was used as an alternative ﬁre danger model to
+compare the performance of the data-driven model with a
+process-based ﬁre weather index. We chose the FWI be-
+cause it is developed for (Canadian) boreal forests and be-
+cause it is used for ﬁre danger forecasts in large parts of
+Fennoscandia (Norway and Sweden; Norwegian Meteoro-
+logical Institute, 2022; Swedish Meteorological and Hydro-
+logical Institute, 2022). Noon temperature, wind speed, hu-
+midity and 24 h precipitation are used to calculate the FWI
+by estimating the moisture content in soil and organic mate-
+rial, ﬁre spread potential and potential heat release in heavier
+fuel. FWI values are not upper-bounded, and the ranges used
+for classifying ﬁre danger vary. For example, the European
+Forest Fire Information System (EFFIS) ﬁre danger classes
+based on the daily FWI (San-Miguel-Ayanz et al., 2012) are
+very low (< 5.2), low (5.2–11.2), moderate (11.2–21.3), high
+(21.3–38.0) and very high (≥ 38.0).
+The FWI data were obtained from the Copernicus Emer-
+gency Management Service (CEMS) global data produced
+for EFFIS covering 1979 to the near present at a daily reso-
+lution (CEMS, 2020). The original 0.25◦× 0.25◦ grid of the
+EFFIS dataset is shifted 0.125◦ as compared to the grid used
+for the analysis, and a second order conservative remapping
+was therefore applied to remap the data. Finally, the FWI
+metrics monthly mean FWI (FWI_mean) and monthly max
+FWI (FWI_max) were calculated from daily FWI values.
+2.5 Model set-up and training for Fennoscandia
+The target variable and potential predictors comprised the
+dataset used for the model training. Although a machine
+learning algorithm for constructing the model is automated,
+several choices have to be made in a model set-up and train-
+ing procedure. This section describes these choices and the
+considerations made, including how to split the dataset into
+a training and a test set, and the choice of machine learning
+algorithm, evaluation criterion, complexity terms to be tuned
+and training procedure speciﬁcations.
+2.5.1 Training and test set
+The dataset was split into a training and a test set to obtain
+an independent evaluation of the ﬁnal model. Due to tempo-
+ral dependency in the time series, a fully random selection of
+data points to the training and test set would likely give a too
+optimistic evaluation of the model. Instead, assuming lim-
+ited dependence between years, whole years were selected
+for both the training and test set. A total of 5 years (26 %)
+was selected for the test set: 2004, 2011, 2013, 2017 and
+2018. The remaining 14 years (74 %) constituted the training
+set. The years were selected at random, with two exceptions:
+(1) the year 2018 was manually chosen to be included in the
+test set to evaluate the model’s prediction capability in what
+is considered an extreme year in terms of hydrometeorologi-
+cal conditions (Bakke et al., 2020) and (2) the year 2017 was
+randomly chosen for the test set among the years 2016, 2017
+or 2019, to allow for comparison with the Norwegian ﬁre oc-
+currence dataset (Sect. 2.6.5) for at least two years (2017 and
+2018).
+2.5.2 Machine learning algorithm
+The machine learning algorithm was required to (1) have
+a straightforward way of estimating the importance of the
+predictors, (2) have the ability to deal with non-linearities,
+(3) have the ability to deal with extreme imbalanced data
+and (4) have the ability to predict ﬁre danger using proba-
+bilities rather than a binary classiﬁcation of ﬁre/no ﬁre. A
+random forest classiﬁer (RF) was chosen as a machine learn-
+ing algorithm that fulﬁlled the above requirements. The RF,
+introduced by Breiman (2001), is a model built up of an en-
+semble of decision tree classiﬁers (DTs). A DT is a non-
+parametric supervised learner that builds a tree by splitting
+the data multiple times based on predictor values (thresholds)
+and performs classiﬁcation estimates based on the target vari-
+able values in the end nodes. The complexity of a DT is de-
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 10
+74 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+termined by the tree size and number of predictors. To re-
+duce the variance (instability) of a single DT, an ensemble of
+DTs can be built based on bootstrap samples of the data and
+used for prediction by aggregating the DT estimates (bag-
+ging). However, the beneﬁt of aggregating the DT estimates
+is limited by correlation among the DTs. A random forest is a
+variant of bagging that meets this shortcoming by randomly
+selecting a subset of predictors for each split, hence reduc-
+ing the correlation among the DTs. The complexity of an RF
+is determined by the tree size and number of predictors, as
+well as the number of trees to build. Whereas an increase
+in tree size and number of (irrelevant) predictors can lead
+to overﬁtting, the number of trees to build cannot. However,
+computational power and computational time limit the num-
+ber of trees to be built, and the prediction accuracy typically
+stabilises after a certain number of trees.
+Here, we applied the random forest classiﬁer method in the
+Python package scikit-learn (Pedregosa et al., 2011).
+To control the complexity of the model, the maximum size
+of each tree (max_depth) and the number of predictors in-
+cluded (Np) were tuned (see Sect. 2.5.4). The number of
+trees was set to 100. The number of predictors to consider
+for each split was set to the square root of the total number of
+predictors, as recommended for RF classiﬁcation problems
+(Hastie et al., 2009). To account for the imbalance in the tar-
+get data, the target classes (ﬁre and no ﬁre) were weighted
+inversely proportional to the class frequencies. Remaining
+parameters were set to default values given by the classi-
+ﬁer method. Instead of hardcoded classiﬁcations based on the
+majority class of the end node, probability predictions were
+calculated based on the proportion of each class. Probability
+predictions allow for ﬂexibility in the classiﬁcation thresh-
+old and are needed for the evaluation criterion chosen in this
+study (Sect. 2.5.3).
+2.5.3 Evaluation criterion
+Model evaluation criteria typically consider all target vari-
+able classes with equal weight. Consequently, many tradi-
+tional evaluation criteria are not applicable due to the ex-
+treme imbalance between the number of ﬁre and no-ﬁre data
+points. As an example for our data, a model predicting no
+ﬁres at all would have a model accuracy (i.e. proportion of
+correctly classiﬁed data points) of 99.7 %, equalling the pro-
+portion of no-ﬁre data points in the target data. This accu-
+racy indicates a near-perfect model for a model that clearly
+does not meet our objective. Thus, we needed a criterion that
+is not affected by the extreme imbalance in the target data.
+We chose the area under the curve of the receiver operating
+characteristic (ROC-AUC), which calculates the area under
+the curve of true-positive rate (sensitivity) vs. false-positive
+rate (1− speciﬁcity) for different classiﬁcation thresholds
+based on the probability predictions (Fawcett, 2006). Thus,
+it tackles imbalanced data and takes into account probability
+prediction in one single measure. An ROC-AUC score less
+than 0.5 indicates a worse-than-random model; a value of 1
+indicates a perfect model. The ROC-AUC score is 0.5 for a
+model predicting no ﬁres at all, a model predicting ﬁres for
+all data points, and (on average for) a model predicting a tar-
+get dataset in which each data point is randomly selected as
+ﬁre or no ﬁre.
+2.5.4 Training of the model
+To avoid overﬁtting and to make the model as simple as pos-
+sible without losing prediction capability, the RF complex-
+ity parameter controlling the maximum depth of each tree
+(max_depth) and the number of predictors (Np) were tuned.
+The max_depth was tuned from values ranging from 1 (the
+simplest tree structure) to 20 (a complex tree structure). In
+case of Np, the model was trained to ﬁnd the best predic-
+tor subset using a backward-stepwise selection procedure.
+To ﬁnd the optimal combination of max_depth and Np, the
+model was trained using cross-validation (CV).
+The training set was split into seven CV folds by grouping
+two and two years, keeping the number of ﬁres as constant
+as possible (due to the low number of ﬁres in some years).
+Full years were selected for the folds to limit the temporal
+dependency (Sect. 2.5.1). For each CV iteration, the model
+was trained on each combination of max_depth and Np. A
+backward-stepwise selection procedure was implemented to
+ﬁnd the best predictor subset for each Np. For each CV iter-
+ation and max_depth value, the backward-stepwise selection
+procedure was as follows. (1) The model was ﬁtted using
+all predictors. (2) The model evaluation criterion was calcu-
+lated using the left-out fold. (3) Predictor importance was es-
+timated based on the left-out fold. (4) The predictor with the
+lowest predictor importance was omitted from the predictor
+subset. (5) The process is repeated from step 1, now using
+the new predictor subset instead of all predictors. We also
+tested an alternative backward-stepwise selection procedure,
+which explicitly accounted for the high correlation between
+predictors by omitting the least important of the two most
+correlated predictors at each step. This method performed
+less well. A limitation of this method is that predictors with
+low correlation with other predictors are kept regardless of
+their importance for the model performance.
+Predictor importance was estimated using the permutation
+importance from the Python package scikit-learn (Pe-
+dregosa et al., 2011), which estimates the decrease in the
+model score (here ROC-AUC score) when one of the pre-
+dictors is randomly shufﬂed. To increase the robustness of
+the estimate, the random shufﬂe was repeated ﬁve times,
+and the mean of the predictor importance of each reshufﬂing
+was used as the predictor importance estimate. The predic-
+tor importance is typically close to zero (or even negative
+due to randomness) for non-important predictors, as well as
+for highly correlated predictors. In the case of highly cor-
+related predictors, the predictor importance of one predictor
+can experience an abrupt increase when a highly correlated
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 11
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 75
+predictor is omitted. Thus, the elimination criterion in the
+backward-stepwise selection cannot depend on a static set of
+predictor importance (e.g. of the full model; Genuer et al.,
+2015) but needs to be based on the predictor importance of
+the updated model for each predictor subset.
+2.6 Final model selection and evaluation for
+Fennoscandia
+This section describes the selection (Sect. 2.6.1) and evalu-
+ation (Sect. 2.6.2–2.6.5) of the ﬁnal data-driven model for
+Fennoscandia. The data-driven model performance was eval-
+uated on the test set and compared with the performance
+of the FWI (Sect. 2.6.2). Further, the predictor importance
+was assessed (Sect. 2.6.3), and both the data-driven model
+and FWI were used to produce ﬁre danger probability maps
+(Sect. 2.6.4). Finally, the data-driven model was evaluated
+on an independent dataset, i.e. the Norwegian ﬁre occurrence
+dataset (Sect. 2.6.5).
+2.6.1 Selection of a data-driven model
+For each combination of max_depth and Np, the average
+cross-validation ROC-AUC scores were calculated, and the
+combination of max_depth and Np yielding the highest score
+(max_depth_opt and Np_opt, respectively) was selected for
+the ﬁnal model. The selection of the optimal predictor sub-
+set was not trivial, as the Np_opt predictors selected in each
+cross-validation iteration could potentially differ due to the
+varying sub-dataset used as the left-out fold. To select the op-
+timal subset of Np_opt predictors, the 7-fold cross-validation
+was performed again using max_depth_opt and Np_opt, and
+the model was ﬁtted to each of the predictor subsets se-
+lected during the training of the model. The predictor sub-
+set yielding the highest average cross-validation ROC-AUC
+score was chosen for the ﬁnal model.
+2.6.2 Model evaluation
+The predictability of the ﬁnal model was evaluated for the
+test set (i.e. the years not included in the training of the
+model) using the ROC-AUC criterion (see Sect. 2.5.3). The
+prediction capability of the data-driven model was then com-
+pared with the ROC-AUC of the FWI metrics FWI_mean and
+FWI_max (Sect. 2.4).
+2.6.3 Predictor importance
+To estimate the importance of each predictor selected for the
+ﬁnal model, we used permutation importance, as described
+in Sect. 2.5.4 but now using 10 random shufﬂes. For compar-
+ison, the impurity-based importance (from the Python pack-
+age scikit-learn; Pedregosa et al., 2011) was also es-
+timated. The impurity-based importance estimates the nor-
+malised total reduction of the criterion introduced by each
+predictor. Although it is typically biased towards predictors
+with high cardinality, typically an issue for numerical pre-
+dictors, this was not considered a problem here because all
+input data were continuous. The impurity-based importance
+sums to 1, and the higher a value, the more important the
+predictor. As opposed to permutation importance, which can
+be estimated on any dataset, the impurity-based importance
+estimates are based on the training set only, which can be
+misleading in the case of overﬁtting. On the other hand, in
+the case of highly correlated predictors, the impurity-based
+importance may still give a better representation of the im-
+portance (as compared to permutation importance) due to the
+randomness in the subset of predictors selected for each split
+in the tree construction. Due to differences in the computa-
+tion and the pros and cons of the two predictor importance
+estimates, we applied both the permutation importance and
+the impurity-based importance. Permutation importance was
+estimated for the training set and test set separately.
+2.6.4 Fire danger probability maps
+Fire danger probability maps were produced for each month
+and year in the test set using the prediction probabilities of
+the data-driven model and plotted together with ﬁre occur-
+rences from the satellite-based ﬁre occurrence dataset. Simi-
+lar maps based on FWI_mean and FWI_max were also pro-
+duced for comparison. In addition, the grid-wise Spearman
+rank correlation between the model predictions FWI_mean
+and FWI_max were calculated to reveal any consistent spa-
+tial patterns in the agreement (or lack thereof) of the ﬁre dan-
+ger predictions.
+2.6.5 Model evaluation using the Norwegian ﬁre
+occurrence dataset
+The Norwegian ﬁre occurrence dataset was included as an in-
+dependent dataset to evaluate the data-driven model’s ability
+to predict a more detailed ﬁre dataset. The two years included
+in both the test set for Fennoscandia and the Norwegian ﬁre
+occurrence dataset (i.e. 2017 and 2018) were used as the ba-
+sis for this evaluation, with Norway as the spatial domain.
+First, the model ability to predict the original target data
+(i.e. the satellite-based ﬁre occurrence dataset) and the inde-
+pendent target data (i.e. Norwegian ﬁre occurrence dataset)
+were compared by computing the ROC-AUC scores. Second,
+using Norwegian ﬁre occurrence as a target, the ROC-AUC
+score based on the data-driven model was compared to the
+ROC-AUC scores based on FWI_mean and FWI_max.
+Finally, we trained a data-driven model on the Norwegian
+ﬁre occurrence dataset instead of the satellite-based ﬁre oc-
+currence dataset for Fennoscandia to get a “fairer” compar-
+ison of a data-driven model and the FWI’s ability to predict
+the Norwegian ﬁre occurrence dataset (we note that this step
+is not included in Fig. 1). Because of the relatively short
+period covered by the Norwegian dataset, of which 2017
+and 2018 were used as the test set, only two years (2016
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 12
+76 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+and 2019) constituted the training set. Therefore, a 2-fold
+cross-validation was applied (instead of the 7-fold used in the
+main analysis), in which each year constituted a fold. The re-
+maining training set-up follows the procedure as described in
+Sect. 2.5.
+2.7 Additional experiments
+Two additional experiments were performed to test the effect
+of (1) using two alternative machine learning algorithms and
+(2) not including a dynamical vegetation index as a potential
+predictor. A description of the experiments are given below.
+Two additional, but related, machine learning algorithms
+were tested to assess the applicability of using the random
+forest algorithm. First, we tested a decision tree model (DT;
+see Sect. 2.5.2) to see if a single tree was sufﬁcient to con-
+struct a good prediction model. The DT was trained using
+the same procedure as for the RF model (Sect. 2.5), except
+that all predictors were evaluated as candidates for each split.
+Second, we tested a boosting algorithm called AdaBoost
+(Freund and Schapire, 1997). Boosting algorithms are con-
+sidered one of the most powerful learning ideas introduced
+in this century (Hastie et al., 2009). The algorithm makes
+predictions based on aggregation of results from a selec-
+tion of constructed weak classiﬁers (here DT classiﬁer with
+max_depth= 1). For each new classiﬁer constructed after the
+ﬁrst, the data points are weighted based on previous misclas-
+siﬁcations, in order to give more emphasis on the misclassi-
+ﬁed observations. AdaBoost was trained using the same pro-
+cedure as for the RF model (Sect. 2.5), except that instead of
+max_depth, the parameter deﬁning the maximum number of
+weak classiﬁers to construct (either 50, 100, 200 or 500) was
+tuned.
+We also carried out a separate experiment in which we in-
+cluded a greenness indicator, the normalised difference veg-
+etation index (NDVI), as a potential predictor. This index is
+not possible to derive from climate models and was there-
+fore excluded from the main analysis. However, it is a com-
+monly used index to assess the vegetation status (Smith et al.,
+2020) and used for ﬁre forecasting (Michael et al., 2021;
+Chowdhury and Hassan, 2015; Maselli et al., 2003). The
+NDVI can be viewed as a potential estimate of burnable
+biomass, which is highly variable in the Nordic landscape.
+NDVI data were obtained from the monthly Terra MODIS
+Vegetation Indices (MOD13C2) global 0.05◦ dataset (Didan,
+2015). The data were spatially averaged to a 0.25◦ resolution.
+The model training followed the same procedure as described
+in Sect. 2.5.
+3 Results
+3.1 Selection of a data-driven model for Fennoscandia
+Based on the average cross-validation (CV) ROC-AUC
+scores for all combinations of the max_depth and num-
+ber of predictors (Np), the highest score was found for
+max_depth= 9 and Np= 15 (Fig. S1). The CV scores re-
+vealed that there were no clear best choices of max_depth
+independent of the selected number of predictors and vice
+versa. This emphasises the importance of testing the com-
+bined effect and not ﬁtting max_depth and Np separately.
+For many combinations, the ROC-AUC values were simi-
+lar (varying only on the second decimal), opening for se-
+lecting a simpler model without a too high cost of predic-
+tion capability. We chose to automatically select the combi-
+nation yielding the best score to avoid an extra element of
+subjectivity. The max_depth of 9 was well within the investi-
+gated max_depth values. The degrading scores on both ends
+(i.e. the lowest and highest max_depth values investigated)
+gave conﬁdence in that the range of max_depth values inves-
+tigated was sufﬁcient. Of the original 30 potential predictors,
+half remained for the ﬁnal data-driven model. The number of
+trees (i.e. 100) used for the data-driven model was consid-
+ered sufﬁcient, as indicated by the stabilisation of the model
+performance (Fig. S2).
+Of the 15 predictors, 5 were related to volumetric soil wa-
+ter (swvl1, swvl2, swvl3, swvl4 and swvl2_anomaly), 3 to
+temperature (tg_mean, tn_mean and tx_mean), 3 to wind
+speed (wspeed_mean, wspeed_p10 and wspeed_p90), 2 to
+precipitation (rr_sum and rr_sum_anomaly), and 1 each to
+the predictors of snow cover (snowc) and fraction of burnable
+area (fraction_burnable). All meteorological drought indices
+and temperature anomalies were omitted. For precipitation
+and soil moisture, both monthly mean (or sum) values and
+monthly anomalies were selected. Notably, many of the se-
+lected predictors were highly correlated (Fig. 4).
+3.2 Model evaluation
+All ROC-AUC scores presented are computed based on the
+test set. The ﬁnal data-driven (random forest) model ROC-
+AUC score was 0.791 (Fig. 5). The data-driven model had
+a slightly higher ROC-AUC score (differing in the second
+decimal) compared to the FWI metrics, i.e. monthly max
+FWI (FWI_max) and monthly mean FWI (FWI_mean). The
+ROC-AUC scores of FWI_max and FWI_mean were more
+similar, differing in the third decimal (0.784 and 0.783, re-
+spectively). The ROC-AUC score of the data-driven model
+using the random forest algorithm slightly outperformed the
+two alternative machine learning algorithms tested, a deci-
+sion tree (0.737; Fig. S3a) and AdaBoost (0.747; Fig. S4a),
+conﬁrming that the random forest algorithm was a suitable
+choice for our analysis.
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 13
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 77
+Figure 5. Test set ROC curve and ROC-AUC score using the
+data-driven model as compared to using monthly mean FWI
+(FWI_mean) and monthly max FWI (FWI_max).
+3.3 Predictor importance
+Figure 6 shows the importance of the predictors, using the
+permutation importance estimated for the training and test
+set separately, as well as the impurity-based importance es-
+timates. The dominant predictor in all cases was the volu-
+metric soil water anomaly in soil layer 2 (swvl2_anomaly).
+The remaining predictors were of signiﬁcantly less, as well
+as similar, importance. In all three algorithms tested, the
+anomaly in shallow volumetric soil water (either in soil
+layer 1 or 2), monthly mean of daily maximum temperature
+and volumetric soil water in soil layer 4 were the top three
+most important predictors (Figs. 6, S3b and S4b). The per-
+mutation importance estimates of the training set is gener-
+ally higher than that of the test set. This is expected since the
+predictor subset was chosen based on the training set. Differ-
+ences in the hydrometeorological conditions in the training
+set years and test set years may also play a role in explaining
+the differences in the order and magnitude of the permutation
+importance estimates.
+The bivariate and univariate distributions of the most dom-
+inant predictor (swvl2_anomaly) and the predicted ﬁre dan-
+ger probabilities are shown in Fig. 7. The ﬁgure shows a clear
+distinction between ﬁre danger probabilities for ﬁre and no-
+ﬁre data points for the training set (Fig. 7a), but it is less
+distinct so in the test set (Fig. 7b). For both the training and
+test set, most ﬁre data points occur for swvl2_anomaly values
+below zero (dryer soil that normal), and there is a weak nega-
+tive relationship between the swvl2_anomaly values and ﬁre
+danger probabilities. However, a high density of ﬁre danger
+probabilities of approx. zero is distributed along a relatively
+wide range of swvl2_anomaly values (between approx.−1.5
+and 1), pointing to the importance of other predictors in min-
+imising the ﬁre danger probabilities for these data points.
+In the experiment including the NDVI as potential predic-
+tor, the test set ROC-AUC score was 0.799 (Fig. S5) com-
+pared to 0.791 for the baseline. The most dominant predictor
+for this experiment was still swvl2_anomaly, with the NDVI
+in second place, regardless of the predictor importance es-
+timate. The ﬁnal model had a more complex tree structure
+(max_depth= 16) and a lower number of predictors (11) as
+compared to the model without the NDVI. The higher num-
+ber of predictors in the model without the NDVI can likely
+be explained by the fact that other predictors are included to
+compensate for the lack of NDVI information about vegeta-
+tion health.
+3.4 Fire danger probability maps
+Fire danger probability maps composed using the data-driven
+model and (for comparison) the FWI metrics for 2018 are
+shown in Fig. 8 and for the remaining test set years in
+Fig. S6–S9. The maps also include the actual ﬁre occurrences
+according to the satellite-based target variable (marked as
+dots). The year 2018 had one of the highest number of ﬁre
+occurrences during the period (Fig. 2), which is reﬂected in
+high-end ﬁre danger values covering large parts of the region,
+in particular in May–July as well as August in the southeast.
+By visual inspection, many of the ﬁres occurred in cells of
+high ﬁre danger predicted by the data-driven model as well
+as by the FWI metrics. On the other hand, several months
+have high ﬁre danger in areas with no ﬁre occurrences. This
+likely reﬂects either an actual high ﬁre danger but a lack of
+ignition sources or a weakness in the ﬁre danger predictions.
+In Fig. 9 high ( > 0.8) grid-wise rank correlations in
+ﬁre danger between FWI_max and FWI_mean across
+Fennoscandia reﬂect temporal agreement in ﬁre danger be-
+tween the two FWI metrics. However, the grid-wise rank cor-
+relation between the data-driven model and either of the two
+FWI metrics are spatially less coherent, with approx. 90 %
+of the grid-cell correlations ranging between 0.4 and 0.9.
+The highest correlations (between 0.7 and 0.9) are found in
+eastern Fennoscandia (Russia) and along a southwestern–
+northeastern belt from southern Norway, through mid and
+northern Sweden, to northeastern Finland and Norway. The
+lowest correlations ( < 0.5) were found in parts of western
+Norway, southeastern Sweden and southwestern Finland.
+3.5 Model evaluation using the Norwegian ﬁre
+occurrence dataset
+The ROC-AUC score of the data-driven model prediction of
+the original (satellite-based) target variable for Fennoscandia
+was recalculated for the evaluation period (2017 and 2018)
+with Norway as the spatial domain. The ROC-AUC score
+of the Norwegian ﬁre occurrence dataset was 0.755 as com-
+pared to 0.726 for the satellite-based ﬁre occurrence dataset
+(Fig. S10a). The pronounced difference in number of ﬁres
+(Fig. 3) is reﬂected in the non-smooth ROC-AUC curves of
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 14
+78 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+Figure 6. The importance of the predictors selected for the ﬁnal data-driven model estimated using the permutation importance of the test
+and training set separately, as well as the impurity-based feature importance of the training set. The bar height of the permutation importance
+represents the mean, and the error bar represents the standard deviation of 10 random shufﬂes of each predictor. The bars are ordered by the
+permutation importance of the test set.
+Figure 7. The bivariate and univariate distributions of the anomaly in volumetric soil water in soil layer 2 (swvl2_anomaly) and predicted
+ﬁre danger probabilities. Results are shown for(a) the training set and (b) the test set. The distributions are given separately for the ﬁre data
+points (red) and no-ﬁre data points (blue) from the satellite-based target variable. The histograms show the relative frequencies, and the box
+plot whiskers deﬁne the 5th–95th percentile range.
+the satellite-based as compared to the Norwegian ﬁre pre-
+dictions. Due to the low number of ﬁre occurrences in the
+satellite-based target variable, the corresponding ROC-AUC
+score must be interpreted with caution.
+Prediction of the Norwegian ﬁre occurrence dataset using
+the two FWI metrics had a notably higher ROC-AUC score
+(0.851 for FWI_max and 0.867 for FWI_mean) as compared
+to 0.755 for the data-driven model trained for Fennoscan-
+dia (Fig. S10b). The monthly ﬁre danger maps for Norway
+jointly showing ﬁre occurrences reﬂect the higher prediction
+performance obtained by the FWI metrics, in particular in
+capturing the ﬁre dense areas in May–July 2018 (Fig. S11–
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 15
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 79
+Figure 8. Fire danger probability maps for April–September 2018 using (a–f) the data-driven model predictions, (g–l) FWI_mean and (m–
+r) FWI_max. Blue markers show ﬁre occurrences using the satellite-based ﬁre occurrence dataset. Colour axes are truncated at the 5th and
+95th percentile.
+Figure 9. Spearman rank correlation of (a) the data-driven model and FWI_mean, (b) the data-driven model and FWI_max, and
+(c) FWI_mean and FWI_max. The correlations are calculated using the test set. Hatches indicate regions of an effectivep value (i.e. p value
+accounting for autocorrelation) smaller than 0.01.
+S12). The satellite-based target variable had a low represen-
+tation of ﬁre occurrences in Norway; accordingly, we did not
+expect an equally good performance of the data-driven model
+trained for Fennoscandia as for the FWI when evaluated for
+the Norwegian dataset.
+The separate data-driven model trained using the Norwe-
+gian ﬁre occurrence dataset as the target variable (Sect. 2.6.5)
+resulted in a ﬁnal model for Norway with max_depth = 2
+and Np= 8. This represents a considerably simpler model
+compared to the data-driven model trained using the satellite-
+based ﬁre occurrence dataset for Fennoscandia. This may be
+explained by the reduced geospatial complexity in the train-
+ing set. The ROC-AUC score improved from 0.755 to 0.836
+for the test set years 2017 and 2018 (Fig. S13a), although this
+is still slightly below the FWI performance. As opposed to
+the data-driven model trained for Fennoscandia, this model
+selected the monthly maximum temperature and monthly
+mean of daily maximum temperature as the two dominant
+predictors (Fig. S13b). The remaining predictors were of no-
+tably lower importance and related to (anomalies in) volu-
+metric soil water, high wind speed, precipitation anomalies
+and the fraction of burnable area.
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 16
+80 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+4 Discussion
+A data-driven model developed on a monthly and 0.25◦ spa-
+tial resolution was found suitable for ﬁre danger probability
+mapping in Fennoscandia, despite the region’s spatiotempo-
+ral heterogeneity in hydroclimatological conditions. In the
+following, we discuss the selected predictors, known chal-
+lenges, the added value of a data-driven model and ways for-
+ward.
+4.1 Dominant predictors of Fennoscandian wildﬁres
+The relatively large number of statistically dependent predic-
+tors selected for the data-driven model illustrates the com-
+plexity of the controlling mechanisms of ﬁres. In the liter-
+ature, a wildﬁre is often referred to as a compound hazard
+as it is caused by the co-occurrence of several drivers, not
+necessarily extreme themselves.
+The dominant predictor for the data-driven model (both
+training and test set) was the normalised anomaly of the volu-
+metric soil water in soil layer 2 (swvl2_anomaly). The bivari-
+ate plots point to the importance of dryness in the soil relative
+to normal conditions for favourable ﬁre conditions. Anoma-
+lies in soil moisture are typically a concurrent or delayed re-
+sponse to anomalies in precipitation and evapotranspiration,
+with the delay depending on subsurface properties such as
+soil characteristics and depth to the groundwater table. This
+is reﬂected in a positive correlation between swvl2_anomaly
+and the meteorological drought indices (SPI and SPEI). Soil
+moisture has been found a better predictor for burned area
+than precipitation anomalies in another boreal region Forkel
+et al. (Baikal region; 2012), supporting our ﬁndings. Stud-
+ies that report the SPI or SPEI as important predictors (e.g.
+Gudmundsson et al., 2014) often do not include soil mois-
+ture anomaly in their study. Our analysis for Fennoscandia
+ﬁnds that soil moisture anomaly is preferred as a predictor
+over the meteorological drought indices. This is likely due to
+the direct inﬂuence of the soil moisture content on the wa-
+ter uptake by plants and general drying of organic matter,
+making the biomass more susceptible to combustion. Thus,
+soil moisture may be considered an indicator of litter fuel
+moisture conditions. Although swvl2_anomaly stands out as
+a dominant predictor, the overall weak relationship between
+this predictor and the ﬁre danger probability as revealed by
+the bivariate plot emphasises the importance of other predic-
+tors in the data-driven model for Fennoscandia.
+Monthly mean daily maximum temperature (tx_mean) and
+volumetric soil water in the deepest soil layer (swvl4) have
+the second and third highest test set permutation importance,
+respectively. Together with anomalies in shallow volumetric
+soil water (soil layer 1 or 2), these predictors were the most
+dominant also in the additional experiments using a decision
+tree and AdaBoost, instead of a random forest, as the ma-
+chine learning algorithm. Including the NDVI as a potential
+predictor still gives swvl2_anomaly as the dominant predic-
+tor, with the NDVI as the second and swvl4 and tx_mean
+as the fourth and ﬁfth most important according to test set
+permutation importance. The consistency in terms of predic-
+tors chosen between the experiments emphasises the impor-
+tance of these predictors in predicting ﬁre danger probabil-
+ities. Whereas tx_mean is the average of the highest daily
+temperatures, affecting the general evaporative demand and
+transpiration, swvl4 is related to slowly changing deep soil
+moisture, which is important for water uptake by plants with
+deep roots. Accordingly, each index has a separate role in
+controlling the conditions favourable (or non-favourable) for
+ﬁres, roles that also differ from the role of a shallow-soil
+moisture anomaly.
+The creation of a data-driven model using the Norwegian
+ﬁre occurrence dataset as the target variable for the model
+training gave a somewhat different selection of dominant pre-
+dictors. A fewer number of predictors were selected, and
+the highly correlated tx_max and tx_mean stood out as the
+two most dominant predictors. We recognise three potential
+reasons for the difference between this model and the origi-
+nal model developed for Fennoscandia: a change in the tar-
+get variable, study domain and period under investigation,
+whereof the two latter follow from the ﬁrst. The target vari-
+able was based on 10-fold more ﬁre occurrences for Norway
+than what was available for the satellite-based dataset for
+Fennoscandia. It is here worth noting the overall difference in
+the size of the ﬁres recorded in each database, with generally
+larger ﬁres being represented in satellite-based burned area
+products rather than in the Norwegian dataset. Thus, the pre-
+dictors found for the Norwegian target variable may be more
+important for small ﬁres, which is typically not included in
+the satellite-based dataset. Moreover, the difference may re-
+ﬂect different dominant controls of ﬁres in Norway as com-
+pared to the remaining part of Fennoscandia and in particular
+as compared to the areas with the highest density of ﬁre oc-
+currences in the satellite-based dataset. There is also a likely
+possibility that the reanalysis data do not represent the vol-
+umetric soil water conditions as well in Norway compared
+to other parts of Fennoscandia. The difference in period used
+in the model development should also be considered. In the
+Norwegian model set-up, only two years were used for train-
+ing and two years for evaluation. These years may not reﬂect
+the longer period used for Fennoscandia. In general, more
+trust is given to models trained on longer time series, en-
+abling a better representation of the variability in hydrome-
+teorological conditions.
+Several of the potential predictors derived from the ERA5-
+Land reanalysis (i.e. wind speed, snow cover and soil mois-
+ture) were selected as ﬁnal predictors. This conﬁrms their
+relevance for predicting wildﬁres, despite the fact that they
+combine observations with modelled data. An advantage of
+reanalysis products over observational datasets is that they
+are more closely linked to climate model outputs. Thus, the
+inclusion of reanalysis-based indices in the ﬁnal model for
+predicting observed ﬁres points to the prospective of using
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 17
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 81
+modelled data for future climate projections. In addition, we
+found that all ERA5 wind-related predictors were selected,
+while it has been assumed that wind would have a limited im-
+pact at these spatial scales (e.g. Aldersley et al., 2011). The
+wind-related predictors may have been selected due to the
+wind’s role in drying of the ground and vegetation by increas-
+ing evapotranspiration, its role in spreading the ﬁre to a size
+recognisable for the satellite, and its indirect role through the
+link between wind and dominant weather patterns. In short,
+the selection of ERA5-derived predictors conﬁrms that the
+use of reanalysis products is useful for wildﬁre prediction by
+data-driven model approaches.
+4.2 Model transferability at the cost of additional
+potential predictors
+Ensuring transferability of the data-driven model to climate
+projections comes at a cost of limiting the type of potential
+predictors. In the case of predicting ﬁre danger in a station-
+ary climate, several additional predictors are expected to im-
+prove the prediction accuracy. Two such predictors are lati-
+tude and month of the year, which could guide the model to
+differentiate between important hydrometeorological predic-
+tors depending on the season. For example, it is expected that
+SPEI3 has a different effect on ﬁre danger when the accumu-
+lation period covers a snow accumulation period as compared
+to the growing season. However, such predictors are not suit-
+able for a non-stationary climate as the snow and growing
+season characteristics are expected to change, e.g. the timing
+and duration, and the relation to hydrometeorological indices
+may thus no longer be valid.
+Remotely sensed vegetation characteristics have proved
+useful for predicting burned area on a global scale (Kuhn-
+Régnier et al., 2021; Forkel et al., 2017). One such predic-
+tor is the NDVI, which improved the model to some degree
+when tested in a separate analysis. Other time-varying veg-
+etation or fuel volume indices are expected to further im-
+prove the prediction accuracy. However, such data are not al-
+ways available as continuous spatiotemporal ﬁelds but cover
+a smaller area over a limited period of time. Climate mod-
+els that are coupled with DGVMs allow for a wider selection
+of dynamic vegetation predictors. Vegetation characteristics
+are found to have a strong relationship with burned area in
+ﬁre-prone ecosystems (Forkel et al., 2019), and we antici-
+pate that the inclusion of vegetation characteristics available
+in DGVMs would have improved our model for Fennoscan-
+dia.
+Other predictors that are expected to improve the ﬁre pre-
+diction are predictors related to sources of ignition. Light-
+ning, sparks from trains and humans are all important ﬁre
+starters, and lightning data as well as maps of infrastructure
+and closeness to human settlement are therefore expected to
+improve the model predictions. A link between human set-
+tlement and ﬁres is not clear from the satellite-based ﬁre
+occurrence dataset (Fig. 2b). However, the Norwegian ﬁre
+occurrence dataset (Fig. 3b) suggests a link between wild-
+ﬁre occurrences and population centres. This may partly be
+due to humans and human infrastructure being ﬁre starters
+and partly reﬂecting an overlap between human settlement in
+Norway and burnable areas. In addition, the inclusion of ig-
+nition sources would have made the model more in line with
+the target variable (ﬁre occurrences), as the target variable
+implicitly includes the ignition aspect.
+A model constructed for integration with a climate model
+used for estimating ﬁre probability under different climate
+scenarios is different from a model constructed for monitor-
+ing/forecasting near-real-time ﬁre occurrences. The two have
+different application purposes. A model constructed for mon-
+itoring/forecasting near-real-time ﬁre occurrences can give
+a prediction of higher accuracy for short-term preparedness,
+whereas ﬁre models applicable for use in climate projections
+are valuable for long-term planning and mitigation strategies.
+4.3 The effect of the type of ﬁre data chosen as the
+target variable
+In this study, we selected a satellite-based ﬁre occurrence
+dataset as the target variable for the main analysis and a
+national ﬁre occurrence record as an alternative target vari-
+able for comparison. The lack of small ﬁres in the satellite-
+based dataset was particularly notable when compared with
+the Norwegian dataset for April–September 2018 (Fig. 3).
+During 2018, Norway experienced a record high number of
+grass and forest ﬁres (DSB, 2019). However, many of these
+ﬁres were small and rather quickly extinguished and thus not
+captured by the satellite. The FWI outperformed the data-
+driven model trained on the satellite-based target variable in
+predicting the Norwegian ﬁre occurrence dataset. This was
+not surprising, as the data-driven model was not trained on
+the Norwegian dataset; small ﬁres in general; and for most of
+Norway, no ﬁres at all. A data-driven model trained on small
+ﬁres in Norway considerably improved the prediction ability,
+despite only two years being available for model training.
+It is not given which of the data sources for ﬁre occurrence
+is better to use as the target variable. A beneﬁt of national
+records is that they typically have registered most ﬁre occur-
+rences, including small ﬁres. However, the recording proce-
+dures and information logged may have changed over time
+and vary from country to country (e.g. Aalto and Venäläinen,
+2021). In addition, there are large differences among coun-
+tries in the coverage of historical ﬁre recording, as well as
+the availability of such datasets, limiting transnational stud-
+ies. Satellite-based burned area products are typically readily
+available, are consistent across country boundaries and exist
+for longer periods than what can be found for many national
+records. They also have a global spatial coverage, which al-
+lows for a large-scale application of the proposed methodol-
+ogy, such as an analysis of different drivers in different re-
+gions.
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 18
+82 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+As an alternative to burned area, satellite-based active-ﬁre
+products can be used to construct a ﬁre occurrence dataset.
+Active-ﬁre products are capable of detecting smaller ﬁres
+compared to standard burned area products (Wooster et al.,
+2021; Oliva and Schroeder, 2015). Whereas small ﬁre de-
+tection is improved in many regions by using active-ﬁre
+products, detection errors (i.e. false ﬁres) are a problem in
+some regions and seasons (Wooster et al., 2021; Zhang et al.,
+2018). The active-ﬁre products detect burning at the time of
+overpass given relatively cloud-free conditions, which can
+be a problem for regions within Fennoscandia that are sel-
+dom cloud-free. We chose to apply the burned area product
+because it is considered less sensitive to cloud cover. Fur-
+ther, the burned area product has a more direct relevance to
+climate-relevant consequences, such as albedo and ecosys-
+tem functioning. In addition, an independent target dataset
+was included for comparison, i.e. a local ﬁre record of Nor-
+way.
+Whether or not the lack of small ﬁres in the satellite-based
+products is a limitation or not depends on the objective. For
+example for forecasting, monitoring or projections used for
+ﬁre preparedness planning in Norway, capturing small ﬁres
+is vital as small ﬁres have the potential to develop into large
+ﬁres with devastating impacts. It is worth noting that small
+ﬁres are not necessarily small following natural conditions
+but may be so following the wildﬁre preparedness and sup-
+pression in the area. Thus, predicting small and large ﬁres
+may be of similar importance for a region. However, ﬁres
+that stay small are of less importance in terms of large-scale
+changes in emissions, albedo and ecosystem functioning.
+4.4 Fire danger probability mapping
+To our knowledge, our study is the ﬁrst in which a data-
+driven model is developed for Fennoscandian wildﬁre dan-
+ger, by means of training on transnational datasets derived
+from satellite imagery over multiple years at a sub-yearly
+time step. The spatial and temporal resolution of the data-
+driven model presented in this paper takes into account
+the variable hydrometeorology over the region, seasons and
+years, which is necessary in order to make use of the model
+to produce ﬁre danger probability maps.
+The present study conﬁrms that both the FWI and our data-
+driven model are skilful models for ﬁre danger probability
+mapping in Fennoscandia. The ROC-AUC scores were rela-
+tively high for both, especially given the lack of ignition in
+both models. The good performance was reﬂected in the gen-
+eral ability of the ﬁre danger probability maps to predict high
+ﬁre danger in regions where ﬁres occurred. High ﬁre danger
+probabilities are also found in data points without ﬁre oc-
+currence. This was expected, as ignition is needed for a ﬁre
+to occur. The varying grid-wise rank correlation between the
+data-driven model and each of the two FWI metrics (Fig. 9)
+underscores that ﬁre danger probability maps produced by
+the two different approaches are different despite their sim-
+ilar and skilful overall performance. An interesting spatial
+pattern is the notable difference in correlation closely follow-
+ing the Russian–Finnish border, with the higher correlations
+found in Russia. A likely reason for this is the fact that the
+data-driven model is better tuned to Russian conditions as
+compared to Finnish conditions due to the relatively higher
+number of ﬁres in Russia (Fig. 2), whereas the FWI perfor-
+mance is independent of the ﬁre occurrence density. The spa-
+tially varying correlation between the FWI and data-driven
+model highlights the beneﬁt of including different types of
+models to improve our knowledge of the uncertainties re-
+lated to ﬁre danger. Thus, we do not suggest replacing current
+process-based models with data-driven models but recom-
+mend using them jointly in assessments of ﬁre occurrences
+(or probability thereof).
+4.5 Added value of a data-driven model and ways
+forward
+A data-driven (statistical/machine learning) model differs
+fundamentally from a process-based global ﬁre model or
+ﬁre weather index. Process-based models use established or
+assumed relationships between various indices and ﬁre oc-
+currence to construct ﬁre danger or ﬁre occurrence models.
+While a data-driven model is also based on process under-
+standing in the selection of indices tested as potential predic-
+tors, it differs by explicitly accounting for ﬁre occurrences in
+the construction of the model.
+There are several beneﬁts of a data-driven approach for
+mapping ﬁre danger probability. First, a data-driven model
+can be applied as an additional and independent model, as
+already mentioned in Sect. 4.4. It can either be ﬁre danger
+probability mapping as exempliﬁed in this study or be com-
+bined with ignition and/or spread, for example in a similar
+way as is done in process-based global ﬁre models. Depend-
+ing on the construction of the model, it can be applied jointly
+with both ﬁre weather indices and process-based global ﬁre
+models. Assessments using multiple models of fundamen-
+tally different construction can improve the trust in the pre-
+dictions and the knowledge of the prediction uncertainties.
+Second, a data-driven approach can automatically sort out
+important predictors and omit the remaining ones. In this
+way, they can provide useful new insight into which indices
+one should consider when analysing the probability of ﬁre
+occurrence. For example, soil moisture data are usually not
+considered in ﬁre weather indices such as the FWI, whereas
+shallow-soil moisture anomaly was found the most dominant
+predictor by the data-driven model for Fennoscandia. New
+insight into relevant predictors can help improve the process-
+based models. One can also investigate the important predic-
+tors’ sensitivity to spatial and temporal resolutions as long as
+the potential predictors and target variable allow it. A ﬁner
+spatiotemporal resolution may reveal other (ﬁne-scale) in-
+dices, such as altitude and local wind, as dominant predic-
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 19
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 83
+tors, as compared to a coarser resolution where such indices
+are averaged out.
+A beneﬁt of a data-driven model as developed here is
+that the approach can be transferred to other regions. This
+is in opposition to the FWI, which is developed for boreal
+forests and should be used with caution when applied for
+other biomes (Bedia et al., 2018; Dowdy et al., 2009). In
+this work we used a satellite-derived ﬁre dataset and globally
+available hydrometeorological variables, which can all be ob-
+tained for other regions around the world. This would only
+require additional training on the local settings but would not
+require a new workﬂow or model implementation. This re-
+gional transferability can be combined with the ﬂexibility of
+implementing different sets of potential predictors and tar-
+get variables, allowing for regional and application-speciﬁc
+analysis. This was exempliﬁed by the present study, in which
+a data-driven approach was applied for predicting ﬁre dan-
+ger probabilities on an understudied region of the boreal re-
+gion with highly varying hydroclimatology. A notable im-
+provement was found when using the local ﬁre occurrence
+dataset to train the model, illustrating the potential of high-
+performing data-driven models adapted to local conditions,
+when high-quality target data are available. The difference in
+the selection of dominant predictors between the data-driven
+model constructed for Fennoscandia and Norway exempli-
+ﬁed that certain relationships are more important in some re-
+gions than others. The ﬂexibility in spatial domain and pre-
+dictors also allows for large-scale analysis, more in line with
+process-based global ﬁre models in terms of constructing re-
+gionally independent relationships between drivers and ﬁres.
+By limiting the potential predictors to those available in
+most climate models when developing the data-driven model,
+the ﬁnal model allows for analyses of future changes in ﬁre
+danger probabilities given different climate scenarios. Al-
+though outside of the scope of this study, applying our model
+in future climate scenarios can give valuable new insight
+as what to expect of changes in ﬁre danger probability in
+Fennoscandia under future climate scenarios.
+In summary, our study has demonstrated the value of a
+data-driven model as an independent model for constructing
+monthly ﬁre danger probability maps and as a tool for iden-
+tifying dominant predictors. Data-driven models have a high
+degree of ﬂexibility, making them suitable for adaptation to
+other regions and applications. Thus, we regard data-driven
+models as valuable contributions in a wide range of applica-
+tions related to ﬁre monitoring, forecasting and projections.
+5 Conclusions
+The data-driven approach was found suitable for the identi-
+ﬁcation of dominant predictors for ﬁre occurrence and con-
+struction of spatiotemporally resolved ﬁre danger probabil-
+ity maps in Fennoscandia. Anomalies in the volumetric soil
+water in soil layer 2 (7–28 cm) were found to be the domi-
+nant predictor, followed by the monthly mean of daily max-
+imum temperature and volumetric soil water in the deepest
+soil layer (layer 4; 100–289 cm). Other selected predictors
+were related to wind speed, precipitation, snow cover and
+fraction of burnable area. The selected predictors emphasise
+the importance of other predictors than weather alone, as has
+traditionally been used for ﬁre weather indices. In addition,
+the variation in the type of predictors emphasises the com-
+plexity in driving mechanisms for ﬁre occurrence and the
+value of a bottom-up approach to automatically identify the
+most important predictors.
+The following concludes our research questions presented
+in the Introduction:
+1. The data-driven model for Fennoscandia was compara-
+ble to (and slightly outperformed) the Canadian For-
+est Fire Weather Index (FWI), which was developed
+for similar biomes and latitudes as Fennoscandia. The
+temporal rank correlations of the ﬁre danger probabil-
+ity maps produced by the two approaches showed large
+spatial variability, pointing to the value of including
+more than one approach when mapping ﬁre danger.
+2. The data-driven model performance decreased and was
+outperformed by the FWI when used to predict a lo-
+cal ﬁre occurrence dataset for Norway. This can be ex-
+plained by the lack of ﬁre occurrences in Norway in the
+satellite-based target variable used for model training.
+3. When using the Norwegian ﬁre occurrence dataset as
+the target variable in the training, the model perfor-
+mance increased and reached a similar performance
+level as for the FWI, despite only two years being avail-
+able for the model training.
+4. The random forest algorithm used in the main analy-
+sis outperformed the simpler (decision tree) and more
+sophisticated (AdaBoost) machine learning algorithm.
+The random forest algorithm was therefore found suit-
+able for the objective of this study. Nevertheless, we ac-
+knowledge the potential of yet other machine learning
+algorithms not tested here, to improve the predictions
+further.
+5. There was a minor decrease in the model performance
+when the NDVI was not included as a potential predic-
+tor. Thus, most of the effect of the NDVI for ﬁre occur-
+rence is compensated for by other predictors. In a moni-
+toring or forecasting situation, where the transferability
+to climate models is not important, the inclusion of the
+NDVI can be useful.
+The selection of potential predictors was limited to pre-
+dictors available in most climate models and transferable to
+different climate scenarios. Accordingly, our model allows
+for analyses of future changes in ﬁre occurrence characteris-
+tics, which would be a natural next step. This can preferably
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 20
+84 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+be done jointly with process-based approaches, in order to
+evaluate the agreement and spread among the different types
+of models. The approach presented in this study can also be
+adapted to other regions and with the inclusion of other po-
+tential predictors.
+Finally, we want to make a general remark on the impor-
+tance of user-made choices in data-driven approaches. Even
+though the machine learning (or statistical) algorithm in itself
+is automated, the model construction and estimated perfor-
+mance can be highly sensitive to user-made choices. Exam-
+ples include choices of the machine learning algorithm and
+training procedure; selection of the target variable and poten-
+tial predictors, predictor subset, and evaluation criterion (in
+particular in the case of extreme imbalance); and the impor-
+tance of testing the model on a dataset independent of the
+model construction. In the present study, we aimed to make
+all user-made choices transparent and justiﬁed, and we tested
+for alternative options for several of the choices. In conclu-
+sion, a data-driven approach has proven an important tool to
+identify dominant predictors of ﬁre occurrence and as an al-
+ternative ﬁre danger probability model to already established
+process-based models, as this study demonstrates.
+Code availability. Code is available upon reasonable
+request to the corresponding author. The command
+line Climate Data Operator programme (CDO;
+https://doi.org/10.5281/zenodo.3991595, Schulzweida et al.,
+2019; Schulzweida, 2021) and the Python package xarray
+(https://doi.org/10.5281/zenodo.5648431, Hoyer et al., 2021;
+Hoyer and Hamman, 2017) were used for processing the NetCDF
+ﬁles. SPI and SPEI calculations were performed using the
+SCI package in R (https://cran.r-project.org/package=SCI, last
+access: 9 January 2023; Gudmundsson and Stagge, 2016).
+The remaining calculations and visualisations were performed
+using Python: NumPy (https://github.com/numpy/numpy, last
+access: 5 January 2023; NumPy project, 2021; Harris et al.,
+2020) and pandas (https://doi.org/10.5281/zenodo.5203279,
+Reback et al., 2021) for data handling; scikit-learn
+(https://doi.org/10.5281/zenodo.4725836, Grisel et al.,
+2021; Pedregosa et al., 2011) for the construction, train-
+ing and evaluation of the data-driven models; SciPy
+(https://doi.org/10.5281/zenodo.4635380, Virtanen et al.,
+2021, 2020) for computation of the correlations between pre-
+dictors; xskillscore (https://doi.org/10.5281/zenodo.5173153,
+Bell et al., 2021) for calculating the correlation effective
+p value between the data-driven models and FWI metrics;
+and Matplotlib (https://doi.org/10.5281/zenodo.5194481,
+Caswell et al., 2021; Hunter, 2007), cartopy
+(https://doi.org/10.5281/zenodo.1490296, Elson et
+al., 2018; Met Ofﬁce, 2010–2015) and seaborn
+(https://doi.org/10.5281/zenodo.5205191, Waskom et al., 2021;
+Waskom, 2021) for the visualisations of the results.
+Data availability. All data used are available online.
+E-OBS (https://doi.org/10.24381/cds.151d3ec6, EU-
+FP6 project UERRA et al., 2021), ERA5-Land (https:
+//doi.org/10.24381/cds.e2161bac, Muñoz Sabater, 2019a, and
+https://doi.org/10.24381/cds.68d2bb30, Muñoz Sabater, 2019b)
+and v5.1.1cds (https://doi.org/10.24381/cds.f333cf85, ESA-CCI,
+2020) are available at the Copernicus Climate Change Service
+(C3S) Climate Data Store. NDVI data are available at NASA’s
+Land Processes Distributed Active Archive Center (LP DAAC;
+https://doi.org/10.5067/MODIS/MOD13C2.006, Didan, 2015). The
+Norwegian wildﬁre record is available from the Norwegian Direc-
+torate for Civil Protection (DSB; https://www.brannstatistikk.no/,
+last access: 25 November 2020, DSB, 2020). Note that the DSB
+web page is in Norwegian. Data are freely available, and in case of
+any questions regarding the data, please use the contact information
+provided by the web page.
+Supplement. The supplement related to this article is available on-
+line at: https://doi.org/10.5194/nhess-23-65-2023-supplement.
+Author contributions. SJB and LMT designed the study. SJB per-
+formed the analyses and visualisations and drafted the paper. SJB,
+KvdW, NW, and LMT critically discussed the results and reviewed
+and edited the draft.
+Competing interests. The contact author has declared that none of
+the authors has any competing interests.
+Disclaimer. Publisher’s note: Copernicus Publications remains
+neutral with regard to jurisdictional claims in published maps and
+institutional afﬁliations.
+Acknowledgements. We greatly acknowledge all data providers.
+ERA5-Land and v5.1.1cds data were downloaded from the Coper-
+nicus Climate Change Service (C3S) Climate Data Store, and NDVI
+data were downloaded from NASA’s Land Processes Distributed
+Active Archive Center (LP DAAC). We acknowledge the Norwe-
+gian Directorate for Civil Protection (DSB) for the Norwegian wild-
+ﬁre record. We acknowledge the E-OBS dataset from the EU-FP6
+project UERRA (Uncertainties in Ensembles of Regional Reanal-
+yses, https://www.uerra.eu, last access: 9 January 2023) and the
+Copernicus Climate Change Service, as well as the data providers
+in the ECA&D project (https://www.ecad.eu, last access: 9 January
+2023). We thank Monica Ionita and Trond Simensen for valuable in-
+put. Niko Wanders acknowledges funding from the Dutch Research
+Council (NWO, grant no. 016.Veni.181.049).
+Financial support. This research has been supported by the Dutch
+Research Council (NWO, grant no. 016.Veni.181.049).
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 21
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 85
+Review statement. This paper was edited by Margreth Keiler and
+reviewed by two anonymous referees.
+References
+Aalto, J. and Venäläinen, A.: Climate change and forest manage-
+ment affect forest ﬁre risk in Fennoscandia, Tech. Rep. 2021:3,
+Ilmatieteen laitos – Finnish Meteorological Institute, ISBN 978-
+952-336-135-5, 2021.
+Abatzoglou, J. T. and Kolden, C. A.: Relationships be-
+tween climate and macroscale area burned in the west-
+ern United States, Int. J. Wildland Fire, 22, 1003–1020,
+https://doi.org/10.1071/WF13019, 2013.
+Abatzoglou, J. T., Williams, A. P., and Barbero, R.:
+Global emergence of anthropogenic climate change in
+ﬁre weather indices, Geophys. Res. Lett., 46, 326–336,
+https://doi.org/10.1029/2018GL080959, 2019.
+Aldersley, A., Murray, S. J., and Cornell, S. E.: Global
+and regional analysis of climate and human drivers
+of wildﬁre, Sci. Total Environ., 409, 3472–3481,
+https://doi.org/10.1016/j.scitotenv.2011.05.032, 2011.
+Andela, N., Morton, D. C., Giglio, L., Chen, Y ., Van der Werf, G.
+R., Kasibhatla, P. S., DeFries, R. S., Collatz, G. J., Hantson, S.,
+Kloster, S., Bachelet, D., Forrest, M., Lasslop, G., Li, F., Man-
+geon, S., Melton, J. R., Yue, C., and Randerson, J. T.: A human-
+driven decline in global burned area, Science, 356, 1356–1362,
+https://doi.org/10.1126/science.aal4108, 2017.
+Arpaci, A., Eastaugh, C. S., and Vacik, H.: Selecting the best per-
+forming ﬁre weather indices for Austrian ecoregions, Theor.
+Appl. Climatol., 114, 393–406, https://doi.org/10.1007/s00704-
+013-0839-7, 2013.
+Bakke, S. J., Ionita, M., and Tallaksen, L. M.: The 2018 north-
+ern European hydrological drought and its drivers in a his-
+torical perspective, Hydrol. Earth Syst. Sci., 24, 5621–5653,
+https://doi.org/10.5194/hess-24-5621-2020, 2020.
+Balshi, M. S., McGuire, A. D., Duffy, P., Flannigan, M., Walsh,
+J., and Melillo, J.: Assessing the response of area burned to
+changing climate in western boreal North America using a
+Multivariate Adaptive Regression Splines (MARS) approach,
+Glob. Change Biol., 15, 578–600, https://doi.org/10.1111/j.1365-
+2486.2008.01679.x, 2009.
+Beck, H. E., Pan, M., Miralles, D. G., Reichle, R. H., Dorigo, W. A.,
+Hahn, S., Shefﬁeld, J., Karthikeyan, L., Balsamo, G., Parinussa,
+R. M., van Dijk, A. I. J. M., Du, J., Kimball, J. S., Vergopolan, N.,
+and Wood, E. F.: Evaluation of 18 satellite- and model-based soil
+moisture products using in situ measurements from 826 sensors,
+Hydrol. Earth Syst. Sci., 25, 17–40, https://doi.org/10.5194/hess-
+25-17-2021, 2021.
+Bedia, J., Herrera, S., Gutiérrez, J. M., Benali, A., Brands,
+S., Mota, B., and Moreno, J. M.: Global patterns in
+the sensitivity of burned area to ﬁre-weather: Implications
+for climate change, Agr. Forest Meteorol., 214, 369–379,
+https://doi.org/10.1016/j.agrformet.2015.09.002, 2015.
+Bedia, J., Golding, N., Casanueva, A., Iturbide, M., Buon-
+tempo, C., and Gutiérrez, J. M.: Seasonal predictions of Fire
+Weather Index: Paving the way for their operational applica-
+bility in Mediterranean Europe, Climate Services, 9, 101–110,
+https://doi.org/10.1016/j.cliser.2017.04.001, 2018.
+Beguería, S., Vicente-Serrano, S. M., Reig, F., and Latorre, B.: Stan-
+dardized precipitation evapotranspiration index (SPEI) revis-
+ited: parameter ﬁtting, evapotranspiration models, tools, datasets
+and drought monitoring, Int. J. Climatol., 34, 3001–3023,
+https://doi.org/10.1002/joc.3887, 2014.
+Bell, R., Spring, A., Brady, R., Andrew, Squire, D., Blackwood,
+Z., Sitter, M. C., and Chegini, T.: xskillscore: v0.0.23, Zenodo
+[code], https://doi.org/10.5281/zenodo.5173153, 2021.
+Bessie, W. and Johnson, E.: The relative importance of fuels and
+weather on ﬁre behavior in subalpine forests, Ecology, 76, 747–
+762, https://doi.org/10.2307/1939341, 1995.
+Bowman, D. M. J. S., Balch, J. K., Artaxo, P., Bond, W. J., Carlson,
+J. M., Cochrane, M. A., D’Antonio, C. M., DeFries, R. S., Doyle,
+J. C., Harrison, S. P., Johnston, F. H., Keeley, J. E., Krawchuk,
+M. A., Kull, C. A., Marston, J. B., Moritz, M. A., Prentice, I. C.,
+Roos, C. I., Scott, A. C., Swetnam, T. W., van der Werf, G. R.,
+and Pyne, S. J.: Fire in the Earth system, Science, 324, 481–484,
+https://doi.org/10.1126/science.1163886, 2009.
+Bradshaw, C. J. and Warkentin, I. G.: Global estimates of boreal
+forest carbon stocks and ﬂux, Global Planet. Change, 128, 24–
+30, https://doi.org/10.1016/j.gloplacha.2015.02.004, 2015.
+Bradshaw, L. S., Deeming, J. E., Burgan, R. E., and Cohen, J.
+D.: The 1978 national ﬁre-danger rating system: technical doc-
+umentation, United States Department of Agriculture, Forest
+Service, Intermountain Forest and Range Experiment Station,
+https://doi.org/10.2737/INT-GTR-169, 1984.
+Breiman, L.: Random forests, Mach. Learn., 45, 5–32,
+https://doi.org/10.1023/A:1010933404324, 2001.
+Caswell, T. A., Droettboom, M., Lee, A., Sales de Andrade,
+E., Hoffmann, T., Hunter, J., Klymak, J., Firing, E., Stansby,
+D., Varoquaux, N., Nielsen, J. H., Root, B., May, R., El-
+son, P., Seppänen, J. K., Dale, D., Lee, J.-J., McDougall,
+D., Straw, A., Hobson, P., hannah, Gohlke, C., Yu, T. S.,
+Ma, E., Vincent, A. F., Silvester, S., Moad, C., Kniazev, N.,
+Ernest, E., and Ivanov, P.: matplotlib: v3.4.3, Zenodo [code],
+https://doi.org/10.5281/zenodo.5194481, 2021.
+CEMS: Fire danger indices historical data from the Coper-
+nicus Emergency Management Service (CEMS), Copernicus
+Climate Change Service (C3S) Climate Data Store (CDS),
+https://doi.org/10.24381/cds.0e89c522, 2020.
+Chowdhury, E. H. and Hassan, Q. K.: Development of a
+new daily-scale forest ﬁre danger forecasting system us-
+ing remote sensing data, Remote Sens.-Basel, 7, 2431–2448,
+https://doi.org/10.3390/rs70302431, 2015.
+Cornes, R. C., Van der Schrier, G., Van den Besselaar, E. J., and
+Jones, P. D.: An ensemble version of the E-OBS temperature
+and precipitation data sets, J. Geophys. Res.-Atmos., 123, 9391–
+9409, https://doi.org/10.1029/2017JD028200, 2018.
+Didan, K.: MOD13C2 MODIS/Terra Vegetation In-
+dices Monthly L3 Global 0.05Deg CMG V006,
+NASA EOSDIS Land Processes DAAC [data set],
+https://doi.org/10.5067/MODIS/MOD13C2.006, 2015.
+Dowdy, A. J., Mills, G. A., Finkele, K., and de Groot, W.: Aus-
+tralian ﬁre weather as represented by the McArthur forest ﬁre
+danger index and the Canadian forest ﬁre weather index, Tech.
+Rep. 10, Centre for Australian Weather and Climate Research,
+ISBN 9781921605185, 2009.
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 22
+86 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+DSB: Skogbrannsesongen 2018, Tech. rep., The Norwegian Di-
+rectorate of Civil Protection (DSB), ISBN 978-82-7768-474-1,
+2019.
+DSB: Brannstatistikk, The Norwegian Directorate of Civil Protec-
+tion (DSB) [data set], https://www.brannstatistikk.no/, last ac-
+cess: 25 November 2020.
+Elson, P., Sales de Andrade, E., Hattersley, R., Campbell, E., Daw-
+son, A., May, R., scmc72, Little, B., Pelley, C., Blay, B., Donkers,
+K., Killick, P., marqh, lbdreyer, Peglar, P., Wilson, N., Kirkham,
+D., Bosley, C., Signell, J., Filipe, Krischer, L., Eriksson, D.,
+Smith, A., Carlos, McDougall, D., Crosby, A., Herzmann, D.,
+scaine1, Greg, and munslowa: cartopy: v0.17.0, Zenodo [code],
+https://doi.org/10.5281/zenodo.1490296, 2018.
+EU-FP6 project UERRA, Copernicus Climate Change Service
+and data providers in the EC&D project: E-OBS daily grid-
+ded meteorological data for Europe from 1950 to present de-
+rived from in-situ observations: v23.1e, Copernicus Climate
+Change Service (C3S) Climate Data Store (CDS) [data set],
+https://doi.org/10.24381/cds.151d3ec6, 2021.
+ESA-CCI: Fire burned area from 2001 to present derived
+from satellite observations from the European Space Agency
+Climate Change Initiative (ESA-CCI), Copernicus Climate
+Change Service (C3S) Climate Data Store (CDS) [data set],
+https://doi.org/10.24381/cds.f333cf85, 2020.
+Fawcett, T.: An introduction to ROC analysis, Pattern Recogn. Lett.,
+27, 861–874, https://doi.org/10.1016/j.patrec.2005.10.010, 2006.
+Feurdean, A., Florescu, G., Tan¸ t ˘au, I., Vannière, B., Diaconu,
+A.-C., Pfeiffer, M., Warren, D., Hutchinson, S. M., Gorina,
+N., Gałka, M., and Kirpotin, S.: Recent ﬁre regime in the
+southern boreal forests of western Siberia is unprecedented
+in the last ﬁve millennia, Quaternary Sci. Rev., 244, 106495,
+https://doi.org/10.1016/j.quascirev.2020.106495, 2020.
+Flannigan, M., Stocks, B., Turetsky, M., and Wotton, M.: Im-
+pacts of climate change on ﬁre activity and ﬁre management
+in the circumboreal forest, Glob. Change Biol., 15, 549–560,
+https://doi.org/10.1111/j.1365-2486.2008.01660.x, 2009.
+Flannigan, M., Cantin, A. S., De Groot, W. J., Wotton, M., New-
+bery, A., and Gowman, L. M.: Global wildland ﬁre season
+severity in the 21st century, Forest Ecol. Manag., 294, 54–61,
+https://doi.org/10.1016/j.foreco.2012.10.022, 2013.
+Flannigan, M. D., Logan, K. A., Amiro, B. D., Skinner, W. R., and
+Stocks, B.: Future area burned in Canada, Climatic Change, 72,
+1–16, https://doi.org/10.1007/s10584-005-5935-y, 2005.
+Forkel, M., Thonicke, K., Beer, C., Cramer, W., Bartalev,
+S., and Schmullius, C.: Extreme ﬁre events are related
+to previous-year surface moisture conditions in permafrost-
+underlain larch forests of Siberia, Environ. Res. Lett., 7, 044021,
+https://doi.org/10.1088/1748-9326/7/4/044021, 2012.
+Forkel, M., Dorigo, W., Lasslop, G., Teubner, I., Chuvieco, E.,
+and Thonicke, K.: A data-driven approach to identify con-
+trols on global ﬁre activity from satellite and climate obser-
+vations (SOFIA V1), Geosci. Model Dev., 10, 4443–4476,
+https://doi.org/10.5194/gmd-10-4443-2017, 2017.
+Forkel, M., Andela, N., Harrison, S. P., Lasslop, G., van Marle, M.,
+Chuvieco, E., Dorigo, W., Forrest, M., Hantson, S., Heil, A., Li,
+F., Melton, J., Sitch, S., Yue, C., and Arneth, A.: Emergent re-
+lationships with respect to burned area in global satellite obser-
+vations and ﬁre-enabled vegetation models, Biogeosciences, 16,
+57–76, https://doi.org/10.5194/bg-16-57-2019, 2019.
+Freund, Y . and Schapire, R. E.: A decision-theoretic generalization
+of on-line learning and an application to boosting, J. Comput.
+Syst. Sci., 55, 119–139, https://doi.org/10.1006/jcss.1997.1504,
+1997.
+Genuer, R., Poggi, J.-M., and Tuleau-Malot, C.: VSURF: an
+R package for variable selection using random forests, R Jour-
+nal, 7, 19–33, https://hal.archives-ouvertes.fr/hal-01251924/ﬁle/
+genuer-poggi-tuleaumalot.pdf (last access: 10 January 2023),
+2015.
+Goulart, H. M. D., van der Wiel, K., Folberth, C., Balkovic, J.,
+and van den Hurk, B.: Storylines of weather-induced crop fail-
+ure events under climate change, Earth Syst. Dynam., 12, 1503–
+1527, https://doi.org/10.5194/esd-12-1503-2021, 2021.
+Grisel, O., Mueller, A., Lars, Gramfort, A., Louppe, G., Pret-
+tenhofer, P., Blondel, M., Niculae, V ., Nothman, J., Joly, A.,
+Fan, T. J., Vanderplas, J., Kumar, M., Qin, H., Hug, N., Varo-
+quaux, N., Estève, L., Layton, R., Lemaitre, G., Metzen, J. H.,
+Jalali, A., Rajagopalan, V . R., Schönberger, J., Yurchak, R.,
+du Boisberranger, J., Li, W., Woolam, C., Dupré la Tour, T.,
+Eren, K., and Eustache: scikit-learn: v0.24.2, Zenodo [code],
+https://doi.org/10.5281/zenodo.4725836, 2021.
+Gudmundsson, L. and Stagge, J. H.: SCI: Standardized Climate
+Indices such as SPI, SRI or SPEI, R package version 1.0-2,
+Cran [code], https://cran.r-project.org/package=SCI (last access:
+9 January 2023), 2016.
+Gudmundsson, L., Rego, F. C., Rocha, M., and Seneviratne, S. I.:
+Predicting above normal wildﬁre activity in southern Europe
+as a function of meteorological drought, Environ. Res. Lett., 9,
+084008, https://doi.org/10.1088/1748-9326/9/8/084008, 2014.
+Guttman, N. B.: Accepting the standardized precipitation index: a
+calculation algorithm, J. Am. Water Resour. Ass., 35, 311–322,
+https://doi.org/10.1111/j.1752-1688.1999.tb03592.x, 1999.
+Hanes, C. C., Wang, X., Jain, P., Parisien, M.-A., Little, J. M.,
+and Flannigan, M. D.: Fire-regime changes in Canada over
+the last half century, Can. J. Forest Res., 49, 256–269,
+https://doi.org/10.1139/cjfr-2018-0293, 2019.
+Hantson, S., Arneth, A., Harrison, S. P., Kelley, D. I., Prentice, I. C.,
+Rabin, S. S., Archibald, S., Mouillot, F., Arnold, S. R., Artaxo,
+P., Bachelet, D., Ciais, P., Forrest, M., Friedlingstein, P., Hickler,
+T., Kaplan, J. O., Kloster, S., Knorr, W., Lasslop, G., Li, F., Man-
+geon, S., Melton, J. R., Meyn, A., Sitch, S., Spessa, A., van der
+Werf, G. R., V oulgarakis, A., and Yue, C.: The status and chal-
+lenge of global ﬁre modelling, Biogeosciences, 13, 3359–3375,
+https://doi.org/10.5194/bg-13-3359-2016, 2016.
+Hantson, S., Kelley, D. I., Arneth, A., Harrison, S. P., Archibald, S.,
+Bachelet, D., Forrest, M., Hickler, T., Lasslop, G., Li, F., Man-
+geon, S., Melton, J. R., Nieradzik, L., Rabin, S. S., Prentice, I.
+C., Sheehan, T., Sitch, S., Teckentrup, L., V oulgarakis, A., and
+Yue, C.: Quantitative assessment of ﬁre and vegetation properties
+in simulations with ﬁre-enabled vegetation models from the Fire
+Model Intercomparison Project, Geosci. Model Dev., 13, 3299–
+3318, https://doi.org/10.5194/gmd-13-3299-2020, 2020.
+Hargreaves, G. H. and Samani, Z. A.: Reference crop evapo-
+transpiration from temperature, Appl. Eng. Agric., 1, 96–99,
+https://doi.org/10.13031/2013.26773, 1985.
+Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Vir-
+tanen, P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith,
+N. J., Kern, R., Picus, M., Hoyer, S., van Kerkwijk, M. H., Brett,
+M., Haldane, A., del Río, J. F., Wiebe, M., Peterson, P., Gérard-
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 23
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 87
+Marchant, P., Sheppard, K., Reddy, T., Weckesser, W., Abbasi,
+H., Gohlke, C., and Oliphant, T. E.: Array programming with
+NumPy, Nature, 585, 357–362, https://doi.org/10.1038/s41586-
+020-2649-2, 2020.
+Hastie, T., Tibshirani, R., and Friedman, J.: The Elements of Statis-
+tical Learning: Data Mining, Inference, and Prediction, Springer
+Science+Business Media, New York, USA, ISBN 978-0-387-
+84858-7, https://doi.org/10.1007/978-0-387-84858-7, 2009.
+Hoyer, S. and Hamman, J.: xarray: ND labeled arrays and datasets
+in Python, Journal of Open Research Software, 5, p. 10,
+https://doi.org/10.5334/jors.148, 2017.
+Hoyer, S., Fitzgerald, C., Hamman, J., keewis, Cherian, D., Fitzger-
+ald, C., Hauser, M., Fujii, K., Maussion, F., crusaderky, Clark,
+S., Kleeman, A., Nicholas, T., Illviljan, T. K., Munroe, J., Amici,
+A., Barghini, A., Banihirwe, A., Bell, R., gimperiale, Hatﬁeld-
+Dodds, Z., Abernathey, R., Bovy, B., johnomotani, Mühlbauer,
+K., Roszko, M., and Wolfram, P. J.: xarray: v0.20.1, Zenodo
+[code], https://doi.org/10.5281/zenodo.5648431, 2021.
+Hunter, J. D.: Matplotlib: A 2D graphics environment, Comput. Sci.
+Eng., 9, 90–95, https://doi.org/10.1109/MCSE.2007.55, 2007.
+Jolly, W. M., Cochrane, M. A., Freeborn, P. H., Holden,
+Z. A., Brown, T. J., Williamson, G. J., and Bowman,
+D. M.: Climate-induced variations in global wildﬁre
+danger from 1979 to 2013, Nature Commun., 6, 1–11,
+https://doi.org/10.1038/ncomms8537, 2015.
+Kasischke, E. S. and Turetsky, M. R.: Recent changes
+in the ﬁre regime across the North American boreal
+region–Spatial and temporal patterns of burning across
+Canada and Alaska, Geophys. Res. Lett., 33, L09703,
+https://doi.org/10.1029/2006GL025677, 2006.
+Keywood, M., Kanakidou, M., Stohl, A., Dentener, F., Grassi,
+G., Meyer, C. P., Torseth, K., Edwards, D., Thompson, A. M.,
+Lohmann, U., and Burrows, J.: Fire in the air: Biomass burning
+impacts in a changing climate, Crit. Rev. Env. Sci. Tec., 43, 40–
+83, https://doi.org/10.1080/10643389.2011.604248, 2013.
+Kganyago, M. and Shikwambana, L.: Assessment of the charac-
+teristics of recent major wildﬁres in the USA, Australia and
+Brazil in 2018–2019 using multi-source satellite products, Re-
+mote Sens.-Basel, 12, 1803, https://doi.org/10.3390/rs12111803,
+2020.
+Krawchuk, M. A. and Moritz, M. A.: Constraints on global ﬁre
+activity vary across a resource gradient, Ecology, 92, 121–132,
+https://doi.org/10.1890/09-1843.1, 2011.
+Krawchuk, M. A., Moritz, M. A., Parisien, M.-A., Van Dorn,
+J., and Hayhoe, K.: Global pyrogeography: the current
+and future distribution of wildﬁre, PloS ONE, 4, e5102,
+https://doi.org/10.1371/journal.pone.0005102, 2009.
+Krikken, F., Lehner, F., Haustein, K., Drobyshev, I., and van Old-
+enborgh, G. J.: Attribution of the role of climate change in the
+forest ﬁres in Sweden 2018, Nat. Hazards Earth Syst. Sci., 21,
+2169–2179, https://doi.org/10.5194/nhess-21-2169-2021, 2021.
+Kuhn-Régnier, A., V oulgarakis, A., Nowack, P., Forkel, M., Pren-
+tice, I. C., and Harrison, S. P.: The importance of antecedent veg-
+etation and drought conditions as global drivers of burnt area,
+Biogeosciences, 18, 3861–3879, https://doi.org/10.5194/bg-18-
+3861-2021, 2021.
+Leonard, M., Westra, S., Phatak, A., Lambert, M., Van den
+Hurk, B., McInnes, K., Risbey, J., Schuster, S., Jakob, D., and
+Stafford-Smith, M.: A compound event framework for under-
+standing extreme impacts, WIREs Clim. Change, 5, 113–128,
+https://doi.org/10.1002/wcc.252, 2014.
+Littell, J. S., McKenzie, D., Peterson, D. L., and Wester-
+ling, A. L.: Climate and wildﬁre area burned in western
+US ecoprovinces, 1916–2003, Ecol. Appl., 19, 1003–1021,
+https://doi.org/10.1890/07-1183.1, 2009.
+Lizundia-Loiola, J., Pettinari, M. L., and Chuvieco, E.: Tempo-
+ral anomalies in burned area trends: satellite estimations of
+the Amazonian 2019 ﬁre crisis, Remote Sens.-Basel, 12, 151,
+https://doi.org/10.3390/rs12010151, 2020.
+López-Saldaña, G., Bistinas, I., and Pereira, J. M. C.:
+Global analysis of radiative forcing from ﬁre-induced
+shortwave albedo change, Biogeosciences, 12, 557–565,
+https://doi.org/10.5194/bg-12-557-2015, 2015.
+Maselli, F., Romanelli, S., Bottai, L., and Zipoli, G.: Use of NOAA-
+A VHRR NDVI images for the estimation of dynamic ﬁre risk
+in Mediterranean areas, Remote Sens. Environ., 86, 187–197,
+https://doi.org/10.1016/S0034-4257(03)00099-3, 2003.
+McElhinny, M., Beckers, J. F., Hanes, C., Flannigan, M., and Jain,
+P.: A high-resolution reanalysis of global ﬁre weather from
+1979 to 2018 – overwintering the Drought Code, Earth Syst.
+Sci. Data, 12, 1823–1833, https://doi.org/10.5194/essd-12-1823-
+2020, 2020.
+McKee, T. B., Doesken, N. J., and Kleist, J.: The relation-
+ship of drought frequency and duration to time scales,
+in: Proceedings of the 8th Conference on Applied Cli-
+matology, Anaheim, California, USA, 17–22 January
+1993, American Meteorological Society, 179–184, https:
+//www.droughtmanagement.info/literature/AMS_Relationship_
+Drought_Frequency_Duration_Time_Scales_1993.pdf (last
+access: 9 January 2023), 1993.
+Met Ofﬁce: Cartopy: a cartographic python library with a mat-
+plotlib interface, Met Ofﬁce, Exeter, Devon, http://scitools.org.
+uk/cartopy (last access: 9 January 2023), 2010–2015.
+Michael, Y ., Helman, D., Glickman, O., Gabay, D., Brenner,
+S., and Lensky, I. M.: Forecasting ﬁre risk with machine
+learning and dynamic information derived from satellite veg-
+etation index time-series, Sci. Total Environ., 764, 142844,
+https://doi.org/10.1016/j.scitotenv.2020.142844, 2021.
+Muñoz Sabater, J.: ERA5-Land hourly data from 1981 to present,
+Copernicus Climate Change Service (C3S) Climate Data Store
+(CDS) [data set], https://doi.org/10.24381/cds.e2161bac, 2019a.
+Muñoz Sabater, J.: ERA5-Land monthly averaged data from 1981 to
+present, Copernicus Climate Change Service (C3S) Climate Data
+Store (CDS) [data set], https://doi.org/10.24381/cds.68d2bb30,
+2019b.
+Noble, I., Gill, A., and Bary, G.: McArthur’s ﬁre-danger me-
+ters expressed as equations, Aust. J. Ecol., 5, 201–203,
+https://doi.org/10.1111/j.1442-9993.1980.tb01243.x, 1980.
+Norwegian Meteorological Institute: Skogbrannfareindeks, https://
+skogbrannfare.met.no/, last access: 30 May 2022.
+NumPy project: NumPy: v1.20.3, GitHub [code], https://github.
+com/numpy/numpy (last access: 5 January 2023), 2021.
+Oliva, P. and Schroeder, W.: Assessment of VIIRS
+375 m active ﬁre detection product for direct burned
+area mapping, Remote Sens. Environ., 160, 144–155,
+https://doi.org/10.1016/j.rse.2015.01.010, 2015.
+Padilla, M., Stehman, S. V ., Ramo, R., Corti, D., Hantson, S.,
+Oliva, P., Alonso-Canas, I., Bradley, A. V ., Tansey, K., Mota, B.,
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023
+
+PAGE 24
+88 S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger
+Pereira, J. M., and Chuvieco, E.: Comparing the accuracies of re-
+mote sensing global burned area products using stratiﬁed random
+sampling and estimation, Remote Sens. Environ., 160, 114–121,
+https://doi.org/10.1016/j.rse.2015.01.005, 2015.
+Parisien, M.-A. and Moritz, M. A.: Environmental controls on the
+distribution of wildﬁre at multiple spatial scales, Ecol. Monogr.,
+79, 127–154, https://doi.org/10.1890/07-1289.1, 2009.
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V ., Thirion,
+B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg,
+V ., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Per-
+rot, M., and Duchesnay, E.: Scikit-learn: Machine Learning in
+Python, J. Mach. Learn. Res., 12, 2825–2830, 2011.
+Pettinari, M. and Chuvieco, E.: ESA CCI ECV Fire Disturbance:
+D3.3.3 Product User Guide – MODIS, version 1.1, ESA Cli-
+mate Change Initiative, https://climate.esa.int/media/documents/
+Fire_cci_D3.3.3_PUG-MODIS_v1.1.pdf (last access: 9 January
+2023), 2018.
+Pettinari, M., Lizundia-Loiola, J., and Chuvieco, E.:
+Algorithm Theoretical Basis Document: CDR Fire
+Burned Area (brokered from CCI Fire Burned
+Area), Copernicus Climate Change Service (C3S),
+http://datastore.copernicus-climate.eu/documents/satellite-
+ﬁre-burned-area/D1.6.2-v1.0_ATBD_CDR_BA-
+FireCCI_MODIS_v5.1cds_PRODUCTS_v1.0.1.pdf (last
+access: 9 January 2023), 2019.
+Prasad, V . K., Badarinath, K., and Eaturu, A.: Biophys-
+ical and anthropogenic controls of forest ﬁres in the
+Deccan Plateau, India, J. Environ. Manage., 86, 1–13,
+https://doi.org/10.1016/j.jenvman.2006.11.017, 2008.
+Ranasinghe, R., Ruane, A. C., Vautard, R., Arnell, N., Coppola,
+E., Cruz, F. A., Dessai, S., Islam, A. S., Rahimi, M., Ruiz
+Carrascal, D., Sillmann, J., Sylla, M. B., Tebaldi, C., Wang,
+W., and Zaaboul, R.: Climate Change Information for Regional
+Impact and for Risk Assessment, in: Climate Change 2021: The
+Physical Science Basis. Contribution of Working Group I to
+the Sixth Assessment Report of the Intergovernmental Panel on
+Climate Change, Climate Change 2021: The Physical Science
+Basis. Contribution of Working Group I to the Sixth Assessment
+Report of the Intergovernmental Panel on Climate Change,
+edited by: Masson-Delmotte, V ., Zhai, P., Pirani, A., Connors, S.
+L., Péan, C., Berger, S., Caud, N., Chen, Y ., Goldfarb, L., Gomis,
+M. I., Huang, M., Leitzell, K., Lonnoy, E., Matthews, J. B. R.,
+Maycock, T. K., Waterﬁeld, T., Yelekçi, O., Yu, R., and Zhou, B.,
+Cambridge University Press, Cambridge, United Kingdom and
+New York, NY , USA, 1767–1926, https://www.ipcc.ch/report/
+ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter12.pdf
+(last access: 12 January 2023), 2021.
+Randerson, J., Chen, Y ., Van der Werf, G., Rogers, B., and
+Morton, D.: Global burned area and biomass burning emis-
+sions from small ﬁres, J. Geophys. Res.-Biogeo., 117, G04012,
+https://doi.org/10.1029/2012JG002128, 2012.
+Reback, J., jbrockmendel, McKinney, W., Van den Bossche, J.,
+Augspurger, T., Cloud, P., Hawkins, S., gfyoung, Sinhrks,
+Roeschke, M., Klein, A., Petersen, T., Tratner, J., She, C.,
+Ayd, W., Hoeﬂer, P., Naveh, S., Garcia, M., Schendel, J.,
+Hayden, A., Saxton, D., Shadrach, R., Gorelli, M. E., Li,
+F., Jancauskas, V ., attack68, McMaster, A., Battiston, P.,
+Seabold, S., and Dong, K.: Pandas: v1.3.2, Zenodo [code],
+https://doi.org/10.5281/zenodo.5203279, 2021.
+San-Miguel-Ayanz, J., Schulte, E., Schmuck, G., Camia, A., Strobl,
+P., Liberta, G., Giovando, C., Boca, R., Sedano, F., Kempe-
+neers, P., McInerney, D., Withmore, C., Santos de Oliveira, S.,
+Rodrigues, M., Durrant, T., Corti, P., Oehler, F., Vilar, L., and
+Amatulli, G.: Comprehensive monitoring of wildﬁres in Europe:
+the European forest ﬁre information system (EFFIS), in: Ap-
+proaches to managing disaster-Assessing hazards, emergencies
+and disaster impacts, edited by: Tiefenbacher, J., IntechOpen,
+https://doi.org/10.5772/28441, 2012.
+San-Miguel-Ayanz, J., Durrant, T., Boca, R., Libertà, G., Branco,
+A., de Rigo, D., Ferrari, D., Maianti, P., Vivancos, T. A., Oom,
+D., Pfeiffer, H., Nuijten, D., and Leray, T.: Forest Fires in Europe
+Middle East and North Africa 2018, Tech. Rep. EUR 29856EN,
+European Union, https://doi.org/10.2760/1128, 2019.
+Schulzweida, U.: CDO User Guide, Zenodo,
+https://doi.org/10.5281/zenodo.5614769, 2021.
+Schulzweida, U., Mueller, R., Heidmann, O., Ansorge, C., Ko-
+rnblueh, L., Wachsmann, F., Kameswarrao, M., and Quast,
+R.: Climate Data Operator (CDO) (1.9.6), Zenodo [code],
+https://doi.org/10.5281/zenodo.3991595, 2019.
+Skinner, W. R., Flannigan, M. D., Stocks, B. J., Martell, D. L., Wot-
+ton, B. M., Todd, J. B., Mason, J. A., Logan, K. A., and Bosch,
+E. M.: A 500 hPa synoptic wildland ﬁre climatology for large
+Canadian forest ﬁres, 1959–1996, Theor. Appl. Climatol., 71,
+157–169, https://doi.org/10.1007/s007040200002, 2002.
+Smith, N. E., Kooijmans, L. M. J., Koren, G., van Schaik, E., van
+der Woude, A. M., Wanders, N., Ramonet, M., Xueref-Remy,
+I., Siebicke, L., Manca, G., Brümmer, C., Baker, I. T., Haynes,
+K. D., Luijkx, I. T., and Peters, W.: Spring enhancement and
+summer reduction in carbon uptake during the 2018 drought
+in northwestern Europe, Philos. T. R. Soc. B, 375, 20190509,
+https://doi.org/10.1098/rstb.2019.0509, 2020.
+Sømme, A.: A Geography of Norden: Denmark, Finland,
+Iceland, Norway, Sweden, J. W. Cappelens Forlag, Oslo,
+ISBN 9788202063351, 1960.
+Stagge, J. H., Tallaksen, L. M., Xu, C. Y ., and Van La-
+nen, H. A.: Standardized precipitation–evapotranspiration index
+(SPEI): Sensitivity to potential evapotranspiration model and
+parameters, in: Hydrology in a Changing World, Copernicus
+GmbH (IAHS-AISH Proceedings and Reports), vol. 363, 367–
+373, ISBN 9781907161414, 2014.
+Stagge, J. H., Tallaksen, L. M., Gudmundsson, L., Van Loon,
+A. F., and Stahl, K.: Candidate distributions for climatological
+drought indices (SPI and SPEI), Int. J. Climatol., 35, 4027–4040,
+https://doi.org/10.1002/joc.4267, 2015.
+Sun, Q., Miao, C., Hanel, M., Borthwick, A. G., Duan, Q., Ji, D.,
+and Li, H.: Global heat stress on health, wildﬁres, and agricul-
+tural crops under different levels of climate warming, Environ.
+Int., 128, 125–136, https://doi.org/10.1016/j.envint.2019.04.025,
+2019.
+Swedish Meteorological and Hydrological Institute: Brandrisk skog
+och mark, https://www.smhi.se/brandrisk, last access: 30 May
+2022.
+Tomshin, O. and Solovyev, V .: Spatio-temporal patterns of
+wildﬁres in Siberia during 2001–2020, Geocarto Int., 1–19,
+https://doi.org/10.1080/10106049.2021.1973581, 2021.
+Turco, M., Llasat, M. C., Tudela, A., Castro, X., and Provenzale, A.:
+Brief communication Decreasing ﬁres in a Mediterranean region
+Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023 https://doi.org/10.5194/nhess-23-65-2023
+
+PAGE 25
+S. J. Bakke et al.: A data-driven model for Fennoscandian wildﬁre danger 89
+(1970–2010, NE Spain), Nat. Hazards Earth Syst. Sci., 13, 649–
+652, https://doi.org/10.5194/nhess-13-649-2013, 2013.
+van der Werf, G. R., Randerson, J. T., Giglio, L., van Leeuwen, T.
+T., Chen, Y ., Rogers, B. M., Mu, M., van Marle, M. J. E., Morton,
+D. C., Collatz, G. J., Yokelson, R. J., and Kasibhatla, P. S.: Global
+ﬁre emissions estimates during 1997–2016, Earth Syst. Sci. Data,
+9, 697–720, https://doi.org/10.5194/essd-9-697-2017, 2017.
+Van der Wiel, K., Selten, F. M., Bintanja, R., Blackport, R., and
+Screen, J. A.: Ensemble climate-impact modelling: extreme im-
+pacts from moderate meteorological conditions, Environ. Res.
+Lett., 15, 034050, https://doi.org/10.1088/1748-9326/ab7668,
+2020.
+Van Wagner, C. E.: Development and structure of the canadian for-
+est ﬁreweather index system, Canadian Forest Service, Head-
+quarters, Ottawa, ISBN 0-662-15198-4, 1987.
+Vicente-Serrano, S. M., Beguería, S., and López-Moreno, J. I.: A
+multiscalar drought index sensitive to global warming: the stan-
+dardized precipitation evapotranspiration index, J. Climate, 23,
+1696–1718, https://doi.org/10.1175/2009JCLI2909.1, 2010.
+Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy,
+T., Cournapeau, D., Burovski, E., Peterson, P., Weckesser, W.,
+Bright, J., van der Walt, S. J., Brett, M., Wilson, J., Millman,
+K. J., Mayorov, N., Nelson, A. R. J., Jones, E., Kern, R., Larson,
+E., Carey, C. J., Polat, ˙I., Feng, Y ., Moore, E. W., VanderPlas, J.,
+Laxalde, D., Perktold, J., Cimrman, R., Henriksen, I., Quintero,
+E. A., Harris, C. R., Archibald, A. M., Ribeiro, A. H., Pedregosa,
+F., van Mulbregt, P., and SciPy 1.0 Contributors: SciPy 1.0:
+Fundamental Algorithms for Scientiﬁc Computing in Python,
+Nat. Methods, 17, 261–272, https://doi.org/10.1038/s41592-019-
+0686-2, 2020.
+Virtanen, P., Gommers, R., Burovski, E., Oliphant, T. E., Weckesser,
+W., Cournapeau, D., alexbrc, Reddy, T., Peterson, P., Haberland,
+M., Wilson, J., Nelson, A., endolith, Mayorov, N., van der Walt,
+S., Polat, I., Laxalde, D., Brett, M., Larson, E., Millman, J., Lars,
+van Mulbregt, P., eric-jones, Carey, C. J., Moore, E., Kern, R., pe-
+terbell10, Leslie, T., Perktold, J., and Striega, K.: SciPy: v1.6.2,
+Zenodo [code], https://doi.org/10.5281/zenodo.4635380, 2021.
+Walker, X. J., Baltzer, J. L., Cumming, S. G., Day, N. J., Ebert, C.,
+Goetz, S., Johnstone, J. F., Potter, S., Rogers, B. M., Schuur, E.
+A. G., Turetsky, M. R., and Mack, M. C.: Increasing wildﬁres
+threaten historic carbon sink of boreal forest soils, Nature, 572,
+520–523, https://doi.org/10.1038/s41586-019-1474-y, 2019.
+Ward, J. H. J.: Hierarchical grouping to optimize an ob-
+jective function, J. Am. Stat. Assoc., 58, 236–244,
+https://doi.org/10.1080/01621459.1963.10500845, 1963.
+Waskom, M. L.: seaborn: statistical data visualiza-
+tion, Journal of Open Source Software, 6, 3021,
+https://doi.org/10.21105/joss.03021, 2021.
+Waskom, M., Gelbart, M., Botvinnik, O., Ostblom, J., Hobson, P.,
+Lukauskas, S., Gemperline, D. C., Augspurger, T., Halchenko,
+Y ., Warmenhoven, J., Cole, J. B., de Ruiter, J., Vanderplas,
+J., Hoyer, S., Pye, C., Miles, A., Swain, C., Meyer, K., Mar-
+tin, M., Bachant, P., Quintero, E., Kunter, G., Villalba, S.,
+Brian, Fitzgerald, C., Evans, C., Williams, M. L., O’Kane, D.,
+Yarkoni, T., and Brunner, T.: seaborn: v0.11.2, Zenodo [code],
+https://doi.org/10.5281/zenodo.5205191, 2021.
+Wooster, M. J., Roberts, G. J., Giglio, L., Roy, D. P., Freeborn, P. H.,
+Boschetti, L., Justice, C., Ichoku, C., Schroeder, W., Davies, D.,
+Smith, A. M. S., Setzer, A., Csiszar, I., Strydom, T., Frost, P.,
+Zhang, T., Xu, W., de Jong, M. C., Johnston, J. M., Ellison,
+L., Vadrevu, K., Sparks, A. M., Nguyen, H., McCarty, J., Tan-
+pipat, V ., Schmidt, C., and San-Miguel-Ayanz, J.: Satellite re-
+mote sensing of active ﬁres: History and current status, appli-
+cations and future requirements, Remote Sens. Environ., 267,
+112694, https://doi.org/10.1016/j.rse.2021.112694, 2021.
+Zhang, T., Wooster, M. J., De Jong, M. C., and Xu, W.: How
+well does the ’small ﬁre boost’ methodology used within the
+GFED4.1s ﬁre emissions database represent the timing, location
+and magnitude of agricultural burning?, Remote Sens.-Basel, 10,
+823, https://doi.org/10.3390/rs10060823, 2018.
+Zscheischler, J., Westra, S., van den Hurk, B. J. J. M., Senevi-
+ratne, S. I., Ward, P. J., Pitman, A., AghaKouchak, A., Bresch,
+D. N.., Leonard, M., Wahl, T., and Zhang, X.: Future climate
+risk from compound events, Nat. Clim. Change, 8, 469–477,
+https://doi.org/10.1038/s41558-018-0156-3, 2018.
+https://doi.org/10.5194/nhess-23-65-2023 Nat. Hazards Earth Syst. Sci., 23, 65–89, 2023

@@ -1,0 +1,688 @@
+PAGE 1
+F
+Firebreak and Fuelbreak
+Davide Ascoli1, Lucia Russo2, Francesco
+Giannino1, Constantinos Siettos3, and Francisco
+Moreira4;5
+1Dipartimento di Agraria, Università di Napoli
+Federico II, Portici, Italy
+2Istituto di Ricerche sulla Combustione,
+Consiglio Nazionale delle Ricerche, Naples,
+Italy
+3School of Applied Mathematics and Physical
+Sciences, National Technical University of
+Athens, Athens, Greece
+4Research Centre in Biodiversity and Resource
+Genetics, University of Porto, Vila do Conde,
+Portugal
+5CEABN/InBIO, Institute of Agronomy,
+University of Lisbon, Lisbon, Portugal
+Synonyms
+Barriers; Firebreak; Fuelbreak; Fuel managed
+areas
+Deﬁnition
+Firebreak and fuelbreak are fuel-managed areas
+meant to stop or hamper ﬁre propagation, respec-
+tively. Firebreaks are parcels of land, linear in
+shape, where fuels are totally removed down to
+mineral soil through a combination of physical
+treatments (thinning, mechanical clearing, pre-
+scribed burning, slashing, mastication, mowing,
+plowing). Fuelbreaks are parcels of land, linear
+or in blocks, covered by vegetation where fuels
+are reduced in both volume and ﬂammability
+by physical treatments and land management
+practices such as grazing, game management, or
+silvicultural treatments favoring less-ﬂammable
+vegetation, so that ﬁres burning into them can
+be controlled more effectively and safely. In the
+event of ﬁre, both ﬁrebreaks and fuelbreaks may
+serve as a control line from which to carry out
+suppression operations.
+Introduction
+The mitigation of negative effects of wildﬁres
+on ecosystem services and human assets can be
+achieved by reducing the ﬁre rate of spread and
+the intensity of the ﬁre front. As wildﬁres spread
+through a landscape where vegetation is available
+for combustion, a key strategy to reduce ﬁre
+intensity, ﬁre perimeter growth, and mitigate the
+ﬁre severity is to limit the biomass available for
+combustion by the management of vegetation fu-
+els in speciﬁc areas (Agee et al.2000). Firebreaks
+and fuelbreaks are parcels of land, linear or in
+blocks, where the ﬂammability of fuels is reduced
+by total or partial removal through physical treat-
+ments (thinning, mechanical clearing, prescribed
+burning, slashing, mowing, etc.) or land manage-
+ment practices (grazing, game management, use
+of alternative crops or favoring less-ﬂammable
+© Springer International Publishing AG, part of Springer Nature 2018
+S. L. Manzello (ed.), Encyclopedia of Wildﬁres and Wildland-Urban Interface (WUI) Fires,
+https://doi.org/10.1007/978-3-319-51727-8_70-1
+
+PAGE 2
+2 Firebreak and Fuelbreak
+vegetation by artiﬁcial or natural regeneration).
+Firebreaks and fuelbreaks can be distinguished in
+(i) linear ﬁrebreaks and fuelbreaks, (ii) area-wide
+fuelbreaks treatments, and (iii) fuelbreaks at the
+wildland-urban interface.
+Linear Firebreaks and Fuelbreaks
+Linear ﬁrebreaks, fuelbreaks, and shaded fuel-
+breaks are terms referring to fuel treated areas
+with different characteristics (Fig. 1). Linear ﬁre-
+breaks are strips of land cleared to the mineral
+soil, while fuelbreaks maintain the herbaceous
+and shrub vegetation, and a shaded fuelbreak
+maintains the tree cover. Linear fuelbreaks and
+shaded fuelbreaks are more suited in mountain-
+ous territories (i.e., steep slopes and rough mor-
+phology) where the maintenance of the vegeta-
+tion cover is advantageous to limit soil erosion.
+Linear ﬁrebreaks and fuelbreaks are classiﬁed
+according to their decreasing width in primary,
+secondary, and tertiary (Fig. 2) with different
+objectives, technical speciﬁcations, and manage-
+ment approaches for each type. Recommenda-
+tions regarding width are variable across geo-
+graphical areas and related ﬁre management sys-
+tem. For the primary ones, minimum width rec-
+ommendations range from 30 to 100 m. Both sec-
+ondary and tertiary networks are recommended
+to range from 3 m to more than 50 m wide,
+depending on the geographical areas and speciﬁc
+situations. In territories where the wildland-urban
+interface is widespread, the implementation of
+large and long ﬁrebreaks and fuelbreaks is less
+suited, as well as in areas where the forest prop-
+erty is mainly private and cadastral land parcels
+are small. The width can be deﬁned on local
+expertise (Agee et al. 2000; Bahro et al. 2007),
+by Forest Fire Management Plans or by a fuel
+modeling system and a ﬁre behavior prediction
+software (see the following section of modeling
+tools). The width of a given fuel discontinuity
+should at least prevent any material located at
+the other side of the strip from being ignited due
+to the heat received through radiation (Agee et
+al. 2000). As it relates to shape, some of the
+primary fuelbreaks are aimed at being established
+as a network creating landscape wide treatments
+of 500 to 10,000 ha, depending on the region.
+The others are established as strips or as buffers
+surrounding, e.g., valuable land or assets.
+The primary and secondary network aims at
+facilitating ﬁre suppression (i.e., making it safer
+and more effective), promoting the passive pro-
+tection of assets and fastening the suppression
+of starting ﬁres, whereas the tertiary network
+only aims at this latter objective. Other objec-
+tives include (i) back-burning (burning out ﬁeld
+ahead under safe conditions) to stop wildﬁres
+and decreasing ﬁre rate of spread; (ii) modifying
+ﬁre severity, minimize erosion, and water qual-
+ity/ﬂow problems; and (iii) protecting valuable
+assets.
+Guidelines for the location of ﬁrebreaks and
+fuelbreaks are based on a wide range of cri-
+teria. Overall, the expected ﬁre environments,
+i.e., fuels (land cover), terrain (topography), and
+ﬁre weather, are taken into account for deﬁn-
+ing locations. Rivers, croplands, and grasslands
+and previously burned areas can be suitable to
+connect both ﬁrebreaks and fuelbreaks. In very
+steep terrain, ridgelines or valley bottoms are
+preferred locations for implementation. Other cri-
+teria for selecting location include maintenance
+costs, accessibility (along roads), and ﬁre ﬁghter
+safety. Knowledge of predominant winds and
+history of past large ﬁres should also be taken into
+account (Fig. 3). Indeed, the spatial design of low
+combustibility linear ﬁrebreaks and fuelbreaks is
+based on anticipating the type of large ﬁres that
+may affect a speciﬁc landscape, by identifying
+the location of the strategic management points
+in which fuel management actions would limit
+ﬁre propagation (Agee et al. 2000). Based on
+the study of historical large ﬁres in the area and
+the analysis of the synoptic weather conditions
+associated with each of those ﬁres, the most
+frequent ﬁre situations are grouped in typology
+of ﬁres, i.e., of ﬁre propagation patterns (Du-
+ane et al. 2015). Fire behavior modeling can
+support ﬁrebreak and fuelbreak location (see the
+following section of modeling tools). Standards
+for design require continuous fuel management
+between two anchor points of low ﬂammability
+
+PAGE 3
+Firebreak and Fuelbreak 3
+F
+Firebreak and Fuelbreak, Fig. 1 Linear ﬁrebreaks and
+fuelbreaks can be distinguished in ﬁrebreaks, strips where
+all vegetation fuels are removed up to the bare soil; fuel-
+breaks, strips where grass and shrub fuels are maintained;
+shaded fuelbreaks, strips where grass, shrub, and trees are
+maintained although with a reduced density
+Firebreak and Fuelbreak, Fig. 2 Network of primary, secondary, and tertiary shaded fuelbreaks in Mediterranean
+pine forests in Southern Europe © Tonarelli L., D.R.E.am Italia
+(agricultural areas, less-ﬂammable vegetation),
+avoiding weak points along the break.
+Often linear ﬁrebreaks and fuelbreaks are
+placed along roads, railways, and power lines
+to control fuel build up on both sides of
+the network on a maximum width of 50 m.
+Adjacency to valuable assets (e.g., watersheds,
+natural parks, archaeological sites) is also a
+key criterion for deﬁning their location. Forest
+ownership inﬂuences also location as ﬁrebreaks
+and fuelbreaks are implemented mostly in public
+land.
+Fuelbreak management (implementation and
+maintenance) can be achieved by prescribed
+
+PAGE 4
+4 Firebreak and Fuelbreak
+Firebreak and Fuelbreak, Fig. 3 Fuelbreaks (yellow
+line) located along the major path of recurrent large ﬁres
+in 2003 (red polygon) and in 2007 (orange polygon) in
+Corsica, Southern Europe. The fuelbreak was designed
+after the ﬁre in 2002 and contributed to control the ﬁre
+in 2007 © Massaiu A., Ofﬁce National des Foret, France
+burning (Fernandes et al. 2013), grazing,
+mechanical (e.g., mastication) and manual
+treatments to remove surface shrubs, and thinning
+to avoid continuity between tree canopies or by
+maintaining land uses suitable for the objective
+(e.g., croplands, pastures). Chemical treatments
+are rarely applied and are favored only along
+power lines where prescribed burning is limited
+due to smoke impacts on conductors and ﬁre
+ﬁghter safety.
+Usually, surface fuel load is recommended
+to be reduced to 2–4 ton/ha. Tree cover spec-
+iﬁcations range from a minimum of 10% to a
+maximum of 50% cover. Speciﬁcations related to
+crown base height are set to over 2.5–5 m depend-
+ing on surface fuels. The need for maintenance
+depends on site productivity and can be annual
+up to every 5–6 years.
+Area-Wide Fuelbreaks
+Area-wide fuelbreaks consist in fuel management
+taking place over large land areas. They can be
+implemented using (a) preventive silviculture in
+forested areas, (b) prescribed burning or graz-
+ing, (c) implementing or maintaining annual and
+permanent crops. The speciﬁcations regarding
+fuelbreaks size are quite variable (1 to 5000 ha),
+according to the geographical region. Area-wide
+treatment objectives are decreasing ﬁre growth
+and intensity, spotting probability and reducing
+ignitions, and increasing forest resistance and
+resilience to ﬁre (Fig. 4).
+Preventive silviculture is usually integrated
+within broadest forest management objectives
+such as increasing soil protection and the me-
+chanical stability of forests or changing even aged
+forest stands, such as ﬂammable pine plantations,
+to multispeciﬁc uneven aged forests by favoring
+natural successions and biodiversity (Moreira
+et al. 2011). Recommended locations include
+areas with higher ﬁre risk derived from fuel load
+maps, history of past ﬁres (mainly ﬁre paths
+and predominant wind direction), topography,
+climatic regions, proximity to ignition sources,
+and simulation models of ﬁre spread (see the
+following section of modeling tools). Usually,
+area-wide treatments for stand self-protection
+are restricted to forest areas of high patrimonial
+
+PAGE 5
+Firebreak and Fuelbreak 5
+F
+Firebreak and Fuelbreak,
+Fig. 4 Area-wide
+fuelbreak (central area of
+the photo) after a large
+wildﬁre in Southern
+Europe. The reduction of
+surface fuels and thinning
+has reduced the ﬁre
+intensity and severity,
+compared to the adjacent
+areas. Indeed, as many
+trees survived to the ﬁre,
+the forest has increased the
+resilience to disturbance ©
+Massaiu A., Ofﬁce
+National des Foret, France
+or economical values. Less common criteria for
+deﬁning location include topography, the ability
+to implement the treatment, grazing areas, and
+silvicultural objectives set by forest management
+plans.
+As for the type of management, prescribed
+burning is a common fuel treatment practice in
+many geographical areas, although in the proxim-
+ity of urban areas its implementation has higher
+costs, an increased risk, and greater concern for
+smoke. This is carried mostly through ground
+and, in more remote areas, by aerial burning. In
+some cases, the burning of silvicultural residues
+following harvesting is implemented. Manual and
+mechanical treatments are also common, particu-
+larly in areas that have good accessibility. Treat-
+ments include thinning, pruning, slash removal,
+conversion from coppice to high forest stands,
+and implementation of strips of vegetation that
+have low combustibility, e.g., hardwood or de-
+ciduous species. Often techniques are integrated
+(Fig. 5) and mechanical treatments followed by
+prescribed burning are considered the most ef-
+fective in reducing forest ﬂammability (McIver
+et al. 2012). Grazing management in fuelbreaks
+is mostly restricted to areas adjacent to linear
+fuelbreaks. The use of biomass for bioenergy is
+increasingly used as an additional objective for
+fuel removal.
+Fuelbreaks at the Wildland-Urban
+Interface
+Fuelbreaks at the wildland-urban interface con-
+sist in changes to fuel characteristics in parcels
+adjacent to homes and communities so as to
+reduce wildﬁre risk and create safe zones for
+ﬁreﬁghting (Rigolot et al. 2004; Radeloff et al.
+2005).
+The recommended fuelbreaks width where
+fuel buildup is controlled is different in the case
+of villages (>100 m) versus isolated buildings
+(>50 m) (Table 1). Distance between tree crowns
+and stems should be up to 3–4 m and > 6 m,
+respectively, while the distance from buildings
+up to 10 m. When selecting tree species around
+buildings, low ﬂammability species should be
+
+PAGE 6
+6 Firebreak and Fuelbreak
+Firebreak and Fuelbreak, Fig. 5 The combination of thinning, fuel mastication, and prescribed burning is considered
+the most effective fuel management system to reduce hazardous fuels in fuelbreaks
+Firebreak and Fuelbreak, Table 1 Technical speciﬁ-
+cations (e.g., width, tree cover, crown base height) for
+fuel management at different types of wildland-urban
+interface (ﬁrst column). Data has been collected from
+Gill and Stephens ( 2009), Miller et al. ( 2016), Rigolot
+et al. (2004), Tasmanian Fire Service (2005), Winter et al.
+(2002), Xanthopoulos et al. (2011)
+Design elements
+Type Width (m) Tree cover
+(%)
+Crown base
+height (m)
+Distance
+between tree
+crowns (m)
+Crowns
+distance to
+buildings
+Low
+ﬂamma-
+bility
+species
+Buffer
+with no
+fuel
+Surface fuel
+load (ton/ha)
+Villages > 100 <3 5 > 4 or 50%
+tree height
+> 4–6 Yes < 2 or < 15%
+shrub cover
+Scattered
+buildings
+20–90 <3 5 > 2–5 or 50%
+tree height
+> 2.5–4 > 3–5 Yes 1–20 m < 2 or < 15%
+shrub cover
+Railway > 2–10 Reduce Reduce
+Roads > 1–30 Reduce >3 2–5 Reduce
+Power lines 2–20 Reduce Reduce
+Recreational
+areas
+10–100 > 4 or 50%
+tree height
+> 3–4 >5 1–3 < 2 or < 50%
+shrub cover
+Industrial
+areas
+> 4 or 50%
+tree height
+> 3–4 >5 1–2 < 2 or < 50%
+shrub cover
+selected and maintained by tree pruning up to
+50% tree height. Surface fuel cover should be
+less than 20% and 2 ton/ha and less than 50 cm
+height and continuity disrupted by strips of 2.5 m,
+distance between shrubs >3 m and no vertical
+continuity with tree layer, and a tree cover <35%.
+The access road to the building should be cleared
+on 10 m on both sides.
+Modeling Tools to Assist the Design
+of Firebreaks and Fuelbreaks
+Fire propagation simulation software implement
+“ﬁrebreak” and “fuelbreaks” to test the effect
+of fuel reduction areas on the ﬁre growth and
+intensity. These tools enable ﬁre behavior (rate
+of spread, ﬂame length and ﬁreline intensity),
+radiation and convection functioning, and
+spot ﬁre occurrence estimation for speciﬁc
+meteorological, fuel, and topographic conditions
+(e.g., Finney 2006; Sullivan 2009; Vacchiano and
+Ascoli 2015). The data obtained from these
+scenarios (average and extremes) are used to
+estimate the ﬁrebreak width needed to stop the
+spread of ﬁre by radiation. In fuelbreaks and
+shaded fuelbreaks, simulation tools are used
+to estimate the minimum amount of surface
+fuels allowed to reduce the ﬁre intensity to a
+desired level for effective ﬁre suppression by ﬁre
+brigades.
+
+PAGE 7
+Firebreak and Fuelbreak 7
+F
+12 34 5 67 8 9
+1 0.3 0.35 0.35
+2 0.4 0.5 0.45 0.5 0.55
+3 0.35 0.25 0.3
+4 0.5 0.45 0.55 0.7
+5 0.6 0.6 0.6 0.55 0.5 0.65 0.5
+60 . 3 0 . 4 0 . 6 5
+70 . 3 0 . 4 0 . 5
+8
+90 . 4 0 . 6
+Adjacency matrixLattice
+CA
+Fire 
+propagation
+probabilites
+Hierarchy of
+Centralities
+Fire breaks
+Firebreak and Fuelbreak, Fig. 6 Scheme of the
+network-based approach for the placement of ﬁrebreaks
+(Russo et al. 2016). Based on the terrain and fuel char-
+acteristics, a graph is constructed whose edges are the
+ﬁre propagation probabilities as computed using a cellular
+automata model (Alexandridis et al. 2008, 2010). Then
+centrality measures are computed from the adjacency
+matrix to ﬁnd the nodes of the graph (patches of land)
+which contribute more to the spread of the ﬁre: with black
+color is depicted an empty cell, i.e., containing no fuel,
+while intensity of green reﬂects the density of vegetation.
+For the particular paradigm, the most “dangerous” node
+for the spread of the ﬁre is the node 5
+Commonly used simulators such as Farsite
+(Finney 1998) and FlamMap (Finney 2006)g i v e
+the option to interactively create “barriers” able
+to interrupt surface ﬁre propagation. A user can
+deﬁne (using the mouse or loading a map) a
+segment or a broken line as a “barrier” and also
+deﬁne its depth. It is important to note that in the
+tools, the “barriers” will block surface ﬁre, but
+spot ﬁres may be transported over the barrier.
+Practical evidence shows that software tools
+can be successfully used in testing fuel treatments
+(Stephens 1998), thus acting as decision support
+systems, i.e., when evaluating the most effective
+ﬁrebreaks (i.e., barrier) for a particular location
+(Mansourian et al.2005). For example, a study by
+Duguy et al. (2007) in the Spanish Mediterranean
+using Farsite suggested that ﬁrebreaks could con-
+tribute to reducing the ﬁre size. Fire behavior
+modeling can support ﬁrebreaks and fuelbreaks
+location. A ﬁre modeling-based approach allows
+to generate scenarios of ﬁre growth (major ﬁre
+paths the ﬁre front probably will follow) in a
+given vegetation, meteorological, and topograph-
+ical scenario. The data obtained from these simu-
+lations can be used to locate the fuel discontinu-
+ities that need to be introduced in the landscape
+in order to minimize the propagation of potential
+ﬁres. However, in many simulators, the position,
+the length, and the depth of the ﬁrebreaks are
+deﬁned by the user; thus they cannot be auto-
+matically optimized. This represents a serious
+limitation for the deployment of these systems in
+designing and managing wildﬁres. Indeed, while
+the simulation approach is very useful to decide
+if a particular choice of the distribution of ﬁre-
+breaks and fuelbreaks is effective or not, alone it
+does not give any a priori information about what
+is the best distribution which reduces the hazard
+risk of forest ﬁre.
+Recent studies focused on the mathematical
+assessment of spatial distribution of ﬁrebreaks
+and fuelbreaks in a landscape (e.g., selective
+harvesting or prescribed burning) for the man-
+agement of wildland ﬁres (Palma et al. 2007).
+In particular, a number of optimization mod-
+els have been proposed for spatial allocation
+of fuel treatments (Hof et al. 2000; Wei et al.
+2008; Rytwinski and Crowe 2010;W e i 2012).
+Optimization modeling strategies, based on op-
+erational research approach (Minas et al. 2012;
+Minas et al. 2013), typically require thousands
+of objective function calculations; thus the so-
+lution of the optimization problem is in general
+highly computationally demanding (Hillier and
+Lieberman 1990). Moreover, the introduction of
+oversimpliﬁcations to reduce the computational
+cost poses strong doubts on realistic utility (Ry-
+twinski and Crowe 2010). On the other hand,
+simulation-optimization approaches (Minas and
+Hearne 2016; Martell 2007) have been applied
+for ﬁnding the best allocation of ﬁrebreaks and
+fuelbreaks with, for example, the objective of
+minimizing ﬁre-risk subject to a limit on the total
+area to be used as fuelbreaks. Although the results
+presented in Rytwinski and Crowe (2010) suggest
+
+PAGE 8
+8 Firebreak and Fuelbreak
+that simulation-optimization is a robust approach
+to plan fuel treatment mosaics that can reduce
+ﬁre-risk in a forest, there are still several issues
+to reduce the computational high cost.
+Very recently, based on complex network
+theory, it has been proposed a computational
+methodology that addresses the spatial distribu-
+tion of ﬁrebreaks for the inhibition of the spread
+and size of wildland ﬁres on heterogeneous
+landscapes (Evaggelidis et al. 2015; Russo
+et al. 2015, 2016). This is a two-tier approach
+where the dynamics of ﬁre spread are modeled as
+a random Markov ﬁeld process on a directed
+network whose edge weights are provided
+by a state-of-the-art cellular automata model
+(Alexandridis et al. 2008, 2011) that integrates
+detailed GIS, landscape, and meteorological data.
+Within this framework, the spatial distribution of
+ﬁrebreaks is reduced to the problem of ﬁnding
+the network nodes among which the ﬁre spreads
+faster; thus their removal favors the inhibition of
+the ﬁre propagation (see Fig. 6).
+Cross-References
+⊿ Fuel Treatments
+⊿ Mastication
+⊿ Modeling Approaches
+⊿ Prescribed Fires
+⊿ WUI Risk Assessment at the Landscape Level
+References
+Agee JK, Bahro B, Finney M, Omi P, Sapsis DB,
+Skinner CN, van Wagtendonk JW, Weatherspoon
+CP (2000) The use of shaded fuelbreaks in land-
+scape ﬁre management. Forest Ecol Manag 127:55–66.
+https://doi.org/10.1016/S0378-1127(99)00116-4
+Alexandridis A, Vakalis D, Siettos CI, Bafas GV (2008)
+A cellular automata model for forest ﬁre spread pre-
+diction: the case of the wildﬁre that swept through
+Spetses Island in 1990. Appl Math Comput 204:191–
+201. https://doi.org/10.1016/j.amc.2008.06.046
+Alexandridis A, Russo L, Vakalis D, Bafas GV , Si-
+ettos CI (2011) Wildland ﬁre spread modelling us-
+ing cellular automata: evolution in large-scale spa-
+tially heterogeneous environments under ﬁre sup-
+pression tactics. Int J Wildland Fire 20:633–647.
+https://doi.org/10.1071/WF09119
+Bahro B, Barber KH, Sherlock JW, Yasuda DA (2007)
+Stewardship and ﬁreshed assessment: a process for de-
+signing a landscape fuel treatment strategy. In: Powers
+RF (Ed) Restoring ﬁre-adapted ecosystems: proceed-
+ings of the 2005 national silviculture workshop, USDA
+Forest Service Paciﬁc Southwest Research Station,
+General Technical Report PSW-GTR-203, pp 41–54
+Duane A, Piqué M, Castellnou M, Brotons L (2015)
+Predictive modelling of ﬁre occurrences from
+different ﬁre spread patterns in Mediterranean
+landscapes. Int J Wildl Fire 24(3):407–418.
+https://doi.org/10.1071/WF14040
+Duguy B, Alloza J, Vallejo R, Roder A, Hill J (2007)
+Modeling the effects of landscape fuel treatments on
+ﬁre growth and behavior in a Mediterranean land-
+scape (eastern Spain). Int J Wildl Fire 16:619–632.
+https://doi.org/10.1071/WF06101
+Evaggelidis IN, Siettos CI, Russo P, Russo L (2015)
+Complex network theory criterion to distribute fuel
+breaks for the hazard control of ﬁre spread in forests.
+AIP Conf Proc 1648:100005
+Fernandes PM, Davies GM, Ascoli D, Fernández C, Mor-
+eira F, Rigolot E, Stoof CR, Vega JA, Molina D (2013)
+Prescribed burning in southern Europe: developing
+ﬁre management in a dynamic landscape. Front Ecol
+Environ 11(s1). https://doi.org/10.1890/120298
+Finney MA (1998) FARSITE: ﬁre area simulator – model
+development and evaluation. USDA Forest Service,
+Rocky Mountain Research Station, Technical Report
+RP-4
+Finney MA (2006) An overview of FlamMap ﬁre model-
+ing capabilities. In: Andrews PL, Butler BW (comps)
+Fuels management-how to measure success: confer-
+ence proceedings. Portland, 28–30 Mar 2006, pp 213–
+220; Proceedings RMRS-P-41, USDA Forest Service,
+Rocky Mountain Research Station, Fort Collins, 809 pp
+Gill AM, Stephens SL (2009) Scientiﬁc and so-
+cial challenges for the management of ﬁre-prone
+wildland–urban interfaces. Environ Res Lett 4:034014.
+https://doi.org/10.1088/1748-9326/4/3/034014
+Hillier FS, Lieberman GJ (1990) Introduction to opera-
+tions research, 8th edn. McGraw-Hill, New York
+Hof J, Omi P, Bevers M, Laven R (2000) A
+timing oriented approach to spatial allocation of
+ﬁre management effort. For Sci 46(3):442–451.
+https://doi.org/10.1093/forestscience/46.3.442
+Mansourian S, Vallauri D, Dudley N (2005) Forest refor-
+estation in landscapes: beyond planting trees. Springer,
+New York
+Martell D (2007) Forest ﬁre management. In: Weintraub
+A, Romero CC, Bjorndal T, Epstein RR, Miranda
+J (eds) Handbook of operations research in natural
+resources, International series in operations research &
+management science. Springer, New York, pp 489–509
+McIver J, Erickson K, Youngblood A (2012) Principal
+short-term ﬁndings of the National Fire and ﬁre surro-
+gate study. Gen tech rep PNW-GTR-860. U.S. Depart-
+ment of Agriculture, Forest Service, Paciﬁc Northwest
+Research Station, Portland, p 210
+
+PAGE 9
+Firebreak and Fuelbreak 9
+F
+Miller SR, Wuerzer T, V os J, Lindquist E, Mowery M,
+Holfeltz T, Stephens B, Grad A (2016) Planning for
+wildﬁre in the wildland-urban Interface: a resource
+guide for Idaho communities. University of Idaho,
+Available at SSRN: https://ssrn.com/abstract=2845046
+or https://doi.org/10.2139/ssrn.2845046
+Minas JP, Hearne JW (2016) An optimization model
+for aggregation of prescribed burn units. TOP 24(1):
+180–195. https://doi.org/10.1007/s11750-015-0383-y
+Minas J, Hearne J, Handmer J (2012) A review
+of operations research methods applicable to wild-
+ﬁre management. Int J Wildl Fire 21(3):189–196.
+https://doi.org/10.1071/WF10129
+Minas J, Hearne J, Martell D (2013) An
+integrated optimization model for fuel
+management and ﬁre suppression preparedness
+planning. Ann Oper Res 232(1):201–215.
+https://doi.org/10.1007/s10479-012-1298-8
+Moreira F, Viedma O, Arianoutsou M, Curt T, Koutsias N,
+Rigolot E, Barbati A, Corona P, Vaz P, Xanthopoulos
+G, Mouillot F, Bilgili E (2011) Landscape–wildﬁre
+interactions in southern Europe: implications for land-
+scape management. J Environ Manag 92(10):2389–
+2402. https://doi.org/10.1016/j.jenvman.2011.06.028
+Palma CD, Cui W, Martell DL, Robak D, Weintraub A
+(2007) Assessing the impact of stand-level harvests on
+the ﬂammability of forest landscapes. Int J Wildl Fire
+16(5):584–592. https://doi.org/10.1071/WF06116
+Radeloff VC, Hammer RB, Stewart SI, Fried JS, Holcomb
+SS, McKeefry JF (2005) The wildland–urban inter-
+face in the United States. Ecol Appl 15(3):799–805.
+https://doi.org/10.1890/04-1413
+Rigolot E, Castelli L, Cohen M, Costa M, Duché Y
+(2004) Recommendations for fuel-break design and
+fuel management at the wildland urban interface: an
+empirical approach in South Eastern France. Insti-
+tute of Mediterranean forest ecosystems and forest
+products warm international workshop, Athènes, 2004,
+pp 131–142
+Russo L, Russo P, Evaggelidis IN, Siettos CI (2015)
+Complex network statistics to the design of ﬁre breaks
+for the control of ﬁre spreading. Chem Eng Trans
+43:2353–2358. https://doi.org/10.3303/CET1543393
+Russo L, Russo P, Siettos CI (2016) A complex net-
+work theory approach for the spatial distribution of
+ﬁre breaks in heterogeneous forest landscapes for the
+control of wildland ﬁres. PlosOne 11(10):e0163226.
+https://doi.org/10.1371/journal.pone.0163226
+Rytwinski A, Crowe KA (2010) A simulation-
+optimization model for selecting the location
+of fuel-breaks to minimize expected losses
+from forest ﬁres. For Ecol Manag 260(1):1–11.
+https://doi.org/10.1016/j.foreco.2010.03.013
+Stephens SL (1998) Evaluation of the effects of
+silviculture and fuel treatments on potential
+ﬁre behaviour in the sierra Nevada mixed-
+conifer forests. For Ecol Manag 105:21–35.
+https://doi.org/10.1016/S0378-1127(97)00293-4
+Sullivan AL (2009) Wildland surface ﬁre spread mod-
+elling, 1990–2007. 3: simulation and mathematical
+analogue models. Int J Wildl Fire 18(4):387–403.
+https://doi.org/10.1071/WF06143
+Tasmanian Fire Service (2005) Guidelines for develop-
+ment in bushﬁre prone areas of Tasmania, p 24 https://
+www.ﬁre.tas.gov.au/publications/Bush_Guide.pdf
+Vacchiano G, Ascoli D (2015) An implementation of
+the Rothermel ﬁre spread model in the R pro-
+gramming language. Fire Technol 51(3):523–535.
+https://doi.org/10.1007/s1069
+Wei Y (2012) Optimize landscape fuel treatment
+locations to create control opportunities for
+future ﬁres. Can J For Res 42(6):1002–1014.
+https://doi.org/10.1139/x2012-051
+Wei Y , Rideout D, Kirsch A (2008) An optimization
+model for locating fuel treatments across a landscape
+to reduce expected ﬁre losses. Can J For Res 38(4):
+868–877. https://doi.org/10.1139/X07-162
+Winter GJ, V ogt C, Fried JS (2002) Fuel treat-
+ments at the wildland-urban interface: common
+concerns in diverse regions. J For 100(1):15–21.
+https://doi.org/10.1093/jof/100.1.15
+Xanthopoulos G, Bushey C, Arnol C, Caballero D (2011)
+Characteristics of wildland–urban interface areas in
+Mediterranean Europe, North America and Australia
+and differences between them. In: Proceedings of the
+1st international conference in safety and crisis man-
+agement in the construction, tourism and SME sectors
+(1st CoSaCM), pp 24–28

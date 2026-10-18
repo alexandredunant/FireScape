@@ -3,11 +3,6 @@ data/*
 !data/README.md
 /Data/
 
-# Copyrighted literature for the review (not redistributable)
-/review/papers/
-/review/_archive/tmp/source_audit/
-/review/_archive/tmp/pdfs/
-
 # Generated analysis products
 output/
 

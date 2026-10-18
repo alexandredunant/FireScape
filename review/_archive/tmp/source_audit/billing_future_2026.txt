@@ -1,0 +1,1882 @@
+PAGE 1
+1 of 19Global Change Biology, 2026; 32:e71043
+https://doi.org/10.1111/gcb.71043
+Global Change Biology
+RESEARCH ARTICLE OPEN ACCESS
+Future Projections of Burned Area in Europe Highlight the 
+Importance of Human Action
+Maik Billing 1  |  Matthew Forrest 2  |  Simon P. K. Bowring 3  |  Luke Oberhagemann 1,4 |  Alex N. Neidermeier 5  |  
+Jessica Hetzer 2  |  Werner von Bloh 1  |  Christoph Müller 1  |  Susanne Rolinski 1 |  Thomas Hickler 2,6  |  
+Kirsten Thonicke 1
+1Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany | 2Senckenberg Biodiversity and 
+Climate Research Centre (SBiK-  F), Frankfurt am Main, Germany | 3Laboratoire des Sciences du Climat et de l'Environnement (LSCE), IPSL- 
+CEA- CNRS- UVSQ, Université Paris- Saclay, Gif- sur- Yvette, France | 4Institute of Environmental Science and Geography, University of Potsdam, 
+Potsdam, Germany | 5Environmental Geography Group, Institute for Environmental Studies (IVM), VU University Amsterdam, Amsterdam, the 
+Netherlands | 6Department of Physical Geography, Johann Wolfgang Goethe University of Frankfurt, Frankfurt, Germany
+Correspondence:  Maik Billing ( billing@pik-potsdam.de )
+Received:  23 February 2026 | Revised:  8 July 2026 | Accepted:  16 July 2026
+Keywords: burned area | climate change | coupled fire-  vegetation modelling | Europe | fire weather | socio-  economics | wildfires
+ABSTRACT
+Wildfires are often a natural part of many European ecosystems, but human activities through land use, other socio-  economic 
+factors and climate change have significantly changed how fires behave. Anthropogenic climate change is already intensifying 
+fire- prone weather and increasing wildfire risk across Europe with risk expected to grow sharply in coming decades. Past expe -
+rience suggests that human action, such as fuel management and improved fire suppression capacity, can reduce wildfire spread 
+and intensity. However, whether current or future efforts can counter rising risks under continued climate change remains un -
+certain. In this study, we assess the role of socio-  economic factors and biophysical factors in shaping future fire regimes across 
+Europe. Using two fire models (SPITFIRE and BASE) coupled with the fire-  enabled Dynamic Global Vegetation Model LPJmL, 
+we simulate future burned area under two socio-  economic and greenhouse gas concentration pathways (SSP1- 2.6 and SSP3- 7.0). 
+We also run experiments where socio-  economic factors are held constant to isolate their influence. Our findings show that both 
+biophysical and socio-  economic factors strongly affect future wildfire activity. Fire weather and fire management capacity are 
+important drivers, while population density, vegetation shifts and land use matter more at regional scales. By the end of the 
+century, intensified fire weather alone could increase annual burned area by approximately +39% under a low emission sce -
+nario (SSP1- 2.6) and by nearly +192% under a high emission scenario (SSP3-  7.0). Continued improvements in fire management 
+capacity could substantially moderate these increases, reducing burned area by 72%–92% compared to scenarios without these 
+improvements. However, under strong climate change, fire activity still rises in about 55% of Europe's fire prone regions, even 
+if investments in fire management capacity continue at current levels. Overall, improved wildfire management capacity has the 
+potential to greatly limit impacts of worsening fire weather, but may not fully offset strong climate change impacts.
+This is an open access article under the terms of the Creative Commons Attribution  License, which permits use, distribution and reproduction in any medium, 
+provided the original work is properly cited.
+© 2026 The Author(s). Global Change Biology  published by John Wiley & Sons Ltd.
+Thomas Hickler and Kirsten Thonicke should be considered joint senior authors.  
+
+
+PAGE 2
+2 of 19 Global Change Biology, 2026
+1   |   Introduction
+Wildfire activity is increasing in Europe, putting both human 
+lives and natural capital at risk (Fernandez-  Anez et  al.  2021; 
+Meier et al.  2023; Arrogante-  Funes et al.  2024). Yet fire is also a 
+natural process with an important role in shaping biodiversity 
+and ecosystem dynamics (Bowman et al.  2009; He et al.  2019). 
+In Europe, centuries of human activity have significantly 
+transformed landscapes, influencing the frequency, intensity, 
+and spatial patterns of wildfires (Vannière et  al.  2016; Galizia 
+et  al.  2021; Pausas and Keeley  2021). In the coming decades, 
+rising temperatures and more frequent droughts due to climate 
+change are expected to further increase the likelihood of severe 
+fire danger across the continent (El Garroussi et al.  2024; Hetzer 
+et  al.  2024). However, wildfire dynamics are not only driven 
+by meteorological conditions—called ‘fire weather’—but by a 
+complex interplay of climate, vegetation, and human activities 
+(Bowman et al.  2009; Pausas and Keeley 2021). In Europe, burned 
+area has declined in several regions over recent decades despite 
+increasingly favourable meteorological conditions for wildfire 
+(Turco et al.  2016; Urbieta et al.  2019; Otón et al.  2021; Kelley 
+et  al.  2025). This apparent contradiction suggests that human 
+interventions—such as enhanced fire prevention, suppression, 
+land cover change and evolving land management—have played 
+a crucial role in moderating the recent history of European fire 
+activity (Turco et al.  2016; Bountzouklis et al.  2022). While fire 
+suppression is often desired to protect human lives and assets, 
+singular reliance on suppression can lead to fuel accumulation 
+and unintended consequences for fire-  adapted ecosystems, po -
+tentially increasing the likelihood of more severe and uncontrol-
+lable fires (Kreider et al.  2024).
+Fire- enabled Dynamic Global Vegetation Models (DGVMs) 
+have become essential tools for gaining insight to the interac -
+tion of climate, vegetation, humans, and wildfire (Hantson 
+et  al.  2016, 2020; Li et  al.  2019). DGVMs simulate the effects 
+of climate change and land use on vegetation and soils at 
+large scales (regional to global) through integrated impacts 
+on carbon, water and energy fluxes (Prentice et al.  2007). Fire 
+models can be embedded in DGVMs which represent fire be -
+haviour by incorporating fuel characteristics, weather patterns 
+and anthropogenic drivers to project fire behaviour and effects 
+(Teckentrup et al.  2019; Hantson et al.  2020). Changes in vege -
+tation determine the type and amount of fuel available to burn 
+(Curt et al.  2011; de Magalhães and Schwilk  2012). Land cover 
+and land- use changes, such as transitions from forest to grass -
+land or cropland expansion, directly alter fuel characteristics. 
+Conversely, agricultural abandonment can increase vegetation 
+cover and fuel accumulation—a trend especially observed in 
+fire- prone landscapes in southern Europe (Moreira et al.  2011; 
+Viedma et  al.  2015; Sil et  al.  2019). Such vegetation-  driven 
+changes feed back into fire models, linking climate, land use, 
+and ecosystem dynamics to fire into a single modelling frame -
+work (Thonicke et al.  2010).
+The mechanics of simulating wildfire behaviour in fire-  enabled 
+DGVMs vary widely (Hantson et al.  2020; Forrest et al.  2024). 
+In particular, the influence of human activities is approached 
+in different ways and has evolved substantially over time (Le 
+Page et  al.  2015; Hantson et  al.  2016; Teckentrup et  al.  2019). 
+Early global fire models such as GLOBFIRM did not explicitly 
+represent human activities, instead focusing primarily on cli -
+mate–vegetation controls (Thonicke et al.  2001). Subsequent de-
+velopments introduced increasingly explicit representations of 
+human effects. In the Reg- FIRM model, human population den-
+sity was introduced as a proxy for ignition probability and tested 
+for the Iberian Peninsula (Venevsky et  al.  2002), and this ap -
+proach was further developed to the global scale by Pechony and 
+Shindell ( 2009) and in the original SPITFIRE model (Thonicke 
+et al.  2010), which additionally represents suppression of igni -
+tions under high population density to reflect reduced fire use 
+and increased landscape fragmentation in densely populated 
+regions. Similarly, the Canadian Terrestrial Ecosystem Model 
+(CTEM) incorporates spatially explicit probabilities of human- 
+caused ignitions to capture regional variability in human 
+access and activity (Arora and Boer  2005). In contrast, statis -
+tical approaches such as SIMFIRE (a global scale model, Knorr 
+et al.  2014) or the recent BASE model (“Burnt Area Simulator 
+for Europe”), human influences are directly inferred from data, 
+while still constraining the choice of variables by process under-
+standing and theory (Forrest et  al.  2024). BASE, for example, 
+integrates an empirical finding for Europe—that countries with 
+higher Human Development Index (HDI) values have a greater 
+capacity and interest to invest in fire management to mitigate 
+their negative impacts. These two modelling paradigms—glob -
+ally transferable process-  based representations and regionally 
+constrained empirical formulations—provide complementary 
+but distinct ways of representing human–fire interactions.
+Simulations with such models are particularly valuable in the 
+European context, where the interplay of climate, land use, 
+and human intervention is especially complex. While recent 
+evidence suggests that human actions can partially mitigate 
+wildfire impacts (Turco et al.  2016; Urbieta et al.  2019; Otón 
+et  al.  2021), it remains uncertain whether these efforts will 
+be sufficient to counter increasingly fire-  prone conditions and 
+climate-  induced changes in vegetation (Burton et  al.  2024 ; 
+Synolakis and Karagiannis  2024). Previous studies have high -
+lighted regional differences in the importance of climate, veg -
+etation, and socio-  economic drivers for future burned area 
+in Europe (Wu et al.  2015). Building on this knowledge, our 
+study compares two modelling frameworks that represent 
+human—fire interactions in fundamentally different ways: 
+the process-  based SPITFIRE model, which uses globally ap -
+plicable demographic controls on ignition and suppression, 
+and the empirically constrained BASE model, which rep -
+resents human influence through regionally calibrated socio-  
+economic indicators (HDI). Together with recent updates 
+in vegetation and fire-  process representation (e.g., nitrogen 
+limitation in LPJmL; von Bloh et al. ( 2018); and the updated 
+SPITFIRE implementation at higher spatial resolution; 
+Oberhagemann et al. ( 2025)), this allows a more detailed as -
+sessment of how human, climate, and vegetation factors jointly 
+shape future fire regimes. To analyse the effect of human and 
+biophysical factors on wildfires under climate and land- use 
+change, we first coupled both fire models, SPITFIRE and 
+BASE, into the LPJmL (Lund- Potsdam-  Jena managed Land) 
+DGVM (Schaphoff, Forkel, et al.  2018; Wirth et al.  2024). We 
+then applied them in a set of simulation experiments to in -
+vestigate how changing driver conditions, including changing 
+vegetation, may shape future European fire regimes under 
+two contrasting Shared Socioeconomic Pathways (SSPs) to 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 3
+3 of 19Global Change Biology, 2026
+account for uncertainties in future climate forcing and land-  
+use trajectories. Finally, we conducted sensitivity experiments 
+in which the main human drivers in those modelling frame -
+works—human population density, HDI and land use—were 
+held constant. We analysed changes in simulated burned area 
+as a proxy for future fire regimes. Simulations were carried out 
+from 2000 to 2100 using climate input from five bias-  corrected 
+General Circulation Models (GCMs) under a low emission 
+scenario (SSP1-  2.6) and a high emission pathway (SSP3-  7.0), 
+along with corresponding future land- use change trajecto -
+ries generated using CLUMondo, a spatially-  explicit land- use 
+model (Van Asselen and Verburg  2013; Malek et al.  2018). We 
+discuss the influence of population density, land use, HDI, fire 
+weather, and vegetation dynamics in our simulations. These 
+drivers have been selected as they reflect the main mecha -
+nisms controlling fire in the models used in this study and 
+elsewhere (Wu et al.  2015). We analyse the influence of these 
+climatic and socio-  economic drivers and explore their role in 
+shaping future wildfire activity in Europe.
+2   |   Materials and Methods
+2.1   |   Combined Fire- Vegetation Modelling
+This study aims to assess how climate, land use, and human in -
+tervention may shape future European fire regimes. To do so, 
+we conducted future simulations with two alternative fire mod -
+els, SPITFIRE and BASE, and analysed the simulated burned 
+area of both models. To account for future changes in vegetation 
+and fuel characteristics driven by land- use and climate change, 
+both modelling approaches were embedded for this study in 
+the DGVM LPJmL 5.7.10 (Wirth et  al.  2024). The three main 
+modelling components—LPJmL, SPITFIRE, and BASE—are 
+described in the following subsections (Figure  1).
+2.1.1   |   Description of the LPJmL Model
+The Lund- Potsdam- Jena managed Lands (LPJmL) model sim -
+ulates both natural and agricultural ecosystems, as well as 
+land- atmosphere exchange fluxes of carbon, nitrogen and water 
+on a global scale (Bondeau et  al. 2007; Schaphoff, Von Bloh, 
+et al.  2018; von Bloh et al.  2018). The model simulates vegetation 
+dynamics on the basis of plant functional types (PFTs) including 
+8 woody and 3 herbaceous PFTs (Schaphoff, Forkel, et al.  2018; 
+von Bloh et al.  2018). Vegetation dynamics are driven by climate 
+input data (daily temperature, precipitation and short and long -
+wave radiation), atmospheric CO 2 concentration, soil data (soil 
+texture and soil depth), nitrogen depositions and land- use frac -
+tions. A detailed overview of fundamental ecosystem processes 
+in LPJmL, including vegetation dynamics and hydrology, is pro-
+vided by Schaphoff, Von Bloh, et al. ( 2018), while the implemen-
+tation of the nitrogen cycle is described in von Bloh et al. ( 2018) 
+with latest updates in Wirth et al. ( 2024). Nutrient limitation in-
+fluences vegetation productivity, and thus fuel production which 
+can have non- linear effects on wildfire. Land- use changes affect 
+the potential maximum area burned, which corresponds to the 
+extent of natural vegetation and managed grasslands within a 
+grid cell. This area may increase through land abandonment or 
+decrease due to conversion to permanent agriculture or urban 
+land. In this study, we allowed both fire models to burn on “nat-
+ural land” (forests & natural grassland) as well as on managed 
+grasslands. Both fire models described below were implemented 
+within LPJmL version 5.7.10 used in this study (nitrogen & till -
+age version; Lutz et al.  2019; Wirth et al.  2024).
+2.1.2   |   Description of the SPITFIRE Model
+SPITFIRE (Thonicke et al.  2010) is a process-  based fire model 
+that can be coupled to DGVMs for vegetation-  fire simulations. 
+SPITFIRE can simulate the ignition, spread and intensity of 
+wildfires on a global scale (Thonicke et al.  2010). The model 
+requires input data on fuel properties, wind speed, lightning 
+strikes, human population density and relative humidity 
+to calculate fire danger. In this process-  based model, wild -
+fires originate from potential human and lightning-  caused 
+ignitions. Human-  caused fire-  ignitions are a function of 
+population density to differentiate between rural and more 
+urban lifestyles (Figure  2). At low to moderate densities, ig -
+nition rates rise because fires may be started intentionally 
+FIGURE 1    |    General overview of the two fire modelling approaches coupled to the DGVM LPJmL. Fire models obtain fuel properties and vege -
+tation characteristics from LPJmL (circle 1). In the SPITFIRE model (circle 2), fires are explicitly simulated through human and lightning ignitions, 
+danger, spread and effects which influence fuel and vegetation structure, thereby feeding back to the vegetation model (circle 1). The BASE- integrated 
+approach (circle 3) circumvents first three wildfire components and calculates burned area using a statistical approach. Fire effects (mortality and 
+carbon emissions) in the BASE- integrated approach are still calculated by SPITFIRE. The scheme was adapted from Oberhagemann et al. ( 2025).
+Ignitions Fire Danger Fire Spread Fire Effects
+LPJmL
+BASE   statisticalb urneda reae stimate3
+SPITFIRE explicitly simulatesf irep rocesses2
+1
+Changesi nv egetationa nd fuelsf romw ildfires
+vegetation andf uel
+characteristics
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 4
+4 of 19
+ Global Change Biology, 2026
+or accidentally, but they decline beyond a threshold as ur -
+banization reduces both fire use and opportunities for ac -
+cidental ignitions. Lightning ignitions are modelled using a 
+12- monthly climatology that varies spatially. Potential igni -
+tions are used in combination with a model-  calculated fire 
+danger index to compute the proportion of ignition events, 
+which become spreading fires. Fire danger is calculated using 
+vapour pressure deficit (Drüke et al.  2019, replacing the orig -
+inal calculation based on the Nesterov Index). The resulting 
+fire spread is calculated on the basis of the Rothermel equa -
+tion (Rothermel  1972), which depends on wind speed and the 
+availability, composition and wetness of fuel. We also imple -
+mented recent corrections to the original SPITFIRE formu -
+lation, which include (Oberhagemann et  al.  2025): (1) the 
+computation of dead fuel moisture based on the litter-  layer 
+moisture which is now calculated for natural vegetation and 
+has the effect to shield the top soil layer from evaporative 
+loss (based on the tillage implementation, Lutz et  al.  2019); 
+(2) revised live fuel moisture calculation; (3) updates to fire 
+intensity calculations; (4) adjustments to post-  fire mortality 
+dynamics; and (5) the ability to represent multi-  day burning. 
+Fire durations in the original SPITFIRE version were limited 
+to a maximum of 1 day, following the assumption that larger 
+fires and multi-  day burning can be replaced by a number of 
+smaller fires igniting each day independently. In this study, 
+we allowed fires to burn for multiple days. This allows fires 
+to continue to burn into subsequent days, subject to an adjust -
+able maximum duration. Additional stopping conditions ex -
+tinguish all fires within a grid cell when the model-  calculated 
+fire danger index falls below a certain threshold (here: 0.01), 
+alongside a fire-  line intensity threshold (here: 5 kW/m2, de -
+tails in Oberhagemann et  al.  2025). SPITFIRE was enabled 
+with multi-  day fires on natural land classes (natural grassland 
+and natural forests) while single-  day fires occurred on man -
+aged grasslands. Fires on natural land were allowed to persist 
+for a maximum of 3 days. Within each day of an active fire, 
+the effective burning period was limited to 2–5 h to represent 
+sub- daily variability in fire activity. In contrast, fires on man -
+aged grassland were restricted to a single day of occurrence, 
+with a maximum burning duration of 2 h on that day. In the 
+coupled LPJmL-  SPITFIRE, simulated fire regimes are driven 
+by the interplay of potential ignitions, fire weather, and fuel 
+availability. Fire-  related tree mortality depends on simulated 
+fire intensity over a given burned area and the type of veg -
+etation affected. For LPJmL-  SPITFIRE simulations, we used 
+the standard lightning and human ignition probability density 
+function approaches as described in Thonicke et al. ( 2010).
+2.1.3   |   Description of the BASE Empirical Model
+The BASE model (Burnt Area Simulator for Europe, Forrest 
+et al. ( 2024)) is an empirical model that was developed by fit -
+ting Generalised Linear Models (GLMs) to the ESA FireCCI51 
+dataset (Lizundia-  Loiola et al.  2020). BASE simulates burned 
+area over the European territory at 9 km spatial resolution, 
+with a different set of equations for croplands and non-  
+croplands. Here, we used the non-  cropland version. To gen -
+erate the target variable for fitting BASE (burned area), the 
+FireCCI51 dataset was processed in combination with the 
+ESA LandcoverCCI (ESA  2017) to derive the burned area 
+fraction per grid cell within an aggregated land cover termed 
+“Non- cropland Vegetation”. This land-  cover type included all 
+vegetation types in the LandcoverCCI classification except for 
+croplands and cropland mosaic classes. The predictor variables 
+used in BASE were chosen based on factors such as their rele -
+vance to fire dynamics to reflect weather, fuel, socioeconomic, 
+or topographic conditions (Table  1, Equation  ( 1)). During 
+model development and fitting, the vegetation variables of 
+tree cover, FAPAR (fraction of absorbed photosynthetically-  
+active radiation), and GPP (gross primary productivity) were 
+represented using remotely-  sensed satellite data. To include 
+the BASE model in the LPJmL modelling framework, we 
+replaced the burned area calculation in SPITFIRE with the 
+BASE model, thereby bypassing SPITFIRE's explicit simula -
+tion of ignitions, fire danger and fire spread. However, fire 
+effects on vegetation remain governed by SPITFIRE's fire in -
+tensity and post-  fire mortality functions (Figure  1). Vegetation 
+variables required by BASE (MEPI, FAPAR & tree cover) were 
+exchanged for the LPJmL vegetation state variables to form a 
+coupled fire- vegetation modelling setup.
+In BASE, the Fire Weather Index (FWI) and MEPI are the first 
+and second most important predictors (Table  1). MEPI is de -
+fined as the Gross Primary Productivity (GPP) of the month 
+divided by the maximum monthly GPP of the last 12 months 
+(including the current month). It is designed to capture (with 
+low values) times when the vegetation is undergoing drought-  
+stress and/or is in a dormant/senescent state, both of which 
+would indicate low live fuel moisture and a higher propor -
+tion of dead fuel and hence higher flammability (Forrest 
+et al.  2024).
+The most important socioeconomic variable in BASE is the 
+Human Development Index (HDI), while being the third most 
+important burned area predictor across all variables for Europe 
+(see HDI description in Section  2.2.3). The inclusion of HDI 
+builds on the assumption that countries with a high HDI will 
+have the financial, institutional and human capital necessary to 
+invest in fire management that effectively reduces burned area. 
+HDI was found to accurately capture the historical declining 
+trend in European burned area. Likewise, global-  scale analyses 
+have identified HDI as a significant predictor of burned area 
+variability (Chuvieco et  al.  2021). Inclusion of HDI in BASE 
+also led to improved simulation of spatial patterns of burned 
+area with respect to observations (e.g., increased burning in the 
+FIGURE 2     |    Rate of human- caused ignitions as a function of popu -
+lation density in the SPITFIRE model. Ignitions rise with population 
+density up to ~14 individuals per km 2, then decline toward zero at very 
+high densities.
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 5
+5 of 19
+Global Change Biology, 2026
+Balkans, details in Forrest et al.  2024). Beyond the BASE model, 
+other fire modelling approaches also incorporate HDI or analo -
+gous socio-  economic proxies. For instance, the WHAM! model 
+uses HDI to construct “agent functional types,” which describe 
+how human populations manage landscapes and fires under 
+varying levels of development (Perkins, Kasoar, et al.  2024).
+BASE includes tree cover as a quadratic term because that was 
+found to improve the model fit considerably, with the strongest 
+enhancement of burned area at low- to- moderate tree cover. This 
+is attributed to the fact that open European ecosystems (i.e., lit -
+tle tree canopy cover) will have a drier microclimate (De Frenne 
+et al.  2021) and a greater amount of fine fuel in sparse canopies 
+(grass, shrubs, lichens and mosses). The other terms had com -
+paratively less influence (see Table  1).
+Equation  (1) Regression equation of the BASE model. Each of 
+the predictors is described in Table  1. The regression was per -
+formed using a logit link function (quasi-  binomial family) over 
+the whole European domain (for further details see Forrest 
+et al.  2024).
+2.2   |   Input Data and Simulation Protocol 
+for Combined Fire- Vegetation Modelling
+2.2.1   |   Climate, Soil and Nitrogen Depositions
+The climate input data for our future simulations was drawn 
+from the following five global climate models (General 
+Circulation Models) developed via the climate model inter -
+comparison project CMIP6 (Eyring et al.  2016): ACCESS-  CM2 
+(Ziehn et al.  2020), CanESM5 (Swart et al.  2019), CNRM- ESM2- 1 
+(Séférian et al.  2019), EC- EARTH3 (EC-  Earth Consortium (EC- 
+Earth)  2020), MPI-  ESM1- 2- HR (Müller et  al.  2018). We used 
+bias- corrected and downscaled CMIP6 climate projections pro -
+duced within the FirEUrisk project. The five climate models 
+were selected to represent the lower, medium, and upper ranges 
+of projected changes in the Drought Code—a component of the 
+Canadian Fire Weather Index (FWI) system—between the be -
+ginning and the end of the 21st century, thereby sampling a rep-
+resentative range of future fire weather conditions. The original 
+grids from each dataset were bias-  corrected and downscaled 
+to 9 × 9 km grids (see Hetzer et al.  2024) covering Europe, be -
+tween latitudes 32° N and 72° N and longitudes between 15° W 
+and 35° E. The climate model data were bias- corrected to ERA5- 
+LAND climate data (see Hetzer et  al.  2024), which were also 
+used to perform historical validation simulations with both 
+fire models. Soil texture and soil acidity (pH) were derived 
+from the Harmonized World Soil Database (HWSD) version 1.2 
+(1)
+Burned area = c0 +∝ 1 ⋅ FAPAR12 +∝ 2 ⋅ Slope +∝ 3 ⋅ TPI
++∝ 4 ⋅ Popdens +∝ 5 ⋅ HDI +∝ 6 ⋅ Treecover
++∝ 7 ⋅ Treecover 2 +∝ 8 ⋅ MEPI +∝ 9 ⋅ ln (FWI )
++∝ 10 ⋅ MEPI ⋅ ln (FWI )
+TABLE 1     |    Predictor variables used in the BASE burned area model, the reason for their inclusion, their temporal resolution, and the form of their 
+term in the model. Adopted from Forrest et al. ( 2024). Variables in bold were quantified with satellite data in the model development and fitting stage, 
+but were replaced with LPJmL model state variables in model runs presented here.
+Variable Inclusion rationale Temporal resolution Influence
+Fire Weather Index (FWI) Fire weather conditions 
+contribute to the likelihood of 
+wildfire ignition and spread
+Monthly Positive, natural 
+logarithm and 
+interaction with 
+MEPI (also positive)
+MEPI (monthly ecosystem 
+productivity index)
+Health and phenological 
+state of vegetation to proxy 
+live fuel moisture and 
+dead fuel proportion
+Monthly Positive, linear, and 
+interaction with 
+FWI (also positive)
+Human Development Index (HDI) Socio- economic: cultural 
+practices, investment 
+in firefighting, public 
+awareness and legislation
+Annual Negative, linear
+Fraction of absorbed photosynthetic 
+active radiation (FAPAR12)
+General fuel build- up 
+over last 12 months
+Past 12 months Positive, linear
+Human population density (popdens) People starting fires Annual Positive, linear
+Tree cover (%) Fuel characteristics (more 
+fine fuel in sparse canopies) 
+and ecosystem openness
+Static map (annual 
+in coupled runs)
+Positive linear term 
+and a negative 
+quadratic term
+Slope Topography affects rate of 
+spread, fragmentation, access
+Static map Positive, linear
+Topographic Position Index (TPI) Topography affects rate of 
+spread, fragmentation, access
+Static map Positive, linear
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 6
+6 of 19
+ Global Change Biology, 2026
+(Nachtergaele et al.  2012) and processed to the 9 × 9 km grid by 
+using the LandInG toolbox (Ostberg et al.  2023). Soil depth was 
+set to 2 m for each grid cell. Nitrogen depositions (dry NH 4 and 
+NO3) were taken from ISIMP3 project (Tian et al.  2018) which 
+were based on CMIP6 forcing data (Hegglin et al.  2016, 2018a, 
+2018b). The deposition fields were regridded from the ISIMIP 
+0.5° spatial resolution to the ~9 × 9 km grid by assigning to each 
+finer grid cell the value of the coarser grid cell in which its centre 
+is located. Nitrogen depositions were applied on a daily step to 
+the corresponding mineral nitrogen pools of the model's topsoil 
+layer as described in von Bloh et al. ( 2018).
+2.2.2   |   Land Use Input
+A harmonized land- use data set was developed for the 1960–
+2050 period using historic land- use data from the HILDA+ 
+dataset (Winkler et  al.  2021) and future land- use simulations 
+from CLUMondo. CLUMondo, a spatially explicit land system 
+model (Van Asselen and Verburg  2013; Dou et  al.  2023), allo -
+cates demand for resources (e.g., wood, crops, livestock) which 
+are derived exogenously from global models (here, the partial- 
+equilibrium model GLOBIOM, Integrated Biospheres Futures 
+(IBF)  ( 2023)). The change in demand is spatially allocated in 
+CLUMondo based on spatial characteristics, local suitability, 
+and conversion restrictions at yearly timesteps. Beyond 2050, 
+land use fractions were held constant until the end of the cen -
+tury. For consistency with the LPJmL land- use scheme, input 
+fractions of forests, shrublands, and bare soils were merged into 
+LPJmL's “natural land” class, while grassland fractions were as -
+signed to managed grasslands in LPJmL. All other land uses are 
+considered non-  burnable and masked from the model output. 
+Each pixel thus has a percentage of land that can burn, and this 
+fraction changes over time according to the land- use input.
+2.2.3   |   Human Development Index
+The Human Development Index (HDI) is a compound-  variable 
+measure that seeks to proxy the relative well-  being of people 
+across locations considering life expectancy, education and per 
+capita income (Stanton  2025). Globally, in 2023, countries with 
+very high human development recorded HDI values of around 
+0.97, while those with low human development had values near 
+0.4 (Stanton  2025). The HDI input was used in the LPJmL- BASE 
+modelling approach. Historical HDI data were produced by 
+Kummu et  al.  ( 2018), who used the same native five arc min -
+utes resolution (0.0833°, ~9 km) as in this study. Future projec -
+tions (from 2015 onwards) were taken from (Perkins, Saxena, 
+et al.  2024), which demonstrated continuity with historical data 
+(Figure  S8).
+2.2.4   |   Human Population Density
+Historical human population density was retrieved from 
+Perkins, Kasoar, et al. ( 2024); Perkins, Saxena, et al. ( 2024) rang-
+ing from 1960 to 2017. Human Population density projections 
+were adapted from the 2020–2100 1-  km gridded population 
+density estimates produced by Wang et  al.  ( 2022). The origi -
+nal data were downscaled to half degree and ~9 km resolutions 
+using a conservative interpolation technique remapcon in the 
+Climate Data Operators (CDO) software (Schulzweida  2022). 
+Conservative remapping is considered more suitable for inter -
+polating a discontinuous data structure, as is often the case for 
+population data. The time-  continuous yearly series was gener -
+ated by assuming a linear, equal-  annual- increment change in 
+the differential of the pixel value between two 5-  year time steps 
+in the original data file. To interpolate that data gap between the 
+historical dataset (last year 2017) and the projections (starting 
+in 2020), we also assumed a linear incremental change between 
+the two datasets.
+2.2.5   |   Scenarios
+All input data—including climate, population density, HDI, and 
+land use—were prepared for two contrasting scenarios, which 
+are referred to as SSP1-  2.6 and SSP3-  7.0. Scenarios describe 
+potential future developments based on assumptions about so -
+cioeconomic trends, policy, and climate. SSP1-  2.6, referred to 
+as “Sustainability,” represents a socioeconomic trajectory char -
+acterized by strong mitigation efforts, including substantial re -
+ductions in greenhouse gas emissions, increased deployment of 
+renewable energy technologies, and implementation of policies 
+promoting sustainable development. This pathway is associated 
+with the low- emission climate scenario RCP2.6, which assumes 
+strong mitigation measures and global efforts to limit radiative 
+forcing. Under SSP1-  2.6, European population is projected to 
+increase overall, particularly in northern and western Europe, 
+with a preference for village and peri- urban living. Agricultural 
+systems shift toward more diverse and sustainable practices, 
+and policies favour natural landscape protection and ecosystem 
+restoration. Regional productivity diverges, with declining crop 
+yields in southern Europe and increasing productivity in north -
+ern and western regions, contributing to spatial shifts in agricul-
+tural activity and forest regrowth.
+In contrast, SSP3-  7.0, referred to as “Regional Rivalry,” rep -
+resents a trajectory with slower economic growth, less global 
+cooperation, mixed energy production from fossil fuels and re -
+newables, and an overall low ambition to reduce carbon emis -
+sions. This scenario is coupled with the higher- emission climate 
+pathway RCP7.0. Population is projected to decline overall, 
+particularly in southern and eastern Europe, accompanied by 
+increased rural depopulation. Agricultural and livestock pro -
+duction decrease in several regions, especially in the south, 
+while remaining agricultural activity becomes more polarized, 
+with larger and more conventional farming systems dominat -
+ing. These dynamics contribute to regionally heterogeneous 
+land- use changes, including agricultural abandonment in some 
+areas and localized intensification in others.
+Using those two contrasting scenarios allows assessment of 
+how variations in mitigation efforts, energy use, demographic 
+change, and land use influence modelled results. The scenarios 
+influence land- use patterns and population densities differently 
+(Figures  S3, S4, S9): Under SSP1-  2.6, a higher demand for for -
+est resources increases forest regrowth in Eastern Europe along 
+with declining agricultural activity. In contrast, SSP3-  7.0 exhib-
+its a more heterogeneous pattern of land- use change, without a 
+clear overall trend. Both scenarios show increasing urbanization 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 7
+7 of 19
+Global Change Biology, 2026
+and declining rural population densities, with this effect being 
+more pronounced under SSP3- 7.0.
+2.2.6   |   Simulation Protocol
+For each of the five climate models, we performed a spin- up of 
+the natural vegetation by starting the simulation from a bare, 
+non- vegetated state. The simulations were run for 2500 years, 
+looping over input forcing data for the years from 1960 to 1989. 
+Thereafter, we conducted a 390- year land- use spin- up to account 
+for land- use change legacy. After those two spin- up phases, we 
+run the simulations from 1960 to 2014 (historical period of each 
+climate model), which was the starting point for the future sim -
+ulations to diverge into the two SSPs (SSP1-  2.6 and SSP3-  7.0) 
+scenarios. Future simulations were conducted running the mod-
+els until 2100. For all simulations, the effects of nitrogen lim -
+itation on plant growth were enabled. This simulation protocol 
+was conducted for the SPITFIRE and BASE models separately. 
+To isolate the impact of the main drivers of both modelling ap -
+proaches, we ran separate simulations for each SSP, in which 
+HDI, population density, and land use were individually held 
+constant from the year 2000 onward (factorial experiments, 
+Table  2). This approach allows us to isolate the contributions of 
+these drivers on simulated fire regimes. In both models, land 
+use determines the extent of burnable area. Comparing these 
+factorial experiments therefore helps to clarify how different 
+socioeconomic factors may shape future wildfire patterns across 
+Europe. Climatic drivers (e.g., temperature, precipitation, wind) 
+and vegetation dynamics were allowed to vary in every simula -
+tion, as holding them constant was considered unrealistic in a 
+fire- enabled DGVM where climate continuously affects growth, 
+fuel availability, and fire behaviour. The influence of fire weather 
+and vegetation changes can be assessed indirectly through com -
+parisons between the different SSP scenarios. To evaluate model 
+performance, we performed historical reference runs for each 
+modelling approach (SPITFIRE and BASE, see below) using 
+ERA5-  LAND climate input data (see Table 2). Simulated burned 
+area of those reference runs were compared against the GFED4s 
+burned area product between the years 2003–2014 (Randerson 
+et al.  2017). The reference runs captured the interannual vari -
+ability in burned area reasonably well compared to observa -
+tions, but spatial patterns were underestimated in Portugal and 
+overestimated in southern Spain (see Supporting Information , 
+section  1.1). All three models have been extensively validated 
+in previous studies (Schaphoff, Forkel, et  al.  2018; von Bloh 
+et al.  2018; Forrest et al.  2024; Oberhagemann et al.  2025).
+2.3   |   Data Processing
+We carried out the data evaluation using R version 3.6 (R Core 
+Team  2019). We firstly averaged the outputs of all simulations 
+across the five GCMs to smooth inter-  model fluctuations in 
+TABLE 2     |    Overview of the simulation experiments conducted in this study. All simulations were run for two Shared Socioeconomic Pathways 
+(SSP1- 2.6 and SSP3- 7.0). The standard runs (SPITFIRE and BASE) allow all drivers—population density, land use, HDI, fire weather, and vegetation—
+to vary, representing fully dynamic fire regimes. Factorial experiments (S-  * and B- *) hold individual socioeconomic drivers constant to isolate their 
+effects and assess how they influence projected wildfire activity in SPITFIRE and BASE. Climatic drivers (e.g., temperature, precipitation, wind) and 
+vegetation were allowed to vary in all simulations, as fixing them was considered unrealistic in a fire-  enabled DGVM. SPITFIRE-  hist and BASE- hist 
+simulations were used to compare model performance with observations.
+Experiment (short 
+name) Description Intention
+SPITFIRE Coupled LPJmL- SPITFIRE with all drivers varying Fully dynamic simulation capturing 
+combined effects of climate, vegetation, 
+land use, and human factorsBASE Coupled LPJmL- BASE with all drivers varying
+S- Pop Coupled LPJmL- SPITFIRE with constant 
+populations density from year 2000
+Isolate the effect of human- caused 
+ignitions using SPITFIRE
+S- LU Coupled LPJmL- SPITFIRE with 
+constant land use from year 2000
+Isolate effect of changing potential 
+burnable area in natural vegetation and 
+on managed grassland in SPITFIRE
+B- Pop Coupled LPJmL- BASE with constant 
+populations density from year 2000
+Isolate population density effect 
+on burned area in BASE
+B- LU Coupled LPJmL- BASE with constant 
+land use from year 2000
+Isolate effect of changing potential 
+burnable area in natural vegetation and 
+on managed grassland using BASE
+B- HDI Coupled LPJmL- BASE with constant 
+HDI from year 2000
+Isolate assumed effect of fire management 
+capacity via changing HDI in BASE
+SPITFIRE- hist Coupled LPJmL- SPITFIRE forced with 
+historical reanalysis climate data
+Model comparison with observations
+BASE- hist Coupled LPJmL- BASE forced with 
+historical reanalysis climate data
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 8
+8 of 19
+ Global Change Biology, 2026
+the climate input data and identify climate-  driven consistent 
+trends. To analyse changes in fire regimes over time, we first 
+calculated the annual total area burned across the entire simu -
+lation domain for each simulation. We then computed temporal 
+averages of the annual burned area for two distinct time periods: 
+2000–2030 (present-  day, hereafter) serving as the baseline, and 
+2070–2100 (late-  century, hereafter), again for each simulation. 
+We then assessed the relative change in average burned area be-
+tween these two periods to quantify the expected shift in fire 
+activity under future conditions.
+To identify areas with no substantial fire activity, we classified 
+all grid cells with an average annual burned area below 0.01 ha 
+as wildfire-  free. Furthermore, we identified grid cells with 
+newly emerging fire activity by applying a threshold: a cell was 
+considered to have newly occurring fires if its average annual 
+burned area was less than one hectare during the present-  day 
+but increased by more than 300% in late-  century. To evaluate 
+changes in the key input variables—population density, FWI, 
+land- use change and HDI—we calculated and compared their 
+temporal averages for present-  day vs. late-  century timeframe. 
+Because land- use change was prescribed only until 2050 and 
+held constant thereafter, relative changes in land use were as -
+sessed using decadal averages for 2000–2010 and 2040–2050, 
+rather than 30-  year averages as used for the other drivers and 
+results. We then analysed the relative changes between these 
+periods to understand how socio-  economic and climatic driv -
+ers evolved over time. We additionally computed Pearson's 
+correlation coefficients between annual burned area and fire 
+weather index (FWI), vegetation carbon, and fuel load for each 
+General Circulation Model (GCM) separately. Correlations were 
+calculated over the full simulation period, using all annual 
+values at each grid cell for all GCMs. The resulting correlation 
+coefficients were then mapped to analyse their spatial patterns. 
+We also quantified the fraction of the total simulation domain 
+exhibiting increasing and decreasing burned area based on rela -
+tive changes. For the simulations in which input variables were 
+held constant, we also calculated the annual total burned area 
+and evaluated the differences in fire activity between the two 
+periods, allowing us to isolate the influence of each input vari -
+able on the projected fire regimes. We quantified inter-  model 
+uncertainty in projected burned area change using the ensemble 
+of GCM simulations for each grid cell and SSP. For each GCM 
+model outputs were first assigned to an ordered set of change 
+classes representing progressively decreasing to increasing 
+burned area change magnitudes (see Figures  S18 and S19). To 
+assess agreement among models, we converted the classes into 
+an ordinal scale and calculated the standard deviation across the 
+five GCMs at each grid cell (Figure  S20). This metric captures 
+the spread of projected change classes, with higher values indi -
+cating stronger disagreement among models and lower values 
+indicating higher consistency. The resulting standard deviation 
+fields were mapped for each SSP to identify spatial patterns of 
+inter- model uncertainty in projected burned area change.
+3   |   Results
+3.1   |   Burned Area Projections Across Models 
+and Scenarios
+Both fire models projected an increase in future burned area 
+under the high emission scenario (SSP3-  7.0) while showing 
+opposite trends under the low emission scenario (SSP1-  2.6; 
+Figure  3). SPITFIRE projected a steady increase in burned 
+area in Europe, rising from approximately 1.8 million hectares 
+FIGURE 3     |    Annual sum of burned area averaged over all future projections (applying in total 5 bias-  corrected GCMs) simulated by SPITFIRE 
+(Panel A) and BASE (Panel B) for scenario SSP1- 2.6 (blue) and SSP3- 7.0 (red). Error margins illustrate the standard deviation across all GCMs. Please 
+note different y- axes on panel B spanning a much lower range in burned area (depicted by curly bracket in Panel A).
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 9
+9 of 19
+Global Change Biology, 2026
+(Mha) at the beginning of the century to ~2.6 Mha (+39%) under 
+SSP1- 2.6. Under SSP3- 7.0, the increase in burned area projected 
+by SPITFIRE was even more pronounced, reaching ~5.3 Mha 
+(+192%) in total (Figure  3A) which corresponds to an increase 
+of ~3.5 Mha compared to the present.
+In contrast, BASE projected a decrease in annual burned area 
+until the middle of the century for both SSPs (Figure  3B). Under 
+SSP1- 2.6, simulated annual burned area declined continuously, 
+whereas under SSP3-  7.0, it increased again towards the end of 
+the century but remained at the same level (ca. +0.06 Mha) com-
+pared to present conditions.
+Using the process-  based SPITFIRE model, relative burned area 
+increased from +25 to +300% in most European regions by the 
+end of the 21st century across all scenarios (Figure  4A,B). Under 
+SSP1- 2.6, regions experiencing substantial fire activity today, in -
+cluding Greece, the western Balkans, and much of the Iberian 
+Peninsula, are projected to experience only minor changes or 
+even declines in burned area (Figure  4A). On the other hand, 
+large increases in fire activity (+200% to +300%) was simulated 
+in the Wallachian Plain, the Pyrenees and some isolated areas 
+in Central Europe. In contrast, under SSP3-  7.0, SPITFIRE pro -
+jected widespread increases in fire activity, with burned area 
+expansions in much of Southern and Central Europe of +200% 
+to +300%, and higher. In formerly less fire-  prone regions, 
+SPITFIRE projects the emergence of recurrent fire regimes (e.g., 
+Western Germany, The Netherlands). Especially, hotspots of in -
+creasing burned area under SSP3-  7.0 are concentrated in foot -
+hills and medium-  elevation areas, such as the Alps, Pyrenees, 
+Massif Central, Sierra Nevada, Carpathians, and the Balkan and 
+the Scandinavian ranges. The patterns align with increasing 
+FWI under changing climates (Figure  S5).
+The BASE model projected substantially different spatial pat -
+terns of future fire activity. Under SSP1-  2.6, burned area de -
+creased substantially across most of Europe, with reductions 
+ranging from −50% to −100%, compared to present day baseline 
+(Figure  4C). Strongest reductions were projected in Eastern 
+Europe and parts of the Iberian Peninsula. Increases in burned 
+FIGURE 4     |    Relative changes in simulated burned area between years 2000–2030 and 2070–2100 for SSP1-  2.6 (panel A, C) and SSP3-  7.0 (panel 
+B, D) using SPITFIRE (panel A, B) and BASE (panel C, D). Changes in burned area are displayed on a log-  symmetric scale so that increases and de -
+creases of equal strength are comparable. For example, a + 100% rise (doubling) corresponds to a −50% drop (halving), representing equal- magnitude 
+changes in opposite directions.
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 10
+10 of 19
+ Global Change Biology, 2026
+area and the emergence of fires were projected in isolated areas 
+in the Alpine foothills and parts of the Wallachian Plain. Under 
+SSP3- 7.0, BASE projections showed more widespread burned 
+area increases, particularly in central and western Europe with 
+the largest increases in central France and along the Alpine 
+foothills (+200% to +300%; Figure  4D). Despite these strong 
+increases, parts of Eastern Europe and the Iberian Peninsula 
+were projected to experience decreases in burned area. In total, 
+about 55% of the simulated area showed an increase in burned 
+area (relative change > 0) under SSP3-  7.0 (Figure  4D). Under 
+both SSPs, BASE projected a greater reduction in burned area 
+in Eastern Europe, the Iberian Peninsula and Eastern Europe 
+compared to other regions. Overall, the patterns simulated by 
+BASE are broadly aligned with country-  level regions and mirror 
+the granularity of the HDI (Figure  S7).
+Inter- model uncertainty in projected burned area change shows 
+clear spatial structure but is not fully consistent across modelling 
+approaches (Figure  S20). Both models tend to show relatively 
+lower agreement in alpine and boreal regions, while higher 
+agreement is generally found in parts of the Mediterranean 
+region, although the strength of this pattern varies. Under 
+SSP3- 7.0, high uncertainty is observed in Central and Eastern 
+Europe and parts of the British Isles, indicating reduced agree -
+ment among GCMs under stronger climate forcing. In con -
+trast, SSP1-  2.6 shows higher agreement in Eastern Europe in 
+the BASE simulations. However, this pattern is not consistent 
+across modelling approaches, as SPITFIRE-  based projections 
+show higher uncertainty in the same region under SSP1-  2.6. 
+Overall, inter- model agreement varies spatially and depends on 
+both region and model configuration, with notable differences 
+emerging particularly in Eastern Europe depending on scenario 
+and fire model.
+3.2   |   Simulations With Constant Drivers
+When HDI is held constant (simulation B-  HDI, Table  2), the 
+BASE model simulated annual burned areas similar to those 
+simulated by SPITFIRE under SSP1-  2.6 (Figure  5A). Under 
+SSP3- 7.0, BASE with constant HDI yielded comparable burned 
+areas to SPITFIRE during the first half of the century, but mark-
+edly lower values thereafter (Figure  5B). By the end of the cen -
+tury, burned area was reduced by approximately 92% (SSP1-  2.6) 
+and 72% (SSP3-  7.0) when HDI is allowed to vary, relative to 
+simulations with constant HDI (Figure  5). At the regional scale, 
+constant HDI produced widespread increases in burned area 
+across Europe under both scenarios, while largely removing 
+the previously observed east–west and north–south gradients in 
+burned area reductions (Figure  S14). Under SSP1- 2.6, fixing HDI 
+yielded burned areas that are comparable to present-  day levels 
+(−20% to −25%) in some regions (central and eastern Europe, 
+Scandinavia), while other regions experienced increases of up to 
+100% with particularly pronounced increases in the Wallachian/
+Romanian Plain (Figure  S14C). Under SSP3- 7.0, elevated burned 
+area changes persisted in central and western Europe and parts 
+of southern Europe in both constant-  and variable-  HDI simula-
+tions (Figure  S14B,D).
+FIGURE 5     |    Annual sum of burned area averaged over all future projections (applying in total 5 GCMs) simulated by SPITFIRE (yellow), BASE 
+(turquoise) and BASE with constant HDI from year 2000 (black). Panels illustrate scenario SSP1-  2.6 (Panel A) and SSP3- 7.0 (Panel B). Error margins 
+illustrate the standard deviation across all GCMs. If HDI is held constant the BASE model projects annual burned area that closely resembles those 
+of SPITFIRE under SSP1-  2.6. Under SSP3-  7.0 BASE with constant HDI projects similar burned area compared to SPITFIRE in the first half of the 
+century, but substantially lower thereafter. End-  of- century burned area is about 92% (SSP1-  2.6) or 72% (SSP3-  7.0) lower if HDI is allowed to vary 
+(turquoise) compared to simulations with constant HDI (black).
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 11
+11 of 19
+Global Change Biology, 2026
+Holding land use constant (simulations B-  LU & S-  LU, Table  2) 
+had little effect on pan-  European annual burned area in ei -
+ther model (Figure  S12). However, land- use change exerted 
+pronounced regional effects under SSP1-  2.6: holding land use 
+constant removed the projected increases in southern Spain 
+and in the Wallachian/Romanian Plain that were formerly ob -
+served in simulations including land- use change (Figures  S16 
+and S17, panels A and C). Under SSP3- 7.0, regional burned area 
+responses remained largely unchanged between simulations 
+with fixed and evolving land use (Figures  S16 and S17, panels 
+B and D).
+Holding population density constant resulted in only minor 
+changes in pan-  European annual burned area (Figure  S12). 
+However, SPITFIRE showed greater sensitivity to population 
+density, particularly in Central Europe, where keeping popula -
+tion density constant led to a spatial smoothing of burned area 
+patterns (Figure  S15).
+4   |   Discussion
+The simulation future changes in our study are shaped by several 
+key drivers, including fire weather, the Human Development 
+Index (HDI), population density, land use and vegetation (for 
+overview see Table  3 and Supporting Information ). Below, we 
+examine how these factors contribute to variations in simulated 
+burned area by discussing factorial simulations in which indi -
+vidual fire drivers were held constant from 2000 onward (see 
+Table  2 and Supporting Information 1.5 ) and comparing model 
+output from each run, as well as through relative changes in each 
+driver from the beginning to the end of the century ( Supporting 
+Information 1.2). We subsequently also discuss how our results 
+compare to future projections of other studies.
+4.1   |   Fire Weather
+Changes in fire weather (FWI) emerge as a dominant driver in our 
+simulations. Under SSP1- 2.6, moderate increases in FWI occur in 
+many regions, while others experience little change (Figure  S5); 
+by contrast, SSP3-  7.0 produces a consistent rise in fire weather 
+index across virtually all of Europe. Under this strong-  warming 
+scenario, escalating fire weather conditions come to dominate fire 
+regimes throughout the Mediterranean basin and across much of 
+France, the Pyrenees, and the western Alps (Figures 4B,D and S5).
+Fire weather exerts a strong influence on burned area projec -
+tions in both models. SPITFIRE shows widespread increases 
+in burned area across Europe, even under low warming 
+(Figure  4A), with much larger increases under SSP3-  7.0 
+(Figure  4B). The BASE simulations with constant HDI fire activ-
+ity increase moderately under SSP1-  2.6 and substantially under 
+SSP3- 7.0 (Figure  S14C,D). These results demonstrate that fire 
+weather also exerts a strong influence in BASE once the damp -
+ening effect of HDI is excluded. This sensitivity is expected, as 
+FWI is the most important predictor of burned area in BASE 
+(Forrest et al.  2024), directly capturing meteorological controls 
+on ignition and spread. In SPITFIRE, fire weather determines 
+fuel moisture and thus the probability of fire spread through the 
+Rothermel equation, which explicitly depends on fuel dryness 
+and wind speed. Consequently, both models respond strongly 
+to changes in fire weather, although through different formu -
+lations. Additional correlation analyses support this interpre -
+tation: annual burned area exhibits consistently strong positive 
+correlations with annual FWI across most of Europe (generally 
+exceeding ~ +0.5, see Figures  S21 and S22), whereas correla -
+tions with vegetation carbon and fuel load are substantially 
+weaker and more spatially variable. This indicates that, at the 
+continental scale, interannual variability and long- term changes 
+TABLE 3     |    Summary of key drivers of fire activity in the BASE and SPITFIRE, their relative influence, and main conclusions. Fire weather is 
+the dominant positive driver in both model setups. HDI shows a strong negative influence in BASE and may offset fire under moderate warming. 
+Population density primarily affects fire through ignition processes, while land use exerts smaller, spatially variable effects. Vegetation changes are 
+particularly important in SPITFIRE through fuel composition. Further details and discussion can be found in the respective sections of the main text 
+and Supporting Information , with supporting figures listed in the final column.
+Driver
+Influence in fire model
+Main conclusion
+Figures supporting 
+conclusionBASE SPITFIRE
+Fire weather Strong positive Strong positive Dominant driver, 
+substantial under strong 
+climate warming
+Figures  4, S5, S14, 
+S21 and S22
+HDI Strong negative — Could partially offset 
+increased fire activity, if 
+translated into effective 
+fire management
+Figures  4, 5 and S7
+Population density Weak Moderate Mainly through fire 
+ignition effect
+Figures  S9, S12, 
+S13 and S15
+Land use Small continental, 
+regional effects
+Small continental, 
+regional effects
+Secondary driver Figures  S3, S4, 
+S13, S16 and S17
+Vegetation changes Weak Strong Important through 
+fuel composition
+Figures  S10, S11, 
+S21 and S22
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 12
+12 of 19
+ Global Change Biology, 2026
+in burned area are more strongly associated with fire weather 
+than with vegetation dynamics. This pattern is consistent across 
+both SPITFIRE and BASE, although the strength of the re -
+sponse varies regionally. In particular, projected burned area 
+changes across GCMs (Figure  S19), reflecting greater sensitivity 
+to the choice of climate forcing. Greater sensitivity was found 
+in Central and Eastern Europe compared to the Mediterranean, 
+which indicates that our results should be interpreted with 
+greater caution in Central and Eastern Europe.
+Overall, this suggests that climate- driven fire weather is a robust 
+driver of future fire activity across both modelling approaches. 
+This link between fire weather and burned area strengthens 
+confidence that continued climate warming will exacerbate fire 
+risk, even in regions with historically low fire activity under -
+scoring the importance of limiting climate change to reduce fire 
+risk in Europe.
+4.2   |   Human Development Index (HDI)
+HDI, which is only included in BASE, emerges as a particularly 
+strong negative predictor of fire activity, likely reflecting a link 
+between rising human development and improved wildfire pre -
+vention, detection, and suppression capacity in Europe (Forrest 
+et al.  2024). When HDI varies in accordance with SSP scenar -
+io's spatial and temporal changes, its strong impact on burned 
+area becomes apparent across several European sub-  regions. 
+In Sweden and Finland, rising HDI under both SSP1-  2.6 and 
+SSP3- 7.0 (Figure  S7) results in substantially reduced burned 
+area (Figure  4C,D). In Eastern Europe, HDI increases under 
+SSP1- 2.6 with substantial fire suppression, and under SSP3-  7.0, 
+they may even offset deteriorating fire weather conditions 
+(Figures  S7, 4C,D). A similar pattern appears across much of 
+Europe, where modest HDI improvements under SSP1-  2.6 help 
+to reduce burned area. However, under SSP3-  7.0, this effect is 
+often overwhelmed by more intense fire weather: HDI gains 
+under SSP1- 2.6 (Figure  S7) were found to counteract fire activ -
+ity in many areas (e.g., on Iberian Peninsula, Figure  4C), HDI 
+increases are smaller under SSP3-  7.0 (Figure  4D) and therefore 
+provide less damping. As a result, fire regimes are increasingly 
+shaped by more severe fire weather rather than by socioeco -
+nomic improvements. This suggests that rising human welfare 
+could only help to offset increasing fire risk up to a certain cli -
+matic limit.
+Surprisingly, we find that when HDI is held constant, the BASE 
+model projects very similar annual burned area compared to 
+SPITFIRE under SSP1-  2.6 (Figures  4 and 5). Although the strik-
+ing convergence between BASE simulations with constant HDI 
+and SPITFIRE projections in Figure  5 illustrates the weight 
+of socio-  economic well-  being (HDI), we caution against over- 
+interpreting this as complete equivalence since model design 
+differences between SPITFIRE and BASE remain.
+Although the strong effect of HDI in the BASE model, there are 
+important limits to how far this can be extrapolated into the fu -
+ture. The damping effect of HDI is based on historical data anal-
+ysis and was included in the BASE model to capture the overall 
+declining trend of burned area in the past (Forrest et al.  2024). 
+Under the assumption that an increase in HDI means that 
+governments and related institutions will invest in fire manage -
+ment to reduce fire risk in the same way, it could contribute to 
+reduce burned area under moderate future climate conditions 
+(SSP1- 2.6). Yet, whether the extent of historical HDI effects on 
+fire activity can be extrapolated to a future with substantially 
+elevated fire risk levels is unclear. That is, there may be future 
+fire weather conditions under which fire activity cannot be 
+dampened by HDI-  proxied socio-  economic factors: Especially 
+extreme fire weather conditions often make fire behaviour more 
+unpredictable and can easily overwhelm firefighting efforts 
+(San- Miguel- Ayanz et al.  2013; Fernandes et al.  2016). The lat -
+est fire season of 2025 has illustrated this. In spite of high pre -
+paredness, the very extreme weather conditions in Spain lead to 
+a record burning of nearly 400.000 ha.1 On the other hand, HDI 
+can only indicate broad effects, while context-  specific, detailed 
+and process-  based analysis is needed if one wants to capture 
+the diversity of policy and institutional responses in regional 
+decision- making. Mediterranean countries have demonstrated 
+an ability to reduce fire impacts beyond what might be expected 
+from their HDI alone, through targeted investments, coor -
+dinated suppression strategies, and innovative management 
+practices (Turco et al.  2016; Fernandez- Anez et al.  2021). In ad-
+dition, the strong dampening effect of HDI may be underpinned 
+by technological innovations in satellite-  based monitoring and 
+AI- supported surveillance which may support early fire detec -
+tion and improve fire management (Chuvieco et al.  2020; Saleh 
+et al.  2024). However, fire detection may not always be the main 
+bottleneck for fire management. In practice, effective suppres -
+sion often depends on more basic capacities such as timely de -
+ployment of fire- fighting crews, availability and maintenance of 
+equipment, skilled personnel, and coordination across agencies 
+(Marshall et al.  2022; McCarthy et al.  2023; Arango et al.  2024). 
+These low-  tech but labour-  intensive aspects of fire manage -
+ment may stay challenging even in high-  HDI contexts, while 
+they may prove increasingly difficult as fire weather intensifies. 
+Therefore, while higher HDI can enhance societal resilience, it 
+is not a guarantee that suppression capacity will keep pace with 
+rising fire risk. Last but not least, unforeseen crises that disrupt 
+societal or political developments could significantly alter tra -
+jectories of population growth future well-  being as represented 
+by the HDI—a risk that current available scenarios likely under -
+state by assuming smooth economic convergence without major 
+disruptions (Buhaug and Vestby  2019). Such disruptions could 
+weaken the link between socio-  economic development and in -
+vestments in fire management capacity, particularly in a con -
+text of increasing systemic risks and potential future polycrises 
+(Oecd and Ocde  2011; Cruz-  Castro and Sanz-  Menéndez  2016). 
+As a result, higher levels of development would not necessarily 
+translate into stronger fire prevention and suppression. Although 
+historical evidence suggests that rising human development has 
+often been associated with stronger fire management in Europe 
+(Carlucci et al.  2019), these gains have depended on deliberate 
+policy choices, institutional capacity, and sustained investment 
+rather than development alone. Future fire activity will there -
+fore depend not only on socio-  economic trajectories, but also 
+on whether governance and fire-  management systems adapt 
+fast enough to preserve effectiveness under climate change, 
+fiscal constraints, and competing political priorities. Taken to -
+gether, HDI should therefore be interpreted less as a guarantee 
+of reduced fire activity and more as an indicator of the poten-
+tial for effective fire management. This potential was found to 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 13
+13 of 19
+Global Change Biology, 2026
+meaningfully limit fire impacts under low to moderate climate 
+change, but it is increasingly likely to be exceeded under severe 
+fire weather conditions associated with stronger climate change.
+4.3   |   Population Density
+Population density impacted fire differently in each modelling 
+approach. Holding population density constant in factorial BASE 
+simulations (simulation B- pop, Table  2) had only a minimal im -
+pact on simulated burned area (Figure  S13, purple lines) relative 
+to the full-  variation runs (Figure  S13, black lines), suggesting 
+that HDI plays a more dominant role than population density 
+in capturing human influence within the BASE framework. By 
+contrast, SPITFIRE demonstrated greater sensitivity to changes 
+in population density (Figure  S15). This suggests that variations 
+in simulated human-  caused ignitions, driven by shifts in pop -
+ulation density, are one key driver of simulated fire dynamics 
+in Central Europe in SPITFIRE. When population density is al -
+lowed to vary, SPITFIRE projects higher burned area in Central 
+Europe (Figure  S15). This is because decreasing population den-
+sity across currently highly populated areas of Central Europe 
+increase human- caused ignitions. This occurs because the peak 
+in SPITFIRE's ignition probability is reached at intermediate 
+population densities (~14 individuals per km 2; see Figure  2), 
+which is far below current densities in much of Central Europe. 
+As population density declines toward this peak, SPITFIRE 
+therefore simulates more human-  caused ignitions, resulting in 
+higher burned area projections. The importance of human ig -
+nitions for future fire regimes in Central Europe has also been 
+recently highlighted by other studies (Berčák et al.  2024; Horn 
+et al.  2024). Beyond Central Europe, population density exerted 
+a notable influence in Northern Europe and parts of the British 
+Isles. In those regions where population density is currently low 
+(e.g., below ~14 individuals per km 2, Figure  S9), declining pop -
+ulation density in the future implies fewer human-  caused igni -
+tions (Figures  2 and S12) and explains the decreasing burned 
+area simulated there by SPITFIRE (Figure  4A,B). These results 
+illustrate the important role of population density in SPITFIRE. 
+Population density is also an important driver in other global fire 
+models (Teckentrup et  al.  2019), but one global parameteriza -
+tion, as here in SPITFIRE, is unlikely to cover regional specifics, 
+such as here for Europe. The regionally-  calibrated results from 
+BASE might, therefore, be regarded as more realistic to capture 
+human influence on fire ignition and burned area in Europe.
+4.4   |   Land- Use Change
+Holding land use constant from 2000 onward (simulations 
+B- LU & S- LU, Table  2) had little effect on pan- European annual 
+burned area in either model (Figure  S13). This limited sensitiv -
+ity likely reflects the small magnitude of land- use change rep -
+resented at the continental scale, as indicated by the near-  zero 
+net conversions between forest and grassland (Figures  S3 and 
+S4). Such limited change is expected, since major future land- 
+use expansions are projected to occur primarily in developing 
+regions outside Europe (Popp et  al.  2017). However, land- use 
+changes notably affected burned area in southern Spain and in 
+the Wallachian/Romanian Plain under SSP1-  2.6 in both mod -
+els (Figures  S16 and S17). Both BASE and SPITFIRE respond 
+similarly to land- use changes, which is consistent with the struc-
+ture of the LPJmL framework: in this setup, land use primarily 
+affects the extent of burnable area rather than fire behaviour 
+per se. Consequently, the same regional effects appear in both 
+models. Overall, this indicates that land- use change might be a 
+secondary driver at the continental scale, but can substantially 
+influence regional fire patterns.
+Within the SSP1-  2.6 sustainability narrative, projected land 
+abandonment and conversion to natural land in parts of south -
+ern and eastern Europe increased the extent of burnable area 
+SSP1- 2.6 (Figure  S3B). These changes were associated with the 
+expansion of early-  successional, grass-  dominated vegetation 
+(Figure  S10B), which enhanced fine fuel availability and led to 
+higher burned area in both fire models (see Romanian Plain and 
+southern Spain in Figures  S16A,C and S17A,C). These findings 
+emphasize a potential trade-  off within SSP1-  2.6: If land is re -
+leased to meet sustainability objectives such as higher demand 
+for forest products under SSP1-  2.6, wildfires might increase 
+(Preinfalk and Handmer  2024). Regenerating natural areas may 
+contain fire-  prone herbaceous vegetation, as observed in our 
+results for parts of the Balkan region (Figure  S10B) that could 
+lead to higher burned area if not anticipated. This underscores 
+the importance of wildfire management in regions experiencing 
+land abandonment or reforestation (Neidermeier et al.  2025).
+Under SSP3-  7.0, land- use changes resulting in increased 
+burnable land were less pronounced than under SSP1-  2.6 
+(Figure  S3C). Simulations with constant land use under this 
+scenario showed only marginal differences compared to simu -
+lations with changing land use (Figure  S16D vs. Figure  4B), sug-
+gesting that worsening fire weather may be a more dominant 
+driver than land- use change under this high emission scenario. 
+However, in this study, land- use projections were only feasible 
+until 2050, limiting the representation of longer-  term land- use 
+dynamics. Beyond mid-  century, land- use change associated 
+with restoration and biodiversity objectives under SSP1-  2.6 
+could plausibly intensify, potentially elevating wildfire risk if 
+the fire implications of regenerating landscapes are not ade -
+quately anticipated. Under SSP3-  7.0, weak governance and lim -
+ited land- use planning may instead promote land abandonment 
+and fuel accumulation beyond 2050. If such land- use dynamics 
+were to coincide with the pronounced worsening of fire weather 
+projected under SSP3-  7.0, their combined effects could lead to 
+substantially higher burned area than indicated by the current 
+simulations.
+Overall, land- use change has little effect on pan-  European 
+burned area but can substantially influence regional fire activ -
+ity, particularly where land is abandoned.
+4.5   |   Climate- Induced Vegetation Changes
+Climate- induced vegetation changes alter fuel composition by 
+modifying grass and tree cover, thereby influencing potential 
+burned area. Climate change promotes tree expansion into 
+higher- elevation areas outcompeting grasses (Figures  S10 and 
+S11), while grasses may themselves expand into areas that were 
+previously unvegetated as seen in our simulations for both 
+Scandinavia and the Alps (Figure  S10). Despite these vegetation 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 14
+14 of 19
+ Global Change Biology, 2026
+shifts, fire activity remains minimal in Scandinavia due to the 
+very low frequency of ignitions and relatively mild fire weather 
+conditions, resulting in no direct impact of changes in grass 
+cover on burned area (Figure  4, areas with no fire). In the Alps, 
+however, fire dynamics are shaped by contrasting influences: 
+In SPITFIRE, burned area decreases (Figure  4A,B) due to re -
+duced grass cover and increased tree cover that is slowing down 
+fire spread (Figures  S10 and S11, Panel B and C respectively). 
+However, in the BASE simulations, Alpine areas often show ei -
+ther increased fire activity or little change, without any consis -
+tent spatial pattern (Figure  4C,D).
+Additional correlation analyses indicate that the influence of 
+vegetation on burned area is generally weaker and more spa -
+tially heterogeneous than the influence of fire weather. Across 
+Europe, correlations between annual burned area and vegetation 
+carbon or fuel load are typically low (between −0.25 and 0.25, 
+see Figures  S21 and S22) and show substantial regional variabil-
+ity. In SPITFIRE, vegetation-  related correlations become some -
+what stronger under SSP3-  7.0 than under SSP1-  2.6, suggesting 
+that stronger climate change increasingly alters vegetation 
+composition and fuel characteristics in ways that affect fire be -
+haviour. Negative correlations between vegetation variables and 
+burned area are particularly common in Mediterranean regions, 
+indicating that increases in vegetation biomass do not necessar -
+ily translate into greater fire activity. Positive correlations occur 
+primarily in areas experiencing natural vegetation recovery 
+following land abandonment, especially under SSP1-  2.6. These 
+patterns highlight the complex and region-  specific role of vege -
+tation in shaping fire activity compared with the more spatially 
+consistent influence of fire weather.
+These contrasting results can be attributed to the models' 
+varying sensitivities to fuel composition: SPITFIRE calculates 
+burned area using the Rothermel equation, which explicitly in -
+corporates fuel characteristics such as type, load, and moisture 
+(Rothermel  1972). This mechanistic approach allows SPITFIRE 
+to respond directly to changes in vegetation composition and 
+structure as simulated by the dynamic vegetation in LPJmL. By 
+comparison, BASE captures fuel properties only indirectly, pri -
+marily through tree cover, which ranks relatively low among its 
+predictors (fifth place; Forrest et  al.  2024). As a result, BASE 
+may be less sensitive to fine-  scale variations in fuel composi -
+tion. This fundamental difference in how the two models rep -
+resent fuels likely contributes to the contrasting patterns of 
+fire activity observed in the Alpine regions, with SPITFIRE 
+responding more strongly to changes in vegetation than BASE. 
+Uncertainties in LPJmL's vegetation and fuel representation fur-
+ther affect simulated fire activity. The model does not include 
+managed forests or even- aged plantations, which are often more 
+fire- prone, potentially leading to underestimation of burned 
+area (Zald and Dunn  2018; Lindenmayer et al.  2023; Bousfield 
+et al.  2025). Conversely, fuel loads in natural vegetation may be 
+overestimated, as real-  world management such as fuel removal 
+or prescribed burning can reduce available fuels (Neidermeier 
+et al.  2023). Improving the representation of vegetation and fuels 
+could therefore either increase or decrease projected burned 
+area, depending on local conditions and management practices.
+In summary, climate-  induced vegetation changes affect fuel 
+composition and regional fire activity, but their impacts are 
+spatially heterogeneous and generally weaker than those as -
+sociated with fire weather. Nevertheless, vegetation dynamics 
+can substantially modify local fire responses, particularly in re -
+gions undergoing pronounced shifts in vegetation composition 
+or land use.
+4.6   |   Comparison With Previous European 
+Wildfire Projections
+Previous studies have consistently identified climate change as 
+the primary driver of increasing wildfire activity across Europe, 
+particularly under stronger warming scenarios, but they differ 
+in the magnitude and spatial structure of projected changes 
+(Amatulli et  al.  2013; Migliavacca et  al.  2013; Wu et  al.  2015; 
+Khabarov et  al.  2016; Turco et  al.  2018). Turco et  al.  ( 2018) 
+show that burned area increases systematically with warming 
+in Mediterranean Europe, while also arguing that vegetation- 
+mediated feedbacks and adaptation processes can reduce—but 
+not eliminate—the sensitivity of fire activity to climate change 
+(Turco et al.  2018). In contrast, process-  based DGVM-  fire mod-
+elling studies such as Migliavacca et al. ( 2013) highlight the role 
+of vegetation productivity in constraining fire spread, leading to 
+more moderate or spatially heterogeneous climate sensitivities 
+depending on how vegetation–fire feedbacks are represented 
+(Migliavacca et al.  2013). Similarly, Wu et al. ( 2015) demonstrate 
+that different DGVM–fire model combinations can produce con-
+trasting regional patterns of future burned area, including both 
+increases and decreases within the same geographic domain, 
+largely driven by differences in how fuels, fire feedbacks, and 
+vegetation dynamics are implemented (Wu et al.  2015). Despite 
+these methodological differences, a common signal emerges 
+across studies: increasing fire weather under climate change 
+consistently drives higher fire activity, while vegetation dynam -
+ics and human influences primarily modulate the magnitude 
+and spatial expression of these changes.
+Our results are consistent with this broader picture. We fur -
+ther extend it by explicitly incorporating socio-  economic wel -
+fare through the BASE model and by contrasting them with a 
+process- based fire representation in SPITFIRE. The strong in -
+fluence of the HDI in BASE demonstrates that socio-  economic 
+factors can substantially modify projected fire activity, in some 
+regions even outweighing biophysical drivers under moderate 
+climate change. This suggests that future projection studies 
+would benefit from more explicit integration of socio-  economic 
+processes (such as a proxy for fire management capacity), along-
+side climate and vegetation dynamics, in order to better capture 
+the full range of mechanisms controlling future fire regimes in 
+Europe.
+5   |   Conclusion
+In this study, we projected potential future changes in burned 
+area in Europe using two wildfire modelling approaches and 
+two socio-  economic pathways under different climate forc -
+ing scenarios. By comparing simulations and analysing how 
+climatic and socio-  economic conditions evolve over time, we 
+identified fire weather and socio-  economic development as the 
+two primary continental-  scale drivers of future fire activity, 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 15
+15 of 19
+Global Change Biology, 2026
+with vegetation and land- use effects playing a secondary but re -
+gionally important role, particularly under milder fire weather 
+conditions.
+Overall, our results are consistent with previous studies iden -
+tifying climate change as the dominant driver of increasing 
+wildfire risk across Europe, particularly in Mediterranean and 
+other fire-  prone regions. At the same time, our comparison of 
+a process-  based and a socio-  economic statistical model shows 
+that human development could substantially modify the mag -
+nitude and spatial expression of future fire activity, depending 
+on the climate forcing level and modelling representation. We 
+further emphasize that the mitigating effect of socio-  economic 
+development on fire activity strongly depends on continued pol -
+icy decisions and institutional investment in fire management, 
+rather than emerging automatically from development alone. 
+Future wildfire risk will be shaped not only by climate and 
+socio- economic development, but also by whether governance 
+and fire- management systems actively adapt and maintain their 
+effectiveness as fire weather intensifies.
+These findings highlight that future wildfire regimes in Europe 
+depend on the interaction between climate change and societal 
+adaptation. Under moderate warming, strengthened fire man -
+agement has the potential to offset part of the climate-  driven in-
+crease in burned area, provided that institutional capacity and 
+policy commitment are maintained. Under stronger warming, 
+however, increasingly severe fire weather is likely to exceed the 
+mitigating potential of fire management alone, underscoring that 
+climate mitigation and adaptation are complementary rather 
+than interchangeable strategies for reducing future wildfire risk.
+Author Contributions
+Luke Oberhagemann:  methodology, writing – review and editing. 
+Christoph Müller:  methodology, writing – review and editing. Simon 
+P. K. Bowring:  conceptualization, writing – review and editing. 
+Matthew Forrest:  conceptualization, methodology, writing – review 
+and editing. Susanne Rolinski:  methodology, writing – review and 
+editing. Alex N. Neidermeier:  writing – review and editing. Thomas 
+Hickler: supervision, funding acquisition, conceptualization, writing 
+– review and editing. Maik Billing:  conceptualization, writing – orig -
+inal draft, writing – review and editing, visualization, formal analysis, 
+investigation, methodology. Kirsten Thonicke:  supervision, funding 
+acquisition, conceptualization, writing – review and editing. Jessica 
+Hetzer: writing – review and editing. Werner von Bloh: writing – re -
+view and editing, investigation, methodology.
+Acknowledgements
+This study has received funding from the European Union's Horizon 
+2020 research and innovation programme under grant agreement No 
+101003890 (FirEUrisk). The authors gratefully acknowledge the Ministry 
+of Research, Science and Culture (MWFK) of Land Brandenburg for 
+supporting this project by providing resources on the high performance 
+computer system at the Potsdam Institute for Climate Impact Research 
+(Grant No. 22-  Z105- 05/002/001). This research has been supported by 
+the Deutsche Forschungsgemeinschaft grant no. (GRK 2043/2). Open 
+Access funding enabled and organized by Projekt DEAL.
+Funding
+This project has been granted funding from the European Union’s 
+Horizon 2020 research and innovation programme under the Grant 
+Agreement no. 101003890, the Ministry of Research, Science and 
+Culture (MWFK) of Land Brandenburg (22-  Z105- 05/002/001) and 
+Deutsche Forschungsgemeinschaft (GRK 2043/2).
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Data Availability Statement
+The data that support the findings of this study are openly available in 
+Zenodo at https:// doi. org/ 10. 5281/ zenodo. 18740007.
+Endnotes
+ 1 https:// fores t-  fire. emerg ency. coper nicus. eu/ apps/ effis. stati stics/  estim 
+ates/ ESP.
+References
+Amatulli, G., A. Camia, and J. San-  Miguel- Ayanz. 2013. “Estimating 
+Future Burned Areas Under Changing Climate in the EU- Mediterranean 
+Countries.” Science of the Total Environment  450–451: 209–222. https:// 
+doi. org/ 10. 1016/j. scito tenv. 2013. 02. 014.
+Arango, E., P. Jiménez, M. Nogal, H. S. Sousa, M. G. Stewart, and J. 
+C. Matos. 2024. “Enhancing Infrastructure Resilience in Wildfire 
+Management to Face Extreme Events: Insights From the Iberian 
+Peninsula.” Climate Risk Management  44: 100595. https:// doi. org/ 10. 
+1016/j. crm. 2024. 100595.
+Arora, V. K., and G. J. Boer. 2005. “Fire as an Interactive Component 
+of Dynamic Vegetation Models.” Journal of Geophysical Research: 
+Biogeosciences  110, no. G2: 2008. https:// doi. org/ 10. 1029/ 2005j 
+g000042 .
+Arrogante-  Funes, F., F. Mouillot, B. Moreira, I. Aguado, and E. 
+Chuvieco. 2024. “Mapping and Assessment of Ecological Vulnerability 
+to Wildfires in Europe.” Fire Ecology  20, no. 1: 1–31. https:// doi. org/ 10. 
+1186/ s4240 8-  024-  00321 -  8.
+Berčák, R., J. Holuša, J. Trombik, K. Resnerová, and T. Hlásny. 2024. 
+“A Combination of Human Activity and Climate Drives Forest Fire 
+Occurrence in Central Europe: The Case of The Czech Republic.” Fire 7, 
+no. 4: 109. https:// doi. org/ 10. 3390/ fire7 040109.
+Bondeau, A., P. C. Smith, S. Zaehle, et al. 2007. “Modelling the Role of 
+Agriculture for the 20th Century Global Terrestrial Carbon Balance.” 
+Global Change Biology  13, no. 3: 679–706. https:// doi. org/ 10. 1111/j. 
+1365-  2486. 2006. 01305. x.
+Bountzouklis, C., D. M. Fox, and E. Di Bernardino. 2022. “Environmental 
+Factors Affecting Wildfire-  Burned Areas in Southeastern France, 
+1970–2019.” Natural Hazards and Earth System Sciences  22, no. 4: 1181–
+1200. https:// doi. org/ 10. 5194/ nhess -  22-  1181-  2022.
+Bousfield, C. G., O. Morton, D. B. Lindenmayer, A. F. A. Pellegrini, M. 
+G. Hethcoat, and D. P. Edwards. 2025. “Global Risk of Wildfire Across 
+Timber Production Systems.” Nature Communications  16, no. 1: 1–8. 
+https:// doi. org/ 10. 1038/ s4146 7-  025-  59272 -  6.
+Bowman, D. M. J. S., J. K. Balch, P. Artaxo, et al. 2009. “Fire in the Earth 
+System.” Science 324, no. 5926: 481–484. https:// doi. org/ 10. 1126/ scien 
+ce. 1163886.
+Buhaug, H., and J. Vestby. 2019. “On Growth Projections in the Shared 
+Socioeconomic Pathways.” Global Environmental Politics  19, no. 4: 118–
+132. https:// doi. org/ 10. 1162/ glep_a_ 00525 .
+Burton, C., S. Lampe, D. I. Kelley, et  al. 2024. “Global Burned Area 
+Increasingly Explained by Climate Change.” Nature Climate Change 14, 
+no. 11: 1186–1192. https:// doi. org/ 10. 1038/ s4155 8-  024-  02140 -  w.
+Carlucci, M., I. Zambon, A. Colantoni, and L. Salvati. 2019. 
+“Socioeconomic Development, Demographic Dynamics and Forest 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 16
+16 of 19
+ Global Change Biology, 2026
+Fires in Italy, 1961–2017: A Time- Series Analysis.” Sustainability (Basel, 
+Switzerland)  11, no. 5: 1305. https:// doi. org/ 10. 3390/ su110 51305 .
+Chuvieco, E., I. Aguado, J. Salas, M. García, M. Yebra, and P. Oliva. 
+2020. “Satellite Remote Sensing Contributions to Wildland Fire Science 
+and Management.” Current Forestry Reports  6, no. 2: 81–96. https:// doi. 
+org/ 10. 1007/ S4072 5-  020-  00116 -  5/ TABLES/ 1.
+Chuvieco, E., M. L. Pettinari, N. Koutsias, M. Forkel, S. Hantson, and M. 
+Turco. 2021. “Human and Climate Drivers of Global Biomass Burning 
+Variability.” Science of the Total Environment  779: 146361. https:// doi. 
+org/ 10. 1016/j. scito tenv. 2021. 146361.
+Cruz- Castro, L., and L. Sanz-  Menéndez. 2016. “The Effects of the 
+Economic Crisis on Public Research: Spanish Budgetary Policies and 
+Research Organizations.” Technological Forecasting and Social Change  
+113: 157–167. https:// doi. org/ 10. 1016/j. techf ore. 2015. 08. 001.
+Curt, T., A. Schaffhauser, L. Borgniet, et al. 2011. “Litter Flammability 
+in Oak Woodlands and Shrublands of Southeastern France.” Forest 
+Ecology and Management  261, no. 12: 2214–2222. https:// doi. org/ 10. 
+1016/j. foreco. 2010. 12. 002.
+De Frenne, P., J. Lenoir, M. Luoto, et al. 2021. “Forest Microclimates and 
+Climate Change: Importance, Drivers and Future Research Agenda.” 
+Global Change Biology  27, no. 11: 2279–2297. https:// doi. org/ 10. 1111/ 
+gcb. 15569 .
+de Magalhães, R. M. Q., and D. W. Schwilk. 2012. “Leaf Traits and 
+Litter Flammability: Evidence for Non-  Additive Mixture Effects in a 
+Temperate Forest.” Journal of Ecology  100, no. 5: 1153–1163. https:// doi. 
+org/ 10. 1111/j. 1365-  2745. 2012. 01987. x.
+Dou, Y., C. Zagaria, L. O'Connor, W. Thuiller, and P. H. Verburg. 2023. 
+“Using the Nature Futures Framework as a Lens for Developing Plural 
+Land Use Scenarios for Europe for 2050.” Global Environmental Change  
+83: 102766. https:// doi. org/ 10. 1016/j. gloen vcha. 2023. 102766.
+Drüke, M., M. Forkel, W. Von Bloh, et al. 2019. “Improving the LPJmL4- 
+SPITFIRE Vegetation-  Fire Model for South America Using Satellite 
+Data.” Geoscientific Model Development  12, no. 12: 5029–5054. https:// 
+doi. org/ 10. 5194/ gmd-  12-  5029-  2019.
+EC- Earth Consortium (EC-  Earth). 2020. EC- Earth- Consortium EC-  
+Earth3- Veg- LR Model Output Prepared for CMIP6 CMIP . Earth System 
+Grid Federation. https:// www. wdc-  clima te. de/ ui/ entry? acron ym= C6_ 
+5189603.
+El Garroussi, S., F. Di Giuseppe, C. Barnard, and F. Wetterhall. 2024. 
+“Europe Faces up to Tenfold Increase in Extreme Fires in a Warming 
+Climate.” NPJ Climate and Atmospheric Science  7, no. 1: 1–11. https:// 
+doi. org/ 10. 1038/ s4161 2-  024-  00575 -  8.
+ESA. 2017. “Land Cover CCI: Product User Guide.” 1–91.
+Eyring, V., S. Bony, G. A. Meehl, et al. 2016. “Overview of the Coupled 
+Model Intercomparison Project Phase 6 (CMIP6) Experimental Design 
+and Organization.” Geoscientific Model Development  9, no. 5: 1937–1958. 
+https:// doi. org/ 10. 5194/ gmd-  9-  1937-  2016.
+Fernandes, P. M., A. M. G. Barros, A. Pinto, and J. A. Santos. 2016. 
+“Characteristics and Controls of Extremely Large Wildfires in the 
+Western Mediterranean Basin.” Journal of Geophysical Research: 
+Biogeosciences  121, no. 8: 2141–2157. https:// doi. org/ 10. 1002/ 2016J 
+G003389.
+Fernandez- Anez, N., A. Krasovskiy, M. Müller, et  al. 2021. “Current 
+Wildland Fire Patterns and Challenges in Europe: A Synthesis of 
+National Perspectives.” Air, Soil and Water Research  14. https:// doi. org/ 
+10. 1177/ 11786 22121 10281 85/ ASSET/   IMAGES/  LARGE/   10. 1177_ 11786 
+22121 10281 85-  FIG6. JPEG.
+Forrest, M., J. Hetzer, M. Billing, and S. P. K. Bowring. 2024. 
+“Understanding and Simulating Cropland and Non-  Cropland Burning 
+in Europe Using the BASE (Burnt Area Simulator for Europe) 
+Model.” Biogeosciences 21, no. 23: 5539–5560. https:// doi. org/ 10. 5194/ 
+BG-  21-  5539-  2024.
+Galizia, L. F., T. Curt, R. Barbero, and M. Rodrigues. 2021. 
+“Understanding Fire Regimes in Europe.” International Journal of 
+Wildland Fire  31, no. 1: 56–66. https:// doi. org/ 10. 1071/ WF21081.
+Hantson, S., A. Arneth, S. P. Harrison, et  al. 2016. “The Status and 
+Challenge of Global Fire Modelling.” Biogeosciences  13, no. 11: 3359–
+3375. https:// doi. org/ 10. 5194/ bg-  13-  3359-  2016.
+Hantson, S., D. I. Kelley, A. Arneth, et  al. 2020. “Quantitative 
+Assessment of Fire and Vegetation Properties in Simulations With 
+Fire- Enabled Vegetation Models From the Fire Model Intercomparison 
+Project.” Geoscientific Model Development  13, no. 7: 3299–3318. https:// 
+doi. org/ 10. 5194/ gmd-  13-  3299-  2020.
+He, T., B. B. Lamont, and J. G. Pausas. 2019. “Fire as a Key Driver of 
+Earth's Biodiversity.” Biological Reviews  94, no. 6: 1983–2010. https:// 
+doi. org/ 10. 1111/ brv. 12544 .
+Hegglin, M., D. Kinnison, and J.-  F. Lamarque. 2016. CCMI Nitrogen 
+Surface Fluxes in Support of CMIP6—Version 2.0 . Earth System Grid 
+Federation. https:// doi. org/ 10. 22033/  ESGF/ input 4MIPs. 1125.
+Hegglin, M., D. Kinnison, and J.-  F. Lamarque. 2018a. input4MIPs.
+CMIP6.ScenarioMIP.NCAR.NCAR-  CCMI- ssp126- 1- 0. Earth System 
+Grid Federation. https:// doi. org/ 10. 22033/  ESGF/ input 4MIPs. 9521.
+Hegglin, M., D. Kinnison, and J.-  F. Lamarque. 2018b. input4MIPs.
+CMIP6.ScenarioMIP.NCAR.NCAR-  CCMI- ssp370- 1- 0. Earth System 
+Grid Federation. https:// doi. org/ 10. 22033/  ESGF/ input 4MIPs. 9523.
+Hetzer, J., M. Forrest, J. Ribalaygua, C. Prado-  López, and T. Hickler. 
+2024. “The Fire Weather in Europe: Large- Scale Trends Towards Higher 
+Danger.” Environmental Research Letters  19, no. 8: 084017. https:// doi. 
+org/ 10. 1088/ 1748-  9326/ ad5b09.
+Horn, K. H., S. Vulova, H. Li, and B. Kleinschmit. 2024. “Modelling 
+Current and Future Forest Fire Susceptibility in North-  East Germany.” 
+Natural Hazards and Earth System Sciences  25, no. May: 1–26. https:// 
+doi. org/ 10. 5194/ NHESS -  25-  383-  2025.
+Integrated Biospheres Futures (IBF), I. I. for A. S. A. (IIASA). 2023. 
+“Global Biosphere Management Model (GLOBIOM) Documentation 
+2023—Version 1.0.” In International Institute for Applied Systems 
+Analysis (IIASA) . International Institute for Applied Systems 
+Analysis.
+Kelley, D. I., C. Burton, F. Di Giuseppe, et al. 2025. “State of Wildfires 
+2024–2025.” Earth System Science Data  17, no. 10: 5377–5488. https:// 
+doi. org/ 10. 5194/ essd-  17-  5377-  2025.
+Khabarov, N., A. Krasovskii, M. Obersteiner, et al. 2016. “Forest Fires 
+and Adaptation Options in Europe.” Regional Environmental Change  
+16, no. 1: 21–30. https:// doi. org/ 10. 1007/ s1011 3-  014-  0621-  0.
+Knorr, W., T. Kaminski, A. Arneth, and U. Weber. 2014. “Impact 
+of Human Population Density on Fire Frequency at the Global 
+Scale.” Biogeosciences  11, no. 4: 1085–1102. https:// doi. org/ 10. 5194/ 
+bg-  11-  1085-  2014.
+Kreider, M. R., P. E. Higuera, S. A. Parks, W. L. Rice, N. White, and 
+A. J. Larson. 2024. “Fire Suppression Makes Wildfires More Severe 
+and Accentuates Impacts of Climate Change and Fuel Accumulation.” 
+Nature Communications  15, no. 1: 1–11. https:// doi. org/ 10. 1038/ s4146 7-  
+024-   46702 -  0.
+Kummu, M., M. Taka, and J. H. A. Guillaume. 2018. “Gridded Global 
+Datasets for Gross Domestic Product and Human Development Index 
+Over 1990–2015.” Scientific Data  5, no. 1: 1–15. https:// doi. org/ 10. 1038/ 
+sdata. 2018. 4.
+Le Page, Y., D. Morton, B. Bond-  Lamberty, J. M. C. Pereira, and G. 
+Hurtt. 2015. “HESFIRE: A Global Fire Model to Explore the Role of 
+Anthropogenic and Weather Drivers.” Biogeosciences  12, no. 3: 887–903. 
+https:// doi. org/ 10. 5194/ bg-  12-  887-  2015.
+Li, F., M. Val Martin, M. O. Andreae, et al. 2019. “Historical (1700-  2012) 
+Global Multi-  Model Estimates of the Fire Emissions From the Fire 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 17
+17 of 19
+Global Change Biology, 2026
+Modeling Intercomparison Project (FireMIP).” Atmospheric Chemistry 
+and Physics  19, no. 19: 12545–12567. https:// doi. org/ 10. 5194/ acp-  19-  
+12545 -  2019.
+Lindenmayer, D. B., M. Yebra, and G. J. Cary. 2023. “Better Managing 
+Fire in Flammable Tree Plantations.” Forest Ecology and Management  
+528: 120641. https:// doi. org/ 10. 1016/j. foreco. 2022. 120641.
+Lizundia- Loiola, J., G. Otón, R. Ramo, and E. Chuvieco. 2020. “A Spatio- 
+Temporal Active-  Fire Clustering Approach for Global Burned Area 
+Mapping at 250 m From MODIS Data.” Remote Sensing of Environment  
+236: 111493. https:// doi. org/ 10. 1016/j. rse. 2019. 111493.
+Lutz, F., T. Herzfeld, J. Heinke, et  al. 2019. “Simulating the Effect of 
+Tillage Practices With the Global Ecosystem Model LPJmL (Version 
+5.0- Tillage).” Geoscientific Model Development  12, no. 6: 2419–2440. 
+https:// doi. org/ 10. 5194/ gmd-  12-  2419-  2019.
+Malek, Ž., P. H. Verburg, I. R Geijzendorffer, A. Bondeau, and W. 
+Cramer. 2018. “Global Change Effects on Land Management in the 
+Mediterranean Region.” Global Environmental Change  50: 238–254. 
+https:// doi. org/ 10. 1016/j. gloen vcha. 2018. 04. 007.
+Marshall, E., A. Dorph, B. Holyland, A. Filkov, and T. D. Penman. 2022. 
+“Suppression Resources and Their Influence on Containment of Forest 
+Fires in Victoria.” International Journal of Wildland Fire  31, no. 12: 
+1144–1154. https:// doi. org/ 10. 1071/ WF22029.
+McCarthy, N. F., T. Duff, K. Butler, and S. Deutsch. 2023. “Bottlenecks, 
+Feedbacks and Thresholds in Wildfire Suppression.” Proceedings of the 
+International Congress on Modelling and Simulation, MODSIM, 577–
+582. https:// doi. org/ 10. 36334/  modsim. 2023. mccarthy.
+Meier, S., R. J. R. Elliott, and E. Strobl. 2023. “The Regional Economic 
+Impact of Wildfires: Evidence From Southern Europe.” Journal of 
+Environmental Economics and Management  118: 102787. https:// doi. 
+org/ 10. 1016/j. jeem. 2023. 102787.
+Migliavacca, M., A. Dosio, A. Camia, et  al. 2013. “Modeling Biomass 
+Burning and Related Carbon Emissions During the 21st Century in 
+Europe.” Journal of Geophysical Research: Biogeosciences  118, no. 4: 
+1732–1747. https:// doi. org/ 10. 1002/ 2013J G002444.
+Moreira, F., O. Viedma, M. Arianoutsou, et  al. 2011. “Landscape – 
+Wildfire Interactions in Southern Europe: Implications for Landscape 
+Management.” Journal of Environmental Management  92, no. 10: 2389–
+2402. https:// doi. org/ 10. 1016/J. JENVM AN. 2011. 06. 028.
+Müller, W. A., J. H. Jungclaus, T. Mauritsen, et  al. 2018. “A Higher- 
+Resolution Version of the Max Planck Institute Earth System Model 
+(MPI- ESM1.2- HR).” Journal of Advances in Modeling Earth Systems  10, 
+no. 7: 1383–1413. https:// doi. org/ 10. 1029/ 2017M S001217.
+Nachtergaele, F., H. van Velthuizen, L. Verelst, et al. 2012. “Harmonized 
+World Soil Database Version 1.2. Food and Agriculture Organization 
+of the United Nations (FAO).” 19th World Congress of Soil Science, Soil 
+Solutions for a Changing World. http:// www. fao. org/ soils -  portal/ data-  
+hub/ soil-  maps-  and-  datab ases/ harmo nized -  world -  soil-  datab ase-  v12/ en/ .
+Neidermeier, A. N., T. A. P. West, and P. H. Verburg. 2025. “Navigating 
+Trade- Offs in Carbon Storage, Biodiversity, and Wildfire Risk in 
+European Landscape Management.” Ecosystem Services  74: 101751. 
+https:// doi. org/ 10. 1016/j. ecoser. 2025. 101751.
+Neidermeier, A. N., C. Zagaria, V. Pampanoni, T. A. P. West, and P. H. 
+Verburg. 2023. “Mapping Opportunities for the Use of Land Management 
+Strategies to Address Fire Risk in Europe.” Journal of Environmental 
+Management 346: 118941. https:// doi. org/ 10. 1016/j. jenvm an. 2023. 118941.
+Oberhagemann, L., M. Billing, W. von Bloh, et  al. 2025. “Sources 
+of Uncertainty in the SPITFIRE Global Fire Model: Development 
+of LPJmL-  SPITFIRE1.9 and Directions for Future Improvements.” 
+Geoscientific Model Development  18, no. 6: 2021–2050. https:// doi. org/ 
+10. 5194/ GMD-  18-  2021-  2025.
+Oecd, and Ocde. 2011. “Making the Most of Public Investment in a Tight 
+Fiscal Environment: Multi-  Level Governance Lessons From the Crisis.” 
+In Making the Most of Public Investment in a Tight Fiscal Environment: 
+Multi- Level Governance Lessons From the Crisis , vol. 9789264114. 
+OECD. https:// doi. org/ 10. 1787/ 97892 64114 470-  en.
+Ostberg, S., C. Müller, J. Heinke, and S. Schaphoff. 2023. “LandInG 1.0: 
+A Toolbox to Derive Input Datasets for Terrestrial Ecosystem Modelling 
+at Variable Resolutions From Heterogeneous Sources.” Geoscientific 
+Model Development  16, no. 11: 3375–3406. https:// doi. org/ 10. 5194/ 
+gmd-  16-  3375-  2023.
+Otón, G., J. M. C. Pereira, J. M. N. Silva, and E. Chuvieco. 2021. 
+“Analysis of Trends in the Firecci Global Long Term Burned Area 
+Product (1982–2018).” Fire 4, no. 4: 74. https:// doi. org/ 10. 3390/ fire4 
+040074 .
+Pausas, J. G., and J. E. Keeley. 2021. “Wildfires and Global Change.” 
+Frontiers in Ecology and the Environment  19, no. 7: 387–395. https:// doi. 
+org/ 10. 1002/ FEE. 2359.
+Pechony, O., and D. T. Shindell. 2009. “Fire Parameterization on a 
+Global Scale.” Journal of Geophysical Research. Atmospheres  114, no. 16: 
+16115. https:// doi. org/ 10. 1029/ 2009J D011927.
+Perkins, O., M. Kasoar, A. Voulgarakis, C. Smith, J. Mistry, and J. D. A. 
+Millington. 2024. “A Global Behavioural Model of Human Fire Use and 
+Management: WHAM! v1.0.” Geoscientific Model Development  17, no. 9: 
+3993–4016. https:// doi. org/ 10. 5194/ gmd-  17-  3993-  2024.
+Perkins, O., A. Saxena, B. Seo, J. Millington, C. Brown, and M. 
+Rounsevell. 2024. “Gridded Socio-  Economic Capitals for the SSPs [Data 
+Set].” Zenodo. https:// doi. org/ 10. 5281/ ZENODO. 14178582.
+Popp, A., K. Calvin, S. Fujimori, et al. 2017. “Land-  Use Futures in the 
+Shared Socio-  Economic Pathways.” Global Environmental Change  42: 
+331–345. https:// doi. org/ 10. 1016/j. gloen vcha. 2016. 10. 002.
+Preinfalk, E., and J. Handmer. 2024. “Fueling the Fires – An 
+Exploration of the Drivers and the Scope for Management of 
+European Wildfire Risk Under the Shared Socioeconomic Pathways.” 
+Climate Risk Management  45: 100638. https:// doi. org/ 10. 1016/J. CRM. 
+2024.  100638.
+Prentice, I. C., A. Bondeau, W. Cramer, et  al. 2007. “Dynamic Global 
+Vegetation Modeling: Quantifying Terrestrial Ecosystem Responses 
+to Large-  Scale Environmental Change.” In Terrestrial Ecosystems in a 
+Changing World , 175–192. Springer. https:// doi. org/ 10. 1007/ 978-  3-  540-  
+32730 -  1_ 15.
+R Core Team. 2019. R: A Language and Environment for Statistical 
+Computing. R Foundation for Statistical Computing.
+Randerson, J. T., G. R. er Werf, L. Giglio, G. J. Collatz, and P. S. 
+Kasibhatla. 2017. Global Fire Emissions Database, Version 4.1 (GFEDv4) . 
+ORNL Distributed Active Archive Center. https:// doi. org/ 10. 3334/ 
+ORNLD AAC/ 1293.
+Rothermel, R. C. 1972. A Mathematical Model for Predicting Fire Spread 
+in Wildland Fuels. Res. Pap. INT-  115. U.S. Department of Agriculture, 
+Intermountain Forest and Range Experiment Station.
+Saleh, A., M. A. Zulkifley, H. H. Harun, F. Gaudreault, I. Davison, and 
+M. Spraggon. 2024. “Forest Fire Surveillance Systems: A Review of 
+Deep Learning Methods.” Heliyon 10, no. 1: e23127.
+San- Miguel- Ayanz, J., J. M. Moreno, and A. Camia. 2013. “Analysis of 
+Large Fires in European Mediterranean Landscapes: Lessons Learned 
+and Perspectives.” Forest Ecology and Management  294: 11–22. https:// 
+doi. org/ 10. 1016/J. FORECO. 2012. 10. 050.
+Schaphoff, S., M. Forkel, C. Müller, et al. 2018. “LPJmL4—A Dynamic 
+Global Vegetation Model With Managed Land—Part 2: Model 
+Evaluation.” Geoscientific Model Development  11, no. 4: 1377–1403. 
+https:// doi. org/ 10. 5194/ gmd-  11-  1377-  2018.
+Schaphoff, S., W. Von Bloh, A. Rammig, et  al. 2018. “LPJmL4—A 
+Dynamic Global Vegetation Model With Managed Land—Part 1: Model 
+Description.” Geoscientific Model Development  11, no. 4: 1343–1375. 
+https:// doi. org/ 10. 5194/ gmd-  11-  1343-  2018.
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 18
+18 of 19
+ Global Change Biology, 2026
+Schulzweida, U. 2022. “CDO User Guide [Online].” https:// doi. org/ 10. 
+5281/ ZENODO. 10020800.
+Séférian, R., P. Nabat, M. Michou, et  al. 2019. “Evaluation of CNRM 
+Earth System Model, CNRM-  ESM2- 1: Role of Earth System Processes 
+in Present-  Day and Future Climate.” Journal of Advances in Modeling 
+Earth Systems  11, no. 12: 4182–4227. https:// doi. org/ 10. 1029/ 2019M 
+S001791.
+Sil, Â., P. M. Fernandes, A. P. Rodrigues, et  al. 2019. “Farmland 
+Abandonment Decreases the Fire Regulation Capacity and the Fire 
+Protection Ecosystem Service in Mountain Landscapes.” Ecosystem 
+Services  36: 100908. https:// doi. org/ 10. 1016/j. ecoser. 2019. 100908.
+Stanton, E. A. 2025. “The Human Development Index: A History Item 
+Type Working Paper.” https:// doi. org/ 10. 7275/ 1282621.
+Swart, N. C., J. N. S. Cole, V. V. Kharin, et  al. 2019. “The Canadian 
+Earth System Model Version 5 (CanESM5.0.3).” Geoscientific 
+Model Development  12, no. 11: 4823–4873. https:// doi. org/ 10. 5194/ 
+gmd-  12-  4823-  2019.
+Synolakis, C. E., and G. M. Karagiannis. 2024. “Wildfire Risk 
+Management in the Era of Climate Change.” PNAS Nexus  3, no. 5: 151. 
+https:// doi. org/ 10. 1093/ pnasn exus/ pgae151.
+Teckentrup, L., S. P. Harrison, S. Hantson, et  al. 2019. “Response 
+of Simulated Burned Area to Historical Changes in Environmental 
+and Anthropogenic Factors: A Comparison of Seven Fire Models.” 
+Biogeosciences  16, no. 19: 3883–3910. https:// doi. org/ 10. 5194/ 
+bg-  16-  3883-  2019.
+Thonicke, K., A. Spessa, I. C. Prentice, S. P. Harrison, L. Dong, and C. 
+Carmona- Moreno. 2010. “The Influence of Vegetation, Fire Spread and 
+Fire Behaviour on Biomass Burning and Trace Gas Emissions: Results 
+From a Process-  Based Model.” Biogeosciences  7, no. 6: 1991–2011. 
+https:// doi. org/ 10. 5194/ bg-  7-  1991-  2010.
+Thonicke, K., S. Venevsky, S. Sitch, and W. Cramer. 2001. “The Role of 
+Fire Disturbance for Global Vegetation Dynamics: Coupling Fire Into a 
+Dynamic Global Vegetation Model.” Global Ecology and Biogeography  
+10, no. 6: 661–677. https:// doi. org/ 10. 1046/j. 1466-  822X. 2001. 00175. x.
+Tian, H., J. Yang, C. Lu, et  al. 2018. “The Global N 2O Model 
+Intercomparison Project.” Bulletin of the American Meteorological 
+Society  99, no. 6: 1231–1251. https:// doi. org/ 10. 1175/ BAMS-  D-  17-  0212. 1.
+Turco, M., J. Bedia, F. Di Liberto, et  al. 2016. “Decreasing Fires in 
+Mediterranean Europe.” PLoS One 11, no. 3: e0150663. https:// doi. org/ 
+10. 1371/ journ al. pone. 0150663.
+Turco, M., J. J. Rosa- Cánovas, J. Bedia, et al. 2018. “Exacerbated Fires in 
+Mediterranean Europe due to Anthropogenic Warming Projected With 
+Non- Stationary Climate- Fire Models.” Nature Communications  9, no. 1: 
+3821. https:// doi. org/ 10. 1038/ s4146 7-  018-  06358 -  z.
+Urbieta, I. R., M. Franquesa, O. Viedma, and J. M. Moreno. 2019. “Fire 
+Activity and Burned Forest Lands Decreased During the Last Three 
+Decades in Spain.” Annals of Forest Science  76, no. 3: 1–13. https:// doi. 
+org/ 10. 1007/ s1359 5-  019-  0874-  3.
+Van Asselen, S., and P. H. Verburg. 2013. “Land Cover Change or 
+Land- Use Intensification: Simulating Land System Change With a 
+Global- Scale Land Change Model.” Global Change Biology  19, no. 12: 
+3648–3667. https:// doi. org/ 10. 1111/ gcb. 12331 .
+Vannière, B., O. Blarquez, D. Rius, et  al. 2016. “7000-  Year Human 
+Legacy of Elevation-  Dependent European Fire Regimes.” Quaternary 
+Science Reviews  132: 206–212. https:// doi. org/ 10. 1016/j. quasc irev. 2015. 
+11. 012.
+Venevsky, S., K. Thonicke, S. Sitch, and W. Cramer. 2002. “Simulating 
+Fire Regimes in Human-  Dominated Ecosystems: Iberian Peninsula 
+Case Study.” Global Change Biology  8, no. 10: 984–998. https:// doi. org/ 
+10. 1046/j. 1365-  2486. 2002. 00528. x.
+Viedma, O., N. Moity, and J. M. Moreno. 2015. “Changes in Landscape 
+Fire- Hazard During the Second Half of the 20th Century: Agriculture 
+Abandonment and the Changing Role of Driving Factors.” Agriculture, 
+Ecosystems and Environment  207: 126–140. https:// doi. org/ 10. 1016/j. 
+agee. 2015. 04. 011.
+von Bloh, W., S. Schaphoff, C. Müller, S. Rolinski, K. Waha, and S. 
+Zaehle. 2018. “Implementing the Nitrogen Cycle Into the Dynamic 
+Global Vegetation, Hydrology, and Crop Growth Model LPJmL (Version 
+5.0).” Geoscientific Model Development  11, no. 7: 2789–2812. https:// doi. 
+org/ 10. 5194/ gmd-  11-  2789-  2018.
+Wang, X., X. Meng, and Y. Long. 2022. “Projecting 1 km- Grid Population 
+Distributions From 2020 to 2100 Globally Under Shared Socioeconomic 
+Pathways.” Scientific Data  9, no. 1: 1–13. https:// doi. org/ 10. 1038/ s4159 
+7-  022-  01675 -  x.
+Winkler, K., R. Fuchs, M. Rounsevell, and M. Herold. 2021. “Global 
+Land Use Changes Are Four Times Greater Than Previously Estimated.” 
+Nature Communications  12, no. 1: 1–10. https:// doi. org/ 10. 1038/ s4146 7-  
+021-  22702 -  2.
+Wirth, S. B., J. Braun, J. Heinke, et  al. 2024. “Biological Nitrogen 
+Fixation of Natural and Agricultural Vegetation Simulated With LPJmL 
+5.7.9.” Geoscientific Model Development  17, no. 21: 7889–7914. https:// 
+doi. org/ 10. 5194/ GMD-  17-  7889-  2024.
+Wu, M., W. Knorr, K. Thonicke, G. Schurgers, A. Camia, and A. Arneth. 
+2015. “Sensitivity of Burned Area in Europe to Climate Change, 
+Atmospheric CO2 Levels, and Demography: A Comparison of Two Fire- 
+Vegetation Models.” Journal of Geophysical Research: Biogeosciences  
+120, no. 11: 2256–2272. https:// doi. org/ 10. 1002/ 2015J G003036.
+Zald, H. S. J., and C. J. Dunn. 2018. “Severe Fire Weather and Intensive 
+Forest Management Increase Fire Severity in a Multi-  Ownership 
+Landscape.” Ecological Applications  28, no. 4: 1068–1080. https:// doi. 
+org/ 10. 1002/ eap. 1710.
+Ziehn, T., M. A. Chamberlain, R. M. Law, et al. 2020. “The Australian 
+Earth System Model: ACCESS-  ESM1.5.” Journal of Southern 
+Hemisphere Earth Systems Science  70, no. 1: 193–214. https:// doi. org/ 10. 
+1071/ ES19035.
+Supporting Information
+Additional supporting information can be found online in the 
+Supporting Information section. Figure S1:  Annual burnt area for 
+the SPITFIRE simulations (green), BASE simulations (blue) and the 
+satellite- based GFED4s product (red). Model simulations show coher -
+ent fluctuations compared to observations despite differences in magni -
+tude. Figure S2:  Mean fraction of grid cell burnt of the satellite-  based 
+GFED4s product (Panel A), SPITFIRE simulations (Panel B) and BASE 
+(Panel C) – and difference maps in panels D and E. Both modelling ap -
+proaches also show high burnt area in Southern Europe as the obser -
+vations, but generally overestimate burnt area in Southern Spain while 
+underestimating wildfires in Northern Portugal. Figure S3:  Present-  
+day proportion of natural land (forests & natural grassland) per grid cell 
+averaged between 2000 and 2010 (Panel A) and average relative changes 
+of natural land until the end of the century (2090–2100) for SSP1-  2.6 
+(Panel B) and SSP3- 7.0 (Panel C). Figure S4:  Present- day proportion of 
+managed grasslands (pastures) per grid cell averaged between 2000 and 
+2010 (Panel A) and average relative changes of managed grassland until 
+the end of the century (2090–2100) for SSP1-  2.6 (Panel B) and SSP3-  7.0 
+(Panel C). Figure S5:  Present- day Canadian Fire Weather Index (FWI) 
+averaged between 2000 and 2030 (Panel A) and average relative changes 
+of FWI until the end of the century (2070–2100) for SSP1-  2.6 (Panel B) 
+and SSP3-  7.0 (Panel C). Figure S6:  Annual averaged Canadian Fire 
+Weather Index (FWI) across the whole simulation domain and GCMs 
+for SSP1- 2.6 and SSP3- 7.0. Figure S7: Present- day Human Development 
+Index (HDI) averaged between 2000 and 2030 (Panel A) and average 
+relative changes of HDI until the end of the century (2070–2100) for 
+SSP1- 2.6 (Panel B) and SSP3-  7.0 (Panel C). Figure S8:  Average Human 
+Development Index (HDI) across the simulation domain for SSP1-  2.6 
+and SSP3-  7.0. Figure S9:  Present-  day population density averaged 
+between 2000 and 2030 (Panel A) and average relative changes of 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 19
+19 of 19
+Global Change Biology, 2026
+population density until the end of the century (2070–2100) for SSP1- 
+2.6 (Panel B) and SSP3-  7.0 (Panel C). Figure S10:  Present-  day natural 
+grass cover per grid cell averaged between 2000 and 2030 (Panel A) and 
+average relative changes of natural grass cover until the end of the cen -
+tury (2070–2100) for SSP1-  2.6 (Panel B) and SSP3-  7.0 (Panel C). Figure 
+S11: Present-  day trees cover per grid cell averaged between 2000 and 
+2030 (Panel A) and average relative changes of tree cover until the end 
+of the century (2070–2100) for SSP1-  2.6 (Panel B) and SSP3-  7.0 (Panel 
+C). Figure S12:  Present-  day rate of human-  caused ignitions averaged 
+between 2000 and 2030 in the SPITFIRE model (Panel A) and average 
+relative changes until the end of the century (2070–2100) for SSP1-  2.6 
+(Panel B) and SSP3-  7.0 (Panel C). Figure S13:  Averaged annual sum of 
+burned area simulated by SPITFIRE (Panel A and B) and BASE (Panel 
+C and D) under SSP1- 2.6 (Panel A and C) and SSP3-  7.0 (Panel B and D). 
+Black lines illustrate simulations where all inputs were allowed to vary; 
+green lines simulations with constant land use; pink lines with constant 
+population density (both hold constant from year 2000). For both mod -
+els and scenarios holding land use or population density constant had 
+little effects. Figure S14:  Relative changes in simulated burned area be-
+tween years 2000–2030 and 2070–2100 for BASE under SSP1-  2.6 (panel 
+A, C) and SSP3-  7.0 (panel B, D). The lower panels (C & D) show simula-
+tions in which the Human Development Index (HDI) is held constant at 
+year 2000 levels. Figure S15:  Relative changes in simulated burnt area 
+between years 2000–2030 and 2070–2100 for SPITFIRE under SSP1-  2.6 
+(panel A, C) and SSP3-  7.0 (panel B, D). The lower panels (C & D) show 
+simulations in which population density is held constant at year 2000. 
+Figure S16:  Relative changes in simulated burnt area between years 
+2000–2030 and 2070–2100 for SPITFIRE under SSP1-  2.6 (panel A, C) 
+and SSP3-  7.0 (panel B, D). The lower panels (C & D) show simulations 
+in which land use is held constant at year 2000. Figure S17:  Relative 
+changes in simulated burnt area between years 2000–2030 and 2070–
+2100 for BASE under SSP1-  2.6 (panel A, C) and SSP3-  7.0 (panel B, D). 
+The lower panels (C & D) show simulations in which land use is held 
+constant at year 2000. Figure S18:  Relative changes in simulated burnt 
+area between years 2000–2030 and 2070–2100 for SPITFIRE under 
+SSP1- 2.6 (panel A) and SSP3-  7.0 (panel B) for each GCM. Figure S19:  
+Relative changes in simulated burnt area between years 2000–2030 and 
+2070–2100 for BASE under SSP1- 2.6 (panel A) and SSP3- 7.0 (panel B) for 
+each GCM. Figure S20:  Inter- model uncertainty in projected burned 
+area change across Europe. Spatial distribution of the standard devi -
+ation of ordinal burned area change classes across five global climate 
+model (GCM) simulations. Panels illustrate uncertainty in SPITFIRE 
+simulations (A and B), in BASE (C and D) and for each SSP scenario (A 
+& C, B & D respectively). Higher values indicate greater disagreement 
+among models in the projected burned area change, while lower val -
+ues indicate stronger inter- model agreement. Figure S21:  Spatial pat -
+terns of Pearson correlation coefficients between annual burned area 
+and annual fire weather index (FWI) (panel A & B), vegetation carbon 
+(panel C & D), and fuel load (panel E & F) across Europe for SPITFIRE. 
+Correlations were calculated at each grid cell using annual values over 
+the full simulation period for each GCM separately. Figure S22:  Spatial 
+patterns of Pearson correlation coefficients between annual burned 
+area and annual fire weather index (FWI) (panel A & B), vegetation car -
+bon (panel C & D), and fuel load (panel E & F) across Europe for BASE. 
+Correlations were calculated at each grid cell using annual values over 
+the full simulation period for each GCM separately. 
+ 13652486, 2026, 8, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.71043 by Universiti Bolzano, Wiley Online Library on [21/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

@@ -1,0 +1,710 @@
+PAGE 1
+Article
+Biological Legacies and Rockfall: The Protective Effect of a
+Windthrown Forest
+Maximiliano Costa 1, * , Niccolò Marchi 1, Francesco Bettella 1 , Paola Bolzon 1, Frédéric Berger 2
+and Emanuele Lingua 1
+/gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045/gid00001
+/gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046
+Citation: Costa, M.; Marchi, N.;
+Bettella, F.; Bolzon, P .; Berger, F.;
+Lingua, E. Biological Legacies and
+Rockfall: The Protective Effect of a
+Windthrown Forest. Forests 2021, 12,
+1141. https://doi.org/10.3390/
+f12091141
+Academic Editor: Jean-Claude Ruel
+Received: 15 July 2021
+Accepted: 16 August 2021
+Published: 24 August 2021
+Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
+iations.
+Copyright: © 2021 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+1 Department of Land, Environment, Agriculture and Forestry (TESAF), University of Padua,
+35020 Legnaro, PD, Italy; niccolo.marchi@unipd.it (N.M.); francesco.bettella@unipd.it (F.B.);
+paola.bolzon@unipd.it (P .B.); emanuele.lingua@unipd.it (E.L.)
+2
+Unité de Recherche É rosion Torrentielle, Neige et Avalanches (INRAE, UR ETNA), French National Research
+Institute for Agriculture, Food and the Environment, 38402 St-Martin-d’H ères, France;
+frederic.berger@inrae.fr
+* Correspondence: maximiliano.costa@phd.unipd.it
+Abstract: Windstorms represent one of the main large-scale disturbances that shape the European
+landscape and inﬂuence its forest structure, so post-event restoration activities start to gain a major
+role in mountainous forest management. After a disturbance event, biological legacies may enhance
+or maintain multiple ecosystem services of mountain forests such as protection against natural
+hazards, biodiversity conservation, or erosion mitigation. However, the conservation of all these
+ecosystem services after stand-replacing events could go against traditional management practices,
+such as salvage logging. Thus far, the impact of salvage logging and removal of biological legacies on
+the protective function of mountain stands has been poorly studied. Structural biological legacies may
+provide protection for natural regeneration and may also increase the terrain roughness providing a
+shielding effect against gravitational hazards like rockfall. The aim of this project is to understand
+the dynamics of post-windthrow recovery processes and to investigate how biological legacies affect
+the multifunctionality of mountain forests, in particular the protective function. To observe the
+role of biological legacies we performed 3000 simulations of rockfall activity on windthrown areas.
+Results show the active role of biological legacies in preventing gravitational hazards, providing
+a barrier effect and an energy reduction effect on rockfall activity . To conclude, we underline how
+forest management should take into consideration the protective function of structural legacies. A
+suggestion is to avoid salvage logging in order to maintain the multifunctionality of damaged stands
+during the recovery process.
+Keywords:
+biological legacies; windstorm; rockfall activity; protection forests; natural disturbances;
+mountain forest management
+1. Introduction
+Mountain forests provide multiple services, from timber production to the protection
+of infrastructures against natural hazards like rockfall, landslides, or avalanches [ 1]. Con-
+sidering the protective function, forests should always fulﬁll their role minimizing the risk
+exposure to local populations, therefore the interaction among natural hazards and moun-
+tain forests, as well as their management, has been widely studied [ 1–5]. Recently , rockfall
+research has been heading toward the study of simulation models [ 5–7], quantiﬁcation of
+the protective effect of forests [ 5,8], and the inﬂuence of rockfall on the forest structure [ 9].
+Natural disturbances (e.g., wildﬁres, windstorms, or insect outbreaks) may greatly affect
+the provision of ecosystem services by Alpine stands. Disturbances may undermine the
+mitigation effect that forests play as was observed after the windstorm Vivian in central
+Europe in the 1990s [
+10–12]. Moreover, natural disturbances are expected to increase in
+frequency and intensity in the coming years, especially in coniferous forests, mainly due to
+Forests 2021, 12, 1141. https://doi.org/10.3390/f12091141 https://www.mdpi.com/journal/forests
+
+PAGE 2
+Forests 2021, 12, 1141 2 of 16
+climate change [ 13]. A correct forest management should consider natural disturbances in
+order to plan a rapid and efﬁcient post-event restoration of a damaged area, in order to
+minimize the risk exposure and shorten the protection gap [ 12,14]. It is thus fundamental
+to recognize the role of biological legacies left by disturbances [ 15], since they can strongly
+inﬂuence both the post-disturbance recovery pattern [ 16,17] and the residual provision of
+ecosystem services through their type, number, and spatial arrangement. Regarding wind-
+storms, the main disturbance affecting European forests [ 13,18–20], the main structural
+legacies that are present on a windthrown site are lying logs, stumps and snags, or snapped
+trees. After the Vivian storm in Switzerland, it was observed that the presence of deadwood
+could have a positive effect in scattering the energy of falling blocks, due to an increase of
+terrain roughness [21]. However, a quantiﬁcation of this effect is still lacking, and it is not
+clear how long this effect may last. Although the wood decaying processes may decrease
+the protection provided by these material legacies over time [ 10], some studies suggest that
+lying logs may provide a barrier effect against snow and rocks even up to 30 years after the
+disturbance event [ 22]. In this paper, we present a case study of a protection forest located
+on the eastern Italian Alps. The target stand provided protection against rockfall until
+the 30 October 2018 when a massive windstorm, named Vaia, hit northern Italy , causing
+a loss of more than 10 million cubic meters of timber [
+23–25] and severely damaging the
+study site. This event modiﬁed the dynamics of interaction between the forested slope
+and rockfall events, hence the aim of this paper is to quantify the role played by biological
+legacies in providing a protective function in damaged protection forests. Results will
+allow to evaluate the effects of different post-disturbance management options, the ﬁrst of
+which is salvage logging.
+2. Materials and Methods
+2.1. Study Area
+The study site is located in the Dolomites, specifically on Mont e Pore, close to Colcuc
+village (46 ◦27′21′′ N, 11 ◦59′45′′ E), municipality of Colle Santa Lucia, in Belluno province,
+NE Italy (Figure 1). The site is on a south-western slope and has an elevation ra nging from
+1360 to 1710 m a.s.l. The main forest species is Norway spruce (Picea abies (L.) Karst.), with
+the sporadic presence of European larch ( Larix decidua Mill.) at higher elevations. On the 2
+of April 2004, the site was affected by a massive landslide (a round 4000 m 3 of material)
+that defined the site as “active” for rockfall concern. The s tudy site is crossed at different
+altitudes by a hiking/biking trail, a local, and a regional r oad. After the event, some
+concrete infrastructures and rockfall nets were built to mi nimize the risk for stakeholders
+(users of the trail and the local population). Some studies w ere started in the autumn
+of 2018 in order to evaluate and quantify the protective func tion of the forest stands of
+the area. However, on the 30 October 2018, the storm “Vaia” bl ew down most of the
+selected stands.
+2.2. Field Data
+2.2.1. Rockfall Activity
+To simulate rockfall events and study their interaction with the protection forest, we
+used the probabilistic process-based model Rockyfor3D [ 26]. A ﬁeld survey was conducted
+in summer 2018 in order to characterize the rockfall activity within the protection forest
+and to collect data required for the calibration of the rockfall model. Two transects were
+identiﬁed in the transit zone, one following the line of slope (vertical transect) and the
+other perpendicular to it (horizontal transect). The transects were 10 m wide and long
+enough to cover the entire length and width of the protection forest, equal to 440 and
+175 m, respectively . Stakes were installed along the transects (one stake every 20–30 m)
+to aid relocation over time. The positions of the stakes were determined through RTK-
+DGPS measurements (TopCon HiPer V DGPS system, TopCon Positioning SRL, Tokyo,
+Japan). All the rockfall deposits within each transect and with one dimension (x, y or z)
+larger than
+50 cm were measured. For each deposit we collected the three dimensions
+
+PAGE 3
+Forests 2021, 12, 1141 3 of 16
+of the block, using a measuring tape ( ±1 cm), and its relative position with respect to a
+ﬁxed georeferenced stake (horizontal distance and azimuth) using Trupulse 360 ◦B Laser
+Technology (Laser Technology Inc., Centennial, CO, USA). For each deposit we classiﬁed
+the rock’s shape, using categories based on Dorren [ 26] and the stopping cause. The
+stopping cause must identify why an individual rock stopped at a certain location. The
+main causes may be classiﬁed using the object where the rock stopped, e.g., another rock,
+a tree, a lying log, a ﬂat area, etc. It may also be classiﬁed as undeﬁned when the stop is
+due to the total loss of kinetic energy . If the falling block was stopped by a tree, we also
+measured the tree DBH. In addition, for all the impacted trees within the transects, data on
+DBH, tree position, and characteristics (height and dimension) of the scars were recorded.
+Figure 1. Location of the Colcuc study site, high-resolution orthoimagery from aerial surveys (acquired in 2019 by
+V eneto Region).
+2.2.2. Slope Surface Parameters
+To deﬁne ground and forest stand parameters required as input in the software
+package Rockyfor3D, ﬁeld investigations were conducted during summer 2018, setting up
+16 circular plots with a radius of 12 m (Figure 2). In each plot, we collected the position of
+the center (using a TopCon DGPS system, TopCon Positioning SRL, Tokyo, Japan). Within
+each plot, we recorded species, DBH, and relative position to the center for each tree with
+a DBH larger than 7.5 cm. We also collected the heights of the ﬁve trees closest to the
+center, in order to create a local tree height–diameter curve. For each plot, we evaluated
+the surface roughness (hereafter RG), expressed as the size of the material covering the
+slope’s surface and assessing the three size probability classes named rg70, rg20, and rg10;
+these parameters are an expression of the different MOHs (Mean Object Heights, [ 27]).
+We recorded the main soil type for each plot following the classiﬁcation provided in the
+Rockyfor3D Manual [ 26].
+
+PAGE 4
+Forests 2021, 12, 1141 4 of 16
+Figure 2. Localization of transects, surveyed rockfall deposits, and circular plots surveyed within the
+considered protection forest. High-resolution orthoimagery from aerial surveys (acquired in 2019 by
+V eneto Region).
+2.3. Remote Sensing Data
+The area has been ﬂown over with different sensors both in pre-event and post-event
+conditions. A ﬁrst campaign was performed by means of a high-density LiDAR scan in
+2015 (appr. 12 pts/m
+2) and a UA V ﬂight that provided high-resolution imagery and a
+Structure-from-Motion (SfM) point cloud. Because of the storm event, during 2019 the area
+was re-scanned with LiDAR sensor, adding a new very highly detailed data source (appr.
+25 pts/m2 for the study site).
+2.4. Data Pre-Processing
+Rockyfor3D simulations require a stack of raster layers with the same resolution and
+extent. For this speciﬁc purpose, the resolution has been set to a pixel size of 2 meters. The
+DTM (dem.asc) derived from the ground-classiﬁed point cloud collected during 2015 was
+used as a base layer. We selected the four roads crossing the study area as local checkpoints
+(calculation screens) to evaluate the number of passages and rock energy , while the conifer
+percentage (conif_percent.asc) and soil type ( soiltype.asc) parameters were derived from ﬁeld
+measurements and photo interpretation. Differently from the usual subdivision of the
+study area into subzones with homogeneous values, the RG ﬁles (rg10.asc, rg20.asc, and
+rg70.asc) were produced by hypothesizing a linear relation between slope and RG values
+measured in the ﬁeld, offering a more realistic distribution across the site. We observed
+higher values of RG associated to lower values of slope, where we found a high presence
+of rock deposits. Finally , the ﬁle related to the position of trees ( treeﬁle.txt) was created by
+extracting the single tree locations using the software FINT V1 ( ecorisq.org) (accessed on
+17 October 2017) from the CHM derived from the SfM point cloud.
+
+PAGE 5
+Forests 2021, 12, 1141 5 of 16
+Post-Event Layers
+All the input layers had to be updated to match the post-event conﬁguration of the
+site. This required the delineation of the damaged area, in order to mask the windthrown
+areas and add the newly calculated input values. The damaged area was deﬁned by the
+difference between CHMs, where all the areas with a decrease in height greater than 5 m
+have been considered as “damaged”, in order to avoid ﬁne local bias from misaligned
+scans/pixels. If for the tree positions the update meant a simple difference, the RG layers
+had to be elaborated from scratch. The point cloud was ﬁltered for ﬁrst returns, height
+normalized on the DTM and then all the points above
+2.5 m were removed. This height
+threshold was set according to the estimated most frequent maximum height of the downed
+material; the threshold value was veriﬁed on the ﬁeld. Hence, in order to be consistent
+with the Rockyfor3D parameter, the RG values were calculated as the 10th, 20th, and 70th
+percentile of the points’ distribution starting from the maximum value (i.e., 2.5 m) to the
+lowest and then regularized according to the standard thresholds (see Manual’s Annex
+I [26]). Finally , to validate the new RG rasters, we collected in the ﬁeld the values of rg10,
+rg20, and rg70 at 103 different locations in the study area. Field sampled data and LiDAR
+data were compared in order to understand the pros and cons of both methodologies. For
+the statistical analysis, we used the free software PAST [ 28]. The rasters obtained through
+this methodology provides values of RG with a resolution of 2 m, allowing the interaction
+between falling blocks and deadwood to be investigated.
+2.5. Simulations
+The rockfall analysis was performed using Rockyfor3D [ 26], running 1000 simulations
+for each of the following scenarios:
+• no forest (NFOR; reference): free-falling rocks; it is used to determine the potential
+energy , distance, and trajectory of rocks,
+• with forest (FPRE; pre-event): rock falling under pre-event conditions, simulating the
+presence of the protection forest,
+• with forest (FPOS; post-event): rock falling under post-event conditions, simulating
+the presence of biological legacies in the windthrown stand.
+As concerns the other parameters that are necessary to the model, i.e., the shape of the
+test rock and its dimensions, these were based on the average size of rocks measured in the
+ﬁeld. Rock density was set to 2700 kg/m 3 (calcareous rock).
+Ultimately , we set some checkpoints in order to collect data of passing rocks at different
+slope length from the hazard source. Each checkpoint collected mainly the number of
+rockfall passages, the kinetic energy of falling blocks, their velocity , and their passing
+heights. The position of checkpoints is shown in Figure 3.
+2.6. Protective Effect
+For the assessment of the protective effect of the stand (both standing and windthrown),
+we used the indices introduced by Dupire et al. [ 29]. The ﬁrst index is the BARI (BARrier
+effect Index), it is computed using Formula (1) and is aimed at an assessment of the barrier
+effect of trees or lying logs (i.e., the capacity of stopping rocks in the transit zone). The
+second index is the MIRI (Maximum Intensity Reduction Index), it is computed using
+Formula (2) and assesses the reduction of kinetic energy due to the presence of trees or
+logs in the transit area (i.e., the loss of kinetic energy after impact with obstacles). The last
+one is the ORPI (Overall Rockfall Protection Index), it is computed using Formula (3) and
+quantiﬁes the overall protection of the upslope stand.
+BARI (x) = 100 ×
+(
+1 −
+Nrock f orest (x)
+Nrock no− f orest (x)
+)
+(1)
+
+PAGE 6
+Forests 2021, 12, 1141 6 of 16
+MIRI (x) = 100 ×
+(
+1 −
+E95 f orest (x)
+E95no− f orest (x)
+)
+(2)
+ORPI (x) = 100 ×
+(
+1 − ∑
+n f orest
+i=1 E(x)
+∑
+n no − f orest
+k=1 E(x)
+)
+(3)
+where, in Formula (1), Nrock f orest (x) indicates the number of rocks that passed through a
+checkpoint in the FPRE, or FPOS, simulations, Nrock no− f orest (x) indicates the number of rocks
+that passed through a checkpoint in the NFOR simulations. In Formula (2), E95 f orest (x)
+and E95no− f orest (x), respectively , indicate the 95th percentile of kinetic energy of the rocks
+that passed through a checkpoint in the FPRE, or FPOS scenario and in the NFOR scenario.
+In Formula (3),
+n f orest
+∑
+i=1
+E(x) indicates the total sum of the kinetic energy of each block that
+passed through a checkpoint in the FPRE, or FPOS, scenario,
+n no − f orest
+∑
+k=1
+E(x) refers to the
+NFOR scenario.
+We computed the three indices for each checkpoint, for the FPRE and FPOS scenarios,
+using the NFOR scenario as the reference scenario. Considering the small sample size we
+applied the non-parametric Kolmogorov–Smirnov test to observe any difference among
+the three scenarios. For the statistical analysis we used the software PAST [ 28].
+Figure 3. Position of the checkpoints used for computation of the indices. We identiﬁed the main
+roads, and the real nets present in the study area as checkpoints. The red line contours the study site,
+while the numbers indicate the ID of each checkpoint. High-resolution DTM from aerial surveys
+(acquired in 2019 by V eneto Region).
+3. Results
+3.1. Field Results
+In the pre-Vaia forest stands, tree mean DBH was 30.5 cm with a standard deviation
+of 12.9 cm, the mean tree density was 720 trees/ha, and 100% were conifers. Inside the
+transects, we recorded 242 rocks with an average size of 1.5 m × 1.0 m × 0.8 m. The main
+stop cause (51% of cases) was classiﬁed as undeﬁned, i.e., most of the rocks simply stopped
+due to the loss of their kinetic energy , 18% of rocks stopped on other rock deposits, 12%
+
+PAGE 7
+Forests 2021, 12, 1141 7 of 16
+stopped on stumps, 10% stopped on a tree and 9% stopped in a ﬂat area. The shape of
+falling blocks was undeﬁned (not relatable to any known geometric form) in the majority
+of the cases (48%), 26% were rectangular, 14% spheric and 12% discoid.
+3.2. Validation of LiDAR Derived Roughness Values
+The RG values collected in the ﬁeld have been compared to the ones derived from the
+LiDAR point cloud (Figure 4). The ﬁeld estimations were associated to the mean value of
+the LiDAR-derived raster cells that were within a circular area of 2 m radius.
+Figure 4. Comparison among roughness ( rg10) data extracted by LiDAR and sampled in the ﬁeld.
+The map shows the spatialization of RG data obtained through a LiDAR source and of RG data
+sampled in the ﬁeld.
+After the removal of outliers, we compared rg10 values, we observed a mean value of
+1.69 m for the sampled data and a mean value of 1.44 m for the LiDAR derived data. The
+average difference between the two sets of data (sampled data—LiDAR data) was 0.25 m,
+that is circa 30% of the smallest dimension of the average falling rock (see Section 3.1).
+We did the same comparison for the rg20: the mean value of sampled data was 1.06 m
+and the mean value of LiDAR derived data was 1.25 m, in this case the average difference
+between data was −0.18 m, 22.5% of the smallest dimension of the average falling rock.
+Lastly , forrg70 we observed a mean value of sampled data of 0.70 m and a mean value
+of LiDAR-derived data of 0.64 m. The average difference resulted to be 0.06 m, in this case
+7.5% of the smallest dimension of falling rocks.
+Considering the acceptable difference among ﬁeld collected data and LiDAR-derived
+raster and since it was a general underestimation leading to more conservative simulations
+(i.e., lower RG values), we adopted the LiDAR derived RG values for running the simula-
+tions in order to detect and take into account the spatial variability of windthrown material
+(Figure 5).
+
+PAGE 8
+Forests 2021, 12, 1141 8 of 16
+Figure 5. Comparison among roughness values ( rg10) extracted by LiDAR and sampled in the ﬁeld.
+The boxplot reports the results of the values obtained through the two methodologies.
+3.3. Simulations Results
+The results of the ‘no forest scenario’ show a potential severe rockfall activity in the
+study area, where falling rocks converge into a main gully , located in the center of the area.
+The main source of activity is recognizable in the north-eastern part of the study area
+above the main trail and the roads where a rock cliff is located.
+The ﬁrst set of simulations, the NFOR scenario, show rockfall dynamics considering
+only the morphology of the study area, without taking into account the presence of trees or
+biological legacies. Simulation results are reported in Table 1.
+T able 1.Summary of Rockyfor3D simulations outputs for the NFOR scenario. For each checkpoint,
+the table reports: n, the total number of registered passages of falling rocks; E_95, the 95th percentile
+of the energy of registered falling rocks; Ph_95, the 95th percentile of passing height values recorded
+at the checkpoint; V_95, the 95th percentile of the speed of recorded falling rocks.
+Checkpoint n (-) E_95 (kJ) Ph_95 (m) V_95 (m/s)
+1 776,172 1080 1.3 20.3
+2 586,053 953 2.6 20.0
+3 2,796,600 1971 2.7 25.8
+4 3,180,107 1843 4.0 26.1
+5 192,933 1807 1.8 25.6
+6 530,231 1984 1.9 26.3
+7 1,216,722 2126 3.1 26.7
+8 390,563 1969 2.8 25.3
+9 606,256 1722 2.2 24.0
+The highest rockfall activity was registered at checkpoint 4, the one closest to the
+source area. The registered number of passages was 3,180,107 with a 95th percentile of
+kinetic energy of 1843 kJ, a 95th percentile height of passage of 4.0 m and a 95th percentile
+of velocity of 26.1 m/s. It may be observed that increasing the distance from the source, so
+increasing the slope length, the number of rockfall passages decreases. On the other hand,
+the values of energy , passing height and velocity show less variability , mainly because we
+are reporting the 95th percentile.
+The outputs of the simulation with forest data, FPRE scenario, show how rockfall
+activity interacted with the forest stand. Results show a reduction in the number of passages
+and a decrease in the mean kinetic energy of the falling block in the lower part of the main
+
+PAGE 9
+Forests 2021, 12, 1141 9 of 16
+catchment, where the forest is present. The energy and speed of falling blocks also show
+lower values if compared to the upper part, where tree density is lower (Table 2).
+T able 2.Summary of Rockyfor3D simulations outputs in the FPRE scenario. For each checkpoint, the
+table reports: n, the total number of registered passages of falling rocks; E_95, the 95th percentile of
+the energy of registered falling rocks; Ph_95, the 95th percentile of passing height values recorded at
+the checkpoint; V_95, the 95th percentile of the speed of registered falling rocks.
+Checkpoint n (-) E_95 (kJ) Ph_95 (m) V_95 (m/s)
+1 478,121 816 0.9 17.1
+2 490,779 578 1.3 15.7
+3 1,523,292 1773 2.4 24.1
+4 2,671,715 1733 4.1 25.3
+5 191,329 1782 1.8 25.4
+6 519,953 1965 1.9 26.2
+7 792,383 1927 2.8 25.3
+8 228,081 1787 2.5 23.9
+9 141,892 1600 2.0 22.8
+Regarding passing heights and velocity values, we can observe a reduction in most of
+the cases. Where the forest stand has a lower tree density , or where the forest is not present,
+Ph_95 and V_95 values remain constant.
+Checkpoint 4 registered 2,671,715 passages with a 95th percentile of kinetic energy of
+1733 kJ, a 95th percentile of passing heights of 4.1 m, and a 95th percentile of velocity of
+25.3 m/s. While a reduction in the number of passages, kinetic energy and velocity may be
+observed, if compared to the NFOR scenario, Ph_95 does not show an appreciable change.
+The outputs of the FPOS scenario shows the interaction of rockfall activity with the
+biological legacies of the damaged forest. In the upper part, where the forest had a lower
+density of trees, the number of passages and the energy of falling blocks are higher than in
+the lower part, where the forest stand had a higher density (Table 3).
+T able 3.Summary of Rockyfor3D simulations outputs in the FPOS scenario. For each checkpoint, the
+table reports: n, the total number of registered passages of falling rocks; E_95, the 95th percentile of
+the energy of registered falling rocks; Ph_95, the 95th percentile of passing height values recorded at
+the checkpoint; V_95, the 95th percentile of the speed of registered falling rocks.
+Checkpoint n (-) E_95 (kJ) Ph_95 (m) V_95 (m/s)
+1 291,697 658 0.8 14.7
+2 430,738 401 1.1 13.1
+3 228,487 1140 1.5 20.0
+4 901,333 1626 4.5 24.2
+5 116,717 1537 1.5 23.9
+6 464,749 1951 1.8 26.0
+7 6492 2098 2.6 26.2
+8 22,996 1839 2.4 24.1
+9 1042 1819 1.9 24.1
+The highest number of passages was always registered at checkpoint 4, where it was
+901,333. In the same checkpoint, the registered E_95 and V_95 were 1626 kJ and 24.2 m/s,
+in both cases the values decreased if compared with the previous scenarios (NFOR and
+FPRE); the registered value of Ph_95 was slightly higher and was equal to 4.5 m.
+The outputs of all the simulations are reported in Figure 6: it is possible to observe
+that the presence of deadwood inﬂuences the rockfall trajectories and the kinetic energy of
+falling blocks.
+
+PAGE 10
+Forests 2021, 12, 1141 10 of 16
+Figure 6. Output of Rockyfor3D simulations. In the ﬁrst row the simulation in a ‘no forest’ scenario,
+in the second row the simulation in a ‘with forest’ scenario, in the third row the simulation in a ‘post
+windstorm’ scenario. Column ( a) represents the number of passages of rockfall activity while column
+(b) represents the 95th percentile of the kinetic energy of falling blocks. The red line delimits the
+computational domain boundary of the numerical simulations.
+3.4. Indices Computation
+To evaluate and quantify the protective efﬁciency of the forest and the biological
+legacies against rockfall, we computed the Dupire’s indices [ 29] for the FPRE and FPOS
+scenarios, using NFOR scenario as a reference. The values of the indices are reported in
+Table 4, as well as the classiﬁcation of the protective effect provided by the forested slope,
+both before and after the storm. These categories vary from Low Protective Effect to High
+Protective Effect [8] (as reported also in Figure 7). After the storm, there has been a clear
+increment in BARI, MIRI, and ORPI values. Considering the ORPI index and the protective
+efﬁciency (PE), in seven cases out of nine, we have an improvement from a lower protection
+class to a higher one (from low to medium and from medium to high).
+
+PAGE 11
+Forests 2021, 12, 1141 11 of 16
+T able 4.Summary of Dupire’s indices. For each checkpoint the table shows the results of the three
+indices computation, BARI, MIRI, ORPI for both the FPRE scenario and the FPOS scenario. The last
+column reports the classiﬁcation of the protective efﬁciency (PE) of the forest stand according to the
+scenario (the categories are based on [ 8]).
+Checkpoint Scenario BARI (-) MIRI (-) ORPI (-) Classiﬁcation
+1 FPRE 38.4 24.4 52.6 Medium PE
+FPOS 62.4 39.1 76.0 Medium PE
+2 FPRE 16.3 39.3 41.1 Low PE
+FPOS 26.5 57.9 59.8 Medium PE
+3 FPRE 45.5 10.0 54.4 Medium PE
+FPOS 91.8 42.2 97.4 High PE
+4 FPRE 16 6.0 26.4 Low PE
+FPOS 71.7 11.8 77.2 Medium PE
+5 FPRE 0.8 1.4 2.4 Low PE
+FPOS 39.5 14.9 58.4 Medium PE
+6 FPRE 1.9 1.0 3.1 Low PE
+FPOS 12.3 1.7 14.5 Low PE
+7 FPRE 34.9 9.4 45.3 Low PE
+FPOS 99.5 1.3 99.6 High PE
+8 FPRE 41.6 9.2 51.1 Medium PE
+FPOS 94.1 6.6 94.9 High PE
+9 FPRE 76.6 7.1 78.9 Medium PE
+FPOS 99.8 −5.6 99.8 High PE
+Figure 7. Boxplot of the values for the three indices BARI, MIRI, and ORPI in the scenarios FPRE, in
+light grey , and FPOS, in dark grey . The ﬁrst index quantiﬁes the barrier effect played by the protection
+forest, the second index is related to the maximum intensity reduction, and the last one is related to
+the overall protective effect.
+Moreover, results show that lying logs mainly provide a barrier effect rather than an
+energy reduction of falling blocks. As can be observed in Figure 7, the variation among
+BARI indices is higher than the variation of MIRI indices. Kolmogorov–Smirnov test was
+used to compare the two scenarios ( p-value ≤ 0.1): the difference between FPRE and FPOS
+is signiﬁcant in the cases of BARI and ORPI indices. Instead, the MIRI indices do not
+present signiﬁcant differences between the two scenarios.
+
+PAGE 12
+Forests 2021, 12, 1141 12 of 16
+4. Discussion
+The role of a forested slope in the mitigation of rockfall hazard highlighted by the
+results of this study is aligned with the current literature [ 4,30–32]. We could observe
+and quantify the reduction of rockfall passages and their energy due to the presence of
+a protection forest, underlining the importance of these stands for risk assessment [
+5].
+Moreover, our results provide an innovative detailed analysis of the impact of a windstorm
+on the protective efﬁciency of an alpine stand. Thanks to the use of indicators of protective
+efﬁciency [29], we have been able to compare how the interaction between a forested slope
+and rockfall hazard changed after a windthrow. Our results may help the understanding
+of the interaction of natural disturbances with the multifunctionality of mountain forests, a
+topic that is currently investigated in the literature, especially as concerns evaluation of the
+development of the provision of ecosystem services in a changing climate [ 33].
+The results of the FPRE scenario show clearly that there is an effect of the forest in
+the reduction of the magnitude of rockfall activity . Figure 5 illustrates the barrier effect
+played by trees, as shown by the values of BARI and ORPI indices (Table 4). Moreover,
+concerning the kinetic energy of the falling blocks, the presence of the forest could lead to
+an energy reduction. Thanks to different positioning of the checkpoints, it was possible to
+evaluate the inﬂuence of the slope length on the magnitude of rockfall activity . According
+to the ORPI index, the forest stand varies from a low to a medium protective effect where
+the forested slope is longer. Our results also show that where the slope length is short the
+protection forest did not affect the passing heights of rocks.
+Considering the FPOS scenario, the use of LiDAR-derived data represented an in-
+novative way to study rockfall hazard. The methodology that we used for the creation
+of the RG rasters appeared to be efﬁcient for a precise localization of biological legacies
+after the windstorm Vaia. Currently , remote sensing applications are starting to become
+more commonly used in forestry [
+34] and they may provide a high precision detection
+of biological legacies positions after a storm. The obtained RG rasters resulted as more
+accurate than data provided by ﬁeld surveys: they present a better spatialization that leads
+to a good localization of lying logs. Moreover, during the surveys, we understood the
+difﬁculty of the estimation of RG values in the ﬁeld. As a consequence, we think that
+the deﬁnition of a stricter procedure may avoid mistakes during the operations of data
+collection in the ﬁeld.
+The mean values of RG sampled in the ﬁeld were slightly higher than LiDAR de-
+rived data. Consequently , the adoption of LiDAR derived RG as input for the numerical
+modelling provides a more conservative scenario. Using the raster produced with the
+LiDAR data we have been able to simulate the post windstorm scenario with high accuracy ,
+considering the presence of biological legacies such as lying logs and stumps.
+Moreover, the results of FPOS scenario show that the windthrown stand still provides
+an important protective function against rockfall. We expected this result considering
+previous studies that were carried out after other storms in the alpine area, e.g., Vivian or
+Lothar [12,21]. In addition, we observed that immediately after a windthrown event, the
+protective efﬁciency of the damaged stand is even higher than the previous forest, although
+the current literature afﬁrms that the protective efﬁciency of a forested slope should start to
+decrease after a disturbance [ 12].
+Our observations suggest that biological legacies, like lying logs, provide mainly
+a barrier effect rather than an energy reduction of falling blocks, as can be observed in
+Figure 6. The barrier effect played by deadwood has already been observed and analyzed
+by Fuhr et al. [ 35] and by Olmedo et al. [ 36]: the presence of lying logs signiﬁcantly
+improves the surface roughness of a forested slope, in particular in a windthrown stand
+where all trees act like natural barriers on the ground.
+Furthermore, biological legacies may provide a protective function against other
+gravitational hazards, for instance avalanches. In Switzerland it was observed that, after
+the storm Vivian, uncleared areas prevented avalanche release [ 10,12]. As concerns shallow
+landslides, it was observed that structural legacies cannot provide any protective effect,
+
+PAGE 13
+Forests 2021, 12, 1141 13 of 16
+mainly because the removal of the roots contribution to soil stability in windthrown areas
+may enhance the potential risk [ 12,37].
+Knowing the spatial arrangements and conditions of deadwood, we could deﬁne
+the PE of the windthrown stand at different slope length level with a good accuracy . We
+observed an improvement of the PE for the majority of the checkpoints. This improvement
+of the protective role could last for a few years, before lying logs start to rot and the height
+of the logs from the ground starts to decrease, as observed in Wohlgemuth [ 12]. Moreover,
+with a reduction of deadwood height above the ground and with a higher portion of logs
+in direct contact with the soil, the wood decaying processes may accelerate [ 38], leading to
+lower protective efﬁciency of biological legacies.
+Some empirical studies show that, after some branches breakage in the ﬁrst years, the
+downslope movement of lying logs may be relatively small [ 10]. However, some tensile
+tests showed a reduction of the breaking point of logs, mainly due to the decay of wood. It
+was also observed that the level of decay was related to the microsite, mainly the height
+above ground of logs and their vegetation cover [ 39]; the presence of bark on logs may
+also inﬂuence the speed of decaying processes [ 40]. Although we were able to observe
+and quantify the protective role played by structural legacies, it is important to underline
+that this role is strictly connected with the type of disturbance that hit the protection forest.
+Other kinds of natural disturbances may create different biological legacies, with a different
+spatial arrangement, which may not provide the same barrier effect. For instance it was
+observed that after a wildﬁre, burnt logs and snags may behave in a different manner [ 41].
+Furthermore the presence of biological legacies in a post-disturbance scenario, like
+a windthrown stand, may provide other important functions, from the protection of new
+seedlings [ 42,43], to the conservation of biodiversity and structural complexity of the
+forest [17,33,34]. The facilitation effect provided by deadwood can be fundamental for
+speeding up natural regeneration processes. The presence of biological legacies, indeed,
+may not only provide protection, but also create the condition for shortening the protection
+gap, which should be the main target of management strategies for a damaged protection
+forest [1,12,39].
+The current literature investigates the impacts of traditional salvage logging practices,
+considering this management strategy as a second disturbance event [ 44–47] that can
+modify the provision of some ecosystem services. Our results may introduce a new
+element in the evaluation of the outcomes of this practice, suggesting that the removal of
+lying logs may eliminate the protective effect of the forested slope exposing infrastructures
+to rockfall hazard. Moreover, we would suggest adopting management strategies that
+aim to reach a resistant and resilient forest structure, considering (i) local environmental
+conditions, (ii) the multifunctionality of alpine forests, (iii) the interaction, and the possible
+future interactions of these stands with natural disturbances and climate change.
+5. Conclusions
+With this study , we evaluated the inﬂuence of structural biological legacies on rockfall
+activity after a windstorm in an alpine stand. After a natural disturbance, the protective
+function efﬁciency of a mountain forest may change drastically , and according to the
+severity of the event it may lead to a protection gap. However, we observed that in a
+short period of time after the event, the protective efﬁciency of the disturbed slope can be
+higher than before the event. This is because of lying logs and stumps, i.e., the structural
+biological legacies, which play an important role in providing a barrier effect against
+rockfall. Legacies’ characteristics, and consequently the barrier effect, depend on the type
+of disturbance (e.g., wind). In addition, the time, or rather wood decay , is the other variable
+mainly affecting the protective function after a disturbance event, as observed in other
+studies [10,12,21,22]. We recommend that future research should focus on the protective
+role of structural biological legacies, considering other gravitational hazards, like shallow
+landslides and avalanches. Moreover, future studies should take into account the time
+
+PAGE 14
+Forests 2021, 12, 1141 14 of 16
+span of the protection gap, in order to understand when wood decaying processes will
+undermine the protection provided by deadwood on damaged slopes.
+Finally , from an operative point of view, we would suggest avoiding traditional
+practices like salvage logging. Where a gravitational hazard is present, forest managers
+should consider other options with the target of enhancing the natural restoration of
+protection forests, in order to shorten the protection gap.
+Author Contributions: Conceptualization, M.C., N.M., F.B. (Francesco Bettella) and E.L.; Method-
+ology , M.C., N.M., F.B. (Francesco Bettella), P .B. and E.L.; Validation, M.C., Formal analysis, M.C.;
+Investigation, M.C. and F.B. (Francesco Bettella); Resources, E.L.; Data curation, M.C.; Writing—
+original draft preparation, M.C., N.M., F.B. (Francesco Bettella) and E.L.; Writing—review and
+editing, M.C., N.M., F.B. (Francesco Bettella), P .B., F.B. (Frédéric Berger) and E.L.; Visualization, M.C.;
+Supervision, E.L. All authors have read and agreed to the published version of the manuscript.
+Funding:
+This research has been funded by the Interreg Alpine Space project “RockTheAlps”
+(ASP462), by Dept. TESAF, University of Padova in the framework of the project “Vaia FRONT”
+(CA V A_SID19_02), by the V eneto Region in the framework of the project Vaia-Land (OCDPC
+558/2018), and by the Unione Montana Agordina and the University of Padova under the framework
+of InForTrac project (UNI-IMPRESA 2018).
+Acknowledgments: We are grateful to M. Zampieri for ﬁeld work, and N. Grasso, E. Belcore, P .
+Maschio, M. Piras for providing UA V data.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1. Motta, R.; Haudemand, J.-C. Protective Forests and Silvicultural Stability . Mt. Res. Dev. 2000, 20, 180–187. [
+CrossRef]
+2. Brang, P . Resistance and elasticity: Promising concepts for the management of protection forests in the European Alps. For. Ecol.
+Manag. 2001, 145, 107–119. [ CrossRef]
+3. Berger, F.; Quetel, C.; Dorren, L.K.A. Forest: A natural protection mean against rockfalls, but with which efﬁciency? Interpraevent
+2002 Pac. Rim Matsumoto Jpn. 2002, 2, 815–826.
+4. Briones-Bitar, J.; Carrión-Mero, P .; Montalvá n-Burbano, N.; Morante-Carballo, F. Rockfall research: A bibliometric analysis and
+future trends. Geosciences 2020, 10, 403. [ CrossRef]
+5. Moos, C.; Fehlmann, M.; Trappmann, D.; Stoffel, M.; Dorren, L. Integrating the mitigating effect of forests into quantitative
+rockfall risk analysis—Two case studies in Switzerland. Int. J. Disaster Risk Reduct. 2018, 32, 55–74. [ CrossRef]
+6. Dorren, L.K.A. A review of rockfall mechanics and modelling approaches. Prog. Phys. Geogr. Earth Environ. 2003, 27, 69–87.
+[CrossRef]
+7. Moos, C.; Thomas, M.; Pauli, B.; Bergkamp, G.; Stoffel, M.; Dorren, L. Economic valuation of ecosystem-based rockfall risk
+reduction considering disturbances and comparison to structural measures. Sci. T otal Environ. 2019, 697, 134077. [ CrossRef]
+8. Dupire, S.; Bourrier, F.; Monnet, J.M.; Bigot, S.; Borgniet, L.; Berger, F.; Curt, T. The protective effect of forests against rockfalls
+across the French Alps: Inﬂuence of forest diversity . For. Ecol. Manag. 2016, 382, 269–279. [ CrossRef]
+9. Moos, C.; Khelidj, N.; Guisan, A.; Lischke, H.; Randin, C.F. A quantitative assessment of rockfall inﬂuence on forest structure in
+the Swiss Alps. Eur. J. For. Res. 2021, 140, 91–104. [ CrossRef]
+10. Frey , W.; Thee, P . Avalanche protection of windthrow areas: A ten year comparison of cleared and uncleared starting zones. For.
+Snow Landsc. Res. 2002, 77, 89–107.
+11. Schönenberger, W. Windthrow research after the 1990 storm Vivian in Switzerland: Objectives, study sites, and projects. For.
+Snow Landsc. Res. 2002, 77, 9–16.
+12. Wohlgemuth, T.; Schwitter, R.; Bebi, P .; Sutter, F.; Brang, P . Post-windthrow management in protection forests of the Swiss Alps.
+Eur. J. For. Res. 2017, 136, 1029–1040. [ CrossRef]
+13. Seidl, R.; Thom, D.; Kautz, M.; Martin-Benito, D.; Peltoniemi, M.; Vacchiano, G.; Wild, J.; Ascoli, D.; Petr, M.; Honkaniemi, J.; et al.
+Forest disturbances under climate change. Nat. Clim. Chang. 2017, 7, 395–402. [ CrossRef]
+14. Beghin, R.; Lingua, E.; Garbarino, M.; Lonati, M.; Bovio, G.; Motta, R.; Marzano, R. Pinus sylvestris forest regeneration under
+different post-ﬁre restoration practices in the northwestern Italian Alps. Ecol. Eng. 2010, 36, 1365–1372. [ CrossRef]
+15. Franklin, J.F.; Lindenmayer, D.; Macmahon, J.A.; Mckee, A.; Perry , D.A.; Waide, R.; Foster, D. Threads of Continuity: Ecosystem
+disturbance, recovery , and the theory of biological legacies. Conserv. Pract. 2000, 1, 8–17. [ CrossRef]
+16. Johnstone, J.F.; Allen, C.D.; Franklin, J.F.; Frelich, L.E.; Harvey , B.J.; Higuera, P .E.; Mack, M.C.; Meentemeyer, R.K.; Metz, M.R.;
+Perry , G.L.W.; et al. Changing disturbance regimes, ecological memory , and forest resilience. Front. Ecol. Environ. 2016, 14,
+369–378. [ CrossRef]
+17. Lindenmayer, D.B.; Westgate, M.J.; Scheele, B.C.; Foster, C.N.; Blair, D.P . Key perspectives on early successional forests subject to
+stand-replacing disturbances. For. Ecol. Manag. 2019, 454, 117656. [ CrossRef]
+
+PAGE 15
+Forests 2021, 12, 1141 15 of 16
+18. Gardiner, B.; Schuck, A.; Schelhaas, M.-J.; Orazio, C.; Blennow, K.; Nicoll, B. Living with Storm Damage to Forests. What Science Can.
+T ell Us 3; European Forest Institute: Joensuu, Finland, 2013; ISBN 9789525980080.
+19. Bebi, P .; Seidl, R.; Motta, R.; Fuhr, M.; Firm, D.; Krumm, F.; Conedera, M.; Ginzler, C.; Wohlgemuth, T.; Kulakowski, D. Changes of
+forest cover and disturbance regimes in the mountain forests of the Alps. For. Ecol. Manag.
+2017, 388, 43–56. [ CrossRef] [PubMed]
+20. Forzieri, G.; Girardello, M.; Ceccherini, G.; Spinoni, J.; Feyen, L.; Hartmann, H.; Beck, P .S.A.; Camps-Valls, G.; Chirici, G.; Mauri,
+A.; et al. Emergent vulnerability to climate-driven disturbances in European forests. Nat. Commun. 2018, 12, 1081. [ CrossRef]
+[PubMed]
+21. Schönenberger, W.; Noack, A.; Thee, P . Effect of timber removal from windthrow slopes on the risk of snow avalanches and
+rockfall. For. Ecol. Manag. 2005, 213, 197–208. [ CrossRef]
+22. Rammig, A.; Fahse, L.; Bugmann, H.; Bebi, P . Forest regeneration after disturbance: A modelling study for the Swiss Alps. For.
+Ecol. Manag. 2006, 222, 123–136. [ CrossRef]
+23. Chirici, G.; Giannetti, F.; Travaglini, D.; Nocentini, S.; Francini, S.; D’Amico, G.; Calvo, E.; Fasolini, D.; Broll, M.; Maistrelli, F.; et al.
+Forest damage inventory after the “Vaia” storm in Italy . For. Riv. Selvic. Ecol. For. 2019, 16, 3–9. [ CrossRef]
+24. Cadei, A.; Mologni, O.; Röser, D.; Cavalli, R.; Grigolato, S. Forwarder productivity in salvage logging operations in difﬁcult
+terrain. Forests 2020, 11, 341. [ CrossRef]
+25. Pellegrini, G.; Martini, L.; Cavalli, M.; Rainato, R.; Cazorzi, A.; Picco, L. The morphological response of the Tegnas alpine
+catchment (Northeast Italy) to a Large Infrequent Disturbance. Sci. T otal Environ. 2021, 770, 145209. [ CrossRef]
+26. Dorren, L.K. A Rockyfor3D (v5.2) revealed—Transparent description of the complete 3D rockfall model. ecorisQ Pap. 2016, 33.
+27. Dorren, L.K.A.; Berger, F.; Putters, U.S. Real-size experiments and 3-D simulation of rockfall on forested and non-forested slopes.
+Nat. Hazards Earth Syst. Sci. 2006, 6, 145–153. [ CrossRef]
+28. Hammer, O.; Harper, D.A.T.; Ryan, P .D. PAST–Palaeontological statistics, ver. 1.89. Palaeontol. Electron. 2009, 4, 1–9.
+29. Dupire, S.; Bourrier, F.; Monnet, J.M.; Bigot, S.; Borgniet, L.; Berger, F.; Curt, T. Novel quantitative indicators to characterize the
+protective effect of mountain forests against rockfall. Ecol. Indic. 2016, 67, 98–107. [ CrossRef]
+30. Scheidl, C.; Heiser, M.; V ospernik, S.; Lauss, E.; Perzl, F.; Koﬂer, A.; Kleemayr, K.; Bettella, F.; Lingua, E.; Garbarino, M.; et al.
+Assessing the protective role of alpine forests against rockfall at regional scale. Eur. J. For. Res. 2020, 139, 969–980. [ CrossRef]
+31. Moos, C.; Dorren, L.; Stoffel, M. Quantifying the effect of forests on frequency and intensity of rockfalls. Nat. Hazards Earth Syst.
+Sci. 2017, 17, 291–304. [ CrossRef]
+32. Bianchi, E.; Accastello, C.; Trappmann, D.; Blanc, S.; Brun, F. The Economic Evaluation of Forest Protection Service Against
+Rockfall: A Review of Experiences and Approaches. Ecol. Econ. 2018, 154, 409–418. [ CrossRef]
+33. Irauschek, F.; Rammer, W.; Lexer, M.J. Evaluating multifunctionality and adaptive capacity of mountain forest management
+alternatives under climate change in the Eastern Alps. Eur. J. For. Res. 2017, 136, 1051–1069. [ CrossRef]
+34. Marchi, N.; Pirotti, F.; Lingua, E. Airborne and terrestrial laser scanning data for the assessment of standing and lying deadwood:
+Current situation and new perspectives. Remote Sens. 2018, 10, 1356. [ CrossRef]
+35. Fuhr, M.; Bourrier, F.; Cordonnier, T. Protection against rockfall along a maturity gradient in mountain forests. For. Ecol. Manag.
+2015, 354, 224–231. [ CrossRef]
+36. Olmedo, I.; Bourrier, F.; Bertrand, D.; Berger, F.; Limam, A. Discrete element model of the dynamic response of fresh wood stems
+to impact. Eng. Struct. 2016, 120, 13–22. [ CrossRef]
+37. Bebi, P .; Bast, A.; Ginzler, C.; Rickli, C.; Schöngrundner, K.; Graf, F. Forest dynamics and shallow landslides: A large-scale
+gis-analysis. Schweiz. Z. Forstwes. 2019, 170, 318–325. [ CrossRef]
+38. Petrillo, M.; Cherubini, P .; Fravolini, G.; Marchetti, M.; Ascher-Jenull, J.; Schärer, M.; Synal, H.A.; Bertoldi, D.; Camin, F.; Larcher,
+R.; et al. Time since death and decay rate constants of Norway spruce and European larch deadwood in subalpine forests
+determined using dendrochronology and radiocarbon dating. Biogeosciences 2016, 13, 1537–1552. [ CrossRef]
+39. Bebi, P .; Putallaz, J.M.; Fankhauser, M.; Schmid, U.; Schwitter, R.; Gerber, W. Die Schutzfunktion in Windwurfﬂächen. Schweiz. Z.
+Forstwes. 2015, 166, 168–176. [ CrossRef]
+40. Hagge, J.; Bässler, C.; Gruppe, A.; Hoppe, B.; Kellner, H.; Krah, F.S.; Müller, J.; Seibold, S.; Stengel, E.; Thorn, S. Bark coverage
+shifts assembly processes of microbial decomposer communities in dead wood. Proc. R. Soc. B Biol. Sci. 2019, 286, 20191744.
+[CrossRef]
+41. Maringer, J.; Ascoli, D.; Dorren, L.; Bebi, P .; Conedera, M. Temporal trends in the protective capacity of burnt beech forests ( Fagus
+sylvatica L.) against rockfall. Eur. J. For. Res. 2016, 135, 657–673. [ CrossRef]
+42. Marzano, R.; Garbarino, M.; Marcolin, E.; Pividori, M.; Lingua, E. Deadwood anisotropic facilitation on seedling establishment
+after a stand-replacing wildﬁre in Aosta Valley (NW Italy). Ecol. Eng. 2013, 51, 117–122. [ CrossRef]
+43. Wohlgemuth, T.; Kull, P .; Wüthrich, H. Disturbance of microsites and early tree regeneration after windthrow in Swiss mountain
+forests due to the winter storm Vivian 1990. For. Snow Landsc. Res. 2002, 77, 17–47.
+44. Fischer, A.; Lindner, M.; Abs, C.; Lasch, P . V egetation dynamics in Central European forest ecosystems (near-natural as well as
+managed) after storm events. Folia Geobot. 2002, 37, 17–32. [ CrossRef]
+45. Fischer, A.; Fischer, H.S. Individual-based analysis of tree establishment and forest stand development within 25 years after wind
+throw. Eur. J. For. Res. 2012, 131, 493–501. [ CrossRef]
+
+PAGE 16
+Forests 2021, 12, 1141 16 of 16
+46. Taeroe, A.; de Koning, J.H.C.; Löf, M.; Tolvanen, A.; Heiðarsson, L.; Raulund-Rasmussen, K. Recovery of temperate and boreal
+forests after windthrow and the impacts of salvage logging. A quantitative review. For. Ecol. Manag. 2019, 446, 304–316.
+[CrossRef]
+47. Leverkus, A.B.; Buma, B.; Wagenbrenner, J.; Burton, P .J.; Lingua, E.; Marzano, R.; Thorn, S. Tamm review: Does salvage logging
+mitigate subsequent forest disturbances? For. Ecol. Manag. 2021, 481, 118721. [ CrossRef]

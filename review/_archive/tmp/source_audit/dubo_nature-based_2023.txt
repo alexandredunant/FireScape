@@ -1,0 +1,1212 @@
+PAGE 1
+HAL Id: hal-03897293
+https://hal.science/hal-03897293v1
+Submitted on 3 Jan 2023
+HAL is a multi-disciplinary open access archive
+for the deposit and dissemination of scientific re-
+search documents, whether they are published or not.
+The documents may come from teaching and research
+institutions in France or abroad, or from public or pri-
+vate research centers.
+L’archive ouverte pluridisciplinaire HAL, est des-
+tinée au dépôt et à la diffusion de documents scien-
+tifiques de niveau recherche, publiés ou non, émanant
+des établissements d’enseignement et de recherche
+français ou étrangers, des laboratoires publics ou
+privés.
+HAL Authorization
+Nature-based solutions for climate change adaptation are not
+located where they are most needed across the Alps
+Titouan Dubo, Ignacio Palomo, Lucía Laorden Camacho, Bruno Locatelli, Audrey
+Cugniet, Natacha Racinais, Sandra Lavorel
+To cite this version:
+Titouan Dubo, Ignacio Palomo, Lucía Laorden Camacho, Bruno Locatelli, Audrey Cugniet, et al.. Nature-
+based solutions for climate change adaptation are not located where they are most needed across the Alps.
+Regional Environmental Change, 2023, 23 (1), pp.12. ⟨10.1007/s10113-022-01998-w⟩. ⟨hal-03897293⟩
+
+PAGE 2
+ 
+ 
+Nature-based Solutions for climate change adaptation are 
+not located where they are most needed across the Alps  
+ 
+Authors: Titouan Duboa, Ignacio Palomob, Lucía Laorden Camachoc, Bruno 
+Locatellid,e, Audrey Cugnieta, Natacha Racinaisa, Sandra Lavorela 
+ 
+Professional affiliations:  
+a : Univ. Grenoble-Alpes, Univ. Savoie Mont Blanc, CNRS, LECA, 38000 Grenoble, France 
+b : Univ. Grenoble-Alpes, IRD, CNRS, Grenoble INP*, IGE, 38000 Grenoble, France 
+c : Institute for Ecology, Innsbruck University, Austria 
+d : Cirad, University of Montpellier, Montpellier, 34398, France 
+e : Cifor, Lima, 15024, Peru 
+ 
+ 
+ 
+Accepted manuscript of the following paper: 
+ 
+Dubo, T., Palomo, I., Camacho, L.L., Locatelli, B., Cugniet, A., Racinais, N., Lavorel, S., 
+2022. Nature-based solutions for climate change adaptation are not located where they 
+are most needed across the Alps. Reg Environ Change 23, 12. 
+https://doi.org/10.1007/s10113-022-01998-w 
+ 
+ 
+ 
+ 
+ 
+ 
+ Distributed under a Creative Commons Attribution | 4.0 International licence 
+(https://creativecommons.org/licenses/by/4.0/) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PAGE 3
+2 
+ 
+Abstract 
+Climate change impacts mountains socio -ecosystems by increasing certain  natural disasters 
+and changing Nature’s Contributions to People (NCP). Nature -based Solutions (NbS) are 
+increasingly implemented to help local communities adapt to climatic hazards. However, the 
+relevance of their location in relation to those hazards  and local NCP  has hardly been 
+addressed. In the PORTAL project (Pathways of Transf ormation in the Alps) , we identified 
+and mapped a portfolio of 97 NbS for climate change adaptation in the European Alps. Most 
+NbS addressed drought or soil instability, and aimed to provide multiple NCP simultaneously 
+such as wood production and protective function against landslides . We analysed whether 
+NbS are located where they are the most needed, according to both current and future  
+intensity of the hazards they aim to address and to supply-flow-demand indicators of the NCP 
+they aim to provide . We fou nd that the location of NbS is overall not related to  current 
+supply-flow-demand indicators of most NCP , nor to intensity of hazards. Nevertheless, NbS 
+addressing droughts and floods are located in areas where these hazards are more intense,  but 
+do not match higher values for NCP indicators. Conversely, NbS aiming to produce wood and 
+to provide protective function against landslides are located in areas with greater levels of 
+these NCP, regardless of the intensity of hazards. These results suggest that hazards and NCP 
+indicators are not the main drivers of NbS implementation . We argue that i ntegrating local 
+climate conditions and current NCP flows is needed to underpin a macro-regional strategy for 
+planning NbS implementation.  
+Keywords 
+Nature-based Solutions, Climate Change Adaptation, Nature’s Contributions to People, 
+European Alps, Spatial analysis. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 4
+3 
+ 
+1. Introduction 
+Considered as one of the greatest challenges humanity faces, climate change threatens human 
+good quality of life and ecosystems, especially in high-elevation areas, where temperature has 
+been rising faster than in lowlands  (Pepin et al. 2022) . With th is accelerating change,  
+mountain communities already experience more frequent and intense natural hazard events, 
+and these are expected to increase in the future whatever the carbon emission scenario (Gobiet 
+and Kotlarski 2020). In the European Alps, climate scenarios suggest that t he frequency and 
+the intensity of extreme climatic hazards and climate-induced disasters – such as heatwaves, 
+erratic rainfall, floods, wildfires, landslides, rockfalls and avalanches – will increase 
+significantly during the 21 st century (Gobiet et al. 2014; Einhorn et al. 2015; Beniston and 
+Stoffel 2016; Gariano and Guzzetti 2016; Huss et al. 2017) . The magnitude of these hazards 
+will be elevation-dependent, with high er altitude s expected to  experience a greater relative 
+increase in  temperature, and a lower relative decrease in snow cover duration (Gobiet and 
+Kotlarski 2020). Precipitation projections are more uncertain especially in terms of  potential 
+changes in their geographic distribution; overall precipitation is likely to increase in winter, 
+and decrease in summe r, with significant geographic variation along a  north-south axis 
+(Gobiet and Kotlarski 2020). This, together with glacier retreat, will lead to more intense and 
+frequent droughts, especially in summer (Gobiet et al. 2014; Laurent et al. 2020) . Snow cover 
+decrease will continue, in terms of quantity and duration (Gobiet and Kotlarski 2020; Morin et 
+al. 2021).  
+This climate chan ge threatens mountain b iodiversity. Increasing temperatures in all seasons 
+drive the upward shift of plant species , resulting in  ecosystem composition change 
+(Lamprecht et al. 2018) , extinction risk for  cold-adapted plant and animal species isolated to 
+summits that may have nowhere to go (Pauli and Halloy 2019)  and new suitable climatic 
+conditions for invasive species (Carboni et al. 2018) . This suggests the future loss of major 
+parts of the habitat for up to half of endemic alpine plants (Engler et al. 2011; Dullinger et al. 
+2012), and the high extinct ion risk of animal population s such as  some alpine ungulates 
+(Lovari et al. 2020) and bird s (Dirnböck et al. 2011; Ferrarini et al. 2017; Brambilla et al. 
+2018) in the absence of  adapted conservation planning (Chamberlain et al. 2016) . These 
+effects on biodiversity and ecosystems, added to the increasing natur al hazards and declining 
+cryosphere, affect ecosystem functioning and consequently the diverse Nature’s Contributions 
+to People (NCP)  in mountain regions, including freshwater supply, wood  and fodder 
+production, forest protective function against landslides, pest control, outdoor recreation 
+
+PAGE 5
+4 
+ 
+activities and global climate regulation among others,  which benefit local communities, 
+tourists and people living in lowland s (Palomo 2017; Schirpke et al. 2019a, b; Grêt -Regamey 
+and Weibel 2020) . For example,  freshwater supply is highly sensitive  to climate change in 
+mountains, and millions of users  upstream and downstream will be put at risk (Immerzeel et 
+al. 2020; Mastrothe odoros et al. 2020) . Heatwaves and drought hazards resulting from  
+increasing temperature and the reduction of freshwater supply will have large social and 
+economic consequences (Zappa and Kan 2007) , with human health impact s in urban area s 
+(Villanueva et al. 2015) , perturbation s o f grassland and forest carbon sequestration ability  
+(Mina et al. 2017; Ingrisch et al. 2018) , pest expansion (Huss et al., 201) , reduction of forest 
+protective function against landslides due to increasing tree mortality (Allen et al. 2010; Sass 
+2014), and economic loss es of farms with dairy cows  submitted to more severe  heat stress 
+(Boni et al. 2014). 
+In the face of these unprecedented changes, adaptation options are being put in place in alpine 
+socio-ecological systems (Terzi et al. 2019; Vij et al. 2021) . Among them, Nature-based 
+Solutions (NbS) have recently  gained attention in global research and practice as climate 
+adaptation strategies (Seddon et al. 2020). NbS are actions to protect, sustainably manage and 
+restore natural or  modified ecosystems that address societal challenges effectively  and 
+adaptively, simultaneously providing human well -being and biodiversity ben efits (Cohen-
+Shacham et al. 2016) . Some examples are grassland conservation method s within ski resorts  
+to reduce soil erosion (Casagrande Bacchiocchi et al. 2019) ; forest management practices and 
+mixed tree species  options to increase forest resilience (Elkin et al. 2015; Irauschek et al. 
+2017); adapted grassland management practices for mountain livestock production (Lamarque 
+et al. 2013; Nettier et al. 2017); and green infrastructure to reduce heatwave intensity in urban 
+areas (Kabisch et al. 2017).  
+NbS for climat e change adaptation are claimed to have the potential to maintain or enhance 
+multiple NCP that help society adapt to climate change (Jones et al. 2012; Colloff et al. 2020). 
+These NbS can apply on the ground measures to conserve or improve NCP that protect people 
+from climate change (e.g., reforesting a landslide -prone area to improve NCP such as soil 
+conservation or landslide reduction). They can also act on NCP drivers, such as land -use 
+policies or incentives for good management (e.g., forest harvesting regulati ons or payments 
+for ecosystem services) , and  address the vulnerability of NCP to climate change (e.g., by 
+reforesting with species that will be adapted to future climate).  
+
+PAGE 6
+5 
+ 
+To our knowledge no study has evaluated the location of NbS regarding NCP or the ha zards 
+they aim to address. We assume that the need for NbS is higher where society is more likely 
+to be affected, i.e. where climatic hazards are more intense or frequent; NCP are less supplied; 
+and/or NCP are more used or demanded by society. We hence explicitly consider for the first 
+time for assessing NbS the three NCP dimensions: supply, the amount of NCP coproduced by 
+ecosystems and people (Schröter et al. 2012) ; flow, the part of the supply benefiting society; 
+and demand, the amount of NCP society needs  (Burkhard an d Maes 2017) . Our analysis 
+considered those socio-economic factors included in NCP indicators (such as population 
+density, presence of infrastructure or livestock) but not other factors often used in risk 
+assessments, such as education level s, wealth, or governance (e.g. Gerlitz et al. 2017; 
+Birkmann et al. 2022) . We restricted our analysis to hazards and NCP indicators b ecause of 
+the subjectivity of selecting and combining socio-economic factors that may not be relevant to 
+local society needs  (Beccari 2016; Il Choi 2019) . Following the IPCC framework (Field and 
+Barros 2014), we define a hazard as "the potential occurrence of a natural or human -induced 
+physical event or trend that may cause loss of life, injury, or other health impacts, as  well as 
+damage and loss to property, infrastructure, livelihoods, service provision, ecosystems and 
+environmental resources”. 
+Here, we define needs for NbS in terms of climatic hazards combined with NCP, for example 
+erratic rainfall (hazard) with forest p rotective function against landslides (NCP). We assume 
+that the need for NbS is high where the NCP surplus is low, i.e. where the amount of NCP 
+supplied is closer to the amount of NCP used or demanded by society . In our example, this 
+would regard areas wit h limited protective function from current forest against landslides. 
+Similarly, we also assume that the needs for NbS are high where the NCP demand-supply is 
+high, i.e. where any decrease in NCP supply risks to leave demand unmet.  This would regard 
+the same areas with currently low protective function of forest against landslides but also high 
+demand from population and infrastructure for protective function against landslides.  
+Similarly, we also assume that the need for NbS is high where the NCP demand-supply is 
+high, i.e. where any decrease in NCP supply risks to leave demand unmet . This would regard 
+the same areas with currently low  protective function against landslides  but also important 
+protective function demand from the population and infrastructure s against landslides . This 
+consideration also applies to locations with a low demand-supply ratio in cases where 
+currently low demand is expected to increase due to increasing hazards and current NCP 
+
+PAGE 7
+6 
+ 
+supply may not sufficiently cover future demand.  However, we note that this approach does 
+not address cases of mismatch between supply and demand locations (Schirpke et al. 2019b). 
+To understand how NbS are distributed, we explore the spatial distribution of NbS in the Alps 
+in relation to current and future climate change hazards and to NCP indicators separately, and 
+in relation to their combinations. We first identified and mapped the location of implemented 
+NbS in the Alps  into a novel database . Secondly, we computed a spatial analysis to compare 
+NbS locations to  i) a series of current and future climate change hazards; ii) the NCP 
+indicators including NCP supply, flow, demand as well as flow -supply and demand -supply 
+ratios; iii) common combinations of hazards and NCP indicators. 
+2. Materials & Methods 
+2.1. Nature-based Solutions grey literature review 
+We identified NbS for climate change adaptat ion within the Alpine Convention space area , 
+referred to as the Alps henceforth , which covers  190 717 km² within Austria, Italy, France, 
+Switzerland, Germany, Slovenia, Liechtenstein  and Monaco. We searched existing NbS and 
+adaptation initiative databases , including ClimateADAPT, Oppla and PHUSICOS. Then, we 
+explored the websites of environmental public agencies related to the forest, agriculture, 
+freshwater provision, biodiversity conservation and protected area sectors, for all countries of 
+the Alps. We complemented this search with data from  websites of partner organisations 
+involved in the implementation of these NbS. Our main inclusion criteria targeted NbS aiming 
+to address at least one climate change impact or at least one impact that is known to be 
+enhanced by climate change. These initiatives had to address also the loss of habitat for 
+biodiversity to be included. 
+We grouped NbS into three categories following the classification from  Donatti et al. (2020): 
+i) On the ground NbS, including the restoration, protection, creation  of ecosystems and  
+ecosystem sustainable management ; ii) Enabling NbS,  which focus on  the creation of new 
+knowledge, awareness-raising activities  and the implementation of new policies  or plans in 
+relation to nature-based adaptation; iii) Mixed NbS, which implement both on the ground and 
+enabling activities. 
+We coded the climatic hazards addressed by each NbS as well as the NCP they address. For 
+NCP we used the classification from Diaz et al. (2018) and adapted it to specific NCP  
+addressed by NbS in mountain regions. We created subcategories resulting into 22 NCP listed 
+
+PAGE 8
+7 
+ 
+in Supplementary file 1. For example, the extreme events regulation NCP from IPBES 
+classification has been divided in eight sub -categories such as flood regulation  or heatwave 
+regulation. We then computed a Sankey diagram to illustrate the links between hazards 
+addressed by NbS and th e NCP they aim to provide . Finally, we mapped the boundaries of  
+each NbS (QGIS software version 3.16.5)  based on the initiative ’s description online or by 
+contacting the person in charge.  
+2.2. Climatic hazards and Nature’s Contributions to People 
+To assess current and future climat ic hazards, we used data from the Climate Data Store, 
+hosted on the Copernicus platform, bet ween 1970 and 2000 for the reference period, and 
+between 2050 and 2060 for the future. We selected the following variables: temperature, 
+precipitation, snow cover, heatwaves intensity, flood hazard and wildfire hazard. Because we 
+aimed to compare relative rather than absolut e values between location s we selected the 
+climatic scenario that had been used for each climate model (RCP 8.5 for most variables, and 
+RCP 4.5 when RCP 8.5 was not available). For all variables, we computed the relative change 
+from current to future value s for each pixel. Details on each specific variable are in the 
+Supplementary Files 2 and 3. 
+We used the indicators of NCP supply, flow and demand for seven NCP assessed and mapped 
+at the municipality level by the AlpES project  (Alpine Ecosystem Services - mapping, 
+maintenance, management) based on biophysical and socio -economic variables (Schirpke et 
+al. 2019a): freshwater; fodder; fuel wood; forest protective function against landslides; CO2 
+sequestration; outdoor recreation; and symbolic biodiversity (for details, see Supplementary 
+File 4). As the flood and heatwave regulation NCP were not mapped by the AlpES project, we 
+did not include them in our analysis. 
+Adapted from the surplus -balance-deficit indicator developed by (Li et al. 2 016), w e 
+computed the demand -supply ratio  and the flow -supply ratio  for each NCP, except for 
+symbolic biodiversity for which we computed only the flow-supply ratio given demand for 
+this NCP can be considered as global and was therefore not  mapped by AlpES. As most NbS 
+identified have been implemented after the data acquisition to map NCP indicators (e.g. 2012 
+for land use and land cover maps), we assumed that the NbS identified have not influenced 
+NCP values (Schirpke et al. 2019a; Meisch et al. 2019; Jäger et al. 2020) . Moreover, because 
+most on -the-ground NbS cover a small surface relatively to the municipal ity’s surface, we 
+considered that they have a low influence on NCP supply at the municipality scale. 
+
+PAGE 9
+8 
+ 
+2.3. Data analysis 
+To deal with the different sets of units across studied climatic and NCP variables, we rescaled 
+their values using a min-max normalisation (Peng et al. 2016), both for positive and negative 
+values, calculated as (1): 
+             
+           
+                         
+           
+                  
+Where Xs is the rescaled value, X i is the initial value,  Xmin+ the lowest value of the subset of 
+positive value, X max+ the highest value of the subset of positive value, X min- the lowest value 
+of the subset of negative value, Xmax- the highest value of the subset of negative value. 
+We assigned the values of hazards and NCP layers spatially overlapping  each NbS, and we 
+performed Wilcoxon tests in order to detect whether  values of hazards and NCP within  NbS 
+addressing them are significantly higher or lower than  across the entire Alps (for details, see 
+Supplementary File 2).  
+To detect whether the presence of NbS in the Alps reflects the combination of the intensity of 
+the targeted climatic hazard and of the NCP  known to help adapt to , or impacted by this 
+hazard, we first created subsets of NbS target ing a specific combination of hazards and NCP 
+known to address the impact. Given available data these were: drought hazards addressed by 
+NbS aiming to provide freshwater; drought hazards addressed by NbS aiming to provide 
+grassland fodder; drought hazards addressed by NbS aiming to produce wood; heatwave 
+hazards addressed by NbS aiming to produce wood. For each  of them, we then computed two 
+heatmaps of value distributions across the gradients of climatic hazard and NCP values , one 
+for NbS locations and one for the entire Alps. We then subtracted the heatmaps of the Alps 
+from the NbS heatmaps and used a Khi2 test  to detect whether the NbS distribution  is 
+different from the distribution across the Alps.  
+ 
+ 
+ 
+ 
+ 
+
+PAGE 10
+9 
+ 
+3. Results 
+3.1. The multifunctionality of Nature-based Solutions in the Alps 
+We identified 97 NbS in the Alps ( Fig. 1, for details in Supplementary File 5 ), addressing in 
+total 22 different hazards in relation to climate change, and aiming to provide 22 different 
+NCP. A quarter of NbS implement activities on the ground only (n=2 3), a quarter of NbS are 
+enabling activi ties (n=23), and  around half of  the NbS are mixed  (n=51), implementing 
+simultaneously enabling activities and activities on the ground. 
+ 
+Fig. 1: Map of the 97 Nature-based Solutions identified within the Alps.  
+Overall, NbS across the Alps address a diversity of hazards. Half of NbS documented in our 
+database aim to  address at least two hazards simultaneously (51%). NbS addressing three 
+(9%) or four hazards simultaneously (5%) are enabling activities that aim to counteract 
+several hazards or target several sectors, such as research projects or local adaptation plans 
+designed with stakeholders from multiple sectors ( Supplementary File 5 ). Each NbS often 
+aims to provide more than one NCP, which highlights the multifunctionality potential of NbS 
+in terms of NCP they aim to deliver (Fig. 2). Hazards related to temperature changes are those 
+most commonly addressed by NbS, including drought (32% of NbS), heatwaves (11%) and 
+increasing temperature (6%). Among these, drought is associated with the highest diversity of 
+NCP. Overall, NbS targeting drought aim to address 19 different NCP , including material 
+NCP (mainly food), regulating NCP (mainly freshwater supply and soil quality) and non -
+material NCP (provi ding outdoor recreation activities) (Fig. 2). NbS also commonly address 
+hazards related to soil stability , specifically landslides (11%), rock falls ( 7%), soil erosion 
+
+
+PAGE 11
+10 
+ 
+(10%), avalanches (7%), and mudslides events (2%). Among these, NbS addressing landslides 
+and rockfalls co-occur with 14 different NCP in total, mainly those related to the protective 
+function against landslides . NbS addressing vector and water -borne diseases (32% of NbS – 
+related to pests)  co-occur with 14 different NCP in total, mainly the material NCP of wood 
+production and the pest control regulating NCP (Fig. 2).  
+When considering  NCP, NbS mainly aim to provide materials, mainly wood production  
+(31%), and address a total of at least 17 different hazards (mainly landslides and vector and 
+water-borne diseases) (Fig. 2). A large number of NbS (29%) aim to provide food production 
+NCP, and they address mostly food insecurity and drought hazards. A significant number of 
+NbS aim s to provide r egulating NCP particularly the regulation of floods (15%),  the 
+protective function against  landslides ( 14%) and the regulation of  heatwaves (12%) .  
+Importantly, we reported many cases of NCP co-occurrence. For example, among initiatives 
+aiming to provide protective function against landslides, some reforestation initiatives 
+simultaneously targe t avalanche prevention. This explains why most NbS (50/97) aim to 
+provide at least two NCP simultaneously, and seven NbS aim to provide more than five NCP 
+simultaneously. 
+
+PAGE 12
+11 
+ 
+ 
+Fig. 2: Systematic map of the climatic hazards addressed b y Nature-based Solutions (NbS) – on the left – and the Nature’s 
+Contributions to People (NCP) targeted by NbS – on the right. The links involving only one NbS are not represented. The 
+number in each row indicates the number of NbS in each category. 
+ 
+3.2. Location of Nature-based Solutions according to climatic hazards 
+For most hazards, NbS are not located in areas of highest hazards within the Alps, for the 
+historical period, the future, or for the relative change of this hazard between the two periods, 
+except for a few exceptions (Tab. 1). NbS addressing drought are located in areas that are not 
+currently submitted to higher hazards than across the Alps. However, they do target areas that 
+are projected to experience more intense drought, with greater changes in the drought index. 
+On the contrary, NbS addressing heatwaves are located in areas that have experienced lower 
+occurrence in the historical period than the Alps overall and that are likely to experience 
+lower heatwaves in the future . Similarly, NbS address ing snow cover reduction are located 
+where the snow cover will be less reduced during summer than across the Alps, with a lower 
+reduction in summer snow cover from the historical to  the future period.  NbS addressing 
+
+
+PAGE 13
+12 
+ 
+floods are located where the flood index is higher in the historical period than across the Alps. 
+However, we found future flood hazards to be  lower within NbS than across the Alps. 
+Distributions of hazard values for each NbS are illustrated in the Supplementary File 6. 
+Tab. 1 : Wilcoxon tests results comparing climatic variable values within Nature-based Solutions (NbS) and across the Alps. 
+Significance level: (*): p-value <0.1 ; (**): p-value <0.05 ; (***): p-value <0.01; NS: not-significant. n: number of NbS. 
+Addressed-hazard Seasonality Historical Future Relative 
+change 
+Temperature change 
+(n=6) Annual NS NS NS 
+Heatwaves (n=11) Annual NbS < Alps              
+(***) 
+ NbS < Alps              
+(*) 
+NbS < Alps                       
+(*) 
+Drought (n=38) Annual NS NbS > Alps              
+(***) 
+NbS > Alps                   
+(***) 
+Wildfires (n=3) Annual NS NS NS 
+Floods (n=17) Annual NbS > Alps              
+(***) 
+NbS < Alps              
+(***) 
+NbS > Alps                    
+(***) 
+Precipitation    
+change (n=9) 
+Annual NS NS NS 
+Winter NS NS NS 
+Spring NS NS NS 
+Summer NS NS NS 
+Autumn NS NS NS 
+Snow cover         
+reduction (n=4) 
+Winter NS NS NS 
+Spring NS NS NS 
+Summer NS NbS < Alps              
+(***) 
+NbS < Alps                  
+(***) 
+Autumn NS NS NS 
+  
+ 
+ 
+ 
+ 
+
+PAGE 14
+13 
+ 
+3.3. Location of N ature-based Solutions  according to N ature’s Contributions to 
+People 
+NbS follow different spatial patterns in relation to the distribution of NCP supply, flow, 
+demand and the ir ratios. NbS targeting fodder production and outdoor recreation NCP are 
+generally not located where their supply or demand differ from the Alps (Tab. 2). In contrast, 
+NbS targeting freshwater supply are located where its flow value, namely water use, is higher 
+than across the Alps. Similarly, NbS targeting protective function against landsli des are 
+located in hotspots of its flow-supply ratio, mostly reflecting the higher value of the flow . 
+This indicates that these NbS are implemented where the NCP is highly used, independently 
+of the supply and demand. NbS targeting wood production are located in areas where they are 
+least needed as they are located where fuel wood demand is lower and supply is higher 
+compared to the Alps. NbS targeting CO 2 sequestration are located in areas where supply is 
+higher than across the Alps, yet where demand is al so higher. Finally, r egarding symbolic 
+biodiversity all NbS are  located in areas with lower values of both supply and flow  than 
+across the Alps. Distributions of NCP values for each NbS are illustrated in the 
+Supplementary File 7. 
+Tab. 2 : Wilcoxon tests results comparing Nature’s Contributions to People (NCP) values within Nature-based Solutions 
+(NbS) and across the Alps. D-S ratio means NCP demand-supply ratio. F-S ratio means NCP flow-supply ratio. D-S/F ratio 
+is used when the supply and the flow are equivalent. Significance level: (*): p-value <0.1 ; (**): p-value <0.05 ; (***): p-
+value <0.01; NS: Not-significant. The number on each row indicates the number of NbS targeting the specific NCP 
+ NCP Demand D-S ratio Supply F-S ratio Flow 
+Freshwater (n=11) NS NS NS NS NbS > Alps 
+(***)                
+Fodder (n=9) NS NS NS NS NS 
+Fuel wood (n=30) NbS < Alps 
+(**) NS NbS > Alps 
+(*) NS NS 
+Protective function against 
+landslides (n=14) NS NS NS NbS > Alps 
+(*) 
+NbS > Alps 
+(*) 
+Outdoor recreation (n=10) NS NS NS NS NS 
+Symbolic biodiversity (n=97) NA NA NbS < Alps 
+(**) NS NbS < Alps 
+(*) 
+NCP  Demand D-S/F ratio Supply/Flow   
+CO2 sequestration (n=24) NbS > Alps 
+(**) NS NbS > Alps 
+(***)   
+  
+ 
+
+PAGE 15
+14 
+ 
+3.4. Location of N ature-based Solutions according to the combination of climatic 
+hazards and Nature’s Contributions to People 
+Consistent with our findings for  climatic hazards and NCP supply, flow and demand, overall 
+NbS are not located in combined hotspots of relative change in hazards and NCP flow-supply 
+ratio, nor in combination with  the NCP demand-supply ratio . In the following we focus i n 
+particular on the distribution of  values within the most numerous NbS addressing drought  
+hazards in combination with  NCP of freshwater, fodder or wood production, and NbS 
+addressing heatwaves in combination with wood production (Fig. 3). Our analyses show that 
+values within NbS are similar to those across the Alps regarding the future relative change in 
+drought index and NCP flow -supply and demand -supply ratios. However, NbS addressing 
+drought appear to be concentrated in the upper values of relative change in the drought index, 
+whatever the targeted NCP, in comparison with Alps values (Fig. 3). Nevertheless, the 
+distributions of values within NbS addressing drought differ ac ross targeted NCP. NbS 
+targeting fodder and wood production match upper values of their flow-supply ratio, while the 
+NbS addressing the freshwater NCP are uniformly distributed along the drought change 
+gradient. 
+We also assessed the combination of relative change in fire hazard and wood production NCP. 
+While the distribution  of values within NbS  is not statistically different to those across the 
+Alps, our analyses show an absolute greater occurrence of NbS at the higher end of the hazard 
+gradient in conjunc tion with the medium -to-high range of the wood production flow -supply 
+ratio (Supplementary File 8), suggesting further analysis of this potential correlation. 
+
+PAGE 16
+15 
+ 
+ 
+Fig. 3: Heatmaps displaying the associations between one climate-related hazard (horizontal axis) and one Nature’s 
+Contributions to People (NCP) indicator (vertical axis). The values correspond to the difference between the number of 
+values within Nature-based Solutions (NbS) addressing the hazard as well as the NCP and the values within the entire Alps 
+distributed along the gradient of the hazard and the NCP. The number (n) associated to each NCP corresponds to the 
+number of NbS addressing both hazard and NCP for each heatmap. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PAGE 17
+16 
+ 
+4. Discussion 
+This study explores climate change adaptation within a large region, and questions the spatial 
+location of NbS in relation to societal  needs, by focusing on hazards and NCP . We identified 
+97 NbS in the Alps  illustrating the diverse potential actions in various type of habitat. This 
+portfolio confirms  NbS p ractical implementation including the creation of knowledge for 
+nature-based climate change adaptation on the ground (Debele et al. 2019; Vij et al. 2021)  as 
+well as enabling initiatives (Donatti et al. 2020).  However, we found that in general NbS are 
+not located in areas of higher current and future climat ic hazards, nor of greater NCP supply- 
+flow-demand indicators. We discuss in the following sections what drives implementation of 
+adaptation initiatives such as NbS, and first explore the barriers of implementation that can 
+explain why NbS did not match the greatest climatic hazards and NCP levels. Secondly, we 
+explore the further consideration of socio -ecological and climatic conditions for optimal NbS 
+location. Lastly, we address recommendations to overcome the limited knowledge on NbS 
+effectiveness for climate change adaptation  (Seddon et al. 2019; Donatti et al. 2020) , through 
+a macro -regional programme supporting adaptation of areas experiencing the most intense 
+hazards and higher impacts on NCP. 
+4.1. Diversity and multifunctionality of Nature-based Solutions for climate 
+change adaptation 
+Consistent with previous syntheses, we found that NbS in the Alps have the potential to 
+address multiple hazards (Chausson et al. 2020; Palomo et al. 2021) . Some hazards are 
+addressed jointly because of their similar nature  and biophysical mechanisms , for example 
+NbS addressing several natural hazards such as landslides and avalanches  through forest 
+protection, management and restoration. But co-occurring hazards of different natures are also 
+addressed jointly by NbS, such as wildfires and natural pests through sustainable forest 
+management (Felipe-Lucia et al. 2018; Stritih et al. 2021) . Drought and floods are also 
+addressed jointly by wetland restoration, which is known to be effective when well designed 
+(Erwin 2009). 
+As highlighted in previo us reviews, m ost of the NbS we identified aim to maintain a NCP 
+threatened by climate change  hazards, and to provide multiple NCP co-benefits (Brink et al. 
+2016; Osaka et al. 2021). While a large proportion of NbS target material NCP, such as wood, 
+fodder and food production, the NbS which w e documented across the Alps  involved a large 
+diversity of ecosystems, such as forests, pastures, wetlands, bare rock and urban areas . They 
+
+PAGE 18
+17 
+ 
+are not predominantly located within a given ecosystem, such as previous study on European 
+NbS (Vij et al. 2021) , but  in contrast with global review identifying NbS mostly in forest s 
+(Chausson et al. 2020).  
+4.2. Nature-based Solutions are distributed across a range of climate change 
+hazard levels 
+Although NbS in the Alps are overall not located in hotspots of the current and future hazards 
+they target,  we found a few significant trends for NbS addressing specific hazards. For 
+example, NbS addressing drought are located in areas where drought will be more severe in 
+the future than across the Alps. While NbS locations are not associated with current droughts, 
+this result is consistent with a previous study illustrating that local adaptation initiatives in 
+Mediterranean agriculture are implemented where  farmers experience higher temperatures 
+and more intense water scarcity  (Harmanny and Malek 2019) . NbS addressing floods  are 
+located within hotspots of current hazard, but not in areas of higher future hazard. This focus 
+on current rather than future hazard can be explained by  the future decrease of flood risk in 
+lowlands due to change in precipitati on pattern s in future climate scenarios for the Alps  
+(Beniston and Stoffel 2016; Wilhelm et al. 2022) . For example, NbS addressing floods are 
+mostly located to protect downstream cities such as Innsbruck (Austria) or Vizille (France)  
+from current flood events. Although here we did not consider i mpacted populations and their 
+adaptive capacity, a previous study  reported a mismatch between nature-based adaptation 
+initiatives for flood regulation and where the y are the most needed (Houghton and Castillo -
+Salgado 2020). 
+A large part of the NbS from our database addresses droughts and floods. It can be explained 
+by the fact that these two hazards impact NCP su pply from various sectors, like agriculture 
+(Tello-García et al. 2020) , forestry  (Elkin et al. 2013) , and  natural disaster risk reduction 
+(Mina et al. 2017) , with severe economic impacts (Fraser et al. 2013; Andres and Badoux 
+2019; Brèteau -Amores et al. 2019) . Moreover, the assessment and adaptation  of these two 
+hazards are hot topics in the literature (Aguiar et al. 2018; Mubeen et al. 2021) , especially in 
+mountain areas(Deléglise et al. 2019; Zingraff -Hamed et al. 2021a) and this can contribute to 
+the large number of adaptation actions (Cook et al. 2012; Street et al. 2019). 
+Contrary to drought and floods,  NbS addressing heatwaves are located in areas with lower 
+hazard occurrence than across th e Alps. While we have not explored the fine-resolution land 
+cover of areas where NbS are implemented, in our database NbS that address heatwaves are 
+
+PAGE 19
+18 
+ 
+green infrastructure within urban areas, where vulnerability to heatwaves is higher (Jagarnath 
+et al. 2020) . However, the heatwave index used in this study is based on predicted 
+temperatures, which increase most in higher-altitude areas, therefore not fully relevant to 
+these NbS. Future analyses would need to include urban heat island s as a hazard that urban 
+NbS are addressing by controlling temperature with trees (Schwaab et al. 2021).  
+The paucity of  NbS addressing snow cover reduction and wildfires can explain the non -
+significant results  regarding these, for which further studies  are needed. Nevertheless, we 
+found that NbS addressing snow cover reduction are located where changes will be lower in 
+summer than across the Alps. This is because they refer to three enabling NbS  that focus on 
+ski resorts at higher altitudes that are less affected by snow cover change during winter but 
+with higher change during summer (Beaumet et al. 2021) . While our database is not 
+exhaustive, the relatively small number of initiatives identified for ski resorts adaptation is 
+consistent with previous syntheses showing limited nature-based interventions from the skiing 
+sector, which still  mainly invest s in snowmaking solutions (Berard-Chenu et al. 2021) . 
+Concerning wildfires, although climate change is expected to increase their frequency in the 
+Alps (Stritih et al. 2021) , impacts are not severe or intense enough yet as a single  threat to 
+mountain forests (Kulakowski et al. 2017), especially outside of the southern Alps (Bebi et al. 
+2017). Our results are thus in line with this current low risk perception, with the three NbS 
+addressing wildfires targeting multiple co -benefits of adaptation to landslides, storm s or 
+drought. 
+The location of NbS addressing increasing temperature or precipitation appeared independent 
+of the geographic distribution of these two climatic variables. Although they are leading 
+indicators of climate change in the literature  (Field and Barros 2014) , we identified relatively 
+few NbS addressing these drivers directly. This may be because, except for their direct 
+impacts on shifts in species niches or change s in  plant phenology , their socio-ecological 
+impacts are indirect through increased intensity of hazards  like floods or avalanches  (Gobiet 
+and Kotlarski 2020). 
+ 
+ 
+ 
+ 
+
+PAGE 20
+19 
+ 
+4.3. Nature-based Solutions location according to NCP demand, supply and flow 
+Overall, we found that  NbS location was in general poorly related to hotspots of NCP 
+demand, supply or flow. Nevertheless, o ur analyses showed that many NbS are located in 
+areas needing protective function against  landslides according to the flow of this NCP. A 
+visual analysis confirmed that t hey tend to be  situated in probable release areas above 
+settlements that need protection , such as railways, roads or infrastructure (see Supplementary 
+File 5 ). This suggests accurate perceptions of risks and NCP by managers, in spite of 
+contentions this may not be the case  (Stritih et al. 2021) . In contrast, NbS targeting the 
+freshwater NCP are located where freshwater flow (indicating the water use by inhabitants) is 
+highest across the Alps, but not in hotspots of  freshwater supply (indicating water 
+availability). In the Alps, as happens in many mountain massifs, hotspots of freshwater supply 
+(upstream) and flow (in lowlands) are disjoint (Meisch et al. 2019) . Thus, NbS appeared to 
+focus on areas where freshwater is used rather than on supplying areas which are often located 
+at high altitude areas which also have lower population density (Meisch et al. 2019). 
+Symbolic biodiversity and climate mitigation CO 2 sequestration are two NCP for which 
+demand is global, but supply is local or regional. While biodiversity conservation is a priority 
+goal of NbS (Cohen-Shacham et al. 2016), we found that locations of NbS for climate change 
+adaptation are unrelated  to symbolic biodiversity, which is mainly located within protected 
+areas (Schirpke et al. 2018) . In -depth analyses would need to investigate whether NbS 
+implemented outside protected areas are located where the value of symbolic biodiversity is 
+higher or lower than within non-protected alpine areas. Furthermore, only few NbS identified 
+in the Alps mention a symbolic species; they rather target species with a key functional role 
+like Pinus heldreichii  to test new tree varieties or Carex nigra  to characterise the wetland 
+restoration success.  The case of symbolic biodiversity contrasts with climate mitigation. 
+Although not directly motivated by  climate change mitigatio n, many NbS identified for 
+climate change adaptation  across the Alps are located within low- to mid-elevation forests 
+with higher , even if not maximum  values of both demand and supply for the CO 2 
+sequestration NCP (Schirpke et al. 2019a). 
+ 
+ 
+
+PAGE 21
+20 
+ 
+4.4. Combination of climatic hazards and NCP for Nature-based Solutions 
+implementation 
+While climatic hazards  and socio-ecological variables have been used to prioritise areas for 
+implementing NbS for climate change adaptation (Bourne et al. 2016), the location of NbS in 
+this study does not generally coincide with  climatic hazards or NCP, neither with their 
+combinations. Of all the combinations of hazards and NCP assessed , our results suggest that 
+only NbS targeting the resilience of freshwater supply to drought are located where drought 
+threatens this NCP’s flow. Indeed agricultural practices and especially irrigation are emerging 
+as responses to drought impacts in mountain areas (Grüneis et al. 2018; Bergeret and Lavorel 
+2022), as in other region s (Harmanny and Malek 2019) . Although the results were not 
+significant, NbS targeting the resilience  of fodder production  to drought appeared to be 
+located in the areas most exposed to drought and with a higher fodder flow, namely high 
+mountain pastures, whose forage production is  known to be  vulnerable to climate change 
+(Schirpke et al. 2017; Deléglise et al. 2022)  and where adaptation of practices is essential  
+(Nettier et al. 2017) . Nevertheless, hazards perceived by stakeholders, and therefore 
+adaptation behaviour s, are not always assoc iated with the most sensitive conditions, as 
+previously observed in the French Alps (Bruley et al. 2021b).  
+4.5. Limitations of the study 
+Our analyses had four main limitations. First, w e acknowledge that the database of NbS we 
+compiled is not exhaustive, and therefore, further studies that include a larger number of NbS 
+are needed, particularly for targeted hazards for which the n umber of NbS we identified was 
+lower, such as for t emperature change , wildfires, snow cover or precipitation changes.  
+Reviewing grey literature is a practical way to identify NbS and adaptation initiatives  
+(Zingraff-Hamed et al. 2021b). Although we identified almost one hundred initiatives, our 
+database is limited as identifying and georeferencing all NbS implemented in the Alps is 
+impossible. As our analysis is mainly based on project documentation, we were limited in 
+understanding reports published in other languages than English and French. This also 
+explains why we identified more initiatives in France, but when an alysing NbS addressing a 
+specific hazard or NCP, the limited number of NbS for each alpine country reduced this bi as 
+de facto. 
+Secondly, our analyses were further constrained by  the coarse spatial resolution for climatic 
+hazards (5 km² for the flood index) that might also be a source of mismatch, where  some 
+
+PAGE 22
+21 
+ 
+pixels covering up to a 1000 m  elevation range may not provid e an accurate  flood hazard 
+value for NbS implemented in valleys, nor capture change in future hazards for small 
+catchments (Wilhelm et al. 2022). As the on -the-ground NbS usually had  a small extent, a 
+more precise estimation of the hazard value could yield different results for some specific 
+NbS. Moreover, other socio -economic factors may better capture societal needs for NbS 
+through aspects of exposure or vulnerability to hazards  (Pörtner et al. 2022) . However, these 
+were included in several NCP indicators. For example, demand for freshwater and outdoor 
+recreation activities were assessed through population density and tourism statistics. As 
+another example, the quantification of the demand for the protective function of fore st against 
+landslides is based on the presence of infrastructure at risk  (Schirpke et al. 2019a; Meisch et 
+al. 2019) . Thirdly, the  overall mismatch between NbS and NCP needs to be considered 
+cautiously given we used NCP values  mapped at municipality level  (Schirpke et al. 2019a) , 
+while some NbS are smaller than the municipality in which they are implemented. This may 
+conceal local social needs or  biophysical details, especially land use at finer resolution. For 
+example, the protective forest against landslides  implemented in Engadin (Switzerland) 
+covers 45 ha, while the municipality in which it implemented is 20  000 ha, with 20% covered 
+by forest. As a result, the municipal data indicates a low level of wood supply, while the NbS 
+is well located to protect downstream settlements. Likewise, our approach did not allow us to 
+assess the spatial location of NbS in relation to certain vulnerable social groups , as for 
+example for heatwaves impacting elderly people and children in urban areas (Kabisch et al. 
+2017).  
+Fourthly, o ur spatial analysis explored the combination between current or future climatic 
+conditions and NCP supply -flow-demand representing socio-ecological conditions. However, 
+as we focused solely on initiatives that aim to adapt to climate change, we did not consider 
+multiple other anthropogenic pressures on ecosy stems that must be examined in future 
+analyses of NbS optimal locations (Egarter Vigl et al. 2021) . Furthermore, we only analysed 
+climatic hazards rather than their potential impacts on future NCP supply, which is likely t o 
+be reshaped due to combined climate and land-use changes (Dunford et al. 2015; Mouchet et 
+al. 2017; Schirpke et al. 2017). We did not consider climate-driven ecosystem transformation, 
+which with the exception of glacier retreat is unlikely at higher altitudes in the short term  
+(Schirpke et al. 2020). 
+ 
+
+PAGE 23
+22 
+ 
+4.6. Recommendations for outscaling Nature-based Solutions 
+To implement NbS for climate change adaptation, integrating current and future climate 
+conditions and NCP indicators into spatial planning tools is essential for avoiding 
+maladaptation (Lavorel et al. 2015; Pártl et al. 2017; Hurlimann et al. 2021) . Moreover, they 
+need to be combined with local decision context s to offer effective solutions (Kruse and Pütz 
+2014). Spatial planning is still poorly address ed for NbS  (Bourne et al. 2016) , especially in 
+Europe (Geneletti and Zardo 2016) , and the establishment of appropriate processes is critical 
+(Albert et al. 2021). Spatial planning of NbS has mostly been limited to urban areas (Brink et 
+al. 2016; Kooy et al. 2020; Simperler et al. 2020) , coastal ecosystems  (Jones et al. 2020; 
+Sutrisno et al. 2021) , or locally tailored initiatives  (Turconi et al. 2020; Zaimes et al. 2020) . 
+To support  the future scaling of NbS and their spatial planning, future research need s to 
+determine the personal, institutional and economic drivers of NbS  implementation, such as 
+previous experiences of climate change im pacts (Demski et al. 2017; Harmanny and Malek 
+2019), stakeholder vision s for adaptation (Lupp et al. 2021; Bergeret and La vorel 2022) , 
+governance processes (Zingraff-Hamed et al. 2021a) and funding (Jones et al. 2017; Bruley et 
+al. 2021a) . Improving knowledge on NbS effectiveness and their cost -benefit balance  
+compared to other types of solutions  is also essential to support decision -maker choices and 
+avoid maladaptation (Seddon et al. 2020; Seddon 2022). 
+Broad scale planning and active adaptation can also provide positive outcomes for climate 
+change adaptation. Macro-regional strategies have shown t heir positive outcomes at national 
+level for NbS implementation for climate change mitigation  (Bradfer‐ Lawrence et al. 2021), 
+at the European scale for climate change adaptation (Wende et al. 2012; Lung et al. 2013) and 
+ecosystem restoration  (Egoh et al. 2014; Schulp et al. 2016) , and at the Alps to conserve 
+biodiversity through ecological network s (Plassmann et al. 2016) . Macro-regional strategies 
+need to be strengthened for future NbS outscaling (Bennett et al. 2016; Juschten et al. 2021) , 
+so that NbS better target climatic hazards and NCP. 
+ 
+ 
+ 
+ 
+
+PAGE 24
+23 
+ 
+Conclusion 
+Climate change is already threatening mountain ecosystems and the NCP they provide to local 
+and distant comm unities. We found that NbS are implemented in the Alps to tackle the 
+diverse impacts of climate change and to increase  or maintain  the supply of several NCP . 
+While few NbS are located within hotspots of climate change hazards, such as for droughts 
+and current floods, NbS are generally not located within the hotspots of the current or future 
+hazards they claim to address, neither within NCP hotspots, nor where they coincide . This 
+reveals the need to explore the NbS decision -making context with an interdisciplinary 
+approach including in particular institutional and economic aspects , personal values  and 
+knowledge. Our findings also suggest the need to integrate local climatic projections and NCP 
+quantification into future planni ng of NbS. A macro -regional strategy  in combination with 
+local stakeholder engagement has the potential to meet this challenge. 
+Acknowledgements 
+We thank all the implementers of NbS for the information they provided regarding NbS 
+characteristics and their spatial location. Funding was provided by the French National 
+Research Agency’s Programme d’Investissements d’Avenir – Make Our Planet Great Again 
+(grant no. ANR -19-MPGA-0009). We acknowledge EuroGeographics to provide licence to 
+use products for academic use. We thank Lukas Egarter Vigl  for his support he provided to 
+use AlpES project database. We thank the reviewers and the  editors for their constructive 
+comments. 
+The authors declare that they have no conflict of interest. 
+  
+
+PAGE 25
+24 
+ 
+References 
+Aguiar FC, Bentz J, Silva JMN, Fonseca AN, Swart R, et al (2018) Adaptation to climate change at local 
+level in Europe: An overview. Environ Sci Policy 86:38–63. 
+https://doi.org/10.1016/j.envsci.2018.04.010 
+Albert C, Brillinger M, Guerrero P, Gottwald S, Henze J, et al (2021) Planning nature-based solutions: 
+Principles, steps, and insights. Ambio 50:1446–1461. https://doi.org/10.1007/s13280-020-
+01365-1 
+Allen CD, Macalady AK, Chenchouni H, Bachelet D, McDowell N, et al (2010) A global overview of 
+drought and heat-induced tree mortality reveals emerging climate change risks for forests. 
+For Ecol Manag 259:660–684. https://doi.org/10.1016/j.foreco.2009.09.001 
+Andres N, Badoux A (2019) The Swiss flood and landslide damage database: Normalisation and 
+trends. J Flood Risk Manag 12:. https://doi.org/10.1111/jfr3.12510 
+Beaumet J, Ménégoz M, Morin S, Gallée H, Fettweis X, et al (2021) Twentieth century temperature 
+and snow cover changes in the French Alps. Reg Environ Change 21:114. 
+https://doi.org/10.1007/s10113-021-01830-x 
+Bebi P, Seidl R, Motta R, Fuhr M, Firm D, et al (2017) Changes of forest cover and disturbance regimes 
+in the mountain forests of the Alps. For Ecol Manag 388:43–56. 
+https://doi.org/10.1016/j.foreco.2016.10.028 
+Beccari B (2016) A Comparative Analysis of Disaster Risk, Vulnerability and Resilience Composite 
+Indicators. PLoS Curr 8:ecurrents.dis.453df025e34b682e9737f95070f9b970. 
+https://doi.org/10.1371/currents.dis.453df025e34b682e9737f95070f9b970 
+Beniston M, Stoffel M (2016) Rain-on-snow events, floods and climate change in the Alps: Events 
+may increase with warming up to 4 °C and decrease thereafter. Sci Total Environ 571:228–
+236. https://doi.org/10.1016/j.scitotenv.2016.07.146 
+Bennett EM, Solan M, Biggs R, McPhearson T, Norström AV, et al (2016) Bright spots: seeds of a good 
+Anthropocene. Front Ecol Environ 14:441–448. https://doi.org/10.1002/fee.1309 
+Berard-Chenu L, Cognard J, François H, Morin S, George E (2021) Do changes in snow conditions have 
+an impact on snowmaking investments in French Alps ski resorts? Int J Biometeorol 65:659–
+675. https://doi.org/10.1007/s00484-020-01933-w 
+Bergeret A, Lavorel S (2022) Stakeholder visions for trajectories of adaptation to climate change in 
+the Drôme catchment (French Alps). Reg Environ Change 22:33. 
+https://doi.org/10.1007/s10113-022-01876-5 
+Birkmann J, Jamshed A, McMillan JM, Feldmeyer D, Totin E, et al (2022) Understanding human 
+vulnerability to climate change: A global perspective on index validation for adaptation 
+planning. Sci Total Environ 803:150065. https://doi.org/10.1016/j.scitotenv.2021.150065 
+Boni R, Perrone LL, Cecchini S (2014) Heat stress affects reproductive performance of high producing 
+dairy cows bred in an area of southern Apennines. Livest Sci 160:172–177. 
+https://doi.org/10.1016/j.livsci.2013.11.016 
+
+PAGE 26
+25 
+ 
+Bourne A, Holness S, Holden P, Scorgie S, Donatti CI, et al (2016) A Socio-Ecological Approach for 
+Identifying and Contextualising Spatial Ecosystem-Based Adaptation Priorities at the Sub-
+National Level. PLOS ONE 11:e0155235. https://doi.org/10.1371/journal.pone.0155235 
+Bradfer‐Lawrence T, Finch T, Bradbury RB, Buchanan GM, Midgley A, et al (2021) The potential 
+contribution of terrestrial nature‐based solutions to a national ‘net zero’ climate target. J 
+Appl Ecol 1365-2664.14003. https://doi.org/10.1111/1365-2664.14003 
+Brambilla M, Resano-Mayor J, Scridel D, Anderle M, Bogliani G, et al (2018) Past and future impact of 
+climate change on foraging habitat suitability in a high-alpine bird species: Management 
+options to buffer against global warming effects. Biol Conserv 221:209–218. 
+https://doi.org/10.1016/j.biocon.2018.03.008 
+Brèteau-Amores S, Brunette M, Davi H (2019) An Economic Comparison of Adaptation Strategies 
+Towards a Drought-induced Risk of Forest Decline. Ecol Econ 164:106294. 
+https://doi.org/10.1016/j.ecolecon.2019.04.006 
+Brink E, Aalders T, Ádám D, Feller R, Henselek Y, et al (2016) Cascades of green: A review of 
+ecosystem-based adaptation in urban areas. Glob Environ Change 36:111–123. 
+https://doi.org/10.1016/j.gloenvcha.2015.11.003 
+Bruley E, Locatelli B, Colloff MJ, Salliou N, Métris T, et al (2021a) Actions and leverage points for 
+ecosystem-based adaptation pathways in the Alps. Environ Sci Policy 124:567–579. 
+https://doi.org/10.1016/j.envsci.2021.07.023 
+Bruley E, Locatelli B, Vendel F, Bergeret A, Elleaume N, et al (2021b) Historical reconfigurations of a 
+social–ecological system adapting to economic, policy and climate changes in the French 
+Alps. Reg Environ Change 21:34. https://doi.org/10.1007/s10113-021-01760-8 
+Burkhard B, Maes J (eds) (2017) Mapping ecosystem services. Pensoft Publishers, Sofia, Bulgaria 
+Carboni M, Guéguen M, Barros C, Georges D, Boulangeat I, et al (2018) Simulating plant invasion 
+dynamics in mountain ecosystems under global change scenarios. Glob Change Biol 24:e289–
+e302. https://doi.org/10.1111/gcb.13879 
+Casagrande Bacchiocchi S, Zerbe S, Cavieres LA, Wellstein C (2019) Impact of ski piste management 
+on mountain grassland ecosystems in the Southern Alps. Sci Total Environ 665:959–967. 
+https://doi.org/10.1016/j.scitotenv.2019.02.086 
+Chamberlain D, Brambilla M, Caprio E, Wellstein C (2016) Alpine bird distributions along elevation 
+gradients: the consistency of climate and habitat effects across geographic regions. 
+Oecologia 181:1139–1150. https://doi.org/10.1007/s00442-016-3637-y 
+Chausson A, Turner B, Seddon D, Chabaneix N, Girardin CAJ et al (2020) Mapping the effectiveness of 
+nature‐based solutions for climate change adaptation. Glob Change Biol 26:6134–6155. 
+https://doi.org/10.1111/gcb.15310 
+Cohen-Shacham E, Walters G, Janzen C, Maginnis S (eds) (2016) Nature-based solutions to address 
+global societal challenges. IUCN International Union for Conservation of Nature, Gland, 
+Switzerland. https://doi.org/10.2305/IUCN.CH.2016.13.en 
+
+PAGE 27
+26 
+ 
+Colloff MJ, Wise RM, Palomo I, Lavorel S, Pascual U (2020) Nature’s contribution to adaptation: 
+insights from examples of the transformation of social-ecological systems. Ecosyst People 
+16:137–150. https://doi.org/10.1080/26395916.2020.1754919 
+Cook CN, Carter RW (Bill), Fuller RA, Hockings M (2012) Managers consider multiple lines of evidence 
+important for biodiversity management decisions. J Environ Manage 113:341–346. 
+https://doi.org/10.1016/j.jenvman.2012.09.002 
+Debele SE, Kumar P, Sahani J, Marti-Cardona B, Mickovski SB, et al (2019) Nature-based solutions for 
+hydro-meteorological hazards: Revised concepts, classification schemes and databases. 
+Environ Res 179:108799. https://doi.org/10.1016/j.envres.2019.108799 
+Deléglise C, Dodier H, Garde L, François H, Arpin I, et al (2019) A Method for Diagnosing Summer 
+Mountain Pastures’ Vulnerability to Climate Change, Developed in the French Alps. Mt Res 
+Dev 39:. https://doi.org/10.1659/MRD-JOURNAL-D-18-00077.1 
+Deléglise C, François H, Dodier H, Crouzat E, Samacoïts R, et al (2022) Agro-climatic profiles of 
+summer mountain pastures in the French Alps: towards a monitoring tool to contribute to 
+climate risk assessment. Agron Sustain Dev 42:40. https://doi.org/10.1007/s13593-022-
+00776-6 
+Demski C, Capstick S, Pidgeon N, Sposato RG, Spence A (2017) Experience of extreme weather affects 
+climate change mitigation and adaptation responses. Clim Change 140:149–164. 
+https://doi.org/10.1007/s10584-016-1837-4 
+Díaz S, Pascual U, Stenseke M, Martín-López B, Watson RT, et al (2018) Assessing nature’s 
+contributions to people. Science 359:270–272. https://doi.org/10.1126/science.aap8826 
+Dirnböck T, Essl F, Rabitsch W (2011) Disproportional risk for habitat loss of high-altitude endemic 
+species under climate change. Glob Change Biol 17:990–996. https://doi.org/10.1111/j.1365-
+2486.2010.02266.x 
+Donatti CI, Harvey CA, Hole D, Panfil SN, Schurman H (2020) Indicators to measure the climate 
+change adaptation outcomes of ecosystem-based adaptation. Clim Change 158:413–433. 
+https://doi.org/10.1007/s10584-019-02565-9 
+Dullinger S, Gattringer A, Thuiller W, Moser D, Zimmermann NE, et al (2012) Extinction debt of high-
+mountain plants under twenty-first-century climate change. Nat Clim Change 2:619–622. 
+https://doi.org/10.1038/nclimate1514 
+Dunford RW, Smith AC, Harrison PA, Hanganu D (2015) Ecosystem service provision in a changing 
+Europe: adapting to the impacts of combined climate and socio-economic change. Landsc 
+Ecol 30:443–461. https://doi.org/10.1007/s10980-014-0148-2 
+Egarter Vigl L, Marsoner T, Schirpke U, Tscholl S, Candiago S, et al (2021) A multi-pressure analysis of 
+ecosystem services for conservation planning in the Alps. Ecosyst Serv 47:101230. 
+https://doi.org/10.1016/j.ecoser.2020.101230 
+Egoh BN, Paracchini ML, Zulian G, Schägner JP, Bidoglio G, et al (2014) Exploring restoration options 
+for habitats, species and ecosystem services in the European Union. J Appl Ecol 51:899–908. 
+https://doi.org/10.1111/1365-2664.12251 
+
+PAGE 28
+27 
+ 
+Einhorn B, Eckert N, Chaix C, Ravanel L, Deline P, et al (2015) Changements climatiques et risques 
+naturels dans les Alpes. J Alp Res Rev Géographie Alp. https://doi.org/10.4000/rga.2829 
+Elkin C, Giuggiola A, Rigling A, Bugmann H (2015) Short- and long-term efficacy of forest thinning to 
+mitigate drought impacts in mountain forests in the European Alps. Ecol Appl 25:1083–1098. 
+https://doi.org/10.1890/14-0690.1 
+Elkin C, Gutiérrez AG, Leuzinger S, Manusch C, Temperli C, et al (2013) A 2 °C warmer world is not 
+safe for ecosystem services in the European Alps. Glob Change Biol 19:1827–1840. 
+https://doi.org/10.1111/gcb.12156 
+Engler R, Randin CF, Thuiller W, Dullinger S, Zimmermann NE, et al (2011) 21st century climate 
+change threatens mountain flora unequally across Europe. Glob Change Biol 17:2330–2341. 
+https://doi.org/10.1111/j.1365-2486.2010.02393.x 
+Erwin KL (2009) Wetlands and global climate change: the role of wetland restoration in a changing 
+world. Wetl Ecol Manag 17:71–84. https://doi.org/10.1007/s11273-008-9119-1 
+Felipe-Lucia MR, Soliveres S, Penone C, Manning P, van der Plas F, et al (2018) Multiple forest 
+attributes underpin the supply of multiple ecosystem services. Nat Commun 9:4839. 
+https://doi.org/10.1038/s41467-018-07082-4 
+Ferrarini A, Alatalo JM, Gustin M (2017) Climate change will seriously impact bird species dwelling 
+above the treeline: A prospective study for the Italian Alps. Sci Total Environ 590–591:686–
+694. https://doi.org/10.1016/j.scitotenv.2017.03.027 
+Field CB, Barros VR (2014) Climate change 2014: impacts, adaptation, and vulnerability Working 
+Group II contribution to the fifth assessment report of the Intergovernmental panel on 
+climate change. Cambridge university press, New York 
+Fraser EDG, Simelton E, Termansen M, Gosling SM, South A (2013) “Vulnerability hotspots”: 
+Integrating socio-economic and hydrological models to identify where cereal production may 
+decline in the future due to climate change induced drought. Agric For Meteorol 170:195–
+205. https://doi.org/10.1016/j.agrformet.2012.04.008 
+Gariano SL, Guzzetti F (2016) Landslides in a changing climate. Earth-Sci Rev 162:227–252. 
+https://doi.org/10.1016/j.earscirev.2016.08.011 
+Geneletti D, Zardo L (2016) Ecosystem-based adaptation in cities: An analysis of European urban 
+climate adaptation plans. Land Use Policy 50:38–47. 
+https://doi.org/10.1016/j.landusepol.2015.09.003 
+Gerlitz J-Y, Macchi M, Brooks N, Pandey R, Banerjee S, et al (2017) The Multidimensional Livelihood 
+Vulnerability Index – an instrument to measure livelihood vulnerability to change in the 
+Hindu Kush Himalayas. Clim Dev 9:124–140. 
+https://doi.org/10.1080/17565529.2016.1145099 
+Gobiet A, Kotlarski S (2020) Future Climate Change in the European Alps. In: Oxford Research 
+Encyclopedia of Climate Science. Oxford University Press. https://doi.org/ 
+10.1093/acrefore/9780190228620.013.767 
+
+PAGE 29
+28 
+ 
+Gobiet A, Kotlarski S, Beniston M, Heinrich G, Rajczak J, et al (2014) 21st century climate change in 
+the European Alps—A review. Sci Total Environ 493:1138–1151. 
+https://doi.org/10.1016/j.scitotenv.2013.07.050 
+Grêt-Regamey A, Weibel B (2020) Global assessment of mountain ecosystem services using earth 
+observation data. Ecosyst Serv 46:101213. https://doi.org/10.1016/j.ecoser.2020.101213 
+Grüneis H, Penker M, Höferl K-M, Schermer M, Scherhaufer P(2018) Why do we not pick the low-
+hanging fruit? Governing adaptation to climate change and resilience in Tyrolean mountain 
+agriculture. Land Use Policy 79:386–396. https://doi.org/10.1016/j.landusepol.2018.08.025 
+Harmanny KS, Malek Ž (2019) Adaptations in irrigated agriculture in the Mediterranean region: an 
+overview and spatial analysis of implemented strategies. Reg Environ Change 19:1401–1416. 
+https://doi.org/10.1007/s10113-019-01494-8 
+Houghton A, Castillo-Salgado C (2020) Analysis of correlations between neighborhood-level 
+vulnerability to climate change and protective green building design strategies: A spatial and 
+ecological analysis. Build Environ 168:106523. 
+https://doi.org/10.1016/j.buildenv.2019.106523 
+Hurlimann A, Moosavi S, Browne GR (2021) Urban planning policy must do more to integrate climate 
+change adaptation and mitigation actions. Land Use Policy 101:105188. 
+https://doi.org/10.1016/j.landusepol.2020.105188 
+Huss M, Bookhagen B, Huggel C, Jacobsen D, Bradley RS, et al (2017) Toward mountains without 
+permanent snow and ice. Earths Future 5:418–435. https://doi.org/10.1002/2016EF000514 
+Il Choi H (2019) Assessment of Aggregation Frameworks for Composite Indicators in Measuring Flood 
+Vulnerability to Climate Change. Sci Rep 9:19371. https://doi.org/10.1038/s41598-019-
+55994-y 
+Immerzeel WW, Lutz AF, Andrade M, Bahl A, Biemans H, et al (2020) Importance and vulnerability of 
+the world’s water towers. Nature 577:364–369. https://doi.org/10.1038/s41586-019-1822-y 
+Ingrisch J, Karlowsky S, Anadon-Rosell A, Hasibeder R, König A, et al (2018) Land Use Alters the 
+Drought Responses of Productivity and CO2 Fluxes in Mountain Grassland. Ecosystems 
+21:689–703. https://doi.org/10.1007/s10021-017-0178-0 
+Irauschek F, Rammer W, Lexer MJ (2017) Evaluating multifunctionality and adaptive capacity of 
+mountain forest management alternatives under climate change in the Eastern Alps. Eur J 
+For Res 136:1051–1069. https://doi.org/10.1007/s10342-017-1051-6 
+Jagarnath M, Thambiran T, Gebreslasie M (2020) Heat stress risk and vulnerability under climate 
+change in Durban metropolitan, South Africa—identifying urban planning priorities for 
+adaptation. Clim Change 163:807–829. https://doi.org/10.1007/s10584-020-02908-x 
+Jäger H, Peratoner G, Tappeiner U, Tasser E (2020) Grassland biomass balance in the European Alps: 
+current and future ecosystem service perspectives. Ecosyst Serv 45:101163. 
+https://doi.org/10.1016/j.ecoser.2020.101163 
+Jones AE, Turner J, Caminade C, Heath AE, Wardeh M, et al (2019) Bluetongue risk under future 
+climates. Nat Clim Change 9:153–157. https://doi.org/10.1038/s41558-018-0376-6 
+
+PAGE 30
+29 
+ 
+Jones HP, Hole DG, Zavaleta ES (2012) Harnessing nature to help people adapt to climate change. Nat 
+Clim Change 2:504–509. https://doi.org/10.1038/nclimate1463 
+Jones HP, Nickel B, Srebotnjak T, et al (2020) Global hotspots for coastal ecosystem-based 
+adaptation. PLOS ONE 15:e0233005. https://doi.org/10.1371/journal.pone.0233005 
+Jones L, Champalle C, Chesterman S, Turner W, Gonzalez-Roglich M, et al (2017) Constraining and 
+enabling factors to using long-term climate information in decision-making. Clim Policy 
+17:551–572. https://doi.org/10.1080/14693062.2016.1191008 
+Juschten M, Reinwald F, Weichselbaumer R, Jiricka-Pürrer A (2021) Developing an Integrative 
+Theoretical Framework for Climate Proofing Spatial Planning across Sectors, Policy Levels, 
+and Planning Areas. Land 10:772. https://doi.org/10.3390/land10080772 
+Kabisch N, Korn H, Stadler J, Bonn A (eds) (2017) Nature-Based Solutions to Climate Change 
+Adaptation in Urban Areas: Linkages between Science, Policy and Practice. Springer 
+International Publishing, Cham. https://doi.org/10.1007/978-3-319-560 
+Kooy M, Furlong K, Lamb V (2020) Nature Based Solutions for urban water management in Asian 
+cities: integrating vulnerability into sustainable design. Int Dev Plan Rev 42:381–390. 
+https://doi.org/10.3828/idpr.2019.17 
+Kruse S, Pütz M (2014) Adaptive Capacities of Spatial Planning in the Context of Climate Change in 
+the European Alps. Eur Plan Stud 22:2620–2638. 
+https://doi.org/10.1080/09654313.2013.860516 
+Kulakowski D, Seidl R, Holeksa J, Kuuluvainen T, Nagel TA, et al (2017) A walk on the wild side: 
+Disturbance dynamics and the conservation and management of European mountain forest 
+ecosystems. For Ecol Manag 388:120–131. https://doi.org/10.1016/j.foreco.2016.07.037 
+Lamarque P, Artaux A, Barnaud C, Dobremez L, Nettier B, et al (2013) Taking into account farmers’ 
+decision making to map fine-scale land management adaptation to climate and socio-
+economic scenarios. Landsc Urban Plan 119:147–157. 
+https://doi.org/10.1016/j.landurbplan.2013.07.012 
+Lamprecht A, Semenchuk PR, Steinbauer K, Winkler M, Pauli H (2018) Climate change leads to 
+accelerated transformation of high-elevation vegetation in the central Alps. New Phytol 
+220:447–459. https://doi.org/10.1111/nph.15290 
+Laurent L, Buoncristiani J-F, Pohl B, Zekollari H, Farinotti D, et al (2020) The impact of climate change 
+and glacier mass loss on the hydrology in the Mont-Blanc massif. Sci Rep 10:10420. 
+https://doi.org/10.1038/s41598-020-67379-7 
+Lavorel S, Colloff MJ, Mcintyre S, Doherty MD, Murphy HT, et al (2015) Ecological mechanisms 
+underpinning climate adaptation services. Glob Change Biol 21:12–31. 
+https://doi.org/10.1111/gcb.12689 
+Li J, Jiang H, Bai Y, Alatalo JM, Li X, et al (2016) Indicators for spatial–temporal comparisons of 
+ecosystem service status between regions: A case study of the Taihu River Basin, China. Ecol 
+Indic 60:1008–1016. https://doi.org/10.1016/j.ecolind.2015.09.002 
+
+PAGE 31
+30 
+ 
+Lovari S, Franceschi S, Chiatante G, Fattorini L, Fattorini N, et al (2020) Climatic changes and the fate 
+of mountain herbivores. Clim Change 162:2319–2337. https://doi.org/10.1007/s10584-020-
+02801-7 
+Lung T, Lavalle C, Hiederer R, Dosio A, Bouwer LM (2013) A multi-hazard regional level impact 
+assessment for Europe combining indicators of climatic and non-climatic change. Glob 
+Environ Change 23:522–536. https://doi.org/10.1016/j.gloenvcha.2012.11.009 
+Lupp G, Huang JJ, Zingraff-Hamed A, Oen A, Del Sepia N, et al (2021) Stakeholder Perceptions of 
+Nature-Based Solutions and Their Collaborative Co-Design and Implementation Processes in 
+Rural Mountain Areas—A Case Study From PHUSICOS. Front Environ Sci 9:678446. 
+https://doi.org/10.3389/fenvs.2021.678446 
+Mastrotheodoros T, Pappas C, Molnar P, Burlando P, Manoli G, et al (2020) More green and less blue 
+water in the Alps during warmer summers. Nat Clim Change 10:155–161. 
+https://doi.org/10.1038/s41558-019-0676-5 
+Meisch C, Schirpke U, Huber L, Rüdisser J, Tappeiner, U (2019) Assessing Freshwater Provision and 
+Consumption in the Alpine Space Applying the Ecosystem Service Concept. Sustainability 
+11:1131. https://doi.org/10.3390/su11041131 
+Mina M, Bugmann H, Cordonnier T, Irauschek F, Klopcic M, et al (2017) Future ecosystem services 
+from European mountain forests under climate change. J Appl Ecol 54:389–401. 
+https://doi.org/10.1111/1365-2664.12772 
+Morin S, Samacoïts R, François H, Carmagnola CM, Abegg B, et al (2021) Pan-European 
+meteorological and snow indicators of climate change impact on ski tourism. Clim Serv 
+22:100215. https://doi.org/10.1016/j.cliser.2021.100215 
+Mouchet MA, Rega C, Lasseur R, Georges D, Paracchini ML, et al (2017) Ecosystem service supply by 
+European landscapes under alternative land-use and environmental policies. Int J Biodivers 
+Sci Ecosyst Serv Manag 13:342–354. https://doi.org/10.1080/21513732.2017.1381167 
+Mubeen A, Ruangpan L, Vojinovic Z, Sanchez Torrez A, Plavšid J (2021) Planning and Suitability 
+Assessment of Large-scale Nature-based Solutions for Flood-risk Reduction. Water Resour 
+Manag. https://doi.org/10.1007/s11269-021-02848-w 
+Nettier B, Dobremez L, Lavorel S, Brunschwig G (2017) Resilience as a framework for analyzing the 
+adaptation of mountain summer pasture systems to climate change. Ecol Soc 22:art25. 
+https://doi.org/10.5751/ES-09625-220425 
+Osaka S, Bellamy R, Castree N (2021) Framing “nature‐based” solutions to climate change. WIREs 
+Clim Change. https://doi.org/10.1002/wcc.729 
+Palomo I (2017) Climate Change Impacts on Ecosystem Services in High Mountain Areas: A Literature 
+Review. Mt Res Dev 37:179–187. https://doi.org/10.1659/MRD-JOURNAL-D-16-00110.1 
+Palomo I, Locatelli B, Otero I, Colloff M, Crouzat E, et al (2021) Assessing nature-based solutions for 
+transformative change. One Earth 4:730–741. https://doi.org/10.1016/j.oneear.2021.04.013 
+Pártl A, Vačkář D, Loučková B, Krkoška Lorencová E (2017) A spatial analysis of integrated risk: 
+vulnerability of ecosystem services provisioning to different hazards in the Czech Republic. 
+Nat Hazards 89:1185–1204. https://doi.org/10.1007/s11069-017-3015-z 
+
+PAGE 32
+31 
+ 
+Pauli H, Halloy SRP (2019) High Mountain Ecosystems Under Climate Change. In: Oxford Research 
+Encyclopedia of Climate Science. Oxford University Press. 
+https://doi.org/10.1093/acrefore/9780190228620.013.764 
+Peng J, Chen X, Liu Y, Lü H, Hu X (2016) Spatial identification of multifunctional landscapes and 
+associated influencing factors in the Beijing-Tianjin-Hebei region, China. Appl Geogr 74:170–
+181. https://doi.org/10.1016/j.apgeog.2016.07.007 
+Pepin NC, Arnone E, Gobiet A, Haslinger K, Kotlarski S, et al (2022) Climate Changes and Their 
+Elevational Patterns in the Mountains of the World. Rev Geophys 60:e2020RG000730. 
+https://doi.org/10.1029/2020RG000730 
+Plassmann G, Kohler Y, Badura M, Walzer C (eds) (2016) Alpine nature 2030: creating [ecological] 
+connectivity for generations to come. Federal Ministry for the Environment, Nature 
+Conservation, Building and Nuclear Safety (BMUB), Berlin 
+Pörtner HO, Roberts DC, Tignor M, Poloczanska ES, Mintenbeck K et al (eds) (2022) Climate Change 
+2022: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Sixth 
+Assessment Report of the Intergovernmental Panel on Climate Change, pp. 3–33. Cambridge 
+University Press (2022), Cambridge, UK and New York. 
+https://doi.org/10.1017/9781009325844.001 
+Sass O (2014) FIRIA – Fire risk and vulnerability of austrian forests under the impact of climate 
+change (Endbericht), APRP 3rd Call 201. Institut für Geographie und Raumforschung, 
+University of Graz, Graz, Austria. https://www.klimafonds.gv.at/report/acrp-3rd-call-2010 
+Schirpke U, Candiago S, Egarter Vigl L, Jäger H, Labadini A, et al (2019a) Integrating supply, flow and 
+demand to enhance the understanding of interactions among multiple ecosystem services. 
+Sci Total Environ 651:928–941. https://doi.org/10.1016/j.scitotenv.2018.09.235 
+Schirpke U, Kohler M, Leitinger G, Fontana V, Tasser E, et al (2017) Future impacts of changing land-
+use and climate on ecosystem services of mountain grassland and their resilience. Ecosyst 
+Serv 26:79–94. https://doi.org/10.1016/j.ecoser.2017.06.008 
+Schirpke U, Meisch C, Tappeiner U (2018) Symbolic species as a cultural ecosystem service in the 
+European Alps: insights and open issues. Landsc Ecol 33:711–730. 
+https://doi.org/10.1007/s10980-018-0628-x 
+Schirpke U, Tappeiner U, Tasser E (2019b) A transnational perspective of global and regional 
+ecosystem service flows from and to mountain regions. Sci Rep 9:6678. 
+https://doi.org/10.1038/s41598-019-43229-z 
+Schirpke U, Tscholl S, Tasser E (2020) Spatio-temporal changes in ecosystem service values: Effects of 
+land-use changes from past to future (1860–2100). J Environ Manage 272:111068. 
+https://doi.org/10.1016/j.jenvman.2020.111068 
+Scholes RJ (2016) Climate change and ecosystem services. WIREs Clim Change 7:537–550. 
+https://doi.org/10.1002/wcc.404 
+Schröter M, Remme RP, Hein L (2012) How and where to map supply and demand of ecosystem 
+services for policy-relevant outcomes? Ecol Indic 23:220–221. 
+https://doi.org/10.1016/j.ecolind.2012.03.025 
+
+PAGE 33
+32 
+ 
+Schulp CJE, Van Teeffelen AJA, Tucker G, Verburg PH (2016) A quantitative assessment of policy 
+options for no net loss of biodiversity and ecosystem services in the European Union. Land 
+Use Policy 57:151–163. https://doi.org/10.1016/j.landusepol.2016.05.018 
+Schwaab J, Meier R, Mussetti G, Seneviratne S, Bürgi C, et al (2021) The role of urban trees in 
+reducing land surface temperatures in European cities. Nat Commun 12:6763. 
+https://doi.org/10.1038/s41467-021-26768-w 
+Seddon N (2022) Harnessing the potential of nature-based solutions for mitigating and adapting to 
+climate change. Science 376:1410–1416. https://doi.org/10.1126/science.abn9668 
+Seddon N, Chausson A, Berry P, Girardin CAJ, Smith A, et al (2020) Understanding the value and limits 
+of nature-based solutions to climate change and other global challenges. Philos Trans R Soc B 
+Biol Sci 375:20190120. https://doi.org/10.1098/rstb.2019.0120 
+Seddon N, Turner B, Berry P, Chausson A, Girardin CAJ (2019) Grounding nature-based climate 
+solutions in sound biodiversity science. Nat Clim Change 9:84–87. 
+https://doi.org/10.1038/s41558-019-0405-0 
+Simperler L, Himmelbauer P, Ertl T, Stoeglehner G (2020) Prioritization of stormwater management 
+sites in urban areas. J Environ Manage 265:110507. 
+https://doi.org/10.1016/j.jenvman.2020.110507 
+Street RB, Buontempo C, Mysiak J, Karali E, Pulquério M, et al (2019) How could climate services 
+support disaster risk reduction in the 21st century. Int J Disaster Risk Reduct 34:28–33. 
+https://doi.org/10.1016/j.ijdrr.2018.12.001 
+Stritih A, Bebi P, Rossi C, Grêt-Regamey A (2021) Addressing disturbance risk to mountain forest 
+ecosystem services. J Environ Manage 296:113188. 
+https://doi.org/10.1016/j.jenvman.2021.113188 
+Sutrisno D, Darmawan M, Rahadiati A, Helmi M, Yusmur A, et al (2021) Spatial-Planning-Based 
+Ecosystem Adaptation (SPBEA): A Concept and Modeling of Prone Shoreline Retreat Areas. 
+ISPRS Int J Geo-Inf 10:176. https://doi.org/10.3390/ijgi10030176 
+Tello-García E, Huber L, Leitinger G, Peters A, Newesely C, et al (2020) Drought- and heat-induced 
+shifts in vegetation composition impact biomass production and water use of alpine 
+grasslands. Environ Exp Bot 169:103921. https://doi.org/10.1016/j.envexpbot.2019.103921 
+Terzi S, Torresan S, Schneiderbauer S, Critto A, Zebisch M, et al (2019) Multi-risk assessment in 
+mountain regions: A review of modelling approaches for climate change adaptation. J 
+Environ Manage 232:759–771. https://doi.org/10.1016/j.jenvman.2018.11.100 
+Turconi L, Faccini F, Marchese A, Paliaga G, Casazza M, et al (2020) Implementation of Nature-Based 
+Solutions for Hydro-Meteorological Risk Reduction in Small Mediterranean Catchments: The 
+Case of Portofino Natural Regional Park, Italy. Sustainability 12:1240. 
+https://doi.org/10.3390/su12031240 
+Vij S, Biesbroek R, Adler C, Muccione V (2021) Climate Change Adaptation in European Mountain 
+Systems: A Systematic Mapping of Academic Research. Mt Res Dev 41:. 
+https://doi.org/10.1659/MRD-JOURNAL-D-20-00033.1 
+
+PAGE 34
+33 
+ 
+Villanueva K, Badland H, Hooper P, Koohsari MJ, Mavoa S, et al (2015) Developing indicators of public 
+open space to promote health and wellbeing in communities. Appl Geogr 57:112–119. 
+https://doi.org/10.1016/j.apgeog.2014.12.003 
+Wende W, Bond A, Bobylev N, Stratmann L (2012) Climate change mitigation and adaptation in 
+strategic environmental assessment. Environ Impact Assess Rev 32:88–93. 
+https://doi.org/10.1016/j.eiar.2011.04.003 
+Wilhelm B, Rapuc W, Amann B, Anselmetti FS, Arnaud F, et al (2022) Impact of warmer climate 
+periods on flood hazard in the European Alps. Nat Geosci 15:118–123. 
+https://doi.org/10.1038/s41561-021-00878-y 
+Zaimes GN, Kasapidis I, Gkiatas G, Pagonis G, Savvopoulou A, et al (2020) Targeted placement of soil 
+erosion prevention works after wildfires. IOP Conf Ser Earth Environ Sci 612:012050. 
+https://doi.org/10.1088/1755-1315/612/1/012050 
+Zappa M, Kan C (2007) Extreme heat and runoff extremes in the Swiss Alps. Nat Hazards Earth Syst 
+Sci 7:375–389. https://doi.org/10.5194/nhess-7-375-2007 
+Zingraff-Hamed A, Hüesker F, Albert C, et al (2021a) Governance models for nature-based solutions: 
+Seventeen cases from Germany. Ambio 50:1610–1627. https://doi.org/10.1007/s13280-020-
+01412-x 
+Zingraff-Hamed A, Lupp G, Schedler J, Huang J, Pauleit S (2021b) 156 Nature-based solutions in the 
+German Alps to mitigate hydro-meteorological risks. EGU General Assembly 2021, online, 
+19–30 Apr 2021, EGU21-8522, https://doi.org/10.5194/egusphere-egu21-852 
+ 
+ 

@@ -1,0 +1,979 @@
+PAGE 1
+Citation: Diakakis, M.; Mavroulis, S.;
+Vassilakis, E.; Chalvatzi, V . Exploring
+the Application of a Debris Flow
+Likelihood Regression Model in
+Mediterranean Post-Fire
+Environments, Using Field
+Observations-Based Validation. Land
+2023, 12, 555. https://doi.org/
+10.3390/land12030555
+Academic Editors: Irene Manzella
+and Bouchra Haddad
+Received: 19 January 2023
+Revised: 17 February 2023
+Accepted: 23 February 2023
+Published: 24 February 2023
+Copyright: © 2023 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+land
+Article
+Exploring the Application of a Debris Flow Likelihood
+Regression Model in Mediterranean Post-Fire Environments,
+Using Field Observations-Based Validation
+Michalis Diakakis 1,*
+ , Spyridon Mavroulis 1
+ , Emmanuel Vassilakis 2
+ and Vassiliki Chalvatzi 1
+1 Department of Dynamic Tectonic and Applied Geology, Faculty of Geology and Geoenvironment,
+National and Kapodistrian University of Athens, 15784 Panepistimioupoli Zografou, Greece
+2 Department of Geography and Climatology, Faculty of Geology and Geoenvironment,
+National and Kapodistrian University of Athens, 15784 Panepistimioupoli Zografou, Greece
+* Correspondence: diakakism@geol.uoa.gr; Tel.: +30-210-727-4409
+Abstract: Post-ﬁre geomorphic processes and associated risks are an important threat in Mediter-
+ranean environments. Currently, post-ﬁre mass movement prediction has limited applications across
+the Mediterranean despite the abundance of both forest ﬁres and landslide/debris ﬂow disasters.
+This work applies a debris ﬂow generation likelihood model to evaluate the probability of mass
+movement phenomena in different catchments of a burnt area, after a catastrophic ﬁre near Schinos
+(Attica, Greece) in 2021. Then, it uses ﬁeld observations from the area, recording mass movement
+phenomena after high-intensity rainfall events, to validate the results. The ﬁndings show that the
+model is successful in determining the probability of debris ﬂow generation in the 21 basins of
+the study area, ranging from 0.05 to 0.893. The probability values show a statistically signiﬁcant
+correlation (sig. = 0.001) with the actual debris ﬂow occurrences in the area, and satisfactory results
+in terms of the model’s predictive ability, functioning well within the particular geo-environmental
+characteristics of the Mediterranean environment. The results establish the reliability of the approach
+as a tool to assess mass movement risks in a region with an abundance of post-ﬁre related hazards
+and disastrous events.
+Keywords: debris ﬂow; post-ﬁre; likelihood regression model; Mediterranean environment
+1. Introduction
+Despite the fact that forest ﬁres are an integral part of the Mediterranean ecosystems,
+their occurrence affects, often heavily, the hydrologic and geomorphic processes, inducing
+signiﬁcant changes in the burnt landscape, as well as important subsequent hazards,
+including erosion [ 1,2], desertiﬁcation, soil loss [ 3,4], and ﬂood and mass movement
+phenomena [5,6]. One of the most common hazards of a post-ﬁre environment is the
+occurrence of debris ﬂows of various magnitudes [ 7–10], triggered by intense rainfall
+events mobilizing sediments of various grain sizes (from clay to boulders) [11]. Together
+with water, sediments ﬂow by gravity downstream causing severe impacts, posing a risk to
+the population [12–16].
+Debris ﬂows concentrate large amounts of material due to intensiﬁed erosion in post-
+ﬁre environments, occurring through various mechanisms, including increased weathering
+of bedrock surfaces [17,18], enhanced slope instabilities [5], and removal of vegetation due
+to burning (including the root system) [ 19,20]. In addition, reduced protective ground
+cover, lack of vegetation canopy [17], changes in soil properties [21], decreased inﬁltration
+and increased runoff [1,17,22] can intensify erosion processes. Moreover, other landscape
+characteristics, beyond the ﬁre, can inﬂuence debris ﬂow generation and mass movement,
+including geological attributes [23], or the presence of ﬁne-grained material [24,25].
+Land 2023, 12, 555. https://doi.org/10.3390/land12030555 https://www.mdpi.com/journal/land
+
+PAGE 2
+Land 2023, 12, 555 2 of 18
+Despite their signiﬁcance and frequency, there is no systematic diagnosis of debris
+ﬂow risks after forest ﬁres in the Mediterranean region [26]. Current practice in the area
+bases debris ﬂow prediction on forecasted (or accumulated) rainfall or analysis of historical
+events [26,27]. In addition, there is extensive literature on rainfall thresholds for triggering
+landslides and debris ﬂows [ 28,29]. These approaches have signiﬁcant value but bear
+weaknesses in terms of the spatial dimension of occurrence prediction within the ﬁre-
+hit area, not capitalizing terrain-speciﬁc factors that have been associated with debris
+ﬂow generation. This spatial distinction of debris ﬂow generation risks is particularly
+useful in planning, prioritizing and placing post-ﬁre protection measures and informing
+citizens on high-risk locations, allowing for informed decisions when it comes to land
+use and risk management. Given the catastrophic forest ﬁres of the last decades across
+the Mediterranean [30] and Greece in particular [31,32], it is important to exploit all the
+tools available to assess in depth subsequent ﬁre-induced risks. This need becomes even
+more pressing when we take into account the expected increase in such events due to
+climate change [33–35], as well as the persistence of debris ﬂow hazards for years after ﬁre
+containment [5,17,36–38].
+In the last few years, witnessing debris ﬂow disasters in different places of the world,
+the research community, and the community of risk-professionals gradually developed
+mostly empirical methods for debris ﬂow prediction and warning. These approaches
+include the use of rainfall thresholds [39–43], the analysis of features of the burnt area [44],
+and other approaches that are focusing on determining the conditions that may lead to
+debris ﬂow occurrence [ 45–47]. Some of the most elaborate of these models and the most
+commonly used have been developed for the Western U.S. [36,47–50], a part of the world
+that in many respects (geo-environmental, geomorphological and climatological setting)
+has similarities with the Mediterranean region. The models developed for the Western
+U.S. employ mostly binary logistic regression to predict debris ﬂow occurrence based on
+statistically signiﬁcant associations of various factors with the outcome of a storm on the
+landscape [49–51].
+In this context, this work examines the applicability of a debris ﬂow likelihood model
+used in the Western U.S., by introducing its application to the Easter Mediterranean region,
+using European soil data to estimate the probability of debris ﬂow occurrence in the post-
+ﬁre environment of Schinos-Alepochori in Attica, Greece, after a catastrophic ﬁre in 2021.
+Then, by monitoring the area and carrying out ﬁeld observations, this study assesses the
+model’s results by comparing them to actual debris ﬂow occurrences in the ﬁre-hit region.
+2. Study Area
+2.1. Setting
+The study area is located at the northern slope of Geraneia Mt. Administratively, its
+eastern end belongs to the Attica Region, while its western part to the Corinth Regional
+Unit of Peloponnese Region. It extends generally from Loutraki in the south to the southern
+shores of the Alkyonides Gulf in the north and from Megara in the east to Perachora in
+the west (Figure 1). It is 30 km long in the E-W direction, 13 km wide in the N-S direction
+and has a perimeter of 125 km. Thus, it forms a natural barrier between central mainland
+Greece and the Peloponnesus, a natural obstacle that should be circumvented, either via its
+northern or southern sides. The northern pass involves a long and tedious detour, so the
+most straightforward corridor runs along the southern ﬂank, which has been known under
+the name of Kakia Skala, i.e., the Skironian Rocks of the antiquity.
+Geraneia has all the characteristic properties of mountains close to the sea. Its peak
+(Makryplagi, 1369 m) is located at a distance of only 4.5 km from the coastline, it is a
+rocky mountain with considerable relief comprising very deep gorges and steep slopes
+dropping down both towards the Corinth and the Saronic Gulfs, to the north and south,
+respectively. This intense morphology is attributed to the geological and neotectonic
+structure of the mountain. It consists of alpine formations and post-alpine deposits [52–54].
+It comprises outcrops of Mesozoic carbonate rocks, tectonically overlain by an ophiolitic
+
+PAGE 3
+Land 2023, 12, 555 3 of 18
+suite, which consists of peridotite, and serpentinite, maﬁc bodies, shales and cherts. The
+ophiolites are observed at the central part of the mountain and its northern ﬂanks, while
+the Mesozoic carbonate outcrops prevail in the eastern, western and southern parts of
+the Geraneia Mt. The post-alpine deposits are uncomformably deposited over the alpine
+formations and include alluvial deposits and recent scree and talus cones of Holocene
+age and marine, ﬂuvio-terrestrial and lagoonal deposits of Pliocene and Pleistocene age
+(Figure S1 in Supplementary Material).
+Land 2023, 12, 555  3  of  19 
+ 
+ 
+ 
+Figure 1. Map of the study area showing (a) its general location in the Eastern Mediterranean, (b) 
+its position between the Alkyonides and the Saronic Gulf in Greece, and the boundary of the May 
+2021 fire (red‐colored line), and (c) the main settlements and elevation in relation to the extent of the 
+2021 fire. 
+Geraneia has all the characteristic properties of mountains close to the sea. Its peak 
+(Makryplagi, 1369 m) is located at a distance of only 4.5 km from the coastline, it is a rocky 
+mountain with considerable relief comprising very deep gorges and steep slopes drop‐
+ping down both towards the Corinth and the Saronic Gulfs, to the north and south, re‐
+spectively. This intense morphology is attributed to the geological and neotectonic struc‐
+ture of the mountain. It consists of alpine formations and post‐alpine deposits [52–54]. It 
+comprises  outcrops  of  Mesozoic  carbonate  rocks,  tectonically  overlain  by  an  ophiolitic 
+Figure 1. Map of the study area showing (a) its general location in the Eastern Mediterranean, (b) its
+position between the Alkyonides and the Saronic Gulf in Greece, and the boundary of the May 2021
+ﬁre (red-colored line), and (c) the main settlements and elevation in relation to the extent of the
+2021 ﬁre.
+
+PAGE 4
+Land 2023, 12, 555 4 of 18
+The studied drainage basins have been formed in the northern slopes of Geraneia and
+they consist of both alpine formations and post-alpine deposits [52]. The ﬁrst formations
+comprises limestone-dolomite of Middle-Upper Triassic–Middle Jurassic and a Middle-
+Upper Jurassic schist-chert formation, while the latter contain Pliocene and Pleistocene
+alternations of clays, sands, sandstones and conglomerates, Pleistocene scree and talus
+cones, alluvial and coastal sand deposits [52].
+As regards neotectonics and active tectonics of the area, the area is disrupted by
+seismic faults, which are responsible for the uplift of Geraneia Mt and the related intense
+relief. The most important faults in the study area are the oblique-normal, north-throwing
+onshore Schinos and Pissia faults formed at the western end of the studied basins and the
+offshore Alepochori fault located north of the basin outlets [55–57] creating sharp relief in
+the area.
+The 1981 earthquake sequence occurred in the eastern part of the Corinth Gulf and in-
+cluded three strong earthquakes with magnitude Ms = 6.7, Ms = 6.4 andMs = 6.3 generated
+on 24, 25 February and 4 March 1981, respectively [55,58], resulting in 20 fatalities,500 injured
+people and severe non-structural and structural damage to thousands of structures in the
+earthquake-affected regions of Boeotia, Attica and Corinth [ 59]. Taking into account all
+geological and seismological data for the earthquake affected area, it is revealed that all
+earthquakes were caused by normal faults, which dominate the area and accommodate N-S
+extension. In addition to the effects on the built environment, these earthquakes caused
+a large number of primary and secondary effects including extensive primary surface
+faulting and signiﬁcant coastal uplift and subsidence in Schinos, Pissia and Alepochori
+areas, rockfalls, onshore and offshore landslides, liquefaction phenomena and a weak
+tsunami [60,61].
+The synergy of the active tectonics, the intensely fractured and brecciated limestones
+and the highly tectonized and weathered outcrops of the ophiolites on the northern slopes
+of the Geraneia, where the studied basins are formed, result in the occurrence of extensive
+slope movements. These phenomena comprise the frequent generation of rockfalls, which
+are greatly increased when triggering events such as earthquake and rainfall take place,
+and debris ﬂows whose probability of occurrence increases especially after the occurrence
+of forest ﬁres in the area. The latter follow the course of torrents that discharge into the
+Alkyonides Gulf.
+Regarding the hydrology of the study area, 21 drainage basins (shown in Figure 2)
+have been formed in along the northern slopes of Geraneia Mt, with an approximate N-S
+direction and area ranging from 0.09 to 34.96 km2. All these catchments (in this study named
+“B1”, “B2”, . . . , “B21”) drain into the southern part of the Alkyonides Gulf (Figure 2).
+The drainage network of the wider area is developed over both alpine formations
+and post-alpine deposits. It is characterized as parallel or even parallel in places, with the
+streams showing a high length-to-width ratio. The arrangement of the streams is largely
+asymmetrical, which is mainly attributed to the inﬂuence of active tectonics of the area.
+In general, the drainage system is considered dense. The streams show intense incision
+upstream, while downstream deposition from mass wasting events prevails and alluvial
+fans have been formed.
+With regard to vegetation according to the classiﬁcation of forest vegetation as made
+by Daﬁs [62] for the vegetation zones in Greece, the study area belongs to the Euromediter-
+ranean vegetation zone (Quercetalia ilicis). Before the 2021 ﬁre, the area was covered by
+characteristic forests of Pinus halepensis and in several sites by new plantations and dense
+stands of Pinus halepensis and evergreen broadleaves after earlier localized small ﬁres.
+Apart from Pinus, the area hosted Cypressus sempervirens and lower vegetation such as
+Arbutus Andrachne, Cercis Siiquastrum, Erica arborea, Quercus coccifera, Pistacia lentiscus
+and other typical of the environment [63].
+
+PAGE 5
+Land 2023, 12, 555 5 of 18
+Land 2023, 12, 555  5  of  19 
+ 
+ 
+ 
+Figure 2. Maps of the study basins against (a) the local relief, (b) the slope inclination of the study 
+area, and (c) the burnt area along with dNBR burn severity. 
+The drainage network of the wider area is developed over both alpine formations 
+and post‐alpine deposits. It is characterized as parallel or even parallel in places, with the 
+streams showing a high length‐to‐width ratio. The arrangement of the streams is largely 
+asymmetrical, which is mainly attributed to the influence of active tectonics of the area. In 
+general, the drainage system is considered dense. The streams show intense incision up‐
+stream, while downstream deposition from mass wasting events prevails and alluvial fans 
+have been formed. 
+With regard to vegetation according to the classification of forest vegetation as made 
+by Dafis (1973) for the vegetation zones in Greece, the study area belongs to the Euromed‐
+iterranean vegetation zone (Quercetalia ilicis). Before the 2021 fire, the area was covered 
+by characteristic forests of Pinus halepensis and in several sites by new plantations and 
+dense stands of Pinus halepensis and evergreen broadleaves after earlier localized small 
+fires. Apart from  Pinus,  the  area  hosted  Cypressus sempervirens  and lower  vegetation 
+such as Arbutus Andrachne, Cercis Siiquastrum, Erica arborea, Quercus coccifera, Pistacia 
+lentiscus and other typical of the environment [58]. 
+Figure 2. Maps of the study basins against (a) the local relief, (b) the slope inclination of the study
+area, and (c) the burnt area along with dNBR burn severity.
+2.2. The 2021 Fire Event
+On 19 May 2021 (21:45 local time), a forest ﬁre broke out in a grassland located
+east of Schinos area, close to a forest. Open-ﬁeld burning of agricultural remains has
+been speculated to be the cause of the forest ﬁre. Due to extreme weather conditions
+including up to 8 Beaufort wind gusts, ﬁre spread quickly eastwards and affected several
+villages situated on the northern slopes of Geraneia Mt [64] mainly along the coast. The
+ﬁre boundary in the north reached the coastal zone (Figure 3), while the burnt slopes
+with abundant loose material drained directly to the Gulf of Alkyonides (Figure S2 in the
+Supplementary Material).
+
+PAGE 6
+Land 2023, 12, 555 6 of 18
+Land 2023, 12, 555  6  of  19 
+ 
+ 
+2.2. The 2021 Fire Event 
+On 19 May 2021 (21:45 local time), a forest fire broke out in a grassland located east 
+of Schinos area, close to a forest. Open‐field burning of agricultural remains has been spec‐
+ulated to be the cause of the forest fire. Due to extreme weather conditions including up 
+to 8 Beaufort wind gusts, fire spread quickly eastwards and affected several villages situ‐
+ated on the northern slopes of Geraneia Mt [59] mainly along the coast. The fire boundary 
+in the  north  reached  the  coastal zone  (Figure  3),  while  the  burnt slopes  with  abundant 
+loose material drained directly to the Gulf of Alkyonides (Figure S2 in the Supplementary 
+Material). 
+ 
+Figure 3. Sentinel‐2A satellite images of the study area (a) on 13 May 2021 before the fire and (b) on 
+25 May 2021 after the fire. The dark red colors show the burnt area. 
+The synergy of the intense relief of the tectonically active area, the wind gusts of gale 
+force (value 8 in Beaufort wind force scale) and the dense vegetation facilitated the spread 
+of fire and made it difficult to extinguish. On 20 May, the forest fire entered Attica Region. 
+Part of the fire smoke was transported over Attica basin resulting in a gradual increase in 
+particulate matter (PM2.5 > 100μg/m3) in many districts, as recorded in real time by the 
+Panacea Research Infrastructure network of sensors [60] revealing poor to extremely poor 
+air quality as a result of the fire. 
+Due to the spread of the fire near residential areas including villages in the coastal 
+area from Schinos to Alepochori and on the northern slopes of Gerania Mt, the 112 Emer‐
+gency Communications Service was activated three times by sending emergency alert and 
+warning/evacuation messages to residents and visitors of the fire‐affected area. The in‐
+volved Civil Protection authorities evacuated over 10 villages during the evolution of the 
+phenomenon. On 20 May 2021, the Rapid Mapping of the Copernicus Emergency Man‐
+agement Service was activated in order to delineate the boundary of the fire‐affected area 
+Figure 3. Sentinel-2A satellite images of the study area (a) on 13 May 2021 before the ﬁre and (b) on
+25 May 2021 after the ﬁre. The dark red colors show the burnt area.
+The synergy of the intense relief of the tectonically active area, the wind gusts of gale
+force (value 8 in Beaufort wind force scale) and the dense vegetation facilitated the spread
+of ﬁre and made it difﬁcult to extinguish. On 20 May, the forest ﬁre entered Attica Region.
+Part of the ﬁre smoke was transported over Attica basin resulting in a gradual increase in
+particulate matter (PM2.5 > 100 µg/m3) in many districts, as recorded in real time by the
+Panacea Research Infrastructure network of sensors [65] revealing poor to extremely poor
+air quality as a result of the ﬁre.
+Due to the spread of the ﬁre near residential areas including villages in the coastal
+area from Schinos to Alepochori and on the northern slopes of Gerania Mt, the 112 Emer-
+gency Communications Service was activated three times by sending emergency alert
+and warning/evacuation messages to residents and visitors of the ﬁre-affected area. The
+involved Civil Protection authorities evacuated over 10 villages during the evolution of
+the phenomenon. On 20 May 2021, the Rapid Mapping of the Copernicus Emergency
+Management Service was activated in order to delineate the boundary of the ﬁre-affected
+area [66]. The extent of the ﬁre-affected area was 5664.1 ha on 20 May and 6647 ha on 26
+May based on products with spatial resolution of 12 m [66]. Based on PlanetScope imagery
+with approximately 3 m per pixel resolution [67], Lekkas et al. (2021) calculated the total
+extent of the ﬁre-affected area at 46,687 decares composed of coniferous forest (75.49%),
+shrublands (15.51%), arable land (8.33%), open shrublands (0.60%) and permanent crops
+(0.08%) and scattered unaffected patches. Approximately 6414 decares (13.74%) of the
+ﬁre-affected area were formally protected by the Natura 2000 network. As regards the ﬁre
+impact on the built environment, houses and infrastructure were affected.
+As regards the ﬁre impact on the built environment and structures, the ﬁre affected
+mainly illegally built houses and a livestock unit with sheep located in Mavrolimni area.
+
+PAGE 7
+Land 2023, 12, 555 7 of 18
+Furthermore, two small boats at the Mavrolimni ﬁshing shelter were burnt along with ﬁsh
+cage materials lying on the beach on the eastern edge of the shelter. Regarding the impact
+on the livestock, the ﬁre affected beehives and the livestock in the aforementioned unit.
+The ﬁre history of the area comprises a ﬁre on 3 August 1986, outside the current study
+area, burning through the forest of the entire southern slope of Geraneia Mt after traveling
+a distance of about 7 km within almost three hours. In a similar event, the southern slopes
+of Geraneia Mt (outside the study area) were burned in the 2018 Kineta ﬁre.
+3. Materials and Methods
+3.1. Approach
+One of the most commonly used models for determining the likelihood of a debris
+ﬂow occurrence is logistic regression, assuming a binary dependent variable denoting the
+response of catchment to a storm [43,50,51,68,69]. This type of approach, in general, seeks to
+characterize debris-ﬂow hazard through association of geospatial data describing catchment
+geomorphology and soil properties, as well as burn severity and storm magnitude, with
+the occurrence or non-occurrence of a debris ﬂow (binary response). In this context, the
+statistical likelihood of a debris-ﬂow generation is calculated based on binary logistic
+regression, using the logistic curve and is given from the following Equation (1) [50]:
+P = ex/(1 + ex) (1)
+where P represents the statistical likelihood number ranging from 0 to 1, (with higher values
+denoting higher likelihood of debris ﬂow generation), x is the link function (2), which is
+given through the following equation (Equation (2)) and ex is the exponential function (e is
+the Euler’s number and equal to 2.718)
+x = β + (C1 × X1) + (C2 × X2) + . . . + (Cn × Xn) (2)
+where β, C 1, C 2, . . . , C n are parameters derived empirically, whereas X 1, X 2, . . . Xn
+represent independent variables that have an inﬂuence on the binary outcome (that is
+debris ﬂow generation).
+The model selected and tested in the present study , is the one developed byStaley et al. [50]
+that is currently operational in the Western United States [70]. Apart from its proven value,
+this model was selected because of its relatively low data requirements and the fact that
+it has been shown to function in a geo-environmental setting similar to that of Greece,
+characterized by sharp relief and high inclination shaped by active tectonics, similarities in
+geology, soil and vegetation, as well as semi-arid landscape and climate [71–74].
+In the Staley et al. [50] model, the β, C1, C2, C3 parameters are determined, as shown
+in Equation (3).
+x = −3.63 + (0.41 × X1R) + (0.67 × X2R) + (0.7 × X3R) (3)
+where
+P denotes the statistical likelihood of debris-ﬂow generation;
+X1R denotes the part of upslope area classiﬁed as high or moderate soil burn severity
+and with gradients ≥23◦, multiplied by the peak 15 min rainfall accumulation of the design
+storm (in millimeters [mm]);
+X2R denotes the average differenced normalized burn ratio (dNBR/1000) of the up-
+stream area, multiplied by the peak 15 min rainfall accumulation of the design storm (in
+millimeters [mm]);
+X3R denotes the soil KF-Factor of the upslope area multiplied by the peak 15 min
+rainfall accumulation of the design storm (in millimeters [mm]).
+
+PAGE 8
+Land 2023, 12, 555 8 of 18
+3.2. Data Collection
+To calculate slope inclination, we used elevation data derived from the Greek land
+registry service (Hellenic Cadastre), which were part of the national digital elevation raster
+data of 5 m × 5 m resolution [ 75]. We obtained slope values using the “Slope” tool of
+Spatial Analyst toolset of ArcGIS software [76].
+The 15 min rainfall maximum accumulation of the design storm for the area was based
+on local IDF curves published by the Ministry of the Environment and Energy [77]. Given
+the small size of the area (69 km2 in total and just 18.7 km in width) in contrast with the
+relatively low resolution of IDF estimation, and the fact that the catchments in question
+have very similar elevation range and morphology, we assumed the same value of rainfall
+(i.e., the peak 15 min rainfall accumulation of the design storm equal to 15.2 mm) is valid
+for the whole area.
+We used the differential Normalized Burn Ratio (dNBR) index for estimating burn
+severity. This methodology concerns the generation of raster layers coming from the
+processing of satellite imagery acquired before and after a ﬁre event, recording the pre- and
+post-ﬁre conditions. The bands that participate in this raster calculation procedure (we used
+the Raster Calculator tool of ArcGIS software [76]) cover the Near Infrared and the Short-
+Wave Infrared wavelength parts of the spectrum. Speciﬁcally, we used the 10 m resolution
+Sentinel-2A B08 and B12 bands, respectively, extracted from two image datasets with a
+12-day time difference, before (13.5.21) and after (25.5.21) the event, for the generation of
+two NBR raster layers. Each 100 square meter pixel obtains a new value after the following
+calculation shown in the following equation, and this raster processing is repeated twice
+for both datasets.
+NBR = (B08 − B12)/(B08 + B12) (4)
+The next step requires the calculation of dNBR which is achieved after subtracting the
+post-ﬁre NBR values from the pre-ﬁre NBR values (Equation (5)) for each pixel (Figure 2).
+dNBR = NBRpre-ﬁre − NBRpost-ﬁre (5)
+Finally, we reclassiﬁed the resulting raster layer into 5 categories, namely: Unburned,
+Low Severity, Moderate Severity, High Severity, and Increased Greenness.
+Given the lack of ﬁeld-validated soil burn severity data, we used Burned Area Re-
+ﬂectance Classiﬁcation image as a proxy indicator, as described in previous works [50,78,79].
+To acquire BARC, we used dNBR raster data of the burned area as a basis following previ-
+ous works [80–82]. In detail, BARC was derived by a resampling to unsigned 8-bit images
+of the raw dNBR dataset, generating a BARC256 layer with values between 0 and 255,
+using the following equation [83]:
+BARC256 = (dNBR + 275)/5) (6)
+Then, BARC4 maps were generated by adjusting the BARC256 maps into a four
+categories, following previous publications [84], namely: unburned (BARC256 < 78), low
+(78 < BARC256 < 112), moderate (112 < BARC256 < 188), and high (BARC256 > 188),
+creating a 4-class thematic raster.
+With regard to soil erodibility factor (K-factor), which in the U.S. application is de-
+rived by Schwartz and Alexander [85], we used a Europe-wide dataset published by Joint
+Research Centre of the European Commission and the European Soil Data Center (ES-
+DAC) [86] with a 500 m-resolution grid. We selected this dataset because of its spatial
+coverage, so that in our adaptation of the model, its application remains highly transferable
+to other locations in the region.
+With regard to ﬁeld observations, we visited the area at different times after storms
+in the post-ﬁre period, namely: on 10 and 15 October, on 19, 24 and 26 November, as
+well as on 11 and 29 December in the autumn and winter of 2021 to record possible
+mass movement phenomena triggered by storms. In terms of rainfall accumulation these
+
+PAGE 9
+Land 2023, 12, 555 9 of 18
+October events recorded 11 mm and 21 mm, respectively, whereas the November ones
+recorded 24.0 mm, 16.0 mm and 34.2 mm, respectively. The aforementioned December
+storms recorded 19.4 mm and 23.0 mm, respectively. In the course of these ﬁeld surveys,
+we in fact recorded sediment ﬂows on 26 November in the form of debris ﬂow generation at
+speciﬁc locations along the main channel of certain basins, reaching the respective outlets.
+Figure 4 illustrates debris ﬂow phenomena recorded on 26 November 2021 near Vamvakies
+village (exact location details shown in the next section).
+Land 2023, 12, 555  9  of  19 
+ 
+ 
+With regard to soil erodibility factor (K‐factor), which in the U.S. application is de‐
+rived by Schwartz and Alexander [80], we used a Europe‐wide dataset published by Joint 
+Research  Centre  of  the  European  Commission  and  the  European  Soil  Data  Center 
+(ESDAC) [81] with a 500 m‐resolution grid. We selected this dataset because of its spatial 
+coverage, so that in our adaptation of the model, its application remains highly transfera‐
+ble to other locations in the region. 
+With regard to field observations, we visited the area at different times after storms 
+in the post‐fire period, namely: on 10 and 15 October, on 19, 24 and 26 November, as well 
+as on 11 and 29 December in the autumn and winter of 2021 to record possible mass move‐
+ment  phenomena  triggered  by  storms.  In  terms  of  rainfall  accumulation  these  October 
+events recorded 11 mm and 21 mm, respectively, whereas the November ones recorded 
+24.0 mm, 16.0 mm and 34.2 mm, respectively. The aforementioned December storms rec‐
+orded 19.4 mm and 23.0 mm, respectively. In the course of these field surveys, we in fact 
+recorded sediment flows on 26 November in the form of debris flow generation at specific 
+locations along the main channel of certain basins, reaching the respective outlets. Figure 
+4 illustrates debris flow phenomena recorded on 26 November 2021 near Vamvakies vil‐
+lage (exact location details shown in the next section). 
+ 
+Figure 4. Characteristic image of a debris flow occurrence in the study area after the 26 November 
+2021 storm, (a) via satellite imagery [62] and (b,c) via ground observations at the outlet of basin B7. 
+With regard to validation, we used the ROC analysis [82,83] which is has been used 
+before  in  mass  movement  phenomena  modeling  and  post‐fire  debris  flow  studies 
+[40,84,85], as well as a statistical tests, to explore a possible statistical differences between 
+the likelihood calculated in each catchment and the actual debris flow generation findings 
+from the field surveys. 
+In summary, the methodological steps of the present work include: 
+1. Collection  of  elevation  and  slope  raster  data,  15  min  design  rainfall  data,  and  soil 
+erodibility factor raster data of the study area; 
+2. Calculation of the dNBR index using satellite imagery of the burnt area and calcula‐
+tion of BARC4 soil burn severity raster data (based on the dNBR index); 
+3. Calculation of probability value for each basin by applying the Staley et al. [50] model 
+(i.e., Equations (1)–(3)) ; 
+Figure 4. Characteristic image of a debris ﬂow occurrence in the study area after the 26 November
+2021 storm, (a) via satellite imagery [67] and (b,c) via ground observations at the outlet of basin B7.
+With regard to validation, we used the ROC analysis [87,88] which is has been used
+before in mass movement phenomena modeling and post-ﬁre debris ﬂow studies [40,89,90],
+as well as a statistical tests, to explore a possible statistical differences between the likelihood
+calculated in each catchment and the actual debris ﬂow generation ﬁndings from the
+ﬁeld surveys.
+In summary, the methodological steps of the present work include:
+1. Collection of elevation and slope raster data, 15 min design rainfall data, and soil
+erodibility factor raster data of the study area;
+2. Calculation of the dNBR index using satellite imagery of the burnt area and calculation
+of BARC4 soil burn severity raster data (based on the dNBR index);
+3. Calculation of probability value for each basin by applying the Staley et al. [50] model
+(i.e., Equations (1)–(3));
+4. Identiﬁcation of debris ﬂow generation through ﬁeld survey;
+5. Statistical tests and ROC analysis to explore a potential statistical association between
+the calculated probability and the actual debris ﬂow occurrences identiﬁed in the ﬁeld
+(step 4).
+
+PAGE 10
+Land 2023, 12, 555 10 of 18
+4. Results
+Based on the above equations, we calculated the statistical likelihood of debris ﬂow
+occurrence in 21 basins along the coastal road from Alepochori to Schinos, for a given
+maximum 15 min design rainfall accumulation. The probability (P) ranged from 0.05 to
+0.893, with an average of 0.485.
+Subsequently, ﬁve classes of equal interval were deﬁned for the probability P obtained
+for cartographic illustration purposes, a practice followed also in previous works [ 70],
+namely: (1) 0–0.2: slightly probable, (2) 0.2–0.4: moderately probable, (3) 0.4–0.6: probable,
+(4) 0.6–0.8: very probable, (5) 0.8–1.0: highly probable. The following map (Figure 5) shows
+the probability in the study basins.
+Land 2023, 12, 555  10  of  19 
+ 
+ 
+4. Identification of debris flow generation through field survey; 
+5. Statistical tests and ROC analysis to explore a potential statistical association between 
+the  calculated  probability  and  the  actual  debris  flow  occurrences  identified  in  the 
+field (step 4). 
+4. Results 
+Based on the above equations, we calculated the statistical likelihood of debris flow 
+occurrence  in  21  basins  along  the  coastal  road  from  Alepochori  to  Schinos,  for  a  given 
+maximum 15 min design rainfall accumulation. The probability (P) ranged from 0.05 to 
+0.893, with an average of 0.485.  
+Subsequently,  five  classes  of  equal  interval  were  defined  for  the  probability  P  ob‐
+tained for cartographic illustration purposes, a practice followed also in previous works 
+[65],  namely:  (1)  0–0.2:  slightly  probable,  (2)  0.2–0.4:  moderately  probable,  (3)  0.4–0.6: 
+probable, (4) 0.6–0.8: very probable, (5) 0.8–1.0: highly probable. The following map (Fig‐
+ure 5) shows the probability in the study basins. 
+ 
+Figure 5. Map of the study area, with the values of the probability in each basin. The names B1 to 
+B21 represent the codename of each basin. 
+Figure  6, shows  characteristic images  from  the  debris flows  occurrences  identified 
+after the storm of 26 November 2021 at the outlet of basins B7, B12 and B13 near Vamvak‐
+ies  and  Mavrolimni  port  (Figure  6a,b),  between  Schinos  and  Vamvakies  villages  at  the 
+outlets of basins B5 and B6 (Figure 6c,d,h) and at the outlets of basins B8, B14, and B15 
+(Figure 6e–g, respectively). 
+Figure 5. Map of the study area, with the values of the probability in each basin. The names B1 to
+B21 represent the codename of each basin.
+Figure 6, shows characteristic images from the debris ﬂows occurrences identiﬁed
+after the storm of 26 November 2021 at the outlet of basins B7, B12 and B13 near Vam-
+vakies and Mavrolimni port (Figure 6a,b), between Schinos and Vamvakies villages at the
+outlets of basins B5 and B6 (Figure 6c,d,h) and at the outlets of basins B8, B14, and B15
+(Figure 6e–g, respectively).
+Comparison of debris ﬂow occurrence with the probability of occurrence calculated
+based on the above equations shows initially correlation (Figures 7 and 8), as we identiﬁed
+debris ﬂows at the outlet of eight basins (namely: B5, B14, B12, B15, B6, B13, B8, B7), based
+on ﬁeld observations, all in basins with relatively high debris-ﬂow occurrence probability.
+To explore the statistical signiﬁcance of this association, we examined the variable of
+probability against the actual catchment binary response (i.e., debris ﬂow generation or no
+debris ﬂow generation) through a Mann–Whitney U test. The test showed a statistically
+association between the two variables (sig. = 0.001), indicating a statistically signiﬁcant
+difference between the value of probability in the basins, where we recorded a debris ﬂow
+generation, and the basins that we did not.
+In addition, we examined the predictive ability of the model, testing with the actual
+debris ﬂow occurrences (true positives), through the Receiver Operating Characteristic
+(ROC) graph curves (Figure 9). The analysis revealed a fairly good model prediction
+accuracy with an AUC (area under the curve) value of 0.913. In this study, the ROC graph
+and the AUC value were derived using the ArcSDM tools in ArcGIS 10.7 software.
+
+PAGE 11
+Land 2023, 12, 555 11 of 18
+Land 2023, 12, 555  11  of  19 
+ 
+ 
+ 
+Figure 6. Debris flow occurrence in multiple locations across the study area, namely: (a) along the 
+road from Vamvakies to Schinos, in the southwest edge of Vamvakies settlement (outlet of basin 
+B7), (b) in Mavrolimni small port (near the outlets of basins B12 and B13), (c) along the road between 
+Schinos and Vamvakies at the outlet of basin B6, (d,h) at the outlet of basin B5, and (e) at the outlet 
+of basin B8, (f) along the road from Mavrolimni to Alepochori at the outlet of basin B14, and (g) at 
+the outlet of basin B15. 
+Comparison of debris flow occurrence with the probability of occurrence calculated 
+based on the above equations shows initially correlation (Figures 7 and 8), as we identified 
+Figure 6. Debris ﬂow occurrence in multiple locations across the study area, namely: ( a) along the
+road from Vamvakies to Schinos, in the southwest edge of Vamvakies settlement (outlet of basin B7),
+(b) in Mavrolimni small port (near the outlets of basins B12 and B13), ( c) along the road between
+Schinos and Vamvakies at the outlet of basin B6, (d,h) at the outlet of basin B5, and (e) at the outlet of
+basin B8, (f) along the road from Mavrolimni to Alepochori at the outlet of basin B14, and (g) at the
+outlet of basin B15.
+
+PAGE 12
+Land 2023, 12, 555 12 of 18
+Land 2023, 12, 555  12  of  19 
+ 
+ 
+debris flows at the outlet of eight basins (namely: B5, B14, B12, B15, B6, B13, B8, B7), based 
+on field observations, all in basins with relatively high debris‐flow occurrence probability. 
+ 
+Figure 7. Graph of probabilities per basins, against debris flow occurrence. 
+ 
+Figure 8. Map of the study area, showing the calculated probability of debris flow occurrence in five 
+categories,  against  the  actual  debris  flows  (DB)  generation  during  the  21  December  storm  in  the 
+area. The names B1 to B21 represent the codename of each basin. 
+To explore the statistical significance of this association, we examined the variable of 
+probability against the actual catchment binary response (i.e., debris flow generation or 
+no debris flow generation) through a Mann–Whitney U test. The test showed a statistically 
+association between the two variables (sig. = 0.001), indicating a statistically significant 
+difference between the value of probability in the basins, where we recorded a debris flow 
+generation, and the basins that we did not. 
+In addition, we examined the predictive ability of the model, testing with the actual 
+debris  flow  occurrences  (true  positives),  through  the  Receiver  Operating  Characteristic 
+(ROC) graph curves (Figure 9). The analysis revealed a fairly good model prediction ac‐
+curacy with an AUC (area under the curve) value of 0.913. In this study, the ROC graph 
+and the AUC value were derived using the ArcSDM tools in ArcGIS 10.7 software.  
+Figure 7. Graph of probabilities per basins, against debris ﬂow occurrence.
+Land 2023, 12, 555  12  of  19 
+ 
+ 
+debris flows at the outlet of eight basins (namely: B5, B14, B12, B15, B6, B13, B8, B7), based 
+on field observations, all in basins with relatively high debris‐flow occurrence probability. 
+ 
+Figure 7. Graph of probabilities per basins, against debris flow occurrence. 
+ 
+Figure 8. Map of the study area, showing the calculated probability of debris flow occurrence in five 
+categories,  against  the  actual  debris  flows  (DB)  generation  during  the  21  December  storm  in  the 
+area. The names B1 to B21 represent the codename of each basin. 
+To explore the statistical significance of this association, we examined the variable of 
+probability against the actual catchment binary response (i.e., debris flow generation or 
+no debris flow generation) through a Mann–Whitney U test. The test showed a statistically 
+association between the two variables (sig. = 0.001), indicating a statistically significant 
+difference between the value of probability in the basins, where we recorded a debris flow 
+generation, and the basins that we did not. 
+In addition, we examined the predictive ability of the model, testing with the actual 
+debris  flow  occurrences  (true  positives),  through  the  Receiver  Operating  Characteristic 
+(ROC) graph curves (Figure 9). The analysis revealed a fairly good model prediction ac‐
+curacy with an AUC (area under the curve) value of 0.913. In this study, the ROC graph 
+and the AUC value were derived using the ArcSDM tools in ArcGIS 10.7 software.  
+Figure 8. Map of the study area, showing the calculated probability of debris ﬂow occurrence in ﬁve
+categories, against the actual debris ﬂows (DB) generation during the 21 December storm in the area.
+The names B1 to B21 represent the codename of each basin.
+Land 2023, 12, 555  13  of  19 
+ 
+ 
+ 
+Figure 9. ROC graph showing the logistic regression model performance against the true positives 
+of debris flow actual occurrence locations in the study area. AUC (Area Under the Curve) equals 
+0.913. 
+5. Discussion 
+This  work  explores  the  applicability  of  a  logistic  regression  model  for  debris  flow 
+generation prediction in Greece, as a characteristic example of the Eastern Mediterranean 
+region landscape, using the post‐fire environment of Schinos fire‐hit area as a case study. 
+In this study, a model already in use in the western U.S. was selected (Staley et al. [50]), 
+with  an  adaptation  of  involving  a  European  dataset  of  soil  erodibility  data  (K‐factor). 
+Overall, the findings show that the model is able to provide results in the terrain of the 
+study area, as a characteristic example of the Eastern Mediterranean region, preliminarily 
+indicating a good match with debris flow occurrence in the area (i.e., statistical association 
+and other criteria used). The findings are a strong indication that the model in question 
+can be further used in the area in a more systematic way to assess debris flow risk imme‐
+diately after forest fires. The results indicate that the model can function with established 
+European K‐factor datasets [81], which is a critical point when it comes to retaining a high 
+transferability of the approach. 
+The model tested has relatively low data requirements and therefore is more desira‐
+ble for rapid assessment of the situation. This is particularly useful for authorities and the 
+local communities, as they strive to find and use all the available tools and methods to 
+deal effectively with fire‐induced hazards that can potentially appear in the next rainfall 
+season [86–88] (i.e., in a short period), as recorded in fire‐hit areas in the past [5]. These 
+characteristics are useful in the sense of allowing a rapid assessment of debris flow likeli‐
+hood that provides the foundation for planning and especially prioritizing interventions 
+(i.e., post‐fire measures) given that their development is time‐sensitive. Thus, this model 
+fits the needs for a tool functioning within the context of limited time and data availability. 
+Furthermore, in terms of advantages and improved prediction of debris flow occur‐
+rence and intensity, allows for better preparation and mitigation of the potential damage 
+they can cause. Enhanced ability to identify areas of high risk and design targeted protec‐
+tive measures at those particular locations to reduce the impact of debris flows.  
+In addition, given that such hazard can persist for several years after the actual fire, 
+increased awareness of the effects of debris flows on the environment and the locations of 
+high risk, allow for more effective management and conservation of resources, including 
+Figure 9. ROC graph showing the logistic regression model performance against the true positives of
+debris ﬂow actual occurrence locations in the study area. AUC (Area Under the Curve) equals 0.913.
+
+PAGE 13
+Land 2023, 12, 555 13 of 18
+5. Discussion
+This work explores the applicability of a logistic regression model for debris ﬂow
+generation prediction in Greece, as a characteristic example of the Eastern Mediterranean
+region landscape, using the post-ﬁre environment of Schinos ﬁre-hit area as a case study. In
+this study, a model already in use in the western U.S. was selected (Staley et al. [50]), with
+an adaptation of involving a European dataset of soil erodibility data (K-factor). Overall,
+the ﬁndings show that the model is able to provide results in the terrain of the study area,
+as a characteristic example of the Eastern Mediterranean region, preliminarily indicating a
+good match with debris ﬂow occurrence in the area (i.e., statistical association and other
+criteria used). The ﬁndings are a strong indication that the model in question can be further
+used in the area in a more systematic way to assess debris ﬂow risk immediately after forest
+ﬁres. The results indicate that the model can function with established European K-factor
+datasets [86], which is a critical point when it comes to retaining a high transferability of
+the approach.
+The model tested has relatively low data requirements and therefore is more desirable
+for rapid assessment of the situation. This is particularly useful for authorities and the
+local communities, as they strive to ﬁnd and use all the available tools and methods to
+deal effectively with ﬁre-induced hazards that can potentially appear in the next rainfall
+season [91–93] (i.e., in a short period), as recorded in ﬁre-hit areas in the past [5]. These
+characteristics are useful in the sense of allowing a rapid assessment of debris ﬂow likeli-
+hood that provides the foundation for planning and especially prioritizing interventions
+(i.e., post-ﬁre measures) given that their development is time-sensitive. Thus, this model
+ﬁts the needs for a tool functioning within the context of limited time and data availability.
+Furthermore, in terms of advantages and improved prediction of debris ﬂow occur-
+rence and intensity, allows for better preparation and mitigation of the potential damage
+they can cause. Enhanced ability to identify areas of high risk and design targeted protective
+measures at those particular locations to reduce the impact of debris ﬂows.
+In addition, given that such hazard can persist for several years after the actual ﬁre,
+increased awareness of the effects of debris ﬂows on the environment and the locations
+of high risk, allow for more effective management and conservation of resources, includ-
+ing better decision-making about land use and management as well as distribution and
+prioritization of funds. Moreover, a better understanding of debris ﬂow risks, allows for in-
+formed decision making when it comes to infrastructure effective design and maintenance
+strategies, the foundation to a more robust infrastructure network, able to withstand such
+dangerous phenomena [94,95]. Further, improving the spatial understanding of risks has
+the potential to enable a more effective disaster response, allowing the emergency or civil
+protection authorities to focus on the more sensitive areas or the basins with higher debris
+ﬂow generation probabilities. For example, by restricting access to dangerous parts of the
+road network prior to an expected high-intensity storm.
+One of the advantages of the approach used is that it provides results in a geospatial
+form, creating maps that can be understood and communicated more easily to local stake-
+holders, authorities and even towards the public [96]. Moreover, the approach can function
+in terrains characterized by the small-sized catchments, with dense infrastructure and pop-
+ulation, high resolution results are needed [97,98]. This ﬁts the geo-environmental setting
+of the Eastern Mediterranean and of Greece in particular, with its mountainous terrain,
+dominated by high-inclination, ephemeral streams and complex alternating lithologies.
+With regard to limitations, a primary source of uncertainty concerns the small sample
+of basins and debris ﬂow occurrences analyzed in the present study. The present application
+bears an added value for exploring the applicability of the approach, especially given the
+ﬁeld validation data. However, future research in the region would beneﬁt from including
+a larger number of catchments aiming to collect more data with the potential to improve
+the empirically derived parameters of the model to ﬁt better in the region, a process that
+took several years in the Western U.S. applications. One additional limitation in the current
+application of the model is the selection and use of a single value for the 15 min rainfall
+
+PAGE 14
+Land 2023, 12, 555 14 of 18
+accumulation. Given the small differences in values and distance of the neighboring
+stations as well as the small size of the study area, it is expected to have a negligible effect in
+the overall calculation of the statistical likelihood across the different catchments examined.
+However, it has to be noted that applications in larger study areas should include the spatial
+variability of the design rainfall. Moreover, it is important to note that small high-intensity
+increments in rainfall (e.g., 5 min peaks) may be associated with debris ﬂow generation
+locally [99], indicating that beyond 15 min rainfall accumulation values, rainfall data of
+higher temporal resolution could be interesting to explore as well. In addition, it has to be
+mentioned that the use of pan-European soil data, in the present study, bears limitations
+that are associated with the methodological assumptions of this dataset development and
+its resolution [86]. Speciﬁcally, it has to be noted that local high-resolution soil datasets
+can be used instead of the relatively coarser resolution European-wide ones, used in the
+present study to describe the soil erodibility. However, considering the European dataset’s
+extent and its wide usage, as well as the relatively low spatial variability of values of soil
+erodibility (in comparison for example with elevation or slope) this tradeoff is considered
+beneﬁcial for the transferability and the standardization of the approach.
+6. Conclusions
+This work explores the applicability of a binary regression model for debris ﬂow
+generation statistical likelihood assessment in Greece, as a characteristic example of the
+Eastern Mediterranean terrain. The results together with the ﬁeld validation, by means
+of ﬁeld observations of actual debris ﬂow occurrence in the study area, show that the
+method can function within the particular geo-environmental characteristics of the study
+area, indicating that this approach can be used in more extensive applications in the region,
+in terms of area covered. The calculated probability ranged from 0.05 to 0.893, with an
+average of 0.485, with 11 out of 21 basins presenting relatively higher values. Eight out of
+these eleven basins experienced a debris ﬂow in the period studied, showing a statistically
+signiﬁcant association (sig = 0.001) and a high AUC value (0.913) in a ROC analysis. The
+model is considered highly transferable, taking into consideration that it has relatively
+limited data requirements, uses easily available geospatial data and can function well
+with the adaptation of using established European soil datasets (K-factor). These features
+support its applicability across the region. Moreover, the application of the model ﬁts
+the context of rapid assessment that is required immediately after a ﬁre, helping to take
+informed decisions regarding implementing measures or other risk management initiatives
+in the short time available between summer ﬁre season and autumn–winter rainfall period
+that follows.
+The application of such models has the potential to lead to improved hazard assess-
+ment and through it, better and more effective risk management. A better prediction of
+debris ﬂows is critical in the Mediterranean region and has the potential to enable a more
+informed resource management, prioritization and planning of interventions, effective
+design of infrastructure and prevention of high-risk situations especially involving human
+lives. The systematic use of such a tool can contribute to the overall efforts to reduce
+exposure of people, infrastructure, and important natural, cultural, and economic resources
+to these hazards.
+Supplementary Materials: The following supporting information can be downloaded at:
+https://www.mdpi.com/article/10.3390/land12030555/s1, Figure S1: title Geological map of the
+study area, illustrating alpine and post-alpine formations and the active faults; Figure S2: Charac-
+teristic viewpoints of the burnt area near the coast, showing (a,b) high inclination slopes typical of
+the study area, (c,d) views from uphill with slopes covered by loose material – rocks and soil, (e)
+the main road axis crossing the burnt area, and (f) the boundary of the ﬁre along the burnt slope
+neighboring the beach. At the hill at the far end of the picture is Schinos village (f).
+
+PAGE 15
+Land 2023, 12, 555 15 of 18
+Author Contributions: Conceptualization, M.D. and S.M.; methodology, M.D., S.M., E.V . and V .C.;
+software, E.V .; validation, M.D., S.M., E.V . and V .C.; formal analysis, M.D. and S.M.; investigation,
+M.D., S.M., E.V . and V .C.; resources, M.D.; data curation, E.V . and V .C.; writing—original draft
+preparation, M.D., S.M. and E.V .; writing—review and editing, M.D. and S.M.; visualization, M.D.,
+S.M. and E.V . All authors have read and agreed to the published version of the manuscript.
+Funding: This research received no external funding.
+Data Availability Statement: Data available upon request.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1. Shakesby, R.A. Post-wildﬁre soil erosion in the Mediterranean: Review and future research directions.Earth-Sci. Rev. 2011, 105,
+71–100. [CrossRef]
+2. Moody, J.A.; Shakesby, R.A.; Robichaud, P .R.; Cannon, S.H.; Martin, D.A. Current research issues related to post-wildﬁre runoff
+and erosion processes. Earth-Sci. Rev. 2013, 122, 10–37. [CrossRef]
+3. Neary, D.G. Wildﬁre contribution to desertiﬁcation at local, regional, and global scales.Desertif. Past Curr. Future Trends 2018, 10,
+199–222.
+4. Neary, D.G. Post-wildland ﬁre desertiﬁcation: Can rehabilitation treatments make a difference? Fire Ecol. 2009, 5, 129–144.
+[CrossRef]
+5. Diakakis, M.; Nikolopoulos, E.I.; Mavroulis, S.; Vassilakis, E.; Korakaki, E. Observational evidence on the effects of mega-ﬁres on
+the frequency of hydrogeomorphic hazards. The case of the Peloponnese ﬁres of 2007 in Greece. Sci. Total Environ. 2017, 592,
+262–276. [CrossRef]
+6. Jong-Levinger, A.; Banerjee, T.; Houston, D.; Sanders, B.F. Compound Post-Fire Flood Hazards Considering Infrastructure
+Sedimentation. Earth’s Future 2022, 10, 848–866. [CrossRef]
+7. De Graff, J.V . Improvement in quantifying debris ﬂow risk for post-wildﬁre emergency response.Geoenviron. Disasters 2014, 1,
+1–10. [CrossRef]
+8. Parise, M.; Cannon, S.H. Wildﬁre impacts on the processes that generate debris ﬂows in burned watersheds. Nat. Hazards 2012,
+61, 217–227. [CrossRef]
+9. Nyman, P .; Smith, H.G.; Sherwin, C.B.; Langhans, C.; Lane, P .N.J.; Sheridan, G.J. Predicting sediment delivery from debris ﬂows
+after wildﬁre. Geomorphology 2015, 250, 173–186. [CrossRef]
+10. Cannon, S.H.; Gartner, J.E. Wildﬁre-related debris ﬂow from a hazards perspective. In Debris-Flow Hazards and Related Phenomena;
+Springer: Berlin/Heidelberg, Germany, 2005; pp. 363–385.
+11. Zhao, L.; He, J.W.; Yu, Z.X.; Liu, Y.P .; Zhou, Z.H.; Chan, S.L. Coupled numerical simulation of a ﬂexible barrier impacted by
+debris ﬂow with boulders in front. Landslides 2020, 17, 2723–2736. [CrossRef]
+12. Jakob, M.; Stein, D.; Ulmi, M. Vulnerability of buildings to debris ﬂow impact. Nat. Hazards 2012, 60, 241–261. [CrossRef]
+13. Scheidl, C.; Chiari, M.; Kaitna, R.; Müllegger, M.; Krawtschuk, A.; Zimmermann, T.; Proske, D. Analysing Debris-Flow Impact
+Models, Based on a Small Scale Modelling Approach. Surv. Geophys. 2013, 34, 121–140. [CrossRef]
+14. Santi, P .M.; Hewitt, K.; VanDine, D.F.; Cruz, E.B. Debris-ﬂow impact, vulnerability, and response.Nat. Hazards 2011, 56, 371–402.
+[CrossRef]
+15. Nam, D.H.; Kim, M.-I.; Kang, D.H.; Kim, B.S. Debris ﬂow damage assessment by considering debris ﬂow direction and direction
+angle of structure in South Korea. Water 2019, 11, 328. [CrossRef]
+16. Lancaster, J.T.; Swanson, B.J.; Lukashov, S.G.; Oakley, N.S.; Lee, J.B.; Spangler, E.R.; Hernandez, J.L.; Olson, B.P .E.; DeFrisco, M.J.;
+Lindsay, D.N.; et al. Observations and Analyses of the 9 January 2018 Debris-Flow Disaster, Santa Barbara County, California.
+Environ. Eng. Geosci. 2021, 27, 3–27. [CrossRef]
+17. Shakesby, R.A.; Doerr, S.H. Wildﬁre as a hydrological and geomorphological agent.Earth-Sci. Rev. 2006, 74, 269–307. [CrossRef]
+18. Dorn, R.I. Boulder weathering and erosion associated with a wildﬁre, Sierra Ancha Mountains, Arizona. Geomorphology 2003, 55,
+155–171. [CrossRef]
+19. Ice, G.G.; Neary, D.G.; Adams, P .W. Effects of Wildﬁre on Processes. J. For. 2004, 102, 16–20.
+20. Cardenas, M.B.; Kanarek, M.R. Soil moisture variation and dynamics across a wildﬁre burn boundary in a loblolly pine (Pinus
+taeda) forest. J. Hydrol. 2014, 519, 490–502. [CrossRef]
+21. Doerr, S.H.; Shakesby, R.A.; Walsh, R.P .D. Soil water repellency: Its causes, characteristics and hydro-geomorphological signiﬁ-
+cance. Earth Sci. Rev. 2000, 51, 33–65. [CrossRef]
+22. Woods, S.W.; Balfour, V .N. The effect of ash on runoff and erosion after a severe forest wildﬁre, Montana, USA. Int. J. Wildl. Fire
+2008, 17, 535–548. [CrossRef]
+23. Larsen, I.J.; Pederson, J.L.; Schmidt, J.C. Geologic versus wildﬁre controls on hillslope processes and debris ﬂow initiation in the
+Green River canyons of Dinosaur National Monument. Geomorphology 2006, 81, 114–127. [CrossRef]
+24. Tiranti, D.; Cremonini, R.; Sanmartino, D. Wildﬁres effect on debris ﬂow occurrence in italian western alps: Preliminary
+considerations to reﬁne debris ﬂow early warnings system criteria. Geosciences 2021, 11, 422. [CrossRef]
+
+PAGE 16
+Land 2023, 12, 555 16 of 18
+25. Pellegrino, A.M.; Schippa, L. Rheological modeling of macro viscous ﬂows of granular suspension of regular and irregular
+particles. Water 2017, 10, 21. [CrossRef]
+26. Alﬁeri, L.; Salamon, P .; Pappenberger, F.; Wetterhall, F.; Thielen, J. Operational early warning systems for water-related hazards in
+Europe. Environ. Sci. Policy 2012, 21, 35–49. [CrossRef]
+27. Tiranti, D.; Rabuffetti, D. Estimation of rainfall thresholds triggering shallow landslides for an operational warning system
+implementation. Landslides 2010, 7, 471–481. [CrossRef]
+28. Guzzetti, F.; Peruccacci, S.; Rossi, M.; Stark, C.P . The rainfall intensity-duration control of shallow landslides and debris ﬂows: An
+update. Landslides 2008, 5, 3–17. [CrossRef]
+29. Bezak, N.; Mikoš, M. Changes in the rainfall event characteristics above the empirical global rainfall thresholds for landslide
+initiation at the pan-European level. Landslides 2021, 18, 1859–1873. [CrossRef]
+30. Molina-Terrén, D.M.; Xanthopoulos, G.; Diakakis, M.; Ribeiro, L.; Caballero, D.; Delogu, G.M.; Viegas, D.X.; Silva, C.A.; Cardil, A.
+Analysis of forest ﬁre fatalities in Southern Europe: Spain, Portugal, Greece and Sardinia (Italy). Int. J. Wildl. Fire 2019, 28, 85–98.
+[CrossRef]
+31. Efthimiou, N.; Psomiadis, E.; Panagos, P . Fire severity and soil erosion susceptibility mapping using multi-temporal Earth
+Observation data: The case of Mati fatal wildﬁre in Eastern Attica, Greece. Catena 2020, 187, 104320. [CrossRef]
+32. Diakakis, M.; Xanthopoulos, G.; Gregos, L. Analysis of forest ﬁre fatalities in Greece: 1977–2013.Int. J. Wildl. Fire 2016, 25, 797–809.
+[CrossRef]
+33. Abatzoglou, J.T.; Kolden, C.A. Climate change in Western US deserts: Potential for increased wildﬁre and invasive annual grasses.
+Rangel. Ecol. Manag. 2011, 64, 471–478. [CrossRef]
+34. Canuti, P .; Margottini, C.; Fanti, R.; Bromhead, E.N.Cultural Heritage and Landslides: Research for Risk Prevention and Conservation;
+Springer: Berlin/Heidelberg, Germany, 2009; ISBN 9783540699668.
+35. Di Virgilio, G.; Evans, J.P .; Blake, S.A.P .; Armstrong, M.; Dowdy, A.J.; Sharples, J.; McRae, R. Climate Change Increases the
+Potential for Extreme Wildﬁres.Geophys. Res. Lett. 2019, 46, 8517–8526. [CrossRef]
+36. Cannon, S.H.; DeGraff, J. The Increasing Wildﬁre and Post-Fire Debris-Flow Threat in Western USA, and Implications for
+Consequences of Climate Change. In Landslides–Disaster Risk Reduction; Sassa, K., Canuti, P ., Eds.; Springer: Berlin/Heidelberg,
+Germany, 2009; pp. 177–190.
+37. Hoch, O.J.; McGuire, L.A.; Youberg, A.M.; Rengers, F.K. Hydrogeomorphic Recovery and Temporal Changes in Rainfall
+Thresholds for Debris Flows Following Wildﬁre.J. Geophys. Res. Earth Surf. 2021, 126. [CrossRef]
+38. Mayor, A.G.; Bautista, S.; Llovet, J.; Bellot, J. Post-ﬁre hydrological and erosional responses of a Mediterranean landscpe: Seven
+years of catchment-scale dynamics. Catena 2007, 71, 68–75. [CrossRef]
+39. Cannon, S.H.; Gartner, J.E.; Wilson, R.C.; Bowers, J.C.; Laber, J.L. Storm rainfall conditions for ﬂoods and debris ﬂows from
+recently burned areas in southwestern Colorado and southern California. Geomorphology 2008, 96, 250–269. [CrossRef]
+40. Staley, D.M.; Kean, J.W.; Cannon, S.H.; Schmidt, K.M.; Laber, J.L. Objective deﬁnition of rainfall intensity-duration thresholds for
+the initiation of post-ﬁre debris ﬂows in southern California. Landslides 2013, 10, 547–562. [CrossRef]
+41. Berti, M.; Bernard, M.; Gregoretti, C.; Simoni, A. Physical Interpretation of Rainfall Thresholds for Runoff-Generated Debris
+Flows. J. Geophys. Res. Earth Surf. 2020, 125, e2019JF005513. [CrossRef]
+42. Marra, F.; Nikolopoulos, E.I.; Creutin, J.D.; Borga, M. Space–time organization of debris ﬂows-triggering rainfall and its effect on
+the identiﬁcation of the rainfall threshold relationship. J. Hydrol. 2016, 541, 246–255. [CrossRef]
+43. Staley, D.M.; Negri, J.A.; Kean, J.W.; Laber, J.L.; Tillery, A.C.; Youberg, A.M. Prediction of spatially explicit rainfall intensity–
+duration thresholds for post-ﬁre debris-ﬂow generation in the western United States.Geomorphology 2017, 278, 149–162. [CrossRef]
+44. D’Amato Avanzi, G.; Giannecchini, R.; Puccinelli, A. The inﬂuence of the geological and geomorphological settings on shallow
+landslides. An example in a temperate climate environment: The June 19, 1996 event in northwestern Tuscany (Italy). Eng. Geol.
+2004, 73, 215–228. [CrossRef]
+45. Zhang, Y.; Ge, T.; Tian, W.; Liou, Y.-A. Debris Flow Susceptibility Mapping Using Machine-Learning Techniques in Shigatse Area,
+China. Remote Sens. 2019, 11, 2801. [CrossRef]
+46. Destro, E.; Amponsah, W.; Nikolopoulos, E.I.; Marchi, L.; Marra, F.; Zoccatelli, D.; Borga, M. Coupled prediction of ﬂash ﬂood
+response and debris ﬂow occurrence: Application on an alpine extreme ﬂood event. J. Hydrol. 2018, 558, 225–237. [CrossRef]
+47. Nikolopoulos, E.I.; Destro, E.; Bhuiyan, A.E.; Borga, M.; Anagnostou, E.N. Evaluation of predictive models for post-ﬁre debris
+ﬂow occurrence in the western United States. Nat. Hazards Earth Syst. Sci. 2018, 18, 2331–2343. [CrossRef]
+48. Wall, S.; Murphy, B.P .; Belmont, P .; Yocom, L. Predicting post-ﬁre debris ﬂow grain sizes and depositional volumes in the
+Intermountain West, United States. Earth Surf. Process. Landf. 2023, 48, 179–197. [CrossRef]
+49. Cannon, S.H.; Gartner, J.E.; Rupert, M.G.; Michael, J.A.; Rea, A.H.; Parrett, C. Predicting the probability and volume of postwildﬁre
+debris ﬂows in the intermountain western United States. Bull. Geol. Soc. Am. 2010, 122, 127–144. [CrossRef]
+50. Staley, D.M.; Negri, J.A.; Kean, J.W.; Laber, J.M.; Tillery, A.C.; Youberg, A.M.Updated Logistic Regression Equations for the Calculation
+of Post-Fire Debris-Flow Likelihood in the Western United States, Open-File Report 2016-1106 ; USGS: Denver, CO, USA, 2016; 13p.
+[CrossRef]
+51. Rupert, M.G.; Cannon, S.H.; Gartner, J.E.; Michael, J.A.; Helsel, D.R. Using Logistic Regression to Predict a Probability of Debris Flows
+in Areas Burned by Wildﬁres, Southern California, 2003–2006. Open-File Report 2008-1370; USGS: Denver, CO, USA, 2008. [CrossRef]
+
+PAGE 17
+Land 2023, 12, 555 17 of 18
+52. Bornovas, I.; Spyridopoulos, A.; Gaitanakis, P .Geological Map of Greece, Scale 1:50.000, Perachora Sheet; Institute of Geological and
+Mineral Exploration: Athens, Greece, 1984.
+53. Bornovas, I.; Eleftheriou, A.; Gaitanakis, P .; Rondoyanni, T.; Simaeakis, K.Geological Map of Greece, Scale 1:50.000, Kaparellion Sheet;
+Institute of Geological and Mineral Exploration: Athens, Greece, 1984.
+54. Gaitanakis, P .; Mettos, A.; Fytikas, M.Geological Map of Greece, Scale 1:50.000, Soﬁko Sheet; Institute of Geological and Mineral
+Exploration: Athens, Greece, 1985.
+55. Jackson, J.A.; Houseman, G.G.; King, G.C.P .; Papadimitriou, P .; Souﬂeris, C.; Virieux, J. Seismicity, normal faulting, and the
+geomorphological development of the Gulf of Corinth (Greece)” the Corinth earthquakes. Earth Planet. Sci. Lett. 1982, 57, 377–397.
+[CrossRef]
+56. Sakellariou, D.; Lykousis, V .; Papanikolaou, D. Neotectonic Structure and Evolution of the Gulf of Alkyonides, Central Greece.
+Bull. Geol. Soc. Greece 1998, 32, 241–250.
+57. Leeder, M.R.; Collier, R.E.L.; Aziz, L.H.A.; Trout, M.; Ferentinos, G.; Papatheodorou, G.; Lyberis, E. Tectono-sedimentary processes
+along an active marine/lacustrine half-graben margin: Alkyonides Gulf, E. Gulf of Corinth, Greece. Basin Res. 2002, 14, 25–41.
+[CrossRef]
+58. Taymaz, T.; Eyido˜gan, H.; Jackson, J. Source parameters of large earthquakes in the East Anatolian Fault Zone (Turkey).Geophys. J.
+Int. 1991, 106, 537–550. [CrossRef]
+59. Antonaki, R.; Vlachos, I.; Staurakakis, G.; Taﬂamba, I.; Tokas, I.; Chatziandreou, S.; Smpokos, I.; Karydis, P .; Kaleuras, B.Earthquake
+economic impact – Insurance; Report of Earthquake Planning and Protection Organization: Athens, Greece, 1988.
+60. Mariolakos, I.; Papanikolaou, D. The neogene basins of the Aegean Arc from the paleogeographic and the geodynamic point
+of view. In Proceedings of the International Symposium Hellenic Arc and Trench (HEAT), Athens, Greece, 8–10 April 1981;
+Volume 1, pp. 383–399.
+61. Pirazzoli, P .A.; Stiros, S.C.; Arnold, M.; Laborel, J.; Laborel-Deguen, F.; Papageorgiou, S. Episodic uplift deduced from Holocene
+shorelines in the Perachora Peninsula, Corinth area, Greece. Tectonophysics 1994, 229, 201–209.
+62. Daﬁs, S. Classiﬁcation of Forest Vegetation in Greece ; Agricultural and Forestry School, Aristotle University of Thessaloniki:
+Thessaloniki, Greece, 1973.
+63. Kalliris, P .A.Final Study of Erosion and Flood Control Measures for Burnt Forest Areas in the Area of Schinos Settlement of Schinou of
+the Pissia Community of the Loutraki-Perachora-Agioi Theodoroi Municipality of the Corinthia Regional Unit from the 19 May 2021 Fire;
+Korinthos Forest Service: Corinth, Greece, 2021.
+64. Lekkas, E.; Andreadakis, E.; Diakakis, M.; Spyrou, N.-I.; Kranis, H.; Vassilakis, E.; Katsetsiadou, K.-N.; Carydis, P .;
+Kosmopoulos, E.; Stamati, E.; et al. The May 19, 2021, Schinos, Greece, Forest Fire; University of Athens: Athens, Greece, 2021.
+65. PANACEA PANhellenic Infrastructure for Atmospheric Composition and Climate Change (PANACEA). Available online:
+https://air-quality.gr/ (accessed on 20 May 2021).
+66. Copernicus Emergency Management. Copernicus Emergency Management Service EMSR510: Fire in Peloponnese and Attika
+Regions, Greece. Available online: https://emergency.copernicus.eu/mapping/list-of-components/EMSR510 (accessed on
+4 January 2023).
+67. Planet. Planet PlanetScope Imagery 2021; Planet: San Fransisco, CA, USA, 2021.
+68. Heckmann, T.; Gegg, K.; Gegg, A.; Becht, M. Sample size matters: Investigating the effect of sample size on a logistic regression
+susceptibility model for debris ﬂows. Nat. Hazards Earth Syst. Sci. 2014, 14, 259–278. [CrossRef]
+69. Achour, Y.; Garçia, S.; Cavaleiro, V . GIS-based spatial prediction of debris ﬂows using logistic regression and frequency ratio
+models for Zêzere River basin and its surrounding area, Northwest Covilhã, Portugal. Arab. J. Geosci. 2018, 11, 550. [CrossRef]
+70. U.S. Geological Survey Emergency Assessment of Post-Fire Debris-Flow Hazards: U.S. Geological Survey Landslide Hazards
+Program Web Page. Available online: http://landslides.usgs.gov/hazards/postﬁre_debrisﬂow/ (accessed on 4 January 2023).
+71. Shmida, A. Mediterranean vegetation in california and israel: Similarities and differences1.Isr. J. Bot. 1981, 30, 105–123. [CrossRef]
+72. Polade, S.D.; Gershunov, A.; Cayan, D.R.; Dettinger, M.D.; Pierce, D.W. Precipitation in a warming world: Assessing projected
+hydro-climate changes in California and other Mediterranean climate regions. Sci. Rep. 2017, 7, 1–10. [CrossRef]
+73. Verheye, W.; Rosa, D. De Mediterranean Soils. InLand Use, Land Cover and Soil Sciences; Verheye, W., Ed.; UNESCO: Paris, France,
+2006; Volume VII, pp. 1–10.
+74. Goudie, A.S. Arid and Semi-Arid Geomorphology; Cambridge University Press: Cambridge, UK; New York, NY, USA, 2013.
+75. Hellenic Cadastre. Digital Elevation Model-DEM of the Large Scale Orthophotos Project. Open Data Portal; Hellenic Cadaste: Athens,
+Greece, 2021.
+76. Environmental Systems Research Institute. ESRI ArcGIS Desktop—Release 10.7 2017; Environmental Systems Research Institute:
+Redlands, CA, USA, 2017.
+77. Special Secretariat for Water.Flood Risk Management Plan. Stage I. 1st Phase–Deliverable No2. Intensity Duration Frequency Curves;
+Ministry of Environment and Energy: Athens, Greece, 2018.
+78. Lutes, D.C.; Keane, R.E.; Caratti, J.F.; Key, C.H.; Benson, N.C.; Sutherland, S.; Gangi, L.J. Fire Effects Monitoring and Inventory
+System. Gen. Tech. Rep. RMRS-GTR-164-CD ; USDA: Fort Collins, CO, USA, 2006.
+79. Ebel, B.A.; Romero, O.C.; Martin, D.A. Thresholds and relations for soil-hydraulic and soil-physical properties as a function of
+burn severity 4 years after the 2011 Las Conchas Fire, New Mexico, USA. Hydrol. Process. 2018, 32, 2263–2278. [CrossRef]
+
+PAGE 18
+Land 2023, 12, 555 18 of 18
+80. Key, C.H.; Bensons, N.C. Landscape Assessment (LA) Sampling and Analysis Methods ; USDA Forest Service: Washington, DC,
+USA, 2006.
+81. Keeley, J.E. Fire intensity, ﬁre severity and burn severity: A brief review and suggested usage.Int. J. Wildl. Fire 2009, 18, 116–126.
+[CrossRef]
+82. Robichaud, P .R.; Lewis, S.A.; Laes, D.Y.M.; Hudak, A.T.; Kokaly, R.F.; Zamudio, J.A. Postﬁre soil burn severity mapping with
+hyperspectral image unmixing. Remote Sens. Environ. 2007, 108, 467–480. [CrossRef]
+83. Banister, K.; Chan, D.; Driscoll, J.M.; Fullerton, C.; Lien, A.; Lacroix, K.M.Atlas of the Upper Gila River Wastershed; University of
+Arizona: Tuscon, AZ, USA, 2014.
+84. Romero, O.C.; Ebel, B.A.; Martin, D.A.; Buchan, K.W.; Jornigan, A.D. Postwildﬁre measurement of soil physical and hydraulic
+properties at selected sampling sites in the 2011 Las Conchas wildﬁre burn scar, Jemez Mountains, north-central New Mexico.Sci.
+Investig. Rep. 2018, 48. [CrossRef]
+85. Schwartz, G.E.; Alexander, R.B. State Soil Geographic (STATSGO) Data Base for the Conterminous United States Open-File Report
+95-449; USGS: Denver, CO, USA, 1995.
+86. Panagos, P .; Meusburger, K.; Ballabio, C.; Borrelli, P .; Alewell, C. Soil erodibility in Europe: A high-resolution dataset based on
+LUCAS. Sci. Total Environ. 2014, 479–480, 189–200. [CrossRef]
+87. Fawcett, T. An introduction to ROC analysis. Pattern Recognit. Lett. 2006, 27, 861–874. [CrossRef]
+88. Swets, J.A. Measuring the Accuracy of Diagnostic Systems. Science 1988, 240, 1285–1293. [CrossRef]
+89. Youberg, A.M. Modern and Ancient Debris Flows in Arizona. Ph.D. Thesis, University of Arizona, Tucson, AZ, USA, 2014; p. 236.
+90. Mavroulis, S.; Diakakis, M.; Kranis, H.; Vassilakis, E.; Kapetanidis, V .; Spingos, I.; Kaviris, G.; Skourtsos, E.; Voulgaris, N.;
+Lekkas, E. Inventory of Historical and Recent Earthquake-Triggered Landslides and Assessment of Related Susceptibility by
+GIS-Based Analytic Hierarchy Process: The Case of Cephalonia (Ionian Islands, Western Greece). Appl. Sci. 2022, 12, 2895.
+[CrossRef]
+91. Moreira, F.; Arianoutsou, M.; Vallejo, V .R.; de las Heras, J.; Corona, P .; Xanthopoulos, G.; Fernandes, P .; Papageorgiou, K.
+Setting the Scene for Post-Fire Management. In Post-Fire Management and Restoration of Southern European Forests; Moreira, F.,
+Arianoutsou, M., Corona, P ., de las Heras, J., Eds.; Springer: Dordrecht, The Netherlands; Berlin/Heidelberg, Germany; London,
+UK; New York, NY, USA, 2012; pp. 1–20, ISBN 9789400722071.
+92. Jordan, P . Post-wildﬁre debris ﬂows in southern British Columbia, Canada. Int. J. Wildl. Fire 2016, 25, 322–336. [CrossRef]
+93. Mavsar, R.; Varela, E.; Corona, P .; Barbati, A.; Marsh, G. Economic, Legal and Social Aspects of Post-Fire Management. InPost-Fire
+Management and Restoration of Southern European ForestsForests; Moreira, F., Arianoutsou, M., Corona, P ., de las Heras, J., Eds.;
+Springer: Dordrecht, The Netherlands; Heidelberg, Germany; London, UK; New York, NY, USA, 2012; pp. 45–78.
+94. Li, C.; Ding, L.; Fang, Q.; Chen, K.; Castro-Lacouture, D. Risk-informed knowledge-based design for road infrastructure in an
+extreme environment. Knowl.-Based Syst. 2021, 216, 106741. [CrossRef]
+95. Ellingwood, B.R. Risk-informed condition assessment of civil infrastructure: State of practice and research issues. Struct.
+Infrastruct. Eng. 2005, 1, 7–18. [CrossRef]
+96. Dransch, D.; Rotzoll, H.; Poser, K. The contribution of maps to the challenges of risk communication to the public. Int. J. Digit.
+Earth 2010, 3, 292–311. [CrossRef]
+97. Tillery, A.C.; Darr, M.J.; Cannon, S.H.; Michael, J.A.Estimated Probability of Postwildﬁre Debris Flows in the 2012 Whitewater–Baldy
+Fire Burn Area, Southwestern New Mexico; US Department of the Interior, US Geological Survey: Reston, VA, USA, 2012.
+98. Verdin, K.L.; Dupree, J.A.; Elliot, J.G.Probability and Volume of Potential Postwildﬁre Debris Flows in the 2012 Waldo Canyon Burn Area
+near Colorado Springs, Colorado; US Geological Survey: Reston, VA, USA, 2012.
+99. Kean, J.W.; Staley, D.M.; Cannon, S.H. In situ measurements of post-ﬁre debris ﬂows in southern California: Comparisons of the
+timing and magnitude of 24 debris-ﬂow events with rainfall and soil moisture conditions. J. Geophys. Res. Earth Surf. 2011, 116,
+1–21. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

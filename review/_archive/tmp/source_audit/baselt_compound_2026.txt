@@ -1,0 +1,1238 @@
+PAGE 1
+Compound Hydro-Geomorphic Hazards in European
+Mountain Regions: A Roadmap for Research on Postfire
+and Frozen Soil Dynamics
+Authors: Baselt, Ivo, Wetterauer, Katharina, Esposito, Giuseppe, and
+Melzner, Sandra
+Source: Mountain Research and Development, 46(4)
+Published By: International Mountain Society
+URL: https://doi.org/10.1659/mrd.2025.00053
+The BioOne Digital Library (https://bioone.org/) provides worldwide distribution for more than 580 journalsand eBooks from BioOne’s community of over 150 nonprofit societies, research institutions, and universitypresses in the biological, ecological, and environmental sciences. The BioOne Digital Library encompassesthe flagship aggregation BioOne Complete (https://bioone.org/subscribe), the BioOne Complete Archive(https://bioone.org/archive), and the BioOne eBooks program offerings ESA eBook Collection(https://bioone.org/esa-ebooks) and CSIRO Publishing BioSelect Collection (https://bioone.org/csiro-ebooks).
+Your use of this PDF, the BioOne Digital Library, and all posted and associated content indicates youracceptance of BioOne’s Terms of Use, available at www.bioone.org/terms-of-use.
+Usage of BioOne Digital Library content is strictly limited to personal, educational, and non-commmercialuse. Commercial inquiries or rights and permissions requests should be directed to the individual publisheras copyright holder.
+BioOne is an innovative nonprofit that sees sustainable scholarly publishing as an inherently collaborative enterprise
+connecting authors, nonprofit publishers, academic institutions, research libraries, and research funders in the common
+goal of maximizing access to critical research.
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 2
+Mountain Research and Development (MRD) MountainAgenda
+An international, peer-reviewed open access journal Target knowledge
+published by the International Mountain Society (IMS)
+www.mrd-journal.org
+Compound Hydro-Geomorphic Hazards in European
+Mountain Regions: A Roadmap for Research on
+Postfire and Frozen Soil Dynamics
+Ivo Baselt 1*, Katharina Wetterauer 1, Giuseppe Esposito 2, and Sandra Melzner 3
+* Corresponding author: ivo.baselt@unibw.de
+1 University of the Bundeswehr Munich, Mountain River Research Group, Werner-Heisenberg Weg 39, 85577 Neubiberg, Germany
+2 Consiglio Nazionale delle Ricerche, Istituto di Ricerca per la Protezione Idrogeologica (CNR-IRPI), via della Madonna Alta 126, 06128 Perugia, Ita ly
+3 Geochange Consulting e. U./BOKU University, Institute of Mountain Risk Engineering, Gregor-Mendel-Straße 33, 1180, Vienna, Austria
+/C2112026 Baselt et al. This open access article is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.or g/
+licenses/by/4.0/). Please credit the authors and the full source.
+Mountain regions in Europe increasingly face compound runoff-
+related hazards under a changing climate. This article compares
+postfire surface runoff (PFSR) and frozen-soil surface runoff
+(FSSR), 2 processes typically studied separately but sharing key
+meteorological triggers, as well as initiation and propagation
+mechanisms. Both are triggered by short, high-intensity rainfall
+acting on infiltration barriers: hydrophobic layers in burned soil
+and pore ice in frozen soil. Despite distinct thermal and seasonal
+contexts, PFSR and FSSR exhibit convergent process chains
+characterized by reduced interception, limited infiltration, surface
+ponding, and efficient sediment entrainment. Their occurrence
+increasingly transcends expected seasonal regimes, reflecting
+climate-driven shifts in fire activity, snow dynamics, and freeze–
+thaw cycles. Building on these parallels, this study proposes a
+research framework and outlines a future research agenda that
+links mapping, monitoring, experimentation, modeling, and
+governance. It advocates integrated observation networks
+combining remote sensing and in situ techniques, controlled
+experiments to quantify thermohydraulic and erosional processes
+and changes in vegetation cover, and physical models capturing
+preferential flow and transient infiltration barriers. For risk
+management, the article stresses predictive early warning
+systems that provide sufficient lead time to manage evacuations
+and infrastructure protection. By identifying shared mechanisms
+and converging research needs, this contribution supports a
+future research agenda and cross-disciplinary strategies for
+mitigating emerging compound hazards in alpine environments.
+Keywords: postfire surface runoff; frozen soil surface runoff;
+compound hazards; infiltration barriers; debris flows; hydrological
+extremes; climate change; freeze–thaw processes; monitoring and
+modeling; risk governance.
+Received: 15 October 2025 Accepted: 12 May 2026
+Introduction
+Mountain regions are increasingly exposed to hydrological
+extremes caused by climate change. These include water-
+r e l a t e de v e n t ss u c ha sh e a v yr a i n ,s n o w m e l tf l o o d s ,f l a s h
+floods, and landslides, as well as dry extremes such as
+droughts and wildfires (IPCC 2023). Two types of
+compound events have gained prominence due to their
+challenging nature, increasing relevance under climate
+change, and comparatively limited investigation in
+European mountain regions. (1) Postfire surface runoff
+(PFSR) is triggered when intense rainfall hits fire-altered
+soils with reduced water infiltration capacity and
+increased erodibility, generating sediment-laden floods or
+debris flows ( Santi and Rengers 2022 ; Gartner et al 2024 ;
+McGuire et al 2024 ). (2) Frozen soil surface runoff (FSSR)
+can occur when seasonally frozen or snow-covered soils
+inhibit infiltration, leading to surface ponding and
+overland flow ( Bardou and Delaloye 2004 ; Baselt and
+Heinze 2021 ).
+Although PFSR and FSSR are typically studied as
+separate processes and may appear unrelated at first glance,
+both are controlled by similar boundary conditions. In
+general, they are not directly linked in space and time, and
+typically occur in different seasonal contexts. However, they
+may affect the same regions sequentially, for example, when
+burned catchments are subsequently exposed to freezing
+conditions. Their increasing importance highlights the
+value of analyzing the mechanisms they share within an
+integrated framework. Monitoring, modeling, and
+management strategies rarely account for possible shared
+features or synergies, leaving potential for knowledge
+transfer and joint countermeasures unused. A critical
+research gap is the absence of a synthesis that systematically
+examines these commonalities, with the dual aim of
+advancing process understanding and informing the
+development of cross-applicable strategies for impact
+assessment and risk mitigation.
+This article highlights that PFSR and FSSR share
+predisposing factors and triggers leading to comparable
+process chains. These similarities call for common
+experimental, modeling, and governance approaches. We
+propose an interdisciplinary framework to identify shared
+mechanisms and compound hazard scenarios in rainy
+mountain regions characterized by steep and fire- or freeze-
+prone landscapes, with specific reference to the European
+context. Such compound scenarios may also include
+situations where both processes affect the same regions or
+Mountain Research and Development Vol 46 No 4 Nov 2026: A1–A11 https://doi.org/10.1659/mrd.2025.00053A1
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 3
+catchments, even if not simultaneously. By synthesizing
+process types, this contribution aims to support monitoring
+and management techniques and advance an integrated
+research agenda for increasingly frequent compound
+runoff-related hazards ( Alc/C19antara-Ayala 2025; Arango-
+Carmona et al 2025 ; Brett et al 2025 ; Melzner et al 2025 ).
+State of the art
+The literature considered for this article is mainly derived
+from recent and ongoing research projects in which the
+authors have been involved and in which systematic
+literature research and assessments of postfire and frozen
+soil processes have been carried out. Building on these
+foundations, we selected key references representing the
+most relevant studies for the topics addressed, with specific
+emphasis on the European context. The review was further
+complemented by recent publications from 2022–2025
+identified through targeted searches in Web of Science,
+Scopus, and Google Scholar, using keywords such as
+“wildfire,”“ postfire surface runoff, ”“ frozen soil hydrology, ”
+“compound hazards,”“ debris flow,”“ freeze–thaw
+processes,”“ preferential flow,” and “risk governance” to
+ensure that the overview and proposed research agenda
+reflect current developments in monitoring, modeling, and
+hazard management.
+Wildfire, postfire surface runoff, and debris flow
+Wildfires have increased globally in frequency and severity,
+particularly in mountain regions (M€uller et al 2020; Liu et al
+2024; Selander et al 2025). Europe ranks among the most fire-
+prone areas worldwide (Gr€unig et al 2026), due to declining
+agricultural activity and rising fuel loads (Moreira et al 2011),
+more frequent droughts and heatwaves (Elia et al 2024), and a
+sharp increase in fire season length (Wu et al 2015; Bowman
+et al 2020; Dupuy et al 2020; Sayedi et al 2024). Mountain
+regions thus present extensive landscapes prone to both
+wildfires and postfire processes that depend, in turn, on a
+variety of predisposing factors ( Melzner et al 2025 ). In
+steep mountain environments, wildfire disturbances often
+initiate a cascade of hydrological and geomorphic
+responses. Vegetation loss, soil heating, and ash deposition
+can reduce infiltration capacity and surface protection
+cover, promoting rapid surface runoff during intense
+rainfall. This runoff may subsequently mobilize sediment,
+trigger landslides, and provide the material for torrential
+debris flows. PFSR develops when rainfall impacts burned
+hillslopes, initiating erosion and sometimes mass
+movements ( Figure 1 ), even on moderate slopes or small
+scars (eg Cannon and Gartner 2005 ; Cannon and DeGraff
+2008; Abbate et al 2019 ; Ebel and Moody 2020 ; Raymond
+et al 2020 ; Sarro et al 2021 ; Gartner et al 2024 ; Jacobson
+et al 2024 ; Zhou et al 2025 ).
+In Europe, intense postfire erosion has been
+documented along burned hillslopes with reduced soil
+cohesion, root strength, and hydraulic conductivity ( Peduto
+et al 2022 ; La Porta et al 2025 ). Morphometric studies of
+burned watersheds prone to postfire soil erosion and debris
+flows show steep relief and short concentration times
+(,10 min), explaining rapid sediment responses ( Esposito
+et al 2019 ). Fire-prone mountain regions often coincide
+with catchments that are already predisposed to rapid
+runoff generation and debris flow initiation ( Ebel and
+Moody 2020). Steep slopes, shallow soils, short
+concentration times, and abundant loose sediment create
+geomorphic conditions that favor rapid hydrological
+response to intense rainfall. When a wildfire removes
+vegetation and alters soil hydraulic properties, these
+preexisting factors can significantly amplify postfire runoff
+and debris flow hazards. Generally, the sediment cascade is
+driven by wildfires that alter soil properties controlling
+infiltration and runoff: hydrophobic layers ( /C245 cm) due to
+ash or fine particle sealing ( Tang et al 2019
+), hyperdry
+conditions (Moody and Ebel 2012 ), and mineralogical
+changes (Esposito et al 2017 ) may contribute to reduced
+infiltration (Gorr et al 2024 ). Ash can either clog pores and
+increase runoff ( Onda et al 2008 ) or, depending on its
+properties, promote infiltration and reduce splash erosion
+(Woods and Balfour 2008 ; Melzner et al 2019 ). When
+hillslopes are impacted by intense rainfall shortly after or in
+the months following wildfires, runoff-driven erosion
+progressively entrains sediment, with flows often bulking
+into hyperconcentrated flows or debris flows downstream
+( Jordan 2016; Santi and Rengers 2022 ; Gorr et al 2024 ).
+Laboratory tests simulating burned soil conditions show
+that the combustion of organic matter can reduce the yield
+stress of fire-burned debris mixtures by up to 100% and
+viscosity by up to 80%, increasing debris flow mobility and
+providing critical rheological parameters for hazard models
+(Gao et al 2025 ). While triggering rainfall is usually short,
+subhourly intensities are often decisive. In southern Italy,
+the peak intensity of triggering bursts within 10 and 30 min
+ranges between 30–138 mm/h and 19–105 mm/h,
+respectively, with modest return periods (1–3 years) showing
+that such events are not extreme ( Esposito et al 2023 ).
+While postfire process cascades are well known and well
+studied in the United States, the Mediterranean region,
+and Australia, systematic documentation of postfire
+geomorphic processes remains limited in the European
+Alps ( Melzner et al 2025 ). Inventories of slope instabilities
+vary in completeness and thematic focus, directly
+influencing hazard and risk assessments ( Guzzetti et al
+2012; Steger et al 2016 , 2017; Melzner et al 2020 , 2023). In
+situ observations are equally challenging, as postfire debris
+flows can develop within minutes, leaving only a narrow
+time window for installing measurement systems after a
+fire ( Kean et al 2011 )a n dh a m p e r i n gl o n g - t e r m
+monitoring. Empirical studies have examined soil heating
+and water repellency ( DeBano 2000 ), but temporal
+dynamics of infiltration capacity, repellency, and sediment
+availability remain poorly constrained, limiting model
+calibration and validation ( Lopes et al 2021 ). Numerical
+models range from simplified kinematic wave or Green–
+Ampt schemes that simulate runoff generation and debris
+flow timing with few parameters ( McGuire et al 2018 ;
+Rengers et al 2019 ) to fully coupled morphodynamic
+frameworks linking runoff, entrainment, and deposition
+with probabilistic surrogate models for sensitivity and
+uncertainty analysis ( Spiller et al 2025 ). However,
+parameter transferability, spatial heterogeneity, and the
+integration of long-term recovery trajectories into
+predictive frameworks remain key challenges ( Lopes et al
+2021).
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A2
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 4
+Erosive surface runoff over frozen soils
+When rain falls on frozen soil, infiltration is often sharply
+reduced due to pore blockage by ice ( Burt and Williams
+1976; Kane and Stein 1983 ; Iwata et al 2011 ). Consequently,
+precipitation or snowmelt contributes directly to FSSR
+(Figure 2), which can rapidly erode sediment and trigger
+slope failure. These effects are particularly relevant during
+transitional seasons, when freeze–thaw cycles and
+intermittent snow cover alter surface hydrology ( Bardou
+and Delaloye 2004 ; Ala-Aho et al 2021 ).
+The dominant hydrological response in a catchment
+depends on thermal-hydraulic conditions, antecedent soil
+moisture, and structural soil properties such as porosity,
+hydraulic conductivity, and pore connectivity (Baselt and
+Heinze 2021). In seasonally frozen soils, the frost-affected
+zone is typically limited to the upper 40 cm, where subzero
+temperatures prevail, while deeper soil layers remain above
+08C and gradually warm with depth to 8–108C( Iwata et al
+2011; Ala-Aho et al 2021). This vertical temperature gradient,
+governed by surface energy exchange and thermal inertia,
+creates a transient freeze–thaw interface that controls
+infiltration during winter and early spring precipitation
+(Demand et al 2019; Stuurop et al 2022). Open macropores
+such as cracks, root channels, or wormholes can disrupt this
+interface, allowing air, vapor, and water to bypass the frozen
+matrix (St€ahli and Stadler 1997; Beven and Germann 2013).
+Vertical soil column experiments have demonstrated
+that, under freezing conditions, infiltration is restricted to
+preferential pathways along unfrozen macropores, while
+matrix flow is significantly impeded ( Stadler et al 2000 ;
+Weigert and Schmidt 2005 ; Watanabe and Kugisaki 2017 ;
+Grant et al 2019 ; Holten et al 2019 ; Pittman et al 2020 ).
+Recent laboratory and field experiments simulate slope-
+scale processes under controlled temperature and
+FIGURE 1 Photographs collected in Calabria (Italy) after a wildfire on 26 July 2025 and 2 severe rainstorms in mid-August: (A, B) postfire geomorphic processe s,
+(C) water drops (circles) on a strongly hydrophobic soil. (Photos by Giuseppe Esposito).
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A3
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 5
+precipitation regimes representative of mountain
+environments (Mohammed et al 2019 ; Rey et al 2021 ; Bauer
+et al 2026 ). These experiments highlight that initial soil
+water content controls infiltration depth and thaw rates,
+while macropores govern the onset and timing of FSSR. At
+the same time, system responses are highly sensitive to
+precipitation intensity, geology, soil structure, air
+temperature, and the duration of freezing.
+Field observations confirm the hydrological significance
+of frozen soils. During rain events, infiltration occurs
+rapidly and unevenly through preferential pathways
+(Conway and Benedict 1994 ), while basal ice layers can
+impede infiltration and trigger FSSR ( St€ahli et al 2004 ).
+Snowpacks act as dynamic vadose zone extensions where
+preferential flow governs infiltration timing ( Webb et al
+2018). Although macropore-driven infiltration under frozen
+conditions is documented ( St€ahli et al 1999 ; Webb et al
+2018; Fang et al 2024 ), boundary conditions, such as
+antecedent moisture, freezing depth, and rainfall intensity,
+remain uncertain, and spatial macropore heterogeneity
+complicates understanding of thermohydraulic processes.
+Although coupled thermohydraulic processes are
+hydrogeologically important, most physical models still
+assume homogeneous pore structures and local thermal
+equilibrium, overlooking preferential macropore flow.
+Hence, their applicability to seasonally frozen soils and
+thaw-induced slope failure is limited ( Heinze 2021). Existing
+freeze–thaw and permafrost schemes rarely resolve
+preferential flow under partially frozen conditions
+(Mohammed et al 2018 ). Richards-based approaches further
+assume matrix-dominated infiltration and thermal
+equilibrium, causing errors under steep thermal gradients
+or heterogeneous flow ( Hansson et al 2004 ; Kurylyk et al
+2014; Grenier et al 2018 ). Recent dual-permeability and
+local thermal nonequilibrium (LTNE) models ( Larsbo et al
+2019; Heinze and Bl €ocher 2019; Heinze 2025; Khanahmadi
+et al 2026 ) improve realism but remain weakly validated.
+Process similarities and divergences
+PFSR and FSSR occur in different thermal and seasonal
+contexts and are not directly related. However, they share
+key predisposing factors and mechanisms, 8 of which are
+introduced below ( Figure 3).
+1. Meteorological triggers exert strong control over the
+often abrupt initiation of PFSR and FSSR. Short, high-
+intensity rainfall or rapid transient thaw events can
+initiate sudden runoﬀ. Limited storage capacity and short
+concentration times promote ﬂow responses that may
+lead to sudden erosion and sediment entrainment in
+both systems (Haslinger et al 2025 ).
+2. Interception is reduced in both systems. After wildﬁres,
+canopy and litter removal expose the soil to
+precipitation, while, in frozen soil environments,
+deciduous canopies are seasonally absent. In both cases, a
+larger fraction of rainfall reaches the ground, increasing
+the kinetic energy imparted to the surface.
+3. A near-surface, low-permeability horizon limits
+inﬁltration. It is typically about 5–10 cm deep. The nature
+of this inﬁltration barrier diﬀers between systems. In
+burned catchments, hydrophobic layers may form or be
+enhanced as chemically mediated sealing through
+combustion-induced changes in organic or mineral
+compounds (Doerr et al 2000 ). In frozen soil, ice within
+pore spaces creates a low-permeability barrier.
+4. Surface water ponding above these inﬁltration barriers ,
+in combination with steep terrain and reduced surface
+roughness, increases surface runoﬀ. Usually, these early
+FIGURE 2 Schematic of infiltration on frozen soil: rainfall on snow and frozen layers limits infiltration and increases runoff (extended from Baselt and Heinze 2021 ).
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A4
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 6
+ﬂow pulses of PFSR and FSSR are dominated by rapid
+overland ﬂow.
+5. Soil and rock properties, and preferential pathways such
+as cracks and other macropores inﬂuence inﬁltration and
+runoﬀ in both systems. In postﬁre settings, ash and char
+variably aﬀect inﬁltration, depending on burn severity
+and ash composition. Observations range from pore
+clogging and surface crusting that inhibit inﬁltration
+(Onda et al 2008 ) to temporary water retention by black
+char, which can prevent sealing and reduce splash
+erosion (Woods and Balfour 2008 ; Wittenberg 2013;
+Shtober-Zisu et al 2018 ). Additionally, surface cracks
+formed during burning may locally enhance percolation.
+In frozen soils, inﬁltration is progressively restored
+during thaw or along macropore networks that transmit
+water and heat downward, locally accelerating thaw and
+altering runoﬀ thresholds ( Watanabe and Kugisaki 2017 ;
+Bauer et al 2026 ).
+6. Sediment mobilization, sediment transport, and slope
+failure are involved in both systems and can lead to
+multiphase mass ﬂows, often evolving as cascading
+sediment transfer processes across hillslopes and
+channel networks (eg Murphy et al 2019 ). Burned
+hillslopes supply abundant sediments of various grain
+sizes through vegetation loss and ash redistribution,
+often resulting in a wide spectrum of mobilizable
+material from ﬁne ash to coarse debris. Through rapid
+PFSR entrainment, these sediments may eventually
+contribute to debris ﬂow formation ( Melzner et al 2025 ),
+typically dominated by runoﬀ-driven erosion and
+entrainment processes. In frozen soil environments,
+shallow saturation over icy layers and thaw-weakening
+increase pore pressure and reduce shear strength,
+whereas thawing surface horizons may detach and move
+downslope along frozen–unfrozen interfaces, promoting
+shallow sliding ( Bardou and Delaloye 2004 )a n d
+reﬂecting diﬀerent failure kinematics compared to
+postﬁre conditions. In cases of larger-scale slope
+failures, a similarly wide range of sediment grain sizes
+may be mobilized.
+7. Expected seasonal regimes increasingly deviate in both
+processes, with timing and persistence diverging. PFSR
+is often triggered by the ﬁrst high-intensity storms
+following ﬁre and may occur year-round, depending on
+burn severity, rainfall duration and intensity, and site
+recovery ( Melzner et al 2022 ). Approximately 87% of
+postﬁre debris ﬂow events occur within the ﬁrst 2 years
+after a ﬁre. McGuire et al (2024) further show that more
+than 80% of runoﬀ-generated postﬁre debris ﬂow
+events occur in the ﬁrst year, whereas roughly 82% of
+landslide-generated events occur more than 1 year after
+a ﬁre. Wildﬁre, thus, can reduce protection for months
+to years ( Melzner et al 2019 ; Esposito et al 2023 ). In
+contrast, FSSR tends to cluster in transitional seasons
+only, with event likelihood depending on snowpack,
+antecedent moisture, and freeze–thaw cycles ( Pittman
+et al 2020 ).
+8. Climate change is expected to increase the magnitude
+and frequency of PFSR and FSSR. Rising temperatures,
+longer ﬁre seasons, more frequent heatwaves and
+droughts, as well as altered snow regimes, shallower
+seasonal freezing, and more frequent freeze–thaw cycles
+collectively expand the windows of occurrence and
+intensify triggering conditions (IPCC 2023).
+FIGURE 3 Schematic of shared mechanisms (circle) and underlying process differences (side panels) for both postfire (left panel) and frozen soil (right pane l)
+environments (background generated with AI, Midjourney, 2025).
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A5
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 7
+Future research agenda
+The proposed research agenda builds on the findings and
+experiences gained from recent and ongoing research
+projects addressing postfire and frozen soil hydrological
+processes. These projects provided empirical insights and
+conceptual advances that form the basis for identifying
+shared mechanisms, methodological needs, and cross-
+disciplinary opportunities. Building on this, the following
+sections outline priority areas for future work in monitoring,
+experimentation, modeling, and risk governance to improve
+understanding and management of compound runoff-related
+hazards in mountain regions.
+Monitoring
+Improving understanding of runoff-related hazards in
+mountain environments requires monitoring strategies
+capable of capturing the dynamics of surface runoff in both
+postfire and frozen soil settings. Important steps in the
+development of a monitoring strategy include defining a
+catalog of field evidence for burn severity indicators related
+to vegetation, soil, and rock ( Melzner et al 2025 ) and a
+catalog of methods to determine burn severity. Remote
+sensing, in situ instrumentation, and geophysical
+approaches provide complementary perspectives, but each
+comes with specific advantages, limitations, and quality
+requirements. Airborne Laser Scanning (ALS), Terrestrial
+Laser Scanning (TLS), Unmanned Aerial Vehicle Light
+Detection and Ranging (UAV LiDAR), and
+photogrammetric surveys are powerful tools to detect
+sediment sources, deposition zones, and geomorphic and
+vegetation changes. Their applicability has been
+demonstrated in postfire contexts ( Rengers et al 2016 ), as
+well as in frozen soil and snow settings ( Deschamps-Berger
+et al 2025 ). In the wide spectrum of remote sensing
+technologies, synthetic aperture radar (SAR) systems are
+also useful for burn severity mapping ( Tanase et al 2015 )
+and for soil moisture and surface roughness investigations
+to assess postfire hydrological response or snow and frozen
+ground conditions.
+LiDAR penetrates vegetation and records multiple
+attributes per pulse, whereas photogrammetry reconstructs
+detailed 3D surfaces from overlapping UAV or terrestrial
+images (Melzner and Schiller 2022). Technique selection
+depends on terrain: TLS for steep faces, UAV LiDAR for
+mixed slopes, and ALS for large-scale coverage. In frozen soil
+contexts, these tools document snowpack, frost, and
+microtopographic changes during freeze–thaw cycles (Jadoon
+et al 2015; Nakata et al 2021; Cho et al 2025). Satellite
+multispectral data from Landsat and Sentinel complement
+such high-resolution datasets by providing consistent, long-
+term regional observations, enabling analyses of burn severity,
+vegetation recovery, soil moisture, and snow dynamics across
+mountain ranges (Wulder et al 2022; Lewi/C19nska et al 2024;
+Melzner et al 2025).
+Continuous in situ monitoring is essential to observe
+triggering conditions and event dynamics in real time. In
+both burned and frozen environments, soil water content
+(SWC), measured at different depths, will reveal infiltration
+behavior during rainfall on burned slopes and during rain or
+melt on frozen soils. In addition to traditional time domain
+reflectometry (TDR) and frequency domain reflectometry
+(FDR) probes and capacitance-based or, more generally,
+dielectric soil moisture sensors (Watanabe and Kugisaki 2017;
+Bauer et al 2026; Salmabadi et al 2026), novel methods such
+as cosmic-ray neutron sensing extend the observation scale to
+several hundred meters and depths up to /C2480 cm (Zreda et al
+2008). Coupling SWC probes with tensiometers may provide
+information on matric suction, critical for both shallow slope
+failures in burned terrain and for thaw weakening in frozen
+soils (Rengers et al 2020). Seismic monitoring has proven
+effective in detecting debris flow surges (Porter et al 2023)
+and could similarly be applied to identify erosive runoff
+pulses in frozen soil settings. Optical and thermal cameras,
+pressure transducers in channels, and stage gauges offer
+further opportunities to characterize the timing, type, and
+magnitude of runoff processes (Kean et al 2011; Dematteis
+et al 2025).
+Data quality must be defined through method-specific
+criteria. For LiDAR, these include point density, coverage,
+classification accuracy, and acquisition timing ( Melzner and
+Schiller 2022). In photogrammetry, positional and shape
+accuracy and image resolution determine the detection of
+fine-scale features such as macroscopic soil sealing, ash
+layers, or thaw-induced cracks ( Melzner et al 2019 ; Melzner
+and Schiller 2020). High-resolution data enhance the
+capture of small-scale variability in burned and frozen soils
+but increase computational effort. Integrating multiscale
+remote sensing with continuous in situ monitoring helps to
+resolve spatial heterogeneity and temporal dynamics. The
+main challenge is to develop efficient, scalable, and
+affordable strategies that yield long-term, high-quality
+datasets to advance physical models and early warning
+systems for catchments affected by both fire and frost.
+Experimental studies
+Future advances in understanding runoff-related hazards will
+depend on targeted and collaborative experimental
+approaches, combining controlled laboratory studies with
+advanced field measurement stations to capture process
+dynamics across scales. Such investigations are essential for
+disentangling coupled hydrological and thermal processes,
+for systematically testing hypotheses of infiltration and
+runoff generation, and for generating benchmark datasets to
+calibrate and validate numerical models. In this context, plot-
+to hillslope-scale rainfall simulation experiments (egLechner
+et al 2026) provide a critical bridge between controlled
+laboratory conditions and catchment-scale responses, as they
+enable the quantification of scale-dependent runoff
+generation processes under realistic boundary conditions. A
+primary avenue of research concerns the hydrological
+implications of water repellency and infiltration into
+hydrophobic soil layers. Initial investigations may employ
+simple 1-dimensional soil column experiments, extending
+earlier foundational studies (DeBano et al 1979; DeBano
+2000). Subsequent efforts should advance toward 2- and 3-
+dimensional laboratory setups capable of lateral subsurface
+flow, evolving heterogeneities, and preferential flow
+pathways. Designing such systems is technically demanding,
+as both boundary conditions and evolving variables,
+including soil moisture, hydraulic conductivity, repellency
+strength, and pore structure, must be measured with high
+spatial and temporal resolution. Another promising
+direction is surface runoff experiments with burned soils and
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A6
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 8
+ash-rich top layers. These setups could build on lahar-style
+flume studies (Qin et al 2024, 2025), but should place
+particular emphasis on the detachment and mobilization of
+the shallow burned horizon (Movasat and Tomac 2025)a n d
+general momentum transfer due to entrainment and erosion
+(Wetterauer et al 2026). Experiments should include different
+soil and rock materials, organic residues, and ashes, as well as
+coarse fire remnants, such as trunks or logs. Woody debris is
+expected to provide stabilizing structure in some cases and
+obstruct flow in others. Laboratory studies are uniquely
+suited to quantify this dual role in promoting or preventing
+slope instability.
+For frozen soil systems, new experimental research is
+required to resolve key uncertainties in freezing front
+propagation, macropore behavior, and infiltration–runoff
+partitioning under freeze–thaw dynamics. The soil specificity
+of freezing behavior—mediated by grain-size distribution, fine
+particles, and organic matter—remains poorly constrained.
+Future laboratory programs should therefore systematically
+vary soil texture, organic content, and macropore structure to
+quantify their role in governing freezing progression,
+infiltration capacity, and runoff initiation. A particularly
+important frontier is the role of macropores under freezing
+and refreezing conditions. Existing results suggest that
+macropores can initially enhance infiltration but subsequently
+lose continuity once pore ice develops (Bauer et al 2026). The
+dynamics of these transitions, and their sensitivity to initial
+moisture content and freeze–thaw sequences, remain
+insufficiently quantified. Experiments combining rainfall–
+freeze–thaw cycles, snowmelt simulations, and advanced
+imaging (eg nuclear magnetic resonance, electrical
+capacitance tomography) could provide critical process-level
+insights. Future experiments should also address compound
+boundary conditions, including repeated rainfall events on
+frozen soils, rain on snow scenarios, and the combined effects
+of fire-induced hydrophobicity and subsequent frost. These
+compound experiments are crucial to reproducing realistic
+mountain settings where burned soil may later be exposed to
+seasonal freezing, or where thawing coincides with rainfall.
+Modeling integration
+Across postfire and frozen soil settings, laboratory
+experiments and field surveys provide essential testbeds for
+next-generation physical models. Particularly promising are
+dual-domain and local thermal nonequilibrium approaches,
+which explicitly represent preferential pathways, heat
+transfer, and evolving pore connectivity ( Heinze 2021;
+Khanahmadi et al 2026 ). Beyond traditional single-domain
+hydrological frameworks, recent advances in multiphase
+flow modeling now incorporate thermal processes, ice–
+water phase transitions, and the resulting feedback on
+frictional resistance and mobility ( Pudasaini and
+Krautblatter 2014; Feng et al 2023 ; Munch et al 2024 ;
+Pudasaini et al 2024 ). These developments are critical for
+hazard assessment, as they enable the simulation of complex
+rheological behavior of flows enriched with snow, ice, or
+ash. Nevertheless, benchmark datasets derived from
+controlled experiments and field surveys are indispensable
+for systematic model calibration, validation, and
+parameterization (Lopes et al 2021 ). The Bussoleno case
+study in the northwestern Italian Alps illustrates the added
+value of coupling susceptibility-based triggering analysis
+with physical runout models ( La Porta et al 2025 ). This
+underlines that physical models need to account not only
+for runout but also for temporally and spatially distributed
+triggering conditions linked to vegetation loss, infiltration
+reduction, and altered soil strength ( Gorr et al 2024 ).
+Further improvements in physical models are required
+to incorporate mechanical aspects relevant for hazard
+planning, protection structures, and soft measures, such as
+bioengineering. A central challenge lies in developing fully
+coupled hydrological–geomorphic–hydraulic catchment
+models that account for temporal and spatial changes in
+land cover, porosity, permeability, and temperature to
+realistically simulate infiltration, groundwater recharge, and
+runoff. Findings from hydrogeology underline the necessity
+of linking runoff, groundwater, and water quality to secure
+sustainable drinking water supply in mountain regions.
+Risk governance
+Effective management of postfire and frost-related hazards
+requires timely and coordinated measures to reduce risks
+for downstream urban settlements. Population safety should
+rely on multilayered warning systems that combine local
+weather alerts with advanced forecasting and monitoring
+tools. As demonstrated by fatal postfire debris flows in the
+United States ( Kean et al 2019 ) and Italy ( Esposito and
+Gariano 2025), or by rapid runoff events on frozen ground
+in Switzerland and Japan ( Bardou and Delaloye 2004 ; Iwata
+et al 2011 ), local weather alerts can be insufficient to warn
+the population efficiently, and more action is thus required.
+Early warning systems based solely on the exceedance of
+rainfall thresholds can also be ineffective, since exceedance
+may occur only minutes before slope or runoff processes are
+triggered, providing insufficient lead time to manage
+evacuations or road closures. Early warning protocols
+should therefore be based not only on rainfall threshold
+exceedance but also on predictive models that incorporate
+lead time. In this context, impact-based warning (IbW)
+approaches are increasingly promoted, shifting the focus
+from forecasting hazard variables to communicating
+expected impacts on people, infrastructure, and services.
+Such frameworks aim to translate forecasts into actionable
+information by linking hazard intensity with exposure and
+vulnerability (Potter et al 2018 , 2021; R€ozer et al 2021 ).
+However, most existing IbW systems are focused on single
+hazards without considering cascading and compound
+effects, highlighting the need for the development of
+multihazard approaches in mountain environments
+(Lumbroso et al 2025 ).
+Weather radar should be systematically employed to
+monitor rainfall conditions both upwind of vulnerable areas
+and in locations not covered by rain gauges. Tracking and
+forecasting the spatial and temporal evolution of convective
+systems capable of producing intense rainfall must
+therefore be prioritized. This applies equally to postfire
+hillslopes with reduced infiltration capacity and to frozen
+soil catchments where impermeable near-surface ice layers
+favor rapid runoff generation. Rainfall forecasting models
+should be coupled with radar and in situ observations to
+improve nowcasting activities and, consequently, emergency
+response preparation. Many national meteorological
+services already operationalize key elements such as radar–
+gauge merging and radar-based nowcasting. However, full
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A7
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 9
+end-to-end integration is not yet universal, and limitations
+remain in complex and exposed terrain due to beam
+blockage, coverage gaps, and challenges under snowfall or
+rain on snow conditions.
+As shown by Rengers et al (2025) , research institutions
+should work tightly with government management agencies
+to integrate hazard assessment, forecasting, monitoring, and
+adaptation activities aimed at reducing compound runoff
+risks to human life. In parallel with nonstructural measures,
+local structural interventions should be implemented after
+wildfires or frost-related disturbance to mitigate, for
+example, the risk of sediment transport and accumulation
+on roads or buildings. Key priorities include cleaning and
+maintaining drainage networks at the intersections with
+roads and built-up areas (eg culverts), constructing check
+dams or retention basins upstream of areas at risk, and
+improving the thermal stability and the hydraulic design of
+drainage structures exposed to freezing–thawing cycles. In
+addition, future research should more explicitly address the
+effects of PFSR and FSSR on vegetation recovery,
+biodiversity, and soil development. These factors may
+strongly influence the persistence and evolution of runoff
+processes, for example, through changes in vegetation cover
+and associated infiltration and erosion dynamics. Finally,
+both postfire and frozen soil risk governance demand cross-
+sectoral coordination between meteorological services,
+environmental agencies, and civil protection authorities.
+Joint monitoring and data-sharing platforms are essential
+for anticipating compound events, which increasingly blur
+traditional seasonal distinctions and challenge conventional
+hazard management frameworks in alpine environments.
+Implications and conclusions
+This article highlights both the convergences and
+divergences of runoff generation in postfire and frozen soil
+environments. Both systems exhibit reduced interception,
+constrained infiltration, rapid surface runoff, and efficient
+sediment mobilization, underscoring the value of cross-
+fertilization in monitoring, experimentation, and modeling.
+At the same time, divergences in the origin of infiltration
+barriers, seasonal timing, sediment grain size, and failure
+kinematics highlight a need for caution in using simple
+analogies and point to the need for process-specific
+parameterizations. Beyond direct impacts on infrastructure
+and human safety, these processes can also affect vegetation
+cover and recovery, soil development, and sediment
+dynamics in aquatic environments, thereby influencing
+ecosystem functions in mountain regions.
+Future progress will rely on systematically addressing the
+open questions that arise from the convergences and
+divergences identified in this article. Building on these shared
+mechanisms and contrasting features, we have outlined a
+comprehensive research agenda that spans monitoring,
+experimental investigations, modeling integration, and risk
+governance. This agenda highlights that advancing process
+understanding and hazard management in postfire and frozen
+soil systems in the high mountains of the Alps is possible only
+through coordinated and interdisciplinary effort, as shared
+physical mechanisms enable knowledge exchange and joint
+methodological development across domains.
+Advancing this agenda ultimately depends on
+collaborative and interdisciplinary research frameworks.
+Future experimental studies demand joint expertise from
+cryosphere science, geomorphology, wildfire research, and
+alpine natural hazard studies, combined with soil physics,
+hydrology, and engineering to design large-scale,
+multiprocess laboratory frameworks. Modeling progress
+requires equally integrative approaches, where empirical
+benchmark datasets are embedded in international
+collaborations. Likewise, monitoring strategies must
+combine remote sensing, in situ instrumentation, and
+geophysical methods within multi-institutional networks to
+ensure robust long-term datasets across mountain ranges.
+Finally, risk governance calls for cooperation beyond
+science, linking geoscientists, engineers, practitioners, and
+policymakers to develop effective early warning systems and
+to implement sustainable, nature-based protection
+strategies. Taken together, these collaborative efforts are
+not only critical for advancing process understanding but
+also for aligning hazard research with the values of
+sustainable mountain development.
+ACKNOWLEDGMENTS
+This research was funded by the Deutsche Forschungsgemeinschaft (DFG,
+German Research Foundation), projects numbers 522201978 and 518478532.
+Open access funding was enabled by the University of the Bundeswehr Munich.
+We thank the editors and the reviewers for their constructive feedback on the
+manuscript.
+OPEN PEER REVIEW
+This article was reviewed by Jan Klime š and Matthias Schl €ogl. The peer review
+process for all MountainAgenda articles is open. In shaping target knowledge,
+values are explicitly at stake. The open review process offers authors and
+reviewers the opportunity to engage in a discussion about these values.
+REFERENCES
+Abbate A, Longoni L, Ivanov VI, Papini M. 2019. Wildfire impacts on slope
+stability triggering in mountain areas. Geosciences 9(10):417. https://doi.org/
+10.3390/geosciences9100417.
+Ala-Aho P, Autio A, Bhattacharjee J, Isokangas E, Kujala K, Marttila H, Menberu
+M, Meri€o L-J, Postila H, Rauhala A, et al. 2021. What conditions favor the
+influence of seasonally frozen ground on hydrological partitioning? A systematic
+review. Environmental Research Letters 16(4):43008. https://doi.org/10.1088/
+1748-9326/abe82c.
+Alc/C19antara-Ayala I. 2025. Cascading hazards and compound disasters. NPJ Natural
+Hazards 2(1):1–5. https://doi.org/10.1038/s44304-025-00111-5.
+Arango-Carmona MI, Voit P, H €urlimann M, Aristiz /C19abal E, Korup O. 2025. Hillslope
+torrential hazard cascades in tropical mountains. Natural Hazards and Earth System
+Sciences 25(9):3641–3663. https://doi.org/10.5194/nhess-25-3641-2025.
+Bardou E, Delaloye R. 2004. Effects of ground freezing and snow avalanche
+deposits on debris flows in alpine environments. Natural Hazards and Earth System
+Sciences 4(4):519–530. https://doi.org/10.5194/nhess-4-519-2004.
+Baselt I, Heinze T. 2021. Rain, snow and frozen soil: Open questions from a
+porescale perspective with implications for geohazards. Geosciences 11(9):375.
+https://doi.org/10.3390/geosciences11090375.
+Bauer J, M€uller S, Heinze T, Khanahmadi Bafghi H, Baselt I. 2026. Thermohydraulic
+experiments on water infiltration into frozen slopes: The role of macropores and
+initial water content.The Cryosphere 20(6):3483–3509.https://doi.org/10.
+5194/tc-20-3483-2026.
+Beven K, Germann P. 2013. Macropores and water flow in soils revisited. Water
+Resources Research 49(6):3071–3092. https://doi.org/10.1002/wrcr.20156.
+Bowman, DMJS, Kolden CA, Abatzoglou JT, Johnston FH, van der Werf GR,
+Flannigan M. 2020. Vegetation fires in the Anthropocene. Nature Reviews Earth
+and Environment 1(10):500–515. https://doi.org/10.1038/s43017-020-
+0085-3.
+Brett L, White CJ, Domeisen DIV, van den Hurk B, Ward P, Zscheischler J. 2025.
+Review article: The growth in compound weather and climate event research in
+the decade since SREX. Natural Hazards and Earth System Sciences 25(8):2591–
+2611. https://doi.org/10.5194/nhess-25-2591-2025.
+Burt TP, Williams PJ. 1976. Hydraulic conductivity in frozen soils. Earth Surface
+Processes 1(4):349–360. https://doi.org/10.1002/esp.3290010404.
+Cannon SH, DeGraff J. 2008. The increasing wildfire and post-fire debris-flow
+threat in western USA, and implications for consequences of climate change. In:
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A8
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 10
+Sassa K, Canuti P, editors. Landslides—Disaster Risk Reduction. Berlin, Germany:
+Springer, pp 177–190. https://doi.org/10.1007/978-3-540-69970-5_9.
+Cannon SH, Gartner JE. 2005. Wildfire-related debris flow from a hazards
+perspective. In: Jakob M, Hungr O, editors. Debris-Flow Hazards and Related Phe-
+nomena. Berlin, Germany: Springer, pp 363–385. https://doi.org/10.1007/3-
+540-27129-5_15.
+Cho E, Verfaillie M, Jacobs JM, Hunsaker AG, Sullivan FB, Palace M, Wagner C.
+2025. Characterizing the spatial distribution of field-scale snowpack using unpiloted
+aerial system (UAS) lidar and structure-from-motion (SfM) photogrammetry.
+Hydrology and Earth System Sciences29(18):4539–4556. https://doi.org/10.
+5194/hess-29-4539-2025.
+Conway H, Benedict R. 1994. Infiltration of water into snow. Water Resources
+Research 30(3):641–649. https://doi.org/10.1029/93WR03247.
+DeBano LF. 2000. The role of fire and soil heating on water repellency in wildland
+environments: A review. Journal of Hydrology 231–232:195–206. https://doi.
+org/10.1016/S0022-1694(00)00194-3.
+DeBano LF, Rice RM, Conrad CE. 1979. Soil Heating in Chaparral Fires: Effects on
+Soil Properties, Plant Nutrients, Erosion, and Runoff . Research Paper PSW-145.
+Berkeley, CA: Pacific Southwest Forest and Range Experiment Station.
+Demand D, Selker JS, Weiler M. 2019. Influences of macropores on infiltration
+into seasonally frozen soil. Vadose Zone Journal 18(1):1–14. https://doi.org/10.
+2136/vzj2018.08.0147.
+Dematteis N, Pisano L, Cavalli RM, Cavalli M, Crema S, Biase M de, Donnini M,
+Gariano SL, Piantini M, Rossi M, et al. 2025. Monitoring source areas of post-fire
+geomorphic processes using an in situ multi-sensor system. Geophysical Research
+Letters 52(19):e2025GL118170. https://doi.org/10.1029/2025GL118170.
+Deschamps-Berger C, L/C19opez-Moreno JI, Gascoin S, Mazzotti G, Boone A. 2025.
+Where snow and forest meet: A global atlas. Geophysical Research Letters 52(10):
+e2024GL113684. https://doi.org/10.1029/2024GL113684.
+Doerr SH, Shakesby RA, Walsh R. 2000. Soil water repellency: Its causes,
+characteristics and hydro-geomorphological significance. Earth-Science Reviews
+51(1–4):33–65. https://doi.org/10.1016/S0012-8252(00)00011-8.
+Dupuy J, Fargeon H, Martin-St Paul N, Pimont F, Ruffault J, Guijarro M, Hernando
+C, Madrigal J, Fernandes P. 2020. Climate change impact on future wildfire
+danger and activity in southern Europe: A review. Annals of Forest Science
+77(2):35. https://doi.org/10.1007/s13595-020-00933-5.
+Ebel BA, Moody JA. 2020. Parameter estimation for multiple post-wildfire
+hydrologic models. Hydrological Processes 34(21):4049–4066. https://doi.org/
+10.1002/hyp.13865.
+Elia M, Lafortezza R, Cappelluti O, Costa-Saura JM, Bacciu V, Giannico V, Shao C,
+Giovanni S. 2024. Coupling heat wave and wildfire occurrence across multiple
+ecoregions within a Eurasia longitudinal gradient. Science of the Total Environment
+912:169269.
+https://doi.org/10.1016/j.scitotenv.2023.169269.
+Esposito G, Gariano SL. 2025. Overview of the first fatal post-fire debris flow
+event recorded in Italy. Landslides 22(6):2131–2139. https://doi.org/10.
+1007/s10346-025-02516-9.
+Esposito G, Gariano SL, Masi R, Alfano S, Giannatiempo G. 2023. Rainfall
+conditions leading to runoff-initiated post-fire debris flows in Campania, southern
+Italy. Geomorphology 423:108557. https://doi.org/10.1016/j.geomorph.2022.
+108557.
+Esposito G, Matano F, Molisso F, Ruoppolo G, Di Benedetto A, Sacchi M. 2017.
+Post-fire erosion response in a watershed mantled by volcaniclastic deposits,
+Sarno Mountains, Southern Italy. CA TENA152:227–241. https://doi.org/10.
+1016/j.catena.2017.01.009.
+Esposito G, Parodi A, Lagasio M, Masi R, Nanni G, Russo F, Alfano S,
+Giannatiempo G. 2019. Characterizing consecutive flooding events after the
+2017 Mt Salto wildfires (southern Italy): Hazard and emergency management
+implications. Water 11(12):2663. https://doi.org/10.3390/w11122663.
+Fang Y, Du X, Ye X, Wang E. 2024. Groundwater response to snowmelt
+infiltration in seasonal frozen soil areas: Site monitoring and numerical
+simulation. Hydrology 11(12):201. https://doi.org/10.3390/
+hydrology11120201.
+Feng Z, Fan X, Ni T, Deng Y, Zou C, Zhang J, Xu Q. 2023. How ice particles
+increase mobility of rock-ice avalanches: Insights from chute flows simulation of
+granular rock-ice mixtures by discrete element method. Journal of Geophysical
+Research: Earth Surface 128(8):e2023JF007115. https://doi.org/10.1029/
+2023JF007115.
+Gao F, Zhang J, Lourenc¸ o SDN, Choi C. 2025. Experimental study of rheological
+behavior of debris mixtures subjected to burning: Implications to postfire debris
+flow mobility. Journal of Hydrology 663:134261. https://doi.org/10.1016/j.
+jhydrol.2025.134261.
+Gartner J, Kean JW, Rengers FK, McCoy S, Oakley NS, Sheridan GJ. 2024. Post-
+wildfire debris flows. In: Jakob M, McDougall S, Santi P, editors. Advances in
+Debris-Flow Science and Practice . Cham, Switzerland: Springer International Pub-
+lishing (Geoenvironmental Disaster Reduction), pp 309–345. https://doi.org/
+10.1007/978-3-031-48691-3_11.
+Gorr AN, McGuire LA, Youberg AM, Beers R, Liu T. 2024. Inundation and flow
+properties of a runoff-generated debris flow following successive high-severity
+wildfires in northern Arizona, USA. Earth Surface Processes and Landforms
+49(2):622–641. https://doi.org/10.1002/esp.5724.
+Grant KN, Macrae ML, Rezanezhad F, Lam WV. 2019. Nutrient leaching in soil
+affected by fertilizer application and frozen ground. Vadose Zone Journal 18(1):1–
+13. https://doi.org/10.2136/vzj2018.08.0150.
+Grenier C, Anbergen H, Bense V, Chanzy Q, Coon E, Collier N, Costard F, Ferry M,
+Frampton A, Frederick J, et al. 2018. Groundwater flow and heat transport for
+systems undergoing freeze-thaw: Intercomparison of numerical simulators for 2D
+test cases. Advances in Water Resources 114:196–218. https://doi.org/10.
+1016/j.advwatres.2018.02.001.
+Gr€unig M, Rammer W, Senf C, Albrich K, Andr /C19e F, Andrey LD, Augustynczik,
+Baumann M, Bohn FJ, Bouwman M, et al. 2026. Climate change will increase
+forest disturbances in Europe throughout the 21st century. American Association
+for the Advancement of Science 391(6789):eadx6329. https://doi.org/10.
+1126/science.adx6329.
+Guzzetti F, Mondini AC, Cardinali M, Fiorucci F, Santangelo M, Chang K-T. 2012.
+Landslide inventory maps: New tools for an old problem. Earth-Science Reviews
+112(1–2):42–66. https://doi.org/10.1016/j.earscirev.2012.02.001.
+Hansson K, Šim ˚unek J, Mizoguchi M, Lundin L-C, Genuchten MT. 2004. Water
+flow and heat transport in frozen soil: Numerical solution and freeze–thaw
+applications. Vadose Zone Journal 3(2):693–704. https://doi.org/10.2136/
+vzj2004.0693.
+Haslinger K, Breinl K, Pavlin L, Pistotnik G, Bertola M, Olefs M, Greilinger M,
+Sch€oner W, Bl €oschl G. 2025. Increasing hourly heavy rainfall in Austria reflected
+in flood changes. Nature 639(8055):667–672. https://doi.org/10.1038/
+s41586-025-08647-2.
+Heinze T. 2021. A multi-phase heat transfer model for water infiltration into
+frozen soil. Water Resources Research 57(10):e2021WR030067. https://doi.
+org/10.1029/2021WR030067.
+Heinze T. 2025. A local thermal non-equilibrium model for rain-on-snow events.
+Hydrology and Earth System Sciences 29(8):2059–2080. https://doi.org/10.
+5194/hess-29-2059-2025.
+Heinze T, Bl€ocher JR. 2019. A model of local thermal non-equilibrium during
+infiltration. Advances in Water Resources 132:103394. https://doi.org/10.
+1016/j.advwatres.2019.103394.
+Holten R, Larsbo M, Jarvis N, Stenrød M, Almvik M, Eklo OM. 2019. Leaching of
+five pesticides of contrasting mobility through frozen and unfrozen soil. Vadose
+Zone Journal 18(1):1–10. https://doi.org/10.2136/vzj2018.11.0201.
+IPCC [Intergovernmental Panel on Climate Change]. 2023. Climate Change 2023:
+Synthesis Report. Contribution of Working Groups I , II and III to the Sixth Assessment
+Report of the Intergovernmental Panel on Climate Change [Core Writing Team, Lee
+H, Romero J, editors]. Geneva, Switzerland: IPCC.
+Iwata Y, Nemoto M, Hasegawa S, Yanai Y, Kuwao K, Hirota T. 2011. Influence of
+rain, air temperature, and snow cover on subsequent spring-snowmelt infiltration
+into thin frozen soil layer in northern Japan. Journal of Hydrology 401(3–4):165–
+176. https://doi.org/10.1016/j.jhydrol.2011.02.019.
+Jacobson HL, Roth DL, Walton G, Zimmer M, Johnson K. 2024. Post-fire evolution
+of gravel transport regimes in the Diablo Range, CA. Earth Surface Dynamics
+12(6):1415–1446. https://doi.org/10.5194/esurf-12-1415-2024.
+Jadoon K, Weiherm€uller L, McCabe M, Moghadas D, Vereecken H, Lambot S.
+2015. Temporal monitoring of the soil freeze–thaw cycles over a snow-covered
+surface by using air-launched ground-penetrating radar. Remote Sensing
+7(9):12041–12056. https://doi.org/10.3390/rs70912041.
+Jordan P. 2016. Post-wildfire debris flows in southern British Columbia, Canada.
+International Journal of Wildland Fire 25(3):322–336. https://doi.org/10.1071/
+WF14070.
+Kane DL, Stein J. 1983. Water movement into seasonally frozen soils. Water
+Resources Research 19(6):1547–1557. https://doi.org/10.1029/
+WR019i006p01547.
+Kean JW, Coe JA, Santi PM, Guillen BK, editors. 2019. Debris-Flow Hazards
+Mitigation: Mechanics, Monitoring, Modeling, and Assessment . Proceedings of the
+Seventh International Conference on Debris-Flow Hazards Mitigation , Golden,
+Colorado, USA, June 10–13, 2019. Special Publication 28. Colorado, WY:
+Association of Environmental and Engineering Geologists.
+Kean JW, Staley DM, Cannon SH. 2011. In situ measurements of post-fire debris
+flows in southern California: Comparisons of the timing and magnitude of 24
+debris-flow events with rainfall and soil moisture conditions. Journal of
+Geophysical Research: Earth Surface 116(F4):F04019. https://doi.org/10.1029/
+2011JF002005.
+Khanahmadi H, Bauer J, Baselt I, Heinze T. 2026. The influence of macropores on
+the thermal state of soil during infiltration in the absence of thermal equilibrium.
+Journal of Hydrology 668:134983. https://doi.org/10.1016/j.jhydrol.2026.
+134983.
+Kurylyk BL, McKenzie JM, MacQuarrie KTB, Voss CI. 2014. Analytical solutions
+for benchmarking cold-regions subsurface water flow and energy transport
+models: One-dimensional soil thaw with conduction and advection. Advances in
+Water Resources 70:172–184. https://doi.org/10.1016/j.advwatres.2014.05.
+005.
+La Porta G, Leonardi A, La Ferlita S, Pirulli M. 2025. Post-wildfire debris flow in
+the Northwestern Italian Alps: Description and numerical analysis of the June
+2018 Bussoleno event. Landslides 22:3625–3640. https://doi.org/10.1007/
+s10346-025-02605-9.
+Larsbo M, Holten R, Stenrød M, Eklo OM, Jarvis N. 2019. A dual-permeability
+approach for modeling soil water flow and heat transport during freezing and
+thawing. Vadose Zone Journal 18(1):1–11. https://doi.org/10.2136/vzj2019.
+01.0012.
+Lechner V, Scheidl C, Schl €ogl M, Huber A, Baldauf E, Kohl B, Klebinder K, Meißl
+G, Markart G. 2026. Hydrological drivers of surface runoff during high intensity
+rainfall experiments in Alpine ski regions. Journal of Hydrology 672:135302.
+https://doi.org/10.1016/j.jhydrol.2026.135302.
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A9
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 11
+Lewi/C19nska KE, Ernst S, Frantz D, Leser U, Hostert P. 2024. Global overview of
+usable Landsat and Sentinel-2 data for 1982–2023. Data in Brief 57:111054.
+https://doi.org/10.1016/j.dib.2024.111054.
+Liu T, McGuire LA, Youberg AM, Abolt CJ, Atchley AL. 2024. Temporal
+persistence of postfire flood hazards under present and future climate conditions
+in southern Arizona, USA. Natural Hazards and Earth System Sciences 25:4135–
+4151. https://doi.org/10.5194/nhess-25-4135-2025.
+Lopes AR, Girona-Garc/C19 ıa A, Corticeiro S, Martins R, Keizer JJ, Vieira DCS. 2021.
+What is wrong with post-fire soil erosion modelling? A meta-analysis on current
+approaches, research gaps, and future directions. Earth Surface Processes and
+Landforms 46(1):205–219. https://doi.org/10.1002/esp.5020.
+Lumbroso D, White CJ, Brown E, Kolusu SR. 2025. Rethinking impact-based
+forecasts and warnings (IbFW) for multi-risks. NPJ Natural Hazards 2(1):105.
+https://doi.org/10.1038/s44304-025-00157-5.
+McGuire LA, Ebel BA, Rengers FK, Vieira DCS, Nyman P. 2024. Fire effects on
+geomorphic processes. Nature Reviews Earth and Environment 5(7):486–503.
+https://doi.org/10.1038/s43017-024-00557-7.
+McGuire LA, Rengers FK, Kean JW, Staley DM, Mirus BB. 2018. Incorporating
+spatially heterogeneous infiltration capacity into hydrologic models with
+applications for simulating post-wildfire debris-flow initiation. Hydrological
+Processes 32(9):1173–1187. https://doi.org/10.1002/hyp.11458.
+Melzner S, Conedera M, H €ubl J, Rossi M. 2023. Lessons learnt from a rockfall
+time series analysis: Data collection, statistical analysis, and applications.
+Natural Hazards and Earth System Sciences 23(9):3079–3093. https://doi.org/
+10.5194/nhess-23-3079-2023.
+Melzner S, Conedera M, Pezzatti GB. 2022. Post wildfire risk in the Swiss
+mountain areas. Zeitschrift f€ur Wildbach-, Lawinen-, Erosions- u. Steinschlagschutz .
+86(190):120–130.
+Melzner S, Peduto D, H €ubl J, Fiorucci F, Phillips C. 2025. Wildfire-induced
+geohydrological risk in the Alps. Landslides 22:3989–4011. https://doi.org/10.
+1007/s10346-025-02581-0.
+Melzner S, Rossi M, Guzzetti F. 2020. Impact of mapping strategies on rockfall
+frequency-size distributions. Engineering Geology 272:105639. https://doi.org/
+10.1016/j.enggeo.2020.105639.
+Melzner S, Schiller G. 2022. Laser scanning and photogrammetry in geology—
+Opportunities and challenges. Zeitschrift f€ur Wildbach-, Lawinen-, Erosions-
+u. Steinschlagschutz. 86(189):238–258.
+Melzner S, Shtober-Zisu N, Katz O, Wittenberg L. 2019. Brief communication:
+Post-wildfire rockfall risk in the eastern Alps. Natural Hazards and Earth System
+Sciences 19(12):2879–2885.
+https://doi.org/10.5194/nhess-19-2879-2019.
+Mohammed AA, Kurylyk BL, Cey EE, Hayashi M. 2018. Snowmelt infiltration and
+macropore flow in frozen soils: Overview, knowledge gaps, and a conceptual
+framework. Vadose Zone Journal 17(1):1–15. https://doi.org/10.2136/vzj2018.
+04.0084.
+Mohammed AA, Pavlovskii I, Cey EE, Hayashi M. 2019. Effects of preferential
+flow on snowmelt partitioning and groundwater recharge in frozen soils. Hydrology
+and Earth System Sciences 23(12):5017–5031. https://doi.org/10.5194/hess-
+23-5017-2019.
+Moody JA, Ebel BA. 2012. Hyper-dry conditions provide new insights into the
+cause of extreme floods after wildfire. CA TENA93:58–63. https://doi.org/10.
+1016/j.catena.2012.01.006.
+Moreira F, Viedma O, Arianoutsou M, Curt T, Koutsias N, Rigolot E, Barbati A,
+Corona P, et al. 2011. Landscape–wildfire interactions in southern Europe:
+Implications for landscape management. Journal of Environmental Management
+92(10):2389–2402. https://doi.org/10.1016/j.jenvman.2011.06.028.
+Movasat M, Tomac I. 2025. Kinematics of post-wildfire debris flow initiation
+mechanism: Impact of hydrophobic layer spatial variability and particle size.
+Canadian Geotechnical Journal 62:1–18. https://doi.org/10.1139/cgj-2023-
+0532.
+M€uller MM, Vila`-Vilardell L, Vacik H. 2020. Forest Fires in the Alps—State of
+Knowledge, Future Challenges and Options for an Integrated Fire Management . White
+Paper for Policy Makers. EUSALP [European Union Strategy for the Alpine Region]
+Action Group 8. Vienna, Austria: EUSALP.
+Munch J, Zhuang Y, Dash RK, Bartelt P. 2024. Dynamic Thermomechanical
+modeling of rock-ice avalanches: Understanding flow transitions, water
+dynamics, and uncertainties. Journal of Geophysical Resources 129(10):
+e2024JF007805. https://doi.org/10.1029/2024JF007805.
+Murphy BP, Czuba JA, Belmont P. 2019. Post-wildfire sediment cascades: A
+modeling framework linking debris flow generation and network-scale sediment
+routing. Earth Surface Processes and Landforms 44(11):2126–2140. https://doi.
+org/10.1002/esp.4635.
+Nakata Y, Hayamizu M, Ishiyama N, Torita H. 2021. Observation of diurnal ground
+surface changes due to freeze–thaw action by real-time kinematic unmanned
+aerial vehicle. Remote Sensing 13(11):2167. https://doi.org/10.3390/
+rs13112167.
+Onda Y, Dietrich WE, Booker F. 2008. Evolution of overland flow after a severe
+forest fire, Point Reyes, California. CATENA 72(1):13–20. https://doi.org/10.
+1016/j.catena.2007.02.003.
+Peduto D, Iervolino L, Esposito G, Foresta V, Matano F, Masi R. 2022. Clues of
+wildfire-induced geotechnical changes in volcanic soils affected by post-fire slope
+instabilities. Bulletin of Engineering Geology and the Environment 81(10):454.
+https://doi.org/10.1007/s10064-022-02947-x.
+Pittman F, Mohammed A, Cey E. 2020. Effects of antecedent moisture and
+macroporosity on infiltration and water flow in frozen soil.
+Hydrological Processes
+34(3):795–809. https://doi.org/10.1002/hyp.13629.
+Porter R, Joyal T, Beers R, Youberg A, Loverich J, Schenk E, Robichaud PR. 2023.
+Characterization of environmental seismic signals in a post-wildfire environment:
+Examples from the Museum Fire, AZ. Journal of Geophysical Research: Earth
+Surface 128(7):e2022JF006962. https://doi.org/10.1029/2022JF006962.
+Potter S, Harrison S, Kreft P. 2021. The benefits and challenges of implementing
+impact-based severe weather warning systems: Perspectives of weather, flood,
+and emergency management personnel. Weather, Climate, and Society 13(2):303–
+314. https://doi.org/10.1175/WCAS-D-20-0110.1.
+Potter SH, Kreft PV, Milojev P, Noble C, Montz B, Dhellemmes A, Woods RJ,
+Gauden-Ing S. 2018. The influence of impact-based severe weather warnings on
+risk perceptions and intended protective actions. International Journal of Disaster
+Risk Reduction 30:34–43. https://doi.org/10.1016/j.ijdrr.2018.03.031.
+Pudasaini SP, Krautblatter M. 2014. A two-phase mechanical model for rock-ice
+avalanches. Journal of Geophysical Research: Earth Surface 119(10):2272–2290.
+https://doi.org/10.1002/2014JF003183.
+Pudasaini SP, Mergili M, Lin Q, Wang Y. 2024. Dynamic simulation of rock-
+avalanche fragmentation. Journal of Geophysical Research: Earth Surface 129(9):
+e2024JF007689. https://doi.org/10.1029/2024JF007689.
+Qin S, Lv J, Qiao S, Chen J, Wan F, Yao J, Li G, Zhang L. 2025. Erosion processes
+of lahar travelling on volcanic sediments: Insights from the physical and
+numerical modeling. CA TENA256:109090. https://doi.org/10.1016/j.catena.
+2025.109090.
+Qin S, Lv J, Qiao S, Chen J, Yao J, Wan F, Peng SH, Rehman G, Liu X. 2024.
+Effects of bed pumice content on lahar erosion: An example from Changbaishan
+volcano, China. Engineering Geology 336:107560. https://doi.org/10.1016/j.
+enggeo.2024.107560.
+Raymond CA, McGuire LA, Youberg AM, Staley DM, Kean JW. 2020. Thresholds
+for post-wildfire debris flows: Insights from the Pinal Fire, Arizona, USA. Earth
+Surface Processes and Landforms 45(6):1349–1360. https://doi.org/10.1002/
+esp.4805.
+Rengers F, Kean J, Williams C, Henneberg M, Banta JR, Schroder E, Sponaugle C,
+Callery D, Walter E, Blake T, Staley DM. 2025. Forecast, monitor, adapt: A multi-
+agency effort to protect people during postfire debris flows. GSA Today 35(8):16–
+21. https://doi.org/10.1130/GSATG611A.1.
+Rengers FK, McGuire LA, Kean JW, Staley DM, Youberg AM. 2019. Progress in
+simplifying hydrologic model parameterization for broad applications to post-
+wildfire flooding and debris-flow hazards. Earth Surface Processes and Landforms
+44(15):3078–3092. https://doi.org/10.1002/esp.4697.
+Rengers F, McGuire L, Oakley N, Kean J, Staley D, Tang H. 2020. Landslides after
+wildfire: Initiation, magnitude, and mobility. Landslides 17(11):2631–2641.
+https://doi.org/10.1007/s10346-020-01506-3.
+Rengers FK, Tucker GE, Moody JA, Ebel BA. 2016. Illuminating wildfire erosion
+and deposition patterns with repeat terrestrial lidar. Journal of Geophysical
+Research: Earth Surface 121(3):588–608. https://doi.org/10.1002/
+2015JF003600.
+Rey DM, Hinckley E-LS, Walvoord MA, Singha K. 2021. Integrating observations
+and models to determine the effect of seasonally frozen ground on hydrologic
+partitioning in alpine hillslopes in the Colorado Rocky Mountains, USA.
+Hydrological Processes 35(10):e14374. https://doi.org/10.1002/hyp.14374.
+R€ozer V, Peche A, Berkhahn S, Feng Y, Fuchs L, Graf T, Haberlandt U, Kreibich H,
+S€amann R, Sester M, et al. 2021. Impact-based forecasting for pluvial floods.
+Earth’s Future 9(2):2020EF001851. https://doi.org/10.1029/2020EF001851.
+Salmabadi H, Pardo Lara R, Berg A, Mavrovic A, Hanes C, Montpetit B, Roy A.
+2026. In situ monitoring of seasonally frozen ground using soil freezing
+characteristic curve in permittivity–temperature space. The Cryosphere
+20(3):1635–1654. https://doi.org/10.5194/tc-20-1635-2026.
+Santi PM, Rengers FK. 2022. Wildfire and landscape change. In: Shroder JF, edi-
+tor. Treatise on Geomorphology. 2nd edition (1st edition 2013). San Diego, CA:
+Elsevier Science & Technology, pp 765–797. https://www.sciencedirect.com/
+science/article/pii/B9780128182345000171.
+Sarro R, P /C19erez-Rey I, Tom /C19as R, Alejano LR, Hern /C19andez-Guti /C19errez LE, Mateos RM.
+2021. Effects of wildfire on rockfall occurrence: A review through actual cases in
+Spain. Applied Sciences 11(6):2545. https://doi.org/10.3390/app11062545.
+Sayedi SS, Abbott BW, Vannie`re B, Leys B, Colombaroli D, Romera GG, Sł owi /C19nski
+M, Aleman JC, Blarquez O, Feurdean A, et al. 2024. Assessing changes in global
+fire regimes. Fire Ecology 20:18. https://doi.org/10.1186/s42408-023-00237-9.
+Selander BD, Calhoun N, Burns WJ, Kean JW, Rengers FK. 2025. Assessment of
+western Oregon debris-flow hazards in burned and unburned environments. Earth
+Surface Processes and Landforms 50(4):e70045. https://doi.org/10.1002/esp.
+70045.
+Shtober-Zisu N, Brook A, Kopel D, Roberts D, Ichoku C, Wittenberg L. 2018. Fire
+induced rock spalls as long-term traps for ash. CA TENA162:88–99. https://doi.
+org/10.1016/j.catena.2017.11.021.
+Spiller ET, McGuire LA, Patel P, Patra A, Pitman EB. 2025. Quantifying fire
+effects on debris flow runout using a morphodynamic model and stochastic
+surrogates. ESS Open Archive 14 January 2025. https://doi.org/10.22541/
+essoar.173687440.07138680/v1.
+Stadler D, St €ahli M, Aeby P, Fl €uhler H. 2000. Dye tracing and image analysis for
+quantifying water infiltration into frozen soils. Soil Science Society of America
+Journal 64(2):505–516. https://doi.org/10.2136/sssaj2000.642505x.
+St€ahli M, Bayard D, Wydler H, Fl €uhler H. 2004. Snowmelt infiltration into alpine
+soils visualized by dye tracer technique. Arctic, Antarctic, and Alpine Research
+36(1):128–135. https://doi.org/10.1657/1523-0430(2004)036[0128:SIIASV]
+2.0.CO;2.
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A10
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use
+
+PAGE 12
+St€ahli M, Jansson P-E, Lundin L-C. 1999. Soil moisture redistribution and
+infiltration in frozen sandy soils. Water Resources Research 35(1):95–103.
+https://doi.org/10.1029/1998WR900045.
+St€ahli M, Stadler D. 1997. Measurement of water and solute dynamics in freezing
+soil columns with time domain reflectometry. Journal of Hydrology 195(1–4):352–
+369. https://doi.org/10.1016/S0022-1694(96)03227-1.
+Steger S, Brenning A, Bell R, Glade T. 2016. The propagation of inventory-based
+positional errors into statistical landslide susceptibility models. Natural Hazards
+and Earth System Sciences 16(12):2729–2745. https://doi.org/10.5194/
+nhess-16-2729-2016.
+Steger S, Brenning A, Bell R, Glade T. 2017. The influence of systematically
+incomplete shallow landslide inventories on statistical susceptibility models and
+suggestions for improvements. Landslides 14(5):1767–1781. https://doi.org/
+10.1007/s10346-017-0820-0.
+Stuurop JC, van der Zee SEATM, French HK. 2022. The influence of soil texture
+and environmental conditions on frozen soil infiltration: A numerical investigation.
+Cold Regions Science and Technology 194:103456. https://doi.org/10.1016/j.
+coldregions.2021.103456.
+Tanase MA, Kennedy R, Aponte C. 2015. Radar Burn Ratio for fire severity
+estimation at canopy level: An example for temperate forests. Remote Sensing of
+Environment 170:14–31. https://doi.org/10.1016/j.rse.2015.08.025.
+Tang H, McGuire LA, Rengers FK, Kean JW, Staley DM, Smith JB. 2019. Evolution
+of debris-flow initiation mechanisms and sediment sources during a sequence of
+postwildfire rainstorms. Journal of Geophysical Research: Earth Surface
+124(6):1572–1595. https://doi.org/10.1029/2018JF004837.
+Watanabe K, Kugisaki Y. 2017. Effect of macropores on soil freezing and thawing
+with infiltration. Hydrological Processes 31(2):270–278. https://doi.org/10.
+1002/hyp.10939.
+Webb RW, Fassnacht SR, Gooseff MN. 2018. Hydrologic flow path development
+varies by aspect during spring snowmelt in complex subalpine terrain. Cryosphere
+12(1):287–300. https://doi.org/10.5194/tc-12-287-2018.
+Weigert A, Schmidt J. 2005. Water transport under winter conditions. CATENA
+64(2–3):193–208. https://doi.org/10.1016/j.catena.2005.08.009.
+Wetterauer K, M€uller S, Krautblatter M, Pudasaini SP, Baselt I. 2026. Mobility of
+dry granular debris flows over erodible beds: Experimental insights into the
+influence of flow–bed inertia. EGUsphere, Preprint, 2026-1235, 19 March 2026.
+https://doi.org/10.5194/egusphere-2026-1235.
+Wittenberg L. 2013. Post-fire soil ecology: Properties and erosion dynamics.
+Israel Journal of Ecology & Evolution 58(2–3):151–164. https://doi.org/10.
+1560/IJEE.58.2-3.151.
+Woods SW, Balfour VN. 2008. The effect of ash on runoff and erosion after a
+severe forest wildfire, Montana, USA. International Journal of Wildland Fire
+17(5):535.
+https://doi.org/10.1071/WF07040.
+Wu M, Knorr W, Thonicke K, Schurgers G, Camia A, Arneth A. 2015. Sensitivity of
+burned area in Europe to climate change, atmospheric CO 2 levels, and
+demography: A comparison of two fire-vegetation models. Journal of Geophysical
+Research: Biogeosciences 120(11):2256–2272. https://doi.org/10.1002/
+2015JG003036.
+Wulder MA, Roy DP, Radeloff VC, Loveland TR, Anderson MC, Johnson DM,
+Healey S, Zhu Z, Scambos TA, Pahlevan N, et al. 2022. Fifty years of Landsat
+science and impacts. Remote Sensing of Environment 280:113195. https://doi.
+org/10.1016/j.rse.2022.113195.
+Zhou Y, He K, Hu X, Gong X, Jin T, Wu Z, Zhong Y. 2025. Post-wildfire soil
+properties changes: Insights into hillslope erosion after the March 2024 Yajiang
+Fire. Journal of Geophysical Research: Earth Surface 130(3):e2024JF008115.
+https://doi.org/10.1029/2024JF008115.
+Zreda M, Desilets D, Ferr /C19e TPA, Scott RL. 2008. Measuring soil moisture content
+non-invasively at intermediate spatial scale using cosmic-ray neutrons.
+Geophysical Research Letters 35(21):2008GL035655. https://doi.org/10.1029/
+2008GL035655.
+MountainAgenda
+Mountain Research and Development https://doi.org/10.1659/mrd.2025.00053A11
+Downloaded From: https://bioone.org/journals/Mountain-Research-and-Development on 20 Aug 2026
+Terms of Use: https://bioone.org/terms-of-use

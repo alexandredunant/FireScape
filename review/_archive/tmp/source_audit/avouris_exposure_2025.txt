@@ -1,0 +1,1569 @@
+PAGE 1
+1 
+ 
+Exposure of Settlements to Wildfires in a Transboun dary Wildland-
+Urban-Interface Region in Central Europe  
+Evripidis Avouris 1, Christopher Marrs 1, Kristina Beetz 1,*, Lucie Kudláčková 2, Markéta Poděbradská 2, 
+Miroslav Trnka2, Matthias Forkel1  
+1TUD Dresden University of Technology, Faculty of En vironmental Sciences, Environmental Remote Sensing Group, 5 
+Dresden, Germany 
+2Global Change Research Institute of the Czech Academy of Sciences, Brno, Czech Republic 
+* Now at ICEYE, Finland 
+ 
+Correspondence to: Matthias Forkel, TUD Dresden University of Technology, Faculty of Environmental Sciences, Technische 10 
+Universität Dresden, Helmholtzstr. 10, 01062 Dresden, Germany, E-mail: 
+matthias.forkel@tu-dresden.de 
+Abstract. Climate change has been causing a noticeable rise in disastrous wildfires in Mediterranean and temperate forests. 
+Although forest fires were of smaller size and less concern in Central Europe than for example in the Mediterranean, the region 
+has recently experienced large wildfires. For example, a wildfire burned significant parts of two National Parks at the border 
+between Germany and the Czech Republic in 2022. This event demonstrated the need for local stakeholders and the scientific 15 
+community to adapt fire risk assessment and management to this new reality. Here we aim to create a wildfire exposure map 
+for the trans-boundary National Park region Saxon-Bohemian Switzerland between Germany and the Czech Republic. We use 
+several Earth observation products, historical fire  occurrence points, medium to very high fire danger  weather and wind 
+scenarios, and three different fire duration scenarios (1, 2, 3 days) to simulate fire behaviour and burn probability, and to finally 
+assess the potential exposure of settlements to wil dfires. Observations from the wildfire in 2022 were  used to validate the 20 
+modelling framework. The interactive wildfire exposure map was tested with the general audience and local stakeholders for 
+its usability and usefulness. We generally found hi gher burn probability and potential flame length at  settlements in Czech 
+Republic. As our results and the experiences from the past fire have shown wildfires cross borders, demonstrating the need for 
+coordinated trans-border wildfire management. 
+1 Introduction 25 
+In recent years, the number of destructive wildfires extends far beyond the regions where they have traditionally occurred; it 
+is a global and escalating phenomenon related to climate change (Abatzoglou et al., 2025; Jones et al., 2022, 2024). In addition, 
+urban growth and/or abandonment of previously agriculturally or silviculturally used lands, causes wildfires to increase and 
+intensify in the wildland–urban (WUI) and wildland- rural interface, where human settlements are interm ixed with natural 
+vegetation (Bowman et al., 2017; Ursino and Romano, 2014). The expansion of WUIs, together with the worsening effects of 30 
+climate change (e.g. Trnka et al., 2020), render WUI wildfires even more potentially disastrous (Oliveira et al., 2020). Wildfires 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 2
+2 
+ 
+in the WUIs can have a significant impact on both n atural and human environments, and they pose unique  challenges to 
+traditional firefighting approaches due to their complexity and the interface between different land uses (Caballero and Beltrán, 
+2003). 
+Even temperate countries like those in Central Europe, which have historically been spared from destructive wildfires in the 35 
+WUI (Heisig et al., 2022), have recently experienced wildfires that destroyed buildings such as in Mezná, Czech Republic, or 
+in Falkenberg, Germany, both in 2022. These events are consistent with the reported significant increa se in fire-conducive 
+conditions in the Czech Republic since the 1960s (T rnka et al., 2021). Wildfire behaviour in the WUI i n Central Europe is 
+recently changing because of changes in land use and forest structure. Since 2017, Central Europe has experienced a prevalence 
+of bark beetle infestations. Bark beetles (in this region these are predominantly Ips typographus) cause widespread mortality 40 
+of the regionally extensive spruce forests (mainly Picea abies) (Müller et al., 2008). The Czech Republic, in par ticular, has 
+been heavily affected, with a drought-fuelled bark beetle dynamic in 2017–2019 (Brázdil et al., 2022) impacting vast regions 
+simultaneously—an event of unprecedented magnitude in the region (Hlásny et al., 2021). This outbreak has played a 
+substantial role in the observed twofold increase i n canopy mortality across Central Europe (Seidl et al., 2014; Senf et al., 
+2018). The prevalence of dead and weakened trees, c ombined with regenerating young vegetation, has sig nificantly altered 45 
+fuel structures, increasing the likelihood and severity of wildfires. 
+Disturbed forests in Central Europe can experience perilous wildfires comparable to the most serious fires of Southern Europe 
+(Berčák et al., 2023). Particularly, Beetz et al. (2024) showed that disturbed forest stands in the Bohemian-Saxon Switzerland 
+region exhibited extreme fire behaviour during the 2022 wildfire, including high flame lengths and rad iative power, which 
+were driven by high loads of dead wood and dense regenerating vegetation following bark beetle infestation. These conditions 50 
+underscore the evolving fire risk in the region and highlight the urgent need for further research on wildfire dynamics in Central 
+European WUIs, as also emphasised by Kudláčková et al. (2024), who demonstrated the applicability of a dvanced fire 
+behaviour modelling to simulate and analyse the unprecedented 2022 wildfire. 
+Although professional and voluntary fire services have a long tradition and are widespread in Central European countries, the 
+societal awareness about wildfires in the WUI and the capacities to fight wildfires are at an early stage of development making 55 
+wildfires in such places potentially much more difficult to handle (Heisig et al., 2022). This situation creates the need to inform 
+the public of the potential exposure of their homes  and properties to wildfires. Moreover, the stakeho lders responsible for 
+dealing with wildfires in Central Europe, such as firefighters, emergency management services, National Park administrations 
+and relevant government agencies, should be aware of the potential danger that areas under their jurisdiction are increasingly 
+in.  60 
+Wildfire exposure quantifies the risk posed by wild fires to human and environmental assets. Generally,  exposure can be 
+described as the condition of human assets, such as people, infrastructure, housing, and production capabilities, being situated 
+in areas that are susceptible to hazards, such as wildfires (Safaie et al., 2017). Hence an assessment of wildfire exposure is the 
+evaluation of the assets that could be endangered in case of a wildfire (Johnston et al., 2020). To quantify wildfire exposure, 
+metrics of wildfire likelihood and potential intens ity are estimated before juxtaposing them with the location of assets 65 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 3
+3 
+ 
+(Abrahams et al., 2017). A common way to derive such metrics is the use of landscape fire modelling. Fire modelling offers 
+an analytical framework for the characterisation an d prediction of fire spread and behaviour in varied  and intricate fire 
+environments (Stephens, 1998; Van Wagtendonk, 1996) . This approach has been proven beneficial in the d evelopment of 
+suitable wildfire management strategies, in order t o mitigate potential disasters and establish effect ive coping capacities 
+(Alcasena et al., 2017; Moghaddas et al., 2010; Oliveira et al., 2020; 2021; Sá et al., 2022).  70 
+The objective of this study is to assess wildfire exposure for the Bohemian-Saxon Switzerland trans-boundary WUI region in 
+Central Europe, where ongoing changes in land use —such as declining forest management, increasing protection of natural 
+processes, and increasing attractiveness for tourism— have been reinforced by the founding of two National Parks (NP Saxon 
+Switzerland in Germany in 1990, NP Bohemian Switzer land in Czech Republic in 2000). Firstly, we aim to  produce an 
+interactive wildfire exposure map that includes two  support capability indicators, namely, the locatio ns of fire stations and 75 
+local transportation infrastructure. Secondly, we a im to provide a quantification of the wildfire expo sure for different 
+settlements in the region. Thirdly, we perform a qualitative user study to assess the usability of the map by the general audience 
+and usefulness by local stakeholders.  
+We first introduce the data sources and the methodology employed to create the exposure map in Sect. 2, then we present the 
+components of the exposure map and assessment as well as the evaluation in Sect. 3 and discuss the results and directions for 80 
+future research in Sect. 4. 
+2 Data and Methods 
+2.1 Study area 
+The study area extends across a transboundary area of approximately 700 km² on both sides of the River Elbe in Germany and 
+the Czech Republic. Specifically, the study area consists of the two National Parks Saxon Switzerland (Sächsische Schweiz) 85 
+and Bohemian Switzerland (České Švýcarsko) and the two surrounding conservation areas, the Conservation Area of Saxon 
+Switzerland (Landschaftsschutzgebiet Sächsische Sch weiz) and the Conservation Area of the Elbe Sandsto ne Mountains 
+(Chráněná krajinná oblast Labské pískovce) (Nationalpark Sächsische Schweiz, 2023) (Figure 1).  
+The Conservation Area of Saxon Switzerland consists  of several ‘holes’, i.e., villages and towns, whic h are not part of the 
+Conservation Area but which are here considered part of the study area. The study area is dotted by several settlements (small 90 
+towns, villages, remote houses; only local towns ar e indicated in Figure 1). Altogether around 1 Mio. inhabitants live in the 
+respective wider administrative districts, i.e., 24 6,000 in the Saxon Switzerland/Eastern Ore mountain s district in Germany 
+and 811,000 in the Ústecký kraj district in Czech Republic.  
+The selection of the study region was motivated by the occurrence of a wildfire which lasted from 24th July 2022 until it was 
+extinguished on 12 th August 2022, and which burnt 113 ha in the Saxon S witzerland National Park and 1,060 ha in the 95 
+Bohemian Switzerland National Park (Požár v NP České Švýcarsko, 2024) (Figure 1). The fire started in the Czech National 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 4
+4 
+ 
+Park, spread across the border into the German Nati onal Park, and destroyed several houses in the Czec h village of Mezná, 
+hence demonstrating the need for transboundary wildfire exposure assessment.  
+ 
+ 100 
+Figure 1: Study Area. The study area consists of two National Parks and two Conservation Areas at the border between the Czech 
+Republic and Germany, and experienced a large wildfire in 2022. 
+The study area has been dominated by monocultures o f Norway spruce (Picea abies). Extreme drought cond itions and high 
+temperatures in Central Europe between 2018 and 202 2 triggered massive bark beetle infestations in Cze chia and Germany 
+(Knutzen et al., 2025) leading to extensive spruce mortality and subsequent accumulation of deadwood i n the study area 105 
+(European Commission, Joint Research Centre et al., 2024). The effects of these forest changes on the behaviour of the 2022 
+forest fire were investigated previously by Beetz et al. (2024) using field and satellite observations, and by Kudláčková et al. 
+(2024) using the FlamMap landscape fire model. Here  we build on the first of these two studies by maki ng use of the fuel 
+model classifications that it developed (Sect. 2.3.2). 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 5
+5 
+ 
+2.2 Quantifying fire exposure using FlamMap 110 
+The fire modelling tool used in this study is FlamMap (FlamMap, 2023), which employs the widely used surface fire spread 
+model by Rothermel (Keane, 2015). Wildfire exposure was quantified in terms of burn probability and potential flame length 
+using FlamMap. This software is a widely used tool for wildfire exposure assessment (Jahdi et al., 2016). It was first applied 
+to our study area by Kudláčková et al. (2024) to in vestigate drivers of the 2022 wildfire. FlamMap com putes fire behaviour 
+characteristics such as flame length, and burn probability in the form of geolocated rasters suitable for the prompt derivation 115 
+of settlements’ exposure (Peterson et al., 2007). F lamMap modelling was done at a spatial resolution o f 30×30m, which is 
+adequate to allow the detection of individual buildings on the resulting exposure rasters. 
+Burn probability (!") is the likelihood that a location (a grid cell in the case of this study) will burn, taking into account the 
+cumulative number of modelled fires (Sá et al., 2022). The BP of grid cell # is calculated as 
+!"! $ %
+&!
+'!
+( 120 
+where &" is the frequency of cell # burning, out of a number of '! simulated ignitions (Sá et al., 2022, p. 3922). It is hence a 
+proxy of wildfire likelihood. In FlamMap, BP is one  of the outputs of the Minimum Travel Time (MTT) Al gorithm. The 
+calculation of fire growth in the MTT algorithm inv olves the exploration of pathways that exhibit the minimum spread time 
+among cells within a two-dimensional gridded landscape, operating at a spatial resolution determined by the user (in this study, 
+30m × 30m) (Sá et al., 2022). Wildfire spread is fo recasted by employing Rothermel's model (Rothermel,  1972) which 125 
+calculates fire characteristics in the direction of the highest rate of spread.  
+Flame length (FL) is the average distance from the midpoint of the active flaming zone at the fuel sur face to the flame tip 
+(Rothermel and Deeming, 1980). This measurement is taken on a slant when the flames are tilted as a result of the influence 
+of wind and slope. FL has long served as a proxy for measuring fire intensity (Byram, 1959): longer flames are indicative of a 
+greater amount of fuel consumed and of energy relea sed per unit of time (Finney et al., 2021). FL is o ne of the basic fire 130 
+behaviour outputs of FlamMap. FL, along with Fireline Intensity and Heat per unit Area are generated for all cells of the fire 
+modelling landscape by taking into account the cons tant wind and other environmental conditions such a s fuel moisture 
+(Finney, 2006).  
+2.3 Datasets 
+2.3.1 Input data for FlamMap 135 
+For simulations with FlamMap, a fire modelling land scape and weather conditions are necessary input da tasets. A fire 
+modelling landscape is a geospatial characterisatio n in raster-format that includes topography (aspect , slope and elevation), 
+vegetation (stand height and canopy cover), and fuel (canopy bulk density, canopy base height and surface fuel model) (Scott, 
+2019). Hourly weather data is needed for the determ ination of dead fuel moisture and information about  wind conditions to 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 6
+6 
+ 
+simulate fire spread. To start fire spread simulations, ignition locations are either generated randomly or are based on historical 140 
+data. We here first describe the required input datasets, except for the fuel models, which are covered in the next section. 
+For the ignition points we opted against random dis tribution, as we had access to data that revealed c lear spatial patterns of 
+fire occurrence and ignitions in the study area, mainly along the Elbe valley and forests north of the  city of Děčín and along 
+some common hiking trails and points of interests in both National Parks. Historical forest fire ignition data (60 ignitions) for 
+the German part of the study area were provided by the Saxon State Authority for Forestry (Staatsbetrieb Sachsenforst, 2023). 145 
+Additionally, we also included known locations in the National Park Saxon Switzerland considered particularly susceptible to 
+future ignitions in the German part of the study area. These comprised parking areas, viewing points, legal fire pits, and legal 
+and illegal rock shelters (“Boofen” in German), totalling 697 sites. At those sites, camp fires are often ignited but did not result 
+in a forest fire so far. Ignition locations from the Czech part (163 ignitions) were acquired from the Fire Rescue Service of the 
+Czech Republic (Hasičský záchranný sbor České republiky, 2023). Neither dataset is publicly available. The ignition location 150 
+of the 2022 fire was manually added to the dataset as it had not yet been included in the respective dataset. The joint datasets 
+encompassed the locations of 921 ignition points. T o balance ignition density between the German and C zech parts of the 
+study area, we calculated the target number of ignition points for each side—based on the lower Czech density—and randomly 
+subsampled the German ignition locations to match this target. The final number of ignition points was 363. These can be seen 
+in Figure 1. 155 
+Weather data (wind speed and direction, temperature, relative humidity, precipitation, and cloud cover) was derived from the 
+Climate Data Centre (CDC) of the German Weather Service (Deutscher Wetterdienst, 2025) for the Lichtenhain-Mittelndorf 
+station (station id: 02985) located inside the borders of the study area (Figure 1). 
+Information on fuel moisture was derived from 10-h fuel stick measurements from a site near Mezní Louka located inside the 
+study area in a disturbed forest stand after bark b eetle infestations (Kudláčková et al. 2024). The me asurement of 10-h fuel 160 
+moisture content ranged from 6 to 11% for the days 24th to 26th July 2022, the first three days of the 2022 fire. Therefore, initial 
+dead fuel moisture content for areas affected by bark beetle were set to values of 6, 7 and 8% for 1-hr, 10-hr, and 100-hr dead 
+fuels, respectively. Dead fuel moistures in non-beetle killed areas were set to 3, 4, and 5% for the 1-hr, 10-hr, and 100-hr dead 
+fuels, respectively. This selection follows the inp ut modelling parameters set by Kudláčková et al. (2 024), who based their 
+choice on observations of the Botanical Institute of the Academy of Sciences of the Czech Republic, wh ich measured lower 165 
+soil moisture in living standing forests compared t o areas covered by areas affected by a bark beetle infestation. To ensure 
+consistency in the fire behaviour modelling and to isolate the effect of fuel moisture differences bet ween scenarios, the six 
+weather variables recorded on the first day of the wildfire (24th July 2022) were used to model dead f uel moisture changes 
+across all modelling scenarios. 
+Live fuel moisture is assumed to remain constant th roughout a modelling run by FlamMap and was set to 60% for the 170 
+herbaceous vegetation and to 90% for live woody fuels.  
+Digital ground elevation (DGM) tiles covering the s tudy area, were downloaded from the Saxony State Of fice for Basic 
+Geographic Information (Landesamt für Geobasisinformation Sachsen, 2023) for Germany and the State Adm inistration of 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 7
+7 
+ 
+Land Surveying and Cadastre for Czech Republic (ČÚZ K: Geoportál, 2024). The merged elevation file was resampled to a 
+30×30m resolution and clipped to the borders of the study area. The slope and aspect layers were derived from the respective 175 
+Slope and Aspect using ArcGIS Pro’s geoprocessing t ools. Canopy Cover was derived from Copernicus’ Lan d Monitoring 
+Service which provides 10×10m resolution rasters wi th canopy cover density; the latest dataset availab le dates from 2018 
+(Copernicus Land Monitoring Service, 2024).  
+2.3.2 Fuel Model Maps 
+Fuel models are defined by a set of often complex c haracteristics of surface fuels such as heat conten t, mineral content and 180 
+dead fuel moisture of extinction (Keane, 2015). Fue l models are a main input to fire behaviour models such as FlamMap. 
+Therefore, we here developed a fuel model map for t he study area following the classification scheme o f Scott & Burgan 
+(2005). Fuel models are often derived from fuel typ es that are more generally defined vegetation types  which have been 
+grouped together because of their similar characteristics from a fire behaviour point of view (Aragoneses et al., 2022).  
+The fuel models for the study area are based on the  fuel type map by Beetz et al. (2024), which offers  high resolution (10 × 185 
+10m) for the entire study area. Beetz et al., (2024 ) created a fuel type classification system by comb ining the European fuel 
+type classification of (Aragoneses et al., 2022) and that of the Alaska Fuel Model Guide Task Group (2018). We first translated 
+the fuel types to the fuel models as listed in Table A1 of Appendix A. Thereby, we also checked if the resulting fire behaviour 
+simulations appear realistic which resulted in a first preliminary fuel model map. In a second step, we reclassified NB9 (bare 
+ground) to SH3 (moderate load, humid climate shrub)  where NDVI > 0.72, and GS3 (moderate load, humid c limate grass- 190 
+shrub –dynamic) areas to GR3 (low load, very coarse, humid climate grass – dynamic). We then conducted 83 field surveys 
+on the German side of the study area during October  of 2023 in order to check the plausibility of the fuel models. The field 
+surveys were stratified with information about land use and biotope classifications from the Free State of Saxony (Natur und 
+Biologische Vielfalt, 2024). This resulted in 47 unique combinations of fuel models and land use. Thos e combinations were 
+used to reclassify the preliminary fuel model map to fuel models which were observed in the field. Cases for which in the same 195 
+land cover polygons different fuel models where surveyed, were not changed. This resulted in an update  of 18% of the total 
+fuel models of the German part of the study area. The fuel model creation pipeline is shown in Figure A1. 
+The resulting fuel models map is shown Figure 2. Note the existence of significant areas that have been infested by bark beetle; 
+these are noted in the fuel models map with the model ‘Slash-Blowdown 2’ (SB2), an assignment also employed by the Alaska 
+Fuel Model Guide Task Group (Ed.) (2018) for bark beetle-infested forests. 200 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 8
+8 
+ 
+ 
+Figure 2: Fuel Models Map of Study Area 
+2.3.3 Settlements, fire stations and transportation network 
+For the assessment and mapping of wildfire exposure , we included settlements and local transportation infrastructure. 
+Settlements of the study area for both the Czech Republic and Germany were derived from Open Street Maps data (Geofabrik 205 
+– Europe, 2023). Only towns (4) and villages (73) w ere considered and then labelled, in order to not o verpopulate the map 
+with hamlets, farms and localities, which although potentially equally exposed, are much smaller and u nderpopulated when 
+compared to bigger settlements. Apart from settlements, a polygon layer of buildings was also included to allow the assessment 
+of exposure of individual buildings in the interactive web map. 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 9
+9 
+ 
+For the location of fire stations and the local tra nsportation infrastructure, a 30km circular buffer around the centroid of the 210 
+study area was considered, primarily in order to ta ke into account fire stations outside the main stud y area which are 
+nevertheless nearby enough to provide rapid assistance in the case of a wildfire. 
+To derive data on the location of German fire stations three sources were utilised: First from OSM (Geofabrik – Europe, 2023). 
+Secondly, fire station locations were provided upon  personal request by the District Fire Brigade Asso ciation 
+(Kreisfeuerwehrverband – Sächsische Schweiz-Osterzgebirge e.V., 2023) to reinforce the scarce OSM data. Thirdly, the Saxon 215 
+State Office for Geographic Information (Geoportal Sachsenatlas, 2024) also provided fire station information. 
+For Czech Republic, fire station locations were likewise first derived from OSM (Geofabrik – Europe, 2023). Second, the web 
+map of the Hasičovo community portal of Czech fire fighters provided the majority of fires stations’ l ocation information 
+(Hasičovo, 2023). All fire station datasets lack information on the equipment and on whether the fire stations were volunteer 
+or professional ones, which affect the availability of personnel and resources in case of wildfires. Therefore, fire stations were 220 
+summarised and visualised as one class. 
+Data on local transportation infrastructure was der ived solely from OSM (Geofabrik – Europe, 2023). OS M data on 
+transportation infrastructure comes into several classes, which needed to be grouped in order to not overburden the exposure 
+map with superfluous information, and to focus on c ar roads that fire appliances can use. Groups were created based on the 
+classification and explanation of classes found on OpenStreetMap wiki (OpenStreetMap, 2023). All roads  classified as 225 
+‘unclassified’ were manually checked with Google Earth and then reclassified appropriately. 
+2.4 Model simulations and scenarios 
+Several factors need to be considered in simulations with FlamMap namely ignition location, fuel moisture, weather conditions 
+and the duration of the fire. While ignition locati ons and fuel moisture were held constant based on h istorical observations 
+(Sect. 2.3.1), different scenarios for fire duratio n and wind conditions were selected to give realist ic outputs in terms of BP 230 
+and FL. The different factors resulted in nine diff erent wildfire scenarios, considering combinations between three fire 
+durations (1, 2, 3 days) and three weather conditio ns (winds occurring during periods of middle, high and very high risk of 
+wildfire).  
+2.4.1 Fire Duration 
+The duration of a modelling run in FlamMap is controlled by the Maximum Simulation Time parameter which takes minutes 235 
+as its unit (FlamMap Help, 2023). The duration of w ildfire simulations varies among studies. For examp le, Mallinis et al. 
+(2016) used a duration of 480 min based on the historical wildfire record of the region, Mallinis (2014) used 360 min, and Sá 
+et al. (2022) considered several durations (300, 540, and 720 min). 
+Here, we decided to run simulations for 1,440 (1 da y), 2,880 (2 days) and 4,320 minutes (3 days). This  was done as a 
+compromise between the many wildfires that often occur in the area and are usually detected and extinguished shortly and the 240 
+2022 wildfire that occurred in the study area over a period of 20 days, whereby the main spread of thi s fire occurred during 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 10
+10 
+ 
+the first three days (Kudláčková et al., 2024). In addition, the longer simulation times corresponded well with the lower wind 
+speeds observed in the area, and this match was supported by the evaluation presented in Section 3.4. Unfortunately, no other 
+data is available about the duration of historical fires in the region. 
+2.4.2 Wind and fire weather scenarios 245 
+Mesoscale wind conditions and local topography are main drivers for wildfire behaviour. Therefore, dif ferent authors have 
+used various wind scenarios. For example, Alcasena et al. (2017) considered five wind scenarios, considering the most frequent 
+wind directions (frequency >5% in weather records) during the wildfire season and the respective 97th percentile wind speeds. 
+Sá et al. (2022) derived different weather types af ter classifying 326 fire weather days based on the average values of 
+temperature (T), relative humidity (RH), and wind s peed. Each fire weather type (frequent/hotter, drie r/windier and 250 
+cooler/wetter) then had a representative wind based  on the average wind speed and the most common out of eight wind 
+directions. 
+Here we considered the mesoscale wind condition by developing different wind and fire weather scenarios and accounted for 
+the microscale topography by making use of the Wind Ninja diagnostic model (Forthofer et al., 2009). Th is model takes the 
+mesoscale input wind speed and direction and the sl ope of the fire modelling landscape to generate hig h resolution wind 255 
+vectors. The chosen resolution for this study was 40×40m.  
+In order to generate typical mesoscale wind scenarios, we used the Forest Fire Danger Index (Waldbrandgefahrenindex, WBI) 
+of the German Weather Service (DWD). WBI  is based on the Canadian Fire Weather Index, while also adopting elements of 
+the German Baumgartner and M68 indexes, and describes the meteorological potential for forest fire danger from 1 ‘very low 
+risk of fire’ up to 5 ‘very high risk of fire’ (Wittich et al., 2014; Wittich and Bock, 2014). WBI values from DWD are provided 260 
+for different municipalities through the  Central G erman Information Service Agency (Waldbrandgefährdung, 2023). Daily 
+WBI data for the municipality of Bad Schandau were chosen for the period 15 th February 2009 to 12 th August 2022. Bad 
+Schandau is lying entirely in the study area, is cl ose to the meteorological station of Lichtenhain-Mi ttelndorf and close to 
+locations where many ignitions have been recorded.  
+We then categorised all dates according to their WB I in medium danger (WBI = 3; 740 days), high danger  (WBI = 4; 445 265 
+days) and very high danger (WBI = 5; 45 days). Then the hourly wind data for the Lichtenhain-Mittelndorf station was filtered 
+into three new datasets with hourly wind informatio n for the three considered WBI values. Hourly value s outside the 
+15.02.2009 – 12.08.2022 span were not used. Similarly to Sá et al. (2022), the frequency of each wind direction was analysed 
+for each WBI value (Appendix B). The frequencies and mean speeds of all directional wind conditions for each WBI are shown 
+in Table 1 and Table 2. 270 
+We then run FlamMap with the three most prominent w ind directions and associated wind speeds for the t hree scenarios of 
+fire duration resulting in twenty-seven model simulations. 
+  
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 11
+11 
+ 
+Table 1: Frequency of each wind direction for middle, high and very high fire danger conditions. The three most prominent wind 
+directions for each WBI value are highlighted in bold. 275 
+Fire danger 
+(WBI) 
+Wind Direction (%) 
+N NE E SE S SW W NW 
+Medium (3)  12.54 9.98 5.41 9.03 24.84 5.04 15.65 17.5 
+High (4) 14.17 15.14 9.18 8.5 19.16 2.98 13.26 17.61 
+Very high (5) 6.03 8.89 8.57 17.14 31.75 4.44 13.65 9.52 
+ 
+ 
+Table 2: Mean speed of every wind direction for each of the three hourly winds’ WBI datasets is shown here. The mean speeds of 
+the three most prominent wind directions for each WBI value are highlighted. 
+Fire danger 
+(WBI) 
+Mean wind speed (km/h) 
+N NE E SE S SW W NW 
+Medium (3)  13.0 16.01 12.6 7.02 16.65 12.28 14.85 14.93 
+High (4) 13.29 16.86 14.94 16.2 10.03 13.21 14.62 17.23 
+Very high (5) 12.64 12.42 12.09 17.4 17.21 11.08 13.59 17.62 
+ 280 
+2.5 Development of the wildfire exposure map 
+The exposure map represents both common conditions for burn probability and flame length. Therefore, w e calculated 
+representative values of BP and FL for each fire da nger and fire duration scenario as weighted average s depending on wind 
+conditions. For each, the FL and BP weighted mean r asters are calculated using wind prominence percentages as weights in 
+order to assign more importance to wind scenarios that occur more often under a specific wildfire danger scenario:  285 
+  
+)#,%*+
+++++ $ ,{',(,)} - * .' / ,{+,(,)} - * .+ / ,{,,(,)} - * .,
+.' / .+ / .,
+ 
+ 
+Where X is either FL or BP of a grid cell at locati on i, j and p is the percentage frequency of the th ree most prominent wind 
+directions A, B and C (Table 1).   290 
+Burn probability and flame length were then each classified in five classes for the exposure map. The classification for FL was 
+derived from Sá et al. (2022), which in turn is an adaptation of the classification suggested by Alexander & Cruz (2018). This 
+classification classifies flame length according to the difficulty of fire suppression. Likewise, BP was classified in five classes 
+from low to very high:  > 0.01, [1, 0.02), [0.02, 0 .05), [0.05, 0.1) or ≥ 0.1. To create the final exp osure map, the two 
+classifications of FL and BP were combined in a bivariate classification corresponding to 25 combinations of FL and BP. The 295 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 12
+12 
+ 
+simultaneous combination of fire intensity and probability measures to derive exposure has been applied in previous studies. 
+For example, (Sá et al., 2022) combined burn probab ility with fireline intensity, while Heisig et al. (2022) employed the 
+integrated fire hazard classification scheme of the Interagency Fuels Treatment Decision Support System which gives a single 
+fire hazard value based on both conditional flame length and conditional burn probability. 
+We then developed an interactive web-based fire exposure map to allow users and stakeholders an easy access and evaluation 300 
+of the wildfire exposure scenarios. The interactive  map was first prototyped in ArcGIS Online and afte r receiving feedback 
+from stakeholders, was implemented in the open-source software leaflet to enable a more widespread and provider-independent 
+hosting of the tool. The web map allows for interac tive data exploration such as zooming, panning, and  view configuration. 
+The map includes the nine wildfire exposure rasters , the residential Home Ignition Zone, the buildings , fire stations, 
+transportation network, the historical fire ignition locations, the river network, the names of towns and villages located withing 305 
+the same 30km circular buffer as the fire stations,  and the burned area from the 2022 wildfire (Copern icus  Emergency 
+Management Service, 2022). Finally, the international border between Germany and the Czech Republic as well as the borders 
+of the National Parks and Conservation Areas were included. 
+2.6 Assessment of the exposure of municipalities 
+Based on the wildfire exposure map, exposure was al so assessed for municipalities and at the scale of individual homes. 310 
+Therefore, the Home Ignition Zone (HIZ) of all resi dential buildings located inside the study area was  calculated. The HIZ 
+refers to the 60-metre buffer zone directly surroun ding residential buildings, which plays a critical role in assessing the 
+likelihood of structure ignition during severe wildfire incidents (Alcasena et al., 2017). To identify residential buildings, the 
+buildings layer was subsetted to include only those  buildings defined as residential by the Czech Stat e Administration of 
+Surveying and Cadastre for the Czech side (ČÚZK: Ge oportál, 2024) or by the Saxon State Office for Geo information 315 
+(Landnutzung - Geobasisinformation, 2024) for the German side. We then computed 5 and 95%-iles of BP and FL for all grid 
+cells located within the HIZ of the residential buildings for an extreme scenario (very high fire danger at WBI = 5 and a 3-day 
+fire duration) and for a mild scenario (medium fire danger at WBI = 3 and a 1-day fire duration). We finally used the borders 
+of the 28 Czech and 16 German municipalities situated inside the borders of the study area to evaluate wildfire exposure on a 
+low administrative division level. 320 
+3 Results  
+3.1 Wildfire exposure at different weather and fire duration scenarios 
+The nine wildfire exposure scenarios are illustrated in Figure 3. Each scenario simultaneously represents the flame length (FL) 
+and burn probability (BP) classes. The legend’s col ours were created using the HSB (Hue Saturation Bri ghtness) Colour 
+Model. Hue was varied to visualise FL ranging from yellow (low flames) to dark blue (high flames). Saturation was varied to 325 
+represent BP from light colours (low burn probability) to dark colours (high burn probability). 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 13
+13 
+ 
+It is evident that high BP is primarily influenced by the duration of the modelling run. Across all fire danger levels, the 2-day 
+simulations consistently yielded higher BP values than the 1-day ones, and similarly the 3-day simulations consistently yielded 
+the highest BP values in total. In contrast, FL is more sensitive to wildfire danger conditions (WBI) than to simulation duration, 
+remaining relatively stable across all scenarios, with only minor variation as WBI increases and virtually no sensitivity to how 330 
+long the simulation runs. This difference is likely  due to the nature of the two metrics: FL represent s an instantaneous fire 
+behaviour measure and is therefore less affected by time, whereas BP accumulates over the entire simulation. Since the same 
+set of weather conditions was used to model dead fuel moisture across all simulations, differences in FL are primarily driven 
+by the variation in wind conditions. However, the i mpact of wind is somewhat muted, as the prevailing wind directions are 
+similar across all three fire danger scenarios—particularly the dominance of southern winds (see Appendix B). 335 
+Despite these general trends, some spatial patterns remain consistent across all nine scenarios. Specific areas—especially on 
+the North and Southwest of the study area—consisten tly show both high BP and high FL, indicating subst antial wildfire 
+exposure. The Southeast, shows constantly high BP, albeit with lower FL. There is a large, roughly tri angular area on the 
+German part, which is bounded by the Elbe and the i nternational border, which consistently demonstrate s low FL but is 
+dominated with some purple patches of land. These a re agricultural areas where few ignitions occur. Pa tterns of BP can be 340 
+better understood by taking a look at the ignition locations used for the modelling in Figure 1. It is evident that there are two 
+main clusters, one centred around the city of Decín  and the other located in the municipality of Bad S chandau, which make 
+areas around them more probable to burn during modelling. Finally, a consistent pattern across the scenarios is that wildfires 
+rarely cross the Elbe River. While high BP values can be observed along both banks, they often do not extend across the river.  
+Each of the modelling scenarios also resulted in in termediate BP and FL maps. These can be seen in App endix C for the 345 
+example of WBI = 5 and duration = 3 days.  
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 14
+14 
+ 
+ 
+ 
+Figure 3: The 9 wildfire exposure rasters for three different levels of forest fire danger (WBI) and three different fire durations. 
+National borders and the River Elbe are also overimposed. 350 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 15
+15 
+ 
+3.2 Wildfire exposure per municipality 
+Following the methodology described in Sect. 2.6, we assessed wildfire exposure at the scale of the Home Ignition Zone (HIZ) 
+for residential buildings and aggregated the result s to the municipal level. Figure 4 shows the five m unicipalities with the 
+highest median HIZ exposure values for both burn probability (BP) and flame length (FL) under an extreme wildfire scenario 
+(WBI = 5, fire duration = 3 days). 355 
+The results reveal a clear pattern: municipalities on the Czech side of the border dominate both ranki ngs, with the notable 
+exception of the high BP experienced by the HIZ of Sebnitz. The municipalities of Mikulášovice, Vilémo v, Kámen, and 
+Arnoltice exhibit the highest median BP values, each approaching or exceeding 12%. Likewise, the top five municipalities in 
+terms of median HIZ FL are all Czech, with values r anging from approximately 7 metres in Srbská Kameni ce to nearly 12 
+metres in Veselé. 360 
+The high BP observed in the four Czech municipaliti es can be attributed to the fact that their HIZs ar e relatively small and 
+located close to ignition points, meaning that most of them burn in the majority of modelling runs (see Figure D1 of Appendix 
+D). This is especially true given that two of the three dominant winds in the extreme scenario are from the south and southeast, 
+frequently placing these municipalities in the path of expanding fires. In Germany, Sebnitz is an exception: whilst it has many 
+HIZs spread over a large area, these areas can still be reached by modelled wildfires originating in Bad Schandau. Interestingly, 365 
+neither Bad Schandau nor Děčín experience high BP. Although they host the two largest clusters of ignitions, their HIZs are 
+often situated away from the paths taken by the fires and are large enough for the median BP values to remain low. 
+These findings suggest that residential buildings i n Czech municipalities are particularly exposed to wildfire under extreme 
+conditions, underscoring spatial disparities in fire risk across the study area. 
+ 370 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 16
+16 
+ 
+ 
+Figure 4: The five municipalities of the study area with the highest BP and the five with the highest FL, based on their residential 
+home ignition zones under the extreme weather scenario, are shown in red. Other municipalities are shown in grey. 
+Figure 5 extends the analysis by comparing the extreme scenario (WBI = 5, 3-day duration) to a milder scenario (WBI = 3, 1-
+day duration) for the same most-exposed municipalit ies. The BP values show substantial variation betwe en scenarios, with 375 
+much lower exposure under mild conditions. In contr ast, FL remains relatively consistent across scenar ios, reaffirming the 
+earlier observation from Figure 3, that FL is less sensitive to fire duration and WBI levels than BP. For a complete examination 
+of the exposure of all municipalities for these two scenaria, as well as a map of the municipalities and Home Ignition Zones, 
+please refer to Tables D1–D2 and Figure D1 in the Appendix. 
+ 380 
+ 
+Figure 5: The five municipalities of the study area  with the highest median burn probabilities and fla me lengths, based on their 
+residential home ignition zones, for two scenarios:  an extreme scenario (WBI = 5, duration of 3 days; shown in red) and a mild 
+scenario (WBI = 3, duration of 1 day; shown in grey ). Median values are indicated with points, and ver tical lines show the 5th to 
+95th percentile range. 385 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 17
+17 
+ 
+3.3 Interactive web map 
+A typical view of the interactive web map is shown in Figure 6. The map is available for download at 
+https://doi.org/10.25532/OPARA-954. Upon first access, users are presented with a gen eral overview of the study area, 
+including the 30 km centroid buffer used for the support capability indicator layers. By selecting the appropriate checkboxes 
+in the layer visibility menu, users can display these indicators, which highlight fire stations and the three types of paved routes. 390 
+The wildfire exposure rasters are organised in a de dicated sub-section of the layer menu. Here, radio buttons allow users to 
+view one scenario at a time. If the Home Ignition Z one (HIZ) layer is enabled, it is overlaid on the s elected exposure raster, 
+masking all non-residential areas. To examine indiv idual building exposure, users can zoom into a spec ific settlement and 
+activate the buildings layer. Comparing this with the 2022 wildfire boundary layer allows identification of structures that were 
+within the fire perimeter—such as in the case of th e village of Mezná. A dedicated legend button helps  users interpret the 395 
+exposure rasters. For example, in Mezná, several be ige cells—assumed to represent non-burnable built-u p areas—are 
+interspersed with deep blue cells, indicating zones of highest exposure (i.e., highest FL and BP value s). Additionally, a help 
+button marked with a “?” opens a pop-up window that  provides a more detailed explanation of the colour  scheme and map 
+functionality. A full description of the map’s interactive features is available in Appendix E. 
+ 400 
+ 
+Figure 6: A typical view of the interactive web map. 
+3.4 Evaluation of wildfire modelling 
+To assess the performance of the wildfire modelling approach used in this study, we evaluated FlamMap’s ability to simulate 
+the spatial extent of the 2022 wildfire over its first three days. For this evaluation, the three first days of the 2022 wildfire were 405 
+modelled with the utilisation of three modelling runs, each lasting one day; the first run used the 2022 wildfire ignition as its 
+ignition location, as well as the mean daily wind a nd fuel moistures of the first day of the 2022 wild fire (24.07.2022). The 
+second run used a point layer describing the perimeter of the first modelled fire as its multiple ignition locations, as well as the 
+mean daily wind and fuel moistures of the second da y of fire (25.07.2022). The third run used a point layer describing the 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 18
+18 
+ 
+perimeter of the second day modelled fire as its multiple ignition locations, as well as the mean daily wind and fuel moisture 410 
+of the third day of fire (26.07.2022). The River Elbe was assumed to act as a natural fire barrier in all runs, as in Kudláčková 
+et al. (2024) . The usage of three different runs, was done to counter the inaccuracies that might develop when using one sole 
+wind to represent varying wind conditions that last multiple days, as was the case with the wind conditions of the 2022 wildfire. 
+A time series of the mean daily wind velocities of the 2022 wildfire are displayed in Figure 7, along with the daily WBI values; 
+notice the constantly changing wind direction:  415 
+ 
+ 
+Figure 7: Time series showing wind velocity (speed and direction), as well as daily WBI values throughout the duration of the 2022 
+study area wildfire. 
+The results of these three modelling runs, were com pared to data derived from active fire detection re mote sensing products 420 
+accessed from NASA’s Fire Information for Resource Management System (FIRMS). FIRMS distributes Near R eal-Time 
+(NRT) active fire / thermal anomalies data from the Moderate Resolution Imaging Spectroradiometer (MODIS) aboard the  
+Aqua and Terra satellites (NASA MODIS Science Data Support Team, 2021), and the Visible Infrared Imaging Radiometer 
+Suite (VIIRS) aboard S-NPP and NOAA 20 (formally known as JPSS-1) (NASA VIIRS Land Science Team, 2020). This data 
+comes in 375m (VIIRS) and 1km (MODIS at nadir) spatial resolutions. 425 
+For this evaluation, the available VIIRS and MODIS- detected active fires for the first three days of t he 2022 wildfire 
+(24.07.2022 – 26.07.2022), were merged and then classified into three daily layers. These fires were then compared to the fire 
+perimeters derived from the three aforementioned FlamMap modelling runs, which were also done for the first three days of 
+the 2022 wildfire: As can be seen in Figure 8, there is an adequately good overlap between modelled-burned areas and satellite-
+detected fires, particularly for the third day of the fire, and the modelling roughly follows the limits of the overall extent of the 430 
+fire. More specifically, Table 3 shows the proporti on of true positive active fire detections accurate ly represented by the 
+FlamMap modelling - i.e., VIIRS/MODIS hotspots that  occurred within the simulated fire perimeter for t he corresponding 
+day. 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 19
+19 
+ 
+ 
+Figure 8: Comparison of three daily FlamMap runs with satellite-detected fires. 435 
+ 
+Table 3: Percentage of VIIRS/MODIS - detected active fires located within the FlamMap-simulated daily fire perimeters. 
+ % of detections within modelled perimeter 
+1st day detected fires 6% 
+2nd day detected fires 52% 
+3rd day detected fires 72% 
+Total detected fires 75% 
+ 
+3.5 Evaluation of usability and usefulness  
+To evaluate the usability of the interactive map, a  questionnaire was developed—an approach commonly u sed in similar 440 
+contexts (e.g., Flink et al., 2011; Wang, 2014). The questionnaire included four parts: an introductory explanation of the map, 
+participant profiling, a task-based activity, and follow-up usability questions. Participants were asked to identify a route from 
+a specific settlement to its nearest fire station under a defined wildfire scenario and assess the settlement’s exposure. They then 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 20
+20 
+ 
+rated the difficulty of this task on a 5-point Likert scale (1 = very easy, 5 = very difficult), followed by questions on the clarity 
+of the map’s bivariate legend and overall design. Two final open-ended questions gathered qualitative feedback. 445 
+Fifty responses were collected, covering both GIS/C artography professionals and members of the general  public. Profiling 
+responses (Appendix F, Figure F1) showed that most participants had at least moderate map-reading skil ls: 84% and 86% 
+reported moderate to expert knowledge of static and interactive maps, respectively. 
+Task difficulty ratings differed by background. Among non-GIS users, responses centred around “3 – neutral” (median/mode 
+= 3). GIS professionals, however, found the task ea sier: 61% rated it as either “1 – very easy” or “2 – easy,” with a median 450 
+and mode of 2 (see Figure 9). This suggests a clear link between domain expertise and ease of use. 
+Interpretation of the legend’s colours was generally successful. For two key questions—one about the meaning of blue areas 
+(Q1), and one about the role of colour intensity (Q2)—78% and 70% of all participants answered correctly. GIS users scored 
+higher, with 84% and 81% correct, respectively (Figure F2). Overall clarity of the bivariate legend wa s also rated positively 
+(mean = 3.86, median/mode = 4 – “easy”; see Figure F3). 455 
+Finally, participants identified both strengths and  design challenges of the map. The five most common  suggestions for 
+improvement are summarised in Appendix F – Summary of User Feedback. These findings are further discussed in Sect. 4. 
+ 
+ 
+Figure 9: Responses showing difficulty of completion of interactive map activity. This consisted of identifying a route from a 460 
+specific settlement to its nearest fire station under a defined wildfire scenario and assessing the settlement’s exposure.  
+A usefulness questionnaire was developed to assess whether the interactive map could support wildfire protection stakeholders 
+in the study area. Its structure mirrored the usability questionnaire, with a language selection option added on the initial screen. 
+Full English and German versions were provided, while a partial Czech version included a translated introduction followed by 
+English-language questions. 465 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 21
+21 
+ 
+The second part collected information on participan ts’ professional background, their link to the stud y area, and map 
+familiarity. The third part replicated the activity section from the usability questionnaire. In the final section, participants rated 
+each map layer’s relevance to their work using a 5- point Likert scale (1 = not relevant, 5 = highly re levant), and described 
+potential use cases. Aside from the scale ratings, the questionnaire relied mostly on open-ended respo nses. A bilingual user 
+guide (German/English) was attached to each email to assist unfamiliar participants. 470 
+Two stakeholders completed the questionnaire. Parti cipant A is affiliated with the Bohemian Switzerlan d National Park 
+Administration, and Participant B with Germany’s Vi rtual Operations Support Team (VOST) under the Fede ral Agency for 
+Technical Relief (THW). Both had prior experience with interactive maps and completed all tasks. 
+Both participants rated the buildings and settlement layers as very or highly relevant. Fire stations and transportation networks 
+were also valued, though to varying degrees (rating s ranged from 3 to 5). Opinions differed on the rel evance of rivers— 475 
+Participant A, familiar with the Elbe’s fire-containment potential, rated them highly, while Participant B rated them slightly 
+relevant (2). Other layers, such as historical igni tions, 2022 burned area, and conservation boundarie s, were considered less 
+relevant. The wildfire exposure rasters were viewed positively, rated from moderately to very relevant. Participant A suggested 
+adding terrain relief and slope layers to aid orientation and assess fire spread. 
+When asked about potential use cases, Participant A  raised concerns about the exposure model’s accurac y and outdated or 480 
+disconnected paths, suggesting limited applicability in their context. In contrast, Participant B iden tified future value: while 
+the current map has limited relevance to VOST operations—due to its geographic scope and VOST’s infrequent missions in 
+eastern Germany—it could become more useful if expa nded to other regions. B suggested the development of printable or 
+open-format (e.g., geopackage or raster) versions. This comment was one of the motivating factors when choosing to develop 
+the map using open-source software. 485 
+4 Discussion 
+4.1 Methodological Contributions 
+This study presents a flexible workflow for wildfire exposure mapping in transboundary WUI regions, leveraging the FlamMap 
+fire behaviour model, multiscenario simulations, an d open-access geospatial data. It resulted in one o f the first interactive 
+wildfire exposure maps for an area of Central Europe. Notably, this workflow integrates burn probability (BP) and flame length 490 
+(FL) into a bivariate exposure classification, visu alised through a custom colour scheme, and implemen ted in an interactive 
+web-based map. An important methodological innovation was the use of WBI-based fire weather scenarios paired with varying 
+fire durations to simulate realistic wildfire dynamics. The approach accounted for the most frequent wind directions associated 
+with each WBI level, using WindNinja to model micro scale topographic effects. While FlamMap's design l imits wildfire 
+simulations to a single wind scenario per run, a workaround was implemented to capture daily variability in wind conditions 495 
+during the 2022 wildfire, as part of the evaluation  of the methodology. Though this technique was not used to generate the 
+exposure map itself, it demonstrated the feasibility of adapting FlamMap for multi-day wildfires. Fuel modelling was improved 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 22
+22 
+ 
+through local expert validation and field surveys. Expert input led to the amendment of two fuel models, and 83 ground truth 
+surveys enabled refinement of 18% of the fuel model  classifications in the German portion of the study  area. These efforts 
+enhanced the reliability of the fuel input data, especially in a landscape undergoing significant ecological change due to bark 500 
+beetle infestations. Finally, support capability in dicators—namely the locations of fire stations and transportation 
+infrastructure—were integrated into the exposure ma p using a 30 km buffer. This ensured that both loca l and nearby 
+firefighting capacities were visually represented, acknowledging the crucial role of rapid response in WUI wildfire contexts. 
+4.2 Key Findings and Interpretations 
+The empirical results indicate substantial spatial variation in wildfire exposure across the study area. The home ignition zones 505 
+of the Czech municipalities were significantly more  exposed than those of Germany in both BP and FL, p articularly under 
+extreme wildfire scenarios, with the notable exception of the high BP observed in Sebnitz and its incorporated villages. Sebnitz 
+stands out not only as the sole German municipality  with high BP values, but also for being far larger  than any Czech 
+municipality with similarly high BP. It is interspersed with extensive home ignition zones. This cross-border asymmetry likely 
+reflects differences in forest structure and land-use management across the border. However, as previously discussed, ignition 510 
+locations are not confined to one side; for example, the Bad Schandau ignition cluster in Germany was found to contribute to 
+exposure in adjacent Czech municipalities. This fin ding underscores the need for international coopera tion and data sharing 
+between wildfire agencies across borders. Analysis of BP and FL patterns across the nine scenarios rev ealed that BP was 
+primarily influenced by fire duration, whereas FL w as more sensitive to fire weather conditions. While  FL values remained 
+relatively stable across scenarios, BP increased markedly with longer durations. The River Elbe consistently acted as a natural 515 
+firebreak, with simulated fires rarely crossing it.  
+The usability study involving 50 participants showed that the map was generally perceived as easy to use, particularly by GIS 
+professionals. Participants appreciated features su ch as toggling layers and zooming, though some repo rted difficulties 
+interpreting the bivariate colour legend, especially on mobile devices. Feedback also highlighted the need for improved contrast 
+between certain layers and for better legend accessibility. The usefulness evaluation, while limited to two stakeholders, offered 520 
+contrasting perspectives. Participant B, from Germany’s VOST, identified potential future applications of the map, especially 
+if its geographic scope were expanded. Participant A, from the Bohemian Switzerland National Park Administration, expressed 
+scepticism regarding the accuracy of transportation data, which highlights the need for an updated mapping of forest roads and 
+paths including their traversability for different classes of trucks and vehicles. Importantly, both participants rated the layers 
+representing settlements and fire stations as highly relevant, supporting the inclusion of these eleme nts in future operational 525 
+tools. Additionally, the validation of the exposure map us ing satellite-detected active fires during the 2022  wildfire 
+demonstrated that the modelling approach— particula rly when paired with locally adapted fuel models—ca n approximate 
+observed fire spread with reasonable accuracy. The overlap with actual burned areas was high, especially for the third day of 
+the fire. In terms of the area lying in Germany shown in Figure 8, it should be noted that the modelled fire spread beyond the 
+limits of the actual 2022 wildfire, which could be attributed to the strong defence firefighters mounted on the German side of 530 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 23
+23 
+ 
+the border. This element, which could not be fully modelled in FlamMap, is available only in the FSim software as described 
+recently by Finney et al. (2025). 
+4.3 Limitations 
+Some limitations constrained the scope of this study’s results. Most notably, the lack of historical f ire perimeter data for the 
+study area limited the validation of the modelled scenarios. While the 2022 wildfire provided one opportunity for comparison, 535 
+more cases would be needed to systematically assess  model accuracy across varied conditions. The assum ption of constant 
+wind in the primary FlamMap runs also introduces biases and uncertainty in scenarios, especially for longer-duration wildfires. 
+Although a workaround was tested, it was not applie d to the main exposure maps, potentially underestimating fire spread in 
+complex wind scenarios. This is especially important in this study area, where energy emissions during fires together with the 
+complex topography of small valleys and high rock cliffs likely cause strong local pyrogenetic circulation features. Accounting 540 
+for such fire-atmosphere feedbacks requires the cou pling of a fire spread model with an atmospheric la rge eddy simulator. 
+Canopy data were insufficient to support the modell ing of crown fire dynamics. As such, the exposure m odel likely 
+underrepresents the intensity and behaviour of fire s in dense or structurally complex stands. The unav ailability of detailed 
+information on the status and equipment of fire stations also limited the representativeness of the support capability indicators. 
+The evaluation of map usefulness was constrained by low response rates; only two contacted stakeholders responded. While 545 
+their feedback was insightful, it cannot be considered representative of the broader emergency response community. Finally, 
+data inconsistencies—such as outdated or misclassified roads—underscore the need for continuous stakeh older engagement 
+throughout the data preparation process.  
+4.4 Future Directions 
+Future wildfire exposure assessments in Central Europe and comparable regions should prioritise the integration of dynamic 550 
+vegetation and disturbance data, particularly in forest landscapes affected by forest disturbances such as bark beetle outbreaks 
+or windthrow. Field validation and expert consultation should be embedded in the workflow from the outset, not only during 
+post-processing stages. Developing modular workflows that can easily accommodate new data inputs—such as updated fuel 
+models, canopy characteristics, or fire station cap acities—would enhance the adaptability and operatio nal relevance of the 
+exposure mapping process, particularly across seasons when fuel types and weather conditions vary.  555 
+Improving crown fire modelling by incorporating additional canopy structure data (e.g., stand height, canopy base height, and 
+crown bulk density) would allow for more accurate intensity estimation. Additionally, expanding the use of fire weather indices 
+beyond WBI—for example, using the Canadian Fire Wea ther Index in other regions—would support broader a pplicability. 
+Furthermore, future work could explore a more weigh ted bivariate metric for exposure. While the symbol ogy developed in 
+this study accounts for both variables, an integrat ed single exposure or hazard index—similar to that used by the US 560 
+Department of the Interior and US Department of Agr iculture in the Interagency Fuels Treatment Decisio n Support System 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 24
+24 
+ 
+(IFTDSS) - might provide additional insights. Such an approach could highlight areas that currently re ceive low exposure 
+scores under the present scheme but still present considerable hazard potential, such as agricultural areas with high potential 
+flame length yet few nearby ignitions. In such case s, these areas might warrant a higher exposure clas sification than, for 
+example, locations with high burn probability but low flame length.  565 
+From a user perspective, enhancing accessibility is essential. Open-source and licence-free versions of the exposure map should 
+be provided, including static maps or raster data downloads. This would support wider use across agencies that lack access to 
+proprietary platforms. Stakeholder feedback suggests that open-source solutions improve uptake in decentralised emergency 
+services.  
+5 Conclusions 570 
+This study has followed the development of an interactive wildfire exposure map, in a transboundary area of Germany and the 
+Czech Republic consisting of two National Parks and two Conservations Areas. Such mapping in that area is still at a relatively 
+early stage, but it is an area where wildfires are expected to become an ever-increasing threat due to climate change. Wildfire 
+scenarios were devised based on local historical we ather and classified based on WBI values and wildfi re duration. These 
+scenarios were then converted to exposure rasters, showcasing which human settlements are most potenti ally exposed to 575 
+wildfires in the study area. The modelling results were then integrated into a web-based interactive m ap, which was then 
+evaluated both for its accuracy and its usability/usefulness. The results of the usability evaluation have shown that the design 
+workflow of the interactive map is promising, and that the resulting product, though it presents complex information, shows it 
+in an understandable way. The usefulness questionnaire revealed the need to include stakeholders in such research in different 
+ways, and to generally include local stakeholders and experts early, and throughout the research process. Moreover, significant 580 
+work remains to be done, in order for future resear ch to have access to adequate historical wildfire d ata, indispensable for 
+testing the accuracy of the resulting exposure maps. Finally, the produced map contributes to the preparation of accurate and 
+effective disaster risk management strategies for this area of Central Europe. 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 25
+25 
+ 
+6 Appendices 585 
+Appendix A. Fuel Types to Fuel Models 
+Table A1: Translation table of fuel types to fuel models 
+ 
+Main Fuel 
+Type 
+Leaf Type Phenology Cover % Fuel Type Fuel 
+Model 
+Fuel Type Fuel 
+Model 
+1. Forest 
+11. 
+Broadleaved 
+111. Deciduous 
+1111. Open 
+(15 - <70%) 
+11111 Beech  
+11112 Birch 
+11113 Oak 
+11114 Ash 
+TL2 
+GR6 
+TL2 
+TL2 
+11115 Black Locust  
+11116 Poplar  
+11117 Other Hardwood 
+TL2 
+TL2 
+TL2 
+1112. Closed 
+(70 - 100%) 
+11121 Beech 
+11122 Birch 
+11123 Oak 
+11124 Ash 
+TL6 
+TL2 
+TL2 
+TL2 
+11125 Black Locust 
+11126 Poplar 
+11127 Other Hardwood 
+TL2 
+TL2 
+TL2 
+1113. 
+Scattered 
+Trees <15% 
+11131 Beech 
+11132 Birch 
+11133 Oak 
+TL2 
+GR5 
+TL2 
+11134 Black Locust 
+11135 Poplar 
+11136 Other Hardwood 
+TL2 
+TL2 
+TL2 
+12. Needle-
+leaved 
+121. Evergreen 
+1211. Open 
+(15 - <70%) 
+12111 Spruce 
+12112 Pine 
+TL3 
+SH4 
+12113 Other coniferous 
+wood 
+SH4 
+1212. Closed 
+(70 - 100%) 
+12121 Spruce 
+12122 Pine 
+TU2 
+SH3 
+12113 Other coniferous 
+wood 
+TU2 
+1213. 
+Scattered 
+Trees <15% 
+12131 Spruce 
+12132 Pine 
+TL3 
+SH4 
+12113 Other coniferous 
+wood 
+SH4 
+122. Deciduous 
+1221. Open 
+(15 - <70%) 
+12211 Larch GR6 
+1222. Closed 
+(70 - 100%) 
+12221 Larch TL3 
+1223. 
+Scattered 
+Trees <15% 
+12231 Larch GR6 
+13. Mixed 1301. Open 
+(15 - <70%) 
+13011 Larch 
+13012 Spruce  
+13013 Pine 
+13014 Other 
+Hardwood  
+ 
+13015 Beech 
+GR6 
+TL3 
+SH4 
+TL2 
+ 
+ 
+TL2 
+13017 Oak 
+13018 Ash 
+13019 Black Locust 
+13020 Poplar 
+TL2 
+TL2 
+TL2 
+TL2 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 26
+26 
+ 
+ 
+  590 
+Main Fuel 
+Type 
+Leaf Type Phenology Cover % Fuel Type 
+Fuel 
+Model 
+Fuel Type 
+Fuel 
+Model 1. Forest 
+13. Mixed 
+ 
+1301. Open 
+(15 - <70%) 
+13016 Birch TL2 13021 Lime TL2 
+1302. Closed 
+(70 - 100%) 
+13031 Larch 
+13032 Spruce  
+13033 Pine 
+13034 Other 
+Hardwood 
+13035 Beech 
+13036 Birch 
+TL3 
+TU2 
+SH3 
+TL2 
+ 
+TL2 
+TL2 
+13037 Oak 
+13038 Ash 
+13039 Black 
+Locust 
+ 
+13040 Poplar 
+13041 Lime 
+TL2 
+TL2 
+TL2 
+ 
+ 
+TL2 
+TL2 
+1303. 
+Scattered 
+Trees <15% 
+13051 Larch 
+13052 Spruce 
+13053 Pine 
+13054 Other 
+Hardwood 
+13055 Beech 
+13056 Birch 
+GR6 
+TL3 
+SH4 
+TL2 
+ 
+TL2 
+TL2 
+13057 Oak 
+13058 Ash 
+13059 Black 
+Locust 
+13060 Poplar 
+ 
+13061 Lime 
+TL2 
+TL2 
+TL2 
+ 
+TL2 
+ 
+TL2 
+2. Disturbed 
+Land 
+Bark beetle-infested forest 
+Wildfire, 1-2 years since burn 
+21. Bark beetle-infested forest 
+22. Little fine fuel 
+SB2 
+TL1 
+3. Shrubland 
+ 
+31. Temperate shrub heathland 
+32. Temperate and mediterranean-montane 
+scrub 
+SH6 
+SH3 
+4. Grassland 
+ 
+41. Mesic grassland 
+42. Dry grassland 
+GR6 
+GR3 
+5. Cropland 
+ 
+51. Arable land 
+52. Shrub plantation 
+GR3 
+SH3 
+6. Wet and 
+peat/semi-
+peat land 
+ 
+61. Riverine 
+62. Seasonally wet and wet grasslands 
+63. Peat land 
+SH8 
+GR6 
+GR5 
+7. Urban 
+ 
+71. Continuous fabric 
+72. Discontinuous fabric 
+NB1 
+SH3 
+8. Nonfuel 
+ 
+81. Open Water 
+82. Bare Ground 
+NB8 
+NB9 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 27
+27 
+ 
+ 
+ 
+ 
+ 
+Figure A1: Fuel types to fuel models processing steps 595 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 28
+28 
+ 
+Appendix B. Distribution of Wind Roses 
+ 
+ 
+Figure B1: Wind roses for winds that occurred on days with WBI = 3, 4 and 5 in Bad Schandau from 15.02.2009 until 12.08.2022. 
+  600 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 29
+29 
+ 
+Appendix C. Example Burn Probability and Flame Length Rasters 
+ 
+ 
+Figure C1. Workflow for derivation of flame length raster for scenario WBI = 5 and duarion = 3 days 
+  605 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 30
+30 
+ 
+ 
+Figure C2. Workflow for derivation of burn probability raster for scenario WBI = 5 and duarion = 3 days 
+ 
+ 
+  610 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 31
+31 
+ 
+Appendix D. Municipality Exposure 
+ 
+Figure D1. Map of municipalities and Home Ignition Zone of residential areas in the study area. 
+ 
+  615 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 32
+32 
+ 
+Table D1. Exposure of Czech residential areas per m unicipality. Burn probability metrics are in grey a nd flame length ones in 
+yellow. Minimum, maximum and median values are presented for the modelling scenaria of WBI = 5, duration = 3 days (“extreme”) 
+and for WBI = 3, duration = 1 day (“mild”). All met rics are based on values between the 5th and 95th p ercentiles to reduce the 
+influence of outliers. 
+ 
+Burn Probability - 
+mild scenario 
+Burn Probability - 
+extreme scenario 
+Flame Length - 
+mild scenario 
+Flame Length - 
+extreme scenario 
+Municipality min max med min max med min max med min max med 
+Arnoltice 0 0.02 0.02 0 0.1 0.1 0 8.37 1.69 0 8.46 1.69 
+Bynovec 0 0.02 0.01 0 0.1 0.1 0 8.52 1.7 0 8.65 1.71 
+Chribská 0 0 0 0 0.04 0.04 0 11.32 0.81 0 11.49 0.87 
+Dobrná 0 0 0 0 0 0 0 0 0 0 0 0 
+Doubice 0 0.02 0 0 0.05 0.04 0 11.92 3.05 0 11.78 2.87 
+Decín 0 0.05 0.01 0 0.15 0.06 0 8.2 1.61 0 8.52 1.64 
+Huntírov 0 0.02 0.02 0 0.07 0.07 0 9.86 4.9 0 10.24 4.97 
+Hrensko 0 0.01 0 0 0.1 0.07 0 8.99 1.75 0 9.23 1.76 
+Janov 0 0.01 0.01 0 0.1 0.1 0 9.04 1.73 0 9.16 1.74 
+Janská 0 0.02 0.02 0 0.06 0.06 0 8.06 4.35 0 8.04 4.34 
+Jetrichovice 0 0.01 0 0 0.06 0.05 0 9.12 6.53 0 9.28 6.4 
+Jílové 0 0.01 0.01 0 0.16 0.03 0 9.16 1.85 0 9.39 1.88 
+Krásná Lípa 0 0.02 0.02 0 0.05 0.04 0 11.89 8.43 0 12.13 8.51 
+Kunratice 0.01 0.02 0.02 0.05 0.06 0.06 1.71 12.82 2.46 1.64 12.62 2.45 
+Kámen 0 0.02 0.02 0 0.11 0.1 0 8.22 4.69 0 8.4 4.73 
+Labská Strán 0 0.02 0.01 0 0.09 0.08 0 8.61 1.7 0 8.63 1.7 
+Libouchec 0 0 0 0 0.03 0.02 0 9.5 1.79 0 9.69 1.8 
+Ludvíkovice 0 0.02 0.02 0 0.1 0.09 0 9.51 1.81 0 9.73 1.82 
+Markvartice 0 0.02 0.02 0 0.06 0.06 0 11.15 2.43 0 11.4 2.46 
+Mikulášovice 0 0.02 0.02 0 0.13 0.12 0 12.32 2.32 0 12.42 2.38 
+Petrovice 0 0 0 0 0.05 0.04 0 12.87 2.37 0 12.7 2.25 
+Ružová 0 0.02 0.01 0 0.1 0.1 0 8.46 1.67 0 8.58 1.67 
+Srbská 
+Kamenice 0 0.02 0.02 0 0.07 0.07 0 8.24 6.8 0 8.54 6.92 
+Staré Krecany 0 0.02 0.02 0 0.08 0.07 0 9.57 7.3 0 9.85 7.3 
+Tisá 0 0 0 0 0.05 0.03 0 12.62 2.16 0 13.1 2.16 
+Veselé 0 0.02 0.02 0 0.06 0.06 0 13.9 11.34 0 14.17 11.51 
+Vilémov 0 0.01 0.01 0 0.11 0.1 0 13.62 2.03 0 14.1 2.02 
+Ceská 
+Kamenice 0 0.02 0.02 0 0.06 0.06 0 12.32 7.03 0 12.5 7.09 
+ 620 
+  
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 33
+33 
+ 
+Table D2. Exposure of German residential areas per municipality. Burn probability metrics are in grey and flame length ones in 
+yellow. Minimum, maximum and median values are presented for the modelling scenaria of WBI = 5, duration = 3 days (“extreme”) 
+and and for WBI = 3, duration = 1 day (“mild”). All metrics are based on values between the 5th and 95th percentiles to reduce the 
+influence of outliers. 625 
+ 
+Burn Probability - 
+mild scenario 
+Burn Probability - 
+extreme scenario 
+Flame Length - 
+mild scenario 
+Flame Length - 
+extreme scenario 
+Municipality min max med min max med min max med min max med 
+Bad Gottleuba- 
+Berggießhübel 0 0.01 0 0 0.04 0.01 0 10.88 1.76 0 10.88 1.74 
+Bad Schandau 0 0.02 0 0 0.09 0.03 0 8.23 1.35 0 8.37 1.36 
+Dürrröhrsdorf- 
+Dittersbach 0 0 0 0 0.03 0.02 0 9.09 0.86 0 9.11 0.85 
+Gohrisch 0 0 0 0 0.03 0.02 0 8.13 1.6 0 8.25 1.59 
+Hohnstein 0 0.03 0.01 0 0.17 0.09 0 8.99 1.74 0 9.16 1.74 
+Königstein 0 0 0 0 0.03 0.01 0 8.33 1.34 0 8.49 1.28 
+Lohmen 0 0 0 0 0.03 0.02 0 8.38 1.66 0 8.51 1.66 
+Pirna 0 0 0 0 0.01 0.01 0 9.03 1.6 0 9.01 1.55 
+Rathen 0 0 0 0 0.05 0.01 0 7.82 0.86 0 8.11 0.9 
+Rathmannsdorf 0 0.01 0 0 0.1 0.08 0 8.82 1.61 0 8.93 1.57 
+Reinhardtsdorf- 
+Schöna 0 0 0 0 0.02 0.01 0 8.25 1.6 0 8.33 1.6 
+Rosenthal- 
+Bielatal 0 0.01 0 0 0.07 0.02 0 8.22 1.61 0 8.3 1.61 
+Sebnitz 0 0.03 0.02 0 0.21 0.11 0 8.86 1.77 0 9.07 1.78 
+Stolpen 0 0 0 0 0.1 0 0 1.43 0 0 1.41 0 
+Struppen 0 0 0 0 0.02 0.01 0 8.58 1.63 0 8.68 1.63 
+Stadt Wehlen 0 0 0 0 0.02 0.01 0 8.56 1.53 0 8.7 1.51 
+ 
+  
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 34
+34 
+ 
+Appendix E. Interactive web map 
+Figure E1 shows a typical map view. Initially, only certain layers are available. Here, apart from the basemap and an exposure 
+raster, the fire stations, the historical fires’ ignitions,  the villages, rivers and the study area l ayers are also visible. The main 630 
+window is marked with ‘G’. The zoom buttons ‘A’ may  be pressed to change the zoom level and the search  bar ‘B’ can be 
+used to search for locations in the study area but also outside of it. ‘C’ is the home button which when pressed brings the user 
+to the initial zoom level. The question mark button ‘D’ brings up the bivariate legend explanation. ‘E’ shows the quick legend 
+button, which brings up the legend shown in the bottom-left of the screen. This was created to assist viewer to quickly check 
+the burn probability and flame lengths when needed. ‘H’ and ‘I’ indicate the two parts of the layer pa ne, namely the one for 635 
+the exposure rasters and the one for the rest of them. This pane automatically opens upon hovering over its symbol, located in 
+the top-right of the window. Finally, ‘F’ indicates the map’s scale bar, which updates according to the current zoom level. 
+ 
+ 
+Figure E1. Interactive web map features 640 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 35
+35 
+ 
+Appendix F. Usability Questionnaire Replies 
+ 
+Figure F1. User profiles of usability questionnaire participants. 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 36
+36 
+ 
+ 645 
+Figure F2: Answers to the questions regarding understanding of the map’s colours. 
+ 
+ 
+ 
+Figure F3: Responses to the question concerning ease of understanding of the legend. 650 
+ 
+0 10 20 300 10 20 30
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 37
+37 
+ 
+Table F1: Most frequently mentioned user-friendly aspects and improvement suggestions for the online wildfire exposure map from 
+the usability questionnaire. 
+Category Feedback item Mentions 
+User-friendly aspects Ability to easily turn on and off layers 
+on demand to focus on needed 
+information as well as the ease of use 
+of the taskbar 
+13 
+Colour coding easy to understand and 
+colours distinguishable 
+6 
+Overall map design 4 
+Ease of zooming and overall ease of 
+navigation 
+3 
+Ability to search for locations using 
+the search bar 
+3 
+Suggestions for improvement Change exposure raster’s colour 
+coding (fewer colours or change of 
+existing colours) 
+8 
+Make legend more accessible and 
+easier to find (issue reported by mobile 
+users) 
+5 
+Increase contrast between routes and 
+exposure rasters 
+5 
+Change colour or size of fire station 
+symbol 
+4 
+Add transparency control for raster 
+layers 
+2 
+ 
+ 655 
+  
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 38
+38 
+ 
+Data Availability 
+The fuel model map, burn probability and flame leng th rasters, as well as the exposure rasters can be provided by the 
+corresponding authors upon request. Additionally al l raw data, with the exception of the ignition data  used, can also be 
+provided. The online map can be found under 
+https://doi.org/10.25532/OPARA-954. 660 
+Author Contribution 
+Writing – Original Draft, Software, Formal Analysis, Visualization, Investigation: EA  
+Conceptualisation, Methodology: EA, MF, CM 
+Validation: EA, MF, LK, CM, MT 
+Writing – Review, Editing: EA, CM, MF 665 
+Supervision: MF 
+Data Curation, Resources: EA, KB, CM, MP 
+Competing Interests 
+The authors declare that they have no conflict of interest. 
+Acknowledgements 670 
+The authors would like to thank Charles McHugh of t he Missoula Fire Sciences Laboratory for his invaluable guidance and 
+expertise in answering our questions about FlamMap,  which greatly facilitated our understanding and us e of this tool. We 
+would also like to thank Louis Georgi of the Saxon National Park for providing ignition locations. 
+This work was co-funded by the European Union through the Horizon 2020 research and innovation programme (FirEUrisk 
+project) under the Grant Agreement no. 101003890. 675 
+CM, MF , MT and LK also acknowledge funding from the Interreg Central Europe (Wildfire CE project) 
+The contributions of MT and LK were possible through OP JAK project AdAgriF – Advanced methods of greenhouse  
+gases emission reduction and sequestration in agriculture and forest landscape for climate change mitigation 
+(CZ.02.01.01/00/22_008/0004635). 
+ 680 
+  
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 39
+39 
+ 
+References 
+Abatzoglou, J. T., Kolden, C. A., Cullen, A. C., Sa degh, M., Williams, E. L., Turco, M., and Jones, M.  W.: Climate change 
+has increased the odds of extreme regional forest fire years globally, Nat Commun, 16, 6390, https://doi.org/10.1038/s41467-
+025-61608-1, 2025. 685 
+Abrahams, J., Anacia, A., Beavers, R., Gabriel Andrés, B., Caffrey, M., Omar Darío, C., Ciotti, M., Derrough, T., Douris, J., 
+Espinosa, L., Fraser, G., G. Goldammer, J., Gudnason, T., Gyenes, Z., Hainsworth, A., Krausmann, E., Loughlin, S., Løvholt, 
+F., Mallinis, G., Mitsopoulos, I., Nadim, F., Necci , A., Rudari, R., Severi, E., Sexton, J., Silva, V. , Smallwood, C., Suk, J., 
+Tsolova, S., Vigh, J. L., Villegas, C., Wannous, C. , Weatherill, G., Yepes-Estrada, C., and Woolf, M.:  Words into Action 
+guidelines: National disaster risk assessment, Part h Three: Hazard specific Risk Assessment, United Na tions Office for 690 
+Disaster Risk Reduction, 2017. 
+Alaska Fuel Model Guide Task Group (Ed.): Fuel mode l guide to Alaska vegetation, Alaska Wildland Fire  Coordinating 
+Group, Fire Modeling and  Analysis Committee, Fairbanks, AK, 2018. 
+Alcasena, F., Salis, M., Ager, A., Castell, R., and Vega-García, C.: Assessing Wildland Fire Risk Transmission to Communities 
+in Northern Spain, Forests, 8, 30, https://doi.org/10.3390/f8020030, 2017. 695 
+Alexander, M. E. and Cruz, M. G.: Fireline Intensit y, in: Encyclopedia of Wildfires and Wildland-Urban  Interface (WUI) 
+Fires, edited by: Manzello, S. L., Springer Interna tional Publishing, Cham, 1–8, https://doi.org/10.10 07/978-3-319-51727-
+8_52-1, 2018. 
+Aragoneses, E., García, M., Salis, M., Ribeiro, L. M., and Chuvieco, E.: Classification and mapping of European fuels using 
+a hierarchical-multipurpose fuel classification system, ESSD – Land/Land Cover and Land Use, https://doi.org/10.5194/essd- 700 
+2022-184, 2022. 
+Beetz, K., Marrs, C., Busse, A., Poděbradská, M., Kinalczyk, D., Kranz, J., and Forkel, M.: Effects of bark beetle disturbance 
+and fuel types on fire radiative power and burn severity in the Bohemian-Saxon Switzerland, Forestry: An International Journal 
+of Forest Research, cpae024, https://doi.org/10.1093/forestry/cpae024, 2024. 
+Berčák, R., Holuša, J., Kaczmarowski, J., Tyburski, Ł., Szczygieł, R., Held, A., Vacik, H., Slivinský, J., and Chromek, I.: Fire 705 
+Protection Principles and Recommendations in Distur bed Forest Areas in Central Europe: A Review, Fire,  6, 310, 
+https://doi.org/10.3390/fire6080310, 2023. 
+Bowman, D. M. J. S., Williamson, G. J., Abatzoglou,  J. T., Kolden, C. A., Cochrane, M. A., and Smith, A. M. S.: Human 
+exposure and sensitivity to globally extreme wildfire events, Nat Ecol Evol, 1, 0058, https://doi.org/10.1038/s41559-016-0058, 
+2017. 710 
+Brázdil, R., Zahradník, P., Szabó, P., Chromá, K., Dobrovolný, P., Dolák, L., Trnka, M., Řehoř, J., an d Suchánková, S.: 
+Meteorological and climatological triggers of notable past and present bark beetle outbreaks in the Cz ech Republic, Climate 
+of the Past, 18, 2155–2180, https://doi.org/10.5194/cp-18-2155-2022, 2022. 
+Byram, G. M.: Combustion of Forest Fuels, in: Forest Fire: Control and Use, McGraw - Hill, 61–89, 1959. 
+Caballero, D. and Beltrán, I.: Concepts and ideas o f assessing settlement fire vulnerability in the W- UI zone, International 715 
+Workshop  Forest Fires in the Wildland-Urban Interface and Rural Areas in Europe  Athens, Greece  15-16 May 2003, 2003. 
+Copernicus  Emergency Management Service: EMSR610: Wildfire in Saxony, Germany, 2022. 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 40
+40 
+ 
+Copernicus Land Monitoring Service: Tree Cover Dens ity 2018 (raster 10 m, 100 m), Europe, yearly, 
+https://doi.org/10.2909/e677441e-fb94-431c-b4f9-304f10e4dfd8, 2024. 
+ČÚZK: Geoportál: https://geoportal.cuzk.cz, last access: 17 November 2024. 720 
+Deutscher Wetterdienst: Climate Data Center (CDC) (CDC-v2.1.b22.09), 2025. 
+European Commission, Joint Research Centre, Almeida, M., Soviev, M., San-Miguel, J., Durrant, T., Oom,  D., Branco, A., 
+Ferrari, D., Boca, R., Maianti, P., De Rigo, D., Suarez-Moreno, M., Roglia, E., Scionti, N., Broglia, M., Alves, D., Matos, C., 
+Ribeiro, L.M., Viegas, D.X., Ribeiro, C., Rodrigues, T., Chuvieco, E., Oliva, P., Garcia, M., Velea, R., Laterza, R., De Lucia, 
+M., Lorenzoni, P., Arca, B., Salis, M., Bacciu, V., Del Giudice, L., Pelizzaro, G., Duce, P., Marrs, C., Forkel, M., Beetz, K., 725 
+Kosczor, E., Podebradska, M., Politi, N., Sfetsos, A., Vlachogiannis, D., Eftychidis, G., Stavrakoudis, D., Varela, V., Gitas, 
+I.Z., Sjostrom, J., Petrila, M., Lorent, A., Drobinkova, N., Vasilev, V., Tsvetkova, N., Yanko, B., Gospodinov, I., Zibtsev, S., 
+Goldammer, J., Myroniuk, V., Sydorenko, S., Soshenskyi, O., Bogomolov, V., and Borsuk, O.: Report on the large wildfires 
+of 2022 in Europe, Publications Office of the European Union, Luxembourg, https://doi.org/10.2760/19760, 2024. 
+Finney, M. A.: An Overview of FlamMap Fire Modeling Capabilities, In: Andrews, Patricia L.; Butler, Bret W., comps. 2006. 730 
+Fuels Management-How to Measure Success: Conference Proceedings. 28-30 March 2006; Portland, OR. Proceedings RMRS-
+P-41. Fort Collins, CO: U.S. Department of Agriculture, Forest Service, Rocky Mountain Research Station. p. 213-220, 041, 
+2006. 
+Finney, M. A., McAllister, S. S., Grumstrup, T. P.,  and Forthofer, J. M.: Wildland fire behaviour: dyn amics, principles and 
+processes, CSIRO publishing, 2021. 735 
+Finney, M. A., Zimmer, S. N., Riley, K. L., and Gre nfell, I. C.: A generalized wildfire containment al gorithm, Ecological 
+Modelling, 505, 111134, https://doi.org/10.1016/j.ecolmodel.2025.111134, 2025. 
+FlamMap Help: https://owfflammaphelp62.firenet.gov, last access: 7 October 2023. 
+Flink, H.-M., Oksanen, J., Pyysalo, U., Rönneberg, M., and Sarjakoski, L. T.: Usability Evaluation of a Map-Based Multi-
+Publishing Service, in: Advances in Cartography and GIScience. Volume 1: Selection from ICC 2011, Paris, edited by: Ruas, 740 
+A., Springer, Berlin, Heidelberg, 239–257, https://doi.org/10.1007/978-3-642-19143-5_14, 2011. 
+Forthofer, J., Shannon, K., and Butler, B.: Simulat ing diurnally driven slope winds with WindNinja, In : Proceedings of 8th 
+Eighth Symposium on Fire and Forest Meteorology; 20 09 October 13-15; Kalispell, MT. Boston, MA: Americ an 
+Meteorological Society. 13 p. Online: https://ams.confex.com/ams/8Fire/techprogram/paper_156275.htm., 2009. 
+Geofabrik – Europe: http://download.geofabrik.de/europe.html, last access: 23 October 2023. 745 
+Geoportal Sachsenatlas: https://geoportal.sachsen.de/, last access: 24 June 2024. 
+Landnutzung - Geobasisinformation: https://www.land esvermessung.sachsen.de//landnutzung-9558.html, las t access: 17 
+November 2024. 
+Hasičovo: https://www.hasicovo.cz, last access: 31 October 2023. 
+Hasičský záchranný sbor České republiky: https://www.hzscr.cz, last access: 24 October 2023. 750 
+Heisig, J., Olson, E., and Pebesma, E.: Predicting Wildfire Fuels and Hazard in a Central European Temperate Forest Using 
+Active and Passive Remote Sensing, Fire, 5, 29, https://doi.org/10.3390/fire5010029, 2022. 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 41
+41 
+ 
+Hlásny, T., Zimová, S., Merganičová, K., Štěpánek, P., Modlinger, R., and Turčáni, M.: Devastating outbreak of bark beetles 
+in the Czech Republic: Drivers, impacts, and manage ment implications, Forest Ecology and Management, 4 90, 1–13, 
+https://doi.org/10.1016/j.foreco.2021.119075, 2021. 755 
+Jahdi, R., Salis, M., Darvishsefat, A. A., Alcasena, F., Mostafavi, M. A., Etemad, V., Lozano, O. M., and Spano, D.: Evaluating 
+fire modelling systems in recent wildfires of the G olestan National Park, Iran, Forestry: An Internati onal Journal of Forest 
+Research, 89, 136–149, https://doi.org/10.1093/forestry/cpv045, 2016. 
+Johnston, L. M., Wang, X., Erni, S., Taylor, S. W., McFayden, C. B., Oliver, J. A., Stockdale, C., Christianson, A., Boulanger, 
+Y., Gauthier, S., Arseneault, D., Wotton, B. M., Parisien, M.-A., and Flannigan, M. D.: Wildland fire risk research in Canada, 760 
+Environ. Rev., 28, 164–186, https://doi.org/10.1139/er-2019-0046, 2020. 
+Jones, M. W., Abatzoglou, J. T., Veraverbeke, S., A ndela, N., Lasslop, G., Forkel, M., Smith, A. J. P. , Burton, C., Betts, R. 
+A., van der Werf, G. R., Sitch, S., Canadell, J. G., Santín, C., Kolden, C., Doerr, S. H., and Le Quéré, C.: Global and Regional 
+Trends and Drivers of Fire Under Climate Change, Re views of Geophysics, 60, e2020RG000726, 
+https://doi.org/10.1029/2020RG000726, 2022. 765 
+Jones, M. W., Kelley, D. I., Burton, C. A., Di Gius eppe, F., Barbosa, M. L. F., Brambleby, E., Hartley, A. J., Lombardi, A., 
+Mataveli, G., McNorton, J. R., Spuler, F. R., Wesse l, J. B., Abatzoglou, J. T., Anderson, L. O., Andel a, N., Archibald, S., 
+Armenteras, D., Burke, E., Carmenta, R., Chuvieco, E., Clarke, H., Doerr, S. H., Fernandes, P. M., Gig lio, L., Hamilton, D. 
+S., Hantson, S., Harris, S., Jain, P., Kolden, C. A., Kurvits, T., Lampe, S., Meier, S., New, S., Parrington, M., Perron, M. M. 
+G., Qu, Y., Ribeiro, N. S., Saharjo, B. H., San-Mig uel-Ayanz, J., Shuman, J. K., Tanpipat, V., van der  Werf, G. R., 770 
+Veraverbeke, S., and Xanthopoulos, G.: State of Wil dfires 2023–2024, Earth System Science Data, 16, 36 01–3685, 
+https://doi.org/10.5194/essd-16-3601-2024, 2024. 
+Keane, R. E.: Wildland Fuel Fundamentals and Applic ations, 1st ed., Springer Cham, https://doi.org/10. 1007/978-3-319-
+09015-3, 2015. 
+Knutzen, F., Averbeck, P., Barrasso, C., Bouwer, L. M., Gardiner, B., Grünzweig, J. M., Hänel, S., Haustein, K., Johannessen, 775 
+M. R., Kollet, S., Müller, M. M., Pietikäinen, J.-P ., Pietras-Couffignal, K., Pinto, J. G., Rechid, D. , Rousi, E., Russo, A., 
+Suarez-Gutierrez, L., Veit, S., Wendler, J., Xoplaki, E., and Gliksman, D.: Impacts on and damage to European forests from 
+the 2018–2022 heat and drought events, Natural Haza rds and Earth System Sciences, 25, 77–117, 
+https://doi.org/10.5194/nhess-25-77-2025, 2025. 
+Kreisfeuerwehrverband – Sächsische Schweiz-Osterzgebirge e.V.: https://kfv-soe.de/, last access: 31 October 2023. 780 
+Kudláčková, L., Poděbradská, M., Bláhová, M., Cienc iala, E., Beranová, J., McHugh, C., Finney, M., Nov otný, J., 
+Zahradníček, P., Štěpánek, P., Linda, R., Pikl, M.,  Vébrová, D., Možný, M., Surový, P., Žalud, Z., and  Trnka, M.: Using 
+FlamMap to assess wildfire behavior in Bohemian Swi tzerland National Park, Nat Hazards, 120, 3943–3977 , 
+https://doi.org/10.1007/s11069-023-06361-8, 2024. 
+Landesamt für Geobasisinformation Sachsen: https://www.landesvermessung.sachsen.de, last access: 19 October 2023. 785 
+Mallinis, G.: STSM Report, University of Sassari, Department of Science for Nature and Environmental Resources, 2014. 
+Mallinis, G., Mitsopoulos, I., Beltran, E., and Goldammer, J.: Assessing Wildfire Risk in Cultural Heritage Properties Using 
+High Spatial and Temporal Resolution Satellite Imag ery and Spatially Explicit Fire Simulations: The Ca se of Holy Mount 
+Athos, Greece, Forests, 7, 46, https://doi.org/10.3390/f7020046, 2016. 
+FlamMap: https://www.firelab.org/project/flammap, last access: 17 April 2023. 790 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 42
+42 
+ 
+Moghaddas, J. J., Collins, B. M., Menning, K., Moghaddas, E. E. Y., and Stephens, S. L.: Fuel treatment effects on modeled 
+landscape-level fire behavior in the northern Sierr a Nevada, Can. J. For. Res., 40, 1751–1765, https:/ /doi.org/10.1139/X10-
+118, 2010. 
+Müller, J., Bußler, H., Goßner, M., Rettelbach, T.,  and Duelli, P.: The European spruce bark beetle Ip s typographus in a 
+national park: from pest to keystone species, Biodivers Conserv, 17, 2979–3001, https://doi.org/10.1007/s10531-008-9409-1, 795 
+2008. 
+Požár v NP České Švýcarsko: https://www.npcs.cz/pozar-v-np-ceske-svycarsko, last access: 16 November 2024. 
+NASA MODIS Science Data Support Team: MODIS/Aqua Terra Thermal Anomalies/Fire locations 1km FIRMS NRT (Vector 
+data), https://doi.org/10.5067/FIRMS/MODIS/MCD14DL.NRT.0061, 2021. 
+NASA VIIRS Land Science Team: VIIRS (S-NPP) I Band 375 m Active Fire Product NRT (Vector data), 800 
+https://doi.org/10.5067/FIRMS/VIIRS/VNP14IMGT_NRT.002, 2020. 
+Nationalpark Sächsische Schweiz: https://nationalpark-saechsische-schweiz.de, last access: 14 April 2023. 
+Natur und Biologische Vielfalt: https://www.natur.sachsen.de, last access: 13 November 2024. 
+Oliveira, S., Gonçalves, A., Benali, A., Sá, A., Zê zere, J. L., and Pereira, J. M.: Assessing Risk and  Prioritizing Safety 
+Interventions in Human Settlements Affected by Large Wildfires, Forests, 11, 859, https://doi.org/10.3390/f11080859, 2020. 805 
+Oliveira, S., Rocha, J., and Sá, A.: Wildfire risk modeling, Current Opinion in Environmental Science & Health, 23, 100274, 
+https://doi.org/10.1016/j.coesh.2021.100274, 2021. 
+OpenStreetMap: https://wiki.openstreetmap.org/wiki, last access: 31 October 2023. 
+Peterson, D. L., Evers, L., Gravenmier, R. A., and Eberhardt, E.: A consumer guide: tools to manage ve getation and fuels., 
+U.S. Department of Agriculture, Forest Service, Pac ific Northwest Research Station, Portland, OR, 810 
+https://doi.org/10.2737/PNW-GTR-690, 2007. 
+Rothermel, R. C.: A mathematical model for predicti ng fire spread in wildland fuels, Res. Pap. INT-115 . Ogden, UT: U.S. 
+Department of Agriculture, Intermountain Forest and Range Experiment Station. 40 p., 115, 1972. 
+Rothermel, R. C. and Deeming, J. E.: Measuring and Interpreting Fire Behavior for Correlation with Fire Effects, USDA Forest 
+Service, Ogden, Utah, 1980. 815 
+Sá, A. C. L., Aparicio, B., Benali, A., Bruni, C., Salis, M., Silva, F., Marta-Almeida, M., Pereira, S., Rocha, A., and Pereira, 
+J.: Coupling wildfire spread simulations and connec tivity analysis for hazard assessment: a case study  in Serra da Cabreira, 
+Portugal, Natural Hazards and Earth System Sciences, 22, 3917–3938, https://doi.org/10.5194/nhess-22-3917-2022, 2022. 
+Safaie, S., Stepanyan, M., Houdijk, R., and Onur, T.: Words into Action guidelines: National disaster risk assessment, Parth 
+One: Main Body, United Nations Office for Disaster Risk Reduction, 2017. 820 
+Scott, J. H.: Glossary of wildfire hazard and risk, Pyrologix, 2019. 
+Scott, J. H. and Burgan, R. E.: Standard fire behavior fuel models: a comprehensive set for use with Rothermel’s surface fire 
+spread model, U.S. Department of Agriculture, Fores t Service, Rocky Mountain Research Station, Ft. Col lins, CO, 
+https://doi.org/10.2737/RMRS-GTR-153, 2005. 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.
+
+
+PAGE 43
+43 
+ 
+Seidl, R., Schelhaas, M.-J., Rammer, W., and Verker k, P. J.: Increasing forest disturbances in Europe and their impact on 825 
+carbon storage, Nature Clim Change, 4, 806–810, https://doi.org/10.1038/nclimate2318, 2014. 
+Senf, C., Pflugmacher, D., Zhiqiang, Y., Sebald, J., Knorn, J., Neumann, M., Hostert, P., and Seidl, R.: Canopy mortality has 
+doubled in Europe’s temperate forests over the last three decades, Nat Commun, 9, 4978, https://doi.org/10.1038/s41467-018-
+07539-6, 2018. 
+Staatsbetrieb Sachsenforst: https://www.sbs.sachsen.de, last access: 24 October 2023. 830 
+Stephens, S. L.: Evaluation of the effects of silvi cultural and fuels treatments on potential fire beh aviour in Sierra Nevada 
+mixed-conifer forests, Forest Ecology and Management, 105, 21–35, https://doi.org/10.1016/S0378-1127(97)00293-4, 1998. 
+Trnka, M., Balek, J., Možný, M., Cienciala, E., Čer mák, P., Semerádová, D., Jurecka, F., Hlavinka, P.,  Štĕpánek, P., Farda, 
+A., Skalák, P., Beranová, J., Chuchma, F., Zahradní ček, P., Janouš, D., Žalud, Z., Dubrovsky, M., Kind lmann, P., Křenová, 
+Z., Fischer, M., Hruška, J., and Brázdil, R.: Observed and expected changes in wildfire-conducive weather and fire events in 835 
+peri-urban zones and key nature reserves of the Cze ch Republic, Climate Research, 82, 33–54, 
+https://doi.org/10.3354/cr01617, 2020. 
+Trnka, M., Možný, M., Jurečka, F., Balek, J., Semerádová, D., Hlavinka, P., Štěpánek, P., Farda, A., Skalák, P., Cienciala, E., 
+Čermák, P., Chuchma, F., Zahradníček, P., Janouš, D ., Fischer, M., Žalud, Z., and Brázdil, R.: Observe d and estimated 
+consequences of climate change for the fire weather regime in the moist-temperate climate of the Czech Republic, Agricultural 840 
+and Forest Meteorology, 310, 108583, https://doi.org/10.1016/j.agrformet.2021.108583, 2021. 
+Ursino, N. and Romano, N.: Wild forest fire regime following land abandonment in the Mediterranean reg ion, Geophysical 
+Research Letters, 41, 8359–8368, https://doi.org/10.1002/2014GL061560, 2014. 
+Van Wagtendonk, J. W.: Use of a deterministic fire growth model to test fuel treatments, University of California, Centers for 
+Water and Wildland Resources, Davis, California, 1996. 845 
+Waldbrandgefährdung: https://www.mais.de/php/sachsenforst.php, last access: 26 October 2023. 
+Wang, C.: Usability Evaluation of Public Web Mappin g Sites, The International Archives of the Photogra mmetry, Remote 
+Sensing and Spatial Information Sciences, XL–4, 285–289, https://doi.org/10.5194/isprsarchives-XL-4-285-2014, 2014. 
+Wittich, K.-P. and Bock, L.: Historie der Waldbrandgefahrenvorhersage in Deutschland, AFZ-DerWald, 69, 18–21, 2014. 
+Wittich, K.-P., Bock, L., and Zimmermann, L.: Der WBI und dessen Anwendung auf bayerische Waldbrände, AFZ-DerWald, 850 
+69, 22–25, 2014. 
+ 
+https://doi.org/10.5194/egusphere-2025-4859
+Preprint. Discussion started: 3 November 2025
+c⃝ Author(s) 2025. CC BY 4.0 License.

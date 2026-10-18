@@ -1,0 +1,1077 @@
+PAGE 1
+ORIGINAL PAPER
+Selecting the best performing fire weather indices
+for Austrian ecoregions
+Alexander Arpaci & Chris S. Eastaugh & Harald Vacik
+Received: 14 August 2012 / Accepted: 17 January 2013 / Published online: 12 February 2013
+# The Author(s) 2013. This article is published with open access at Springerlink.com
+Abstract The interpretation and communication of fire
+danger warning levels based on fire weather index values
+are critical for fire management activities. A number of
+different indices have been developed for various environ-
+mental conditions, and many of them are currently applied
+in operational warning systems. To select an appropriate
+combination of such indices to work in different ecoregions
+in mountainous, hilly and flat terrain is challenging. This
+study analyses the performance of a total of 22 fire weather
+indices and two raw meteorological variables to predict
+wildfire occurrence for different ecological regions of
+Austria with respect to the different characteristics in cli-
+mate and fire regimes. A median-based linear model was
+built based on percentile results on fire days and non-fire
+days to get quantifiable measures of index performance
+using slope and intercept of an index on fire days. We
+highlight the finding that one single index is not optimal
+for all Austrian regions in both summer and winter fire
+seasons. The summer season (May –November) shows that
+the Canadian build-up index, the Keetch Byram Drought
+Index and the mean daily temperature have the best perfor-
+mance; in the winter season (December –April), the
+M68dwd is the best performing index. It is shown that the
+index performance on fire days where larger fires appeared
+is better and that the uncertainties related to the location of
+the meteorological station can influence the overall results.
+A proposal for the selection of the best performing fire
+weather indices for each Austrian ecoregion is made.
+1 Introduction
+Forest management agencies, fire fighting services and
+meteorologists are often confronted with the task of predict-
+ing probabilities of wildfire occurrences. Under uncertain
+meteorological conditions, decision makers are interested in
+having a reliable method of predicting the relative probabil-
+ity of a forest fire. Besides the importance of socio-
+economic factors, the ignition of forest fires is a result of
+complex interactions between ecological factors such as
+weather, fuel type, forest structure and topography
+(Schumacher and Bugmann 2006). The probability of igni-
+tion is linked to the dryness of the vegetation which is
+directly related to weather variables (Reinhard et al. 2005).
+For several decades, fire weather indices have been used all
+over the world as proxies to estimate the dryness of the
+vegetation (Thornwaite 1948, Nesterov 1949, Käse 1969).
+They are used in many different countries and exist in a
+large variety. Some include very simple algorithms combin-
+ing temperature and humidity (i.e. Sharples et al. 2009a,b),
+while others are sophisticated tools, which can be used to
+estimate not only the probability of a fire but also the rate of
+spread and fire severity (V an Wagner and Picket 1985,
+Willis et al. 2001). To identify an appropriate fire weather
+index for the differing national and regional contexts in
+mountainous, hilly or flat terrains is therefore challenging.
+In the temperate mountain fo rests of Central Europe,
+forest fires have only played a minor role to date, although,
+at local scales, alpine forest fires can have serious conse-
+quences for the protective function of forests (Brang et al.
+2006). European mountain regions may experience some-
+what higher increases in future temperature compared to
+non-mountainous regions (Reineking et al. 2010; Auer et
+al. 2007), and the forested regions of Austria have already
+seen a rise in mean temperature of 1.5 °C in the past half
+century (Eastaugh et al. 2010). Under climate change,
+A. Arpaci ( *) : C. S. Eastaugh : H. V acik
+Department of Forest- and Soil Sciences,
+Institute of Silviculture, University of Natural Resources and Life
+Sciences, Peter Jordan Str. 82, 1190 Vienna, Austria
+e-mail: alexander.arpaci@boku.ac.at
+Theor Appl Climatol (2013) 114:393 –406
+DOI 10.1007/s00704-013-0839-7
+
+PAGE 2
+countries that have been known for their low impact fire
+regimes concerning fire frequency and burned area seem to
+be facing an increasing probability of wildfires (Wastl et al.
+2012). Therefore, those countries need to check and adjust
+existing fire warning systems with more caution than in the
+past (Flannigan et al. 2000).
+Although Austria is situated in the moderate Central
+European climatic zone, there is high ecosystem variety
+according to topographic factors, ranging from colline to
+alpine altitudinal zones and comprising also a more con-
+tinental climate in the eastern part and the eastern foothills
+of the Alps. This heterogeneity in climatic and ecological
+conditions calls for a solid and careful choice of a Fire
+weather index. The current fire warning system operated
+by the Central Institute for Meteorology and Geodynamics
+(ZAMG) uses the Nesterov Index (Nesterov 1949 ).
+However, a systematic comparison of the performance of
+fire indices for Austria is still lacking. This study therefore
+analyses the performance of a total of 22 fire weather
+indices and 2 climatic variables for different ecoregions
+of Austria. We demonstrate a method to select indices for
+different regions with respect to the different character-
+istics in climate and fire regimes and highlight the finding
+that one single index is not optimal for all Austrian
+regions in both summer and spring fire seasons.
+2 Material and methods
+2.1 Fire records
+A wildfire database has been established for Austria within the
+projects related to the Austrian Forest Fire Research Initiative
+(AFFRI) and the Alpine Forest Fire Warning System (ALP
+FFIRS) at the University of Natural Resources and Life
+Sciences of Vienna. For this study, we used the 1,331 records
+of forest fires for the period between 1993 and 2007 (V acik et
+al. 2011), which was tested for its reliability with regard to fire
+size/frequency relationships across different time periods
+(Eastaugh and V acik2012). Spring and summer are the main
+fire seasons for forest fires in Austria (Fig. 1). Carelessness
+during leisure activities, controlled burning spreading out of
+control and forest management activities are the main reasons
+for human-caused forest fires in Austria. Lightning-caused
+forest fires have a share of 15 % throughout the study period
+(Müller et al. 2013)
+2.2 Ecoregions
+In Austria, 22 ecoregions and 9 principal ecozones can be
+distinguished, with regard to the local climate, geology and
+to the forest communities that prevail due to these condi-
+tions. Within the ecoregions, seven altitudinal zones,
+comprising three altitudinal belts, are distinguished from
+phytocoenological and climatical perspectives (Kilian and
+Müller 1994). Table 1 provides an overview of the ecolog-
+ical characterisation of the ecoregions.
+In general, an average density of 0.03 forest fire records
+per square kilometer forest area is documented with a large
+variation over the ecoregions. The ecoregions of the eastern
+and southern Intermediate Alps, the Northern and Eastern
+Rim Alps and the warmer (in summer) East are affected the
+most by forest fires (Fig. 2).
+Historical fire data from 1993 to 2007 was used to
+compare the fire weather indices ’ performance on fire days
+to their performance on non-fire days. To test the perfor-
+mance of selected indices, we used weather data from me-
+teorological stations for the required period. We used the
+spatial context of the 22 ecoregions to choose an index for
+the summer season (May –November) and for the winter
+season (December –April) according to its ability to best
+predict fire occurrence. For two ecoregions (9.1 and 9.2),
+long-term climatic data were lacking, and they were exclud-
+ed from our analysis.
+The climatic data were sourced if possible from stations
+within each region. To make up for potential lack of input
+variables from the stations, we used approaches which were
+considered feasible like calculation of intermediate variables
+(i.e. snow layer) The selection of weather stations was done
+by the meteorological experts from the Institute of
+Meteorology at the University of Natural Resources and
+Life Sciences, Vienna. The selection was based on the
+accordance of station data with the climatic characterisation
+of the Austrian ecoregions. The experts considered for this
+selection not only the long-term availability of meteorolog-
+ical variables but the location of stations and the possible
+microclimate conditions at these locations. (Formayer, per-
+sonal communication, January 10, 2010). In total, we used
+26 stations and for each of them 15 years of daily weather
+data ( t
+min, tmax, tmean, precipitation, humidity and wind
+speed). For indices that need more detailed inputs (i.e. snow
+cover, potential evapotranspiration or phenological data),
+the necessary input was provided through expert advice
+and data from the meteorological service of Austria, i.e.
+snow cover was calculated using a function of temperature
+lower zero and precipitation. This approach is very basic but
+shows adequate results for alpine conditions (cf. Trnka et al.
+2010). Phenological data were extracted from long-term
+monitoring time series and averaged for the ecoregions
+(ZAMG 2012a,b,c). Required inputs and references for the
+19 indices included in the data analysis are given in Table 2.
+The calculations of the index values were carried out in
+the context of the European wide project ALP FFIRS in
+order to allow a comparison of the results with neighbouring
+countries (V acik and Gossow 2011). We used the software
+tool ‘FWI Calculator’ (v0.96) provided by the Swiss Federal
+394 A. Arpaci et al.
+
+PAGE 3
+Institute for Forest, Snow and Landscape. However, to
+check the validity of the results, a cross-check of the
+calculations was done by the methods developed by the fire
+research group at the BOKU (Arpaci et al. 2010).
+Fig. 1 Monthly distribution of
+number and size of fire records
+in the study period 1993 –2007
+Table 1 Ecological characterisation of the ecoregions of the study area (1993 –2007)
+Ecozones Ecoregion Altitudial
+range (m)
+Altitude
+station
+Number
+of fires
+Mean
+temperature
+(°C)
+Sum annual
+rainfall (mm)
+Summer
+rainfall (mm)
+Winter 115
+rainfall (mm)
+1. Inner Alps 1.1 650 –3,720 1092 40 3.3 988 608 380
+1.2 560 –3,796 1298 43 2.5 1,221 745 476
+1.3 750 –3,797 1012 89 3.5 1,283 783 500
+2.1 500 –3,313 522 65 4.6 1,603 922 681
+2. Northern Intermediate
+Alps
+2.2 640 –2,995 845 27 4.6 1,432 843 589
+3.1 490 –2,448 498 38 5.3 1,218 740 478
+3. Eastern/Southern
+Intermediate Alps
+3.2 460 –2,448 669 75 5.3 1,095 703 392
+3.3 505 –2,965 524 35 5 968 461 507
+4.1 395 –2,995 493 113 5.4 1,845 1040 805
+4. Northern Rim Alps 4.2 312 –2,396 875 81 6 1,680 923 757
+5.1 170 –2,076 590 97 7.4 1,151 684 467
+5. Eastern Rim Alps 5.2 320 –1,742 498 64 7.3 1,081 678 403
+5.3 292 –1,998 926 45 6.8 1,119 720 399
+5.4 314 –2,140 928 12 6.3 1,265 803 461
+6.1 348 –2,748 1098 51 5.2 1,654 909 745
+6. Southern Rim Alps 6.2 348 –1,048 447 72 7.4 1,097 655 488
+7.1 313 –818 435 25 7.8 1,202 695 506
+7. Foothills 7.2 228 –538 298 28 8.4 937 545 391
+8.1 121 –491 153 118 9.2 636 380 256
+8. Summer warm East 8.2 205 –670 337 52 8.6 902 577 325
+Selecting best performing fire weather indices 395
+
+PAGE 4
+2.3 Selecting the best performing fire weather index
+Selecting the right index for a region is not a trivial task.
+Several methods have been proposed to compare the perfor-
+mance of fire danger indices and identify the most appro-
+priate indices for particular regions, environmental
+conditions or fire management objectives (Andrews et al.
+2003). Regional differences in index performance may be
+apparent at relatively small geographical scales (Padilla and
+V ega-García 2011). An index has to be a good indicator
+showing reliable performance on fire prone days. Thus, the
+performance of a good index should be higher on fire days
+than on non-fire days. Several methods have been used to
+select and rank indices based on their different behaviour on
+fire days (Viegas et al. 1999 ;A n d r e w se ta l . 2003 ;
+V erbesselt et al. 2006). Non-parametric methods have been
+shown to be robust to differences in index value frequency
+distribution and thus allow more valid comparisons of fire
+danger indices (Eastaugh et al. 2012) than for example the C
+index/AUC, which has been used for similar purpose
+(V erbesselt et al. 2006). We therefore used an approach
+utilising a two-part non-parametric comparator referring to
+the all time performance of fire weather indices, which is
+described in more detail in Eastaugh et al. ( 2012). We subset
+the fire data according to the ecoregions and tested the
+performance of each index according to the fires that oc-
+curred within the boundaries of each region. Additionally,
+we included a selected set of climatic input data (tempera-
+ture and relative humidity) in the comparative study to test
+the performance of the raw data used to estimate fire weath-
+er indices.
+2.4 Comparison method
+The index value of day x is compared to the frequency
+distribution of all other index values on all other days
+(1993–2007). Every day has a percentile value according
+to the true value of that index on the particular day.
+Comparing the percentile values of different indices on fire
+days visually shows which indices performed better
+(Fig. 3).To get quantifiable measures of index performance
+a median based linear model is built (Komsta 2007; Akritas
+et al. 1995).This model has two parameters that allow for a
+better comparison of several indices. Slope and intercept
+describe the performance of an index on fire days in a way
+where a perfect index would have a slope of zero and an
+intercept of 100, as all values would be at the extreme high
+end of the scale on days where fires occurred.
+This would mean the index would have been at the
+hundredth percentile at every single fire occurrence. This
+Fig. 2 Selected meteorological
+stations and the forest fire
+locations in the Austrian
+ecoregions
+396 A. Arpaci et al.
+
+PAGE 5
+Table 2 Characterisation of fire weather indices used in this study, the necessary input (raw and pre-calculated), functional algorithm and origin of appli cation (source: WSL 2012)
+Fire weather
+index
+Raw input Calculated input Functional
+characteristics
+Spatial origin/
+reference
+Angström Temperature (at 14:00), relative humidity Non-accumulative Sweden (Chandler 1961)
+Nesterov Temperature (at 14:00), days without rainfall Dew point temperature Accumulative, estimation of
+potential evapotranspiration
+USSR (Nesterov 1949)
+Munger Days without rainfall accumulation USA Oregon (Munger 1916)
+EMC Relative humidity, temperature (at 14:00) Non-accumulative USA (Bradshaw et al. 1983)
+FFWI Windspeed EMC Non- accumulative USA (Fosberg 1983)
+KBDI Net rainfall, mean annual rainfall,
+temperature (at 14:00)
+Accumulative USA, (Keetch and Byram 1968)
+Sharples Temperature (at 14:00), relative
+humidity, windspeed
+Accumulative Australia, (Sharples et al. 2009a, 2009b)
+FMI Temperature (at 14:00), relative humidity Non-accumulative Australia, (Sharples et al. 2009a, 2009b)
+I87 Windspeed temperature (14:00),
+relative humidity
+Potential evapotranspiration Accumulative estimation of
+potential evapotranspiration
+France, (Carrega 1988)
+M68 Temperature (14:00), rainfall,
+vegetation condition
+V apour pressure deficit Accumulative vapour pressure
+deficit
+Germany (Käse 1969)
+M68 dwd Temperature (14:00), rainfall, relative
+humidity, vegetation greenness
+sprouting, budding
+V apour pressure deficit,
+snow layer
+Accumulative vapour pressure
+deficit
+Germany, (Wittich 2010,
+written communication)
+FWI ISI, BUI Accumulative Canada, (V an Wagner 1987)
+ISI (subcomp. FWI ) Windspeed FFMC Accumulative Canada, (V an Wagner 1987)
+BUI (subcomp. FWI) DC DMC Accumulative Canada (V an Wagner 1987)
+FFMC (subcomp. FWI) Temperature (14:00), rainfall,
+windspeed, relative humidity
+Accumulative Canada, (V an Wagner 1987)
+DMC (subcomp. FWI) Temperature (14:00), rainfall,
+windspeed, relative humidity
+Accumulative Canada, (V an Wagner 1987)
+DC (subcomp. FWI) Temperature, rainfall, windspeed,
+relative humidity
+Accumulative Canada, (V an Wagner 1987)
+Ifa Temperature (14:00), rainfall, windspeed Dewpoint temperature, potential
+evapotranspiration
+Accumulative estimation of
+potential evapotranspiration
+Portugal
+Selecting best performing fire weather indices 397
+
+PAGE 6
+is not a very likely situation due to the large variety of
+factors, which play a role starting a fire and which are not
+covered by climatic based fire weather index. Nevertheless,
+a good performing index should allow a good prediction of
+dangerous fire weather situations. Figure 3 demonstrates the
+comparison of the percentile values of four different indices
+on fire days. From 14 fires, the duff moisture code (DMC)
+and the build-up index (BUI) show all fire days with a
+percentile over 78, while the mean daily temperature and
+relative air humidity have a smaller number of high percen-
+tile values for those fire days. While air humidity had in
+general a lower percentile performance. The mean daily
+temperature showed good results, but two fires occurred
+on days, which had low percentile values, hence have not
+been as warm as the other fire days. This lowered the
+intercept value for temperature. This means that, in this
+region, the BUI is selected because its performance for
+overall fires >100 m
+2in the study period showed the best
+results.
+2.5 Fire size subsets
+We made three analyses for which we used firstly all fires,
+fires >100 m 2 and finally fires >1,000 m 2. This reduction in
+the number of fires used in the analysis was done to clarify
+the relationship between fire and climate. From the Austrian
+fire records data base, 42 % of the fires have no recorded
+size. Sixteen per cent have a size <100 m
+2. Twenty per cent
+have a size >101 m 2 but are <1,000 m 2. Only 22 % of the
+fires burnt >1,000 m 2. The 42 % of the fires with no
+information on size available are unlikely to be large fires,
+so the results from climate based fire danger indices might
+not be representative of the real fire danger. Assuming that
+larger fires occur only when the fuel moisture is low enough
+to sustain a fire, those fires probably were small fires with
+little relation to dryness and due to anthropogenic causes.
+Thus, we considered fire no information about burned area
+as <100 m
+2. It has to be considered that the suppression
+efficiency of the Austrian fire fighters is high due to the
+level of technical equipment and the high density of the
+forest road network. These two factors allow for a quick
+and efficient response to any fire alert. This means that not
+all small fires in the data base could be reduced to days with
+non-fire prone weather conditions. However, still for small
+fires, the likelihood of being predicted by climate based
+indices accurately is low, and therefore, excluding them
+from the analysis should yield better results. ‘Better results’
+in this context means indices, which performed better than
+others on ‘large’ fire events, have a higher chance of being
+selected. Thus, the median-based model should yield higher
+intercepts for ‘large’ fire events compared to that for all
+events. For each of the ecoregions, we ran the processes
+described above, calculating indices and sub-setting the
+index percentiles on fire days. The results are tables that
+have the slope and intercept for each index on fire days in
+the region. Sorting those tables by highest intercept yielded
+the index, which has been giving the highest level of fire
+danger on fire days in that region. We did the analysis for
+summer and winter to account for seasonal differences. The
+number of first ranks for each index was calculated in order
+to allow an easy comparison between different seasons and
+regions in the resulting graphs.
+3 Results
+We performed a comparison between the indices for the
+summer season (May –November) and for the winter season
+(December–April). With the use of non-parametric techni-
+ques, we were able to detect differences between several fire
+weather indices. From the results, it seems clear that some
+indices have higher potential to be used for predicting fire
+weather than others, although the differences between the
+indices ranked first, second or third are small. Indices with
+the highest intercept value for each ecoregion are shown in
+Tables 3 (summer) and 4 (winter) for the station represent-
+ing the ecoregion and using all fire records in that period and
+for that spatial entity. The name of the selected index and the
+intercept of the median-based linear model are given. The
+number of fires shows how many fires have been used for
+the analysis using all, >100 m
+2 and only fires >1,000 m 2.
+The results show that in most cases the intercept
+increases when using larger fires, even though the available
+number of fires is less (Fig. 4). In most cases, the indices
+Fig. 3 Comparing temperature, humidity, BUI and DC performance at
+fire days using the median-based linear models intercept. Using fire
+>100 m
+2 from ecoregion 6.1
+398 A. Arpaci et al.
+
+PAGE 7
+showing the best performance change with the number of
+fires used for analysis.
+The analysis of the indices for the summer season using
+all fires ( n=942) from the 26 stations shows some interest-
+ing features (Fig. 5; the mean daily temperature, the
+Canadian BUI, the Keetch Byram drought index and the
+Carrega I87 have the best performance. Temperature was
+selected as best performing at eight stations. The BUI was
+selected as the best performing model five times .The KBDI
+and its modification the KBDISI have been selected six
+times. The I87 was selected three times. Other indices were
+selected only once each, like the DMC, the M68, the
+Canadian FWI and the Drought Code (DC).The other indi-
+ces were not selected at all.
+Using only summer fires >100 m
+2, the number of fires in
+the analysis is reduced to 397.The mean daily temperature
+and the BUI clearly outperformed the other indices. The
+BUI and temperature were selected seven times, while the
+other indices were selected only once, twice or not at all. For
+summer fires >1,000 m
+2, the BUI was selected at six sta-
+tions, the Angström at five stations and FMI at three sta-
+tions. The Fine Fuel Moisture Code (FFMC), FWI, I87 and
+KBDI were selected at two stations. M68, KBDISI and the
+Portuguese index Ifa were selected once each. However, in
+some ecoregions (e.g. 2.2, 5.4, 7.1 or 7.2), the results should
+be interpreted carefully due the small number of fire events.
+The differences between first ranked and second/third
+ranked indices are in some cases very small (not shown).
+This should be kept in mind while interpreting the results.
+Nevertheless, using a pure numeric approach gives a clear
+result, which might be a benefit of this method with its
+straight forward ranking process.
+Figure 6 indicates the spatial distribution of the first,
+second and third ranked indices for all ecoregions of
+Austria during the summer season using all fire records.
+The impression about the generally best performing indices
+Table 3 Results for summer analysis using all fires, fires with an area burnt >100 m 2 and area burnt >1,000 m 2 from 1993 to 2007 showing indices,
+which had the highest intercept
+All fires Fires >100 m 2 Fires >1,000 m 2
+Ecoregion/station Selected
+index
+Intercept Number of
+fire days
+Selected
+index
+Intercept Number of
+fire days
+Selected
+index
+Intercept Number of
+fire days
+1.1 Umhausen BUI 67.76 23 Temperature 88.87 8 Temperature 95.41 3
+1.2 St.Anton/Arlberg Temperature 84.46 26 Temperature 87.38 8 Temperature 94.71 4
+1.3 Tamsweg KBDI 77.54 39 KBDI 71.75 17 Angström 77.56 11
+1.3 Uttendorf DC 67.49 39 BUI 64.75 17 FWI 54.09 10
+1.3 Bad Gastein Temperature 71.01 39 Temperature 72.33 17 Temperature 72.15 10
+2.1 Holzgau BUI 69.61 32 BUI 67.55 10 FFMC 80.44 7
+2.1 Innsbruck I87 73.69 32 I87 76.36 10 I87 79.29 7
+2.2 Radstadt KBDI 77.29 13 Ifa 77.36 5 Temperature 79.27 4
+3.1 Bruck/Mur Temperature 73.84 22 Temperature 82.1 10 M68 84.74 4
+3.2 Zeltweg DMC 74.91 27 BUI 83.54 15 BUI 83.33 11
+3.3 Spital/Drau Temperature 70.36 19 FWI 86.58 8 KBDI 66.4 5
+4.1 Badaussee Temperature 78.13 57 Temperature 87.11 21 BUI 88.93 11
+4.1 Feldkirch Temperature 68.501 57 KBDISI 77.2 21 BUI 77.56 11
+4.1 Kufstein Temperature 76.68 57 Temperature 85.13 21 BUI 88.53 11
+4.1 Schoppernau KBDISI 65.39 57 BUI 76.27 21 BUI 84.68 11
+4.2 Mariazell KBDISI 78.32 49 KBDISI 78.5 31 Temperature 83.53 23
+5.1 Puchberg BUI 72.28 52 BUI 72.5 40 BUI 71.75 28
+5.2 Aspang Temperature 79.66 20 FWI 87.48 10 FFMC 90.46 5
+5.3 Rechberg M68 72.18 19 FFMC 82.03 10 KBDISI 76.52 7
+5.4 Wiel KBDI 90.97 5 KBDI 93.95 3 KBDI 93.99 2
+6.1 Loibltunnel KBDISI 90.59 26 BUI 79.75 14 FMI 80.55 10
+6.2 Klagenfurt I87 72.41 34 Angström 74.76 18 FMI 86.56 8
+7.1 Ried im Innkreis BUI 69.63 11 I87 15.91 3 NA NA NA
+7.2 Hoersching I87 83.29 14 M68 86.22 4 FMI 76.99 2
+8.1 Grossenzersdorf BUI 75.78 69 Temperature 79.71 38 Temperature 83.83 22
+8.2 Graz FWI 86.59 17 BUI 78.01 7 Angström 83.53 4
+Selecting best performing fire weather indices 399
+
+PAGE 8
+is confirmed even, when taking into account the second and
+third ranked index. The BUI is selected 15 times, the
+KBDI/KBDISI 14 times and the DMC 10 times.
+Temperature is selected 11 times, whereas no spatial trend
+can be identified in relation to the mean annual temperature of
+all ecoregions.
+For all fires that occurred in the winter season
+(December –April), the M68dwd showed a high perfor-
+mance (Fig. 7). It was selected 14 times, and its origin, the
+M68, was selected four times. Selected three times were the
+Munger, twice the Nesterov, while the Angström, FFMC,
+KBDISI, EMC, humidity and DMC were selected once
+each. All other indices were not selected due to their poor
+performance. Reducing the fires to only those fires which
+exceeded 100 m
+2 indicated that the M68dwd was selected
+17 times out of 25 stations. The M68 was selected three
+times. Munger and I87 were selected twice each and the
+Nesterov/Humidity once. No other indices were ranked at
+first rank. Using fires >1,000 m
+2, the M68dwd still gained
+the best performance (13 times selected), while the Munger
+was chosen four times. The I87 was selected three times, the
+FFMC twice and initial spread index (ISI), M68, Nesterov,
+humidity and Sharples once each.
+4 Discussion
+4.1 Seasonal differences
+The results indicate that it is very important to use different
+indices in the summer and in the winter seasons. Indices
+such as the BUI and Angström, and in some regions the
+KBDI, are fair indicators for estimating the fire danger in the
+summer season. It is interesting why especially those three
+indices outperformed the others in the summer season as
+they represent different indices types. The BUI is an
+Table 4 Results for winter analysis using all fires, fires with an area burnt >100 m 2 and area burnt >1,000 m 2 from 1993 to 2007 showing Indices
+which had the highest intercept
+All fires Fires >100 m 2 Fires >1,000 m 2
+Ecoregion/station Selected
+index
+Intercept Number of
+fire days
+Selected
+index
+Intercept Number of
+fire days
+Selected
+index
+Intercept Number of
+fire days
+1.1 Umhausen M68dwd 59.69 15 M68 39.72 7 Munger 50.31 4
+1.2 St.Anton /Arlberg M68dwd 89.06 9 M68dwd 91.14 3 Munger 74.64 2
+1.3 Tamsweg M68dwd 71.21 32 M68dwd 83.78 17 M68dwd 77.56 11
+1.3 Uttendorf M68dwd 70.68 32 M68dwd 82.13 17 M68dwd 72.06 11
+1.3 Bad Gastein M68dwd 46.76 32 M68dwd 75.71 17 FFMC 66.14 11
+2.1 Holzgau Munger 12.18 19 Nesterov 42.37 5 Nesterov 48.78 4
+2.1 Innsbruck Munger 63.74 19 Munger 82.85 5 Munger 81.79 4
+2.2 Radstadt M68 86.02 6 M68dwd 85.27 5 M68dwd 81.20 4
+3.1 Bruck/Mur Angström 55.73 10 M68dwd 86.10 3 M68dwd 86.10 3
+3.2 Zeltweg M68dwd 57.15 33 M68dwd 64.02 27 M68dwd 59.35 18
+3.3 Spital/Drau Munger 84.40 9 Munger 86.41 6 Munger 84.94 4
+4.1 Badaussee M68 59.91 25 M68 52.69 12 M68dwd 69.16 7
+4.1 Feldkirch Nesterov 38.16 25 M68 75.88 12 M68dwd 53.99 7
+4.1 Kufstein M68dwd 60.64 25 M68dwd 58.03 12 M68dwd 69.35 7
+4.1 Schoppernau Nesterov 46.82 25 Hum 62.62 12 FFMC 58.74 7
+4.2 Mariazell M68dwd 65.15 15 M68dwd 73.99 12 Sharples 67.03 8
+5.1 Puchberg KBDISI 58.31 23 M68dwd 55.57 10 ISI 56.01 7
+5.2 Aspang M68dwd 65.66 25 M68dwd 74.14 17 Hum 84.54 8
+5.3 Rechberg M68dwd 74.10 14 M68dwd 89.38 10 M68dwd 89.24 8
+5.4 Wiel FFMC 94.84 3 NA NA NA NA NA NA
+6.1 Loibltunnel M68 49.69 14 M68dwd 72.47 11 M68dwd 76.03 4
+6.2 Klagenfurt M68dwd 79.55 30 M68dwd 80.69 19 M68dwd 89.64 9
+7.1 Ried im Innkreis M68dwd 80.78 7 I87 15.91 3 I87 15.91 3
+7.2 Hoersching M68dwd 79.21 10 I87 75.65 5 I87 75.65 5
+8.1 Grossenzersdorf M68dwd 65.68 34 M68dwd 77.57 16 I87 82.64 7
+8.2 Graz Hum 79.37 20 M68dwd 81.24 16 M68dwd 86.71 11
+400 A. Arpaci et al.
+
+PAGE 9
+intermediate index required to calculate the Canadian FWI. It
+represents the amount of fuel, which would be available for
+burning when a fire occurs. Furthermore, it combines two
+indices that model fuel moisture in medium-sized fuels and
+deeper layers. It can be also used as an indicator for describing
+potential fire behaviour severity. The Angström index is cal-
+culated by combining temperature, humidity and expresses
+immediate fire danger. It does not use a model for fuel
+moisture nor does it accumulate the danger ratings over
+time. In this sense, it is a simple day-to-day fire danger
+indicator. The KBDI expresses soil moisture deficiency and
+requires other weather variables such as annual rainfall. It
+is often used for drought classification in agriculture
+management due to its strong relation to soil water avail-
+ability for plants (Keetch and Byram 1968). The NFDRS of
+the USDA forest service is using the KBDI as part of their
+fire warning system (Deeming et al. 1977).
+Comparing the algorithms of these indices, it becomes
+evident that the BUI is a direct fuel moisture model, the
+Angström has a pure climatic approach and the KBDI is a
+general dryness model. Therefore, the Angström index
+might be good if there are rapid changes in weather situa-
+tions, which increase the fire danger situation so quickly that
+fuel or soil moisture models are not able to capture that
+moment. The BUI can represent fuel moisture models,
+which are quite often reasonably accurate for alpine vegeta-
+tion, even if the vegetation type is not the same as the
+vegetation where the Canadian fire weather index was de-
+veloped (V an Wagner 1987 ). Other past and current
+researches try to adjust the moisture models of the
+Canadian FWI to increase its applicability to other forest
+types than the original vegetation types that it has been
+developed for (Wotton and Beverly 2007).The physical
+principals and the combination of two ‘slower’ moisture
+models, within the BUI index, might still be a good repre-
+sentation of the moisture circulation in alpine vegetation.
+This would explain the high success rate at indicating fire
+danger for alpine systems. Interestingly, the mean daily
+temperature was selected as best performing for some ecor-
+egions only during the summer period, during the winter
+and spring season the temperature seems not be a strong
+predictor of fire danger. This result is in contradiction with
+the studies by Padilla and V ega-García ( 2011) who identi-
+fied the maximum daily temperature as a good proxy for
+Fig. 4 Intercepts of selected
+indices with regard to different
+fire sizes during summer season
+Fig. 5 Frequency of selected indices for summer season (May–November)
+according to fire size
+Selecting best performing fire weather indices 401
+
+PAGE 10
+estimating fire danger in some regions of Spain, while
+Holsten et al. ( 2013) described the relative humidity as best
+performing index on a monthly basis independently from
+the growing season in Germany.
+The winter season shows two very strong results, the good
+performance of the M68dwd and the importance of the clas-
+sification of seasonal differences. We defined the winter
+season from December to April, taking into account those
+days on which tree leaves have been shed, and the snow has
+already melted but no new leaves have sprouted yet.
+Particularly in broadleaf dominated forests, this is a situation
+that can lead to occurrences of severe fires due to the amount
+of available fuel under dry conditions (Conedera, personal
+communication, May 2011). In the winter season, the best
+index in most of the ecoregions is the M68dwd. The M68dwd
+is a modification of the M68 (Käse 1969) by the German
+weather service (Wittich 2010, written communication). The
+M68 is used to predict fire danger in the Scots pine stands
+mostly in Brandenburg (former East Germany). The M68 is
+based on the Nesterov index and combines precipitation,
+humidity, temperature and vapour pressure deficit.
+Additionally, the M68dwd was developed to simulate the
+impact of phenological stages and seasons for fire danger.
+The greening and sprouting dates of indicator species
+(European Birch —Betula pendula L., Black Locust —
+Robinia pseudoacacia L.) are used to include environmental
+characteristics, which decrease fire danger due to a higher
+moisture content in green vegetation. These factors allow the
+modelling of the fact that precipitation within the summer has
+a different impact than in late autumn or spring. These correc-
+tion factors seem to work well if the vegetative state is related
+to fire danger. However, including fire events that took place
+Fig. 6 Mapping of first, second and third ranked indices and the mean annual temperature for all ecoregions of Austria during summer season
+using all fire records
+Fig. 7 Frequency of selected indices for winter season (December to
+April) according to different fire sizes
+402 A. Arpaci et al.
+
+PAGE 11
+in April (when a high number of the fires occurred) in the
+winter season analysis has a strong impact on the result. This
+decision is based on the assumption that, in some areas, there
+is still snow; other regions might be free of snow but the
+vegetation growth has not started. This dangerous situation
+with a lot of dry litter seems to be reflected well by the
+M68dwd. Two input parameters that are necessary for calcu-
+lation of the M68/M68dwd have to be treated carefully. They
+are difficult to obtain and are subject to coarse assumptions.
+The dates of sprouting and budding are not spatially explicitly
+monitored. Most observations came from the ZAMG database
+(ZAMG 2012a) and are collected by ‘hobby botanists’.T h i s
+does not necessarily mean that the data are of poor quality but
+that no high resolution spatial data or continuous time series
+were available for this study. Data used in our analysis were
+selected, assigned and averaged based on observations from
+recent years within the ecozones. This means that locations of
+stations and observations are not necessarily close to each
+other and therefore rarely represent the same micro climate.
+This might well be a possible source of error, which could be
+improved with the availability of spatially explicit information
+on sprouting and budding only. Additionally, the M68dwd
+needs a snow layer input (binary: yes/no), which is still
+difficult to obtain especially for highly differing topographic
+landscapes. Although we used a simple approach, it should
+still be true for alpine conditions (Trnka et al.2010). Situations
+that could occur, such as forest fires when snow cover is
+present, are not covered by the M68dwd, but such occurrences
+are very rarely documented.
+4.2 Station locations
+Whenever possible, the most representative stations for each
+ecoregion were used. It is common for most fire agencies all
+over the world to use single stations to monitor weather for
+large landscapes and provide an estimate for fire danger
+(Andrews et al.2003). However, this selection process is based
+mostly on expert opinion and local weather situations might
+vary highly in landscapes with strong topographic features.
+Both causes might be reasons for not covering actual fire
+danger where it really occurs. For some ecoregions, we used
+more than one station because we concluded that one station is
+not representative enough for this particular ecoregion. This led
+to situations in which different stations in the same region
+showed different results for the same indices on fire days, and
+consequently, different indices would be selected as best
+performing. This could lead to difficulties when deciding
+which index to use. The difficulty of selecting a representative
+meteorological station for the climatic conditions of an area of
+interest is a common problem in similar studies (Andrews et al.
+2003,C a n ee ta l . 2008). In Fig. 8, we demonstrate that the
+annual means for temperature and precipitation of the selected
+stations in this study tend to show the same pattern as the mean
+values for the total ecoregion, using all stations within this
+entity. As the mean annual values for the ecoregions are aggre-
+gations of stations at lower and higher areas within the ecor-
+egion, these pattern seems reasonable. However, the absolute
+mean values of the selected set of stations have a higher annual
+mean temperature and lower annual mean rainfalls, which
+could indicate that fire danger estimations based on these input
+data tend to overestimate the real fire danger for the ecoregion.
+In our study, the stations have been selected by experts based
+on their representativeness. Nevertheless, it underlines the
+problem of using local point data originating from weather
+stations for the prediction of fire events in unknown locations.
+Several agencies combine different stations to find a compro-
+mise solution (Cane et al. 2008).
+In Austria, high resolution climate data is available
+(ZAMG/INCA) but not yet in a time period that would
+allow such an extensive long period analysis in relation to
+the fire records available. Furthermore, the DAYMET soft-
+ware is able to produce point based extrapolated weather
+data back to 1960 (Hasenauer et al. 2003)b u tw a sn o t
+applied in this study because variables like wind are not
+considered variables needed to be predicted on a daily basis
+as input for the calculation of some of the indices.
+The use of station data is still the state of the art for fire
+weather monitoring. Remote sensing approaches are being
+tested and may prove to be quite useful because they have a
+high spatial resolution and are not point based (García et al.
+2008). Another approach is to extrapolate mixed sources
+c l i m a t ed a t am o d e l sl i k eI n tegrated Nowcasting through
+Comprehensive Analysis (INCA; ZAMG 2012b,c).
+4.3 Random fire occurrence
+Fire as a stochastic process within the landscape is hard to
+predict by meteorological forecasts alone. The strong an-
+thropogenic impact on ignition risk (Chuvieco et al. 2010)
+and the availability of a fire prone vegetation type in a
+steady fuel bed are necessary to quantify fire danger in a
+holistic approach. Nevertheless, the best holistic fire danger
+model will not be able to cover all situations under which a
+fire might occur. The random processes that might lead to
+ignition and to a burning fire are too complex and steered by
+interactions beyond the ranges of fire weather indices. It is
+fair to assume that there are always some fires that will not
+be predictable. These fires can be described as random bias
+for the analysis of the performance of a fire weather index.
+These ‘random’ fires are part of every fire database. They
+have a strong impact on the result as they might occur on
+days where the index showed no fire danger or a low fire
+danger. This results in a decrease in the performance on fire
+days for the respective fire weather index. In our analysis,
+the intercept of the median-based linear model (mblm)
+would be decreased by these fires on low fire danger. This
+Selecting best performing fire weather indices 403
+
+PAGE 12
+has implication for fire management and their objectives
+when selecting an ‘ideal’ index for the region of interest.
+Using a cost –loss approach for example and alerting fire
+fighters on the basis of the danger level of a fire weather
+index has implications for financial and structural resources
+planning. Using an index with a high intercept and setting
+the alert thresholds high would mean that fire fighters are
+not all the time in stand-by mode, only when a given
+threshold is reached. The consequences could be to miss
+fire occurrences on days with low fire danger levels as no
+stand by suppression units are alerted with the emerging
+consequences. However, this does not play a strong role in
+Austria because there is as yet no direct link of level of fire
+danger and suppression tactics. The high number of volun-
+tary fire fighters (>340,000) and fire brigades (>4,500) sup-
+ports the quick response rate in Austria, and financial
+considerations in the context of a higher fire suppression
+budget are still not relevant. In countries with more severe
+fire regimes and other fire management organisation, a cost –
+loss approach might be considered as important, where the
+value of intercept and slope of the performance of a single
+fire weather index can help to evaluate and select an appro-
+priate index according to fire management objectives.
+4.3.1 Improvement of results by reducing the number of fires
+to ‘real’ forest fires
+By reducing the size of burned area in the analysis, we
+increased the intercept of the mblm for most cases (Fig. 4).
+This means that the index performance on fire days where
+larger fires appeared is better. This is to be expected due to
+the meteorological conditions which are necessary to dry the
+fuel bed for a continuous spreading of a fire. However, some
+stations did not show this increase or showed only slight
+improvement when using fires greater than 100 m
+2 but not
+with fires >1,000 m2. This might be caused by either too few
+fires related to those stations or the fact that the stations do
+not give a very representative picture of the weather situa-
+tion in the given region. This might be especially true when
+intercepts are over all three analyses lower than in the other
+stations.
+To differentiate the indices into their functional algo-
+rithms might help to understand which functional groups
+are better suited to predict fires under certain conditions. We
+could not assign a functional group to a geographical stra-
+tum. However, it seems that when looking at fires
+>1,000 m
+2, the indices (FMI, Angström) that are simple
+and non-accumulative are showing a better performance.
+This seems reasonable assuming that larger fires occur un-
+der conditions that are fire prone and clearly to link to fire
+danger. Under not so clear fire weather conditions, indices
+with a greater complexity are better able to track and predict
+fire danger conditions. These findings also link to the use of
+raw climatic data for predicting fire danger.
+4.3.2 Raw climatic data versus indices
+The results of our study show that, in the summer season, the
+mean daily temperature is a good proxy for fire danger in seven
+out of 18 ecoregions. This is at first surprising considering the
+amount of work and studies, which went into the development
+of complex and very often used indices like the Canadian fire
+weather index. However, to a certain degree, our findings
+reflect that the tested indices have not been adjusted nor
+developed for Austrian conditions. Thus, fuel moisture might
+be biased by strong topography or different vegetation type-
+s/fuel beds. The selection of temperature corresponds to the
+results that have been presented by Padilla and V ega-García
+(2011) who tested fire index performance with different meth-
+ods and a larger fire data set for Spain. They found maximum
+daily temperature outperforming other indices for some
+regions. Still, the operative system in Spain is based on the
+Fig. 8 Total annual precipitation and mean temperature values for representative stations and for the ecoregions in general
+404 A. Arpaci et al.
+
+PAGE 13
+Canadian system because this aggregation of several climatic
+variables within one index can be interpreted not only with
+respect to ignition but also potential fire behaviour. Holsten et
+al. (2013) found relative humidity to be a good indicator of fire
+danger in Germany. This finding could not be confirmed for
+Austria where humidity was selected only for few stations
+during the winter season. It remains true that, in some cases,
+a more simplistic model can be very successful even in com-
+petition with very complex models. However, as many other
+factors (fuel characteristics, socio-economic factors) are influ-
+encing fire ignition in the Alps, it might be worth to consider
+indices for fire danger with larger complexity as well.
+5 Conclusions
+We were able to select for each defined geographical strata
+the best working index or raw climatic variable based on
+historic fire events and the performance of the indices on those
+fire days. The selection process is straight forward and is
+useable under different fire regimes. The results show that it
+is better to use different indices for different regions and
+seasons. Based on the recent analysis, we are not able to
+assume why some indices show a better performance than
+others in the same region. This could mean that it is sometimes
+a good idea to combine indices to cover areas with a large
+variation in topography and local climate. However, the se-
+lection of an appropriate index should take into account fire
+management objectives. If they are to suppress every fire
+occurrence immediately with no limitations in financial and
+human resources for fire fighting (as in Austria), the choice of
+a very sensitive fire weather index, with a high intercept on all
+fire days, might be appropriate. This may be different in a
+situation where fire fighting resources are limited and not
+every fire can be immediately suppressed. Furthermore, it
+would be interesting to test the performance of station data
+against high resolution data and compare whether the selec-
+tion of indices based on meteorological data input for the
+specific local conditions lead to other distribution of indices
+and danger level thresholds. Fire occurrence is not only related
+to weather parameters. Modern fire danger models try to
+include factors related to ignition probability according to
+socioeconomic factors, topographic features and the type of
+vegetation. Combining these parameters with the most prom-
+ising fire weather index could increase the performance and
+assist the work of fire managers and other operational
+institutions.
+Acknowledgements This research has been conducted partly within
+the frame of the AFFRI, which is funded by the Austrian Science
+Funds (FWF) with the reference number L539-N14, the European
+Project ALP FFIRS (Alpine Forest Fire Warning System), which is
+funded by the European Regional Development fund of the Alpine
+Space Program with the reference number 15-2-3-IT as well as the
+FIRIA (Fire Risk and Vulnerability of Austrian Forests under the
+Impact of Climate Change) project funded by the Austrian Climate
+Research Program. The authors would like to thank the colleagues
+from ZAMG for providing data and expert advice and Marco Conedera
+and Boris Pezzatti from WSL for the use of the fire calculator v0.96.
+All statistical calculations were done with the free software R (2012).
+Open Access This article is distributed under the terms of the Creative
+Commons Attribution License which permits any use, distribution, and
+reproduction in any medium, provided the original author(s) and the
+source are credited.
+References
+Andrews PL, Loftsgaarden DO, Bradshaw LS (2003) Evaluation of fire
+danger rating indexes using logistic regression and percentile
+analysis. Int J Wildland Fire 12:213 –226
+Akritas MG, Murphy SA, LaV alley MP (1995) The Theil –Sen
+estimator with doubly censored data and applications to as-
+tronomy. J Am Stat Assoc 90(429):170 –177, JSTOR
+2291140, MR 1325124
+Arpaci A, Beck A, Formayer H,V acik H (2010) Interpretation of fire
+weather indices as means for the definition of fire danger levels
+for different eco-regions in Austria. In: Viegas DX (ed) 6th
+International Conference on Forest Fire Research, Coimbra,
+Portugal
+Auer I, Böhm R, Jurkovic A, Lipa W, Orlik A, Potzmann R, Schöner
+W, Ungersböck M, Matulla C, Briffa K, Jones P , Efthymiadis D,
+Brunetti M, Nanni T, Maugeri M, Mercalli L, Mestre O, Moisselin
+JM, Begert M, Müller-Westermeier G, Kveton V , Bochnicek O,
+Stastny P , Lapin M, Szalai S, Szentimrey T, Cegnar T, Dolinar M,
+Gajic-Capka M, Zaninovic K, Majstorovic Z, Nieplova E (2007)
+HISTALP—Historical instrumental climatological surface time
+series of the Greater Alpine Region. Int J Climatol 27:17 –46
+Bradshaw LS, Deeming JE, Burgan RE, Cohen JD (1983) The 1978
+National fire-danger rating system: technical documentation. US
+Department of Agriculture, Forest Service, Washington
+Brang P , Schönenberger W, Frehner M, Schwitter R, Thormann JJ,
+Wasser B (2006) Management of protection forests in the Euro-
+pean Alps: an overview. For Snow Landsc Res 80:23 –44
+Cane D, Gottero F, Francesetti A, Pelfini F, Pelosini R (2008) Fire weather
+index application in north-western Italy. Adv Sci Res 2:77–80
+Carrega P (1988) Une formule améliorée pour l ‘estimation des risques
+d’incendie de forêt dans les Alpes Maritimes. 24
+Chandler CC (1961) Risk Rating for Fire Prevention Planning. J For
+59:93–96
+Chuvieco E, Aguado I, Y ebra M, Nieto H, Salas J, Martín MP , Vilar L,
+Martínez J, Martín S, Ibarra P , de la Riva J, Baeza J, Rodríguez F,
+Molina JR, Herrera MA, Zamora R (2010) Development of a
+framework for fire risk assessment using remote sensing and geo-
+graphic information system technologies. Ecol Model 221:46–58
+Deeming, JE, Burgan RE, Cohen JD (1977) The national fire danger
+rating system —1978. USDA Forest Service, Washington
+Eastaugh CS, Petritsch R, Hasenauer H (2010) Climate characteristics
+across the Austrian forest estate from 1960 to 2008. Austrian J For
+Sci 127:133 –146
+Eastaugh CS, V acik A (2012) Fire size/frequency modelling as a means
+of assessing wildfire database reliability. Austrian J For Sci 129(3/
+4):222–241
+Eastaugh CS, Arpaci A, V acik A (2012) A cautionary note regarding
+comparisons of fire danger indices. Nat Hazard Earth Syst Sci
+12:927–934
+Selecting best performing fire weather indices 405
+
+PAGE 14
+Flannigan MD, Stocks BJ, Wotton WD (2000) Climate change and
+forest fires. Sci Total Environ 262:221 –229
+Fosberg MA (1983) Weather in wildland fire management: the fire
+weather index. In: Conference on Sierra Nevada Meteorology,
+Lake Tahoe, CA, USA
+García M, Chuvieco E, Nieto H, Aguado I (2008) Combining A VHRR
+and meteorological data for estimating live fuel moisture content.
+Remote Sens Environ 112:3618 –3627
+Hasenauer H, Merganicova K, Petritsch R, Pietsch SA, Thornton PE
+(2003) V alidating daily climate interpolations over complex ter-
+rain in Austria. Agric For Meteorol 119:87 –107
+Holsten A, Dominic AR, Costa L, Kropp JP (2013) Evaluation of the
+performance of meteorological forest fire indices for German
+federal states. Forest Ecol Manage 287:123 –131
+Keetch JJ, Byram GM (1968) A drought index for forest fire control.
+US Department of Agriculture, Southeastern Forest Experiment
+Station, Asheville
+Kilian W, Müller F (1994). Die forstlichen Wuchsgebiete Österreichs.
+Forstliche Bundesversuchsanstalt
+Komsta L (2007). mblm: Median-Based Linear Models. R package
+version 0.11. http://www.r-project.org, http://www.komsta.net/
+Käse H (1969) Ein V orschlag für eine Methode zur Bestimmung und
+V orhersage der Waldbrandgefährdung mit Hilfe komplexer
+Kennziffern. Akademie V erlag, Berlin, p 68
+Munger TT (1916). Graphic method of representing and comparing
+drought intensities. Monthly Weather Review 44:642 –643
+Müller MM, V acik H, Diendorfer G, Arpaci A, Formayer H, Gossow H
+(2013) Analysis of lightning-induced forest fires in Austria. Theor
+Appl Climatol 111(1):183 –193
+Nesterov V (1949) Forest fires and methods of fire risk determination.
+Russian. Goslesbumizdat, Moscow
+Padilla M, V ega-García C (2011) On the comparative importance of
+fire danger rating indices and their integration with spatial and
+temporal variables for predicting daily human-caused fire occur-
+rences in Spain. Int J Wildland Fire 20:46 –58
+Reineking B, Weibel P , Conedera M, Bugmann H (2010) Environmen-
+tal determinants of lightning- v. human-induced forest fire igni-
+tions differ in a temperate mountain region of Switzerland. Int J
+Wildland Fire 19:541 –557
+Reinhard M, Rebetez M, Schlaepfer R (2005) Recent climate change:
+rethinking drought in the context of forest fire research in Ticino,
+South of Switzerland. Theor Appl Climatol 82:17 –25
+Schumacher S, Bugmann H (2006) The relative importance of
+climatic effects, wildfires and management for future forest
+landscape dynamics in the Swiss Alps. Glob Chang Biol
+12:1435–1450
+Sharples JJ, McRae RHD, Weber RO, Gill AM (2009a) A simple index
+for assessing fire danger rating. Environ Model Softw 24:764–774
+Sharples JJ, McRae RHD, Weber RO, Gill AM (2009b) A simple index
+for assessing fuel moisture co ntent. Environ Model Softw
+24:637–646
+Thornwaite CW. (1948) An approach toward a rational classification of
+climate. Geogr Rev 38:55 –94
+Trnka M, Kocmánková E, Balek J et al (2010) Simple snow cover
+model for agrometeorological applications. Agric For Meteorol
+150:1115–1127
+V acik H, Arndt N, Arpaci A, Koch V , Muller M, Gossow H (2011)
+Characterisation of forest fires in Austria. Austrian J For Sci 128
+(1):1–31
+V acik H, Gossow H (2011). Forest fire research and management
+options in Austria: lessons learned from the AFFRI and the
+ALPFFIRS networks. In: Borsdorf A, Stötter J, V eulliet E
+(eds) Managing Alpine Future II conference. V erlag der
+Österreichischen Akademie der Wissenschaften, Innsbruck,
+pp. 203 –211
+V an Wagner CE (1987a) Development and structure of the Canadian
+forest fire weather index system. Canadian Forestry Service For-
+estry Technical Report 35, Ottawa
+V an Wagner CE, Picket TL (1985). Equations and FORTRAN program
+for the Canadian forest fire weather index system. . Canadian
+Forestry Service, Ottawa
+V erbesselt J, Jonsson P , Lhermitte S, van Aardt J, Coppin P (2006)
+Evaluating satellite and climate data-driven indices as fire riskindica-
+tors in savanna ecosystems. IEEE T. Geosci Remote 44:1622–1632
+Viegas DX, Bovio G, Ferreira A, Nosenzo A, Sol B (1999) Compar-
+ative study of various methods of fire danger evaluation in south-
+ern Europe. Int J Wildland Fire 9:235
+–246
+Wastl C, Schunk C, Leuchner M, Pezzatti GB, Menzel A (2012)
+Recent climate change : long-term trends in meteorological
+forest fire danger in the Alps. Agr Forest Meteorol 162 –
+163:1–13
+Willis C, van Wilgen B, Tolhurst K, Everson C, D`Abreton P , Pero L,
+Fleming G (2001) Development of a national fire danger rating
+system for South Africa. Department of Water Affairs and For-
+estry, Pretoria
+Wotton BM, Beverly JL (2007) Stand-specific litter moisture content
+calibrationsfor the Canadian Fine Fuel Moisture Code. Int J
+Wildland Fire 16:463 –472
+WSL (2012) Fire weather Indices. http://wiki.fire.wsl.ch
+ZAMG (2012a) Phänologie und ZAMG. http://zacost.zamg.ac.at/
+phaeno_portal/informationen/zamg-und-phaenologie.html . Cited
+July 2012
+ZAMG (2012b) INCA. http://www.zamg.ac. at/forschung/synoptik/
+inca/. Cited July 2012
+ZAMG (2012c) “INCA”. Resource document. http://www.zamg.ac.at/
+cms/de/forschung/wetter/inca. Cited 11 Apr 2012
+406 A. Arpaci et al.

@@ -1,0 +1,1430 @@
+PAGE 1
+Changes of forest cover and disturbance regimes in the mountain forests
+of the Alps q
+P. Bebi a,⇑, R. Seidl b, R. Motta c, M. Fuhr d, D. Firm e, F. Krumm f, M. Conedera g, C. Ginzler g,
+T. Wohlgemuth g, D. Kulakowski a,h
+a WSL-Institute for Snow and Avalanche Research SLF, Davos, Switzerland
+b University of Natural Resources and Life Sciences (BOKU), Vienna, Austria
+c Università degli Studi di Torino, DISAFA, Largo Braccini 2, 10095 Grugliasco (TO), Italy
+d Univ. Grenoble Alpes, Irstea, F-38402 St-Martin-d’Hères, France
+e Department of Forestry and Renewable Forest Resources, Biotechnical Faculty, University of Ljubljana, Slovenia
+f European Forest Institute, Freiburg, Germany
+g Swiss Federal Institute for Forest, Snow and Landscape Research WSL, Switzerland
+h Graduate School of Geography, Clark University, Worcester, MA, USA
+article info
+Article history:
+Received 30 June 2016
+Received in revised form 7 October 2016
+Accepted 9 October 2016
+Available online 25 October 2016
+Keywords:
+Land-use history
+Secondary succession
+Disturbance interactions
+European Alps
+Snow avalanches
+Windthrow
+Forest ﬁre
+abstract
+Natural disturbances, such as avalanches, snow breakage, insect outbreaks, windthrow or ﬁres shape
+mountain forests globally. However, in many regions over the past centuries human activities have
+strongly inﬂuenced forest dynamics, especially following natural disturbances, thus limiting our under-
+standing of natural ecological processes, particularly in densely-settled regions. In this contribution we
+brieﬂy review the current understanding of changes in forest cover, forest structure, and disturbance
+regimes in the mountain forests across the European Alps over the past millennia. We also quantify
+changes in forest cover across the entire Alps based on inventory data over the past century. Finally, using
+the Swiss Alps as an example, we analyze in-depth changes in forest cover and forest structure and their
+effect on patterns of ﬁre and wind disturbances, based on digital historic maps from 1880, modern forest
+cover maps, inventory data on current forest structure, topographical data, and spatially explicit data on
+disturbances. This multifaceted approach presents a long-term and detailed picture of the dynamics of
+mountain forest ecosystems in the Alps. During pre-industrial times, natural disturbances were reduced
+by ﬁre suppression and land-use, which included extraction of large amounts of biomass that decreased
+total forest cover. More recently, forest cover has increased again across the entire Alps (on average +4%
+per decade over the past 25–115 years). Live tree volume (+10% per decade) and dead tree volume (mean
++59% per decade) have increased over the last 15–40 years in all regions for which data were available. In
+the Swiss Alps secondary forests that established after 1880 constitute approximately 43% of the forest
+cover. Compared to forests established previously, post-1880 forests are situated primarily on steep
+slopes (>30 /C176), have lower biomass, a more aggregated forest structure (primarily stem-exclusion stage),
+and have been more strongly affected by ﬁres, but less affected by wind disturbance in the 20th century.
+More broadly, an increase in growing stock and expanding forest areas since the mid-19th century have -
+along with climatic changes - contributed to an increasing frequency and size of disturbances in the Alps.
+Although many areas remain intensively managed, the extent, structure, and dynamics of the forests of
+the Alps reﬂect natural drivers more strongly today than at any time in the past millennium.
+/C2112016 Elsevier B.V. All rights reserved.
+1. Introduction
+Mountain forests globally are undergoing major changes
+driven by factors related to climate, land-use, and natural distur-
+bances ( Dale et al., 2001; Kulakowski et al., 2012 ). While the
+understanding of all three of these driving forces has greatly
+increased, interactions between them are still difﬁcult to disentan-
+gle. Natural disturbances such as ﬁre, wind, insect outbreaks and
+http://dx.doi.org/10.1016/j.foreco.2016.10.028
+0378-1127//C2112016 Elsevier B.V. All rights reserved.
+q This article is part of the special issue: ‘‘Ecology of Mountain Forest Ecosystems
+in Europe” published in the journal Forest Ecology and Management 388, 2017.
+⇑ Corresponding author.
+E-mail address: bebi@slf.ch (P. Bebi).
+Forest Ecology and Management 388 (2017) 43–56
+Contents lists available at ScienceDirect
+Forest Ecology and Management
+journal homepage: www.else vier.com/loc ate/foreco
+
+
+PAGE 2
+avalanches are strongly affected by forest cover, forest structure,
+climate, and land-use ( Kulakowski and Veblen, 2002; Seidl et al.,
+2011a; Kulakowski et al., 2011; Puerta-Piñero et al., 2012; Liu
+et al., 2015; Flatley et al., 2013 ). Especially in mountainous areas,
+which form a complex biophysical template for these disturbances
+and their drivers, the spatiotemporal complexities of associated
+dynamics are not yet well understood.
+Forest cover has substantially increased since the 19th century
+in several mountain ranges of the world ( Wear and Bolstad, 1998;
+Bunce, 1991; Kozak, 2003 ), mainly as a result of reduced or aban-
+doned agricultural areas ( Baldock et al., 1996; Gellrich et al., 2007 ).
+As past land-use can have multiple and long-term impacts on for-
+est soils and successional pattern ( Foster, 1992; Körner et al., 1997;
+Dambrine et al., 2006; Spohn et al., 2016 ), we can expect important
+differences between post-agricultural forests compared to areas
+that have long been forested ( Flinn and Vellend, 2005; Foster
+et al., 2003 ). In addition to forest expansion, changes in climate
+and forest management have contributed to widespread changes
+in forest structure and biomass stocks. Across large parts of Europe,
+these changes have contributed to increased disturbances by wind,
+bark beetles, and wildﬁres over the past decades ( Seidl et al., 2014;
+Wastl et al., 2013 ). However, in the speciﬁc context of the Alps it is
+not clear whether recent trends in disturbance regimes are primar-
+ily related to successional dynamics in newly established sec-
+ondary forest, or to increasing biomass levels in previously
+established forests, and how strongly these changes are mediated
+by ongoing climatic changes. It is thus helpful to examine long-
+term trends to obtain better insights into the drivers of mountain
+forest dynamics.
+Reliable data on forest cover changes and disturbance history is
+much more limited before the 19th century than for recent periods
+in the Alps, but several lines of evidence can provide insights into
+forest development and species shifts over longer time periods
+(Kaplan et al., 2009 ). In particular paleoecological data provide evi-
+dence of how forest composition and extent has changed during
+periods of increasing pressure of human land-use, and how ﬁre
+regimes have changed in response to climate and land-use
+(Tinner and Kaltenrieder, 2005; Conedera et al., 2017 ). Evidence
+of past forest development and the historic variation of different
+disturbances regimes is often provided by dendroecological recon-
+structions of disturbance regimes (e.g. Janda et al., 2017;
+Panayotov et al., 2017), but in some regions the inﬂuence of human
+management over past centuries was strong, obscuring the evi-
+dence of natural disturbances ( Kulakowski and Bebi, 2004 ). Empir-
+ical data can be complemented with simulation models that can
+help to elucidate current and future patterns and composition of
+mountain forests, and how they are affected by climate, land-use
+and natural disturbances (e.g. Temperli et al., 2013; Thom et al.,
+2016). In contrast to the forest history since the 19th century,
+which has been characterized by increasing biomass and distur-
+bances (cf. Usbeck et al., 2010a, 2010b , Appendix, Table A1 ), we
+have a relatively fragmentary picture of the processes that con-
+tributed to the massive decreases of forest cover and biomass prior
+to the 19th century ( Kaplan et al., 2009; Küster, 2010 ). Conse-
+quently, our long-term understanding of the variability in distur-
+bance regimes remains cursory for forest ecosystems such as
+those in the European Alps, which have a long and intensive man-
+agement history ( Bätzing, 2003; Mathieu et al., 2016 ). As a result,
+no long-term and broad-scale overview on natural disturbance
+regimes of the Alps exists to date.
+In this contribution we brieﬂy synthesize the available informa-
+tion on long-term (i.e. >100 years) forest cover changes and distur-
+bance regimes in the Alps. We combine this information with a
+compilation of forest inventory and forest disturbance data for
+the entire mountain range of the Alps, as well as detailed data on
+forest cover, structure, and disturbance development since the
+19th century for the Swiss Alps ( Ginzler et al., 2011 ). Based on
+these sources of information we put recent forest structure and
+dynamics into a long-term context and we address the following
+main questions: (1) What are the recent trends in forest cover,
+structure, and disturbance regimes since the 19th century, and
+how do they relate to the long-term context of forest develop-
+ment? (2) How do secondary forests that established since the
+19th century differ from pre-existing forests in terms of stand
+structure and natural disturbance regimes?
+2. Long term forest composition and land use changes
+The European Alps extend over approximately 1000 km, from
+the French and Italian Mediterranean coast across Switzerland,
+southern Bavaria, northern Italy, Austria and Slovenia, and have a
+total population of 14 million people ( Chartré et al., 2010 ). The
+mountain peaks reach elevations of >4000 m a.s.l. and are inter-
+sected with deep valleys, some of which are >100 km long and
+divide the mountain range into major massifs. The Alps are a rela-
+tively young mountain system, whose ‘‘step-like” morphology was
+contoured by the Pleistocene glaciation. Bedrocks can be divided
+into calcareous and crystalline material. The climate is character-
+ized by strong environmental gradients ranging from oceanic to
+dry climate. The most widespread forest types are mixed European
+beech ( Fagus sylvatica L.) and silver ﬁr ( Abies alba Mill.), pure Nor-
+way spruce ( Picea abies (L.) H. Karst.), and mountain pine ( Pinus
+mugo Turra s.l .) in the front ranges, while European larch ( Larix
+decidua Mill.), Swiss stone pine ( Pinus cembra Mill.) and Scots pine
+(Pinus sylvestris L.) may replace them in the dry central Alps (see
+Conedera et al., 2017 for more details).
+Early changes in forest cover and forest composition since the
+late glacial-Holocene transition have been reconstructed based
+on paleoecological records ( Kral, 1995; Tinner and Kaltenrieder,
+2005; Conedera et al., 2017 ). These records show evidence of a rel-
+atively rapid invasion of pioneer species like European larch, and
+different pine species, occurring as early as 11,400 years before
+present (y BP) and extending as far as the current subalpine belt
+(Blarquez et al., 2009; Tinner and Kaltenrieder, 2005 ). Major cur-
+rent tree species of the Alps like silver ﬁr (glacial refugia in the
+south), Norway spruce (refugia in the east), and European beech
+(different refugia in the south, west and east) immigrated to the
+Alps after 9000 y BP ( Kral, 1995; van der Knaap et al., 2005 ).
+Land-use has inﬂuenced forest dynamics at least in parts of the
+Alps since ca. 7500 y BP, when Neolithic herdsmen started using
+ﬁre to expand pastures for grazing in mountain forests ( Conedera
+et al., 2017; Winckler, 2012 ). These early human impacts and the
+intense use of ﬁre have not only changed forest cover and forest
+density in some regions of the Alps, but have also shifted species
+composition. For example, anthropogenic ﬁres combined with suc-
+cessive intensive browsing facilitated expansion of P. abies into
+areas formerly occupied by A. alba, which is more sensitive to such
+disturbances ( Schwoerer et al., 2015; Conedera et al., 2017 ). A
+second (between 5000 and 3500 y BP) and a third (between
+1200 and 700 y BP) wave of increase in the human population
+and human migration into the Alps led to permanent settlements
+in higher elevation areas, resulting in major and wide spread
+human impacts on mountain forests ( Schuler, 1988; Winckler,
+2012). Accelerated slash and burn management during this third
+wave reduced forest cover in central Europe, which was already
+below or comparable to current levels ( Hauser, 1964; Bork et al.,
+2001).
+With an increasing awareness of trade-offs between deforesta-
+tion and the occurrence of natural hazards, the ﬁrst written regu-
+lations against further exploitation of protection forests (i.e.,
+forests that protect against natural hazards) were enacted in the
+44 P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56
+
+PAGE 3
+13th and 14th centuries ( Price, 1988). In spite of such regulations,
+people continued to intensively exploit mountain forests and their
+products for energy and construction materials as well as extract-
+ing litter and pasturing over the following centuries ( Mathieu et al.,
+2016). Deforestation and exploitation were partly slowed due to
+the Black Death and the ensuing decline in the human population
+in the 16th and 17th century ( McEvedy and Jones, 1978 ). There is
+strong evidence of accelerated deforestation across most of the
+Alps for the late 18th and early 19th century, when human popu-
+lation again increased and the demand of wood resources was
+strongly boosted by industrialization ( Mather et al., 1999;
+Bätzing, 2003 ).
+Multiple factors acting simultaneously ﬁnally halted forest
+exploitation in the Alps in the mid-19th century, with the impor-
+tance of these factors varying from region to region. In some areas,
+such as the French Alps and the SW parts of the Italian Alps, regio-
+nal depopulation (partly ampliﬁed by unfavorably cool climatic
+conditions) resulted in an expansion of forest cover ( Bätzing,
+2003; Motta et al., 2006b ). In contrast, heavy ﬂooding (especially
+in the 1860s) and a generally increasing awareness of the protec-
+tion effect of mountain forests against natural hazards contributed
+to afforestation, stricter laws, and adapted management in moun-
+tain forests of the Northern Swiss and Bavarian Alps ( Mather and
+Fairbairn, 2000 ), the Austrian and Slovenian Alps, and parts of
+the French Alps ( Sonnier, 1991 ). Additionally, the combination of
+increasing agricultural efﬁciency and a gradual replacement of
+fuel-wood by coal and other fossil energy sources decreased the
+pressure on forests towards the end of the 19th century ( Mather
+and Fairbairn, 2000 ). The increasing globalization (e.g. transport,
+trade) also contributed to a reduced use and exploitation of forests,
+which in turn contributed to denser forests and larger areas with
+progressing secondary succession ( Fig. 1 ).
+3. Long-term forest disturbance regimes
+Natural disturbances (i.e. discrete large pulses of tree mortality
+from agents such as avalanches, ﬁres, winds or insect outbreaks)
+have been important drivers of the ecology of the mountain forests
+of the Alps for millennia. Snow avalanches and other snow-related
+disturbances have been integral in the mountain forests of the
+Alps, which is evidenced by (1) reconstructions of the snowline
+during the Holocene ( Patzelt and Bortenschlager, 1973 , (2) long-
+term historical avalanche records of the past centuries ( Laternser
+Fig. 1. Examples of photographic time series visualizing forest cover changes in the Alps since the 19th century: (A and B): Ceüse, southern French Alps, at th e end of the 19th
+century (A) at the beginning of the 21st century after so-called RTM (mountain terrains rehabilitation) works (B); (C and D): Davos (Central Swiss Alp s) in 1900 (C) and 2010
+(D); (E and F): Vermiglio (Trentino, Italian Alps) in 1915 (E) and 2000 (F). -Source: Trento Autonomous Province archive.
+P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56 45
+
+PAGE 4
+and Pﬁster, 1997 ), and (3) adaptations of tree species in snow-rich
+environments to snow related disturbances ( Bebi et al., 2009 ). As
+steep mountain peaks in large parts of the Alps exceed the current
+elevation of the treeline (1750–2350 m a.s.l., Paulsen and Körner,
+2009) and accumulate large snow packs during winter, snow ava-
+lanches frequently intersect forested areas in the Alps and con-
+tribute to a heterogeneous forest structure ( Bebi et al., 2009;
+Vacchiano et al., 2015 ). Extensive areas that had been deforested
+since the beginning of human settlement in the Alps increased ava-
+lanche frequency by creating new release areas in formerly
+forested terrain resulting in a long-term absence of forest cover
+due to repeated avalanche disturbance ( Küttel, 1990 ).
+In addition to avalanches, snow breakage across different spa-
+tial scales has been a widespread disturbance in the forests of
+the Alps ( Coaz, 1887; Weigl, 1997; Rottmann, 1985; Klopcic
+et al., 2009 , Appendix, Table A1). Damage to trees that are not well
+adapted to large snow loads can be considerable, particularly in
+mid-elevation areas and/or during exceptionally wet and heavy
+snow events ( Hlasny et al., 2011a; Deankovic, 1969 ). Although dif-
+ferent attributes of stand structure may modulate the susceptibil-
+ity to snow breakage, the long-term variation in disturbance from
+snow breakage is, like for avalanches, mainly driven by climate.
+Fire regimes in the Alps are highly heterogeneous, with a clear
+difference between relatively large burned area and high ﬁre fre-
+quency in the Southern Alps, due to a convergence of environmen-
+tal and climatic factors that enhance ﬁre ignition and spread, and
+lower ﬁre frequency in the Northern Alps ( Fig. 2 , Appendix,
+Table A1 , Wastl et al. (2013) ). In contrast to ﬁre activity on the
+southern slopes of the Alps, which peak in the relatively dry winter
+season and which are mainly inﬂuenced by human ignitions, forest
+ﬁres are most frequent in summer in Central Alpine valleys, which
+are characterized by persistent snow cover, dominance of conifer-
+ous forests (especially highly ignitable Scots pines, Pinus sylvestris
+L.), and relatively high proportion of lightning-caused forest ﬁres
+(Cesti et al., 2005; Conedera et al., 2006 ). An elevated probability
+for lightning-caused ﬁres also exists along the eastern and south-
+eastern rim of the Alps in Austria ( Müller et al., 2012 ). Besides such
+environmental and climatological inﬂuences and their changes
+over time, human activity has been, by far, the main cause of ﬁres
+for ca. 7500 years in many regions of the Alps ( Conedera et al.,
+2017; Arndt et al., 2013 ). Slash and burn management decreased
+forest cover in many parts of the Alps and shifted tree species com-
+position. This effect is particularly evident in the Southern Alps,
+where human-caused ﬁres strongly reduced the abundance of
+ﬁre-sensitive species (Tinner et al., 1999 ). Management by ﬁre also
+played an important role in the Northern Alps during the same
+time period, but ﬁre frequencies were too low to result in the dis-
+appearance of entire forest communities ( Tinner et al., 2005 ).
+Where natural ﬁre frequency was historically high (e.g. in dry
+zones of the Central Alps), forest vegetation has been more ﬁre
+adapted and changed less in response to human-induced increases
+in ﬁre frequencies ( Staehli et al., 2006 ). Since Roman Times (ca.
+2000 y BP), ﬁre use has been less extensive, but has persisted as
+an important ecosystem management tool and as a driver of land-
+scape change in many regions of the Alps ( Conedera et al., 2017;
+Valese et al., 2014 ).
+Data about disturbance from windthrow and bark beetle out-
+breaks stem mostly from records going back only to the mid-
+19th century ( Usbeck et al., 2010a, 2010b; Bottero et al., 2013;
+Seidl et al., 2014 , Appendix, Table A1 ), and suggest strong spatio-
+temporal variations in occurrence and extent. In the Alps strong
+winds with potentially damaging effects on forests occur mainly
+due to westerly or northerly winter storms ( Gardiner et al., 2010 ;
+Usbeck, 2015 ). Consequently, exposed forests of the Northern
+and North-Western Alps are more prone to large-scale wind distur-
+bance compared to mountain forests in the inner Alpine valleys
+Fig. 2. Average annual burnt area in ha per year between (1985 and 2011) for different regions of the European Alps. Original data source: European Forest Fire Information
+System (EFFIS), Valese et al. (2014) and Vacik et al. (2011) .
+46 P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56
+
+PAGE 5
+and the Southern Alps, which are generally protected from strong
+winds by the northern front range ( Usbeck et al., 2010a, 2010b ).
+However, foehn winds can also result in large wind disturbances
+in the central and eastern parts of the mountain range. Bark beetle
+outbreaks are highly correlated with spruce abundance and
+standing volume, growing season temperature, drought stress,
+and preceding disturbances of which windthrow is the most
+important, as it creates large amounts of virtually defenseless
+breeding material for beetle development ( Thom et al., 2013;
+Stadelmann et al., 2014 ). Historical records on windthrow events
+and bark beetle outbreaks before the 19th century are widely miss-
+ing ( Pﬁster, 1988 ) and dendroecological reconstructions of these
+disturbance events are difﬁcult in forests with intensive manage-
+ment history ( Kulakowski and Bebi, 2004 ). Our knowledge of the
+historical range of variability of these disturbance agents in the
+Alps is thus very limited compared to other European mountain
+ranges ( Vacchiano et al., 2016; Kulakowski et al., 2017 ), and can
+only vaguely be deduced from a relative short observation period
+and from analogies with similar mountain forest ecosystems.
+4. Methods of analyzing forest cover dynamics since the 19th
+century
+To analyze forest dynamics in the Alps, we compiled and ana-
+lyzed available records on forest area, forest structural change
+(including living and dead timber volume, as well as the growing
+stock of relevant tree species) and available information on occur-
+rence, size and damage pattern of major natural disturbances for
+all alpine countries (Austria, Germany, France, Italy, Liechtenstein,
+Slovenia, Switzerland). Changes of forest area and other attributes
+were computed as average rates of changes per decade based on
+the back-calculated values at the beginning of each decade.
+In addition, we compared forests that established after 1880
+with pre-existing forests and analyzed forest cover changes since
+1880 under different topographical settings in the Swiss Alps,
+where these data were available. To do so, we intersected digitized
+historical forest cover maps for the years 1880, 1940 and 2000
+(Ginzler et al., 2011 ) with plots of the Swiss National Forest Inven-
+tory (NFI; regular 1.4 km grid), excluded all plots that have not
+been forested according to the NFI-data of 2004–2006 or the forest
+cover map of the year 2000, and derived forest presence/absence
+between 1880 and 2000 separately for the Northern Prealps, Cen-
+tral Alps and Southern Alps. NFI stand structural data were
+recorded (1) by ﬁeld crews in two concentric circles with sizes of
+200 m
+2 (inner circle) and 500 m 2 (outer circle), and (2) for an area
+of 50 ⁄ 50 m surrounding the study plot, where additional vari-
+ables on stand structure and management history were assessed
+based on aerial photo interpretation, ﬁeld surveys and surveys by
+regional foresters ( Keller, 2005 ).
+We used GIS ( ArcGIS version 10.1) to deﬁne the distance from
+the potential treeline as well as the presence of wind and ﬁre dis-
+turbances in these plots. The potential treeline was calculated fol-
+lowing the approach of Paulsen and Körner (2009) , where the
+regional treeline was deduced from highest forest patches identi-
+ﬁed by a moving window algorithm. In order to compare the occur-
+rence of windthrow and ﬁre in secondary (post-1880) versus pre-
+existing (pre-1880) forests we applied a spatial overlay analysis
+of the historic maps with digitized disturbance data. We derived
+wind disturbances from remotely sensed polygons of forest dam-
+age data from the winter storms Vivian (in 1990) and Lothar (in
+1999) ( Usbeck et al., 2012 ) and intersected these polygons with
+NFI-plots and the appended information on current and 1880-
+forest cover for each NFI-plot. The digitized inventory of 487 ﬁre
+ignition points (ﬁre plots) of the Canton of Grisons between 1971
+and 2015 ( Pezzatti et al., 2010 ) was directly intersected with digi-
+tized historical maps of 1880. For the intersected points we calcu-
+lated then the association between the expected disturbance
+probability (number of disturbance plots under uniform distribu-
+tion over the two forest categories) and the observed number
+ﬁre- and windthrow plots in pre-1880 versus post-1880-forests
+based on Chi-square statistics. The intersections between NFI-
+plots and the 1880-map were also used to test for associations
+between the two forest categories and a number of other known
+attributes for each NFI-plot including variables on current forest
+structure and past forest management ( Abegg et al., 2014 ). Pear-
+son’s Chi-squared tests (with Yates’ continuity correction) were
+used to test associations with binary variables and Wilcoxon-
+Mann-Whitney tests for associations with continuous variables
+(R core Team, 2013 ).
+5. Results on forest cover dynamics since the 19th century
+5.1. Forest trends and disturbance regimes in the Alps
+All available data sets – both ground inventory and repeated
+forest cover maps based on remote sensing – across all regions of
+the Alps indicate an increase in forest cover in recent decades.
+However the rates of forest area change since the availability of
+reliable data in the late 19th or early 20th century varied consider-
+ably, both spatially and temporally, and range from +7 to +150%
+overall during 23–176 years ( Fig. 3 ). Forest area expanded most
+rapidly in parts of the Italian Alps (e.g. +8.7% per decade since
+1962 in Val Masino, Sondrio (Martelletti et al., unpublished data),
++6.2% per decade since 1954 in Val Vigezzo, Verbania ( Vacchiano
+et al., 2008 )), in the Southern Swiss Alps (average rate of +7.3%
+per decade since 1880), and in the Austrian province of Salzburg
+(+7.0% per decade since 1928, BFW, 2016; Weigl, 1997 ). Forest
+cover expanded less rapidly in Bavaria (Germany; +0.7% per decade
+since 1900), in the French Prealps (+3.5% per decade between 1850
+and 1990) and the Northern Swiss Alps (+2.1% per decade between
+1880 and 2013). On average (mean of all reported values), forest
+area across the Alps increased by +3.7% per decade since 1930
+and +4.3% per decade since 1990.
+Live and dead biomass also strongly increased since the end of
+the 19th century and continues to increase. Based on inventory
+data of different countries in the Alps (since 1973 for the
+Northern French Alps, since 1992/96 for Austria and since
+1993/95 for the Swiss Alps), the total live wood volume increased
+in all regions of the Alps, averaging +9.7% of growing stock per
+decade, and ranging from +0.4% per decade in the northern Swiss
+Alps to +16.9% per decade in the eastern Slovenian Alps and to
++17.1% per decade in the Southern Swiss Alps ( Table 1 ). Dead
+wood volume increased even more in the same time period, with
+rises between +39.3% and +105.8% per decade ( Table 1 ). Shifts in
+species composition differ across the Alps, and include an
+increased share of silver ﬁr on the total growing stock in parts
+of the French Alps (+11.0 % per decade) that contrasts with a
+decrease in parts of the Eastern Alps (e.g. /C02.6% per decade in
+Vorarlberg (Austria) and the eastern Slovenian Alps and /C03.8%
+in Liechtenstein, Table 1 ).
+The occurrence, size and damage volume of recorded natural
+disturbances varied strongly by disturbance agents and regions
+within the Alps (Appendix, Table A1 ). Overall, the greatest reduc-
+tion of forest growing stock was associated with large windthrow
+events, which damaged an average of >2.5 millions of cubic meters
+per year since 1990 in the Northern Alps and resulted in small
+(scattered canopy openings) to large (>50 ha) patches of wind-
+throw, which was often followed by salvage harvesting. Snow
+and ice breakage events also varied from very small (<0.1 ha) to
+substantial (1.5 mio m 3 damaged in the extreme ice breakage
+P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56 47
+
+PAGE 6
+event in the Slovenian Alps in 2014), but could not be distin-
+guished clearly from other abiotic factors as wind events in all
+areas. Bark beetle disturbance has been quantiﬁed since the early
+20th century and the recorded timber volume damaged per year
+has strongly increased (up to >2 mio m 3/yr) in recent decades. In
+comparison with other disturbances, avalanches often resulted in
+relatively large disturbed patches (maximum of 93 ha and a med-
+ian of 1 ha), but the damaged timber volume (<0.2 mio m 3/yr in the
+Swiss Alps even in extreme avalanche winters) was comparatively
+low. Fire disturbances, which increased in frequency from the
+Northern Alps to the Central and the Southern Alps, burned over
+several 100 ha in extreme events, but more than half of all ﬁres
+were smaller than 0.3 ha in size (Appendix, Table A1 ).
+5.2. Detailed analysis of forest change in the Swiss Alps
+Forest area change varied across natural gradients: increases
+were greatest on slopes >30 /C176compared to more gentle slopes, in
+Fig. 3. Forest cover changes in different regions of the Alps since the availability of data. Black bars represent for each region the area of forest cover duri ng the last available
+survey relative to the area of forest cover during the ﬁrst available forest cover data (grey bars, standardized to same bar size for each region). Note that the time for the ﬁrst
+available survey varies considerably between 1827 (Slovenian Alps; Petek, 2005 ) and 1981 (Piedmont).
+Table 1
+Change of wood volume (live and dead) and species composition during the last decades according to forest inventory data from Austria ( BFW, 2016 ; 1992/96–2007/09),
+Switzerland (Abegg et al., 2014 ; 1993/95–2009/13), Slovenia ( SFS, 2012; 1970–2010), France (1973–2009/13, uploaded from www.inventaire-forestier-ign.fr on the 22th of April
+2016) and Liechtenstein ( AWLN, 2012 , 1986–2010).
+Region Live volume Dead volume Change species share per decade (%)
+[m3/ha]a Change per decade (%) [m 3/ha]a Change per decade (%) Spruce Fir Beech
+Vorarlberg (A) 411 +6.1 11.1 +50.7 +1.9 /C02.6 /C00.3
+Tyrol (A) 328 +9.3 10.8 +60.7 /C00.6 +0.2 +0.1
+Salzburg (A) 346 +7.8 10.6 +58.7 /C01.1 0.0 0.0
+Carinthia (A) 352 +13.8 7.7 +49.8 /C00.1 /C00.2 +0.4
+Styria (A) 352 +9.3 8.6 +47.5 /C00.1 +0.1 +0.7
+Liechtenstein 409 +2.4 30.0 NA /C05.8 /C03.8 +2.5
+Northern Swiss Alps 456 +0.4 36.5 105.8 /C02.1 +0.6 +0.5
+Central Swiss Alps 347 +7.7 32.3 +39.3 /C01.1 +0.7 +0.3
+Southern Swiss Alps 278 +17.1 22.5 +59.1 /C00.9 0.0 +0.9
+Northern French Alps 274 +12.0 NA NA +5.1 +11.0 +20.0
+West. Slovenian Alps 313 +9.9 13.9 NA /C00.8 /C01.0 +1.3
+East. Slovenian Alps 352 +16.9 36.1 NA +1.5 /C02.6 +0.6
+a Assessed at the last available inventory.
+48 P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56
+
+PAGE 7
+particular in the Central Alps, where >90% of the forest area
+increase occurred on slopes with a steepness of >30 /C176. The highest
+rates of increase since 1880 occurred near the treeline ecotone
+(0–200 m below the potential treeline), but also areas that are
+>800 m below the current potential treeline changed considerably
+(Fig. 4b).
+Secondary forests (i.e. areas not identiﬁed as forests in the 1880
+maps) make up ca. 43% of all current forests in the Swiss Alps, and
+differed distinctly from pre-existing (pre-1880)-forests in the most
+recent forest inventory ( Table 2). Post 1880-forests have lower bio-
+mass (both living and dead stock volume), are more often charac-
+terized by low dominant diameters (between 10 and 30 cm DBH)
+and less represented in large dominant diameter (>50 cm DBH)
+classes. In spite of still lower biomass, the canopy closure in sec-
+ondary forests was more often classiﬁed as closed (dense forest
+with competing crowns) or as spatially aggregated (interspersed
+dense patches within the 50 /C250 m plots), but less often as verti-
+cally heterogeneous. Secondary forests more often showed signs of
+grazing, but were otherwise less often actively managed over the
+last 50 years. Spruce, ﬁr, and beech were more often the dominant
+tree species in pre-existing forests, while larch and miscellaneous
+broadleaved species (e.g. Acer pseudoplatanus L., Sorbus aucuparia
+L., Alnus viridis (Chaix) DC) were more likely to dominate in sec-
+ondary forests.
+Forests that established after 1880 were less affected by the two
+largest storms of the 20th century, namely Vivian (in the year
+1990) and Lothar (in the year 1999), compared to pre-existing for-
+ests (p = 0.005, Chi-square test, Fig. 5 ). Based on a record of 487
+ﬁres in the Swiss Canton Graubünden the density of ﬁres that
+occurred between 1971 and 2015 was higher in secondary forests
+(p = 0.00013, Chi-square test) ( Fig. 6 ).
+6. Discussion
+Our review of forest changes in the Alps prior to the 19th cen-
+tury and our analysis of spatial data since the 19th century indicate
+(a) (b) 
+0 10 20 30 40 50 60
+>800
+600-800
+400-600
+200-400
+<200
+Forest cover percentage [%]
+Distance from potential treeline [m]
+2000
+1940
+1880
+0 0.2 0.4 0.6 0.8 1 
+>800
+600-800
+400-600
+200-400
+<200
+Relative increase of forest cover percentage 
+Distance from potential treeline [m]
+1940-2000
+1880-1940
+Fig. 4. Increase of forest cover percentage since 1880 as a function of distances from potential treeline (calculated based on moving window approach of the h ighest trees in a
+10 km neighborhood). Fig. 4a shows forest cover percentage in 1880, 1940 and 2000 based on digitized historic maps. Fig. 4b shows relative increases between 1880 and 1940
+(black bars) and between 1940 and 2000 (grey bars) as a ratio of original forest cover percentage.
+Table 2
+Comparison of pre-1880 and post-1880-forests according to different attributes deduced from forest inventory data (NFI) for the Swiss Alps. Data pe rtain to observations in the
+observation period NFI4 4 (2009–2013).
+Attributes Pre-1880 forests
+Average value (Stdv.)
+Post 1880 forests
+Average value (Stdv.)
+p-values Wilcoxon rank-sum test
+Total current wood volume 420.9 m 3/ha (270) 343.8 m 3/ha (274) <0.001
+Dead wood volume 31.3 m 3/ha (57) 27.3 m 3/ha (56.2) 0.02
+Attributes Pre-1880 forests Post 1880 forests p-values
+Number of counts Number of counts Chi-squared
+Total number of plots 1114 856
+Young growth (<12 cm DBH) 66 (6%) 54 (6%) n.s
+Pole wood (12–30 cm DBH) 156 (14%) 180 (21%) <0.001
+Timber wood 1 (30–50 cm DBH) 306 (27%) 202 (21%) 0.05
+Timber wood 2 (>50 cm DBH) 275 (25% 125 (15%) <0.001
+Mixed diameter class 311 (28%) 295 (34%) 0.002
+Crown closure: closed 284 (25%) 202 (24%) n.s.
+Crown closure: normal-loose 331 (30% 217 (25%) 0.04
+Crown closure: scattered-open 295 (26%) 244 (29%) n.s.
+Crown closure: spatially aggregated 120 (11%) 159 (19%) <0.001
+Crown closure: multilayered dense 84 (8%) 34 (4%) 0.001
+Dominant tree species Picea abies 540 (48%) 377 (44%) 0.02
+Dominant tree species Abies alba 147 (13%) 24 (3%) <0.001
+Dominant tree species Larix decidua 96 (8%) 146 (15%) <0.001
+Other coniferous dominant species 63 (6%) 43 (3%) n.s.
+Dominant tree species Fagus sylvatica 147 (10%) 82 (13%) 0.02
+Other broadleaved dominant species 124 (11%) 195 (22.8) <0.001
+Signs of grazing 78 (7%) 163 (19%) <0.001
+Last management intervention 620 years 616 (55%) 351 (41%) <0.001
+Last management intervention >50 years 316 (28%) 358 (43%) <0.001
+Note: n.s.: p-values >0.05.
+P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56 49
+
+PAGE 8
+Fig. 5. NFI-plots windthrown by the storms Vivian (1990) and Lothar (1999), established prior to 1880 (blue dots, n = 110) and after 1880 (orange dots, n = 24) in Switzerland.
+Barplots with corresponding colours represent the frequency of observed windthrow areas in pre- and post-1880 forests relative to the expected freq uencies according to the
+area of each forest type.
+Fig. 6. Representation of forest ﬁre in NFI-plots which overlap with pre-1880 forests (blue dots, n = 236) and post 1880-forests (orange dots, 193 Fires) in th e Canton
+Graubünden (eastern Switzerland). Barplots with corresponding colours represent the frequency of observed ﬁre areas in pre- and post-1880 forests relative to the expected
+frequencies according to the area of each forest type.
+50 P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56
+
+PAGE 9
+that changes in forest area and forest composition during the last
+millennium have been strongly related to changes in land-use. For-
+est area across the Alps has dramatically increased during the last
+century at approximately + 4% per decade after a minimum during
+the mid-19th century. The rates of forest area change have varied
+considerably in response to regional socio-economic and environ-
+mental factors ( Bätzing, 2003; Gellrich et al., 2007 ), but a general
+increase is evident across the entire European Alps. While both live
+and dead biomass have increased across different regions of the
+Alps ( Table 1 , Abegg et al., 2014 , BFW, 2016 ), changes in species
+composition follow more regional patterns and are inﬂuenced by
+a variety of factors. For example, regionally diverging trends in sil-
+ver ﬁr share have been attributed to different levels of ungulate
+browsing ( Ammer, 1996; Didion et al., 2009; Klopcic and
+Boncina, 2011 ), while strong expansion of the same species in
+the French Alps ( Chauchard et al., 2010 ) and of European larch in
+the western Italian Alps ( Motta et al., 2006b; Garbarino et al.,
+2011) have been mainly attributed to an extensiﬁcation of live-
+stock grazing during the 20th century.
+Furthermore, our in-depth analysis of forest area change in the
+Swiss Alps, comparing maps from 1880 to more recent maps
+(Ginzler et al., 2011 ), conﬁrmed strong regional differences as well
+as the decisive role of topography and land-use history for forest
+development ( Fig. 4 ). Major increases in forest area before 1940,
+particularly near the upper treeline, may in part be artifacts of
+slightly different criteria for the assessment of forest cover in the
+different maps analyzed here ( Ginzler et al., 2011 ), but are likely
+to reﬂect decreasing land-use intensity, which began ﬁrst at the
+most remote high elevation sites. This is consistent with other
+research showing that forest expansion near treeline in the Alps
+during the late 20th century has mainly been a bounce-back from
+a treeline depressed by previous anthropogenic activity, rather
+than a climatically induced advance of the treeline ( Gehrig-Fasel
+et al., 2007 ). This further suggests that in comparison to the dom-
+inant effects of land-use, warmer temperatures during the last dec-
+ades probably had a relatively minor effect on the expansion of
+forest cover since the end of the 19th century ( Kulakowski et al.,
+2011).
+The speciﬁc land-use history of the Alps is also reﬂected in the
+current forest structure of secondary forests that established after
+1880 compared to pre-existing forests. After the decrease in graz-
+ing pressure, these forests are either still in an early stage of stand
+initiation (apparent in the higher proportion of scattered and clus-
+tered forest structures) or they are already in more dense stages of
+forest development with increasing competition and stem-
+exclusion (Krumm et al., 2012 ). The initial conditions for these sec-
+ondary forests were characterized by a high availability of light,
+exposed mineral soil in grazed areas, and an absence of structural
+heterogeneity typical for naturally disturbed sites (e.g., remnant
+large trees, logs, and pit-and-mound topography). Long-lasting
+legacies of past land-use also have been reported for soil nutrient
+concentrations ( Spohn et al., 2016 ) and seed banks ( Plue et al.,
+2008). The timing of forest establishment likely inﬂuenced also
+the species composition. Late successional species are more abun-
+dant in pre-1880 forests, while early successional and light-
+demanding species ( Larix decidua ) occur more frequently in post-
+1880 forests ( Table 2 ). However, such differences between pre-
+and post-1880 forests have to be interpreted carefully because of
+differences in environmental drivers, and also because most of
+the pre-1880-forests of the Alps have a long-term management
+history.
+In contrast to our increasingly clear view of the large-scale
+patterns of forest development after 1880, temporal develop-
+ment of forest cover changes before the 19th century can only
+be cursorily characterized based on available historical records
+and paleoecological data. The potentially large variation in the
+timing and intensity of anthropogenic forest area change and
+forest exploitation across the Alps prior to 1880 is difﬁcult to
+show based on available evidence. Nevertheless, studies suggest
+that intensive land use has affected most forests in the European
+Alps, has strongly reduced forest area and created open forest
+structures by the late 18th century ( Landolt, 1862; Kaplan
+et al., 2009 ). Similarly, decreasing biomass until the 19th century
+and a subsequent fast recovery of biomass also has been docu-
+mented for forests outside of the Alps which were subject to
+similar changes in land use (e.g. Foster, 1992; Mather et al.,
+1999). The effects of forest cover changes prior to the 19th cen-
+tury on historical disturbance regimes are difﬁcult to assess, not
+only because of uncertainties in timing and intensity of forest
+cover changes but also because of obvious difﬁculties in recon-
+structing natural disturbances in intensively managed forest
+landscapes ( Kulakowski and Bebi, 2004 ). Our knowledge about
+the historical range of variability of disturbance regimes in the
+Alps (cf. Kulakowski et al., 2017 ) has thus to be deduced from
+a synthesis of (1) disturbances occurring since the 19th century
+(summarized in Table A1 ) and (2) our fragmentary picture of
+forest cover change and disturbance regimes before this forest
+transition.
+6.1. Windthrow
+Forests that established after 1880 have been less affected by
+recent windthrows in 1990 and 1999 compared to older forests.
+This may be explained by higher susceptibility of older, pre-
+existing forests with taller trees and higher biomass ( Kulakowski
+and Veblen, 2002; Gardiner et al., 2010; Thom et al., 2013 ) and sug-
+gests that the observed increase in storm damage during the 20th
+century across Europe ( Schelhaas et al., 2003 ) could be explained
+more by the aging of pre-1880 forests and less so by the establish-
+ment of new forests (see also Seidl et al., 2011a ). At the same time,
+however, storms with critical wind speed have become more fre-
+quent since the 1940s ( Usbeck et al., 2010a ), with particular conse-
+quences for forests with high stock rates ( Usbeck et al., 2010b ).
+Alternatively, given that post-1880 forests are located preferen-
+tially in topographic settings that were preferable for agriculture,
+lower damage levels in recent wind storms may also reﬂect differ-
+ences in topographic exposure. Thus, future research should test
+whether differential wind damage in pre- and post-1880 forest is
+due to differences in forest structure or topographic exposure.
+Because of lacking data, assessments on storm damage before
+the 19th century remain difﬁcult. However, extratropical cyclones
+have likely led to winter storms that are similar to those that affect
+the Alps today for a long time ( Kraus and Ebel, 2003), and historical
+wind damage in other mountain ranges of Europe ( Kulakowski
+et al., 2017 ) also suggest that wind disturbances were likely com-
+mon before signiﬁcant human inﬂuence. Based on known relation-
+ships between growing stock, forest structure, and storm damage
+(Dobbertin, 2002; Gardiner et al., 2010 ) we can assume that his-
+toric land-use and management in the Alps have partly reduced
+the effects of wind disturbances, but that wind has been among
+the most relevant forest disturbance agents long before the 19th
+century.
+Whether wind disturbance – currently the single most impor-
+tant disturbance agent in the Alps – will cause even more damage
+in the future remains highly uncertain, not least because projec-
+tions of future wind dynamics remain challenging. However, with
+mountain forests responding to longer growing seasons, higher
+mean temperatures and, to some extent, CO
+2 fertilization, increas-
+ing stocking levels can be expected to make forests more prone to
+wind disturbance ( Seidl et al., 2011b ). Furthermore, as most wind
+P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56 51
+
+PAGE 10
+disturbances in the Alps occur in winter, and as tree stability is
+highly sensitive to soil frost ( Usbeck et al., 2010a, 2010b ), a
+decreasing period of soil frost could further increase forest suscep-
+tibility to wind in the future.
+6.2. Avalanches and snow breakage
+Forest expansion in the Alps since the 19th century has
+mostly occurred on steep slopes above 30 /C176, and has thus led to
+a decreased avalanche activity in many areas ( Bebi et al., 2009 ).
+This recent trend has partially compensated for the increasing
+avalanche activity due to deforestation and forest degradation
+before the 19th century. However, compensation of former
+increases in avalanche disturbance has not occurred where
+anthropogenic deforestation (partly combined with climatic shifts
+during the Little Ice Age) allowed the development of new ava-
+lanches, which continue to disturb exposed forests and inhibit
+their growth and development. For example, reforestation of
+large parts of the Urseren Valley (Switzerland), where the origi-
+nal forest had been reduced to four small dispersed fragments
+by a combination of land-use and avalanches, has not been pos-
+sible under the current conditions of climate and avalanche dis-
+turbances ( Föhn, 1978 ), even though paleoecological records
+indicate that this valley was forested during most of the Holo-
+cene ( Küttel, 1990 ). Warmer winter temperatures and decreasing
+days with minimum snow depth required for avalanche will
+probably further reduce the importance of avalanche distur-
+bances in forested terrain in the future, and will further promote
+shifts from dry avalanche regimes to wet avalanche regimes
+(Castebrunet et al., 2014 ). However, where avalanche release
+zones are above the current treeline and forests are shaped pre-
+liminary by recurring avalanche disturbance, avalanches will
+likely continue to disturb forests - as they have throughout most
+of the Holocene.
+Forest structural characteristics such as large proportions of
+pole stage stands and high h/d-ratios increase susceptibility to
+snow breakage ( Rottmann, 1985; Nykänen et al., 1997; Hlasny
+et al., 2011a ). Such structural characteristics are typical for stands
+that established after 1880 ( Table 2) and are likely to become more
+widespread with increasing crown closure and competition in
+these stands (Krumm et al., 2012 ). However, snow breakage events
+are primarily related to speciﬁc weather events, and climate warm-
+ing is likely to reduce the frequency of snow fall events in forested
+areas of the Alps ( Schmucki et al., 2015 ), which will probably com-
+pensate for potentially increased susceptibility to snow breakage
+due to changes in forest structure.
+6.3. Insect outbreaks
+Based on current knowledge - which is mainly derived from
+data on the time since the 19th century - bark beetles (and here
+primarily Ips typographus ) are the most relevant biotic distur-
+bances in the mountain forests of the Alps. Beetle outbreaks
+often follow wind disturbances and have similarly increased over
+the last decades, mainly as a function of increasing volume of
+potential host trees (i.e. mainly P. abies ) and increasing summer
+and winter temperatures ( Seidl et al., 2014; Stadelmann et al.,
+2014). However, in contrast to evidence of regular outbreaks of
+e.g., larch budworm ( Zeiraphera diniana ), obtained from dendroe-
+cological reconstructions ( Büntgen et al., 2009 ), we have almost
+no direct information about bark beetle outbreaks prior to the
+19th century. A detection of earlier outbreaks with dendroeco-
+logical methods ( Cada et al., 2016 ) is not reliable in the Alps
+because of the overwhelming inﬂuence of forest management.
+Historical documents for periods prior to the 19th century are
+hardly speciﬁc enough to clearly identify bark beetle outbreaks
+(Pﬁster, 1988 ). Because of missing information and interactions
+between different drivers of beetle outbreaks assumptions about
+the historical range of variability of bark beetle disturbances
+remain challenging. However, based on information on the rigor-
+ous exploitation of living and dead biomass in mountain forests
+in earlier periods as well as analogies with similar mountain
+ecosystems in Europe ( Kulakowski et al., 2017 ) we can assume
+that bark beetle outbreaks are part of the natural disturbance
+regime in spruce dominated forests in the Alps. Furthermore, it
+is likely that bark beetle populations (and consequently also
+the population of their predators) have been kept below their
+natural levels during periods of most intensive forest use before
+the 19th century.
+In the face of increasing temperature, high and still increasing
+volume stock of P. abies at high elevations, and the aging of rela-
+tively young and even-aged forests stands, further increases of
+bark beetle activities in the future must be expected ( Seidl
+et al., 2009 ). This may be particularly relevant at higher eleva-
+tions where increasing temperatures will make new areas of
+spruce forests susceptible to bark beetles ( Hlasny et al., 2011b ).
+Furthermore, an increasing propensity for drought events has
+the potential to trigger bark beetle outbreaks more frequently
+in the future ( Netherer et al., 2015; Seidl et al., 2016 ). Warmer
+and drier conditions can also amplify the interaction between
+wind and bark beetle disturbance, further increasing future dis-
+turbances in the mountain forests of the Alps ( Seidl and
+Rammer, in press ). Over longer time scales, however, a
+climatically-induced decrease of Norway spruce at lower eleva-
+tions may provide a negative feedback on bark beetle outbreaks
+(Temperli et al., 2013 ).
+6.4. Fires
+The increase in forest area and biomass since the 19th century
+has resulted in higher continuity and extent of fuels. Retrospective
+analysis from the 20th century showed that an increase of ﬁre fre-
+quencies in the Southern and Central Alps was at least partly
+related to an increase in fuel availability and fuel continuity due
+to a decrease of agricultural land-use in lower elevations
+(Zumbrunnen et al., 2009; Conedera et al., 2017 ), whereas
+warming and earlier spring seem to be more important in higher
+elevations and regions with less change in forest-cover
+(Zumbrunnen et al., 2009 ; Westerling et al., 2006 ).
+We found higher ﬁre densities in secondary forests that estab-
+lished after 1880 compared to pre-existing forests. This suggests
+that increased forest cover and connectivity between potentially
+burnable forest patches may have contributed to the observed
+increase of forest ﬁres in the Alps ( Zumbrunnen et al., 2009 ). These
+relationships vary strongly across different elevational zones and
+forest types, and may also be inﬂuenced by location of forests
+and human factors such as ﬁreﬁghting techniques or ﬁre-
+inducing activities at the wildland-urban interface ( Conedera
+et al., 2015). Thus, future research should test whether the increase
+in ﬁres in these younger forests is due to the structure of the for-
+ests, or rather a factor of their location.
+For the future we can expect that the ongoing forest cover
+increase and build-up of biomass ( Table 2 , Abegg et al., 2014 )
+will continue to provide fuels for potential ﬁres, which will be
+especially important where ﬁres are limited by the abundance
+or continuity of fuels. Furthermore, while the complex topo-
+graphical template inﬂuencing ﬁre regimes in mountain regions
+will remain constant, increasing temperatures, summer droughts,
+and shorter snow duration will increase the probability for forest
+ﬁres in the Alps ( Arpaci et al., 2015 ), even in relatively mesic
+forests in which ﬁres have not been historically important. Par-
+ticularly in areas where forest vegetation is less adapted to fre-
+52 P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56
+
+PAGE 11
+quent ﬁres ( Tinner et al., 2005 ), this may lead to drastic vegeta-
+tion shifts ( Moser et al., 2010 ). In the Southern Alps, we also can
+expect an increase in the ﬁres at higher elevations and in forest
+types that until now have only been marginally affected by ﬁres
+(Ascoli et al., 2013 ).
+6.5. Interactions among disturbances
+Studying interactions among different disturbances is chal-
+lenging, but of high ecological and societal relevance because dis-
+turbance interactions may lead to unexpected, rapid, and
+nonlinear changes in ecosystems ( Paine et al., 1998; Buma,
+2015), especially under a changing climate ( Kulakowski et al.,
+2012, 2013 ). One of the most important disturbance interactions
+in the Alps involves positive feedbacks between the accumulation
+of fresh deadwood and subsequent insect outbreaks ( Bottero
+et al., 2013; Stadelmann et al., 2014 ). Other positive feedbacks
+can result from the removal of biomass due to windthrow, ﬁre,
+or other disturbance and subsequent gravitational hazards like
+avalanches, rockfall, or shallow landslides. Such interactions are
+of particular societal importance in the densely populated Alps,
+and more knowledge is needed on interactions between a broad
+range of disturbance agents, in different forest types, and under
+different management regimes ( Conedera et al., 2003; Bebi
+et al., 2015 ).
+Negative feedbacks between disturbances, leading to lower
+susceptibility to subsequent disturbances, reduced biomass, and
+a more fragmented forest cover have received less attention in
+the Alps. The most obvious examples here are avalanche tracks,
+which may act as ﬁre breaks ( Veblen et al., 1994 ). Additionally,
+negative feedbacks between the reduction of biomass through
+windthrow, ﬁre, insect outbreaks or snow breakage, and the sus-
+ceptibility to subsequent disturbance (e.g. Kulakowski and
+Veblen, 2002; Kulakowski et al., 2003 ) may become increasingly
+important.
+While disturbances which open the canopy generally reduce
+the dominance of the prevailing species and increase species
+diversity ( Wohlgemuth et al., 2002 ; Vacchiano et al., 2016 ), this
+effect may be dampened by interactions with ungulate brows-
+ing, which may selectively exclude browsing-sensitive species
+from establishing and facilitate spruce dominance ( Didion
+et al., 2009 ; Rozman et al., 2015 ; Conedera et al., 2017 ).
+In contrast, post-disturbance coarse woody debris may offer
+physical protection and thus reduce browsing pressure on tree
+regeneration ( Bottero et al., 2013 ). In spite of such often
+neglected interactions between canopy removing and other dis-
+turbances, the overall effect of individual and interacting dis-
+turbances will probably counteract the general trend of
+growing biomass across the Alps. The resulting heterogeneity
+and lower biomass may reduce the risk of even larger distur-
+bances in future. This mechanism may be particularly impor-
+tant in the light of climate change, as disturbances can
+present opportunities for ecological communities to adapt to
+new conditions by allowing new, better adapted species to
+establish ( Buma and Wessman, 2013 ). The importance of both
+positive and negative feedbacks between different natural dis-
+turbances may thus considerably increase in future and should
+be emphasized more in the future management of mountain
+forests ecosystems in the Alps.
+7. Synthesis and conclusion
+Forest changes in the European Alps have been strongly dri-
+ven by land-use, both before and after a major transition from
+forest loss to forest gain in the 19th century. The long-
+standing effects of land-use have had, and continue to have,
+a strong inﬂuence on forest dynamics and the disturbance
+regimes of mountain forests in the Alps. Human-induced
+decreases of forest area and density, peaking in the early
+19th century, created new avalanche release areas in parts of
+the Alps. Furthermore, extraction of biomass and the resulting
+lower stocking levels reduced large-scale disturbances by ﬁre,
+bark beetle and windthrow before the 20th century. The exten-
+sive forest areas in the Alps established after the 19th century
+on former agricultural land are currently characterized by rel-
+atively young stands with a high potential for further biomass
+accumulation and homogenization of forest structure. Suscepti-
+bility to disturbances by bark beetle, ﬁre, and wind is likely to
+further increase in these areas over the coming decades, partic-
+ularly in combination with the climatic changes which are
+expected for the future.
+The future management of mountain forest ecosystems in the
+Alps has to take into account the important and potentially
+increasing inﬂuence of natural disturbances under climate
+warming, while considering the particular and long-lasting
+effects of land-use history. It is not possible and, from an ecolog-
+ical perspective, also not desirable to impede these natural dis-
+turbances. However, where the protection of forests against
+natural hazards or other ecosystem services are threatened by
+disturbances and other natural processes, management may
+focus on reducing risks and increasing the resilience of mountain
+forests ( Seidl, 2014 ). This can be achieved by disturbance man-
+agement that allows forests to adapt to future environmental
+conditions and by counteracting the growing biomass and
+reduced fragmentation, particularly in secondary stands estab-
+lished after the mid-19th century.
+Because of a strong and widespread anthropogenic effect
+on forest dynamics in the mountain forests of the Alps,
+assessments of their historical range of variability remain dif-
+ﬁcult. However, based on the increase of ﬁre, bark beetle, and
+windthrow disturbances since the 20th century, which has
+coincided with a recovery of forest area and biomass, and
+based on analogies with similar ecosystems in Europe
+(Kulakowski et al., 2017 ), we can assume that the importance
+of the natural disturbances, which has been dominated by
+human activities for centuries, is increasing and will be an
+important driver of mountain forest dynamics in the Alps in
+future decades.
+Acknowledgments
+We thank Laura Ramstein, Christian Rechsteiner and Carla
+Eschmann for research assistance. For providing data, we thank
+Davide Ascoli, Herbert Borchert, Beat Forster, Olivier Nägele, Boris
+Pezzatti, Marco Vanoni and Benjamin Zweifel. Dominik Kulakowski
+was supported by a fellowship from the Swiss Federal Institute for
+Forest, Snow and Landscape Research, WSL and R. Seidl acknowl-
+edges funding from an Austrian Science Fund FWF START grant
+(Y895-B25). We thank Thomas Thieke, Tom Nagel and two anony-
+mous reviewers for helpful comments on an earlier version of the
+manuscript.
+Appendix A
+See Table A1 .
+P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56 53
+
+PAGE 12
+References
+Abegg, M., Brändli, U.-B., Cioldi, F., Fischer, C., Herold-Bonardi, A., Huber, M., Keller,
+M., Meile, R., Rösler, E., Speich, S., Traub, B., Vidondo, B., 2014. Viertes
+Schweizerisches Landesforstinventar – Ergebnistabellen und Karten des LFIs
+2009-2013 (LFI4b). < http://www.lﬁ.ch/resultate/> (accessed 10.02.16).
+[Published online 06.11.2014] Birmensdorf, Eidg. Forschungsanstalt WSL.
+Ammer, C., 1996. Impact of ungulates on structure and dynamics of natural
+regeneration of mixed mountain forests in the Bavarian Alps. For. Ecol. Manage.
+88, 43–53 .
+Arpaci, A., Malowerschnig, B., Sass, O., Vacik, H., 2015. Using multi variate data
+mining techniques for estimating ﬁre susceptibility of Tyrolean forests. Appl.
+Geogr. 53, 258–270 .
+Ascoli, D., Castagneri, D., Valsecchi, C., Conedera, M., Bovio, G., 2013. Post-ﬁre
+restoration of beech stands in the Southern Alps by natural regeneration. Ecol.
+Eng. 54, 210–217 .
+Arndt, N.A., Vacik, H.A., Koch, V.A., Arpaci, A.A., Gossow, H., 2013. Modeling human-
+caused forest ﬁre ignition for assessing forest ﬁre danger in Austria. iForest –
+Biogeosci. Forest. 6, 315–325 .
+AWLN, 2012. Iechtensteinisches Landeswaldinventar. Ergebnisse der dritten
+Erhebung 2010. Amt für Wald, Natur und Landschaft, Vaduz, pp. 54 .
+Baldock, D., Beaufoy, G., Brouwer, F., 1996. Farming at the margins: abandonment or
+redeployment of agricultural land in Europe Case studies. Institute for European
+Environmental Policy (IEEP), The Hague, p. 202 .
+Bätzing, W., 2003. Die Alpen - Geschichte und Zukunft einer europäischen
+Kulturlandschaft. C.H. Beck, München .
+Bebi, P., Kulakowski, D., Rixen, C., 2009. Snow avalanche disturbances in forest
+ecosystems – state of research and implications for management. For. Ecol.
+Manage. 257, 1883–1892 .
+Bebi, P., Putallaz, J.-M., Fankhauser, M., Schmid, U., Schwitter, R., Gerber, W., 2015.
+Die Schutzfunktion in Windwurfﬂächen. Schweizerische Zeitschrift für
+Forstwesen 166, 168–176 .
+BFW, 2016. Austrian forest inventories. Austrian Research Centre for Forests.
+<http://bfw.ac.at/rz/wi.home> (accessed 10. 02. 2016).
+Blarquez, O., Carcaillet, C., Bremond, L., Maurier, B., Radakovitch, O., 2009. Trees in
+the subalpine belt since 11700 ca. BP: origin, expansion and alteration in the
+modern forest. Holocene. http://dx.doi.org/10.1177/0959683609348857.
+Bleiweis, S., 1983. Pogostost in obseg škod zaradi ujm v slovenskih gozdovih.
+Gozdarski vestnik, 233–249 (in Slovene) .
+Bork, H.-R., Dalchow, C., Faust, B., Piorr, H.-P., Toussaint, V., Werner, A., 2001. Future
+development of landscapes in marginal agrarian regions of central Europe:
+long-term effects of land use on the water balance. In: Tenhunen, J.D., Lentz, R.,
+Hantschel, R. (Eds.), Ecosystem Approaches to Landscape Management in
+Central Europe, Ecological Studies 147, Berlin Heidelberg New York, pp. 571–
+581
+.
+Bottero, A., Garbarino, M., Long, J.N., Motta, R., 2013. The interacting ecological
+effects of large-scale disturbances and salvage logging on montane spruce forest
+regeneration in the western European Alps. For. Ecol. Manage. 292, 19–28 .
+Buma, B., 2015. Disturbance interactions: characterization, prediction, and the
+potential for cascading effects. Ecosphere 6, 1–15 .
+Buma, B., Wessman, C.A., 2013. Forest resilience, climate change, and opportunities
+for adaptation: a speciﬁc case of a general problem. For. Ecol. Manage. 306,
+216–225.
+Bunce, R.G.H., 1991. Ecological implications of land abandonment in Britain: some
+comparison with Europe. Options Méditerr 15, 53–59 .
+Büntgen, U., Frank, D.C., Liebhold, A., Johnson, D., Carrer, M., Urbinati, C., Grabner,
+M., Nicolussi, K., Levanic, T., Esper, J., 2009. Three centuries of insect outbreaks
+across the European Alps. New Phytol. 182, 929–941 .
+Cada, V., Morrissey, R.C., Michalova, Z., Bace, R., Janda, P., Svoboda, M., 2016.
+Frequent severe natural disturbances and non-equilibrium landscape dynamics
+shaped the mountain spruce forest in central Europe. For. Ecol. Manage. 363-
+178.
+Castebrunet, H., Eckert, N., Giraud, G., Durant, Y., Morin, S., 2014. Projected
+changes of snow conditions and avalanche activity in a warming climate: the
+French Alps over the 2020–2050 and 2070–2100 periods. Cryosphere 8,
+1673–1697.
+Cesti, G., Conedera, M., Spinedi, F., 2005. Considerazioni sugli incendi boschivi
+causati dai fulmini. Schweizerische Zeitschrift für Forstwesen 156, 353–361 .
+Table A1
+Compilation of available data on occurrence, damage volume and size of disturbed forest patches in the Alps since the 19th century. The compilation is based on different and
+heterogenous sources and cannot be expected to be complete.
+Agent Region available Data for Affected forest Other characteristics Source
+Wind Switzerland a 1865–2014 0.16 mio m 3/yr 26 winterstorms, 634 events Usbeck (2015)
+Wind Swiss Alps 1990 4.5 mio m 3 Max. 59.6 ha, median 0.5 ha WSL Geodatabase
+Wind Bavarian Alps 1990 3.2 mio m 3 ca. 3% of volume König (1995)
+Wind Slovenian Alps 1918–2014 0.02 mio m 3/yr Bleiweis (1983)
+Wind Austrian Alps 1829 0.7 mio m 3 Weigl (1997)
+Wind Switzerland a 1967 2.9 mio m 3 0.9% of volume Usbeck (2015)
+Wind Slovenian Alps 1984 0.45 mio m 3/yr Papler-Lampe (2008)
+Wind Swiss Alps 1999 5.6 mio m 3 Max. 26 ha, 39% scattered c WSL Geodatabase
+Wind Slovenian Alps 2008 0.3 mio m 3 Over 9260 ha total area SFS (2015)
+Wind Austrian Alps 2002–2010 1.9 mio m 3/yr Thom et al. (2013)
+Wind and Snow Austria a 1944–1989 1.6 mio m 3/yr Steyrer et al. (2011)
+Wind and Snow Aosta/Italian Alps 1990–2010 55 ha/yr Max. 147.2 ha, median 0.1 ha Vacchiano et al. (2016)
+Snow Switzerland a 1885 0.2 mio m 3 Above 700 m asl Coaz (1889)
+Snow/Ice Slovenian Alps 1918–2014 0.03 mio m 3/yr Zupancic (1969), SFS (2015)
+Snow Austrian Alps 1930–1931 0.4 mio m 3/yr Mainly 600–900 m asl Weigl (1997)
+Snow Graubünden, CH 1990–2015 0.02 mio m 3/yr Mainly small scaled Database Kt. Graubünden
+Snow Austrian Alps 2002–2010 0.3 mio m 3/yr Thom et al. (2013)
+Snow/Ice Slovenian Alps 2014 1.5 mio m 3 Mainly broadleaved trees SFS (2015)
+Avalanches Swiss Alps 1988 0.08 mio m 3 1340 ha destroyed forest Coaz (1889)
+Avalanche Swiss Alps 1891–2015 0.05 mio m 3/yr Max. 93 ha, median 1 ha SLF-Avalanche database
+Avalanches Swiss Alps 1951 0.18 mio m 3 2100 ha destroyed forest SLF (1999)
+Avalanches Slovenian Alps 1951–1952 0.02 mio m 3 450 ha destroyed forests Cihal and Valinger (1959)
+Avalanches Swiss Alps 1999 0.16 mio m 3 1400 ha destroyed forest SLF (1999)
+Bark beetles Paneveggio/It 1920–1925 >0.1 mio m 3 >30 years of prescribed cut Motta et al. (2006a)
+Bark beetles Austria a 1944–1991 0.2 mio m 3/yr Steyrer et al. (2011)
+Bark beetles Switzerland a 1945–1950 0.25 mio m 3/yr On Spruce and Fir Pﬁster (1988)
+Bark beetles Switzerland a 1988–2000 0.2 mio m 3/yr Meier et al. (2010)
+Bark beetles Switzerland a 2001–2007 1 mio m 3/yr Following blowdown in 1999 Meier et al. (2010)
+Bark beetles Austrian Alps 2002–2010 1.3 m 3/yr Thom et al. (2013)
+Bark beetles Aosta/Italian Alps 1984–2006 b 840 ha/yr 0.85 ha/yr Vacchiano et al. (2016)
+Fire Northern Swiss Alps 1990–2014 2.5 ha/yr 8 ﬁres/yr, median size 0.02 ha Pezzatti et al. (2010)
+Fire Central Swiss Alps 1990–2014 33.6 ha/yr 22 ﬁres/yr, median size 0.1 ha Pezzatti et al. (2010)
+Fire Southern Swiss Alps 1990–2014 176.7 ha/yr 52.2 ﬁres/yr, median size 0.1 ha Pezzatti et al. (2010)
+Fire Aosta/ Italian Alps 1961–2010 147 ha/yr Yearly 0.15% of total forest cover Vacchiano et al. (2016)
+Fire Hautes Alpes/Fr 1976–2015 87.5 ha/yr 16 ﬁres/yr, median size 1 ha http://www.promethee.com
+Fire Haute Provence/Fr a 1976–2015 374.7 ha/yr 39 ﬁres/yr, median size 1 ha http://www.promethee.com
+Fire Alpes Maritimes/Fr a 1976–2015 1322.5 ha/yr 180 ﬁres/yr, median size 0.3 ha http://www.promethee.com
+a Area partly outside of Alps.
+b Without years 1991–93.
+c Scattered disturbance, 20–60% remaining crown cover of affected stands.
+54 P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56
+
+PAGE 13
+Chatré, B., Lanzinger, G., Macaluso, M., Mayrhofer, W., Morandini, M., Onida, M.,
+Polajnar, B., 2010. The Alps: People and pressures in the mountains, the facts at
+a glance. Permanent Secretariat of the Alpine Convention.
+Chauchard, S., Beilhe, F., Denis, N., Carcaillet, C., 2010. An increase in the upper tree-
+limit of silver ﬁr ( Abies alba Mill) in the Alps since the mid-20th century: a land-
+use change phenomenon. For. Ecol. Manage. 259, 1406–1415 .
+Cihal, V., Valinger, E., 1959. Nekaj o sneznih plazovih. Gozdarski vestnik, 35–38 (in
+Slovene).
+Coaz, J., 1887. Der Schneeschaden vom 28./29. September 1885 in den Waldungen
+der Schweiz. Stämpﬂi’sche Buchdruckerei, Bern. 47 pp. (in German) .
+Coaz, J., 1889. Der Lauinenschaden im schweizerischen Hochgebirge im Winter und
+Frühjahr 1887-88. Stämpﬂi’sche Buchdruckerei, Bern, p. 67 .
+Conedera, M., Cesti, G., Pezzatti, G.B., Zumbrunnen, T., Spinedi, F., 2006. Lightning-
+induced ﬁres in the Alpine region: an increasing problem. V. Int. Conference on
+Forest Fire Research D.X Viegas (Ed).
+Conedera, M., Peter, L., Marxer, P., Forster, F., Rickenmann, D., Re, L., 2003.
+Consequences of forest ﬁres on the hydrogeological response of mountain
+catchments: a case study of the Riale Buffaga, Ticino, Switzerland. Earth Surf.
+Proc. Land. 28, 117–129
+.
+Conedera, M., Tonini, M., Oleggini, L., Orozco, C.V., Leuenberger, M., Pezzatti, G.B.,
+2015. Geospatial approach for deﬁning the Wild land-Urban Interface in the
+Alpine environment. Comput. Environ. Urban Syst. 52, 10–20 .
+Conedera, M., Colombaroli, D., Tinner, W., Krebs, P., Whitlock, C., 2017. Insights
+about past forest dynamics as a tool for present and future forest management
+in Switzerland. Forest Ecol. Manage. 388, 100–112.
+Dale, V.H., Joyce, L.A., McNulty, S., Neilson, R.P., Ayres, M.P., Flannigan, M.D., et al.,
+2001. Climate change and forest disturbances. Bioscience 51, 723–734 .
+Dambrine, E., Dupouey, J.-L., Laüt, L., Thinon, M., Beauﬁls, T., Richard, R., 2006.
+Present forest biodiversity patterns in France related to former roman
+agriculture. Ecology 88, 1430–1439 .
+Deankovic, T., 1969. Snegolomi v Julijskih Alpah in njihovi vzroki. Gozdarski vestnik
+27 (9), 223–236 (in Slovene) .
+Didion, M., Kupferschmid, A.D., Bugmann, H., 2009. Long-term effects of ungulate
+browsing on forest composition and structure. For. Ecol. Manage. 258, 44–55 .
+Dobbertin, M., 2002. Inﬂuence of stand structure and site factors on wind damage
+comparing the storms Vivian and Lothar. Forest, Snow Landscape Res. 77, 187–
+205.
+Flatley, W., Lafon, C.W., Grissino-Mayer, H.D., Forest, L.B., 2013. Fire history, related
+to climate and land use in three southern Appalachian landscapes in the eastern
+United States. Ecol. Appl. 23, 1250–1266 .
+Flinn, K.M., Vellend, M., 2005. Recovery of forest plat communities in post-
+agricultural landscapes. Front. Ecol. 3, 243–250 .
+Föhn, P., 1978. Avalanche frequency and risk estimation in forest sites. In: Proc. IUFRO
+Seminar Mountain Forests and Avalanches, Sept. 1978 Davos, pp. 242–254.
+Foster, D.R., 1992. Land-use history (1730–1990) and vegetation dynamics in
+Central New England, USA. J. Ecol. 80, 753–771 .
+Foster, D.R., Swanson, F., Aber, J., Burke, I., Brokaw, N., Tilman, D., Knapp, A., 2003.
+The importance of land-use legacies to ecology and conservation. Bioscience 53,
+78–88.
+Garbarino, M., Lingua, E., Subira, M.M., Motta, R., 2011. The larch wood pasture:
+structure and dynamics of a cultural landscape. Eur. J. Forest Res. 130, 491–502 .
+Gardiner, B., Blennow, K., Carnus, J.M., Fleischer, P., Ingemarson, F., Landmann, G.,
+Lindner, M., Marzano, M., Nicoll, B., Orazio, C., Peyron, J.L., Reviron, M.P.,
+Schelhaas, M.J., Schuck, A., Spielmann, M., Usbeck, T., 2010. Destructive storms
+in European forests: past and forthcoming impacts. In: Gardiner, B. et al. (Eds.),
+Destructive Storms in European Forests: Past and Forthcoming Impacts.
+European Forest Institute, Joensuu, pp. 138 .
+Gehrig-Fasel, J., Gusian, A., Zimmermann, N.E., 2007. Tree line shifts in the Swiss
+Alps: climate change or land abandonment. J. Veg. Sci. 18, 571–582 .
+Gellrich, M., Baur, P., Koch, B., Zimmermann, N., 2007. Agricultural land
+abandonment and natural forest regrowtin the Swiss mountains: a spatially
+explicit economic analysis. Agric. Ecosyst. Environ. 118, 93–108 .
+Ginzler, C., Brändli, U.B., Hägeli, M., 2011. Waldﬂächenentwicklung der letzten 120
+Jahre in der Schweiz. Schweizerische Zeitschrift für Forstwesen 162. 337-334 .
+Hauser, A., 1964. Wald und Forst in der Gründungszeit der Eidgenossenschaft.
+Schweizerische Zeitschrift für Forstwesen 115, 637–658 .
+Hlasny, T., Kristek, S., Holusa, J., Trombik, J., Urbancova, N., 2011a. Snow
+disturbances in secondary Norway spruce forests in Central Europe:
+regression modeling and its implications for forest management. For. Ecol.
+Manage. 262, 2151–2161 .
+Hlasny, T., Zajickova, L., Turcani, M., Holusa, J., Sitkova, Z., 2011b. Geographical
+variability of spruce bark beetle development under climate change in the
+Czech Republic. J. For. Sci. 57, 242–249 .
+Janda, P., Bac ˇe, R., Trotsiuk, V., Mikoláš, M., Nagel, T., Seidel, R., Mrhalová, H.,
+Morrisey, R.C., Mateˇju˚ , L., Lábusová, J., Kucbel, S., Jaloviar, P., Vysoky´ , J., Jasík, M.,
+Šamonil, P., Seedre, M., Cˇ ada, V., Michalová, Z., Svoboda, M., 2017. The historical
+disturbance regime of mountain Norway spruce forests in the Western
+Carpathians and its inﬂuence on current forest structure and composition.
+For. Ecol. Manage. 388, 67–78.
+Kaplan, J.O., Krumhardt, K.M., Zimmermann, N., 2009. The prehistoric and
+preindustrial deforestation of Europe. Quatern. Sci. Rev. 28, 3016–3034 .
+Keller, M., 2005. Schweizerisches Landesforstinventar. Anleitung fur die
+Feldaufnahmen der Erhebung 2004–2007. WSL, Birmensdorf .
+Klopcic, M., Poljanec, A., Gartner, A., Boncina, A., 2009. Factors related to
+naturaldisturbances in mountain Norway spruce (Picea abies) forests in the
+Julian Alps. Ecoscience 16, 48–57 .
+Klopcic, M., Boncina, A., 2011. Stand dynamics of silver ﬁr ( Abies alba Mill.) –
+European beech ( Fagus sylvatica L.) forests during the past century: a decline of
+silver ﬁr? Forestry 84, 259–271 .
+König, A., 1995. Sturmgefährdung von Beständen im Altersklassenwald. J.D.
+Sauerländer’s Verlag, Frankfurt am Main .
+Körner, W., Dupouey, E., Dambrine, E., Benoit, M., 1997. Inﬂuence of past land use
+on the vegetation and soils of present day forest in the Vosges mountains. J.
+Ecol. 85, 351–358 .
+Kozak, J., 2003. Forest cover change in the Western Carpathians in the past 180
+years. Mountain Res. Develop. 23, 369–375 .
+Kral, F., 1995. Nacheiszeitliche Waldentwicklungstypen in den Alpen. Verh. Zool.-
+Bot. Ges. Österrreich 132, 1–12 .
+Kraus, H., Ebel, U., 2003. Risiko Wetter: Die Entstehung von Stürmen und anderen
+atmosphärischen Gefahren. Springer, Berlin .
+Krumm, F., Kulakowski, D., Risch, A.C., Spiecker, H., Brändli, U.-B., Bebi, P., 2012.
+Stem exclusion and mortality in unmanaged subalpine forests of the Swiss Alps.
+Eur. J. Forest Res. 131, 1571–1583 .
+Kulakowski, D., Veblen, T.T., 2002. Inﬂuences of ﬁre history and topography on the
+pattern of a severe wind blowdown in a Colorado subalpine forest. J. Ecol. 90,
+806–819.
+Kulakowski, D., Veblen, T.T., Bebi, P., 2003. Effects of ﬁre and spruce beetle outbreak
+legacies on the disturbance regime of a subalpine forest in Colorado. J. Biogeogr.
+30, 1445–1456 .
+Kulakowski, D., Bebi, P., 2004. Range of variability of unmanaged subalpine forests.
+Forum für Wissen 2004, 47–54 .
+Kulakowski, D., Bebi, P., Rixen, C., 2011. The interacting effects of land use change,
+climate change and suppression of natural disturbances on landscape forest
+structure in the Swiss Alps. Oikos 120, 216–225 .
+Kulakowski, D., Jarvis, D., Veblen, T.T., Smith, J., 2012. Stand-replacing ﬁres reduce
+susceptibility to mountain pine beetle outbreaks in Colorado. J. Biogeogr. 39,
+2052–2060.
+Kulakowski, D., Matthews, C., Jarvis, D., Veblen, T.T., 2013. Compounded
+disturbances in subalpine forests in western Colorado favor future dominance
+by quaking aspen (Populus tremuloides). J. Veg. Sci. 24, 168–176 .
+Kulakowski, D., Seidl, R., Holeksa, J., Kuuluvainen, T., Nagel, T., Panayotov, M.,
+Svoboda, M., Thorn, S., Vacchiano, G., Whitlock, C., Wohlgemuth, T., Bebi, P.,
+2017. A walk on the wild side: disturbance dynamics and the conservation and
+management of European mountain forest ecosystems. Forest Ecol. Manage.
+388, 120–131.
+Küster, H., 2010. Geschichte der Landschaft in Mitteleuropa: Von der Eiszeit bis zur
+Gegenwart. C.H. Beck, München. 448 pp. .
+Küttel, M., 1990. The subalpine protection forest in the Urseren valley – an inelastic
+ecosystem. Bot. Helv. 100, 183–197 .
+Landolt, E., 1862. Bericht an den hohen schweizerischen Bundesrat über die
+Untersuchung der schweiz. Hochgebirgswaldungen, vorgenommen in den
+Jahren 1858, 1859 und 1860. Bern.
+Laternser, M., Pﬁster, C., 1997. Avalanches in Switzerland 1500–1990. In: Frenzel, B.
+et al. (Eds.), Rapid Mass Movement as a Source of Climatic Evidence for the
+Holocene, pp. 241–266 .
+Liu, Z., Wimberly, M.C., Lamsal, A., Sohl, T.L., Hawbaker, T.J., 2015. Climate change
+and wildﬁre risk in an expanding wildland–urban interface: a case study from
+the Colorado Front Range Corridor. Landscape Ecol. 30, 1943–1957 .
+Mather, A.S., Fairbairn, J., 2000. From ﬂoods to reforestation: the forest transition in
+Switzerland. Environ. History 6, 399–421 .
+Mather, A.S., Fairbairn, J., Needle, C.L., 1999. The course and drivers of the forest
+transition: the case of France. J. Rural Stud. 15, 65–90 .
+Mathieu, J., Backhaus, N., Hürlimann, K., Bürgi, M., 2016. Geschichte der Landschaft
+in der Schweiz. Orell Füssli, Zürich. 384 pp. .
+McEvedy, C., Jones, R., 1978. Atlas of World Population History. Penguin Books Ltd.,
+Harmondsworth.
+Meier, F., Forster, B., Engesser, R., 2010. Waldschutz aktuell 01/2001 bis 01/2009.
+<http://www.wsl.ch/fe/walddynamik/waldschutz/wsinfo/wsaktuell_DE>.
+Moser, B., Temperli, C., Schneiter, G., Wohlgemuth, T., 2010. Potential shift in tree
+species composition after interaction of ﬁre and drought in the Central Alps.
+Eur. J. Forest Res. 129, 625–633
+.
+Motta, R., Berretti, R., Lingua, E., Piussi, P., 2006a. Coarse woody debris, forest
+structure and regeneration in the Valbona Forest Reserve, Paneveggio, Italian
+Alps. For. Ecol. Manage. 235, 155–163 .
+Motta, R., Morales, M., Nola, P., 2006b. Human land-use, forest dynamics and
+tree growth at the treeline in the Western Italian Alps. Ann. For. Sci. 63,
+739–747.
+Müller, M.M., Vacik, H., Diendorfer, G., Arpaci, A., Formayer, H., Gossow, H., 2012.
+Analysis of lightning-induced forest ﬁres in Austria. Theoret. Appl. Climatol.
+111, 183–193 .
+Netherer, S., Matthews, B., Katzensteiner, K., Blackwell, E., Henschke, P., Hietz, P.,
+Pennerstorfer, J., Rosner, S., Kikuta, S., Schume, H., Schopf, A., 2015. Do water-
+limiting conditions predispose Norway spruce to bark beetle attack? New
+Phytol. 205, 1128–1141
+.
+Nykänen, M.L., Peltola, H., Quine, C., Kellomäki, S., Broadgate, M., 1997. Factors
+affecting snow damage of trees with particular reference to European
+conditions. Silva Fennica 31, 193–213 .
+Paine, R.T., Tegner, M.J., Johnson, E.A., 1998. Compounded perturbations yield
+ecological surprises. Ecosystems 16, 535–545 .
+Panayotov, M., Gogushev, G., Tsavkov, E., Vassileva, P., Tsvetanov, N., Kulakowski, D.,
+Bebi, P., 2017. Abiotic disturbances in Bulgarian mountain coniferous forests –
+an overview. For. Ecol. Manage. 388, 13–28.
+P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56 55
+
+PAGE 14
+Papler-Lampe, V., 2008. Snegolom, ki je januarja 2007 prizadel blejske gozdove.
+Gozdarski vestnik 66 (5-6), 309–319 (In Slovene) .
+Patzelt, G., Bortenschlager, S., 1973. Die postglazialen Gletscher- und
+Klimaschwankungen in der Venedigergruppe (Hohe Tauern, Ostalpen).
+Zeitschrift für Geomorphologie N.F Suppl. Bd. 16, 25–72 .
+Paulsen, J., Körner, C., 2009. GIS-analysis of tree-line elevation in the Swiss Alps
+suggests no exposure effect. J. Veg. Sci. 12, 817–824 .
+Petek, F., 2005. Spremembe rabe tal v slovenskem alpskem svetu. Geograﬁja
+Slovenije 11. Ljubljana, Zalozˇba ZRC, 216 pp. (in Slovene).
+Pezzatti, G.B., Reinhard, M., Conedera, M., 2010. Swissﬁre: die neue schweizerische
+Wald-branddatenbank. Schweiz. Z. Forstwes. 161, 465–469 .
+Pﬁster, C., 1988. Witterungsextreme und Waldschäden in der Schweiz: eine
+historisch-kritische Untersuchung von Schadenmeldungen aus
+schweizerischen Wäldern in ihrer Beziehung zur Klimabelastung,
+insbesondere durch sommerliche Dürreperioden. Bundesamt für Forstwesen
+und Landschaftsschutz, Bern .
+Plue, J., Hermy, M., Verheyen, K., Thuillier, P., Saguez, R., Decoq, G., 2008. Persistent
+changes in forest vegetation and seed bank 1600 years after human occupation.
+Landscape Ecol. 23, 673–688
+.
+Price, M., 1988. Legislation and policy for forests of the Swiss Alps. Land Use Policy
+5, 314–328 .
+Puerta-Piñero, C., Espelta, J.M., Sánchez-Humanes, B., Rodriges, A., Coll, L., Brotons,
+L., 2012. History matters: previous land use changes determine post-ﬁre
+vegetation recovery in forested Mediterranean landscapes. For. Ecol. Manage.
+279, 121–127
+.
+R Core Team, 2013. R: A Language and Environment for Statistical Computing. R
+Foundation for Statistical Computing, Vienna, Austria. < http://www.R-project.
+org/>.
+Rottmann, M., 1985. Schneebruchschäden in Nadelholzbeständen. J.D. Sauerländers
+Verlag, Frankfurt .
+Rozman, A., Diaci, J., Krese, A., Fidej, G., Rozenbergar, D., 2015. Forest regeneration
+dynamics following bark beetle outbreak in Norway spruce stands: Inﬂuence of
+meso-relief, forest edge distance and deer browsing. Forest Ecol. Manage. 353,
+196–207.
+Seidl, R., 2014. The shape of ecosystem management to come: anticipating risks and
+fostering resilience. Bioscience 64, 1159–1169 .
+Seidl, R., Schelhaas, M.J., Lindner, M., Lexer, M.J., 2009. Modelling bark beetle
+disturbances in a large scale forest scenario model to assess climate change
+impacts and evaluate adaptive management strategies. Reg. Environ. Change 9,
+101–119.
+Seidl, R., Rammer, W., in press. Climate change ampliﬁes the interactions between
+wind and bark beetle disturbance in forest landscapes. Landscape Ecol. http://
+dx.doi.org/10.1007/s10980-016-0396-4 (in press).
+Seidl, R., Schelhaas, M.J., Lexer, M., 2011a. Unraveling the drivers of intensifying
+forest disturbance regimes in Europe. Global Change Biol. 17, 2842–
+2852.
+Seidl, R., Rammer, W., Lexer, M.J., 2011b. Climate change vulnerability of
+sustainable forest management in the Eastern Alps. Clim. Change 106,
+225–254.
+Seidl, R., Schelhaas, M.-J., Rammer, W., Verkerk, P.J., 2014. Increasing forest
+disturbances in Europe and their impact on carbon storage. Nat. Clim. Change
+4, 806–810 .
+Seidl, R., Müller, J., Hothorn, T., Bässler, C., Heurich, M., Kautz, M., 2016. Small beetle,
+large-scale drivers: how regional and landscape factors affect outbreaks of the
+European spruce bark beetle. J. Appl. Ecol. 53, 530–540 .
+Schelhaas, M.-J., Nabuurs, G.J., Schuck, A., 2003. Natural disturbances in the
+European forests in the 19th and 20th centuries. Glob. Change Biol. 9, 1620–
+1633.
+Schmucki, E., Marty, C., Fierz, C., Weingartner, R., Lehning, M., 2015. Impact of
+climate change in Switzerland on socioeconomic snow indices. Theor. Appl.
+Climatol. http://dx.doi.org/10.1007/s00704-015-1676-7.
+SFS, 2012. Forest Inventory Database and Regional Forest Management Plans
+(2011/C02020). Slovenia Forest Service, Ljubljana, Slovenia .
+SFS, 2015. Database and Reports. Slovenia Forest Service, Ljubljana, Slovenia .
+SLF, 1999. Der Lawinenwinter. Ereignisanalyse. Davos, WSL-Institut für Schnee und
+Lawinenforschung. 588 pp.
+Spohn, M., Novák, T., Incze, J., Giani, L., 2016. Dynamics of soil carbon, nitrogen, and
+phosphorus in calcareous soils after land-use abandonment – a chronosequence
+study. Plant Soil 401, 185–196 .
+Schuler, A., 1988. Forest area and forest utilisation in the Swiss pre-alpine region.
+In: Salbitano, F. (Ed.), Human Inﬂuences on Forest Ecosystems Development in
+Europe. Pitagora Editrice, Bologna, pp. 121–127
+.
+Schwoerer, C., Colombaroli, D., Kaltenrieder, P., Rey, F., Tinner, W., 2015. Early
+human impact (5000–3000 BC) affects mountain forest dynamics in the Alps. J.
+Ecol. 103, 281–295 .
+Sonnier, J., 1991. Analyse du role de protection des forêts domaniales de montagne.
+Revue Forestière Française 43, 131–145 .
+Stadelmann, G., Bugmann, H., Wermelinger, B., Bigler, C., 2014. Spatial interactions
+between storm damage and subsequent infestations by the European spruce
+bark beetle. For. Ecol. Manage. 318, 167–174 .
+Staehli, M., Finsinger, W., Tinner, W., Allgoewer, B., 2006. Wildﬁre history and ﬁre
+ecology of the Swiss National Park (Central Alps): new evidence from charcoal,
+pollen and plant macrofossils. Holocene 16, 805–817 .
+Steyrer, G., Krenmayer, W., Schaffer, H., 2011. Dokumentation der
+Waldschädigungsfaktoren (DWF). Forstschutz Aktuell 52, 21–24 .
+Temperli, C., Bugmann, H., Elkin, C., 2013. Cross-scale interactions among bark
+beetles, climate change, and wind disturbances: a landscape modeling
+approach. Ecol. Monogr. 83, 383–402 .
+Tinner, W., Hubschmid, P., Wehrli, M., Ammann, B., Conedera, M., 1999. Long-term
+forest ﬁre ecology and dynamics in southern Switzerland. J. Ecol. 87, 273–289 .
+Tinner, W., Kaltenrieder, P., 2005. Rapid responses of high-mountain vegetation to
+early Holocene environmental changes in the Swiss Alps. J. Ecol. 93, 936–947 .
+Tinner, W., Conedera, M., Ammann, B., Lotter, A.F., 2005. Fire ecology north and
+south of the Alps since the last ice age. Holocene 15, 1214–1226 .
+Thom, D., Seidl, R., Steyrer, G., Krehan, H., Formayer, H., 2013. Slow and fast drivers
+of the natural disturbance regime in Central European forest ecosystems. For.
+Ecol. Manage. 307, 293–302 .
+Thom, D., Rammer, W., Seidl, R., 2016. Disturbances catalyze the adaptation of
+forest ecosystems to changing climate conditions. Glob. Change Biol. (in press).
+http://dx.doi.org/10.1111/gcb.13506.
+Usbeck, T., Wohlegmuth, T., Pﬁster, C., Volz, R., Beniston, M., Dobbertin, M., 2010a.
+Wind speed measurements and forest damage in Canton Zurich (Central
+Europe) from 1891 to winter 2007. Int. J. Climatol. 30, 347–358 .
+Usbeck, T., Wohlgemuth, T., Dobbertin, M., Pﬁster, C., Bürgi, A., Rebetez, M., 2010b.
+Increasing storm damage to forests in Switzerland from 1858 to 2007. Agric.
+For. Meteorol. 150, 47–55
+.
+Usbeck, T., Waldner, P., Dobbertin, M., Ginzler, C., Hoffmann, C., Sutter, F.,
+Steinmeier, C., Volz, R., Schneiter, G., Rebetez, M., 2012. Relating remotely
+sensed forest damage data to wind data: storms Lothar (1999) and Vivian
+(1990) in Switzerland. Theoret. Appl. Climatol. 108, 451–462 .
+Usbeck, T., 2015. Wintersturmschäden im Schweizer Wald von 1865 bis 2014.
+Schweizerische Zeitschrift für Forstwesen 166, 184–190 .
+Veblen, T.T., Hadley, K.S., Nel, E.M., Kitzberger, T., Reid, M., Villalba, R., 1994.
+Disturbance regime and disturbance interactions in a Rocky Mountain
+Subalpine Forest. J. Ecol. 82, 125–135 .
+Vacchiano, G., Dobbertin, M., Egli, S., Giordano, L., Gonthier, P., Mazzoglio, P.J.,
+Motta, R., Nola, P., Nicolotti, G., Patetta, A., Polomski, J., Rigling, A., Rigling, D.,
+2008. Il deperimento del pino silvestre nelle Alpi occidentali: natura ed indirizzi
+di gestione. Compagnia delle Foreste, Arezzo.
+Vacchiano, G., Maggioni, M., Perseghin, G., Motta, R., 2015. Effect of avalanche
+frequency on forest ecosystem services in a spruce-ﬁr mountain. Cold Reg. Sci.
+Technol. 115, 9–21 .
+Vacchiano, G., Berretti, R., Mondino, E.B., Meloni, F., Motta, R., 2016. Assessing the
+effect of disturbances on the functionality of direct protection forests. Mountain
+Res. Develop. 36, 41–55
+.
+Vacik, H., Arndt, N., Arpaci, A., Koch, V., Müller, M., Gossov, H., 2011.
+Characterisation of forest ﬁres in Austria. Austrian J. For. Sci. 2011, 1–32 .
+Valese, E., Conedera, M., Held, A.C., Ascoli, D., 2014. Fire, humans and landscapes in
+the European Alpine region during the Holocene. Anthropocene 2014, 63–74 .
+van der Knaap, W.O., van Leeuwen, J.F.N., Finsinger, W., Gobet, E., Pini, R., Schweizer,
+A., Valsecchi, V., Ammann, B., 2005. Migration and population expansion of
+Abies, Fagus, Picea, and Quercus since 15000 years in and across the Alps, based
+on pollen-percentage threshold values. Quatern. Sci. Rev. 24, 645–680 .
+Wastl, C., Schunk, C., Lupke, M., Cocca, G., Conedera, M., Valese, E., Menzel, A., 2013.
+Large-scale weather types, forest ﬁre danger, and wildﬁre occurrence in the
+Alps. Agric. For. Meteorol. 168, 15–25 .
+Wear, D.N., Bolstad, P., 1998. Land-use changes in southern Appalachian
+landscapes: spatial analysi and forecast evaluation. Ecosystems 1, 575–594 .
+Weigl, N., 1997. Österreichs Forstwirtschaft in der Zwischenkriegszeit 1918–1938.
+Österreichischer Kunst- und Kulturverlag Wien, pp. 219.
+Westerling, A.L., Hidalgo, H.G., Cayan, D.R., Westman, T.W., 2006. Warming and
+earlier spring increase western U.S. forest wildﬁre activity. Science 313, 940–
+943.
+Winckler, K., 2012. Die Alpen im Frühmittelalter. Die Geschichte eines Raumes in
+den Jahren 500–800, Böhlau Verlag, Wien.
+Wohlgemuth, T., Bürgi, M., Scheidegger, C., Schütz, M., 2002. Dominance reduction
+of species through disturbance – a proposed management principle for Central
+European forests. Forest Ecol. Manage. 166, 1–15 .
+Zumbrunnen, T., Bugmann, H., Conedera, M., Bürgi, M., 2009. Linking forest ﬁre
+regimes and climate – a historical analysis in a dry inner Alpine valley.
+Ecosystems 12, 73–86 .
+Zupancic, M., 1969. Vetrolomi in snegolomi v Sloveniji v povojni dobi. Gozdarski
+vestnik, 193–210 (in Slovene) .
+56 P. Bebi et al. / Forest Ecology and Management 388 (2017) 43–56

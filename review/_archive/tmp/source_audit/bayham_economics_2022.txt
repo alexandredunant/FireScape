@@ -1,0 +1,1186 @@
+PAGE 1
+AnnualReviewofResourceEconomics
+The Economics of Wildfire
+in the United States
+Jude Bayham,1 Jonathan K.Yoder,2 Patricia A.Champ,3
+and David E.Calkin4
+1Department of Agricultural and Resource Economics,Colorado State University,Fort Collins,
+Colorado,USA; email: jbayham@colostate.edu
+2School of Economic Sciences,Washington State University,Pullman,Washington,USA;
+email: yoder@wsu.edu
+3USDA Forest Service,Rocky Mountain Research Station,Fort Collins,Colorado,USA;
+email: patricia.a.champ@usda.gov
+4USDA Forest Service,Rocky Mountain Research Station,Missoula,Montana,USA;
+email: David.Calkin@usda.gov
+Annu.Rev.Resour.Econ.2022.14:379–401
+First published as a Review in Advance on
+June 8,2022
+TheAnnualReviewofResourceEconomics is online at
+resource.annualreviews.org
+https://doi.org/10.1146/annurev-resource-111920-
+014804
+This is a work of the US Government and is not
+subject to copyright protection in the United States
+JEL codes: Q23,Q54
+Keywords
+wildfire,natural hazards
+Abstract
+Wildfire is a natural phenomenon with substantial economic consequences,
+and its management is complex,dynamic,and rife with incentive problems.
+This article reviews the contribution of economics to our understanding of
+wildfire and highlightsremaining knowledge gaps.We firstsummarize eco-
+nomicimpactstoillustratescaleandtrends.Wethenfocusonwildfireman-
+agementinthreephases:mitigationbeforefiresoccur,responseduringfires,
+and response after fires.The literature highlights economic interdependen-
+cies and spillover effects across fire-prone landscapes as the source of eco-
+nomic inefficiencies and motivation for public institutional response. The
+literature illustrates the complexity of this problem with its myriad threads,
+including the trade-offs of living in fire-prone environments, the prospects
+for using controlled fire and mechanical fuel removal for reducing wildfire
+severity,thedecision-makingenvironmentthatfirefightersface,andtheeco-
+nomic consequences of wildfire smoke on health.Economics provides valu-
+able insights,but fundamental questions remain unanswered.
+379
+
+
+PAGE 2
+1. INTRODUCTION
+Wildfire is a natural phenomenon and an essential process in many ecosystems worldwide, but
+it poses substantial risks to society. Over the past several decades, wildfires in the United States
+havegrownlarger,causingbillionsofdollars’worthofdamagesdespitebillionsmoreinresponse 1
+(Figure 1).These measured costs are only a fraction of the societal impacts of wildfire.Research
+points to three factors driving the trends in wildfire: a changing climate (Abatzoglou & Williams
+2016),an accumulation of fuels (Mercer et al.2008),and a growing wildland-urban interface de-
+fined as the space where development intermingles with wildlands (Radeloff et al. 2018). Each
+of these factors involves a biophysical and social component. Economics has developed a set of
+conceptual and analytical tools well suited to study how individuals make decisions when faced
+with the complex trade-offs involved with wildfire management and how they affect wildfire
+outcomes.
+Before delving into the wildfire economics literature, it is worth briefly reviewing the history
+of wildfire management in the United States.
+2 A large wildfire in 1910 known as the Big Burn
+marked the beginning of modern wildfire management in the United States, initiating an active
+role for the US federal government and a strategy of aggressive wildfire suppression that was
+unique in human history outside of urban settings (Egan 2010; Pyne 1998, 2017). For most of
+the twentieth century, wildfire was approached as a threat to valuable timber and property and
+somethingtobeextinguished.TheUnitedStatesForestService(USFS)maintainedtheso-called
+10 am policy through much of the twentieth century, dictating that all fires be immediately
+suppressed when discovered (Lueck & Yoder 2015). To the extent that this policy of aggressive
+0
+2
+5
+Millions of acres burned
+Response expenditures (billion $)
+Insured losses (billion $2018)
+8
+10
+1990 2000
+Y ear Y ear Y ear
+2010 2020
+a
+$0B
+1
+2
+3
+1990 2000 2010 2020
+b
+$0B
+5
+10
+15
+20
+1990 2000 2010 2020
+c
+Figure 1
+Trends in wildfire outcomes from 1985 to 2018.The outcomes include (a) acres burned annually,(b) annual response expenditures
+(nominal),and (c) annual insured losses in 2018 dollars.The data for panelsa andb are fromhttps://www.nifc.gov/fire-information/
+statistics/suppression-costs,and those for panelc are fromhttps://www.munichre.com/en/risks/natural-disasters-losses-are-
+trending-upwards/wildfires-as-the-climate-changes-so-do-the-risks.html.
+1Throughout the review,we use the term suppression to denote the act of reducing fire activity and response
+to include suppression as well as other activities undertaken by wildland firefighters during an active incident
+(e.g.,asset protection,evacuation,emergency medical services).
+2See Pyne (2017) for a detailed history of wildfire in the United States.
+380 Bayhametal.
+
+
+PAGE 3
+wildfire suppression was successful, it effectively excluded fire from US ecosystems that had
+evolved to exist with wildfire,resulting in an accumulation of fuels in many fire-prone landscapes
+(Omi 2015). During the same period, humans have increased their demographic and economic
+footprint, placing more highly valued property at risk. These two factors combined with a
+changing climate have led to unprecedented fire activity and consequences to society.Figure 1a
+shows how the size of wildfires has been increasing since the 1980s,and this growth is associated
+with a concomitant increase in the cost of wildfire response.
+The objective of this article is to review the contributions of economics to our understand-
+ing of wildfire management and to highlight existing knowledge gaps. Wildfire is present on all
+continents but Antarctica, but to frame the review, the discussion focuses largely on the United
+States. In the conclusion we briefly discuss the extent to which the economics of wildfire in the
+United States corresponds to that in other parts of the world.The article begins with a review of
+the literature on the societal impacts of fire and then follows a natural progression focusing on
+wildfire risk mitigation and response.Within this progression,it builds from the literature on the
+economic fundamentals,incorporates economic incentives and behavior,and progresses through
+the economics of the institutional response to fire. We draw on relevant literature from ecology
+and other fields for context. The review ends with a broad synthesis and summary of knowledge
+gaps and possible future research directions.
+2. IMPACTS OF FIRE ON SOCIETY
+Wildfireimpactssocietyandtheenvironmentinanumberofways.Duringanactiveincident,fire
+can directly impact people by posing an immediate threat to life, property, and local economies
+(Milne et al.2014).Wildfires also diminish air quality,which can have significant impacts on hu-
+man health both near the fire and up to thousands of miles away as the smoke is transported
+(O’Dell et al. 2021). Beyond these direct effects, fire can influence behavior as people evacuate
+or simply try to avoid smoke exposure (McCaffrey et al. 2018). Wildfires continue to affect peo-
+ple well after they are extinguished by impacting recreation opportunities (Hesseln et al. 2004),
+amenity values (Loomis & González-Cabán 1998),and property values (McCoy & Walsh 2018).
+In addition,fire affects society via its impact on the environment.While fire can promote healthy
+ecosystems by clearing understory, cycling nutrients, and reseeding various species of flora, fire
+can also dramatically alter ecosystem services in the years after a fire (Pausas & Keeley 2019).
+Precipitation in the year following a fire can lead to elevated sediment in watersheds that may af-
+fectwaterquality.Insteepterrain,thelossofsoil-stabilizingvegetationcanalsoleadtolandslides
+(Gannon et al.2019).
+Despite the management effort spent on property protection during wildfire incidents,struc-
+tures are damaged and destroyed. In 2020, damages from wildfire totaled US$16.5 billion in
+the United States, with more than 10,000 structures damaged or destroyed in California alone
+(NOAA 2021). Fires do not burn uniformly, and many factors can influence whether structures
+are damaged or destroyed.Calkin et al. (2014a) develop a model of wildland-urban interface fire
+disasters—fires that burn hundreds of structures or more—and focus on those conditions where
+response capability is overwhelmed by extreme fire behavior. Alexandre et al. (2016) construct a
+data set of structures destroyed within known fire perimeters using satellite imagery from before
+and after the fire. They find that topography and building arrangements impact structure loss,
+but the relative importance of these factors varies across regions of the United States. Caggiano
+et al.(2020) find that structure proximity to fuels and lower structure density are associated with
+an increased probability of structure loss. While these studies provide useful information, they
+ignore the role of deliberate wildfire response operations during the fire. Olsen & Yoder (2021)
+www.annualreviews.org  EconomicsofWildfire 381
+
+
+PAGE 4
+showthatholesinfireperimeters,knownasrefugia,aremorecommonnearstructures,suggesting
+that firefighting resources play an important role in the survival of structures.
+Wildfires can move quickly, posing a risk to people in their paths. Evacuation decisions have
+received some attention in the literature (McCaffrey et al.2018,McNeill et al.2016,Mozumder
+etal.2008,Paveglioetal.2014,Toledoetal.2018).Wongetal.(2020)investigatewhetherevacua-
+tiondecisionsrelatedtothe2017SouthernCaliforniawildfiresarebetterdescribedusingaregret
+minimizationmodelthanthetraditionalrandomutilitymodel.Althoughtheyfindweakevidence
+of regret aversion,they attribute the weak results to the use of revealed preference data that limit
+attribute-level variation.
+The smoke generated by wildfires can diminish air quality both near the conflagration and
+thousands of miles away (O’Dell et al. 2021). Burke et al. (2021) find that wildfires contributed
+approximately 25% of fine particulate matter (PM2.5) in recent years. The impact of air quality
+on human health is an active area of research in environmental health (Manisalidis et al. 2020)
+and economics (Currie et al. 2014). However, there are few economic studies of the morbidity
+and mortality costs associated with wildfire smoke exposure.Moeltner et al.(2013) use an instru-
+mental variable approach to estimate that hospital admissions for respiratory conditions in Reno,
+Nevada increase by 0.3% per unit of smoke-induced PM2.5, which they value at $2.2 million.
+Kochi et al. (2016) find that smoke from 22 Southern California wildfires in 2007 led to excess
+hospital admissions with an associated health care cost of $3.4 million.Johnston et al.(2021) esti-
+mate the 2019–2020 Australian bushfire season led to health care costs of AUS$1.95 billion.The
+value estimates from these studies rely on health care costs, which underestimate the full eco-
+nomiccostofwildfiresmoke.Richardsonetal.(2013)usestatedandrevealedpreferencemethods
+to estimate that people were willing to pay $85 to $95 per day to avoid fire smoke during the
+2009 Station Fire in Southern California. Jones (2017, 2018) uses a life satisfaction approach to
+estimate willingness to pay (WTP) as high as $373 to avoid smoke exposure over one’s county of
+residence. Jones & Berrens (2021) examine smoke attributable to prescribed burning in Georgia
+to estimate the impact on birth outcomes in Atlanta and show that these impacts are more pro-
+nounced in populations of color and those below the poverty line. A recent Environmental Pro-
+tection Agency (EPA) report supported by the US Department of Agriculture and Department
+of the Interior devotes significant attention to the smoke impacts of wild and prescribed fire
+used to reduce wildfire risk (EPA 2021). These studies document the economic costs associated
+with both wildfires and prescribed fires that should be considered by fire-managing agencies and
+policymakers.
+The diminished air quality caused by plausibly exogenous wildfire smoke creates an appeal-
+ing study design to estimate causal impacts of air quality on various health and social outcomes.
+Since 2006, the National Oceanographic and Atmospheric Administration’s Hazard Mapping
+System has produced daily geospatial estimates of smoke plumes (https://www.ospo.noaa.gov/
+Products/land/hms.html#maps). Borgschulte et al. (2020) use the plume data to estimate that
+wildfire smoke reduces labor market earnings by $93 billion per year across the entire United
+States, highlighting the large indirect costs associated with wildfires. Miller et al. (2021) use the
+smoke plume data to identify the effect of PM2.5 on mortality in the Medicare population and
+estimate the annual mortality cost of wildfire smoke is just over $6 billion.Research continues to
+revealadditionalsocietal impactsofdiminishedairquality(Burkhardtetal.2019,2020),towhich
+wildfire will continue to contribute.
+Wildfire can also impact people by altering local amenities and affecting their perceptions of
+future wildfire risk.Economists have used hedonic methods to estimate the impact of wildfire on
+property values (Loomis 2004, Mueller & Loomis 2014, Mueller et al. 2009, Stetler et al. 2010).
+McCoy & Walsh (2018) use a similar technique to show that wildfire risk is salient after a fire
+382 Bayhametal.
+
+
+PAGE 5
+but fades quickly in the years following the fire. Prior to a wildfire, the attributes related to par-
+cel wildfire risk may also affect home sales prices. Donovan et al. (2007) find that housing price
+and wildfire risk are positively correlated before the local fire department publishes a parcel-level
+risk assessment, after which they find housing price and wildfire risk are negatively correlated.
+While location and topography are important determinants of wildfire risk,homeowners’ choice
+of building materials can also be important. Champ et al. (2009) find that the amenity aspect of
+topography associated with higher fire risk is considered a desirable attribute by homeowners.
+However,fire-resistant building materials are also desirable.Hjerpe et al.(2016) find that prefer-
+encesforproximitytodenseforestsdependondistancefromthehome;homeownersprefermore
+dense forest outside of 100 m from the home.
+Outdoor recreation is estimated to account for 2.1% of US GDP in 2019, and even more in
+several western states where summer wildfires and smoke are common (BEA 2020).Wildfire can
+impact recreation by damaging facilities and recreation infrastructure such as campgrounds and
+trails (Englin et al. 2001, 2008) and through diminished air quality. The economics literature is
+relatively sparse on the impact of fire on recreation. Studies of hiking and biking activity after a
+wildfire find that both activities may decline, yet the per-trip benefits do not necessarily decline
+(Hesseln et al.2003,2004).More recently,Tanner et al.(2019) use revealed and stated preference
+methods and find that fire in the Angeles National Forest in California reduces welfare by $29 to
+$37pertrip.Mostofthesestudiesrelyonsurveydatainselectedlocations.However,recentstudies
+use administrative data containing campground reservations across the western United States to
+document the impact of wildfire on campground utilization (Gellman et al.2022,Lee 2021).
+Fire can have dramatic impacts on ecosystem services in the short and long term.Several tree
+species rely on fire for regeneration, and fire plays a role in biogeochemical processes (Pausas &
+Keeley 2019).Fire can also remove vegetation that stabilizes soil on steep slopes,leading to land-
+slides as well as sediment deposits in waterways and drinking water sources (Gannon et al. 2019,
+Hohner et al.2019).These events have acute impacts on society but have received little attention
+in the economics literature (Jones et al.2017,Warziniack & Thompson 2013).In principle,data
+on water treatment costs could provide a lower bound on the impacts of wildfire on watersheds.
+The impacts of fire on society prompt action both in anticipation of and in response to fire.
+However, the complex array of institutions and the lack of coordination among stakeholders can
+leadtoeconomicallyinefficientmitigationandresponsestrategies.Sections3and4describethese
+inefficiencies and the conditions within which they occur.
+3. WILDFIRE RISK MITIGATION
+The risk of damage to physical assets and harm to human well-being underscores the importance
+ofmitigatingwildfireriskbyreducingvegetationandignitabilityofstructures.Theeconomicrisks
+of wildfire and the productivity of wildfire risk mitigation strategies vary across space and time,
+andeffectivelymanagingwildfirerisksbeforeafireevententailsaccountingforthisheterogeneity
+across the landscape (Hesseln 2000). The fire ecology literature has generally focused on fire
+behavior and how best to disrupt fuel contiguity and reduce density in order to reduce the extent
+and severity of fire (Mercer et al.2008,Wei et al.2008).In contrast,the economics literature has
+focused on the spatial wildfire risk spillovers, factors that influence the adoption of wildfire risk
+mitigationandtheroleofinstitutionsinmitigation.Weframethissectionwitharelativelysimple
+economic model of wildfire mitigation to show how the spatiotemporal nature of fire along with
+misaligned incentives leads to economic inefficiencies.
+We briefly describe the model in the text and provide detail in theSupplemental Appendix.
+Consider a landscape divided into a mosaic of private and publicly owned. The social planner
+chooses a level of mitigation to affect expected wildfire activity in order to maximize the net
+www.annualreviews.org  EconomicsofWildfire 383
+
+
+PAGE 6
+present benefits across the landscape. The direct costs of wildfires arise via damage to physical
+assets and impacts to human well-being (e.g., evacuation, smoke). The direct benefits of fire
+on the landscape accrue through impacts to ecosystem services. The spatial nature of fire and
+its impacts imply that fire on one parcel may impact people on other nearby parcels through
+transmission of fire and smoke.
+Thefirst-orderconditionsofthesocialplanner’sproblemhighlightseveralpotentialeconomic
+inefficiencies (Equation 2 in theSupplemental Appendix). A private parcel owner only consid-
+ers private benefits and costs of mitigation on their parcel,ignoring spatial spillover externalities
+(i.e., fire transmission across parcels) as well as conventional externalities (i.e., health impacts of
+smoke).Thefirst-orderconditionsillustratethemanychannelsthroughwhichmitigationimpacts
+society,and yet,this simple model does not consider the myriad institutional factors that further
+complicate private and public land management decisions.
+The remainder of this section reviews the relevant literature on wildfire mitigation.We begin
+with the recognition of spatial externalities and their role in individuals’ mitigation decisions as
+wellastheirconsequencesatthelandscapescale.Second,wediscusstheroleofriskperceptionand
+other sociopolitical factors in shaping mitigation decisions.We end this section with a discussion
+of institutional factors that impact and are impacted by mitigation decisions.
+3.1. The Role of Spatial Externalities
+People make decisions about what property to own and how they develop,maintain,and use that
+property, all of which may reflect and affect wildfire risk or amenity attributes correlated with
+fire risk. Timberland owners’ assets are often the actual fuel of wildfires, and forest fires behave
+and impact property differently than do grassland fires. Public electricity utility companies use
+infrastructurethatcanignitefires(Arabetal.2021,Kouskyetal.2018),andpropertyownerswho
+build and live in homes,especially in rural or peri-urban areas,not only face risk but increase the
+risk of economic loss by their choice to live in fire-prone areas. Beyond the risk of contact with
+actual wildfire flames, people choosing to live or work either in or downwind of fire-prone areas
+expose themselves to potential health consequences of wildfire smoke.
+Wildfiresoftenmovethroughpropertyboundaries,andsmokefromthemalmostalwaysdoes.
+Sowhileprivatedecisionsaffectprivaterisk,theyalsoaffectthewildfireriskfacedbytheirneigh-
+borsandtheiroptionsandincentivesforrespondingtoit(Busbyetal.2012,Shafran2008).Shafran
+(2008)formalizesatheoryoftheseriskexternalitiesandshowsthattheyleadprivatelandownersto
+mitigatelessthanthesocialoptimum.Shafran(2008)andWarziniacketal.(2019a)findempirical
+evidence that defensible space (a form of private mitigation) is a strategic complement implying
+that a property owner is more likely to mitigate in response to mitigation on a neighbor’s prop-
+erty. Busby et al. (2012) provide an explanation for this strategic complementarity with a game
+theoretic model of forest land owners.
+3.2. Factors Influencing Private and Public Decisions to Mitigate Wildfire Risk
+A homeowner’s decision to mitigate risk via fuel reduction or structure hardening depends on
+risk perception, risk salience, information, and other social considerations. Brenkert-Smith et al.
+(2006) show that homeowners’ decisions to mitigate fire risk are related to perceptions of fire
+risk and a complex set of social considerations. In addition, they find that whether community
+members talk with each other about wildfire is an important determinant of whether individuals
+engage in mitigation. Much of the literature finds wildfire risk perceptions and risk mitigation
+to be correlated (Brenkert-Smith et al. 2012, Fischer et al. 2013, Martin et al. 2009, McFarlane
+et al.2011).However,few studies control for the joint determination of wildfire risk perceptions
+384 Bayhametal.
+
+
+PAGE 7
+and risk mitigation action (Champ et al. 2013, Meldrum et al. 2019). Champ et al. (2013) find
+wildfireriskperceptionsandreportedmitigationactionstobejointlydetermined.Meldrumetal.
+(2019) use a simultaneous equations model to capture feedbacks and directionality between risk
+perceptions and risk mitigation.
+Local government,fire departments,and nonprofits seek to incentivize individuals to manage
+vegetationontheirpropertiesandhardentheirhomes.Incentivesincludesitevisitswithawildfire
+mitigation specialist to assess property-specific wildfire risk and mitigation strategies. Likewise,
+cost-sharing programs are often used to incentivize homeowners.Meldrum et al.(2014) find the
+decision to participate in a cost-sharing program and the decision about how much of the cost-
+share homeowners are willing to pay are related to different factors. In recent decades there has
+been an emergence of prescribed fire cooperatives for supporting the use of prescribed fire on
+private property (Toledo et al. 2014). The Firewise USA
+® program maintained by the National
+Fire Protection Association provides educational materials and maintains a nationwide commu-
+nity certification program. Although such programs have been examined in various ways (e.g.,
+Wolters et al.2017),the economics literature to date includes few studies that examine how local
+programsencourageprivatelandownerstomitigatewildfirerisk.Anudgeexperimentwithprivate
+landowners in Western Colorado finds that providing parcel-specific wildfire risk information to
+privatelandownerscaninfluenceinformation-seekingbehavior(Meldrumetal.2021).Thenexus
+betweenlocalwildfireeducationprogramsandmitigationeffortsofprivatelandownersisripefor
+behavioral economics research.
+Decisionstomitigatewildfireriskdependonthecostsandperceivedeconomicbenefitofmit-
+igation actions.Several studies have estimated the operational costs of fuel treatment (see Calkin
+& Gebert 2006 and references therein).These studies highlight that there are economies of scale
+in implementing fuel treatments but also institutional constraints that lead to higher costs.Con-
+tingent valuation methods have been used to estimate WTP for wildfire risk mitigation. People
+tend to have a higher WTP,in the hundreds of dollars,for reducing risk to homes in contrast to
+publiclands(Kavaletal.2007;Loomis&González-Cabán1998,2008;Talberthetal.2006).Kaval
+etal.(2007)specificallyaddressthisspatialexternalityandfindthatColoradoresidentslivingnear
+public lands were willing to pay hundreds of dollars per year to reduce the risk of fire crossing
+from public land to their property. The WTP is also likely to depend on the type of fuel treat-
+ment. These studies provide clear evidence that people do value risk reduction. However, these
+estimated WTPs are becoming dated and may not reflect recent increases in wildfire activity that
+are expected to continue due to climate change.
+In addition to homeowners, forest and grassland owners sometimes invest in expensive me-
+chanical precommercial thinning of trees or carry out intentional controlled burns at some cost
+and risk to reduce the risk of losses from unplanned and uncontrolled fire (Amacher et al. 2005,
+Halbritter et al. 2020, Konoshima et al. 2008, Reed 1984). Public utilities invest in landscape
+managementaroundelectricitytransmissioninfrastructure(Kouskyetal.2018),andhomeowners
+affect the risk of loss in the event of a fire by their choice of building materials and landscape
+management.
+Public land managers often face similar decisions about mitigation at the landscape scale.Fuel
+treatment decisions may be influenced by social and political factors. Wibbenmeyer et al. (2019)
+document that salient events like wildfire may bias risk perceptions and lead land managers to
+misallocatefueltreatmentstoareaswithlessriskbyvirtueofhavingrecentlyburned.
+3 Prescribed
+3A similar mechanism may explain why Colorado has increased funding for fuel treatment grants in the year
+following a very active 2020 fire season (Davis 2021).
+www.annualreviews.org  EconomicsofWildfire 385
+
+
+PAGE 8
+burningcanbelessexpensivethanmechanicaltreatmentsforpublicagenciesbutmaybeunpopu-
+larwiththegeneralpublicbecauseitgeneratessmoke,impactsnaturalamenities,andcreatesarisk
+ofwildfireifitescapescontrol.Loomisetal.(2001)measuresupportforprescribedburningbefore
+and after an information campaign in Florida. The authors find that information campaigns can
+clarifythebenefitsofprescribedburning,whichleadstoincreasedsupportforprescribedburning.
+Understanding social and political barriers to fuel treatment is important given the urgent need
+to reduce fuel loads across the western United States.
+AswediscussinSection4,thepublicsectorisoftendirectlyinvolvedinwildfireresponse.Lit-
+tle if any of the costs of government firefighting are borne directly by property owners.However,
+these protection activities do reduce the costs of building and living in fire-prone areas (Kousky
+et al. 2012). Baylis & Boomhower (2019) find that the subsidy provided to property owners via
+wildfireresponsecanexceed20%ofthevalueofpropertyinhigh-riskareas.Kousky&Olmstead
+(2010) find that public fire suppression efforts have accelerated development in fire-prone
+landscapes.
+3.3. The Role of Institutional Factors
+Incentivestomitigatewildfireriskareaffectedby,andshape,amosaicofregulatoryandcommon
+law,administrative codes and standards,fiscal incentives,and market factors (Bradshaw & Lueck
+2012). We focus on two examples of institutions here: liability law relating to fuel and ignition
+management,and insurance markets pertaining to wildfire.
+3.3.1. Legal liability for ignition, fuels, and fuel management.Despite efforts to mitigate
+and regulate risk, wildfires happen, and legal liability follows. Liability rules affect the incidence
+of legal and economic responsibility for wildfire damage, and they can affect incentives for risk
+mitigation before fires happen and responses while fires are occurring.Legal liability over the ig-
+nition and spread usually follows typical negligence standards,but occasionally not.For a decade
+or more,California’s Pacific Gas and Electric Company (PG&E) effectively faced a strict liability
+standardforwildfiresignitedbytheirelectricitytransmissionassets,and itfiledforbankruptcy in
+2019 after being found liable for a quarter of a billion dollars for fires in 2017 and 2018. There-
+after,thestatelegislatureweakenedtheirliabilitysomewhat.Theeconomicconsequencesofsuch
+regulations are substantial (Kousky et al.2018).
+Legal liability for fuel management and ignition varies across jurisdictions (Sun 2006). Yoder
+(2004, 2012) and Yoder et al. (2003) examine the economics of liability law and incentives over
+fuel and ignition,with emphasis on prescribed fire risk (Yoder et al.2003) and liability for natural
+fuel accumulation (Yoder 2004). Yoder (2008) shows empirically that states with more stringent
+liability rules tend to have fewer escaped prescribed fires, except on federal lands where state
+liability law does not directly apply.More recently,Lauer et al.(2020) compare the effect of strict
+liability versus negligence standards on fuel treatment and timber harvest, and Langpap & Wu
+(2021) develop a theoretical model to examine the relative effectiveness of liability, cost-share
+agreements,andvoluntaryagreementsonprivatemitigationincentivesandoutcomes.Florecetal.
+(2019)showthatwhilethebenefitsoffueltreatmentsarehighestintheAustralianwildland-urban
+interface,the substantially higher costs,due to the risk of escape,do not always justify action.
+3.3.2. Insurance. Most homeowners’ insurance plans indemnify property losses to urban fire
+and wildland fire.However,like a flood,wildfire creates spatial correlation in risk that can create
+challenges for insurers that do not sufficiently diversify their portfolio. Climate change is also
+exacerbating wildfire risk, making it hard for insurance companies to quantify and price risks
+386 Bayhametal.
+
+
+PAGE 9
+appropriately (Dixon et al.2018).In California,uncertainty and regulatory restrictions on insur-
+ance premiums have led many insurers to exit high-risk markets completely (Flavelle 2020,Troy
+2007).
+Insurance can also alter the incentives of homeowners in fire-prone areas. First, insurance
+and regulation can influence the decision to own a home in fire-prone areas. Troy (2007) ar-
+gues that California regulation to restrict insurance premiums encouraged an expansion of the
+wildland-urban interface. Second, insurance can create a moral hazard by reducing the incentive
+for a homeowner to mitigate risk to some extent (Talberth et al. 2006). Taylor (2019) shows that
+homeowners’decisionstomitigaterisknotonlydependoninsurance,butalsoontheexpectations
+that neighbors will rebuild lost homes in the event of a wildfire.Busby et al.(2013) highlight the
+interaction between insurance and government-provided wildfire suppression. The authors find
+that even proper risk-adjusted insurance may not incentivize mitigation in the presence of an im-
+plicit guarantee that the government will attempt to prevent damage to property. In contrast to
+the assumption of risk-adjusted premiums for wildfire assumed by Busby et al.(2013),few insur-
+ance plans impose wildfire risk-reduction contingencies, presumably increasing the disincentive
+to mitigate wildfire risk and insurance supply responses such as inefficiently high premiums and
+cancellation (Talberth et al.2006).
+4. WILDFIRE RESPONSE
+Wildfire response4 expenditures began growing in the early 2000s and have reached unprece-
+dented levels in recent years, exceeding $2 billion in 2020 at the federal level alone (Figure 1).
+Expenditures tend to grow with the size and complexity of the wildfire incident.Importantly,re-
+sponse expenditures accrue when firefighting resources are requested by the fire manager,which
+depend on expectations about fire behavior,assets at risk of damage,the availability of resources,
+and institutional structures and sociopolitical pressures. Perhaps because of data availability and
+its amenableness to economic analysis, response expenditures have received more scrutiny by
+economists than other aspects of wildfire response. Here, we review the evolution of the eco-
+nomics literature focused on analyzing the determinants of response expenditures.
+4.1. Response Costs
+Over the past two decades,economists have used a variety of econometric approaches to analyze
+response expenditures (Abt et al.2008,2009; Calkin et al.2005,2014b; Gebert et al.2007; Hand
+et al. 2014; Holmes et al. 2008a,b). These econometric models are the basis for the so-called
+StratifiedCostIndexusedbytheUSFStobenchmarkrecentfireexpendituresandforecastfuture
+expenditures (Abt et al. 2008, 2009; Hand et al. 2016). Calkin et al. (2005) are one of the first to
+analyze the rising response expenditures and correlate them with acreage burned and drought
+conditions. Subsequent analyses also find that drought and fuel moisture, weather conditions,
+and topography are important determinants of response expenditures. Yoder & Gebert (2012)
+argue that expenditures and fire size are jointly determined outcomes, implying that models
+using fire size as an explanatory variable suffer from endogeneity. Bayham & Yoder (2020) build
+on this argument and advocate for analyzing the factors that drive dynamic resource allocation
+decisions over the course of the fire. While this approach can overcome endogeneity concerns
+4We use the term response rather than suppression to capture the wide array of services that firefighters
+provideonincidents,includingsuppressionactivitiesaswellasfacilitatingevacuationandstructureprotection.
+www.annualreviews.org  EconomicsofWildfire 387
+
+
+PAGE 10
+when identifying the determinants of response expenditures, until recently, high-frequency data
+on resource assignments have not been readily available.
+There is clear evidence that weather conditions and fuel moisture are important determinants
+of wildfire behavior (Finney et al. 2009, Young et al. 2019), which suggests that they influence
+response expenditures as well. Bayham et al. (2020) use high-frequency resource allocation data
+to determine whether fire managers order resources in anticipation of weather-driven wildfire
+growth events or in response to them. They find that fire managers request resources based on
+expectationsofwildfiregrowth.Theseresultssuggestthatclimate-drivenweatherconditionscon-
+ducive to wildfire that are expected to worsen in the coming decades could drive an increase in
+response expenditures.
+Fuel treatments generate benefits by reducing fire severity, increasing the probability of con-
+trolandreducingthelikelihoodthatwildfiresdamagevaluesatrisk.Fueltreatmentsareshownto
+reduce the cost of fire response and the probability of loss should a fire occur (Butry et al. 2010,
+Taylor et al. 2013). Previous wildfires also act as a form of fuel treatment, can reduce future re-
+sponse costs (Belval et al.2019,Houtman et al.2013),and may increase containment probability
+and reduce risk to firefighters (Thompson et al.2016,2017).Lastly,fuel treatments can promote
+ecosystem services that directly and indirectly impact well-being (Loomis et al.2003,Warziniack
+et al.2019b).
+4.2. Cost Drivers
+Althoughmanyfactorshaveledtorisingresponsecosts,includingachangingclimateandanaccu-
+mulationoffuels,severalfactorsinvolvehumandecisions.Inthissection,wefocusontwodrivers
+of response cost that have received attention in the economics literature: the role of threatened
+assets and growth in the wildland urban interface and resource and institutional constraints.
+4.2.1. Threatened assets. Several studies have documented the association between threat-
+ened homes or the wildland-urban interface and response expenditures (Gebert et al.2007,Gude
+etal.2013,Liangetal.2008,Yoder&Gebert2012).Thisresultcorroboratesanecdotesthatwild-
+fire management operations are more complex in areas near homes. Suppression resources may
+be assigned to protect specific assets rather than building containment lines. Clark et al. (2016)
+developed a data set on the precise location of homes in relation to fire perimeters in Wyoming,
+Montana, and Colorado to show that not just the presence of homes but their spatial configu-
+ration influences cost, suggesting that there exist economies of scale in point protection of more
+densegroupsofhomesratherthanemphasizingfireperimetercontainment.Baylis&Boomhower
+(2019) extend the approach of Clark et al. (2016) to most of the western United States by con-
+structingacomprehensivedatasetofhomelocationsandfirestoestimatethefractionofresponse
+costsattributabletohomeprotection.Plantingaetal.(2020)alsodocumenttheincreasedresponse
+costsattributabletoproximalhomes.Bayham&Yoder(2020)againfocusonresourcesratherthan
+expenditures and show that more resources are dispatched to fires that threaten more homes.As
+a corollary, they show that the additional resources sent to the fire threatening more homes lead
+to a reduction of resources dispatched to other concurrent fires.Beyond the presence and config-
+uration of homes,several studies document that response expenditures are higher in the presence
+of homes with higher market values, suggesting potential inequities of fire response (Bayham &
+Yoder 2020,Plantinga et al.2020).
+4.2.2. Resourceandinstitutionalconstraints. Responseresourcesarefiniteandoftenbecome
+scarceduringperiodsofhighwildfireactivityinthesummermonths(Belvaletal.2020).Bayham&
+388 Bayhametal.
+
+
+PAGE 11
+Yoder (2020) integrate the allocation of firefighting resources across fires and show that binding
+resource constraints do affect allocations. A fire manager facing resource constraints may alter
+strategy,impacting the likelihood of achieving objectives (e.g.,home protection).Climate change
+is expected to increase the probability of synchronous fire activity, increasing the chances that
+resourceconstraintswillbind(Abatzoglouetal.2021).Theallocationofscarceresponseresources
+is fundamentally an economics problem and is ripe for future research.
+Fire managers are humans working in an environment characterized by highly dynamic and
+changing conditions,expected to act under emergency conditions subject to a high degree of un-
+certainty about the effectiveness and risks of the choices they make. They also own neither the
+resources they are protecting nor the resources they are expending while making those decisions
+(Lueck&Yoder2015).Aseriesofstudieshaveusedqualitativeandquantitativemethodstoassess
+the influence of these human decision-making factors on response and costs (Canton-Thompson
+et al. 2008; Donovan et al. 2011; Hand et al. 2015, 2017; Rossi & Kuusela 2020; Stonesifer et al.
+2017). Hand et al. (2017) find that resource assignments dramatically vary by incident man-
+agement teams on large incidents after controlling for other known determinants, suggesting
+substantial heterogeneity in management approaches, which are influenced by risk preferences,
+socioeconomic factors, and political pressures. Donovan et al. (2011) document associations be-
+tween media attention,political pressure,and response expenditures.Rossi & Kuusela (2020) de-
+velop a theoretical model to show how sequential decision making and risk aversion can lead to
+higher response expenditures.
+4.3. Benefits of Response
+Bothcostsandbenefitsofmanagementstrategiesarenecessarytodeterminetheappropriatelevel
+ofresponse.Thebenefitsofresponseactivityaretheavoideddamagesandimpactstohumanwell-
+being.Measuring the benefits of response strategies is challenging because location-specific data
+onresponseactivityandfireprogressionhavenotbeensystematicallycollected.Nevertheless,sev-
+eral studies have developed clever strategies to analyze the benefits of response strategies (Calkin
+etal.2014b,Gannonetal.2020,Houtmanetal.2013,Olsen&Yoder2021,Plantingaetal.2020).
+Plantingaetal.(2020)andOlsen&Yoder(2021)developindirectapproachestoquantifytheben-
+efitsofresponsebycharacterizingthedifferencebetweenexpectedandobservedburnpatternsin
+proximity to homes. Where spatial data on response effort exist, several studies have developed
+techniques to measure components of the response benefits.Gannon et al.(2020) use spatial data
+on built fire lines to estimate fire line effectiveness by quantifying lines that engaged fire, held,
+and burned over.
+Katuwal et al. (2016) use daily fire progression maps and resource assignments to infer effort
+and containment effectiveness.Finney et al.(2009) quantify associations between weather condi-
+tions and periods of slow fire growth to characterize conditions under which aggressive response
+strategiesmaybemosteffective.Youngetal.(2019)extendthisframeworktoassesstheassociation
+between weather conditions and the likelihood of containment.
+Theempiricalchallengeofquantifyingresponsebenefitsliesincharacterizingthecounterfac-
+tual: What would have happened in the absence of response? Wildfire simulation models offer a
+promisingtoolforestimatingcounterfactualfirebehavior(Plantingaetal.2020usethisapproach).
+However, these models were developed as decision support tools and generally require special-
+ized software, detailed weather and topographic data, and model-specific knowledge to generate
+simulations.Moreover,these models tend to be parameterized based on historical fire footprints,
+which implicitly but not explicitly contain the effect of suppression operations on those historical
+fires.
+www.annualreviews.org  EconomicsofWildfire 389
+
+
+PAGE 12
+4.4. Institutions for Wildfire Response
+Thecomplexpublicresponseinfrastructureandorganizationdescribedearlierinthissectionhave
+beeninterpretedineconomicterms.Bradshaw&Lueck(2012)andLueck&Yoder(2015)provide
+aneconomichistoryoftheemergenceofmodernwildfireresponseintheUnitedStates.Lueck&
+Yoder(2015)suggestthatpublicresponseisfundamentallyaresponsetoadifficultcontractingand
+coordinationproblemamongpropertyownerswhofaceacommonriskofwildfireandinefficiently
+weak incentives to invest in firefighting infrastructure and effort.These and other factors such as
+the structure of information,the incidence of asset ownership,and economies of scale and scope
+may inform the structure of firefighting as a hierarchical, military-like organization. Asymmetry
+of information between the costs and benefits from risk management and firefighting activity
+itself also provides insight into the fiscal structure of wildfire management funding (Donovan &
+Brown2005,Donovanetal.2008).Therearemyriadeconomicimplicationsforwildfireresponse
+organizations.Among them is that there are weak incentives to mitigate risk before fires happen,
+andthereareweakincentivestolimitcostsoncefireshavestarted(Donovan&Brown2005,Lueck
+& Yoder 2015,Rossi & Kuusela 2020).
+5. POSTFIRE RESPONSE
+After a fire is extinguished and the so-called mop-up is complete, there are still decisions to be
+made about what follows a fire. In forest environments, salvage logging may be carried out, the
+extenttowhichdependsonthecharacteristicsofthetimberatthetimeofthefireandtheseverity
+of the fire.Prestemon & Holmes (2008) provide an overview of timber salvage economics with a
+case study of the Biscuit Fire of 2002 in Oregon. Amacher et al. (2005) develop related dynamic
+timber rotation models in which the fraction of timber salvaged is a function of stand age,plant-
+ing density,and mechanical thinning,the latter of which occurs in an environment with adjacent
+management externalities. Prestemon et al. (2006) estimate that administrative delays in salvage
+loggingonpubliclandreducedfederalsalvageloggingsalesrevenuesby25%(about$1.5million)
+between 2001 and 2002 alone.
+An important category of postfire impacts is excess erosion and sedimentation resulting from
+the soil destabilization effect of high-intensity wildfires (Robichaud & Elliot 2006).Loomis et al.
+(2003) estimate that using prescribed fire to reduce the incidence of more severe wildfires could
+reduce erosion-related public works maintenance costs by $24 million per year. A great deal of
+literature has been published on burned area treatments to reduce erosion (Shakesby et al.2016),
+but few articles have included economic analyses.
+Theextentandrateatwhichpropertiesandcommunitiesarerebuiltafterdestructionbywild-
+fires are an economic decision. Alexandre et al. (2014) found that for the coterminous United
+States between 2000 and 2005, only 25% of homes burned within fire perimeters were rebuilt
+withinfiveyears.Liao&Kousky(2022)findthatmunicipalitieswithinfireperimetersinCalifornia
+between 1990 and 2015 show increased revenues and expenditures, permanent property tax in-
+creases, and an overall negative impact on municipal budgets. Kousky (2019) examines the role
+of disaster insurance markets on economic recovery and,based on limited empirical work in this
+area,finds that insurance coverage tends to improve economic recovery outcomes.
+6. KNOWLEDGE GAPS AND FUTURE RESEARCH
+Climate change is expected to continue driving extreme fire behavior in the United States and
+around the world,and increasing development in fire-prone areas is introducing more economic
+value at risk. Complex and misaligned incentives arguably drive economically inefficient private
+390 Bayhametal.
+
+
+PAGE 13
+mitigation and wildfire response.Spatial spillovers arise because of a mosaic of private and public
+landownership.Thereexisttextbookexternalities(e.g.,smoke)thatdriveawedgebetweenprivate
+and social costs and benefits. Decisions regarding mitigation and response are dynamic, fraught
+with uncertainties,and made by different parties with misaligned incentives.These incentive and
+information problems have driven the development of complex wildfire management institutions
+that often bring with them incentive problems of their own. A challenge ahead is to design a
+wildfiremanagementsystemthatminimizestheseinefficiencies.Economicscanplayanimportant
+roleinidentifyingpriorities,focusingattentiononinefficiencies,andcanprovidepolicyguidance
+to correct them.
+6.1. Impacts
+Carefulaccountingofthecostsandbenefitsofwildlandfireisaprerequisiteforthedesignandim-
+plementation of evidence-based policy. Literature in economics and elsewhere documents many
+impacts but has yet to provide a complete accounting. We highlight a need for economic valu-
+ation of the impacts of fire on the displacement of people and migration, recreation activities,
+and ecosystem services while recognizing the challenges of incorporating these values into de-
+cision making (Venn & Calkin 2011). Data availability and disparity have posed challenges to
+researchers seeking to evaluate the impacts of wildfires on society, but data are becoming more
+comprehensive, compatible, and available. Geospatial databases now exist that contain historical
+fire perimeters, smoke plumes, environmental information, and values at risk (see Related Re-
+sources). In recent years, mobile device location data have created new possibilities for study-
+ing evacuation during fire and behavior response to smoke (Melendez et al. 2021). Innovative
+researchers are integrating wildfire data with administrative data (e.g., reserving camping spots
+online;https://www.recreation.gov) to analyze wildfire impacts at high spatial resolution across
+muchoftheUnitedStates(Gellmanetal.2022,Lee2021).Thesedatacanenableamorecompre-
+hensive accounting of wildfire impacts and can better capture important heterogeneous impacts
+and identify behavioral contributors (i.e.,vulnerable populations) to better inform policy.
+An important area for future work is on the heterogeneous impacts of wild and prescribed
+fire on vulnerable populations.Jones & Berrens (2021) provide evidence that the negative effects
+of prescribed burning smoke are more pronounced in children born to African American and
+Hispanic mothers as well as mothers under the poverty line.The authors suggest that vulnerable
+populationsmaybelessabletoundertakedefensivemeasures.O’Delletal.(2022)compareindoor
+and outdoor personal air monitor data during smoke events across several western US cities and
+find that although indoor air quality tends to be better than outdoor air quality, the difference is
+lesspronouncedinareaswithahighersocialvulnerabilityindex.Thisresultsuggeststhatsocially
+vulnerable populations may be less able to undertake defensive measures like shutting windows
+andrunningairconditioning.However,furtherresearchisneededtounderstandinequitiesinthe
+impact of wildfire and different populations’ ability to mitigate risk.
+The health impacts of short-term smoke exposure are becoming clearer, but the long-term
+impacts are more difficult to identify. There is preliminary evidence linking PM2.5 exposure to
+dementia (Bishop et al. 2018). Even monetized health effects do not represent the full economic
+cost of wildfire smoke.People invest in defensive measures to mitigate their exposure to wildfire
+smoke and may forgo activities,both of which are costs borne by society.
+As large and severe wildfires become more prevalent,postfire erosion will increasingly impact
+water quality and impose costs on water treatment facilities that will ultimately be passed on to
+consumers.While the fire ecology literature has characterized some of the impacts of wildfire on
+ecosystem service provision, there is little economic research estimating the economic costs and
+www.annualreviews.org  EconomicsofWildfire 391
+
+
+PAGE 14
+benefits of these impacts. Environmental and resource economics is well suited to address many
+of the knowledge gaps in the impacts of wildfire on society.
+6.2. Mitigation
+Our model detailed in theSupplemental Appendixand described in Section 3 highlights the
+complexityofidentifying,fullyaccountingfor,andequatingthesocialmarginalbenefitsandcosts
+of the many dimensions of wildfire management. In practice, the problem is complicated by the
+interdependence of risk across parcels, the existence and structure of property insurance, public
+land ownership, and the albeit justifiable direct involvement of the public sector in firefighting.
+Shafran(2008)showsthestrategiccomplementarityofwildfireriskmitigationonprivatelandwith
+different owners. The empirical results also suggest that private landowners adjacent to public
+lands are less likely to mitigate,but a question for public land managers is whether mitigation on
+public land induces more or less mitigation on adjacent private lands.
+Theincreasingprevalenceofdestructivefiresispromptingmanyindividualsandcommunities
+toreconsiderwildfiremitigationatmultiplescales.Moreresearchwouldimproveourunderstand-
+ing of decisions around risk mitigation at the individual and community levels. Organizations
+suchastheWildfireResearchCenterareactivelyengagedincommunitypartnershipsthatcollect
+and analyze data to provide information to the community partners and to the broader research
+community(Champetal.2021).Inaddition,federal,state,andlocalgovernmentsarerecognizing
+the need to support risk mitigation. Theory suggests that fuel treatments that mitigate risk to
+parcels with high-valued assets yield the largest benefits. Yet, many of those parcels are owned
+by private landowners. Governments can incentivize mitigation on these parcels via grants that
+reduce the cost of fuel treatment.Economics can contribute to the design of such fuel treatment
+grant programs.
+Home and other structures are often among the densest asset values at risk of wildfire, and
+their construction and spatial distribution can affect the likelihood of economic loss (Calkin et al.
+2014a).Fire-relevant building codes were developed historically with an emphasis on fires origi-
+nating within the home (Merrill 2012).However,structuraldesign and building materials affect a
+home’ssusceptibilitytoexternalfirethreats(Quarlesetal.2010).Buildingcodeshavebeenfound
+to be related to housing values (Dumm et al. 2011) and to affect other outcomes such as energy
+consumption (Kotchen 2017). Little work has focused on the relationship between fire-related
+building codes and wildfire outcomes. In a recent working paper, Baylis & Boomhower (2021)
+use data from California to infer that building codes, ostensibly prompted by a destructive 1991
+wildfire,reduced economic losses from subsequent fires.
+Insuranceisthemarketsolutiontomanyriskproblemsineconomics.Insuringagainstwildfire
+damages is extremely challenging because the risk is spatially and temporally dependent,is influ-
+enced by the government-provided response (suppression),and is subject to government regula-
+tion.Climatechangeiscreatingfurthercomplications,aspasteventsarenolongerrepresentative
+of current and future risks. California is dealing with an insurance crisis at the moment where
+most insurers have pulled out of markets with high fire risk (Flavelle 2020). When it comes to
+fire,Californiatendstoserveasthebellwether.Economicresearchoninsurancecouldyieldlarge
+gains to society as fire risks continue to grow.
+Utilities are both the recipient and the source of wildfire risk. In California, while facing the
+equivalent of strict liability for damage by wildfire due to ignitions from their infrastructure,
+PG&Ehasbeenfoundlegallyresponsibleforseverallargewildfiresandisnavigatingbankruptcy,
+and the state has mandated that PG&E maintain a wildfire mitigation plan. As part of the plan,
+PG&Eimplementspublicsafetypowershutoffsduringweathereventsthatmayleadtodamaging
+wildfire in the event of ignition. The loss of power clearly represents a cost to society and to
+392 Bayhametal.
+
+
+PAGE 15
+PG&E, but current regulations in California prevent utilities from increasing rates to cover
+risk mitigation costs (Kousky et al. 2018). Some empirical work has been done on the economic
+consequences of liability law in the context of wildfire (Yoder 2008), but more analysis could
+usefully inform the design of appropriate policies and regulatory frameworks to balance the costs
+of wildfire against the costs of mitigating risk as more regions face increasing wildfire risk in the
+United States and worldwide.
+Wildfiresmokeisoneofthemostcostlyimpactsbecauseofitspotentialtoaffectmanypeople.
+Prescribed burning also generates smoke, but recent evidence suggests that it does so at lower
+concentrations than uncontrolled wildfire (Selimovic et al. 2020). How much prescribed burn-
+ing is warranted to reduce the risk of extremely poor air quality caused by wildfire? Importantly,
+prescribedfireissubjecttoCleanAirActregulations,whileuncontrolledwildfireisnot.
+5 Further-
+more,thereisariskthatthecontrolledprescribedfireescapescontrolandbecomesawildfire.This
+is a question ripe for economic analysis.
+6.3. Response
+Wildfire response is dynamic, complex, and uncertain. The militaristic structure of the wildfire-
+fighting apparatus is remarkably effective at containing and suppressing most fire. Arguably, we
+are now victims of 100 years of their success as climate-induced aridity and changing fuel com-
+position summon fire back into many of the landscapes where it has been effectively excluded.
+These landscapes are now speckled with houses and other valued assets for which society de-
+mands protection.As wildfire response expenditures have increased,so has the attention focused
+onthedeterminantsofexpenditures.Firestatisticsreadilyprovideapictureoftotalacresburned,
+average fire size, and the costs incurred fighting these fires, but to understand the economics of
+firefighting resource allocation requires better-detailed data on resource allocation and what has
+notburnedbecauseofit.Wildfiremanagersareforward-looking,theystrivetomitigatedamageto
+valued assets,and they face little incentive to minimize expenditures.Aside froma recent internal
+study (USDA & USFS 2020), there is almost no direct evidence about the relative effectiveness
+of suppression and protection strategies. Until recently, the data to conduct effectiveness anal-
+yses have not been systematically recorded. Contemporary causal inference methods may help
+quantify the effectiveness, if not the benefits, of the wide array of response strategies currently
+used.
+The structure of resource allocation decisions under times of high fire activity and resource
+scarcityishighlycomplexandtypicallymadebyindividualsrepresentingvariouslevelsofgovern-
+ment and land management responsibilities under a Multi-Agency Coordination (MAC) system
+(Belval et al.2017).How these MAC systems assign priorities,how they evaluate resource alloca-
+tion,and the structure of the decision environment can have substantial impacts on fire manage-
+ment outcomes and costs and are areas worthy of future research.
+The wildland firefighting system is already strained, and wildfire trends suggest it will be
+strainedfurther.Firefightersworklonghoursinarduousconditionswithoutclearlydefinedlong-
+term health coverage. The USFS already faces challenges with workforce retention.
+6 Economic
+5DaysdominatedbyveryhighPM2.5attributabletoawildfireareflaggedandgenerallyexcludedwhencalcu-
+lating exceedance according to the US National Ambient Air Quality Standards (https://www.epa.gov/air-
+quality-analysis/treatment-air-quality-data-influenced-exceptional-events-homepage-exceptional).
+6Public hearings on firefighting workforce reforms have been held recently, e.g., by the Subcommit-
+tee on National Parks, Forests, and Public Lands in California: https://naturalresources.house.gov/
+hearings/wildland-firefighting-workforce-reforms.
+www.annualreviews.org  EconomicsofWildfire 393
+
+
+PAGE 16
+analysis can help identify the reasons for current retention challenges and their implications for
+agencies’ ability to respond to future demands.
+7. CONCLUSION
+Since Sparhawk’s (1925) seminal model of cost minimization for managing wildfire, economists
+have improved our understanding of the many dimensions of this complex land management
+problem. During this same period, wildfire management in the United States has undergone a
+remarkable evolution in objectives,methods,and scope,carried out in environments that are be-
+ing reshaped by demographic,biological,and climate change.
+While this review focuses on the United States, all of the biophysical and economic funda-
+mentals apply across the globe wherever wildfire occurs. As the literature highlights, the details
+relatingtofuelcharacteristics,demographics,landownershipandlanduse,andpublicandprivate
+institutionsmatterforwildfiremanagementandoutcomes.Australiaiswellknownforitsreliance
+on local volunteer bushfire brigades, a form of local collective action applied in rural areas with
+large,private landholdings.However,the inertia is shifting toward more centralized,public wild-
+firemanagement (Bennett2012,McLennan & Birch2005),facing effectively the samecategories
+ofincentiveissuesfacedintheUnitedStates,despiteaverydifferentinstitutionalhistoryandtra-
+jectory of public firefighting than the United States. Some of the largest wildfires ever recorded
+havebeeninSiberia,andestimatessuggestthatin2021,moreacrestherewereburnedbywildfires
+than the rest of the world combined (Dixon 2021), distributing smoke across the globe. In their
+analysis of the changing wildfire regime in Siberia, Kharuk et al. (2021, p. 1953) identify some
+of the same policy recommendations that have been forwarded for the United States: “Focus fire
+suppression efforts on areas of high social, natural, and economic value, while allowing a greater
+number of wildfires to burn in the vast Siberian forest landscape.” Wildfires and their smoke in
+Indonesiaarehavinganincreasingimpactonhumanhealthduetolandclearingpracticesandcli-
+matechangeandrelatedwildfireactivity,andIndonesiahasrespondedbyinstitutingfirebrigades
+in 2002 and imposing increasingly strict regulation and land management requirements among
+largelandowners(Herawati&Santoso2011).Theinstitutionalandeconomichistoryofwildfires
+and their management have counterparts throughout most of the world but vary in approachable
+ways in detail.
+As we contemplate the design of institutions and policies appropriate for twenty-first-century
+wildfire, economics can contribute in several important areas. First, empirical economists can
+leverage the great strides we have made in causal inference methods to measure the impacts of
+wildfireonsociety.Second,economistscanredoubleoureffortstounderstandthedeterminantsof
+mitigation on private lands and acceptance of it on public lands.We can use those insights to de-
+signcreativesolutionstocollectiveactionproblemsinfire-pronecommunities.Lastly,economists
+can help government agencies design more economically efficient wildfire response strategies.
+DISCLOSURE STATEMENT
+The authors are not aware of any affiliations, memberships, funding, or financial holdings that
+might be perceived as affecting the objectivity of this review.
+ACKNOWLEDGMENTS
+J.B.acknowledgessupportfromUSDepartmentofAgriculture(USDA)ForestServiceChallenge
+CostAgreements21-CS-11221636-151and21-CS-11221636-129.Thefindingsandconclusions
+inthisreportarethoseoftheauthor(s)andshouldnotbeconstruedtorepresentanyofficialUSDA
+or US Government determination or policy.
+394 Bayhametal.
+
+
+PAGE 17
+LITERATURE CITED
+AbatzoglouJT,JuangCS,WilliamsAP,KoldenCA,WesterlingAL.2021.Increasingsynchronousfiredanger
+in forests of the western United States.Geophys.Res.Lett. 48(2):e2020GL091377
+Abatzoglou JT, Williams AP. 2016. Impact of anthropogenic climate change on wildfire across western US
+forests.PNAS113(42):11770–75
+Abt KL, Prestemon JP, Gebert K. 2008. Forecasting wildfire suppression expenditures for the United States
+Forest Service.See Holmes et al.2008,pp.341–60
+Abt KL, Prestemon JP, Gebert KM. 2009. Wildfire suppression cost forecasts for the US Forest Service.
+J.For.107(4):173–78
+AlexandrePM,MockrinMH,StewartSI,HammerRB,Radeloff VC,etal.2014.Rebuildingandnewhousing
+development after wildfire.Int.J.WildlandFire 24(1):138–49
+AlexandrePM,StewartSI,KeulerNS,ClaytonMK,MockrinMH,etal.2016.Factorsrelatedtobuildingloss
+due to wildfires in the conterminous United States.Ecol.Appl. 26(7):2323–38
+Amacher GS, Malik AS, Haight RG. 2005. Not getting burned: the importance of fire prevention in forest
+management.LandEcon.81(2):284–302
+Arab A, Khodaei A, Eskandarpour R, Thompson MP, Wei Y. 2021. Three lines of defense for wildfire risk
+management in electric power grids: a review.IEEEAccess 9:61577–93
+Bayham J, Belval EJ, Thompson MP, Dunn C, Stonesifer CS, Calkin DE. 2020. Weather, risk, and resource
+orders on large wildland fires in the western US.Forests11(2):169
+Bayham J,Yoder JK.2020.Resource allocation under fire.LandEcon.96(1):92–110
+BaylisP,BoomhowerJ.2019. Moralhazard,wildfires,andtheeconomicincidenceofnaturaldisasters .NBERWork.
+Pap.26550
+Baylis PW, Boomhower J. 2021.Mandated vs.voluntary adaptation to natural disasters: the case of U.S.wildfires.
+NBER Work.Pap.29621
+BEA(Bur.Econ.Anal.).2020. Outdoorrecreationsatelliteaccount,U.S.andstates,2019.NewsRelease20–56,Nov.
+10,Bur.Econ.Anal.,Suitland,MD. https://www.bea.gov/news/2020/outdoor-recreation-satellite-
+account-us-and-states-2019
+BelvalEJ,O’ConnorCD,ThompsonMP,HandMS.2019.Theroleofpreviousfiresinthemanagementand
+expenditures of subsequent large wildfires.Fire2(4):57
+Belval EJ, Stonesifer CS, Calkin DE. 2020. Fire suppression resource scarcity: current metrics and future
+performance indicators.Forests11(2):217
+BelvalEJ,WeiY,CalkinDE,StonesiferCS,ThompsonMP,TiptonJR.2017.Studyinginterregionalwildland
+fire engine assignments for large fire suppression.Int.J.WildlandFire 26:642–53
+BennettJ.2012.PrivateandpublicprovisionoffirefightingservicesinruralAustralia.SeeBradshaw&Lueck
+2012,pp.142–57
+Bishop KC,Ketcham JD,Kuminoff NV.2018.Hazedandconfused:theeffectofairpollutionondementia.NBER
+Work.Pap.24970
+Borgschulte M,Molitor D,Zou E.2020.Airpollutionandthelabormarket:evidencefromwildfiresmoke .W ork.
+Pap.,Dep.Econ.,Univ.Ill.,Urbana-Champaign
+Bradshaw KM,Lueck D,eds.2012. WildfirePolicy:LawandEconomicsPerspectives .New York: RFF Press
+Brenkert-Smith H, Champ PA, Flores N. 2006. Insights into wildfire mitigation decisions among wildland-
+urban interface residents.Soc.Nat.Resourc. 19(8):759–68
+Brenkert-SmithH,ChampPA,FloresN.2012.Tryingnottogetburned:understandinghomeowners’wildfire
+risk-mitigation behaviors.Environ.Manag. 50(6):1139–51
+Burke M,Driscoll A,Heft-Neal S,Xue J,Burney J,Wara M.2021.The changing risk and burden of wildfire
+in the United States.PNAS118(2):e2011048118
+Burkhardt J, Bayham J, Wilson A, Berman JD, O’Dell K, et al. 2020. The relationship between monthly air
+pollution and violent crime across the United States.J.Environ.Econ.Policy 9(2):188–205
+BurkhardtJ,BayhamJ,WilsonA,CarterE,BermanJD,etal.2019.Theeffectofpollutiononcrime:evidence
+from data on particulate matter and ozone.J.Environ.Econ.Manag. 98:102267
+BusbyG,AmacherGS,HaightRG.2013.Thesocialcostsofhomeownerdecisionsinfire-pronecommunities:
+Information,insurance,and amenities. Ecol.Econ. 92:104–13
+www.annualreviews.org  EconomicsofWildfire 395
+
+
+PAGE 18
+Busby GM, Albers HJ, Montgomery CA. 2012. Wildfire risk management in a landscape with fragmented
+ownership and spatial interactions.LandEcon.88(3):496–517
+Butry DT, Prestemon JP, Abt KL, Sutphen R, Butry DT, et al. 2010. Economic optimisation of wildfire
+intervention activities.Int.J.WildlandFire 19(5):659–72
+Caggiano MD, Hawbaker TJ, Gannon BM, Hoffman CM. 2020. Building loss in WUI disasters: evaluating
+the core components of the wildland-urban interface definition.Fire3(4):73
+CalkinD,GebertK.2006.ModelingfueltreatmentcostsonforestservicelandsinthewesternUnitedStates.
+WesternJ.Appl.For. 21(4):217–21
+CalkinDE,CohenJD,FinneyMA,ThompsonMP.2014a.Howriskmanagementcanpreventfuturewildfire
+disasters in the wildland-urban interface.PNAS111(2):746–51
+Calkin DE, Gebert KM, Jones JG, Neilson RP. 2005. Forest Service large fire area burned and suppression
+expenditure trends,1970–2002.J.For.103(4):179–83
+Calkin DE, Stonesifer CS, Thompson MP, McHugh CW. 2014b. Large airtanker use and outcomes in
+suppressing wildland fires in the United States.Int.J.WildlandFire 23(2):259–71
+Canton-Thompson J,Gebert KM,Thompson B,Jones G,Calkin D,Donovan G.2008.External human fac-
+torsinincidentmanagementteamdecisionmakingandtheireffectonlargefiresuppressionexpenditures.
+J.For.106(8):416–24
+Champ P, Barth C, Brenkert-Smith H, Falk L, Gomez J, Meldrum J. 2021. Putting people first: using so-
+cial science to reduce risk.Wildfire Mag. https://www.iawfonline.org/article/putting-people-first-
+using-social-science-to-reduce-risk/
+Champ PA, Donovan GH, Barth CM. 2009. Homebuyers and wildfire risk: a Colorado Springs case study.
+Soc.Nat.Resourc. 23(1):58–70
+Champ PA, Donovan GH, Barth CM. 2013. Living in a tinderbox: wildfire risk perceptions and mitigating
+behaviours.Int.J.WildlandFire 22(6):832–40
+Clark AM, Rashford BS, McLeod DM, Lieske SN, Coupal RH, Albeke SE. 2016. The impact of residential
+development pattern on wildland fire suppression expenditures.LandEcon.92(4):656–78
+Currie J, Graff Zivin J, Mullins J, Neidell M. 2014. What do we know about short- and long-term effects of
+early-life exposure to pollution?Annu.Rev.Resour.Econ. 6:217–47
+Davis R. 2021. Colorado awarding $6.4M in grants for wildfire mitigation.Coloradopolitics.com, Aug. 17.
+https://www.coloradopolitics.com/energy-and-environment/colorado-awarding-6-4m-in-
+grants-for-wildfire-mitigation/article_a31055ee-ffa2-11eb-86b1-27c65aa7c6db.html
+Dixon L, Tsang F, Fitts G. 2018.TheimpactofchangingwildfireriskonCalifornia’sresidentialinsurancemarket.
+Rep. CNRA-CCC4A-2018, August, Calif. Nat. Resour. Agency, Sacramento.https://www.rand.org/
+pubs/external_publications/EP67670.html
+Dixon R.2021.Siberia’s wildfires are bigger than all the world’s other blazes combined.WashingtonPost,Aug.
+11.https://www.washingtonpost.com/world/2021/08/11/siberia-fires-russia-climate/
+DonovanGH,BrownTC.2005.Analternativeincentivestructureforwildfiremanagementonnationalforest
+land.For. Sci.51(5):387–95
+DonovanGH,BrownTC,DaleL.2008.IncentivesandwildfiremanagementintheUnitedStates.SeeHolmes
+et al.2008,pp.323–40
+Donovan GH, Champ PA, Butry DT. 2007. Wildfire risk and housing prices: a case study from Colorado
+Springs.LandEcon.83(2):217–33
+Donovan GH, Prestemon JP, Gebert K. 2011. The effect of newspaper coverage and political pressure on
+wildfire suppression costs.Soc.Nat.Resourc. 24(8):785–98
+Dumm RE,Sirmans GS,Smersh G.2011.The capitalization of building codes in house prices.J.RealEstate
+FinanceEcon. 42(1):30–50
+Egan T.2010.TheBigBurn:TeddyRooseveltandtheFireThatSavedAmerica .Boston,MA: Mariner Books
+Englin J, Holmes TP, Lutz J. 2008. Wildfire and the economic value of wilderness recreation. See Holmes
+et al.2008,pp.191–208
+Englin J,Loomis J,González-Cabán A.2001.The dynamic path of recreational values following a forest fire:
+a comparative analysis of states in the Intermountain West.Can.J.For.Res. 31(10):1837–44
+396 Bayhametal.
+
+
+PAGE 19
+EPA (US Environ. Prot. Agency). 2021.Comparative AssessmentoftheImpactsofPrescribedFire VersusWildfire
+(CAIF):acasestudyintheWesternU.S .Rep.EPA/600/R-21/197,USEnviron.Prot.Agency,Washington,
+DC
+FinneyM,GrenfellIC,McHughCW.2009.Modelingcontainmentoflargewildfiresusinggeneralizedlinear
+mixed-model analysis.For. Sci.55(3):249–55
+Fischer AP,Kline JD,Ager AA,Charnley S, Olsen KA,et al. 2013.Objective and perceived wildfire risk and
+its influence on private forest landowners’ fuel reduction activities in Oregon’s (USA) ponderosa pine
+ecoregion.Int.J.WildlandFire 23(1):143–53
+Flavelle C.2020.Wildfires hasten another climate crisis: homeowners who can’t get insurance.TheNewYork
+Times,Sep.2. https://www.nytimes.com/2020/09/02/climate/wildfires-insurance.html
+Florec V,Burton M,Pannell D,Kelso J,Milne G,et al.2019.Where to prescribe burn: the costs and benefits
+of prescribed burning close to houses.Int.J.WildlandFire 29(5):440–58
+Gannon BM, Thompson MP, Deming KZ, Bayham J, Wei Y, O’Connor CD. 2020. A geospatial framework
+to assess fireline effectiveness for large wildfires in the western USA.Fire3(3):43
+GannonBM,WeiY,MacDonaldLH,KampfSK,JonesKW,etal.2019.Prioritisingfuelsreductionforwater
+supply protection.Int.J.WildlandFire 28(10):785–803
+GebertKM,CalkinDE,YoderJ.2007.Estimatingsuppressionexpendituresforindividuallargewildlandfires.
+W esternJ.Appl.F or .22(3):188–96
+GellmanJ,WallsM,WibbenmeyerMJ.2022.Wildfire,smoke,and outdoorrecreation in thewestern United
+States.For.PolicyEcon. 134:102619
+Gude PH, Jones K, Rasker R, Greenwood MC, Gude PH, et al. 2013. Evidence for the effect of homes on
+wildfire suppression costs.Int.J.WildlandFire 22(4):537–48
+Halbritter A, Deegen P, Susaeta A. 2020. An economic analysis of thinnings and rotation lengths in the
+presence of natural risks in even-aged forest stands.For.PolicyEcon.118:102223
+Hand M,Katuwal H,Calkin DE,Thompson MP.2017.The influence of incident management teams on the
+deployment of wildfire suppression resources.Int.J.WildlandFire 26:615–29
+HandMS,GebertKM,LiangJ,CalkinDE,ThompsonMP,ZhouM.2014. EconomicsofWildfireManagement:
+TheDevelopmentandApplicationofSuppressionExpenditureModels .New York: Springer
+HandMS,ThompsonMP,CalkinDE.2016.Examiningheterogeneityandwildfiremanagementexpenditures
+using spatially and temporally descriptive data.J.For.Econ. 22:80–102
+Hand MS,Wibbenmeyer MJ,Calkin DE,ThompsonMP.2015.Riskpreferences,probabilityweighting,and
+strategy tradeoffs in wildfire management.RiskAnal .35(10):1876–91
+HerawatiH,SantosoH.2011.Tropicalforestsusceptibilitytoandriskoffireunderchangingclimate:areview
+of fire nature,policy and institutions in Indonesia.For.PolicyEcon.13(4):227–33
+Hesseln H.2000.The economics of prescribed burning: a research review.For. Sci.46(3):322–34
+HesselnH,LoomisJB,González-CabánA.2004.TheeffectsoffireonrecreationdemandinMontana. Western
+J.Appl.For. 19(1):47–53
+Hesseln H,Loomis JB,González-Cabán A,Alexander S.2003.Wildfire effects on hiking and biking demand
+in New Mexico: a travel cost study.J.Environ.Manag. 69(4):359–68
+HjerpeE,KimY-S,DunnL.2016.Forestdensitypreferencesofhomebuyersinthewildland-urbaninterface.
+For.PolicyEcon.70:56–66
+Hohner AK, Rhoades CC, Wilkerson P, Rosario-Ortiz FL. 2019. Wildfires alter forest watersheds and
+threaten drinking water quality.Acc.Chem.Res. 52(5):1234–44
+Holmes TP,Huggett RJ,Westerling AL.2008a.Statistical analysis of large wildfires.See Holmes et al.2008,
+pp.59–77
+Holmes TP, Prestemon JP, Abt KL, eds. 2008b.The Economics of Forest Disturbances: Wildfires, Storms, and
+InvasiveSpecies.Dordrecht,Neth.: Springer
+Houtman RM,Montgomery CA,Gagnon AR,Calkin DE,Dietterich TG,et al.2013.Allowing a wildfire to
+burn: estimating the effect on future fire suppression costs.Int.J.WildlandFire 22(7):871–82
+Johnston FH,Borchers-Arriagada N,Morgan GG,Jalaludin B,Palmer AJ,et al.2021.Unprecedented health
+costs of smoke-related PM2.5 from the 2019–20 Australian megafires.Nat.Sustain. 4(1):42–47
+JonesBA.2017.Areweunderestimatingtheeconomiccostsofwildfiresmoke?Aninvestigationusingthelife
+satisfaction approach.J.For.Econ. 27:80–90
+www.annualreviews.org  EconomicsofWildfire 397
+
+
+PAGE 20
+Jones BA.2018.Willingness to pay estimates for wildfire smoke health impacts in the US using the life satis-
+faction approach.J.Environ.Econ.Policy 7(4):403–19
+Jones BA, Berrens RP. 2021. Prescribed burns, smoke exposure, and infant health.Contemp. Econ. Policy
+39(2):292–309
+Jones KW, Cannon JB, Saavedra FA, Kampf SK, Addington RN, et al. 2017. Return on investment from
+fuel treatments to reduce severe wildfire and erosion in a watershed investment program in Colorado.
+J.Environ.Manag. 198(Part 2):66–77
+Katuwal H,Calkin DE,Hand MS.2016.Production and efficiency of large wildland fire suppression effort: a
+stochastic frontier analysis.J.Environ.Manag. 166:227–36
+KavalP,LoomisJ,SeidlA.2007.Willingness-to-payforprescribedfireintheColorado(USA)wildlandurban
+interface.For.PolicyEcon.9(8):928–37
+Kharuk VI,Ponomarev EI,Ivanova GA,Dvinskaya ML,Coogan SCP,Flannigan MD.2021.Wildfires in the
+Siberian taiga.Ambio 50(11):1953–74
+Kochi I, Champ PA, Loomis JB, Donovan GH. 2016. Valuing morbidity effects of wildfire smoke exposure
+from the 2007 Southern California wildfires.J.For.Econ. 25:29–54
+Konoshima M, Montgomery CA, Albers HJ, Arthur JL. 2008. Spatial-endogenous fire risk and efficient fuel
+management and timber harvest.LandEcon.84(3):449–68
+Kotchen MJ. 2017. Longer-run evidence on whether building energy codes reduce residential energy
+consumption.J.Assoc.Environ.Resour.Econ. 4(1):135–53
+KouskyC.2019.Theroleofnaturaldisasterinsuranceinrecoveryandriskreduction. Annu.Rev.Resour.Econ.
+11:399–418
+Kousky C, Greig K, Lingle B, Kunreuther K. 2018.Wildfire cost in California: the role of electric utilities. Issue
+Brief,August,Wharton Risk Manag.Decis.Process.Cent.,Univ.Penn.
+KouskyC,OlmsteadSM.2010. Induceddevelopmentinriskylocations:firesuppressionandlanduseintheAmerican
+West.Work.Pap.,Resour.Fut.,Washington,DC
+Kousky C, Olmstead S, Sedjo R. 2012. In harm’s way: homeowner behavior and wildland fire policy. See
+Bradshaw & Lueck 2012,pp.178–99
+Langpap C,Wu JJ.2021.Preemptive incentives and liability rules for wildfire risk management.Am.J.Agric.
+Econ.103(5):1783–1801
+Lauer CJ, Montgomery CA, Dietterich TG, Lauer CJ, Montgomery CA, Dietterich TG. 2020. Evaluating
+wildland fire liability standards—does regulation incentivise good management?Int. J. Wildland Fire
+29(7):572–80
+Lee M.2021.Burnscarsandburnts’mores:theimpactofwildfireoncampingdemandintheyearsafterafireoccurs.
+Master’s Thesis,Colo.State Univ.,Fort Collins
+Liang J, Calkin DE, Gebert KM, Venn TJ, Silverstein RP. 2008. Factors influencing large wildland fire
+suppression expenditures.Int.J.WildlandFire 17(5):650–59
+Liao Y,Kousky C.2022.The fiscal impacts of wildfires on California municipalities.J.Assoc.Environ.Resour.
+Econ.9(3).https://doi.org/10.1086/717492
+LoomisJ.2004.Donearbyforestfirescauseareductioninresidentialpropertyvalues? J.For.Econ. 10(3):149–
+57
+Loomis J, Wohlgemuth P, González-Cabán A, English D. 2003. Economic benefits of reducing fire-related
+sediment in southwestern fire-prone ecosystems.WaterResourc.Res. 39(9):1260
+LoomisJB,BairLS,González-CabánA.2001.Prescribedfireandpublicsupport:knowledgegained,attitudes
+changed in Florida.J.For.99(11):18–22
+LoomisJB,González-CabánA.1998.Awillingness-to-payfunctionforprotectingacresofspottedowlhabitat
+from fire.Ecol.Econ. 25(3):315–22
+Loomis JB,González-Cabán A.2008.Contingent valuation of fuel hazard reduction treatments.See Holmes
+et al.2008,pp.229–43
+Lueck D, Yoder J. 2015. The economic foundations of firefighting organizations and institutions.J. For.
+113(3):291–97
+Manisalidis I, Stavropoulou E, Stavropoulos A, Bezirtzoglou E. 2020. Environmental and health impacts of
+air pollution: a review.Front.PublicHealth 8:14
+398 Bayhametal.
+
+
+PAGE 21
+Martin WE,Martin IM,Kent B.2009.The role of risk perceptions in the risk mitigation process: the case of
+wildfire in high risk communities.J.Environ.Manag. 91(2):489–98
+McCaffreyS,WilsonR,KonarA.2018.ShouldIstayorshouldIgonow?OrshouldIwaitandsee?Influences
+on wildfire evacuation decisions.RiskAnal .38(7):1390–404
+McCoy SJ,Walsh RP.2018.Wildfire risk,salience & housing demand.J.Environ.Econ.Manag. 91:203–28
+McFarlane BL, McGee TK, Faulkner H. 2011. Complexity of homeowner wildfire risk mitigation: an inte-
+gration of hazard theories.Int.J.WildlandFire 20(8):921–31
+McLennan J,Birch A.2005.A potentialcrisis inwildfire emergencyresponsecapability?Australia’s volunteer
+firefighters.Glob.Environ.ChangeBEnviron.Hazards 6(2):101–7
+McNeill IM, Dunlop PD, Skinner TC, Morrison DL, McNeill IM, et al. 2016. A value- and expectancy-
+based approach to understanding residents’ intended response to a wildfire threat.Int.J.Wildland Fire
+25(4):378–89
+Meldrum JR,Brenkert-Smith H,Champ PA,Gomez J,Byerly H,et al.2021.Would you like to know more?
+The effect of personalized wildfire risk information and social comparisons on information-seeking
+behavior in the wildland-urban interface.Nat.Hazards 106(3):2139–61
+MeldrumJR,Brenkert-SmithH,ChampP,GomezJ,FalkL,BarthC.2019.Interactionsbetweenresidentrisk
+perceptions and wildfire risk mitigation: evidence from simultaneous equations modeling.Fire2(3):46
+Meldrum JR, Champ PA, Warziniack T, Brenkert-Smith H, Barth CM, et al. 2014. Cost shared wildfire risk
+mitigation in Log Hill Mesa, Colorado: survey evidence on participation and willingness to pay.Int.
+J.WildlandFire 23(4):567–76
+Melendez B,Ghanipoor Machiani S,Nara A.2021.Modelling traffic during Lilac Wildfire evacuation using
+cellular data.Transp.Res.Interdiscip.Perspect. 9:100335
+Mercer DE, Haight RG, Prestemon JP. 2008. Analyzing trade-offs between fuels management, suppression,
+and damages from wildfire.See Holmes et al.2008,pp.247–72
+Merrill TW.2012.Property and fire.See Bradshaw & Lueck 2012,pp.32–49
+Miller N,Molitor D,Zou E.2021.Acausalconcentration-responsefunctionforairpollution:evidencefromwildfire
+smoke.Work.Pap.,Coll.Bus.,Univ.Ill.,Urbana-Champaign
+Milne M,Clayton H,Dovers S,Cary GJ.2014.Evaluating benefits and costs of wildland fires: critical review
+and future applications.Environ.Hazards 13(2):114–32
+Moeltner K, Kim M-K, Zhu E, Yang W. 2013. Wildfire smoke and health impacts: a closer look at fire
+attributes and their marginal effects.J.Environ.Econ.Manag. 66(3):476–96
+Mozumder P, Raheem N, Talberth J, Berrens RP. 2008. Investigating intended evacuation from wildfires in
+the wildland-urban interface: application of a bivariate probit model.For.PolicyEcon.10(6):415–23
+MuellerJ,LoomisJ,González-CabánA.2009.Dorepeatedwildfireschangehomebuyers’demandforhomes
+in high-risk areas? A hedonic analysis of the short and long-term effects of repeated wildfires on house
+prices in Southern California.J.RealEstateFinanceEcon. 38(2):155–72
+MuellerJM,LoomisJB.2014.Doestheestimatedimpactofwildfiresvarywiththehousingpricedistribution?
+A quantile regression approach.LandUsePolicy 41:121–27
+NOAA(Natl.Ocean.Atmos.Assoc.).2021. Billion-dollarweatherandclimatedisasters2021 .Natl.Cent.Environ.
+Inf.,Natl.Ocean.Atmos.Assoc.,Washington,DC. https://www.ncdc.noaa.gov/billions/
+O’Dell K, Bilsback K, Ford B, Martenies SE, Magzamen S, et al. 2021. Estimated mortality and mor-
+bidity attributable to smoke plumes in the United States: not just a western US problem.GeoHealth
+5(9):e2021GH000457
+O’DellK,FordB,BurkhardtJ,AnenbergS,BayhamJ,etal.2022. Influenceofwildfiresmokeonindoorairquality
+inseveralwesternUScities .Presented at the Fall Meeting of the American Geophysical Union,Chicago,
+Dec.12–16
+Olsen J, Yoder J. 2021.Homesashavens:thespatialrelationshipbetweenhomesandareasburnedbywildfires .P r e -
+sented at the 2021 Western Economics Association International Annual Conference,Virtual,June 27–
+July 1.https://pages.uoregon.edu/cameron/AERE-WEAI-2021/p_Olsen.pdf
+Omi PN.2015.Theory and practice of wildland fuels management.Curr. For. Rep.1(2):100–117
+Pausas JG,Keeley JE.2019.Wildfires as an ecosystem service.Front.Ecol.Environ. 17(5):289–95
+PaveglioT,Prato T,Dalenberg D,Venn T.2014.Understanding evacuationpreferences and wildfire mitiga-
+tions among Northwest Montana residents.Int.J.WildlandFire. 23(3):435–44
+www.annualreviews.org  EconomicsofWildfire 399
+
+
+PAGE 22
+Plantinga AJ,Walsh R,Wibbenmeyer M.2020.Prioritiesandeffectivenessinwildfiremanagement:evidencefrom
+firespreadinthewesternUnitedStates .RFF Work.Pap.20–21,Resour.Fut.,Washinton,DC
+Prestemon JP,Holmes TP.2008.Timber salvage economics.See Holmes et al.2008,pp.167–90
+Prestemon JP,Wear DN,Stewart FJ,Holmes TP.2006.Wildfire,timber salvage,and the economics of expe-
+diency.For.PolicyEcon.8(3):312–22
+Pyne SJ. 1998. Forged in fire: history, land, and anthropogenic fire. InAdvances in Historical Ecology,e d .W
+Balée,pp.64–103.New York: Columbia Univ.Press
+Pyne SJ.2017.FireinAmerica:ACulturalHistoryofWildlandandRuralFire.Seattle: Univ.Wash.Press
+Quarles SL, Valachovic Y, Nakamura GM, Nader GA, de Lasaux MJ. 2010.Home survival in wildfire-prone
+areas:buildingmaterialsanddesignconsiderations .Agric.Nat.Resour.Publ.8393,Univ.Calif.,Davis
+Radeloff VC, Helmers DP, Kramer HA, Mockrin MH, Alexandre PM, et al. 2018. Rapid growth of the US
+wildland-urban interface raises wildfire risk.PNAS115(13):3314–19
+Reed WJ. 1984. The effects of the risk of fire on the optimal rotation of a forest.J. Environ. Econ. Manag.
+11(2):180–90
+Richardson L,Loomis JB, Champ PA.2013.Valuing morbidity from wildfire smoke exposure: a comparison
+of revealed and stated preference techniques.LandEcon.89(1):76–100
+Robichaud PR,Elliot WJ.2006.ProtectionfromErosionFollowingWildfire.St.Joseph,MI: ASABE
+Rossi D, Kuusela O-P. 2020. The influence of risk attitudes on suppression spending and on wildland fire
+program budgeting.For.PolicyEcon.113:102087
+Selimovic V, Yokelson RJ, McMeeking GR, Coefield S. 2020. Aerosol mass and optical properties, smoke
+influence on O3,and high NO3 production rates in a western U.S.city impacted by wildfires.J.Geophys.
+Res.Atmos. 125(16):e2020JD032791
+Shafran AP.2008.Risk externalities and the problem of wildfire risk.J.UrbanEcon. 64(2):488–95
+Shakesby RA,Moody JA,Martin DA,Robichaud PR.2016.Synthesising empirical results to improve predic-
+tions of post-wildfire runoff and erosion response.Int.J.WildlandFire 25(3):257–61
+Sparhawk WN.1925.Use of liability ratings in forest protection.J.Agric.Res. 30(8):693–792
+Stetler KM, Venn TJ, Calkin DE. 2010. The effects of wildfire and environmental amenities on property
+values in northwest Montana,USA.Ecol.Econ.69(11):2233–43
+StonesiferCS,CalkinDE,HandMS.2017.Federalfiremanagers’perceptionsoftheimportance,scarcityand
+substitutability of suppression resources.Int.J.WildlandFire 26(7):598–603
+Sun C. 2006. State statutory reforms and retention of prescribed fire liability laws on U.S. forest land.For.
+PolicyEcon.9(4):392–402
+Talberth J, Berrens RP, Mckee M, Jones M. 2006. Averting and insurance decisions in the wildland-urban
+interface: implications of survey and experimental data for wildfire risk reduction policy.Contemp.Econ.
+Policy24(2):203–23
+TannerS,LupiF,GarnacheC.2019. EstimatingtheimpactoffiresonrecreationintheAngelesNationalForestusing
+combinedrevealedandstatedpreferencemethods .Presented at the 2019 Annual Meeting of the Agricultural
+and Applied Economics Association,Atlanta,July 21–23
+Taylor MH. 2019. Mitigating wildfire risk on private property with spatial dependencies.Strateg. Behav.
+Environ.8(1):1–31
+Taylor MH, Rollins K, Kobayashi M, Tausch RJ. 2013. The economics of fuel management: Wildfire, inva-
+sive plants, and the dynamics of sagebrush rangelands in the western United States.J.Environ.Manag.
+126:157–73
+ThompsonMP,FreebornP,RieckJD,CalkinDE,Gilbertson-DayJW,etal.2016.Quantifyingtheinfluence
+of previously burned areas on suppression effectiveness and avoided exposure: a case study of the Las
+Conchas Fire.Int.J.WildlandFire 25(2):167–81
+ThompsonMP,RileyKL,LoefflerD,HaasJR.2017.Modelingfueltreatmentleverage:encounterrates,risk
+reduction,and suppression cost impacts.Forests8(12):469
+Toledo D,Kreuter UP,Sorice MG,Taylor CA.2014.The role of prescribed burn associations in the applica-
+tion of prescribed fires in rangeland ecosystems.J.Environ.Manag. 132:323–28
+Toledo T, Marom I, Grimberg E, Bekhor S. 2018. Analysis of evacuation behavior in a wildfire event.Int.
+J.DisasterRiskReduct. 31:1366–73
+400 Bayhametal.
+
+
+PAGE 23
+Troy A.2007.A tale of two policies: California programs that unintentionally promote development in wild-
+land fire hazard zones.InLivingontheEdge,Vol.6,ed.A Troy,RG Kennedy,pp.127–40.Bradford,UK:
+Emerald Group Publ.
+USDA (US Dep. Agric.), USFS (US For. Serv.). 2020.Aerial Firefighting Use and Effectiveness (AFUE) report.
+Rep., US Dep. Agric., US For. Serv., March, Washington, DC.https://www.fs.usda.gov/managing-
+land/fire/aviation/afue
+Venn TJ, Calkin DE. 2011. Accommodating non-market values in evaluation of wildfire management in the
+United States: challenges and opportunities.Int.J.WildlandFire 20(3):327–39
+Warziniack T, Champ P, Meldrum J, Brenkert-Smith H, Barth CM, Falk LC. 2019a. Responding to risky
+neighbors: testing for spatial spillover effects for defensible space in a fire-prone WUI community.
+Environ.Resour.Econ. 73(4):1023–47
+Warziniack T, Sims C, Haas J. 2019b.Fire and the joint production of ecosystem services: a spatial-dynamic
+optimization approach.For.PolicyEcon.107:101926
+WarziniackT,ThompsonM.2013.Wildfireriskandoptimalinvestmentsinwatershedprotection. West.Econ.
+Forum12(2):19–28
+WeiYW,RideoutDR,KirschAK.2008.Anoptimizationmodelforlocatingfueltreatmentsacrossalandscape
+to reduce expected fire losses.Can.J.For.Res. 38(4).https://doi.org/10.1139/X07-162
+Wibbenmeyer M,Anderson SE,Plantinga AJ.2019.Salience and the government provision of public goods.
+Econ.Inq. 57(3):1547–67
+WoltersEA,SteelBS,WestonD,BrunsonM.2017.DeterminantsofresidentialFirewisebehaviorsinCentral
+Oregon.Soc.Sci.J. 54(2):168–78
+Wong SD,Chorus CG,Shaheen SA,Walker JL.2020.A revealed preference methodology to evaluate regret
+minimization with challenging choice sets: a wildfire evacuation case study.Travel Behav. Soc.20:331–47
+Yoder J.2004.Playing with fire: endogenous risk in resource management.Am.J.Agric.Econ. 86(4):933–48
+YoderJ.2008.Liability,regulation,andendogenousrisk:theincidenceandseverityofescapedprescribedfires
+in the United States.J.LawEcon. 51(2):297–325
+Yoder J. 2012. Fuel for the fire: liability and the economics of wildfire risk. See Bradshaw & Lueck 2012,
+pp.50–70
+Yoder J, Gebert K. 2012. An econometric model for ex ante prediction of wildfire suppression costs.J. For.
+Econ.18(1):76–89
+YoderJ,TilleyM,EngleD,FuhlendorfS.2003.EconomicsandprescribedfirelawintheUnitedStates. Appl.
+Econ.Perspect.Pol. 25(1):218–33
+YoungJD,ThodeAE,HuangC-H,AgerAA,FuléPZ.2019.Strategicapplicationofwildlandfiresuppression
+in the southwestern United States.J.Environ.Manag. 245:504–18
+RELATED RESOURCES
+Fire Perimeters:https://www.mtbs.gov/.,Monitors trends in burn severity
+National Wildfire Coordinating Group:https://maps.nwcg.gov/
+Environmental:LANDFIRE( https://landfire.gov/).Sourceofnationalgeospatiallayers,databases,andeco-
+logical models
+gridMET:http://www.climatologylab.org/gridmet.html. Data set of daily high-spatial-resolution surface
+meteorological data in the United States
+Values at Risk:https://github.com/microsoft/USBuildingFootprints. Microsoft building footprints data
+sets in the United States
+LandScan: https://landscan.ornl.gov/.Human geography foundation population data sets
+Housing Transaction Data: http://silvis.forest.wisc.edu/maps-data/. Spatial analysis data sets on the
+wildland-urban interface from the Silvis Lab at the University of Wisconsin–Madison
+Wildfire Risk to Communities:https://wildfirerisk.org/.Website with interactive maps and resources from
+the US Forest Service
+www.annualreviews.org  EconomicsofWildfire 401

@@ -1,0 +1,1763 @@
+__________________________________________________________________________________
+
+__________________________________________________________________________________
+
+This manuscript is a preprint and will be shortly submitted for publication to a scientific journal. As a
+function of the peer-reviewing process that this manuscript will undergo, its structure and content may
+change.
+
+If accepted, the final version of this manuscript will be available via the ‘Peer-reviewed Publication
+DOI’ link on the right-hand side of this webpage. Please feel free to contact any of the authors; we
+welcome feedback.
+
+__________________________________________________________________________________
+
+__________________________________________________________________________________
+1      Space-time data-driven modeling of wildfire initiation in
+2       the mountainous region of Trentino–South Tyrol, Italy
+3    Mateo Moreno1* , Stefan Steger2 , Laura Bozzoli3, 4 , Stefano Terzi3 , Andrea Trucchia5 , Cees
+4                               van Westen1 and Luigi Lombardo1
+
+
+5                                                Abstract
+6    Wildfires are complex hazards occurring worldwide, leading to substantial economic
+7    losses, fatalities, and carbon emissions. The interplay of climate change, land use alter-
+8    ations, and socioeconomic pressures is expected to further increase the frequency and
+9    intensity of wildfires. In this context, developing reliable, dynamic prediction tools is es-
+10   sential for risk mitigation. This work presents a spatiotemporal wildfire prediction model
+11   for the Trentino-South Tyrol region (13,600 km2 ) in the northeastern Italian Alps. Leverag-
+12   ing generalized additive models, we integrate multitemporal wildfire records (2000–2023)
+13   with static and dynamic environmental controls (e.g., topography, land cover, daily pre-
+14   cipitation, and temperature). The resulting model predictions change dynamically over
+15   space and time in response to static features, seasonal trends, and evolving meteorolog-
+16   ical conditions. Model outputs were evaluated using established performance metrics,
+17   enabling the derivation of dynamic spatial wildfire probability thresholds. These thresh-
+18   olds are illustrated for varying amounts of precipitation, temperature, and different com-
+19   binations of static factors. Validation through multiple perspectives yielded performance
+20   scores generally exceeding 0.8, confirming the model strong generalization and transfer-
+21   ability. To demonstrate the practical application, the model was used to hindcast past
+22   wildfire initiation between 1–15 July 2022–a period marked by elevated wildfire activity.
+23   By integrating static and dynamic environmental controls, this research advances the spa-
+24   tiotemporal prediction of wildfires in complex alpine regions, supporting the develop-
+25   ment of early warning systems.
+
+
+
+
+26   Keywords: Early warning; Space-time modeling; GAMs; Dynamic wildfire forecasting;
+27   Wildfire ignition
+       1
+         University of Twente, Enschede, The Netherlands
+       2
+         GeoSphere Austria, Vienna, Austria
+       3
+         Eurac Research, Bolzano, Italy
+       4
+         University of Trento, Trento, Italy
+       5
+         CIMA Research Foundation, Savona, Italy
+
+
+                                                       1
+28   1    Introduction
+29   Wildfires are frequent hazards posing significant threats to society and the environment.
+30   On average, an estimated 350 Mha burns globally each year (Giglio et al., 2013). The
+31   economic toll of wildfires is severe, with global wildfire-related losses amounting to ap-
+32   proximately USD$142 billion since 2000, as reported by the international disaster database
+33   (EM-DAT; Jones et al., 2022). Some of the most devastating wildfires in recent history in-
+34   clude the events in Australia, the United States, and Chile (Filkov et al., 2020; Maranghides
+35   et al., 2023; Guerrero et al., 2024). Beyond their immediate economic and societal con-
+36   sequences, wildfires are a major source of carbon emissions, releasing an estimated 2–3
+37   billion tons of CO2 annually, at times surpassing 50% of emissions from fossil fuel com-
+38   bustion (Jolly et al., 2015; van der Werf et al., 2017). Their impacts manifest across multiple
+39   scales as locally, wildfires disrupt ecosystems, threaten human settlements, and damage
+40   infrastructure (Driscoll et al., 2024); regionally, they accelerate soil erosion, reducing agri-
+41   cultural productivity (Keeley et al., 2017); and globally, their carbon emissions contribute
+42   to climate change, potentially amplifying future wildfire risk (Zscheischler et al., 2018).
+43   Given the severe impacts of wildfires, there is an increasing need to minimize their harm
+44   and, as such, the ability to ensure operational preparedness. In this context, reliable wild-
+45   fire predictions and developing wildfire early warning systems (WEWS) are essential for
+46   reducing wildfire impacts and improving response efforts.
+47       Wildfires occur when an ignition source interacts with available fuel under suitable
+48   weather conditions, with subsequent behavior often influenced by terrain. Like other nat-
+49   ural hazards, wildfires are governed by multiple controls across various spatiotemporal
+50   scales. At the smallest scale, fire behavior is commonly described by the “fire triangle”
+51   concept (Countryman, 1972; Pyne et al., 1996), identifying heat, fuel, and oxygen as the
+52   three fundamental components necessary for combustion. At the scale of a single wildfire,
+53   its occurrence and propagation are driven by a complex interplay of static and dynamic
+54   environmental controls (Moritz et al., 2005). Static factors such as the topography, hydro-
+55   climatic predisposition, and vegetation (fuel type) can determine whether an area is prone
+56   to wildfires or the “where” (Faivre et al., 2014). In contrast, the timing, or the “when”, is
+57   governed by dynamic controls such as air temperature, precipitation, fuel moisture, and
+58   anthropogenic influences—including arson or accidental ignitions—which directly affect
+59   ignition likelihood and fire spread (Bessie et al., 1995; Ganteaume et al., 2013). Therefore,
+60   assessing “where” and “when” wildfires may occur requires a comprehensive evaluation
+61   of static and dynamic factors influencing wildfire behavior (Finney, 2005; Koutsias et al.,
+62   2015).
+63       In this context, data-driven models are widely used to assess wildfire occurrence over
+64   large areas (Martínez et al., 2009; Cao et al., 2013; Ghorbanzadeh et al., 2019; Tonini et al.,
+65   2020; Bjånes et al., 2021; Trucchia et al., 2022b; Yue et al., 2023). Despite its widespread use
+66   in fire prediction, the concept of susceptibility has been defined in various ways (Verde
+67   et al., 2010; Cao et al., 2017; Leuenberger et al., 2018). In this contribution, we adopt a
+68   definition analogous to that used for landslides and in agreement with Leuenberger et al.
+69   (2018), describing wildfire susceptibility as the likelihood of a fire occurring within a given
+70   spatial unit (e.g., grid cells, catchments, administrative units) based on local predispos-
+71   ing factors. In other words, it predicts “where” wildfires will likely occur (Brabb, 1984;
+
+                                                    2
+72    Guzzetti et al., 2005). In a purely spatial context, data-driven models derive statistical re-
+73    lationships between historical records of wildfire occurrence, i.e., wildfire inventories, as
+74    static environmental factors to estimate wildfire susceptibility (Arndt et al., 2013; Oliveira
+75    et al., 2012; Trucchia et al., 2022a; Zhang et al., 2021). Placing the spotlight on the spa-
+76    tial domain, wildfire susceptibility assessments provide valuable insights to support fire
+77    management, whether as standalone analyses or as part of broader risk assessment frame-
+78    works and spatial planning strategies (Oliveira et al., 2021; Jappiot et al., 2009; Chuvieco
+79    et al., 2010; Sebastián-López et al., 2008). Nevertheless, these approaches often disregard
+80    the temporal component, excluding the assessment of critical meteorological conditions
+81    that influence wildfire occurrence.
+82        The temporal component of wildfire prediction is usually assessed through dynamic
+83    factors, primarily focusing on daily variations in meteorological conditions, which form
+84    the foundation of traditional WEWS (Chuvieco et al., 2010) and serve as tools for defin-
+85    ing local fuel treatments, surveillance, and suppression activities (Ager et al., 2010; Scott
+86    et al., 2012; Oliveira et al., 2021). Numerous largely empirical wildfire danger indices,
+87    also called fire danger rating systems, are used worldwide. A comprehensive literature
+88    review of these index-based rating systems is beyond the scope of this contribution and
+89    can be found in Viegas et al. (1999); Chuvieco et al. (2003); Arpaci et al. (2013); Giuseppe
+90    et al. (2016); Pérez-Sánchez et al. (2017); Sirca et al. (2018); Pagnon Eriksson et al. (2023).
+91    Wildfire danger indices empirically quantify the relative wildfire danger in a given area
+92    based on meteorological conditions. Notable examples include the Canadian fire weather
+93    index (FWI; Wagner et al., 1987), which relies on meteorological input data—wind speed,
+94    air temperature, relative humidity, and precipitation—to assess daily wildfire danger. Al-
+95    though initially developed for pine fuel types prevalent in Canadian forests, the FWI has
+96    been extensively tested worldwide (Kudláčková et al., 2024). Similarly, the McArthur’s
+97    forest danger index (FDI; Noble et al., 1980; Hollis et al., 2024) was developed to evaluate
+98    wildfire danger and behavior in Australian eucalyptus forests, incorporating fuel avail-
+99    ability implicitly through atmospheric conditions. Another example is the Italian index
+100   IREPI (Bovio et al., 1984), designed to assess wildfire danger during the winter–spring
+101   season in northwestern Italy, which accounts for soil water loss due to evapotranspiration
+102   derived from the multiple meteorological input data. Despite the utility of this fire danger
+103   system and its spatially explicit features, these rating systems often overlook factors such
+104   as intrinsic terrain characteristics, seasonality, and human influences, both of which are
+105   critical in wildfire ignition and propagation (Chuvieco et al., 2010).
+106       The integration of the spatial and temporal components for wildfire prediction in large
+107   areas remains challenging. However, existing studies underscore its considerable poten-
+108   tial. For instance, de Santana et al. (2021) modeled the occurrence of wildfires over a 19-
+109   year period by integrating static and dynamic predictors aggregated on an annual scale,
+110   generating independent susceptibility maps for each year. In Verde et al. (2010); Parente
+111   et al. (2016); Oliveira et al. (2021), the wildfire hazard was estimated by combining the
+112   static wildfire susceptibility with a probabilistic assessment of wildfire recurrence, based
+113   on projected future burned areas within each mapping unit. Bergonse et al. (2021) in-
+114   tegrated wildfire susceptibility with a meteorological index representing spring condi-
+115   tions, enabling predictions for any given year before the critical fire season. Conversely,
+116   Deng et al. (2023) used a deep learning approach to predict daily wildfire ignition scores
+
+                                                    3
+117   by integrating dynamic weather predictors—such as temperature, rainfall, humidity, and
+118   wind—with static factors. Richards et al. (2023) leveraged a spatiotemporal interpretable
+119   neural network to model both wildfire ignition and spread, incorporating both static and
+120   dynamic factors at a monthly resolution over the period 2001–2020. Woolford et al. (2011)
+121   employed generalized additive models (GAMs) to predict wildfire occurrence during the
+122   active fire season over a 24-year period, integrating both static and dynamic factors. Their
+123   study emphasized the high interpretability of the chosen approach and the influence of
+124   anthropogenic predictors, such as population density and proximity to infrastructure.
+125       In the Alpine context, wildfires pose a significant threat to mountain forests and their
+126   protective function against other natural hazards such as rockfalls, avalanches, mudflows,
+127   increased run-off, and soil erosion (Maringer et al., 2016; Martin et al., 2001; Robichaud
+128   et al., 2006). The region is characterized by two main fire seasons: an early spring peak in
+129   March or April, driven by frost-induced dryness, and a summer peak in July and August
+130   due to high temperatures (Müller et al., 2020a). To support wildfire assessment and forest
+131   protection, multiple WEWS have been developed across different Alpine countries. For in-
+132   stance, the European forest fire information system (EFFIS; Giuseppe et al., 2016) provides
+133   large-scale fire danger assessments at a spatial resolution of 8×8 km, but its applicability
+134   in complex Alpine terrain is limited. National-level models, such as the one in Austria,
+135   achieve resolutions of 1×1 km using meteorological inputs from weather forecasting sys-
+136   tems like INCA (Haiden et al., 2011), although a more recent prototype was developed,
+137   achieving a spatial resolution of 100×100 m (Müller et al., 2020b). Despite these efforts,
+138   wildfires in the Alps remain a significant challenge. In Italy, the average Alpine wildfire
+139   covers about one hectare, but 10% of the fires exceed 10 ha, accounting for 85% of the total
+140   burned area (Müller et al., 2020a). Human activities are the primary cause of ignitions,
+141   responsible for about 90% of ignitions, though lightning-induced fires can contribute up
+142   to 50% of ignitions in some areas during the summer season (Müller et al., 2013). Ad-
+143   vancements in WEWS have brought improvements, yet the spatial resolution of existing
+144   models might be insufficient to capture the complex interactions between wildfire behav-
+145   ior and the heterogeneous Alpine topography, including narrow valleys, mountain peaks,
+146   high-altitude plateaus, and their effects on weather controls (Carrega, 1995; Schunk et al.,
+147   2013; Müller et al., 2020b). As wildfire frequency and severity are expected to rise, there
+148   is a growing need for high-resolution fire prediction models that integrate both static and
+149   dynamic factors to enhance preparedness and mitigation strategies (Chuvieco et al., 2010;
+150   Wastl et al., 2012).
+151       This study investigates space-time wildfire initiation modeling by adapting a previ-
+152   ously developed framework devised for the assessment of mass movement hazards in an
+153   Alpine region of northern Italy (Steger et al., 2023; Moreno et al., 2024; Steger et al., 2024;
+154   Moreno et al., 2025). Following a similar modeling approach, we aim to integrate static
+155   and dynamic wildfire controls using data-driven techniques to estimate wildfire initiation
+156   probabilities in space and time. Furthermore, we aim to enhance the applicability of the
+157   model by linking the predicted probabilities to quantitative thresholds. These analyses
+158   are performed for the region of Trentino–South Tyrol (Italy), covering a period of 24 years
+159   (2000–2023).
+160       The remainder of this paper is structured as follows: Section 2 describes the study area
+161   and its environmental characteristics. Section 3 introduces the wildfire historical records
+
+                                                    4
+162   and the different static and dynamic factors used in the modeling. Section 4 details the
+163   methods, including the sampling procedure, data extraction, modeling with GAMs, vali-
+164   dation strategies, and the thresholding approach. Section 5 presents the key results, em-
+165   phasizing data sampling, model interpretation, and application. Ultimately, Sections 6
+166   and 7 discuss the findings and conclude with an outlook on future research directions.
+
+
+167   2    Study area
+168   Our study area (shown in Figure 1) corresponds to the upper Adige River Basin, encom-
+169   passing the region of Trentino-South Tyrol in the northeastern Italian Alps, covering an
+170   area of about 13,600 km2 . Its diversified landscape and climatic conditions characterize
+171   the region. The mountainous topography is dominated by pronounced variations in eleva-
+172   tion, ranging between ∼65 m a.s.l. (above sea level) in the southernmost part of the region,
+173   close to Lake Garda to ∼3900 m a.s.l. at the Ortles peak in the northwest. Due to phys-
+174   iographical features, Trentino-South Tyrol is highly prone to various mountain-related
+175   natural hazards, including avalanches, rockfalls, and mudflows. Due to the proximity of
+176   human settlements to the steep Alpine terrain, a significant portion of the infrastructure
+177   is exposed to these processes.
+178       The interaction of humid air masses from the northwest Atlantic, warm Mediterranean
+179   influences, and dry continental air from the east shapes the regional climate. This intersec-
+180   tion gives rise to a pronounced seasonal cycle characterized by warm and humid summers
+181   and cold and dry winters (Norbiato et al., 2009; Adler et al., 2015). The complex interplay
+182   of topography and diverse atmospheric conditions of the region determines the strong
+183   seasonality and spatial variations in precipitation and temperature. The annual precipita-
+184   tion sum varies significantly across the region, ranging from ∼500 mm in the northwestern
+185   rain-shaded inner valleys to over 1,700 mm in the southeastern parts, maintaining a spa-
+186   tial average over the study area of about 1000 mm. Similarly, mean annual temperature
+187   varies substantially, from approximately +14∘ C in the Garda Valley to around −11∘ C at
+188   the Ortles peak, with an overall regional average of about +5∘ C. The annual cycles of pre-
+189   cipitation and temperature are characterized by the warmest and wettest conditions dur-
+190   ing summer (July–August) and the coldest and driest conditions towards the late winter
+191   (January–February). The most significant warming and precipitation increase occurs to-
+192   wards spring (April–May; Crespi et al., 2021).
+193       The land cover in the region is predominantly forest (∼45%), primarily consisting of
+194   coniferous trees located on hillsides. Herbaceous vegetation and heathland account for
+195   ∼35%, while cultivated land, mainly concentrated in the valley bottoms, represents ∼8%.
+196   The remaining land cover includes mostly rocky outcrops, water bodies, permanent snow-
+197   covered surfaces, and urban areas.
+
+
+
+
+                                                   5
+198   3     Data
+199   3.1    Wildfire database
+200   The wildfire inventory for the region was obtained from the Forestry Service Department
+201   (Abteilung Forstdienst/Ripartizione Servizio Forestale) of South Tyrol and the Forestry
+202   and Wildlife Service of Trentino (Servizio Foreste e Fauna). The databases were accessed
+203   in early 2024; the former was directly provided by the office in charge, and the latter can
+204   be accessed at https://siat.provincia.tn.it/geonetwork/srv/ita/catalog.
+
+
+
+
+      Figure 1: Study area showing the spatial distribution of wildfire centroids (n = 998) across the Trentino–
+      South Tyrol region, with symbol size and color representing the respective burned area for each event.
+      Basemap imagery courtesy of Earthstar Geographics.
+
+
+
+                                                          6
+205       The wildfire inventory of South Tyrol is divided into two periods: records from 1999
+206   to 2017 and those from 2017 onward. This distinction reflects changes in mapping tech-
+207   niques, as polygonal representations of burned areas were introduced only after 2017. Be-
+208   fore this, fire locations were recorded as points, presumably indicating a location within
+209   the affected area. The dataset includes 608 wildfire events with attributes such as date and
+210   time of occurrence, duration, total burned area, and causes.
+211       Similarly, the wildfire inventory of Trentino is structured into two periods: records
+212   from 1966 to 1983 and those from 1984 onward. The earlier dataset comprises 1,062 events,
+213   where only the burned area polygons were documented, without associated timestamps
+214   and other relevant attributes. From 1984 onward, the dataset includes 3,134 wildfire
+215   events, with temporal resolution improving over time. While timestamps were recorded
+216   at the yearly level until 2007, only 507 events after 2007 include precise day-of-occurrence
+217   information, leaving 2,627 with year-only time stamps. The recorded attributes in this
+218   dataset include the occurrence time (with varying temporal resolution), total burned area,
+219   and forested burned area.
+220       Since the main objective of this study is to predict wildfire occurrence in space and
+221   time, the analyses focus on wildfire events for which occurrence dates are available. Only
+222   these events were extracted from the inventories to ensure the desired temporal resolution
+223   in the modeling. Further details on this methodical step are provided in Section 4.1.
+
+224   3.2   Environmental factors
+225   Static factors
+226   Identifying wildfire-prone areas using data-driven approaches relies on analyzing spatial
+227   environmental factors observed at locations with and without wildfire occurrences. The
+228   choice of predictors was guided by the numerous contributions that have explored the
+229   influence of different static factors and their role in wildfire modeling (Ganteaume et al.,
+230   2013; Jain et al., 2020). For this case study, we prioritized predictors that offer meaningful
+231   insights into wildfire occurrence.
+232       We used the NASADEM (NASA JPL, 2020) to derive standard morphological factors
+233   such as slope steepness, which may facilitate fire spread (Chuvieco et al., 2010), and as-
+234   pect—decomposed into the components eastness and northness—to capture variations in
+235   solar exposure and moisture retention (Müller et al., 2020b). A proxy for vegetation and
+236   fuel types was represented using data extracted from the CORINE land cover and high-
+237   resolution map of Europe 2017 (Malinowski et al., 2020). The data were subsequently
+238   reclassified into eight categories: (i) artificial surfaces, (ii) agricultural land, (iii) broadleaf
+239   tree cover, (iv) coniferous tree cover, (v) herbaceous vegetation and heathland, (vi) marshes and
+240   peatbogs, (vii) natural material surfaces, and (viii) permanent snow-covered surfaces and water
+241   bodies. To further characterize vegetation within forested areas and measure forest struc-
+242   ture, we utilized the tree cover density dataset extracted from European Union’s Copernicus
+243   Land Monitoring Service information (2020). Climatic predisposition predictors, includ-
+244   ing total annual precipitation and mean annual temperature, averaged over a 30-year period
+245   from 1981 to 2010, were also tested to characterize the regional climate and its influence on
+246   wildfire occurrence (Crespi et al., 2020). Finally, to account for the anthropogenic compo-
+247   nent and infrastructure, buildings and roads were extracted from OpenStreetMap (OSM;
+
+                                                       7
+248   OpenStreetMap contributors, 2017). The Euclidean distance to buildings and roads were
+249   then computed to incorporate their effects on wildfire modeling. All the environmental
+250   factors were resampled to a 50 m spatial resolution for modeling purposes.
+
+251   Dynamic factors–gridded precipitation and temperature fields
+252   We used the high-resolution gridded daily temperature and precipitation dataset for
+253   Trentino–South Tyrol provided in Crespi et al. (2021). The dataset was built upon a dense
+254   network of over 200 meteorological stations, ensuring comprehensive coverage across the
+255   study area. Initially, the data processing involved multiple methodical steps, including
+256   quality and consistency checks, homogeneity tests, and gap-filling techniques to maxi-
+257   mize data completeness. Using the processed database, an anomaly-based interpolation
+258   scheme was applied to project the daily fields of precipitation and mean temperature onto
+259   a grid of 250 m resolution. The accuracy, estimated via leave-one-out cross-validation,
+260   yielded a mean absolute error (MAE) of 1.1 mm for precipitation and 1.5∘ C for mean tem-
+261   perature, averaged across all stations and months. For each day, the dataset provides the
+262   total precipitation accumulated over 24 hours, from 08:00 UTC of the previous day to 08:00
+263   UTC of the observation day, and the daily mean temperature is defined as the average of
+264   the daily maximum and minimum temperature.
+
+
+265   4    Method
+266   The method implemented in this research extends a data-driven framework initially de-
+267   vised for the assessment of mass movement hazards (Steger et al., 2023; Moreno et al., 2024;
+268   Steger et al., 2024; Moreno et al., 2025), adapting it to integrate static and dynamic wildfire
+269   controls for estimating wildfire occurrence probabilities in space and time. The workflow
+270   comprises five main steps: (i) filtering and sampling rulesets. Since our model is based on
+271   binary data, we first need to define our target variable: the areas with wildfire occurrence
+272   or wildfire presences and those without or wildfire absences. First, we defined the wild-
+273   fire presences by combining the different wildfire databases and filtering the individual
+274   records based on the inventory attributes. This is followed by the definition of wildfire ab-
+275   sences, where we applied a strategic sampling procedure to define wildfire absences, con-
+276   sidering both spatial and temporal aspects. The subsequent (ii) data extraction–precipitation
+277   and temperature time windows phase retrieves static and dynamic predictors, with dynamic
+278   predictors grouped into time windows. In (iii) modeling and grid search, we implement a
+279   binomial GAM to perform a grid search and select the optimal combination of cumulative
+280   precipitation and temperature to describe wildfire occurrence, which is then integrated
+281   with static predictors to fit the final spatiotemporal model. (iv) Model evaluation follows,
+282   incorporating plausibility checks and cross-validation routines from multiple perspectives
+283   to assess predictive performance. Finally, the predictions are linked to quantitative met-
+284   rics, facilitating (v) visualization and thresholding, with a hindcasting example provided to
+285   demonstrate model applicability.
+
+
+
+
+                                                    8
+286   4.1   Filtering and sampling rulesets
+287   Wildfire presences
+288   The four wildfire inventories—two from South Tyrol and two from Trentino—were pre-
+289   processed before being integrated into a single dataset. For South Tyrol, we used only the
+290   point-based wildfire records. These records initially spanned the period from 1999 to 2017
+291   but remained consistently available through 2023. Although polygon-based records were
+292   available after 2017, they were excluded while point-based records were retained to ensure
+293   spatial consistency, as comparisons between points and polygons did not always follow a
+294   clear pattern. Since our analysis period starts in the year 2000, any events occurring before
+295   this year were removed, resulting in the filtered wildfire dataset for South Tyrol.
+296       Since our model aims to predict wildfire occurrence on a daily scale, only wildfire
+297   records with an associated daily timestamp were considered. In the case of Trentino, this
+298   requirement led to the selection of the inventory covering the period from 1984 onward,
+299   while records from earlier periods, without any timestamp, were excluded. Addition-
+300   ally, wildfire events lacking a recorded day of occurrence (i.e., those before 2007) were re-
+301   moved. To ensure a uniform spatial representation across the inventories in South Tyrol
+302   and Trentino, wildfire occurrences in Trentino were represented as point centroids of their
+303   respective burned area polygons.
+304       The two inventories were merged into a single dataset, forming the preliminary wild-
+305   fire sample. Events with a burned area smaller than 10 m2 were filtered out to ensure data
+306   reliability, resulting in a final dataset for the subsequent analysis. Finally, for data extrac-
+307   tion, we consider a buffer of 50 m around each point to enhance the spatial representative-
+308   ness of each wildfire point.
+
+309   Wildfire absences
+310   Selecting wildfire absence data is just as crucial as the wildfire presence filtering. However,
+311   defining the absences poses a greater challenge, as it requires identifying not only loca-
+312   tion but time periods where wildfires are unlikely to have occurred. The sampling strategy
+313   is essential in shaping the model structure and is directly reflected in the modeling out-
+314   comes. Therefore, ensuring a well-balanced representation across spatial and temporal
+315   domains is essential to prevent wrongly estimated model relationships and potentially
+316   biased predictions. To this aim, we considered several rules, including (i) masking out
+317   trivial terrains, (ii) implementing temporal buffers, (iii) balancing samples across years
+318   and months, and (iv) masking out trivial periods that are detailed below.
+319       Trivial terrains are locations where wildfire initiation is not expected. In our analy-
+320   sis, we defined these areas based on the available fuel that can be accounted for using
+321   the land cover map. In this way, the classes referring to artificial surfaces, natural material
+322   surfaces (e.g., bare rock, sand), and permanent snow-covered areas and water bodies were ex-
+323   cluded from the spatial domain as there is no fuel to be potentially burned. This resulted
+324   in a mask being used to sample space wildfire absence locations. Notably, no recorded
+325   wildfire events were located within trivial terrains.
+326       Wildfire absences were sampled under two different schemes, including the sampling
+327   of wildfire absences at presence locations and the sampling of wildfire absences at absence
+328   locations. For the first scheme, wildfire absences at presence locations were generated by
+
+                                                     9
+329   replicating records from the filtered wildfire inventory and assigning a random observa-
+330   tion date within the period of analysis, i.e., 01-01-2000 to 31-12-2023. To ensure that the
+331   selected dates were temporally meaningful, a temporal buffer was applied to avoid select-
+332   ing dates within five years of the respective wildfire occurrence. This step aimed to allow
+333   sufficient time for vegetation (fuel) recovery before it may be subject to wildfire occur-
+334   rence, as supported in Sass et al. (2017), Bowd et al. (2021), and Mantero et al. (2023). A
+335   30-day temporal buffer was also introduced to avoid overlapping meteorological informa-
+336   tion when extracting the dynamic predictors, as explained in Section 4.2.
+337        For the second scheme, wildfire absences at absence locations were generated by ran-
+338   domly sampling absence locations, excluding the trivial terrains and the areas that had
+339   been burned before, according to the filtered inventory. Once absence locations were iden-
+340   tified, they were replicated and assigned a random observation date for the specified anal-
+341   ysis period (01-01-2000 to 31-12-2023). Similar to the first scheme, the date selection was
+342   constrained by a 30-day temporal buffer to avoid overlapping meteorological data.
+343        The preliminary wildfire absence subset was formed by combining the wildfire ab-
+344   sences at presence locations and those at absence locations. Subsequently, the absence
+345   subset was further refined by balancing the observation dates across the different years
+346   and months to achieve a uniform temporal representation. The results of this step were
+347   combined with the wildfire presences to obtain the modeling sample, which was subjected
+348   to a final filtering step to account for trivial periods, as described in Section 4.2.
+
+349   4.2   Data extraction–precipitation and temperature time windows
+350   The static predictors were extracted to the modeling sample using the datasets described in
+351   Section 3. Additionally, predictors regarding the occurrence date, specifically year, month,
+352   and day of the year (doy) were derived from the assigned observed date in the modeling
+353   sample. Data extraction was performed for the meteorological predictors such as precip-
+354   itation and temperature by linking each sample location and date to the high-resolution
+355   gridded dataset from Crespi et al. (2021). Both predictors were retrieved up to 30 days
+356   before the assigned observation date. Similar to trivial terrains, we defined trivial periods
+357   based on a precipitation threshold so that observations with precipitation amounts ≥1.1
+358   mm on the day of observation were excluded from the analysis. This filtering step was
+359   necessary because including large amounts of “wet” days—presumably with no wildfire
+360   occurrence—into the binary classification model would result in the model simply learn-
+361   ing the difference between “dry” and “wet” conditions. Hence, we applied the precipi-
+362   tation threshold to explicitly keep the modeling target to predict wildfire occurrence in
+363   “dry” periods.
+364       Finally, the precipitation and temperature predictors were structured into multiple
+365   time windows for analysis. The predictor P represents the cumulative precipitation within
+366   a given time window, while Te corresponds to the mean daily temperature over the same
+367   period. As an analogy to what was described in Steger et al. (2023), P aims to represent
+368   the medium-term preparatory precipitation, which can be seen as a proxy for the surface
+369   moisture conditions, whereas Te can be seen as the short-term temperature. This approach
+370   enabled a systematic evaluation of how the combination of different antecedent precipi-
+371   tation and temperature influences wildfire occurrence.
+
+                                                   10
+372   4.3   Modeling using GAMs and grid search
+373   Theoretical background
+374   Generalized additive models are semi-parametric regression models that extend general-
+375   ized linear models (GLMs) by incorporating additive smooth functions to capture nonlin-
+376   ear relationships between predictor variables and the response (Wood, 2006; Bolker et al.,
+377   2009; Zuur et al., 2009). In this study, the binary response variable, representing wildfire
+378   presence or absence, follows a Bernoulli probability distribution and can be generically
+379   expressed as:
+
+                             logit(𝑝𝑖 ) = 𝛽0 + 𝑓1 (𝑥1𝑖 ) + 𝑓2 (𝑥2𝑖 ) + ⋯ + 𝑓𝑛 (𝑥𝑛𝑖 )                 (1)
+380       Where 𝑓1 , 𝑓2 and 𝑓𝑛 are smooth functions to model the nonlinear effects on each of the
+381   predictors 𝑥1𝑖 , 𝑥2𝑖 , and 𝑥3𝑖 . A logistic link function is applied to relate 𝑝𝑖 to the effects of
+382   the predictor variables. Due to their high interpretability and flexibility—often described
+383   in the literature as white-box models—GAMs have been extensively used across various
+384   disciplines, including natural hazard modeling (Woolford et al., 2011; Pourtaghi et al.,
+385   2016; Ríos-Pena et al., 2017; Lombardo et al., 2020; Eskandari et al., 2021; Opitz et al., 2022;
+386   Moreno et al., 2023; Alvioli et al., 2024).
+
+387   Grid search and model fit
+388   In this contribution, GAMs were applied in two distinct phases: (i) to identify the optimal
+389   time windows P and Te that best describe wildfire initiation, and (ii) to integrate static
+390   factors with the identified best P and Te windows to estimate wildfire probabilities in space
+391   and time. The analyses were conducted using the comprehensive R package mgcv (version
+392   1.9-1; Wood, 2017).
+393       The selection of optimal time windows for P and Te was conducted through a system-
+394   atic grid search. This procedure involved a pairwise comparison of different P and Te time
+395   window combinations using a binomial GAM. This model was fitted to the previously de-
+396   fined modeling sample, as explained in 4.1, incorporating iteratively the different combi-
+397   nations of P and Te, and the doy as predictors. The grid search evaluated 30 time windows
+398   for P and 10 for Te, resulting in 300 unique combinations. Each combination underwent a
+399   10-fold random cross-validation with 10 repetitions to ensure robustness, yielding 300,000
+400   iterations. The performance of the model was recorded for each iteration—based on well-
+401   known performance metrics addressed in Section 4.4—allowing for a systematic compar-
+402   ison to identify the optimal pair of time windows that best describe wildfire initiation.
+403       The selected optimal time windows P and Te were integrated with the static predictors
+404   to develop the spatiotemporal wildfire initiation model. The model fitting process was it-
+405   erative, starting with a simple baseline configuration and progressively incorporating ad-
+406   ditional predictors. Each newly introduced predictor was assessed by visually inspecting
+407   partial effect plots and formally inspecting p-values, confidence intervals, and the overall
+408   model fitting performance. Once the final model fit was obtained, the relative contribution
+409   of each predictor was evaluated using a permutation-based variable importance analysis.
+410   This assessment indicates how much each predictor contributes to the model by randomly
+411   permuting its values and measuring the resulting change in the model prediction error.
+
+
+                                                       11
+412   Specifically, the analysis was based on the deviance explained—a widely used measure
+413   of goodness of fit derived from the likelihood function. The importance of each predictor
+414   was quantified by comparing the deviance explained by the final model fit against a series
+415   of models, each with a single predictor permuted. These permutations disrupt the origi-
+416   nal relationship between the predictor and the response; therefore, a greater reduction in
+417   the deviance explained indicates a more substantial contribution of each permuted predic-
+418   tor (Schlögl et al., 2025). In this study, permutation feature importance was summarized
+419   using the mean and standard deviation to quantify both the average effect and the associ-
+420   ated uncertainty. For the interpretation and plausibility of the model relationships, partial
+421   effect plots were generated, illustrating how individual predictors influence wildfire oc-
+422   currence probabilities while holding all other predictors constant at their average values.
+423   Additionally, interaction effects between predictors were visualized using contour plots,
+424   providing further insights into the complex relationships governing wildfire dynamics.
+
+425   4.4   Model evaluation
+426   For a comprehensive evaluation of the model performance, we leveraged multiple vali-
+427   dation strategies using the R package sperrorest (version 3.0.5; Brenning, 2012). The as-
+428   sessment included k-fold random cross-validation (RCV), k-fold spatial cross-validation
+429   (SCV), temporal cross-validation (TCV) based on years and months, and leave-one-factor-
+430   out cross-validation (FCV) using the land cover data. These approaches ensured a robust
+431   model generalization and transferability assessment across different spatial, temporal, and
+432   environmental conditions.
+433       Random cross-validation was implemented by partitioning the dataset into indepen-
+434   dent training and testing sets. We applied a ten-fold RCV with ten repetitions, result-
+435   ing in 100 iterations (Brenning, 2012). While RCV provides a general measure of model
+436   predictive performance, it may overlook spatial heterogeneity, potentially leading to over-
+437   optimistic results if the model performs inconsistently across different subregions. To ad-
+438   dress this, we incorporated SCV, which estimates the spatial transferability of the model
+439   by evaluating its performance in spatially distinct partitions. The spatial partitioning was
+440   achieved using a k-means clustering approach, ensuring alignment with the ten-fold, ten-
+441   repetition setup used in RCV.
+442       To further assess model generalization and transferability, we applied TCV and FCV.
+443   The former was conducted by iteratively excluding wildfire observations from either
+444   one month (leave-one-month-out) or one year (leave-one-year-out) and then evaluating
+445   model predictions on the omitted data. This approach allowed us to test how well the
+446   model performs when transferred to unseen time periods at the scale of years and months.
+447   Similarly, FCV was performed using the five nontrivial land cover classes—agricultural
+448   land, broadleaf tree cover, coniferous tree cover, herbaceous vegetation, and heathland, and marshes
+449   and peatbogs— to define independent training and testing datasets, ensuring that the model
+450   performance was not overly dependent on specific land cover conditions.
+451       The model performance for each validation approach was quantified using the area
+452   under the receiver operating characteristic curve (AUROC) computed for independent
+453   testing sets. The ROC curve represents the classifier performance across varying cut-off
+454   thresholds, with AUROCS values ranging from 0.5, i.e., random classification to 1, i.e.,
+
+                                                      12
+455   perfect discrimination (Hosmer et al., 2013). Higher AUROC values indicated stronger
+456   performance, providing an objective measure to compare different validation strategies
+457   and assess the model robustness across spatial, temporal, and land cover variations.
+
+
+458   4.5   Thresholding and visualization
+459   In this research, we adapted an extension of empirical rainfall thresholds–—traditionally
+460   employed in landslide early warning systems(Brunetti et al., 2010)—–to wildfire predic-
+461   tion. Conventional landslides thresholds operate on the premise that slope failures be-
+462   come probable when specific rainfall parameters exceed critical values. Recent advance-
+463   ments in Steger et al. (2024) showed that spatial dynamic landslide probability thresholds
+464   can be derived by incorporating both dynamic meteorological controls and static terrain
+465   conditions. Building upon this methodological framework, we developed analogous spa-
+466   tially explicit thresholds for wildfire prediction, enabling the reclassification of dynamic
+467   probability maps to directly visualize threshold exceedance patterns across varying spa-
+468   tiotemporal contexts.
+469       In our wildfire analysis, we employ heatmap visualizations to represent wildfire proba-
+470   bility scores for increasing amounts of the meteorological predictors P and Te. To enhance
+471   the practical application of this results, we established three distinct threshold derived
+472   from the ROC curve, transforming the continuous probability scores (0–1) into meaning-
+473   ful discrete classes. These thresholds represent specific combinations between correctly
+474   classified wildfires (true positive rate or sensitivity; TPR) and wrongly classified absences
+475   (false alarms or false positive rate; FPR), thereby providing a more nuanced categoriza-
+476   tions of wildfire likelihood. The TPR95 threshold establishes a high sensitivity benchmark,
+477   ensuring that 95% of observed wildfires occur in areas and periods exceeding this prob-
+478   ability value. While this threshold effectively captures most wildfire-prone conditions, it
+479   comes at the expense of generating a high proportion of false alarms. On the other hand,
+480   the TPR35 threshold implements a more stringent criterion, identifying only 35% of wild-
+481   fire occurrences. This higher-probability threshold substantially reduces false alarms but
+482   excludes 65% of actual wildfire events, capturing only the most extreme wildfire-prone
+483   conditions.
+484       Positioned between these two extremes, we implemented an optimal OPT threshold
+485   based on the Youden index, which maximizes the sum of correctly classified wildfire and
+486   non-wildfire locations and periods. This threshold corresponds to the point on the ROC
+487   curve with maximum vertical distance from the diagonal line representing a random clas-
+488   sification (Fluss et al., 2005; Ruopp et al., 2008). The OPT threshold provides the most
+489   balanced compromise between the classification of wildfire and non-wildfire conditions.
+490   Utilizing these three thresholds, our final dynamic probability map delineates four dis-
+491   tinct wildfire likelihood classes, with OPT as the central reference point.
+492       The resulting dynamic maps directly visualize wildfire threshold exceedance across
+493   the study region. To further evaluate the practical utility of the methodical approach, we
+494   conducted a comprehensive hindcasting analysis. This exercise allowed us to reconstruct
+495   and examine the spatiotemporal evolution of wildfire probability thresholds during the
+496   period of 1–15 July 2022, when several wildfire events affected the study area.
+
+
+                                                   13
+497   5     Results
+498   5.1    Wildfire inventory and modeling sample
+499   In South Tyrol, the initial dataset contained 608 recorded wildfires. After applying the
+500   temporal filter, eight events occurring before the year 2000 were excluded, resulting in a
+501   final dataset of 600 wildfires. In Trentino, the initial inventories comprised 4,196 wildfires
+502   in total. We did not use the first inventory—comprising 1,062 events from the period from
+503   1966 to 1983—due to missing temporal information. From this subset of 3,164 wildfires,
+504   we kept only those occurring within our period of interest (2000–2023), leaving 946 wild-
+505   fire events. Additionally, we filtered out the records without a daily timestamp, resulting
+506   in a sample size of 507 wildfires. The two processed inventories were merged, yielding
+507   a combined dataset of 1,107 wildfire records. These records met the criteria of having a
+508   recorded occurrence date between 2000 and 2023 and an associated daily timestamp. Fi-
+509   nally, events with a burned area smaller than 50 m2 were filtered out, resulting in a final
+510   dataset of 998 wildfires, which we used in subsequent analysis.
+
+
+
+
+      Figure 2: Temporal distribution of wildfires (n = 998) in the study area between 2000 and 2023. Panel (a)
+      shows the annual wildfire counts, distinguishing between events occurring in the warmer months (May–-
+      October) and colder months (November–-April). Panels (b) and (c) display the monthly distribution of
+      wildfires, with a distinction based on the respective burned area.
+
+511       Although a detailed characterization of the wildfire regime is not the primary focus
+512   of this research, we find it valuable to illustrate some general patterns observed in the
+
+                                                         14
+513   inventories. The temporal distribution of wildfires across the study area reveals several
+514   notable peaks, as shown in Figure 2a. The most prominent years were 2007 and 2022, each
+515   registering over 100 wildfire events each year. Other years with elevated activity—each
+516   exceeding 50 wildfires—include 2012, 2015, 2017, and 2019. Monthly trends, in Figures
+517   2b–c, show two seasonal peaks in wildfire occurrence: one in early spring and another
+518   in mid-to-late summer. While both South Tyrol and Trentino follow this bimodal pat-
+519   tern, South Tyrol tends to experience more wildfires during the summer peak, whereas
+520   Trentino shows a more pronounced peak during the early spring. Regarding weekly pat-
+521   terns, approximately 30% of wildfires occurred during weekends (i.e., Saturday and Sun-
+522   day), while the remaining 70% took place on weekdays. Between 2000 and 2023, the study
+523   area experienced an annual average of 41 wildfires, burning approximately 31 hectares
+524   per year. Wildfires occurred throughout the year and were recurrent phenomena both in
+525   the warmer months (May–October) and in the colder ones (November–April). Although
+526   some years show a clear predominance of wildfires in one period over the other, the over-
+527   all distribution between warm and cold months remains relatively balanced. In terms of
+528   wildfire size, the majority of wildfires were relatively small: 84 out of the 998 events ex-
+529   ceeded 1 ha, and only one surpassed 90 ha. Regarding wildfire causes, available only for
+530   events in South Tyrol. Roughly 50% of the events have no reported cause. Among the iden-
+531   tified causes, lightning accounted for 23%, cigarette-related ignitions for 11%, while the re-
+532   maining causes included poorly maintained electrical infrastructure, agricultural burns,
+533   recreational activities, and arson.
+
+
+
+
+      Figure 3: Data sampling results. Bar plots show the monthly distribution of the sample data, wildfire pres-
+      ences (in red) and absence observations (in gray) before (a) and after (b) excluding trivial periods from
+      the dataset.
+
+
+534       The final modeling dataset was derived from a combination of wildfire presence and
+
+                                                          15
+535   absence samples, totaling 5,989 observations. This included 998 wildfire presences and
+536   4,991 absence observations, respectively, maintaining an approximate 1:5 ratio. To avoid
+537   an uneven temporal representation, absence observations were uniformly distributed
+538   across years (2000–2023), with proportional representation across months, ensuring that
+539   each day of the year had an equal chance of being selected (Figure 3a. At this stage, the
+540   sample reflected only the spatial and temporal structure of wildfire presence and absence
+541   samples without considering whether the respective observation experienced precipita-
+542   tion. We applied a precipitation-based threshold to account for trivial periods, specifically
+543   removing observations with the precipitation on the day of observation (i.e., day 0) equal
+544   to or exceeding 1 mm. This filtering step led to excluding 1,735 observations, reducing the
+545   sample size to 4,254 records. The impact was more pronounced in the absence data, with
+546   nearly 30% of those records excluded, dropping from 4,991 to 3,398. This shows that a sig-
+547   nificant portion of the absence samples occurred on “dry” periods, with approximately
+548   70% of these experiencing no measurable precipitation (Figure 3b.
+549       Wildfire presence data was also affected, with 142 events—–around 15% of the initial
+550   wildfire sample—–removed. Most of these excluded wildfire records occurred during the
+551   summer months (June–August), indicating that a notable number of wildfires were asso-
+552   ciated with precipitation ≥1 mm on the day of occurrence. This observation underscores
+553   the complexity of wildfire-weather interactions during the wetter summer period, where
+554   precipitation does not prevent ignition.
+
+
+555   5.2    Optimal time windows and modeled relationships
+556   The final modeling dataset was used in a repeated 10-fold RCV with 10 repetitions to
+557   identify the optimal time windows for representing the meteorological predictors P and
+558   Te in wildfire prediction (Figure 4).
+
+
+
+
+      Figure 4: Results of the grid search for optimal Te–-P time window combinations. The plot shows the median
+      AUROC values obtained for each combination of Te and P, using a 10-fold RCV with ten repetitions. The
+      best-performing combination (yellow star) yielded a mean AUROC of 0.82 and corresponds to the mean
+      temperature on the observation day (Te0 ) combined with the cumulative precipitation over the 29 days
+      preceding the event (P28 ).
+
+
+                                                         16
+559      Among the tested combinations, the pairing of Te0 and P28 led to the highest model
+560   performance, achieving a median AUROC of 0.82. In this configuration, Te0 denotes the
+561   mean daily temperature on the observation date, while P28 corresponds to the cumulative
+562   precipitation over the preceding 29-day period. Overall, model performance was highest
+563   when short temperature windows (e.g., Te0 to Te4 ) were paired with medium precipitation
+564   windows (e.g., P10 to P30 ). In contrast, lower AUROCs were observed when longer tem-
+565   perature windows (e.g., Te5 to Te10 ) were combined with short or medium precipitation
+566   windows (e.g., P0 to P15 ). Based on these results, Te0 and P28 were selected as the optimal
+567   dynamic predictors and were subsequently integrated with static predictors to develop
+568   the final wildfire dynamic model.
+
+
+
+
+      Figure 5: Partial effect plots. Panels (a)–(h) display the partial effects of continuous predictors on the re-
+      sponse scale, with the center white lines representing the mean estimated effects, and the red bands indi-
+      cating the 95% confidence intervals. Panel (i) shows the effect of the categorical predictor land cover on the
+      linear scale, where red dots represent the mean estimated effect and error bars indicate the 95% confidence
+      intervals. Lastly, panel (j) illustrates the predictor year, which was modeled as a random effect, but excluded
+      during the final prediction phase.
+
+569        Figure 5 illustrates the partial dependence of selected predictors on wildfire probabil-
+570   ity, with the influence of all other predictors held constant. The dynamic predictors Te0 and
+571   P28 indicated that the highest wildfire probabilities occurred under conditions of elevated
+572   Te0 and limited P28 . In contrast, wildfire probabilities were the lowest when P28 was abun-
+573   dant and Te0 was relatively low. The doy revealed a seasonal trend, with increased wildfire
+574   probabilities around doy100 , corresponding to early spring (March–April), and lower prob-
+575   abilities around doy250 , which aligns with the late summer (August–September). Among
+576   topographic variables, Aspect showed a clear pattern: slopes facing south (135∘ –225∘ ) were
+577   associated with a higher likelihood of wildfire occurrence compared to other orientations.
+578   In terms of vegetation structure, tree cover density revealed that moderate values (20–70%)
+579   were linked to increased wildfire probability, whereas sparse (<20%) and dense (>70%)
+580   tree cover were linked to reduced probabilities. The distance to buildings, used as a proxy for
+581   anthropogenic influence, displayed a clear decreasing trend in wildfire probability with
+582   increasing distance from built-up areas. The mean annual temperature, indicative of gen-
+583   erally warmer regions, exhibited a relatively linear relationship, where hotter areas were
+
+                                                            17
+584   related to a higher likelihood of wildfire occurrence. Likewise, total annual precipitation,
+585   serving as a proxy for overall dryness, revealed a relatively linear trend with drier areas
+586   being more prone to wildfires. The land cover, when using agricultural land as the reference
+587   category, several classes—including deciduous tree cover, coniferous tree cover, herbaceous veg-
+588   etation and heathland, and marshes and peatbogs—were significantly associated with higher
+589   wildfire probability. Finally, year was incorporated into the model fit as a random effect
+590   to account for the interannual variability in the reported wildfire reporting. Then, it was
+591   subsequently excluded from the predictions to ensure that inconsistencies did not sys-
+592   tematically influence the resulting wildfire probabilities in the temporal distribution of
+593   reported events.
+
+
+594   5.3    Variable importance and model evaluation
+595   Permutation variable importance analysis revealed positive contributions from all selected
+596   predictors to the model deviance explained. The 29-day accumulated precipitation (P28 )
+597   emerged as the predominant predictor, followed by temperature at the observation day
+598   (Te0 ). Among the static environmental factors, tree cover density and land cover demon-
+599   strated relatively high variable importance, while the dynamic doy and topographic vari-
+600   able aspect exhibited moderate influence. The remaining predictors, while still contribut-
+601   ing positively to model deviance explained, displayed comparatively lower relative im-
+602   portance.
+
+
+
+
+      Figure 6: Permutation variable importance results. The red dots denote the mean portion of deviance ex-
+      plained, and the error bars denote the associated standard deviation.
+
+603       The model exhibited robust predictive capability across all validation routines pre-
+604   sented in Figure 7. AUROC scores generally exceeded 0.80, corresponding to excellent dis-
+605   crimination as defined by Hosmer et al. (2013). The two 10-fold cross-validation strategies,
+606   RCV and SCV, yielded median AUROC values of 0.83 and 0.81, respectively. As antici-
+607   pated, SCV—which employs k-means clustering to account for spatial autocorrelation—
+608   resulted in a slightly lower performance and a broader interquartile range (IQR) than
+609   RCV.
+610       The leave-one-out cross-validation routines, namely TCV for years and months, and
+611   FCV for land cover, as shown in Figures 7c–d, yielded mean AUROC values of 0.82, 0.79,
+612   and 0.79, respectively. The lower performance score across specific folds (years, months,
+
+                                                        18
+613   and land cover classes) likely reflects discrepancies between the local conditions driving
+614   wildfire occurrence in those subsets and the patterns learned from the remaining data
+615   used for the training. TCV at the annual level, in general, demonstrates high temporal
+616   transferability, with comparatively lower performance observed in 2002, 2016, and 2018,
+617   and higher AUROC values in 2008, 2012, and 2014. On a monthly scale, October exhibits
+618   the lowest scores, while the winter months, December–February, yield the highest predic-
+619   tive performance. FCV indicates AUROC values consistently exceeding 0.75 across all land
+620   cover classes except for the agricultural land, which showed a lower score of approximately
+621   0.72.
+
+
+
+
+      Figure 7: Summary of the predictive model performance. Panel (a) presents the 10-fold RCV and 10-fold
+      SCV results with ten repetitions. Panels (b–c) display the results of the TCV across individual years and
+      months, while panel (d) shows the FCV across different lad cover classes.
+
+
+
+
+622   5.4    Spatial dynamic thresholds and predictions
+623   The Te–P heatmap in Figure 8 provides a visualization of the relationship between temper-
+624   ature and precipitation, and their association with wildfire probabilities. In this analysis,
+625   static factors and doy were excluded from the predictions. The heatmap reveals that the
+626   highest wildfire probabilities are predicted under conditions of elevated Te0 combined
+627   with reduced P28 . This relationship is highlighted by the spatial distribution of the mod-
+
+                                                         19
+628   eling samples—with their respective Te0 and P28 values—within the heatmap. Wildfire
+629   occurrences (denoted by crosses) are predominantly clustered in regions of higher prob-
+630   ability, while absence observations (denoted by points) concentrate in areas with lower
+631   probability scores.
+632       The selected thresholds act as decision boundaries distinguishing between areas with
+633   high and low predicted wildfire probabilities. In other words, predictions below a given
+634   threshold indicate low wildfire probability, while those above suggest high wildfire prob-
+635   ability scores. For instance, 95% of the wildfire occurrences exceed the TPR95 (green dot-
+636   ted line) threshold, but a low proportion of correctly classified absences (TNR of 41%) fall
+637   below this threshold, implying relatively high false alarms (FPR of 59%). Conversely, the
+638   more conservative TPR35 (blue dotted line) threshold minimizes false alarms (FPR of 5%)
+639   by correctly classifying 95% of absences (TNR of 95%), but identifies only 35% of wildfire
+640   occurrences. The OPT threshold (red solid line) provides a balanced trade-off, achiev-
+641   ing a TPR of 77% while maintaining an FPR of 25% (TNR of 75%). To put it in another
+642   way, this threshold optimizes the identification of wildfire occurrences while keeping an
+643   acceptable level of correct absence classification.
+
+
+
+
+      Figure 8: Te–P heatmap showing the predicted wildfire probability in relation to temperature and precip-
+      itation inputs. The plot illustrates the combined effect of Te and P on the predicted probability of wildfire
+      occurrence, assuming average values for doy and all static predictors (i.e., aspect, tree cover density, total an-
+      nual precipitation, mean annual temperature, distance to buildings, and land cover). Crosses represent the 859
+      wildfires, while points indicate the 3,398 absence observations. The curves correspond to the selected prob-
+      ability thresholds: TPR95 (green), OPT (red) and TPR35 (blue).
+
+644       The heatmap and thresholds highlight the relationship between dynamic predictors,
+
+                                                             20
+645   prediction scores, and the link to the ROC curve. Furthermore, the probability thresholds
+646   demonstrate a potential application of our model for early warning systems, analogous
+647   to established landslide probability thresholds, and provide flexibility in implementation
+648   based on specific wildfire management objectives. It is important to note, however, that
+649   accurate visualization of these heatmaps also requires the integration of static factors.
+650       Figure 9 illustrates how seasonal variations and changes in static environmental condi-
+651   tions influence the Te–P relationship with wildfire probability. Specifically, we performed
+652   a comparative analysis of the Te–P heatmaps across different combinations of doy, aspect,
+653   and tree density cover, with the remaining predictors being excluded.
+
+
+
+
+      Figure 9: Te–P heatmaps showing the predicted wildfire probability for increasing amounts of Te and P and
+      associated OPT threshold for different combinations of doy (doy30 and doy240 ), aspect (225∘ and 0∘ ) and tree
+      density cover (30% and 100%).
+
+654       Panels (a, c) versus panels (b, d) demonstrate the influence of the seasonal variation
+655   through doy. It is observed that substantially lower short-term temperature Te0 is required
+656   to exceed the OPT wildfire probability threshold on a winter day (doy30 ) compared to a
+657   summer day (doy240 ), where higher amounts of Te0 are necessary to reach equivalent pre-
+658   dicted probabilities. By contrasting Figure 9a–b versus Figure 9c–d, we investigate the role
+659   of topographic orientation and vegetation structure. The former set of panels represents
+
+                                                           21
+660   conditions with a south-facing aspect of 225∘ and a relatively low tree cover density of 30%,
+661   whereas the latter reflects a north-facing aspect of 0∘ and dense forest cover (100%). The
+662   heatmaps reveal that substantially higher Te0 and lower P28 are necessary to achieve high
+663   wildfire probabilities and exceed the OPT threshold under conditions of dense vegetation
+664   and in north-facing slopes. Such analyses can be extended to any combination of predic-
+665   tors in the model and offer valuable insights into the spatiotemporal dynamics of wildfire
+666   occurrence.
+
+
+
+
+      Figure 10: Hindcasting example of wildfire occurrence during the period between 1–15 July 2022. The
+      illustrations display the spatial distribution of the predicted wildfire probability across the entire study area
+      using the three selected probability thresholds: TPR95, OPT, and TPR35.
+
+
+667       To further demonstrate the model potential applications, we conducted a hindcast
+668   analysis covering the period of 1–15 July 2022—a timeframe chracterzied by elevated wild-
+669   fire activity across the study region. The resulting model predictions, initially expressed as
+670   continuous probabilities, were subsequently reclassified using the predefined thresholds
+
+                                                             22
+671   (TPR95, OPT, and TPR35). Figure 10 presents four representative snapshots at 5-day inter-
+672   vals from this period, illustrating the temporal evolution of predicted wildfire probability
+673   thresholds. These sequential images reveal a pronounced increase in predicted wildfire
+674   occurrence as the date approaches mid-July, with substantial expansion of areas exceed-
+675   ing the OPT and TPR35 thresholds. The spatial patterns emerging from these predic-
+676   tions show notable regional variability, with specific zones—particularly the inner valley
+677   bottoms—consistently exceeding both the mid and high probability thresholds through-
+678   out the analysis period. This spatial heterogeneity reflects differences in the underlying
+679   environmental characteristics across the landscape, including topography, infrastructure,
+680   vegetation, land cover, and meteorological conditions. A pronounced transition is ob-
+681   served between 10 and 15 July, during which several inner-valley areas surpass the high-
+682   est threshold, indicating high probability scores. The complete temporal overview of the
+683   hindcast is available as an animated GIF (Trentino–SouthTyrol.GIF), offering a dynamic
+684   visualization of how predicted wildfire probability thresholds evolved throughout this
+685   two-week window.
+
+
+686   6     Discussion
+687   In this study, we implemented an interpretable spatiotemporal modeling framework that
+688   integrates static environmental and dynamic meteorological factors to predict wildfire oc-
+689   currence. The model demonstrates strong predictive capabilities, with AUROC values
+690   generally exceeding 0.80, highlighting its effectiveness in capturing key drivers of wild-
+691   fire initiation. These included static landscape features, daily temperature and precipita-
+692   tion fields, and a seasonal proxy. The following discussion addresses critical aspects of
+693   the study, including reflections on model interpretability and flexibility, considerations
+694   related to wildfire processes and drivers, and the applicability of the model in early warn-
+695   ing.
+
+
+696   6.1   Model flexibility and interpretability
+697   The sampling strategy played a key role in constructing the modeling dataset. As the
+698   quality and representativeness of the input data heavily influenced the model outcomes,
+699   careful design of the sampling process is as relevant as the modeling phase itself. While
+700   many data-driven studies emphasize comparing algorithms, evaluating data preparation
+701   and sampling strategies is often underappreciated. Generating the modeling sample in-
+702   volves filtering the wildfire presences and sampling the absence observations due to the
+703   large disproportion between the two. The selection of wildfire presences—conditioned on
+704   the availability of historical records—enables event filtering based on the attributes in the
+705   wildfire inventory, e.g., date of occurrence, and burned area. In contrast, sampling absence
+706   observations, especially in the spatiotemporal domain, offers broader flexibility. In this re-
+707   search, the absence sampling was guided by set of structured rules: as detailed in Section
+708   4.1, we (a) masked out trivial terrain based on land cover data, (b) implemented tempo-
+709   ral buffers in locations that experienced wildfires before, (c) ensured temporal balance by
+
+
+                                                   23
+710   sampling across different years and months, and (d) excluded trivial periods. These steps
+711   collectively aimed to reduce sampling biases and improve the model generalization.
+712       The modeling approach considers the integration of static and dynamic factors to ac-
+713   count for the complex interplay of wildfire occurrence. An advantage of this framework is
+714   the interpretability of the model outcomes, which we briefly highlight in the following dis-
+715   cussion. The optimal time window analysis identified that the combination yielding the
+716   highest predictive performance includes Te0 , the mean daily temperature on the obser-
+717   vation day, and P28 , the cumulative precipitation over the preceding 29 days (see Figure
+718   4). While this combination achieved the highest median AUROC, it is noteworthy that
+719   performance differences among alternative time window configurations were relatively
+720   small, with AUROC values ranging from 0.77 to above 0.81. This reinforces the impor-
+721   tance of precipitation and temperature as dynamic predictors, while also indicating that
+722   the model results are relatively stable and not highly sensitive to changes in the selected
+723   time windows.
+724       Regarding the modeled relationships illustrated in Figure 5 Aspect depicts high prob-
+725   abilities in slopes facing south (135∘ –225∘ ). In the northern hemisphere, south-facing
+726   slopes receive more solar radiation during the day than others, and this translates to lower
+727   average moisture levels and thus increasing wildfire probabilities, as several studies indi-
+728   cate (Alexander et al., 2006; Oliveira et al., 2013; Oliveras et al., 2009). The tree density cover
+729   reveals that areas with very sparse tree cover (<20%), may lack sufficient fuel to sustain
+730   wildfires, while densely forested areas (>70%) appear to be more resilient to wildfire ini-
+731   tiation due to forest microclimate effects—tendency to be cooler, more humid and with
+732   less sun exposure. In contrast, regions with intermediate and fragmented tree density
+733   cover (20–70%) exhibit the highest wildfire probabilities, likely due to a combination of
+734   fuel availability and increased edge effects (Song et al., 2017; Rotbarth et al., 2025).
+735       The total annual precipitation was used as a proxy to represent the spatial variability
+736   of long-term precipitation regimes across the study area. The results indicate that drier
+737   regions are more susceptible to wildfire occurrence, whereas wetter areas are associated
+738   with lower wildfire probabilities. Similarly, the mean annual temperature captures broader
+739   spatial thermal gradients, revealing that relatively warmer zones are generally more prone
+740   to wildfires than colder ones. These drier and warmer areas tend to exceed the criti-
+741   cal probability thresholds earlier under specific temperature and precipitation conditions,
+742   compared to their wetter and cooler counterparts.
+743       Although the wildfire inventory lacks the specific data on the fire causes for our study
+744   area, previous research in comparable alpine regions has identified human activity as a
+745   dominant ignition source (Arpaci et al., 2014; Müller et al., 2020b; Arndt et al., 2013; Müller
+746   et al., 2020a). In our analysis, distance to buildings was used as a proxy to account for an-
+747   thropogenic influence. The results indicate that areas closer to infrastructure—and thus
+748   more accessible to human activity—are associated with higher wildfire probability. Ini-
+749   tially, distance to roads was also considered an additional proxy; however, including both
+750   predictors in the model fit introduced redundancy, leading to the loss of statistical signif-
+751   icance in one of them. Therefore, we retained only distance to buildings, given its broader
+752   spatial representation of human influence.
+753       The land cover, identified as the second most influential predictor, served as a proxy for
+754   fuel availability. Compared to the reference category agricultural land, all other classes ex-
+
+                                                      24
+755   hibited association with higher wildfire probability. Overall, agricultural land appeared to
+756   be the least prone to wildfire occurrence. Among the remaining classes, marshes and peat-
+757   bogs were slightly less preferred regarding wildfire occurrence. Both coniferous tree cover
+758   and broadleaf tree cover showed nearly identical regression coefficients, suggesting a com-
+759   parable influence on wildfire probability—consistent with the findings reported in Müller
+760   et al. (2020a). The herbaceous vegetation and heathland class displayed a slightly higher coef-
+761   ficient, pointing to increased fire likelihood. This supports the conclusions in Oliveira et al.
+762   (2013), where it was reported that shrublands, grasslands, and sparsely vegetated areas
+763   are more prone to ignition due to their intrinsic flammability and ease of combustion.
+764       The predictor doy, used as a proxy for seasonal effects, is expected to capture the tempo-
+765   ral distribution of wildfire occurrences throughout the year. However, since the model al-
+766   ready incorporates two dynamic predictors, P28 and Te0 , which inherently exhibit seasonal
+767   variability, we interpret the effect of doy as capturing residual seasonality not explained by
+768   these two meteorological predictors. Notably, the model reveals elevated wildfire prob-
+769   ability in early spring, a period typically associated with rapid warming and snowmelt.
+770   This suggests that the selected meteorological predictors may be less effective in fully cap-
+771   turing the seasonal dynamics influencing fire occurrence during this transitional period.
+772   Conversely, doy indicates comparatively lower fire probabilities during summer, which
+773   we interpret as evidence that P28 and Te0 already account for much of the seasonal vari-
+774   ation during that time. In practical terms, this implies that the wildfire probability may
+775   be higher in early spring than in late summer for a given location and under the same
+776   precipitation and temperature conditions.
+777       These results are a sample of the complex interplay between dynamic meteorological
+778   and static environmental factors in determining wildfire probability, providing quantita-
+779   tive insights into the spatiotemporal dynamics of wildfire occurrence across the landscape.
+780   Also, the analysis shows that identical meteorological conditions can produce markedly
+781   different wildfire probabilities depending on the underlying environmental context, high-
+782   lighting the importance of incorporating dynamic and static predictors in wildfire assess-
+783   ment.
+
+784   6.2   Limitations and future perspectives
+785   Among all the predictors, the 29-day cumulative precipitation P28 and the 1-day mean tem-
+786   perature Te0 emerged as the most influential ones in the model, as shown in Figure 6. Both
+787   P28 and Te0 act as proxies for fuel moisture, so that drier fuels, resulting from prolonged
+788   dry and warm periods, are more prone to wildfire ignition than moist fuels. Hence, lower
+789   cumulative precipitation and high temperature levels reflect higher wildfire occurrence
+790   probabilities. However, limitations arise from the use of these two predictors. The use
+791   of absolute values in precipitation and temperature may mislead the results, since equal
+792   levels of these two meteorological predictors can have different impacts depending on
+793   the local climatologies. For instance, an area experiencing usually high temperatures and
+794   anomalously low precipitation—relative to the long-term averages—may exhibit height-
+795   ened wildfire probabilities compared to an area with equal static settings for which such
+796   dynamic conditions are typical. In our model, we included total annual precipitation and
+797   mean annual temperature averaged over 30 years to partly account for these climatologies.
+
+                                                    25
+798   Still, the variable importance assessment indicated they were among the least influential
+799   predictors. We believe that the use of anomalies in the precipitation and temperature,
+800   rather than absolute values, could provide the means to directly account for the clima-
+801   tologies and improve the overall interpretability of the model. Future perspectives of the
+802   model could benefit from integrating indices such as temperature anomalies (e.g., daily
+803   deviations from the climatological means) or counts of days above-below specific temper-
+804   ature thresholds. In terms of precipitation widely recognized drought indicators such as
+805   the standardized precipitation index (SPI; McKee et al., 1993) or the standardized pre-
+806   cipitation evapotranspiration index (SPEI; Vicente-Serrano et al., 2010) could be imple-
+807   mented. These indices offer standardized, temporally dynamic representations of hydro-
+808   logical stress and have proven valuable in capturing preconditions favorable for wildfire
+809   occurrence (Turco et al., 2017, 2018; Smith et al., 2023).
+810        In a similar context, one of the most relevant, yet underrepresented aspects in this
+811   model is the role of compound events, particularly droughts and heatwaves. Compound—
+812   simultaneous occurrence—hot and dry extreme events can trigger and exacerbate cascad-
+813   ing processes such as wildfires (Richardson et al., 2022). Atmospheric heatwaves, defined
+814   as prolonged and consecutive periods of anomalously high temperatures, have been con-
+815   sistently linked to increased wildfire activity (Barriopedro et al., 2023). Similarly, “hot
+816   drought” conditions (characterized by warm temperatures and simultaneous meteoro-
+817   logical drought) represent elevated fire-weather types. Recent studies have identified two
+818   heat-induced fire-weather types, “heatwave” and “hot drought”, which collectively ac-
+819   count for nearly 50% of wildfires in the Mediterranean region (Ruffault et al., 2020; Santos
+820   et al., 2024). These events are marked by significantly elevated temperatures, low humid-
+821   ity, and dry fuels, often with anomalous values compared to surrounding days. Including
+822   compound drought and heatwave indices in such a model would allow a more realistic
+823   characterization of wildfire scenarios (Lemus-Canovas et al., 2025), especially in light of
+824   expected increases in their frequency under global warming (Felsche et al., 2024).
+825        As is the case for the meteorological predictors, further model improvements could
+826   involve expanding some static predictors into dynamic representations. For example, land
+827   cover, used as a proxy for fuel type, could be replaced or complemented by dynamic fuel
+828   maps that reflect seasonal changes in vegetation structure and flammability. Similarly, the
+829   anthropogenic influence—currently represented by static proximity to infrastructure—
+830   could be much further elaborated through time-varying proxies such as mobility data,
+831   population fluxes, or seasonal tourism patterns (Pittore et al., 2023; Renner et al., 2018).
+832   Another limitation pertains to uncertainty in the wildfire inventory. In South Tyrol, the
+833   dataset is point-based, yet the meaning of these points, whether they represent ignition lo-
+834   cations or random points within burned polygons, is unclear. In Trentino, wildfire points
+835   were generated from polygon centroids, assuming that ignition occurs at the spatial center
+836   of the fire. This spatial uncertainty could affect the accuracy of predictor extraction, par-
+837   ticularly for sensitive predictors. Furthermore, another point of improvement could be
+838   adding the potential wildfire spread in addition to the occurrence probability. Incorpo-
+839   rating fire spread in a second-stage model would require a potentially different modeling
+840   framework and additional predictors (e.g., wind speed and direction, slope steepness;
+841   Povak et al., 2018; Linn et al., 2007; Jellouli et al., 2022). Such an extension could sig-
+842   nificantly enhance the predictive utility of the framework, particularly for operational or
+
+                                                   26
+843   early-warning applications.
+844       To better tailor the model toward dry conditions, we applied a threshold-based filter-
+845   ing to exclude periods characterized by excessive precipitation. However, the downside of
+846   this approach is that it removed a significant number of summer wildfire records, many
+847   likely linked to convective storms and lightning activity. These events are particularly im-
+848   portant in alpine regions, where afternoon thunderstorms are frequent and lightning is
+849   a known natural ignition source. As a result, our model may underrepresent lightning-
+850   induced fires, specifically those occurring during so-called “wet” periods. In future devel-
+851   opments, we recommend including classified atmospheric circulation patterns (Lemus-
+852   Canovas et al., 2019) as part of the filtering rule to better account for lightning-induced
+853   events.
+854       Wildfires are more complex than other natural hazards, which often have natural phys-
+855   ical triggers. A wildfire can only occur if a source of ignition is present, such as lightning as
+856   a natural source, or the much more frequent (in)direct human influence (Chuvieco et al.,
+857   2003; Müller et al., 2020a). While our model includes a proxy for anthropogenic influence,
+858   distance to buildings, it does not explicitly account for lightning or human influence as trig-
+859   gers. As such, the model outputs should not be interpreted as a pure relative probability
+860   of wildfire initiation, but rather as the probability of an area experiencing a wildfire given
+861   that ignition occurs (human or lightning). This distinction is crucial, particularly when
+862   using the model to inform practitioners. In this context, the spatial predictions reflect the
+863   relative predisposition of the landscape to wildfires under specific static terrain and dy-
+864   namic meteorological conditions. Future studies should explore more direct proxies of
+865   human activity, such as forest trail density, proximity to power lines, proximity to cable
+866   cars, mobility datasets, and investigate multi-scale dynamic factors influencing ignition
+867   potential (Arpaci et al., 2014; Chuvieco et al., 2010).
+
+868   6.3   Considerations on early warning
+869   The most relevant model outcome, the wildfire prediction scores, can be illustrated as
+870   continuous probability surfaces (e.g., ranging from 0 to 1) or discrete categorized classes.
+871   While the continuous outputs retain the full granularity of the model, categorized maps
+872   are often preferred in decision-making contexts for their intuitive representation of dif-
+873   ferent danger levels. However, deriving classes from statistical properties of the data dis-
+874   tribution, such as quantiles, geometry, and standard deviation, can obscure the practi-
+875   cal meaning and limit the interpretation for end-users. To address this, we adopted the
+876   classification strategy proposed in Steger et al. (2023), which categorizes raw probabili-
+877   ties based on their association with key performance metrics such as the TPR and false
+878   alarms, which hold particular relevance in early warning. Among the evaluated thresh-
+879   olds, the optimal cut-off OPT provided a balanced trade-off, capturing 77% of observed
+880   wildfires while limiting the false alarms to 25%. Alternative threshold such as the TPR95
+881   (high sensitivity) and the TPR35 (low false alarms) allow the approach to be tailored to
+882   different risk priorities. Such priorities can be seen in a context where a false alarm may
+883   lead to unnecessary allocation of resources, whereas a missed alarm may have more severe
+884   consequences—–such as failing to issue timely warnings and inadequate preparedness for
+885   wildfire events. However, as our results show, prioritizing high sensitivity (95%) substan-
+
+                                                     27
+886   tially increases false alarms (59%), whereas minimizing false alarms (e.g., 5%) comes at
+887   the cost of reduced wildfire classification rates (TPR = 35%).
+888       Other approaches for threshold selection are particularly valuable when dealing with
+889   imbalanced datasets—such as those with few wildfire observations and many absences—
+890   where standard metrics like accuracy may become less informative (Saito et al., 2015). In
+891   such contexts, the thresholding can be guided based on the precision–recall curve, where
+892   the thresholds are chosen based on the recall (TPR, proportion of actual wildfires correctly
+893   classified) and precision (the proportion of predicted wildfire locations that correspond
+894   to actual wildfires). This can provide a more meaningful assessment of predictive perfor-
+895   mance, especially for early warning applications targeting rare but high-impact hazards
+896   like wildfires (Patton et al., 2023). In any case, the threshold selection should always be
+897   done accordingly to the end-user needs, whether the concern may be the cost of the false
+898   alarms or if the tolerance is low to accept almost any alarm.
+899       The temporal analysis showcased in this study confirms the model capacity to reflect
+900   dynamic changes in wildfire probabilities in response to evolving meteorological condi-
+901   tions. While originally applied for hindcasting, the model can be extended to nowcasting
+902   and forecasting applications, provided that the input levels for precipitation and tempera-
+903   ture do not substantially deviate from the fitting dataset. Notably, the model also enables
+904   exploratory what-if scenarios, a valuable asset in the context of climate risk prepared-
+905   ness and adaptation planning. For example, users can assess the implications of a drop
+906   in cumulative precipitation P28 under anomalously high temperatures Te0 for given static
+907   settings and a given seasonal context. Additional scenario-building can explore the role of
+908   fuel-related predictors such as changes in tree cover density or transitions between land cover
+909   classes, to evaluate their influence on wildfire probability. This narrative-driven simula-
+910   tions offer a flexible tool to assess potential wildfire outcomes under hypothetical future
+911   climatic conditions and support more informed and forward-looking decision-making in
+912   wildfire risk management.
+913       Our model delivers wildfire predictions at a relatively high spatial resolution (50
+914   m) and daily temporal resolution, offering significantly finer granularity than existing
+915   global and European early warning systems, such as EFFIS (current resolution: 9 km;
+916   Di Giuseppe et al., 2025) and the former global early warning system for wildland fire
+917   (https://gfmc.online/gwfews/index-12.html; de Groot et al., 2006), suspended on 2021.
+918   This high-resolution capability is particularly advantageous in complex Alpine environ-
+919   ments like our study area, where wildfires tend to be small-scale and spatially heteroge-
+920   neous. Nevertheless, benchmarking to better understand potential benefits and limita-
+921   tions in model outcomes is still relevant for future perspectives.
+
+
+
+
+                                                    28
+922   7    Conclusion
+923   In this research, we employed GAMs to predict wildfire initiation in space and time, ac-
+924   counting for static terrain attributes and dynamic meteorological conditions in the region
+925   of Trentino–South Tyrol, Italy. We captured the meteorological drivers of wildfire occur-
+926   rence based on a combination of 29-day cumulative precipitation (P28 ), 1-day mean tem-
+927   perature (Te0 ), and day of the year (doy) factor. These dynamic predictors were comple-
+928   mented by static proxies representing fuel type and structure, meteorological predisposi-
+929   tion, topographic features, and anthropogenic influence. Particular emphasis was placed
+930   on implementing a representative sampling scheme and generating interpretable outputs,
+931   including the visualization of the modeled relationships and variable importance. Model
+932   predictions were further linked and classified using combinations of true positive rates
+933   and false alarms to derive thresholds that support practical applications in the realm
+934   of early warning. The model showed strong predictive performance, with AUROC val-
+935   ues generally exceeding 0.80 under a rigorous multi-validation framework accounting for
+936   spatial and temporal variability. Beyond predictive skill, we illustrated the model utility
+937   by hindcasting a two-week period of elevated wildfire activity in July 2022. The flexible
+938   framework can be adapted to other natural hazards governed by the interplay of static and
+939   dynamic factors. We see our approach as a contribution to the broader development of
+940   data-driven solutions that characterize the occurrence of natural hazards through the joint
+941   assessment of static controls and time-varying triggers. Crucially, we emphasize that such
+942   models should prioritize input data quality, carefully designed sampling strategies, and
+943   the interpretability of results to ensure their value in scientific and operational decision-
+944   making contexts.
+
+
+
+
+                                                   29
+945   8    CRediT authorship contribution statement
+946   Mateo Moreno: Writing – original draft, Visualization, Validation, Methodology, Formal
+947   analysis, Data curation, Conceptualization. Stefan Steger: Writing – review & editing,
+948   Supervision. Laura Bozzoli: Data curation, Writing – review & editing. Stefano Terzi:
+949   Writing – review & editing. Andrea Trucchia: Writing – review & editing. Cees van
+950   Westen: Writing – review & editing, Supervision. Luigi Lombardo: Writing – review &
+951   editing, Supervision.
+
+
+952   9    Financial support
+953   This research has been supported by the EO4MULTIHA project (4000141754/23/I-DT),
+954   funded by the European Space Agency.
+
+
+955   10    Code and data availability
+956   The modeling procedure was conducted in R. The scripts are available at the reposi-
+957   tory https://github.com/mmorenoz/Wildfire _EarlyWarning. The daily precipitation and
+958   temperature fields are available in Crespi et al. (2020).
+
+
+959   11    Acknowledgement
+960   The research that led to these results is related to the EO4MULTIHA project (https://eo4so-
+961   ciety.esa.int/projects/eo4multihazards/, which received funding from the European Space
+962   Agency (ESA). We thank the Faculty of Geo-information Science and Earth Observation
+963   (ITC) – University of Twente for covering the open-access publication fees. We thank Dr.
+964   Serkan Girgin for his support in using the CRIB platform. We thank Dr. Paolo Fiorucci
+965   and Dr. Marj Tonini for their valuable feedback. Finally, we thank the Office for Forest
+966   Planning of the Autonomous Province of Bolzano, especially Alessandro Andriolo, for
+967   providing and revising the wildfire data.
+
+
+
+
+                                                  30
+968    References
+969    Adler, S., Chimani, B., Drechsel, S., Haslinger, K., Hiebl, J., Meyer, V., Resch, G., Rudolph,
+970     J., Vergeiner, J., Zingerle, C., Marigo, G., Fischer, A. and Seiser, B. (2015) Das Klima: Von
+971     Tirol-Sudtirol-Belluno. Report, ZAMG, Autonome Provinz Bozen, ARPAV.
+
+972    Ager, A. A., Vaillant, N. M. and Finney, M. A. (2010) A comparison of landscape fuel
+973     treatment strategies to mitigate wildland fire risk in the urban interface and preserve
+974     old forest structure. Forest Ecology and Management 259(8), 1556–1570.
+
+975    Alexander, J. D., Seavy, N. E., Ralph, C. J. and Hogoboom, B. (2006) Vegetation and to-
+976      pographical correlates of fire severity from two fires in the Klamath-Siskiyou region of
+977      Oregon and California. International Journal of Wildland Fire 15(2), 237–245. Publisher:
+978      CSIRO PUBLISHING.
+
+979    Alvioli, M., Loche, M., Jacobs, L., Grohmann, C. H., Abraham, M. T., Gupta, K., Satyam,
+980      N., Scaringi, G., Bornaetxea, T., Rossi, M., Marchesini, I., Lombardo, L., Moreno, M.,
+981      Steger, S., Camera, C. A. S., Bajni, G., Samodra, G., Wahyudi, E. E., Susyanto, N., Sinčić,
+982      M., Gazibara, S. B., Sirbu, F., Torizin, J., Schüßler, N., Mirus, B. B., Woodard, J. B., Aguil-
+983      era, H. and Rivera-Rivera, J. (2024) A benchmark dataset and workflow for landslide
+984      susceptibility zonation. Earth-Science Reviews 258, 104927.
+
+985    Arndt, N., Vacik, H., Koch, V., Arpaci, A. and Gossow, H. (2013) Modeling human-caused
+986     forest fire ignition for assessing forest fire danger in Austria. iForest - Biogeosciences and
+987     Forestry 6(6), 315. Publisher: SISEF - Italian Society of Silviculture and Forest Ecology
+988     Section: Forest Dynamics and Natural Disturbances.
+
+989    Arpaci, A., Eastaugh, C. S. and Vacik, H. (2013) Selecting the best performing fire weather
+990     indices for Austrian ecoregions. Theoretical and Applied Climatology 114(3), 393–406.
+
+991    Arpaci, A., Malowerschnig, B., Sass, O. and Vacik, H. (2014) Using multi variate data min-
+992     ing techniques for estimating fire susceptibility of Tyrolean forests. Applied Geography
+993     53, 258–270.
+
+994    Barriopedro, D., García-Herrera, R., Ordóñez, C., Miralles, D. G. and Salcedo-
+995      Sanz, S. (2023) Heat Waves: Physical Understanding and Scientific Challenges.
+996      Reviews of Geophysics 61(2), e2022RG000780. _eprint: https://onlinelibrary.wi-
+997      ley.com/doi/pdf/10.1029/2022RG000780.
+
+998    Bergonse, R., Oliveira, S., Gonçalves, A., Nunes, S., DaCamara, C. and Zêzere,
+999      J. L. (2021) Predicting burnt areas during the summer season in Portugal by com-
+1000     bining wildfire susceptibility and spring meteorological conditions.  Geomatics,
+1001     Natural Hazards and Risk 12(1), 1039–1057. Publisher: Taylor & Francis _eprint:
+1002     https://doi.org/10.1080/19475705.2021.1909664.
+
+1003   Bessie, W. C. and Johnson, E. A. (1995) The Relative Importance of Fuels and Weather on
+1004     Fire Behavior in Subalpine Forests. Ecology 76(3), 747–762. _eprint: https://onlineli-
+1005     brary.wiley.com/doi/pdf/10.2307/1939341.
+
+                                                      31
+1006   Bjånes, A., De La Fuente, R. and Mena, P. (2021) A deep learning ensemble model for
+1007     wildfire susceptibility mapping. Ecological Informatics 65, 101397.
+
+1008   Bolker, B. M., Brooks, M. E., Clark, C. J., Geange, S. W., Poulsen, J. R., Stevens, M. H. H. and
+1009     White, J. S. S. (2009) Generalized linear mixed models: a practical guide for ecology and
+1010     evolution. Trends in Ecology & Evolution 24(3), 127–135. Publisher: Elsevier Current
+1011     Trends.
+
+1012   Bovio, G., Quaglino, A. and Nosenzo, A. (1984) Individuazione di un indice di previsione
+1013     per il pericolo di incendi boschivi. MONTI E BOSCHI Accepted: 2015-05-12T10:13:32Z.
+
+1014   Bowd, E. J., McBurney, L. and Lindenmayer, D. B. (2021) Temporal patterns of vege-
+1015     tation recovery after wildfire in two obligate seeder ash forests. Forest Ecology and
+1016     Management 496, 119409.
+
+1017   Brabb, E. E. (1984) Innovative approaches to landslide hazard and risk mapping. In
+1018     Proceedings of IVth International Conference and Field Workshop in Landslides, vol-
+1019     ume 1, pp. 307–324. Toronto, Canada: .
+
+1020   Brenning, A. (2012) Spatial cross-validation and bootstrap for the assessment of prediction
+1021     rules in remote sensing: The R package sperrorest. In 2012 IEEE international geoscience
+1022     and remote sensing symposium, pp. 5372–5375. IEEE.
+
+1023   Brunetti, M. T., Peruccacci, S., Rossi, M., Luciani, S., Valigi, D. and Guzzetti, F. (2010) Rain-
+1024     fall thresholds for the possible occurrence of landslides in Italy. Natural Hazards and
+1025     Earth System Sciences 10(3), 447–458. Publisher: Copernicus Publications Göttingen,
+1026     Germany.
+
+1027   Cao, X., Cui, X., Yue, M., Chen, J., Tanikawa, H. and Ye, Y. (2013) Evaluation of wildfire
+1028     propagation susceptibility in grasslands using burned areas and multivariate logistic re-
+1029     gression. International Journal of Remote Sensing 34(19), 6679–6700. Publisher: Taylor
+1030     & Francis _eprint: https://doi.org/10.1080/01431161.2013.805280.
+
+1031   Cao, Y., Wang, M. and Liu, K. (2017) Wildfire Susceptibility Assessment in Southern
+1032     China: A Comparison of Multiple Methods. International Journal of Disaster Risk
+1033     Science 8(2), 164–181.
+
+1034   Carrega, P. (1995) A method for the reconstruction of mountain air temperatures with au-
+1035     tomatic cartographic applications. Theoretical and Applied Climatology 52(1), 69–84.
+
+1036   Chuvieco, E., Aguado, I., Yebra, M., Nieto, H., Salas, J., Martín, M. P., Vilar, L., Martínez,
+1037    J., Martín, S., Ibarra, P., de la Riva, J., Baeza, J., Rodríguez, F., Molina, J. R., Herrera,
+1038    M. A. and Zamora, R. (2010) Development of a framework for fire risk assessment using
+1039    remote sensing and geographic information system technologies. Ecological Modelling
+1040    221(1), 46–58.
+
+1041   Chuvieco, E., Allgöwer, B. and Salas, J. (2003) Integration of Physical and Human Factors
+1042    in Fire Danger Assessment. In Wildland Fire Danger Estimation and Mapping, volume
+
+
+                                                      32
+1043     Volume 4 of Series in Remote Sensing, pp. 197–218. WORLD SCIENTIFIC. ISBN 978-
+1044     981-238-569-7.
+
+1045   Countryman, C. M. (1972) The fire environment concept. Pacific Southwest Forest and
+1046    Range Experiment Station.
+
+1047   Crespi, A., Matiu, M., Bertoldi, G., Petitta, M. and Zebisch, M. (2020) High-resolution
+1048     daily series (1980 - 2018) and monthly climatologies (1981 - 2010) of mean temperature
+1049     and precipitation for Trentino - South Tyrol (north-eastern Italian Alps).
+
+1050   Crespi, A., Matiu, M., Bertoldi, G., Petitta, M. and Zebisch, M. (2021) A high-
+1051     resolution gridded dataset of daily temperature and precipitation records (1980–2018)
+1052     for Trentino-South Tyrol (north-eastern Italian Alps). Earth System Science Data 13(6),
+1053     2801–2818. Publisher: Copernicus GmbH.
+
+1054   Deng, J., Wang, W., Gu, G., Chen, Z., Liu, J., Xie, G., Weng, S., Ding, L. and Li, C. (2023)
+1055    Wildfire susceptibility prediction using a multisource and spatiotemporal cooperative
+1056    approach. Earth Science Informatics 16(4), 3511–3529.
+
+1057   Di Giuseppe, F., McNorton, J., Lombardi, A. and Wetterhall, F. (2025) Global data-driven
+1058     prediction of fire activity. Nature Communications 16(1), 2918. Publisher: Nature Pub-
+1059     lishing Group.
+
+1060   Driscoll, D. A., Macdonald, K. J., Gibson, R. K., Doherty, T. S., Nimmo, D. G., Nolan, R. H.,
+1061     Ritchie, E. G., Williamson, G. J., Heard, G. W., Tasker, E. M., Bilney, R., Porch, N., Collett,
+1062     R. A., Crates, R. A., Hewitt, A. C., Pendall, E., Boer, M. M., Gates, J., Boulton, R. L.,
+1063     Mclean, C. M., Groffen, H., Maisey, A. C., Beranek, C. T., Ryan, S. A., Callen, A., Hamer,
+1064     A. J., Stauber, A., Daly, G. J., Gould, J., Klop-Toker, K. L., Mahony, M. J., Kelly, O. W.,
+1065     Wallace, S. L., Stock, S. E., Weston, C. J., Volkova, L., Black, D., Gibb, H., Grubb, J. J.,
+1066     McGeoch, M. A., Murphy, N. P., Lee, J. S., Dickman, C. R., Neldner, V. J., Ngugi, M. R.,
+1067     Miritis, V., Köhler, F., Perri, M., Denham, A. J., Mackenzie, B. D. E., Reid, C. A. M.,
+1068     Rayment, J. T., Arriaga-Jiménez, A., Hewins, M. W., Hicks, A., Melbourne, B. A., Davies,
+1069     K. F., Bitters, M. E., Linley, G. D., Greenville, A. C., Webb, J. K., Roberts, B., Letnic, M.,
+1070     Price, O. F., Walker, Z. C., Murray, B. R., Verhoeven, E. M., Thomsen, A. M., Keith, D.,
+1071     Lemmon, J. S., Ooi, M. K. J., Allen, V. L., Decker, O. T., Green, P. T., Moussalli, A., Foon,
+1072     J. K., Bryant, D. B., Walker, K. L., Bruce, M. J., Madani, G., Tscharke, J. L., Wagner, B.,
+1073     Nitschke, C. R., Gosper, C. R., Yates, C. J., Dillon, R., Barrett, S., Spencer, E. E., Wardle,
+1074     G. M., Newsome, T. M., Pulsford, S. A., Singh, A., Roff, A., Marsh, K. J., Mcdonald, K.,
+1075     Howell, L. G., Lane, M. R., Cristescu, R. H., Witt, R. R., Cook, E. J., Grant, F., Law, B. S.,
+1076     Seddon, J., Berris, K. K., Shofner, R. M., Barth, M., Welz, T., Foster, A., Hancock, D.,
+1077     Beitzel, M., Tan, L. X. L., Waddell, N. A., Fallow, P. M., Schweickle, L., Le Breton, T. D.,
+1078     Dunne, C., Green, M., Gilpin, A.-M., Cook, J. M., Power, S. A., Hogendoorn, K., Brawata,
+1079     R., Jolly, C. J., Tozer, M., Reiter, N. and Phillips, R. D. (2024) Biodiversity impacts of
+1080     the 2019–2020 Australian megafires. Nature 635(8040), 898–905. Publisher: Nature
+1081     Publishing Group.
+
+
+
+                                                      33
+1082   Eskandari, S., Pourghasemi, H. R. and Tiefenbacher, J. P. (2021) Fire-susceptibility
+1083     mapping in the natural areas of Iran using new and ensemble data-mining models.
+1084     Environmental Science and Pollution Research 28(34), 47395–47406.
+1085   European Union’s Copernicus Land Monitoring Service information (2020) Tree Cover
+1086     Density 2018 (raster 10 m), Europe, 3-yearly.
+1087   Faivre, N., Jin, Y., Goulden, M. L. and Randerson, J. T. (2014) Controls on the spatial pat-
+1088     tern of wildfire ignitions in Southern California. International Journal of Wildland Fire
+1089     23(6), 799–811.
+1090   Felsche, E., Böhnisch, A., Poschlod, B. and Ludwig, R. (2024) European hot and dry sum-
+1091     mers are projected to become more frequent and expand northwards. Communications
+1092     Earth & Environment 5(1), 1–11. Publisher: Nature Publishing Group.
+1093   Filkov, A. I., Ngo, T., Matthews, S., Telfer, S. and Penman, T. D. (2020) Impact of Australia’s
+1094      catastrophic 2019/20 bushfire season on communities and environment. Retrospective
+1095      analysis and current trends. Journal of Safety Science and Resilience 1(1), 44–56.
+1096   Finney, M. A. (2005) The challenge of quantitative risk analysis for wildland fire. Forest
+1097     Ecology and Management 211(1), 97–108.
+1098   Fluss, R., Faraggi, D. and Reiser, B. (2005) Estimation of the Youden Index and its Associ-
+1099     ated Cutoff Point. Biometrical Journal 47(4), 458–472. _eprint: https://onlinelibrary.wi-
+1100     ley.com/doi/pdf/10.1002/bimj.200410135.
+1101   Ganteaume, A., Camia, A., Jappiot, M., San-Miguel-Ayanz, J., Long-Fournel, M. and
+1102    Lampin, C. (2013) A review of the main driving factors of forest fire ignition over Eu-
+1103    rope. Environmental Management 51(3), 651–662.
+1104   Ghorbanzadeh, O., Valizadeh Kamran, K., Blaschke, T., Aryal, J., Naboureh, A., Einali,
+1105    J. and Bian, J. (2019) Spatial Prediction of Wildfire Susceptibility Using Field Survey
+1106    GPS Data and Machine Learning Approaches. Fire 2(3), 43. Number: 3 Publisher:
+1107    Multidisciplinary Digital Publishing Institute.
+1108   Giglio, L., Randerson, J. T. and van der Werf, G. R. (2013) Analysis of daily, monthly,
+1109     and annual burned area using the fourth-generation global fire emissions database
+1110     (GFED4). Journal of Geophysical Research: Biogeosciences 118(1), 317–328. _eprint:
+1111     https://onlinelibrary.wiley.com/doi/pdf/10.1002/jgrg.20042.
+1112   Giuseppe, F. D., Pappenberger, F., Wetterhall, F., Krzeminski, B., Camia, A., Libertá, G.
+1113     and Miguel, J. S. (2016) The potential predictability of fire danger provided by nu-
+1114     merical weather prediction. Journal of Applied Meteorology and Climatology 55(11),
+1115     2469–2491. Publisher: American Meteorological Society Section: Journal of Applied
+1116     Meteorology and Climatology.
+1117   de Groot, W. J., Goldammer, J. G., Keenan, T., Brady, M. A., Lynham, T. J., Justice, C. O.,
+1118     Csiszar, I. A. and O’Loughlin, K. (2006) Developing a global early warning system for
+1119     wildland fire. Forest Ecology and Management 234, S10.
+
+                                                     34
+1120   Guerrero, F., Espinoza, L., Vidal, V., Carmona, C., Krecl, P., Targino, A. C., Ruggeri, M. F.
+1121    and Toledo, M. (2024) Black carbon and particulate matter concentrations amid central
+1122    Chile’s extreme wildfires. Science of The Total Environment 951, 175541.
+
+1123   Guzzetti, F., Reichenbach, P., Cardinali, M., Galli, M. and Ardizzone, F. (2005) Probabilis-
+1124    tic landslide hazard assessment at the basin scale. Geomorphology 72(1-4), 272–299.
+1125    Publisher: Elsevier.
+
+1126   Haiden, T., Kann, A., Wittmann, C., Pistotnik, G., Bica, B. and Gruber, C. (2011) The Inte-
+1127    grated Nowcasting through Comprehensive Analysis (INCA) System and Its Validation
+1128    over the Eastern Alpine Region. Weather and Forecasting 26(2), 166–183. Publisher:
+1129    American Meteorological Society.
+
+1130   Hollis, J. J., Matthews, S., Fox-Hughes, P., Grootemaat, S., Heemstra, S., Kenny, B. J.
+1131    and Sauvage, S. (2024) Introduction to the Australian Fire Danger Rating System†.
+1132    International Journal of Wildland Fire 33(3). Publisher: CSIRO PUBLISHING.
+
+1133   Hosmer, D. W., Lemeshow, S. and Sturdivant, R. X. (2013) Applied Logistic Regression:
+1134    Third Edition. Applied Logistic Regression: Third Edition pp. 1–510. Publisher: wiley.
+
+1135   Jain, P., Coogan, S. C., Subramanian, S. G., Crowley, M., Taylor, S. and Flannigan, M. D.
+1136      (2020) A review of machine learning applications in wildfire science and management.
+1137      Environmental Reviews 28(4), 478–505. Publisher: NRC Research Press.
+
+1138   Jappiot, M., Gonzalez-Olabarria, J. R., Lampin-Maillet, C. and Borgniet, L. (2009) Assess-
+1139     ing Wildfire Risk in Time and Space. In Living with wildfires: what science can tell us.
+1140     A contribution to the Science-Policy Dialogue, pp. 41 – 47. European Forest Institute.
+
+1141   Jellouli, O. and Bernoussi, A. S. (2022) The impact of dynamic wind flow behavior on
+1142      forest fire spread using cellular automata: Application to the watershed BOUKHALEF
+1143      (Morocco). Ecological Modelling 468, 109938.
+
+1144   Jolly, W. M., Cochrane, M. A., Freeborn, P. H., Holden, Z. A., Brown, T. J., Williamson, G. J.
+1145     and Bowman, D. M. J. S. (2015) Climate-induced variations in global wildfire danger
+1146     from 1979 to 2013. Nature Communications 6(1), 7537. Publisher: Nature Publishing
+1147     Group.
+
+1148   Jones, R. L., Guha-Sapir, D. and Tubeuf, S. (2022) Human and economic impacts of natural
+1149     disasters: can we trust the global data? Scientific Data 9(1), 572. Publisher: Nature
+1150     Publishing Group.
+
+1151   Keeley, J. E. and Syphard, A. D. (2017) Different historical fire–climate patterns in Cali-
+1152     fornia. International Journal of Wildland Fire 26(4), 253–268. Publisher: CSIRO PUB-
+1153     LISHING.
+
+1154   Koutsias, N., Allgöwer, B., Kalabokidis, K., Mallinis, G., Balatsos, P. and Goldammer, J. G.
+1155     (2015) Fire occurrence zoning from local to global scale in the European Mediterranean
+1156     basin: implications for multi-scale fire management and policy. iForest - Biogeosciences
+
+
+                                                    35
+1157     and Forestry 9(2), 195. Publisher: SISEF - Italian Society of Silviculture and Forest Ecol-
+1158     ogy Section: Modelling.
+1159   Kudláčková, L., Bartošová, L., Linda, R., Bláhová, M., Poděbradská, M., Fischer, M., Balek,
+1160    J., Žalud, Z. and Trnka, M. (2024) Assessing fire danger classes and extreme thresh-
+1161    olds of the Canadian Fire Weather Index across global environmental zones: a review.
+1162    Environmental Research Letters 20(1), 013001. Publisher: IOP Publishing.
+1163   Lemus-Canovas, M., Crespi, A., Maines, E., Terzi, S. and Pittore, M. (2025) More intense
+1164     heatwaves under drier conditions: a compound event analysis in the Adige River basin
+1165     (Eastern Italian Alps). Publisher: Copernicus GmbH.
+1166   Lemus-Canovas, M., Lopez-Bustins, J. A., Martin-Vide, J. and Royé, D. (2019) synoptReg:
+1167     An R package for computing a synoptic climate classification and a spatial regionaliza-
+1168     tion of environmental data. Environmental Modelling & Software 118, 114–119.
+1169   Leuenberger, M., Parente, J., Tonini, M., Pereira, M. G. and Kanevski, M. (2018) Wild-
+1170     fire susceptibility mapping: deterministic vs. stochastic approaches. Environmental
+1171     Modelling & Software 101, 194–203.
+1172   Linn, R., Winterkamp, J., Edminster, C., Colman, J. J. and Smith, W. S. (2007) Coupled
+1173     influences of topography and wind on wildland fire behaviour. International Journal of
+1174     Wildland Fire. 16: 183-195. 16, 183–195.
+1175   Lombardo, L., Opitz, T., Ardizzone, F., Guzzetti, F. and Huser, R. (2020) Space-time land-
+1176     slide predictive modelling. Earth-Science Reviews 209, 103318. Publisher: Elsevier.
+1177   Malinowski, R., Lewiński, S., Rybicki, M., Gromny, E., Jenerowicz, M., Krupiński, M.,
+1178    Nowakowski, A., Wojtkowski, C., Krupiński, M., Krätzschmar, E. and Schauer, P. (2020)
+1179    Automated Production of a Land Cover/Use Map of Europe Based on Sentinel-2 Im-
+1180    agery. Remote Sensing 12(21), 3523. Number: 21 Publisher: Multidisciplinary Digital
+1181    Publishing Institute.
+1182   Mantero, G., Morresi, D., Negri, S., Anselmetto, N., Lingua, E., Bonifacio, E., Garbarino,
+1183    M. and Marzano, R. (2023) Short-term drivers of post-fire forest regeneration in the
+1184    Western Alps. Fire Ecology 19(1), 23.
+1185   Maranghides, A., Link, E., Brown, C. U., Walton, W. D., Mell, W. and Hawks, S. (2023) A
+1186    Case Study of the Camp Fire - Notification, Evacuation, Traffic, and Temporary Refuge
+1187    Areas (NETTRA). Technical report, National Institute of Standards and Technology,
+1188    Gaithersburg, MD. https://doi.org/10.6028/NIST.TN.2252.
+1189   Maringer, J., Ascoli, D., Dorren, L., Bebi, P. and Conedera, M. (2016) Temporal trends
+1190    in the protective capacity of burnt beech forests (Fagus sylvatica L.) against rockfall.
+1191    European Journal of Forest Research 135(4), 657–673.
+1192   Martin, D. A. and Moody, J. A. (2001) Comparison of soil infiltration rates in burned
+1193    and unburned mountainous watersheds. Hydrological Processes 15(15), 2893–2903.
+1194    _eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/hyp.380.
+
+                                                    36
+1195   Martínez, J., Vega-Garcia, C. and Chuvieco, E. (2009) Human-caused wildfire risk rat-
+1196    ing for prevention planning in Spain. Journal of Environmental Management 90(2),
+1197    1241–1252.
+
+1198   McKee, T. B., Doesken, N. J. and Kleist, J. (1993) The relationship of drought frequency
+1199    and duration of time scales. Eighth Conference on Applied Climatology, American
+1200    Meteorological Society pp. 179–186.
+
+1201   Moreno, M., Lombardo, L., Crespi, A., Zellner, P. J., Mair, V., Pittore, M., van Westen, C.
+1202    and Steger, S. (2024) Space-time data-driven modeling of precipitation-induced shallow
+1203    landslides in South Tyrol, Italy. Science of The Total Environment 912, 169166.
+
+1204   Moreno, M., Lombardo, L., Steger, S., de Vugt, L., Zieher, T., Crespi, A., Marra, F., van
+1205    Westen, C. and Opitz, T. (2025) Functional Regression for Space-Time Prediction of
+1206    Precipitation-Induced Shallow Landslides in South Tyrol, Italy. Journal of Geophysical
+1207    Research: Earth Surface 130(4), e2024JF008219. _eprint: https://onlinelibrary.wi-
+1208    ley.com/doi/pdf/10.1029/2024JF008219.
+
+1209   Moreno, M., Steger, S., Tanyas, H. and Lombardo, L. (2023) Modeling the area of
+1210    co-seismic landslides via data-driven models: The Kaikōura example. Engineering
+1211    Geology 320, 107121. Publisher: Elsevier.
+
+1212   Moritz, M. A., Morais, M. E., Summerell, L. A., Carlson, J. M. and Doyle, J. (2005) Wild-
+1213    fires, complexity, and highly optimized tolerance. Proceedings of the National Academy
+1214    of Sciences 102(50), 17912–17917. Publisher: Proceedings of the National Academy of
+1215    Sciences.
+
+1216   Müller, M., Vilà Vilardell, L., Vacik, H., Mayer, C., Mayr, S., Carrega, P., Duche, Y., La-
+1217    haye, S., Böttcher, F., Maier, H., Schunk, C., Zimmermann, L., Ascoli, D., Cotterchio, A.,
+1218    Fiorucci, P., Gottero, F., Pirone, S., Rizzolo, R., Vacchiano, G. and Sautter, M. (2020a)
+1219    Forest fires in the Alps - State of knowledge, future challenges and options for an
+1220    integrated fire management. EUSALP Action Group 8.
+
+1221   Müller, M. M., Vacik, H., Diendorfer, G., Arpaci, A., Formayer, H. and Gossow, H.
+1222    (2013) Analysis of lightning-induced forest fires in Austria. Theoretical and Applied
+1223    Climatology 111(1), 183–193.
+
+1224   Müller, M. M., Vilà-Vilardell, L. and Vacik, H. (2020b) Towards an integrated forest fire
+1225    danger assessment system for the European Alps. Ecological Informatics 60, 101151.
+
+1226   NASA JPL (2020) NASADEM Merged DEM Global 1 arc second V001.
+
+1227   Noble, I. R., Gill, A. M. and Bary, G. a. V. (1980) McArthur’s fire-danger meters expressed
+1228    as equations. Australian Journal of Ecology 5(2), 201–203. _eprint: https://onlineli-
+1229    brary.wiley.com/doi/pdf/10.1111/j.1442-9993.1980.tb01243.x.
+
+1230   Norbiato, D., Borga, M., Merz, R., Blöschl, G. and Carton, A. (2009) Controls on event
+1231    runoff coefficients in the eastern Italian Alps. Journal of Hydrology 375(3), 312–325.
+
+
+                                                   37
+1232   Oliveira, S., Gonçalves, A. and Zêzere, J. L. (2021) Reassessing wildfire susceptibility and
+1233     hazard for mainland Portugal. Science of The Total Environment 762, 143121.
+
+1234   Oliveira, S., Moreira, F., Boca, R., San-Miguel-Ayanz, J. and Pereira, J. M. C. (2013) Assess-
+1235     ment of fire selectivity in relation to land cover and topography: a comparison between
+1236     Southern European countries. International Journal of Wildland Fire 23(5), 620–630.
+1237     Publisher: CSIRO PUBLISHING.
+
+1238   Oliveira, S., Oehler, F., San-Miguel-Ayanz, J., Camia, A. and Pereira, J. M. C. (2012) Model-
+1239     ing spatial patterns of fire occurrence in Mediterranean Europe using Multiple Regres-
+1240     sion and Random Forest. Forest Ecology and Management 275, 117–129.
+
+1241   Oliveras, I., Gracia, M., Moré, G. and Retana, J. (2009) Factors influencing the pattern of
+1242     fire severities in a large wildfire under extreme meteorological conditions in the Mediter-
+1243     ranean basin. International Journal of Wildland Fire 18(7), 755–764. Publisher: CSIRO
+1244     PUBLISHING.
+
+1245   OpenStreetMap contributors (2017) Planet dump retrieved from https://planet.osm.org.
+1246    Published: https://www.openstreetmap.org.
+
+1247   Opitz, T., Bakka, H., Huser, R. and Lombardo, L. (2022) High-resolution Bayesian map-
+1248    ping of landslide hazard with unobserved trigger event. The Annals of Applied Statistics
+1249    16(3), 1653–1675. Publisher: Institute of Mathematical Statistics.
+
+1250   Pagnon Eriksson, C., Johansson, N. and McNamee, M. (2023) The performance of wildfire
+1251     danger indices: A Swedish case study. Safety Science 159, 106038.
+
+1252   Parente, J. and Pereira, M. G. (2016) Structural fire risk: The case of Portugal. Science of
+1253     The Total Environment 573, 883–893.
+
+1254   Patton, A. I., Luna, L. V., Roering, J. J., Jacobs, A., Korup, O. and Mirus, B. B. (2023) Land-
+1255     slide initiation thresholds in data-sparse regions: application to landslide early warn-
+1256     ing criteria in Sitka, Alaska, USA. Natural Hazards and Earth System Sciences 23(10),
+1257     3261–3284. Publisher: Copernicus GmbH.
+
+1258   Pittore, M., Campalani, P., Renner, K., Plörer, M. and Tagliavini, F. (2023) Border-
+1259     independent multi-functional, multi-hazard exposure modelling in Alpine regions.
+1260     Natural Hazards 119(2), 837–858.
+
+1261   Pourtaghi, Z. S., Pourghasemi, H. R., Aretano, R. and Semeraro, T. (2016) Investigation of
+1262     general indicators influencing on forest fire and its susceptibility modeling using differ-
+1263     ent data mining techniques. Ecological Indicators 64, 72–84.
+
+1264   Povak, N. A., Hessburg, P. F. and Salter, R. B. (2018) Evidence for scale-dependent topo-
+1265     graphic controls on wildfire spread. Ecosphere 9(10), e02443. _eprint: https://onlineli-
+1266     brary.wiley.com/doi/pdf/10.1002/ecs2.2443.
+
+1267   Pyne, S. J., Andrews, P. L. and Laven, R. D. (1996) Introduction to wildland fire. Second
+1268     edition. New York, USA: John Wiley and Sons. ISBN 978-0-471-54913-0.
+
+                                                     38
+1269   Pérez-Sánchez, J., Senent-Aparicio, J., Díaz-Palmero, J. M. and Cabezas-Cerezo, J. d. D.
+1270     (2017) A comparative study of fire weather indices in a semiarid south-eastern Eu-
+1271     rope region. Case of study: Murcia (Spain). Science of The Total Environment 590-591,
+1272     761–774.
+1273   Renner, K., Schneiderbauer, S., Pruß, F., Kofler, C., Martin, D. and Cockings, S. (2018)
+1274     Spatio-temporal population modelling as improved exposure information for risk as-
+1275     sessments tested in the Autonomous Province of Bolzano. International Journal of
+1276     Disaster Risk Reduction 27, 470–479.
+1277   Richards, J., Huser, R., Bevacqua, E. and Zscheischler, J. (2023) Insights into the drivers
+1278     and spatiotemporal trends of extreme Mediterranean wildfires with statistical deep
+1279     learning. Artificial Intelligence for the Earth Systems 2(4). Publisher: American Mete-
+1280     orological Society Section: Artificial Intelligence for the Earth Systems.
+1281   Richardson, D., Black, A. S., Irving, D., Matear, R. J., Monselesan, D. P., Risbey, J. S., Squire,
+1282     D. T. and Tozer, C. R. (2022) Global increase in wildfire potential from compound fire
+1283     weather and drought. npj Climate and Atmospheric Science 5(1), 1–12. Publisher:
+1284     Nature Publishing Group.
+1285   Robichaud, P. R. and Elliot, W. J. (2006) Protection from erosion following wildfire.
+1286     Unpublished paper written for presentation at the 2006 ASABE Annual International
+1287     Meeting, Portland Convention Center, Portland, OR, July 9-12, 2006. ASABE Paper No.
+1288     068009. St. Joseph, MI: American Society of Agricultural and Biological Engineers. 7 p .
+1289   Rotbarth, R., van Nes, E. H., Scheffer, M. and Holmgren, M. (2025) Boreal forests are
+1290     heading for an open state. Proceedings of the National Academy of Sciences 122(2),
+1291     e2404391121. Publisher: Proceedings of the National Academy of Sciences.
+1292   Ruffault, J., Curt, T., Moron, V., Trigo, R. M., Mouillot, F., Koutsias, N., Pimont, F., Martin-
+1293     StPaul, N., Barbero, R., Dupuy, J.-L., Russo, A. and Belhadj-Khedher, C. (2020) Increased
+1294     likelihood of heat-induced large wildfires in the Mediterranean Basin. Scientific Reports
+1295     10(1), 13790. Publisher: Nature Publishing Group.
+1296   Ruopp, M. D., Perkins, N. J., Whitcomb, B. W. and Schisterman, E. F. (2008) Youden In-
+1297     dex and Optimal Cut-Point Estimated from Observations Affected by a Lower Limit of
+1298     Detection. Biometrical journal. Biometrische Zeitschrift 50(3), 419–430.
+1299   Ríos-Pena, L., Kneib, T., Cadarso-Suárez, C. and Marey-Pérez, M. (2017) Predicting the
+1300     occurrence of wildfires with binary structured additive regression models. Journal of
+1301     Environmental Management 187, 154–165.
+1302   Saito, T. and Rehmsmeier, M. (2015) The Precision-Recall Plot Is More Informative than
+1303     the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets. PLOS ONE
+1304     10(3), e0118432. Publisher: Public Library of Science.
+1305   de Santana, R. O., Delgado, R. C. and Schiavetti, A. (2021) Modeling susceptibility to forest
+1306     fires in the Central Corridor of the Atlantic Forest using the frequency ratio method.
+1307     Journal of Environmental Management 296, 113343.
+
+                                                      39
+1308   Santos, R., Russo, A. and Gouveia, C. M. (2024) Co-occurrence of marine and atmo-
+1309     spheric heatwaves with drought conditions and fire activity in the Mediterranean re-
+1310     gion. Scientific Reports 14(1), 19233. Publisher: Nature Publishing Group.
+
+1311   Sass, O., and Sarcletti, S. (2017) Patterns of long-term regeneration of forest fire slopes in
+1312     the Northern European Alps – a logistic regression approach. Geografiska Annaler:
+1313     Series A, Physical Geography 99(1), 56–71. Publisher: Taylor & Francis _eprint:
+1314     https://doi.org/10.1080/04353676.2016.1263131.
+
+1315   Schlögl, M., Spiekermann, R. and Steger, S. (2025) Towards a holistic assessment of land-
+1316     slide susceptibility models: insights from the Central Eastern Alps. Environmental
+1317     Earth Sciences 84(4), 113.
+
+1318   Schunk, C., Wastl, C., Leuchner, M., Schuster, C. and Menzel, A. (2013) Forest fire danger
+1319     rating in complex topography – results from a case study in the Bavarian Alps in au-
+1320     tumn 2011. Natural Hazards and Earth System Sciences 13(9), 2157–2167. Publisher:
+1321     Copernicus GmbH.
+
+1322   Scott, J., Helmbrecht, D., Thompson, M. P., Calkin, D. E. and Marcille, K. (2012) Probabilis-
+1323     tic assessment of wildfire hazard and municipal watershed exposure. Natural Hazards
+1324     64(1), 707–728.
+
+1325   Sebastián-López, A., Salvador-Civil, R., Gonzalo-Jiménez, J. and SanMiguel-Ayanz, J.
+1326     (2008) Integration of socio-economic and environmental variables for modelling long-
+1327     term fire danger in Southern Europe. European Journal of Forest Research 127(2),
+1328     149–163.
+
+1329   Sirca, C., Salis, M., Arca, B., Duce, P. and Spano, D. (2018) Assessing the performance of
+1330     fire danger indexes in a Mediterranean area. iForest - Biogeosciences and Forestry 11(5),
+1331     563. Publisher: SISEF - Italian Society of Silviculture and Forest Ecology Section: Forest
+1332     Dynamics and Natural Disturbances.
+
+1333   Smith, J. T., Allred, B. W., Boyd, C. S., Davies, K. W., Jones, M. O., Kleinhesselink, A. R.,
+1334     Maestas, J. D. and Naugle, D. E. (2023) Where There’s Smoke, There’s Fuel: Dynamic
+1335     Vegetation Data Improve Predictions of Wildfire Hazard in the Great Basin. Rangeland
+1336     Ecology & Management 89, 20–32.
+
+1337   Song, H.-S., and Lee, S.-H. (2017) Effects of wind and tree density on forest fire patterns
+1338     in a mixed-tree species forest. Forest Science and Technology 13(1), 9–16. Publisher:
+1339     Taylor & Francis _eprint: https://doi.org/10.1080/21580103.2016.1262793.
+
+1340   Steger, S., Moreno, M., Crespi, A., Luigi Gariano, S., Teresa Brunetti, M., Melillo, M., Pe-
+1341     ruccacci, S., Marra, F., de Vugt, L., Zieher, T., Rutzinger, M., Mair, V. and Pittore, M.
+1342     (2024) Adopting the margin of stability for space–time landslide prediction – A data-
+1343     driven approach for generating spatial dynamic thresholds. Geoscience Frontiers 15(5),
+1344     101822.
+
+
+
+                                                    40
+1345   Steger, S., Moreno, M., Crespi, A., Zellner, P. J., Gariano, S. L., Brunetti, M. T., Melillo, M.,
+1346     Peruccacci, S., Marra, F., Kohrs, R., Goetz, J., Mair, V. and Pittore, M. (2023) Deciphering
+1347     seasonal effects of triggering and preparatory precipitation for improved shallow land-
+1348     slide prediction using generalized additive mixed models. Natural Hazards and Earth
+1349     System Sciences 23(4), 1483–1506. Publisher: Copernicus GmbH.
+
+1350   Tonini, M., D’Andrea, M., Biondi, G., Degli Esposti, S., Trucchia, A. and Fiorucci, P. (2020)
+1351     A Machine Learning-Based Approach for Wildfire Susceptibility Mapping. The Case
+1352     Study of the Liguria Region in Italy. Geosciences 10(3), 105. Number: 3 Publisher:
+1353     Multidisciplinary Digital Publishing Institute.
+
+1354   Trucchia, A., Izadgoshasb, H., Isnardi, S., Fiorucci, P. and Tonini, M. (2022a) Machine-
+1355     learning applications in geosciences: comparison of different algorithms and vegetation
+1356     classes’ importance ranking in wildfire susceptibility. Geosciences 12(11), 424. Number:
+1357     11 Publisher: Multidisciplinary Digital Publishing Institute.
+
+1358   Trucchia, A., Meschi, G., Fiorucci, P., Gollini, A. and Negro, D. (2022b) Defining wildfire
+1359     susceptibility maps in Italy for understanding seasonal wildfire regimes at the national
+1360     level. Fire 5(1), 30. Number: 1 Publisher: Multidisciplinary Digital Publishing Institute.
+
+1361   Turco, M., von Hardenberg, J., AghaKouchak, A., Llasat, M. C., Provenzale, A. and Trigo,
+1362     R. M. (2017) On the key role of droughts in the dynamics of summer fires in Mediter-
+1363     ranean Europe. Scientific Reports 7(1), 81. Publisher: Nature Publishing Group.
+
+1364   Turco, M., Jerez, S., Doblas-Reyes, F. J., AghaKouchak, A., Llasat, M. C. and Provenzale,
+1365     A. (2018) Skilful forecasting of global fire activity using seasonal climate predictions.
+1366     Nature Communications 9(1), 2718. Publisher: Nature Publishing Group.
+
+1367   Verde, J. C. and Zêzere, J. L. (2010) Assessment and validation of wildfire susceptibility
+1368     and hazard in Portugal. Natural Hazards and Earth System Sciences 10(3), 485–497.
+1369     Publisher: Copernicus GmbH.
+
+1370   Vicente-Serrano, S. M., Beguería, S. and López-Moreno, J. I. (2010) A Multiscalar Drought
+1371     Index Sensitive to Global Warming: The Standardized Precipitation Evapotranspiration
+1372     Index. Journal of Climate 23(7), 1696–1718.
+
+1373   Viegas, D. X., Bovio, G., Ferreira, A., Nosenzo, A. and Sol, B. (1999) Comparative study of
+1374     various methods of fire danger evaluation in southern Europe. International Journal of
+1375     Wildland Fire 9(4), 235–246. Publisher: CSIRO PUBLISHING.
+
+1376   Wagner, V. and E, C. (1987) Development and structure of the Canadian Forest Fire
+1377    Weather Index System. ISBN 978-0-662-15198-2. ISSN: None.
+
+1378   Wastl, C., Schunk, C., Leuchner, M., Pezzatti, G. B. and Menzel, A. (2012) Recent climate
+1379    change: Long-term trends in meteorological forest fire danger in the Alps. Agricultural
+1380    and Forest Meteorology 162-163, 1–13.
+
+
+
+
+                                                      41
+1381   van der Werf, G. R., Randerson, J. T., Giglio, L., van Leeuwen, T. T., Chen, Y., Rogers, B. M.,
+1382     Mu, M., van Marle, M. J. E., Morton, D. C., Collatz, G. J., Yokelson, R. J. and Kasibhatla,
+1383     P. S. (2017) Global fire emissions estimates during 1997–2016. Earth System Science
+1384     Data 9(2), 697–720. Publisher: Copernicus GmbH.
+
+1385   Wood, S. N. (2006) Generalized Additive Models : An introduction with R. New York:
+1386    Chapman and Hall/CRC. Publication Title: Generalized Additive Models.
+
+1387   Wood, S. N. (2017) Generalized Additive Models: An Introduction with R, Second Edition.
+1388    Second edition. New York: Chapman and Hall/CRC. ISBN 978-1-315-37027-9.
+
+1389   Woolford, D. G., Bellhouse, D. R., Braun, W. J., Dean, C. B., Martell, D. L. and Sun, J. (2011)
+1390    A spatio-temporal model for people-caused forest fire occurrence in the Romeo Malette
+1391    Forest. Journal of Environmental Statistics 2(1), 26.
+
+1392   Yue, W., Ren, C., Liang, Y., Liang, J., Lin, X., Yin, A. and Wei, Z. (2023) Assessment of
+1393     Wildfire Susceptibility and Wildfire Threats to Ecological Environment and Urban De-
+1394     velopment Based on GIS and Multi-Source Data: A Case Study of Guilin, China. Remote
+1395     Sensing 15(10), 2659. Number: 10 Publisher: Multidisciplinary Digital Publishing In-
+1396     stitute.
+
+1397   Zhang, G., Wang, M. and Liu, K. (2021) Deep neural networks for global wildfire suscep-
+1398     tibility modelling. Ecological Indicators 127, 107735.
+
+1399   Zscheischler, J., Westra, S., van den Hurk, B. J. J. M., Seneviratne, S. I., Ward, P. J., Pitman,
+1400     A., AghaKouchak, A., Bresch, D. N., Leonard, M., Wahl, T. and Zhang, X. (2018) Future
+1401     climate risk from compound events. Nature Climate Change 8(6), 469–477. Publisher:
+1402     Nature Publishing Group.
+
+1403   Zuur, A. F., Ieno, E. N., Walker, N., Saveliev, A. A. and Smith, G. M. (2009) Mixed effects
+1404     models and extensions in ecology with R. Statistics for Biology and Health. New York,
+1405     NY: Springer New York.
+
+
+
+
+                                                      42
+

@@ -1,0 +1,768 @@
+                                                             Journal of Environmental Management 377 (2025) 124600
+
+
+                                                                      Contents lists available at ScienceDirect
+
+
+                                                    Journal of Environmental Management
+                                                           journal homepage: www.elsevier.com/locate/jenvman
+
+
+Research article
+
+Mapping the probability of forest fire hazard across the European Alps
+under climate change scenarios
+Kilian Gerberding a , Uta Schirpke b,*
+a
+    Faculty of Environment and Natural Resources, University of Freiburg, Tennenbacher Str. 4, Freiburg, 79106, Germany
+b
+    Institute for Alpine Environment, Eurac Research, Drususallee 1, Bozen/Bolzano, 39100, Italy
+
+
+
+
+A R T I C L E I N F O                                        A B S T R A C T
+
+Keywords:                                                    Forest fires are increasing in frequency and intensity worldwide due to the anthropogenic climate change,
+Global warming                                               threatening people’s lives and causing huge economic and environmental damages. Recent forest fire events
+Shared socio-economic pathways (SSPs)                        suggest that forest fires are also an urgent issue in the European Alps, but studies assessing the forest fire hazard
+Mountain forest
+                                                             under future climate scenarios are still rare. Thus, this study aims to analyse the impacts of climate change on the
+Wildfire
+                                                             probability of forest fire hazard across the European Alps and surrounding areas. In specific, we (1) explain the
+Geostatistical model
+Geographically weighted regression                           current forest fire hazard based on a set of environmental and anthropogenic parameters, and (2) map the forest
+                                                             fire hazard under current and future conditions across the study area using geographically weighted regression.
+                                                             Our results suggest that the fire hazard mainly depends on the frequency of lightning strikes, the annual mean
+                                                             temperature, and the precipitation seasonality. Overall, our results indicate a future increase in forest fire hazard,
+                                                             which is already significant under the SSP126 (+15.5%), while highest increases occur under the SSP370
+                                                             (30.6%) and the SSP585 (35.4%). However, while the impacts are less pronounced in already fire-prone regions
+                                                             in the southwestern regions in France, the probability of forest fire hazard will greatly increase in the Northern
+                                                             and Eastern regions. Our findings emphasize the urgent need to address these climate-related challenges by
+                                                             decision-making and management through fire-smart forest management. Nevertheless, further efforts are
+                                                             needed to overcome current limitations related to data availability and uncertainties in future scenarios.
+
+
+
+
+1. Introduction                                                                                   degradation, desertification, loss of forests, and biodiversity decline
+                                                                                                  (Agbeshie et al., 2022; Armenteras et al., 2021; Jolly et al., 2022; Phil­
+    Fires are a major natural disturbance of forest ecosystems, influ­                            lips et al., 2022). Furthermore, forest fires in mountainous regions
+encing ecological processes, biodiversity, forest structures, and land­                           endanger protection forests (Stritih et al., 2024), leading to a higher
+scape patterns. Depending on the fire regime, forest fires can be a threat                        vulnerability to natural hazards like avalanches and landslides, and they
+to people’s lives and cause economic and environmental damages                                    reduce cultural ecosystem services such as recreational and aesthetic
+(Bowman et al., 2020). Large intensive fires have huge impacts on the                             experiences (Iglesias et al., 2022; Lecina-diaz et al., 2023; Spadoni et al.,
+physical health, as the exposure to smoke is associated with an increased                         2023).
+risk of respiratory cardiovascular diseases, among others (Johnston                                   The occurrence of forest fires is associated with various environ­
+et al., 2012; Liu et al., 2015). Experiencing the threat to personal safety                       mental and anthropogenic factors such as weather conditions, vegeta­
+and the loss of properties and belongings can have long-lasting conse­                            tion characteristics, and human activities (Gao et al., 2024; Sevinc et al.,
+quences on mental health, causing depression, posttraumatic stress                                2020). Regions characterized by dry climatic conditions have always
+disorder, and anxiety (Gao et al., 2023; To et al., 2021). Moreover, forest                       been prone to forest fires, located, for example, around the Mediterra­
+fires generate considerable economic losses due to damaged infra­                                 nean in Europe, in western North America, and Australia (Andela et al.,
+structure and settlements, health costs, and the disruption of supply                             2019; Jones et al., 2022). However, it is expected that human-induced
+chains (Wang et al., 2021). Depending on characteristics of fires (i.e.,                          climate change increases the forest fire activity globally, also in re­
+size, type, and intensity), there are numerous environmental impacts                              gions that have been less affected by forest fires in the past (Bowman
+and related ecosystem services, including carbon emissions, soil                                  et al., 2020; Dupuy et al., 2020; Resco de Dios et al., 2021). It is therefore
+
+
+    * Corresponding author.
+      E-mail address: uta.schirpke@eurac.edu (U. Schirpke).
+
+https://doi.org/10.1016/j.jenvman.2025.124600
+Received 22 October 2024; Received in revised form 27 January 2025; Accepted 15 February 2025
+Available online 22 February 2025
+0301-4797/© 2025 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+K. Gerberding and U. Schirpke                                                                                   Journal of Environmental Management 377 (2025) 124600
+
+
+likely that mountainous regions in Europe, such as the European Alps,                increasing temperatures and reduced precipitation increase the pressure
+will be increasingly affected by forest fires for several reasons. First, they       on regions that have been less affected by forest fires up to now, while
+are characterized by a high share of forest, potentially providing a huge            remaining high in already fire-prone regions. Our specific objectives are
+amount of fuels accumulated, as current climate conditions are too wet               (1) to explain the current forest fire hazard based on a set of environ­
+to sustain large fires (Resco de Dios et al., 2021; Rigo et al., 2017). In           mental and anthropogenic parameters, and (2) assess effects of climate
+addition, the abandonment of mountain grassland, together with an                    change on the future forest fire hazard by mapping the probability of
+upshift of the treeline, leads to an expansion of the forest area (Schirpke          forest fire hazard under current and future conditions across the study
+et al., 2023; Tasser et al., 2017). Climate predictions indicate rapid               area. We use statistical and spatially explicit modelling approaches to
+warming as well as significant changes in seasonal precipitation patterns            identify drivers of forest fires as well as to detect changes in spatial
+causing more severe droughts in mountain regions (Kotlarski et al.,                  patterns in the study area. Our findings provide useful information to
+2023; Pepin et al., 2022). Moreover, forest fires in mountainous terrain             decision-makers and forest managers, supporting them to scope with
+are often difficult to control due to reduced accessibility (Wastl et al.,           climate change-induced challenges in mountain regions.
+2013) and faster fire spread on steeper slopes (Janizadeh et al., 2023).
+    To support decision-makers and forest managers, a context-specific               2. Material and methods
+understanding of underlying drivers is needed to develop effective
+strategies in reducing potential future hazard (Berčák et al., 2023).              2.1. Study area
+Moreover, spatially explicit information that reveal changes in spatial
+patterns can support identifying priority areas for hazard management                    The ‘Alpine Space Programme cooperation area’ (hereinafter
+(Stritih et al., 2024). Despite a growing body of literature modelling the           referred to as ASP) extends over an area of 391,000 km2 and includes
+forest fire hazard in different regions across the world (Babu et al., 2023;         Austria, Switzerland, Liechtenstein, Slovenia, as well as several regions
+Bountzouklis et al., 2023; Tran et al., 2024), studies rarely predicted the          of France, Germany, and Italy (Fig. 1). About 70 million people live in
+forest fire hazard under future climate scenarios (Grünig et al., 2023;              the ASP, most of them (81%) in the lowlands in highly urbanized areas
+Shao et al., 2023; Varela et al., 2019). Only a few studies have focused             (Eurostat, 2021). Moreover, it is an important tourist destination with
+on European mountain regions, for example, addressing the role of fuel               about 6.8 billion overnights per year. The ASP is centred around the
+moisture content in the Pyrenees (Resco de Dios et al., 2021), assessing             European Alps, comprising mountainous areas (53%) up to 4809 m
+the effects of forest management in the French Alps (Jourdan et al.,                 above sea level (mean elevation 1279 m above sea level) as well as
+2021), evaluating the influence of forest dynamics and climate on fire               lowland areas (47%) that are located on average at 340 m above sea
+activity in the Swiss Alps (Schumacher and Bugmann, 2006), and pre­                  level (Schirpke, 2022). The high variation in topography results in great
+dicting the future forest fire danger based on the Canadian Forest Fire              climatic differences. While the northern and southeastern regions are
+Weather Index in French mediterranean regions (Varela et al., 2019), in              characterized by a humid climate with 1500 to 2700 mm precipitation
+the Bavarian Alps (Miller et al., 2024), and across the entire European              per year, the southern and western regions are dryer with an annual
+Alps (Cane et al., 2013). Most of these studies provide insights useful for          precipitation of 500–950 mm. Mean annual temperatures vary between
+management and planning at the local or regional level, while studies                − 6 ◦ C at high altitudes to 14 ◦ C in the southern lowlands. These climatic
+covering larger study areas are still needed, having higher potential to             differences are also reflected in the predominant land use/cover types.
+facilitate strategies and policies at multiple governance scales (Koutsias           The mountainous areas are dominated by forest (49%), grassland (20%),
+et al., 2016; Montiel-Molina, 2013).                                                 and high-mountain ecosystems with little or no vegetation (13%),
+    To support decision-making and management in identifying and                     whereas the lowlands are characterized by annual and permanent crops
+addressing potential threats to people and mountain forests, this study              (50%), forest (25%), and built-up areas (10%) (Schirpke, 2022). While
+aims to analyse the effects of climate change on the forest fire hazard              the Alpine region has undergone several periods of forest fire regimes,
+across the European Alps and surrounding areas. We hypothesize that                  since the late 1990s, it has primarily been characterized by periodic
+
+
+
+
+          Fig. 1. Location of the study area - the Alpine Space Programme cooperation area (ASP) - and location of past forest fire events (2000–2023).
+
+                                                                                 2
+K. Gerberding and U. Schirpke                                                                                        Journal of Environmental Management 377 (2025) 124600
+
+
+autumn-winter and early-spring surface fires, along with a growing                        triangulation, which includes only features as neighbours that share
+proportion of lightning-induced summer fires. With the increasing fre­                    edges or corners (Scott and Janikas, 2010). This resulted in an average
+quency of weather conditions conducive to fires, combined with the lack                   median distance of 17.4 km as buffer around the fire locations. After
+of forest management leading to the build-up of fire fuel, larger and                     creating a buffer around the fire locations, we removed these buffer
+more intense forest fires have become more common (Valese et al.,                         zones from the total forest area across the study area to obtain forest
+2014).                                                                                    areas for placing the non-fire locations. Second, considering that the
+                                                                                          spatial extent between regions affected by forest fires and those without
+2.2. Methodological approach                                                              forest fire events differed, which derived the number of non-fire loca­
+                                                                                          tions based on the ratio between these two regions, i.e., 1:2.25 (fire to
+    To analyse the effects of climate change on the forest fire hazard, we                non-fire regions). Thus, we created 1739 random non-fire points across
+applied four main analysis steps (Fig. 2). To predict the occurrence of                   the non-fire region, resulting in a total sample of 2511 fire/non-fire lo­
+forest fires, geostatistical modelling approaches are widely applied,                     cations (Fig. S1). Finally, we added an area with a radius of 325 m
+using empirical data to explain past fire events by conditioning factors,                 around the non-fire points to obtain non-fire locations, which corre­
+including environmental and anthropogenic variables, through statisti­                    sponds to the median of the area (0.33 km2) of burnt areas included in
+cal and data mining methods (Babu et al., 2023; Iban and Sekertekin,                      the EFFIS database in the ASP.
+2022; Jaung and Carrasco, 2021; Tran et al., 2024). In a first step, we
+therefore created a dataset containing locations of past forest fire events               2.4. Calculating the predictor variables
+as well as randomly selected locations where no fire has been occurred
+over the last two decades (section 2.3). The second step comprised the                        Various environmental and anthropogenic factors influence the
+selection and calculation of a set of predictor variables (section 2.4) that              occurrence of forest fires. To account for the diversity of drivers, we
+covered various potential natural and anthropogenic causes of forest                      considered 24 variables related to forest fire hazard, including envi­
+fires (Bountzouklis et al., 2023; Sevinc et al., 2020). In a third step, we               ronmental and anthropogenic variables (Table 1). The selection of these
+related these predictor variables to the dataset containing fire locations                variables was based on current literature (e.g., Babu et al., 2023;
+and non-fire locations through a binary logistic regression model to                      Bountzouklis et al., 2023; Carrasco et al., 2021; Iban and Sekertekin,
+explain the occurrence of forest fires (section 2.5). Using Geographically                2022; Qadir et al., 2021; Tran et al., 2024), but it was also influenced by
+Weighted Regression (GWR), we mapped the forest fire hazard under                         the availability of data. For example, it was not possible to include
+current climatic conditions across the entire study area (section 2.5).                   relevant variables such as information on understory fuels
+The fourth step included the mapping of future probability of forest fire                 (Sánchez-Pinillos et al., 2021), fuel properties of litter and dead wood
+hazard under three climate change scenarios and the assessment of the                     (Hanes et al., 2021; Morgan Varner et al., 2015), as well as on stand
+effects of climate change by spatially overlaying the different maps                      characteristics such as age, density, and management (Rigo et al., 2017).
+(section 2.6).                                                                            All potential predictor variables (Table 1) were mapped at a spatial
+                                                                                          resolution of 100 m across the study area (for details see subsections
+2.3. Preparing the forest fire database                                                   below).
+
+    To model fire hazard across the ASP, we used the European Forest                      2.4.1. Environmental variables
+Fire Information System (EFFIS; https://forest-fire.emergency.coper                           In mountain regions, topography is a decisive factor for climate,
+nicus.eu/), providing harmonised data of burnt areas in the European                      weather, vegetation, and land-use/cover patterns. Thus, elevation plays
+Union. We first downloaded the perimeters of all burnt areas between                      a key role in the general occurrence of forest fires (Bountzouklis et al.,
+2000 and 2023 located in our study area. In a next step, we removed all                   2023; Qadir et al., 2021), while slope and aspect lead to great differences
+burnt areas that included only other land cover types than forest (i.e.,                  in local temperature and soil moisture, which affects the forest fire
+CLC classes 311, 312, 313, 323, 324) by overlying the burnt areas with                    hazard through higher probability of ignition and faster fire spread
+the CLC types, resulting in 772 fire locations distributed across the study               (Janizadeh et al., 2023). For each fire/non-fire location, we therefore
+area. To model the probability of forest fire hazard through binary                       derived the mean elevation, mean slope, and mean aspect from a Digital
+regression modelling, we attributed these fire locations a value of 1,                    Elevation Model (DEM; https://spacedata.copernicus.eu/de/collecti
+while we also created non-fire locations in forest across the study area,                 ons/copernicus-digital-elevation-model). Moreover, we calculated the
+assigning them a value of 0 (Fig. S1a). We thereby accounted for spatial                  Topographic Wetness Index (TWI), indicating hydrological behaviour
+patterns in the past forest fire events: First, to ensure that non-fire lo­               based on terrain characteristics (Beven and Kirkby, 1979). Since soil
+cations had not been already affected by forest fires in the past and given               moisture is an important determinant for forest fires, influencing igni­
+the spatial clustering of the fire-locations, we restricted the placement of              tion conditions and flammability (O et al., 2020), we employed the TWI
+the non-fire locations as follows. We calculated the distance between all                 as a proxy for local soil moisture conditions (Kopecký et al., 2021).
+burnt areas included in the EFFIS database using Delaunay                                     Weather and climatic conditions are one of the main factors for forest
+
+
+
+
+                                Fig. 2. Conceptual steps for modelling and assessing the effects of climate change on the forest fire hazard.
+
+                                                                                      3
+K. Gerberding and U. Schirpke                                                                                         Journal of Environmental Management 377 (2025) 124600
+
+                                                                                            d
+Table 1                                                                                       CLMS: Copernicus Land Monitoring Service (https://land.copernicus.eu/en
+Potential predictor variables for mapping the forest fire hazard.                         /products/high-resolution-layer-tree-cover-density/tree-cover-density-2018).
+                                                                                            e
+                                                                                              OSM: OpenStreetMap (https://www.openstreetmap.org/).
+  Group             Variable         Description              Unit        Data              f
+                                                                          sources
+                                                                                              CLC: Corine Land Cover 2018 (https://land.copernicus.eu/pan-europe
+                                                                                          an/corine-land-cover/clc2018).
+  Environmental     Elevation        Mean elevation           m above     DEMa              g
+                                                                                              Eurostat: Eurostat census grid 2021 (https://ec.europa.eu/eurostat/web/
+                                                              sea level
+                                                                                          gisco/geodata/grids).
+                    Slope            Mean slope               degrees     DEMa              h
+                                                                                              Flickr: Photo-sharing website Flickr (https://www.flickr.com/).
+                    Aspect           Mean aspect              degrees     DEMa              i
+                    TWI              Topographical            index       DEMa                GBIF: Global Biodiversity Information Facility (https://www.gbif.org/datas
+                                     wetness index                                        et/50c9509d-22c7-4a22-a47d-8c48425ef4a7).
+  ​                 Temperature      Mean annual              ◦
+                                                                  C       CHELSAb
+                                     temperature
+                                                                                          fires affecting the ignition and behaviour of forest fires (Estes et al.,
+                    Precipitation    Mean annual              mm          CHELSAb
+                                     precipitation
+                                                                                          2017; Gao et al., 2024). We used the mean annual temperature, the
+                    Precipitation    Standard deviation       mm          CHELSAb         mean annual precipitation sum, and the precipitation seasonality
+                    Seasonality      of the monthly                                       (1981–2010), which were extracted from the CHELSA V2.1 data re­
+                                     precipitation                                        pository (Karger et al., 2017, 2021). Furthermore, lightning strikes have
+                                     estimates expressed
+                                                                                          been identified as the most important natural causes for forest fires,
+                                     as a
+                                     percentage of the                                    depending on both the frequency of lightning strikes as well as envi­
+                                     annual mean                                          ronmental conditions (Castedo-Dorado et al., 2011; Müller et al., 2020;
+                                     precipitation                                        Sevinc et al., 2020). Although the occurrence of lightning fires is mainly
+                    Lightnings       Mean density of          n km− 2     Met             influenced by dry flash, we had to use the density of lightning strikes as
+                                     lightnings strikes                   Officec
+                    TCD              Tree cover density       %           CLMSd
+                                                                                          predictor variable due to limited data availability across the study area.
+  Anthropogenic     Road distance    Euclidean distance       m           OSMe            To calculate the mean density of lightning strikesbased on the location
+                                     from the nearest                                     system ATDnet, we grouped every detection of the system (fix)
+                                     paved road                                           (2009–2023) occurring within a radius of 20 km and 1 s of another one
+                    Railway          Euclidean distance       m           OSMe
+                                                                                          into one flash (Anderson and Klugmann, 2014; Drüe et al., 2007).
+                    distance         from the nearest
+                                     railway track                                        However, it needs to be considered that the ATDnet system cannot
+                    Road time        Walking time from        minutes     OSMe            differentiate between cloud-to-ground lightning strikes or powerful
+                                     the nearest paved                                    cloud pulses, which may result in an overestimation of actual density of
+                                     road                                                 fire-igniting lightning strikes (Enno et al., 2020).
+                    Settlement       Travel time from the     minutes     OSMe,
+                    time             nearest settlement                   CLCf
+                                                                                              The characteristics of tree species and the availability of fuels in­
+                                     (CLC classes 111 and                                 fluence the severity of forest fires (Popović et al., 2021; Walker et al.,
+                                     112)                                                 2020). We therefore included. Second, t the tree cover density (TCD;
+                    Town time        Travel time from the     minutes     OSMe            EEA, 2020), which represents the proportional tree crown coverage in
+                                     nearest town (i.e.,
+                                                                                          each pixel with values ranging from 0 to 100%, to account for the dis­
+                                     important urban
+                                     centre, between a                                    tribution of potential fuel in the study area.
+                                     village and a city in
+                                     size)                                                2.4.2. Anthropogenic variables
+                    City time        Travel time from the     minutes     OSMe                The occurrence of forest fires is strongly correlated with human ac­
+                                     nearest city (i.e.,
+                                     largest urban
+                                                                                          tivities through accidental causes, arson, and people’s negligence
+                                     settlement within the                                (Bountzouklis et al., 2023; Sevinc et al., 2020). Most studies use in­
+                                     territory, including                                 dicators such as distance to roads and settlements to indicate the level of
+                                     national, regional,                                  human influence (Babu et al., 2023; Iban and Sekertekin, 2022; Tran
+                                     and provincial
+                                                                                          et al., 2024). However, these indicators do not sufficiently reflect the
+                                     capitals)
+                    Agriculture      Euclidean distance       m           CLCf            level of accessibility in mountainous landscapes as well as the presence
+                    distance         from agricultural                                    of people. In addition to the Euclidean distance to roads as well as
+                                     areas (CLC classes                                   railways, we therefore calculated the distance to roads in terms of
+                                     211–244)                                             walking time. Both indicators were based on paved roads included in the
+                    River distance   Euclidean distance       m           OSMe
+                                     from the nearest
+                                                                                          OpenStreetMap (OSM; https://www.openstreetmap.org/). The walking
+                                     river                                                time was derived according to Tobler’s hiking function that indicates the
+                    Water            Euclidean distance       m           CLCf            walking velocity as a function of slope (Tobler, 1993). The distance from
+                    distance         from water (CLC                                      settlements, towns, and cities was expressed as travel time by car (on
+                                     classes 511 and 512)
+                                                                                          paved roads) and by foot (on roads and paths not accessible by car, as
+                    Population       Population density in    n km− 2     Eurostatg
+                                     proximity to the fire                                well as off-road). From the road network provided by OSM, we derived
+                                     locations (buffers of                                the maximum speed of the roads. Missing data were integrated by
+                                     1, 3, 5, and 10 km)                                  assigning each type of road a mean travelling velocity, and an average
+                    Visitation       Density of photos        n km− 2     Flickrh         off-road velocity of 1 km per hour was assumed. Settlement areas were
+                    Flickr           from Flickr (i.e.,
+                                     photo-user days)
+                                                                                          extracted from the CORINE land cover database (European Environment
+                    Visitation       Density of iNaturalist   n km− 2     GBIFi           Agency, 2020) and the travel time was estimated using the cost distance
+                    GBIF             research-grade                                       algorithm as implemented in ArcGIS Pro 3.2 (ESRI, Redlands, CA, USA).
+                                     observations                                             A further factor for the occurrence of forest fires is related to the land
+ a
+   DEM: Digital Elevation Model (https://spacedata.copernicus.eu/de/collecti              use, especially to agricultural practices such as the burning of agricul­
+ons/copernicus-digital-elevation-model).                                                  tural and forest debris (Carrasco et al., 2021). We therefore derived the
+ b
+   CHELSA: CHELSA V2.1 Climatologies (https://chelsa-climate.org/).                       distance of agricultural areas extracted from the Corine land cover
+ c
+   Met Office (https://www.metoffice.gov.uk/).                                            database (European Environment Agency, 2020) to the fire/non-fire
+                                                                                          locations. Moreover, the distance from water can affect the occurrence
+
+
+                                                                                      4
+K. Gerberding and U. Schirpke                                                                                 Journal of Environmental Management 377 (2025) 124600
+
+
+of forest fires, potentially mitigation their ignition and spread due to           forest in the study area with a distance of 1 km between the points. For
+higher soil moisture as well as the availability of water for extinguishing        each point, we extracted the values of the predictor variables that were
+the fire (Tran et al., 2024). We therefore included two indicators related         mapped at a spatial resolution of 100 m, matching the variables of the
+to the distance of water, calculating the Euclidean distance from (1)              training data. Finally, we applied the GWR model to map the current
+rivers provided by OSM, and (2) large water courses and water bodies               forest fire hazard across the ASP.
+included in the CORINE land cover database (European Environment
+Agency, 2020).                                                                     2.6. Assessing the effects of climate change
+    To capture the number of people living in proximity to the burnt
+areas and non-fire locations, we derived the population density from the               To predict future forest fire hazard under three different Shared
+Eurostat census grid 2021 (https://ec.europa.eu/eurostat/web/gisco/                Socioeconomic Pathways (SSPs), we applied the same GWR model as for
+geodata/grids), applying buffer zones of 1, 3, 5, and 10 km radius. To             mapping the current forest fire hazard, replacing current climate data
+also detect differences in the presence of people carrying out (recrea­            with projections for the period 2070–2100. The other predictor vari­
+tional) activities in the landscape, we used mean visitation rates that            ables remained unchanged to disentangle the effects of anthropogenic-
+were derived from social media data, using (1) the photo-sharing web­              induced climate change on the forest fire hazard. We used the mean
+site Flickr (https://www.flickr.com/) and (2) research-grade observa­              annual temperature of the Coupled Model Intercomparison Project
+tions from the iNaturalists database (https://www.gbif.org/datas                   phase 6 (CMIP6) climate models from the CHELSA V2.1 data repository
+et/50c9509d-22c7-4a22-a47d-8c48425ef4a7). Flickr hosts a large re­                 (Karger et al., 2017, 2021), including five General Circulation Models
+pository of photographs related to recreational activities (Schirpke et al.,       (GCMs) for three different SSPs. The three scenarios SSP126, SSP370,
+2018). We used the metadata of all public photos in the study area taken           and SSP585 represent the lowest to highest values of anthropogenic
+at the street level to assure best spatial accuracy. We focused on photos          radiative forcing, global CO2 concentration, and global CO2 emissions
+taken in (semi-)natural land cover types, excluding urban and artificial           combined with different socioeconomic developments (O’Neill et al.,
+areas (i.e., CORINE land cover classes 111–133). In contrast, the scope of         2016). The SSP126 is a the most optimistic scenario compatible with the
+the citizen science project iNaturalist differs from Flickr, as it allows          2 ◦ C target under the assumption of adopting sustainable pathways and
+users to identify and share biodiversity information uploading pictures            implementing climate protection measures. The SSP370 is characterized
+of the species as well as their location (Aristeidou et al., 2021). We             by regional rivalry, representing the upper-middle range of impacts,
+downloaded the metadata of observations with spatial accuracy of over              while the SSP585 with an additional radiative forcing of 8.5 W/m2 by
+20 m during 2020–2023. For each dataset, we calculated the point                   the year 2100 represents the worst-case scenario based on an intensified
+density of photographs taken/observations made by one user per day in              exploitation of fossil fuel resources.
+a specific location applying a moving window with a search radius of                   For each SSP, we built a multi-model ensemble by calculating
+1.5 km (Schirpke et al., 2018). To reduce uncertainties related to the             average values across all five GCMs to reduce the uncertainty related to
+social media data (i.e., low photo density in some land cover types,               individual climate models (Lehner et al., 2020). Finally, we re-ran the
+uncertainties in the location of photographs, spatial aggregation), we             GWR to map the future forest fire hazard under the three SSPs, using the
+used a 300 m radius buffer to calculate the mean visitation rates for each         same model settings as for mapping the forest fire hazard under current
+location.                                                                          conditions. To assess the effects of climate change, we compared the
+                                                                                   outputs of the GWR under current climate conditions with those of the
+2.5. Modelling the forest fire hazard                                              three SSPs. We overlaid the scenario maps with the current forest fire
+                                                                                   hazard map to map and analyse future potential changes in spatial
+    To select indicators containing enough independent information and             patterns of the probability of forest fire hazard by calculating the dif­
+avoid issues of multicollinearity, we first determined the Pearson’s R             ferences in predicted values derived from GWR binary logistic model, i.
+and excluded variables with R > 0.7 (Table S1), indicating that they had           e., 0 (probability <0.5) and 1 (probability ≥0.5). To synthesize the
+more than 50% of the information in common. We also excluded vari­                 spatial results, we derived mean values across the entire ASP, at the
+ables with a variance inflation factor (VIF) > 5 indicated during                  national level, and for elevation zones. Group differences were tested
+regression analysis. The remaining 16 predictor variables were used to             applying one-way ANOVA with the Bonferroni post hoc test in SPSS
+explain the occurrence of forest fires through binary logistic regression          Statistics software V29.0.1.0 (IBM Cooperation).
+the with ArcGIS Pro 3.2 (ESRI, Redlands, CA, USA). We first applied
+generalized linear regression (GLR) with the binary logistic model. As             3. Results
+the residuals of the GLR model were spatially clustered indicating that
+the occurrence of forest fires depended on the local/regional context, we          3.1. Factors influencing the forest fire hazard
+applied GWR to map the current forest fire hazard across the entire study
+area. GWR is suitable to capture spatial variability in the relationships,             Between 2000 and 2023, most of the 772 forest fire events happened
+as it establishes separate models only based on the data from the                  in the southern part of the ASP (Fig. 1). The events were concentrated on
+neighbourhood (Fotheringham et al., 2009). In the GWR, we included                 the late winter/early spring season between January and April (52.3 %;
+only eight variables resulting significant from the binary logistic                Fig. S3), a second peak occurred during summer in July and August
+regression (Fig. S2), i.e., temperature, precipitation, precipitation sea­         (29.9 %). Least fire events occurred in May, November, and December
+sonality, lightnings, TCD, settlement time, water distance, and agricul­           (2.8%).
+ture distance. To define the optimal number of neighbours for the local                The binary logistic regression model explained 57% of the variance
+relationships, we applied the golden search method, which aims to                  in the occurrence of forest fires in the ASP by eight variables (adjusted
+minimize the AICc values and accounts for the spatial distribution of the          R2 = 0.57, p < 0.001). The model coefficients suggest that the fire
+neighbours. To validate the model’s predictive performance, we trained             hazard mostly depended on the frequency of lightnings and the tem­
+the model on 70% of the locations (i.e., 544 fire locations and 1215               perature. In addition, greater Euclidean distance from settlements,
+non-fire locations) and compared the predicted probabilites to the                 water, and agricultural areas, as well as higher precipitation sums and
+classification of the remaining 30% of the mapped locations (see                   seasonality increased the fire hazard, whereas higher TCD reduced the
+Fig. S1b for spatial distribution of training and validation locations).           fire hazard (Table 2). However, the residuals of the regression showed
+    For predicting the forest fire hazard across the entire study area, the        strong spatial autocorrelation (Moran’s I: 0.39, z-score: 131.7, p-value:
+GWR required polygons or points as input data. We therefore created a              <0.001). Thus, a GWR model was applied to describe local relationships.
+set of point data (n = 155,285) that were regularly distributed across the         With the GWR model, the adjusted R2 increased from the global to the
+
+                                                                               5
+K. Gerberding and U. Schirpke                                                                                      Journal of Environmental Management 377 (2025) 124600
+
+
+Table 2
+Result of the binary logistic regression model. Significant variables (p < 0.05) are indicated in bold.
+  Variable                      Coefficient   Std. Error    z-Statistic      Probability      Odds Ratio      Wald’s Low (95%)        Wald’s High (95%)       VIF
+
+  Intercept                     − 10.4591     0.6703        − 15.6039        <0.0001          0.0000          0.0000                  0.0001                  –
+  Aspect                            0.0000    0.0012          − 0.0301        0.9760          1.0000          0.9975                  1.0024                  1.0076
+  Temperature                       0.6046    0.0344           17.5626       <0.0001          1.8306          1.7111                  1.9584                  1.6488
+  Precipitation                     0.0008    0.0003            3.0317        0.0024          1.0008          1.0003                  1.0013                  1.9932
+  Precip. seasonality               0.0801    0.0093            8.6619       <0.0001          1.0834          1.0640                  1.1033                  1.5786
+  TCD                            ¡0.0418      0.0037        ¡11.3395         <0.0001          0.9591          0.9522                  0.9661                  1.2030
+  Lightning                         0.8471    0.1012            8.3722       <0.0001          2.3329          1.9132                  2.8446                  1.5156
+  Agriculture distance              0.0007    0.0001            7.8643       <0.0001          1.0007          1.0005                  1.0009                  1.3373
+  River distance                  − 0.0001    0.0001          − 0.8225        0.4108          0.9999          0.9998                  1.0001                  1.1517
+  Water distance                    0.0000    0.0000            2.6404        0.0083          1.0000          1.0000                  1.0000                  1.1638
+  Settlement time                   0.0371    0.0055            6.7307       <0.0001          1.0378          1.0266                  1.0490                  1.4098
+  Population 1 km                   0.0000    0.0000            1.0986        0.2719          1.0000          1.0000                  1.0000                  1.4932
+  Population 5 km                   0.0000    0.0000            1.3299        0.1835          1.0000          1.0000                  1.0000                  1.5155
+  Visitation Flickr                 0.0073    0.0053            1.3821        0.1669          1.0073          0.9969                  1.0178                  1.3657
+  Vistitation GBIF                − 0.0011    0.0032          − 0.3590        0.7196          0.9989          0.9926                  1.0051                  1.2373
+
+
+
+local model from 0.57 to 0.90 and the AIC (Akaike Information Crite­                   in Switzerland. Temperature, distance from water, and time from set­
+rion) value decreased from 1351 to 521, respectively. Although the re­                 tlement had higher positive influence on forest fire hazard in the eastern
+siduals showed less spatial autocorrelation, spatial dependencies in the               part of the ASP than in the western parts, whereas it was the contrary for
+residuals could not be completely removed with the GWR (Moran’s I:                     precipitation seasonality and lightning. The predominantly negative
+0.06; z-score: 21.9; p-value: <0.001). The validation confirmed the                    influence of TCD turned into a positive relationship in the southwestern
+model’s capacity to predict the forest fire hazard, as 96.4% of 752 lo­                Alps, while it was the contrary for distance from water. The distance
+cations, which were not used for training the model, were correctly                    from agricultural areas had varying influence mostly in the lowlands.
+predicted (93.4% for fire locations, 97.7% for non-fire locations; see
+Fig. S4 for location of correctly/incorrectly predicted locations and de­
+viation residuals).                                                                    3.2. Effects of climate change on the forest fire hazard
+    The influence of the local coefficients varied across the study area for
+most variables, mostly between eastern and western and to a less extent                    The current forest fire hazard clearly varied across the study area
+between northern and southern parts of the ASP (Fig. 3). For example,                  (Fig. 4) due to differences in climate- and vegetation-related charac­
+precipitation was positively related to forest fires in Eastern Austria,               teristics as well as anthropogenic variables (Table S2, Fig. S2). High
+while having negative influence in the central part of the ASP, especially             probability of forest fire hazard occurred in the southwestern part of the
+                                                                                       ASP in France, as well as in Italy, along the hillslopes and southern parts
+
+
+
+
+ Fig. 3. Spatial variation in the estimated GWR coefficients. Please note that the value range differs across the coefficients to clearly depict spatial differences.
+
+                                                                                   6
+K. Gerberding and U. Schirpke                                                                                         Journal of Environmental Management 377 (2025) 124600
+
+
+
+
+Fig. 4. Current probability of forest fire hazard in the ASP (upper left). Non-forested areas are depicted in white. Potential changes in future probability of forest fire
+hazard under the three SSPs (upper right, lower left and right). Changes were derived by calculating the difference between current and future predicted values from
+the GWR binary logistic model, including 0 = low forest fire hazard (probability <0.5) and 1 = high forest fire hazard (probability ≥0.5), i.e., decrease <0, no
+change = 0, and increase >0. For maps showing the future probability of forest fire hazard, see Fig. S5.
+
+
+of the European Alps and the Apennine in Liguria. Furthermore, some                      19.1% under the SSP585). At the national level, highest increases
+low-elevated areas in southeastern Austria had high probability of forest                occurred in Slovenia (316.5% under the SSP585) and Germany (246.6%
+fire hazard. In contrast, the high-elevated areas of the European Alps as                under the SSP585), followed by Switzerland (77.5% under the SSP585),
+well as the northern and western lowlands had mostly the low proba­                      and Austria (71.8% under the SSP585), while France and Italy already
+bility of forest fire hazard. The predicted spatial patterns of current                  had high forest fire hazard (0.45 and 0.54, respectively), which
+forest fire hazard were closely aligned with the actual occurrence of past               increased to a smaller extent under the projected climate changes (2.1%
+fire events (Fig. S4), except for some parts in southeastern Austria where               (not significant) and 20.8%, respectively, under the SSP585) (Fig. 5).
+the model overestimated the forest fire hazard.
+    Climate change generally increased the probability of forest fire                    4. Discussion
+hazard under the three SSPs in most parts of the study area (Fig. 4,
+Fig. S5). It significantly increased from currently 0.30 to 0.36 (15.5%)                 4.1. Factors influencing forest fires in the European Alps
+under the SSP126, to 0.40 (30.6%) under the SSP370, and to 0.41
+(35.4%) under the SSP585 (Table S3, Table S4). Most increases occurred                       Relating a comprehensive set of environmental and anthropogenic
+in the eastern parts of the ASP, particularly in Slovenia, Italy, and                    variables to the occurrence of past forest fire events provided insights
+Austria, while least increases were found in the southwestern parts in                   into the underlying mechanisms in the ASP. The results of the regression
+France that already had a high forest fire hazard (Fig. 4). The increase in              models indicate that the occurrence of forest fires was mainly related to
+forest fire hazard significantly (p < 0.001) differed across elevation                   high lightning frequencies, high mean annual temperatures, and greater
+zones as well as in each country (Table S4). The current forest fire                     precipitation seasonality, which generally aligns with many other
+hazard was generally higher in the colline zone than at higher elevations                studies (e.g., Babu et al., 2023; Castedo-Dorado et al., 2011; Müller
+(Fig. 5; Table S3), but future increases in the average forest fire hazard               et al., 2020; Sevinc et al., 2020). Spatial patterns of temperature and
+were about three times higher in the subalpine zone (ranging between                     precipitation data is closely related to topography (Pepin et al., 2022),
++24.6% under the SSP126 and + 61.6% under the SSP585) compared to                        whereas precipitation seasonality is more influenced by the climate
+the colline zone (ranging between +10.5% under the SSP126 and +                          zone, i.e., regions located in mediterranean or continental climate zones
+
+
+
+
+Fig. 5. Potential changes in area of high (≥0.5) and low (<0.5) probability of forest fire hazard under the three SSPs compared to the current situation, distinguished
+by elevation zone (left) and country (right).
+
+                                                                                     7
+K. Gerberding and U. Schirpke                                                                                  Journal of Environmental Management 377 (2025) 124600
+
+
+exhibit higher differences in precipitation over the year than regions             be particularly important in dynamic landscapes subject to the aban­
+influenced by the atlantic ocean (see also Fig. S2). While climate data are        donment of mountain grassland with subsequent shrub and tree
+commonly used by studies predicting the occurrence of forest fires,                encroachment, leading to and increasing forest cover (Bebi et al., 2017;
+lightnings are less often considered, although they are the most impor­            Tasser et al., 2024), connectivity, and fuel build-ups (Valese et al.,
+tant natural cause for forest fires (Sevinc et al., 2020). Currently,              2014). One potential measure may be the promotion of tree species that
+lightning densities are higher in lower elevated areas, particularly in            are less flammable due to their bark thickness, leaf characteristics, and
+Italy, Slovenia and eastern Austria (Fig. S2), but climate change is likely        litter production (Popović et al., 2021). Second, the fire behaviour can
+to increase lightning activities, which, especially when coinciding with           be influenced by establishing spatial heterogeneity in stand structure,
+drought conditions, may have considerable impacts in the frequency of              which helps to limit the severity and spread of fires (Stephens et al.,
+forest fires at higher elevations, leading to greater burnt areas and costs        2010). In addition, a higher diversity at the stand and landscape level
+(Conedera et al., 2006). Spatial differences in the TCD also influenced            improves the resilience of forests against disturbances (Seidl et al.,
+the forest fire hazard in our study, which can be explained by differences         2018). If carefully applied and monitored, prescribing adequate fire
+in tree species composition across the study areas and their specific              regimes to reduce the fuel load may be an effective strategy to preserve
+characteristics in terms of flammability (De Rigo et al., 2016; Popović           biodiversity and cultural landscapes (Fernandes et al., 2013; Valese
+et al., 2021). Unlike other studies (Babu et al., 2023; Müller et al., 2020;       et al., 2014).
+Sevinc et al., 2020), anthropogenic variables played a less significant
+role in our study region, although most forest fires in the European Alps          4.3. Limitations and future directions
+are caused by human activities (Wastl et al., 2013). This may be pri­
+marily explained by the fact that many human-caused forest fires are                   Our results highlight potential impacts of climate change on the
+often quickly detected and therefore can be kept small due to an efficient         forest fire hazard across the ASP, but there are also several limitations.
+network of fire brigades (Müller et al., 2020), and thus, were not                 First, the EFFIS database, providing a harmonised dataset for Europe,
+included in the EFFIS database. This may also a reason for the over­               has the disadvantage that it is mapped with MODIS satellite imagery at
+estimation of current forest fire hazard in some areas such as in eastern          250 m ground spatial resolution and burnt areas are usually greater than
+Austria. Nevertheless, some patterns emerged from the GWR, indicating              30 ha, while it does not comprise forest fires that could be extinguished
+the varying and partly contrasting influence of distance to water, agri­           before burning a greater area. For our study, this may have led to a
+cultural areas, as well as settlements. These patterns mostly reflect dif­         restricted and biased sample of past occurrences of forest fires. National
+ferences in the spatial distribution of these variables (Fig. S2). For             databases may offer more complete data, e.g., for Austria (https://fire.
+example, cultivation of agricultural products is more important in                 boku.ac.at/firedb/en/) and France (https://bdiff.agriculture.gouv.fr/
+lowland areas in the southern Alps than northern and high-elevated                 incendies), but it was not possible in this study to build a harmonised
+regions that are dominated by livestock farming and related grassland              dataset for study area extending across different countries. Furthermore,
+areas (Tasser et al., 2024).                                                       the strong seasonality of the fire events in the study area suggests ana­
+                                                                                   lysing the forest fire hazard for specific periods, which would be possible
+4.2. Effects of climate change on the forest fire hazard and management            with a greater sample of fire events. In this study, to assess long-term
+implications                                                                       impacts of climate change, seasonality was represented by the variable
+                                                                                   precipitation seasonality, while we also included annual mean temper­
+    We found an overall increase in the probability of forest fire hazard          ature and precipitation data, which does not sufficiently capture sea­
+across the study area due to climate change, confirming the findings of            sonal patterns. However, it also needs to be considered that climate
+previous studies in the European Alps (e.g., Cane et al., 2013; Miller             models generally predict a seasonal shift of precipitation amounts, i.e.,
+et al., 2024; Schumacher and Bugmann, 2006; Stritih et al., 2024; Varela           precipitation increases in winter and decreases in summer (Kotlarski
+et al., 2019) and at global level (Dupuy et al., 2020; Jones et al., 2022).        et al., 2023), which may alter current fire regimes in the European Alps
+Similar to other studies (Curasi et al., 2024; Schwörer et al., 2024; Zhang       (Valese et al., 2014).
+et al., 2024), predicted changes were most evident under the interme­                  A second limitation was caused by the lack of currently available
+diate scenario (SSP370) and the worst-case scenario (SSP585), but the              data, preventing to include further predictor variables. For example,
+increase in the probability of forest fire hazard was already significant          studies suggest that variables related to the forest management such as
+under the most positive scenario (SSP126) in our study area. However,              stand age, forest structure, as well as fuel properties of understory, litter,
+our maps indicate an uneven spatial increase across the European Alps,             and dead wood are key factors for the ignition and behaviour of forest
+suggesting that areas that have been less exposed to forest fires in the           fires (Hanes et al., 2021; Morgan Varner et al., 2015; Rigo et al., 2017;
+past will increase in probability of being affected by forest fire hazard in       Sánchez-Pinillos et al., 2021). Thus, it would be central to consider such
+the future, while the impacts were less pronounced in those regions that           variables in future studies, at least, for smaller study areas. Furthermore,
+already had a high forest fire hazard. The spatial expansion of the forest         the Normalized Difference Vegetation Index (NDVI) can indicate vege­
+fire hazard was only related on mean climatic changes, but it can be               tation health and be used as proxy for the availability of fuel (Chuvieco
+expected that shifts in precipitation patterns will induce longer and              et al., 2004; Ljubomir et al., 2019), which has been successfully
+more frequent drought periods, also in currently more humid regions                improved the modelling performance in studies focusing on the current
+(Bowman et al., 2020; Kotlarski et al., 2023; Miller et al., 2024; Wastl           forest fire hazard (e.g., Babu et al., 2023; Janizadeh et al., 2023; Parvar
+et al., 2013). Such developments are particularly critical, as the regions         et al., 2024). In this study, we decided to not use this indicator due to its
+with the highest increase in the probability of forest fire hazard have a          dependence on phenological patterns that vary with elevation and
+high share of forest, which are often also characterized by a huge                 vegetation type as well as its susceptibility to short term changes
+amount of fuels accumulated (Resco de Dios et al., 2021; Rigo et al.,              (Spadoni et al., 2020), in addition to issues in long-term predictions of
+2017).                                                                             the NDVI (Guo et al., 2024). Nevertheless, future studies should consider
+    These findings have great implications for the adaption of the forest          including it, if they focus on forest fire hazard in specific seasons or for
+fire management in the different countries. While fire-smart forest                short-term predictions.
+management is already in the focus of managers and decision-makers in                  Another issue is related to model uncertainties of the long-term
+the fire-prone mediterranean areas (Fernandes, 2013; Pais et al., 2020;            climate change projections and, in mountainous areas, additionally to
+Sil et al., 2024), there will be a stronger need for the development of            scaling issues due to the complex topography (Kotlarski et al., 2023).
+pre-fire management strategies in the currently less affected areas of the         Although we addressed this issue by building multi-model ensembles,
+European Alps to avoid large forest fires (Müller et al., 2020). This will         our results indicating potential future changes still may contain an
+
+                                                                               8
+K. Gerberding and U. Schirpke                                                                                        Journal of Environmental Management 377 (2025) 124600
+
+
+elevated level of uncertainty. This is less relevant for the general trends        draft, Visualization, Methodology, Formal analysis, Conceptualization.
+in the level of the forest fire hazard and shifts in spatial patterns, but
+caution is needed for applying our results at the local level. Furthermore,        Declaration of competing interest
+our study reflects general climatic trends, while potential impacts
+caused by an increase in frequency and severity of extreme events, such                The authors declare that they have no known competing financial
+as drought, heat waves, and storms, have not explicitly considered                 interests or personal relationships that could have appeared to influence
+(Hicks et al., 2018; Obojes et al., 2022; Tello-García et al., 2020).              the work reported in this paper.
+However, such events are often favouring forest disturbances such as
+bark beetle outbreaks and windthrows, increasing the hazard for forest             Acknowledgements
+fires due to a higher availability of flammable material (Berčák et al.,
+2023). Moreover, further drivers such as social changes, economic ac­                  We thank the Met Office of the United Kingdom (https://www.
+tivities, and new governance strategies that will lead to land-use/cover           metoffice.gov.uk/), which kindly provided the data of the lightning
+changes and influence management practices are likely to influence the             location system ATDnet. The authors thank the Department of Innova­
+future forest fire hazard. For example, the ongoing increase in forest             tion, Research University and Museums of the Autonomous Province of
+cover across the European Alps due to land abandonment and the upshift             Bozen/Bolzano for covering the Open Access publication costs.
+of the treeline (Tasser et al., 2017, 2024) also extends potential forest
+fire areas, while changes in tree species composition due to the adaption          Appendix A. Supplementary data
+of current forest management practices towards a climate-smart forestry
+may reduce the forest fire hazard (Seidl et al., 2018).                               Supplementary data to this article can be found online at https://doi.
+    Considering these limitations, our geostatistical modelling approach           org/10.1016/j.jenvman.2025.124600.
+can be easily applied in other regions. It allows the integration of further
+predictor variables, which may improve the reliability of the results.             Data availability
+This is particularly important for predictions at the regional or local
+level, where fine-scale data, for example, related to the forest manage­               Data will be made available on request.
+ment may be available.
+                                                                                   References
+5. Conclusions
+                                                                                   Agbeshie, A.A., Abugre, S., Atta-Darkwa, T., Awuah, R., 2022. A review of the effects of
+    By mapping potential impacts on the forest fire hazard under three                  forest fire on soil properties. J. For. Res. 33, 1419–1441. https://doi.org/10.1007/
+                                                                                        s11676-022-01475-4.
+SSPs using a geostatistical modelling approach, our findings contribute            Andela, N., Morton, D.C., Giglio, L., Paugam, R., Chen, Y., Hantson, S., Van Der Werf, G.
+to a broader understanding of potential future changes across the Eu­                   R., Anderson, J.T., 2019. The Global Fire Atlas of individual fire size, duration, speed
+ropean Alps and surrounding lowlands. In general, our results indicate                  and direction. Earth Syst. Sci. Data 11, 529–552. https://doi.org/10.5194/essd-11-
+                                                                                        529-2019.
+an overall expansion in the probability of forest fire hazard that is              Anderson, G., Klugmann, D., 2014. A European lightning density analysis using 5 years of
+already significant under the most positive scenario (SSP126), but the                  ATDnet data. Nat. Hazards Earth Syst. Sci. 14, 815–829. https://doi.org/10.5194/
+maps also highlight spatial differences. While the impacts are less pro­                nhess-14-815-2014.
+                                                                                   Aristeidou, M., Herodotou, C., Ballard, H.L., Young, A.N., Miller, A.E., Higgins, L.,
+nounced in already fire-prone regions, the forest fire hazard will greatly              Johnson, R.F., 2021. Exploring the participation of young citizen scientists in
+increase in the Northern and Eastern regions. Until now, these regions                  scientific research: the case of iNaturalist. PLoS One 16, e0245682. https://doi.org/
+had been less exposed to forest fires, but climate-related changes will                 10.1371/journal.pone.0245682.
+                                                                                   Armenteras, D., Dávalos, L.M., Barreto, J.S., Miranda, A., Hernández-Moreno, A.,
+make them to an emerging issue.                                                         Zamorano-Elgueta, C., González-Delgado, T.M., Meza-Elizalde, M.C., Retana, J.,
+    Thus, our findings emphasize the urgent need to address these                       2021. Fire-induced loss of the world’s most biodiverse forests in Latin America. Sci.
+climate-related challenges through the development of fire-smart and                    Adv. 7, eabd3357. https://doi.org/10.1126/sciadv.abd3357.
+                                                                                   Babu, K.N., Gour, R., Ayushi, K., Ayyappan, N., Parthasarathy, N., 2023. Environmental
+climate-smart forest management. At the cross-national level, our find­
+                                                                                        drivers and spatial prediction of forest fires in the Western Ghats biodiversity
+ings can support European-wide policies such as the EU Green Deal,                      hotspot, India: an ensemble machine learning approach. For. Ecol. Manag. 540,
+including the Forest Strategy, the EU Biodiversity Strategy for 2030, and               121057. https://doi.org/10.1016/j.foreco.2023.121057.
+the new Nature Restoration Law. For example, policy measures should                Bebi, P., Seidl, R., Motta, R., Fuhr, M., Firm, D., Krumm, F., Conedera, M., Ginzler, C.,
+                                                                                        Wohlgemuth, T., Kulakowski, D., 2017. Changes of forest cover and disturbance
+foster an improved management of species diversity in forests, pro­                     regimes in the mountain forests of the Alps. For. Ecol. Manag. 388, 43–56. https://
+moting the creation of more heterogenous stands and landscapes that                     doi.org/10.1016/j.foreco.2016.10.028.
+are more resilient against forest disturbances and climate change im­              Berčák, R., Holuša, J., Kaczmarowski, J., Tyburski, Ł., Szczygieł, R., Held, A., Vacik, H.,
+                                                                                        Slivinský, J., Chromek, I., 2023. Fire protection principles and recommendations in
+pacts. At the regional and local level, our findings can support the                    disturbed forest areas in central Europe: a review. Fire. https://doi.org/10.3390/
+development of targeted management plans and strengthen the                             fire6080310.
+communication with stakeholders in the decision-making process.                    Beven, K.J., Kirkby, M.J., 1979. A physically based, variable contributing area model of
+                                                                                        basin hydrology. Hydrol. Sci. Bull. 24, 43–69. https://doi.org/10.1080/
+    Despite providing novel insights into the future forest fire hazard at              02626667909491834.
+the cross-regional level, further efforts are needed to overcome current           Bountzouklis, C., Fox, D.M., Bernardino, E. Di, 2023. Predicting wildfire ignition causes
+limitations related to data availability and uncertainties of future sce­               in Southern France using eXplainable Artificial Intelligence (XAI) methods. Environ.
+                                                                                        Res. Lett. 18, 44038. https://doi.org/10.1088/1748-9326/acc8ee.
+narios. For example, the results could be improved by accounting for               Bowman, D.M.J.S., Kolden, C.A., Abatzoglou, J.T., Johnston, F.H., van der Werf, G.R.,
+climate-related hazards such as drought periods and by integrating more                 Flannigan, M., 2020. Vegetation fires in the anthropocene. Nat. Rev. Earth Environ.
+specific data on stand characteristics and forest management. Such im­                  1, 500–515. https://doi.org/10.1038/s43017-020-0085-3.
+                                                                                   Cane, D., Wastl, C., Barbarino, S., Renier, L.A., Schunk, C., Menzel, A., 2013. Projection
+provements are particularly important for predictions at the local level.
+                                                                                        of fire potential to future climate scenarios in the Alpine area: some methodological
+While this study aimed to disentangle the effect of climate change on the               considerations. Clim. Change 119, 733–746. https://doi.org/10.1007/s10584-013-
+forest fire hazard, further drivers altering the forest expansion and forest            0775-7.
+structure should be considered in future scenarios.                                Carrasco, J., Acuna, M., Miranda, A., Alfaro, G., Pais, C., Weintraub, A., 2021. Exploring
+                                                                                        the multidimensional effects of human activity and land cover on fire occurrence for
+                                                                                        territorial planning. J. Environ. Manag. 297, 113428. https://doi.org/10.1016/j.
+CRediT authorship contribution statement                                                jenvman.2021.113428.
+                                                                                   Castedo-Dorado, F., Rodriguez-Perez, J.R., Marcos-Menendez, J.L., Alvarez-Taboada, M.
+                                                                                        F., 2011. Modelización de la probabilidad de ocurrencia de incendios forestales por
+   Kilian Gerberding: Writing – review & editing, Methodology,                          rayo en la provincia de León (NO de España). Forest Systems 20, 95–107. https://
+Formal analysis, Conceptualization. Uta Schirpke: Writing – original                    doi.org/10.5424/fs/2011201-9409.
+
+
+                                                                               9
+K. Gerberding and U. Schirpke                                                                                                           Journal of Environmental Management 377 (2025) 124600
+
+Chuvieco, E., Cocero, D., Riaño, D., Martin, P., Martínez-Vega, J., De La Riva, J.,                  Johnston, F.H., Henderson, S.B., Chen, Y., Randerson, J.T., Marlier, M., DeFries, R.S.,
+     Pérez, F., 2004. Combining NDVI and surface temperature for the estimation of live                   Kinney, P., Bowman, D.M.J.S., Brauer, M., 2012. Estimated global mortality
+     fuel moisture content in forest fire danger rating. Rem. Sens. Environ. 92, 322–331.                  attributable to smoke from landscape fires. Environ. Health Perspect. 120, 695–701.
+     https://doi.org/10.1016/j.rse.2004.01.019.                                                            https://doi.org/10.1289/ehp.1104422.
+Conedera, M., Cesti, G., Pezzatti, G.B., Zumbrunnen, T., Spinedi, F., 2006. Lightning-                Jolly, C.J., Dickman, C.R., Doherty, T.S., van Eeden, L.M., Geary, W.L., Legge, S.M.,
+     induced fires in the Alpine region: an increasing problem. For. Ecol. Manag. 234,                     Woinarski, J.C.Z., Nimmo, D.G., 2022. Animal mortality during fire. Glob. Change
+     S68. https://doi.org/10.1016/j.foreco.2006.08.096.                                                    Biol. 28, 2053–2065. https://doi.org/10.1111/gcb.16044.
+Curasi, S.R., Melton, J.R., Arora, V.K., Humphreys, E.R., Whaley, C.H., 2024. Global                  Jones, M.W., Abatzoglou, J.T., Veraverbeke, S., Andela, N., Lasslop, G., Forkel, M.,
+     climate change below 2 ◦ C avoids large end century increases in burned area in                       Smith, A.J.P., Burton, C., Betts, R.A., van der Werf, G.R., Sitch, S., Canadell, J.G.,
+     Canada. npj Climate and Atmospheric Science 7, 228. https://doi.org/10.1038/                          Santín, C., Kolden, C., Doerr, S.H., Le Quéré, C., 2022. Global and regional trends
+     s41612-024-00781-4.                                                                                   and drivers of fire under climate change. Rev. Geophys. 60, e2020RG000726.
+De Rigo, D., Caudullo, G., Houston Durrant, T., San-Miguel-Ayanz, J., 2016. The                            https://doi.org/10.1029/2020RG000726.
+     European Atlas of Forest Tree Species: modelling, data and information on forest tree            Jourdan, M., Cordonnier, T., Dreyfus, P., Riond, C., de Coligny, F., Morin, X., 2021.
+     species. In: San-Miguel-Ayanz, J., de Rigo, D., Caudullo, G., Houston Durrant, T.,                    Managing mixed stands can mitigate severe climate change impacts on French alpine
+     Mauri, A. (Eds.), European Atlas of Forest Tree Species. Publications Office of the                   forests. Reg. Environ. Change 21, 78. https://doi.org/10.1007/s10113-021-01805-y.
+     European Union, Luxembourg, p. e01aa69+. https://w3id.org/mtv/FISE-Comm/v0                       Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W.,
+     1/e01aa69.                                                                                            Zimmermann, N.E., Linder, H.P., Kessler, M., 2021. Climatologies at high resolution
+Drüe, C., Hauf, T., Finke, U., Keyn, S., Kreyer, O., 2007. Comparison of a SAFIR lightning                 for the earth’s land surface areas. https://doi.org/10.16904/envidat.228.v2.1.
+     detection network in northern Germany to the operational BLIDS network.                          Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W.,
+     J. Geophys. Res. Atmos. 112. https://doi.org/10.1029/2006JD007680.                                    Zimmermann, N.E., Linder, H.P., Kessler, M., 2017. Climatologies at high resolution
+Dupuy, J. luc, Fargeon, H., Martin-StPaul, N., Pimont, F., Ruffault, J., Guijarro, M.,                     for the earth’s land surface areas. Sci. Data 4, 170122. https://doi.org/10.1038/
+     Hernando, C., Madrigal, J., Fernandes, P., 2020. Climate change impact on future                      sdata.2017.122.
+     wildfire danger and activity in southern Europe: a review. Ann. For. Sci. 77, 35.                Kopecký, M., Macek, M., Wild, J., 2021. Topographic Wetness Index calculation
+     https://doi.org/10.1007/s13595-020-00933-5.                                                           guidelines based on measured soil moisture and plant species composition. Sci. Total
+EEA, 2020. Tree cover density 2018. https://doi.org/10.2909/c7bf34ea-755c-4dbd-85b                         Environ. 757, 143785. https://doi.org/10.1016/j.scitotenv.2020.143785.
+     6-4efc5fd302a2.                                                                                  Kotlarski, S., Gobiet, A., Morin, S., Olefs, M., Rajczak, J., Samacoïts, R., 2023. 21st
+Enno, S.E., Sugier, J., Alber, R., Seltzer, M., 2020. Lightning flash density in Europe based              Century alpine climate change. Clim. Dyn. 60, 65–86. https://doi.org/10.1007/
+     on 10 years of ATDnet data. Atmos. Res. 235, 104769. https://doi.org/10.1016/j.                       s00382-022-06303-3.
+     atmosres.2019.104769.                                                                            Koutsias, N., Allgöwer, B., Kalabokidis, K., Mallinis, G., Balatsos, P., Goldammer, J.G.,
+Estes, B.L., Knapp, E.E., Skinner, C.N., Miller, J.D., Preisler, H.K., 2017. Factors                       2016. Fire occurrence zoning from local to global scale in the European
+     influencing fire severity under moderate burning conditions in the Klamath                            Mediterranean basin: implications for multi-scale fire management and policy.
+     Mountains, northern California, USA. Ecosphere 8, e01794. https://doi.org/                            IForest 9, 195–204. https://doi.org/10.3832/ifor1513-008.
+     10.1002/ecs2.1794.                                                                               Lecina-diaz, J., Senf, C., Grünig, M., Seidl, R., 2023. Ecosystem services at risk from
+European Environment Agency, 2020. Corine land cover (CLC) 2018, version 2020_20u1.                        disturbances in European forests Ecosystem services at risk from disturbances in
+     https://land.copernicus.eu/pan-european/corine-land-cover/clc2018 accessed                            European forests. Glob. Change Biol. 30, e17242. https://doi.org/10.1111/
+     4.26.21.                                                                                              gcb.17242.
+Eurostat, 2021. Population on 1st January by age, sex, type of projection and NUTS 3                  Lehner, F., Deser, C., Maher, N., Marotzke, J., Fischer, E.M., Brunner, L., Knutti, R.,
+     region [WWW Document]. URL. https://ec.europa.eu/eurostat/databrowser/view                            Hawkins, E., 2020. Partitioning climate projection uncertainty with multiple large
+     /PROJ_19RP3$DEFAULTVIEW/default/table?lang=en.                                                        ensembles and CMIP5/6. Earth System Dynamics 11, 491–508. https://doi.org/
+Fernandes, P.M., 2013. Fire-smart management of forest landscapes in the Mediterranean                     10.5194/esd-11-491-2020.
+     basin under global change. Landsc. Urban Plann. 110, 175–182. https://doi.org/                   Liu, J.C., Pereira, G., Uhl, S.A., Bravo, M.A., Bell, M.L., 2015. A systematic review of the
+     10.1016/j.landurbplan.2012.10.014.                                                                    physical health impacts from non-occupational exposure to wildfire smoke. Environ.
+Fernandes, P.M., Davies, G.M., Ascoli, D., Fernández, C., Moreira, F., Rigolot, E., Stoof, C.             Res. 136, 120–132. https://doi.org/10.1016/j.envres.2014.10.015.
+     R., Vega, J.A., Molina, D., 2013. Prescribed burning in southern Europe: developing              Ljubomir, G., Pamučar, D., Drobnjak, S., Pourghasemi, H.R., 2019. Modeling the spatial
+     fire management in a dynamic landscape. Front. Ecol. Environ. 11, e4–e14. https://                    variability of forest fire susceptibility using geographical information systems and
+     doi.org/10.1890/120298.                                                                               the analytical hierarchy process. In: Pourghasemi, H.R., Gokceoglu, C.B.T.-S.M. in G.
+Fotheringham, A.S., Brunsdon, C., Charlton, M.E., 2009. Geographically weighted                            I.S., for, E.R., E, S. (Eds.), Spatial Modeling in GIS and R for Earth and Environmental
+     regression. In: The Sage Handbook of Spatial Analysis. Sage, Thousand Oaks, CA,                       Sciences. Elsevier, pp. 337–369. https://doi.org/10.1016/b978-0-12-815226-
+     pp. 243–254.                                                                                          3.00015-6.
+Gao, B., Shan, Y., Liu, X., Yin, S., Yu, B., Cui, C., Cao, L., 2024. Prediction and driving           Miller, J., Böhnisch, A., Ludwig, R., Brunner, M.I., 2024. Climate change impacts on
+     factors of forest fire occurrence in Jilin Province, China. J. For. Res. 35, 21. https://             regional fire weather in heterogeneous landscapes of central Europe. Nat. Hazards
+     doi.org/10.1007/s11676-023-01663-w.                                                                   Earth Syst. Sci. 24, 411–428. https://doi.org/10.5194/nhess-24-411-2024.
+Gao, Y., Huang, W., Yu, P., Xu, R., Yang, Z., Gasevic, D., Ye, T., Guo, Y., Li, S., 2023.             Montiel-Molina, C., 2013. Comparative assessment of wildland fire legislation and
+     Long-term impacts of non-occupational wildfire exposure on human health: a                            policies in the European Union: towards a Fire Framework Directive. For. Pol. Econ.
+     systematic review. Environ. Pollut. 320, 121041. https://doi.org/10.1016/j.                           29, 1–6. https://doi.org/10.1016/j.forpol.2012.11.006.
+     envpol.2023.121041.                                                                              Morgan Varner, J., Kane, J.M., Kreye, J.K., Engber, E., 2015. The flammability of forest
+Grünig, M., Seidl, R., Senf, C., 2023. Increasing aridity causes larger and more severe                    and woodland litter: a synthesis. Current Forestry Reports 1, 91–99. https://doi.org/
+     forest fires across Europe. Glob. Change Biol. 29, 1648–1659. https://doi.org/                        10.1007/s40725-015-0012-x.
+     10.1111/gcb.16547.                                                                               Müller, M.M., Vilà-Vilardell, L., Vacik, H., 2020. Towards an integrated forest fire danger
+Guo, Y., Zhang, L., He, Y., Cao, S., Li, H., Ran, L., Ding, Y., Filonchyk, M., 2024. LSTM                  assessment system for the European Alps. Ecol. Inform. 60, 101151. https://doi.org/
+     time series NDVI prediction method incorporating climate elements: a case study of                    10.1016/j.ecoinf.2020.101151.
+     Yellow River Basin, China. J. Hydrol. 629, 130518. https://doi.org/10.1016/j.                    O’Neill, B.C., Tebaldi, C., Van Vuuren, D.P., Eyring, V., Friedlingstein, P., Hurtt, G.,
+     jhydrol.2023.130518.                                                                                  Knutti, R., Kriegler, E., Lamarque, J.F., Lowe, J., Meehl, G.A., Moss, R., Riahi, K.,
+Hanes, C.C., Wang, X., De Groot, W.J., 2021. Dead and down woody debris fuel loads in                      Sanderson, B.M., 2016. The scenario model Intercomparison project (ScenarioMIP)
+     Canadian forests. Int. J. Wildland Fire 30, 871–885. https://doi.org/10.1071/                         for CMIP6. Geosci. Model Dev. (GMD) 9, 3461–3482. https://doi.org/10.5194/gmd-
+     WF21023.                                                                                              9-3461-2016.
+Hicks, L.C., Rahman, M.M., Carnol, M., Verheyen, K., Rousk, J., 2018. The legacy of                   O, S., Hou, X., Orth, R., 2020. Observational evidence of wildfire-promoting soil moisture
+     mixed planting and precipitation reduction treatments on soil microbial activity,                     anomalies. Sci. Rep. 10, 11008. https://doi.org/10.1038/s41598-020-67530-4.
+     biomass and community composition in a young tree plantation. Soil Biol. Biochem.                Obojes, N., Meurer, A.K., Newesely, C., Tasser, E., Oberhuber, W., Mayr, S.,
+     124, 227–235. https://doi.org/10.1016/j.soilbio.2018.05.027.                                          Tappeiner, U., 2022. Swiss stone pine growth benefits less from recent warming than
+Iban, M.C., Sekertekin, A., 2022. Machine learning based wildfire susceptibility mapping                   European larch at a dry-inner alpine forest line as it reacts more sensitive to
+     using remotely sensed fire data and GIS: a case study of Adana and Mersin provinces,                  humidity. Agric. For. Meteorol. 315, 108788. https://doi.org/10.1016/j.
+     Turkey. Ecol. Inform. 69, 101647. https://doi.org/10.1016/j.ecoinf.2022.101647.                       agrformet.2021.108788.
+Iglesias, M.C., Hermoso, V., Campos, J.C., Carvalho-Santos, C., Fernandes, P.M.,                      Pais, S., Aquilué, N., Campos, J., Sil, Â., Marcos, B., Martínez-Freiría, F., Domínguez, J.,
+     Freitas, T.R., Honrado, J.P., Santos, J.A., Sil, Â., Regos, A., Azevedo, J.C., 2022.                 Brotons, L., Honrado, J.P., Regos, A., 2020. Mountain farmland protection and fire-
+     Climate- and fire-smart landscape scenarios call for redesigning protection regimes                   smart management jointly reduce fire hazard and enhance biodiversity and carbon
+     to achieve multiple management goals. J. Environ. Manag. 322, 116045. https://doi.                    sequestration. Ecosyst. Serv. 44, 101143. https://doi.org/10.1016/j.
+     org/10.1016/j.jenvman.2022.116045.                                                                    ecoser.2020.101143.
+Janizadeh, S., Bateni, S.M., Jun, C., Im, J., Pai, H.T., Band, S.S., Mosavi, A., 2023.                Parvar, Z., Saeidi, S., Mirkarimi, S., 2024. Integrating meteorological and geospatial data
+     Combination four different ensemble algorithms with the generalized linear model                      for forest fire risk assessment. J. Environ. Manag. 358, 120925. https://doi.org/
+     (GLM) for predicting forest fire susceptibility. Geomatics Nat. Hazards Risk 14,                      10.1016/j.jenvman.2024.120925.
+     2206512. https://doi.org/10.1080/19475705.2023.2206512.                                          Pepin, N.C., Arnone, E., Gobiet, A., Haslinger, K., Kotlarski, S., Notarnicola, C.,
+Jaung, W., Carrasco, L.R.R., 2021. Using mobile phone data to examine weather impacts                      Palazzi, E., Seibert, P., Serafin, S., Schöner, W., Terzago, S., Thornton, J.M.,
+     on recreational ecosystem services in an urban protected area. Sci. Rep. 11. https://                 Vuille, M., Adler, C., 2022. Climate changes and their elevational patterns in the
+     doi.org/10.1038/s41598-021-85185-7.                                                                   mountains of the world. Rev. Geophys. 60, e2020RG000730. https://doi.org/
+                                                                                                           10.1029/2020RG000730.
+
+
+                                                                                                 10
+K. Gerberding and U. Schirpke                                                                                                         Journal of Environmental Management 377 (2025) 124600
+
+Phillips, C.A., Rogers, B.M., Elder, M., Cooperdock, S., Moubarak, M., Randerson, J.T.,              Spadoni, G.L., Cavalli, A., Congedo, L., Munafò, M., 2020. Analysis of Normalized
+     Frumhoff, P.C., 2022. Escalating carbon emissions from North American boreal                         Difference Vegetation Index (NDVI) multi-temporal series for the production of
+     forest wildfires and the climate mitigation potential of fire management. Sci. Adv. 8,               forest cartography. Remote Sens. Appl.: Society and Environment 20, 100419.
+     eabl7161. https://doi.org/10.1126/sciadv.abl7161.                                                    https://doi.org/10.1016/j.rsase.2020.100419.
+Popović, Z., Bojović, S., Marković, M., Cerdà, A., 2021. Tree species flammability based         Spadoni, G.L., Moris, J.V., Vacchiano, G., Elia, M., Garbarino, M., Sibona, E., Tomao, A.,
+     on plant traits: a synthesis. Sci. Total Environ. 800, 149625. https://doi.org/                      Barbati, A., Sallustio, L., Salvati, L., Ferrara, C., Francini, S., Bonis, E., Dalla
+     10.1016/j.scitotenv.2021.149625.                                                                     Vecchia, I., Strollo, A., Di Leginio, M., Munafò, M., Chirici, G., Romano, R.,
+Qadir, A., Talukdar, N.R., Uddin, M.M., Ahmad, F., Goparaju, L., 2021. Predicting forest                  Corona, P., Marchetti, M., Brunori, A., Motta, R., Ascoli, D., 2023. Active governance
+     fire using multispectral satellite measurements in Nepal. Remote Sens. Appl.: Society                of agro-pastoral, forest and protected areas mitigates wildfire impacts in Italy. Sci.
+     and Environment 23, 100539. https://doi.org/10.1016/j.rsase.2021.100539.                             Total Environ. 890, 164281. https://doi.org/10.1016/j.scitotenv.2023.164281.
+Resco de Dios, V., Hedo, J., Cunill Camprubí, À., Thapa, P., Martínez del Castillo, E.,             Stephens, S.L., Millar, C.I., Collins, B.M., 2010. Operational approaches to managing
+     Martínez de Aragón, J., Bonet, J.A., Balaguer-Romano, R., Díaz-Sierra, R., Yebra, M.,               forests of the future in Mediterranean regions within a context of changing climates.
+     Boer, M.M., 2021. Climate change induced declines in fuel moisture may turn                          Environ. Res. Lett. 5, 24003. https://doi.org/10.1088/1748-9326/5/2/024003.
+     currently fire-free Pyrenean mountain forests into fire-prone ecosystems. Sci. Total            Stritih, A., Senf, C., Marsoner, T., Seidl, R., 2024. Mapping the natural disturbance risk to
+     Environ. 797, 149104. https://doi.org/10.1016/j.scitotenv.2021.149104.                               protective forests across the European Alps. J. Environ. Manag. 366, 121659.
+Rigo, de, Durrant, H., Vivancos, A., 2017. Forest fire danger extremes in Europe under                    https://doi.org/10.1016/j.jenvman.2024.121659.
+     climate change: variability and uncertainty. PESETA III project-Climate Impacts and             Tasser, E., Leitinger, G., Tappeiner, U., 2017. Climate change versus land-use
+     Adaptation in Europe, focusing on Extremes, Adaptation and the 2030s. Task 11-                       change—what affects the mountain landscapes more? Land Use Policy 60, 60–72.
+     Forest fires. Final report. https://doi.org/10.2760/13180.                                           https://doi.org/10.1016/j.landusepol.2016.10.019.
+Sánchez-Pinillos, M., De Cáceres, M., Casals, P., Alvarez, A., Beltrán, M., Pausas, J.G.,         Tasser, E., Leitinger, G., Tappeiner, U., Schirpke, U., 2024. Shaping the European Alps:
+     Vayreda, J., Coll, L., 2021. Spatial and temporal variations of overstory and                        trends in landscape patterns, biodiversity and ecosystem services. Catena 235,
+     understory fuels in Mediterranean landscapes. For. Ecol. Manag. 490, 119094.                         107607. https://doi.org/10.1016/j.catena.2023.107607.
+     https://doi.org/10.1016/j.foreco.2021.119094.                                                   Tello-García, E., Huber, L., Leitinger, G., Peters, A., Newesely, C., Ringler, M.E.,
+Schirpke, U., 2022. Ecosystem services and sustainable development in the European                        Tasser, E., 2020. Drought- and heat-induced shifts in vegetation composition impact
+     Alps: spatial patterns and mountain-lowland relationships BT - human-nature                          biomass production and water use of alpine grasslands. Environ. Exp. Bot. 169,
+     interactions: exploring nature’s values across landscapes. In: Misiune, I.,                          103921. https://doi.org/10.1016/j.envexpbot.2019.103921.
+     Depellegrin, D., Egarter Vigl, L. (Eds.), Human-Nature Interactions. Springer                   To, P., Eboreime, E., Agyapong, V.I.O., 2021. The impact of wildfires on mental health: a
+     International Publishing, Cham, pp. 127–139. https://doi.org/10.1007/978-3-031-                      scoping review. Behav. Sci. https://doi.org/10.3390/bs11090126.
+     01980-7_11.                                                                                     Tobler, W., 1993. Three Presentations on Geographical Analysis and Modeling: Non-
+Schirpke, U., Meisch, C., Marsoner, T., Tappeiner, U., 2018. Revealing spatial and                        Isotropic Geographic Modeling; Speculations on the Geometry of Geography; and
+     temporal patterns of outdoor recreation in the European Alps and their                               Global Spatial Analysis, 93-1.
+     surroundings. Ecosyst. Serv. 31, 336–350. https://doi.org/10.1016/j.                            Tran, T.T.K., Janizadeh, S., Bateni, S.M., Jun, C., Kim, D., Trauernicht, C., Rezaie, F.,
+     ecoser.2017.11.017.                                                                                  Giambelluca, T.W., Panahi, M., 2024. Improving the prediction of wildfire
+Schirpke, U., Tasser, E., Borsky, S., Braun, M., Eitzinger, J., Gaube, V., Getzner, M.,                   susceptibility on Hawaiʻi Island, Hawaiʻi, using explainable hybrid machine learning
+     Glatzel, S., Gschwantner, T., Kirchner, M., Leitinger, G., Mehdi-Schulz, B., Mitter, H.,             models. J. Environ. Manag. 351, 119724. https://doi.org/10.1016/j.
+     Scheifinger, H., Thaler, S., Thom, D., Thaler, T., 2023. Past and future impacts of                  jenvman.2023.119724.
+     land-use changes on ecosystem services in Austria. J. Environ. Manag. 345, 118728.              Valese, E., Conedera, M., Held, A.C., Ascoli, D., 2014. Fire, humans and landscape in the
+     https://doi.org/10.1016/j.jenvman.2023.118728.                                                       European Alpine region during the Holocene. Anthropocene 6, 63–74. https://doi.
+Schumacher, S., Bugmann, H., 2006. The relative importance of climatic effects, wildfires                 org/10.1016/j.ancene.2014.06.006.
+     and management for future forest landscape dynamics in the Swiss Alps. Glob.                    Varela, V., Vlachogiannis, D., Sfetsos, A., Karozis, S., Politi, N., Giroud, F., 2019.
+     Change Biol. 12, 1435–1450. https://doi.org/10.1111/j.1365-2486.2006.01188.x.                        Projection of forest fire danger due to climate change in the French Mediterranean
+Schwörer, C., Morales-Molino, C., Gobet, E., Henne, P.D., Pasta, S., Pedrotta, T., van                   region. Sustainability. https://doi.org/10.3390/su11164284.
+     Leeuwen, J.F.N., Vannière, B., Tinner, W., 2024. Simulating past and future fire               Walker, X.J., Rogers, B.M., Veraverbeke, S., Johnstone, J.F., Baltzer, J.L., Barrett, K.,
+     impacts on Mediterranean ecosystems. J. Ecol. 112, 954–970. https://doi.org/                         Bourgeau-Chavez, L., Day, N.J., de Groot, W.J., Dieleman, C.M., Goetz, S., Hoy, E.,
+     10.1111/1365-2745.14293.                                                                             Jenkins, L.K., Kane, E.S., Parisien, M.A., Potter, S., Schuur, E.A.G., Turetsky, M.,
+Scott, L.M., Janikas, M.V., 2010. Spatial Statistics in ArcGIS. In: Handbook of Applied                   Whitman, E., Mack, M.C., 2020. Fuel availability not fire weather controls boreal
+     Spatial Analysis. Springer, pp. 27–41. https://doi.org/10.1007/978-3-642-03647-7_                    wildfire severity and carbon emissions. Nat. Clim. Change 10, 1130–1136. https://
+     2.                                                                                                   doi.org/10.1038/s41558-020-00920-8.
+Seidl, R., Albrich, K., Thom, D., Rammer, W., 2018. Harnessing landscape heterogeneity               Wang, D., Guan, D., Zhu, S., Kinnon, M. Mac, Geng, G., Zhang, Q., Zheng, H., Lei, T.,
+     for managing future disturbance risks in forest ecosystems. J. Environ. Manag. 209,                  Shao, S., Gong, P., Davis, S.J., 2021. Economic footprint of California wildfires in
+     46–56. https://doi.org/10.1016/j.jenvman.2017.12.014.                                                2018. Nat. Sustain. 4, 252–260. https://doi.org/10.1038/s41893-020-00646-7.
+Sevinc, V., Kucuk, O., Goltas, M., 2020. A Bayesian network model for prediction and                 Wastl, C., Schunk, C., Lüpke, M., Cocca, G., Conedera, M., Valese, E., Menzel, A., 2013.
+     analysis of possible forest fire causes. For. Ecol. Manag. 457, 117723. https://doi.                 Large-scale weather types, forest fire danger, and wildfire occurrence in the Alps.
+     org/10.1016/j.foreco.2019.117723.                                                                    Agric. For. Meteorol. 168, 15–25. https://doi.org/10.1016/j.
+Shao, Y., Fan, G., Feng, Z., Sun, L., Yang, X., Ma, T., Li, X.S., Fu, H., Wang, A., 2023.                 agrformet.2012.08.011.
+     Prediction of forest fire occurrence in China under climate change scenarios. J. For.           Zhang, G., Wang, M., Yang, B., Liu, K., 2024. Current and future patterns of global
+     Res. 34, 1217–1228. https://doi.org/10.1007/s11676-023-01605-6.                                      wildfire based on deep neural networks. Earths Future 12, e2023EF004088. https://
+Sil, Â., Azevedo, J.C., Fernandes, P.M., Honrado, J.P., 2024. Will fire-smart landscape                  doi.org/10.1029/2023EF004088.
+     management buffer the effects of climate and land-use changes on fire regimes?
+     Ecological Processes 13, 57. https://doi.org/10.1186/s13717-024-00535-3.
+
+
+
+
+                                                                                                11
+

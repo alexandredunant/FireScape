@@ -1,0 +1,853 @@
+PAGE 1
+1. Introduction
+Human-induced climate change, causing warmer spring and summer temperatures and earlier snowmelt, is driv-
+ing an increase in global forest fire occurrence (Gillett,  2004; Westerling et al.,  2006). Predictions of future fire 
+activity under climate change scenarios show an increase in extreme fire danger (Abatzoglou et al.,  2019; Bedia 
+et al.,  2014; Kilpeläinen et al.,  2010; Stocks et al.,  2003). Forest fires have a wide-ranging impact on surrounding 
+environments and human activities, impacting air quality, snowmelt and flooding (Burles & Boon, 2011; Gleason 
+et al., 2019; Pomeroy et al., 2012; Versini et al., 2013).
+Ongoing climate change is accelerating melt of the mountain cryosphere and threatening downstream water 
+resources (Huss & Hock,  2018; Immerzeel et al.,  2020). The net radiation received at the glacier surface controls 
+this melt (Hock,  2005). Mountain snow and ice surfaces typically have high albedos and so reflect an extensive 
+amount of solar radiation. However, forest fires upwind of snow and ice covers can affect the melt patterns through 
+the deposition of light-absorbing impurities (LAI). Surface darkening due to LAI results in higher absorption of 
+solar radiation and faster melt (Conway et al.,  1996; Skiles et al.,  2018; Warren & Wiscombe,  1980). Keegan 
+Abstract Wildfire occurrence and severity is predicted to increase in the upcoming decades with severe 
+negative impacts on human societies. The impacts of upwind wildfire activity on glacier melt, a critical source 
+of freshwater for downstream environments, were investigated through analysis of field and remote sensing 
+observations and modeling experiments for the 2015–2020 melt seasons at the well-instrumented Athabasca 
+Glacier in the Canadian Rockies. Upwind wildfire activity influenced surface glacier melt through both a 
+decrease in the surface albedo from deposition of soot on the glacier and through the impact of smoke on 
+atmospheric conditions above the glacier. Athabasca Glacier on-ice weather station observations show days 
+with dense smoke were warmer than clear, non-smoky days, and sustained a reduction in surface shortwave 
+irradiance of 103 W m −2  during peak shortwave irradiance and an increase in longwave irradiance of 10 W m −2 , 
+producing an average 15 W m −2  decrease in net radiation. Albedo observed on-ice gradually decreased after 
+the wildfires started, from a summer average of 0.29 in 2015 before the wildfires to as low as 0.16 in 2018 after 
+extensive wildfires and remained low for two more melt seasons without substantial upwind wildfires. Reduced 
+all-wave irradiance partly compensated for the increase in melt due to lowered albedo in those seasons when 
+smoke was detected above Athabasca Glacier. In melt seasons without smoke, the suppressed albedo increased 
+melt by slightly more than 10% compared to the simulations without fire-impacted albedo, increasing melt by 
+0.42 m. w.e. in 2019 and 0.37 m. w.e. in 2020.
+Plain Language Summary  Wildfire activity, which is expected to increase in the upcoming 
+decades, has wide-ranging consequences. Wildfire smoke can drift to far mountains range and change the 
+amount of glacier melt, an important source of water for downstream environments. On the Athabasca Glacier, 
+in the Canadian Rockies, the impacts of wildfire smoke on glacier melt were investigated using weather 
+measurements collected on the glacier and computer simulations for the 2015–2020 melt seasons. Smoky days 
+were found to be warmer, drier and with lower incoming solar energy than days without smoke. During heavy 
+fire years, the wildfire smoke deposited on the glacier surface gradually darkens the ice. The glacier surface 
+stayed dark in the following years, even when no-fire activity was detected. This darker ice surface caused 
+ice melt to increase by up to 10% compared to simulations where the impacts of fire activity were removed. 
+However, in years when smoke was detected, the increased melt due to the darker ice surface was partially 
+compensated by a reduction in how much solar energy reached the ice. This works helps us understand climate 
+change, wildfires, and glacier melt are connected, and better predict future water resources in mountain regions.
+AUBRY-WAKE ET AL.
+© 2022 The Authors.
+This is an open access article under 
+the terms of the Creative Commons 
+Attribution-NonCommercial License, 
+which permits use, distribution and 
+reproduction in any medium, provided the 
+original work is properly cited and is not 
+used for commercial purposes.
+Fire and Ice: The Impact of Wildfire-Affected Albedo and 
+Irradiance on Glacier Melt
+Caroline Aubry-Wake1 , André Bertoncini1, and John W. Pomeroy1 
+1Centre for Hydrology, University of Saskatchewan, Canmore, AB, Canada
+Key Points:
+•  The effect of wildfire smoke on the 
+energy and mass balance of Athabasca 
+Glacier, Canada was investigated 
+using measurements and modeling
+•  Wildfire smoke reduced surface net 
+irradiance, causing net radiation to 
+decrease by 15 Wm −2  during smoky 
+conditions
+•  In the years after record wildfires 
+activity, the lowered albedo from 
+antecedent soot deposition still 
+increased ice melt by up to 10%
+Supporting Information:
+Supporting Information may be found in 
+the online version of this article.
+Correspondence to:
+C. Aubry-Wake,
+caroline.aubrywake@gmail.com
+Citation:
+Aubry-Wake, C., Bertoncini, A., & 
+Pomeroy, J. W. (2022). Fire and ice: 
+The impact of wildfire-affected albedo 
+and irradiance on glacier melt. Earth's 
+Future, 10, e2022EF002685. https://doi.
+org/10.1029/2022EF002685
+Received 21 JAN 2022
+Accepted 30 MAR 2022
+Author Contributions:
+Conceptualization: Caroline Aubry-
+Wake, John W. Pomeroy
+Data curation: Caroline Aubry-Wake
+Formal analysis: Caroline Aubry-Wake, 
+André Bertoncini
+Funding acquisition: John W. Pomeroy
+Investigation: Caroline Aubry-Wake
+Methodology: Caroline Aubry-Wake, 
+André Bertoncini, John W. Pomeroy
+Project Administration: John W. 
+Pomeroy
+10.1029/2022EF002685
+Special Section:
+Fire in the Earth System
+RESEARCH ARTICLE
+1 of 14
+
+
+PAGE 2
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+2 of 14
+et al. (2014) linked widespread accelerated melt of the Greenland ice sheet to Northern Hemisphere forest fires, 
+and more recently, Magalhães et al. (2019) have shown that forest fires in the Amazon are accelerating the melt of 
+Andean glaciers. Williamson and Menounos (2021) have shown that mountain glacier albedo is declining across 
+North America and the decline is correlated not only with rising temperature but also with forest fire LAI depo-
+sition. LAI deposition can feed microbial growth, triggering a feedback loop that further decreases the surface 
+albedo (Cook et al.,  2020; Di Mauro et al.,  2020; Ryan et al.,  2018). Besides darkening the surface, wildfire 
+smoke reduces incoming shortwave radiation (McKendry et al.,  2019; Sokolik et al.,  2019; Stone et al.,  2008) and 
+can even lead to surface cooling (Kochanski et al.,  2019). These two processes, the surface darkening because of 
+LAIs, and the attenuation in incoming solar radiation because of the wildfire smoke, can therefore compensate 
+each other. Even though this has been suggested in the literature (e.g., Stone et al.,  2008), it has not previously 
+been quantified.
+The objective of this paper is to better understand the roles of several possible processes that link wildfires to 
+ablation of mountain glaciers. To accomplish this objective, the impact of wildfire smoke and LAI deposition 
+on albedo and near-surface meteorology was studied using intensive surface observations, process-based cold 
+regions glacier hydrological modeling, and remote sensing. This study was conducted at the well-instrumented 
+Athabasca Glacier Research Basin, which is part of the Columbia Icefield in the Canadian Rockies, for the 
+2015–2020 melt seasons.
+2. Methods
+2.1. Study Site and Data: Athabasca Glacier Research Basin
+The Canadian Rockies are the headwaters of some of the largest rivers in North America and provide an important 
+part of the streamflow in late summer for the downstream environments, especially during dry, warm summers 
+(Bash & Marshall,  2014; Comeau et al.,  2009; Jost et al.,  2012; Naz et al.,  2014). Within the Canadian Rockies, 
+the Columbia Icefield is the hydrological apex of North America, contributing runoff that ultimately reaches the 
+Arctic, Atlantic and Pacific oceans through the Mackenzie, Saskatchewan and Columbia rivers (Figure 1).
+Smoke from wildfires occurring in heavily forested British Columbia, just west of the Columbia Icefield, tends 
+to travel eastward along prevailing westerly flows to the Canadian Rockies. In the last five years, fire activity 
+upwind of the Columbia Icefield has been highly variable and includes the two worst fire seasons ever recorded, 
+2017 and 2018. In 2018 alone, over 1.35 million hectares burned, over 2200 properties were evacuated, and 
+the cost of wildfire suppression reached $615 million (Government of B.C.,  2019). Below average fire activity 
+occurred in 2016, 2019 and 2020.
+Over the same period (2015–2020), two automated weather stations (AWS) operated in Athabasca Glacier 
+Research Basin, which comprises an outlet glacier of the Columbia Icefield and its proglacial landscape: AWSice, 
+on the glacier toe at 2177 m a.s.l., and AWS moraine, less than 1 km from the glacier terminus, at elevation 1966 m 
+a.s.l. (Figure  1, Table S1 in Supporting Information  S1). The stations observed air temperature (Ta) and relative 
+humidity (RH) using Rotronic temperature and humidity probe, wind speed (U) using RM Young Wind Monitors, 
+incoming and outgoing short (SW) and longwave (LW) radiation using Kipp and Zonen CNR4 net radiometers, 
+and snow depth and ice elevation using Campbell Scientific Canada SR50 ultrasonic depth rangers. Precipitation 
+was observed at AWS moraine, using a Meteorological Services tipping bucket rain gauge and an Alter-shielded 
+Geonor weighing precipitation gauge. The precipitation gauge suffered from an instrument malfunction during 
+the 2019 melt season and was infilled with three other stations in the vicinity using an inverse distance weighting 
+interpolation method. A Wingscapes, 8.0-megapixel, time-lapse camera was mounted on the AWSmoraine pointed 
+towards the Athabasca Glacier and provided visibility, smoke, precipitation type and cloud observations. The 
+time-lapse camera recorded pictures at 8:00, 13:00 and 16:00 local time.
+The seasonal period analyzed here, July 1st to September 15th, referred to as the melt season, includes the co-oc-
+currence of the primary glacier melt period and the regional wildfire season. The range of years from 2015 to 
+2020 includes both high and low wildfire occurrence and cool, wet and warm, dry years.
+Supervision: John W. Pomeroy
+Visualization: Caroline Aubry-Wake, 
+André Bertoncini
+Writing – original draft: Caroline 
+Aubry-Wake
+Writing – review & editing: Caroline 
+Aubry-Wake, André Bertoncini, John W. 
+Pomeroy
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 3
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+3 of 14
+2.2. Defining the Characteristic Meteorological Conditions
+Time-lapse images were taken three times a day at the AWS moraine station 
+for the 2015–2020 melt season. These were classified manually according to 
+the weather type: predominantly clear sky, a mix of sun and cloud, predomi-
+nantly cloudy, light smoke or dense smoke (Figure 2). Light and dense smoke 
+were selected based on the attenuation of distant visual features in the visual 
+images, such as snow patches, rock outcrops and clouds. In light smoke condi-
+tions, these features were still visible, but in dense smoke conditions, it was 
+difficult to discern the clouds and the distant mountain landscape. The result-
+ing time series of Athabasca weather was used to select representative days 
+for each weather type, defined as when two consecutive images out of three 
+show the same weather type. The measured air temperature, relative humidity 
+and incoming shortwave and longwave radiation for these representative days 
+were extracted from the AWSice record and compiled to obtain average daily 
+meteorological conditions for each of the weather types. These representative 
+meteorological conditions are used to investigate how the presence of smoke 
+affects the atmospheric conditions at the Athabasca glacier.
+2.3. Modeling Approach: Isolating the Impact of Smoke and LAI
+The impact on the surface melt of both the changes in ice albedo and on short 
+and longwave irradiance was diagnosed using a new point-based surface 
+energy balance model developed in the Cold Region Hydrological Modeling 
+platform (CRHM, Pomeroy et al.,  2007,  2016) using an hourly energy budget 
+approach (Equation 1):
+𝑀𝑀= SWin(1 − 𝛼𝛼)+LW net + 𝑄𝑄+ 𝐻𝐻+ 𝑃𝑃
+ (1)
+where M is the energy available for melt, SW in in the shortwave irradiance, 
+α is the surface albedo, longwave (LW net) is net longwave radiation, Q is 
+the turbulent latent heat flux, H is the turbulent sensible heat flux and P 
+is the energy advected from precipitation. The turbulent fluxes were calcu-
+lated using a katabatic wind parametrization from Oerlemans and Griso-
+gono  (2002). Model forcings of air temperature, relative humidity, wind 
+speed, albedo, and shortwave and longwave irradiance were observed at the 
+AWSice, and precipitation at the AWSmoraine. The model was evaluated using measured surface ablation at AWSice 
+which was available intermittently during the 2016–2020 melt seasons.
+The model was run for the 2015–2020 melt seasons (July 1st–September 15th) following four scenarios to isolate 
+the impact of attenuated irradiance due to smoke and decreased albedo due to LAIs. LAIs are defined as all 
+surface particulates and impurities that contribute to the decrease in surface albedo, including dust, black carbon 
+and microbial growth (Skiles et al., 2018). The four scenarios are shortly described below and in Figure 3:
+1.  No Fire: Removes the impact of fire activity for both the glacier surface and the atmosphere, by using a stand-
+ard mountain glacier ice albedo of 0.3 and modeled smoke-free irradiance.
+2.  With Smoke: Isolates the impact of the radiation attenuation due to smoke by using the measured irradiance 
+with the standard ice albedo of 0.3.
+3.  With LAIs: Isolates the impact of the albedo reduction by LAIs by using measured albedo with modeled 
+smoke-free irradiance.
+4.  With Fire: Corresponds to observed conditions and combines the measured albedo reduction and the meas-
+ured irradiance attenuation to simulate fire activity.
+Measured albedo was calculated as the ratio of shortwave reflection to irradiance measured from the AWS ice. 
+The no-LAI surface albedo in scenario (1) and (2) was set to a reference value for clean glacier ice, 0.3 (Benn 
+& Evans,  2010). On days when smoke was detected in the time-lapse imagery, the shortwave and longwave 
+Figure 1. Map of the Columbia Icefield with the three main outlet glaciers: 
+Athabasca Glacier, Saskatchewan Glacier and Castleguard Glacier, with the 
+location of the automated weather station showed with purple circle. The 
+Columbia Icefield is the headwater of drainage basin reaching the Atlantic, 
+Pacific and Arctic Oceans, as shown by the inset map of North America. The 
+background imagery is from 8 August 2018 obtained from Sentinel-2 and 
+the elevation line are derived from Shuttle Radar Topography Mission digital 
+elevation model obtained in February 2000.
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 4
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+4 of 14
+irradiance were corrected separately to remove the effects of smoke in scenario (1) and (3). On days when no 
+smoke was detected, measured irradiance was used. Both irradiance corrections used a transmissivity correction. 
+The temperature, relative humidity and wind speed were not adjusted amongst the four scenarios.
+The presence of smoke in the atmosphere absorbs shortwave radiation, reducing the irradiance at the surface by 
+decreasing the transmittance (McKendry et al.,  2019; Stone et al.,  2008). Therefore, transmissivity on smoky days 
+is lower than on clear days. To simulate smoke-free shortwave irradiance, SWin mod, the transmissivity of smoky 
+days needs to be increased to a value corresponding to smoke-free days. To achieve this, the clear-sky transmis-
+sivity was calculated as the average transmissivity occurring during days classified as clear in the time-lapse 
+imagery classification. Then, the difference in transmissivity between measured smoky days and the average 
+clear-sky transmissivity ∆ τ was calculated (Equation  2). This difference in transmissivity was used to calculate 
+Figure 2. Example of time-lapse images for (a) clear, (b) mix of sun and cloud, (c) cloudy, (d) light smoke, and (e and f) 
+dense smoke, extracted from the 2017 melt season.
+Figure 3. Conceptual representation of the four modeling scenarios. The framing color corresponds to the line color in Figure 8.
+0HDVXUHG$OEHGR,FH$OEHGR 
+1R)LUH :LWK6PRNH :LWK/$,V :LWK)LUH
+,FH$OEHGR 0HDVXUHG$OEHGR
+0HDVXUHGUDGLDWLRQ 0RGHOOHG
+VPRNHIUHHUDGLDWLRQ
+0HDVXUHGUDGLDWLRQ0RGHOOHG
+VPRNHIUHHUDGLDWLRQ
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 5
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+5 of 14
+the missing shortwave irradiance ∆SWin, linked to the presence of smoke (Equation 3). The missing irradiance was 
+calculated for each smoky day and added to the measured shortwave irradiance to estimate the simulated smoke-
+free irradiance SWin mod (Equation 4).
+Δ𝜏𝜏 = 𝜏𝜏meas smoky − 𝜏𝜏clear
+ (2)
+ΔSWin = SWmeas ∗Δ 𝜏𝜏
+ (3)
+SWin mod = SWin meas +Δ SWin
+ (4)
+where SWin meas is the shortwave irradiance (Wm −2 ) measured at the AWSice, τclear and τmeas smoky are the average 
+measured clear sky transmissivity and the measured smoky transmissivity, calculated as the ratio of measured 
+shortwave irradiance to the theoretical extraterrestrial incoming shortwave radiation flux—both to horizontal 
+planar surfaces.
+To remove the influence of smoke on the longwave irradiance, a factor, flw, was calculated based on the difference 
+between simulated longwave irradiance with smoky transmissivity and with the average clear-day transmissivity 
+τclear (Equation  5). The theoretical simulated longwave irradiance was calculated following Sicart et al. (2006, 
+Equation  6). The measured longwave factor was then used to adjust the measured longwave irradiance to remove 
+the impact of the smoke (Equation 7).
+𝑓𝑓lw = LWtheoclear
+LWtheosmoky
+ (5)
+LWtheo =1 .24 ∗
+( 𝑒𝑒𝑎𝑎
+𝑇𝑇
+) 1
+7
+∗( 1+0 .44 ∗ RH −0 .18 ∗ 𝜏𝜏)∗ 𝜎𝜎𝑇𝑇4
+ (6)
+LWin mod = LWin meas ∗ 𝑓𝑓lw
+ (7)
+where ea is the water vapor pressure (kPa), RH is the relative humidity (%), σ is the Stefan Boltzmann constant 
+(5.67 × 10 −8  Wm −2  K −4 ) and T is the air temperature (K) and τmeas is measured transmissivity.
+This transmissivity-based approach to simulate smoke-free conditions preserves the daily signature of the meas-
+ured irradiance. For example, a day with smoke detected in the time-lapse imagery, but also with the low short-
+wave irradiance associated with cloudy weather, will still have low shortwave irradiance after the impact of the 
+smoke is removed.
+2.4. Spatial Albedo Estimates
+To upscale the results of the point albedo measured at the AWS ice, the change in albedo over the three largest 
+outlet glaciers of the Columbia Icefield was analyzed using remote sensing imagery over the 2016–2020 melt 
+seasons (Bertoncini et al., in review) For 12 Sentinel-2 images, high-resolution albedo over the glaciers was esti-
+mated using Moderate Resolution Imaging Spectroradiometer (MODIS) data to model the bidirectional reflec-
+tance of snow and ice, following the approach detailed in Bertoncini et al. (in review). The spatial variations in 
+albedo across each glacier toe were assessed for each melt season, but also amongst melt seasons.
+3. Results and Discussion
+3.1. Seasonal Weather Types and Meteorological Conditions
+The time-lapse image classification reveals that, for the 2015–2020 melt seasons, the weather at Athabasca 
+glacier was predominantly cloudy, with 50% of images analyzed categorized as cloudy, in contrast to 15% for 
+clear skies, 24% for a mix of sun and clouds, and 5% and 6% for light and dense smoke (Figure  4). The pres-
+ence of smoke differs from year to year. The 2016 and 2019 melt seasons show no presence of smoke. In 2015, 
+smoke was detected in only 7% of the images, concentrated in late August, and in 2020, only 4% of images 
+show smoke, concentrated close to September 15 th on late September. The 2017 and 2018 melt seasons have the 
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 6
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+6 of 14
+largest presence of smoke, with 29% and 26% of images showing either light or dense smoke, but with differ -
+ent timing. Detailed numbers of images for each weather type per year can be found in Table S2 of Supporting 
+Information S1.
+Meteorological conditions on the glacier in the five melt seasons were not associated with smoke activity, 
+assessed as the number of days with dense or light smoke in a given year (Table  1). Mean air temperature over 
+each melt season varied by 1.85°C between the warmest (2017) and the coldest (2016) years. The years with 
+smoke were not consistently warmer than years without smoke. Similarly, even though smoke years (2015, 2017, 
+2018) were drier than no-smoke years (2016, 2019), the annual smoke activity did not correlate with the humid-
+ity of the given year. Precipitation similarly was lower for the intense fire season of 2017 and 2018, but also for 
+2020 with few fires. The only consistent pattern is for the measured ice surface albedo, which decreased from a 
+summer average of 0.29 in 2015 to 0.20 in 2018, after which it remained low (Figure 5). However, the low albedo 
+values in 2020 increased moderately in late August compared to the seasonan progression of albedo in 2018 and 
+2019, suggesting a partial recovery that may be associated with some surface LAIs being washed away by melt-
+water. These low ice albedos are similar to what have been measured on other glaciers in the Canadian Rockies 
+during similar forest fire activity, such as on Haig Glacier, where albedo as low as 0.12 were recorded in 2003 
+and 2017, after summers of high forest fire activity (Ebrahimi & Marshall,  2015; Marshall & Miller,  2020). The 
+link between decreasing surface albedo and wildfire activity in the region was also discussed by Williamson and 
+Figure 4. Weather type at Athabasca glacier obtained from the time-lapse image classification for the 2015 to 2020 melt 
+seasons.
+&OHDUVN\0L[HG&ORXG\/LJKW6PRNH'HQVH6PRNH
+E
+D
+F
+G
+H
+I
+2015 2016 2017 2018 2019 2020
+Air Temperature (°C) 6.7 5.9 7.7 6.5 6.6 6.9
+Relative Humidity (%) 65 72 61 66 70 64
+Shortwave Irradiance (Wm −2 ) 202 192 207 208 206 221
+Longwave Irradiance (Wm −2 ) 301 305 297 300 304 302
+Wind Speed (ms −1 ) 5.3 4.6 5.6 5.3 5.4 6.4
+Total precipitation (mm) 147 144 91 139 126 116
+Albedo (minimum) 0.29 (0.24) 0.24 (0.23) 0.26 (0.21) 0.20 (0.16) 0.20 (0.17) 0.20 (0.17)
+Note. The glacier surface was snow-free at AWSice every year in this period. All variables were from AWSice except precipitation, which was measured at AWSmoraine.
+Table 1 
+Seasonal Mean Meteorological Conditions From July 1 to September 15, Except for Albedo Which Was Calculated for July 15–August 15, as There Were No Fresh 
+Snowfall Event That Would Influence the Calculation of the Ice Albedo for That Period
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 7
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+7 of 14
+Menounos (2021), who found a strong correlation between glacier albedo decrease over the 2000–2019 period 
+and aerosol optical depth, a proxy for wildfire-generated smoke.
+3.2. Average Meteorological Conditions Per Weather Type
+Meteorological conditions on smoky days contrasted with those on non-smoky days (Figure  6). Meteorologi-
+cal conditions were on average warmer on smoky days than cloudy or mixed weather days, with average daily 
+temperatures of 8.0°C for light smoke and 8.6°C for dense smoke, compared to 7.6, 7.0 and 5.4°C for clear, 
+mixed and cloudy weather (Figure  6a). Smoky days also underwent a subdued diurnal variation compared to 
+clear days; a variation that was similar to those observed during cloudy weather. This is also visible in the relative 
+humidity (Figure  6b), where smoky days were drier than other weather types, and once again with lower diurnal 
+fluctuation.
+A clear difference amongst weather types is apparent for the characteristic 
+shortwave irradiance (Figure  6c). As expected, the highest shortwave irra-
+diance occurred on clear days, with mean daily peaks of 820  W  m −2  and 
+SWin on cloudy days was significantly reduced, with the mean daily peak 
+SWin reduced to 433 W m −2 . Irradiance on light and dense smoke days was 
+between that on clear and cloudy days, with mean daily peak shortwave irra-
+diance reduced by 225  W  m −2  for light smoke and 290  W  m −2  for dense 
+smoke compared to irradiance on clear days.
+Longwave irradiance on both light and dense smoke days was between that 
+on clear and cloudy days, with a daily average irradiance of 298  W  m −2  
+and 291  W  m −2 , respectively. Longwave irradiance was higher for cloudy 
+days, averaging 312 W m −2 , compared to clear days, on which it averaged 
+281  W  m −2  (Figure  6d). The average meteorological conditions for each 
+weather type per melt season are presented in Figure S3 of Supporting 
+Information S1.
+3.3. Adjusted Irradiance Based on Transmissivity
+The transmissivity-based adjustment to the observed irradiance to simulate 
+the removal of the smoke has contrasting effects on the shortwave and long-
+wave irradiance that result in a very small impact on net radiation (Figure 7). 
+The transmissivity-based adjustment to the observed irradiance to simu-
+late the removal of the smoke has contrasting effects on the shortwave and 
+Figure 5. Daily measured Athabasca Glacier albedo for the 2015–2020 melt seasons.
+-XO -XO -XO $XJ $XJ 6HS
+
+
+
+
+
+
+RGHEO$
+
+
+
+
+
+
+Figure 6. Average daily meteorological conditions observed on Athabasca 
+Glacier for the different weather types (clear sky, mixed of sun and clouds, 
+cloudy, light smoke and dense smoke); (a) shortwave irradiance, (b) longwave 
+irradiance, (c) air temperature, (d) relative humidity.
+
+
+
+
+
+7D&
+
+
+
+
+
+5+
+
+
+
+6:LQ P: 
+
+
+
+
+
+/:LQ:P
+&OHDUVN\ 0L[HG &ORXG\
+/LJKW6PRNH'HQVH6PRNH
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 8
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+8 of 14
+longwave irradiance that result in a very small impact on net radiation (Figure 7). The smoke-removal adjustment 
+increased shortwave irradiance by, on average, 14 and 21 W m −2  for the light and dense smoke conditions respec-
+tively, with respective hourly maxima increasing by 193 and 209 W m −2  occurring during times of peak irradi-
+ance. In contrast, the corresponding smoke-removal adjustment decreased longwave irradiance by, on average, 
+3.6 and 7.2 W m −2  for light and dense smoke respectively, with hourly maxima decreasing by 16 and 23 W m −2  
+respectively. The large decrease in shortwave irradiance due to attenuated transmittance during smoky conditions 
+is partly mitigated by increased longwave irradiance. These irradiance changes result in an average increase in 
+all-wave irradiance of 10 and 13 W m −2  when adjusting for light and dense smoke, with hourly maxima increas-
+ing by 179 and 195 W m −2 , respectively. These adjustments to shortwave and longwave irradiance are consistent 
+with the observed differences in irradiance between clear and smoky conditions (Figures  6c and  6d), as the pres-
+ence of smoke reduces shortwave but increases longwave irradiance.
+However it is the absorption of the shortwave and longwave irradiance at the ice surface to form net radiation 
+that determines the impact of smoke on glacier melt. Approximately 99% of longwave irradiance was absorbed 
+by the ice surface assuming an emissivity of 0.99, but only 77% of the shortwave irradiance was absorbed given 
+the average measured ice albedo of 0.22 and 0.24 during light and dense smoke conditions. This difference in 
+absorption reduced the effect of the transmittance attenuation on shortwave irradiance. When considering the 
+changes in shortwave and longwave irradiance and absorption, and using the measured albedo values, the pres-
+ence of smoke reduces the net radiation at the ice surface by 15 W m −2  for both light and dense smoke, with 
+hourly maximal reductions of 107 and 114 W m −2 , respectively compared with adjusted, smoke-free conditions. 
+This 15 W m −2  average reduction in net radiation due to the presence of smoke results in a reduction in ice melt of 
+less than 4 mm day −1  compared to smoke-free conditions. Further examples of the adjusted incoming shortwave 
+and longwave irradiance are available in Figures S1 and S2 of Supporting Information S1.
+3.4. Melt Model Evaluation
+Cumulative melt was measured for most of the 2016–2020 melt seasons, with gaps when station maintenance 
+was performed. The CRHM surface melt model predicted observations of surface melt well, with a mean relative 
+error of 3% for all observation periods, ranging between an overestimation of 9% to an underestimation of 4% for 
+individual melt seasons. This corresponds to errors ranging between 6 mm day −1  in 2020 to less than 1 mm day −1  
+Figure 7. Measured (with smoke) and adjusted (no smoke) shortwave (SW)(a) and longwave (LW) (b) irradiance, with 
+all-wave irradiance (SWin + LW in, dashed) and net radiation (SWnet + LW net, full) in c for a selected smoky period in the 2017 
+melt season.
+0HDVXUHGZLWKVPRNH$GMXVWHGQRVPRNH/LJKW6PRNH'HQVH6PRNH
+
+
+
+6:LQ P:  D
+
+
+
+/:LQ:P E
+$XJ $XJ $XJ $XJ $XJ $XJ $XJ
+
+
+
+
+4Q P:  F 6:QHW/:QHW6:LQ/:LQ
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 9
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+9 of 14
+in 2018. The cumulative melt observed at the AWS ice and melt compiled by the model are presented in Table  2 
+and Figure S4 of Supporting Information S1.
+3.5. Isolating the Effect of Smoke and LAI
+To illustrate the impact of forest fire activity on the daily melt volume, hourly melt from the four scenarios for 
+days with variable weather conditions is shown in Figures 8a and  8b and Table S3 of Supporting Information S1. 
+These 12 days are representative of the patterns seen throughout the 2015–2020 melt seasons, including smoky 
+days with clouds, smoky days with clear skies (without clouds), and days without smoke. On smoky-cloudy days 
+such as 14 August 2018, the radiation attenuation (“With Smoke” scenario) and the darker albedo (“With LAIs” 
+scenario) have opposing impacts of similar magnitude on ice melt. For example, on 14 August 2017, the presence 
+of smoke reduced melt by 4 mm, but the darker surface albedo increased melt by 4 mm, resulting in the “No Fire” 
+and the “With Fire” scenario showing the same daily melt. Similarly, the following day, the presence of smoke 
+reduced melt by 2 mm, but the darker albedo increased melt by 3 mm. On smoky-clear days, the impact of the 
+presence of LAI typically outweighed the impact of the presence of smoke. For example, on 15 August 2018, the 
+presence of smoke reduced melt by 4 mm, but the presence of LAI increased melt by 9 mm. On the following 
+day, smoke reduced melt by 1 mm, and the LAI increased melt by 8 mm. Therefore, it is important to consider the 
+weather associated with the smoke (smoky and clear or smoky and cloudy), to assess the compensating impacts 
+of reduced atmospheric transmissivity by smoke, affecting both short and longwave irradiance, and albedo reduc-
+tion by LAIs.
+Noting that smoky conditions only occurred during 11% of the 2015–2010 melt seasons, the four simulations 
+show that, at the seasonal time scale, the large increase in melt due to albedo reduction overcomes the small 
+reduction in melt due to reduced atmospheric transmissivity (Figures  8c–8h, Table S4 in Supporting Informa-
+tion  S1). The compensatory effects of reduced atmospheric transmissivity, which reduces melt, and albedo reduc-
+tion, which increases melt, are particularly visible in 2017 and 2018. Both these years had smoke detected and 
+low albedo observed on Athabasca Glacier. In 2017, reduced atmospheric transmissivity decreased melt by 1.4% 
+compared to the “No Fire” scenario, but the presence of LAI increased melt by 4.9%, resulting in a total increase 
+in melt of 3.3%. This is equivalent to an increase in melt of 0.12 m w.e. per year. In 2018, the year with the 
+greatest upwind fire activity in historical record, radiation attenuation reduced melt energy by 0.9%, but albedo 
+reduction increased melt by 11.1%, for a net increase in melt of 10.2%, or 0.35 m w.e. per year, compared to the 
+no-fire simulation.
+The following year, 2019, no smoke was detected at Athabasca, but the simulations indicate that, with albedo 
+remaining as low as 0.17, the albedo reduction caused an increase in melt of 11.5% (0.42 m w.e. per year.). 
+In 2020, smoke was detected only in the last few days of the melt season, and the reduced albedo simulation 
+shows an increase in melt of 9.6% compared with the no-fire simulation (0.37 m w.e. per year). These 2 years 
+are very similar and much higher than the 4.5% increase in melt due to albedo reduction reported in Magalhães 
+et al. (2019) for the tropical Andes.
+This low observed albedo of 0.17, remaining low after two summers of intense fire activity, also indicates that the 
+albedo reduction continues even after fire activity ceases. Even without deposition of new smoke-derived LAIs, 
+Period (number of days) Observed melt (m) Modeled melt (m) Error (m) Error (%)
+July 14–31 August 2016 (n = 48) 2.79 2.63 0.15 6
+Jul 20–6 August 2017 (n = 17) 0.9 0.94 −0.04 −4
+Jul 1st–12 September 2018 (n = 73) 3.83 3.86 −0.03 −1
+Jul 1st–15 September 2019 (n = 77) 4.24 4.16 0.09 2
+Jul 14–6 September 2020 (n = 54) 3.5 3.19 0.32 9
+All periods (n = 323) 17.81 17.25 0.56 3
+Note. The number of days used in the model evaluation is indicated in parenthesis in the period column.
+Table 2 
+Point Melt Model Evaluation
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 10
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+10 of 14
+and likely some removal of LAIs from the surface meltwater, the albedo remains low. This may be linked with 
+microbial growth on the glacier ice, as carbon deposition on snow and ice surfaces can feed microbial and algal 
+growth, which then causes a further reduction in albedo (Cook et al.,  2017; Jones et al.,  2001; Stibal et al.,  2012; 
+Tedstone et al., 2019).
+These melt simulations assess how wildfire smoke, through changes to both irradiance and albedo, can influence 
+surface melt. The difference in temperature and humidity between smoky and non-smoky conditions, though 
+observed on site, were not assessed in these melt simulations even though they could influence melt rates. 
+Warmer and less humid conditions can be both a cause and a consequence of wildfire activity, and so untangling 
+the causality between wildfire activity, temperature and humidity in this modeling experiment was considered 
+out of the scope of this study.
+Worldwide, glaciers have witnessed an accelerating mass loss since 2000 (Hugonnet et al.,  2021), and ongo-
+ing glacier retreat is well-documented for the Canadian Rockies (DeBeer & Sharp,  2007; DeBeer et al.,  2016; 
+Figure 8. Simulated hourly melt for the four scenarios (No Fire, With smoke, With light-absorbing impurities (LAIs), With 
+Fire) in (a) 2017, and (b) 2018, and simulated cumulative seasonal melt for each of the 2015–2020 seasons in (c–h) for the 
+four smoke and LAI scenarios. The days and seasons with only the “No fire” (black) and “No LAIs” (gray) lines correspond 
+to days or seasons with no smoke detected at the Athabasca Glacier.
+-XO$XJ6HS
+
+
+
+
+
+WOHPHFLHYLWDOXPX&
+HZPP
+F
+-XO$XJ6HS
+
+
+
+
+G
+-XO$XJ6HS
+
+
+
+
+H
+-XO$XJ6HS
+
+
+
+
+
+WOHPHFLHYLWDOXPX&
+HZPP
+I
+-XO$XJ6HS
+
+
+
+
+J
+-XO$XJ6HS
+
+
+
+
+K
+$XJ $XJ $XJ $XJ $XJ $XJ $XJ
+
+
+
+
+
+WOHP\OUXR+
+HZPP
+D
+1R)LUH:LWK6PRNH:LWK/$,:LWK)LUH
+$XJ $XJ $XJ $XJ $XJ $XJ $XJ
+
+
+
+
+
+WOHP\OUXR+
+HZPP
+E
+/LJKW6PRNH'HQVH6PRNH
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 11
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+11 of 14
+Tennant et al.,  2012; Tennant & Menounos,  2013). Glacier loss across western North America shows a hetero-
+geneous regional pattern since 1985, with the mass loss rate slowing in the 2000–2009 period and accelerating 
+for the 2009–2018 period, with the regional and temporal variability possibly linked with a shift in regional 
+meteorological conditions from upper level zonal winds (Menounos et al.,  2019). Glaciers in Western Canada, 
+and specifically in the Canadian Rockies, are expected to be largely ablated by the end of the century (Clarke 
+et al.,  2015; Huss & Hock,  2018). The increase is surface melt from lowered surface albedo driven by wildfire 
+activity presented in this study provides further insights on the complex mechanism and feedback linking glacier 
+mass balance and climate forcings.
+3.6. Spatially Distributed Albedo Change From Remote Sensing
+The three outlet glaciers show a range of albedos (Figure 9), which demonstrates the importance of complement-
+ing point-based analysis with areal estimates. For the Athabasca Glacier, satellite-derived albedo was obtained 
+both for the entire glacier area and for the pixel corresponding to the location of the AWSice, with a spatial reso-
+lution of 20 × 20 m. Glacier-wide albedos for the Athabasca Glacier were higher than at the AWS ice (Figure  9a). 
+This difference is likely linked to late summer snow patches lingering at the higher elevation of the glacier area 
+(Figures  9b–9d). These patches were particularly visible in the 2020 melt season, following a wet and cool spring 
+which caused snowcover to persist into late summer on the Columbia Icefield. The partial recovery in measured 
+surface albedo for the 2020 late melt season is evident in the glacier-wide albedo and for the pixel corresponding 
+to the location of the AWS ice, with the remotely-sensed albedos increasing from 0.293 to 0.327, and 0.186 to 
+0.233 respectively over the melt season, which suggests the possibility of LAIs being removed from the surface.
+The glacier-wide albedo of both the Castleguard and Saskatchewan Glacier show similar trends, with low albedo 
+in 2019 despite the lack of forest fire activity during that melt season, and recovery during the 2020 melt season, 
+with the albedos rising to the more typical clean-ice albedo of 0.3.
+The Castleguard and Saskatchewan glaciers showed the largest variability in albedo. For the Castleguard, this is 
+linked to a lingering high-albedo snow patch below the glacier outline, and some dark or debris covered ice with 
+a very low albedo observed near its toe (Figures  9b–9d). For the Saskatchewan, the variable snowline and a dark 
+ice zone adjacent to low-lying bare soil and rock near the middle of the glacier results in larger spatial variability 
+than the Athabasca.
+4. Conclusions
+The impacts of upwind forest fire activity on glacier melt were investigated through analysis of field observa-
+tions, modeling experiments and remote sensing imagery for the 2015–2020 melt seasons at Athabasca Glacier 
+and the surrounding Columbia Icefield in the Canadian Rockies of western Canada. At the Athabasca Glacier, 
+upwind forest fire activity influenced surface glacier melt in two ways; firstly, through decreasing the glacier 
+albedo from soot deposition following smoke drifting over the glacier and secondly, through the direct impact of 
+the atmospheric conditions above the glacier on reducing shortwave irradiance, increasing longwave irradiance 
+and reducing net radiation. Days with smoke were warmer and drier, had lower shortwave irradiance and greater 
+longwave irradiance compared to non-smoky, clear days. However, the compensatory impacts of lower shortwave 
+and higher longwave irradiance dampened the reduction in net radiation for smoky days.
+The compensatory effects of soot deposits and subsequent microbial growth, which reduced albedo, and smoke 
+in the atmosphere above the glacier, which reduced atmospheric transmissivity, were analyzed using a point-
+based energy balance model. Even though smoke slightly increased longwave irradiance, the attenuation of the 
+shortwave irradiance is greater, resulting in an overall reduction in all-wave irradiance and a reduction in net 
+radiation of 15 W m −2  during smoky conditions, compared to non-smoky conditions. For years when wildfire 
+smoke was detected, reduced all-wave irradiance partly compensated for the effects of reduced albedo on melt 
+energetics, giving a net increase in melt of only 6.75%. However, in years without smoke, the low albedo from 
+antecedent soot deposits increased seasonal ice melt by more than 10%, or 0.42 m w.e. per year. In 2019, the 
+suppressed albedo resulted in an increased melt of 0.42 m. w.e. per year, or 10.2% of the simulated melt for the 
+July 15–September 15 period compared to when simulated with a standard ice albedo of 0.3. Similarly, in 2020, 
+the simulated melt increased by 0.37 m. w.e. per year, or 8.9% of the simulated melt.
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 12
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+12 of 14
+Figure 9. Remote sensing albedo for the Athabasca, Castleguard and Saskatchewan Glaciers for 12 dates in the 2017–2020 
+melt seasons (a), with spatial end-of-summer albedo (dates with the lowest glacier albedo for each season, highlighted in 
+gray) shown in b-e. Please note the change in color gradation for albedo above 0.5. The location of the Athabasca automated 
+weather stations (AWS) is shown as a purple dot in b-d. The horizontal gray line in (a) shows the reference albedo of 0.3 and 
+the purple dot corresponds to the albedo for the pixel where the AWSice is located.
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 13
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+13 of 14
+The results from the point-based energy balance model experiment were upscaled by analyzing the areal albedo 
+dynamics using satellite-derived albedos for the three main outlet glaciers of the Columbia Icefield (Athabasca, 
+Saskatchewan and Castleguard glaciers). High-resolution albedo retrievals from 24 Sentinel 2 images, combined 
+with a MODIS snow-kernel used to model the bidirectional reflectance of snow and ice, show that the albedo 
+changes across the three glacier surfaces is consistent with the point-albedo measured on the Athabasca Glacier 
+toe.
+This study provides a process-based understanding of the impacts of wildfire activity on the mountain cryosphere. 
+It shows that increased longwave irradiance partly compensates for reduced shortwave irradiance and that 
+reduced net irradiance partly compensates for reduced albedo on smoky days after soot deposition on glaciers. 
+However, the net effect of wildfires in increasing glacier melt is substantial and long lasting due to the reduced 
+albedo. Considering the expected increase in both climate extremes and forest fire activity, coupled with contin-
+ued decline in mountain glaciers, understanding the processes at play provides a first step toward improved 
+predictions of runoff from these glaciers and less uncertain assessments of the implications of changing glacier 
+hydrology for downstream water resources and sea level rise.
+Data Availability Statement
+The scripts used to process and analyze the timelapse imagery, meteorological data and energy-balance simulations 
+can be found at: https://github.com/caubrywake/FireAndIce and the meteorological data as well as the time-lapse 
+images analysed can be found at: https://www.hydroshare.org/resource/5ef34291cdcd44a4ac2dcdddbaa0e310/.
+References
+Abatzoglou, J. T., Williams, A. P., & Barbero, R. (2019). Global emergence of anthropogenic climate change in fire weather indices. Geophysical 
+Research Letters, 46(1), 326–336. https://doi.org/10.1029/2018GL080959
+Bash, E. A., & Marshall, S. J. (2014). Estimation of glacial melt contributions to the Bow River, Alberta, Canada, using a radiation–temperature 
+melt model. Annals of Glaciology, 55(66), 138–152. https://doi.org/10.3189/2014AoG66A226
+Bedia, J., Herrera, S., Camia, A., Moreno, J. M., & Gutiérrez, J. M. (2014). Forest fire danger projections in the Mediterranean using ENSEM-
+BLES regional climate change scenarios. Climatic Change, 122(1–2), 185–199. https://doi.org/10.1007/s10584-013-1005-z
+Benn, D., & Evans, D. J. A. (2010). Glaciers and glaciation. Hodder Education.
+Burles, K., & Boon, S. (2011). Snowmelt energy balance in a burned forest plot, Crowsnest Pass, Alberta, Canada. Hydrological Processes, 
+25(19), 3012–3029. https://doi.org/10.1002/hyp.8067
+Clarke, G., Jarosch, A. H., Anslow, F. S., Radic, V., & Menounos, B. (2015). Projected deglaciation of western Canada in the twenty-first century. 
+Nature Geoscience, 8(5), 372–377. https://doi.org/10.1038/ngeo2407
+Comeau, L., Pietroniro, A. A., & Demuth, M. N. (2009). Glacier contribution to the North and South Saskatchewan Rivers. In Hydrological 
+processes (Vol. 23, pp. 2640–2653). https://doi.org/10.1002/hyp.7409
+Conway, H., Gades, A., & Raymond, C. F. (1996). Albedo of dirty snow during conditions of melt. Water Resources Research, 32(6), 1713–1718. 
+https://doi.org/10.1029/96WR00712
+Cook, J. M., Hodson, A. J., Gardner, A., Flanner, M., Tedstone, A. J., Williamson, C., et al. (2017). Quantifying bioalbedo: A new physically 
+based model and discussion of empirical methods for characterising biological influence on ice and snow albedo. The Cryosphere, 11(6), 
+2611–2632. https://doi.org/10.5194/tc-11-2611-2017
+Cook, J. M., Tedstone, A. J., Williamson, C., McCutcheon, J., Hodson, A. J., Dayal, A., et al. (2020). Glacier algae accelerate melt rates on the 
+south-western Greenland Ice Sheet. The Cryosphere, 14(1), 309–330. https://doi.org/10.5194/tc-14-309-2020
+DeBeer, C. M., & Sharp, M. (2007). Recent changes in glacier area and volume within the southern Canadian Cordillera. Annals of Glaciology, 
+46(1), 215–221. https://doi.org/10.3189/172756407782871710
+DeBeer, C. M., Wheater, H. S., Carey, S. K., & Chun, K. P. (2016). Recent climatic, cryospheric, and hydrological changes over the interior of 
+western Canada: A review and synthesis. Hydrology and Earth System Sciences, 20, 1573–1598. https://doi.org/10.5194/hess-20-1573-2016
+Di Mauro, B., Garzonio, R., Baccolo, G., Franzetti, A., Pittino, F., Leoni, B., et al. (2020). Glacier algae foster ice-albedo feedback in the Euro-
+pean Alps. Scientific Reports, 10(1), 1–9. https://doi.org/10.1038/s41598-020-61762-0
+Ebrahimi, S., & Marshall, S. J. (2015). Parameterization of incoming longwave radiation at glacier sites in the Canadian rocky mountains. Journal 
+of Geophysical Research: Atmospheres, 120(24), 12536–12556. https://doi.org/10.1002/2015JD023324
+Gillett, N. P. (2004). Detecting the effect of climate change on Canadian forest fires. Geophysical Research Letters, 31(18), L18211. https://doi.
+org/10.1029/2004GL020876
+Gleason, K. E., McConnell, J. R., Arienzo, M. M., Chellman, N., & Calvin, W. M. (2019). Four-fold increase in solar forcing on snow in western 
+U.S. burned forests since 1999. Nature Communications, 10(1), 2026. https://doi.org/10.1038/s41467-019-09935-y
+Government of B.C (2019). Wildfire season summary—Province of British Columbia. Retrieved from https://www2.gov.bc.ca/gov/content/safety/
+wildfire-status/about-bcws/wildfire-history/wildfire-season-summary
+Hock, R. (2005). Glacier melt: A review of processes and their modelling. Progress in Physical Geography, 29(3), 362–391. https://doi.
+org/10.1191/0309133305pp453ra
+Hugonnet, R., McNabb, R., Berthier, E., Menounos, B., Nuth, C., Girod, L., et al. (2021). Accelerated global glacier mass loss in the early twen-
+ty-first century. Nature, 592(7856), 726–731. https://doi.org/10.1038/s41586-021-03436-z
+Huss, M., & Hock, R. (2018). Global-scale hydrological response to future glacier mass loss. Nature Climate Change, 8, 135–140. 
+https://doi.org/10.1038/s41558-017-0049-x
+Acknowledgments
+The authors wish to acknowledge 
+funding from the Natural Sciences and 
+Engineering Research Council of Canada 
+in the Discovery Grants and Vanier and 
+Michael Smith Scholarship programs, 
+Alberta Innovation, the Canada Research 
+Chairs programme and the Canada First 
+Excellence Research Fund's Global Water 
+Futures programme.
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 14
+Earth’s Future
+AUBRY-WAKE ET AL.
+10.1029/2022EF002685
+14 of 14
+Immerzeel, W. W., Lutz, A. F., Andrade, M., Bahl, A., Biemans, H., Bolch, T., et al. (2020). Importance and vulnerability of the world's water 
+towers. Nature, 577(7790), 364–369. https://doi.org/10.1038/s41586-019-1822-y
+Jones, H. G., Pomeroy, J. W., Walker, D. A., & Hoham, R. W. (2001). Snow ecology: An interdisciplinary examination of snow-covered ecosys-
+tems. Cambridge University Press.
+Jost, G., Moore, R. D., Menounos, B., & Wheate, R. (2012). Quantifying the contribution of glacier runoff to streamflow in the upper Columbia 
+River Basin, Canada. Hydrology and Earth System Sciences, 16(3), 849–860. https://doi.org/10.5194/hess-16-849-2012
+Keegan, K. M., Albert, M. R., McConnell, J. R., & Baker, I. (2014). Climate change and forest fires synergistically drive widespread melt events 
+of the Greenland Ice Sheet. Proceedings of the National Academy of Sciences of the United States of America, 111(22), 7964–7967. https://
+doi.org/10.1073/pnas.1405397111
+Kilpeläinen, A., Kellomäki, S., Strandman, H., & Venäläinen, A. (2010). Climate change impacts on forest fire potential in boreal conditions in 
+Finland. Climatic Change, 103(3), 383–398. https://doi.org/10.1007/s10584-009-9788-7
+Kochanski, A. K., Mallia, D. V., Fearon, M. G., Mandel, J., Souri, A. H., & Brown, T. (2019). Modeling wildfire smoke feedback mechanisms 
+using a coupled fire-atmosphere model with a radiatively active aerosol scheme. Journal of Geophysical Research: Atmospheres, 124(16), 
+9099–9116. https://doi.org/10.1029/2019JD030558
+Magalhães, N. D., Evangelista, H., Condom, T., Rabatel, A., & Ginot, P. (2019). Amazonian biomass burning enhances tropical Andean glaciers 
+melting. Scientific Reports, 9(1), 16914. https://doi.org/10.1038/s41598-019-53284-1
+Marshall, S. J., & Miller, K. (2020). Seasonal and interannual variability of melt-season albedo at Haig Glacier, Canadian Rocky Mountains. The 
+Cryosphere, 14(10), 3249–3267. https://doi.org/10.5194/TC-14-3249-2020
+McKendry, I. G., Christen, A., Lee, S. C., Ferrara, M., Strawbridge, K. B., O'Neill, N., & Black, A. (2019). Impacts of an intense wildfire smoke 
+episode on surface radiation, energy and carbon fluxes in southwestern British Columbia, Canada. Atmospheric Chemistry and Physics, 19(2), 
+835–846. https://doi.org/10.5194/acp-19-835-2019
+Menounos, B., Hugonnet, R., Shean, D., Gardner, A., Howat, I., Berthier, E., et  al. (2019). Heterogeneous changes in western North American glaciers 
+linked to decadal variability in zonal wind strength. Geophysical Research Letters, 46(1), 200–209. https://doi.org/10.1029/2018GL080942
+Naz, B. S., Frans, C., Clarke, G., Burns, P., & Lettenmaier, D. P. (2014). Modeling the effect of glacier recession on streamflow response using a 
+coupled glacio-hydrological model. Hydrology and Earth System Sciences, 18, 787–802. https://doi.org/10.5194/hess-18-787-2014
+Oerlemans, J., & Grisogono, B. (2002). Glacier winds and parameterisation of the related surface heat fluxes. Tellus, Series A: Dynamic Meteor-
+ology and Oceanography, 54(5), 440–452. https://doi.org/10.1034/j.1600-0870.2002.201398.x
+Pomeroy, J. W., Fang, X., & Ellis, C. (2012). Sensitivity of snowmelt hydrology in Marmot Creek, Alberta, to forest cover disturbance. Hydro-
+logical Processes, 26(12), 1891–1904. https://doi.org/10.1002/hyp.9248
+Pomeroy, J. W., Fang, X., & Marks, D. (2016). The cold rain-on-snow event of June 2013 in the Canadian Rockies—Characteristics and diagnosis. 
+Hydrological Processes, 2914, 2899–2914. https://doi.org/10.1002/hyp.10905
+Pomeroy, J. W., Gray, D. M., Brown, T., Hedstrom, N., Quinton, W. L., Granger, R. J., & Carey, S. K. (2007). The cold regions hydrological 
+model: A platform for basing process representation and model structure on physical evidence. Hydrological Processes, 2274, 2650–2667. 
+https://doi.org/10.1002/hyp.6787
+Ryan, J. C., Hubbard, A., Stibal, M., Irvine-Fynn, T. D. L., Cook, J. M., Smith, L. C., et al. (2018). Dark zone of the Greenland Ice Sheet 
+controlled by distributed biologically-active impurities. Nature Communications, 9(1), 1065. https://doi.org/10.1038/s41467-018-03353-2
+Sicart, J. E., Pomeroy, J. W., Essery, R. L. H., & Bewley, D. (2006). Incoming longwave radiation to melting snow: Observations, sensitivity and 
+estimation in northern environments. Hydrological Processes 2, 20(17), 3697–3708. https://doi.org/10.1002/hyp.6383
+Skiles, S. M. K., Flanner, M., Cook, J. M., Dumont, M., & Painter, T. H. (2018). Radiative forcing by light-absorbing particles in snow. Nature 
+Climate Change, 8(11), 964–971. https://doi.org/10.1038/s41558-018-0296-5
+Sokolik, I. N., Soja, A. J., DeMott, P. J., & Winker, D. (2019). Progress and challenges in quantifying wildfire smoke emissions, their 
+properties, transport, and atmospheric impacts. Journal of Geophysical Research: Atmospheres, 124(23), 13005–13025. https://doi.
+org/10.1029/2018JD029878
+Stibal, M., Šabacká, M., & Žárský, J. (2012). Biological processes on glacier and ice sheet surfaces. Nature Geoscience, 5(11), 771–774. https://
+doi.org/10.1038/ngeo1611
+Stocks, B. J., Mason, J. A., Todd, J. B., Bosch, E. M., Wotton, B. M., Amiro, B. D., et al. (2003). Large forest fires in Canada, 1959–1997. Journal 
+of Geophysical Research, 108(1), 8149. https://doi.org/10.1029/2001jd000484
+Stone, R. S., Anderson, G. P., Shettle, E. P., Andrews, E., Loukachine, K., Dutton, E. G., et al. (2008). Radiative impact of boreal smoke in the 
+Arctic: Observed and modeled. Journal of Geophysical Research, 113(14), 14–16. https://doi.org/10.1029/2007JD009657
+Tedstone, A. J., Cook, J. M., Williamson, C., Hofer, S., McCutcheon, J., Irvine-Fynn, T. D. L., et al. (2019). Algal growth and weathering crust 
+structure drive variability in Greenland Ice Sheet ice albedo. The Cryosphere Discussions, 1–24. https://doi.org/10.5194/tc-2019-131
+Tennant, C., & Menounos, B. (2013). Glacier change of the Columbia Icefield, Canadian Rocky Mountains, 1919–2009. Journal of Glaciology, 
+59(216), 671–686. https://doi.org/10.3189/2013JoG12J135
+Tennant, C., Menounos, B., Wheate, R., & Clague, J. J. (2012). Area change of glaciers in the Canadian Rocky Mountains, 1919 to 2006. The 
+Cryosphere, 6(6), 1541–1552. https://doi.org/10.5194/tc-6-1541-2012
+Versini, P. A., Velasco, M., Cabello, A., & Sempere-Torres, D. (2013). Hydrological impact of forest fires and climate change in a Mediterranean 
+basin. Natural Hazards, 66(2), 609–628. https://doi.org/10.1007/s11069-012-0503-z
+Warren, S. G., & Wiscombe, W. J. (1980). A model for the spectral albedo of snow. II: Snow containing atmospheric aerosols. Journal of the 
+Atmospheric Sciences, 37(12), 2734–2745. https://doi.org/10.1175/1520-0469(1980)037<2734:AMFTSA>2.0.CO;2
+Westerling, A. L., Hidalgo, H. G., Cayan, D. R., & Swetnam, T. W. (2006). Warming and earlier spring increase Western U.S. forest wildfire 
+activity. Science, 313(5789), 940–943. https://doi.org/10.1126/science.1128834
+Williamson, S. N., & Menounos, B. (2021). The influence of forest fires aerosol and air temperature on glacier albedo, western North America. 
+Remote Sensing of Environment, 267, 112732. https://doi.org/10.1016/j.rse.2021.112732
+ 23284277, 2022, 4, Downloaded from https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002685 by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

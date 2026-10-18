@@ -1,0 +1,2315 @@
+PAGE 1
+95
+      European Journal of Ecology, 7.1, 2021, pp. 95-117
+FIRES IN NATURE: A REVIEW OF THE CHALLENGES FOR WILD 
+ANIMALS
+ 
+Jara GutiÉrrez1,2 and Francisco Ja vier de Miguel1
+1Department of Biology of the Autonomous University of Madrid, Darwin 2, 28049 Madrid, Spain; 
+(+34) 914978286; Fax (+34) 914978344
+2Corresponding author: jara.gutierrez@vet.unipi.it
+Abstract. 
+Animals living in the wild are exposed to numerous challenges, such as fires. Depending on the characteristics of 
+fire, habitat and taxa affected, fires can cause pain, negative experiences, suffering, and death in individual animals. The 
+impacts of fire have been studied in different branches of ecology, but studies of its effects on the welfare of individual 
+animals remain scarce. The current review aims to synthesize a sample of relevant aspects regarding fire’ s negative 
+effects on wild animals. We mainly focus on the immediate impacts of fire on individuals. How animals respond to fire 
+depends on many factors including their life history, evolutionary adaptations to fire, and individual stress coping styles, 
+in addition to the characteristics of the fire. 
+The fundamentals of carrying out future work for animal rescue and prevention of animal harms in fires were also 
+explored. Fires may increase the risk of injury, disease, stress, and mortality for animals living in the wild. Although 
+animal taxa differ significantly from each other, a wide variety of vertebrate species (and perhaps some invertebrates) 
+are capable of experiencing both physical and emotional pain, engaging in substantive relationships, and executing 
+cognitively complex tasks. The consequences of fires can involve suffering, psychological damage, negative experiences, 
+discomfort and pain, and long-term detrimental consequences. 
+Wild animals can benefit from effective rescue, rehabilitation, and release during fires, and post-release monitoring 
+must accurately evaluate their outcome success. The resulting information can be used to educate veterinarians, reha -
+bilitators, and the public in the prevention of the poor welfare and deaths of as many animals as possible in future fire 
+events, which ultimately benefits animal welfare. This review provides a better understanding of how fire compromises 
+animal welfare, providing an example of how to use the knowledge gathered in animal ecology to examine the welfare of 
+wild animals. It can help raise concern for the situation of wild animals as individuals, and to develop the field of welfare 
+biology, by identifying promising future lines of research.
+Key words: wild animals, animal welfare, animal harms, animal suffering, fires
+Introduction
+In the coming years, wildfires will burn larger 
+areas (Doerr and Santín 2016; Westerling 2016; Rod-
+rigues et al. 2020), and become more frequent and 
+intense (Cochrane and Barber 2009; Flannigan et al. 
+2009; Jolly et al. 2015), partly as a result of glob-
+al increases in invasive grasses (D’Antonio and Vi -
+tousek 1992), as well as the impact of climate change 
+on fire regimes (Keeley and Syphard 2016; Parks et 
+al. 2016; Michetti and Pinar 2019; Turco et al. 2019; 
+Krikken et al. 2019). Although approximately 4% of 
+the earth’s surface is burned per year (Randerson et 
+al. 2012), most attention is paid to fires which impact 
+humans (Yell 2010).
+The characteristics and environmental context of 
+fires, together with life-history differences between 
+species, determine the degree of harm to animals 
+(Whelan et al. 2002; Geary et al. 2019). While exten-
+sive research has been done on the ecological conse-
+quences of fires (Kauffman 2004; Keeley et al. 2005; 
+Andersen et al. 2005; Parr and Andersen 2006; Clar-
+idge et al. 2009), the animal welfare impact has not 
+been extensively studied, and has mainly focused on 
+domesticated and companion animals (Irvine 2007; 
+Edmonds and Cutter 2008), because of affection 
+(Heath et al. 2000) or economic interest (Fayt et al. 
+2005). Recently, a review of existing knowledge on 
+fire management concluded that further investigation 
+about species responses, including examination of 
+occupancy, life history, dispersal, demographics and 
+behavioural responses (Driscoll et al. 2010; Conner 
+et al. 2011; Stawski et al. 2015b; Day 2017) is need-
+ed. 
+Fires have been found to affect the distribution, 
+abundance, and genetic diversity of populations, as 
+they are life-threatening (Kauffman 2004; Yoder 
+
+PAGE 2
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+96
+2004; Turner 2010; Banks et al. 2013; Griffiths and 
+Brook 2014). Both anthropogenic and natural fires, 
+including local deliberate uses for hunting (Bouaket 
+1999; Daltry and Momberg 2000), may harm ani-
+mals (Karki 2002). In fact, as a result of Australian 
+mega-fires, very recent studies in ecology have been 
+carried out on the effects on wild Australian fauna 
+(Wintle et al. 2020).
+Scientific evidence has established that some 
+animal species have the ability to experience nega-
+tive psychological stress, suffering, or even chronic 
+stress, due to their cognitive development (DeGrazia 
+and Rowan 1991; Duncan and Petherick 1991; Sher-
+win 2001; Griffin and Speck 2004). For this reason, it 
+is expected that some taxa perceive fires as stressful 
+events, and consequently trigger physiological and 
+behavioural responses as an evolutionary adaptation 
+to survival (McEwen 2005). While a state of stress 
+can allow glucocorticoids to mobilize energy to pos-
+itively modify behaviour (Korte et al. 1993; Lee et 
+al. 2015), excessive amounts of perceived stress can 
+lead to negative physiological and psychological 
+consequences for the individual (Anderson 1998), 
+such as fear, anxiety, despair and disorientation, and 
+increased risk of death. The most immediate effects 
+of fire on individual animals include risk of injury 
+and death during flight to unburned areas (Whelan 
+et al. 2002), and second order effects include starva-
+tion, dehydration, predation and migration (Silveira 
+et al. 1999a; Whelan et al. 2002). 
+Numerous studies have evaluated post-distur-
+bance population recovery patterns and processes 
+(Smith and Lyon 2000; Griffiths et al. 2015; Davies 
+et al. 2016; Banks et al. 2017). However, there is a 
+lack of studies on the immediate experienced dam-
+age and short-term responses of wild animals during 
+fires (Vernes 2000; Smith and Lyon 2000; Bury et al. 
+2002; Penn et al. 2003; Banks et al. 2017), including 
+physiological and behavioural adaptations (Stawski 
+et al. 2015b). 
+Aims and Methodology
+The current review aims to summarize the main 
+negative effects of fires on wild animals on an imme-
+diate timescale (from seconds or minutes to several 
+days). The main objective of this work is to gather 
+the essential knowledge for an updated understand-
+ing of the threats and poor welfare experienced by 
+wild animals as a result of fires. 
+The fundamentals for further investigation and 
+promising future lines of research related to the sub-
+ject are proposed. In the same way, the design of 
+future damage harm prevention and animal rescue 
+protocols are laid out. In summary, the eventual ob-
+jective is the growth of welfare biology, both in its 
+practical and theoretical perspective, along with the 
+identification of promising future lines of research 
+related to the subject.
+The methodology of the present study consists 
+of the evaluation of the most relevant scientific arti-
+cles and reviews related to the main significant nega-
+tive effects of fires on animals living in the wild. The 
+search criteria prioritized those scientific articles that 
+evaluated fire effects from the perspective of the in-
+dividual. We focused our search on articles published 
+in the last two decades. All the selected literature was 
+read by a first observer, and reviewed posterior by the 
+rest of the authors.
+The bibliographic search process excluded re-
+search only focused on the effect of fire in humans, 
+plant communities and fungi. Scientific articles about 
+long-term fire effects on animals, or positive effects 
+of fires on biodiversity were not of high interest to 
+this review. Nonetheless, we would like to mention 
+that the text includes a short summary of the impor-
+tance of fire and its potential positive effects on the 
+habitat. 
+Results
+Injuries and mortality 
+Physical damage like burns to the face and limbs 
+are quite common for animals after fires (Rethorst et 
+al. 2018). Rescue actions should include veterinary 
+check-ups assessing burns and other damages in-
+curred from smoke poisoning and traumatic injuries. 
+Research on pathophysiology and burns treatment in 
+animals has generated sustained interest over the past 
+few decades. The first barrier of the animal’s body 
+is the skin. Burned skin traps heat inside, spreading 
+the burn to the subcutaneous layer.  Initial treatment 
+in mammals often consists of warm water washes 
+to stop the ‘microwave’ effect and remove traces of 
+soot and plant material(Fowler 2010).  The infusion 
+of saline solution and the injection of different drugs 
+are common in the treatment of burns during the first 
+days in rescued animals. Ointments such as silver 
+sulphadiazine and chlorhexidine bandage are also 
+used on burnt skin (Prasad et al. 2016).
+The first assessment of burns includes a study 
+of the depth, extent and location (Fowler 2010): (1) 
+most superficial burns (which can generate bleeding 
+
+PAGE 3
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+97
+water vapour pressure and temperature exceed lethal 
+limits, so deaths from heat damage can occur (Ko-
+zlowski 1974). Direct animal mortality from fires 
+has been reviewed (Koprowski et al. 2006) and fire 
+has been reported to induce mortality in mammals, 
+birds, insects, fish, reptiles and amphibians. The risk 
+of mortality depends on characteristics of the species 
+such as mobility (Peres 1999; Silveira et al. 1999a; 
+Barlow and Peres 2004), shelter use (Williams et al. 
+2010), dietary flexibility (Isaac et al. 2008; Banks et 
+al. 2011b), body size (Cardillo 2003; Griffiths and 
+Brook 2014), etc. 
+Regarding mammals, while a general decline in 
+population abundance was reported for small mam-
+mal species following fire (Keith and Surrendi 1971; 
+Erwin and Stasiak 1979; Geluso and Bragg 1986; 
+Kaufman et al.  1988; Simons 1989; Friend 1993; 
+Fisher and Wilkinson 2005; Banks et al.  2011a; 
+Banks et al. 2017), larger mammals appear to be less 
+prone to mortality due to their increased ability to 
+flee from affected areas (Cardillo 2003; Griffiths and 
+Brook 2014), although at least 10 species of large 
+mammals also exhibited increases in fire-related 
+mortality (Brynard 1972; Gasaway et al. 1989; Ol-
+iver et al.  1997; Peres 1999; Silveira et al.  1999b; 
+Barlow and Peres 2004; Williams et al. 2010; Grif-
+fiths and Brook 2014).
+As for birds, individuals that fly at lower alti-
+tudes have been reported to die from smoke inhala-
+tion or exhaustion (Campbell 2016). Feeding, cover 
+and nesting habitat changes can negatively impact 
+cavity-nesting populations (Erwin and Stasiak 1979; 
+Horton and Mannan 1988; Lnìons et al. 1989; Smith 
+and Lyon 2000) such as grouses and northern har-
+riers(Kruse and Piehl 1984). Chicks and eggs are 
+affected too (Palmisiano 2014), and nest parasitism 
+may increase as a result of females ranging more 
+widely in search of nest building materials (Best 
+1979). 
+Fires can also damage aquatic animals. Increas-
+es in water temperature and toxic chemicals, var-
+iations in pH (Gresswell 1999), turbidity (Gill and 
+Allan 2008) and stream sedimentation (Bozek and 
+Young 1994; Lyon and O’Connor 2008)have detri-
+mental effects on fish, macroinvertebrates and emer-
+gent insects and amphibians in aquatic phases(Fish 
+and Rucker 1945; Dunham et al. 2007). Excess sedi-
+ment may crush or dislodge fish eggs, preventing the 
+emergence of fry (Cooper 1965; Bjornn et al. 1977). 
+This can induce physiological stress and growth re-
+duction for fish (Newcombe and Macdonald 1991; 
+and tissue damage) are more painful than thick burns 
+(which cause severe skin damage, and a loss of hair, 
+nerves and blood vessels), (2) burns of more than 
+50% of the body surface have only the prognosis of 
+death or euthanasia; and (3) wounds located near the 
+joints can lead to scarring that prevents movement 
+and feeding, as occur in arboreal animals as koala 
+(Phascolarctos cinereus) . Nail damage can make it 
+difficult for some mammals to climb, feed, escape, 
+fight, and breed. Injuries located on facial structures 
+can hinder functions such as chewing (Fowler 2010). 
+Rehabilitation is complicated if the animal suf-
+fers from long-term stress. For example, stress syn-
+drome is common in koalas, which easily lose their 
+appetite. Lack of food intake can lead to dehydration 
+and can delay or prevent wound healing. If appro-
+priate, the use of analgesic and anxiolytic drugs may 
+minimize the pain and stress (Kirkwood and Sains-
+bury 1996). Although some research has been done 
+on survival in rehabilitated koalas versus uninjured 
+individuals (Lunney et al.  2004a), further research 
+on the relationship between fire-related injuries and 
+physical condition or premature mortality is still 
+needed (Ernst et al. 1999; Engstrom 2010), as well 
+as replication of studies in other affected taxa. For 
+instance, koalas initially require intensive care and 
+continuous dressing changes, often accompanied by 
+sedation or general anaesthesia (Fowler 2010). Then, 
+they go to moderate-intensity care in small groups 
+in which they are frequently observed. They finally 
+finish their rehabilitation in wide enclosures in which 
+individuals can express their natural behaviours and 
+develop strength. 
+Collisions with vehicles also increase as animals 
+fleeing from fire, usually disoriented (Quinn 1979). 
+Intensive care of animals often includes wounds 
+from vehicle collisions that can generate soft tissue 
+and skeletal injuries, mainly affecting the extremi-
+ties, as reported for New Zealand pigeons (Hemipha-
+ga novaeseelandiae) (Cousins et al. 2012). 
+Most animals die from asphyxiation during fires 
+(Lawrence 1966), while many more are burnt alive 
+and killed(e.g. deer in Australia;Forsyth et al. 2012).
+Breathlessness is a negative experience in terms of 
+animal welfare that may involve respiratory effort, 
+chest tightness, and air hunger, the latter being re-
+ported to be the most unpleasant (Beausoleil and 
+Mellor 2015).
+Although some animals can maintain their body 
+temperature by evaporative cooling (King and Farn-
+er 1961), such mechanisms become impossible when 
+
+PAGE 4
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+98
+Bozek and Young 1994).  A cumulative impact from 
+successive fires will affect the watershed’s morphol-
+ogy in the long term (Moody and Martin 2001). Fish 
+populations may be unable to recolonize fire-affected 
+streams, as seen for salmonids one year after a fire 
+(Rinne 1996). Post-fire sediments can be beneficial 
+or detrimental to fish and aquatic macroinvertebrates 
+by either providing resources or polluting habitat. 
+Some fish species exhibit accelerated maturity rates 
+by rapidly recolonizing post-fire channels along de-
+bris-flow runout paths (Goode et al. 2012). Further 
+research is advisable on developing effective options 
+to prevent potential damage that aquatic fauna may 
+experience in post-fire conditions. Eventually, fires 
+can impact marine animals as well. Post-fire heavy 
+rains near the coast can causeashes to quickly reach 
+the sea, wherein an increased mortality has been re-
+ported for shellfish, waders that feed on insects near 
+the sea, river mussels and Kentish plover (Europa-
+Press 2016).
+Although literature reports little or no direct 
+postfire mortality for reptiles (Scott 1996; Russell et 
+al. 1999; Smith and Lyon 2000), probably because 
+mesic habitats tend to burn infrequently (Ford et al. 
+1999), some studies have found reductions in pop-
+ulation density post-fire for five common species 
+(Hossack 2006; Costa et al. 2013).
+Arthropods can perish in the heat of the flames, 
+and fire destroys their shelters and food. Eggs, 
+nymphs, and adult stages may be affected, and fires 
+can cause a long-term depression effect on popula-
+tions (Lyon 1978). Decreases in soil fauna popula-
+tions after a fire have been reported (Rickard 1970; 
+Metz and Farrier 1973; Harris and Whitcomb 1974; 
+Rinne 1996; Fellin and Kennedy 2014), including 
+ticks not attached to a host animal, beetles, mites, 
+aquatic macroinvertebrates, etc. Even after 2-6 years 
+post-fire, invertebrate populations density may not 
+reach pre-fire levels (Huhta et al.  1967; Vlug and 
+Borden 1973). A significant decline in pollinators has 
+been reported, concluding that future research on fire 
+effects on plant-pollinator interactions are necessary 
+(Brown et al. 2017).
+There are currently no accurate estimates of the 
+number of animals that die each year in fires. Quan-
+tifying exact post-fire mortality is practically impos-
+sible because bodies are often charred, some species 
+are too small to be counted, and monitoring individu-
+als for years until a fire occurs is tremendously com-
+plicated (Sutherland and Dickman 1999a).Moreover, 
+mortality cannot be quantified by comparing popu-
+lation densities before and after a fire event, since a 
+distinction would not be made between mortality and 
+migration  (Whelan 1995). In future, mortality quan-
+tification could make it possible to assess which are-
+as have been most damaged and require wild animal 
+welfare intervention, as well as raising public aware-
+ness. Post-fire immediate mortality is quantified by 
+direct estimates, either through software (Jeffers et 
+al. 1982; Silveira et al. 1999b), or relying on recent 
+reports estimating animal populations sizes and ex-
+cluding those species with the ability to flee (Dick-
+man 2020).
+Acute heat stress response 
+Animals’ responses to fire depend on the particu-
+lar characteristics of the fire itself, their habitat, their 
+life history traits, how they manage their daily energy 
+budget (Letnic 2001; Letnic et al. 2004; McGregor et 
+al. 2014; Stawski et al. 2015a), and their individual 
+‘stress coping styles’ (Koolhaas et al. 1999)(the latter 
+related to the individual’s predisposition to frustra-
+tion(Dawkins 1988)), and the animals’ temperaments 
+(Martin and Réale 2008) and personalities (Carere 
+and Eens 2005). 
+Although the immediate physiological effects 
+of fire exposure are poorly understood in animals, 
+inferences can be drawn from studies of the effects 
+of exposure to high environmental temperature(Eng-
+strom 2010). Generally, cellular protein denatura-
+tion occurs from 50 °C (Schmidt-Nielsen 1964), and 
+temperatures higher than 63 °C are usually lethal 
+(Howard et al.  1959; Smith and Lyon 2000). High 
+environmental temperatures predispose animals to 
+heat stress, which includes physiological and behav-
+ioural disturbances such as hyperventilation or loss 
+of coordination (Radford et al.  2006). Heat stress 
+effects are aggravated when accompanied by burns 
+on limbs, feet and paws caused by the hot surfaces 
+(Klein 1960; Lyon 1978). 
+Different consequences of acute heat stress pre-
+viously reported in animals have included decreased 
+food intake (Marai et al.  2007; Xing et al.  2019), 
+hormonal, metabolic, hypothalamic and circadi-
+an alterations (Marai et al.  2007), epinephrine and 
+norepinephrine increases (Johnson and Vanjonack 
+1976), tissue stress (Islam et al.  2013), respiratory 
+rate and skin temperature increases, gonadal delete-
+rious effects with litter size diminution (Askar and 
+Ismail 2012), and stress-related behaviours (Debut et 
+al. 2005). 
+Since wildfires frequently occur at the end of 
+spring or during the summer, stress also hinders 
+population recovery, reproduction and breeding 
+
+PAGE 5
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+99
+(Koprowski 2005). Reduced forest cover may lead 
+to higher temperatures that can affect cavity-nesting 
+species, hindering incubation and nest survival (Neal 
+et al.  1993; Wachob 1996; Conway 2000). Dead 
+trees generate extreme temperatures inside nest cav-
+ities (Wiebe 2001), and both eggs and young birds 
+are susceptible to heat stress. The survival of cav-
+ity-nesting birds is threatened in fires followed by 
+rain since the activity of flying arthropods on which 
+they feed decreases (Murphy and Lehnhausen 1998; 
+Covert-Bratlandet al. 2006; Hutto 2006; Koivula and 
+Schmiegelow 2007; Saab et al. 2007). Difficulty in 
+acquiring food can increase the risk of nest abandon-
+ment (Neal et al. 1993; Conway 2000; Wiebe 2001; 
+Jehle et al. 2004) and offspring mortality.
+Heat stress impact can be reduced. For example, 
+supplementation with olive oil in chickens alleviates 
+superoxide anion production in the skeletal muscle 
+(Mujahid et al. 2009). During prolonged dry periods 
+and fires, drinking fountains can be placed in trees. 
+Arboreal animals that are on the ground, and animals 
+that show loss of balance, convulsions or confusion 
+can be rescued with a towel, a well-ventilated box, or 
+by offering them water (AWARE 2019). 
+Flight from the fire
+The immediate post-fire environment generates 
+a sudden drastic alteration of habitat structure and 
+local microclimate that affects all terrestrial fauna 
+(Lyon 1978). The consequent habitat simplification, 
+including loss of vegetation cover and soil layer, may 
+result in a reduction of the number of species after 
+fire, as reported for rodents (Sutherland and Dickman 
+1999a). Likewise, aspects such as increased levels of 
+sunlight penetrating the forest canopy and loss of 
+food resources can affect behavioural search pat-
+terns (Barlow et al. 2002). As a result, many animals 
+frequently move to fire-free areas (Brynard 1972; 
+Recher and Christensen 1981), unburnt islands or 
+surrounding unburnt vegetation (Begg 1981; Quinn 
+1979). 
+Moving to other places allows animals to access 
+new resources, maintain homeostasis, find mates, 
+and respond to predators, parasites and competitors. 
+These functions eventually allow growth, survival 
+and reproduction, which define fitness (Nathan et al. 
+2008; Weinstein et al.  2018). Movement is critical 
+for species living in environments characterised by 
+periodic change (Hanski 1999; Roshier et al. 2008), 
+and regular fires (Nimmo et al. 2019). Low mobility 
+animals will be more affected by smoke, high tem-
+peratures and oxygen shortage. For instance, while 
+amphibians usually have limited migration abili-
+ties (Sinsch 1990), larger reptiles normally disperse 
+skillfully from fire (Komarek 1969; Patterson 1984). 
+Movement in vertebrates ranges from attraction 
+(Komarek 1969) to avoidance (Nimmo et al. 2019) 
+responses, ranging from calm escape to a state of 
+panic and anxious movements (Komarek 1969; Lyon 
+1978). Tendency to flee depends on animal adapta-
+tions to high temperatures, like mud baths and bur-
+rowing (Quinn 1979). Moreover, some species have 
+fire detection mechanisms even functional during 
+torpor (Grafe et al. 2002; Scesny and Robbins 2006; 
+Schmitz et al. 2008; Stawski et al. 2015a; Doty et al. 
+2018; Mendyk et al. 2019).
+The study of post-fire movement patterns is 
+crucial to understanding refuge seeking behaviour. 
+Moving towards open areas can be especially fa-
+vourable in fires accompanied by wind, since wind 
+increases heat loss particularly if the animal is wet 
+(Hart et al. 1961). However, other species (Rosenz-
+weig et al. 1975; Price 1978; Price and Waser 1984) 
+prefer foraging near cover and avoid approaching 
+open areas (Glass 1969; Miller et al. 1972). Among 
+the animals that decide to escape the flames (Gelu-
+so and Bragg 1986; Grafe et al. 2002), some small 
+mammals species (Vacanti and Geluso 1985) have 
+been found running from the fire, most commonly 
+in groups in small clearings, depressions, road cuts 
+and hiking trails (Quinn 1979), indicating specific 
+flight patterns with preference for clear paths. Other 
+mammals have been seen swimming along rivers to 
+avoid the flames (Kozlowski 1974). While some of 
+them may return within hours or days, others migrate 
+because the food (King et al. 1997) and cover (Lyon 
+and Marzluff 1985) they require are no longer availa-
+ble in the burnt area (Bradstock et al. 2005; Parr and 
+Andersen 2006; Nimmo et al.  2013; Nimmo et al.  
+2019). Some radio-tracked individuals were transient 
+and travelled 10 km or more to find patches with 
+available resources in both burned and unburned 
+areas (Letnic 2001). Large mammals tend to move 
+calmly and act indifferently towards the fires near the 
+fire borders (Phillips 1965; Sunquist 1967; Komarek 
+1969; V ogl 1973; Lyon 1978; Smith and Lyon 2000; 
+Barkley 2019).
+Moving to unburned areas is not the only way to 
+survive a fire. Some species have beneficial adapta-
+tions such as torpor (Stawski et al. 2015b; Nowack 
+et al. 2016; Matthews et al. 2017; Doty et al. 2018) 
+and burrowing (Grafe et al. 2002; Garvey et al. 2010; 
+
+PAGE 6
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+100
+Pike and Mitchell 2013), even occupying burrows 
+made by another animal (Bradstock and Auld 1995). 
+Lizards (Kahn 1960; Lillywhite and North 1974), 
+frogs (V ogl 1973), turtles (Fenner and Bull 2007) and 
+insects in mobile stages (Lyon 1978) have been seen 
+burrowed during fires.
+Hiding in burrows is not always a successful 
+strategy. As the soil heats up, the air in the burrow 
+becomes hotter and more humid (Kozlowski 1974). 
+Burrow characteristics may expose animals to 
+life-threatening challenges. Good ventilation (Ben-
+dell 1974; Hedlund and Rickard 1981), closeness to 
+the surface, or multiple entries (Geluso and Bragg 
+1986) potentially reduce mortality risk of some spe-
+cies such as Lepidoptera and other univoltine pollina-
+tors (Carbone et al. 2019). The construction material 
+is also relevant. Small rodents that build close-sur-
+face nests made of flammable materials have a higher 
+vulnerability than species that nest deeper (Kaufman 
+et al.  1988; Simons 1991; Quinn 1979). Survival 
+chances in burrows will also depend on behaviour. 
+Some rodents ( Neotoma sp.) have been seen to re-
+fuse to leave the burrow during active burning fires 
+(Simons 1991), whereas others ( Sigmodon sp.) have 
+been seen carrying young individuals with eyes still 
+closed out of the burrows while fire approached 
+(Komarek 1969). 
+The decision to move to another area is often ac-
+companied by an inspection of the environment to 
+identify settle options. If the fire has severely dam-
+aged the habitat, animals must face the difficulty of 
+becoming oriented. They face increased risk of being 
+preyed on (Johnson et al. 2009), and approaching ur-
+ban areas, vehicles, and harmful chemicals. In fact, 
+research on road ecology has recently been proposed 
+to mitigate negative roadside behaviours (Proppe et 
+al. 2017) . Due to altered vegetation or resource pro-
+visioning, roads can serve as attractants to animals. 
+For this reason, a recent review concluded that road 
+use contributes to the risk of collisions with vehicles 
+(Hill et al.  2020). Furthermore, animal migration 
+may also lead to the dispersal of infectious agents, 
+which can have unpredictable effects and cause dif-
+ficult-to-control diseases (Kirkwood and Sainsbury 
+1996). New infections can also occur in rescue veter-
+inary hospitals (Kirkwood and Sainsbury 1996). 
+As a consequence of trophic relationships and re-
+source distribution changes after migration, intraspe-
+cific and interspecific competition conflicts may de-
+termine post-fire colonisation success (Sutherland 
+and Dickman 1999a) as reported for different species 
+of rodents (Catling 1986; Higgs and Fox 1993), and 
+animal community reorganization (Smith and Lyon 
+2000). Dominance in competition can be influenced 
+by individual body size (Thompson and Fox 1993; 
+Higgs and Fox 1993) and sex (Monamy and Fox 
+1999). 
+In view of the challenge of escaping from fire, 
+some key aspects of management can be highlighted. 
+First, unburnt patches and fire borders -frequented 
+for example by ungulates in search of forage, bed-
+ding, cover, and thermal protection (Smith and Lyon 
+2000)- could be proposed as primary key areas for 
+monitoring, rescue and supplementation. Second, 
+further studies modelling the fluid dynamic process-
+es of gases in burrows could facilitate understanding 
+the challenges faced by burrowing animals (Eng-
+strom 2010). Third, proper human behaviour towards 
+animals is a crucial factor to prevent harm to animals 
+that approach urban spaces, as found for five song-
+bird species (Clucas and Marzluff 2012). Therefore, 
+it is important to inform society on what actions can 
+help or may further harm wild animals during fires. 
+Finally, any accidental introduction of diseases in 
+veterinary hospitals and rescue centres after a fire 
+must be prevented by strict medical management 
+protocols.
+ Habitat modification 
+Surviving a fire does not guarantee survival in 
+the post-fire environment, which is characterised by 
+habitat alteration, reduction in shelter and resource 
+availability, competition changes, and increased pre-
+dation risk  (Sutherland and Dickman 1999b; Nimmo 
+et al. 2014; Valentine et al. 2014; van Mantgem et al. 
+2015). 
+Fire generates extreme edaphic conditions and 
+the drying of the soil alters bacterial and fungal ac-
+tivity, altering key biological processes. Since burned 
+areas constitute their own local climate, specific be-
+havioural responses within faunal populations occur 
+(Lyon 1978). Specifically, fires cause light, temper-
+ature, soil heating and wind increases; humidity de-
+crease; loss of nitrogen and carbon to the atmosphere; 
+charcoal and ash depositions and physicochemical al-
+terations in soil (Callaham et al. 2003; Certini 2005). 
+Other specific alterations include increases in canopy 
+fracture, higher rates of tree fall, a downward shift in 
+the vertical stratification of foliage density, a marked 
+increase in the amount of light reaching the understo-
+
+PAGE 7
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+101
+rey and forest floor (Peres et al. 2003), and increased 
+solar heat input as a result of the low albedo of black 
+charred soil and vegetation (Klein 1960). 
+Post-fire environmental alterations can often af-
+fect animal distribution and behaviour, eventually af-
+fecting welfare. For example, light and temperature 
+excesses together with lack of humidity alter the dis-
+tribution of different species of birds and small mam-
+mals (Ahlgren 1960; Gashwiler 1970; Beck and V ogl 
+1972), even causing mortality increases (Curry-Lin-
+dahl and Marcstrom 1961; Ritcey and Edwards 
+1963). Both shelter and movement are also reduced 
+in mice and birds due to ash, burned soil, and remov-
+al of stem and fallen leaves (Cook 1959; Gashwiler 
+1970; Sims and Buckner 1973). 
+Species’ environmental requirements determine 
+their post-fire survival. For instance, populations re-
+quiring elevated perching sites on shrubs and logs and 
+low vegetation for cover may noticeably decline(-
+Friend 1993). Specialists and frugivores in need of 
+canopy and other highly specific microhabitat may 
+be restricted to narrow areas (such as moist, shad-
+ed understorey). Local extinctions and marked de-
+clines are frequent, as reported for antbirds (Barlow 
+et al. 2002), army-ant swarms, pitheciine primates, 
+and large psittacids (Peres et al. 2003). Furthermore, 
+habitat changes are more damaging to highly sensi-
+tive species. For instance, amphibians, in addition to 
+having restricted home ranges, have permeable skin 
+vulnerable to flames. Unburned riparian areas likely 
+buffer the stream immediately after the fire (Bury et 
+al. 2002), being main zones to be protected following 
+the fire. 
+Additionally, food seems to be an important post-
+fire resource selection driver. In fact, time since fire 
+significantly influences food resources (Valentine et 
+al. 2014), and species can modify their diet to survive 
+after a fire, especially in the early stages (Sutherland 
+and Dickman 1999b). For instance, in a study on 
+small mammals’ diet, fungus, which is normally an 
+insignificant component of their diet, became dom-
+inant after fire (Johnson 1996). Once fire eliminates 
+resources such as nectar, fruits, seeds (Valentine et 
+al. 2012; Valentine et al. 2014), lichens and cotton-
+grass, forage behaviour in species is reduced (Jandt 
+et al. 2008). In fact, some forages take years to recov-
+er (Bret-Harte et al. 2013; Zouaoui et al. 2014). As 
+snags fall, foraging options decrease for many bee-
+tle-foraging species as well (Morissette et al. 2002). 
+At the same time, fire is beneficial in some contexts 
+for foraging and nesting behaviors of some spe-
+cies. For example, fire provides beneficial resourc-
+es such as snags for bark forager and cavity-nesting 
+birds (Hutto 1995; Lindenmayer et al.  2004; Saab 
+et al. 2011). Although higher post-fire foraging and 
+food-seeking behaviours are reported for some spe-
+cies (Begg 1981), the difficulty in finding food gen-
+erated body condition reduction in some such as bush 
+rats (Rattus fuscipes) (Fordyce et al. 2016). 
+Sometimes the post-fire practices of humans 
+cause habitat disturbances that affect animals. For 
+instance, post-fire salvage logging negatively affects 
+deadwood-dependent species like beetles (Villard 
+1994; Murphy and Lehnhausen 1998; Nappi et al.  
+2003), and forest birds (Haggard and Gaines 2001; 
+Kotliar et al. 2002; Morissette et al. 2002). 
+In this section it is relevant to mention that lit -
+erature also shows numerous examples of the bene-
+fits of fire in habitats. There are numerous scientific 
+studies emphasizing that fires are a key agent for the 
+persistence of many ecosystems, such as savannahs, 
+prairies, pine forests or Mediterranean scrublands 
+(Whelan 1995, Orgeas & Andersen 2001, Panzer 
+2002, Kauffman 2004, Keeley et al. 2005). Fires have 
+been reported to benefit sometimes the regeneration 
+of plant development and succession, the increase of 
+biomass, the irregularity of the habitat, the diversity 
+of food cover, the production of seeds of grasses and 
+legumes, and even the increase in nutritional content 
+and digestibility of plants (Smith & Lyon 2000). 
+In addition, there is an extended evidence on the 
+assumption that meeting needs of plant communities 
+will automatically meet the needs of animal species 
+(Clarke 2008). Previous research has reported that 
+landscapes exposed to greater diversity of fire regimes 
+generate greater diversity in the long term (Parr and 
+Andersen 2006), stimulating very relevant organisms 
+such as hypogenic fungi (Claridge et al. 2009); and 
+that organisms can survive fire disturbances through 
+evolutionary adaptations (Clarke 2008).
+ 
+Predation risk
+Predation is another significant risk that wild an-
+imals face due to fires. After a fire, many animals are 
+visually more exposed to their predators, thus having 
+greater vulnerability to being preyed on (Rickbeil et 
+al. 2017), as reported for amphibians (Daly 2019), 
+lizards (Shepard 2007) and termites (Prada and 
+Marinho-Filho 2004). For some birds, nests placed 
+in the post fire environment are closer to the ground 
+due to the loss of taller stems, making hatchlings and 
+adult birds more vulnerable to predation (Best 1979). 
+
+PAGE 8
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+102
+ Fires make animals more vulnerable to preda-
+tors in other ways as well. Energy lost during flight 
+from the fire makes prey animals weaker, increasing 
+predation risk (Johnson et al. 2009). This is exacer-
+bated by the increase in predation activity reported 
+after a fire (Sutherland and Dickman 1999b; McGre-
+gor et al. 2014). A ffinity for burned areas has been 
+reported for wolves (Canis lupus ) (Robinson et al.  
+2012), red foxes (Vulpes vulpes), feral cats (Felisca-
+tus) (McGregor et al. 2016; Geary et al. 2019) and 
+raptors (F. Falconidae) (Barnard 1987; Hovick et al. 
+2017).
+Post-fire predation increases native mammal 
+mortality and limits population recovery (Hradsky 
+2020). Some native species may not be accustomed 
+to cope with invasive predators, so they might ignore 
+cues indicating their presence. For instance, native 
+rodents were 21 times more likely to die in areas 
+exposed to intense fire compared to unburned areas, 
+mostly due to predation by feral cats (Leahy et al.  
+2015). 
+Predation activity after a fire usually increases at 
+the edges of the burned area, and some prey species 
+remained less active in the edges until cover restora-
+tion (Parkins et al. 2019). Edge zones could be poten-
+tially more dangerous for many animals and rescue 
+efforts could begin on the borders of the burn area. 
+However, there is a lack of research on the in-
+fluence of flammable ecosystems’ dynamics on ani-
+mal activity patterns (Penn et al. 2003; Parkins et al. 
+2019). Mechanisms through which fire could create 
+predation pinch points have been recently reviewed, 
+and key questions about how to increase the resil-
+ience of native animals to fire in predator-invaded 
+landscapes have been addressed (Hradsky 2020). 
+Both predation and competition have a central 
+role in ecosystems, thus conservation science cannot 
+always avoid challenging decisions regarding animal 
+welfare (Sekar and Shiller 2020). Scientific evidence 
+on post-fire predator activity needs to be increased. 
+Understanding how ecosystem context and fire fac-
+tors affect predator-predator and predator-prey re-
+lationships could prevent predation from exceeding 
+adequate levels to maintain the ecosystem balance. 
+Overview of wild animal management challenges
+Interventions on behalf of animals during fires 
+face two main challenges. First, the evaluation of the 
+behavioural responses of wild animals to identify 
+key intervention points still needs to be expanded. 
+This evaluation should consider influencing factors 
+such as fire characteristics, environmental context 
+(Whelan et al.  2002; Andersen et al.  2005; Geary 
+et al. 2019), habitat characteristics (Sutherland and 
+Dickman 1999b), and individual stress coping styles 
+(Koolhaas et al.  1999). Second, management of 
+fire-affected animals must guarantee an overall eval-
+uation and clinical assistance. The global state of the 
+individual should be constantly evaluated, including 
+burns, injuries, pre-existing diseases, mental and 
+breathing status, dehydration level, level of shock, 
+and stress due to handling and human proximity, 
+(Fowler 2010). For instance, elderly koalas with ad-
+vanced tooth wear will be unable to gain sufficient 
+nutrition for the metabolic rate increase that burns 
+require. Since they normally lose weight and starve 
+during the rehabilitation process, veterinary protocol 
+usually determines their euthanasia to avoid poor 
+welfare (Fowler 2010). 
+Similarly, veterinarians should identify if infec-
+tions arise during rehabilitation. For example, cap-
+tive stress can aggravate chlamydiosis in koalas, and 
+contagious individuals must be isolated. Moreover, 
+adult individuals that are next to their dead calves 
+when rescued should be separated to prevent the 
+adult from contracting infection(Fowler 2010).
+In the case of koalas, they are especially suscep-
+tible to “koala stress syndrome”, characterized by 
+lassitude, depression, anorexia and abrupt metabol-
+ic function decline. Koalas suffering from this syn-
+drome are frequently found wandering aimlessly, or 
+prostrate and comatose, with no evidence of trauma 
+or overt illness. Captivity, surgeries, anaesthesia, and 
+medical handling can provoke this syndrome (Oben-
+dorf 1983). Disorientation and weakness can en-
+hance the probability of road approaches and vehicle 
+collision, and consequent injuries (such as blindness, 
+broken jaws, spines, and legs) that delay their reha-
+bilitation. 
+Proper management of emergencies such as fires 
+requires not waiting for the fire to occur, but devel-
+oping pre-disaster efforts and well-organized proto-
+cols. In fact, the emergency management lifecycle 
+has been thoroughly described (Heath and Linnabary 
+2015). For instance, pre-disaster planning can focus 
+on increasing the commitment of the groups involved 
+and improving community preparedness. Moreover, 
+associations specialized in fire evacuations have al-
+ready been developed and some of them include pro-
+tocols focused on animals (Marsella and Sciarretta 
+2018). Animals can benefit from multidisciplinary 
+efforts such as those carried out in the Australian 
+
+PAGE 9
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+103
+fires in 2020, in which animals obtained the food 
+that they otherwise could only have obtained with 
+great difficulty from the infertile post-fire soils with 
+irregular production and poorly digestible vegetation 
+(Morton et al.  2011). The importance of providing 
+food to starving individuals and medical assistance to 
+injured or sick animals has been recently underlined 
+(Faria 2015). Metabolic requirement varies when 
+sick or hurt; therefore, once under rehabilitation, 
+specific nutritional supplementation can be provided 
+(Saito et al. 1987). 
+Feeding and water areas, easily arranged along 
+the natural transects can supply many different spe-
+cies (Mella et al. 2019). Unless the rescuer is a vet-
+erinarian it is not recommended to provide water to 
+animals before they arrive at the rescue center. Exces-
+sive rehydration can lead to subsequent kidney dam-
+age problems, and animals should never be bathed. 
+For example, in the case of koalas it is recommended 
+that the environment remain dark, quiet, warm and 
+with an optimal humidity of 10% (Fowler 2010) .
+Once in the rescue centre, the new environment 
+in captivity can be a harmful factor for wild animals 
+(Kleiman 1989; Biggins et al.  1999). Animals de -
+prived of stimuli and space for a long time can display 
+atypical behaviours and natural crucial skills such as 
+anti-predator behaviour and food finding abilities can 
+be compromised, especially for newborn individuals 
+(Shier 2016). Anti-predator training, environmental 
+enrichment, and soft release as pre-release condition-
+ing tactics improved adaptive behaviour and post-re-
+lease survival for fish, mammals, and reptiles (Tet-
+zlaff et al. 2019).
+In order for rescue centre environments to en-
+sure similarity to natural habitat and interaction with 
+co-specifics, environmental enrichment (Coleman 
+and Novak 2017) must be considered. Simple initi-
+atives like branch gum-feeders to simulate gum-for-
+aging behaviour are inexpensive, low-maintenance 
+methods that can be applied to various animals 
+(Kreger 1999). New technologies such as Wi-Fi, 
+LED projectors, and cameras can be used to give 
+cognitive and visual enrichment, and monitor phys-
+iological variables (Coleman and Novak 2017). Ex-
+posure to natural scenes showing the species-typical 
+environment caused beneficial psychological effects 
+(Kahn et al. 2008; Mayer et al. 2009), such as de -
+creased aggression (Kuo and Sullivan 2001), reduced 
+autonomic activity (Parsons et al. 1998), and better 
+surgical recovery along with reduced pain in a hospi-
+tal setting (Ulrich 1984). 
+Finally, reintroduction is the ultimate goal for 
+rescued animals and it can prevent long-term popula-
+tion decline, especially in isolated areas likely to be 
+destroyed in subsequent fires (Lunney et al. 2004a), 
+as well as can restore individual animals’ welfare 
+(Mathews et al. 2006; Gelling et al. 2012; Harring -
+ton et al. 2013; Berg 2018). Reintroduction has been 
+revised in recent years (Kolter and van Dijk 2005; 
+Taggart et al. 2015; Harding et al. 2016; Taylor et al. 
+2017; Zamboni et al. 2017; Arumugam and Annavi 
+2019; Jourdan et al. 2019), including the assessment 
+of potential health risks during translocation such as 
+contagious diseases (Leighton 2002). The release 
+should carefully follow re-introduction guidelines 
+available for the species to minimize negative effects. 
+Some aspects considered to assess reintroduction suc-
+cess are the individual’s ability to avoid human activ-
+ities, the minimization of a potential negative effect 
+on the animal host population, and the survival and 
+reproductive success of the individual herself (Kolter 
+and van Dijk 2005). Generally, survival success of 
+released animals is greater for individuals with better 
+development (Muths et al. 2014), as well as in indi-
+viduals released at their birthplace when compared to 
+translocated ones (Fischer and Lindenmayer 2000). 
+Monitoring released individuals can be helpful to 
+improve interventions (Muths et al. 2014), and ex-
+amine fire effects (Engstrom 2010). Individual tag-
+ging can provide relevant information on how life 
+history stage and season of fire influence fire-related 
+mortality risk (Griffiths and Christian 1996). Further 
+studies are needed regarding: (1) post-release suc-
+cess measurement in rehabilitated animals following 
+fire and comparing information between individu-
+als within the same population (Goldsworthy et al. 
+2000; Lunney et al. 2004a; Lunney et al. 2004b), and 
+(2) sophistication and complexity of modern tracking 
+methodologies (Griffiths and Pavajeau 2008).  As an 
+example, post-fire rehabilitated koalas were released 
+and monitored for >3 months (NSW Government 
+2018). Koalas with limbs injuries received minimal 
+intervention and high-quality nutrition, staying away 
+from human contact to heal themselves. Results re-
+vealed that koalas healed better than if they had re-
+ceived regular treatments (Daniels 2018). Further 
+investigation into animals’ ability to recover from en-
+vironmental disturbances and injuries may promote 
+minimization of invasiveness.
+
+PAGE 10
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+104
+Conclusions
+Considering that fires are expected to be more 
+frequent and intense in the coming years, wild an-
+imals could be exposed to drastic modifications 
+of their natural environment to which they are not 
+adapted to flee and survive. Fires may increase the 
+risk of injury, disease, stress, and mortality for ani-
+mals living in the wild. 
+The consequences of fires can result in physio-
+logical and psychological damages, experiences of 
+suffering, discomfort and pain, and long-term detri-
+mental consequences. 
+There are substantial differences between differ-
+ent animal taxa. However, a wide variety of verte-
+brate species (and perhaps some invertebrates) are 
+capable of experiencing physical and emotional pain, 
+engaging in substantive relationships, and executing 
+cognitively complex tasks (Clayton and Dickinson 
+1998; Braithwaite and Boulcott 2007; Bartal et al.  
+2011). This emphasizes that animal welfare is moral-
+ly significant and policy-relevant (Sekar and Shiller 
+2020). The effects of fire on wild animals should be 
+considered carefully. Individuals’ responses depend 
+on fire characteristics, habitat, life history traits, man-
+agement of the daily energy budget of the species, 
+and individual stress coping styles. Both active flight 
+and remaining in burrows can severely compromise 
+animal welfare.
+Wild animals, especially more vulnerable ones 
+can benefit from effective interventions in fires. All 
+potential suffering, invasiveness, and discomfort dur-
+ing human proximity and handling should be avoid-
+ed. Further efforts are necessary to expand scientific 
+knowledge, develop multidisciplinary actions and 
+increase social awareness.
+Future Perspectives
+The knowledge of the challenges and suffering to 
+which wild animals are exposed in fires can facilitate 
+interventions. In addition to the damage caused by 
+the fire, research has shown that animals are vulner-
+able to the perceived stress of handling and captures 
+(Obendorf 1983), which may add psychological and 
+physiological damage. In fact, the faster the recov-
+ery and the greater the tolerance of an animal to a 
+stressful event are, the lower the likelihood of such 
+an event causing poor welfare (Morton 2007).
+To overcome the current challenge that animal 
+rescue actions in fires are focused on domestic an-
+imals (Linnabary 1993), awareness campaigns, 
+roundtable events, and multidisciplinary approaches 
+through technological advances are highly recom-
+mended. 
+The use of drones combined with automatic ob-
+ject recognition techniques to manual animal count-
+ing (van Gemert et al.  2015), centralized public 
+telephone numbers and phone apps can facilitate in-
+terventions (White 2014). Media participation and in-
+formation dissemination (Kolter and van Dijk 2005) 
+may accelerate social interest and public awareness. 
+In fire prone regions, community groups may be in-
+volved in interventions, raising awareness of their 
+local environment (Lunney et al. 2004a).
+Filling the current gaps in research can reveal 
+new ways to help animals. As far as we know, the 
+following list summarizes a sample of aspects that 
+require further investigation.
+• Behavioural responses (Smith and Lyon 
+2000; Penn et al. 2003; Banks et al. 2017) and 
+physiological effects of fire for a large number 
+of taxa.
+• Modelling of gas fluid dynamics within bur-
+rows (Engstrom 2010). 
+• Replication of studies on the influence of 
+morphological factors on the probability of suc-
+cess after a fire (Griffiths and Brook 2014).
+• Monitoring the activity of pollinators af-
+ter fires in different ecosystems (Carbone et al. 
+2019).
+• Long-term stress after a fire in wild animals. 
+• Relationship between fire-related injuries 
+and physical condition or premature post-fire 
+mortality (Engstrom 2010).
+• Population studies of tagged individuals be-
+fore, during and after the fire to distinguish be-
+tween mortality and migration (Driscoll et al.  
+2010; Conner et al. 2011). 
+• R&D in effective options to prevent potential 
+damage that aquatic fauna may experience in the 
+harsh post-fire conditions .
+• Relationship between post-fire food resource 
+changes and diet modification (Begg 1981; John-
+son 1996; Sutherland and Dickman 1999b) con-
+sidering a review of nutrition requirements of 
+fire-affected animals.
+• Influence of post-fire activities such as log-
+ging on animal welfare (Koivula and Schmiege-
+low 2007), as evaluated for birds (Haggard and 
+Gaines 2001; Kotliar et al. 2002; Morissette et 
+al. 2002) and beetles (Villard 1994; Murphy and 
+Lehnhausen 1998; Nappi et al. 2003).
+
+PAGE 11
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+105
+• Monitoring and management experiments 
+understanding the mechanisms driving predator 
+responses to fire, and potential broader effects 
+(Hradsky et al. 2017; Geary et al. 2019). Mul-
+tiple approaches measuring predator abundance, 
+movement and diet are advisable.
+• Self-healing ability to minimize invasive-
+ness during interventions.
+• New technologies developing environmen -
+tal enrichment strategies for animals affected 
+by fires (Tetzlaff et al. 2019). The consideration 
+of animal temperaments to cover individualized 
+needs during captivity (Coleman and Novak 
+2017) is recommended. 
+• Post-release success measurement in reha-
+bilitated animals (Lunney et al. 2004b) and com-
+paring information between individuals within 
+the same population (Goldsworthy et al.  2000; 
+Lunney et al. 2004a).
+Acknowlegments
+The authors appreciate all the effort and help re-
+ceived from Animal Ethics.
+Funding
+Funded by Animal Ethics.
+References
+Ahlgren, C. E. (1960). Some Effects of Fire on Reproduc-
+tion and Growth of Vegetation in Northeastern Min-
+nesota. Ecology. doi:10.2307/1933318
+Andersen, A. N., Cook, G. D., Corbett, L. K., Douglas, M. 
+M., Eager, R. W., Russell-Smith, J., Setterfield, S. A., 
+Williams, R. J., and Woinarski, J. C. Z. (2005). Fire 
+frequency and biodiversity conservation in Australi-
+an tropical savannas: Implications from the Kapalga 
+fire experiment. Austral Ecology. doi:10.1111/j.1442-
+9993.2005.01441.x
+Anderson, N. B. (1998). Levels of analysis in health science: 
+A framework for integrating sociobehavioral and bio-
+medical research. In “Annals of the New York Acad-
+emy of Sciences.” doi:10.1111/j.1749-6632.1998.
+tb09595.x
+Arumugam, K. A., and Annavi, G. (2019). Captive Breed-
+ing of Threatened Mammals Native to Southeast Asia 
+– A Review on their Ex-situ Management, Implication 
+and Reintroduction Guidelines. Annual Research & 
+Review in Biology. doi:10.9734/arrb/2018/45921
+Askar, A. A., and Ismail, E. I. (2012). Impact of heat stress 
+exposure on some reproductive and physiological 
+traits of rabbit does. Egyptian Journal of Animal Pro-
+duction 49, 151–159.
+AWARE (2019). AWARE (Australian Wildlife Assistance 
+Rescue and Education) Heat stress warning signs. 
+Available at: https://www.awarewildlife.org.au/heat-
+stressandwildlife/ [accessed 30 March 2020]
+Banks, S. C., Cary, G. J., Smith, A. L., Davies, I. D., Dri-
+scoll, D. A., Gill, A. M., Lindenmayer, D. B., and 
+Peakall, R. (2013). How does ecological disturbance 
+influence genetic diversity? Trends in Ecology and 
+Evolution. doi:10.1016/j.tree.2013.08.005
+Banks, S. C., Dujardin, M., McBurney, L., Blair, D., 
+Barker, M., and Lindenmayer, D. B. (2011a). Start-
+ing points for small mammal population recovery af-
+ter wildfire: Recolonisation or residual populations? 
+Oikos. doi:10.1111/j.1600-0706.2010.18765.x
+Banks, S. C., Knight, E. J., McBurney, L., Blair, D., and 
+Lindenmayer, D. B. (2011b). The effects of wildfire 
+on mortality and resources for an arboreal marsupi-
+al: Resilience to fire events but susceptibility to fire 
+regime change. PLoS ONE  6. doi:10.1371/journal.
+pone.0022952
+Banks, S. C., McBurney, L., Blair, D., Davies, I. D., and 
+Lindenmayer, D. B. (2017). Where do animals come 
+from during post-fire population recovery? Implica-
+tions for ecological and genetic patterns in post-fire 
+landscapes. Ecography. doi:10.1111/ecog.02251
+Barkley, Y . (2019). Wildfire and wildlife habitat. Avail-
+able at: https://surviving-wildfire.extension.org/
+wildfire-and-wildlife-habitat/ [accessed 3 November 
+2019]
+Barlow, J., Haugaasen, T., and Peres, C. A. (2002). Ef-
+fects of ground fires on understorey bird assemblag-
+es in Amazonian forests. Biological Conservation . 
+doi:10.1016/S0006-3207(01)00177-X
+Barlow, J., and Peres, C. A. (2004). Ecological responses 
+to El Niño-induced surface fires in central Brazilian 
+Amazonia: Management implications for flammable 
+tropical forests. In “Philosophical Transactions of the 
+Royal Society B: Biological Sciences.” doi:10.1098/
+rstb.2003.1423
+Barnard, P. (1987). Foraging site selection by three 
+raptors in relation to grassland burning in a 
+montane habitat. African Journal of Ecology . 
+doi:10.1111/j.1365-2028.1987.tb01088.x
+Bartal, I. B. A., Decety, J., and Mason, P. (2011). Empathy 
+and pro-social behavior in rats. Science. doi:10.1126/
+science.1210789
+Beausoleil, N. J., and Mellor, D. J. (2015). Introducing 
+breathlessness as a significant animal welfare issue. 
+New Zealand Veterinary Journal. doi:10.1080/00480
+169.2014.940410
+
+PAGE 12
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+106
+Beck, A. M., and V ogl, R. J. (1972). The Effects of Spring 
+Burning on Rodent Populations in a Brush Prairie Sa-
+vanna. Journal of Mammalogy. doi:10.2307/1379170
+Begg, R. J. (1981). The small mammals of little nour-
+langie rock, n.t iii. ecology of dasyurus hallucatus, 
+the northern quoll (marsupialia: Dasyuridae). Wildlife 
+Research. doi:10.1071/WR9810073
+Bendell, J. F. (1974). Effects of Fire on Birds and Mam-
+mals. In “Fire and Ecosystems.” doi:10.1016/b978-0-
+12-424255-5.50009-2
+Berg, C. (2018). Restoring what we have destroyed: animal 
+welfare aspects of wildlife conservation, reintroduc-
+tion and rewilding programmes. In “Animal welfare in 
+a changing world.” doi:10.1079/9781786392459.0068
+Best, L. B. (1979). Effects of Fire on a Field Sparrow 
+Population. American Midland Naturalist  101, 434. 
+doi:10.2307/2424609
+Biggins, D. E., Vargas, A., Godbey, J. L., and Anderson, 
+S. H. (1999). Influence of prerelease experience on 
+reintroduced black-footed ferrets (Mustela nigripes). 
+Biological Conservation . doi:10.1016/S0006-
+3207(98)00158-X
+Bjornn, T. C., Brusven, M. A., Molnau, M. P., Milligan, J. 
+H., Klamt, R. A., Chacho, E., and Schaye, C. (1977). 
+Transport of granitic sediment in streams and its ef-
+fects on insects and fish. U. of I. Forest, Wildlife and 
+Range Experiment Station, Bull. No. 17.
+Bouaket, S. (1999). Forest Fires in Lao PDR. Internation-
+al Forest Fire News.
+Bozek, M. A., and Young, M. K. (1994). Fish mortality 
+resulting from delayed effects of fire in the Greater 
+Yellowstone ecosystem. Great Basin Naturalist.
+Bradstock, R. A., and Auld, T. D. (1995). Soil Temperatures 
+During Experimental Bushfires in Relation to Fire In-
+tensity: Consequences for Legume Germination and 
+Fire Management in South-Eastern Australia. The 
+Journal of Applied Ecology. doi:10.2307/2404417
+Bradstock, R. A., Bedward, M., Gill, A. M., and Cohn, 
+J. S. (2005). Which mosaic? A landscape ecolog -
+ical approach for evaluating interactions between 
+fire regimes, habitat and animals. Wildlife Research. 
+doi:10.1071/WR02114
+Braithwaite, V . A., and Boulcott, P. (2007). Pain percep-
+tion, aversion and fear in fish. Diseases of Aquatic 
+Organisms. doi:10.3354/dao075131
+Bret-Harte, M. S., Mack, M. C., Shaver, G. R., Huebner, 
+D. C., Johnston, M., Mojica, C. A., Pizano, C., and 
+Reiskind, J. A. (2013). The response of Arctic vege-
+tation and soils following an unusually severe tundra 
+fire. Philosophical Transactions of the Royal Society 
+B: Biological Sciences. doi:10.1098/rstb.2012.0490
+Brown, J., York, A., Christie, F., and McCarthy, M. (2017). 
+Effects of fire on pollinators and pollination. Journal 
+of Applied Ecology. doi:10.1111/1365-2664.12670
+Brynard, A. M. (1972). Controlled burning in the Kruger 
+National Park--history and development of a veld 
+burning policy. Tall Timbers Fire Ecol Conf Proc . 
+Available at: http://agris.fao.org/agris-search/search.
+do?recordID=US201302337593
+Bury, R. B., Major, D. J., and Pilliod, D. (2002). Responses 
+of Amphibians to Fire Disturbance in Pacific North-
+west Forests : a Review. Proceedings: the role of fire 
+for nongame wildlife management and community 
+restoration: traditional uses and new directions. Gen. 
+Tech. Rep. NE-288. Newtown Square, P A: US Dept. 
+of Agriculture, Forest Service, Northeastern Research 
+Station 288, 34–42.
+Callaham, M. A., Blair, J. M., Todd, T. C., Kitchen, D. 
+J., and Whiles, M. R. (2003). Macroinvertebrates in 
+North American tallgrass prairie soils: Effects of fire, 
+mowing, and fertilization on density and biomass. 
+Soil Biology and Biochemistry . doi:10.1016/S0038-
+0717(03)00153-6
+Campbell, M. (2016). What will the Fort McMurray fires 
+mean for wildlife? Available at: https://www.ma-
+cleans.ca/news/canada/where-the-wild-things-are-2/ 
+[accessed 3 November 2019]
+Carbone, L. M., Tavella, J., Pausas, J. G., and Aguilar, R. 
+(2019). A global synthesis of fire effects on pollina-
+tors. Global Ecology and Biogeography. doi:10.1111/
+geb.12939
+Cardillo, M. (2003). Biological determinants of extinction 
+risk: Why are smaller species less vulnerable? Animal 
+Conservation. doi:10.1017/S1367943003003093
+Carere, C., and Eens, M. (2005). Unravelling animal per -
+sonalities: How and why individuals consistently dif-
+fer. Behaviour. doi:10.1163/156853905774539436
+Catling, P. C. (1986). Rattus lutreolus, colonizer of heath-
+land after fire in the absence of pseudomys species? 
+Wildlife Research. doi:10.1071/WR9860127
+Certini, G. (2005). Effects of fire on properties of forest 
+soils: A review. Oecologia. doi:10.1007/s00442-004-
+1788-8
+Claridge, A. W., Trappe, J. M., and Hansen, K. (2009). Do 
+fungi have a role as soil stabilizers and remediators 
+after forest fire? Forest Ecology and Management . 
+doi:10.1016/j.foreco.2008.11.011
+Clarke, M. F. (2008). Catering for the needs of fauna in fire 
+management: Science or just wishful thinking? Wild-
+life Research. doi:10.1071/WR07137
+Clayton, N. S., and Dickinson, A. (1998). Episodic-like 
+memory during cache recovery by scrub jays. Nature. 
+doi:10.1038/26216
+
+PAGE 13
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+107
+Clucas, A. B., and Marzluff, J. M. (2012). Attitudes and 
+actions toward birds in urban areas: Human cultur-
+al differences influence bird behavior. The Auk 129, 
+8–16. doi:10.1525/auk.2011.11121
+Cochrane, M. A., and Barber, C. P. (2009). Climate 
+change, human land use and future fires in the Am-
+azon. Global Change Biology . doi:10.1111/j.1365-
+2486.2008.01786.x
+Coleman, K., and Novak, M. A. (2017). Environmen -
+tal enrichment in the 21st century. ILAR Journal . 
+doi:10.1093/ilar/ilx008
+Conner, L. M., Castleberry, S. B., and Derrick, A. M. 
+(2011). Effects of mesopredators and prescribed fire 
+on hispid cotton rat survival and cause-specific mor-
+tality. Journal of Wildlife Management . doi:10.1002/
+jwmg.110
+Conway, C. J. (2000). Effects of ambient temperature 
+on avian incubation behavior. Behavioral Ecology . 
+doi:10.1093/beheco/11.2.178
+Cook, S. F. (1959). The Effects of Fire on a Population of 
+Small Rodents. Ecology. doi:10.2307/1929926
+Cooper, A. C. (1965). The effect of transported stream sed-
+iments on the survival of sockeye and pink salmon 
+eggs and alevins. Int. Pac. Salmon Fishery Commis -
+sion Bulletin Bulletin.
+Costa, B. M., Pantoja, D. L., Vianna, M. C. M., and Colli, 
+G. R. (2013). Direct and Short-Term Effects of Fire 
+on Lizard Assemblages from a Neotropical Savanna 
+Hotspot. Journal of Herpetology. doi:10.1670/12-043
+Cousins, R. A., Battley, P. F., Gartrell, B. D., and Pow-
+lesland, R. G. (2012). Impact injuries and probability 
+of survival in a large semiurban endemic pigeon in 
+new zealand, hemiphaga novaeseelandiae. Journal of 
+Wildlife Diseases. doi:10.7589/0090-3558-48.3.567
+COVERT-BRATLAND, K. A., BLOCK, W. M., and 
+THEIMER, T. C. (2006). Hairy Woodpecker Winter 
+Ecology in Ponderosa Pine Forests Representing Dif-
+ferent Ages Since Wildfire. Journal of Wildlife Man-
+agement. doi:10.2193/0022-541x(2006)70[1379:hw-
+weip]2.0.co;2
+Curry-Lindahl, K., and Marcstrom, V . (1961). Studies 
+on the Physiological and Ecological Background to 
+the Reproduction of the Capercaillie (Tetrao uro-
+gallus Lin.). The Journal of Wildlife Management . 
+doi:10.2307/3798686
+D’Antonio, C. M., and Vitousek, P. M. (1992). Biological 
+invasions by exotic grasses, the grass/fire cycle, and 
+global change. Annual Review of Ecology and Sys -
+tematics. doi:10.1146/annurev.es.23.110192.000431
+Daltry, J. C., and Momberg, F. (2000). “Cardamom Moun-
+tains: Biodiversity Survey 2000.”
+Daly, N. (2019). What the Amazon fires mean for wild 
+animals. National Geographic . Available at: https://
+www.nationalgeographic.com/animals/2019/08/
+ how-the-amazon-rainforest-wildfires-will-affect- 
+wild-animals/ [accessed 18 May 2020]
+Daniels, P. (2018). Tagged koalas released back into the 
+wild following Limeburners Creek fire. Available 
+at: https://www.portnews.com.au/story/5371192/
+port-macquarie-koala-hospital-releases-radio-col-
+lared-koalas/ [accessed 25 March 2020]
+Davies, I. D., Cary, G. J., Landguth, E. L., Lindenmayer, 
+D. B., and Banks, S. C. (2016). Implications of re-
+current disturbance for genetic diversity. Ecology and 
+Evolution. doi:10.1002/ece3.1948
+Dawkins, M. S. (1988). Behavioural deprivation: A cen-
+tral problem in animal welfare. Applied Animal Be -
+haviour Science. doi:10.1016/0168-1591(88)90047-0
+Day, A. M. (2017). Companion animals and natural dis-
+asters: A systematic review of literature. Internation-
+al Journal of Disaster Risk Reduction  24, 81–90. 
+doi:10.1016/j.ijdrr.2017.05.015
+Debut, M., Berri, C., Arnould, C., Guemené, D., 
+Santé-Lhoutellier, V ., Sellier, N., Baéza, E., Jehl, 
+N., Jégo, Y ., Beaumont, C., and Le Bihan-Duval, 
+E. (2005). Behavioural and physiological respons-
+es of three chicken breeds to pre-slaughter shack-
+ling and acute heat stress. British Poultry Science . 
+doi:10.1080/00071660500303032
+DeGrazia, D., and Rowan, A. (1991). Pain, suffering, and 
+anxiety in animals and humans. Theoretical Medicine. 
+doi:10.1007/BF00489606
+Dickman, C. R. (2020). A statement about the 480 million 
+animals killed in NSW bushfires since September. 
+Available at: https://www.sydney.edu.au/news-opin-
+ion/news/2020/01/03/a-statement-about-the-480-mil-
+lion-animals-killed-in-nsw-bushfire.html [accessed 
+30 March 2020]
+Doerr, S. H., and Santín, C. (2016). Global trends in wild-
+fire and its impacts: Perceptions versus realities in a 
+changing world. Philosophical Transactions of the 
+Royal Society B: Biological Sciences . doi:10.1098/
+rstb.2015.0345
+Doty, A. C., Currie, S. E., Stawski, C., and Geiser, F. (2018). 
+Can bats sense smoke during deep torpor? Physiology 
+and Behavior. doi:10.1016/j.physbeh.2017.12.019
+Driscoll, D. A., Lindenmayer, D. B., Bennett, A. F., Bode, 
+M., Bradstock, R. A., Cary, G. J., Clarke, M. F., Dex-
+ter, N., Fensham, R., Friend, G., Gill, M., James, S., 
+Kay, G., Keith, D. A., MacGregor, C., Russell-Smith, 
+J., Salt, D., Watson James, J. E. M., Williams Rich -
+ard J., R. J., and York, A. (2010). Fire management 
+
+PAGE 14
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+108
+for biodiversity conservation: Key research questions 
+and our capacity to answer them. Biological Conser-
+vation. doi:10.1016/j.biocon.2010.05.026
+Duncan, I. J., and Petherick, J. C. (1991). The implications 
+of cognitive processes for animal welfare. Journal of 
+animal science. doi:10.2527/1991.69125017x
+Dunham, J. B., Rosenberger, A. E., Luce, C. H., and 
+Rieman, B. E. (2007). Influences of wildfire and chan-
+nel reorganization on spatial and temporal variation 
+in stream temperature and the distribution of fish and 
+amphibians. Ecosystems. doi:10.1007/s10021-007-
+9029-8
+Edmonds, A. S., and Cutter, S. L. (2008). Planning 
+for Pet Evacuations during Disasters. Journal of 
+Homeland Security and Emergency Management . 
+doi:10.2202/1547-7355.1445
+Engstrom, R. T. (2010). First-order fire effects on ani-
+mals: Review and recommendations. Fire Ecology . 
+doi:10.4996/fireecology.0601115
+Ernst, C. H., Boucher, T. P., Sekscienski, S. W., and Wil-
+genbusch, J. C. (1999). Fire ecology and the Florida 
+box turtle, Terrapene carolina bauri. NCASI Technical 
+Bulletin.
+Erwin, W. J., and Stasiak, R. H. (1979). Vertebrate Mor-
+tality During the Burning of a Reestablished Prai-
+rie in Nebraska. American Midland Naturalist . 
+doi:10.2307/2424922
+EuropaPress (2016). The other victims of fires: animals 
+and plants. Available at: https://www.europapress.es/
+sociedad/medio-ambiente-00647/noticia-otras-victi-
+mas-incendios-animales-plantas-20160818173800.
+html [accessed 2 December 2019]
+Faria, C. (2015). Making a Difference on Behalf of Ani-
+mals Living in the Wild: Interview with Jeff McMa-
+han. Relations. doi:10.7358/rela-2015-001-fari
+Fayt, P., Machmer, M. M., and Steeger, C. (2005). Reg-
+ulation of spruce bark beetles by woodpeckers - A 
+literature review. Forest Ecology and Management . 
+doi:10.1016/j.foreco.2004.10.054
+Fellin, D. G., and Kennedy, P. C. (2014). “Abundance of 
+arthropods inhabiting duff and soil after prescribed 
+burning on forest clearcuts in northern Idaho /.” 
+doi:10.5962/bhl.title.81748
+Fenner, A. L., and Bull, C. M. (2007). Short-term impact 
+of grassland fire on the endangered pygmy bluetongue 
+lizard. Journal of Zoology . doi:10.1111/j.1469-
+7998.2007.00287.x
+Fischer, J., and Lindenmayer, D. B. (2000). An assess -
+ment of the published results of animal relocations. 
+Biological Conservation . doi:10.1016/S0006-
+3207(00)00048-3
+Fish, F. F., and Rucker, R. R. (1945). Columnar -
+is as a Disease of Cold-Water Fishes. Trans-
+actions of the American Fisheries Society . 
+doi:10.1577/1548-8659(1943)73[32:caadoc]2.0.co;2
+Fisher, J. T., and Wilkinson, L. (2005). The response of 
+mammals to forest fire and timber harvest in the 
+North American boreal forest. Mammal Review . 
+doi:10.1111/j.1365-2907.2005.00053.x
+Flannigan, M., Stocks, B., Turetsky, M., and Wotton, 
+M. (2009). Impacts of climate change on fire activ-
+ity and fire management in the circumboreal for-
+est. Global Change Biology . doi:10.1111/j.1365-
+2486.2008.01660.x
+Ford, W. M., Menzel, M. A., McGill, D. W., Laerm, J., 
+and McCay, T. S. (1999). Effects of a community 
+restoration fire on small mammals and herpetofauna 
+in the southern Appalachians. Forest Ecology and 
+Management 114, 233–243. doi:10.1016/S0378-
+1127(98)00354-5
+Fordyce, A., Hradsky, B. A., Ritchie, E. G., and Di Ste-
+fano, J. (2016). Fire affects microhabitat selection, 
+movement patterns, and body condition of an Austral-
+ian rodent (Rattus fuscipes). Journal of Mammalogy  
+97, 102–111. doi:10.1093/jmammal/gyv159
+Forsyth, D. M., Gormley, A. M., Woodford, L., and 
+Fitzgerald, T. (2012). Effects of large-scale high-se-
+verity fire on occupancy and abundances of an inva-
+sive large mammal in south-eastern Australia. Wildlife 
+Research. doi:10.1071/WR12033
+Fowler, A. (2010). Treating Burnt Wildlife. Wildlife 
+Health & Conservation Centre415 Werombi Rd, 
+Camden, NSW, 2570
+Fox, B. J., and Pople, A. R. (1984). Experimental confir-
+mation of interspecific competition between native 
+and introduced mice. Australian Journal of Ecology . 
+doi:10.1111/j.1442-9993.1984.tb01370.x
+Friend, G. R. (1993). Impact of fire on small vertebrates in 
+mallee woodlands and heathlands of temperate Aus-
+tralia: A review. Biological Conservation 65, 99–114. 
+doi:10.1016/0006-3207(93)90439-8
+Garvey, N., Ben-Ami, D., Ramp, D., and Croft, D. B. 
+(2010). Survival behaviour of swamp wallabies 
+during prescribed burning and wildfire. Wildlife Re-
+search. doi:10.1071/WR08029
+Gasaway, W. C., Dubois, S. D., Boertje, R. D., Reed, D. 
+J., and Simpson, D. T. (1989). Response of radio-col-
+lared moose to a large burn in central Alaska. Canadi-
+an Journal of Zoology. doi:10.1139/z89-047
+Gashwiler, J. S. (1970). Plant and Mannal Changes 
+on a Clearcut In West-Central Oregon. Ecology. 
+doi:10.2307/1933628
+
+PAGE 15
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+109
+Geary, W. L., Doherty, T. S., Nimmo, D. G., Tulloch, 
+A. I. T., and Ritchie, E. G. (2019). Predator re -
+sponses to fire. Journal of Animal Ecology  25, 259. 
+doi:10.2307/2256344
+Gelling, M., Johnson, P. J., Moorhouse, T. P., and Macdon-
+ald, D. W. (2012). Measuring animal welfare within a 
+reintroduction: An assessment of different indices of 
+stress in water voles Arvicola amphibius. PLoS ONE. 
+doi:10.1371/journal.pone.0041081
+Geluso, K. N., and Bragg, T. B. (1986). Fire-Avoidance Be-
+havior of Meadow V oles (Microtus pennsylvanicus). 
+American Midland Naturalist. doi:10.2307/2425953
+van Gemert, J. C., Verschoor, C. R., Mettes, P., Epema, 
+K., Koh, L. P., and Wich, S. (2015). Nature conser-
+vation drones for automatic localization and counting 
+of animals. In “Lecture Notes in Computer Science 
+(including subseries Lecture Notes in Artificial In-
+telligence and Lecture Notes in Bioinformatics).” 
+doi:10.1007/978-3-319-16178-5_17
+Gill, A. M., and Allan, G. (2008). Large fires, fire effects 
+and the fire-regime concept. International Journal of 
+Wildland Fire. doi:10.1071/WF07145
+Glass, B. P. (1969).  The Migratory Barren-Ground Cari-
+bou of Canada. John P. Kelsall . The Quarterly Review 
+of Biology. doi:10.1086/406333
+Goldsworthy, S. D., Giese, M., Gales, R. P., Brothers, N., 
+and Hamill, J. (2000). Effects of the Iron baron oil 
+spill on little penguins (Eudyptula minor). II. Post-re-
+lease survival of rehabilitated oiled birds. Wildlife Re-
+search. doi:10.1071/WR99076
+Goode, J. R., Luce, C. H., and Buffington, J. M. (2012). 
+Enhanced sediment delivery in a changing climate in 
+semi-arid mountain basins: Implications for water re-
+source management and aquatic habitat in the northern 
+Rocky Mountains. Geomorphology. doi:10.1016/j.ge-
+omorph.2011.06.021
+Grafe, T. U., Döbler, S., and Linsenmair, K. E. (2002). 
+Frogs flee from the sound of fire. Proceedings of the 
+Royal Society B: Biological Sciences . doi:10.1098/
+rspb.2002.1974
+Gresswell, R. E. (1999). Fire and Aquatic Ecosys -
+tems in Forested Biomes of North America. 
+Transactions of the American Fisheries Society . 
+doi:10.1577/1548-8659(1999)128<0193:faaeif>2.0.
+co;2
+Griffin, D. R., and Speck, G. B. (2004). New evi -
+dence of animal consciousness. Animal Cognition . 
+doi:10.1007/s10071-003-0203-x
+Griffiths, A. D., and Brook, B. W. (2014). Effect of fire on 
+small mammals: A systematic review. International 
+Journal of Wildland Fire. doi:10.1071/WF14026
+Griffiths, A. D., and Christian, K. A. (1996). The ef -
+fects of fire on the frillneck lizard (Chlamydosaurus 
+kingii) in northern Australia. Austral Ecology . 
+doi:10.1111/j.1442-9993.1996.tb00625.x
+Griffiths, A. D., Garnett, S. T., and Brook, B. W. (2015). 
+Fire frequency matters more than fire size: Testing the 
+pyrodiversity-biodiversity paradigm for at-risk small 
+mammals in an Australian tropical savanna. Biolog-
+ical Conservation  186, 337–346. doi:10.1016/j.bio -
+con.2015.03.021
+Griffiths, R. A., and Pavajeau, L. (2008). Captive breed-
+ing, reintroduction, and the conservation of amphib-
+ians. Conservation Biology . doi:10.1111/j.1523-
+1739.2008.00967.x
+Haggard, M., and Gaines, W. L. (2001). Effects of stand-re-
+placement fire and salvage logging on a cavity-nest-
+ing bird community in eastern Cascades, Washington. 
+Northwest Science.
+Hanski, I. (1999). Habitat Connectivity, Habitat Conti-
+nuity, and Metapopulations in Dynamic Landscapes. 
+Oikos. doi:10.2307/3546736
+Harding, G., Griffiths, R. A., and Pavajeau, L. (2016). 
+Developments in amphibian captive breeding and 
+reintroduction programs. Conservation Biology . 
+doi:10.1111/cobi.12612
+Harrington, L. A., Moehrenschlager, A., Gelling, M., At -
+kinson, R. P. D., Hughes, J., and Macdonald, D. W. 
+(2013). Conflicting and Complementary Ethics of 
+Animal Welfare Considerations in Reintroductions. 
+Conservation Biology. doi:10.1111/cobi.12021
+Harris, D. L., and Whitcomb, W. H. (1974). Effects of Fire 
+on Populations of Certain Species of Ground Beetles 
+(Coleoptera: Carabidae). The Florida Entomologist . 
+doi:10.2307/3493841
+Hart, J. S., Heroux, O., Cottle, W. H., and Mills, C. A. 
+(1961). The influence of climate on metabolic and 
+thermal responses of infant caribou. Canadian Jour-
+nal of Zoology. doi:10.1139/z61-079
+Heath, S. E., and Linnabary, R. D. (2015). Challenges of 
+managing animals in disasters in the U.S. Animals 5, 
+173–192. doi:10.3390/ani5020173
+Heath, S., V oeks, S., and Glickman, L. (2000). A Study of 
+Pet Rescue in Two Disasters. International journal of 
+mass emergencies and disasters.
+Hedlund, J. D., and Rickard, W. H. (1981). Wildfire and 
+the Short-Term Response of Small Mammals Inhabit-
+ing a Sagebrush-Bunchgrass Community. The Murre-
+let. doi:10.2307/3534441
+HIGGS, P., and FOX, B. J. (1993). Interspecific compe-
+tition: A mechanism for rodent succession after fire 
+in wet heathland. Australian Journal of Ecology . 
+doi:10.1111/j.1442-9993.1993.tb00443.x
+
+PAGE 16
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+110
+Hill, J. E., De Vault, T. L., and Belant, J. L. (2020). A 
+review of ecological factors promoting road use by 
+mammals. Mammal Review. doi:10.1111/mam.12222
+Horton, S. P., and Mannan, R. W. (1988). Effects of pre-
+scribed fire on snags and cavity-nesting birds in south-
+eastern Arizona pine forests. Wildlife Society Bulletin. 
+doi:10.2307/3782350
+Hossack, B. R. (2006). Amphibians and wildfire in the 
+U.S. Northwest. International Journal of Wilderness 
+APRIL.
+Hovick, T. J., Mcgranahan, D. A., Elmore, R. D., Weir, 
+J. R., and Fuhlendorf, S. D. (2017). Pyric-carnivory: 
+Raptor use of prescribed fires. Ecology and Evolution. 
+doi:10.1002/ece3.3401
+Howard, W. E., Fenner, R. L., and Childs, H. E. (1959). 
+Wildlife Survival in Brush Burns. Journal of Range 
+Management. doi:10.2307/3894992
+Hradsky, B. A. (2020). Conserving Australia’s threatened 
+native mammals in predator-invaded, fire-prone land-
+scapes. Wildlife Research. doi:10.1071/WR19027
+Hradsky, B. A., Mildwaters, C., Ritchie, E. G., Christie, 
+F., and Di Stefano, J. (2017). Responses of inva -
+sive predators and native prey to a prescribed forest 
+fire. Journal of Mammalogy . doi:10.1093/jmammal/
+gyx010
+Huhta, V ., Karppinen, E., Nurminen, M., and Valpas, A. 
+(1967). Effect of silvicultural pratices upon arthropod, 
+annelid and nematode populations in coniferous for-
+est soil. Annales Zoologici Fennici.
+Hutto, R. L. (2006). Toward meaningful snag-manage-
+ment guidelines for postfire salvage logging in North 
+American conifer forests. Conservation Biology . 
+doi:10.1111/j.1523-1739.2006.00494.x
+Hutto, R. L. (1995). Composition of Bird Communities Fol-
+lowing Stand‐Replacement Fires in Northern Rocky 
+Mountain (U.S.A.) Conifer Forests. Conservation 
+Biology. doi:10.1046/j.1523-1739.1995.9051033.x-i1
+Irvine, L. (2007). Ready or not: Evacuating an ani -
+mal shelter during a mock emergency. Anthrozoos. 
+doi:10.2752/089279307X245482
+Isaac, J. L., Valentine, L. E., and Goodman, B. A. (2008). 
+Demographic responses of an arboreal marsupial, the 
+common brushtail possum (Trichosurus vulpecula), 
+to a prescribed fire. Population Ecology. doi:10.1007/
+s10144-007-0057-1
+Islam, A., Abraham, P., Hapner, C. D., Andrews-Shigaki, 
+B., Deuster, P., and Chen, Y . (2013). Heat exposure in-
+duces tissue stress in heat-intolerant, but not heat-tol-
+erant, mice. Stress. doi:10.3109/10253890.2012.6967
+54
+Jandt, R., Joly, K., Meyers, C. R., and Racine, C. (2008). 
+Slow recovery of lichen on burned caribou winter 
+range in Alaska tundra: Potential influences of cli-
+mate warming and other disturbance factors. Arctic, 
+Antarctic, and Alpine Research . doi:10.1657/1523-
+0430(06-122)[JANDT]2.0.CO;2
+Jeffers, J. N. R., Burnham, K. P., Anderson, D. R., and 
+Laake, J. L. (1982). Estimation of Density from Line 
+Transect Sampling of Biological Populations. The 
+Journal of Ecology. doi:10.2307/2259887
+Jehle, G., Yackel Adams, A. A., Savidge, J. A., and Ska-
+gen, S. K. (2004). Nest Survival Estimation: A Re-
+view of Alternatives to the Mayfield Estimator. The 
+Condor. doi:10.1093/condor/106.3.472
+Johnson, C. A., Fryxell, J. M., Thompson, I. D., and Baker, 
+J. A. (2009). Mortality risk increases with natal disper-
+sal distance in American martens. Proceedings of the 
+Royal Society B: Biological Sciences . doi:10.1098/
+rspb.2008.1958
+Johnson, C. N. (1996). Interactions between mammals and 
+ectomycorrhizal fungi. Trends in Ecology and Evolu-
+tion. doi:10.1016/S0169-5347(96)10053-7
+Johnson, H. D., and Vanjonack, W. J. (1976). Effects of 
+Environmental and Other Stressors on Blood Hor -
+mone Patterns in Lactating Animals. Journal of Dairy 
+Science 59, 1603–1617. doi:10.3168/jds.S0022-
+0302(76)84413-X
+Jolly, W. M., Cochrane, M. A., Freeborn, P. H., Holden, Z. 
+A., Brown, T. J., Williamson, G. J., and Bowman, D. 
+M. J. S. (2015). Climate-induced variations in global 
+wildfire danger from 1979 to 2013. Nature Communi-
+cations. doi:10.1038/ncomms8537
+Jourdan, J., Plath, M., Tonkin, J. D., Ceylan, M., Dumeier, 
+A. C., Gellert, G., Graf, W., Hawkins, C. P., Kiel, E., 
+Lorenz, A. W., Matthaei, C. D., Verdonschot, P. F. M., 
+Verdonschot, R. C. M., and Haase, P. (2019). Reintro-
+duction of freshwater macroinvertebrates: challenges 
+and opportunities. Biological Reviews . doi:10.1111/
+brv.12458
+Kahn, P. H., Friedman, B., Gill, B., Hagman, J., Severson, 
+R. L., Freier, N. G., Feldman, E. N., Carrère, S., and 
+Stolyar, A. (2008). A plasma display window?-The 
+shifting baseline problem in a technologically mediat-
+ed natural world. Journal of Environmental Psycholo-
+gy. doi:10.1016/j.jenvp.2007.10.008
+Kahn, W. C. (1960). Observations on the Effect of a Burn 
+on a Population of Sceloporus Occidentilis. Ecology. 
+doi:10.2307/1930227
+Karki, S. (2002). “Community Involvement in and Man-
+agement of Forest Fires in Community Involvement 
+in and Management of Forest Fires in South East 
+Asia.”
+Kauffman, J. B. (2004). Death rides the forest: Perceptions 
+of fire, land use, and ecological restoration of western 
+
+PAGE 17
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+111
+forests. Conservation Biology . doi:10.1111/j.1523-
+1739.2004.545_1.x
+Kaufman, G. A., Kaufman, D. W., and Finck, E. J. (1988). 
+Influence of Fire and Topography on Habitat Selec-
+tion by Peromyscus maniculatus and Reithrodon-
+tomys megalotis in Ungrazed Tallgrass Prairie. Jour-
+nal of Mammalogy. doi:10.2307/1381384
+Keeley, J. E., Fotheringham, C. J., and Baer-Keeley, M. 
+(2005). Factors affecting plant diversity during post-
+fire recovery and succession of mediterranean-climate 
+shrublands in California, USA. Diversity and Distri -
+butions. doi:10.1111/j.1366-9516.2005.00200.x
+Keeley, J. E., and Syphard, A. D. (2016). Climate change 
+and future fire regimes: Examples from California. 
+Geosciences (Switzerland) . doi:10.3390/geoscienc -
+es6030037
+Keith, L. B., and Surrendi, D. C. (1971). Effects of Fire on 
+a Snowshoe Hare Population. The Journal of Wildlife 
+Management. doi:10.2307/3799867
+King, G. M., Bevis, K. R., Hanson, E. E., and Vitello, J. 
+R. (1997). Northern spotted owl management: Mixing 
+landscape and site-based approaches. Journal of For-
+estry. doi:10.1093/jof/95.8.21
+KING, J. R., and FARNER, D. S. (1961). Energy Me -
+tabolism, Thermoregulation and Body Temperature. 
+In “Biology and Comparative Physiology of Birds.” 
+doi:10.1016/b978-1-4832-3143-3.50014-9
+Kirkwood, J. K., and Sainsbury, A. W. (1996). Ethics of 
+interventions for the welfare of free-living wild ani-
+mals. Animal Welfare 5, 235–243.
+Kleiman, D. G. (1989). Reintroduction of Captive Mammals 
+for Conservation. BioScience. doi:10.2307/1311025
+Klein, H. G. (1960). Ecological Relationships of Peromy-
+scus leucopus noveboracensis and P. maniculatus gra-
+cilis in Central New York. Ecological Monographs. 
+doi:10.2307/1948434
+Koivula, M. J., and Schmiegelow, F. K. A. (2007). Boreal 
+woodpecker assemblages in recently burned forested 
+landscapes in Alberta, Canada: Effects of post-fire 
+harvesting and burn severity. Forest Ecology and 
+Management. doi:10.1016/j.foreco.2007.01.075
+Kolter, L., and van Dijk, J. (2005). Rehabilitation and Re-
+lease of Bears: For the Welfare of Conservation or the 
+Conservation of Welfare.
+Komarek, E. V . (1969). Fire and animal behavior. In “Tall 
+Timbers Fire Ecology Conference 9.”
+Koolhaas, J. M., Korte, S. M., De Boer, S. F., Van Der 
+Vegt, B. J., Van Reenen, C. G., Hopster, H., De Jong, 
+I. C., Ruis, M. A. W., and Blokhuis, H. J. (1999). Cop-
+ing styles in animals: Current status in behavior and 
+stress- physiology. Neuroscience and Biobehavioral 
+Reviews. doi:10.1016/S0149-7634(99)00026-3
+Koprowski, J. L. (2005). Annual cycles in body mass and 
+reproduction of endangered mt. graham red squirrels. 
+Journal of Mammalogy. doi:10.1644/bwg-232.1
+Koprowski, J. L., Leonard, K. M., Zugmeyer, C. A., and 
+Jolley, J. L. (2006). Direct Effects of Fire on Endan-
+gered Mount Graham Red Squirrels. The Southwest-
+ern Naturalist 51, 59–63. doi:10.1894/0038-4909(20
+06)51[59:deofoe]2.0.co;2
+Korte, S. M., Bouws, G. A. H., and Bohus, B. (1993). 
+Central actions of corticotropin-releasing hormone 
+(CRH) on behavioral, neuroendocrine, and cardi-
+ovascular regulation: Brain corticoid receptor in-
+volvement. Hormones and Behavior . doi:10.1006/
+hbeh.1993.1013
+Kotliar, N. B., Hejl, S. J., Hutto, R. L., Saab, V . A., Melch-
+er, C. P., and McFadzen, M. E. (2002). Effects of fire 
+and post-fire salvage logging on avian communities 
+in conifer-dominated forests of the western United 
+States. In “Studies in Avian Biology.”
+Kozlowski, T. (1974). “Fire and ecosystems.” (Elsevier.)
+Kreger, M. (1999). Environmental Enrichment for Nonhu-
+man Primates Resource Guide. ILAR Journal.
+Krikken, F., Lehner, F., Haustein, K., Drobyshev, I., and 
+van Oldenborgh, G. J. (2019). Attribution of the 
+role of climate change in the forest fires in Sweden 
+2018. Natural Hazards and Earth System Sciences . 
+doi:10.5194/nhess-2019-206
+Kruse, A. D., and Piehl, J. L. (1984). The Impact of Pre-
+scribed Burning on Ground-nesting Birds. Proceed-
+ings of the Ninth North American Prairie Conference, 
+153–156.
+Kuo, F. E., and Sullivan, W. C. (2001). Aggression and 
+violence in the inner city, effects of environment 
+via mental fatigue. Environment and Behavior . 
+doi:10.1177/00139160121973124
+Lawrence, G. E. (1966). Ecology of Vertebrate Animals in 
+Relation to Chaparral Fire in the Sierra Nevada Foot-
+hills. Ecology. doi:10.2307/1933775
+Leahy, L., Legge, S. M., Tuft, K., McGregor, H. W., Bar-
+muta, L. A., Jones, M. E., and Johnson, C. N. (2015). 
+Amplified predation after fire suppresses rodent pop-
+ulations in Australia’s tropical savannas. Wildlife Re-
+search 42, 705–716. doi:10.1071/WR15011
+Lee, D. Y ., Kim, E., and Choi, M. H. (2015). Technical 
+and clinical aspects of cortisol as a biochemical mark-
+er of chronic stress. BMB Reports. doi:10.5483/BM-
+BRep.2015.48.4.275
+
+PAGE 18
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+112
+Leighton, F. A. (2002). Health risk assessment of the trans-
+location of wild animals. OIE Revue Scientifique et 
+Technique. doi:10.20506/rst.21.1.1324
+Letnic, M. (2001). Long distance movements and the use 
+of fire mosaics by small mammals in the Simpson 
+Desert, Central Australia. Australian Mammalogy . 
+doi:10.1071/AM01125
+Letnic, M., Dickman, C. R., Tischler, M. K., Tamayo, B., 
+and Beh, C. L. (2004). The responses of small mam-
+mals and lizards to post-fire succession and rainfall 
+in arid Australia. Journal of Arid Environments . 
+doi:10.1016/j.jaridenv.2004.01.014
+Lillywhite, H. B., and North, F. (1974). Perching Behavior 
+of Sceloporus occidentalis in Recently Burned Chap-
+arral. Copeia. doi:10.2307/1443035
+Lindenmayer, D. B., Foster, D. R., Franklin, J. F., Hunt-
+er, M. L., Noss, R. F., Schmiegelow, F. A., and Perry, 
+D. (2004). Salvage Harvesting Policies after Natural 
+Disturbance. Science. doi:10.1126/science.1093438
+Linnabary, R. D. (1993). Emergency evacuation of hors-
+es: a madison county, Kentucky survey. Journal 
+of Equine Veterinary Science . doi:10.1016/S0737-
+0806(07)80235-8
+Lnìons, G. B., Tanton, M. T., and Davey, S. M. (1989). Ef-
+fect of fire on the availability of hollows in trees used 
+by the common brushtail possum, trichosurus vulpec-
+ula kerr, 1792, and the ringtail possum, pseudochei-
+rus peregrinus boddaerts, 1785. Wildlife Research . 
+doi:10.1071/WR9890449
+Lunney, D., Gresser, S. M., Mahon, P. S., and Matthews, 
+A. (2004a). Post-fire survival and reproduction of re-
+habilitated and unburnt koalas. Biological Conserva-
+tion 120, 567–575. doi:10.1016/j.biocon.2004.03.029
+Lunney, D., Gresser, S. M., Mahon, P. S., and Matthews, 
+A. (2004b). Post-fire survival and reproduction of re-
+habilitated and unburnt koalas. Biological Conserva-
+tion. doi:10.1016/j.biocon.2004.03.029
+Lyon, J. P., and O’Connor, J. P. (2008). Smoke on the wa-
+ter: Can riverine fish populations recover following a 
+catastrophic fire-related sediment slug? Austral Ecol-
+ogy. doi:10.1111/j.1442-9993.2008.01851.x
+Lyon, L. J. (1978). National Fire Effects Workshop: Ef-
+fects of fire on fauna. A state-of-knowledge review. 
+Forest Service National Fire Effects Workshop, Den-
+ver, Colo. (USA). Available at: AZTNC
+Lyon, L. J., and Marzluff, J. M. (1985). Fire’s effects on a 
+small bird population. Fire’ s effects on wildlife habi-
+tat. Proc. symposium, Missoula, 1984.
+van Mantgem, E. F., Keeley, J. E., and Witter, M. (2015). 
+Faunal responses to fire in chaparral and sage scrub in 
+California, USA. Fire Ecology. doi:10.4996/fireecol-
+ogy.1103128
+Marai, I. F. M., El-Darawany, A. A., Fadiel, A., and Ab-
+del-Hafez, M. A. M. (2007). Physiological traits 
+as affected by heat stress in sheep-A review. Small 
+Ruminant Research . doi:10.1016/j.smallrum-
+res.2006.10.003
+Marsella, S., and Sciarretta, N. (2018). CBRN Events 
+and Mass Evacuation Planning. In (Ed In Enhancing 
+CBRNE Safety & Security: Proceedings of the SICC 
+2017 Conference.) pp. 353–363. (Springer, Cham.)
+Martin, J. G. A., and Réale, D. (2008). Animal tempera-
+ment and human disturbance: Implications for the re-
+sponse of wildlife to tourism. Behavioural Processes. 
+doi:10.1016/j.beproc.2007.06.004
+Mathews, F., Moro, D., Strachan, R., Gelling, M., and 
+Buller, N. (2006). Health surveillance in wildlife rein-
+troductions. Biological Conservation . doi:10.1016/j.
+biocon.2006.04.011
+Matthews, J. K., Stawski, C., Körtner, G., Parker, C. A., 
+and Geiser, F. (2017). Torpor and basking after a 
+severe wildfire: mammalian survival strategies in a 
+scorched landscape.  Journal of Comparative Physi -
+ology B: Biochemical, Systemic, and Environmental 
+Physiology. doi:10.1007/s00360-016-1039-4
+Mayer, F. S., Frantz, C. M. P., Bruehlman-Senecal, E., and 
+Dolliver, K. (2009). Why is nature beneficial?: The 
+role of connectedness to nature. Environment and Be-
+havior. doi:10.1177/0013916508319745
+McEwen, B. S. (2005). Stressed or stressed out: What is 
+the difference? In “Journal of Psychiatry and Neuro-
+science.”
+McGregor, H. W., Legge, S., Jones, M. E., and Johnson, 
+C. N. (2016). Extraterritorial hunting expeditions 
+to intense fire scars by feral cats. Scientific Reports. 
+doi:10.1038/srep22559
+McGregor, H. W., Legge, S., Jones, M. E., and Johnson, C. 
+N. (2014). Landscape management of fire and grazing 
+regimes alters the fine-scale habitat utilisation by feral 
+cats. PLoS ONE. doi:10.1371/journal.pone.0109097
+Mella, V . S. A., McArthur, C., Krockenberger, M. B., 
+Frend, R., and Crowther, M. S. (2019). Needing a 
+drink: Rainfall and temperature drive the use of free 
+water by a threatened arboreal folivore. PLoS ONE. 
+doi:10.1371/journal.pone.0216964
+Mendyk, R. W., Weisse, A., and Fullerton, W. (2019). A 
+wake-up call for sleepy lizards: the olfactory-driven 
+response of Tiliqua rugosa (Reptilia: Squamata: Sau-
+ria) to smoke and its implications for fire avoidance 
+behavior. Journal of Ethology . doi:10.1007/s10164-
+019-00628-z
+Metz, L. J., and Farrier, M. H. (1973). Prescribed Burning 
+and Populations of Soil Mesofauna. Environmental 
+Entomology. doi:10.1093/ee/2.3.433
+
+PAGE 19
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+113
+Michetti, M., and Pinar, M. (2019). Forest Fires Across 
+Italian Regions and Implications for Climate Change: 
+A Panel Data Analysis. Environmental and Resource 
+Economics. doi:10.1007/s10640-018-0279-z
+Miller, F. L., Broughton, E., and Land, E. M. (1972). 
+Moose fatality resulting from overextension of range. 
+Journal of wildlife diseases. doi:10.7589/0090-3558-
+8.1.95
+Monamy, V ., and Fox, B. J. (1999). Habitat Selection by 
+Female Rattus lutreolus Drives Asymmetric Competi-
+tion and Coexistence with Pseudomys higginsi. Jour-
+nal of Mammalogy. doi:10.2307/1383223
+Moody, J. A., and Martin, D. A. (2001). Initial hydrologic 
+and geomorphic response following a wildfire in the 
+Colorado front range. Earth Surface Processes and 
+Landforms. doi:10.1002/esp.253
+Morissette, J. L., Cobb, T. P., Brigham, R. M., and James, 
+P. C. (2002). The response of boreal forest songbird 
+communities to fire and post-fire harvesting. Canadi-
+an Journal of Forest Research. doi:10.1139/x02-134
+Morton, D. B. (2007). A hypothetical strategy for the ob-
+jective evaluation of animal well-being and quality of 
+life using a dog model. Animal Welfare.
+Morton, S. R., Stafford Smith, D. M., Dickman, C. R., 
+Dunkerley, D. L., Friedel, M. H., McAllister, R. R. J., 
+Reid, J. R. W., Roshier, D. A., Smith, M. A., Walsh, 
+F. J., Wardle, G. M., Watson, I. W., and Westoby, M. 
+(2011). A fresh framework for the ecology of arid Aus-
+tralia. Journal of Arid Environments . doi:10.1016/j.
+jaridenv.2010.11.001
+Mujahid, A., Akiba, Y ., and Toyomizu, M. (2009). Olive 
+oil-supplemented diet alleviates acute heat stress-in-
+duced mitochondrial ROS production in chicken 
+skeletal muscle. American Journal of Physiology - 
+Regulatory Integrative and Comparative Physiology . 
+doi:10.1152/ajpregu.90974.2008
+Murphy, E. C., and Lehnhausen, W. A. (1998). Density 
+and Foraging Ecology of Woodpeckers Following 
+a Stand-Replacement Fire. The Journal of Wildlife 
+Management. doi:10.2307/3802002
+Muths, E., Bailey, L. L., and Watry, M. K. (2014). An-
+imal reintroductions: An innovative assessment of 
+survival. Biological Conservation. doi:10.1016/j.bio-
+con.2014.02.034
+Nappi, A., Drapeau, P., Giroux, J.-F., and Savard, J.-
+P. L. (2003). Snag use by Foraging Black-Backed 
+Woodpeckers (Picoides Arcticus) in a Recently 
+Burned Eastern Boreal Forest. The Auk. doi:10.1093/
+auk/120.2.505
+Nathan, R., Getz, W. M., Revilla, E., Holyoak, M., Kad-
+mon, R., Saltz, D., and Smouse, P. E. (2008). A 
+movement ecology paradigm for unifying organis-
+mal movement research. Proceedings of the National 
+Academy of Sciences of the United States of America. 
+doi:10.1073/pnas.0800375105
+Neal, J. C., James, D. A., Montague, W. G., and Johnson, 
+J. E. (1993). Effects of weather and helpers on sur-
+vival of nestling red-cockaded woodpeckers. Wilson 
+Bulletin.
+Newcombe, C. P., and Macdonald, D. D. (1991). Effects 
+of Suspended Sediments on Aquatic Ecosystems. 
+North American Journal of Fisheries Management . 
+doi:10.1577/1548-8675(1991)011<0072:eossoa>2.3.
+co;2
+Nimmo, D. G., Avitabile, S., Banks, S. C., Bliege Bird, R., 
+Callister, K., Clarke, M. F., Dickman, C. R., Doherty, 
+T. S., Driscoll, D. A., Greenville, A. C., Haslem, A., 
+Kelly, L. T., Kenny, S. A., Lahoz-Monfort, J. J., Lee, 
+C., Leonard, S., Moore, H., Newsome, T. M., Parr, 
+C. L., Ritchie, E. G., Schneider, K., Turner, J. M., 
+Watson, S., Westbrooke, M., Wouters, M., White, M., 
+and Bennett, A. F. (2019). Animal movements in fire-
+prone landscapes. Biological Reviews  94, 981–998. 
+doi:10.1111/brv.12486
+Nimmo, D. G., Kelly, L. T., Farnsworth, L. M., Watson, 
+S. J., and Bennett, A. F. (2014). Why do some species 
+have geographically varying responses to fire history? 
+Ecography. doi:10.1111/ecog.00684
+Nimmo, D. G., Kelly, L. T., Spence-Bailey, L. M., Wat-
+son, S. J., Taylor, R. S., Clarke, M. F., and Bennett, 
+A. F. (2013). Fire Mosaics and Reptile Conserva -
+tion in a Fire-Prone Region. Conservation Biology . 
+doi:10.1111/j.1523-1739.2012.01958.x
+Nowack, J., Cooper, C. E., and Geiser, F. (2016). Cool 
+echidnas survive the fire. Proceedings of the Roy -
+al Society B: Biological Sciences . doi:10.1098/
+rspb.2016.0382
+NSW Government (2018). NSW Koala Country. Availa-
+ble at: https://koala.nsw.gov.au/nsw-government/ [ac-
+cessed 25 March 2020]
+Obendorf, D. L. (1983). Causes of mortality and morbidi-
+ty of wild koalas, Phascolarctos cinereus (Goldfuss), 
+in Victoria, Australia. Journal of wildlife diseases . 
+doi:10.7589/0090-3558-19.2.123
+Oliver, C. D., Osawa, A., and Camp, A. (1997). Forest 
+dynamics and resulting animal and plant population 
+changes at the stand and landscape levels. Journal of 
+Sustainable Forestry. doi:10.1300/J091v06n03_05
+Orgeas, J., and Andersen, A. N. (2001). Fire and bio -
+diversity: Responses of grass-layer beetles to ex-
+perimental fire regimes in an Australian tropical 
+savanna. Journal of Applied Ecology . doi:10.1046/
+j.1365-2664.2001.00575.x
+
+PAGE 20
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+114
+Palmisiano, J. (2014). Logging in national parks and for-
+ests: A contentious debate. Available at: https://law-
+streetmedia.com/issues/energy-and-environment/
+should-logging-be-encouraged-in-national-parks-
+and-forests-under-hr-1526/ [accessed 2 December 
+2019]
+Panzer, R. (2002). Compatibility of prescribed burning 
+with the conservation of insects in small, isolated 
+prairie reserves. Conservation Biology. doi:10.1046/
+j.1523-1739.2002.01077.x
+Parkins, K., Scott, A., Di Stefano, J., Swan, M., Sitters, 
+H., and York, A. (2019). Habitat use at fire edges: 
+Does animal activity follow temporal patterns of hab-
+itat change? Forest Ecology and Management  451, 
+117343. doi:10.1016/j.foreco.2019.05.013
+Parks, S. A., Miller, C., Abatzoglou, J. T., Holsinger, L. 
+M., Parisien, M. A., and Dobrowski, S. Z. (2016). 
+How will climate change affect wildland fire severity 
+in the western US? Environmental Research Letters. 
+doi:10.1088/1748-9326/11/3/035002
+Parr, C. L., and Andersen, A. N. (2006). Patch mosaic 
+burning for biodiversity conservation: A critique of 
+the pyrodiversity paradigm. Conservation Biology . 
+doi:10.1111/j.1523-1739.2006.00492.x
+Parsons, R., Tassinary, L. G., Ulrich, R. S., Hebl, M. R., 
+and Grossman-Alexander, M. (1998). The view from 
+the road: Implication for the stress recovry and im-
+munization. Journal of Environmental Psychology . 
+doi:10.1006/jevp.1998.0086
+Patterson, G. B. (1984). The effect of burning-off tus-
+sock grassland on the population density of common 
+skinks. New Zealand Journal of Zoology. doi:10.1080
+/03014223.1984.10423757
+Penn, A. M., Sherwin, W. B., Lunney, D., and Banks, P. 
+B. (2003). The effects of a low-intensity fire on small 
+mammals and lizards in a logged, burnt forest. Wild-
+life Research 30, 477–486. doi:10.1071/WR02080
+Peres, C. A. (1999). Ground fires as agents of mortality in 
+a Central Amazonian forest. Journal of Tropical Ecol-
+ogy. doi:10.1017/S0266467499000991
+Peres, C. A., Barlow, J., and Haugaasen, T. (2003). Ver-
+tebrate responses to surface wildfires in a central 
+Amazonian forest. Oryx 37, 97–109. doi:10.1017/
+S0030605303000188
+Phillips, J. (1965). Fire - as Master and Servant: Its In-
+fluence in the Bio-climatic Regions of Trans-Saha-
+ran Africa. Proceedings of the 4th Annual Tall Tim -
+bers Fire Ecology Conference, 66–100. Available at: 
+https://talltimbers.org/wp-content/uploads/2018/09/
+Phillips1965_op.pdf
+Pike, D. A., and Mitchell, J. C. (2013). Burrow-dwelling 
+ecosystem engineers provide thermal refugia through-
+out the landscape. Animal Conservation. doi:10.1111/
+acv.12049
+Prada, M., and Marinho-Filho, J. (2004). Effects of fire 
+on the abundance of xenarthrans in Mato Gros-
+so, Brazil. Austral Ecology . doi:10.1111/j.1442-
+9993.2004.01391.x
+Prasad, V . D., Kumar, P. R., Sreenu, M., and Harikrishna, 
+N. V . V (2016). Management of Burns in Companion 
+Animals : A Report of Three Cases. 5, 21–24.
+Price, M. V . (1978). The Role of Microhabitat in Struc-
+turing Desert Rodent Communities. Ecology. 
+doi:10.2307/1938543
+Price, M. V ., and Waser, N. M. (1984). On the rela -
+tive abundance of species: postfire changes in a 
+coastal sage scrub rodent community. Ecology. 
+doi:10.2307/1938324
+Proppe, D. S., McMillan, N., Congdon, J. V ., and Stur-
+dy, C. B. (2017). Mitigating road impacts on ani -
+mals through learning principles. Animal Cognition. 
+doi:10.1007/s10071-016-0989-y
+Quinn, R. D. (1979). Effect of fire in small mammals 
+Chaparral.  Cal-Neva Wildlife Transactions
+Radford, S. L., McKee, J., Goldingay, R. L., and Kava-
+nagh, R. P. (2006). The protocols for koala research 
+using radio-collars: A review based on its application 
+in a tall coastal forest in New South Wales and the 
+implications for future research projects. Australian 
+Mammalogy. doi:10.1071/AM06027
+Randerson, J. T., Chen, Y ., Van Der Werf, G. R., Rog-
+ers, B. M., and Morton, D. C. (2012). Global burned 
+area and biomass burning emissions from small fires. 
+Journal of Geophysical Research G: Biogeosciences. 
+doi:10.1029/2012JG002128
+Recher, H. F., and Christensen, P. E. (1981). Fire and the 
+evolution of the Australian biota. doi:10.1007/978-
+94-009-8629-9_7
+Rethorst, D. N., Spare, R. K., and Kellenberger, J. L. 
+(2018). Wildfire Response in Range Cattle. Veterinary 
+Clinics of North America - Food Animal Practice 34, 
+281–288. doi:10.1016/j.cvfa.2018.02.004
+Rickard, W. H. (1970). Ground Dwelling Beetles in 
+Burned and Unburned Vegetation. Journal of Range 
+Management. doi:10.2307/3896224
+Rickbeil, G. J. M., Hermosilla, T., Coops, N. C., White, J. 
+C., and Wulder, M. A. (2017). Barren-ground caribou 
+(Rangifer tarandus groenlandicus) behaviour after 
+recent fire events; integrating caribou telemetry data 
+with Landsat fire detection techniques. Global Change 
+Biology 23, 1036–1047. doi:10.1111/gcb.13456
+
+PAGE 21
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+115
+Rinne, J. N. (1996). Management Briefs: Short-Term 
+Effects of Wildfire on Fishes and Aquatic Macroin-
+vertebrates in the Southwestern United States. North 
+American Journal of Fisheries Management. doi:10.1
+577/1548-8675(1996)016<0653:mbsteo>2.3.co;2
+Ritcey, R. W., and Edwards, R. Y . (1963). Grouse Abun-
+dance and June Temperatures in Wells Gray Park, 
+British Columbia. The Journal of Wildlife Manage -
+ment. doi:10.2307/3798474
+Robinson, H. S., Hebblewhite, M., DeCesare, N. J., Whit-
+tington, J., Neufeld, L., Bradley, M., and Musiani, 
+M. (2012). The effect of fire on spatial separation 
+between wolves and caribou. Rangifer, 277–294. 
+doi:10.7557/2.32.2.2276
+Rodrigues, M., Trigo, R. M., Vega-García, C., and Cardil, 
+A. (2020). Identifying large fire weather typologies in 
+the Iberian Peninsula. Agricultural and Forest Mete -
+orology. doi:10.1016/j.agrformet.2019.107789
+Rosenzweig, M. L., Smigel, B., and Kraft, A. (1975). Pat-
+terns of Food, Space and Diversity. doi:10.1007/978-
+94-010-1944-6_12
+Roshier, D. A., Doerr, V . A. J., and Doerr, E. D. (2008). 
+Animal movement in dynamic landscapes: Interaction 
+between behavioural strategies and resource distribu-
+tions. Oecologia. doi:10.1007/s00442-008-0987-0
+Russell, K. R., Lear, D. H. Van, and Guynn, D. C. (1999). 
+Herpetofauna : and Management Implications. Wild-
+life Society Bulletin 27, 374–384.
+Saab, V . A., Russell, R. E., and Dudley, J. G. (2007). Nest 
+Densities of Cavity-Nesting Birds in Relation to Post-
+fire Salvage Logging and Time Since Wildfire. The 
+Condor. doi:10.1093/condor/109.1.97
+Saab, V . A., Russell, R. E., Rotella, J., and Dudley, J. 
+G. (2011). Modeling nest survival of cavity-nesting 
+birds in relation to postfire salvage logging. Journal 
+of Wildlife Management  75, 794–804. doi:10.1002/
+jwmg.111
+Saito, H., Trocki, O., Alexander, J. W., Kopcha, R., Heyd, 
+T., and Joffe, S. N. (1987). The effect of route of nu-
+trient administration on the nutritional state, catabolic 
+hormone secretion, and gut mucosal integrity after 
+burn injury. Journal of Parenteral and Enteral Nutri-
+tion. doi:10.1177/014860718701100101
+Scesny, A. A., and Robbins, L. W. (2006). Detection of fire 
+by eastern red bats (Lasiurus borealis) Arousal from 
+torpor. Bat Research News.
+Schmidt-Nielsen, K. (1964). “Desert animals Physiologi-
+cal problems of heat and water.”
+Schmitz, H., Schmitz, A., Kreiss, E., Gebhardt, M., and 
+Gronenberg, W. (2008). Navigation to forest fires 
+by smoke and infrared reception: The specialized 
+sensory systems of “fire-loving” beetles. In “Nav-
+igation, Journal of the Institute of Navigation.” 
+doi:10.1002/j.2161-4296.2008.tb00424.x
+Scott, N. J. J. (1996). Evolution and Management of the 
+North American Grassland Herpetofauna. In “Ecosys-
+tem Disturbance and Wildlife Conservation in West-
+ern Grasslands.”
+Sekar, N., and Shiller, D. (2020). Engage with animal wel-
+fare in conservation. Science. doi:10.1126/science.
+aba7271
+Shepard, D. B. (2007). Habitat but not body shape af-
+fects predator attack frequency on lizard mod-
+els in the brazilian cerrado. Herpetologica. 
+doi:10.1655/0018-0831(2007)63[193:hbnbsa]2.0.
+co;2
+Sherwin, C. M. (2001). Can invertebrates suffer? Or, how 
+robust is argument-by-analogy? Animal Welfare.
+Shier, D. M. (2016). “Manipulating animal behaviour to 
+ensure reintroduction success” Conservati.
+Silveira, L., Henrique, F., Rodrigues, G., de Almeida 
+Jácomo, A. T., and Filho, J. A. F. D. (1999a). Im-
+pact of wildfires on the megafauna of Emas Nation-
+al Park, central Brazil. Oryx 33, 108. doi:10.1017/
+s0030605300030362
+Silveira, L., Rodrigues, F. H. G., De Jacorno, A. T. A., 
+and Diniz, J. A. F. (1999b). Impact of wildfires on 
+the megafauna of Emas National Park, central Brazil. 
+ORYX. doi:10.1046/j.1365-3008.1999.00039.x
+Simons, L. H. (1991). Rodent Dynamics in Relation to 
+Fire in the Sonoran Desert. Journal of Mammalogy . 
+doi:10.2307/1382135
+Simons, L. H. (1989). Vertebrates Killed by Desert Fire. 
+The Southwestern Naturalist. doi:10.2307/3671821
+Sims, H. P., and Buckner, C. H. (1973). The Effect of 
+Clear Cutting and Burning of Pinus banksiana For-
+ests on the Populations of Small Mammals in South-
+eastern Manitoba. American Midland Naturalist . 
+doi:10.2307/2424288
+Sinsch, U. (1990). Migration and orientation in anuran 
+amphibians. Ethology Ecology and Evolution. doi:10.
+1080/08927014.1990.9525494
+Smith, J. K., and Lyon, L. J. (2000). “Wildlan fire in eco-
+systems:effect of fire on fauna.” (US Department of 
+Agriculture, Forest Service, Rocky Mountain Re-
+search Station.)
+Stawski, C., Körtner, G., Nowack, J., and Geiser, F. 
+(2015a). The importance of mammalian torpor for 
+survival in a post-fire landscape. Biology Letters . 
+doi:10.1098/rsbl.2015.0134
+Stawski, C., Matthews, J. K., Körtner, G., and Geiser, F. 
+(2015b). Physiological and behavioural responses of a 
+
+PAGE 22
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+116
+small heterothermic mammal to fire stimuli. Physiolo-
+gy and Behavior. doi:10.1016/j.physbeh.2015.09.002
+Sunquist, M. E. (1967). Effects of Fire on Raccoon Be-
+havior. Journal of Mammalogy. doi:10.2307/1377606
+Sutherland, E. F., and Dickman, C. R. (1999a). Mecha-
+nisms of recovery after fire by rodents in the Aus-
+tralian environment: A review. Wildlife Research 26, 
+405–419. doi:10.1071/WR97045
+Sutherland, E. F., and Dickman, C. R. (1999b). Mecha-
+nisms of recovery after fire by rodents in the Aus-
+tralian environment: A review. Wildlife Research . 
+doi:10.1071/WR97045
+Taggart, D. A., Schultz, D. J., Corrigan, T. C., Schultz, T. 
+J., Stevens, M., Panther, D., and White, C. R. (2015). 
+Reintroduction methods and a review of mortality 
+in the brush-tailed rock-wallaby, Grampians Nation-
+al Park, Australia. Australian Journal of Zoology . 
+doi:10.1071/ZO15029
+Taylor, G., Canessa, S., Clarke, R. H., Ingwersen, D., 
+Armstrong, D. P., Seddon, P. J., and Ewen, J. G. 
+(2017). Is Reintroduction Biology an Effective Ap-
+plied Science? Trends in Ecology and Evolution . 
+doi:10.1016/j.tree.2017.08.002
+Tetzlaff, S. J., Sperry, J. H., and DeGregorio, B. A. (2019). 
+Effects of antipredator training, environmental en-
+richment, and soft release on wildlife translocations: 
+A review and meta-analysis. Biological Conserva -
+tion. doi:10.1016/j.biocon.2019.05.054
+Thompson, P., and Fox, B. J. (1993). Asymmetric Compe-
+tition in Australian Heathland Rodents: A Reciprocal 
+Removal Experiment Demonstrating the Influence of 
+Size-Class Structure. Oikos. doi:10.2307/3545471
+Turco, M., Jerez, S., Augusto, S., Tarín-Carrasco, P., Rato-
+la, N., Jiménez-Guerrero, P., and Trigo, R. M. (2019). 
+Climate drivers of the 2017 devastating fires in Por-
+tugal. Scientific Reports . doi:10.1038/s41598-019-
+50281-2
+Turner, M. G. (2010). Disturbance and landscape dynam-
+ics in a changing world. Ecology. doi:10.1890/10-
+0097.1
+Ulrich, R. S. (1984). View through a window may influ-
+ence recovery from surgery. Science. doi:10.1126/
+science.6143402
+Vacanti, P. L., and Geluso, K. N. (1985). Recolonization of 
+a burned prairie by meadow voles Microtus pennsyl-
+vanicus. Prairie Naturalist.
+Valentine, L. E., Fisher, R., Wilson, B. A., Sonneman, T., 
+Stock, W. D., Fleming, P. A., and Hobbs, R. J. (2014). 
+Time since fire influences food resources for an en-
+dangered species, Carnaby’s cockatoo, in a fire-prone 
+landscape. Biological Conservation . doi:10.1016/j.
+biocon.2014.04.006
+Valentine, L. E., Schwarzkopf, L., and Johnson, C. N. 
+(2012). Effects of a short fire-return interval on re-
+sources and assemblage structure of birds in a trop-
+ical savanna. Austral Ecology . doi:10.1111/j.1442-
+9993.2011.02244.x
+Vernes, K. (2000). Immediate effects of fire on survivor-
+ship of the northern bettong (Bettongia tropica): An 
+endangered Australian marsupial. Biological Conser-
+vation. doi:10.1016/S0006-3207(00)00086-0
+Villard, P. (1994). Foraging behavior of black-backed and 
+three-toed woodpeckers during spring and summer in 
+a Canadian boreal forest. Canadian Journal of Zoolo-
+gy. doi:10.1139/z94-266
+Vlug, H., and Borden, J. H. (1973). Soil Acari and Col-
+lembola Populations Affected by Logging and Slash 
+Burning in a Coastal British Columbia Coniferous 
+Forest 1. Environmental Entomology . doi:10.1093/
+ee/2.6.1016
+V ogl, R. J. (1973). Effects of Fire on the Plants and Ani-
+mals of a Florida Wetland. American Midland Natu -
+ralist. doi:10.2307/2424038
+Wachob, D. G. (1996). A microclimate analysis of nest-
+site selection by mountain chickadees. Journal of 
+Field Ornithology.
+Weinstein, S. B., Buck, J. C., and Young, H. S. (2018). 
+A landscape of disgust. Science. doi:10.1126/science.
+aas8694
+Westerling, A. L. R. (2016). Increasing western US for-
+est wildfire activity: Sensitivity to changes in the 
+timing of spring. Philosophical Transactions of the 
+Royal Society B: Biological Sciences . doi:10.1098/
+rstb.2015.0178
+Whelan, R. J. (1995). “The Ecology of Fire.” (Cambridge 
+University Press.)
+Whelan, R. J., Rodgerson, L., Dickman, C. R., and Suth-
+erland, E. F. (2002). Critical life processes of plants 
+and animals: developing a process-based understand-
+ing of population changes in fire-prone landscapes. In 
+“Flammable Australia: the fire regimes and biodiver-
+sity of a continent.” (Ed M. A. Bradstock, R. A.; Wil-
+liams, J. E. & Gills.) pp. 94–124. (Cambridge.)
+White, J. I. (2014). Supporting the information manage-
+ment needs of people helping animals in disasters. 
+Proceedings of the International ACM SIGGROUP 
+Conference on Supporting Group Work , 278–280. 
+doi:10.1145/2660398.2660441
+Wiebe, K. L. (2001). Microclimate of Tree Cavity Nests: 
+Is it Important for Reproductive Success in Northern 
+Flickers? The Auk. doi:10.1093/auk/118.2.412
+Williams, N. M., Crone, E. E., Roulston, T. H., Minckley, 
+R. L., Packer, L., and Potts, S. G. (2010). Ecological 
+and life-history traits predict bee species responses 
+
+PAGE 23
+Jara GutiÉrrez et al. – Fires in Nature: A Review of the Challenges for Wild Animals
+117
+to environmental disturbances. Biological Conserva-
+tion. doi:10.1016/j.biocon.2010.03.024
+Wintle, B. A., Legge, S., and Woinarski, J. C. Z. (2020). 
+After the Megafires: What Next for Australian Wild-
+life? Trends in Ecology and Evolution. doi:10.1016/j.
+tree.2020.06.009
+Xing, S., Wang, X., Diao, H., Zhang, M., Zhou, Y ., and 
+Feng, J. (2019). Changes in the cecal microbio -
+ta of laying hens during heat stress is mainly asso-
+ciated with reduced feed intake. Poultry science . 
+doi:10.3382/ps/pez440
+Yell, S. (2010). “Breakfast is now tea, toast and tissues”: Af-
+fect and the media coverage of bushfires. Media Interna-
+tional Australia. doi:10.1177/1329878x1013700113
+Yoder, J. (2004). Playing with fire: Endogenous risk in re-
+source management. American Journal of Agricultur-
+al Economics. doi:10.1111/j.0002-9092.2004.00644.x
+Zamboni, T., Di Martino, S., and Jiménez-Pérez, I. (2017). 
+A review of a multispecies reintroduction to restore a 
+large ecosystem: The Iberá Rewilding Program (Ar-
+gentina). Perspectives in Ecology and Conservation . 
+doi:10.1016/j.pecon.2017.10.001
+Zouaoui, S., Boudreault, C., Drapeau, P., and Bergeron, 
+Y . (2014). Influence of time since fire and micro-hab-
+itat availability on terricolous lichen communities in 
+black spruce (Picea mariana) boreal forests. Forests. 
+doi:10.3390/f5112793

@@ -1,0 +1,1445 @@
+PAGE 1
+Research Article - doi: 10.3832/ifor0936-006 ©iForest – Biogeosciences and Forestry
+Introduction
+Fire danger is generally understood as the  
+likelihood  of a  fire to  occur  ( Chuvieco  & 
+Congalton  1989,  Chuvieco et al. 2009 ). In  
+fire danger assessments the evaluation of the  
+chances of fire ignition is generally done by  
+identifying the contributing factors and their  
+integration  into  an  index  quantifying  the  
+level of danger ( Chuvieco et al. 2003 ,  Se-
+bastián-López  et  al.  2008,  Chuvieco  et  al. 
+2009, Conedera et al. 2011 ). For the proba -
+bility of a fire to occur, two agents are iden -
+tified: natural (predominantly lightning) and  
+anthropogenic causes, which are mainly re -
+lated to human activities. In this context, the  
+probability of human-caused fire ignition is  
+the result of the direct or indirect presence of  
+human activity in the landscape ( Martinez et 
+al. 2009 ). International studies indicate that  
+roughly 90% of forest fires are human-cau -
+sed, whereas only a small percentage of fo -
+rest fires have natural causes,  i.e., lightning 
+(Cardille et al. 2001 ,  Grissino-Mayer et al.  
+2004,  Mollicone  et  al.  2006,  Vacik  et  al. 
+2011). In Europe, human activities account  
+for the majority of fire ignition ( Leone et al. 
+2002,  Catry  et  al.  2009 ,  Martinez  et  al.  
+2009).
+Various  goods  and  services  provided  by  
+forests such as water supply, carbon sinks,  
+recreation and protection  services are most  
+likely to be impacted by wildfires (Wotton et 
+al. 2003, Grissino-Mayer et al. 2004 , Brown 
+et al. 2004 ,  Fried  et al. 2004 ,  Catry et al.  
+2009,  Dumas  et  al.  2008 ,  Weibel  et  al.  
+2009). Especially in  the densely populated  
+European mountain forests the danger of fire  
+ignition is of high significance for the main -
+tenance of its ecosystem goods and services  
+as these ecosystems are very sensitive to en -
+vironmental  changes  (Steininger  &  Weck-
+Hannemann  2002 ,  Lindner  et  al.  2010 ). 
+Additionally  the  economic  value  of  goods 
+and services of the alpine region experiences  
+an increased recognition especially through  
+sporting  activities  and  outdoor  recreation  
+(Hall & Page 2009 ). Furthermore, the alpine  
+region  is  crossed  by important  transit  and  
+trade routes. They aid in promoting tourism  
+in  the  mountainous  regions  across  Europe  
+(Gambino  &  Romano  2003 ,  Nordregio 
+2004, Brauchle 2006), which is leading to an 
+increased  development  of  touristic  infra -
+structure besides the extensive use by nature-
+based tourism ( Gambino  & Romano  2003, 
+Heinrichs et al. 2010). The herewith associa-
+ted  rise  in  pressure  on  forests  through  a  
+growing number of tourists is potentially in -
+creasing danger of fire ignition. The increa -
+sing  significance  of  transportation  for  the  
+supply of living goods as well as for the pro -
+vision  of access  to  services  potentially af -
+fects fire ignition  as well.  Several interna -
+tional studies have shown the significance of  
+the distance of forest fires to roads, settle -
+ments  and  infrastructure,  or  specific  land  
+uses or even its abandonment as predisposi -
+tion  for  fire  ignition  ( Vega-Garcia  et  al.  
+1995,  Goldammer 2003 ,  Kalabokidis  et al.  
+2002,  Catry  et  al.  2009 ,  Martinez  et  al.  
+2009).
+Although human factors are relatively im -
+portant when analyzing forest fire ignition,  
+little attention has been paid to their signifi -
+cance so far. The reason is the relatively high 
+complexity of human behavior, which is of -
+ten  hard  to  measure.  Especially  data  on  
+human  activities  in  forest  areas  are  often  
+lacking (Martell et al. 1987 , Vega-Garcia et 
+al. 1995). Due to the difficulties in obtaining  
+detailed data on human activities, the human  
+factor  for  wildfire  ignition  is  difficult  to  
+model, since behavioral  factors need to be  
+identified, quantified and mapped (see Vasi-
+lakos et al. 2007 ,  Martinez et al. 2009 ). In  
+the  past,  estimations  of  human  activities  
+have  been  based  on  indirect  assessments.  
+© SISEF http://www.sisef.it/iforest/ 315  iForest (2013) 6: 315-325
+(1) Department of Forest and Soil Sciences, Institute of Silviculture, University of Natural  
+Resources and Life Sciences, Peter Jordan Str. 82, A-1190 Vienna (Austria); (2) Department  
+of Landscape, Spatial and Infrastructure Sciences, Institute of Surveying, Remote Sensing  
+and Land Information, University of Natural Resources and Life Sciences, Peter Jordan Str.  
+82, A-1190 Vienna (Austria); (3) Department of Integrative Biology and Biodiversity  
+Research, Institute of Wildlife Biology and Game Management, University of Natural  
+Resources and Life Sciences, Peter Jordan Str. 82, A-1190 Vienna (Austria)
+@@ Natalie Arndt (natalie_arndt@yahoo.com)
+Received: Dec 18, 2012 - Accepted: Apr 14, 2013
+Citation: Arndt N, Vacik H, Koch V, Arpaci A, Gossow H, 2013. Modelling human-caused 
+forest fire ignition for assessing forest fire danger in Austria. iForest 6: 315-325 [online 
+2013-07-16] URL: http://www.sisef.it/iforest/contents/?id=ifor0936-006
+Communicated by: Marco Borghetti
+Modeling human-caused forest fire ignition 
+for assessing forest fire danger in Austria
+Natalie Arndt (1), Harald Vacik (1), Valerie Koch (2), Alexander Arpaci (1), 
+Hartnut Gossow (3)
+Forest fires have not been considered as a significant threat for mountain  
+forests of the European Alpine Space so far. Climate change and its effects on  
+nature, ecology, forest stand structure and composition, global changes ac -
+cording to demands of society and general trends in the provision of ecosystem  
+services are potentially going to have a significant effect on fire ignition in the  
+future. This makes the prediction of forest fire ignition essential for forest  
+managers in order to establish an effective fire prevention system and to allo -
+cate fire fighting resources effectively, especially in alpine landscapes. This  
+paper presents a modeling approach for predicting human-caused forest fire  
+ignition by a range of socio-economic factors associated with an increasing  
+forest fire danger in Austria. The relationship between touristic activities, in -
+frastructure, agriculture and forestry and the spatial occurrence of forest fires  
+have been studied over a 17-year period between 1993 and 2009 by means of  
+logistic regression. Some 59 independent socio-economic variables have been  
+analyzed with different models and validated with heterogeneous subsets of  
+forest fire records. The variables included in the final model indicate that rail -
+road,  forest  road  and  hiking  trail  density  together  with  agricultural  and  
+forestry developments may contribute significantly to fire danger. The final  
+model explains 60.5% of the causes of the fire events in the validation set and  
+allows a solid prediction. Maps showing the fire danger classification allow  
+identifying the most vulnerable forest areas in Austria and are used to predict  
+the fire danger classes on municipality level.
+Keywords:  Forest  Fire,  European Alpine  Space,  Austria,  Infrastructure,  So -
+cio-economic Factors, Geographic Information System, Logistic Regression
+
+PAGE 2
+Arndt N et al. - iForest 6: 315-325 
+Underlying data for studies on the influence  
+of  socio-economic  variables  on  forest  fire  
+ignition have been derived from census data  
+or surveys ( Donoghue & Main 1985 ,  Mar-
+tinez et al. 2009 ). However, the influence of  
+human factors on forest fire danger is closely 
+linked to the characteristics of the region. A  
+number of studies analyzing the influence of  
+human factors on forest fires have been con -
+ducted  and  decision  support  systems  have  
+been established in southern Europe ( Kala-
+bokidis  et al. 2002 ,  Goldammer 2003 ,  Se-
+bastián-López  et  al.  2008,  Martinez  et  al. 
+2009). However, a detailed analysis of the  
+role of human factors on forest fire danger in 
+the European Alps is rather rudimentary and  
+has primarily been conducted together with  
+the  analysis  of  the  influence  of  climate  
+change on forest fire occurrence ( Weibel et 
+al. 2009, Wastl et al. 2012 ) or the selective  
+burning of forest vegetation  ( Pezzati et al.  
+2009).
+Austria is a predominantly Alpine country  
+with a highly diverse landscape ranging from 
+the plains in the east to the Alps in the west  
+and a forest cover of 47.2%. As the country  
+is a popular tourist destination and is crossed  
+by important transit routes, the influence of  
+human  factors  on  fire  ignition  probability  
+cannot be disregarded. Compared to current  
+research in other - especially southern Euro -
+pean countries - forest fires have not been a  
+serious concern in Austria so far. Forest fire  
+records,  which  have  been  collected  for  
+Austria, indicate that the majority of forest  
+fires  are  human-caused,  whereas  lightning  
+accounts for 15% of the forest fires ( Müller 
+et al. 2013). Considering the vulnerability of  
+the whole Alpine Region to climate change  
+and land abandonment (Beniston et al. 1997, 
+Theurillat  &  Guisan  2001,  Schumacher  & 
+Bugmann  2006,  Gehrig-Fasel  et  al.  2007 , 
+Wastl et al. 2012 ) we regard the investiga -
+tion  of  the  human-caused  fire  ignition  as  
+substantial for a better understanding of fire  
+danger  for  Austrian  forests  and  the  goods 
+and services they provide.
+The objective of this study is to present a  
+fire danger model to predict the spatial oc -
+currence of human-caused fire ignitions  in  
+Austria. Records of human-caused forest fi -
+res for the period from 1993 to 2009 have  
+been extracted from the AFFRI wildfire da -
+tabase and have been used together with po -
+tentially explanatory socio-economic  varia -
+bles in order to develop different logistic re -
+gression models and describe the influence  
+of socio-economic factors on forest fire igni -
+tion. A model has been chosen, which repre -
+sents  the  influence  of  the  socio-economic  
+factors on forest fire ignition probability the  
+best. Based on the validation of the model’s  
+performance, maps of potential fire ignition  
+in Austria related to socio-economic factors  
+have been produced.
+Material and methods
+Study area and fire database
+Austria is a central European country cove-
+ring  83 855  km2 and  a  population  size  of  
+8.47 million people. Austria is a largely alpi -
+ne country (68%) with a temperate to alpine  
+climate.  Average  temperatures  range  from  
+-10 °C in winter to 20 °C in summer. Austria 
+has  a  total  number  of 2357  municipalities  
+with  areas  ranging  from  32.4  km2 for  the  
+smallest municipality to  466.9  km 2 for the  
+largest municipality. Some 47.6% of Austria  
+is  covered  with  forests,  out  of  which  the  
+main part is coniferous forest (AFI 2011).
+Underlying data on forest fires have been  
+obtained from the wildfire database, which  
+has  been  created  within  the  frame  of  the  
+Austrian Forest Fire Research Initiative (AF-
+FRI) currently taking place at the University  
+of  Natural  Resources  and  Life  Sciences,  
+Vienna. Wildfire records have been obtained  
+from municipalities, fire brigades, the OEBB 
+(Austrian Railway Company) as well as the  
+Federal  Ministry  of  Agriculture  and  Fore -
+stry,  Environment  and  Water  Management 
+(BMLFUW). The database includes informa-
+tion for each fire record on geographical co -
+ordinates and other characteristics ( e.g., mu-
+nicipality, cause of fire, time of day of start  
+and end of fire, time of detection, ignition  
+type,  vegetation  type  and  tree  species  af -
+fected) for the period 1993-2009 ( Vacik et  
+al.  2011,  Eastaugh  &  Vacik  2012).  Given 
+that this study analyzes the role of socio-eco-
+nomic  factors  for  forest  fire  ignition,  only 
+955  human-caused  forest  fires  recorded  in 
+the database and matching the selected crite -
+ria (e.g., full record of information available,  
+size of the burned area) have been used for  
+this  study,  totaling  to  1660  fire  records.  
+Lightning caused fires have been analyzed in 
+a separate study and are not part of this data -
+set (Müller et al. 2013 ). Fires in agricultural  
+areas have not been considered.
+Parameter and model selection
+Different methods ranging from logistic re -
+gression to artificial neural networks to clas -
+sification  and  regression  tree  algorithms  
+have  been  used  to  model  wildfire  occur -
+rence. Logistic regression is one of the most  
+frequently  used  methods  ( Andrews  et  al.  
+2003,  Vasconcelos et al. 2001 ,  Chuvieco et 
+al. 2003,  Amatulli et al. 2007 ,  Brosofske et 
+al. 2007, Zhang et al. 2010). It has been used 
+to develop regional models with a large spa -
+tial extent (Chuvieco et al. 1999, Martinez et 
+al. 2009 ) as well as for developing models  
+on  a local scale ( Vega-Garcia et al. 1995 , 
+Vasconcelos et al. 2001). In other studies lo -
+gistic  regression  has been  used to  develop  
+temporal  models  that  are  used  to  predict  
+daily human-caused fire occurrence ( Martell 
+et al. 1987 ,  Loftsgaarden & Andrews 1992 , 
+Vega-Garcia et al. 1995).
+Model events with binary or dichotomous  
+variables - such as the presence or absence  
+of fire ignition - are best described by means  
+of logistic regression. Forward stepwise lo -
+gistic  regression  has  been  chosen  for  this  
+study, since the interest was on identifying  
+the  significance  of  a  group  of  predicting  
+variables affecting fire occurrence as well as  
+to model ignition probability. Moreover, lo -
+gistic regression proved to be relatively fle -
+xible, since it accepts a combination of con -
+tinuous,  categorical  and  non-normally  dis -
+tributed variables (Bellgardt 1997).
+In relation to the human-caused forest fires  
+recorded in our database, five different sets  
+of  955  points  randomly  distributed  over  
+Austria have been generated with ArcGIS™  
+and were classified as “no fire events”. The -
+se randomly generated  sets  of points  have  
+been joined with the 955 human-caused “fire 
+events” from the forest fire dataset in order  
+to be able to quantify the predictive ability of 
+the  socio-economic  variables  chosen.  Igni-
+tion and non-ignition points were coded in a  
+binary format (0: no fire; 1: fire) represen -
+ting the dependent variable fire ignition. In  
+order to be able to test the final model, 100  
+fire ignition points and 100 no-fire ignition  
+points were selected randomly from each of  
+the five datasets for validation, resulting in  
+five sets with 855 fire and 855 no-fire events  
+for calculating the model.
+The  analysis  is  based  on  the  following  
+function (eqn. 1):
+where  P is the probability of occurrence of  
+an event and  z is the linear function of the  
+independent variables (eqn. 2):
+The presence or absence of forest fire igni -
+tions has been chosen as the dependent va -
+riable for the analysis.
+Previous studies have identified a number  
+of human factors to be significant for wild -
+fire ignition ( Tab. 1  -  Cardille et al. 2001 , 
+Leone et al. 2003, Chuvieco et al. 2003 , Ve-
+ga-Garcia et al. 1995 , Brosofske et al. 2007 , 
+Amatulli  et  al.  2007 ,  Vilar  et  al.  2010 ). 
+Based on the background  of these studies,  
+some  59  socio-economic  parameters  that  
+were assumed to be characteristic for Aus -
+trian conditions were chosen as independent  
+variables to model the potential influence on  
+the fire danger. These socio-economic varia -
+bles were clustered in five groups with simi -
+lar characteristics on municipal level:
+• Factors related to the human presence in  
+urban,  agricultural  and  forested  areas  in  
+general ( e.g., number  of inhabitants,  size  
+of urban area);
+• Factors related  to  touristic infrastructures  
+and their activities ( e.g., number of over -
+iForest (2013) 6: 315-325 316  © SISEF http://www.sisef.it/iforest/ 
+P(z)= 1
+(1+e−z
+)
+z=b0+b1 x1+b2 x2+…+bn x
+
+PAGE 3
+Modeling forest fire danger in Austria 
+night stays, number of huts, cable cars and  
+hiking trails);
+• Factors  related  to  agricultural  production 
+(e.g., agricultural area, intensity of agricul -
+tural operations);
+• Factors related to forest management ( e.g., 
+density of forest area, forest roads, forestry  
+operations, storm blow-down salvage har -
+vesting);
+• Factors related to infrastructure and their  
+density (e.g., roads, railroads).
+Tab.  1 shows  all  independent  socio-eco -
+nomic variables chosen for the study.
+Information  on  socio-economic  factors  in 
+this study has been derived from the Statistik 
+Austria  census  database  on  municipality  
+level as well as from the Corine Landcover  
+classification  (Environmental  Agency  Aus-
+tria 2012 ). Besides the above socio-econo -
+mic data, additional variables have been ge -
+nerated  in  order  to  obtain  socio-economic  
+factors  potentially  relevant  for  forest  fire  
+ignition.
+The  logistic  regression  analysis  was  per-
+formed using SPSS® software, version 15.0.
+Model construction
+In  order  to  eliminate  multicollinearity  
+between the variables selected for this study,  
+the  Pearson  correlation  analysis  has  been  
+© SISEF http://www.sisef.it/iforest/ 317  iForest (2013) 6: 315-325
+Tab. 1 - Potential human factors influencing forest fire ignition.
+Modules Abbreviation Built-in module Measure Data source
+- TOTAREA Total area of municipality km2 Corine land cover
+Urban 
+module
+INHAB Inhabitants of municipality Numerical Statistik Austria
+RESAREA Residential area km2 Corine land cover
+RESAREA/TOTAREA Residential area / total municipal area km2/km2 -
+INHAB/TOTAREA Inhabitants / total area N/km2 -
+INHAB/RESAREA Inhabitants / residential area N/km2 -
+INHAB/AGRAREA Inhabitants / agricultural area N/km2 -
+INHAB/FORAREA Inhabitants / forest area N/km2 -
+Touristic 
+module
+OVERN Overnights Numerical Statistik Austria
+OVERN/INHAB Overnights / inhabitants Numerical -
+CABLE Cable cars Numerical http://www.seilbahnen.at
+HUT Huts Numerical http://www.huetten.at 
+HIKETRAIL Hiking trails km Corine land cover
+CABLE/TOTAREA Cable cars / total municipal area N/km2 -
+CABLE/RESAREA Cable cars / residential area N/km2 -
+CABLE/AGRAREA Cable cars / agricultural area N/km2 -
+CABLE/FORAREA Cable cars / forest area N/km2 -
+HUT/TOTAREA Huts / total municipal area N/km2 -
+HUT/RESAREA Huts / residential area N/km2 -
+HUT/AGRAREA Huts / agricultural area N/km2 -
+HUT/FORAREA Huts / forested area N/km2 -
+HIKETRAIL/TOTAREA Hiking trails / total municipal area km/km2 -
+HIKETRAIL/RESAREA Hiking trails / residential area km/km2 -
+HIKETRAIL/AGRAREA Hiking trails / agricultural area km/km2 -
+HIKETRAIL/FORAREA Hiking trails / forested area km/km2 -
+Agricultural 
+module
+AGRAREA Agricultural area km2 Corine land cover
+AGRAREA/TOTAREA Agricultural area / total municipal area km2/km2 -
+AGROP Agricultural operations Numerical Statistik Austria
+AGRPAST Agricultural holding with pasture land Numerical Statistik Austria
+AGR/TOTAREA Agricultural operations / total municipal area N/km2 -
+AGR/RESAREA Agricultural operations / residential area N/km2 -
+AGR/AGRAREA Agricultural operations / agricultural area N/km2 -
+AGR/FORAREA Agricultural operations / forest area N/km2 -
+AGRPAST/TOTAREA Agricultural holding with pasture land / total municipal area N/km2 -
+AGRPAST/REAREA Agricultural holding with pasture land / residential area N/km2 -
+AGRPAST/AGRAREA Agricultural holding with pasture land / agricultural area N/km2 -
+AGRPAST/FORAREA Agricultural holding with pasture land / forest area N/km2 -
+Forest 
+module
+FORAREA Forest area - -
+FORAREA/TOTAREA Forest area / total municipal area km2 Corine land cover
+FORROAD Forest roads km Corine land cover
+FORHOL Forestry operations Numerical Statistik Austria
+FORROAD/TOTAREA Forest roads / total municipal area km/km2 -
+FORROAD/RESAREA Forest roads / residential area km/km2 -
+FORROAD/AGRAREA Forest roads / agricultural area km/km2 -
+FORROAD/FORAREA Forest roads / forest area km/km2 -
+FORHOL/TOTAREA Forestry operations / total area of municipality N/km2 -
+FORHOLRESAREA Forestry operations / residential area N/km2 -
+FORHOL/AGRAREA Forestry operations / agricultural area N/km2 -
+FORHOL/FORAREA Forestry operations / forest area N/km2 -
+Infrastructural 
+module
+ROAD Roads km Corine land cover
+RAIL Railroads km Corine land cover
+ROAD/TOTAREA Roads / total municipal area km/km2 -
+ROAD/RESAREA Roads / residential area km/km2 -
+ROAD/AGRAREA Roads / agricultural area km/km2 -
+ROAD/FORAREA Roads / forest area km/km2 -
+RAIL/TOTAREA Railroads / total municipal area km/km2 -
+RAIL/RESAREA Railroads / residential area km/km2 -
+RAIL/AGRAREA Railroads / agricultural area km/km2 -
+RAIL/FORAREA Railroads / forest area km/km2 -
+
+PAGE 4
+Arndt N et al. - iForest 6: 315-325 
+conducted  for  all  five  datasets  indepen -
+dently.  All variables with  a correlation  hi -
+gher than 0.5 were not further considered for  
+the model building procedure. Five different  
+models  have  been  calculated  with  the  re -
+maining variables using the different datasets 
+in  order to  choose the best fit to Austrian  
+conditions.
+Various  methods  were  tested  examining  
+the level of significance through which the  
+variables were introduced and removed from  
+the equation. Variables were introduced into  
+the  model  according  to  a  significance  of  
+p < 0.05  (Wald  significance)  and  removed  
+from the model with a p  > 0.1 (Wald signi -
+ficance - see Martinez et al. 2009 ). The Na -
+gelkerke’s  R2 test  and  the  likelihood  ratio  
+-2LL value was used to estimate goodness-of 
+-fit ( Menard 2008 ). 2 x 2 classification ta -
+bles  of  observed  and  predicted  responses  
+were calculated in order to test the predictive 
+capability of the  models.  To  this  purpose,  
+municipalities were categorized with a pro -
+bability threshold of 0.5. Municipalities with  
+values lower than 0.5 were classified as be -
+ing of low ignition danger and would there -
+fore assigned as “no fire event” (0), whereas  
+municipalities with a value higher than 0.5  
+would be classified as having a high danger  
+of ignition and be assigned 1 as a predictive  
+value for a recorded “fire event”.
+In order to be able to evaluate the influence 
+of individual variables in the model, a num -
+ber of criteria were computed and analyzed:
+• the  Nagelkerke’s  R2 and  the  Log-Likeli -
+hood ratio;
+• the exponential of the logit coefficient B  
+where Exp(B)  < 1 corresponds  to an in -
+creased  value  of  the  variable  consistent  
+with decreasing odds of a fire occurrence,  
+whereas values of Exp(B) > 1 correspond  
+to increasing odds of a fire occurrence;
+• the step at which the variable was intro -
+duced in the model,
+• the change in likelihood in case of the re -
+moval of the variable.
+Even though  other  levels and approaches  
+for assessing probability could be used (see  
+Castedo-Dorado  et  al.  2011 )  the  cut-off  
+point 0.5 - the midpoint of the logistic func -
+tion - was chosen for this study, since it is  
+the one most extensively used in other com -
+parable  studies  (Jamnick  &  Beckett  1988, 
+Vasconcelos  et  al.  2001 ,  Martinez  et  al.  
+2009).
+The outputs of the logistic regression mo -
+del were compared to the spatial patterns of  
+the original forest fire database. The binary  
+classification  of  municipalities  in  high  or  
+low  danger  was  compared  with  the  actual 
+values of the original dataset, assessing over- 
+and under-estimation using 0.5 as classifica -
+tion  criterion.  Underestimations  would  be  
+the municipalities with  predicted  low igni -
+tion  danger  though  actually having  a high  
+forest  fire  danger,  while  overestimation  
+would be the opposite.
+Results
+The best logistic model to analyze the in -
+fluence of socio-economic factors on forest  
+fire ignition has been selected out of the five  
+models computed (Tab. 2 and Tab. 3) in or -
+der to identify the best combination of ex -
+plaining variables. Railroad density (RAIL/  
+TOTAREA), density of forest roads (FOR -
+iForest (2013) 6: 315-325 318  © SISEF http://www.sisef.it/iforest/ 
+Tab. 3 - Variables included in the five models.
+Model 1 Model 2 Model 3 Model 4 Model 5
+HIKETRAIL/
+TOTAREA
+HIKETRAIL/
+TOTAREA
+HIKETRAIL/
+TOTAREA
+HIKETRAIL/
+TOTAREA
+HIKETRAIL/
+TOTAREA
+- - HIKETRAIL/
+FOR
+- HIKETRAIL/
+FOR
+- AGRPAST - - -
+AGR/TOTAREA - - - -
+- FORHOL - FORHOL -
+- - FORHOL/
+TOTAREA
+- -
+FORROAD/
+TOTAREA
+FORROAD/
+TOTAREA
+FORROAD/
+TOTAREA
+FORROAD/
+TOTAREA
+FORROAD/
+TOTAREA
+ROAD/
+TOTAREA
+- - - -
+RAIL/TOTAREA RAIL/TOTAREA RAIL/TOTAREA RAIL/TOTAREA RAIL/TOTAREA
+Tab. 4 - Variables included in the final model. (SE): Standard error; (df): degrees of free -
+dom;  (CI): Confidence Intervals.
+Variable
+Coefficient
+B
+SE
+Wald
+df
+Prob
+Exp(B)
+95.0% CI
+EXP(B)
+Change in -2LL
+ if  removed
+Step for input
+ into model
+Lower
+Upper
+HIKETRAIL/
+TOTAREA
+0.479 0.109 19.345 1 0.000 1.615 1.304 1.999 24.381 1
+AGRPAST 0.028 0.007 18.798 1 0.000 1.029 1.016 1.042 47.875 1
+FORHOL 0.008 0.003 10.006 1 0.002 1.008 1.003 1.013 8.514 2
+FORROAD/
+TOTAREA
+0.247 0.051 23.273 1 0.000 1.280 1.158 1.416 36.624 1
+RAIL/
+TOTAREA
+3.033 0.371 66.820 1 0.000 20.758 10.031 42.955 79.014 1
+CONSTANT -1.249 0.121 106.243 1 0.000 0.287 - - - -
+Tab. 2 - Model outcomes for choice of best model fit. (df): degrees of freedom.
+Omnibus Test 
+of Model 
+coefficients
+Parameters Model 1 Model 2 Model 3 Model 4 Model 5
+Step χ2 9.471 79.014 71.923 91.032 106.471
+df 1 1 1 1 1
+Prob 0.002 0.000 0.000 0.000 0.000
+Block χ2 69.784 79.014 71.923 91.032 106.471
+df 2 1 1 1 1
+Prob 0.000 0.000 0.000 0.000 0.000
+Model χ2 190.558 208.863 264.397 238.587 210.025
+df 5 6 5 4 4
+Prob 0.000 0.000 0.000 0.000 0.000
+Model Summary -2 Log-Likelihood 2177.233 2158.925 2102.002 2131.976 2160.539
+Cox & Snell R2 ´0.106 0.115 0.143 0.130 0.116
+Nagelkerke’s R2 0.141 0.153 0.191 0.174 0.154
+Hosmer- 
+Lemeshow-Test
+χ2 16.365 21.009 16.541 8.243 22.069
+df 8 8 8 8 8
+Prob 0.037 0.007 0.035 0.410 0.005
+
+PAGE 5
+Modeling forest fire danger in Austria 
+ROAD/TOTAREA) and hiking trail density  
+(HIKETRAIL/TOTAREA) were found to be  
+significant in all five models. Model 2 has  
+been chosen as the best model to represent  
+the influence of socio-economic factors on  
+forest  fire  ignition.  In  selecting  the  final  
+model a combined evaluation of the statisti -
+cal parameters for significance ( Tab. 2), the 
+socio-economic factors in the model (Tab. 3) 
+and  the  percentage  of  predicting  observed  
+fire ignitions in the validation set was done.  
+The selected  model  includes  five variables  
+(p<0.05,  Tab. 4), predicting forest fire igni -
+tion with an accuracy of 54.2% (Tab. 5a) and 
+a  quite  acceptable  goodness-of-fit,  with  a  
+Nagelkerke´s R2 of 0.153 and a -2 Log-Like -
+lihood of 2158.925 ( Tab. 2 ). The variables  
+included in the selected model indicate that  
+touristic infrastructures (i.e., hiking trail den-
+sity, agricultural and forestry developments,  
+forest road density and railroad density) are  
+the principal socio-economic and infrastruc -
+tural factors explaining forest fire danger in  
+Austria. The 2 x 2 classification table ( Tab.
+5a) computed for the model building set with 
+1710  cases  of  “fire”  and  “no  fire”  events 
+reached a total percentage of correctly pre -
+dicted cases of 63.4. The validation dataset  
+(Tab. 5b) showed a slightly lower total value  
+of 60.5 %. Since the original database is re -
+latively small (955 cases) and forest fires are  
+spread over fairly large areas and long time  
+periods, the results can be considered satis -
+factory. For both data sets reported in Tab. 5 
+better performances were obtained in identi -
+fying municipalities with  lower fire danger  
+(72.8 % for the model building dataset and  
+63.0  %  for  the  validation  dataset).  Fig.  1 
+shows the probabilities distribution of the lo-
+gistic  model  for  the  “fire”  and  “no  fire”  
+events from the model data set ( Fig. 1a) and 
+the validation data set (Fig. 1b). In the model 
+data set, a left-sided distribution was obtai -
+ned,  whereas in  the  validation  data set no  
+clear tendency was observed.
+A sensitivity analysis has been performed  
+in order to identify the influence of the signi-
+ficant  variables  included  in  the  model.  In  
+Tab. 6 the six variables included in the mo -
+del are ranked by a global score, obtained by  
+adding the ranks of the five evaluation crite -
+ria: the lower is the ranking the more impor -
+tant is the variable in the model. The rail -
+road,  hiking  trail  and  forest  road  density  
+were found to be the most relevant factors  
+independently from the  chosen  variable  of  
+significance.  The  ranking  presented  only  
+slight  variations  with  the  different  criteria, 
+similar trends were observed for the criteria  
+(i), (ii), (iii) and (v).
+The variables found to be highly relevant  
+for forest fire danger were used to compare  
+the model prediction power in relation to the  
+real  fire observations  ( Tab.  7).  In  general, 
+model outputs underestimated the number of  
+forest fires with a low density of variables,  
+whereas the number of likely fire ignitions  
+was overestimated by the model for all va -
+riables at high densities, respectively. Fig. 2 
+shows the comparison between the numbers  
+of fire ignitions based on the model predic -
+tion in relation to the real fire observations  
+for  the  railroad  density (RAIL/TOTAL) in  
+the respective categories. At very low rail -
+road densities (0.001 - 0.1 km/km 2) the mo -
+del has an underestimation for the fire occur-
+rence of 48.3 % and at higher railroad den -
+sities (> 0.2  km/km 2) an overestimation  of  
+more  than  25%.  Fig.  3 indicates  that  the  
+model underestimates fire ignitions for mu -
+nicipalities  with  the  category  “no  forest  
+roads” (FORROAD/TOTAREA) quite  high  
+(54.5%), whereas the predicted fire ignitions  
+for municipalities with  a higher  density of  
+© SISEF http://www.sisef.it/iforest/ 319  iForest (2013) 6: 315-325
+Tab. 5 - Classification table for model building dataset and validation dataset. Percentage of  
+correctly classified: p=0.5.
+Dataset Class Predicted % CorrectNo fire Fire
+(a) Model building data Observed No fire 622 233 72.7
+Fire 392 463 54.2
+Total percentage 63.4
+(b) Validation dataset Observed No fire 63 37 63
+Fire 42 57 58
+Total percentage 60.5
+Fig. 1 - Distribution of probabilities of the logistic model for the “fire” and “no fire” events  
+for the validation data set.
+Tab. 6 - Ranking of influence for the input variables according to the sensitivity analysis.
+Variables Wald 
+(i)
+Exp(B) 
+(ii)
+Step 
+(iii)
+Change in
+-2LL (iv)
+Regression
+Coefficient
+B  (v)
+Global
+Score
+(Sum)
+RAIL/TOTAREA 1 1 1 5 1 8
+HIKETRAIL/TOTAREA 3 2 1 2 2 9
+FORROAD/TOTAREA 2 3 1 3 3 11
+AGRPAST 4 4 1 4 4 16
+Tab. 7 - Evaluation of the fire danger map classification with the validation dataset.
+Fire danger classes Forest area
+(%)
+Ignitions observed 
+(%)
+Average density 
+(fires/100 km2)
+Very low (0-0.19) 24.6 9 1.16
+Low (0.2-0.50) 31.6 12 1.2
+Medium (0.51-0.65) 27.6 13.5 1.54
+High (0.66-0.87) 13.2 12 2.85
+Very high (0.88-1.0) 3 3.5 3.71
+
+
+PAGE 6
+Arndt N et al. - iForest 6: 315-325 
+iForest (2013) 6: 315-325 320  © SISEF http://www.sisef.it/iforest/ 
+Fig. 2 - Fire ignition in relation to rail -
+road  density  for  original  and  model  
+dataset (RAIL/TOTAREA).
+Fig. 3 - Fire ignitions in relation to forest  
+road density for original and model data -
+set (FORROAD/TOTAREA).
+Fig. 4  - Fire ignitions in relation to for  
+hiking trail density (HIKETRAIL/AREA) 
+for original and model dataset.
+
+
+PAGE 7
+Modeling forest fire danger in Austria 
+© SISEF http://www.sisef.it/iforest/ 321  iForest (2013) 6: 315-325
+Fig. 5 - Model output on municipality level.
+Fig. 6 - Fire ignition risk map for the forest area of Austria on district level.
+
+
+PAGE 8
+Arndt N et al. - iForest 6: 315-325 
+forest roads (> 1 km/km2) was comparable to 
+the observed number of forest fires. As re -
+gards to the comparison of predicted vs. ob-
+served fire ignitions for the hiking trail den -
+sities (HIKETRAIL/TOTAREA), it becomes 
+evident  that  the  model  underestimates  the  
+fire occurrence at low hiking trail densities  
+and  shows  reasonable  results  for  higher  
+densities (> 1 km/km 2). Only at high densi -
+ties (> 2 km/km 2) the model overestimates  
+fire ignitions (> 40%), though the number of  
+records is small in this category (Fig. 4).
+All tested models confirm the high signifi -
+cance of socio-economic variables related to  
+infrastructure for forest fire ignition in Aus -
+tria.  In  partucilar,  the  variables  railroad  
+density (RAIL/TOTAREA), density of forest 
+roads  (FORROAD/TOTAREA)  and  hiking 
+trail density (HIKETRAIL/TOTAREA) were 
+found to be significant in all models.
+Two maps have been generated with the se-
+lected  model  with  the  aim  of  illustrating  
+model  predictions  for  all  municipalities  
+which  data  were  included  in  this  analysis. 
+Fig. 5 displays the spatial distribution of the  
+forest fire danger at the level of municipali -
+ties, and Fig. 6 reports the model prediction  
+for the forest areas only. The estimated pro -
+babilities  have  been  classified  in  five  fire  
+danger classes. In Tab. 5 it can be observed  
+that the majority of the forest areas is classi -
+fied in the very low to medium fire danger  
+classes (83.8 %); only 16.2 % of the forest  
+area comprises a high to very high forest fire  
+danger. Some 15.5% of all fire ignitions ob -
+served are located in the very high and high  
+danger  classes,  and  the  very low  and  low  
+danger class comprises 21% of all ignitions  
+observed.  The average ignition  density per  
+100  km2 of forest  area  is  in  the  high  fire  
+danger class 2.85 and for the very high fire  
+danger 3.71, respectively.
+Discussion
+The logistic regression carried out in this  
+study provides a model based on a set of so -
+cio-economic  factors  potentially  affecting  
+forest fire ignition, in addition to the driving  
+factors of climate and fuel. The logistic mo -
+del obtained correctly classified 63.1  % of  
+the calibration and 59.5 % of the validation  
+dataset by using the midpoint (0.5) of the lo -
+gistic function, which is customarily used in  
+most  analyses  (Martinez  et  al.  2009).  De-
+pending  on  the  fire management  strategies  
+and objectives, a different level of probabi -
+lity  could  be  used  to  estimate  forest  fire  
+danger. Comparing the medium to high fire  
+danger  areas of the model output  with  the  
+known fire “hot spot” areas in Austria from a 
+previous study (districts of Neunkirchen in  
+Lower  Austria, in  Kapfenberg in  Styria  as  
+well  as  the  region  around  Villach  and  
+Arnoldstein/Spittal in Carinthia - Vacik et al. 
+2011),  we  found  that  the  midpoint  of  the 
+Pearson correlation represents the actual fire  
+danger  problem in Austria quite  well. The  
+average density of the observed fire ignitions 
+of the validation data (3.7 fires/100 km 2) in 
+the highest fire danger class is higher than  
+the overall Austrian average.
+The dominance of infrastructural variables  
+implies that an easier access to forest areas  
+through  infrastructures  may lead  to  an  in -
+creased fire ignition risk in the future. The  
+influence of agriculture, forestry and tourism  
+on fire ignition seems to be enhanced by the  
+easier  accessibility  of  areas  through  infra -
+structure.
+The railroad density per total area of a mu -
+nicipality  (RAIL/TOTAREA)  is  related  to  
+development processes and its accessibility.  
+Railways  have  often  been  related  to  acci -
+dental  or  negligence  fires  due  to  braking  
+trains, broken brake shoes as well as repair  
+works  along railway tracks ( Johnson  et al.  
+1990, Cardille et al. 2001, Arndt 2007, Mar-
+tinez et al. 2009 ). On one hand,  Cardille et 
+al. (2001) assume that railroad density is in -
+fluencing  the  ignition  potential  and  fre -
+quency. On the other hand, the authors argue  
+that railroad density together with road den -
+sity would strongly affect the probability of a 
+fire being reported in an area by increasing  
+both residents and visitors.
+The density of hiking trails per total area of 
+municipality (HIKETREAIL/TOTAREA) in-
+dicates easy accessibility of forest areas both  
+for tourists and local inhabitants. According  
+to  Romero-Calcerrada et al. (2010)  walking 
+around recreational or camping areas is re -
+lated to an increased susceptibility of forest  
+areas to fire: the short the walking distance  
+around a densely populated area the higher  
+the likelihood  of fire for a relatively small  
+area. According to other studies ( Vega-Gar-
+cia et al. 1995 ,  Cardille et al. 2001 ), negli-
+gence and other destructive activities such as  
+arson may well be connected to this variable.
+The density of forest roads per municipa -
+lity (FORROAD/TOTAREA) is linked to the 
+accessibility to forestry machinery and to en-
+hanced human activity in forests such as tim-
+ber  harvesting  and  slash  burning.  Uhl  & 
+Buschbacher  (1985)  and  Fredericksen  &  
+Putz (2003) identified these activities as po -
+tential causes for fire ignition and associated  
+them  with  an  increased  susceptibility  of  
+forests to fire. Also Gossow & Frank (2003)  
+argue  that  salvage  harvesting  carried  out  
+when  wind  blows  can  lead  to  subsequent  
+burns as a consequence of inappropriate en -
+gineering  techniques.  Another  problem  in  
+this context is the simultaneous use of forest  
+roads for timber harvest and tourist activities  
+(such as hiking or mountain biking), which  
+leads to a higher ignition probability.
+In this study variables connected to infra -
+structure - especially railroads, hiking trails  
+and forest roads - seem to be of great signi -
+ficance  for  forest  fire  ignition  in  Austria.  
+Contrary to other studies such as Vega-Gar-
+cia et al. (1995), Cardille et al. (2001) or Se-
+bastián-López et al. (2008)  road density was  
+the only infrastructural predictor not signi -
+ficant in the model.
+Unlike other regions such as Mediterranean 
+countries,  agricultural  variables  were  not  
+found  to  play a major role for  ignition  of  
+forest fires in Austria (see Vega-Garcia et al. 
+1995, Cardille et al. 2001, Goldammer 2003, 
+Sebastián-López et al. 2008 , Martinez et al.  
+2009). In this study, factors such as agricul -
+tural machinery or the high  partitioning of  
+agricultural properties (which are considered  
+to be relevant for wildfire ignition by other  
+studies as a consequence of agricultural bur -
+nings - Martinez et al. 2009 ) were not found 
+to be of significance for Austria. Similarly,  
+customary burning related to the persistence  
+of  livestock  under  traditional  management  
+was not found to be of relevance for Austri -
+an  conditions.  These  practices  are  legally  
+banned in general; only a pilot program in  
+Carinthia tries to improve the grazing capa -
+city and  quality  for  domestic  livestock  by  
+alpine  burning  practices  (Kerschbaumer  et 
+al. 2007). However, these practices seem to  
+be  only  of  local  relevance  and  cannot  be  
+generalized  for  Austrian  conditions.  Addi -
+tionally,  factors  related  to  fire  prevention  
+activities, socioeconomic changes, land use  
+abandonment or an increasing urbanization,  
+land  use  disputes  or  unemployment  rates  
+(Goldammer  2003 ,  Leone  et  al.  2003 , 
+Brosofske et al. 2007, Sebastián-López et al. 
+2008,  Martinez et al. 2009 ) do not seem to  
+have relevance for forest fire ignition in Aus-
+tria.  Nonetheless,  it  is  worth  noticing  that 
+only  forest  fire  ignitions  have  been  con -
+sidered in this study, while fire ignitions on  
+agricultural land have been excluded.
+As tourism is still one of the most impor -
+tant  income  sources  in  Austria  ( Statistik 
+Austria 2010) the increasing number of visits 
+and outdoor activities might lead to an in -
+creased ignition on a regional level in the fu -
+ture.  Although  studies  such  as  Guyette  & 
+Dey (2000), Cardille et al. (2001) or Guyette 
+& Spetich (2003) have found a clear connec-
+tion  between  factors  related  to  population  
+density and  fire danger, these factors were  
+not found to be relevant in the Austrian con -
+text. Other international studies confirm that  
+population density play only a minor role as  
+for forest fires ( Brosofske et al. 2007 ). Va-
+riables related to population density were not 
+significantly  related  to  fire  danger  in  this  
+study.  We  assume  that  the  probability  for 
+fire ignition is underestimated in areas with a 
+low  density  of  variables  relevant  for  fire  
+ignition. In this context the studies of Zum-
+brunnen et al. (2011)  have emphasized the  
+non-linear  nature  of  the  relationships  bet -
+ween  fire  occurrence  and  anthropogenic  
+drivers. As road density was no longer cor -
+related with fire occurrence above a certain  
+threshold in two cantons of Switzerland, the  
+iForest (2013) 6: 315-325 322  © SISEF http://www.sisef.it/iforest/ 
+
+PAGE 9
+Modeling forest fire danger in Austria 
+authors  concluded  that  expected  future  in-
+crease and spatial concentration  of the hu -
+man population may not result in a further  
+increase in fire risk.
+Contrary to  the  findings  of other  studies  
+(Catry et al. 2009 ,  Martinez et al. 2009 ), a 
+high number of forest fires is predicted for  
+areas with a low density of variables signi -
+ficant for fire ignition . Although a high ave -
+rage density of forest fire ignitions per forest  
+area occurs in the highest fire danger class,  
+the probability of fire occurrence was found  
+to be higher in districts further away from  
+areas densely populated or with a high den -
+sity of infrastructure. According to  Brosof-
+ske et al. (2007)  the explanation  might  be  
+that arsonists seek especially remote areas to  
+avoid capture. Moreover, the authors argue  
+that  the  detection  of  forest  fires  might  be 
+lower in remote areas due to a lower density  
+of  infrastructure  and  therefore  a  generally  
+low level of human activity in forests. These  
+hypotheses might partly hold for the moun -
+tain  forests  in  Austria.  In  general,  a  high  
+level of fire detection is assumed as the ave -
+rage size of burned areas of most fires in the  
+database is small. This assumption is suppor-
+ted by findings of Cardille et al. (2001)  who 
+found that the low number of forest fire igni-
+tions in areas with a high density of infra -
+structure  and  population  strongly  enhance  
+the probability of a fire being reported.
+Conclusions 
+In  this study the logistic  regression  tech -
+nique has been chosen to model forest fire  
+ignition using relevant socio-economic fac -
+tors as predictors. No meteorological para -
+meters, topographic elements or fuel condi -
+tions  were  included  since  most  of  these  
+factors require a fine-scale analysis, such as  
+the province level. Our results prove that so -
+cio-economic variables found to be signifi -
+cant in other areas more prone to fire igni -
+tion risk ( Catry et al. 2009 ,  Martinez et al.  
+2009) have little relevance under the extant  
+conditions  in  Austria, since many of these  
+factors either do not exist or have minor im -
+pact for forest fire ignition risk.
+The construction of the model was based  
+on  a logistic  regression  analysis.  This me -
+thod is more advisable than multiple regres -
+sion, where the assumption of normality is  
+often  not  met.  We tested  different  logistic  
+models to analyze and compare relevant so -
+cio-economic factors and to identify poten -
+tial trends within the variables. Variable se -
+lection in the colinearity-exclusions process  
+is always subjective and sometimes leading  
+to different results. However, we found that  
+the  selected  variables  underlying  the  five  
+models  reflected  the  Austrian  conditions  
+fairly reasonable. 
+The results  obtained  in  this  investigation  
+may be improved through the application of  
+techniques less sensitive to correlations and  
+nonlinear  relationships  among  independent 
+variables as well as the non-parametric dis -
+tribution showed by most of the independent  
+variables  (Fotheringham  et  al.  2002,  Mar-
+tinez et al. 2009). Performances of the model 
+could  be further improved  by carrying out  
+spatially  explicit  models  such  as  the  geo -
+graphically weighted regression ( Fothering-
+ham et al. 2002 ). First attempts using Geo -
+graphic Weighted Regression have provided  
+interesting results in the European Mediter -
+ranean (Koutsias et al. 2005 , 2010). The lo -
+gistic probabilities would allow human fac -
+tors to be integrated with meteorological fac-
+tors (Arpaci et al. 2013) and fuel conditions.  
+Statistical or physical models could be used  
+for integration of factors in order to build an  
+integrated fire danger model ( Martinez et al. 
+2009).
+So far, records on wildfires and forest fires  
+have not  been  documented  consistently by  
+the  respective  agencies,  municipalities  and 
+fire brigades in Austria. The dataset underly -
+ing this study has been established in the last  
+four years and the process of data assembly  
+is still ongoing. Similar to other studies, the  
+dataset still contains uncertainties regarding  
+the size and location of forest fires and it is  
+still incomplete because of the decentralized  
+documentation of fire records ( Vacik et al.  
+2011,  Eastaugh  &  Vacik  2012 ).  For  the  
+above reasons and the overall small dataset  
+available, in this study we did not consider  
+the causes underlying forest fire ignition in  
+Austria. Therefore, the analysis carried out  
+can be seen as the first step of this research.
+Acknowledgments
+This  research  has  been  partly  conducted  
+within the frame of the Austrian Forest Re -
+search Initiative (AFFRI),  which  is funded  
+by the Austrian Science Funds (FWF) - refe -
+rence  number  L539-N14,  and  within  the  
+European Project ALP FFIRS (Alpine Forest 
+Fire Warning System), which is funded by  
+the European Regional Development fund of  
+the Alpine Space Program - reference num -
+ber 15-2-3-IT.
+References
+AFI  (2011).  Austrian  Forest  Inventory.  Öster -
+reichische Waldinventur 2007/2009, BFW-Prax -
+isinformation  Nr.  24.  Bundesforschungsanstalt  
+und  Ausbildungszentrum  für  Wald,  Naturge -
+fahren und Landschaft.
+Amatulli G, Pérez-Cabello F, de la Riva J (2007).  
+Mapping  lightning/human-caused  wildfire  oc -
+currence  under  ignition  point  location  uncer -
+tainty. Ecological Modelling 200: 321-333. - doi: 
+10.1016/j.ecolmodel.2006.08.001
+Andrews  PL,  Loftsgaarden  DO,  Bradshaw  LS  
+(2003). Evaluation of fire danger rating indexes  
+using logistic regression and percentile analysis.  
+International Journal of Wildland Fire 12: 213-
+226. - doi: 10.1071/WF02059
+Arndt N (2007). Problem of fires on embankments 
+along  railway  routes  in  Austria.  Masterarbeit,  
+Univ. für Bodenkultur, Vienna, Austria. [online]  
+URL:    https://zidapps.boku.ac.at/abstracts/oe_  
+list.php?paID=3&paCF=0&paLIST=0&paSID= 
+5934
+Arpaci A, Eastaugh CS, Vacik H (2013). Selec -
+ting the best performing fire weather indices for  
+Austrian  ecoregions.  Theoretical  and  Applied  
+Climatology. - doi: 10.1007/s00704-013-0839-7
+Bellgardt  E  (1997).  Statistik  mit  SPSS:  aus -
+gewählte  Verfahren  für  Wirtschaftswis -
+senschaftler. München, Vahlen X, pp. 277. ISBN  
+3-8006-2197-5 [in German]
+Beniston M, Diaz HF, Bradley RS (1997). Clima -
+tic change at high elevation sites: an overview.  
+Climatic  Change  36:  233-251.  - doi:  10.1007/ 
+978-94-015-8905-5_1
+Brauchle  T  (2006).  Tourismus  im  Alpenraum,  
+Chancen  und  Risiken  eines  bedeutenden  Sch -
+weizer Wirtschaftssektors im Umbruch. Informa-
+tionsheft Forum Raumentwicklung no. 34, Sch -
+weizerische  Eidgenossenschaft,  Bundesamt  für  
+Raumentwicklung, Bern, Swiss. Abdruck erwün -
+scht mit Quellenangabe, Belegexemplar an ARE.  
+ISSN 1660-624 8. [in German]
+Brosofske KD, Cleland DT, Saunders SC (2007).  
+Factors influencing modern wildfire occurrence  
+in  the  Mark  Twain  National  Forest,  Missouri. 
+Southern Journal of Applied Forestry 31 (2): 73-
+84.
+Brown TJ, Hall BL, Westerling AL (2004). The  
+impact of twenty-first century climate change on  
+wildland  fire  danger  in  the  Western  United  
+States,  an  application  perspective.  Climatic  
+Change  62:  365-388.  -  doi:  10.1023/B:CLIM. 
+0000013680.07783.de
+Cardille JA, Ventura SJ, Turner MG (2001). En -
+vironmental and social factors influencing wild -
+fires  in  the  Upper  Midwest,  USA.  Ecological  
+Applications  11  (1):  111-127.  -  doi:  10.1890/ 
+1051-0761(2001)011[0111:EASFIW]2.0.CO;2
+Castedo-Dorado F, Rodriguez-Perez JR, Marcos-
+Menendez  JL,  Alvarez-Taboadam  MF  (2011).  
+Modelling  the  probability  of  lightning-induced 
+forest  fire  occurrence  in  the  province  of  León 
+(NW Spain).  Forest Systems  20  (1): 95-107.  -  
+doi: 10.5424/fs/2011201-9409
+Catry FX, Rego FC, Bação F, Moreira F (2009).  
+Modelling and mapping wildfire ignition risk in  
+Portugal. International Journal of Wildland Fire  
+18: 921-931. - doi: 10.1071/WF07123
+Chuvieco E, Congalton RG (1989). Application of  
+remote  sensing  and  geographical  information  
+system  to  forest  fire  hazard  mapping.  Remote 
+Sensing of the Environment 29: 147-159. - doi:  
+10.1016/0034-4257(89)90023-0
+Chuvieco  E, Salas,  FJ, Carvacho  L, Rodriguez-  
+Silva F (1999). Integrated ﬁre risk mapping. In:  
+“Remote  Sensing  of  Large  Wildﬁres  in  the  
+European  Mediterranean”  (Chuvieco  E  ed).  
+Springer-Verlag, Berlin, pp. 61–84.
+Chuvieco E, Allgöwer B, Salas FJ (2003). Integra-
+tion of physical and human factors in fire danger  
+assessment. In: “Wildland Fire Danger Estima -
+tion and Mapping - the Role of Remote Sensing  
+Data”  (Chuvieco E ed).  World  Scientific  Pub -
+© SISEF http://www.sisef.it/iforest/ 323  iForest (2013) 6: 315-325
+
+PAGE 10
+Arndt N et al. - iForest 6: 315-325 
+lishing, Singapore, pp. 197-218.
+Chuvieco E, Aguado I, Yebra M, Nieto H, Salas J,  
+Martín MP, Vilar L, Martínez J, Martín S, Ibarra  
+P, de la Riva J, Baeza J, Rodríguez F, Molina J  
+R, Herrera MA, Zamora R (2009). Development  
+of a framework for fire risk assessment using re -
+mote sensing and geographic information system  
+technologies. Ecological Modelling 221: 46-58. -  
+doi: 10.1016/j.ecolmodel.2008.11.017
+Conedera M, Torriani D, Neff C, Ricotta C, Ba -
+jocco S, Pezzatti GB (2011). Using Monte Carlo  
+simulations  to  estimate  relative  fire  ignition  
+danger  in  a  low-to-medium  fire-prone  region.  
+Forest  Ecology  and  Management  261:  2179-
+2187. - doi: 10.1016/j.foreco.2010.08.013
+Donoghue LR, Main WA (1985). Some factors in-
+fluencing wildfire occurrence and measurement  
+of fire-prevention  effectiveness. Journal of En -
+vironmental Management 20: 87-96.
+Dumas E, Jappiot M, Tatoni T (2008). Mediter -
+ranean  urban-forest  interface  classification  
+(MUFIC):  a  quantitative  method  combining  
+SPOT5 imagery and landscape ecology indices.  
+Landscape and  Urban Planning 84: 183-190.  -  
+doi: 10.1016/j.landurbplan.2007.12.002
+Eastaugh CS, Vacik H (2012). Fire size/frequency  
+modelling as a means of assessing wildfire data -
+base reliability. Austrian Journal of Forest Sci -
+ence  129  (3-4):  228-247.  [online]  URL:  
+http://www.forestscience.at/fileadmin/user_up-
+load/CB1203-4_T4_Abstr.pdf
+Environmental  Agency  Austria  (2012).  Corine  
+Landcover.  [online]  URL:  http://www.umwelt-
+bundesamt.at/umwelt/raumordnung/flaechennut 
+zung/corine/
+Fotheringham  AS,  Brunsdon  C,  Charlton  M  
+(2002). Geographically weighted regression. The  
+analysis of spatially varying relationships. John  
+Wiley and Sons, West Sussex, UK, pp. 269. 
+Fredericksen TS, Putz FE (2003). Silvicultural in -
+tensification  for  tropical  forest  conservation.  
+Biodiversity and Conservation 12: 1445-1453. -  
+doi: 10.1023/A:1023673625940
+Fried JS, Torn MS, Mills E (2004). The impact of  
+climatic change on wildfire severity: a regional  
+forecast  for  northern  California.  Climatic  
+Change  64:  169-191.  -  doi:  10.1023/B:CLIM. 
+0000024667.89579.ed
+Gambino  R,  Romano  B  (2003).  Territorial stra -
+tegies and environmental continuity in mountain  
+regions: the case of the Apennines. In: Proceed -
+ings of the “World Heritage Mountain Protected  
+Area Field  Workshop.  Linking  protected  areas  
+along the mountain  range” (Hamilton L, Sand -
+with T, Rushworth I, Krueger S, Potter D, Zun -
+ckle  K,  Worboys  G,  Harmon  D  eds).  Durban  
+(South Africa) 5-8 September 2003. The Nature  
+Conservacy,  Italian  Ministry  of  Environment,  
+Rome, Italy, University of Turin, Italy, Univer -
+sity  of  L’Aquila,  Italy,  pp.  16.  [online]  URL: 
+http://dau.ing.univaq.it/planeco/staff/romano/pdf
+_pubblicazioni/DURBAN_2003.pdf  
+Gehrig-Fasel  J,  Guisan  A,  Zimmermann  NE  
+(2007). Tree line shifts in the Swiss Alps: cli -
+mate  change  or land  abandonment?  Journal  of  
+Vegetation Science (18): 571-582. - doi: 10.1111 
+/j.1654-1103.2007.tb02571.x
+Goldammer JG (2003). Towards international co -
+operation in managing forest fire disasters in the  
+Mediterranean  region.  International  Forest  Fire 
+News 27: 81-89. - doi:  10.1007/978-3-642-558 
+54-2_54
+Gossow H, Frank G (2003). Waldbrand auf Wind -
+wurf  -  eine  unheilige  Allianz.  Oesterr.  Forstz. 
+114 (9): 8-9. [in German]
+Grissino-Mayer  HD,  Romme  WH,  Floyd  ML,  
+Hanna  DD (2004).  Climatic  and  human  influ -
+ences on fire regimes of the southern San Juan  
+Mountains,  Colorado,  USA.  Ecology  85  (6):  
+1708-1724. - doi: 10.1890/02-0425
+Guyette RP, Dey DC (2000). Humans, topography 
+and wildland fire: the ingredients for long-term  
+patterns  in  ecosystems.  In:  Proceedings  of  the 
+“Workshop  on  Fire,  People  and  the  Central  
+Hardwood  Landscape”  (Yaussey DA ed). Gen.  
+Tech. Rep. NE-274, USDA Forest Service, New-
+ton Square, PA, USA, pp. 28-35.
+Guyette RP, Spetich MA (2003). Fire history of  
+oak-pine forests in the Lower Boston Mountains,  
+Arkansas,  USA.  Forest  Ecology  and  Manage -
+ment 180: 463-474. - doi:  10.1016/S0378-1127 
+(02)00613-8
+Hall  CM,  Page  SJ  (2009).  Progress  in  tourism  
+management: from the geography of tourism to  
+geographies of tourism - a review. Tourism Man-
+agement 30 (1): 3-16. - doi:  10.1016/j.tourman. 
+2008.05.014
+Heinrichs AK, Kohler Y, Ullrich A (2010). Imple -
+menting  a  Pan-Alpine  ecological  network.  A  
+compilation  of  major  approaches,  tools  and  
+activities  BfN-Skripten  273.  [online]  URL:  
+http://www.alpine-ecological-network.org/pdfs/ 
+894_en/at_download/file
+Jamnick MS, Beckett DR (1988). A logit analysis  
+of private woodlot  owners harvesting decisions  
+in New Brunswick. Canadian Journal of Forest  
+Research 18: 330 - 336. - doi: 10.1139/x88-050
+Johnson EA, Fryer GI, Heathcott MJ (1990). The  
+Influence of man  and  climate  on  frequency of  
+fire in the Interior Wet Belt Forest, British Co -
+lumbia. The Journal of Ecology 78 (2): 403. -  
+doi: 10.2307/2261120
+Kalabokidis  KD,  Konstantinidis  P,  Vasilakos  C 
+(2002). GIS analysis of physical and human im -
+pact  on  wildfire  patterns.  In:  “Forest  Fire  Re-
+search  and  Wildland  Fire Safety”  (Viegas  ed). 
+Millpress,  Rotterdam,  The  Netherland.  [ISBN  
+90-77017-72-0]
+Kerschbaumer  N,  Huber  T,  Bergthaler  GJ,  
+Derbuch  G,  Friess  T  (2007).  Fallbeispiele  zur 
+Alpinen  Brandwirtschaft  -  Auswirkungen  auf  
+Vegetation  und  Fauna.  Studie  im  Auftrag  der  
+Arge  Naturschutz,  Afritz,  Klagenfurt,  Austria,  
+pp. 10. [in German]
+Koutsias N, Martinez J, Chuvieco E, Allgöwer B  
+(2005).  Modelling  wildland  fire  occurrence  in  
+southern Europe by geographically weighted re -
+gression  approach.  In:  Proceedings  of  the  “5 th 
+International Workshop on Remote Sensing and  
+GIS  Applications  to  Forest  Fire  Management:  
+Fire Effects Assessment” (De la Riva J, Pérez-
+Cabello F, Chuvieco  E eds).  Zaragoza  (Spain)  
+16-18 June 2005. EARSeL Forest Fire Specal In-
+terest  Group,  pp.  57-60.  [online]  URL:  
+http://earsel-ffsig.web.auth.gr/sites/default/files/ 
+Koutsias%20et%20al.pdf
+Koutsias  N,  Martínez-Fernández  J,  Allgöwer  B  
+(2010).  Do  factors  causing  wildfires  vary  in  
+space? Evidence  from  geographically weighted  
+regression.  GIScience  and  Remote  Sensing  47 
+(2): 221. - doi: 10.2747/1548-1603.47.2.221
+Leone  V,  Lovreglio  R,  Fernandez  JM  (2002).  
+Forest  fires  and  anthropogenic  influences.  a  
+study  case  (Gargano  National  Park,  Italy).  In: 
+“Forest Fire Research & Wildland Fire Safety”  
+(Viegas ed). Millpress, Rotterdam, The Nether -
+lands. ISBN 90-77017-72-0
+Leone V, Koutsias N, Martinez J, Vega-Garcia C,  
+Allgöwer  B,  Lovreglio  R  (2003).  The  human  
+factor in fire danger assessment. In: “Wildland  
+Fire Danger Estimation and Mapping. The Role  
+of  Remote  Sensing  Data”  (Chuvieco  E  ed).  
+World Scientific  Publishing,  Singapore, vol.  4,  
+pp. 143 -194.
+Lindner M, Maroschek M, Netherer S, Kremer A,  
+Barbati A, Garcia-Gonzalo J, Seidl R, Delzon S,  
+Corona P, Kolström M, Lexer MJ, Marchetti M  
+(2010). Climate change impacts, adaptive capa -
+city, and vulnerability of European forest ecosys-
+tems. Forest Ecology and Management 259: 698-
+709 - doi: 10.1016/j.foreco.2009.09.023
+Loftsgaarden  D,  Andrews  PL (1992).  Construc -
+ting  and  testing  logistic  regression  models  for 
+binary  data:  applications  to  the  National  Fire  
+Danger  Rating  System.  General Technical  Re -
+port  286,  USDA  Forest  Service,  Ogden,  UT,  
+USA.
+Martell DL, Otukol S, Stocks BJ (1987). A logist -
+ic model for predicting daily people-caused fire  
+occurrence  in  Ontario.  Canadian  Journal  of  
+Forestry Research 17:  394-401  - doi:  10.1139/ 
+x87-068
+Martinez J, Vega-Garcia C, Chuvieco E (2009).  
+Human-caused wildfire risk rating for prevention  
+planning  in  Spain.  Journal  of  Environmental  
+Management 90 (2): 1241-1252 - doi:  10.1016/ 
+j.jenvman.2008.07.005
+Menard S (2008). Applied logistic regression ana -
+lysis (2nd edn). Quantitative  applications  in the  
+Social Sciences 106, Sage, Thousand Oaks, CA,  
+USA. - ISBN: 978-0-7619-2208-7
+Mollicone D, Eva HD, Achard F (2006). Human  
+role in Russian wild fires. Nature 440: 436-437. - 
+doi: 10.1038/440436a
+Müller  M,  Vacik  H,  Diendorfer  G,  Arpaci  A,  
+Formayer  H,  Gossow  H  (2013).  Analysis  of  
+lightning induced forest fires in Austria. Theore -
+tical and  Applied Climatology 111  (1-2): 183-
+193. - doi: 10.1007/s00704-012-0653-7
+Nordregio (2004). Mountain areas in Europe: ana -
+lysis of mountain  areas in  EU Member States,  
+acceding and other European countries. Nordre -
+gio Report 1, pp. 271. - ISBN: 91-89332-35-0
+Pezzati GB, Bajocco S, Torriani D, Conedera M  
+(2009). Fire regimes in Southern Europe. Select -
+ive burning of forest vegetation in Canton Ticino  
+(southern Switzerland). Plant Biosystems 143(3): 
+609-620. - doi: 10.1080/11263500903233292
+iForest (2013) 6: 315-325 324  © SISEF http://www.sisef.it/iforest/ 
+
+PAGE 11
+Modeling forest fire danger in Austria 
+Romero-Calcerrada R, Barrio-Parra F, Millington  
+JDA, Novillo CJ (2010). Spatial modelling of so-
+cioeconomic data to understand patterns of hu -
+man-caused wildfire ignition risk in the SW of  
+Madrid  (central  Spain).  Ecological  Modelling  
+221:  34-45.  -  doi:  10.1016/j.ecolmodel.2009. 
+08.008
+Schumacher S, Bugmann H (2006). The relative  
+importance  of  climatic  effects,  wildfires  and  
+management  for  future  forest  landscape  dyna -
+mics in the Swiss Alps. Global Change Biology  
+12:  1435-1450.  -  doi:  10.1111/j.1365-2486. 
+2006.01188.x
+Sebastián-López A, Salvador-Civil R, Gonzalo-Ji -
+menéz J, San Miguel-Ayanz J (2008). Integration 
+of socio-economic  and  environmental variables  
+for modelling long-term fire danger in Southern  
+Europe.  European  Journal  of  Forest  Research  
+127: 149-163. - doi:  10.1007/s10342-007-0191-
+5
+Statistik Austria (2010). Tourismus in Zahlen Ös -
+terreich  2009/2010.  Web  Site.  [online]:  http:// 
+www.statistik.at
+Steininger  KW,  Weck-Hannemann  H  (2002).  
+Global environmental change in Alpine regions:  
+Recognition, impact, adaptation and mitigation.  
+Edward  Elgar,  Cheltenham,  UK,  pp.  271.  -  
+ISBN: 1-84376-183-1
+Theurillat JP, Guisan A (2001). Potential impact  
+of climate change on vegetation in the European  
+Alps: a review. Climatic  Change 50: 77-109. -  
+doi: 10.1023/A:1010632015572
+Uhl C, Buschbacher R (1985). A disturbing syner -
+gism between cattle ranch burning practices and  
+selective harvesting in the eastern Amazon. Bio -
+tropica 17: 265-268. - doi: 10.2307/2388588
+Vacik H, Arndt N, Arpaci A, Koch V, Müller M,  
+Gossow H (2011). Characterisation of forest fires 
+in Austria. Austrian Journal of Forest Sciences  
+128 (1): 1-31.
+Vasconcelos MJP, Silva  S, Tome M,  Alvim M,  
+Cardoso Pereira JM (2001). Spatial prediction of  
+fire  ignition  probabilities.  Comparing  Logistic  
+Regression  and  Neural  Networks.  Photogram -
+metric Engineering and Remote Sensing 67 (1):  
+73-81.  [online]  URL:  http://www.asprs.org/a/ 
+publications/pers/2001journal/january/2001_jan
+_73-81.pdf
+Vasilakos C, Kalanokidis K, Hatzopoulos J, Kal -
+los G, Matsinos Y (2007). Integrating new me -
+thods and tools in fire danger rating. Internatio -
+nal Journal of Wildland Fire 16: 306-316. - doi:  
+10.1071/WF05091
+Vega-Garcia C, Woodard T, Adamowicz WL, Lee  
+B (1995). A logit model for predicting the daily  
+occurrence of human caused forest fires. Interna -
+tional Journal of Wildland Fire 5: 101-111. - doi:  
+10.1071/WF9950101
+Vilar L, Woolford  DG, Martell DL, Martin  MP  
+(2010).  A model  for  predicting  human-caused  
+wildfire  occurrence  in  the  region  of  Madrid,  
+Spain. International Journal of Wildland Fire 19:  
+325-337. - doi: 10.1071/WF09030
+Wastl  C,  Schunk  C,  Leuchner  M,  Pezzatti  GB, 
+Menzel A (2012). Recent climate change: Long-
+term trends in meteorological forest fire danger  
+in the Alps. Agricultural and Forest Meteorology  
+162-163: 1-13. - doi:  10.1016/j.agrformet.2012. 
+04.001
+Weibel P, Reineking B, Bugmann H (2009). Pro -
+jecting forest fires in mountain forests under cli -
+mate change. Earth and Environmental Science  
+6. - doi: 10.1088/1755-1307/6/8/382005
+Wotton BM, Martell DL, Logan KA (2003). Cli -
+mate change and people-caused forest fire occur -
+rence in Ontario. Climate Change 60: 275-295. -  
+doi: 10.1023/A:1026075919710
+Zhang ZX, Zhang HY, Zhou DW (2010). Using  
+GIS spatial  analysis  and  logistic  regression  to  
+predict the probabilities of human-caused grass -
+land fires. Journal of Arid Environments 74 (3):  
+386-393. - doi: 10.1016/j.jaridenv.2009.09.024
+Zumbrunnen T, Pezzatti GB, Menéndez P, Bug -
+mann H, Bürgi M, Conedera M (2011). Weather  
+and human impacts on forest fires: 100 years of  
+fire history in two climatic  regions of Switzer -
+land. Forest Ecology and Management 261 (12):  
+2188-2199. - doi: 10.1016/j.foreco.2010.10.009
+© SISEF http://www.sisef.it/iforest/ 325  iForest (2013) 6: 315-325

@@ -1,0 +1,1330 @@
+PAGE 1
+This is the peer reviewed author accepted manuscript (post print) version of a published work that 
+appeared in final form in:
+Bardsley, Annette M, Bardsley, Douglas K, Conedera, Marco, Pütz, Marco, Robinson, Guy 
+M, Weber, Delene 2021 'Wildfire, environmental risk and deliberative planning in the 
+Locarnese region of Switzerland', Environmental Management, vol. 68, pp. 785-801
+This un-copyedited output may not exactly replicate the final published authoritative version for 
+which the publisher owns copyright. It is not the copy of record. This output may be used for non-
+commercial purposes.
+The final definitive published version (version of record) is available at:
+https://doi.org/10.1007/s00267-021-01523-5
+Persistent link to the UniSA Research Outputs Repository: 
+https://researchoutputs.unisa.edu.au/11541.2/25490
+General Rights
+Copyright and moral rights for the publications made accessible in the UniSA Research Outputs 
+Repository are retained by the authors and/or other copyright owners and it is a condition of 
+accessing publications that users recognize and abide by the legal requirements associated with 
+these rights.
+Users may download and print one copy for the purpose of private study or research.- 
+You may not further distribute the material or use it for any profit-making activity or commercial 
+gain
+- 
+You may freely distribute the persistent link identifying the publication in the UniSA Research 
+Outputs Repository
+- 
+If you believe that this document breaches copyright, please contact us and provide details. We 
+will remove access to the work immediately and investigate your claim.
+
+PAGE 2
+1 
+ 
+Environmental risk and deliberative planning in the Locarnese region of 
+Switzerland 
+ 
+Annette M. Bardsleya,*, Douglas K. Bardsleya, Marco Conederab, Marco Pützc, Guy M. Robinsona and 
+Delene Weberd  
+ 
+a Geography, Environment and Population, School of Social Sciences, The University of Adelaide, 
+Adelaide, South Australia, Australia 
+b Swiss Federal Institute for Forest, Snow and Landscape Research WSL, Cadenazzo, Ticino, 
+Switzerland 
+c Swiss Federal Institute for Forest, Snow and Landscape Research WSL, Birmensdorf, Zurich, 
+Switzerland 
+d UniSA STEM, The University of South Australia, Mawson Lakes Campus, Australia 
+* Corresponding author, email: annette.bardsley@adelaide.edu.au 
+ 
+Declaration 
+This research was conducted as part of an Australian Research Council Linkage Grant (LP130100406). 
+There are no conflicts of interest and the primary data is stored at the University of Adelaide. Ethics 
+approval was provided by The University of Adelaide (H-2014-258). 
+ 
+Acknowledgments 
+This research was conducted as part of an Australian Research Council Linkage Grant (LP130100406). 
+Thanks go to the University of Adelaide, the Australian Housing and Urban Research Institute 
+(AHURI) and the Swiss Federal Institute for Forest, Snow and Landscape Research (WSL) for their 
+support, and to Emily Moskwa, Dianne Rudd and Elisa Palazzo for their research assistance. 
+ 
+ 
+Highlights 
+ 
+• The nature of wildfire risk is changing in the southern Switzerland 
+• Local environmental risks are not rated highly by household respondents 
+• Residents state that they have a very high understanding of the planning system 
+• Many respondents do not feel that they can influence planning outcomes 
+• Highly deliberative planning systems do not necessarily reflect local opinions 
+ 
+Keywords: deliberative democracy, planning, wildfire, perceptions, peri-urban, Switzerland 
+ 
+ 
+ 
+
+PAGE 3
+2 
+ 
+Abstract 
+A survey of residents in the Locarnese region of Canton Ticino, Switzerland examined perceptions of 
+both increases in exposure to changing levels of environmental risk  and the deliberative Swiss 
+planning system. In the context of a growing risk of wildfires in the study region, residents in the peri-
+urban residential areas  of the forested south -facing slopes of the Swiss Alps  were asked a series of 
+questions regarding their relationships to the planning system, place and environment, and attitudes 
+to risk. Descriptive and inferential statistics revealed high appreciation of lifestyle and amenity values 
+and support for firefighting services . While survey respondents did not consider that thos e risks are 
+increasing with environmental change, wildfires and landslides were recognised as p osing significant 
+risk. Current levels of urban expansion were viewed as excessive, heightening planning challenges at 
+the interface between forests and settleme nts. Although the deliberative governance arrangement 
+offers citizens with the opportunity to be involved in decision-making through official channels, many 
+respondents felt their views were inadequately reflected in decisions and that key issues are not being 
+addressed by the planning system. In contrast to other respondents, those who are younger, of local 
+background or less educated are more dissatisfied with their influence over planning, which could 
+have important implications for hazard management as new risks emerge with environmental change. 
+If expectations of involvement are not met, new challenges will be presented to the distinctive Swiss 
+planning system. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 4
+3 
+ 
+1. Introduction 
+ 
+Global climate change is shifting many of the dynamic relationships between the environment and 
+society.  One of the major implications of that change is the increasing likelihood of wildfires, even in 
+places that have not traditionally considered themselves at high wildfire risk, such as the Swiss Alps 
+(Valese et al. 2014; Conedera et al. 2018). In the alpine landscape, wildfire risk is also being 
+exacerbated by factors such as reafforestation and urban development. In the Swiss Italian Canton 
+of Ticino, the forested area has more than doubled in the last 100 years, to cover 52 percent of the 
+canton in 2018 (Galfetti 2020). At the beginning of the 20th century, the forest cover in Ticino was 
+60,000 hectares (ha), but by 1950 had grown to 85,000 ha, and by the beginning of the 21st century 
+had reached 140,000 ha (USTAT 2007). This increase in forest cover has been particularly evident at 
+altitudes greater than 800 metres above sea level (Bettelini 2007), where previously managed 
+agrarian and pastoral landscapes have transitioned to forest (Bauer et al. 2009; Mack et al. 2013; 
+USTAT 2013; Loran et al. 2017). At lower altitudes, the forests have also expanded into agricultural 
+lands and are increasingly in close contact with settlements (Galfetti 2020). The positive outcomes of 
+that expanded forest area are significant improvements in erosion control (Rickli and Graf 2009; 
+Malek et al. 2015), and, for many people, biodiversity conservation and amenity values through the 
+rewilding of landscape (Pereira 2015; Prior and Brady 2017; Frick et al. 2018). Nevertheless, the 
+change has also generated different forms of environmental risk. While forests have largely been 
+perceived historically as a means of mitigating the risk of natural hazards (Mather and Fairbairn 
+2000), as the forest has expanded in areas close to townships, greater risks of wildfires and tree fall 
+have emerged in peri-urban areas (wildland-urban interface) (Von der Dunk et al. 2011; FOEN 2014; 
+Conedera et al. 2015).  
+ 
+Concurrently, increased population growth rates in the second half of the 20th century in Canton 
+Ticino, and the associated decline in availability of residential land on valley floors, have changed the 
+traditional urban settlement patterns that had dominated since the Middle Ages (OST-TI 2014). In 
+the Locarnese region of Ticino, this expansion has been particularly evident since the 1970s, and has 
+come at the expense of terraced vineyards and grazing land that acted as buffer zones between the 
+forest and the village. Traditionally, a trading centre between Switzerland and northern Italy, high-
+level industrial activities and sun-seeking tourists and retirees have supported growth in the 
+residential population in the Locarnese region from 21,031 in 1950 to 38,398 in 2000 (USTAT 2020). 
+Since 1985, agricultural areas have diminished by 20 percent across Ticino (Galfetti 2020), and the 
+loss of traditional landscapes has become a sensitive cultural issue (Rodewald et al. 2014), as 
+
+PAGE 5
+4 
+ 
+suggested by the high level of cantonal support for a proposal seeking to curb urban sprawl in 
+Switzerland during a plebiscite in February 2019 and the initiative to protect cultural landscapes 
+(Geiser 2019; Iniziativa Paesaggio 2020). 
+ 
+The key research aim is to examine how the highly deliberative Swiss planning system is managing 
+changes in environmental risk. As the landscape of Canton Ticino changes and residential areas are 
+brought into direct contact with the expanding forest (Figure 1), this paper analyses how residents of 
+the steep peri-urban areas around Locarno perceive of the environment and changing natural 
+hazards in association with opportunities for appropriate planned responses. The analysis is 
+particularly relevant given that the highly deliberative Swiss political system aims to generate 
+planning outcomes that reflect people’s perceptions of landscape and environmental risks. The 
+paper appraises the potential for participatory planning strategies to provide the community with 
+opportunities to express their attitudes about changing levels of environmental risk, and thereby 
+influence effective planning in the Locarnese peri-urban area.  
+ 
+Figure 1: The Locarnese region of Canton Ticino, Switzerland (2015), indicating how the forest 
+interacts with settlements 
+     
+ 
+2. Deliberative planning for risk  
+ 
+Risk is a complex term defined as a ‘combination of the probability of an event and its negative 
+consequences’ (UNISDR 2007). New levels of environmental risk associated with climate change are 
+driving societies accustomed to dealing with natural hazards to acknowledge the potential limits of 
+current disaster risk governance and management capabilities (Kanonier and Rudolf-Miklau 2018; 
+Bardsley and Knierim 2020). This situation reflects a structural crisis identified by Beck (1986), 
+whereby established modern management frameworks no longer adequately represent the 
+fundamental shift that has occurred in the parameters defining risk across society. Beck’s theory 
+
+
+PAGE 6
+5 
+ 
+considers the significant complexity of the current social reality and notes that first modernity 
+approaches to risk management have focussed on reducing the impacts of natural disasters through 
+technological advancement. Yet, with increasing risk, boundaries or thresholds are reached after 
+which consequences and likelihoods continue to escalate irrespective of substantial further 
+investments in physical management interventions.  
+ 
+Beck et al. (2003) evoke a new, second or reflexive modernity, in which governance must work to 
+incorporate an understanding of risk into all contemporary policy and planning. Such a socialisation 
+of risk builds upon Habermas’ (1989) reflections on the need for processes or ‘social spaces’ that 
+allow citizens to engage and participate in decision-making (Parkins and Mitchell 2005). Together 
+these conceptions inform the fundamental premise of this paper, namely that landscape planning 
+must become more reflexive to respond to the unique situations that are presented locally to 
+manage environmental risk (Godschalk et al. 2003; Morehouse et al. 2011; Von der Dunk et al. 2011; 
+Bardsley et al. 2015; Sharma-Wallace 2016). In recent years, there has been renewed interest by 
+planners in the advantages of early and ongoing community engagement to educate and understand 
+people’s knowledge, values and preferences for effective land-use management that progresses 
+beyond simplistic consensus-based outcomes (Healey 1997; Forester 1999; Heberlein 2012; Gallent 
+and Ciaffi 2014; Legacy 2017; Natarajan 2017). Yet, such an approach requires community 
+understanding of environmental planning systems and effective engagement processes to influence 
+spatial and systemic outcomes.  
+ 
+How people perceive of risk is hugely influential over their level of support for particular planning 
+outcomes. Issues of transparency and meaningful public participation and engagement are a 
+developing research field, with numerous studies focussing on the mitigation of wildfire risk (Martin 
+et al. 2009; Frandsen et al. 2011; McGee 2011; Eriksen 2014; Ghasemi et al. 2020). In conjunction 
+with public entities, such as biodiversity conservation and emergency response agencies, local 
+planning bodies have the complex role of translating government policies into tangible procedural 
+and spatial outcomes aimed at minimising the risk factors associated with natural hazards, while 
+supporting social values. For that reason, the social and cultural influences over perceptions and 
+responses to risk are a vital component of environmental risk research (Pfister 1985; Slovic 1987; 
+Pfister 2009; Xue et al. 2014; Reid and Beilin 2015). For example, research on individual resident and 
+community-preparedness for wildfires has identified significant links between risk minimisation and 
+residents’ place values (Anton and Lawrence 2014; Frick et al. 2018; Weber et al. 2019; Koksal et al. 
+2019). The argument runs that as risks of wildfire increase, approaches to manage the forest in 
+
+PAGE 7
+6 
+ 
+association with urban expansion will need to adjust by taking into account both the new science 
+and stakeholder perceptions of risk.  
+ 
+3. The Swiss deliberative democratic system 
+ 
+Environmental planning relies on a range of different spatial, landscape and natural hazard planning 
+instruments. The challenge lies in identifying the tools and approaches to achieve decisions that are 
+both reflective of local needs and broader policy outcomes (Healey 2006). Apart from the fact that 
+several of the authors are Swiss, Switzerland was chosen as a case-study area because, whilst many 
+countries make use of varying levels of deliberation to engage their population in decision-making, 
+no other jurisdiction has such entrenched participatory mechanisms (Steiner 2012; Hill 2013; Della 
+Porta et al. 2017). Dryzek (2009) defines the deliberative capacity of a political system as the degree 
+to which decisions and then outcomes truly reflect the wishes and values of the population. Both 
+representative and direct democratic institutions guide the deliberative Swiss democracy (Parkinson 
+2006; Pedrini 2014).  
+ 
+The Swiss federal system entails three governance levels: federal, cantonal and municipal. Although 
+the legislative framework for spatial planning has been empowered at the federal level since 1969 
+(Lendi 2012), in 2012, the three levels of government collaborated to develop and ratify ‘Concept 
+Switzerland 2012’, to provide nation-wide strategic planning guidelines (Swiss Federal Council 2012). 
+Through the principle of municipal federalism, local authorities are granted wide-ranging powers in 
+relation to land use and the issuing of building permits. While the strategic and legislative planning 
+frameworks work across all levels of governance, much of the implementation is left to the 26 
+Cantons and the over 2000 municipalities to develop detailed structured and land use plans (Grams 
+and Nebel 2013). In practical terms, while the responsibility for transport infrastructure, economic 
+policy and environmental protection fall to the federal government, governance of land use planning 
+and nature conservation falls mostly to the Cantons (Muggli 2013).  Nevertheless, the Swiss federal 
+government reserves the right to regulate key areas as defined in the constitution, by approving 
+cantonal plans and ensuring key principles are supported, such as the separation of building and 
+non-building zones.  
+ 
+In the Swiss model, citizens have direct access to the complex decision-making system through 
+referenda and popular initiatives. Partly for that reason, Switzerland has a planning system that 
+enjoys a rare level of public support and respect (Lendi 2012; Muggli 2013). The direct democratic 
+
+PAGE 8
+7 
+ 
+principles apply to all levels of government, and while the items voted on are often high-level 
+legislative frameworks and planning principles, at cantonal and municipal levels citizens can directly 
+influence local outcomes. The processes of participation have promoted innovative outcomes, such 
+as the establishment of sustainable mountain forestry (Hersperger et al. 2017) and strict controls on 
+urban sprawl (Gennaio et al. 2009; Swiss Federal Council 2012; Klaus 2021). In recent times several 
+intergenerational issues have been shaped by popular interventions at the cantonal level in Ticino 
+(Repubblica e Cantone Ticino 2021). In 2007, following the successful collection of signatures in the 
+Canton, the direct intervention of a citizen referendum overturned a parliamentary decision to build 
+a freeway leading to Locarno across the Magadino plain. In another example, citizen actions ensured 
+that existing cantonal laws to safeguard natural and cultural local heritage were updated to help 
+sustain traditional landscapes. 
+ 
+The successful Swiss spatial planning system has emerged from a traditional culture accustomed to 
+dealing with environmental risk, which enabled the nation-state to thrive despite the constraints of 
+an extreme landscape and hazardous terrain (Bründl et al. 2009; Pfister 2009). Historically, the Swiss 
+people have been characterised by a strong sense of cultural attachment to place, and of shared 
+responsibility in the governance of the country (Pfister 1985; Kriesi and Trechsel 2008). While 
+participatory mechanisms in the governance process aim to provide the Swiss with a deeply 
+encultured understanding of risk mitigation, that assumption has rarely been tested by research on 
+environmental hazards (Maidl et al. 2021). Implicit to the approach is the assumption that the 
+opportunity to be heard by authorities leads to citizens feeling that they are valued as actors in the 
+development of new understandings, decisions and institutional capacities.  
+ 
+One of the specific challenges confronting the inclusive Swiss decision-making system is for citizens 
+to feel that local spatial outcomes truly reflect the values of the community. If citizens feel that they 
+do not have a voice in planning issues, they may feel disaffected and distrustful (Bauer et al. 2014), 
+or on the other hand, simply become increasingly reliant on expert technical interventions (Turner 
+2001). Recently, the Swiss government has identified a specific lack of understanding amongst the 
+general population of the potential effects of increasing environmental risks (Camenzind and Loat 
+2014; FOEN 2016).  While opportunities for uniquely high levels of deliberation and engagement 
+exist in Switzerland, if the general population is not informed about, is unaware of or holds false 
+perceptions of risk, deliberative democracy could lead to undesirable planning outcomes. Therefore, 
+both the opportunities presented by citizen participation and the risks of the approach generate 
+important examples for policy development in other countries as they also struggle to manage risk 
+
+PAGE 9
+8 
+ 
+(eg. Smith 2009). Swiss federal and cantonal authorities are now acknowledging the necessity for 
+improved communication and community education on the new types of risk (FOEN 2016). It is 
+within such a context that we examine how residents of peri-urban Locarno perceive of 
+environmental risks and their influence over planning decisions. 
+ 
+4. Wildfire risk in the study area around Locarno  
+ 
+The research was undertaken in the peri-urban areas of Locarno, within the municipalities of 
+Locarno-Bré, Orselina, Muralto, Minusio, Brione sopra Minusio, Minusio and Ronco sopra Ascona 
+(Figure 2).  
+ 
+Figure 2: Household Survey areas (2015) within the municipalities of Locarno-Brè, Orselina, Muralto, 
+Minusio, Brione sopra Minusio, Minusio and Ronco sopra Ascona  
+ 
+ 
+ 
+ 
+The Locarnese region is located in the southern foothills of the European Alps in the Swiss-Italian 
+Canton of Ticino. In broad terms, the local climate is defined as Warm Temperate, with warm, wet 
+summers and cool to mild winters, but is also characterised by highly variable temperatures and 
+precipitation (Spinedi and Isotta 2004; MeteoSwiss 2012). The area averages 1457 millimetres of 
+annual rainfall and has the highest average temperatures for the country. The slopes of the 
+
+
+PAGE 10
+9 
+ 
+Locarnese region are covered in a mixed-forest, dominated at lower altitudes by sweet chestnut 
+(Castanea sativa), a tree rich with cultural significance and a forest-type that is traditionally more 
+likely to burn during the late-winter dormancy phase (Bajocco et al. 2011). 
+ 
+Palaeoecological studies provide evidence of frequent wildfires in southern Switzerland since pre-
+historic times (Tinner et al. 1999). The forests of Canton Ticino were severely depleted in the 
+nineteenth century, leading to slopes denuded of trees (Pezzatti et al. 2013). Replanting activities at 
+the turn of the twentieth century and forest expansion following the post-WWII abandonment of 
+marginal agricultural areas has led to a significative increase in forest area (Bettelini 2007; Loran et 
+al. 2017). With more forest there has been an associated increase in wildfire events, but that trend 
+was successfully reversed through policy interventions, such as the 1987 Cantonal Executive Decree 
+banning private burn offs, and increased investment into fire-fighting infrastructure (Conedera et al. 
+2004; Sezione Forestale 2008; Pezzatti et al. 2013). Now however, wildfire risk is projected to 
+increase with a changing climate, forest conditions and settlement patterns (Zumbrunnen et al. 
+2011; Pezzatti et al. 2016), and the Federal Office for the Environment (FOEN) has called for Cantons 
+to have a greater consideration of forest fire mitigation strategies (FOEN 2016, p.39).  
+ 
+Long-range climate forecasts suggest that Canton Ticino will experience an increase in the number of 
+hot days and higher median temperatures across all seasons, while summer precipitation is 
+projected to decrease and winter precipitation to increase (Spinedi and Isotta, 2004; MeteoSwiss 
+2012; Moser and Del Priore, 2013; FOEN 2017). Over the last thirty years, temperatures in Ticino 
+have risen at a rate almost double the median global average (MeteoSwiss 2012). Already, over the 
+period 1880 to 2005, the length of summer heatwaves over Western Europe, including Switzerland, 
+has doubled on average and the frequency of hot days has almost tripled (Brönnimann et al. 2014). 
+Although rainfall has always been variable, an increase in the number of dry spells has become 
+apparent since the 1970s (Rebetez 1999; Reinhard et al. 2005). This tendency, along with the overall 
+warming trend in the Alpine region, is partly why concerns are being raised that environmental 
+conditions are becoming more favourable for dangerous wildfires and other hazards (Rebetez 1999; 
+Adger 2006; Wastl et al. 2013; Pezzatti et al. 2016; Bottinelli 2017; Matasci et al. 2018). Those 
+changes have the potential to adversely affect the protective and recreational functions of the forest 
+and increase infrastructure damage (FOEN 2014; IFEC Ingegneria SA et al. 2016).  
+ 
+Concern about the likely impacts of droughts and wildfires in Ticino continue to grow amongst the 
+scientific community, especially as they might generate risks with which people are less familiar 
+
+PAGE 11
+10 
+ 
+(Reinhard et al. 2005; Rigling and Schaffer 2015; PLANAT 2018). Some of the most extensive wildfires 
+experienced in Switzerland occurred during the 2016-2017 winter in Ticino and neighbouring Grisons 
+(Pezzatti et al. 2017; Degrussa 2018). Although there was no loss of human life, the significant 
+destruction of forests established to protect settlements, exposed communities and infrastructure 
+to avalanches, landslides and debris flows in disturbed landscapes (Conedera et al. 2003; Alpine 
+Initiative 2018). As risks increase, the conception of wildfires in the region has the potential to 
+change from a regular, although manageable issue, to a situation where new, more extreme forms 
+of the hazard will become apparent (Henne Bigalke et al. 2018). Reinhard et al. (2005, p.8) conclude 
+for Switzerland, ‘Decision makers have to deal with more severe framework conditions than twenty 
+or thirty years ago and should implement appropriate measures’. To do so, more specific knowledge 
+is required on how authorities can draw from local knowledge to mitigate risk. 
+ 
+5. Method 
+ 
+Both quantitative and qualitative data on residents’ perceptions in the Locarnese area were 
+generated through a residential household survey undertaken in October-December 2015. The 
+survey was conducted to identify perceptions of environmental values, as well as attitudes towards 
+the local planning system’s management of those values and risks. Participants were sampled using 
+stratified selection criteria (Matthews and Ross 2014; Etikan et al. 2016), including: primary 
+residence; proximity to naturally vegetated areas; and, exposure to geophysical hazards associated 
+with steep slopes (Figure 2). Addresses were obtained from the Population and Migration Office of 
+Canton Ticino, which listed addresses by a ‘head of household’ criteria, and in most cases, identified 
+an adult male as the household representative. To attempt to balance a potential gender bias, 
+where multiple residents appeared under the same address, or where two individuals (one male and 
+one female) were listed as heads of household for an address entry, a female addressee was 
+selected. Households included within the village cores or ‘nuclei’, of the six municipalities were 
+excluded from the sample due to lower levels of environmental risk.  
+The survey contained Likert-scale, nominal binary (yes, no) and open-ended questions to produce 
+both quantitative and qualitative data. Key questions asked about residents’:  
+• gender, age, household typology, nationality, place of birth, employment and education, 
+home (length of stay, previous place of residence, factors influential in the choice of location 
+and on possible relocation, location in relation to forest and green spaces); 
+• location (most and least appreciated aspects, attachment levels); 
+• perceptions of forest management and biodiversity conservation; 
+
+PAGE 12
+11 
+ 
+• perceptions of environmental risk factors and risk management; 
+• actions and behaviour to prepare for environmental hazards and protect the environment;  
+• perceptions of the efficacy of agencies responsible for fire-fighting; 
+• opinions about and knowledge of the planning system; and 
+• satisfaction levels with planning decisions and engagement processes. 
+ 
+To optimise coverage in this multi-lingual context, a mixed-mode multi-language survey was applied. 
+The paper questionnaire was mailed to residents in the main local language, Italian. However, links 
+to online Survey Monkey versions of the questionnaire were offered in both German and English. 
+Surveys were posted through the Swiss postal service in October 2015 to 900 households, with 
+reminder postcards sent out in late November 2015. A total of 146 valid responses were received 
+(paper surveys 124 and online surveys 22), providing a response rate of 16 percent. That response 
+rate is in line with similar surveys conducted in Switzerland ranging from 15 percent (Home et al. 
+2014; Maidl et al. 2021) to 30-35 percent (Conedera et al. 2015; Frick et al. 2015). While the 
+response rate is low and the results here are indicative only, they provide important insights into the 
+ways that the Swiss respondents perceive of their environment and planning systems. 
+ 
+To guide the data analysis, responses were organised into three themes linked to the broader 
+research objectives: conceptions of place and environment; attitudes to risk; and the attitudes 
+towards the planning system. The strength of associations between the variables within the three 
+thematic groups were analysed using Pearson Chi-Square (χ²) and Fishers Exact Tests (FET) in IBM 
+SPSS (version 22). While a large body of information was generated from the survey, specific data 
+are chosen and presented here to develop narratives on perceptions of environment and 
+management. In association, qualitative data generated through open-ended questions in the survey 
+provide greater depth of insight into the perceptions of respondents, and quotations are used to 
+provide in-text support for key arguments. 
+ 
+6. Results 
+6.1 Characteristics of survey respondents 
+ 
+A total of 146 valid surveys were received, although not all questions were answered in each case 
+(Table 1). Of those respondents who answered, 90 percent indicated that they held Swiss citizenship 
+and more than half (54.8%) were born in Canton Ticino, with nearly a third (31.9%) stating another 
+Swiss canton as their birthplace and the remainder (13.3%) born abroad. Over one third of 
+
+PAGE 13
+12 
+ 
+respondents (37%) had lived at their current address for 21 years or longer; 25 percent had lived at 
+the address for 11-20 years; and 38 percent had moved into the area in the last 10 years, thus 
+revealing a relatively sedentary sample. This permanency could imply a good knowledge of the 
+location and associated environmental risks. Yet, it may also infer old age and perhaps a greater 
+sense of vulnerability, an assumption supported by the finding that 43 percent of respondents were 
+aged 65 years or more. That cohort are also likely to be less-affluent than the broader population 
+and dependent on the aged-pension (Swiss Life 2015). Nevertheless, cantonal data for the surveyed 
+municipalities reveal an average of 56 percent of all residents aged from 18 to 64 years - very close 
+to the 57 percent in that age bracket within the sample (USTAT 2016). Therefore, while the response 
+rate is quite low, it is relatively representative in terms of age. Some 65.8 percent of the total 146 
+participants were male and 34.2 percent female, whereas data for the six municipalities show a 
+slight discrepancy, with a predominance of females (53.1%) over males (46.9%) (USTAT 2016). 
+ 
+Table 1. Characteristics of respondent survey sample (N=146) 
+Characteristics Frequency (n)   Groups Percent 
+Age 146 18-44 
+45-64 
+65+ years 
+19.2 
+37.7 
+43.2   
+Gender 146 Female 
+Male 
+34.2 
+65.8 
+Time lived at same address 146 0-10 
+11-20 
+21+ years 
+38.4 
+24.7 
+37.0 
+Previous postcode  125 Ticino  
+Other  
+71.2 
+28.8 
+Education level 138 Secondary 
+Tertiary and higher 
+52.9 
+47.1 
+Household type 140 With child/ren 
+Two-person 
+One-person 
+Other 
+30.0 
+45.7 
+20.7 
+3.6 
+Home ownership 145 Owners 
+Renters 
+64 
+36 
+Secondary home or Monte* 
+ownership 
+144 Yes 
+No 
+36.1 
+63.9 
+* Traditional transhumance residence  
+ 
+6.2 Respondents’ perceptions of place and the environment 
+ 
+Household respondents expressed high appreciation for the local landscape, emphasising peace and 
+quiet, proximity to nature, views, clean air and a relaxed lifestyle. Green spaces were perceived as 
+
+PAGE 14
+13 
+ 
+particularly important (Table 2), with lifestyle and hedonistic values, including pleasant visual 
+landscapes and favourable climate, also highly rated. 
+ 
+Table 2: Respondents’ perceptions of the Locarnese region  
+  Percent  
+Personal values 
+Agree and 
+strongly agree Neutral 
+Strongly disagree and 
+disagree 
+The green spaces in the Locarnese are 
+very important to me (n=138) 91 7 2 
+I am very attached to the Locarnese 
+region (n=139) 83 15 2 
+The more people that live in Ticino, 
+the less satisfied I am (n=136) 41 32 27 
+The municipal zoning plan supports 
+conservation of natural assets (n=138) 30 28 43 
+Vineyards are more important than 
+forests (n=137) 20 38 43 
+Prioritise urban development over 
+nature conservation (n=139) 10 12 78 
+ 
+Respondents were asked why they chose to live in their current location. The standout motivations 
+were peace and quiet (85%), the view (80%); and proximity to nature (80%). Other important factors 
+included: relaxed lifestyle (77%); clean air (74%); escape from urban life (70%); and a good 
+environment to bring up children (67%). These results highlight the ’Swiss sunroom‘ status of the 
+Locarnese region and help to explain the attraction of its mild climate and environment. Some 94 
+percent of all respondents agreed with the statement that forests significantly contributed to the 
+beauty of regional landscapes.  
+Usage of recreational areas (green spaces, forests, parks) was very high among respondents, with 71 
+percent using them at least once a week. Only approximately one-third of respondents indicated 
+proximity to work and transport/services as being important in their location decisions. While 
+people were concerned about the degradation of the environment and urban development, factors 
+impacted by climate change such as wildfires did not rate highly amongst respondents in relation to 
+other factors (Figure 3).  
+ 
+ 
+
+PAGE 15
+14 
+ 
+Figure 3: Percentage of respondents’ perceptions of the most significant environmental issues for 
+their municipality (n=105) 
+ 
+ 
+Respondents were provided with a list of six common hazards and asked to indicate which they felt 
+posed the major threat to their home. When evaluating those items, we see that wildfires and 
+landslides were the greatest concern to residents living on the slopes around Locarno (Table 3).  
+ 
+Table 3: Most important major natural hazard threatening the home of respondents (n=120) 
+Natural hazard Number Percent 
+Wildfires  61 34.3 
+Landslides  50 28.1 
+Rockfalls 39 21.9 
+Flooding  14 7.9 
+Earthquakes  12 6.7 
+Avalanches  2 1.2 
+ 178* 100 
+*Multiple responses allowed  
+ 
+Over half of the respondents indicated having some personal experience of wildfires in Ticino, with 18 
+respondents providing detailed examples of their experiences with wildfires, including childhood 
+memories of watching the blazes on the hillsides from afar; with only two respondents indicating that 
+they had either their house or adjacent buildings damaged or destroyed during a wildfire.  
+  
+9.1
+10.6
+10.6
+12.8
+14.4
+16.7
+25.8
+0 5 10 15 20 25 30
+ Air pollution /Greenhouse gas emissions
+ Natural hazards (including forest fire)
+No environmental problems/ Unsure
+Traffic and noise including helicopter noise due to construction
+carried out with aid of helicopters on steep terrain
+Abandoning of previously cultivated spaces/ lack of
+management/ loss of traditional terracing/heritage buildings
+Miscellaneous other
+Real estate speculation (secondary housing) / Too much
+construction/ increased density of housing/ loss of amenity
+Percent 
+
+PAGE 16
+15 
+ 
+• One female resident aged between 40-44 years commented: ‘I remember the large fires on the 
+mountains in my childhood, when you would be fascinated by the colour and the smoke plumes [of 
+the fires].’  
+• A male resident aged over 65 years said: ‘In the 1950-70s, the hills were often on fire. I remember 
+the death of a fire-fighter during my military training, the father of a school mate.’  
+ 
+The quantitative data also show that those respondents who consider wildfires as the principal 
+environmental threat are more likely to have knowledge of previous wildfire events near their home 
+(FET (n=99) = 12.160, p = .002). That result could in part be explained by the fact that respondents 
+who were born in Ticino rated the threat of forest fires to their home higher than those respondents 
+born elsewhere (χ² (n=102) = 4.965, p = .042). No statistically significant difference appeared in the 
+relationship between age and those who consider wildfires as a major threat.  
+ 
+Respondents were asked to select the most likely hypothetical timeframe for the occurrence of a 
+major wildfire occurring in their vicinity. A substantial 51 percent of respondents indicated that they 
+were ‘unsure’ about the timeframe surrounding a possible wildfire and were unwilling to speculate. 
+Results for the remaining 49% of respondents (n=68) showed that most (69.1%) thought that a 
+wildfire was likely to occur within ten years. Although not statistically significant, younger 
+respondents were more likely to think that such as fire was unlikely to occur for a long time (Table 
+4). Interestingly, 16.2 percent of respondents felt that a wildfire was never likely to occur, with 
+almost one-quarter of young adults answering in that manner. 
+Table 4: Percentage of perceived likelihoods of a major fire by age of respondent (n=68) 
+Likely timing  18-44 years % 45-64 years % 65+ years % Total % 
+Within 10 years 46.2 77.3 72.7 69.1 
+Within 30 years 30.8 4.5 15.2 14.7 
+Never  23.1 18.2 12.1 16.2 
+Total 100.0 100.0 100.0 100.0 
+ 
+Over two-thirds of respondents (68.1%) indicated they had no knowledge of firefighting 
+infrastructure to combat wildfires in their municipality. Only 8 percent of respondents indicated that 
+they had contacted authorities over the hazard rating for their residence. Perhaps low levels of 
+personal knowledge of wildfires could be expected in a context where the management of the 
+environmental hazard is placed in the hands of highly specialised mountain fire fighters. That 
+argument is supported by findings that 98 percent of respondents approve of the cantonal forest fire 
+fighting efforts, with 96 percent indicating support for those activities near their home.  
+
+PAGE 17
+16 
+ 
+6.3 Perceptions of management and planning for environmental risk 
+ 
+Respondents recognised the crucial function of the forest in stabilising steep slopes to protect 
+settlements from gravitational hazards. Some 89 percent of respondents saw the forest as an 
+intergenerational asset, recognising its bequest values, and over 72 percent of respondents were 
+satisfied with the current extent of the forest. Concern was expressed about the lack of clearance of 
+unsafe trees and dead wood, and many believed that the upkeep of forest areas should be made 
+compulsory for landholders. Older respondents appeared more likely to perceive that tree-cover was 
+too extensive. Respondents were asked the question: “Should clearing of trees be allowed close to 
+settlements in some high risk wildfire areas to create buffer zones without forest?” A total of 61 
+percent of all respondents indicated that tree removal should be allowed in such areas (Table 5), 
+with males significantly more likely than females to approve of the clearing of trees under such 
+circumstances (χ² (n=109) = 5.353, p = .021). 
+Table 5: Respondents’ support for tree clearing to create fire-safe buffer zones by gender (n=109) 
+Perception of tree clearance Male % Female % Total % 
+Approve  67.5 43.8 60.6 
+Disapprove  32.5 56.3 39.4 
+Total 100.0 100.0 100.0 
+ 
+Further, 60 percent of respondents agreed that maintenance work on their property (vineyards, 
+forested spaces and gardens) was important to reduce the risk of forest fires. A sense of shared 
+responsibility is evident in the group of respondents who believed that the work they had carried 
+out had a considerable impact on the wider landscape. Those same individuals who agreed that 
+maintenance work was important to reduce risk were also more likely to believe in the effectiveness 
+of the current fire policy that bans outdoor fires in periods of prolonged drought (χ² (n=111) = 
+19.273, p = .004). Respondents owning a Monte, a traditional transhumance residence, or another 
+secondary home, were more likely to support clearance for buffer zones than those who did not (χ² 
+(n=110) = 7.146, p = .008) (Figure 4). Most local wildfires start in the zone between the valley bottom 
+and the Monte, halfway up the mountain slopes, and therefore disproportionately affect the former 
+transhumance dwellings (Conedera and Pezzatti 2005; Conedera et al. 2015).  
+ 
+ 
+ 
+ 
+
+PAGE 18
+17 
+ 
+Figure 4: Preference for removing trees close to buildings as a function of owning a secondary home 
+(n=110) 
+ 
+Over three-quarters of respondents considered current levels of rezoning for new housing 
+development as excessive (Table 6). Those findings were supported by data showing that 85 percent 
+of respondents held ‘negative’ or ‘rather negative’ feelings about new residential developments. At 
+the same time, almost half of respondents saw a need for the establishment of stricter conservation 
+areas, while one-third thought current levels were ‘about right’.  
+ 
+Table 6: Percentage opinions of spatial planning priorities for the study area  
+                            Percent  
+Spatial planning priorities 
+Too much 
+already 
+About 
+right  
+More 
+needed Total 
+Set aside/ strict conservation areas (n=128) 18.8 34.4 46.8 100 
+Rezoning for new housing development (n=136) 78.7 9.6 11.8 100 
+ 
+   
+Respondents were asked if there were any steps the federal, cantonal or municipal administration 
+could take to enhance their feelings of personal safety by reducing the risk posed by natural hazards. 
+Some 40 percent stated they did not think more work was needed to make them feel safer from 
+environmental risk. A further 38 percent indicated that they were ‘unsure’ and were reluctant to 
+speculate whether there was anything that could be done to enhance their safety. That said, 
+respondents who did think that something could be done to enhance their protection (22% overall), 
+provided 36 suggestions for enhanced protection from environmental hazards. Interestingly, some 
+
+
+PAGE 19
+18 
+ 
+42 percent of these suggestions involved thoughts on improving the management of forested 
+landscapes, such as: 
+• ‘Force landowners to keep the forest close to houses clean’  
+• ‘Make sure there is sufficient space between the forest and houses’  
+• ‘Eliminate unsafe trees’  
+• ‘Make the upkeep and cleaning of the forest compulsory, in such a way that the forest can 
+breathe’  
+• ‘Fire-breaks‘  
+A substantial percentage of household participants indicated that they had some familiarity with the 
+spatial planning system of Canton Ticino (Table 7), although only 3 percent believed that they held 
+in-depth knowledge on the subject.  
+Table 7: Respondent familiarity with the planning system of Canton Ticino by age (n=135) 
+Familiarity 18-44 years % 45-64 years % Over 65 years % Total % 
+Very familiar 3.8 5.6 0.0 3.0 
+Some knowledge 84.6 79.6 90.9 85.2 
+Unsure 11.5 14.8 9.1 11.9 
+                                    Total 100.0 100.0 100.0 100.0 
+ 
+On the other hand, most respondents felt that their views were not adequately reflected in current 
+spatial planning outcomes (Table 8). Over three-quarters (79%) of respondents felt they had no 
+influence over spatial planning issues concerning their local municipality or canton. Such results 
+suggest that while traditional deliberative democratic channels are built into the planning system, 
+the vast majority of respondents perceive they do not have a voice when it comes to local outcomes. 
+There was a statistically significant difference based on the level of education of respondents, with 
+tertiary educated respondents more likely to perceive that their opinions were influencing planning 
+outcomes (57.7%) compared with respondents possessing only secondary education (55.1%) (FET 
+(n= 124) = 7.294, p = .026).  
+ 
+Table 8: Perceptions of being heard on spatial planning issues concerning the local municipality or 
+Canton by age (n=128) 
+Perception of being heard 18-44 years % 45-64 years % Over 65 years % Total % 
+Yes 17.4 12.0 30.9 21.1 
+No 82.6 88.0 69.1 78.9 
+                                    Total 100.0 100.0 100.0 100.0 
+ 
+Although there are small numbers of respondents and the results are not significantly different (FTE 
+(n=128) = 5.646, p = .055), 31 percent of respondents aged 65 years or more said that they do have a 
+
+PAGE 20
+19 
+ 
+voice, higher than the 12 percent of those aged 45-64 years or the 17 percent for those aged less 
+than 45 years (Table 8). Perhaps elderly respondents are more supportive of current planning 
+processes or, on the other hand, younger people’s expectations of planning may be particularly high 
+and are not being met. This result is interesting in the light of findings that show nearly three 
+quarters (73.5%) of those aged 65 years or older gave a previous postcode from a non-Italian 
+speaking region of Switzerland. Those respondents who gave their previous address as being from 
+an non-Italian-speaking part of Switzerland were significantly more likely to feel they were being 
+heard than those who gave a previous address from an Italian speaking part of Switzerland or 
+abroad (χ² (n= 106) = 10.027, p = .002). In other words, the results suggest that respondents who 
+were younger and from Ticino were less likely to support planning outcomes. 
+         
+Respondents were asked to identify, from a list of approaches alternative to the official voting process, 
+the ways in which they had been able to express their opinion on planning issues. Aside from voting 
+in their official municipal ballots on particular issues , signing a petition and writing a letter to the 
+municipality were the most popular alternative forms of direct engagement, while social media 
+appeared to play only a small role (Table 9). The response rate to this question was low (n=70), perhaps 
+because only those respondents who had participated in this manner chose to provide any details on 
+how they expressed their opinion.  
+ 
+Table 9: Respondents’ choice of alternative approaches to express opinions on planning issues in 
+the study area (n=70) 
+  
+Number Percent 
+Signing a petition 33 36.2 
+Letter to the Mayor/ municipality 25 27.5 
+Newspaper article 14 15.4 
+Social media 11 12.1 
+Rallies 8 8.8 
+ 91* 100.0 
+*Multiple responses allowed  
+ 
+In summary, educational level and cultural/linguistic background are significant predictors of the 
+sense of influence in relation to planning outcomes in Ticino. Once again, these results raise 
+important issues for the effectiveness of the deliberative planning process, with influence apparently 
+being reflective of certain groups within Canton Ticino, rather than a simple association with broad 
+public participation in democratic processes. 
+ 
+
+PAGE 21
+20 
+ 
+7. Discussion 
+ 
+A high percentage (79%) of respondents felt they have ‘no voice’ in environmental planning 
+outcomes concerning their local municipality/canton. This result was surprising, as the resident 
+population of the study area have had numerous opportunities to participate in decision-making 
+processes, and they are constantly being supported to learn about contemporary issues (Stanga 
+2017). Such a strong negative outcome could indicate a degree of despondency by respondents, who 
+are expressing attitudes that might be expected in a population that views the democratic process as 
+a mere ‘window-dressing’ exercise rather than a truly deliberative and representative process. 
+Questions arise over the effectiveness of a political system in which people get to express their 
+opinions and participate to an unparalleled degree, but feel that their participation does not 
+influence outcomes (De’Arman 2020). 
+ 
+Survey results reveal a mismatch between respondents’ perceptions of landscape amenity and 
+ecological values, and their attitudes towards local risk mitigation approaches. On one hand there is 
+a very high value attributed to the forested landscape and a wish for more trees and conservation 
+(see also Conedera et al. 2015), but on the other there appears to be considerable support for 
+clearing trees to immediately reduce risk. That situation, which is not unique to Ticino (Kalhor et al. 
+2018; Weber et al. 2019), suggests diverging priorities that may be impossible to reconcile fully 
+within the one space. At the same time, current environmental management approaches could be 
+creating a false sense of security in the population even as risks increase, while having the effect of 
+‘losing the public’ who clearly desire stricter conservation measures (Buchecker et al. 2003). Such an 
+erosion of institutional trust (see Parkins and Mitchell 2005), seems to relate especially to 
+immigrants from other Swiss cantons who often do not speak Italian and are more likely to 
+misunderstand local risks, and as a result, may be particularly ignorant of the need for targeted 
+interventions.  
+ 
+Even though we have analysed only a small sample, the results suggest that many decisions relating 
+to planning for residents on the wildland-urban interface around Locarno do not fully incorporate 
+local concerns – a result which appears to contrast with outcomes at the national level. Swiss 
+planning generally enjoys great respect and ownership amongst the country’s citizens, and partly as 
+a result, democratic processes are granted higher political standing than in other countries (Kriesi 
+and Trechsel 2008; Lendi 2012). The real strength of Swiss planning derives from its willingness to 
+engage, anticipate potential problems and develop appropriate technical solutions in a process 
+supported through the Swiss federal governance system (Frey 1994; Muggli 2013; Auer et al. 2014). 
+
+PAGE 22
+21 
+ 
+However, the results here would suggest that despite its clear merits, the system also generates 
+potential procedural pitfalls for managing increasing natural hazards and urban expansion (Reinhard 
+et al. 2005; Price et al. 2015). In this case, respondents may just be using the survey to voice their 
+local grievances, but there is also the possibility that a perceived lack of citizen influence over 
+environmental planning may originate from the fact that political, economic and technical experts 
+increasingly dominate the Swiss policy agenda (Hersperger et al. 2014; Kruse and Pütz 2014). That is 
+an issue affecting many democracies (Turner 2001), but in the Swiss case, the relative ease offered 
+by popular referenda may be creating a disproportionate sense of citizen entitlement to be heard on 
+local planning issues. Perhaps citizens’ expectations are raised too high by the awareness that in 
+such a robust democracy they should have a voice in all major decisions that affect them personally 
+and collectively.  
+ 
+The highly deliberative Swiss system generates unique opportunities for citizen engagement, but 
+simultaneously, institutional risks are created through an emphasis on the importance of 
+participation (Stern and Baird 2015; Legacy 2017). The legitimacy of political engagement could 
+erode if particular groups, such as many of the younger respondents from the survey in Ticino, do 
+not see value in their involvement (see also Forester 1999). Although universal voting is not the aim 
+of the Swiss deliberative democratic system, average participation rates in votes vary considerably. 
+In two recent nation-wide examples, a referendum in 2018 saw participation reach 54 percent, while 
+another in June 2018 drew only 25 percent of voters (FSO 2017; 2018). Participation for cantonal 
+voting rarely exceeds 45 percent, with a 2017 vote on changes to the environmental protection law 
+achieving 42 percent participation, while an earlier initiative to build a tunnel for a ring road 
+attracting 36 percent of eligible voters (Repubblica e Cantone Ticino 2021). Dryzek (2009) argues 
+that societies will need to avoid ‘missing’ or ‘overhearing’ the opinions of more vulnerable groups or, 
+for that matter ‘losing’ groups that perceive that their involvement is meaningless if they wish to 
+maintain effective democratic governance systems. In a society increasingly defined by risk (Beck 
+1986), that raises important questions about whether the deliberative planning processes will need 
+to evolve to maintain its social licence.  
+ 
+Local planning in peri-urban spaces, such as the sample area, will need to increasingly incorporate 
+the complex implications of environmental risk (Gallent and Shaw 2007; Von der Dunk et al. 2011; 
+Nilsson et al. 2013). Within a deliberative democracy, the evolving situation must be understood by 
+residents so they make an informed vote for their preferred outcomes. However, our results support 
+a wider concern within the Swiss government (FOEN 2016) that residents are not fully 
+
+PAGE 23
+22 
+ 
+acknowledging that new risks are becoming more important with environmental change and so are 
+not demanding changes in planning outcomes. That challenge is compounded by new levels of 
+societal complexity. Particular groups within society, and especially those more vulnerable due to 
+socio-economic or demographic circumstances, can miss out on opportunities to learn about risk 
+(Fung and Wright 2003; Eriksen and Simon 2017). A specific planning focus on the wildland-urban 
+interface, areas where socio-ecological risk will concentrate, could be one way to manage the 
+unique, complex entanglement of urban growth, natural hazards and environmental values (Paveglio 
+et al. 2009; Bardsley et al. 2015; Llausàs et al. 2016; Keller et al. 2020). Developing knowledge of 
+residents’ values and priorities for the management of such areas, while also educating about the 
+new risk conditions, could be a vital step to informing such a planning approach.  
+ 
+Consultation does not necessarily imply deliberation (Dryzek 2000; Johnston 2014). Beck (2016) 
+warns of the need for an evolution in democracy, as he asks how much environmental risk our 
+democratic institutions can withstand before their basic tenets start to be undermined. As the public 
+is not always keen to participate in democratic processes (Brady and Webb 2013), deliberative 
+frameworks must be applied appropriately and be made attractive enough to encourage residents to 
+engage by firstly ensuring that their actions will be meaningful, and secondly creating deliberative 
+settings that are comfortable and facilitate exchange, communication and learning (Feng et al. 
+2018). It is vital that the challenge of emerging risks can be explained to society, so that people 
+realise that responses to risk are difficult and expensive, and moreover, that there will always be 
+residual risks that cannot be eliminated. The Swiss have the advantage of a traditional cultural 
+heritage of risk management (Pfister 2009), where there is already trust in expert opinion, processes 
+in collaborative learning, and an emphasis on place-based planning, seen as essential components of 
+an effective approach (Champ et al. 2012; Wachinger et al. 2013). A middle path, where planning is 
+open to diverse viewpoints and perspectives, but also capable of efficient and decisive action linked 
+to scientific knowledge and technical expertise, has the potential to continue to generate a unique 
+blend of both the instrumental and participatory planning approaches (Dryzek 1990; Allmendinger 
+2009; Inch 2015; Innes and Booher 2016). In doing so, a dialogue of risk reduction amongst the 
+population, technical authorities and other government actors could be normalised, and a risk 
+culture created and/or strengthened to enable sophisticated planning decisions (Hulme 2008).  
+ 
+ 
+ 
+
+PAGE 24
+23 
+ 
+8. Conclusion 
+ 
+Respondents from the upper slopes of the peri-urban area around Locarno highlighted a very strong 
+attachment to their local forests. Yet, many elements are changing rapidly, including demographic 
+and settlement patterns, forests and climate, which all contribute to changing levels of risk. Many 
+respondents, and especially those originating from outside of Ticino, are not recognising the new 
+levels of environmental risk, and seem to be more satisfied with current planning outcomes as a 
+result. New forms of planning for risk would recognise that some decisions will need to mirror the 
+perceptions of local residents, while others would continue to rely largely upon the technical 
+understandings of risk. Such a comprehensive deliberative process would encourage residents of 
+areas with high levels of environmental risk to engage more fully with relevant topics for their 
+region. In turn, this has the potential to strengthen community ties. This is what Habermas (1984) 
+refers to as the social room for public interaction, which is a crucial aspect in fostering positive risk 
+mitigation behaviours across communities. However, local planning processes do not stand in a 
+social and institutional vacuum; they must be considered within existing forms of democracy and 
+norms of behaviour. One of the big unresolved questions in this field lies in the identification of 
+mechanisms capable of translating the theory of deliberative planning into successful public 
+participation. It may be that best practice deliberative planning will involve unique local 
+combinations of participatory and technical inputs in decision-making at different levels of 
+governance. 
+ 
+The Swiss democratic process creates knowledge and ownership of the planning system, thus 
+resulting in degrees of approval in government rarely seen elsewhere. The success of that 
+normalised process is reflected in the survey results, where 88 percent claim to have at least some 
+knowledge of the cantonal planning system. The overwhelming satisfaction with fire-fighting 
+authorities articulated in the survey also implies trust in the service that the government is 
+providing. Yet, people have very high expectations of the planning system and most do not believe 
+that their voices are being heard. As environmental risks become personal through impacts at local 
+levels, the societal inability to enable democratic influences over planning outcomes appears to be 
+generating challenges for governance. This article highlights the need for experimentation in this 
+space to learn how to achieve better, real outcomes for society. In this case, even best-practice 
+Swiss democratic processes struggle to guide knowledge and generate decisions that meet complex 
+local needs and aspirations. As any reforms are initiated to respond to new levels of environmental 
+risk, there will be limitations and failures and no-one has all the answers, so successful engagement 
+
+PAGE 25
+24 
+ 
+must be tied to learning processes. Perhaps the real finding is that a new level of uncertainty in 
+relation to environmental risk must be made clear to all.  
+References 
+ 
+Adger, WN, 2006, ‘Vulnerability’, Global Environmental Change, vol. 16, pp. 268–281. 
+Allmendinger, P, 2009, Planning Theory, Palgrave Macmillan, Basingstoke. 
+Alpine Initiative, 2018, ‘In Unseren Schutzwäldern Wird Es Brenzlig’, Echo Magazine, [online] 
+Available at: <https://www.alpeninitiative.ch/schutzwaelder/>, [Accessed 11 June 2020]. 
+Anton, CE and Lawrence C, 2014, ‘Home is where the heart is: The effect of place of residence on 
+place attachment and community participation’, Journal of Environmental Psychology, vol. 40, 
+pp. 451-461. 
+Auer, A, Bühlmann, L, Christ, B, Frey RL, Griffel, A, Kübler, D, Muggli, R, Schuler, M and Waldman, B, 
+2014, ‘Fuenf Thesen zu Raumplanung und Zersiedelung’, in Muggli, R (eds), Ist der Föderalismus 
+an der Zersiedelung schuld? Verlag Neue Zürcher Zeitung, Zuerich, Switzerland, pp. 6-15. 
+Bajocco, S, Pezzatti, GB, De Angelis, A, Conedera, M and Ricotta, C, 2011, ‘Bootstrapping wildfire 
+selectivity for the forest types of Canton Ticino (Switzerland)’, Earth Interactions, vol. 15, pp. 1-
+19. 
+Bardsley, DK, and Knierim, A, 2020, Hegel, Beck and the reconceptualization of ecological risk: The 
+example of Australian agriculture. Journal of Rural Studies 80: 503-512. 
+Bardsley, DK, Weber, D, Robinson, GM, Moskwa, E and Bardsley, AM, 2015, ‘Wildfire risk, 
+biodiversity and peri-urban planning in the Mt Lofty Ranges, South Australia’, Applied 
+Geography, vol. 63, pp. 155-165. 
+Bauer, N, Wallner, A and Hunziker, M, 2009, ‘The change of European landscapes: human-nature 
+relationships, public attitudes towards rewilding, and the implications for landscape 
+management in Switzerland’, Journal of Environmental Management, vol. 90, pp. 2910-2920. 
+Bauer, PC and Fatke, M, 2014, ‘Direct democracy and political trust: Enhancing trust, initiating 
+distrust–or both?’, Swiss Political Science Review, vol. 20, pp. 49-69. 
+Beck, U, 1986, ‘Risikogesellschaft: auf dem Weg in eine andere Moderne’, First Edition, Suhrkamp, 
+Frankfurt am Main.  
+Beck, U, 2016, The Metamorphosis of the World: How Climate Change Is Transforming Our Concept 
+of the World, Polity Press, Cambridge. 
+Beck, U, Bonss, W and Lau, C, 2003, ‘The theory of reflexive modernization: Problematic, hypotheses 
+and research programme’, Theory, Culture and Society, vol. 20, pp. 1-33. 
+
+PAGE 26
+25 
+ 
+Bettelini, D, 2007, ‘Evoluzione Spaziale del Bosco in Ticino’, Dati: Statistiche e Societá, vol. 7, pp. 76-
+81. 
+Bottinelli, L, (ed) 2017, Statistica Ticinese dell’Ambiente e delle Risorse Naturali, Ufficio di Statistica 
+Cantone Ticino, [online] Available at:  
+<https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/star_2017.pdf>, [Accessed 10 June 2020]. 
+Brady, D and Webb, N, 2013, ‘Communicating Bushfire Safety in Australia: The Challenge for 
+Government of Increasing Community Participation’, Asia Pacific Media Educator, vol. 23, pp. 
+351-365. 
+Brönnimann, S, Appenzeller, C, Croci-Maspoli, M, Fuhrer, J, Grosjean, M, Hohmann, R, Ingold, K, 
+Knutti, R, Liniger, MA, Raible, CC, Röthlisberger, R, Schär, C, Scherrer, SC, Strassmann, K and 
+Thalmann, P, 2014, ‘Climate change in Switzerland: a review of physical, institutional, and 
+political aspects’, Wiley Interdisciplinary Reviews: Climate Change, vol. 5, pp. 461-481. 
+Bründl, M, Romang, HE, Bischof, N and Rheinberger, CM, 2009, ‘The risk concept and its application 
+in natural hazard risk management in Switzerland’, Natural Hazards and Earth System Sciences, 
+vol. 9, pp. 801-813. 
+Buchecker, M, Hunziker, M and Kienast, F, 2003, ‘Participatory landscape development: overcoming 
+social barriers to public involvement’, Landscape and Urban Planning vol. 64, pp. 29-46. 
+Camenzind, R and Loat, R, 2014, Risk-based spatial planning: Synthesis report on two case studies at 
+communal land use planning level, National Platform for Natural Hazards / Federal Office for 
+Spatial Development / Federal Office for the Environment, Bern. 
+Champ, J Brooks, J and Williams, D, 2012, ‘Stakeholder Understandings of Wildfire Mitigation: A Case 
+of Shared and Contested Meanings’, Environmental Management, vol. 50, pp. 581-597. 
+Conedera, M, 2009, Implementing fire history and fire ecology in fire risk assessment: the study case 
+of Canton Ticino (southern Switzerland), Dissertation, Fakultät für Bauingenieur-, Geo- und 
+Umweltwissenschaften (BGU), Karlsruhe, Germany. 
+Conedera, M, Corti, G, Piccini, P, Ryser, D, Guerini, F and Ceschi, I, 2004, ‘La gestione degli incendi 
+boschivi in Canton Ticino: tentativo di una sintesi storica, Schweizerische Zeitschrift für 
+Forstwesen, vol. 155, pp. 263-277. 
+Conedera, M, Del Biaggio, A, Seeland, K, Moretti, M and Home, R, 2015, ‘Residents' preferences and 
+use of urban and peri-urban green spaces in a Swiss mountainous region of the Southern Alps’, 
+Urban Forestry and Urban Greening vol. 14, pp. 139-147. 
+Conedera, M, Krebs, P, Valese, E, Cocca, G, Schunk, C, Menzel, A, Vacik, H, Cane, D, Japelj, A, Muri, B 
+and Ricotta, C, 2018, ‘Characterizing Alpine pyrogeography from fire statistics’, Applied 
+Geography, vol. 98, pp. 87-99. 
+
+PAGE 27
+26 
+ 
+Conedera, M and Pezzatti GB, 2005, ‘Gli incendi di bosco: cosa ci dice la statistica’, Dati Statistiche e 
+Società: Trimestrale dell'Ufficio di Statistica del Cantone Ticino, vol. 5, pp. 6-13. 
+Conedera, M, Del Biaggio, A, Seeland, K, Moretti, M and Home, R, 2015, ‘Residents’ preferences and 
+use of urban and peri-urban green spaces in a Swiss mountainous region of the Southern Alps’, 
+Urban Forestry and Urban Greening, vol. 14, pp. 139–147. 
+De’Arman, KJ, 2020, ‘Is public participation public inclusion? The role of comments in US Forest 
+Service decision-making. Environmental management, vol. 66, pp. 91-104. 
+Degrussa, D, 2018, Anche gli incendi cambiano, Radiotelevisione della Svizzera Italiana (RSI), [online]. 
+Available at: <https://www.rsi.ch/news/ticino-e-grigioni-e-insubria/Anche-gli-incendi-
+cambiano-10952027.html>, [Accessed 11 June 2020]. 
+Della Porta, D, O’Connor, F, Portos, M and Subirats, A., 2017, Social movements and Referendums 
+from Below: Direct Democracy in the Neoliberal Crisis. Policy Press, Bristol. 
+Dryzek, JS, 1990, Discursive Democracy: Politics, Policy, and Political Science, Cambridge University 
+Press, Cambridge, New York. 
+Dryzek, JS, 2000, Deliberative Democracy and Beyond: Liberals, Critics, Contestations, Oxford, Oxford 
+University Press, United Kingdom. 
+Dryzek, JS, 2009, ‘Democratization as deliberative capacity building’, Comparative Political Studies, 
+vol. 42, pp. 1379-1402. 
+Eriksen, C, 2014, ‘Gendered Risk Engagement: Challenging the Embedded Vulnerability, Social Norms 
+and Power Relations in Conventional Australian Bushfire Education’, Geographical Research, 
+vol. 52, pp. 23-33. 
+Eriksen, C and Simon, G, 2017, ‘The Affluence–Vulnerability Interface: Intersecting scales of risk, 
+privilege and disaster’, Environment and Planning A, vol. 49, pp. 293-313. 
+Etikan, I, Musa, SA and Alkassim, RS, 2016, ‘Comparison of convenience sampling and purposive 
+sampling’, American Journal of Theoretical and Applied Statistics, vol. 5, pp. 1-4. 
+Feng, S, Hossain, L and Paton, D, 2018, ‘Harnessing informal education for community resilience’, 
+Disaster Prevention and Management: An International Journal, vol. 27, pp. 43-59.  
+FOEN, 2014, Anpassung an den Klimawandel in der Schweiz: Aktionsplan 2014 – 2019, Zweiter Teil 
+der Strategie des Bundesrates vom 9. April 2014, Federal Office for the Environment (FOEN), 
+Bern, Switzerland.  
+FOEN, 2016, Umgang mit Naturgefahren in der Schweiz, Federal Office for the Environment (FOEN), 
+Report commissioned by the Swiss Federal Council, Bern, Switzerland. 
+FOEN, 2017, Risques et Opportunités liés au Climat. Une Synthèse à l’échelle de la Suisse, Federal 
+Office for the Environment (FOEN), Bern, Switzerland. 
+
+PAGE 28
+27 
+ 
+Forester, J, 1999, The Deliberative Practitioner: Encouraging Participatory Planning Processes, MIT 
+Press, Cambridge. 
+Frandsen, M, Paton, D and Sakariassen, K, 2011, ‘Fostering community bushfire preparedness 
+through engagement and empowerment’, The Australian Journal of Emergency Management, 
+vol. 26, pp. 23-30. 
+Frey, BS, 1994, ‘Direct democracy: politico-economic lessons from Swiss experience’, The American 
+Economic Review, vol. 84, pp. 338-342. 
+Frick, J, Bauer, N, von Lindern, E and Hunziker, M, 2018, ‘What forest is in the light of people's 
+perceptions and values: socio-cultural forest monitoring in Switzerland’, Geographica Helvetica, 
+vol. 73, pp. 335-345. 
+Frick, J, and Hunziker, M, 2015, Hintergründe der Akzeptanz von Regionalen Naturpärken. 
+Forschungsbericht. WSL Berichte: Vol. 30. Birmensdorf: Eidg. Forschungsanstalt für Wald, 
+Schnee und Landschaft WSL. 
+FSO, 2018, Statistical Data on Switzerland 2018, Federal Statistical Office (FSO), Neuchâtel, 
+Switzerland. 
+FSO, 2017, Voter Participation, Federal Statistical Office, Neuchatel, Switzerland [online]. Available 
+at: <https://www.bfs.admin.ch/bfs/de/home/statistiken/politik/abstimmungen.html>, 
+[Accessed 2 August 2017]. 
+Fung, A and Wright, EO, 2003, Deepening Democracy: Institutional innovations in Empowered 
+Participatory Governance, vol. 4, Verso, Cambridge MA. 
+Galfetti, M, 2020, ‘La trasformazione del territorio in Ticino’, in Dati Statistiche e Società: Trimestrale 
+dell'Ufficio di Statistica del Cantone Ticino, vol. 20, pp. 5-21.  
+Gallent, N and Ciaffi, D, (eds) 2014, Community Action and Planning: Contexts, Drivers and 
+Outcomes, Policy Press, Bristol, United Kingdom. 
+Gallent N and Shaw D, 2007, ‘Spatial planning, area action plans and the rural-urban fringe’, Journal 
+of Environmental Planning and Management, vol. 50, pp. 617-638. 
+Gallent, M, Peter, L, Marxer, P, Forster, F, Rickenmann, D and Re, L, 2003, ‘Consequences of forest 
+fires on the hydrogeological response of mountain catchments: a case study of the Riale 
+Buffaga, Ticino, Switzerland’, Earth Surface Processes and Landforms, vol. 28, pp. 117-129. 
+Gennaio, MP, Hersperger, AM and Bürgi, M, 2009, ‘Containing urban sprawl—Evaluating 
+effectiveness of urban growth boundaries set by the Swiss Land Use Plan’, Land Use Policy, vol. 
+26, pp. 224-232. 
+
+PAGE 29
+28 
+ 
+Geiser, U, 2019, ‘Swiss dismiss freeze on construction zones’, [online]. Available at: 
+<https://www.swissinfo.ch/eng/politics/vote-february-10--2019_swiss-consider-freeze-on-
+construction-zones/44730836>, [Accessed 3 July 2020]. 
+Ghasemi, B, Kyle, GT and Absher, J, 2020, ‘An examination of the social-psychological drivers of 
+homeowner wildfire mitigation’, Journal of Environmental Psychology, vol. 70, p. 101442. 
+Godschalk, DR, Brody, S and Burby, R, 2003, ‘Public Participation in Natural Hazard Mitigation Policy 
+Formation: Challenges for Comprehensive Planning’, Journal of Environmental Planning and 
+Management, vol. 46, pp. 733-754. 
+Grams, A and Nebel, R, 2013, ‘Nutzungsreserven und - potenziale fuer die Siedlungsentwicklung 
+nach innen|Development reserves and potential for urban development directed inward, DisP – 
+The Planning Review, vol. 49, pp. 28-38. 
+Habermas, J, 1984, The Theory of Communicative Action. vol I. Reason and the rationalization of 
+Society, Polity Press, Cambridge. 
+Habermas, J, 1989, The Structural Transformation of the Public Sphere: An Inquiry into a Category of 
+Burgeois Society, Polity Press, Great Britain. 
+Heberlein, TA, 2012, Navigating Environmental Attitudes, Oxford University Press. 
+Hersperger, AM, Gennaio Franscini, M-P and Kübler, D, 2014, ‘Actors, Decisions and Policy Changes 
+in Local Urbanization’, European Planning Studies, vol. 22, pp. 1301–1319. 
+Healey, P, 1997, Collaborative Planning: Shaping Places in Fragmented Societies, Macmillan Press, 
+Houndmills, Great Britain. 
+Healey, P, 2006, Urban Complexity and Spatial Strategies: Towards a Relational Planning for our 
+Times, Routledge, New York. 
+Henne, PD, Bigalke, M, Büntgen, U, Colombaroli, D, Conedera, M, Feller, U, Frank, D, Fuhrer, J, 
+Grosjean, M, Heiri, O and Luterbacher, J, 2018, ‘An empirical perspective for understanding 
+climate change impacts in Switzerland’, Regional Environmental Change, vol. 18, pp. 205-221. 
+Hill, L, 2013, ‘Deliberative Democracy and Compulsory Voting’, Election Law Journal, vol. 12, pp. 454-
+467. 
+Home, R, Angelone, S, Hunziker, M and Bolliger, J, 2014, ‘Public preferences for ecosystem-
+enhancing elements in agricultural landscapes in the Swiss lowlands’, Journal of Integrative 
+Environmental Sciences, vol. 11, pp. 93-108. 
+Hulme, M, 2008, ‘Geographical work at the boundaries of climate change’, Transactions of the 
+Institute of British Geographers, vol. 33, pp. 5-11. 
+
+PAGE 30
+29 
+ 
+IFEC ingegneria SA, Bergwelten 21 AG, InnovaBridge Foundation, Consavis SA, RIBO Architecture, 
+2016, Analyse Klimabedingter Risiken und Chancen in der Schweiz: Fallstudie Kanton Tessin, 
+BAFU, Zurich. 
+Inch, A, 2015, ‘Ordinary citizens and the political cultures of planning: In search of the subject of a 
+new democratic ethos’, Planning Theory, vol. 14, pp. 404-424. 
+Iniziativa Paesaggio, 2020, Il Paesaggio in Pericolo. http://www.iniziativa-paesaggio.ch, accessed 17 
+December 2020. 
+Innes JE and Booher DE, 2016, ‘Collaborative rationality as a strategy for working with wicked 
+problems’, Landscape and Urban Planning, vol. 154, pp. 8-10. 
+Johnston, KA, 2014, 'Public Relations and Engagement: Theoretical Imperatives of a 
+Multidimensional Concept', Journal of Public Relations Research, vol. 26, pp. 381-383. 
+Kalhor, E, Horn, BP, Valentin, V and Berrens, RP, 2018, ‘Investigating the effects of both historical 
+wildfire damage and future wildfire risk on housing values’, International Journal of Ecological 
+Economics & Statistics vol. 39, pp.1-25. 
+Kanonier, A and Rudolf-Miklau, F, 2018, Regionale Risiko Governance: Recht, Politik und 
+Praxis|Regional Risk Governance: Law, Politics and Praxis, Ebook, Verlag, Oesterreich. 
+Keller, R and Backhaus, N, 2019, ‘Integrating landscape services into policy and practice–a case study 
+from Switzerland’, Landscape Research, vol. 45, pp. 111-122. 
+Klaus J, 2021, ‘The Impact of Local Autonomy on Land-Use Planning: A Qualitative Comparative 
+Analysis of Two Swiss Municipalities’, In: Bergström T, Franzke J, Kuhlmann S, Wayenberg E 
+(eds) The Future of Local Self-Government, Palgrave Studies in Sub-National Governance, 
+Palgrave Macmillan, Cham, pp. 185-197. 
+Koksal, K, McLennan, J, Every, D and Bearman, C, 2019, ‘Australian wildland-urban interface 
+householders’ wildfire safety preparations:‘everyday life’project priorities and perceptions of 
+wildfire risk’, International Journal of Disaster Risk Reduction, vol. 33, pp. 142-154. 
+Kriesi, H and Trechsel, AH, 2008, The Politics of Switzerland: Continuity and change in a consensus 
+democracy, Cambridge University Press, Cambridge. 
+Kruse, S and Pütz, M, 2014, ‘Adaptive capacities of spatial planning in the context of climate change 
+in the European Alps’, European Planning Studies, vol. 22, pp. 2620-2638. 
+Legacy, C, 2017, ‘Is there a crisis of participatory planning?’, Planning Theory, vol. 16, pp. 425-442. 
+Lendi, M, 2012, ‘Raeumlich Probleme, Politik, Recht - Neue Akzente fuer das schweizerische 
+Raumplanungsrecht’, DisP – The Planning Review, vol. 48, pp. 89-97. 
+
+PAGE 31
+30 
+ 
+Llausàs, A, Buxton, M and Beilin, R, 2016, ‘Spatial planning and changing landscapes: a failure of 
+policy in peri-urban Victoria, Australia’, Journal of Environmental Planning and Management, 
+vol. 59, pp. 1304-1322. 
+Loran, C, Munteanu, C, Verburg, PH, Schmatz, DR, Bürgi, M and Zimmermann, NE, 2017, ‘Long-term 
+change in drivers of forest cover expansion: an analysis for Switzerland (1850-2000)’, Regional 
+Environmental Change, vol. 17, pp. 2223-2235. 
+Mack, G, Walter, and T, Flury, C, 2013, ‘Seasonal alpine grazing trends in Switzerland: economic 
+importance and impact on biotic communities’, Environmental Science and Policy, vol. 32, pp. 
+48-57. 
+Maidl, E, Bresch, DN and Buchecker, M, 2021, ‘Social integration matters: factors influencing natural 
+hazard risk preparedness: a survey of Swiss households’, Natural Hazards vol. 105, pp. 1861-
+1890. 
+McGee, TK, 2011, ‘Public engagement in neighbourhood level wildfire mitigation and preparedness: 
+case studies from Canada, the US and Australia’, Journal of Environmental Management, vol. 92 
+pp. 2524-2532. 
+Malek, Ž, Boerboom, L and Glade, T, 2015, ‘Future forest cover change scenarios with implications 
+for landslide risk: an example from Buzau Subcarpathians, Romania’, Environmental 
+Management, vol. 56, pp. 1228-1243. 
+Martin, WE, Martin, IM and Kent, B, 2009, ‘The role of risk perceptions in the risk mitigation process: 
+the case of wildfire in high risk communities’, Journal of Environmental Management, vol. 91, 
+pp. 489-498. 
+Mather, AS and Fairbairn, J, 2000, ‘From floods to reforestation: the forest transition in Switzerland’, 
+Environment and History, vol. 6, pp. 399-421. 
+Margerum, RD, 2011, Beyond Consensus: Improving Collaborative Planning and Management, MIT 
+Press, Cambridge, Massachussetts. 
+Matasci, B, Stock, GM, Jaboyedoff, M, Carrea, D, Collins, BD, Guérin, A, Matasci, G and Ravanel, L,  
+2018, ‘Assessing rockfall susceptibility in steep and overhanging slopes using three-dimensional 
+analysis of failure mechanisms’, Landslides, vol. 15, pp. 859-878. 
+Matthews, B and Ross L, 2014, Research Methods, Pearson Higher Education Pearson, Longman, 
+London. 
+MeteoSwiss, 2012, Rapporto sul Clima – Cantone Ticino, Ufficio Federale di Meteorologia e 
+Climatologia (MeteoSvizzera), Locarno Monti, Switzerland. 
+Morehouse, BJ, Henderson, M, Kalabokidis, K, and Losifides, T, 2011, ‘Wildland fire governance: 
+perspectives from Greece’, Journal of Environmental Policy and Planning, vol. 13, pp. 349-371.  
+
+PAGE 32
+31 
+ 
+Moser, M and Del Priore F, 2013, ‘Il Clima in Ticino: negli ultimi decenni il riscaldamento e’ avvenuto 
+piu’ in fretta. Sintesi del rapporto di Meteosvizzera’, Dati Statistiche e Società: Trimestrale 
+dell'Ufficio di Statistica del Cantone Ticino, vol. 8, pp. 55-59. 
+Muggli, R, 2013, Spatial Planning in Switzerland: A Short Introduction, VLP – ASPAN Swiss Spatial 
+Planning Association, Bern. 
+Natarajan, L, 2017, ‘Socio-spatial learning: A case study of community knowledge in participatory 
+spatial planning’, Progress in Planning, vol. 111, pp. 1-23. 
+Nilsson, K, Pauleit, S, Bell, S, Aalbers, C, and Nielsen, TAS, (eds) 2013, Peri-urban futures: Scenarios 
+and Models for Land Use Change in Europe, Springer Science and Business Media. 
+OST-TI, 2014, La periurbanizzazione nel Canton Ticino 1980-2012, Osservatorio dello sviluppo 
+territoriale (OST-TI), Dipartimento del Territorio, Sezione dello Sviluppo Territoriale, Repubblica 
+e Cantone Ticino, [online]. Available at: 
+<http://www4.ti.ch/fileadmin/DT/temi/piano_direttore/osservatorio_sviluppo_territoriale/rap
+porti/La_periurbanizzazione_1980-2012.pdf>, [Accessed 18 May 2015]. 
+Parkins, JR and Mitchell, RE, 2005, ‘Public participation as public debate: a deliberative turn in 
+natural resource management’. Society and Natural Resources, vol. 18, pp. 529-540. 
+Parkinson, J, 2006, Deliberating in the Real World: Problems of Legitimacy in Deliberative Democracy, 
+Oxford University Press, Oxford, United Kingdom. 
+Paveglio, TB, Jakes, PJ, Carroll, MS and Williams, DR, 2009, ‘Understanding Social Complexity Within 
+the Wildland–Urban Interface: A New Species of Human Habitation?’, Environmental 
+Management, vol. 3, pp. 1085-1095. 
+Pedrini, S, 2014, ‘Deliberative Capacity in the Political and Civic Sphere’, Swiss Political Science 
+Review, vol. 20, pp. 263–286. 
+Pereira, HM, 2015, Rewilding European Landscapes, Springer, Cham, Heidelberg. 
+Pezzatti, GB, De Angelis, A and Conedera, M, 2016, ‘Évolution potentielle du danger d'incendie de 
+forêt dans le contexte des changements climatiques’, in Pluess, AR, Augustin, S and Brang, P 
+2016, Forêts et Changements Climatiques. Éléments pour des Stratégies d'Adaptation, Office 
+Fédéral de l’Environnement, pp. 229-249. 
+Pezzatti, GB, De Angelis, A, Ryser, D, and Conedera, M, 2017, ‘Wird die Waldbrandgefahr in Zukunft 
+zunehmen?’ Bündnerwald vol. 70, pp. 17-22. 
+Pezzatti, GB, Zumbrunnen, T, Bürgi, M, Ambrosetti, P, and Conedera, M, 2013, ‘Fire regime shifts as 
+a consequence of fire policy and socio-economic development: An analysis based on the change 
+point approach’, Forest Policy and Economics, vol. 29, pp. 7-18. 
+
+PAGE 33
+32 
+ 
+Pfister, C, 1985, Klimageschichte der Schweiz, 1525–1860: Das Klima der Schweiz von 1525–1860 und 
+seine Bedeutung in der Geschichte von Bevölkerung und Landwirtschaft, Verlag Paul Haupt, 
+Bern. 
+Pfister, C, 2009, ‘The "Disaster Gap" of the 20th century and the loss of traditional disaster memory’, 
+GAIA-Ecological Perspectives for Science and Society, vol. 18, pp. 239-246. 
+PLANAT, 2018, Umgang mit Risiken aus Naturgefahren: Strategie 2018, Switzerland’s National 
+Platform for Natural Hazards (PLANAT), [online]. Available at: 
+<http://www.planat.ch/en/strategy2018/>, [Accessed 1 September 2018]. 
+Price, B, Kienast, F, Seidl, I, Ginzler, C, Verburg, PH, and Bolliger, J, 2015, ‘Future landscapes of 
+Switzerland: Risk areas for urbanisation and land abandonment’, Applied Geography, vol. 57, 
+pp. 32-41. 
+Prior, J and Brady, E, 2017, ‘Environmental aesthetics and rewilding’, Environmental Values, vol. 26, 
+pp. 31-51. 
+Rebetez, M, 1999, ‘Twentieth century trends in droughts in southern Switzerland’, Geophysical 
+Research Letters, vol. 56, pp. 755-758. 
+Reid, K and Beilin R, 2015, ‘Making the landscape "home": Narratives of bushfire and place in 
+Australia’, Geoforum, vol. 58, pp. 95-103. 
+Reinhard, M, Rebetez, M and Schlaepfer R, 2005, ‘Recent climate change: Rethinking drought in the 
+context of forest fire research in Ticino, south of Switzerland’, Theoretical and Applied 
+Climatology, vol. 82, pp. 17-25.  
+Repubblica e Cantone Ticino, 2021, Diritti Politici, Archivio di Votazione, Bellinzona, [online]. 
+Available at: < https://www4.ti.ch/generale/dirittipolitici/votazione/archivio/ >, [Accessed 21 
+February 2021]. 
+Rickli, C and Graf, F, 2009, ‘Effects of forests on shallow landslides–case studies in Switzerland’, 
+Forest Snow and Landscape Research, vol. 82, pp. 33-44. 
+Rigling, A and Schaffer, HP, (eds) 2015, Forest Report 2015 - Condition and Use of Swiss Forests, 
+FOEN and WSL, Birmensdorf, Switzerland. 
+Rodewald, R, Schwyzer, Y, and Liechti, K, 2014, Katalog der Charakteristischen Kulturlandschaften 
+der Schweiz: Grundlagen zur Ermittlung von Landschaftsentwicklungszielen. Stiftung 
+Landschaftsschutz Schweiz, Bern.  
+Schulte, S and Miller, KA, 2010, ‘Wildfire risk and climate change: the influence on homeowner 
+mitigation behaviour in the wildland–urban interface’, Society and Natural Resources, vol. 23, 
+pp. 417-435. 
+Sezione Forestale, 2008, Piano Forestale Cantonale, Repubblica e Cantone Ticino, Bellinzona. 
+
+PAGE 34
+33 
+ 
+Sharma-Wallace, L, 2016, 'Toward an environmental justice of the rural-urban interface', Geoforum, 
+vol. 77, pp. 174-177. 
+Slovic, P, 1987, ‘Perception of risk’, Science, vol. 236, pp. 280-285. 
+Smith, G, 2009, Democratic Innovations : Designing Institutions for Citizen Participation, Cambridge 
+University Press, Cambridge. 
+Spinedi, F and Isotta, F, 2004, ‘Il clima del Ticino’, Dati Statistiche e Società: Trimestrale dell'Ufficio di 
+Statistica del Cantone Ticino, vol. 2, pp. 4–39.  
+Stanga, M, 2017, ‘La partecipazione politica in Ticino, le donne, i giovani, i voti, i comuni’, Dati 
+Statistiche e Società: Trimestrale dell'Ufficio di Statistica del Cantone Ticino, vol. 17, pp. 9–27.  
+Steiner, J, 2012, The Foundations of Deliberative Democracy: Empirical Research and Normative 
+Implications, Cambridge University Press, Cambridge. 
+Stern, MJ and Baird, TD, 2015, ‘Trust ecology and the resilience of natural resource management 
+institutions’, Ecology and Society, vol. 20, pp 1-14. 
+Swiss Federal Council, 2012, Raumordung Schweiz, Bundesamt für Raumentwicklung, [online]. 
+Available at:   
+<https://www.are.admin.ch/are/de/home/raumentwicklung-und-raumplanung/strategie-und-
+planung/raumkonzept-schweiz.html>, [Accessed 4 September 2018]. 
+Swiss Life, 2015, Annual Report, [online]. Available at: 
+<http://www.annualreport2015.swisslife.com/reports/swisslife/annual/2015/gb/English/0/ho
+me.html>. 
+Tinner, W, Hubschmid, P, Wehrli, M, Ammann, B, and Conedera, M, 1999, ‘Long‐term forest fire 
+ecology and dynamics in southern Switzerland’, Journal of Ecology, vol. 87, pp. 273-289. 
+Turner, S, 2001, ‘What is the Problem with Experts?’, Social Studies of Science, vol. 31, pp.123-149. 
+UNISDR, 2007, Terminology, United Nations Office for Disaster Risk Reduction (UNISDR), [online]. 
+Available at: https://www.unisdr.org/we/inform/terminology, [Accessed October 20 2016]. 
+USTAT 2007, Evoluzione Spaziale del Bosco in Ticino, Ufficio di Statistica, Ufficio pianificazione e 
+conservazione del bosco, Repubblica e Cantone Ticino, Giubiasco, Switzerland. 
+USTAT, 2013, Statistica Ticinese dell'Ambiente e delle Risorse Naturali, Ufficio Cantonale di Statistica 
+(USTAT), Sezione della protezione dell’aria, dell’acqua e del suolo, Bellinzona, Switzerland. 
+USTAT, 2016, Annuario Statistico Ticinese 2016 (77ma annata)| Ticinese Statistical Yearbook (77th 
+year), Ufficio di Statistica, Repubblica e Cantone Ticino, Giubiasco, Switzerland. 
+USTAT, 2020, Popolazione Residente dal 1850, Sub regione Sponda Destra, Regione Locarnese e Valle 
+Maggia, Ufficio di Statistica, Bellinzona. 
+
+PAGE 35
+34 
+ 
+Valese, E, Conedera, M, Held, AC and Ascoli, D, 2014, ‘Fire, humans and landscape in the European 
+Alpine region during the Holocene’, Anthropocene, vol. 6, pp. 63-74. 
+Von der Dunk, A, Grêt-Regamey, A, Dalang, T and Hersperger, AM, 2011, ‘Defining a typology of peri-
+urban land-use conflicts–A case study from Switzerland’, Landscape and Urban Planning, vol. 
+101, pp. 149-156. 
+Wachinger, G, Renn, O, Begg, C and Kuhlicke, C, 2013, ‘The Risk Perception Paradox—Implications 
+for Governance and Communication of Natural Hazards’, Risk Analysis, vol. 33, pp. 1049-1065.  
+Wastl, C, Schunk, C, Lüpke, M, Cocca, G, Conedera, M, Valese, E and Menzel, A, 2013, ‘Large-scale 
+weather types, forest fire danger, and wildfire occurrence in the Alps’, Agricultural and Forest 
+Meteorology, vol. 168, pp. 15-25. 
+Weber, D, Moskwa, E, Robinson, GM, Bardsley, DK, Arnold, J and Davenport, MA, 2019, ‘Are we 
+ready for bushfire? Perceptions of residents, landowners and fire authorities on Lower Eyre 
+Peninsula, South Australia’, Geoforum, vol. 107, pp. 99-112. 
+WSL, 2018, The Swiss Federal Institute for Forest, Snow and Landscape Research WSL’s Home 
+Website, accessed 30.7.2018, <https://www.wsl.ch/en.html>. 
+Xue, W, Hine, DW, Loi, NM, Thorsteinsson, EB and Phillips, WJ, 2014, ‘Cultural worldviews and 
+environmental risk perceptions: A meta-analysis’, Journal of Environmental Psychology, vol. 40, 
+pp. 249-258. 
+Zumbrunnen, T, Pezzatti, GB, Menéndez, P, Bugmann, H, Bürgi, M and Conedera, M, 2011, ‘Weather 
+and human impacts on forest fires: 100 years of fire history in two climatic regions of 
+Switzerland’, Forest Ecology and Management vol. 261, pp.2188-2199. 
+ 

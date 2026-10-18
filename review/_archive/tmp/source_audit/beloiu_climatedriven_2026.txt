@@ -1,0 +1,970 @@
+PAGE 1
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+https://doi.org/10.1038/s41467-026-72551-0
+Received: 22 September 2025
+Accepted: 20 April 2026
+Cite this article as: Beloiu, M., Loeillot,
+T., Griess, V.C. et al. Climate-driven
+upward spread of forest fires  in
+European mountain regions. Nat
+Commun (2026). https://doi.org/
+10.1038/s41467-026-72551-0
+Mirela Beloiu, Tomoki Loeillot, Verena C. Griess, Dimitris Poursanidis & Fanny Petibon
+We are providing an unedited version of this manuscript to give early access to its
+findings.  Before final  publication, the manuscript will undergo further editing. Please
+note there may be errors present which affect  the content, and all legal disclaimers
+apply.
+If this paper is publishing under a Transparent Peer Review model then Peer
+Review reports will publish with the final  article.
+© The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source,
+provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included
+in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative
+Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission
+directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+Nature Communications
+Article in Press
+Climate-driven upward spread of forest fires  in
+European mountain regions
+
+PAGE 2
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+Climate-driven upward spread of forest fires in European mountain regions  
+Mirela Beloiu¹ᵃ*, Tomoki Loeillot¹ᵃ, Verena C. Griess1, Dimitris Poursanidis2, Fanny Petibon¹ᵃ*  
+1 Department of Environmental System Sciences, Institute of Terrestrial Ecosystems, ETH Zurich, Zurich, 
+Switzerland 
+2 Foundation for Research and Technology Hellas, Institute of Applied and Computational Mathematics, 
+100 N. Plastira Str., Vassilika Vouton, 70013, Heraklion, Greece 
+ᵃAuthors contributed equally.  
+*Corresponding author:  
+Mirela Beloiu: mirela.beloiu@usys.ethz.ch 
+Fanny Petibon: fanny.petibon@usys.ethz.ch 
+ 
+Abstract 
+Forest fires are an emerging threat to mountain regions yet changes in their elevational distribution 
+and underlying drivers remain largely unknown. Here, we integrate satellite -derived burned area 
+data, with climate, forest cover, and human footprint data  into statistical models to assess fire 
+activity and its drivers across eight European mountain regions. The analysis focuses on fires ≥800 
+m of elevation and burned area ≥30 ha for the period 2000 -2025. We find that forest fires have 
+spread upwards (~72 m  per decade) and become more frequent after 2015, with fire occurrence 
+increasing by 30% per year below 1,400 m and 12% above that elevation. Changes in burned area 
+are primarily driven by climate, including vapor pressure deficit, soil moisture, and preci pitation. 
+Fires above 1,400 m are linked to extreme atmospheric aridity, indicating that climate change is 
+enabling fire in ecosystems that have been historically buffered from burning. Further warming 
+will increase fire susceptibility in European mountain  regions, highlighting the need to protect 
+mountain ecosystem functions and services through effective fire management. 
+ 
+Introduction 
+Fire is a natural forest disturbance that shapes ecosystem dynamics 1, regulates biogeochemical 
+cycles 2, and drives species selection 3. Yet, wildfires have intensified worldwide, exacerbated by 
+anthropogenic climate 4 and land-use change 5. Between 2017 and 2021, more  than 27 million 
+hectares of forest burned globally, including the Amazon rainforest 6, the boreal forests of Siberia 
+7, and the fire-prone areas of British Columbia 8, California 9, and Australia 10. These events reflect 
+widespread shifts in fire regimes, with longer fire seasons 11, expanding burned area 12, and more 
+frequent extreme wildfire events marked by elevated fire intensity and severe impacts 10,13. The 
+consequences of such fires include reduced carbon sequestration 14, biodiversity loss 15, raw 
+material shortages 16, and threats to infrastructure and human health 17. Europe has not been spared, 
+for instance, improved fire management, including suppression and prevention policies, reduced 
+burned areas in the late 20th century  18,19, although prolonged fire exclusion may have increased 
+fuel loads and connectivity, potentially limiting long term effectiveness 20. However, recent record-
+
+PAGE 3
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+breaking fire seasons have reversed this trend, such as in 2017 (1.2 million ha, of which ~500 000 
+ha burned in Portugal and >120 lives were lost 21), 2021 (500,566 ha), and 2022 (837,212 ha) 22,23. 
+While fires continue to be most frequent in the Mediterranean, projections suggest that central and 
+northern Europe will be affected due to high fuel loads that become more available under warming 
+and drought conditions 24–26. Although elevational increases in fire activity have been reported in 
+some regions, it remains unclear whether current fire activity already signals a sustained upslope 
+expansion into less-adapted European mountain systems , where even modest increases in fire 
+activity could trigger disproportionate ecological and societal impacts. 
+Mountain forests are of part icular concern, as they have long been buffered from fire by cool 
+temperatures, persistent snow cover, lower human activity, and high moisture content 27. Yet, these 
+ecosystems are warming faster than the global average 28, increasing the likelihood of fire at higher 
+elevations 29,30. High-elevation fires can destabilize soils, reduce water resources , and alter 
+biodiversity 31,32. In addition, the increasing frequency of fires at high elevations can have 
+cascading effects on forest function and carbon storage. Fire activity is generally shaped by the 
+interplay of ignitions, fuel, topography and climate 33. Most ignitions in Europe are human-caused, 
+intensified by greater access and wildland –urban expansion 34,35, but large fires require not only 
+ignition but also conducive climatic conditions, including drought, heat , and wind 35. However, 
+large-scale analyses of how fires are advancing into Europe’s mountain forests remain missing. 
+This gap is especially concerning, as most studies have concentrated on  southern Europe and the 
+French Alps  24,36, while the vulnerability of temperate and high -elevation forests that are less 
+adapted to fire remains largely unresolved. 
+Here, we assess whether forest fire occurrence has shifted to higher elevations in eight European 
+mountain regions between 2000 and 2025. In addition, we identify the main environmental and 
+anthropogenic drivers  of fire activity across these landscapes. To  address these questions, we 
+combine remote sensing records of large fires (>30 ha) with climatic time series, fuel type, and 
+human footprint data analyzed using statistical models. This approach allows us to test whether 
+recent fire activity reflects a sy stematic upslope expansion and to disentangle the relative 
+contributions of climate, vegetation, and human influence in enabling fire to spread into mountain 
+ecosystems historically buffered from burning. 
+ 
+Results 
+Spatial, temporal, and elevational patterns of fire activity  
+From 2000 to 2025, 6,225 fires burned nearly 2. 85 million hectares across the eight European 
+mountain regions. Southern mountain ranges dominated fire activity, accounting for 83% of all 
+fire occurrences, with activity concentrated in the Balkans (2, 773 fires; 45%), Iberian Mountains 
+(1,477; 24%), and Turkey (887; 14%) (Fig. 1a, Table S1). Fire activity showed marked peaks in 
+2005, 2007, 2012, 2017, 2020, and 2023, with the latter alone recording 545 fires (Fig. 1b, Table 
+S2). Burned area followed a similar trajectory, with several record -breaking years in the past 
+decade, underscoring the post-2015 surge. Most fires (75%) occurred between 800 and 1 ,400 m, 
+
+PAGE 4
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+but 25% burned above 1,400 m, in line with burned area tr ajectories (Table S3). Fires were 
+concentrated at low elevations in the French/Swiss middle mountains ( 96%), Apennines (91%), 
+Carpathians (91%), Iberian mountains (83%), as well as in the Balkans/Southeast Europe (74%) 
+and the Pyrenees (76%)  (Table S4). In contrast, high-elevation fires (>1,400 m) accounted for 
+nearly half of all events in Turkey (50%) and represented a substantial share in the Alps (42%) 
+(Fig. 1b, Table S3–6). A spatial clustering of fires across European mountain regions after 2015 is 
+visible in Fig. 1c, with annual fire distributions shown for each year in Fig. S1. 
+ 
+Upslope shift and increase in fire occurrence since 2015 
+Fire activity intensified sharply after 2015, with annual counts consistently exceeding earlier 
+maximums (Fig. 2a). After 2015, fire occurrence increased by ~9.5 fires yr⁻¹ below 1,400 m (~29% 
+yr⁻¹) and ~1 fire yr⁻¹ above 1,400 m (~12% yr⁻¹) relative to pre -2015 mean fire frequency (Table 
+S10). At the same time, fire occurrence shifted upslope. Elevation density distributions based on 
+mean elevation show a clear upward displacement after 2015 across the full fire footprint (Fig. 2b, 
+Table S3). Comparisons of early (2000 –2014) and late (2015 –2025) periods based on mean fire 
+elevation show increases in fire elevatio n across all datasets: the full D800 record (median rose 
+from 910 m to 1,004 m, 72.10 m decade⁻¹), the 90th percentile of annual fire elevations (Z90; 
+1,353 m to 1,460 m, 82.35 m decade⁻¹), and the ten highest-elevation fires per year (T10; 1,451 m 
+to 1,777 m, 250.28 m decade⁻¹; Fig. S2, Table S7). Analyses based on maximum fire elevation 
+show similar trends, although with slightly lower rates of change.  Linear regressions over 2000–
+2025 show positive but non -significant full -period trends (Table S8), suppo rting a post -2015 
+regime shift rather than a gradual increase. Temporal trends confirm consistent increases across 
+all elevation classes, with the steepest gains at lower elevations (800 –1,000 m) but progressive 
+rises even above 2 ,200 m (Fig. 2c). Together , these findings demonstrate both an intensification 
+of fire frequency and a significant upward expansion of fire occurrence into Europe’s mountain 
+forests. 
+ 
+Fire seasonality differed among mountain regions and shifted over time  (Fig. S3–5; Tables S11–
+13). For example, in the Balkans/Southeast Europe and Carpathians, peak fire occurrence shifted 
+from late summer (August) before 2015 to early spring (March –April) after 2015 (Fig. S3–5), 
+corresponding to advances of up to five months . In contrast, no signifi cant seasonal shift was 
+detected in Turkey or the Pyrenees (Table S13). Across regions, elevation of fire occurrence 
+increased significantly through the calendar year (β = 13.7 m per month, t = 8.98), although region-
+specific trends varied (Table S14). 
+ 
+Contrasting fire activity among European mountain regions 
+Based on fire emergence and recurrence patterns, we distinguished three distinct fire regime types 
+across Europe’s mountains (Fig. 3). High and persistent fire regime  type in the Balkans, Iberian 
+Mountains and Apennines accounted for 7 8% of all events ( 4,839 fires), while moderate and 
+
+PAGE 5
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+reoccurring fire regime type such as the Pyrenees and Turkey contributed 18% (1,120 fires), and 
+low and emerging fire regime  type including t he Alps, Carpathians and French/Swiss middle 
+mountains only 4% ( 266 fires) (Table S2). High and persistent  fire regime types sustained 
+consistently high fire numbers (>50 per year in multiple years) and large events regularly reaching 
+~2,000 m (Fig. 3b–c). In contrast, moderate and reoccurring fire regime types showed low activity 
+before 2015 but a sharp post -2015 rise in both frequency and elevation, while low and emerging 
+fire regime types only recorded consistent fire activity after 2017, at still modest numbers and with 
+limited upslope expansion. 
+ 
+Climatic constraints dominate fire activity above 1,400 m 
+At the European level, significant differences in fuel type and climatic variables were detected 
+above and below 1,400 m (Table 1). Climatic variables consistently indicated that fires at higher 
+elevations (>1,400 m) occurred under drier and more stressful conditions than at lower elevations 
+(<1,400 m). Fires occurring below 1 ,400 m were associated with higher water availability, 
+reflected in greater actu al evapotranspiration (AET), precipitation (PPT), soil moisture , wildfire 
+intensity and danger (FWI). In contrast, fires above 1,400 m were linked to drier and more energy-
+limited conditions, characterized by elevated climatic water deficit (DEF), potentia l 
+evapotranspiration (PET), vapor pressure deficit (VPD), and minimum and maximum annual 
+temperature ( Tmin and Tmax). Transitional vegetation was prevalent across elevations but 
+dominated above 1,400 m, accounting for 55% of burned area in high and persistent regions and 
+50% in moderate and reoccurring regions, compared to 41 –42% below 1,400 m.  In contrast, 
+broadleaf forests were generally more represented below 1,400 m in high and persistent (17%) and 
+low and emerging regions (43%), although patterns varied among regime types (Table 1, S15-16). 
+Mixed and conifer forests remained comparatively less dominant overall, despite some elevation-
+specific contrasts (e.g., higher conifer and mixed shares above 1,400 m in low and emerging 
+regions). Human footprint was significantly lower above 1,400 m. 
+ 
+Climate drives burned area across European mountain regions 
+The largest fires occurred in regions with high and persistent or moderate and reoccurring fire 
+regime types, compared with low and emerging fire regime types (Fig. S6a). Across Europe’s 
+mountain regions, climatic variables explained most of the variance in burned area (R²m = 0.17; 
+R²c = 0.21), far exceeding fuel type (4.2%) and human footprint (0.001%; Fig. 4 and Table S17). 
+Vapor pressure deficit (VPD) was the strongest positive predictor (9.6%) across all regions and 
+regimes, while precipitation and soil moisture had negative effects, underscoring the role of aridity 
+in promoting large fires. Wind speed contributed additi onally to high and persistent  fire regime 
+type, whereas moderate and low  fire regime type showed weaker associations. Vegetation cover 
+also influenced fire size: broadleaf forests were linked to lower burned area, while transitional, 
+mixed, and coniferous cover were linked to larger events (Fig. S6b–c). In high and persistent fire 
+regime type, small fires were dominated by broadleaf vegetation, but the largest fires were 
+
+PAGE 6
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+associated with transitional and coniferous cover; moderate and reoccur ring fire regime type 
+showed similar though weaker patterns, while low and emerging regimes contained mixed 
+vegetation across all fire sizes (Fig. S6b–c). Human footprint effects were detectable but 
+consistently marginal at both continental and regional scales. 
+ 
+Discussion  
+Fires climb higher and intensify across Europe 
+From 2000 to 2025, fire occurrence and burned area increased across Europe’s mountain regions, 
+with a marked surge after 2015. Earlier declines reported for southern Europe by Turco et al. 19 
+align with our finding of relatively low activity until 2015 , after which, all datasets (D800, Z90, 
+T10) showed a consistent upslope shift, with peaks in 2019 and 2025 marking unprecedented fire 
+activity (Fig. 2). These trends  parallel global evidence of larger, more severe wildfires in the 
+Amazon, Siberia, North America , and Australia 5,10,37,38 and point to a r econfiguration of fire 
+regimes in central and southern European mountains. 
+Elevational analyses revealed rising fire occurrence across all ranges  (800 m to > 2,000 m), with 
+the steepest increase at mid -elevations (800 –1,400 m) and detectable gains above 2,000 m. 
+However, 1,532 fires (24.6%) originate below 800 m but spread above this threshold, accounting 
+for 1.49 million ha of burned area (52.4%), suggesting that climatic barriers that historically 
+limited fire spread to higher elevations are weakening u nder increasingly dry and fire -prone 
+conditions and highlighting implications for fire management strategies that are typically 
+concentrated near human settlements rather than remote mountain areas. Further, we showed a 
+shift toward spring fire activity in  several mountain regions,  consistent with increasing non -
+summer fires in Europe 39. Although rare, high-elevation fires are particularly concerning as these 
+forests are poorly adapted to fire. Unlike the western U.S., where the strongest trends occur above 
+3,000 m 30, Europe shows heterogeneous elevation-dependent warming 40,41, yet the net effect is 
+an upward spread of fires into ecosystems with little historical exposure. 
+Our classification into three fire regime  types (Fig. 3)  provide a framework to interpret how 
+different patterns of fire activity relate to biophysical and socio -economic drivers . High and 
+persistent fire regime  type in Mediterranean mountains are consistent with evidence that 
+intensifying summer heatwaves, prolonged d rought, and declining precipitation are driving 
+increasingly extreme fires in these areas 42. By contrast, the sharp post-2015 increase in moderate 
+and reoccurring fire regime type such as the Pyrenees and Turkey reflected the emergence of new 
+high-elevation fire risks, aligning with  recent extreme fire seasons 43. Low and emerging fire 
+regime type, including the Alps, French/Swiss middle mountains, and Carpathians, only began to 
+experience recurrent fire activity after 2019, confirming projections that rapidly warming 
+temperate and montane forests are becoming increasingly exposed to extreme fire weather 26,44. 
+This classification underscores the heterogeneity of mountain fire regime types in Europe, but also 
+their convergence toward increasingly frequent and higher-elevation fires. 
+
+PAGE 7
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+Climate controls burned area across European mountain fire regimes 
+Climate stressors dominated fire activity across European mountain regi ons, with vegetation 
+composition exerting a secondary role and human footprint only a marginal influence. Although 
+most fires in Europe are human-ignited, our results showed that the spread and final size of large 
+fires are primarily controlled by climatic  conditions and fuel dryness. Our estimates of 
+anthropogenic influence are likely conservative, as the Human footprint index is a coarse proxy 
+and does not capture fine-scale ignition and accessibility gradients. Vapor pressure deficit (VPD) 
+was the strongest predictor of burned area at both continental and regional scales, underscoring the 
+role of atmospheric dryness in accelerating vegetation desiccation, increasing fuel flammability, 
+and promoting fire spread 4. Rising burned area under declining precipitation and soil moisture 
+further highlights the central role of drought in shaping fire activity. Fires above 1,400 m occurred 
+under much drier conditions than those below, with ~4× higher climatic water deficit and nearly 
+double VPD, alongside lower precipitation and soil moisture (Table 1). This indicates that high -
+elevation fires are primarily climate -limited, while fires below 1,400 m are less constrained by 
+aridity and more influenced by vegetation type and human activity. By contrast, low and emerging 
+fire regime type were buffered by relatively low VPD and high soil moisture, a hydroclimatic 
+protection likely to weaken as climate change intensifies. Similar upslope expansions linked to 
+rising VPD have been reported in the western U.S.  30, while globally, fire activity peaks during 
+years of extreme fire weather and drought 45,46. In Europe, the projected lengthening of the fire 
+season by nearly a week 42 signals growing risks even in forests historically buffered from burning. 
+Vegetation modulated fire behavior , for instance,  broadleaf and transitional forests reduced fire 
+size compared to conifers, yet coniferous fires, though rare, contributed disproportionately to the 
+largest events , emphasizing the relevance of forest composition  47,48. We represent fuels via 
+harmonized land-cover fractions, which do not resolve fuel loads or vertical structure that may 
+further influence mountain fire spread. Our results further demonstrate that vegetation effec ts 
+interact with elevation and regional fire regime types, rather than acting independently of climatic 
+gradients. The 1,400 m threshold reflects not only a climatic boundary but also a structural 
+transition in mountain forests, where tree height becomes constrained 49. Warming is shifting the 
+1,400 m threshold upward, increasing fuel cover at higher elevations; combined with rising 
+dryness, this amplifies fire risk in previously buffered mountain forests.  
+Implications and future directions 
+Our results demonstrate that climate -driven fires are expanding into European mountain forests  
+that were historically buffered from burning. This upward shift (~72 m per decade), accompanied 
+by increases in fire occurrence (~30% per year  below 1,400 m and ~12% above), has major 
+implications for ecosystem functioning and global change feedbacks. Mountain forests are 
+essential for carbon storage, biodiversity, and water resources  26, yet even modest increases in 
+high-elevation fire activity could destabilize soils, reduce water qua lity, and accelerate carbon 
+losses 31,32. High-elevation species, poorly adapted to fire, may face regeneration failures under 
+
+PAGE 8
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+rising aridity and water stress 50,51, underscoring growing ecosystem vulnerability and the need for 
+proactive management despite their remoteness and traditionally lower priority. 
+From a management perspective, these results highlight the need to anticipate fire risk in 
+ecosystems not traditionally considered fire-prone. Most prevention and suppression strategies in 
+Europe remain focused on the Mediterranean lowlands 52, yet our results demonstrate increasing 
+fire risk in Central European and montane regions. Proactive strategies , including fine -scale 
+monitoring of fire weather and vegetation stress, cross -border coordination, adaptive silviculture 
+and prescribed burning to reduce fuel continuity, load, and increase resistance to wildfires 53, will 
+be critical to maintain ecosystem services. Lessons from countries where early -warning systems 
+and integrated fire management have reduced large -fire risk 19,54 could inform similar strategies 
+for mountain systems. 
+Future research should prioritize three key areas. First, higher-resolution fire data (e.g., Sentinel-
+2), and harmonized fine-scale ignition metrics, and local incident reports should be integrated to 
+better detect recent, small, and emerging fires at high elevations , as current inventories likely 
+underestimate emerging fire activity in mountain systems . Between 1980 and 2010, the vast 
+majority of Alpi ne wildfires were smaller than 10 ha 55, indicating that shifts in fire activity at 
+higher elevations may be underestimated in our analysis, which considers only fires > 30 ha.  
+Second, high -resolution climate products , such as easyclimate 56, would further improve the 
+detection and future predictions of fine-scale climate-fire interactions in complex mountain terrain. 
+Further, socio-economic drivers such as land abandonment, tourism, and local ignition practices 
+remain underrepresented in continental analyses  34,57, yet they strongly shape ignition pressure. 
+Third, the resilience and regeneration of fire-naïve mountain forests remain poorly understood, 
+particularly under repeated burning and prolonged water stress 58, and demands focused ecological 
+research. 
+In summary, fire activity has increased and shifted upward across European mountains since 2015, 
+driven by rising atmospheric aridity and declining moisture availability. As climate change 
+weakens constraints on fire, these historically buffered, high-elevation ecosystems may transition 
+into fire -prone systems. Without proactive adaptation, improved monitoring, cross -border 
+management and fire prevention, these mountain regions – long considered climate refugia – may 
+transition into emerging fir e hotspots, with cascading consequences for biodiversity, carbon 
+storage and water resources. 
+ 
+Methods 
+Fire data 
+The study area was divided into eight major mountain regions in southern and central Europe (Fig. 
+1a): Iberian mountains, Pyrenees, Apennines, French/Swiss middle mountains, Alps, Carpathians, 
+Balkans/Southeast European mountains, and Turkish mountains. The boundaries of these 
+
+PAGE 9
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+mountain regions were delineated according to Kapos et al. 59, based on elevation, slope, and local 
+elevation range. 
+Fire data was obtained from the European Forest Fire Information System (EFFIS) 22. The EFFIS 
+dataset is based on the identification of abnormally hot regions from daily MODIS satellite 
+imagery at 250 m ground spatial resolution and identifies fires with a size of ≥ 30 ha. In this study, 
+all burned areas from 2000 to 2025 were used and clustered annually. We focused exclusively on 
+forest fires by filtering events whose proportion of burned area corresponded to at least 50% of 
+forest cover. The total percentage of forest cover within a given fire polygon was calculated by 
+combining broad -leaved, conifer, m ixed forest , and transitional woodland/shrub classes of the 
+CORINE Land Cover provided directly in the EFFIS dataset. These areas encompass regions with 
+various stages of tree growth (young, damaged, or dead), regenerating forests and fully -grown 
+trees covering less than 30% of the area, which are all recognized as forested areas 60. 
+Forest fires were extracted for each mountain region above 800 m a.s.l. across central and southern 
+Europe 59. We derived the maximum elevation of each fire polygon fro m a digital elevation map 
+(DEM) at 100 m resolution 61 using the exact_extract function from the exactextractr package 62. 
+The threshold of 800 m was chosen to differentiate between low and high elevation fires , as it 
+aligns with elevation typically associated with sub -montane ecoregions 36. We used maximum 
+elevation to capture upward fire spread into mountain ecosystems, includi ng fires originating 
+below 800 m that extend into higher elevations (Table S2 and Fig. S8). Sensitivity analyses using 
+mean elevation (≥ 800 m) produced consistent results. In addition, small mountain ranges, such as 
+the Aegean Islands, Crete, Sardinia, an d Corsica , were not included in the analysis.  The final 
+dataset after selection (i.e., forest fires above 800 m a.s.l., with ≥ 30 ha fire burn area, and between 
+2000 and 2025) comprised 6,225 total fire polygons and is hereafter referred to as D800.  
+To analyze changes in the elevation of the highest forest fires, we generated two datasets using 
+complementary metrics. The first (Z90) includes fires above the 90th percentile of the annual fire‐
+elevation distribution 30 (based on fires above 800 m; Fig. S7). The second (T10) includes the ten 
+highest-elevation fires per year (T10). Both metrics were computed annually at two scales: (i) 
+across the entire study area (continental scale Z90 = 635 and T10 = 260 fire occurrences) and (ii) 
+separately for each mountain region (regional scale with Z90 = 656 and T10 = 571 fire 
+occurrences). Together, these two datasets provide complementary perspectives on elevational 
+shifts in fire activity, both at the contin ental scale and across regions with distinct fire activity. 
+Hereafter, we refer to these datasets as the Z90 and T10 datasets, respectively.  
+To quantify elevational change, we used complementary approaches at the fire and yearly levels. 
+Density distributions were based on pooled fire-level observations (2000–2014, 1,998 fires; 2015–
+2025, 4,227 fires) to visualize distributional shifts. Elevational change was quantified using yearly 
+metrics (D800, Z90, T10), comparing period medians and calculating rates from period midpoints 
+(Table S7). Annual metrics were used to ensure equal weighting of years and avoid bias from 
+interannual variation in fire counts and are shown as boxplots. Linear regressions of yearly metrics 
+against Year (2000–2025) were fitted to assess continuous trends (Table S8). 
+
+PAGE 10
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+Fire activity  
+We assessed the fire activity as measured by fire occurrence and burned area within the eight major 
+mountain regions. The  eight European mountain regions were classified into three fire -regime 
+categories based on fire emergence and recurrence patterns from 2000 to 2025. Low and emerging 
+fire regime  type (e.g., Alps, Carpathians, French/Swiss middle mountain s) experienced 
+consecutive years with fewer than 10 large fires (> 30 ha), often with no fire before 2017. Moderate 
+and reoccurring fire regime type (e.g., Pyrenees, Turkey) recorded fires between 2000 and 2005, 
+followed by minimal to sporadic activity unt il 2015, and then a marked increase in frequency 
+thereafter. High and persistent fire regime type (e.g., Iberian Mountains, Apennines, 
+Balkans/Southeast Europe) consistently sustained high fire frequencies, often exceeding 50 fires 
+per year, with recurrent extreme years throughout the study period (Table S2). 
+Factors driving fire activity 
+Climate data was obtained from the TerraClimate database 63. Monthly averages of actual 
+evapotranspiration (AET), precipitation (PPT), soil moisture (SM), wind speed (WS), vapor 
+pressure deficit (VPD), and Palmer drought severity index (PDSI) were downloaded for all years 
+from 2000 to 2025 at a spatial resolution of 4 km. All climate layers were r esampled to 1 km by 
+bilinear interpolation and transformed to yearly averages to match the fire dataset’s time 
+resolution. Temperature was additionally adjusted using a DEM-based lapse rate correction (−6.5 
+°C km⁻¹) 64 to account for sub-grid elevational variability in mountainous terrain. Human footprint 
+integrates multiple anthropogenic pressure variables, including built environments, population 
+density, nighttime lights, cropland, pasture, roads, railways, and navigable waterways, into a 
+composite index ranging from 0 (no detectable human pressure) to 50 (maximum cumulative 
+human pressure), with values <10 representing low human influence, 10–30 moderate disturbance 
+(e.g., scattered agriculture), and >30 high -impact zones such as urbanized regions . Annual maps 
+from 2000 to 2018 at 1 km spatial resolution were obtained from Mu et al. 65. Detailed information 
+on the data used in this study is summarized in Table  and some plotted over time in Fig. S9. The 
+Canadian fire weather index (FWI) (unitless, range 0 to >50 , low to extreme ) was evaluated but 
+excluded from the driver analysis due to strong collinearity with several climatic predictors (e.g., 
+VPD, DEF, PET) (Fig. S10). The mean, maximum, and minimum values of c limatic and human 
+predictors were extracted for each fire polygon, following the same approach as for elevation 
+extraction. 
+ 
+Identification of elevation-dependent changes in burned area and fire number with time.  
+To characterize regional fire activity across Europe, we first quantified trends in fire occurrence 
+and burned area from 2000 to 2025. We assessed temporal changes in fire elevation using three 
+complementary datasets: all fires above 800 m (D800), the 90th percentile of annual fire elevation 
+(Z90), and the ten highest elevation fires per year per region (T10). 
+To test for differences in the distribution of fire elevations between the early (2000–2014) and late 
+(2015–2025) study periods, we applied two-sample Kolmogorov–Smirnov tests. The latter period 
+
+PAGE 11
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+was chosen because it corresponds to a marked increase in fire occurrence and burned area in 
+Europe. Temporal trends in fire occurrence across elevation classes (800 –3,000 m, in 200 m 
+intervals, based on maximum elevation per polygon) were modeled using generalized linear mixed 
+models (GLMMs) with year as a fixed effect and elevation class as a random effect. Model fit was 
+evaluated using AIC, marginal R², and conditional R² values 66. Models were fitted using the glmer 
+function in the lme4 package 67. Full model specifications and validation procedures are provided 
+in Table S9. To visualize non-linear patterns (not for inference), we applied LOESS smoothers to 
+fire occurrence per elevation class over time. Descriptive statistics of fire occurrence were 
+additionally calculated for each elevation band before and after 2015 to highlight shifts in fire 
+activity across the study period. 
+To assess trends in fire elevation across European mountain regions from 2000 to 2025, we 
+analyzed maximum fire elevations using two derived datasets: the top ten highest -elevation fires 
+per year per region (T10) and the 90t h percentile of annual fire elevation (Z90). Temporal trends 
+were modeled using Generalized Additive Models (GAMs), with year as a predictor and group -
+specific smooths fitted for each fire regime type. The general model structure was: 
+E(Zmax, i) = α + fGroup(ti) + εi, εi ∼ N(0, σ2) 
+Where E(Zmax, i)is the expected maximum elevation of fire polygon i, fGroup(ti) is a smooth 
+function of year fitted separately for each fire regime type group, and εi is the residual error. An 
+identity link function and Gaussian error distribution were used. Models were fitted using the bam 
+function in the mgcv package 68, with basis dimension k = 7 for the smooth terms. Model fit was 
+evaluated using Akaike’s Information Criterion (AIC), explained deviance, and adjusted R².  
+ 
+Drivers affecting fire occurrence and burned area 
+To compare the environmental conditions of fire occurrence across elevations, we  assessed 
+whether distributions differed significantly between two elevation groups using the non-parametric 
+Wilcoxon rank–sum test (stats package). Specifically, we compared the median values of climatic, 
+fuel type, and human variables between fires occurring above and below 1,400 m a.s.l. The 1,400 
+m threshold reflects the central tendency of statistically derived elevation breakpoints across 
+climatic, fuel  type, and human variables (Table S18), which cluster around 1,400 –1,600 m at 
+continental scale. Vegetation composition within burned areas was quantified as the percentage 
+cover of broadleaf, conifer, mixed, and transitional vegetation intersecting each fire polygon. 
+Burned area and median vegetation cover were summarized by elevation class (≤1,400 m and 
+>1,400 m) and fire regime type (Table S15), and by mountain region and elevation class (Table 
+S5b). Burned area distributions across regime types were examined using log-transformed burned 
+area and kernel density estimates (Fig. S6). 
+To identify drivers of burned area, we used linear mixed -effects model using lme4 and lmerTest. 
+Fixed effects captured climatic variables (vapor pressure deficit, soil moisture, minimum 
+temperature, precipitation, Palmer Drought Severity Index, and wind speed), fuel compo sition 
+(broadleaf, coniferous, mixed, and transitional) and human footprint. Pearson’s correlations among 
+
+PAGE 12
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+predictors and between predictors and log -scaled burned area were calculated. Predictors 
+displaying a correlation higher than 0.7 were considered highly correlated and not included in the 
+model (Fig. S11). A random intercept accounted for heterogeneity among mountain regions. The 
+linear mixed-effects model specification was as in Equation (1): 
+log( Burned Area)ij
+=  β0 + β1 ∗  vpdij + β2 ∗  soil moistureij +  β3 ∗ tminij +  β4 ∗  precipitationij
++ β5 ∗ pdsiij + β6 ∗ wind speedij + β7 ∗ broadleafij +  β8 ∗  coniferousij + β8
+∗  mixedij +  β9 ∗ transitionalij + u0j +  εij  
+Where β0 is the global intercept, β1 … βp, are the fixed slopes of the predictors,  u0j is the random 
+intercept for each mountain region j, and εij the residual error.  
+Burned area was log-transformed to stabilize variance and reduce the influence of the largest fire 
+occurrences. All predictor variables were centered and scaled (mean = 0, SD = 1) before analysis 
+to allow for direct comparison of effect sizes and improve model convergence. P-values for fixed 
+effects were obtained via Satterthwaite approximations. The explained variance was partitioned 
+using partR2 package 69; inclusive R2 quantifies the unique and shared varianc e associated with 
+each predictor, while structure coefficients show the contribution of each predictor to the overall 
+model prediction. Models were fitted both at the continental scale (D800) and for each mountain 
+region with distinct fire regime types.  
+ 
+Funding  
+This research received no external funding. 
+ 
+Acknowledgements 
+The authors are thankful to Prof. James Kirchner for his  constructive feedback on the statistical 
+part and to Dr. Samuel Hoffmann for initial discussions on the topic. 
+ 
+Data Availability Statement 
+The data generated in this study have been deposited in the Zenodo file [Forest fire dataset for 
+European mountain regions (2000 –2025)] and can be accessed via this link [DOI: 
+10.5281/zenodo.17078774, link]. These data were derived from the following resources available 
+in the public domain (Table 2). 
+ 
+ 
+References 
+ 1. van Wees, D. et al. The role of fire in global forest loss dynamics. Glob. Change Biol.  27, 
+(2021). 
+
+PAGE 13
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+2. Agbeshie, A. A., Abugre, S., Atta -Darkwa, T. & Awuah, R. A review of the effects of forest 
+fire on soil properties. J. For. Res. 33, (2022). 
+3. Pausas, J. G. & Lamont, B. B. Fire-released seed dormancy - a global synthesis. Biol. Rev. 97, 
+(2022). 
+4. Williams, A. P. et al. Observed Impacts of Anthropogenic Climate Change on Wildfire in 
+California. Earths Future 7, (2019). 
+5. Lindenmayer, D. B., Kooyman, R. M., Taylor, C., Ward , M. & Watson, J. E. M. Recent 
+Australian wildfires made worse by logging and associated forest management. Nat. Ecol. 
+Evol. 4, (2020). 
+6. Silveira, M. V. F., Silva-Junior, C. H. L., Anderson, L. O. & Aragão, L. E. O. C. Amazon fires 
+in the 21st century: The year of 2020 in evidence. Glob. Ecol. Biogeogr. 31, (2022). 
+7. Bondur, V. G., Mokhov, I. I., Voronova, O. S. & Sitnov, S. A. Satellite Monitoring of Siberian 
+Wildfires and Their Effects: Features of 2019 Anomalies and Trends of 20 -Year Changes. 
+Dokl. Earth Sci. 492, (2020). 
+8. Kirchmeier-Young, M. C., Gillett, N. P., Zwiers, F. W., Cannon, A. J. & Anslow, F. S. 
+Attribution of the Influence of Human -Induced Climate Change on an Extreme Fire Season. 
+Earths Future 7, (2019). 
+9. Steel, Z. L. et al. Mega-disturbances cause rapid decline of mature conifer forest habitat in 
+California. Ecol. Appl. 33, (2023). 
+10. Collins, L. et al.  The 2019/2020 mega -fires exposed Australian ecosystems to an 
+unprecedented extent of high-severity fire. Environ. Res. Lett. 16, (2021). 
+11. Jolly, W. M. et al. Climate-induced variations in global wildfire danger from 1979 to 2013. 
+Nat. Commun. 6, (2015). 
+12. Jones, M. W. et al. Global and Regional Trends and Drivers of Fire Under Climate Change. 
+Rev. Geophys. 60, (2022). 
+13. Tedim, F. et al. Defining Extreme Wildfire Events: Difficulties, Challenges, and Impacts. Fire 
+1, (2018). 
+14. Bowman, D. M. J. S., Williamson, G. J., Price, O. F., Ndalila, M. N. & Bradstock, R. A. 
+Australian forests, megafires and the risk of dwindling carbon stocks. Plant Cell Environ. 44, 
+(2021). 
+15. Kelly, L. T. et al. Fire and biodiversity in the Anthropocene. Science 370, (2020). 
+16. Bousfield, C. G., Lindenmayer, D. B. & Edwards, D. P. Substantial and increasing global 
+losses of timber-producing forest due to wildfires. Nat. Geosci. 16, 1145–1150 (2023). 
+17. Borchers-Arriagada, N. et al.  Smoke health costs and the calculus for wildfires fuel 
+management: a modelling study. Lancet Planet. Health 5, (2021). 
+18. Ellis, T. M., Bowman, D. M. J. S., Jain, P., Flannigan, M. D. & Williamson, G. J. Global 
+increase in wildfire risk due to climate -driven declines in fuel moisture. Glob. Change Biol. 
+28, (2022). 
+19. Turco, M. et al. Decreasing fires in mediterranean Europe. PLoS ONE 11, (2016). 
+20. Kreider, M. R. et al. Fire suppression makes wildfires more severe and accentuates impacts of 
+climate change and fuel accumulation. Nat. Commun. 15, 2412 (2024). 
+
+PAGE 14
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+21. Turco, M. et al. Climate drivers of the 2017 devastating fires in Portugal. Sci. Rep. 9, 13886 
+(2019). 
+22. San-Miguel-Ayanz, J. et al. Comprehensive Monitoring of Wildfires in Europe: The European 
+Forest Fire Information System (EFFIS). in Approaches to Managing Disaster - Assessing 
+Hazards, Emergencies and Disaster Impacts (InTech, 2012). 
+23. Mary Petritan, A. & Beloiu Schwenke, M. Forest Functioning under Climate Warming and 
+Future Perspectives on Forest Disturbances. Forests 14, 2302 (2023). 
+24. Dupuy, J. et al.  Climate change impact on future wildfire danger and activity in southern 
+Europe: a review. Ann. For. Sci. Springer Nat.  https://doi.org/10.1007/s13595-020-00933-
+5/Published (2020) doi:10.1007/s13595-020-00933-5/Published. 
+25. Resco de Dios, V. et al. Climate change induced declines in fuel moisture may turn currently 
+fire-free Pyrenean mountain forests into fire -prone ecosystems. Sci. Total Environ.  797, 
+(2021). 
+26. Carnicer, J. et al.  Global warming is shifting the relationships between fire weather and 
+realized fire-induced CO2 emissions in Europe. Sci. Rep. 12, 10365 (2022). 
+27. Gergel, D. R., Nijssen, B., Abatzoglou, J. T., Lettenmaier, D. P. & Stumbaugh, M. R. Effects 
+of climate change on snowpack and fire potential in the western USA. Clim. Change 141, 287–
+299 (2017). 
+28. Pepin, N. et al. Elevation-dependent warming in mountain regions of the world. Nat. Clim. 
+Change 5, (2015). 
+29. Schwartz, M. W. et al. Increasing elevation of fire in the Sierra Nevada and implications for 
+forest change. Ecosphere 6, (2015). 
+30. Alizadeh, M. R. et al. Warming enabled upslope advance in western US forest fires. Proc. 
+Natl. Acad. Sci. U. S. A. 118, (2021). 
+31. Conedera, M. et al. Consequences of forest fires on the hydrogeological response of mountain 
+catchments: A case study of the Riale Buffaga, Ticino, Switzerland. Earth Surf. Process. 
+Landf. 28, 117–129 (2003). 
+32. Rengers, F. K. et al. Landslides after wildfire: initiation, magnitude, and mobility. Landslides 
+17, (2020). 
+33. Moritz, M. A., Morais, M. E., Summerell, L . A., Carlson, J. M. & Doyle, J. Wildfires, 
+complexity, and highly optimized tolerance. Proc. Natl. Acad. Sci. U. S. A. 102, (2005). 
+34. Modugno, S., Balzter, H., Cole, B. & Borrelli, P. Mapping regional patterns of large forest 
+fires in Wildland-Urban Interface areas in Europe. J. Environ. Manage. 172, (2016). 
+35. Chelsea Nagy, R., Fusco, E., Bradley, B., Abatzoglou, J. T. & Balch, J. Human -related 
+ignitions increase the number of large wildfires across U.S. Ecoregions. Fire 1, (2018). 
+36. Dupire, S., Curt, T. & Bigot, S. Spatio-temporal trends in fire weather in the French Alps. Sci. 
+Total Environ. 595, 801–817 (2017). 
+37. Haque, M. K. et al. Wildfire in Australia during 2019-2020, Its Impact on Health, Biodiversity 
+and Environment with Some Proposals for Risk Management: A Review. J. Environ. Prot. 12, 
+391–414 (2021). 
+
+PAGE 15
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+38. Juang, C. S. et al. Rapid Growth of Large Forest Fires Drives the Exponential Response of 
+Annual Forest -Fire Area to Aridity in the Western United States. Geophys. Res. Lett.  49, 
+(2022). 
+39. D’Alò, D. et al. Beyond summer fires: shifting forest fire across European biogeographical 
+regions. Environ. Res. Lett. 21, 054007 (2026). 
+40. Tudoroiu, M. et al. Negative elevation-dependent warming trend in the Eastern Alps. Environ. 
+Res. Lett. 11, (2016). 
+41. Rottler, E., Kormann, C., Francke, T. & Bronstert, A. Elevation -dependent warming in the 
+Swiss Alps 1981–2017: Features, forcings and feedbacks. Int. J. Climatol. 39, (2019). 
+42. El Garroussi, S., Di Giuseppe, F., Barnard, C. & Wetterhall, F. E urope faces up to tenfold 
+increase in extreme fires in a warming climate. Npj Clim. Atmospheric Sci. 7, 30 (2024). 
+43. Simon, M. Europe Has Descended Into the Age of Fire. Wired (2022). 
+44. Gerberding, K. & Schirpke, U. Mapping the probability of forest fi re hazard across the 
+European Alps under climate change scenarios. J. Environ. Manage. 377, 124600 (2025). 
+45. Richardson, D. et al. Global increase in wildfire potential from compound fire weather and 
+drought. Npj Clim. Atmospheric Sci. 5, 23 (2022). 
+46. Abatzoglou, J. T. et al. Climate change has increased the odds of extreme regional forest fire 
+years globally. Nat. Commun. 16, 6390 (2025). 
+47. Bernier, P. Y. et al. Mapping Local Effects of Forest Properties on Fire Risk across Canada. 
+Forests 7, 157 (2016). 
+48. Marchal, J., Cumming, S. G. & McIntire, E. J. B. Land cover, more than monthly fire weather, 
+drives fire-size distribution in Southern Québec forests: Implications for fire risk management. 
+PLOS ONE 12, e0179294 (2017). 
+49. Gelabert, P. J., Rodrig ues, M., Coll, L., Vega -Garcia, C. & Ameztegui, A. Maximum tree 
+height in European Mountains decreases above a climate -related elevation threshold. 
+Commun. Earth Environ. 5, 84 (2024). 
+50. Beloiu, M. et al. No treeline shift despite climate change over the last 70 years. For. Ecosyst. 
+9, 100002 (2022). 
+51. Davis, K. T. et al. Reduced fire severity offers near-term buffer to climate-driven declines in 
+conifer resilience across the western United States. Proc. Natl. Acad. Sci. 120, e2208120120 
+(2023). 
+52. San-Miguel-Ayanz, J. et al.  Forest Fires in Europe, Middle East and North Africa 2017 . 
+(2018). 
+53. Vilà-Vilardell, L., De Cáceres, M., Piqué, M. & Casals, P. Prescribed fire after thinning 
+increased resistance of sub -Mediterranean pine forests to drought even ts and wildfires. For. 
+Ecol. Manag. 527, 120602 (2023). 
+54. Braziunas, K. H., Seidl, R., Rammer, W. & Turner, M. G. Can we manage a future with more 
+fire? Effectiveness of defensible space treatment depends on housing amount and 
+configuration. Landsc. Ecol. 36, 309–330 (2021). 
+55. Conedera, M. et al. Characterizing Alpine pyrogeography from fire statistics. Appl. Geogr. 98, 
+87–99 (2018). 
+
+PAGE 16
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+56. Cruz-Alonso, V. et al. The easyclimate R package: Easy access to high-resolution daily climate 
+data for Europe. Environ. Model. Softw. 161, 105627 (2023). 
+57. Radeloff, V. C. et al. Rapid growth of the US wildland -urban interface raises wildfire risk. 
+Proc. Natl. Acad. Sci. 115, 3314–3319 (2018). 
+58. Kiel, N. G., Mavencamp, E. F. & Turner, M. G. Sparse subalpine forest r ecovery pathways, 
+plant communities, and carbon stocks 34 years after stand -replacing fire. Ecol. Monogr. 95, 
+e1644 (2025). 
+59. Kapos, V., Rhind, J., Edwards, M., Price, M. F. & Ravilious, C. Developing a map of the 
+world’s mountain forests. in Forests in sustainable mountain development: a state of 
+knowledge report for 2000. Task Force on Forests in Sustainable Mountain Development.  
+(2000). 
+60. FAO. Global Forest Resources Assessment 2020: Main Report. Food and Agriculture 
+Organization (FAO). (2020). 
+61. Neteler, M., Haas, J. & Metz, M. Copernicus Digital Elevation Model (DEM) for Europe at 
+100 meter resolution (EU -LAEA) derived from Copernicus Global 30 meter DEM dataset. 
+https://doi.org/10.5281/ZENODO.6211990 (2022) doi:10.5281/ZENODO.6211990. 
+62. Baston, D. exactextractr: Fast Extraction from Raster Datasets using Polygons. (2022). 
+63. Abatzoglou, J. T., Dobrowski, S. Z., Parks, S. A. & Hegewisch, K. C. TerraClimate, a high -
+resolution global dataset of monthly climate and climatic water balance from 1958-2015. Sci. 
+Data 5, (2018). 
+64. Barry, R. G. & Chorley, R. J. Atmosphere, Weather and Climate. (Routledge, London, 2009). 
+doi:10.4324/9780203871027. 
+65. Mu, H. et al. A global record of annual terrestrial Human Footprint dataset from 2000 to 2018. 
+Sci. Data 9, (2022). 
+66. Nakagawa, S. & Schielzeth, H. A general and simple method for obtaining R2 from 
+generalized linear mixed-effects models. Methods Ecol. Evol. 4, (2013). 
+67. Bates, D., Mächler, M., Bolker, B. M. & Walker, S. C. Fitting linear mixed -effects models 
+using lme4. J. Stat. Softw. 67, (2015). 
+68. Wood, S. N. Generalized Additive Models: An Introduction with R, Second Edition . 
+Generalized Additive Models: An Introduction with R, Second Edition  (2017). 
+doi:10.1201/9781315370279. 
+69. Stoffel, M. A., Na kagawa, S. & Schielzeth, H. partR2: Partitioning R2 in generalized linear 
+mixed models. PeerJ 9, (2021). 
+70. CEMS. Fire danger indices historical data from the Copernicus Emergency Management 
+Service. European Centre for Medium -Range Weather Forecasts (ECM WF). CEMS Early 
+Warning Data Store  https://ewds.climate.copernicus.eu/datasets/cems-fire-historical-
+v1?tab=download (2026). 
+71. EEA. Digital elevation model over Europe (EU -DEM), version 1.1. 
+https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1 (2016). 
+ 
+ 
+
+PAGE 17
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+Author contribution statement 
+MBS and FP: Conceptualization, Data curation, Analysis, Writing - original draft, Writing - 
+Review & Editing; TL: Data curation, Formal analysis, Writing - original draft; VCG, DP: Writing 
+- Review & Editing. 
+ 
+Competing interests statement 
+The authors declare no competing interests. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Tables 
+ 
+Table 1: Elevation-based differences in median values of climatic, fuel, and human footprint 
+variables across fire occurrences (D800) above and below 1,400 m. AET = actual 
+evapotranspiration, DEF = climatic water deficit, PDSI = Palmer drought severity index, PET = 
+potential evapotranspiration, PPT = precipitation, Tmin = minimum annual temperature, Tmax = 
+maximum annual temperature, VPD = vapor pressure defi cit, Fuel: broadleaf, coniferous, mixed 
+forest cover, and transitional vegetation are given as percentage. In bold are marked prevalent 
+environmental conditions below and above 1,400 m. Sig. indicates statistical significance based 
+on p-values (* p < 0.05; ** p < 0.01; *** p < 0.001; ns = not significant). 
+ Variable Median 
+D800 
+Median 
+< 1,400m 
+Median 
+> 1,400m 
+χ2 p-value Sig.  
+C
+l
+i
+m
+a
+t
+i
+c 
+ AET (mm) 38.38 41.08 28.50 1828455 4.30 x 10-20 *** 
+
+PAGE 18
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+DEF (mm) 42.60 23.81 93.21 2564347 2.28 x 10-14 *** 
+PDSI  -2.81 -2.86 -2.66 2269547 0.37 ns 
+PET (mm) 101.95 92.18 135.18 2495231 1.59 x 10-09 *** 
+PPT (mm) 30.83 32.92 135.18 1923724 2.45 x 10-12 *** 
+Soil moisture 
+(mm) 
+40.91 52.84 29.57 1774573 2.23 x 10-25 *** 
+Tmin (°C) 10.07 8.49 11.56 2324994 0.03 * 
+Tmax (°C) 21.37 18.85 23.38 2419116 1.72 x 10-5 *** 
+VPD (kPa) 0.83 0.69 1.12 2550769 2.82 x 10-13 *** 
+Wind speed 
+(m/s) 
+2.59 2.65 2.42 1904039 8.95 x 10-14 *** 
+ FWI 15.62 23.02 12.33 3158768 3.57 x 10-28 *** 
+Fuel 
+Broadleaf (%) 17.26 20.31 9.09 2300317 5.84 x 10-12 *** 
+Conifer (%) 0 0 0 2809017 9.80 x 10-8 *** 
+Mixed (%) 0 0 0 2789469 3.39 x 10-6 *** 
+Transitional 
+(%) 
+42.06 40.60 47.03 2869230 2.46 x 10-6 *** 
+Human Human 
+footprint 
+11.25 11.56 9.85 2010794 1.90 x 10-36 *** 
+ 
+ 
+ 
+ 
+ 
+ 
+Table 2. Summary of data  used, their original spatial resolution, temporal coverage, and 
+source. 
+Data Unit Spatial 
+resolution 
+Temporal coverage Reference 
+Fire polygons - 250 m 2000-2025 yearly San-Miguel-Ayanz et 
+al. 22 
+Mountain regions - - 2008 Kapos et al. 59 
+Copernicus digital elevation 
+model (DEM) for Europe 
+m 100 m 2022 Neteler et al. 61 
+Actual evapotranspiration 
+(AET) 
+mm 4 km 2000-2024 monthly Abatzoglou et al. 63 
+
+PAGE 19
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+Data Unit Spatial 
+resolution 
+Temporal coverage Reference 
+Climatic water deficit (DEF) mm 4 km 2000-2024 monthly Abatzoglou et al. 63 
+Potential evapotranspiration 
+(PET) 
+mm 4 km 2000-2024 monthly Abatzoglou et al. 63 
+Temperature (T) °C 4 km 2000-2024 monthly Abatzoglou et al. 63 
+Precipitation (PPT) mm 4 km 2000-2024 monthly Abatzoglou et al. 63 
+Soil moisture (SM) mm 4 km 2000-2024 monthly Abatzoglou et al. 63 
+Wind speed (WS)  m/s  4 km 2000-2024 monthly Abatzoglou et al. 63 
+Vapor pressure deficit (VPD)  kPa 4 km 2000-2024 monthly Abatzoglou et al. 63 
+Palmer drought severity 
+index (PDSI) 
+unitless 4 km 2000-2024 monthly Abatzoglou et al. 63 
+Fire weather index (FWI)  unitless ~9 km 2000-2025 daily CEMS 70  
+Human footprint (HFP) unitless 1 km 2000-2018 yearly Mu et al. 65 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 20
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+Figure 
+ 
+Fig. 1. Spatial distribution and temporal evolution of forest fires across European mountain 
+regions. a Spatial distribution of forest fires (n o. = 6,225) that occurred above 800 m elevation 
+within eight European mountain regions from 2000 to 2025.  b Evolution of burned area and 
+number of fires within mountain regions of Europe and percentage of fire occurrences and burned 
+area (ha) for each mountain region and elevation class. c Spatial distribution of forest fires across 
+European mountain regions in five time periods (2000–2005, 2006–2010, 2011–2015, 2016–2020, 
+
+
+PAGE 21
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+and 2021–2025), illustrating the expansion and clustering of fire occurrences over time . Annual 
+fire distributions are shown in Fig. S1. The extent of mountain regions was defined following 
+Kapos et al. 59, the country borders and the digital elevation model  71 were used to enhance the 
+visualization. 
+ 
+ 
+Fig. 2. Elevation and temporal patterns of fire activity in Eur opean mountain regions 
+from 2000 to 2025. a Annual fire occurrences above 800 m (D800), and elevation distributions 
+for the 90th percentile fire activity (Z90) and the top ten fire activity (T10), showing a 
+progressive shift toward higher elevations. b Fire occurrence density by mean elevation for the 
+D800, Z90, and T10 datasets, comparing the periods 2000–2014 and 2015–2025. Kolmogorov–
+Smirnov test p-value shows significant distributional changes, with post -2015 fires occurring 
+at higher elevation, ind icating an upward shift in fire occurrence. c Temporal trends in fire 
+occurrence by elevation class, with the strongest increases at lower elevations (800 –1,000 m), 
+
+
+PAGE 22
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+and smaller but consistent increases at higher elevation (>2,000 m). Curves represent smoothed 
+trends modeled using a loess function. 
+ 
+ 
+Fig. 3. Spatiotemporal trends of forest fire activity across central and southern Europe 
+from 2000 to 2025 . a Classification of fire regimes into three types based on emergence and 
+recurrence patterns: low and emerging, moderate and reoccurring, and high and persistent. b–c 
+Trends in the maximum elevation of forest fires derived from the Z90 and T10 datasets, 
+respectively, are shown separately for each fire regime type. Each point represents a fire 
+occurrence. Solid lines show generalized additive models (GAMs) fits (k = 6) with shaded areas 
+indicating 95% confidence intervals. Histograms below each panel represent annual fire counts 
+per region. The extent of mountain regions was defined following Kapos et al. 59, the country 
+borders and the digital elevation model 71 were used to enhance the visualization. 
+ 
+ 
+
+
+PAGE 23
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+ 
+Fig. 4. Predictors of burned area in European mountain regions and within fire regime 
+types. a Europe-wide model (D800 dataset). b Models for individual fire regime types: high 
+and persistent, moderate and reoccurring, low and emerging. Shown are the explained 
+variance (inclusive R²) and standardized coefficients of climatic, fu el type, and human 
+predictors of burned area. AET = actual evapotranspiration, PDSI = Palmer drought severity 
+index, PPT = precipitation, VPD = vapor pressure deficit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PAGE 24
+ARTICLE IN PRESS
+ARTICLE IN PRESS
+ 
+ 
+ 
+Editorial Summary 
+This study shows that forest fires are increasingly reaching higher elevations in European 
+mountains, driven by drier climatic conditions and accelerating rapidly since 2015, thereby 
+affecting ecosystems that were historically less exposed to fire. 
+ 
+Peer review information : Nature Communications  thanks Pere Gelabert and the other, 
+anonymous, reviewer for their contribution to the peer review of this work. A peer review file is 
+available. 
+ 
+ 

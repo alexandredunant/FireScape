@@ -1,0 +1,1006 @@
+PAGE 1
+Citation: Berˇ cák, R.; Holuša, J.;
+Trombik, J.; Resnerová, K.; Hlásny, T.
+A Combination of Human Activity
+and Climate Drives Forest Fire
+Occurrence in Central Europe: The
+Case of the Czech Republic. Fire 2024,
+7, 109. https://doi.org/10.3390/
+fire7040109
+Academic Editors: Florian Kraxner,
+Andrey Krasovskiy and Bacciu
+Valentina
+Received: 27 February 2024
+Revised: 19 March 2024
+Accepted: 20 March 2024
+Published: 26 March 2024
+Copyright: © 2024 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+fire 
+Article
+A Combination of Human Activity and Climate Drives Forest
+Fire Occurrence in Central Europe: The Case of the
+Czech Republic
+Roman Berˇ cák *
+ , Jaroslav Holuša
+ , Jiˇ ríTrombik, Karolina Resnerová and Tomáš Hlásny
+Faculty of Forestry and Wood Sciences, Czech University of Life Sciences, 16500 Prague, Czech Republic;
+holusa@fld.czu.cz (J.H.); trombik@fld.czu.cz (J.T.); resnerovak@fld.czu.cz (K.R.); hlasny@fld.czu.cz (T.H.)
+* Correspondence: bercak@fld.czu.cz
+Abstract: Central Europe is not a typical wildfire region; however, an increasingly warm and dry
+climate and model-based projections indicate that the number of forest fires are increasing. This
+study provides new insights into the drivers of forest fire occurrence in the Czech Republic, during
+the period 2006 to 2015, by focusing on climate, land cover, and human activity factors. The average
+annual number of forest fires during the study period was 728, with a median burned area of 0.01 ha.
+Forest fire incidence showed distinct spring (April) and summer (July to August) peaks, with median
+burned areas of 0.04 ha and 0.005 ha, respectively. Relationships between the predictors (climate
+data, forest-related data, socioeconomic data, and landscape-context data) and the number of forest
+fires in individual municipality districts were analyzed using Generalized Additive Models (GAM)
+on three time scales (annually, monthly, and during the summer season). The constructed GAMs
+explained 48.7 and 53.8% of forest fire variability when fire occurrence was analyzed on a monthly
+scale and during the summer season, respectively. On an annual scale, the models explained 71.4% of
+the observed forest fire variability. The number of forest fires was related to the number of residents
+and overnight tourists in the area. The effect of climate was manifested on monthly and summer
+season scales only, with warmer and drier conditions associated with higher forest fire frequency. A
+higher proportion of conifers and the length of the wildland–urban interface were also positively
+associated with forest fire occurrence. Forest fire occurrence was influenced by a combination of
+climatic, forest-related, and social activity factors. The effect of climate was most pronounced on a
+monthly scale, corresponding with the presence of two distinct seasonal peaks of forest fire occurrence.
+The significant effect of factors related to human activity suggests that measures to increase public
+awareness about fire risk and targeted activity regulation are essential in controlling the risk of fire
+occurrence in Central Europe. An increasing frequency of fire-conducive weather, forest structure
+transformations due to excessive tree mortality, and changing patterns of human activity on the
+landscape require permanent monitoring and assessment of possible shifts in forest fire risk.
+Keywords: Central Europe; climate; fire risk; human activities; wildfires
+1. Introduction
+Although fire is as much a part of the ecosystem as rain, sun, and soil, wildfires
+represent forest disturbances, accounting for 24% of total forest disturbance in Europe from
+1950 to 2019 [1]. While annually burned area in Europe showed a moderate decrease in
+recent decades, the severity of large singular events increased [2]. Moreover, large fires are
+now occurring in areas such as Sweden, Germany, and the Czech Republic, which have not
+previously experienced large wildfires [3,4].
+The geographical pattern of forest vulnerability to fires emerges from the interplay
+between forest structure and composition and climate. High biomass levels are typically
+associated with higher fuel loads [5], with warmer and drier climates increasing the vulner-
+ability [6]. At the scale of Europe, fire vulnerability hotspots in the period 1979 to 2018 were
+Fire 2024, 7, 109. https://doi.org/10.3390/fire7040109 https://www.mdpi.com/journal/fire
+
+PAGE 2
+Fire 2024, 7, 109 2 of 19
+found in Sweden, Finland, European Russia, the Iberian Peninsula, and Turkey [7]. How-
+ever, this distribution of fires changes due to land use changes and increased fire-conducive
+weather conditions [8,9]. These factors also affect forest structure and composition, which
+can alter future forest fire risk [10–13]. These developments highlight the importance of
+improved forest fire monitoring, modeling, prediction, and firefighting resource allocation
+systems, which are being increasingly implemented across Europe (e.g., [14–17]).
+Forest vulnerability to fire [18] is dependent upon interactions between climate, fuel
+availability (fuel load and moisture content of the vegetation), and ignition sources [19–24].
+Ignition sources are both natural (predominantly lightning) and anthropogenic (resulting
+from human activity on the landscape; [25]). In Europe, roughly 90 to 98% of forest fires are
+human-caused, and only a small percentage are caused by lightning [23,26–28]. Human-
+caused fires mainly result from activities related to recreation (e.g., camping, hiking, and
+hunting) and industry (e.g., timber production, railway and highway transportation, and
+oil and gas exploration) [29].
+Forest fires in the European temperate forest zone are mainly associated with human
+activities, while climatic effects are less distinct [30–35]. Despite the recognized importance
+of anthropogenic effects, little attention has been paid to their quantitative assessment, with
+human activity data in forests being surprisingly scarce [36–38]. This makes assessing the
+human contribution to wildfire ignition and predicting the fire risk challenging [25,39].
+Central Europe is not a typical wildfire region; forest fires account for a negligible
+proportion of the total forest area disturbed annually. Wildfires are typically small, predom-
+inantly ignited by human activity, and quickly extinguished in most cases, thanks to the
+high human population density (detection) and developed infrastructure (suppression).
+However, the frequency of forest fire increased by 70% during the periods from 1971 to
+1990 and from 1991 to 2015, probably due to the increasingly hot and dry weather [40]. The
+danger of forest fire is expected to further increase not only due to increasingly conducive
+fire weather [41], but also due to intensifying human activity at the wildland–urban inter-
+face; growing numbers of visitors in the forests; and the increased fire danger associated
+with elevated forest mortality induced by drought, insects, and diseases. Large-scale forest
+mortality due to bark-beetle (Coleoptera: Curculionidae: Scolytinae) infestations in Central
+Europe [42] is of particular concern due to the large amounts of fuels that accumulate [43,44].
+Heavy machinery operations conducting salvaging and wood transportation are another
+factor potentially increasing fire risk in the region [45].
+Understanding regional patterns and drivers of forest fire that emerge from the inter-
+action of climatic and social factors is essential for mitigating future fire risk and identifying
+fire-prone areas. We aimed to identify drivers of forest fire ignition in the Czech Republic
+(Central Europe) in the period 2006 to 2015, placing equal emphasis on landscape, social,
+and climatic drivers. Contrary to most previous studies, which mainly addressed the effect
+of climate [41,46], we sought to reach more profound insights by considering factors such
+as population density, tourism, and wildland–urban interface, which are hypothesized to
+be associated with fire ignition and spread in the region. This information will allow for
+a more robust fire danger assessment and forecasts by considering the coupled effects of
+climate change and ongoing socio-ecological transformations.
+2. Materials and Methods
+2.1. Study Area and Data
+The Czech Republic (Central Europe; Figure 1a) has a mild four-season climate that
+is between oceanic and continental climate types. The country’s climate is characterized
+by prevailing westerly winds and intense cyclonic activity. The average daily temperature
+ranges from 3 ◦C in January to 17 ◦C in July, and the average annual precipitation ranges
+from 600 to 800 mm in most of the country [47]. The altitude ranges from 115 to 1603 m
+a.s.l., with a median of 430 m a.s.l. The predominant relief is hills and highlands. The
+average population density is 133 inhabitants km−2 [48]. Additional information about the
+country is presented in Appendix A.
+
+PAGE 3
+Fire 2024, 7, 109 3 of 19
+Fire 2024, 7, x FOR PEER REVIEW 4 of 19 
+ 
+ 
+on identifying the drivers of forest ﬁre ignition, which were expected to be more closely 
+associated with predictors such as climate and human activity. We used the number of 
+forest ﬁres in individual municipality districts (n = 76) ([54], see Appendix A) of the Czech 
+Republic rather than accurate spatial coordinates of the forest ﬁres. Data for 2006 through 
+2010 lacked coordinates; only forest ﬁre occurrence within districts was available. Socio-
+economic data (population size, tourism, etc.) were available only on a municipal district 
+scale. Because the size of forested area highly varied between districts, the number of ﬁres 
+per forest hectare (FF ha–1) was used as a response variable in the statistical models. 
+ 
+Figure 1. (a) Position of the Czech Republic in Europe; (b) a comparison of trends in the number of 
+forest ﬁres and burned areas in Europe and the Czec h Republic in the study period 2006 to 2015; 
+and (c) typical forest ﬁres occurring in the Czech Republic. Source of the forest ﬁre data for Europe: 
+[3]; source of the forest ﬁre data for Czechia: General Directorate of Fires Rescue Service of the Czech 
+Republic; photographer credit: Jan Vaněk, 2018. 
+2.2. Predictor Variables 
+We considered several predictors that are known to act as forest ﬁre risk drivers in 
+temperate forests, including climate data, fo rest-related data, socio-economic data, and 
+landscape context data (Appendix B, [15–17,19–23,25,30–34,55–59]). 
+Monthly air temperature, monthly rainfall, average annual air temperature, annual 
+total rainfall, and their di ﬀerences from long-term means (from 1961 to 1990) together 
+with the number of days with snow cover pe r year represented the climatic predictors 
+(Czech Hydrometeorological Institute, Prague, Czech Republic, http://portal.chmi.cz/ (ac-
+cessed on 1 January 2020).  
+Forest-related predictors were total forest area, percentage of forest area, percentage 
+of conifers, and percentage of pine (Pinus L. spp.) within each district [50]. Pine was con-
+sidered the most ﬂammable tree species in the study area [60]; it usually grows under dry 
+conditions, produces resinous and easily co mbustible debris, and older stands have a 
+Figure 1. (a) Position of the Czech Republic in Europe; (b) a comparison of trends in the number of
+forest fires and burned areas in Europe and the Czech Republic in the study period 2006 to 2015; and
+(c) typical forest fires occurring in the Czech Republic. Source of the forest fire data for Europe: [3];
+source of the forest fire data for Czechia: General Directorate of Fires Rescue Service of the Czech
+Republic; photographer credit: Jan Vanˇ ek, 2018.
+In the absence of humans, mixed beech (Fagus sylvestris L.) forests would dominate
+most of the Czech Republic, with oak ( Quercus L.)-dominated deciduous forests in the
+lowlands, and coniferous forests with spruce (Picea L.) at higher altitudes [49]. Because of
+the intensive forest management practiced since the nineteenth century, the current forest
+composition consists predominantly of Picea abies L. (Karst.) (52%), Pinus sylvestris L. (17%),
+Fagus sylvatica L. (7%), Quercus spp. (7%), Larix decidua Mill. (4%), Betula pendula Roth
+(3%), and Abies alba Mill. (1%). Other deciduous species (e.g., Carpinus betulus L., Acer
+L. spp., Fraxinus L. spp., Populus L. spp., Salix L. spp., and Tilia L. spp.) occupy about
+8% of the forested area [50]. Forests cover 33.9% of the country. The disturbance regime
+predominantly consists of windthrows triggering bark beetle outbreaks, which are further
+modulated by drought. This sequence of events has recently shifted toward the dominance
+of drought-driven processes [42]. Forest fires have accounted for a negligible proportion
+of total forest damage and are not considered in national forest damage reporting. Inter-
+estingly, the inter-annual pattern of forest fire numbers and burned areas in the Czech
+Republic was similar to that found throughout all of Europe, suggesting a large-scale
+synchrony (Figure 1b).
+Fores fire data were obtained from the General Directorate of Fire Rescue Service of
+the Czech Republic [ 51], which keeps statistics on all fires in the country that required
+intervention. The database covers the whole area of the Czech Republic from 2006 to
+2015 (except for military areas, which represent <5% of the area). From 2006 to 2010, the
+database indicated only the administrative districts where forest fires occurred. The data
+
+PAGE 4
+Fire 2024, 7, 109 4 of 19
+after 2010 included the exact geographical locations of almost every fire. Causes of the
+fire were indicated for only ~50% of all cases. For example, the cause of fire might have
+been recorded if private property was affected, if an intentional ignition with possible
+criminal implications was suspected, or if the cause of fire could have been unambiguously
+identified on the spot. Because the information about the causes of fire is highly incomplete,
+it was not considered in our analyses.
+Because of problems with the clear identification of some forest fires, all records
+(roughly 10,000) were manually checked for misclassification; based on the descriptive
+information provided for each fire, the fire was included in or excluded from the final
+database [52,53]. Forest fires that occurred between January and March, and in November
+and December, were not considered in the study (around 100 forest fires in total), because
+these forest fires were mostly associated with events such as accidental fuel leaks or
+fireworks. In addition, due to minimal forested area, forest fires from the administrative
+district of the capital city (Prague, with more than 1,500,000 inhabitants) were removed
+from the analysis. In total, the dataset contained data on 7279 forest fires, with an average
+of 728 forest fires per year over the 10-year reporting period (2006 to 2015). Most of the
+burned areas were up to 0.16 ha (80% of the fires from 2006 to 2015 were less than 0.16 ha).
+Fires larger than 5 ha represented ~1% of all fires in the dataset.
+Using burned areas as a characteristic of the fire regime in the Czech Republic has
+limitations as most fires are small (5 to 95% of the fires from 2006 to 2015 were between
+0.0001 and 1.00 ha; Figure 1c), and their size is strongly affected by the time it takes for
+firefighters to respond (the duration of free fire development) [52]. Therefore, we focused
+on identifying the drivers of forest fire ignition, which were expected to be more closely
+associated with predictors such as climate and human activity. We used the number of
+forest fires in individual municipality districts (n = 76) ([54], see Appendix A) of the Czech
+Republic rather than accurate spatial coordinates of the forest fires. Data for 2006 through
+2010 lacked coordinates; only forest fire occurrence within districts was available. Socio-
+economic data (population size, tourism, etc.) were available only on a municipal district
+scale. Because the size of forested area highly varied between districts, the number of fires
+per forest hectare (FF ha−1) was used as a response variable in the statistical models.
+2.2. Predictor Variables
+We considered several predictors that are known to act as forest fire risk drivers in
+temperate forests, including climate data, forest-related data, socio-economic data, and
+landscape context data (Appendix B, [15–17,19–23,25,30–34,55–59]).
+Monthly air temperature, monthly rainfall, average annual air temperature, annual
+total rainfall, and their differences from long-term means (from 1961 to 1990) together with
+the number of days with snow cover per year represented the climatic predictors (Czech
+Hydrometeorological Institute, Prague, Czech Republic, http://portal.chmi.cz/ (accessed
+on 1 January 2020).
+Forest-related predictors were total forest area, percentage of forest area, percentage
+of conifers, and percentage of pine ( Pinus L. spp.) within each district [ 50]. Pine was
+considered the most flammable tree species in the study area [60]; it usually grows under
+dry conditions, produces resinous and easily combustible debris, and older stands have a
+relatively thin canopy that allows debris to dry and easily ignitable grasses to appear [61].
+The values for these variables were constant throughout the study period.
+The interface between forest and urban areas and between forest and agricultural areas
+was used as a proxy of human activity on the landscape, which was found to be related to
+fire incidence in previous studies (e.g., [35,62]. The district-related values of these variables
+were calculated using the seamless Corine LandCover data containing major land cover
+categories for Europe [63]. The analysis was conducted using GIS by analyzing the spatial
+adjacency of different classes. These variables were standardized by the area of the forest
+in a district (m.ha−1). These values also stayed constant throughout the study period.
+
+PAGE 5
+Fire 2024, 7, 109 5 of 19
+The two variables related to human population density were the number of residents
+per forest area (inhabitants ha −1), represented by the mean number of inhabitants in
+the district in the period 2006 to 2015, and the number of overnight tourists per forest
+area, represented by the mean annual number of overnight guests in recreational facilities
+(overnight guests ha −1yr−1; Czech Statistical Office (Prague, Czech Republic), https://
+www.czso.cz/ (accessed on 15 July 2016).
+Although factors related to human activity on the landscape are related to fire ignition
+risk, and factors related to climate and forest structure are more related to fire spread, we
+collectively referred to all predictors as “fire ignition drivers.” This term corresponds with
+the fact that fire occurrence (number of forest fires), rather than the size of burned areas,
+was analyzed.
+2.3. Analyses
+Relationships between the predictors and the number of forest fires were analyzed
+using Generalized Additive Models [ 64]. This model predicts values of the dependent
+variable based on a linear combination of predictor variables that are approximated by
+the so-called smoother functions. The degree of smoothness of the function (the number
+of nodes, k) is determined separately for each predictor variable by cross-validation to
+avoid overfitting (over-adaptation of the function to data and loss of ability to generalize).
+The main results of the analysis are the deviance explained by the model; the statistical
+significance of the individual predictor; and the shape of the smooth function along with
+the effective degrees of freedom, which reflect the degree of non-linearity of a curve. The
+mgcv library [65] of the statistical program R 4.0.0 [66] was used for the analysis.
+Given the high number of candidate predictor variables (Appendix B), their mutual
+substitutability (concurvity) was evaluated, and redundant variables were discarded. Sub-
+sequently, several models involving different predictor variables were iteratively tested,
+and only the variables that had a statistically significant association with the number of
+forest fires were used in the final model. The influence of first-order interactions among
+the variables were also tested. The quality of the created model was assessed based on
+the percent of deviance explained, distribution of residuals, their autocorrelation, and the
+correlation of predicted and measured data.
+The analysis addressed three time scales by using different subsets of forest fire data: a
+monthly scale that contained monthly sums of forest fire data; a summer scale that included
+forest fires from June, July, and August; and an annual scale that included yearly forest fire
+sums. A separate statistical model was constructed for each time scale.
+3. Results
+3.1. Temporal Forest Fire Patterns
+On a monthly basis, forest fire numbers showed distinct spring and summer peaks
+occurring in April and in July to August, respectively (Figure 2). Although differences
+between the years were substantial, these seasonal patterns stayed the same throughout
+the study (Appendix C). The summer peak was most pronounced in 2015, which was
+particularly warm and dry, and had an especially dry June to August (Appendix C; Figure 3).
+The bi-modal pattern was not present in 2008, which did not show any deviations from the
+average climate conditions in the study period. In 2012 and 2007, which ranked second and
+third in the number of forest fires, respectively, a high number of forest fires occurred in
+the spring season (Appendix C). The spring of 2007 was the driest and hottest in the study
+period (Figure 3).
+The size of burned areas showed a similar pattern, although the summer peak was
+less distinct (Figure 2b). Specifically, the median burned area was 0.04 ha during the spring
+peak, while it was ~0.005 ha in the summer peak. The smallest burned areas (and forest
+fire numbers) were recorded in 2008. The most distinct spring peaks of burned areas
+occurred in 2007, 2009, 2012, and 2014, while the dominant summer peak occurred in 2015
+(Appendix C).
+
+PAGE 6
+Fire 2024, 7, 109 6 of 19
+Fire 2024, 7, x FOR PEER REVIEW 6 of 19 
+ 
+ 
+The bi-modal pa ttern was not present in 2008, which did not show any deviations from 
+the average climate conditions in the study period. In 2012 and 2007, which ranked second 
+and third in the number of forest ﬁres, respectively, a high number of forest ﬁres occurred 
+in the spring season (Appendix C). The spring of 2007 was the driest and ho ttest in the 
+study period (Figure 3).  
+The size of burned areas showed a similar pa ttern, although the summer peak was 
+less distinct (Figure 2b). Speci ﬁc a l l y ,  t h e  m e d i a n  b u r n e d  a r e a  w a s  0 . 0 4  h a  d u r i n g  t h e  
+spring peak, while it was ~0.005 ha in the summer peak. The smallest burned areas (and 
+forest ﬁre numbers) were recorded in 2008. The most distinct spring peaks of burned areas 
+occurred in 2007, 2009, 2012, and 2014, while the dominant summer peak occurred in 2015 
+(Appendix C).  
+ 
+Figure 2. (a) Inter-annual and (b) monthly pattern of forest ﬁre numbers and burned areas during 
+our study to assess drivers of forest ﬁre occurrence in the Czech Republic during 2006 to 2015. Me-
+dians (boxplots, left axis) and totals (red do tted line, right axis) are shown for the yearly values. 
+Outliers beyond 1.5 of the inter-quartile range were removed for clarity. 
+Figure 2. (a) Inter-annual and (b) monthly pattern of forest fire numbers and burned areas during our
+study to assess drivers of forest fire occurrence in the Czech Republic during 2006 to 2015. Medians
+(boxplots, left axis) and totals (red dotted line, right axis) are shown for the yearly values. Outliers
+beyond 1.5 of the inter-quartile range were removed for clarity.
+3.2. Fire Ignition Drivers
+The regression models indicated the significant effect of several predictors; however,
+these effects differed depending on the time scale (annual, monthly, during summer season).
+Our chosen predictors explained 48.7 and 53.9% of the variability in forest fire numbers on
+a monthly scale and summer season scale, respectively, and 71.4% of the variability on an
+annual scale (Table 1).
+On annual, summer season, and monthly scales, the percentage of conifers and the
+wildland–urban interface were positively related to the occurrence of forest fires; the rela-
+tionship with the wildland–urban interface was particularly strong (Table 1; Figures 4–6).
+On an annual scale, the number of forest fires was not significantly related to any of the
+climate variables. On the other hand, factors such as human population density and the
+number of overnight tourists per forest hectare were significantly associated with the
+number of forest fires. Although forest fires were positively related to population density
+(except for the most densely populated areas), forest fires were negatively related to the
+number of overnight tourists (Table 1; Figure 4c).
+The number of forest fires was significantly related to climatic variables on a monthly
+scale (Table 1). The occurrence of forest fires increased as the monthly air tempera-
+ture increased above 20 ◦C (Figure 5c) and decreased as total monthly rainfall increased
+(Figure 5d).
+
+PAGE 7
+Fire 2024, 7, 109 7 of 19
+Fire 2024, 7, x FOR PEER REVIEW 7 of 19 
+ 
+ 
+Figure 3. The position of years of the studied period in temperature–precipitation spaces character-
+izing diﬀerent parts of the year: ( a) April to October, ( b) June to August, (c) April to May, and ( d) 
+September to October. Black circles indicate the average position of the 2006 to 2015 period. Dark 
+gray rectangles represent the standard deviation of the two variables. Ellipses indicate years outside 
+standard deviation ranges for one (yellow) and both (red) climatic variables. 
+3.2. Fire Ignition Drivers 
+The regression models indicated the signiﬁcant eﬀect of several predictors; however, 
+these eﬀects diﬀered depending on the time scale (annual, monthly, during summer sea-
+son). Our chosen predictors explained 48.7 and 53.9% of the variability in forest ﬁre num-
+bers on a monthly scale and summer season scale, respectively, and 71.4% of the variabil-
+ity on an annual scale (Table 1). 
+On annual, summer season, and monthly scales, the percentage of conifers and the 
+wildland–urban interface were positively related to the occurrence of forest ﬁres; the re-
+lationship with the wildland–urban interface was particularly strong (Table 1; Figures 4–
+6). On an annual scale, the number of forest ﬁres was not signi ﬁcantly related to any of 
+the climate variables. On the other hand, fa ctors such as human po pulation density and 
+the number of overnight tourists per forest hectare were signiﬁcantly associated with the 
+number of forest ﬁres. Although forest ﬁres were positively related to population density 
+(except for the most densely populated areas), forest ﬁres were negatively related to the 
+number of overnight tourists (Table 1; Figure 4c). 
+The number of forest ﬁres was signiﬁcantly related to climatic variables on a monthly 
+scale (Table 1). The occurrence of forest ﬁres increased as the monthly air temperature 
+increased above 20 °C (Figure 5c) and decreased as total monthly rainfall increased (Figure 
+5d).  
+On the summer season time scale (i.e., considering data from summer seasons only, 
+July and August), the predictor variables explained approximately 50% of the variability 
+Figure 3. The position of years of the studied period in temperature–precipitation spaces charac-
+terizing different parts of the year: ( a) April to October, (b) June to August, (c) April to May, and
+(d) September to October. Black circles indicate the average position of the 2006 to 2015 period. Dark
+gray rectangles represent the standard deviation of the two variables. Ellipses indicate years outside
+standard deviation ranges for one (yellow) and both (red) climatic variables.
+Table 1. Results of regression models describing the relationships between the number of forest fires
+per forest area (the dependent variable) and various predictors characterizing climate, land cover,
+and human activity factors in the Czech Republic between 2006 and 2015, at the three time scales
+investigated in this study (monthly, summer season, and annual). The values indicated for predictor
+variables are estimated degrees of freedom. ** indicates p < 0.01, *** indicates p < 0.001, and n.s.
+indicates not significant (p > 0.05).
+Time ScalePredictor Variable Monthly Summer Season Annual
+Wildland–urban interface 3.39 *** 4.22 *** 3.55 ***
+Overnight tourists n.s. 3.03 *** 1.0 ***
+Population density n.s. n.s. 2.558 **
+Conifer cover 1.84 *** 3.60 *** 2.94 ***
+Precipitation 1.272 *** n.s. n.s.
+Temperature 3.7 *** 3.202 *** n.s.
+Temperature × Precipitation 11.28 *** n.s. n.s.
+Deviation explained (%) 48.7 53.9 71.4
+
+PAGE 8
+Fire 2024, 7, 109 8 of 19
+Fire 2024, 7, x FOR PEER REVIEW 8 of 19 
+ 
+ 
+in the number of forest ﬁres (Table 1). Although the percentage of conifers was a signi ﬁ-
+cant predictor variable, the relationship was diﬃcult to explain in that the number of for-
+est ﬁres tended to decrease as the percentage increased from 15 to 40%, but then increased 
+as the percentage increased from 50 to 88% (Figure 6b). The number of forest ﬁres in-
+creased as the length of the wildland–urban interface increased (Figure 6a). The number 
+of forest ﬁres increased relative to the number of overnight tourists between 0 and 25 over-
+night tourists per hectare of the forest per year (the majority of the data), but decreased 
+for higher overnight tourist values (Figure 6c). The number of forest ﬁres was positively 
+associated with temperature, showing a sharper increase when temperatures were above 
+18 °C (Figure 6d). 
+ 
+Figure 4. Responses of the number of forest ﬁres per forest area (n ha–1) that occurred in the Czech 
+Republic during 2006 to 2015 to predicto r variables with statistically signi ﬁcant eﬀects. Results of 
+analysis conducted on an annual scale are presented. Smoother functions ﬁtted by Generalized Ad-
+ditive Models (line), 95% conﬁdence interval (blue shaded area), and residuals (points) centered at 
+a zero mean value are indicated. Forest ﬁre responses to the (a) percentage of conifers, (b) length of 
+the wildland–urban interface, (c) number of overnights, and (d) number of residents are displayed. 
+ 
+Figure 5. Responses of the number of forest ﬁres per forest area (n ha –1) that occurred in the Czech 
+Republic during 2006 to 2015 to predicto r variables with statistically signi ﬁcant eﬀects. Results of 
+analysis conducted on a monthly scale are presented. Smoother functions ﬁtted by Generalized Ad-
+ditive Models (line), 95% conﬁdence interval (blue shaded area), and residuals (points) centered at 
+Figure 4. Responses of the number of forest fires per forest area (n ha−1) that occurred in the Czech
+Republic during 2006 to 2015 to predictor variables with statistically significant effects. Results of
+analysis conducted on an annual scale are presented. Smoother functions fitted by Generalized
+Additive Models (line), 95% confidence interval (blue shaded area), and residuals (points) centered at
+a zero mean value are indicated. Forest fire responses to the (a) percentage of conifers, (b) length of
+the wildland–urban interface, (c) number of overnights, and (d) number of residents are displayed.
+Fire 2024, 7, x FOR PEER REVIEW 8 of 19 
+ 
+ 
+in the number of forest ﬁres (Table 1). Although the percentage of conifers was a signi ﬁ-
+cant predictor variable, the relationship was diﬃcult to explain in that the number of for-
+est ﬁres tended to decrease as the percentage increased from 15 to 40%, but then increased 
+as the percentage increased from 50 to 88% (Figure 6b). The number of forest ﬁres in-
+creased as the length of the wildland–urban interface increased (Figure 6a). The number 
+of forest ﬁres increased relative to the number of overnight tourists between 0 and 25 over-
+night tourists per hectare of the forest per year (the majority of the data), but decreased 
+for higher overnight tourist values (Figure 6c). The number of forest ﬁres was positively 
+associated with temperature, showing a sharper increase when temperatures were above 
+18 °C (Figure 6d). 
+ 
+Figure 4. Responses of the number of forest ﬁres per forest area (n ha–1) that occurred in the Czech 
+Republic during 2006 to 2015 to predicto r variables with statistically signi ﬁcant eﬀects. Results of 
+analysis conducted on an annual scale are presented. Smoother functions ﬁtted by Generalized Ad-
+ditive Models (line), 95% conﬁdence interval (blue shaded area), and residuals (points) centered at 
+a zero mean value are indicated. Forest ﬁre responses to the (a) percentage of conifers, (b) length of 
+the wildland–urban interface, (c) number of overnights, and (d) number of residents are displayed. 
+ 
+Figure 5. Responses of the number of forest ﬁres per forest area (n ha –1) that occurred in the Czech 
+Republic during 2006 to 2015 to predicto r variables with statistically signi ﬁcant eﬀects. Results of 
+analysis conducted on a monthly scale are presented. Smoother functions ﬁtted by Generalized Ad-
+ditive Models (line), 95% conﬁdence interval (blue shaded area), and residuals (points) centered at 
+Figure 5. Responses of the number of forest fires per forest area (n ha−1) that occurred in the Czech
+Republic during 2006 to 2015 to predictor variables with statistically significant effects. Results of
+analysis conducted on a monthly scale are presented. Smoother functions fitted by Generalized
+Additive Models (line), 95% confidence interval (blue shaded area), and residuals (points) centered at
+a zero mean value are indicated. Forest fire responses to the (a) percentage of conifers, (b) length of
+the wildland–urban interface, (c) air temperature, and (d) precipitation are displayed.
+
+PAGE 9
+Fire 2024, 7, 109 9 of 19
+Fire 2024, 7, x FOR PEER REVIEW 9 of 19 
+ 
+ 
+a zero mean value are indicated. Forest ﬁre responses to the (a) percentage of conifers, (b) length of 
+the wildland–urban interface, (c) air temperature, and (d) precipitation are displayed. 
+ 
+Figure 6. Responses of the number of forest ﬁres per forest area (n ha–1) that occurred in the Czech 
+Republic during 2006 to 2015 to predicto r variables with statistically signi ﬁcant eﬀects. Results of 
+analysis conducted on a summer scale are presented. Smoother functions ﬁtted by Generalized Ad-
+ditive Models (line), 95% conﬁdence interval (blue shaded area), and residuals (points) centered at 
+a zero mean value are indicated. Forest ﬁre responses to the (a) percentage of conifers, (b) length of 
+the wildland–urban interface, (c) number of overnights, and (d) air temperature are displayed. 
+Table 1. Results of regression models describing the relationships between the number of forest ﬁres 
+per forest area (the dependent va riable) and various predictors char acterizing climate, land cover, 
+and human activity factors in the Czech Repub lic between 2006 and 2015, at the three time scales 
+investigated in this study (monthly, summer season, and annual). The values indicated for predictor 
+variables are estimated degrees of freedom. ** indicates p < 0.01, *** indicates p < 0.001, and n.s. 
+indicates not signiﬁcant (p > 0.05). 
+Predictor Variable Time Scale 
+Monthly  Summer Season Annual 
+Wildland–urban interface  3.39 *** 4.22 *** 3.55 *** 
+Overnight tourists  n.s. 3.03 *** 1.0 *** 
+Population density  n.s. n.s. 2.558 ** 
+Conifer cover 1.84 *** 3.60 *** 2.94 *** 
+Precipitation  1.272 *** n.s. n.s. 
+Temperature 3.7 *** 3.202 *** n.s. 
+Temperature × Precipitation 11.28 *** n.s. n.s. 
+Deviation explained (%) 48.7 53.9 71.4 
+4. Discussion 
+4.1. Patterns and Drivers of Forest Fires 
+The intra-annual distribution of forest ﬁres showed distinct spring and summer 
+peaks that were present during most of the study period (see Appendix B). However, 
+while these peaks were obvious in terms of forest ﬁre numbers, the median size of the 
+burned area showed only an indistinct spring peak (Figure 2). The intra-annual variability 
+in the burned area size was not large, whic h likely corresponded with the short interval 
+of time that it takes ﬁreﬁghters to respond to ﬁre. Still, larger ﬁres (mostly up to 0.5 ha) 
+mainly occurred in spring (Figure 2). Although we cannot provide any data-driven expla-
+nation for this pattern, it is noteworthy that there were di ﬀerent mechanisms behind the 
+two ﬁre seasons. There were indications that the spring peak was related to the increased 
+Figure 6. Responses of the number of forest fires per forest area (n ha−1) that occurred in the Czech
+Republic during 2006 to 2015 to predictor variables with statistically significant effects. Results of
+analysis conducted on a summer scale are presented. Smoother functions fitted by Generalized
+Additive Models (line), 95% confidence interval (blue shaded area), and residuals (points) centered at
+a zero mean value are indicated. Forest fire responses to the (a) percentage of conifers, (b) length of
+the wildland–urban interface, (c) number of overnights, and (d) air temperature are displayed.
+On the summer season time scale (i.e., considering data from summer seasons only,
+July and August), the predictor variables explained approximately 50% of the variability in
+the number of forest fires (Table 1). Although the percentage of conifers was a significant
+predictor variable, the relationship was difficult to explain in that the number of forest fires
+tended to decrease as the percentage increased from 15 to 40%, but then increased as the
+percentage increased from 50 to 88% (Figure 6b). The number of forest fires increased as
+the length of the wildland–urban interface increased (Figure 6a). The number of forest
+fires increased relative to the number of overnight tourists between 0 and 25 overnight
+tourists per hectare of the forest per year (the majority of the data), but decreased for
+higher overnight tourist values (Figure 6c). The number of forest fires was positively
+associated with temperature, showing a sharper increase when temperatures were above
+18 ◦C (Figure 6d).
+4. Discussion
+4.1. Patterns and Drivers of Forest Fires
+The intra-annual distribution of forest fires showed distinct spring and summer peaks
+that were present during most of the study period (see Appendix B). However, while
+these peaks were obvious in terms of forest fire numbers, the median size of the burned
+area showed only an indistinct spring peak (Figure 2). The intra-annual variability in the
+burned area size was not large, which likely corresponded with the short interval of time
+that it takes firefighters to respond to fire. Still, larger fires (mostly up to 0.5 ha) mainly
+occurred in spring (Figure 2). Although we cannot provide any data-driven explanation
+for this pattern, it is noteworthy that there were different mechanisms behind the two fire
+seasons. There were indications that the spring peak was related to the increased intensity
+of forestry operations after winter seasons, such as slash pile burning. In addition, large
+amounts of flammable dry grass typically occur after mild winters and during dry early
+springs, further increasing fire risk. The summer peak likely resulted from the combination
+of hot and dry weather and increased tourism and recreation activities. Interestingly, such
+a bi-modal pattern of wildfire occurrence was also identified in Portugal, with a March
+
+PAGE 10
+Fire 2024, 7, 109 10 of 19
+peak associated with forestry and agriculture activities; however, this peak provided only a
+small contribution to the annually burned areas [67].
+The observed seasonal pattern corresponds with the significant effect of climatic vari-
+ables on a monthly and a summer season scale, while climatic effects were insignificant
+on the annual scale. We suspect that the yearly resolution of climate data is too coarse
+to capture weather patterns associated with increased fire incidence. The authors of [68]
+found a similar time-scale dependency—the probability of forest fire occurrence increased
+with daily but not with monthly average temperatures. In our current study, however,
+monthly climate variation had a significant effect. The number of forest fires was positively
+associated with air temperature on a monthly and on a summer season scale, although
+the increase in forest fires was nonlinear on the summer season scale. Specifically, forest
+fire numbers were unrelated to temperature until the mean monthly temperature reached
+18 ◦C; then, the forest fire numbers increased (Table 2; Figures 5c and 6d). Such monthly
+temperatures were common for June, July, and August, between 2011 and 2020; however,
+average monthly temperatures in those three months seldom reached 18 ◦C before 2000.
+Such a threshold-type response is disturbing because the critical temperature limit may be
+exceeded more frequently in the future, including currently colder locations in higher ele-
+vations. This implies that the current summer season fire peak may be expected to increase,
+and that the fire season may be extended in the future. Such threshold-type responses were
+also identified by other authors. For example, in Poland and Serbia, 60% of the forest fires
+occurred when the daily temperature was above 24◦C and 25 ◦C, respectively; air humidity
+was <40%; and precipitation was lacking [ 69,70]. The identified negative correlation of
+forest fires with precipitation agrees with numerous previous research studies (e.g., [71–74]).
+Precipitation increases fuel moisture content and reduces the probability of ignition [75,76].
+Table 2. Summary of characteristic trends with regard to the relationship between number of forest
+fires and predictor variables characterizing climate, land cover, and human activity factors in the
+Czech Republic between 2006 and 2015, at the three time scales investigated in this study (monthly,
+summer season, and annual). Values at which the trend changes are given in parentheses.
+Characteristic Trend per Time ScalePredictor Variable Monthly Summer Season Annual
+Wildland–urban interface
+(m ha−1) Increasing, then constant (500) Increasing Increasing
+Overnight tourists (n ha−1) No trend Unimodal response (25,000) Decreasing
+Population density (n ha−1) No trend No trend Unimodal response (30,000)
+Conifer cover (%) Increasing Constant, then increasing (60) Constant, then increasing (60)
+Precipitation (mm) Decreasing No trend No trend
+Temperature (◦C) Constant, then increasing (18) Constant, then increasing (18) No trend
+The number of forest fires was positively related to the percentage of conifers on a
+monthly scale; on the annual and summer season scales, there was a positive correlation
+between conifer percentage and forest fire incidents only if the forest covered over 60% of
+the area (Table 2). This response was expected as forest fires have been found to be more
+closely associated with coniferous forests than with broadleaved forests in Mediterranean,
+temperate, and boreal regions [77–79]. We assumed that the proportion of pines would
+positively affect forest fire frequency because pines are the most flammable native species
+growing in the Czech Republic [60], producing resinous and easily combustible debris [61].
+However, this association was not confirmed. The reasons why the presence of pine was
+not a significant factor affecting fire occurrence could include the fact that forests in the
+Czech Republic have a relatively low pine proportion (17%), or that the analysis, which
+was aimed at administrative districts, was performed on too coarse of a scale.
+In Europe, 97% of forest fires were directly or indirectly caused by humans [ 23,80]
+which was also indicated by our analyses. On a summer season scale, the number of forest
+
+PAGE 11
+Fire 2024, 7, 109 11 of 19
+fires was unimodally associated with the number of overnight tourists per forest hectare
+per year (Table 2; Figure 6c). The relationship between the number of forest fires and the
+density of the local human populations was also unimodal on an annual scale; forest fire
+numbers initially increased as population density increased, but then decreased as human
+inhabitants exceeded 30 000 ha−1 (Table 2; Figure 4d). The likely explanation for such a
+response is that not all tourists visit the forests. In the cities (annual-scale analysis) and
+water-recreation areas (summer season scale analysis), where overnight-tourist numbers
+are highest, tourists may be visiting historical and cultural monuments, attractions, and
+recreational areas rather than forests. Both population density and the number of overnight
+tourists have been related to the number of forest fires in other studies [57,72,74,80–83]. In
+Latvia, the geographical distribution of forest fires showed two distinct clusters near its
+two largest cities, which also indicates the predominance of human-caused ignitions [34].
+Wildland–urban interface dynamics have been receiving increased recognition globally
+because of the accelerating expansion of urban areas as well as the increasing wildland–
+urban interface length [84]. Increased fire hazard is related to increased human activity
+in wildlands [ 46,62,85]. The wildland–urban interface was found to be behind several
+noticeable effects, such as winter fire progression and a moderate increase in fire incidence
+linked to human-caused fires (e.g., [35]). In our study, the extent of the wildland–urban
+interface was identified as positively related to the number of forest fires; at the same time,
+it had a significant effect on all investigated times scales (monthly, summer season, and
+annual). Forest fire response to interface length was relatively sharp and increased linearly,
+suggesting this factor’s importance. In Central Europe, this factor is expected to affect
+forest fire ignition risk by facilitating forest accessibility to people in the short term for
+collection of mushrooms and other products, and in the longer term for sport and recreation
+activities [86,87].
+4.2. Methodological Considerations
+Limited data availability and quality, including short and inconsistent time series, is a
+common problem of forest disturbance mapping and assessment in Europe [1]. Remote-
+sensing-based mapping helps overcome some of these shortcomings [88]; however, map-
+ping small-scale disturbances, such as forest fires in Central Europe, and identifying
+disturbance causes remains challenging [89]. Such data constraints are disturbing because
+recent trends and model projections indicate that future forest fire impacts may be consid-
+erable [40,90], and consistent datasets could be essential for identifying regime shifts and
+fire-prone areas. For example, here, the fire occurrence data that we used were created as a
+by-product of firefighting interventions, not by a professional forestry agency. Therefore,
+metadata about a fire’s possible cause and local forest stand and site description, including
+fuel parameters, were lacking. Limited forest fire monitoring, mapping, and data collection
+is typical that part of Central Europe in which forest fires are not yet a major factor in
+forest disturbance.
+We focused on the drivers of forest fire occurrence (i.e., the ignitions) rather than on
+the size of burned areas. This may limit the comparability of this study with studies from
+fire-prone regions that often focus on burned areas (e.g., [3]). However, we maintain that
+the number of forest fires is a relevant descriptor of the fire regime in Central Europe that
+is characterized by many small fires, which are extinguished before they expand in the
+vast majority of cases. We found that only 5% of fires exceeded one hectare, with one fire
+that affected a 497-hectare area in 2014. Moreover, the inter- and intra-annual patterns of
+forest fire numbers were more distinct than the patterns of burned areas, thereby providing
+better interpretation options (Figure 2; Appendix C). Studies [40,46] found a strong climatic
+signal in forest fire occurrence in Central Europe, which also supports the use of forest fire
+numbers as an adequate and responsive indicator of the regional fire regime.
+The present study examined data from the period 2006–2015, which precedes the recent
+series of climatically extreme years that significantly altered European forest disturbance
+patterns. Although more recent data were not accessible during this study, extending
+
+PAGE 12
+Fire 2024, 7, 109 12 of 19
+the investigated time series could yield valuable insights into the shifts in fire dynamics
+resulting from progressive climate aridification. Consequently, the current study can serve
+as a reference for subsequent research endeavors.
+4.3. Practical Implications
+The insights obtained in this study have several practical implications. First, we
+highlighted the limitations of current fire monitoring and reporting procedures. Missing
+information about the causes of fire ignition and local site and forest structure and com-
+position data significantly limit interpretation options. Detecting these changes can be
+important because the recent wave of drought- and bark-beetle-related forest mortality
+have considerably transformed forest landscapes [42], changing species composition, fuel
+distribution, and patterns of human presence on the landscape. These changes can alter
+forest fire responses identified in this current study; therefore, updating the statistical
+models presented here with new data on a regular basis will be essential for understanding
+transient fire conditions in Central Europe. The above-mentioned processes are further
+affected by an increasingly warmer and drier climate, which is likely to affect the occurrence
+of fires in the regions. We need to create better and more detailed fire datasets, by engaging
+forest experts and fire departments, to better understand ongoing changes and improve
+fire risk assessment models.
+Second, the identified factors driving fire occurrence can be used for delimiting fire
+risk zones at the scale of administrative districts of the Czech Republic. While this scale cor-
+responds with the socio-economic and demographic data structure, which can be straight-
+forwardly integrated in the statistical models, it is obviously too coarse for operational
+management and resource allocation planning. Still, identifying fire-prone districts based
+on their location in drier and warmer conditions with a large proportion of coniferous
+forest, extensive wildland–urban interface, and high population density and tourism can
+guide targeted risk management activities. These may include targeted investments into
+firefighting and monitoring infrastructure, improving national and regional policies, and
+increasing public awareness about fire risk (e.g., [91,92]).
+5. Conclusions
+Forest fire occurrence in Central Europe is driven by a specific combination of cli-
+matic and non-climatic factors, predominantly the proportion of coniferous species and
+human activity on the landscape. The latter factor includes different aspects of human
+activity, which can be approximated by variables such as the number of overnight tourists,
+population density, and wildland–urban interface. The identified forest fire drivers and
+constructed statistical model can support fire danger delineation of the country and inform
+the targeted implementation of measures such as firefighting infrastructure development,
+an increase in public awareness, and regulation of human activities in fire-prone areas
+during fire seasons. We emphasize the importance of improving the current fire monitoring
+and data management system, which will allow for a more comprehensive understanding
+of fire drivers and encourage foresters, firefighters, and local authorities to adopt more
+efficient forest management and fire-control measures such as the building of water reser-
+voirs and the education of the general public. This is particularly important in the wake of
+the anticipated increase in fire-conducive weather and alterations of forest structure and
+human activity patterns, which can shift regional fire regimes.
+Author Contributions: J.H.: conceptualization, formal analysis, investigation, methodology, valida-
+tion, writing—original draft, writing—review and editing; supervision; R.B.: formal analysis, investi-
+gation, methodology; T.H.: conceptualization, formal analysis, validation, writing—review and edit-
+ing; K.R.: funding acquisition, project administration; J.T.: validation, methodology,writing—o riginal
+draft, writing—review and editing. All authors have read and agreed to the published version of
+the manuscript.
+
+PAGE 13
+Fire 2024, 7, 109 13 of 19
+Funding: This research was supported by projects of the Czech University of Life Science No. IGA
+A_20_11 and IGA A_20_08, and grant No. CZ.02.1.01/0.0/0.0/16_019/0000803 financed by OP RDE.
+Data Availability Statement: Data are contained within the article.
+Acknowledgments: The authors thank L. Burk (USA) for his editorial and linguistic improvement of
+this manuscript.
+Conflicts of Interest: The authors declare no conflicts of interest.
+Appendix A
+Fire 2024, 7, x FOR PEER REVIEW 13 of 19 
+ 
+ 
+understanding of ﬁre drivers and encourage foresters, ﬁreﬁghters, and local authorities to 
+adopt more eﬃcient forest management and ﬁre-control measures such as the building of 
+water reservoirs and the education of the general public. This is particularly important in 
+the wake of the anticipated increase in ﬁre-conducive weather and alterations of forest 
+structure and human activity patterns, which can shift regional ﬁre regimes.  
+Author Contributions: J.H.: conceptualization, formal analysis, investigation, methodology, valida-
+tion, writing—original draft, writing—review and editing; supervision; R.B.: formal analysis, inves-
+tigation, methodology; T.H.: conc eptualization, formal analysis, validation, writing—review and 
+editing; K.R.: funding acquisition, project admini stration; J.T.: validation, methodology, writing—
+original draft, writing—review and editing. All authors have read and agreed to the published ver-
+sion of the manuscript. 
+Funding: This research was supported by projects of the Czech University of Life Science No. IGA 
+A_20_11 and IGA A_20_08, and grant No. CZ.02.1.01/0.0/0.0/16_019/0000803 ﬁnanced by OP RDE. 
+Data Availability Statement: Data are contained within the article. 
+Acknowledgments: The authors thank L. Burk (USA) for his editorial and linguistic improvement 
+of this manuscript. 
+Conﬂicts of Interest: The authors declare no conﬂicts of interest. 
+Appendix A 
+ 
+Figure A1. Landscape, social, and climatic conditions of the Czech Republic, ( a) digital elevation
+model; (b) major landcover categories; ( c) annual mean temperature in the period 1961 to 1990;
+(d) mean annual precipitation totals in the period 1961 to 1990; and (e) population density.
+
+PAGE 14
+Fire 2024, 7, 109 14 of 19
+Appendix B
+Fire 2024, 7, x FOR PEER REVIEW 14 of 19 
+ 
+ 
+Figure A1. Landscape, social, and climatic conditions of the Czech Republic, ( a) digital elevation 
+model; (b) major landcover categories; (c) annual mean temperature in the period 1961 to 1990; (d) 
+mean annual precipitation totals in the period 1961 to 1990; and (e) population density. 
+Appendix B 
+Predictor Variable Mean Median Minimum Maximum SD 
+Forest complex area (ha) 414.7 388.0 115.5 766.6 166.2 
+Conifer cover (%) * 61.8 75.1 17.3 87.6 23.4 
+Difference in number of days with snow cover from the long-term mean (days) 6.3 5.1 0.1 22.4 5.0 
+Difference of mean monthly temperature (April to October) from the long-term mean 
+(° C) 0.0 −0.1 −2.8 3.6 1.2 
+Difference of total precipitation (April to October) from the long-term mean (mm) 0.0 −4.0 −86.0 243.4 35.6 
+Ellenberg's climate quotient (Ellenberg 1996) from 1981 to 2000 (mm ° C–1) 28.5 29.7 16.8 41.9 7.1 
+Forest-agricultural land interface per hectar of forest (m ha–1) * 3332.2 3244.1 2059.3 6729.8 1023.5 
+Wildland-urban interface per hectare of forest (m ha–1) * 362.1 183.2 44.5 2463.9 564.6 
+Mean annual temperature (from 1981 to 2000; ° C) 7.9 7.9 6.2 9.5 1.0 
+Mean monthly temperature (April to October; ° C) * 14.1 14.3 5.4 23.0 4.2 
+Number of days with snow cover (days) 28.3 25.7 0.4 71.1 19.8 
+Average overnight tourist density per hectare of forest (n ha–1 yr–1) * 20.4 11.1 3.7 92.6 23.5 
+Proportion of forest area (%) 32.2 33.5 6.7 59.3 13.6 
+Proportion of forests with water-limited soils (%) 4.0 3.1 0.2 12.4 3.4 
+Proportion of Pinus sylvestris forests (%) 14.2 12.2 1.2 42.1 10.8 
+Relative difference of mean monthly temperature (April to October) from the long-
+term mean (° C) 0.0 −0.9 −29.2 39.9 10.3 
+Relative difference of total precipitation (April to October) from the long-term mean 
+(%) 0.0 −6.4 −94.2 208.5 48.5 
+Population density per hectare of forest (n ha–1) * 9.8 4.2 7.2 59.8 15.2 
+Monthly precipitation totals (April to October; mm) * 71.1 64.1 1.7 373.6 42.9 
+Figure A2. Candidate predictor variables used to determine drivers of forest fire frequency in the 
+Czech Republic, where we investigated the relationship between number of forest fires and varia-
+bles characterizing climate, land cover, and human activity conditions between 2006 and 2015. Only 
+the subset of variables with significant effects (indicated by an asterisk, *) was used to construct the 
+statistical models. SD = standard deviation. 
+  
+Figure A2. Candidate predictor variables used to determine drivers of forest fire frequency in the
+Czech Republic, where we investigated the relationship between number of forest fires and variables
+characterizing climate, land cover, and human activity conditions between 2006 and 2015. Only the
+subset of variables with significant effects (indicated by an asterisk, *) was used to construct the
+statistical models. SD = standard deviation.
+
+PAGE 15
+Fire 2024, 7, 109 15 of 19
+Appendix C
+Fire 2024, 7, x FOR PEER REVIEW 15 of 19 
+ 
+ 
+Appendix C  
+ 
+Figure A3. Number of forest ﬁres (bars) and burned area (red line) for each year of our study (2006 
+to 2015) in the Czech Republic. 
+  
+Figure A3. Number of forest fires (bars) and burned area (red line) for each year of our study (2006 to
+2015) in the Czech Republic.
+
+PAGE 16
+Fire 2024, 7, 109 16 of 19
+References
+1. Patacca, M.; Lindner, M.; Lucas-Borja, M.E.; Cordonnier, T.; Fidej, G.; Gardiner, B.; Hauf, Y.; Jasineviˇ cius, G.; Labonne, S.;
+Linkeviˇ cius, E.; et al. Significant increase in natural disturbance impacts on European forests since 1950.Glob. Chang. Biol. 2023,
+29, 1359–1376. [CrossRef]
+2. Grünig, M.; Seidl, R.; Senf, C. Increasing aridity causes larger and more severe forest fires across Europe. Glob. Chang. Biol. 2023,
+29, 1648–1659. [CrossRef] [PubMed]
+3. Giorgio, L.; Artés, V .T.; Thaïs, L.; Hugo, C.; Jesús, S.-M.-A.; Alfredo, B.; Tracy, D.; Fabio, L.; Daniel, N.; Christofer, A.A.; et al.
+Forest fires in Europe, Middle East and North Africa 2017; Publications Office of the European Union technical report EUR 29318 EN;
+Publications Office of the European Union: Luxembourg, 2018. [CrossRef]
+4. Krüger, R.; Blanch Gorriz, X.; Grothum, O.; Eltner, A. Using multi-scale and multi-model datasets for post-event assessment of
+wildfires. In Proceedings of the Poster Presentation of the European Geosciences Union General Assembly 2023, Vienna, Austria
+& Online, 23–28 April 2023. EGU23-13008. [CrossRef]
+5. Walker, X.J.; Rogers, B.M.; Veraverbeke, S.; Johnstone, J.F.; Baltzer, J.L.; Barrett, K.; Bourgeau-Chavez, L.; Day, N.J.; de Groot, W.J.;
+Dieleman, C.M.; et al. Fuel availability not fire weather controls boreal wildfire severity and carbon emissions. Nat. Clim. Chang.
+2020, 10, 1130–1136. [CrossRef]
+6. Littell, J.S.; McKenzie, D.; Peterson, D.L.; Westerling, A.L. Climate and wildfire area burned in western U.S. ecoprovinces,
+1916–2003. Ecol. Appl. 2009, 19, 1003–1021. [CrossRef] [PubMed]
+7. Forzieri, G.; Girardello, M.; Ceccherini, G.; Spinoni, J.; Feyen, L.; Hartmann, H.; Beck, P .S.A.; Camps-Valls, G.; Chirici, G.; Mauri,
+A.; et al. Emergent vulnerability to climate-driven disturbances in European forests. Nat. Commun. 2021, 12, 1081. [CrossRef]
+8. Ruffault, J.; Moron, V .; Trigo, R.M.; Curt, T. Objective identification of multiple large fire climatologies: An application to a
+Mediterranean ecosystem. Environ. Res. Lett. 2016, 11, 75006. [CrossRef]
+9. Bedia, J.; Golding, N.; Casanueva, A.; Iturbide, M.; Buontempo, C.; Gutiérrez, J.M. Seasonal predictions of Fire Weather Index:
+Paving the way for their operational applicability in Mediterranean Europe. Clim. Serv. 2018, 9, 101–110. [CrossRef]
+10. Kasischke, E.S.; Turetsky, M.R. Recent changes in the fire regime across the North American boreal region—Spatial and temporal
+patterns of burning across Canada and Alaska. Geophys. Res. Lett. 2006, 33, L09703. [CrossRef]
+11. Turetsky, M.R.; Benscoter, B.; Page, S.; Rein, G.; van der Werf, G.R.; Watts, A. Global vulnerability of peatlands to fire and carbon
+loss. Nat. Geosci. 2015, 8, 11–14. [CrossRef]
+12. Field, R.D.; van der Werf, G.R.; Fanin, T.; Fetzer, E.J.; Fuller, R.; Jethva, H.; Levy, R.; Livesey, N.J.; Luo, M.; Torres, O.; et al.
+Indonesian fire activity and smoke pollution in 2015 show persistent nonlinear sensitivity to El Niño-induced drought. Proc. Natl.
+Acad. Sci. USA 2016, 113, 9204–9209. [CrossRef]
+13. Westerling Anthony LeRoy. Increasing western US forest wildfire activity: Sensitivity to changes in the timing of spring.Phil.
+Trans. R. Soc. B. 2016, 371, 20150178. [CrossRef]
+14. Abatzoglou, J.T.; Williams, A.P . Impact of anthropogenic climate change on wildfire across western US forests.Proc. Natl. Acad.
+Sci. USA 2016, 113, 11770–11775. [CrossRef] [PubMed]
+15. Elia, M.; D’Este, M.; Ascoli, D.; Giannico, V .; Spano, G.; Ganga, A.; Colangelo, G.; Lafortezza, R.; Sanesi, G. Estimating the
+probability of wildfire occurrence in Mediterranean landscapes using Artificial Neural Networks. Environ. Impact Assess. Rev.
+2020, 85, 106474. [CrossRef]
+16. Müller, M.M.; Vilà -Vilardell, L.; Vacik, H. Towards an integrated forest fire danger assessment system for the European Alps.Ecol.
+Inform. 2020, 60, 101151. [CrossRef]
+17. Calheiros, T.; Pereira, M.; Nunes, J. Assessing impacts of future climate change on extreme fire weather and pyro-regions in
+Iberian Peninsula. Sci. Total. Environ. 2021, 754, 142233. [CrossRef]
+18. Miller, C.; Ager, A.A. A review of recent advances in risk analysis for wildfire management.Int. J. Wildland Fire 2013, 22, 1–14.
+[CrossRef]
+19. Emmons, H.W. Heat Transfer in Fire. J. Heat Transf. 1973, 95, 145–151. [CrossRef]
+20. Osvald, A. Požiarnotechnické VlastnostíDreva a Materiálov na Báze Dreva; Vedecké štúdie 8/97/A; Technickej univerzity vo Zvolene:
+Zvolen, Mexico, (In Slovakia). 1997.
+21. Roy, P .S. Forest fire and degradation assessment using satellite remote sensing and Geographic Information System. InSatellite
+Remote Sensing and GIS Applications in Agricultural Meteorology, Proceedings of a Training Workshop, 7–11 July 2003, Dehra Dun, India;
+Sivakumar, M.V .K., Roy, P .S., Harmsen, K., Saha, S.K., Eds.; World Meteorological Organisation: Geneva, Switzerland, 2003;
+pp. 361–400.
+22. Zachar, M. Vplyv Ohrevu na Termickú Degradáciu Vybraných Druhov Dreva. [The Effect of Heating on the Thermal Degradation of Selected
+Types of Wood.]; Technická univerzita vo Zvolene: Zvolen, Czech Republic, 2009. (In Slovaka)
+23. Thomas, P .A.; McAlpine, R.S.; Hirsch, K.; Hobson, P .Fire in the Forest; Cambridge University Press (CUP): Cambridge, UK, 2010;
+ISBN 9780511780189. [CrossRef]
+24. Moritz, M.A.; Parisien, M.-A.; Batllori, E.; Krawchuk, M.A.; Van Dorn, J.; Ganz, D.J.; Hayhoe, K. Climate change and disruptions
+to global fire activity. Ecosphere 2012, 3, 1–22. [CrossRef]
+25. Martínez, J.; Vega-Garcia, C.; Chuvieco, E. Human-caused wildfire risk rating for prevention planning in Spain. J. Environ. Manag.
+2009, 90, 1241–1252. [CrossRef]
+
+PAGE 17
+Fire 2024, 7, 109 17 of 19
+26. Grissino-Mayer, H.D.; Romme, W.H.; Floyd, M.L.; Hanna, D.D. Climatic and human influences on fire regimes of the southern
+san juan mountains, Colorado, USA. Ecology 2004, 85, 1708–1724. [CrossRef]
+27. Mollicone, D.; Eva, H.D.; Achard, F. Human role in Russian wild fires. Nature 2006, 440, 436–437. [CrossRef] [PubMed]
+28. Müller, M.M.; Vacik, H. Characteristics of lightnings igniting forest fires in Austria. Agric. For. Meteorol. 2017, 240–241, 26–34.
+[CrossRef]
+29. Wotton, B.M.; Martell, D.L.; Logan, K.A. Climate Change and People-Caused Forest Fire Occurrence in Ontario. Clim. Chang.
+2003, 60, 275–295. [CrossRef]
+30. Clark, J.S.; Merkt, J.; Muller, H. Post-Glacial Fire, Vegetation, and Human History on the Northern Alpine Forelands, South-
+Western Germany.J. Ecol. 1989, 77, 897. [CrossRef]
+31. Ellenberg, H. Vegetation Mitteleuropa Smit den Alpen in Okologischer, Dynamischer und Historischer Sicht; Ulmer: Stuttgart, Germany,
+1996. (In German)
+32. Tinner, W.; Conedera, M.; Ammann, B.; Lotter, A.F. Fire ecology north and south of the Alps since the last ice age.Holocene 2005,
+15, 1214–1226. [CrossRef]
+33. Niklasson, M.; Zin, E.; Zielonka, T.; Feijen, M.; Korczyk, A.F.; Churski, M.; Samojlik, T.; J˛ edrzejewska, B.; Gutowski, J.M.;
+Brzeziecki, B. A 350-year tree-ring fire record from Białowie ˙za Primeval Forest, Poland: Implications for Central European
+lowland fire history. J. Ecol. 2010, 98, 1319–1329. [CrossRef]
+34. Donis, J.; Kitenberga, M.; Snepsts, G.; Matisons, R.; Zarins, J.; Jansons, A. The forest fire regime in Latvia during 1922–2014. Silva
+Fenn. 2017, 51, 7746. [CrossRef]
+35. Rodrigues, M.; Jiménez-Ruano, A.; de la Riva, J. Fire regime dynamics in mainland Spain. Part 1: Drivers of change. Sci. Total.
+Environ. 2020, 721, 135841. [CrossRef]
+36. Martell, D.L.; Otukol, S.; Stocks, B.J. A logistic model for predicting daily people-caused forest fire occurrence in Ontario. Can. J.
+For. Res. 1987, 17, 394–401. [CrossRef]
+37. Garcia, C.; Woodard, P .; Titus, S.; Adamowicz, W.; Lee, B. A Logit Model for Predicting the Daily Occurrence of Human Caused
+Forest-Fires. Int. J. Wildland Fire 1995, 5, 101–111. [CrossRef]
+38. A Parks, S.; Holsinger, L.M.; Panunto, M.H.; Jolly, W.M.; Dobrowski, S.Z.; Dillon, G.K. High-severity fire: Evaluating its key
+drivers and mapping its probability across western US forests. Environ. Res. Lett. 2018, 13, 44037. [CrossRef]
+39. Vasilakos, C.; Kalabokidis, K.; Hatzopoulos, J.; Kallos, G.; Matsinos, Y. Integrating new methods and tools in fire danger rating.
+Int. J. Wildland Fire 2007, 16, 306–316. [CrossRef]
+40. Mozny, M.; Trnka, M.; Brázdil, R. Climate change driven changes of vegetation fires in the Czech Republic. Theor. Appl. Clim.
+2021, 143, 691–699. [CrossRef]
+41. Trnka, M.; Možný, M.; Jureˇ cka, F.; Balek, J.; Semerádová, D.; Hlavinka, P .; Štˇ epánek, P .; Farda, A.; Skalák, P .; Cienciala, E.; et al.
+Observed and estimated consequences of climate change for the fire weather regime in the moist-temperate climate of the Czech
+Republic. Agric. For. Meteorol. 2021, 310, 108583. [CrossRef]
+42. Hlásny, T.; Zimová, S.; Merganiˇ cová, K.; Štˇ epánek, P .; Modlinger, R.; Turˇ cáni, M. Devastating outbreak of bark beetles in the
+Czech Republic: Drivers, impacts, and management implications. For. Ecol. Manag. 2021, 490, 119075. [CrossRef]
+43. Hicke, J.A.; Johnson, M.C.; Hayes, J.L.; Preisler, H.K. Effects of bark beetle-caused tree mortality on wildfire.For. Ecol. Manag.
+2012, 271, 81–90. [CrossRef]
+44. Hart, S.J.; Veblen, T.T.; Mietkiewicz, N.; Kulakowski, D. Negative Feedbacks on Bark Beetle Outbreaks: Widespread and Severe
+Spruce Beetle Infestation Restricts Subsequent Infestation. PLoS ONE 2015, 10, e0127975. [CrossRef] [PubMed]
+45. Sjöström, J.; Plathner, F.V .; Granström, A. Wildfire ignition from forestry machines in boreal Sweden.Int. J. Wildland Fire 2019, 28,
+666–677. [CrossRef]
+46. Trnka, M.; Balek, J.; Možný, M.; Cienciala, E.; ˇCermák, P .; Semerádová, D.; Jureˇ cka, F.; Hlavinka, P .; Štˇ epánek, P .; Farda, A.; et al.
+Observed and expected changes in wildfire-conducive weather and fire events in peri-urban zones and key nature reserves of the
+Czech Republic. Clim. Res. 2020, 82, 33–54. [CrossRef]
+47. Tolasz, R.; Míková, T.; Valeriánová, A.; Voženílek, V .Atlas Podnebí ˇCeska [Climate Atlas of Czechia]; Palacky Univerzity and Czech
+Hydrometeorogical Institute: Olomouc, Czech, 2007. (In Czech)
+48. Pokorná, A.; Štrombachová, V .; Mužík, J.; Dolanová, D.; Búˇ rilová, P .; Pospíšil, M.; Kuˇ cerová, J.; Gregor, J.; Komenda, M.; Dušek, L.
+NárodníPortál Systém HlášeníNežádoucích Událostí; Ústav Zdravotnických Informací ˇCR: Praha, Czech, 2016. Available online:
+https://shnu.uzis.cz/ (accessed on 20 December 2019). (In Czech)
+49. Chytr ý, M. Vegetation of the Czech Republic: Diversity, ecology, history and dynamics.Preslia 2012, 84, 427–504.
+50. Ministry of Agriculture of the Czech Republic. Information on Forests and Forestry in the Czech Republic by 2020 ; Ministry of
+Agriculture of the Czech Republic: Prague, Czech, 2021.
+51. Ministry of Interior of the Czech Republic. Database of Forest Fires 2006–2015; General Directorate of the Fire Rescue Service of the
+Czech Republic, Ministry of Interior of the Czech Republic: Prague, Czech, 2019.
+52. Berˇ cák, R.; Holuša, J.; Lukášová, K.; Hanuška, Z.; Agh, P .; Vanˇ ek, J.; Kula, E.; Chromek, I. Forest fires in the Czech Republic—
+Characteristics, Prevention and Firefighting: Review. Zprávy Lesn. V ýzkumu. 2018, 63, 184–194. Available online: https:
+//www.vulhm.cz/files/uploads/2019/02/533.pdf (accessed on 1 July 2018). (In Czech).
+53. Holuša, J.; Berˇ cák, R.; Lukášová, K.; Hanuška, Z.; Agh, P .; Vanˇ ek, J.; Kula, E.; Chromek, I. Forest fires in the Czech Republic—
+Definition and classification: Review. Zprávy Lesn. Výzkumu. 2018, 63, 20–27. (In Czech)
+
+PAGE 18
+Fire 2024, 7, 109 18 of 19
+54. State Administration of Land Surveying and Cadastre. Czech Geodetic and Cadastral Office. 2019. Available online: https:
+//www.cuzk.cz/en (accessed on 20 December 2021).
+55. Flannigan, M.D.; Logan, K.A.; Amiro, B.D.; Skinner, W.R.; Stocks, B.J. Future Area Burned in Canada. Clim. Chang. 2005, 72, 1–16.
+[CrossRef]
+56. Aldersley, A.; Murray, S.J.; Cornell, S.E. Global and regional analysis of climate and human drivers of wildfire.Sci. Total. Environ.
+2011, 409, 3472–3481. [CrossRef] [PubMed]
+57. Zumbrunnen, T.; Menéndez, P .; Bugmann, H.; Conedera, M.; Gimmi, U.; Bürgi, M. Human impacts on fire occurrence: A case
+study of hundred years of forest fires in a dry alpine valley in Switzerland. Reg. Environ. Chang. 2012, 12, 935–949. [CrossRef]
+58. Vacchiano, G.; Foderi, C.; Berretti, R.; Marchi, E.; Motta, R. Modeling anthropogenic and natural fire ignitions in an inner-alpine
+valley. Nat. Hazards Earth Syst. Sci. 2018, 18, 935–948. [CrossRef]
+59. Dupire, S.; Curt, T.; Bigot, S.; Fr éjaville, T. Vulnerability of forest ecosystems to fire in the French Alps.Eur. J. For. Res. 2019, 138,
+813–830. [CrossRef]
+60. Ubysz, B.; Valette, J.-C. Flammability: Influence of fuel on fire. In Towards Integrated Fire Management—Outcomes of the European
+Project Fire Paradox ; Silva, J.S., Rego, F., Fernandes, P ., Rigolot, E., Eds.; European Forest Institute: Joensuu, Finland, 2010;
+pp. 23–34.
+61. Lecomte, N.; Simard, M.; Bergeron, Y.; Larouche, A.; Asnong, H.; Richard, P .J. Effects of fire severity and initial tree composition
+on understorey vegetation dynamics in a boreal landscape inferred from chronosequence and paleoecological data. J. Veg. Sci.
+2005, 16, 665–674. [CrossRef]
+62. Ganteaume, A.; Barbero, R.; Jappiot, M.; Maillé, E. Understanding future changes to fires in southern Europe and their impacts
+on the wildland-urban interface. J. Saf. Sci. Resil. 2021, 2, 20–29. [CrossRef]
+63. European Environment Agency. Indicator Assessment: Forest Fires. 2018. Available online: https://www.eea.europa.eu/data-
+and-maps/indicators/forest-fire-danger-2/assessment (accessed on 1 April 2019).
+64. Wood, S.N. Generalized Additive Models; Chapman and Hall/CRC: Boca Raton, FL, USA, 2017. [CrossRef]
+65. Wood, S.N. Stable and Efficient Multiple Smoothing Parameter Estimation for Generalized Additive Models. J. Am. Stat. Assoc.
+2004, 99, 673–686. [CrossRef]
+66. R Core Team. R: A Language and Environment for Statistical Computing; R Foundation for Statistical Computing: Vienna, Austria,
+2021. Available online: https://www.R-project.org/ (accessed on 23 May 2022).
+67. Silva, P .; Carmo, M.; Rio, J.; Novo, I. Changes in the seasonality of fire activity and fire weather in Portugal: Is the wildfire season
+really longer? Meteorology 2023, 2, 74–86. [CrossRef]
+68. Unal, Y.S.; Tan, E.; Mentes, S.S. Summer heat waves over western Turkey between 1965 and 2006.Theor. Appl. Clim. 2013, 112,
+339–350. [CrossRef]
+69. Vasi´ c, M. Wildfires; University of Belgrade, Faculty of Forestry: Belgrade, Serbia, 1992.
+70. Ubysz, B.; Szczygiel, R.; Kwitkowski, M.; Piwnicki, J. Intrukcja Ochrony Przeciwpozarowej Lasu; Panstwowe Gospodarstwo Lesne,
+Lasy Panstwowe: Warsa, Poland, 2012. (In Polish)
+71. Engelmark, O. Early post-fire tree regeneration in a Picea-Vaccinium forest in northern Sweden. J. Veg. Sci. 1993, 4, 791–794.
+[CrossRef]
+72. Pew, K.; Larsen, C. GIS analysis of spatial and temporal patterns of human-caused wildfires in the temperate rain forest of
+Vancouver Island, Canada. For. Ecol. Manag. 2001, 140, 1–18. [CrossRef]
+73. Koutsias, N.; Xanthopoulos, G.; Founda, D.; Xystrakis, F.; Nioti, F.; Pleniou, M.; Mallinis, G.; Arianoutsou, M. On the relationships
+between forest fires and weather conditions in Greece from long-term national observations (1894–2010). Int. J. Wildland Fire 2013,
+22, 493–507. [CrossRef]
+74. Guo, F.; Su, Z.; Wang, G.; Sun, L.; Lin, F.; Liu, A. Wildfire ignition in the forests of southeast China: Identifying drivers and spatial
+distribution to predict wildfire likelihood. Appl. Geogr. 2016, 66, 12–21. [CrossRef]
+75. Flannigan, M.D.; Harrington, J.B. A Study of the Relation of Meteorological Variables to Monthly Provincial Area Burned by
+Wildfire in Canada (1953–80). J. Appl. Meteorol. 1988, 27, 441–452. [CrossRef]
+76. Flannigan, M.D.; Wotton, B.M.; Marshall, G.A.; de Groot, W.J.; Johnston, J.; Jurko, N.; Cantin, A.S. Fuel moisture sensitivity to
+temperature and precipitation: Climate change implications. Clim. Chang. 2016, 134, 59–71. [CrossRef]
+77. Díaz-Delgado, R.; Lloret, F.; Pons, X. Spatial patterns of fire occurrence in Catalonia, NE, Spain.Landsc. Ecol. 2004, 19, 731–745.
+[CrossRef]
+78. Sturtevant, B.R.; Zollner, P .A.; Gustafson, E.J.; Cleland, D.T. Human influence on the abundance and connectivity of high-risk
+fuels in mixed forests of northern Wisconsin, USA. Landsc. Ecol. 2004, 19, 235–254. [CrossRef]
+79. Parisien, M.-A.; Parks, S.A.; Krawchuk, M.A.; Flannigan, M.D.; Bowman, L.M.; Moritz, M.A. Scale-dependent controls on the area
+burned in the boreal forest of Canada, 1980–2005. Ecol. Appl. 2011, 21, 789–805. [CrossRef] [PubMed]
+80. Ganteaume, A.; Camia, A.; Jappiot, M.; San-Miguel-Ayanz, J.; Long-Fournel, M.; Lampin, C. A Review of the Main Driving
+Factors of Forest Fire Ignition Over Europe. Environ. Manag. 2013, 51, 651–662. [CrossRef]
+81. Cardille, J.; Ventura, S.J. Environmental and social factors influencing wildfires in the upper Midwest, United States.Ecol. Appl.
+2001, 11, 111–127. [CrossRef]
+82. Martínez-Fernández, J.; Chuvieco, E.; Koutsias, N. Modelling long-term fire occurrence factors in Spain by accounting for local
+variations with geographically weighted regression. Nat. Hazards Earth Syst. Sci. 2013, 13, 311–327. [CrossRef]
+
+PAGE 19
+Fire 2024, 7, 109 19 of 19
+83. Adámek, M.; Jankovská, Z.; Hadincová, V .; Kula, E.; Wild, J. Drivers of forest fire occurrence in the cultural landscape of Central
+Europe. Landsc. Ecol. 2018, 33, 2031–2045. [CrossRef]
+84. Jenerette, G.D.; E Anderson, K.; Cadenasso, M.L.; Fenn, M.; Franklin, J.; Goulden, M.L.; Larios, L.; Pincetl, S.; Regan, H.M.; Rey,
+S.J.; et al. An expanded framework for wildland–urban interfaces and their management. Front. Ecol. Environ. 2022, 20, 516–523.
+[CrossRef]
+85. Spyratos, V .; Bourgeron, P .S.; Ghil, M. Development at the wildland–urban interface and the mitigation of forest-fire risk.Proc.
+Natl. Acad. Sci. USA 2007, 104, 14272–14276. [CrossRef] [PubMed]
+86. Šodková, M.; Purwestri, R.C.; Riedl, M.; Jarský, V .; Hájek, M. Drivers and Frequency of Forest Visits: Results of a National Survey
+in the Czech Republic. Forests 2020, 11, 414. [CrossRef]
+87. Jarský, V .; Palátová, P .; Riedl, M.; Zahradník, D.; Rinn, R.; Hochmalová, M. Forest Attendance in the Times of COVID-19—A Case
+Study on the Example of the Czech Republic. Int. J. Environ. Res. Public Health 2022, 19, 2529. [CrossRef] [PubMed]
+88. Gao, L.; Wang, X.; Johnson, B.A.; Tian, Q.; Wang, Y.; Verrelst, J.; Mu, X.; Gu, X. Remote sensing algorithms for estimation of
+fractional vegetation cover using pure vegetation index values: A review. ISPRS J. Photogramm. Remote Sens. 2020, 159, 364–377.
+[CrossRef]
+89. Stahl, A.T.; Andrus, R.; Hicke, J.A.; Hudak, A.T.; Bright, B.C.; Meddens, A.J. Automated attribution of forest disturbance types
+from remote sensing data: A synthesis. Remote Sens. Environ. 2023, 285, 113416. [CrossRef]
+90. Carnicer, J.; Alegria, A.; Giannakopoulos, C.; Di Giuseppe, F.; Karali, A.; Koutsias, N.; Lionello, P .; Parrington, M.; Vitolo, C.
+Global warming is shifting the relationships between fire weather and realized fire-induced CO2 emissions in Europe. Sci. Rep.
+2022, 12, 10365. [CrossRef] [PubMed]
+91. Balch, J.K.; Schoennagel, T.; Williams, A.P .; Abatzoglou, J.T.; Cattau, M.E.; Mietkiewicz, N.P .; Denis, L.A.S. Switching on the Big
+Burn of 2017. Fire 2018, 1, 17. [CrossRef]
+92. Dunn, C.J.; O’connor, C.D.; Abrams, J.; Thompson, M.P .; E Calkin, D.; Johnston, J.D.; Stratton, R.; Gilbertson-Day, J. Wildfire risk
+science facilitates adaptation of fire-prone social-ecological systems to the new fire reality.Environ. Res. Lett. 2020, 15, 025001.
+[CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

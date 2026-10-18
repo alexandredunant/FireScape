@@ -1,0 +1,993 @@
+PAGE 1
+Atmospheric Research 299 (2024) 107223
+Available online 3 January 2024
+0169-8095/© 2024 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-
+nc-nd/4.0/).
+Numerical investigation of the Pedr
+´
+og
+˜
+ao Grande pyrocumulonimbus using 
+a fire to atmosphere coupled model 
+Flavio Tiago Couto
+a , *
+, Jean-Baptiste Filippi
+b
+, Roberta Baggio
+b
+, C ´atia Campos
+c
+, Rui Salgado
+a 
+a
+Instituto de Ci ˆencias da Terra – ICT (Polo de 
+´
+Evora), Instituto de Investigaç ˜ao e Formaç ˜ao Avançada – IIFA, Earth Remote Sensing Laboratory (EaRS Lab), 
+Departamento de Física, Escola de Ci ˆencias e Tecnologia, Universidade de 
+´
+Evora, Rua Rom ˜ao Ramalho, 59, 7000-671 
+´
+Evora, Portugal 
+b
+Centre National de la Recherche Scientifique (CNRS), Sciences Pour l'Environnement – Unit ´e Mixte de Recherche 6134, Universit `a di Corsica, Campus Grossetti, Corte, 
+France 
+c
+Instituto de Ci ˆencias da Terra – ICT (Polo de 
+´
+Evora), Earth Remote Sensing Laboratory (EaRS Lab), Universidade de 
+´
+Evora, Rua Rom ˜ao Ramalho, 59, 7000-671 
+´
+Evora, 
+Portugal   
+ARTICLE INFO  
+Keywords: 
+pyroCb 
+Mega fires 
+Meso-NH model 
+ForeFire model 
+Pedr ´og ˜ao Grande fire 
+ABSTRACT  
+Understanding the development of fire-generated thunderstorms in mega fire events is important given their high 
+impact on the evolution of the fire fronts, where the fire spread becomes highly unpredictable and difficult to 
+suppress. This study aims to investigate numerically the influence of strong pyro-convective activity on the local 
+atmospheric conditions by means of a numerical simulation based on the coupled Meso-NH/ForeFire code. To 
+our knowledge, it is the first time that the effect of wildfire spread on the local atmospheric conditions is 
+accounted explicitly in a high-resolution NWP model to investigate pyro-convection activity. More specifically, 
+we study numerically the Portuguese Pedr ´og ˜ao Grande mega fire, which was one of the most destructive and 
+deadliest wildfire hazards affecting the Mediterranean region in the recent years. The spatio-temporal propa -
+gation of the wildfire was assigned a priori on the basis of the official investigation's reports, while the impact of 
+the forced fire evolution and of the ensuing heat and water vapour emissions on the local atmospheric conditions 
+is accounted explicitly. The simulation, configured with very-high spatial and temporal resolutions, was capable 
+of resolving the intense convective column reaching the upper troposphere and the fast development of the 
+associated cloud system. The numerical fire produced intense updraughts with vertical velocities above 15 m/s, 
+whereas the associated pyroCb cloud was composed by five different hydrometeor species along the main 
+convective column and reached an altitude of 10 km. It is remarkable that the numerical experiment reproduced 
+phenomena occurring at a fine scale related to cloud microphysics, such as very-localized outflows. This study, 
+based on a coupled numerical simulation, was capable of illustrating in detail the development of a pyroCb cloud 
+from strong pyro-convective activity.   
+1. Introduction 
+Extreme wildfires are frequently associated with strong convective 
+processes due to the release of heat and moisture. However, the evolu -
+tion of the local atmospheric conditions surrounding the fire is not fully 
+understood, and some associated phenomena (strong gusts, fire accel -
+eration, wind shifts) are still poorly quantified. 
+The local atmospheric environment surrounding the fire may present 
+the formation of convective clouds, also referred as pyroCumulus 
+(pyroCu) or pyroCumulonimbus (pyroCb). PyroCu is more common and 
+forms as a cloud within a fire's plume, and is a necessary precursor to 
+pyroCb. PyroCb can be observed in plume dominated wildfires charac -
+terized by an intense convective column, above which a cumulonimbus 
+(Cb) cloud develops. The formation of a pyroCb cloud requires a core of 
+buoyant plume rising to the level of free convection in an atmospheric 
+environment that enables deep, moist convection ( Tory et al., 2018 ). 
+However, the presence of burning biomass and aerosols in the upper 
+troposphere influences the microphysics of such clouds, which includes 
+pyrometeors (e.g., McCarthy et al., 2019 ). Moreover, the fire-generated 
+cloud system can induce the ignition of new fires by lightning activity (e. 
+g., Lang et al., 2014 ) and condensation of moisture in the smoke plume 
+can enhance convection by releasing latent heat with updraughts 
+* Corresponding author. 
+E-mail addresses: fcouto@uevora.pt (F.T. Couto), filippi_j@univ-corse.fr (J.-B. Filippi), baggio_r@univ-corse.fr (R. Baggio), catia.campos@uevora.pt (C. Campos), 
+rsal@uevora.pt (R. Salgado).  
+Contents lists available at ScienceDirect 
+Atmospheric Research 
+journal homep age: www. elsevier.com/ locate/atmo sres 
+https://doi.org/10.1016/j.atmosres.2024.107223 
+Received 10 July 2023; Received in revised form 27 October 2023; Accepted 1 January 2024   
+
+PAGE 2
+Atmospheric Research 299 (2024) 107223
+2
+penetrating the stratosphere (e.g., Fromm and Servranckx, 2003 ; Fromm 
+et al., 2010 ; Tarshish and Romps, 2022 ). 
+For instance, Peterson et al. (2018) showed that in August 2017 the 
+mass of smoke aerosol particles injected into the lower stratosphere from 
+five near-simultaneous pyroCb was comparable to a moderate volcanic 
+eruption. Fromm et al. (2021) studied the same time period and revealed 
+at least two pyroCb clouds injecting smoke above 13.5 km up to 2.5 km 
+above the local tropopause. Over Canada, the extreme pyroCb activity 
+recorded in August 2017 also resulted in a high-arctic smoke event 
+( Ranjbar et al., 2019 ). Gerasimov et al. (2019) revised the results of lidar 
+measurements of stratospheric aerosol over Tomsk (Russia) and 
+discovered traces of aerosol from pyroCb events that occurred in North 
+America a few weeks before. The presence of smoke in the lower 
+stratosphere over Tomsk was also recently identified by Cheremisin 
+et al. (2022) as a consequence of the Siberian wildfires in August 2019. 
+In the Southern hemisphere, in turn, a pyroCb outbreak in Australia 
+during the 2019/2020 summer injected large smoke particle amounts 
+into the lower stratosphere (e.g., Khaykin et al., 2020 ; Peterson et al., 
+2021 ). 
+In general, pyroCb studies are based on remote sensing, which can 
+quantify and analyze these intense smoke events. However, some of the 
+pyroCb-related phenomena, crucial for the firefighter's safety as it may 
+drastically change the fire behavior, requires very high temporal and 
+spatial resolution to be fully resolved. For instance, McRae et al. (2015) 
+documented atypical local fire dynamics, in particular the fire chan -
+neling phenomenon, also known as Vorticity-driven Lateral Spread 
+(VLS) ( Sharples and Hilton, 2020 ), which resulted in a rapid, but also 
+sudden, spread of the fire front due to an interaction between fire, local 
+terrain, and atmospheric conditions. 
+Lareau et al. (2018) described a sequence of events leading to vortex 
+development at a pyroCb scale. The authors showed that a tornado- 
+strength vortex formed as a consequence of the pre-existing shear 
+zone during the rapid vertical development of the pyro cloud system. 
+According to Lareau et al. (2022) , this phenomenon is potentially deadly 
+and poorly understood. 
+The study of pyroCb is made even more important by the fact that 
+climate change is likely to increase the number and the severity of 
+wildfires associated with extreme pyroCb's outbreaks (e.g., Dowdy et al., 
+2019 ). Recently, Senande-Rivera et al. (2022) showed that the number 
+of days with high fire risk will increase significantly across southern 
+Europe, especially in the Iberian Peninsula and Southern France. In 
+2017, there were significant mega fires (i.e., a fire with a burned area 
+above 10,000 ha, Linley et al. (2022) ) across mainland Portugal causing 
+more than one hundred fatalities in June and October (e.g., CTI Report, 
+2017 ; Guerreiro et al., 2018 ). Although the 2022 fire season only 
+recorded one mega fire in Portugal, Couto et al. (2022) showed that in 
+the last decade the actual number of active fires has grown in the 
+country. In particular, they reported a large fire event occurring during 
+the winter season, thus supporting the thesis that climate change is 
+likely to enhance occurrence of large fires out of the expected season. 
+The use of coupled fire-atmosphere simulations may provide a valid 
+support to an improved understanding of the complexities associated 
+with fire-atmosphere interaction. We address some of the major prob -
+lems linked to mega fires, by studying in detail the influence of an 
+extreme wildfire on the atmosphere using a fire to atmosphere simula -
+tion. In this work we investigate the pyro-convective activity by using a 
+numerical experiment, performed with the Meso-NH non-hydrostatic 
+atmospheric model coupled to the ForeFire fire propagation model. This 
+coupled code has been successfully used in the last years (e.g., Filippi 
+et al., 2018 ; Baggio et al., 2022 ; Campos et al., 2023 ), however, this is 
+the largest real case in which this coupled code has been applied. With 
+respect to cloud resolving models (e.g., Trentmann et al., 2006 ; Luderer 
+et al., 2006 ; Cunningham and Reeder, 2009 ; Badlan et al., 2021a, 
+2021b ), this coupled approach allows us to account explicitly for the 
+fire-to-atmosphere interactions. 
+The paper is organized as follows: the next section describes the 
+methodology, whereas Section 3 contains the results that are discussed 
+in Section 4 . The conclusions of the study are presented in Section 5 . 
+2. Methodology 
+The Meso-NH is a full-physics non-hydrostatic limited-area research 
+model able to represent the atmospheric motions at different scales ( Lac 
+et al., 2018 ). In this study, we exploited the Meso-NH grid-nesting 
+capability to progressively increase the horizontal resolution, by 
+dividing the simulated areas in nested domains, such that the finest grid 
+covers the region of the spreading fire. In this way, it was possible to 
+solve both close range fire to atmosphere interactions and large-scale 
+atmospheric effects while keeping reasonable computational costs. 
+The atmospheric model runs with a parameterization package of sub- 
+grid scale physical processes. The radiation parameterization is based on 
+the Rapid Radiative Transfer Model ( Mlawer et al., 1997 ), whereas the 
+turbulence scheme is based on a 1.5-order closure ( Cuxart et al., 2000 ). 
+In the inner domains, the full 3D turbulent fluxes scheme was activated 
+( Verrelle et al., 2015 ), while in the coarser domain only the vertical 
+fluxes were considered. Cloud microphysics is modelled by the ICE3 one- 
+moment bulk microphysical parameterization scheme ( Pinty and 
+Jabouille, 1998 ). The scheme considers six categories of hydrometeors 
+and a prognostic equation for each one. Besides vapour, it predicts the 
+mixing ratio of other five water categories: cloud droplets, rain drops, 
+pristine ice crystals, snow-aggregates and graupel. The parameterization 
+of several microphysical processes allows the computation of the mul -
+tiple complex interactions between the different hydrometeor types. 
+Despite the fact that the micro and nanoparticles emitted by the fire 
+significantly affect precipitation, in the simulations discussed below the 
+physics of aerosols is not accounted for. The observed fire induced 
+precipitation results from the heat and vapour injection reacting with 
+the water species present in the atmosphere. Since the spatial resolutions 
+considered in this study, deep and shallow convection are explicitly 
+resolved by the model. 
+Except for the evolving fire front, which is accounted by ForeFire, the 
+other processes involving surface-atmosphere interactions are computed 
+by the externalised platform of surface models, SURFEX ( Masson et al., 
+2013 ). The topography is obtained from the Shuttle Radar Topography 
+Mission (SRTM) database, whereas the surface has been characterized 
+from the ECOCLIMAP database and the Harmonized World Soil Data -
+base (HWSD) soil databases (sand and clay) ( Champeaux et al., 2005 ). 
+ForeFire is a fire propagation model that can be coupled to the Meso- 
+NH such that the effects of the temporal evolution of the fire front and 
+the ensuing energy and vapour fluxes are explicitly considered in the 
+atmospheric computations. The model considers the terrain slope, the 
+atmospheric properties, the spatial distribution and the combustion 
+parameters of the fuel. The fire propagation is assumed to occur 
+perpendicularly to the fire front ( Filippi et al., 2009, 2011 ). 
+To evaluate the energy released by the fire, we consider that the 
+study region consists of large areas of mixed coniferous forest, the fuel 
+was assumed to be homogeneous following fuel model 11 from Ander -
+son (1982) with an average of burning fuel load of 2.5 Kg.m
+  2 
+at 30% 
+humidity (0.75 Kg of water, 1.75 kg of combustible per square meter). 
+Combustion enthalpy is taken at Dh = 1.5 × 10
+7 
+J/kg and evaporation 
+Dhw = 2.3 × 10
+6 
+J/kg, which results in a total energy released after 
+drying of 2.4525 × 10
+7 
+J/m
+2
+, but only 40% of this energy is assumed to 
+be effective fluxes heating the atmosphere, as combustion can be 
+incomplete and most of the energy is lost in radiation toward the ground 
+and to heat the combustible up to pyrolysis temperature. In the model 
+configuration, the resulting 0.75 kg/m
+2 
+of water vapour and 10 × 10
+6 
+J/ 
+m
+2 
+are released in the atmosphere at the location of the moving fire front 
+for a 1000s “ burn duration ” , resulting in instantaneous fluxes of 0.75 g. 
+m
+  2
+.s of water vapour and 10 KW.m
+  2
+. In the model, fluxes are pre -
+scribed at the resolution of the fire within the zone between the fire front 
+at a given time T and the fire front at T   burn duration. This leads to 
+substantial flame depth in areas where the front velocity is at its 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 3
+Atmospheric Research 299 (2024) 107223
+3
+maximum. 
+The treatment of heat fluxes in the ForeFire model can be found in 
+Filippi et al. (2009, 2018) . The smoke plume will be illustrated using the 
+relative smoke tracer concentration variable (S). The description of the S 
+variable can be found in Baggio et al. (2022) . 
+The MesoNH/foreFire code can be used in multiple settings. It is 
+possible to simulate the double feedback between the fire propagation 
+and the local atmospheric conditions, that is, the fire enhances the 
+convective motions near the front which in turn affect its spreading of 
+the fire (two-way coupling). Another possible setting is to directly 
+impose the evolution of the fire front with a pre-defined time of arrival 
+map (one-way coupling) and consider the effects on the atmospheric 
+conditions resulting from it. Indeed, a highly detailed fire evolution 
+map, based on the reports of the Portuguese authorities, is directly 
+available. In Fig. 1 we show the fire front at 2000 UTC, on 17th June, in 
+the two simulations (forced fire from observation and fully coupled). 
+While the fully coupled simulation yields similar pyroCb formations and 
+fireline shape when compared to observations, it cannot surpass the 
+accuracy of direct, highly detailed observations, which we use to mini -
+mize uncertainty in fire behavior. Considering that in this work we are 
+mostly interested in the fire to atmosphere phenomena, we focus on the 
+latter approach. 
+The study considers the fires occurred in “ Pedr ´og ˜ao Grande ” (28,914 
+ha) and “ G ´ois ” (17,521 ha), both started on 17th June 2017. According 
+to Couto et al. (2020) , the fires ignited under a dry thunderstorm 
+environment, marked by exceptionally hot and dry air at lower levels 
+and a more humid layer in the middle levels. The fire propagation map is 
+based on the maps presented in the official report of the Portuguese 
+authorities (CTI Report, 2017 ) and by Pinto et al. (2022) . It is note -
+worthy that “ Pedr ´og ˜ao Grande ” fire started as a consequence of ignitions 
+in “ Regadas ” and “ Escalos Fundeiros ” and was the deadliest event 
+occurred in 2017, with > 60 fatalities (e.g., CTI Report, 2017 ). 
+The experiment was designed with three two-way nested domains 
+with 300 × 300 grid points ( Fig. 2 ). The outer domain with a coarser 
+grid spacing of 2 km was designed to resolve the mesoscale environ -
+ment, which measures 600 × 600 km. The resolution is increased by a 
+factor of 5 with an intermediary domain of 400 m resolution and an 
+innermost domain of 80 m resolution. The latter was configured to 
+explore the atmospheric features of the fire-scale environment in detail. 
+The 80 m resolution domain is the one that is actually coupled with the 
+fire and contains the entire burning area. Previous study with the same 
+coupled code ( Baggio et al., 2022 ) shows that 80-m resolution is 
+adequate to solve convective effects on the atmosphere for fires with 
+sufficient energy release, in particular plume rise, cloud formation and 
+downbursts. The vertical grid was configured with 50 sigma levels not 
+equally spaced, stretching gradually from 30 m, near the bottom, to 900 
+m, near the top. A 30 m first layer height serves as a reasonable tradeoff 
+for capturing fire behavior while minimizing computational load on the 
+pressure solver, especially given the atmospheric model's limitations in 
+handling combustion (extreme heat) and the complex orography of the 
+region. Initial and lateral boundary conditions for the outer domain 
+were provided by ECMWF analysis, with updates every 6 h. The Sea 
+Surface Temperature field was taken from the starting ECMWF analysis 
+and kept constant throughout the simulation. 
+In order to study the dynamics of the phenomenon, the frequency for 
+diagnostic output files was set at 10s (80 m resolution), 100 s for the 400 
+m and 600 s for the larger model. Simulation of the fire model (heat 
+fluxes computation) is performed on a 20 m resolution grid (1200 by 
+1200). The time step was 10 s for the outermost model and decreased to 
+2 s, 0.5 s for the finer models. Simulation starting time for the outermost 
+(coarse) domain was set up on 17 June 2017 at 0600 UTC, while the 
+simulation in the innermost domain (with the finest resolution) effec -
+tively starts at 1300 UTC. We performed multiple simulations to obtain 
+the more realistic scenario of the atmospheric environment based on the 
+CTI Report (2017) and Pinto et al. (2022) . This preliminary study led to 
+the decision to ignite the fires almost 1 h later. Indeed, this setting was in 
+better agreement with what was actually observed. Basically, a gust 
+front was observed reaching the Pedr ´og ˜ao region at 1700 UTC. Pre -
+liminary test simulations showed an analogous pattern, but approxi -
+mately 1 h earlier when using ECMWF boundary conditions data. 
+The mesoscale environment simulated with 2 km spatial resolution 
+showed the same features identified in previous studies. The dry thun -
+derstorm environment documented by Couto et al. (2020) favoured the 
+development of a mesoscale convective system during the afternoon 
+which produced several outflows in Central Portugal (e.g., Pinto et al., 
+2022 ). 
+The next section focuses the results obtained on 80 m resolution, 
+which are the most important for the description of the modelled 
+pyroCb, and highlights the main findings for the Pedr ´og ˜ao Grande fire. 
+These results are evaluated in view of what is described by Pinto et al. 
+(2022) , whose analysis is based directly on observations. The discussion 
+will follow in Section 4 . 
+Fig. 1. Fire front line from the fully coupled simulation (red line) and from the 
+forced fire simulation obtained from observation (yellow line) at 2000 UTC on 
+17th June 2017. (For interpretation of the references to colour in this figure 
+legend, the reader is referred to the web version of this article.) 
+Fig. 2. Model configuration with larger domain at 2 km horizontal resolution 
+(D1) and the inner domains at 400 m (D2) and 80 m (D3) horizontal resolu -
+tions. The orography (coloured areas) is obtained from the SRTM database. 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 4
+Atmospheric Research 299 (2024) 107223
+4
+3. Results 
+The present section provides a description of the fire environment 
+observed in the 80 m resolution domain, which is the most important for 
+the analysis of the main processes at the fire-scale. 
+Figure 3 shows the wind field at 100 m altitude and the evolution of 
+the fire front at the surface, as described by the variable S. The first hours 
+of the simulation were marked by a northerly wind-flow affecting the 
+Pedr ´og ˜ao Grande region and a change in the wind direction after 1700 
+UTC (not shown). Fig. 3 a shows Easterly and slightly South-easterly 
+winds reaching the fire fronts at 1730 UTC with magnitudes between 
+6 and 8 m/s. From this moment on, the simulation shows a north- 
+easterly (NE) wind-flow over the region, with slightly weaker in -
+tensities around 4 m/s ( Fig. 3 b). In the hour that follows an intensifi -
+cation of the wind flow is observed, with winds stronger than 8 m/s 
+approaching the east of Pedr ´og ˜ao Grande ( Fig. 3 c). This NE flow hits the 
+fire 15 min later at 1930 UTC ( Fig. 3 d). 
+As previously mentioned, the evolution of the fire front was forced by 
+assigning an arrival time map based on actual reports. Not surprisingly 
+this fire evolution is consistent with the local wind-field as observed in 
+the simulation. The north winds favoured the displacement of the fire 
+fronts southward during the first hours (see numbers 1 and 2 indicated 
+in Fig. 3 a), while changes in the wind field for E -NE induced the fire 
+propagation in the west direction. This condition led to the junction of 
+the two fire fronts in the region of Pedr ´og ˜ao Grande and the formation of 
+a single merged fire front (see number 3 indicated in Fig. 3 b-d). 
+Figure 4 shows the vertical structure of the smoke plume, as 
+described by the condition S ≥ 0.01 (we recall that S is a smoke tracer). 
+At the beginning of the event, the smoke plumes in the Pedr ´og ˜ao Grande 
+fires, i.e., associated with the ignition of “ Escalos Fundeiros ” and 
+“ Regadas ” , are transported southward in the lower troposphere 
+( Fig. 4 a). The smoke plume is transported to the Southwest direction an 
+hour later and already reaches higher levels around 4 km altitude 
+( Fig. 4 b). Fig. 4 c shows an intensification of the smoke plume, which 
+extends up to the upper troposphere with a top exceeding 9 km altitude. 
+At this instant, we observe the highest concentration of smoke westward 
+of Pedr ´og ˜ao Grande fire. In addition, it is noteworthy that the smoke 
+plume in G ´ois fire remains concentrated in the lower troposphere during 
+the period ( Fig. 4 a-c). 
+The plume structure is illustrated further on Fig. 5 which displays a 
+SW-NE vertical cross-section intersecting the fire front, represented by 
+using values of turbulent kinetic energy well above 10 m
+2
+/s
+2 
+at surface. 
+On the vertical sections we show contours of the smoke tracer (S) which 
+highlights the plume structure between 1900 UTC and 1945 UTC. We 
+observe a progressive intensification of the vertical extension of the 
+plume which concentrates up to the middle levels until 1915 UTC 
+( Fig. 5 a-b) and reaches a maximum 10 km altitude at 1930 UTC 
+( Fig. 5 c). Fig. 5 d indicates a possible disconnection of the smoke plume 
+resulting from an interruption of vertical transport of smoke at 1945 
+UTC, with no smoke in the middle levels. On the other hand, the same 
+figure presents smoke in the upper troposphere, which does not directly 
+connect with the fire activity at the surface. 
+The vertical velocity field analysis reveals strong updraughts along 
+the fire front. The smoke characteristics are illustrated in Fig. 5 , while 
+Fig. 6 superimpose three different instants of the vertical velocity field 
+above 8 m/s. A convective column is observed to reach the mid tropo -
+sphere at 1915 UTC (orange), which intensifies 15 min later and exceeds 
+8 km altitude (yellow). However, the upward motion created by the fire 
+Fig. 3. The advancing fire front is illustrated through the relative smoke tracer concentration S at surface from the simulation at 80 m resolution (coloured areas). 
+The arrows represent the horizontal wind magnitude at 100 m altitude on 17 June 2017 a) at 1730 UTC, b) at 1815 UTC, c) at 1915 UTC, and d) at 1930 UTC. The 
+numbers 1 and 2 in Fig. 3 a represent the fire fronts from the ignitions in “ Regadas ” and “ Escalos Fundeiros ” , respectively. In turn, the number 3 in Figs. 3 b-d represent 
+the merged fire front. 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 5
+Atmospheric Research 299 (2024) 107223
+5
+remains mostly below the middle levels at 1945 UTC (green), confirming 
+the possible collapse of the convective column simulated at 1930 UTC. 
+Figure 7 a displays a vertical cross-section through the convective 
+column at 1930 UTC where upward motions with velocities around 25 
+m/s at 8 km altitude are shown. The response of the atmosphere to the 
+emission of fluxes from the surface results in the production of turbulent 
+flow in the fire environment, with turbulent kinetic energy (TKE) well 
+above 10 m
+2
+/s
+2 
+throughout the convective column above the fire front at 
+surface ( Fig. 7 b). 
+Figure 8 shows the mixing ratio of water vapour and total liquid and 
+frozen water from a S
+–
+N oriented vertical cross-section intersecting the 
+convective column at 1930 UTC. The total liquid water is computed as 
+the sum of cloud droplets and rain drops mixing ratios. In the case of 
+total frozen water, it was obtained from the sum of the mixing ratios of 
+ice-crystals, snow-aggregate and graupel particles. 
+Figure 8 a shows water vapour being vertically transported to the 
+middle levels resulting in values > 6 g/kg above 5 km altitude. The red 
+contour represents values with total liquid water of 0.5 g/kg, whereas 
+white contour the same amount of total frozen water. Fig. 8 b represents 
+the concentration of liquid water with maximums around 2.5 g/kg at 6 
+km altitude. At the same instant, a high concentration of frozen water is 
+simulated with values around 4 and 5 g/kg between 8 km and 9 km 
+altitude ( Fig. 8 c). 
+The regions of liquid and frozen water content of > 0.5 g/kg are 
+shown in Fig. 9 . Fig. 9 a shows a core of liquid water content extending to 
+Fig. 4. 3D smoke plume structure represented by the relative smoke tracer 
+concentration S from the simulation at 80 m resolution: a) at 1700 UTC, b) at 
+1800 UTC, and c) at 1930 UTC. 
+Fig. 5. SW-NE vertical cross-sections of the smoke tracer concentration S and turbulent kinetic energy (m
+2
+/s
+2
+) at surface a) at 1900 UTC, b) at 1915 UTC, c) at 1930 
+UTC, and d) at 1945 UTC. 
+Fig. 6. 3D structure of the regions with upward motions above 8 m/s in three 
+different instants of the pyroCb cloud development. 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 6
+Atmospheric Research 299 (2024) 107223
+6
+higher levels from the middle levels at 1930 UTC (orange). This core has 
+been in a region of “ inflow ” when considering the pyro cloud system 
+structure. The high concentration of liquid water is embedded in a large 
+region of frozen water that extends westward. The figure also indicates 
+that the smoke plume (see Fig. 4 c) presented a significant concentration 
+of hydrometeors in its upper portion. On the other hand, the model 
+simulates, 15 min later, a region of liquid water to westward at lower 
+levels, just above 2 km altitude ( Fig. 9 b). In this case, this core of liquid 
+water is found in an “ outflow ” sector of the pyro cloud system. It is also 
+worth noting the anvil of the mesoscale convective system that devel -
+oped in the afternoon near the fire. 
+Figure 10 shows the vertical velocity field at 1945 UTC. Considering 
+the 2.1 km altitude, Fig. 10 a displays some regions of upward motions 
+along the fire region with velocities above 10 m/s, and notoriously a 
+region of intense downward motion with velocities larger than 10 m/s. 
+Fig. 10 b shows this downward motion extending from the middle levels 
+toward the surface and maximum velocities around 15 m/s at 3 km 
+altitude. Such a region coincides with the liquid water region identified 
+in Fig. 9 b. The outflow touches the surface around 2000 UTC, as can be 
+seen in the turbulent kinetic energy field ( Fig. 10 c). It is important to 
+note that this outflow developed from the fire-generated cloud system. 
+An additional point of interest is the time at which the smoke plume's 
+upward movement ceased in the mid-levels of the atmosphere, with the 
+goal of elucidating the short-lived nature of the convective column. 
+Fig. 11 a-b show the vertical velocity at middle levels (5 km altitude). 
+The convective column is found at 1930 UTC ( Fig. 11 a) and no longer 
+identified at 1945 UTC ( Fig. 11 b). The wind field analysis at the same 
+level, but between 1915 UTC and 1945 UTC, indicates a southeasterly 
+flow reaching the main convective column ( Fig. 12 a-c), whereas 
+Fig. 12 d shows a relative maximum of the horizontal wind magnitude at 
+middle levels of around 11 m/s. The vertical profile presented in 
+Fig. 12 d is the extraction of the model values at the nearest grid point. 
+This southeasterly flow may have counteracted the vertical movement, 
+helping to interrupt the convective column. 
+In summary, the simulation exhibited the development of a deep 
+convective cloud from the fire, which has been considered to be a 
+pyroCb cloud in the present study. The fire-generated thunderstorm was 
+simulated between 1915 UTC and 2000 UTC, with maximum develop -
+ment at 1930 UTC and the production of a very localized outflow 
+touching the ground close to the 2000 UTC. 
+To complete the fire environment characterization, and after the 
+identification of a pyroCb cloud development, Fig. 13 brings the vertical 
+thermodynamic structure of the atmosphere in a point near the fire and 
+at two different instants, namely 1500 UTC and 1900 UTC. Fig. 13 a 
+displays a hot and dry lower troposphere followed by a moist layer from 
+the middle levels at 1500 UTC. The moment close to the beginning of the 
+pyroCb development, at 1900 UTC, also shows a saturated middle 
+troposphere and a drier layer below ( Fig. 13 b). Such an environment 
+favours the development of pyro clouds if the smoke column is large 
+enough to reach higher levels. In this case, the ascending motions 
+associated with the smoke plume can be reinforced by the potential 
+instability released in the middle troposphere by microphysical pro -
+cesses during cloud development. 
+Fig. 7. Vertical cross section intersecting the plume at 1930 UTC: a) vertical 
+velocity (m/s), and b) turbulent kinetic energy (m
+2
+/s
+2
+). The relative smoke 
+tracer concentration S at surface represents the fire front location. 
+Fig. 8. S
+–
+N vertical cross section intersecting the plume at 1930 UTC: a) 
+mixing ratio of water vapour, b) total liquid water mixing ratio (cloud droplets 
+and rain drops), and c) total frozen water mixing ratio (graupel, snow-aggregate 
+and ice crystals). The total liquid water content of 0.5 g/kg is represented by the 
+red contour, whereas total frozen water content of 0.5 g/kg by white contour. 
+(For interpretation of the references to colour in this figure legend, the reader is 
+referred to the web version of this article.) 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 7
+Atmospheric Research 299 (2024) 107223
+7
+4. Discussion 
+The present study investigates the influence of an extreme wildfire 
+event on the local atmospheric conditions using a fire-to-atmosphere 
+numerical simulation. In 2017, the Portuguese territory was character -
+ized by a particularly intense fire season. We present the results obtained 
+using a numerical simulation of the deadliest event that occurred in that 
+year. 
+The study focused on the main atmospheric phenomena induced by 
+the simulated fire at a near fire scale. Some aspects are now discussed to 
+compare with the observational study presented by Pinto et al. (2022) 
+for the same wildfire episode. In general, the smoke plume remained in 
+the lower atmosphere and was oriented southward during the first 
+simulated hours. Regarding the vertical extension of the smoke plume, 
+Pinto et al. (2022) presented an estimate of the smoke plume top on the 
+basis of radar observations. They argued that during the first hours of the 
+fire, the top of the plume was bounded below 4 km. This fact is 
+consistent with the results obtained with the numerical model. 
+The model shows a low-level NE wind-flow approaching the fire from 
+1915 UTC. The occurrence of this flow played an important role in the 
+intensification of the pyro-convective activity simulated at 1915 UTC. It 
+reinforced the upward motions since a convective column extending 
+vertically reached 10 km altitude with velocities around 20 m/s at 1930 
+UTC. Our simulated vertical velocities of 15 – 20 m/s are in agreement 
+with previous observational studies, such as the velocities ranging from 
+  15 to + 30 m/s reported in intense pyroconvection events ( Kingsmill 
+et al., 2023 ). Over the following minutes, cloud development increased 
+ahead westward and above the fire front, the cloud system maintained as 
+a “ stationary ” thunderstorm anchored in the main convective column. 
+Cunningham and Reeder (2009) showed the water production as a 
+critical factor for a physically relevant simulation of such a cloud system. 
+In our study, the convective column favoured both the rapid water 
+vapour vertical transport to higher levels and the significant concen -
+trations of liquid and frozen water, simulated within the convective 
+column. 
+Chang et al. (2015) argued that an increase in updraughts caused the 
+production of rainwater content to grow. This fact provides an expla -
+nation to the high production of liquid water simulated in the main 
+convective column from the middle levels. Moreover, the strong freeze, 
+evident in the high concentration of ice particles, probably intensified 
+Fig. 9. 3D structure of the total liquid water content of 0.5 g/kg (orange) and 
+total frozen water content of 0.5 g/kg (blue). The fire front is represented at 
+surface from the relative smoke tracer concentration S: a) at 1930 UTC, and b) 
+at 1945 UTC. (For interpretation of the references to colour in this figure 
+legend, the reader is referred to the web version of this article.) 
+Fig. 10. a) Vertical velocity at 2.1 km altitude at 1945 UTC, b) A-A' vertical 
+cross-section indicated in Fig. 10 a with vertical velocity (m/s) at 1945 UTC, and 
+c) turbulent kinetic energy (m
+2
+/s
+2
+) at surface at 2000 UTC. The purple contour 
+in Fig. 10 a represents the fire front. (For interpretation of the references to 
+colour in this figure legend, the reader is referred to the web version of 
+this article.) 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 8
+Atmospheric Research 299 (2024) 107223
+8
+the upward motions at 8 km altitude by releasing latent heat, and then 
+favouring the convective column penetration into the upper tropo -
+sphere. As mentioned in the introduction, under extreme wildfire con -
+ditions, intense convection is an efficient way to transport aerosols 
+particles from the boundary layer to the upper troposphere or even in 
+the lower stratosphere (e.g., Fromm and Servranckx, 2003 ; Peterson 
+et al., 2018 ). Luderer et al. (2006) , in turn, showed from numerical 
+simulation that the atmospheric environment and the heat released from 
+the fire are the key ingredients determining the evolution of a pyroCb 
+cloud, as well as the intensity of the convection along the troposphere. 
+These factors are also important to determine the impacts and lifetime of 
+the pyroCb cloud system (e.g., Trentmann et al., 2006 ). 
+In the present case study, the simulation indicates that the strong 
+convection over the plume weakened after 1930 UTC. A possible 
+explanation for this is that the convective column that was extending 
+throughout the troposphere suddenly stopped being sustained by the fire 
+activity. Moreover, the model simulated the formation of downward 
+vertical motions which organized as a very localized convective outflow 
+westward ahead the Pedr ´og ˜ao Grande fire front. A southeasterly flow at 
+middle levels could account for both the collapse of the convective 
+column and the rapid formation of the pyroCb cloud. The cloud system 
+lasted less than one hour and presented the mature stage within 15 min. 
+It is noteworthy that Fromm et al. (2006) showed pyroCb clouds pre -
+senting a microscale diameter (10 km) but lasting a few hours (3 h). 
+Regarding the localized outflow that reached the surface just before 
+2000 UTC, the evaporation of the total liquid water content probably 
+intensified the downward motions. This microscale phenomenon 
+developed from the pyroCb cloud with vertical velocities of around 15 
+m/s at 3 km altitude. When compared to the Cumulonimbus cloud 
+developing without interactions with fire and smoke, a strong suppres -
+sion of precipitation is often observed in pyroCb clouds. This occurs 
+since the presence of large concentrations of cloud condensation nuclei 
+suppresses the formation of both wide water and ice hydrometeors 
+( Rosenfeld et al., 2007 ). Luderer et al. (2006) also verified such feature 
+using a cloud resolving model with a two-moment bulk microphysical 
+scheme. Reutter et al. (2014) showed that the microphysical evolution 
+of a pyroCb cloud system depends on the aerosol concentration. Un -
+fortunately, the one-moment microphysical scheme used in this study 
+does not allow to assess the impact of aerosol particles on the cloud 
+microphysics. Moreover, we remark that the smoke tracer concentration 
+(S) is a passive scalar whose purpose is only to visualize the evolution of 
+the plume, and it does not interact with the hydrometeors (e.g., Baggio 
+et al., 2022 ) and with the radiation. 
+Concerning the atmospheric environment in the fire scale, Couto 
+et al. (2020) showed that Pedr ´og ˜ao Grande fire occurred under a dry 
+thunderstorm's environment on the basis of the sounding from Lisbon, 
+which is almost 200 km distant from Pedr ´og ˜ao Grande. The thermody -
+namic diagram obtained in the proximity of the fire was coherent with 
+this previous study. The dry, hot, and windy conditions at the surface 
+were observed below a moist layer at middle levels. This environment 
+has been well known to favour the pyroCb activity during extremes 
+wildfires (e.g., Peterson et al., 2017 ; Tory et al., 2018 ; Giannaros et al., 
+2022 ), and the simulation results support the hypothesis that the dry 
+thunderstorm environment was a prerequisite for the development of a 
+deep pyro cloud system over Pedr ´og ˜ao Grande fire. The sounding in 
+Lisbon on 17 June 2017 at 1200 UTC ( University of Wyoming, 2017 ), is 
+characterized by a K index of 28.90 
+◦
+C and a precipitable water of 29.17 
+mm. These are significant values when considering dry thunderstorms 
+environment and are consistent with those presented by Senande-Rivera 
+et al. (2022) . The K index estimates the atmospheric stability based on 
+the 850 – 500 hPa temperature lapse rate, moisture content at 850 hPa 
+and the thickness of moist layer, and Senande-Rivera et al. (2022) re -
+ported that high values of precipitable water and K index ( > 26 
+◦
+C) are 
+associated with environments where thunderstorms are likely to occur. 
+The simulation illustrates well the evolution of the Pedr ´og ˜ao Grande 
+fire which shows an increasing complexity. The interaction of mesoscale 
+circulation surrounding the fire played an important role in the inten -
+sification of the convective column. These changes in the fire environ -
+ment and smoke plume structure were documented by Pinto et al. 
+(2022) , which showed the transition of the smoke plume to a convective 
+Fig. 11. Vertical velocity (m/s) at 5 km altitude a) at 1930 UTC, and b) 1945 
+UTC. The yellow contour represents the fire front. (For interpretation of the 
+references to colour in this figure legend, the reader is referred to the web 
+version of this article.) 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 9
+Atmospheric Research 299 (2024) 107223
+9
+regime from 1830 UTC, as well as the changes in its orientation until 
+1910 UTC. In the simulation, the smoke plume is initially oriented 
+south/south-westward to westward, leading to intense convection and 
+the development of a pyroCb cloud. The approach of a low level NE 
+wind-flow results in a sudden increase of the pyro-convective activity. 
+Pinto et al. (2022) showed the smoke plume exceeding 12 km altitude at 
+1930 UTC (see Fig. 14 of Pinto et al., 2022 ). In the present study, the 
+maximum smoke plume penetration height was simulated at around 10 
+km, but the time of occurrence is similar. We remark that it is not 
+possible to confirm that the maximum smoke plume altitude observed 
+corresponds to the convective column simulated at 1930 UTC. However, 
+the simulation points to a good representation of some phenomena that 
+may have occurred on the fire-scale during the Pedr ´og ˜ao Grande fire, 
+when confronted with the main aspects documented in the reports and 
+by Pinto et al. (2022) . 
+The simulated pyroCb cloud did not present intense precipitation, 
+but the fire activity created a strong convective column that transported 
+smoke up to the upper troposphere and produced significant amount of 
+liquid and frozen water inside the convective column at higher levels. 
+Therefore, the intensification of the pyro-convective activity caused by 
+the change in the surface wind direction was crucial for the explosive 
+behavior and the ensuing cloud development. The transport of high 
+amount of energy upward also occurred under favourable atmospheric 
+conditions, namely an unstable middle troposphere. 
+5. Conclusions 
+The study presented the results obtained from a Meso-NH/ForeFire 
+numerical simulation suitable for extreme fire conditions. For the case 
+of study, the Pedr ´og ˜ao Grande megafire, the fire line evolution is 
+described in detail by an official report. Considering this, the fire spatio- 
+temporal propagation is assigned, rather than simulated, and the at -
+mospheric behavior of the near-fire environment can be simulated with 
+less incertitude. 
+The findings indicate that, with high spatio-temporal resolution, the 
+model can effectively capture both the pyro-convective plume structure 
+and the key processes in fire-atmosphere interactions. For instance, the 
+notable change in the wind field caused by the interaction between the 
+mesoscale environment and the fire contributed to changes in the smoke 
+plume orientation well captured. 
+In the Pedr ´og ˜ao Grande fire event, the intense pyro-convective ac -
+tivity manifested as a pyroCumulonimbus cloud. The modelled pyroCb 
+indicates that the complexity of the fire-atmosphere coupled system is 
+well represented. 
+The pyroCb developed from the condensation inside the plume, 
+where high concentrations of liquid and frozen water are observed. The 
+convection was enhanced by the strong wildfire activity and latent heat 
+released at higher levels, which penetrated the higher troposphere just 
+above 10 km altitude. The strong updraughts created by the fire were 
+crucial in establishing and maintaining the pyroCb by a few minutes. 
+The main features of the simulated cloud system are in accordance with 
+what reported by other studies of the same event (e.g., Pinto et al., 
+2022 ). However, such a cloud system lasted for a shorter time. We hy -
+pothesized that the approach of a southeast wind flow at middle levels 
+led to the collapse of the main convective column, thereby interrupting 
+the vertical transport of energy. In addition, extreme pyro-convective 
+activity was also displayed in the simulation where we observe the 
+development of an outflow originated from the pyroCb cloud. The 
+Fig. 12. Wind magnitude (coloured areas; m/s) and direction (arrows) at 5 km altitude a) at 1915 UTC, b) at 1930 UTC, and c) at 1945 UTC; d) Vertical profile of 
+horizontal wind magnitude (m/s). The symbols in Fig. 12 a – c indicate the location used to plot the thermodynamic diagram and the vertical profile of 
+wind magnitude. 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 10
+Atmospheric Research 299 (2024) 107223
+10
+evaporation of the liquid content caused an intensification of the 
+downdraughts, which was simulated as a localized outflow ahead 
+westward of the fire front of Pedr ´og ˜ao Grande fire. 
+This study provides important insights into the numerical modelling 
+of fire-generated thunderstorms. We proved that the Meso-NH/ForeFire 
+code can represent adequately the development of a fire-generated 
+thunderstorm. 
+Aspects not covered in this study will be the focus of future research. 
+These include the use of the Meso-NH/ForeFire code in the two-way 
+mode, which will allow to study and evaluate the fire front evolution 
+the local rate of spread, as well as investigate the coupled impact of a fire 
+that would have started in different configuration and the associated 
+potential predictability of the phenomenon using fully-coupled code in 
+regards to this reference simulation. Finally, the use of a two-moment 
+bulk microphysical scheme is advisable, since the physical phenomena 
+related to the presence of fire aerosols are important aspects of pyroCb 
+cloud systems and influence their impact on the atmosphere at all 
+involved scales. 
+To conclude, this study demonstrates the significant contributions 
+that numerical simulations, particularly using the Meso-NH/ForeFire 
+code, can make to our understanding of severe wildfire events and 
+pyro-convection. As a next step, we are now focusing on an analysis of 
+fire behavior using a fully coupled model. 
+CRediT authorship contribution statement 
+Flavio Tiago Couto: Conceptualization, Methodology, Software, 
+Visualization, Investigation, Formal analysis, Writing – original draft, 
+Supervision, Project administration, Funding acquisition. Jean-Baptiste 
+Filippi: Conceptualization, Methodology, Software, Resources, Super -
+vision, Data curation, Writing – review & editing, Funding acquisition. 
+Roberta Baggio: Software, Data curation, Writing – review & editing. 
+C ´atia Campos: Conceptualization, Data curation, Methodology, Soft -
+ware, Validation, Visualization, Formal analysis, Investigation, Writing 
+– review & editing. Rui Salgado: Resources, Writing – review & editing, 
+Project administration, Funding acquisition. 
+Declaration of competing interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Data availability 
+Data will be made available on request. 
+Acknowledgments 
+This research was funded by the national funds through FCT - 
+Foundation for Science and Technology, I.P. under the PyroC.pt project 
+(Refs. PCIF/MPG/0175/2019), ICT project (Refs. UIDB/04683/2020 
+and UIDP/04683/2020) and also by European Union through the Eu -
+ropean Regional Development Fund in the framework of the Interreg V A 
+Spain - Portugal program (POCTEP) through the CILIFO project (Ref.: 
+0753-CILIFO-5-E), FIREPOCTEP project (0756-FIREPOCTEP-6-E), RH. 
+VITA project (ALT20-05-3559-FSE-000074), H2020 FIRE-RES (GA: 
+101037419). The authors are grateful to the European Centre for 
+Medium-Range Weather Forecasts (ECMWF) for the provided meteo -
+rological analysis and the supercomputing center of the University of 
+Corsica under grant PIA UNITI ANR-22-EXES-0016 for their support on 
+the coupled simulation computation. 
+References 
+Anderson, H.E., 1982. Aids to determining fuel models for estimating fire behavior. Gen. 
+Tech. Rep. INT-122. U.S. Department of Agriculture, Forest Service, Intermountain 
+Forest and Range Experiment Station, Ogden, Utah, p. 22 . 
+Badlan, R.L., Sharples, J.J., Evans, J.P., McRae, R.H.D., 2021a. Factors influencing the 
+development of violent pyroconvection. Part I: fire size and stability. Int. J. Wildland 
+Fire 30 (7). https://doi.org/10.1071/WF20040 . 
+Badlan, R.L., Sharples, J.J., Evans, J.P., McRae, R.H.D., 2021b. Factors influencing the 
+development of violent pyroconvection. Part II: fire geometry and intensity. Int. J. 
+Wildland Fire 30 (7). https://doi.org/10.1071/WF20041 . 
+Baggio, R., Filippi, J.B., Truchot, B., Couto, F.T., 2022. Local to continental scale coupled 
+fire-atmosphere simulation of large industrial fire plume. Fire Saf. J. 103699 https:// 
+doi.org/10.1016/j.firesaf.2022.103699 . 
+Campos, C., Couto, F.T., Filippi, J.-B., Baggio, R., Salgado, R., 2023. Modelling pyro- 
+convection phenomenon during a mega-fire event in Portugal. Atmos. Res. 290, 
+106776 https://doi.org/10.1016/j.atmosres.2023.106776 . 
+Champeaux, J.-L., Han, K.-S., Geiger, B., Masson, V., 2005. Ecoclimap 2: a new approach 
+at global scale for ecosystems mapping and associated surface parameters database 
+Fig. 13. Thermodynamic diagram simulated with 80 m horizontal resolution 
+near Pedr ´og ˜ao Grande fire on 17 June 2017 a) at 1500 UTC, and b) at 
+1900 UTC. 
+F.T. Couto et al.                                                                                                                                                                                                                                 
+
+PAGE 11
+Atmospheric Research 299 (2024) 107223
+11
+using SPOT/VEGETATION data. In: ECMWF/ELDAS Workshop on Land Surface 
+Assimilation, 8-11 November 2004 . 
+Chang, D., Cheng, Y., Reutter, P., Trentmann, J., Burrows, S.M., Spichtinger, P., 
+Nordmann, S., Andreae, M.O., P ¨oschl, U., Su, H., 2015. Comprehensive mapping and 
+characteristic regimes of aerosol effects on the formation and evolution of pyro- 
+convective clouds. Atmos. Chem. Phys. 15, 10325 – 10348. https://doi.org/10.5194/ 
+acp-15-10325-2015 . 
+Cheremisin, A.A., Marichev, V.N., Bochkovskii, D.A., et al., 2022. Stratospheric Aero-sol 
+of Siberian Forest fires according to Lidar Observations in Tomsk in August 2019. 
+Atmos. Ocean Opt. 35, 57 – 64. https://doi.org/10.1134/S1024856022010043 . 
+Couto, F.T., Iakunin, M., Salgado, R., Pinto, P., Viegas, T., Pinty, J.-P., 2020. Light-ning 
+modelling for the research of forest fire ignition in Portugal. Atmos. Res. 242, 
+104993 https://doi.org/10.1016/j.atmosres.2020.104993 . 
+Couto, F.T., Santos, L.M.S., Campos, C., Andrade, N., Purificaç ˜ao, C., Salgado, R., 2022. Is 
+Portugal starting to Burn all Year Long? The Transboundary Fire in January 2022. 
+Atmosphere 13 (10). https://doi.org/10.3390/atmos13101677 . 
+Cunningham, P., Reeder, M.J., 2009. Severe convective storms initiated by intense 
+wildfires: Numerical simulations of pyro-convection and pyro-tornadogenesis. 
+Geophys. Res. Lett. 36, L12812. https://doi.org/10.1029/2009GL039262 . 
+Cuxart, J., Bougeault, P., Redelsperger, J.-L., 2000. A turbulence scheme allowing for 
+meso-scale and large-eddy simulations. Q. J. R. Meteorol. Soc. 126, 1 – 30. https:// 
+doi.org/10.1002/qj.49712656202 . 
+Dowdy, A.J., Ye, H., Pepler, A., et al., 2019. Future changes in extreme weather and 
+pyroconvection risk factors for Australian wildfires. Sci. Rep. 9, 10073. https://doi. 
+org/10.1038/s41598-019-46362-x . 
+Filippi, J.-B., Bosseur, F., Mari, C., Lac, C., Le Moigne, P., Cuenot, B., Veynante, D., 
+Cariolle, D., Balbi, J.-H., 2009. Coupled atmosphere – wildland fire modelling. J. Adv. 
+Model. Earth Syst. 2 https://doi.org/10.3894/JAMES.2009.1.11 . 
+Filippi, J.-B., Bosseur, F., Pialat, X., Santoni, P.-A., Strada, S., Mari, C., 2011. Simulation 
+of coupled Fire/Atmosphere Interaction with the MesoNH-ForeFire Models. J. Comb. 
+Des. 2011, 1 – 13. https://doi.org/10.1155/2011/540390 . 
+Filippi, J.-B., Bosseur, F., Mari, C., Lac, C., 2018. Simulation of a large Wildfire in a 
+coupled Fire-Atmosphere Model. Atmosphere. 9 (6), 218. https://doi.org/10.3390/ 
+atmos9060218 . 
+Fromm, M., Tupper, A., Rosenfeld, D., Servranckx, R., McRae, R., 2006. Violent pyro- 
+convective storm devastates Australia ’ s capital and pollutes the stratosphere. 
+Geophys. Res. Lett. 33, L05815. https://doi.org/10.1029/2005GL025161 . 
+Fromm, M., Lindsey, D.T., Servranckx, R., Yue, G., Trickl, T., Sica, R., Doucet, P., Godin- 
+Beekmann, S., 2010. The Untold Story of Pyrocumulonimbus. Bull. Am. Meteorol. 
+Soc. 91 (9), 1193 – 1210. https://doi.org/10.1175/2010BAMS3004.1 . 
+Fromm, M.D., Servranckx, R., 2003. Transport of forest fire smoke above the tropo-pause 
+by supercell convection. Geophys. Res. Lett. 30, 1542. https://doi.org/10.1029/ 
+2002GL016820 . 
+Fromm, M.D., Kablick, G.P., Peterson, D.A., Kahn, R.A., Flower, V.J.B., Seftor, C.J., 2021. 
+Quantifying the source term and uniqueness of the August 12, 2017 Pacific 
+Northwest pyroCb event. J. Geophys. Res. Atmos. 126 https://doi.org/10.1029/ 
+2021JD034928 e2021JD034928.  
+Gerasimov, V.V., Zuev, V.V., Savelieva, E.S., 2019. Traces of Canadian pyrocumulo- 
+nimbus clouds in the stratosphere over Tomsk in June-July, 1991. Atmos. Ocean 
+Opt. 32, 316 – 323. https://doi.org/10.1134/S1024856019030096 . 
+Giannaros, T.M., Papavasileiou, G., Lagouvardos, K., Kotroni, V., Dafis, S., Karagi- 
+annidis, A., Dragozi, E., 2022. Meteorological analysis of the 2021 extreme wild-fires 
+in greece: lessons learned and implications for early warning of the potential for 
+pyroconvection. Atmosphere. 13 (3), 475. https://doi.org/10.3390/ 
+atmos13030475 . 
+Guerreiro, J., Fonseca, C., Salgueiro, A., Fernandes, P., Lopez Igl ´esias, E., de Neufville, R., 
+Mateus, F., Castellnou Ribau, M., Sande Silva, J., Moura, J.M., et al., 2018. Avalia- 
+ç ˜ao dos Inc ˆendios Ocorridos Entre 14 e 16 de Outubro de 2017 em Portugal 
+Continen-tal. In: Relat ´orio Final; CTI Report 2018. Comiss ˜ao T ´ecnica Independente 
+(CTI), Assem-Bleia da República, Lisboa, Portugal, p. 274 . 
+Khaykin, S., Legras, B., Bucci, S., et al., 2020. The 2019/20 Australian wildfires gener- 
+ated a persistent smoke-charged vortex rising up to 35 km altitude. Commun. Earth 
+Environ. 1, 22. https://doi.org/10.1038/s43247-020-00022-5 . 
+Kingsmill, D.E., French, J.R., Lareau, N.P., 2023. In situ microphysics observations of 
+intense pyroconvection from a large wildfire. Atmos. Chem. Phys. 23, 1 – 21. https:// 
+doi.org/10.5194/acp-23-1-2023 . 
+Lac, C., Chaboureau, J.-P., Masson, V., Pinty, J.-P., Tulet, P., Escobar, J., Leriche, M., 
+Barthe, C., Aouizerats, B., Augros, C., Aumond, P., Auguste, F., Bechtold, P., 
+Berthet, S., Bielli, S., Bosseur, F., Caumont, O., Cohard, J.-M., Colin, J., Couvreux, F., 
+2018. Overview of the Meso-NH model version 5.4 and its applications. Geosci. 
+Model Dev. 11 (5), 1929 – 1969. https://doi.org/10.5194/gmd-11-1929-2018 . 
+Lang, T.J., Rutledge, S.A., Dolan, B., Krehbiel, P., Rison, W., Lindsey, D.T., 2014. 
+Lightning in Wildfire Smoke Plumes Observed in Colorado during Summer 2012. 
+Mon. Weather Rev. 142 (2), 489 – 507. https://doi.org/10.1175/mwr-d-13-00184.1 . 
+Lareau, N.P., Nauslar, N.J., Abatzoglou, J.T., 2018. The Carr fire vortex: a case of 
+pyrotornadogenesis? Geophys. Res. Lett. 45, 13,107 – 13,115. https://doi.org/ 
+10.1029/2018GL080667 . 
+Lareau, N.P., Nauslar, N.J., Bentley, E., Roberts, M., Emmerson, S., Brong, B., Mehle, M., 
+Wallman, J., 2022. Fire-Generated Tornadic Vortices. Bull. Am. Meteorol. Soc. 103 
+(5), E1296 – E1320. https://doi.org/10.1175/BAMS-D-21-0199.1 . 
+Linley, G.D., Jolly, C.J., Doherty, T.S., Geary, W.L., Armenteras, D., Belcher, C.M., Bliege 
+Bird, R., Duane, A., Fletcher, M.-S., Giorgis, M.A., Haslem, A., Jones, G.M., Kelly, L. 
+T., Lee, C.K.F., Nolan, R.H., Parr, C.L., Pausas, J.G., Price, J.N., Regos, A., Nimmo, D. 
+G., 2022. What do you mean, ‘megafire ’ ? Glob. Ecol. Biogeogr. 31, 1906 – 1922. 
+https://doi.org/10.1111/geb.13499 . 
+Luderer, G., Trentmann, J., Winterrath, T., Textor, C., Herzog, M., Graf, H.F., An- 
+dreae, M.O., 2006. Modeling of biomass smoke injection into the lower stratosphere 
+by a large forest fire (Part II): sensitivity studies. Atmos. Chem. Phys. 6, 5261 – 5277. 
+https://doi.org/10.5194/acp-6-5261-2006 . 
+Masson, V., Le Moigne, P., Martin, E., Faroux, S., Alias, A., Alkama, R., Belamari, S., 
+Barbu, A., Boone, A., Bouyssel, F., Brousseau, P., Brun, E., Calvet, J.-C., Carrer, D., 
+Decharme, B., Delire, C., Donier, S., Essaouini, K., Gibelin, A.-L., Giordani, H., Ha- 
+bets, F., Jidane, M., Kerdraon, G., Kourzeneva, E., Lafaysse, M., Lafont, S., Lebeaupin 
+Brossier, C., Lemonsu, A., Mahfouf, J.-F., Marguinaud, P., Mokhtari, M., Morin, S., 
+Pigeon, G., Salgado, R., Seity, Y., Taillefer, F., Tanguy, G., Tulet, P., Vincendon, B., 
+Vionnet, V., Voldoire, A., 2013. The SURFEXv7.2 land and ocean surface platform 
+for coupled or offline simulation of earth surface variables and fluxes. Geosci. Model 
+Dev. 6, 929 – 960. https://doi.org/10.5194/gmd-6-929-2013 . 
+McCarthy, N., Guyot, A., Dowdy, A., McGowan, H., 2019. Wildfire and weather radar: a 
+review. J. Geohys. Res. D. 124, 266 – 286. https://doi.org/10.1029/2018JD029285 . 
+McRae, R.H.D., Sharples, J.J., Fromm, M., 2015. Linking local wildfire dynamics to 
+pyroCb development. Nat. Hazards Earth Syst. Sci. 15, 417 – 428. https://doi.org/ 
+10.5194/nhess-15-417-2015 . 
+Mlawer, E.J., Taubman, S.J., Brown, P.D., Iacono, M.J., Clough, S.A., 1997. Radiative 
+transfer for inhomogeneous atmospheres: RRTM, a validated correlated-k model for 
+the longwave. J. Geophys. Res. 102 (D14), 16 663 – 16 682. https://doi.org/10.1029/ 
+97JD00237 . 
+Peterson, D.A., Hyer, E.J., Campbell, J.R., Solbrig, J.E., Fromm, M.D., 2017. 
+A Conceptual Model for Development of intense Pyrocumulonimbus in Western 
+North America. Mon. Weather Rev. 145 (6), 2235 – 2255. https://doi.org/10.1175/ 
+MWR-D-16-0232.1 . 
+Peterson, D.A., Campbell, J.R., Hyer, E.J., et al., 2018. Wildfire-driven thunderstorms 
+cause a volcano-like stratospheric injection of smoke. npj. Clim. Atmos. Sci. 1, 30. 
+https://doi.org/10.1038/s41612-018-0039-3 . 
+Peterson, D.A., Fromm, M.D., McRae, R.H.D., et al., 2021. Australia ’ s Black Summer 
+pyrocumulonimbus super outbreak reveals potential for increasingly extreme 
+stratospher-ic smoke events. npj. Clim. Atmos. Sci. 4, 38. https://doi.org/10.1038/ 
+s41612-021-00192-9 . 
+Pinto, P., Silva, 
+´
+A.P., Viegas, D.X., Almeida, M., Raposo, J., Ribeiro, L.M., 2022. Influence 
+of convectively driven flows in the course of a large fire in Portugal: the Case of 
+Pedr ´og ˜ao Grande. Atmosphere 2022 (13), 414. https://doi.org/10.3390/ 
+atmos13030414 . 
+Pinty, J.-P., Jabouille, P., 1998. A mixed-phase cloud parameterization for use in a 
+mesoscale non-hydrostatic model: Simulations of a squall line and of orographic 
+precipi-tation. In: Bull. Am. Meteorol. Soc. Proc. Conf. of Cloud Physics, Everett, WA, 
+USA . 
+Ranjbar, K., O'Neill, N.T., Lutsch, E., McCullough, E.M., AboEl-Fetouh, Y., Xian, P., 
+Strong, K., Fioletov, V.E., Sesins, G., Abboud, I., 2019. Extreme smoke event over the 
+high Arctic. Atmos. Environ. 218, 117002 https://doi.org/10.1016/j. 
+atmosenv.2019.117002 . 
+Report, C.T.I., 2017. 2017. In: An ´alise e Apuramento dos Factos Relativos Aos Inc ˆendios 
+Que Ocorreram Em Pedr ´og ˜ao Grande, Castanheira de Pera, Ansi ˜ao, Alvai ´azere, 
+Figueir ´o dos Vinhos, Arganil, G ´ois, Penela, Pampilhosa da Serra, Oleiros e Sert ˜a, 
+Entre 17 e 24 de Junho de 2017. Comiss ˜ao T ´ecnica Independente (CTI), Assembleia 
+da República, Lis-boa, Portugal, p. 296 . 
+Reutter, P., Trentmann, J., Seifert, A., Neis, P., Su, H., Chang, D., Herzog, M., Wernli, H., 
+Andreae, M.O., P ¨oschl, U., 2014. 3-D model simulations of dynamical and mi- 
+crophysical interactions in pyroconvective clouds under idealized conditions. Atmos. 
+Chem. Phys. 14, 7573 – 7583. https://doi.org/10.5194/acp-14-7573-2014 . 
+Rosenfeld, D., Fromm, M., Trentmann, J., Luderer, G., Andreae, M.O., Servranckx, R., 
+2007. The Chisholm firestorm: observed microstructure, precipitation and lightning 
+activity of a pyro-cumulonimbus. Atmos. Chem. Phys. 7, 645 – 659. https://doi.org/ 
+10.5194/acp-7-645-2007 . 
+Senande-Rivera, M., Insua-Costa, D., Miguez-Macho, G., 2022. Towards an atmosphere 
+more favourable to firestorm development in Europe. Environ. Res. Lett. 17 (9), 
+1748 – 9326, 094015. https://doi.org/10.1088/1748-9326/ac85ce . 
+Sharples and Hilton, 2020. Modeling vorticity-driven wildfire behavior using near-field 
+techniques. Front. Mech. Eng. 5, 69. https://doi.org/10.3389/fmech.2019.00069 . 
+Tarshish, N., Romps, D.M., 2022. Latent heating is required for firestorm plumes to reach 
+the stratosphere. J. Geophys. Res. Atmos. 127 https://doi.org/10.1029/ 
+2022JD036667 . 
+Tory, K.J., Thurston, W., Kepert, J.D., 2018. Thermodynamics of Pyrocumulus: a 
+Conceptual Study. Mon. Weather Rev. 146 (8), 2579 – 2598. https://doi.org/ 
+10.1175/MWR-D-17-0377.1 . 
+Trentmann, J., Luderer, G., Winterrath, T., Fromm, M.D., Servranckx, R., Textor, C., 
+Herzog, M., Graf, H.-F., Andreae, M.O., 2006. Modeling of biomass smoke injection 
+into the lower stratosphere by a large forest fire (part I): reference simulation. 
+Atmos. Chem. Phys. 6, 5247 – 5260. https://doi.org/10.5194/acp-6-5247-2006 . 
+University of Wyoming, 2017. Available online at: https://weather.uwyo.edu/upperair/ 
+sounding.html (last access on 03 March 2023).  
+Verrelle, A., Ricard, D., Lac, C., 2015. Sensitivity of high-resolution idealized simulations 
+of thunderstorms to horizontal resolution and turbulence parametrization. Q.J.R. 
+Meteorol. Soc. 141, 433 – 448. https://doi.org/10.1002/qj.2363 . 
+F.T. Couto et al.                                                                                                                                                                                                                                 

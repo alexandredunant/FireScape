@@ -1,0 +1,1520 @@
+PAGE 1
+Academic Editors: Vasile Rˇazvan
+Câmpu, Jiˇ rí Dvoˇ rák and Rudolf
+Alexandru Derczeni
+Received: 20 February 2025
+Revised: 6 March 2025
+Accepted: 9 March 2025
+Published: 11 March 2025
+Citation: Dinca, L.; Constandache,
+C.; Postolache, R.; Murariu, G.; Tupu,
+E. Timber Harvesting in Mountainous
+Regions: A Comprehensive Review.
+Forests 2025, 16, 495. https://doi.org/
+10.3390/f16030495
+Copyright: © 2025 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license
+(https://creativecommons.org/
+licenses/by/4.0/).
+Review
+Timber Harvesting in Mountainous Regions:
+A Comprehensive Review
+Lucian Dinca 1, Cristinel Constandache 1,*, Ruxandra Postolache 1, Gabriel Murariu 2
+ and Eliza T upu3
+1 National Institute for Research and Development in Forestry “Marin Dracea”, Eroilor 128, 077190 Voluntari,
+Romania; lucian.dinca@icas.ro (L.D.); ruxandra.postolache@icas.ro (R.P .)
+2 Department of Chemistry, Physics and Environment, Faculty of Sciences and Environmental, Dunarea de Jos
+University Galati, Domneasca Street no. 47, 800008 Galati, Romania; gmurariu@ugal.ro
+3 Natural Sciences Museum Complex “Răsvan Anghelu¸ tă” Galat,i, No. 11 Street Regimentul 11, 800340 Gala¸ ti,
+Romania; elizatupu2024@gmail.com
+* Correspondence: cristinel.constandache@icas.ro
+Abstract: Mountain ecosystems play a crucial role in providing ecosystem services, with
+some of the most important being carbon sequestration, biodiversity conservation, land
+protection, and water source preservation. Additionally, timber harvesting in these regions
+presents significant environmental, economic, and social challenges. This study provides a
+comprehensive bibliometric and systematic analysis of publications on timber harvesting
+in mountainous areas, examining the current state, global trends, key contributors, and
+the impact of forestry operations. A total of 357 publications on timber harvesting in
+mountainous areas have been identified, spanning from 1983 to 2024. These publications
+predominantly originate from the USA, Canada, Australia, and China, with additional
+contributions from European institutions. The research is published in leading forestry,
+ecology, and environmental science journals, highlighting its global impact. This study
+provides an in-depth bibliometric and systematic analysis, assessing research trends, key
+contributors, and their influence on scientific advancements in sustainable forestry and
+ecological conservation. These articles belong to the scientific fields of Environmental
+Science and Ecology, Forestry, Zoology, and Biodiversity Conservation, among others.
+They have been published in numerous journals, with the most frequently cited ones
+being Forest Ecology and Management, Journal of Wildlife Management, and Forests.
+The most frequently used keywords include dynamics, management, and timber harvest.
+The analysis of publications on timber harvesting in mountainous areas highlights the
+widespread use of primary harvesting methods, the negative effects of logging activities
+on soil, forest regeneration processes, and wildlife populations, as well as the role of
+advanced technologies in improving harvesting efficiency. While sustainable management
+practices, such as selective cutting and low-impact harvesting techniques, can mitigate
+some negative effects, concerns remain regarding soil erosion, habitat alteration, and carbon
+emissions. This analysis underscores the need for flexible forest management strategies that
+balance economic efficiency with ecological sustainability. Future research should focus on
+innovative harvesting techniques, adaptation measures to terrain and climate conditions,
+and the long-term impact of forestry activities on mountain ecosystems.
+Keywords: timber harvesting; forest disturbances; bibliometric review; mountain forests;
+biodiversity conservation
+Forests 2025, 16, 495 https://doi.org/10.3390/f16030495
+
+PAGE 2
+Forests 2025, 16, 495 2 of 28
+1. Introduction
+One of the main types of vegetation in the mountains is the montane forest. Mountain
+forests cover large areas of mountain ranges such as the Alps, Pyrenees, Balkans, and
+Carpathians in Europe; the Appalachian and Rocky Mountains in North America; the
+Australian Alps; the Guiana Highlands in South America; the mountains of Central Africa;
+and the Andes in South America. Additionally, other significant European mountain ranges,
+such as the Massif Central (France), the Jura Mountains (France and Switzerland), the
+Dinaric Alps (Southeastern Europe), the Scandinavian Mountains (Norway and Sweden),
+the Cantabrian Mountains (Spain), and the Scottish Highlands (UK), also host unique
+mountain forest ecosystems with their own specific forestry characteristics.
+The climate in mountainous regions strongly influences the distribution of forests,
+as temperatures decrease with increasing altitude, determining their distribution and
+characteristics. The most widespread forests are found at mid-altitudes, where precipitation
+and a temperate climate favor forest growth and development. At higher altitudes, the
+climate is harsher, with lower temperatures and stronger winds, which prevent tree growth
+and lead to a transition from forests to mountain shrubs, alpine tundra, and meadows [1].
+Montane forests occur between the submontane and subalpine zones. The elevation
+at which one habitat transitions into another varies globally, particularly by latitude. The
+upper limit of montane forests is often marked by a shift to hardier species that occur in
+less dense stands [ 2]. For example, in the Sierra Nevada of California, montane forests
+contain dense stands of lodgepole pine and red fir, while the Sierra Nevada subalpine zone
+features sparse stands of whitebark pine [3].
+Mountain ecosystems provide numerous ecosystem services, the most important being
+carbon storage, water resource protection, protection against natural hazards, recreation,
+and timber production [4–6].
+To maintain biodiversity and ensure the provision of multiple ecosystem services,
+various management activities and forestry operations (such as maintenance, silvicultural
+treatments, and product harvesting) are necessary. In many countries, under difficult
+terrain conditions, the costs of forest management and harvesting are not covered by timber
+revenues, and forest management that fails to cover costs threatens the long-term provision
+of ecosystem services [7].
+Bibliometric analysis is a widely used and systematic approach for examining exten-
+sive scientific data. It helps reveal the developmental trends within a particular domain
+while highlighting emerging research areas. This method is valuable for interpreting and
+organizing accumulated scientific knowledge in established disciplines by processing large
+sets of unstructured information effectively. Recently, bibliometric review techniques have
+gained traction due to advancements such as specialized software, interdisciplinary strate-
+gies, and enhanced data-handling capabilities [8]. Since bibliometric methods are inherently
+quantitative, they mitigate selection bias often found in systematic reviews. Additionally,
+they are effective in assessing journal impact, tracking co-authorship networks, analyzing
+co-citation patterns, and identifying foundational research themes within a field [9].
+So far, numerous review articles (including bibliometric reviews) have been published
+on mountain areas [10–13] and timber harvesting [14–16]. However, we have not identified
+any study that addresses both topics together. For this reason, and because we believe such
+a study would be valuable for researchers in these fields, we have undertaken this work.
+This study aims to provide a comprehensive review of timber harvesting in mountain-
+ous regions, with a focus on its environmental, economic, and management implications.
+Through a bibliometric and systematic analysis, the study aims to identify global research
+trends, key contributors, and the primary challenges associated with forestry operations
+in high-altitude forests. The purpose of this research is to assess the impact of timber
+
+PAGE 3
+Forests 2025, 16, 495 3 of 28
+harvesting on forest ecosystems, including soil stability, biodiversity, carbon sequestration,
+and water resources. Additionally, it seeks to evaluate existing harvesting methods, techno-
+logical advancements, and sustainable management practices that can enhance efficiency
+while minimizing ecological disturbances. By synthesizing existing knowledge, this study
+aims to inform policymakers, researchers, and forestry professionals on best practices for
+balancing timber production with conservation goals in mountainous environments.
+2. Materials and Methods
+To compile a bibliographic database on timber harvesting in mountainous regions,
+we utilized the Web of Science Core Collection, covering publications from 1 January
+1983 to 31 December 2024. This dataset provides insights into long-term research trends
+and the evolution of scientific contributions in this field. The primary source of Web of
+Science data and searches with the assumed keywords “logging in mountainous areas”
+for the aspects of types of publications, Web of Science categories, years of publication,
+geographic distribution, affiliated institutions, language of publication, journals, publishers,
+authorship, and keywords in publications are indicated.
+Data analysis was performed using Web of Science Core tools [17], Microsoft Office
+2016 Plus [18], and Geochart [19]. For visual mapping and cluster identification, VOSviewer
+(version 1.6.20) [20] was employed. Initial screening involved removing conference pa-
+pers, articles with ambiguous origins, irrelevant studies, and duplicate entries. Out of
+an initial 427 articles, 358 remained after filtering and underwent further analysis. This
+bibliometric assessment aimed to highlight emerging trends, key contributors, and sig-
+nificant insights into research articles, authors, and journals in this domain. Ten major
+aspects were examined: (1) publication types, (2) Web of Science categories, (3) publication
+years, (4) geographical distribution, (5) affiliated institutions, (6) language of publication,
+(7) journals, (8) publishers, (9) authorship, and (10) keywords.
+In interpreting the data, we incorporated terms such as Total Link Strength and Node
+Size. Total Link Strength, a concept frequently discussed in scientific literature, illustrates
+the extent of collaboration between researchers or the effectiveness of research groups.
+Evaluating an article’s Total Link Strength is crucial, as two key indicators determine its
+impact: the Links attribute and the Total Link Strength attribute. The Links attribute reflects
+the number of direct connections an article shares with other publications, whereas Total
+Link Strength assesses the overall intensity of those connections through co-authorship
+networks. For instance, in co-authorship analysis, the Links attribute quantifies the number
+of direct co-author relationships a researcher has, while Total Link Strength measures the
+overall strength of those connections within the academic landscape. This methodology
+enables the identification of research groups working on specialized topics and evaluates
+the role of collaborations in influencing scientific progress.
+For keyword analysis, the node size and the thickness of the connecting lines in the
+visual representation are directly proportional to the number of documents in which a
+given keyword appears. Colors indicate the respective clusters, while the connecting lines
+between nodes signify keyword co-occurrence. A shorter distance between nodes denotes
+a stronger relationship between the keywords.
+In the second phase of analysis, a traditional review method was employed to con-
+duct an in-depth examination of 358 articles. The results were classified into six primary
+categories: timber harvesting in mountain areas after disturbances; methods and programs
+used in timber harvesting in mountain areas; influence of timber harvesting in mountain
+areas on wildlife; influence of timber harvesting in mountain areas on soils; other influences
+of timber harvesting in mountain areas; timber harvesting systems in mountain areas
+(Figure 1).
+
+PAGE 4
+Forests 2025, 16, 495 4 of 28
+Forests 2025, 16, x FOR PEER REVIEW 4 of 29 
+ 
+ 
+other in ﬂuences of timber harvesting in mountain  areas; timber harvesting systems in 
+mountain areas (Figure 1). 
+ 
+Figure 1. Used methodology. 
+3. Results 
+3.1. A Bibliometric Review 
+A total of 358 publications on timber ha rvesting in mountainous areas have been 
+identiﬁed. The vast majority are articles (320 articles, accounting for 89% of the total pub-
+lications), followed by 28 proceedings papers (8%), nine reviews (3%), and one book chap-
+ter (Figure 2). 
+Figure 1. Used methodology.
+3. Results
+3.1. A Bibliometric Review
+A total of 358 publications on timber harvesting in mountainous areas have been
+identified. The vast majority are articles (320 articles, accounting for 89% of the total
+publications), followed by 28 proceedings papers (8%), nine reviews (3%), and one book
+chapter (Figure 2).
+Forests 2025, 16, x FOR PEER REVIEW 5 of 29 
+ 
+ 
+ 
+Figure 2. The composition of selected item database. 
+The analysis of publications related to ti mber harvesting in mountainous areas re-
+veals that the most proli ﬁc author in this ﬁeld is David Lindenmayer, with 10 articles, 
+followed by Hong He (six articles), Michael Aust (ﬁve articles), and W. M. Ford (ﬁve arti-
+cles). These contributions highlight signi ﬁcant research interest and expertise in the do-
+main. 
+Institutional aﬃliations indicate that the majority of publications originate from in-
+stitutions based in the United States. The top ﬁve institutions include the United States 
+Department of Agriculture (USDA) with 58 ar ticles, the United States Forest Service (55 
+articles), the United States Department of the Interior (31 articles), the United States Geo-
+logical Survey (22 articles), and Oregon State University (16 articles). Beyond North Amer-
+ica, notable contributions come from Australia (Australian National University, 12 arti-
+cles) and China (Chinese Academy of Sciences, 11 articles). In total, over 200 institutions 
+worldwide have contributed to this ﬁeld of study. 
+Regarding language distribution, the vast majority of articles (335) are published in 
+English, with smaller contributions in Polish (six articles), Russian (six articles), Czech 
+(two articles), and single entries in Croatian, German, and Portuguese. 
+The leading publishers in this research domain include Elsevier (98 articles), Wiley 
+(49 articles), Springer Nature (30 articles), MDPI (16 articles), Oxford University Press (11 
+articles), and Taylor & Francis (10 articles), among others, totaling over 80 di ﬀerent pub-
+lishers. 
+Figure 3 presents, in the form of a histogram, the main research ﬁelds that accounted 
+for over 84% of the published results between 1978 and 2025. The ﬁeld of Environmental 
+Science and Ecology leads with a share of ov er 26%, followed closely by Forestry, which 
+represents 25.7% of the total results. At a considerably lower percentage, the ﬁelds of Zo-
+ology (7.42%), Biodiversity Conservation (6.47%), and Geology (4.19%) follow. 
+89%
+8%
+3%
+0%
+Articles
+Proceeding papers
+Review articles
+Book chapters
+Figure 2. The composition of selected item database.
+
+PAGE 5
+Forests 2025, 16, 495 5 of 28
+The analysis of publications related to timber harvesting in mountainous areas reveals
+that the most prolific author in this field is David Lindenmayer, with 10 articles, followed
+by Hong He (six articles), Michael Aust (five articles), and W. M. Ford (five articles). These
+contributions highlight significant research interest and expertise in the domain.
+Institutional affiliations indicate that the majority of publications originate from in-
+stitutions based in the United States. The top five institutions include the United States
+Department of Agriculture (USDA) with 58 articles, the United States Forest Service (55 arti-
+cles), the United States Department of the Interior (31 articles), the United States Geological
+Survey (22 articles), and Oregon State University (16 articles). Beyond North America,
+notable contributions come from Australia (Australian National University, 12 articles) and
+China (Chinese Academy of Sciences, 11 articles). In total, over 200 institutions worldwide
+have contributed to this field of study.
+Regarding language distribution, the vast majority of articles (335) are published in
+English, with smaller contributions in Polish (six articles), Russian (six articles), Czech
+(two articles), and single entries in Croatian, German, and Portuguese.
+The leading publishers in this research domain include Elsevier (98 articles), Wiley
+(49 articles), Springer Nature (30 articles), MDPI (16 articles), Oxford University Press
+(11 articles), and Taylor & Francis (10 articles), among others, totaling over 80 different
+publishers.
+Figure 3 presents, in the form of a histogram, the main research fields that accounted
+for over 84% of the published results between 1978 and 2025. The field of Environmental
+Science and Ecology leads with a share of over 26%, followed closely by Forestry, which
+represents 25.7% of the total results. At a considerably lower percentage, the fields of
+Zoology (7.42%), Biodiversity Conservation (6.47%), and Geology (4.19%) follow.
+Forests 2025, 16, x FOR PEER REVIEW 6 of 29 
+ 
+ 
+Numbers of articles 
+ 
+Figure 3. Histogram of the main research ﬁelds. 
+Figure 4 shows the distribution of published contributions by year. A unimodal dis-
+tribution with an increasing trend can be observed. While between 1976 and 1995, only 26 
+articles were published (less than 5% of all selected articles), in the most recent period 
+(2020–2025), scientiﬁc production has reached a much higher level. However, statistical 
+analysis does not indicate a clear linear increasing trend (R2 = 0.624), nor is there a signif-
+icant dependence of the volume of scienti ﬁc production on time ( p = 0.47 > 0.05). This 
+suggests that interest in this ﬁeld has ﬂuctuated over time. 
+ 
+Figure 4. Representation of the number of publications by year. 
+Geographically, authors contributing to this research span 63 countries across ﬁve 
+continents (Figure 5). The United States leads in terms of published articles (194), followed 
+by Canada (51), Australia (26), and China (18). When considering research collaboration 
+Figure 3. Histogram of the main research fields.
+Figure 4 shows the distribution of published contributions by year. A unimodal
+distribution with an increasing trend can be observed. While between 1976 and 1995,
+only 26 articles were published (less than 5% of all selected articles), in the most recent
+period (2020–2025), scientific production has reached a much higher level. However,
+statistical analysis does not indicate a clear linear increasing trend (R2 = 0.624), nor is there
+
+PAGE 6
+Forests 2025, 16, 495 6 of 28
+a significant dependence of the volume of scientific production on time (p = 0.47 > 0.05).
+This suggests that interest in this field has fluctuated over time.
+Forests 2025, 16, x FOR PEER REVIEW 6 of 29 
+ 
+ 
+Numbers of articles 
+ 
+Figure 3. Histogram of the main research ﬁelds. 
+Figure 4 shows the distribution of published contributions by year. A unimodal dis-
+tribution with an increasing trend can be observed. While between 1976 and 1995, only 26 
+articles were published (less than 5% of all selected articles), in the most recent period 
+(2020–2025), scientiﬁc production has reached a much higher level. However, statistical 
+analysis does not indicate a clear linear increasing trend (R2 = 0.624), nor is there a signif-
+icant dependence of the volume of scienti ﬁc production on time ( p = 0.47 > 0.05). This 
+suggests that interest in this ﬁeld has ﬂuctuated over time. 
+ 
+Figure 4. Representation of the number of publications by year. 
+Geographically, authors contributing to this research span 63 countries across ﬁve 
+continents (Figure 5). The United States leads in terms of published articles (194), followed 
+by Canada (51), Australia (26), and China (18). When considering research collaboration 
+Figure 4. Representation of the number of publications by year.
+Geographically, authors contributing to this research span 63 countries across five
+continents (Figure 5). The United States leads in terms of published articles (194), followed
+by Canada (51), Australia (26), and China (18). When considering research collaboration
+strength, the highest ranked countries are England, the USA, and Indonesia. Based on Total
+Link Strength, the hierarchy is USA, Germany, and Australia (Table 1).
+Forests 2025, 16, x FOR PEER REVIEW 7 of 29 
+ 
+ 
+strength, the highest ranked countries are England, the USA, and Indonesia.  Based on 
+Total Link Strength, the hierarchy is USA, Germany, and Australia (Table 1). 
+ 
+Figure 5. Countries with authors of articles on timber harvesting in mountainous regions. 
+Table 1. The most representative countries where articles on timber harvesting in mountainous re-
+gions have been published. 
+Crt. No. Country Documents Citations Total Link 
+Strength 
+1 USA 183 5818 65 
+2 Germany 15 571 28 
+3 Australia 22 893 17 
+4 Switzerland 8 429 16 
+5 Canada 49 1175 15 
+6 Austria 7 255 14 
+7 China 18 266 14 
+8 Ukraine 3 260 13 
+9 Slovakia 4 170 11 
+10 Italy 14 277 10 
+11 Sweden 4 10 9 
+12 Iran 7 479 6 
+13 Japan 7 502 6 
+14 Poland 10 135 6 
+Table 1 illustrates the distribution of scientiﬁc publications across the most inﬂuential 
+journals covering timber harvesting in mountainous areas. Additionally, the table pro-
+vides an assessment of the Total Link Strength attribute, which quantiﬁes the intensity of 
+co-authorship connections between researchers and their collaborators. 
+The countries of origin of the authors who have published articles on this topic can 
+be grouped into nine clusters, each containing at least four countries (Figure 6). 
+Figure 5. Countries with authors of articles on timber harvesting in mountainous regions.
+
+PAGE 7
+Forests 2025, 16, 495 7 of 28
+Table 1. The most representative countries where articles on timber harvesting in mountainous
+regions have been published.
+Crt. No. Country Documents Citations Total Link
+Strength
+1 USA 183 5818 65
+2 Germany 15 571 28
+3 Australia 22 893 17
+4 Switzerland 8 429 16
+5 Canada 49 1175 15
+6 Austria 7 255 14
+7 China 18 266 14
+8 Ukraine 3 260 13
+9 Slovakia 4 170 11
+10 Italy 14 277 10
+11 Sweden 4 10 9
+12 Iran 7 479 6
+13 Japan 7 502 6
+14 Poland 10 135 6
+Table 1 illustrates the distribution of scientific publications across the most influential
+journals covering timber harvesting in mountainous areas. Additionally, the table provides
+an assessment of the Total Link Strength attribute, which quantifies the intensity of co-
+authorship connections between researchers and their collaborators.
+The countries of origin of the authors who have published articles on this topic can be
+grouped into nine clusters, each containing at least four countries (Figure 6).
+Forests 2025, 16, x FOR PEER REVIEW 8 of 29 
+ 
+ 
+ 
+Figure 6. Clusters of countries with authors of articles on timber harvesting in mountain areas. 
+The top ﬁve clusters are as follows: cluster 1: Ghana, Indonesia, Netherlands, Nor-
+way, China, Rwanda, South Africa, Tanzania, and Uganda; cluster 2: Belgium, Finland, 
+Hungary, Kazakhstan, Luxembourg, Madagascar, and Russia; cluster 3: Armenia, Geor-
+gia, Kyrgyzstan, Pakistan, Saudi Arabia, Sweden, and Ukraine; cluster 4: Australia, Can-
+ada, Chile, and India; cluster 5: Czech Republic, Germany, Poland, Slovakia, and Switzer-
+land. 
+The bibliometric analysis identi ﬁed signi ﬁcant research contributions from North 
+America (USA, Canada), Australia, and China, with additional input from European 
+countries such as Germany, Switzerland, and Austria. 
+The USA leads in total publications (194 articles), with major contributions from in-
+stitutions such as the United States Depart ment of Agriculture (USDA) and the United 
+States Forest Service. Canada follows with 51 publications, primarily from universities 
+and forestry research organizations. Austra lia and China contribute 26 and 18 articles, 
+respectively, focusing on sustainable logging practices and the impact of climate change 
+on mountainous forests. European research is distributed across multiple countries, with 
+Germany, Switzerland, and Austria playing signiﬁcant roles in advancing forest manage-
+ment technologies. 
+According to our statistics, the journals with the highest number of published articles 
+on this topic are as follows, based on the number of articles: Forest Ecology and Management, 
+Journal of Wildlife Management, and Forests. Based on Total Link Strength, the most signiﬁ-
+cant journals are Forest Ecology and Management, Journal of Wildlife Management, Biological 
+Conservation, and Journal of Hydrology (Table 2, Figure 7).  
+Figure 6. Clusters of countries with authors of articles on timber harvesting in mountain areas.
+The top five clusters are as follows: cluster 1: Ghana, Indonesia, Netherlands, Norway,
+China, Rwanda, South Africa, Tanzania, and Uganda; cluster 2: Belgium, Finland, Hungary,
+Kazakhstan, Luxembourg, Madagascar, and Russia; cluster 3: Armenia, Georgia, Kyrgyzs-
+
+PAGE 8
+Forests 2025, 16, 495 8 of 28
+tan, Pakistan, Saudi Arabia, Sweden, and Ukraine; cluster 4: Australia, Canada, Chile, and
+India; cluster 5: Czech Republic, Germany, Poland, Slovakia, and Switzerland.
+The bibliometric analysis identified significant research contributions from North
+America (USA, Canada), Australia, and China, with additional input from European
+countries such as Germany, Switzerland, and Austria.
+The USA leads in total publications (194 articles), with major contributions from in-
+stitutions such as the United States Department of Agriculture (USDA) and the United
+States Forest Service. Canada follows with 51 publications, primarily from universities
+and forestry research organizations. Australia and China contribute 26 and 18 articles,
+respectively, focusing on sustainable logging practices and the impact of climate change on
+mountainous forests. European research is distributed across multiple countries, with Ger-
+many, Switzerland, and Austria playing significant roles in advancing forest management
+technologies.
+According to our statistics, the journals with the highest number of published articles
+on this topic are as follows, based on the number of articles: Forest Ecology and Management ,
+Journal of Wildlife Management, and Forests. Based on Total Link Strength, the most signifi-
+cant journals are Forest Ecology and Management, Journal of Wildlife Management, Biological
+Conservation, and Journal of Hydrology (Table 2, Figure 7).
+Among the 2410 keywords, the most frequently used are dynamics, management, and
+timber harvest (Table 3).
+Table 2. The most representative journals where articles on timber harvesting in mountainous regions
+have been published.
+Crt.
+No. Journal Documents Citations Total Link Strength
+1 Forest Ecology and Management 53 2086 30
+2 Journal of Wildlife Management 12 418 9
+3 Biological Conservation 9 489 7
+4 Journal of Hydrology 5 897 7
+5 Ecological Applications 5 347 5
+6 Hydrological Processes 4 156 5
+7 Landscape Ecology 7 400 5
+8 Remote Sensing of Environment 4 374 5
+9 Wildlife Society Bulletin 4 105 4
+10 Canadian Journal of Forest Research 7 103 3
+11 Conservation Biology 3 230 3
+12 Environmental Research Letters 3 80 3
+13 Journal of Raptor Research 4 50 3
+14 Wildlife Monographs 3 137 3
+15 Forests 10 144 2
+With the help of the VOSviewer software, the keywords can be grouped into clus-
+ters, with the most significant being, in the first cluster: biodiversity, catchment, clear-cut,
+coarse woody debris, dynamics, impact, logging, mountains, patterns, responses, roads,
+small mammals, species richness, and timber harvest; the second cluster: biomass, climate-
+change, disturbance, Douglas fir, forests, forestry, forest management, growth, habitat
+selection, landscape, model, mountain pine beetle, timber, and vegetation; the third clus-
+ter: climate, ecosystem services, fire, impacts, management, regeneration, restoration,
+simulation succession, and wildfire (Figure 8).
+
+PAGE 9
+Forests 2025, 16, 495 9 of 28
+Forests 2025, 16, x FOR PEER REVIEW 9 of 29 
+ 
+ 
+Table 2. The most representative journals where articl es on timber harvesting in mountainous re-
+gions have been published. 
+Crt.  
+No. Journal Documents Citati ons Total Link Strength 
+1 Forest Ecology and Management 53 2086 30 
+2 Journal of Wildlife Management 12 418 9 
+3 Biological Conservation 9 489 7 
+4 Journal of Hydrology 5 897 7 
+5 Ecological Applications 5 347 5 
+6 Hydrological Processes 4 156 5 
+7 Landscape Ecology 7 400 5 
+8 Remote Sensing of Environment 4 374 5 
+9 Wildlife Society Bulletin 4 105 4 
+10 Canadian Journal of Forest Research 7 103 3 
+11 Conservation Biology 3 230 3 
+12 Environmental Research Letters 3 80 3 
+13 Journal of Raptor Research 4 50 3 
+14 Wildlife Monographs 3 137 3 
+15 Forests 10 144 2 
+ 
+Figure 7. The primary journals publishing research on timber harvesting in mountainous regions. 
+The node size and thickness of the connecting lines  are proportional to the number of documents 
+assigned to each country. The connections repr esent the collaboration network between research 
+institutions. 
+Among the 2410 keywords, the most frequently used are dynamics, management, 
+and timber harvest (Table 3).  
+Figure 7. The primary journals publishing research on timber harvesting in mountainous regions.
+The node size and thickness of the connecting lines are proportional to the number of documents
+assigned to each country. The connections represent the collaboration network between research
+institutions.
+Table 3. The most commonly appearing keywords in studies related to timber harvesting in moun-
+tainous regions.
+Crt. No. Keyword Occurrences Total Link
+Strength
+1 dynamics 38 134
+2 management 42 129
+3 forest management 40 114
+4 timber harvest 45 112
+5 disturbance 29 91
+6 fire 24 77
+7 forest 29 75
+8 conservation 30 73
+9 patterns 24 69
+10 growth 19 65
+11 impacts 22 64
+12 biodiversity 20 59
+13 climate change 17 56
+14 habitat 18 56
+15 abundance 18 54
+16 vegetation 15 45
+
+PAGE 10
+Forests 2025, 16, 495 10 of 28
+Forests 2025, 16, x FOR PEER REVIEW 10 of 29 
+ 
+ 
+Table 3. The most commonly appearing keywords in studies related to timber harvesting in moun-
+tainous regions. 
+Crt. No. Keyword Occurrences Total Link Strength 
+1 dynamics 38 134 
+2 management 42 129 
+3 forest management 40 114 
+4 timber harvest 45 112 
+5 disturbance 29 91 
+6 fire 24 77 
+7 forest 29 75 
+8 conservation 30 73 
+9 patterns 24 69 
+10 growth 19 65 
+11 impacts 22 64 
+12 biodiversity 20 59 
+13 climate change 17 56 
+14 habitat 18 56 
+15 abundance 18 54 
+16 vegetation 15 45 
+With the help of the VOSviewer software, the keywords can be grouped into clusters, 
+with the most signi ﬁcant being, in the ﬁrst cluster: biodiversity , catchment, clear-cut, 
+coarse woody debris, dynamics, impact, logging, mountains, pa tterns, responses, roads, 
+small mammals, species richness, and timber harvest; the second cluster: biomass, cli-
+mate-change, disturbance, Douglas ﬁr, forests, forestry, forest management, growth, hab-
+itat selection, landscape, model, mountain pi ne beetle, timber, and vegetation; the third 
+cluster: climate, ecosystem services, ﬁre, impacts, management, regeneration, restoration, 
+simulation succession, and wildﬁre (Figure 8). 
+ 
+Figure 8. Authors keywords concerning timber harvesting in mountainous regions. 
+Figure 8. Authors’ keywords concerning timber harvesting in mountainous regions.
+The progression of keyword usage over time reveals distinct trends: between 2009 and
+2012, commonly used terms included disturbance, model, selection, habitat, and abundance;
+from 2013 to 2015, the focus shifted to fire, impacts, landscape, management, and dynamics;
+whereas in the 2015–2017 period, keywords such as climate change, ecosystem services,
+wildfire, and mountain pine beetle gained prominence (Figure 9).
+Forests 2025, 16, x FOR PEER REVIEW 11 of 29 
+ 
+ 
+The progression of keyword usage over ti me reveals distinct trends: between 2009 
+and 2012, commonly used terms included distur bance, model, selection, habitat, and 
+abundance; from 2013 to 2015, the focus shifted to ﬁre, impacts, landscape, management, 
+and dynamics; whereas in the 2015–2017 period , keywords such as climate change, eco-
+system services, wildﬁre, and mountain pine beetle gained prominence (Figure 9). 
+ 
+Figure 9. Annual distribution of keywords concerning timber harvesting in mountainous regions. 
+3.2. Literature Review 
+3.2.1. Timber Harvesting in Mountain Areas After Disturbances 
+Following catastrophic disturbances, forest managers often implement salvage har-
+vesting to recover economic losses. However, when disturbances occur unpredictably, an 
+inherent option value emerges, representing the beneﬁt of delaying salvage operations to 
+gather more information about forest recovery. Analytical studies suggest that slower for-
+est recovery rates justify postponing salvage harvesting, whereas areas with high timber 
+value or where non-timber values are highly sensitive to dead and dying trees should be 
+harvested immediately [21]. 
+Forest disturbances signi ﬁcantly shape mountain ecosystems, in ﬂuencing forest re-
+generation, biodiversity, and carbon dynamics. Timber harvesting is often employed fol-
+lowing such disturbances to recover economic value, mitigate risks, and support ecologi-
+cal recovery. These disturbances can be catego rized as biotic and abiotic disasters, each 
+with distinct impacts and management considerations. 
+Biotic Disasters 
+Beetles 
+Salvage harvesting of mountain pine beetle-infested forests in the northern Colorado 
+Rocky Mountains o ﬀers economic and environmental bene ﬁts by utilizing otherwise 
+wasted resources, generating revenue, and reducing greenhouse gas emissions. While tra-
+ditional timber and bioenergy production are often managed separately, integrating both 
+can enhance resource eﬃciency. Although the market value of beetle-killed wood is rela-
+tively low and harvesting costs are high, salvage operations can still yield beneﬁcial green-
+house gas emission reductions [22]. 
+Figure 9. Annual distribution of keywords concerning timber harvesting in mountainous regions.
+3.2. Literature Review
+3.2.1. Timber Harvesting in Mountain Areas After Disturbances
+Following catastrophic disturbances, forest managers often implement salvage har-
+vesting to recover economic losses. However, when disturbances occur unpredictably, an
+inherent option value emerges, representing the benefit of delaying salvage operations
+
+PAGE 11
+Forests 2025, 16, 495 11 of 28
+to gather more information about forest recovery. Analytical studies suggest that slower
+forest recovery rates justify postponing salvage harvesting, whereas areas with high timber
+value or where non-timber values are highly sensitive to dead and dying trees should be
+harvested immediately [21].
+Forest disturbances significantly shape mountain ecosystems, influencing forest regen-
+eration, biodiversity, and carbon dynamics. Timber harvesting is often employed following
+such disturbances to recover economic value, mitigate risks, and support ecological recov-
+ery. These disturbances can be categorized as biotic and abiotic disasters, each with distinct
+impacts and management considerations.
+Biotic Disasters
+Beetles
+Salvage harvesting of mountain pine beetle-infested forests in the northern Colorado
+Rocky Mountains offers economic and environmental benefits by utilizing otherwise wasted
+resources, generating revenue, and reducing greenhouse gas emissions. While traditional
+timber and bioenergy production are often managed separately, integrating both can
+enhance resource efficiency. Although the market value of beetle-killed wood is relatively
+low and harvesting costs are high, salvage operations can still yield beneficial greenhouse
+gas emission reductions [22].
+In the southern Rocky Mountains, beetle outbreaks have transformed millions of
+hectares of lodgepole pine forests, setting them on new development trajectories. A study
+by Collins et al. [23] found that new seedling colonization occurred in both harvested and
+untreated stands, but seedling density—primarily lodgepole pine and aspen—was four
+times higher in harvested areas.
+Salvage harvesting is commonly used to remove disturbance-killed trees after bark
+beetle outbreaks, aiming to recover economic value, reduce the risk of further disturbances,
+and support ecosystem recovery [24,25]. While previous research has extensively examined
+salvage harvesting after fire events [ 26,27] and, to a lesser extent, windstorms [ 28,29],
+studies specifically addressing salvage harvesting in beetle-killed forests remain relatively
+scarce [30].
+Abiotic Disasters
+Fires
+Timber harvesting significantly influences fire regimes and landscape patterns, often
+deviating from natural disturbance dynamics. A study in China revealed that increased
+timber harvesting intensity led to reduced fine fuel loads and increased coarse fuel loads.
+While the potential burn area varied across different harvesting methods, fire frequency
+remained largely unchanged. However, timber harvesting generally increased fire risk.
+Notably, clear-cutting reduced the mean patch size and aggregation of larch forests while
+increasing these metrics for white birch forests. As a result, selective-cutting methods are
+recommended for sustainable forest management [31].
+Further research on post-fire vegetation recovery in areas with a history of fire sup-
+pression and timber harvesting indicated that these factors contributed to denser shrub
+regeneration but limited sapling recovery. This suggests that previous management actions
+significantly influence post-fire forest regeneration [32].
+Avalanches
+Clear-cut logging in mountainous terrain, such as in British Columbia, Canada, is
+creating new snow avalanche start zones. These zones have the potential to produce
+avalanches large enough to penetrate and destroy mature forest cover, highlighting the
+need for careful consideration of harvesting practices in avalanche-prone areas [33].
+
+PAGE 12
+Forests 2025, 16, 495 12 of 28
+3.2.2. Methods and Programs Used in Timber Harvesting in Mountain Areas
+Non-mechanized and obsolete harvesting systems reported the lowest efficiency and
+highest environmental footprint, whereas fully mechanized systems demonstrated the
+highest efficiency, fewer accidents, and minimal stand damage. Cable yarders remain the
+preferred extraction technology for steep terrains, but they require a well-developed road
+network. Increasing mechanization, improving road networks, knowledge transfer, and
+training forest workers are crucial for enhancing timber production efficiency in European
+mountain forests [34].
+Residue management after timber harvesting is typically conducted to mitigate fire
+hazards and create planting spots for seedlings, particularly on the eastern slopes of the
+Cascade Mountains in the Pacific Northwest. Traditionally, residue burning has been
+the standard practice, but air pollution concerns have prompted alternative approaches.
+Additionally, increasing awareness of wildlife habitat and nutrient retention has led to
+a shift towards leaving woody debris untreated on-site. However, the effects of these
+practices on seedlings and soil in drier mixed conifer forests remain understudied [35].
+Tree selection for extraction in mountainous areas presents a significant challenge
+due to the necessity of balancing forest management plans with operational feasibility.
+The use of cable yarding systems in steep terrain adds complexity and costs to harvesting
+operations. Furthermore, mountain forests serve a protective function against natural
+hazards, requiring decision-makers to consider both short-term and long-term impacts
+while optimizing economic efficiency [36].
+In South Italy’s Basilicata region, ArcGIS software 10.1 was used to plan timber
+harvesting in five mountainous broadleaf forest areas. Factors such as slope, watershed
+characteristics, and natural obstacles were analyzed to identify accessible forest areas, plan
+additional roads for optimized timber extraction, and determine site-specific harvesting
+methods and cutting intensities [37].
+A density-dependent matrix model (DM2) was developed in Korea for forest stands
+with varying conditions under different harvesting schemes. After validation with field
+data, the model proved effective in optimizing harvest strategies, taking into account stand
+growth, total timber yield, and size diversity over time [38].
+An interactive web-based 3D planning tool has been created to support the entire wood
+processing chain in mountainous regions. This tool reconstructs virtual forest environments
+with high accuracy, assisting stakeholders from tree marking to timber production in
+sawmills. It offers novel simulation, planning, and monitoring capabilities, accommodating
+the needs of all involved actors [39].
+To enhance cost-effectiveness in forestry, Switzerland has developed a spatial decision
+support system that allocates the most suitable harvesting methods to specific plots. This
+system considers hauling route limitations, extraction properties, and stand characteristics.
+The approach is based on productivity models and expert-defined decision trees [40].
+The SLOPE program integrates geospatial information by combining traditional laser
+scanning surveys with UAV-based aerial surveys. This approach enhances accuracy in
+timber harvesting planning and monitoring [41].
+3.2.3. Influence of Timber Harvesting in Mountain Areas on Wildlife
+The identified articles related to the researched aspect are presented in Table 4.
+
+PAGE 13
+Forests 2025, 16, 495 13 of 28
+Table 4. Animal species affected by timber harvesting in mountain areas identified in published
+articles on this topic.
+Cur.
+no. Species Geographical Area Cited by
+Invertebrates
+1 benthic invertebrate USA Hernandez et al., 2005 [42]
+Vertebrates
+Fish
+2 salmon Canada Baldigo et al., 2005 [43]
+Amphibians
+3 amphibians USA Harper et al., 2015; Barry et al.,
+2008; Biek et al., 2002 [44–46]
+Reptiles
+4 salamander USA Mahoney et al., 2016; Knapp
+et al., 2003 [47,48]
+Birds
+5 birds Argentina Zurita and Zuleta, 2009 [49]
+6 songbird species USA Weakland et al., 2002 [50]
+7 boreal owls ( Aegolius funereus) Canada Hayward, 1997 [51]
+8 northern spotted owl (Strix occidentalis
+caurina) USA Clark et al., 2013 [52]
+Mammals
+9 small mammals USA Perry and Thill, 2005;
+Horn et al., 1983 [53,54]
+10 bat USA Owen et al., 2004 [55]
+11 Allegheny woodrat ( Neotoma magister) USA Castleberry et al., 2001 [56]
+12 red squirrel ( T amiasciurus hudsonicus) USA Johnson et al., 2015 [57]
+13 yellow-bellied glider ( Petaurus australis) Australia Incoll et al., 2001 [58]
+14 caribou Canada Nobert et al., 2020 [59]
+15 red deer ( Cervus elaphus L.) Poland Bobek et al., 1984 [60]
+16 reindeer Sweden Parks et al., 2002 [61]
+17 bighorn sheep ( Ovis canadensis) USA Smith et al., 1999 [62]
+18 Leadbeater’s possum (Gymnobelideus
+leadbeateri). Australia Attiwill, 1995 [63]
+19 greater glider ( Petauroides volans) Australia McLean et al., 2018 [64]
+20 wolf ( Canis lupus) Canada Kuzyk et al., 2004 [65]
+21 bobcat ( Lynx rufus) USA McNitt et al., 2020 [66]
+22 black bear ( Ursus americanus) USA Mitchell and Powell, 2003 [67]
+23 grizzly bear Canada Ciarniello et al., 2005 [68]
+3.2.4. Influence of Timber Harvesting in Mountain Areas on Soils
+Timber harvesting in mountain areas influences most of the physical, chemical, or
+biological characteristics of soils or soil solutions, as observed in the articles extracted from
+the specialized literature, summarized in Table 5.
+
+PAGE 14
+Forests 2025, 16, 495 14 of 28
+Table 5. Soil characteristics influenced by timber harvesting in mountain areas.
+Cur.
+No. Soil Characteristics Specific Conditions Cited by
+1 bulk density 20-year period after timber harvesting Ezatti et al., 2012 [69]
+2 litterfall eucalyptus plantations cut Santiago et al., 2011 [70]
+3 microbial soil composition beech forests Dinca et al., 2021 [71]
+4 nitrogen in soil soils in Bavarian Alps Christophel et al., 2015 [72]
+5 porosity tilling compacted forest soils McNabb et al., 2001 [73]
+6 soil erosion topographically different regions Fielding et al., 2022 [74]
+7 soil moisture content landslides Satgada et al., 2023 [75]
+8 soil organic carbon montane ash forests in Australia Keith et al., 2014 [76]
+9 soil rutting effects of forwarder tire pressure Eliasson, 2005 [77]
+10 soil solution water flux data for precipitation and stream
+discharge Jewett et al., 1995 [78]
+11 soil structure general Froehlich et al., 1985 [79]
+12 water-holding capacity modern forestry vehicles Horn et al., 2004 [80]
+3.2.5. Additional Effects of Timber Harvesting in Mountain Areas
+Watersheds
+Timber harvesting represents one of the most significant human-driven disturbances
+in forested watersheds, with cleared areas producing between one to five times more
+erosion than undisturbed land [81]. When sediments from these areas enter streams, they
+can degrade water quality and aquatic ecosystems [82].
+Paired catchment studies have been utilized to evaluate how vegetation removal,
+including logging, influences streamflow patterns, particularly low and peak flows, as well
+as total annual water yield [83].
+Streams
+Research on timber harvesting and drainage basins has shown that variations in
+physical stream features play a crucial role in shaping the impact of logging within a given
+basin [84]. Large woody debris affects channel morphology, sediment transport, and overall
+stream geometry [85,86]. These changes occur through alterations in water flow at both the
+channel-unit scale [87,88] and across broader reach levels [89].
+Soil erosion
+Timber harvesting without adequate forestry best management practices (BMPs)
+can intensify soil degradation, potentially leading to reduced water quality and site
+productivity [74,90]. Studies indicate that infrastructure elements such as roads, skid
+trails, and stream crossings often expose bare soils, making them primary contributors to
+erosion [91–93].
+Net carbon emissions
+Accurate assessments of long-term carbon balance in forest harvesting require a full
+life-cycle analysis (LCA) framework. This includes evaluating changes in forest carbon
+stocks, transportation and processing of wood, carbon storage in wood-based products, and
+emissions reductions from substituting wood residues for fossil fuels or energy-intensive
+construction materials. Evaluating shifts in native forest carbon stocks necessitates examin-
+ing biomass accumulation over time, soil carbon dynamics, and wildfire impacts. Research
+in Australia suggests that managing native forests sustainably while utilizing biomass for
+wood products or energy can contribute to lowering national net carbon emissions [94].
+
+PAGE 15
+Forests 2025, 16, 495 15 of 28
+Microhabitat
+While timber harvesting has been recognized as an effective tool for enhancing polli-
+nator habitats, the role of microhabitats such as log landings remains underexplored. These
+open spaces, used for loading harvested logs, may provide key habitats in early succes-
+sional stands due to their open conditions and high floral abundance. Studies indicate
+that log landings contain roughly 14 times more floral resources than harvested interiors,
+supporting greater numbers of bees and butterflies. Findings suggest these areas function
+as essential resource hubs for pollinators [95].
+Landscape structure
+Examining shifts in landscape patterns due to roads and logging revealed limited
+overall impacts when considering entire landscapes. However, on lands designated for
+timber production, significant changes in forest fragmentation and structure were observed.
+Among the factors analyzed, roads exerted a greater influence on landscape alterations
+than logging activities [96].
+Forest
+Timber harvesting in mountain environments can also lead to damage affecting resid-
+ual trees, seedlings, and soil stability in these ecosystems [97,98].
+3.2.6. Timber Harvesting Systems in Mountain Areas
+Timber harvesting in mountainous areas presents significant challenges due to steep
+slopes, rough terrain, and accessibility constraints. The analysis of forestry operations
+worldwide indicates that mechanized logging is increasingly preferred in industrialized
+nations, whereas manual labor remains dominant in parts of the Asia-Pacific region [99].
+Modern timber extraction technologies, such as cable yarding, skidders, and self-propelled
+winches, have enhanced efficiency on steep slopes. Studies show that skidding is the most
+commonly used extraction method (75%), followed by cable yarding (15%) and forwarding
+(8%). However, the efficiency of mechanized logging is dependent on factors such as
+road network quality, operator expertise, and the physical characteristics of the harvested
+trees [34].
+Challenges in Mountainous Timber Harvesting:
+Increased power requirements for machinery movement on slopes; stability issues
+during logging and transportation; variation in soil types, including rocky and moisture-
+sensitive soils; influence of weather conditions, such as heavy rainfall and snowmelt, which
+can halt operations due to erosion risks; limitations imposed by tree volume and silvi-
+cultural requirements, sometimes preventing harvester use; shortages of skilled machine
+operators, impacting mechanized logging efficiency [100].
+The NEWFOR project has identified seven different technologies used in alpine condi-
+tions, ranging from basic chainsaw operations to advanced helicopter logging. The choice
+of logging system is heavily influenced by the density and quality of road infrastructure. In
+regions with poor road access, transporting felled timber to the nearest accessible landing
+site remains a significant bottleneck [101].
+Regional Insights:
+Cable yarding has a strong tradition in Central Europe, the Pacific Northwest (USA
+and Canada), and Japan, where technological advancements have led to more compact
+and efficient yarding systems [ 102]. The Appalachian region of the USA continues to
+rely on cable skidders, with extraction efficiency influenced by payload size and skidding
+distance [103].
+In Southern Italy, chainsaws combined with farm tractors or animal labor remain
+common, though studies suggest transitioning to purpose-built harvesting systems could
+increase efficiency and southern Italian harvesting operations should invest in purpose-
+
+PAGE 16
+Forests 2025, 16, 495 16 of 28
+built harvesting systems [104]. In Central Europe and in particular in the Alps, strongly
+related to the adoption of the cable-based harvesting system, are a large number of logging
+companies working with cable-based systems and in particular with four different standing
+skyline yarding technologies [105]. In Romania and Austria, skidders dominate in less
+challenging areas, whereas cable yarding is preferred for more difficult and sensitive
+sites [106,107]. In Poland, grand changes have also taken place in the field of skidding and
+timber transportation, shifting from horse-drawn carts to farm tractors and, recently, using
+specialist forwarders, equipped with cranes and hydraulic grabbers [108,109].
+A new method for harvesting in mountain areas is helicopter logging. In recent years,
+interest in helicopter logging has increased in the Italian Alps, especially in the Central
+Alps in Italy [110], Switzerland [111], and Austria [112]
+4. Discussion
+4.1. Existing Literature on Timber Harvesting in Mountain Areas
+We identified only two review articles published on timber harvesting in mountain
+areas, both from Australia: a review of the impacts of sustainable harvesting, non-harvest
+management, and wildfires on net carbon emissions from Australian native forests [94] and
+a review on managing stand structure as part of ecologically sustainable forest management
+in Australian mountain ash forests [113].
+If the dominant number of published articles is normal, what stands out in this case is
+the high number of proceedings papers (8% of the total number of publications), which is
+due to the large number of symposiums or other specialized meetings organized on this
+topic.
+The most prolific authors on this topic, ranked by the highest number of published
+articles, come from Australia, China, and the USA. Similarly, the countries with the highest
+number of authors have an almost identical structure: the USA, Canada, Australia, and
+China. The predominance of these regions is attributed to their large land areas (USA—
+fourth largest globally, Canada—second, Australia—sixth, China—third) as well as the
+significant proportion of forested land.
+This analysis underscores the pivotal role of scientific collaboration in advancing
+forestry research. Publications from North America and Europe have significantly shaped
+sustainable forest management policies, influencing climate adaptation strategies, biodi-
+versity conservation, and ecological modeling approaches. Additionally, research from
+China and Australia has contributed to advancements in remote sensing applications, forest
+inventory management, and the integration of AI-driven analytics in forestry. The strong
+international research networks and citation linkages indicate a growing interdisciplinary
+approach, merging environmental science, technology, and policymaking to improve timber
+harvesting practices while mitigating environmental impact.
+The top three publishers of articles on this topic are the well-known publishing houses
+Elsevier, Wiley, and Springer Nature. They are followed by MDPI, a more recent publishing
+house that is steadily catching up with the top three.
+The presence of journals in the environmental field (such as Environmental Science and
+Ecology, Forests, Biodiversity Conservation) at the top is expected, followed by journals related
+to fields affected by timber harvesting in mountain areas (Remote Sensing of Environment,
+Wildlife Society Bulletin, Hydrological Processes). However, the absence of journals specializing
+in timber exploitation from the top 15 journals is surprising.
+In general, the most frequently used keywords are dynamics, management, and timber
+harvest. More interesting, however, is the evolution of keyword usage over time: between
+2009 and 2012, commonly used terms were directly related to the subject; from 2013 to
+2015, terms related to fields affected by this activity were more frequently used; during
+
+PAGE 17
+Forests 2025, 16, 495 17 of 28
+the 2015–2017 period, predominant keywords were associated with highly publicized and
+researched phenomena, such as climate change and ecosystem services.
+4.2. Disturbances and Timber Harvesting in Mountain Areas
+Forest disturbances, whether natural or anthropogenic, play a crucial role in shaping
+mountain forest ecosystems. Climate-induced disturbances such as wildfires, storms, and
+bark beetle outbreaks have increased in frequency and severity, prompting widespread
+salvage logging. Salvage harvesting is often conducted to recover economically valuable
+timber, reduce perceived risk of subsequent disturbance, and enhance the recovery of
+disturbed areas [24,25]. However, its ecological implications remain a subject of debate.
+Timber harvesting can significantly influence fire regimes, altering fuel loads and
+landscape patterns. Studies indicate that intensive harvesting reduces fine fuel loads while
+increasing coarse fuel loads, potentially heightening fire risks [31]. Fire suppression and
+harvesting history further impact post-fire vegetation recovery, with increased shrub regen-
+eration and limited sapling recruitment in fire-prone forests [32]. While clear-cutting may
+reduce fire spread by fragmenting continuous fuel sources, selective logging is generally
+recommended for sustainable fire management.
+Bark beetle outbreaks have devastated millions of hectares of lodgepole pine forests
+in North America and Europe. Salvage harvesting following beetle infestations has been
+implemented to mitigate economic losses and reduce greenhouse gas emissions from
+decaying wood [ 22]. However, research suggests that beetle-killed stands experience
+natural seedling recruitment, with harvested areas exhibiting up to four times greater
+seedling density [23]. This highlights the need to balance economic gains with ecosystem
+regeneration potential when planning salvage operations.
+Windstorms are another major disturbance in mountain forests, leading to large-scale
+tree mortality. Salvage logging following windthrow events aims to recover marketable
+timber and reduce fuel loads that could exacerbate future disturbances. However, studies
+indicate that extensive removal of fallen trees disrupts natural nutrient cycling and habitat
+formation [28,29]. In some cases, leaving coarse woody debris in situ supports biodiver-
+sity by providing habitat for fungi, insects, and small mammals, crucial for maintaining
+ecological stability.
+Mountain forests play a vital role in stabilizing slopes and preventing landslides.
+Timber harvesting, particularly clear-cutting, can exacerbate soil instability, increasing
+landslide risks. Research highlights that landslide frequency is significantly higher in
+harvested areas compared to undisturbed forests [ 75]. Sustainable forest management
+practices, such as retaining buffer strips and employing low-impact harvesting techniques,
+are essential to mitigate these risks.
+Given the complex interactions between disturbances and timber harvesting, an
+adaptive management approach is necessary. This includes implementing selective logging
+techniques to maintain ecosystem integrity; prioritizing post-disturbance assessments to
+determine optimal harvesting strategies; enhancing monitoring programs to track long-
+term forest recovery and biodiversity impacts; integrating climate adaptation strategies to
+improve forest resilience against future disturbances.
+In conclusion, while timber harvesting in mountain areas following disturbances
+can provide economic benefits, it must be carefully managed to minimize ecological con-
+sequences. A balanced approach incorporating scientific research, sustainable forestry
+practices, and conservation principles is crucial for maintaining the long-term health and
+functionality of mountain forest ecosystems.
+
+PAGE 18
+Forests 2025, 16, 495 18 of 28
+4.3. The Role of Advanced T echnologies on Timber Harvesting in Mountain Areas
+A possible option for increasing the profitability of the forestry sector is the applica-
+tion of state-of-the-art harvesting and extraction techniques, specifically the most suitable
+harvesting methods [40]. The importance of improving timber harvesting efficiency and sus-
+tainable forest management strategies for multifunctional forests has also been highlighted
+by other authors [ 114], stating that such practices (by replacing fossil fuels) can retain
+significant amounts of carbon and that carbon sequestration through forest management is
+an effective way to reduce atmospheric CO2.
+The best suitable timber harvesting methods have been evaluated in several studies.
+Enache et al. [34] analyzed current forestry exploitation practices in European mountain
+forests. They highlighted that non-mechanized harvesting systems have the lowest ef-
+ficiency and the highest environmental footprint, while the use of mechanized systems
+increases efficiency and reduces the number of accidents and instances of tree stand dam-
+age. Cable systems (funiculars or aerial systems) are considered the most suitable timber
+harvesting technology in steep slope areas, but it is noted that a well-developed road
+network is necessary to transport machinery into the forest.
+Based on conducted studies, it can be concluded that through the consistent use of
+the most suitable timber harvesting methods or the improvement of technology, timber
+harvesting could become more profitable compared to current practices [ 40]. However,
+various ecological, political, social, and economic factors influence the choice of harvesting
+methods and systems [115].
+Recently, modern methods or software programs have been used, incorporating data
+or results regarding timber harvesting (Forest landscape model LANDIS PRO) [116], using
+LANDSAT data [117], and applying machine learning techniques and GIS [118,119].
+Forest wood harvesting in mountainous areas requires thorough and precise planning
+to prevent potential failures and challenges arising from the complex terrain. Factors
+such as steep slopes, limited accessibility, and the reliance on manual labor significantly
+impact costs but are not always fully considered at every stage due to the varying expertise
+and tools used by different stakeholders. While geographic information system (GIS)
+planning tools have proven valuable for analyzing spatial data in such environments,
+their specialized nature often hinders widespread adoption, particularly in a traditionally
+conservative industry like forestry.
+4.4. The Impact of Timber Extraction in Mountainous Regions on Biodiversity, Particularly on
+Wildlife Populations
+Timber harvesting in mountainous regions affects various components of forest ecosys-
+tems, with wildlife populations being one of the most extensively studied aspects. The
+majority of research suggests that timber extraction has a negative impact on animal species,
+primarily through habitat alteration and fragmentation.
+In the United States, forest management practices often incorporate methods that
+simulate natural canopy disturbances, such as prescribed burns and selective timber har-
+vesting. Numerous studies have examined the impact of these practices on various animal
+species. Conversely, research in Australia has predominantly focused on marsupials due to
+their ecological significance and geographic uniqueness.
+Certain timber harvesting practices that retain key components of mature forests
+distributed across the landscape may align with conservation objectives for some species.
+For instance, maintaining elements of mature forest has been found to be compatible with
+the conservation of boreal owls [ 51]. Additionally, research has demonstrated that the
+response of mammal populations to changes in forest structure due to biofuel production
+is complex and multifaceted. Although these harvesting methods may not drastically alter
+
+PAGE 19
+Forests 2025, 16, 495 19 of 28
+the abundance and distribution of individual small mammal species, they can influence
+the prevalence of common species such as deer mice and voles [120].
+Aquatic species, particularly fish such as salmon inhabiting mountain rivers, are also
+affected by timber harvesting. Changes in water chemistry, including shifts in acidity and
+increased concentrations of nitrate and inorganic monomeric aluminum, can significantly
+impact fish populations [43].
+Habitat modification due to timber extraction poses substantial challenges for forest-
+dwelling species. Amphibians, which are highly sensitive to fluctuations in temperature
+and moisture, can be particularly vulnerable to these environmental changes. The disrup-
+tion of critical microhabitats may lead to declines in amphibian populations, demonstrating
+the significant ecological consequences of logging activities.
+However, in some cases, wildlife populations may experience short-term increases
+following specific silvicultural treatments. For example, clear-cutting has been observed to
+initially boost the abundance and diversity of small mammal communities. A review by
+Kirkland [121] of 21 published studies documented this phenomenon, indicating that some
+species may temporarily benefit from the structural changes induced by clear-cutting.
+Furthermore, overstory removal techniques create early successional habitats charac-
+terized by scattered residual trees, sparse canopy cover, and a diverse understory composed
+of grasses, shrubs, and saplings [122,123]. These structurally complex environments pro-
+vide essential habitats for a range of wildlife species, including those of conservation
+concern [124,125]. This indirect effect of timber harvesting demonstrates how certain man-
+agement strategies can facilitate habitat diversity, ultimately supporting various wildlife
+species.
+Overall, the impact of timber harvesting on biodiversity in mountainous regions is
+multifaceted. While negative effects on wildlife populations are well documented, some
+species may benefit from specific forest management approaches. The challenge lies in
+balancing timber extraction with conservation efforts to ensure the long-term sustainability
+of mountain ecosystems and their diverse fauna.
+4.5. The Ecological Effects of Logging in Mountain Areas
+Timber harvesting in mountain areas significantly impacts various soil properties,
+as identified in the literature review. The alterations in soil bulk density, porosity, and
+structure following timber extraction influence long-term soil productivity and forest
+regeneration. For example, increased bulk density, as observed by Ezatti et al. [69], persists
+for up to 20 years post-harvest, limiting root penetration and water infiltration. Similarly,
+reductions in soil porosity due to soil compaction [73] further exacerbate these limitations.
+Changes in microbial soil composition are also evident, particularly in beech forests [71],
+which could have cascading effects on nutrient cycling and forest succession. Moreover,
+alterations in soil organic carbon levels [76] suggest a potential long-term impact on carbon
+sequestration capacity in harvested forests. The influence of timber harvesting on soil
+erosion is particularly pronounced in regions with steep slopes and varied topography [74],
+underscoring the necessity for effective soil conservation practices.
+Timber harvesting in mountain regions extends beyond soil properties, affecting
+watershed hydrology and stream dynamics. Studies indicate that logging significantly
+alters streamflow patterns, increasing peak flows and overall annual water yield due
+to reduced evapotranspiration [ 83]. Furthermore, sedimentation from harvested areas
+degrades water quality and disrupts aquatic ecosystems [82], raising concerns about the
+long-term sustainability of water resources. Large woody debris plays a critical role
+in maintaining stream morphology, sediment transport, and habitat complexity [ 85,86].
+
+PAGE 20
+Forests 2025, 16, 495 20 of 28
+However, the removal of such debris during timber harvesting disrupts these processes,
+necessitating strategies to preserve in-stream habitat structures.
+Soil erosion and carbon balance soil erosion following timber harvesting remain pri-
+mary concerns, particularly in areas where forestry best management practices (BMPs)
+are not adequately implemented [90]. The construction of logging roads and skid trails
+exposes bare soil, contributing significantly to erosion and sedimentation in nearby water
+bodies [91–93]. Given these challenges, erosion control measures such as replanting vegeta-
+tion and using sustainable harvesting techniques must be prioritized. Timber harvesting
+also influences carbon dynamics, with implications for net carbon emissions. A life-cycle
+analysis (LCA) approach suggests that sustainably managed forests can contribute to reduc-
+ing national carbon footprints, provided that harvested biomass is efficiently utilized [94].
+However, the potential loss of soil carbon stocks following timber harvesting warrants
+further investigation to ensure climate mitigation benefits.
+The role of timber harvesting in shaping microhabitats and biodiversity is complex.
+While clear-cut areas can enhance pollinator habitats [ 95], the broader ecological conse-
+quences, including habitat fragmentation and species displacement, must be carefully
+assessed. The presence of log landings as resource hubs for pollinators highlights the need
+for integrating biodiversity conservation strategies within timber harvesting plans. At the
+landscape scale, roads and logging activities contribute to structural changes in forested
+regions [96]. While overall landscape impacts may be limited, areas designated for timber
+production exhibit significant fragmentation, potentially affecting ecosystem connectivity
+and resilience.
+The ecological effects of logging in mountain areas are as follows. Logging in mountain
+regions leads to significant soil disturbance, which can decrease the long-term productivity
+of forested lands [126]. Key soil physical properties such as bulk density [ 79], pore size
+distribution or porosity [73], water-holding capacity [80], and soil rutting [77] are affected
+primarily due to heavy machinery use during harvesting [ 127]. Soil compaction from
+these operations reduces macropores, decreases infiltration capacity, and restricts water
+movement [128]. To mitigate soil disturbances, skidding should be confined to areas with
+gentle slopes, and alternative techniques like cable yarding should be implemented in
+steeper terrains [69].
+Logging also depletes essential nutrients from forest ecosystems. The removal of trees
+extracts nutrients stored in wood and bark, while slash-burning leads to nutrient losses
+through volatilization and erosion. Site disturbances, such as mechanical soil preparation,
+can cause substantial nutrient redistribution, potentially reducing long-term soil fertility
+unless adequate replenishment occurs [129,130].
+In tropical regions, roads and haulage tracks constructed for selective logging increase
+sedimentation and erosion [131]. Unchecked, these infrastructure elements can develop
+into gullies, leading to long-term degradation of watersheds. Additionally, while selective
+logging contributes to carbon emissions, it also facilitates tree regeneration and carbon
+recovery in some ecosystems [132].
+The additional environmental effects of timber harvesting, discussed in Section 3.2.5,
+reinforce the multifaceted impact of logging beyond soil and carbon dynamics. The influ-
+ence on watersheds is particularly concerning, as sedimentation degrades water quality
+and alters hydrological cycles. Stream morphology is directly affected by large woody
+debris removal, impacting sediment transport and aquatic habitats.
+The contribution of timber harvesting to net carbon emissions underscores the neces-
+sity of sustainable forest management. The utilization of biomass for energy production
+or long-lived wood products can partially offset emissions, but careful assessment of soil
+carbon dynamics and wildfire interactions is required.
+
+PAGE 21
+Forests 2025, 16, 495 21 of 28
+Microhabitat changes due to logging activities, such as log landings providing floral
+resources for pollinators, highlight the need for a balanced approach that integrates biodi-
+versity conservation. Landscape fragmentation caused by logging roads also necessitates
+strategic planning to minimize disruptions to forest connectivity and ecosystem resilience.
+Despite the comprehensive nature of this review, several limitations must be acknowl-
+edged. While this review highlights key trends in timber harvesting in mountainous
+regions, there is a lack of long-term empirical data on the ecological impacts of different
+harvesting methods. Many studies focus on short-term effects, leaving uncertainties about
+the recovery of forest ecosystems over decades. Furthermore, research on the combined
+effects of multiple disturbances—such as logging, climate change, and natural hazards
+(e.g., wildfires and landslides)—remains limited. Moreover, the economic feasibility of
+sustainable harvesting practices in mountain forests is not thoroughly examined. Many
+studies highlight environmental concerns, but fewer focus on balancing ecological sus-
+tainability with economic viability, particularly in regions where forestry operations are
+financially challenging due to difficult terrain and high extraction costs. Future research
+should address these gaps by conducting long-term ecological monitoring, incorporating
+interdisciplinary approaches, and integrating modern technologies into forest management
+strategies. Additionally, more studies should explore policy frameworks that incentivize
+sustainable harvesting while maintaining the economic viability of forestry operations in
+mountainous regions.
+Timber harvesting in mountainous regions significantly influences forest dynamics,
+affecting both ecological and socioeconomic aspects. Research indicates that timber extrac-
+tion alters forest development by impacting growing stock (standing volume) and future
+forest growth, thereby influencing the socioeconomic conditions in large parts of Central
+European mountain areas [133]. Additionally, studies have highlighted the susceptibility
+of advance growth—young trees established under the forest canopy—to damage during
+logging operations, with the extent of such damage varying substantially across differ-
+ent regions and harvesting practices [134]. These ecological disturbances underscore the
+need for sustainable forest management practices that balance timber production with the
+preservation of forest ecosystem integrity.
+4.6. Timber Harvesting Systems in Mountain Areas
+Efficiency of mechanized systems in mountain forestry: The findings highlight the
+dominance of cable-based extraction methods in mountain forestry due to their suitability
+for steep slopes. However, ground-based skidders and forwarders are becoming more
+common where terrain and road conditions permit. The increased mechanization of moun-
+tain logging brings benefits such as improved productivity, reduced labor intensity, and
+enhanced worker safety. However, it also presents challenges, including high investment
+costs, maintenance difficulties, and environmental concerns.
+Environmental and operational constraints: Mountain logging is highly susceptible
+to environmental constraints, including extreme weather conditions and soil sensitivity.
+Heavy rainfall and snowmelt can halt operations due to erosion risks, while steep slopes
+require specialized extraction methods. The presence of rocky substrates or moisture-
+retaining soils further complicates mechanized logging. Moreover, tree size plays a sig-
+nificant role in determining the feasibility of harvester use; overly large trees may require
+alternative extraction methods.
+The role of road infrastructure: A well-developed road network is crucial for efficient
+timber extraction. Cable yarders require road access at both the harvesting and landing
+sites to optimize operations. Poor road infrastructure significantly increases secondary
+extraction costs, as logs must be transported over greater distances to reach the nearest
+
+PAGE 22
+Forests 2025, 16, 495 22 of 28
+accessible landing. Investments in road construction and maintenance are essential for
+improving overall harvesting efficiency in mountain regions.
+Regional variations in harvesting practices: While mechanized logging dominates in
+North America, Central Europe, and parts of Asia, some regions still rely heavily on manual
+or semi-mechanized systems. In Southern Italy, for example, traditional logging methods
+persist due to economic and operational constraints. Studies suggest that transitioning to
+fully mechanized systems could improve efficiency and competitiveness in such regions.
+Helicopter logging has emerged as a viable alternative for extracting timber from remote
+and sensitive areas, particularly in the Alps. This method reduces ground disturbance and
+enables access to otherwise inaccessible locations. However, its high operational costs limit
+widespread adoption.
+Future directions and research needs. To improve the sustainability and efficiency of
+mountain timber harvesting, future research should focus on developing more adaptable
+and environmentally friendly harvesting technologies; improving road network planning
+to optimize extraction logistics; exploring alternative extraction methods, such as drone-
+assisted logging and improved winch systems; evaluating long-term ecological impacts of
+different harvesting methods to ensure sustainable forest management.
+In conclusion, while technological advancements have significantly improved timber
+harvesting efficiency in mountainous regions, operational constraints such as road access,
+environmental sensitivity, and workforce training remain key challenges. Addressing
+these issues through targeted investments and research can enhance the sustainability and
+productivity of mountain forestry operations.
+5. Conclusions
+This study provides a comprehensive bibliometric and systematic analysis of publi-
+cations on timber harvesting in mountainous areas, examining the current state, global
+trends, key contributors, and the impact of forestry operations. The analysis indicates that,
+although timber harvesting remains an important economic activity, it poses significant
+challenges related to soil erosion, biodiversity loss, water resource alteration, and carbon
+sequestration.
+The bibliometric analysis indicates that research on this topic has increased in re-
+cent decades, with significant contributions from the United States, Canada, Australia,
+and China. However, despite the wealth of literature on mountain forestry and timber
+harvesting separately, few studies integrate both topics holistically. The findings suggest
+that interdisciplinary approaches, combining forestry science, ecology, and technological
+innovations, are necessary to develop more sustainable harvesting practices.
+While technological advancements have improved logging efficiency and environmen-
+tal mitigation strategies, concerns remain regarding biodiversity loss, soil degradation, and
+carbon emissions. Various studies document how timber harvesting influences different
+wildlife species. The most commonly affected taxa include invertebrates, amphibians, rep-
+tiles, birds, and mammals. Studies also indicate that soil compaction is a significant concern
+in frequently logged areas, influencing long-term forest productivity; soil erosion rates in
+harvested areas can be 1.5 to five times higher than in undisturbed regions; the release of
+nitrogen and organic carbon following logging activities affects nutrient cycling and water
+quality in forested catchments. The role of timber harvesting in carbon cycling is widely
+debated. Research suggests that logging practices influence forest carbon storage, with
+selective harvesting mitigating emissions better than clear-cutting; the use of harvested
+timber for bioenergy production can partially offset emissions from logging activities;
+post-harvest regeneration strategies play a crucial role in determining the long-term carbon
+balance of logged forests.
+
+PAGE 23
+Forests 2025, 16, 495 23 of 28
+Sustainable forest management strategies, including selective logging, reduced-impact
+harvesting, and advanced monitoring techniques, are essential for mitigating these effects
+while maintaining economic viability.
+Future studies should focus on sustainable harvesting methods and their long-term
+ecological implications. Key takeaways from this review include the importance of adapting
+harvesting methods to steep terrain, optimizing road networks, and leveraging technologies
+such as GIS, remote sensing, and machine learning to enhance forest management efficiency.
+Additionally, research on the long-term ecological impacts of timber extraction remains
+limited, particularly regarding the recovery of forest ecosystems following disturbances
+such as logging, wildfires, and pest outbreaks.
+In conclusion, while timber harvesting in mountain forests is necessary for economic
+and resource management purposes, it must be carefully regulated to ensure long-term
+ecological sustainability. By integrating advanced technologies, policy frameworks, and
+sustainable management strategies, it is possible to achieve a balance between economic
+profitability and environmental conservation, ultimately supporting the resilience of moun-
+tain forest ecosystems in the face of climate change and human activities.
+Author Contributions: Conceptualization, L.D. and C.C.; methodology, L.D. and G.M.; software, R.P .;
+formal analysis, L.D., C.C. and G.M.; investigation, C.C., R.P . and E.T.; data curation, L.D. and E.T.;
+writing—original draft preparation, C.C., R.P . and G.M.; writing—review and editing, L.D. and G.M.
+All authors have read and agreed to the published version of the manuscript.
+Funding: This research received no external funding.
+Conflicts of Interest: The authors declare no conflicts of interest.
+References
+1. Mayor, J.R.; Sanders, N.J.; Classen, A.T.; Bardgett, R.D.; Clement, J.C.; Fajardo, A.; Lavorel, S.; Sundqvist, M.K.; Bahn, M.;
+Chisholm, C.; et al. Elevation alters ecosystem properties across temperate tree lines globally. Nature 2017, 542, 91–95. [CrossRef]
+[PubMed]
+2. Price, L.W. Mountains and Man: A Study of Process and Environment ; University of California Press: Berkeley, CA, USA, 1986; p. 271.
+ISBN 9780520058866.
+3. Rundel, P .W.; Parsons, D.J.; Gordon, D.T. Montane and subalpine vegetation of the Sierra Nevada and Cascade Ranges. In
+T errestrial Vegetation of California; Barbour, M.G., Major, J., Eds.; Wiley: New York, NY, USA, 1977; pp. 559–599.
+4. Aparecido, L.M.T.; Teodoro, G.S.; Mosquera, G.; Brum, M.; Barros, F.d.V .; Pompeu, P .V .; Rodas, M.; Lazo, P .; Müller, C.S.; Mulligan,
+M.; et al. Ecohydrological drivers of Neotropical vegetation in montane ecosystems. Ecohydrology 2018, 11, e1932. [CrossRef]
+5. Dinca, L.; Marin, M.; Radu, V .; Murariu, G.; Drasovean, R.; Cretu, R.; Georgescu, L.; Timis, -Gânsac, V . Which are the best site and
+stand conditions for silver fir (Abies alba Mill.) located in the Carpathian Mountains? Diversity 2022, 14, 547. [CrossRef]
+6. Murariu, G.; Dinca, L.; Tudose, N.; Crisan, V .; Georgescu, L.; Munteanu, D.; Dragu, M.D.; Rosu, B.; Mocanu, G.D. Structural
+characteristics of the main resinous stands from Southern Carpathians, Romania. Forests 2021, 12, 1029. [CrossRef]
+7. Bürgi, P .; Thomas, M.; Pauli, B.; Auer, N.Forstwirtschaftliches T estbetriebsnetz der Schweiz: Ergebnisse der Jahre 2014–2016; Bundesamt
+für Statistik: Wiesbaden, Germany, 2018; pp. 1–48.
+8. Donthu, N.; Kumar, S.; Mukherjee, D.; Pandey, N.; Lim, W.M. How to conduct a bibliometric analysis: An overview and
+guidelines. J. Bus. Res. 2021, 133, 285–296. [CrossRef]
+9. Baker, H.K.; Kumar, S.; Pattnaik, D. Twenty-five years of Review of Financial Economics: A bibliometric overview.Rev. Financ.
+Econ. 2020, 38, 3–23. [CrossRef]
+10. Dinca, L.; Crisan, V .; Ienasoiu, G.; Murariu, G.; Drasovean, R. Environmental Indicator Plants in Mountain Forests: A Review.
+Plants 2024, 13, 3358. [CrossRef]
+11. Palomo, I. Climate change impacts on ecosystem services in high mountain areas: A literature review. Mt. Res. Dev. 2017, 37,
+179–187. [CrossRef]
+12. Kräuchi, N.; Brang, P .; Schönenberger, W. Forests of mountainous regions: Gaps in knowledge and research needs. For. Ecol.
+Manag. 2000, 132, 73–82. [CrossRef]
+13. Mengist, W.; Soromessa, T.; Legese, G. Ecosystem services research in mountainous regions: A systematic literature review on
+current knowledge and research gaps. Sci. T otal. Environ. 2020, 702, 134581. [CrossRef]
+
+PAGE 24
+Forests 2025, 16, 495 24 of 28
+14. Moskalik, T.; Borz, S.A.; Dvoˇ rák, J.; Ferencik, M.; Glushkov, S.; Muiste, P .; Lazdin, š, A.; Styranivsky, O. Timber harvesting methods
+in Eastern European countries: A review. Croat. J. For. Eng. J. Theory Appl. For. Eng. 2017, 38, 231–241.
+15. McEwan, A.; Marchi, E.; Spinelli, R.; Brink, M. Past, present and future of industrial plantation forestry and implication on future
+timber harvesting technology. J. For. Res. 2020, 31, 339–351. [CrossRef]
+16. Lindroos, O.; La Hera, P .; Häggström, C. Drivers of advances in mechanized timber harvesting–a selective review of technological
+innovation. Croat. J. For. Eng. J. Theory Appl. For. Eng. 2017, 38, 243–258.
+17. Clarivate. Web of Science Core Collection. 2024. Available online: https://clarivate.com/products/scientific-and-academic-
+research/research-discovery-and-workflow-solutions/webofscience-platform/web-of-science-core-collection/ (accessed on 5
+January 2025).
+18. Microfosft. Microsoft Excel. 2024. Available online: https://www.microsoft.com/en-us/microsoft-365/excel?legRedir=true&
+CorrelationId=3bb60ab0-fe13-41a4-812b-2627667cf346 (accessed on 8 January 2025).
+19. Geochart. Available online: https://developers.google.com/chart/interactive/docs/gallery/geochart (accessed on 11 Jan-
+uary 2025).
+20. VOSviewer. Available online: https://www.vosviewer.com// (accessed on 7 January 2025).
+21. Sims, C. Optimal timing of salvage harvest in response to a stochastic infestation. Nat. Resour. Model. 2011, 24, 383–408. [CrossRef]
+22. She, J.; Chung, W.; Han, H. Economic and environmental optimization of the forest supply chain for timber and bioenergy
+production from beetle-killed forests in northern Colorado. Forests 2019, 10, 689. [CrossRef]
+23. Collins, B.J.; Rhoades, C.C.; Hubbard, R.M.; Battaglia, M.A. Tree regeneration and future stand development after bark beetle
+infestation and harvesting in Colorado lodgepole pine stands. For. Ecol. Manag. 2011, 261, 2168–2175. [CrossRef]
+24. Dale, V .H.; Joyce, L.A.; McNulty, S.; Neilson, R.P .; Ayres, M.P .; Flannigan, M.D.; Hanson, P .J.; Irland, L.C.; Lugo, A.E.; Peterson,
+C.J.; et al. Climate change and forest disturbances: Climate change can affect forests by altering the frequency, intensity, duration,
+and timing of fire, drought, introduced species, insect and pathogen outbreaks, hurricanes, windstorms, ice storms, or landslides.
+BioScience 2001, 51, 723–734. [CrossRef]
+25. Beschta, R.L.; Rhodes, J.J.; Kauffman, J.B.; Gresswell, R.E.; Minshall, G.W.; Karr, J.R.; Perry, D.A.; Hauer, F.R.; Frissell, C.A. Postfire
+management on forested public lands of the western United States. Conserv. Biol. 2004, 18, 957–967. [CrossRef]
+26. Donato, D.C.; Fontaine, J.B.; Campbell, J.L.; Robinson, W.D.; Kauffman, J.B.; Law, B.E. Post-wildfire logging hinders regeneration
+and increases fire risk. Science 2006, 311, 352. [CrossRef]
+27. Greene, D.F.; Gauthier, S.; Noël, J.; Rousseau, M.; Bergeron, Y. A field experiment to determine the effect of post-fire salvage on
+seedbeds and tree regeneration. Front. Ecol. Environ. 2006, 4, 69–74. [CrossRef]
+28. Rumbaitis del Rio, C.M. Changes in understory composition following catastrophic windthrow and salvage logging in a subalpine
+forest ecosystem. Can. J. For. Res. 2006, 36, 2943–2954. [CrossRef]
+29. Fraver, S.; Jain, T.; Bradford, J.B.; D’Amato, A.W.; Kastendick, D.; Palik, B.; Shinneman, D.; Stanovick, J. The efficacy of salvage
+logging in reducing subsequent fire severity in conifer-dominated forests of Minnesota, USA. Ecol. Appl. 2011, 21, 1895–1901.
+[CrossRef] [PubMed]
+30. Collins, B.; Rhoades, C.; Battaglia, M.; Hubbard, R. The effects of bark beetle outbreaks on forest development, fuel loads and
+potential fire behavior in salvage logged and untreated lodgepole pine forests. For. Ecol. Manag. 2012, 284, 260–268. [CrossRef]
+31. Chen, H.; Hu, Y.; Chang, Y.; Bu, R.; Li, Y.; Liu, M. Changes of forest fire regime and landscape pattern under different harvesting
+modes in a boreal forest of Northeast China. J. Arid. Land 2015, 7, 841–851. [CrossRef]
+32. Sterner, S.; Aslan, C.; Best, R.; Chaudhry, T. Forest management effects on vegetation regeneration after a high severity wildfire: A
+case study in the southern Cascade range. For. Ecol. Manag. 2022, 520, 120394. [CrossRef]
+33. Anderson, G.K. Snow Avalanche Penetration into Mature Forest. Ph.D. Thesis, University of British Columbia, Vancouver, BC,
+Canada, 2005.
+34. Enache, A.; Kühmaier, M.; Visser, R.; Stampfer, K. Forestry operations in the European mountains: A study of current practices
+and efficiency gaps. Scand. J. For. Res. 2016, 31, 412–427. [CrossRef]
+35. Zabowski, D.; Java, B.; Scherer, G.; Everett, R.; Ottmar, R. Timber harvesting residue treatment: Part 1. Responses of conifer
+seedlings, soils and microclimate. For. Ecol. Manag. 2000, 126, 25–34. [CrossRef]
+36. Sforza, F.; Ziesak, M.; Lingua, E.; Starke, M. Optimizing tree selection for planning cable yarding operations: A multi-objective
+modelling approach. For. Ecol. Manag. 2025, 578, 122489. [CrossRef]
+37. Pecora, G.; Moretti, N.; Dias, S.; Póvoa, O. Geographic information systems (GIS) as a tool for the optimization of timber
+harvesting in mountain regions forests. In Innovar y Producir Para el Futuro ; Fundacion General Univ Politecnica Madrid: Madrid,
+Spain, 2014; pp. 1534–1539.
+38. Shao, G.; Wang, F.; Dai, L.; Bai, J.; Li, Y. A density-dependent matrix model and its applications in optimizing harvest schemes.
+Sci. China T echnol. Sci. 2006, 49, 108–117. [CrossRef]
+
+PAGE 25
+Forests 2025, 16, 495 25 of 28
+39. Panizzoni, G.; Magliocchetti, D.; Prandi, F.; De Amicis, R. Interactive virtual planning tools for sustainable forest production in
+mountain areas. In International Conference on Human-Computer Interaction ; Springer International Publishing: Cham, Switzerland,
+2015; pp. 220–225.
+40. Bont, L.G.; Fraefel, M.; Frutig, F.; Holm, S.; Ginzler, C.; Fischer, C. Improving forest management by implementing best suitable
+timber harvesting methods. J. Environ. Manag. 2022, 302, 114099. [CrossRef]
+41. Prandi, F.; Magliocchetti, D.; Poveda, A.; De Amicis, R.; Andreolli, M.; Devigili, F. New Approach for forest inventory estimation
+and timber harvesting planning in mountain areas: The SLOPE project. Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci. 2016, 41,
+775–782. [CrossRef]
+42. Hernandez, O.; Merritt, R.W.; Wipfli, M.S. Benthic invertebrate community structure is influenced by forest succession after
+clearcut logging in southeastern Alaska. Hydrobiologia 2005, 533, 45–59. [CrossRef]
+43. Baldigo, B.P .; Murdoch, P .S.; A Burns, D. Stream acidification and mortality of brook trout (Salvelinus fontinalis) in response to
+timber harvest in Catskill Mountain watersheds, New York, USA. Can. J. Fish. Aquat. Sci. 2005, 62, 1168–1183. [CrossRef]
+44. Harper, E.B.; Patrick, D.A.; Gibbs, J.P . Impact of forestry practices at a landscape scale on the dynamics of amphibian populations.
+Ecol. Appl. 2015, 25, 2271–2284. [CrossRef]
+45. Barry, D.S.; Pauley, T.K.; Maerz, J.C. Amphibian use of man-made pools on clear-cuts in the Allegheny Mountains of West Virginia,
+USA. Appl. Herpetol. 2008, 5, 121–128. [CrossRef]
+46. Biek, R.; Mills, L.S.; Bury, R.B. Terrestrial and stream amphibians across clearcut-forest interfaces in the Siskiyou Mountains,
+Oregon. Northwest Sci. 2002, 76, 129–140.
+47. Mahoney, K.R.; Russell, K.R.; Ford, W.M.; Rodrigue, J.L.; Riddle, J.D.; Schuler, T.M.; Adams, M.B. Woodland salamander responses
+to a shelterwood harvest-prescribed burn silvicultural treatment within Appalachian mixed-oak forests. For. Ecol. Manag. 2016,
+359, 277–285. [CrossRef]
+48. Knapp, S.M.; Haas, C.A.; Harpole, D.N.; Kirkpatrick, R.L. Initial effects of clearcutting and alternative silvicultural practices on
+terrestrial salamander abundance. Conserv. Biol. 2003, 17, 752–762. [CrossRef]
+49. Zurita, G.A.; Zuleta, G.A. Bird use of logging gaps in a subtropical mountain forest: The influence of habitat structure and
+resource abundance in the Yungas of Argentina. For. Ecol. Manag. 2009, 257, 271–279. [CrossRef]
+50. Weakland, C.A.; Wood, P .B.; Ford, W. Responses of songbirds to diameter-limit cutting in the central Appalachians of West
+Virginia, USA. For. Ecol. Manag. 2002, 155, 115–129. [CrossRef]
+51. Hayward, G.D. Forest management and conservation of Boreal Owls in North America. J. Raptor Res. 1997, 31, 4.
+52. Clark, D.A.; Anthony, R.G.; Andrews, L.S. Relationship between wildfire, salvage logging, and occupancy of nesting territories by
+northern spotted owls. J. Wildl. Manag. 2013, 77, 672–688. [CrossRef]
+53. Perry, R.W.; Thill, R.E. Small-mammal responses to pine regeneration treatments in the Ouachita Mountains of Arkansas and
+Oklahoma, USA. For. Ecol. Manag. 2005, 219, 81–94. [CrossRef]
+54. Horn, B.S.; Babb, G.; Gunther, P .M. Small mammal populations and food selection in relation to timber harvest practices in the
+western Cascade Mountains. Northwest Sci. 1983, 57, 32–44.
+55. Owen, S.F.; Menzel, M.A.; Edwards, J.W.; Ford, W.M.; Menzel, J.M.; Chapman, B.R.; Wood, P .B.; Miller, K.V . Bat activity in
+harvested and intact forest stands in the Allegheny Mountains. North. J. Appl. For. 2004, 21, 154–159. [CrossRef]
+56. Castleberry, S.B.; Ford, W.M.; Wood, P .B.; Castleberry, N.L.; Mengak, M.T. Movements of Allegheny woodrats in relation to timber
+harvesting. J. Wildl. Manag. 2001, 65, 148–156. [CrossRef]
+57. Johnson, T.N.; Buskirk, S.W.; Hayward, G.D.; Raphael, M.G. Timber harvest interacts with broad-scale forest mortality to affect
+site occupancy dynamics of a vertebrate seed predator. For. Ecol. Manag. 2015, 340, 95–102. [CrossRef]
+58. Incoll, R.; Loyn, R.; Ward, S.; Cunningham, R.; Donnelly, C. The occurrence of gliding possums in old-growth forest patches of
+mountain ash (Eucalyptus regnans) in the Central Highlands of Victoria. Biol. Conserv. 2001, 98, 77–88. [CrossRef]
+59. Nobert, B.R.; Larsen, T.A.; Pigeon, K.E.; Finnegan, L. Caribou in the cross-fire? Considering terrestrial lichen forage in the face of
+mountain pine beetle (Dendroctonus ponderosae) expansion. PLoS ONE 2020, 15, e0232248. [CrossRef]
+60. Bobek, B.; Boyce, M.S.; Kosobucka, M. Factors affecting red deer (Cervus elaphus) population density in Southeastern Poland. J.
+Appl. Ecol. 1984, 21, 881–890. [CrossRef]
+61. Parks, P .J.; Bostedt, G.; Kriström, B. An integrated system for management and policy analysis.Environ. Resour. Econ. 2002, 21,
+203–220. [CrossRef]
+62. Smith, T.S.; Hardin, P .J.; Flinders, J.T. Response of bighorn sheep to clear-cut logging and prescribed burning.Wildl. Soc. Bull.
+1999, 27, 840–845.
+63. Attiwill, P .M. Managing Leadbeater’s possum in the mountain ash forests of Victoria, Australia—Reply.For. Ecol. Manag. 1995,
+74, 233–237. [CrossRef]
+64. McLean, C.M.; Kavanagh, R.P .; Penman, T.; Bradstock, R. The threatened status of the hollow dependent arboreal marsupial,
+the Greater Glider (Petauroides volans), can be explained by impacts from wildfire and selective logging. For. Ecol. Manag. 2018,
+415–416, 19–25. [CrossRef]
+
+PAGE 26
+Forests 2025, 16, 495 26 of 28
+65. Kuzyk, G.W.; Kneteman, J.; Schmiegelow, F.K.A. Winter habitat use by wolves, Canis lupus, in relation to forest harvesting in
+west-central Alberta. Can. Field-Nat. 2004, 118, 368. [CrossRef]
+66. McNitt, D.C.; Alonso, R.S.; Cherry, M.J.; Fies, M.L.; Kelly, M.J. Influence of forest disturbance on bobcat resource selection in the
+central Appalachians. For. Ecol. Manag. 2020, 465, 118066. [CrossRef]
+67. Mitchell, M.S.; Powell, R.A. Response of black bears to forest management in the southern Appalachian Mountains. J. Wildl.
+Manag. 2003, 67, 692. [CrossRef]
+68. Ciarniello, L.M.; Boyce, M.S.; Heard, D.C.; Seip, D.R. Denning behavior and den site selection of grizzly bears along the Parsnip
+River, British Columbia, Canada. Ursus 2005, 16, 47–58. [CrossRef]
+69. Ezzati, S.; Najafi, A.; Rab, M.; Zenner, E. Recovery of soil bulk density, porosity and rutting from ground skidding over a 20-year
+period after timber harvesting in Iran. Silva Fenn. 2012, 46, 521–538. [CrossRef]
+70. Santiago, J.; Molinero, J.; Pozo, J. Impact of timber harvesting on litterfall inputs and benthic coarse particulate organic matter
+(CPOM) storage in a small stream draining a eucalyptus plantation. For. Ecol. Manag. 2011, 262, 1146–1156. [CrossRef]
+71. Dinca, L.; Onet, A.; Samuel, A.D.; Tognetti, R.; Uhl, E.; Bosela, M.; Gömöryová, E.; Bielak, K.; Skrzyszewski, J.; Huki´ c, E.; et al.
+Microbial soil biodiversity in beech forests of European mountains. Can. J. For. Res. 2021, 51, 1833–1845. [CrossRef]
+72. Christophel, D.; Höllerl, S.; Prietzel, J.; Steffens, M. Long-term development of soil organic carbon and nitrogen stocks after
+shelterwood- and clear-cutting in a mountain forest in the Bavarian Limestone Alps.Eur. J. For. Res. 2015, 134, 623–640. [CrossRef]
+73. McNabb, D.; Startsev, A.; Nguyen, H. Soil wetness and traffic level effects on bulk density and air-filled porosity of compacted
+boreal forest soils. Soil Sci. Soc. Am. J. 2001, 65, 1238–1247. [CrossRef]
+74. Fielding, J.A.H.; Hawks, B.S.; Aust, W.M.; Bolding, M.C.; Barrett, S.M. Estimated erosion from clearcut timber harvests in the
+southeastern United States. For. Sci. 2022, 68, 334–342. [CrossRef]
+75. Satgada, C.P .; Egusa, T.; Yamakawa, Y.; Imaizumi, F. Forest harvesting affects soil organic carbon and total nitrogen transports by
+facilitating landslides. Catena 2023, 233, 107517. [CrossRef]
+76. Keith, H.; Lindenmayer, D.; Mackey, B.; Blair, D.; Carter, L.; McBurney, L.; Okada, S.; Konishi-Nagano, T. Managing temperate
+forests for carbon storage: Impacts of logging versus forest protection on carbon stocks. Ecosphere 2014, 5, 1–34. [CrossRef]
+77. Eliasson, L. Effects of forwarder tyre pressure on rut formation and soil compaction. Silva Fenn. 2005, 39, 549. [CrossRef]
+78. Jewett, K.; Daugharty, D.; Krause, H.H.; Arp, P .A. Watershed responses to clear-cutting: Effects on soil solutions and stream water
+discharge in central New Brunswick. Can. J. Soil Sci. 1995, 75, 475–490. [CrossRef]
+79. Froehlich, H.A.; McNabb, D.H. Minimizing Soil Compaction in Pacifc Northwest Forests. Paper Presented at Sixth North
+American Forest Soils Conference On Forest Soils and Treatment Impacts, Knoxville, TN, USA, 15–19 August 1983; Available
+online: https://forest.eecs.wsu.edu/smp/solo/documents/RPs/Froehlich_McNabb_1983.pdf (accessed on 19 February 2025).
+80. Horn, R.; Vossbrink, J.; Becker, S. Modern forestry vehicles and their impacts on soil physical properties. Soil Tillage Res. 2004, 79,
+207–219. [CrossRef]
+81. Motha, J.A.; Wallbrink, P .J.; Hairsine, P .B.; Grayson, R.B. Determining the sources of suspended sediment in a forested catchment
+in southeastern Australia. Water Resour. Res. 2003, 39, 1056. [CrossRef]
+82. Litschert, S.; MacDonald, L. Frequency and characteristics of sediment delivery pathways from forest harvest units to streams.
+For. Ecol. Manag. 2009, 259, 143–150. [CrossRef]
+83. Stednick, J.D. Monitoring the effects of timber harvest on annual water yield. J. Hydrol. 1996, 176, 79–95. [CrossRef]
+84. Williams, L.R.; Taylor, C.M.; Warren, M.L., Jr.; Clingenpeel, J.A. Large-scale effects of timber harvesting on stream systems in the
+Ouachita Mountains, Arkansas, USA. Environ. Manag. 2002, 29, 76–87. [CrossRef] [PubMed]
+85. Haschenburger, J.K.; Rice, S.P . Changes in woody debris and bed material texture in a gravel-bed channel.Geomorphology 2004, 60,
+241–267. [CrossRef]
+86. Wohl, E.; Scott, D.N. Wood and sediment storage and dynamics in river corridors. Earth Surf. Process. Landf. 2016, 42, 5–23.
+[CrossRef]
+87. Buffington, J.M.; Lisle, T.E.; Woodsmith, R.D.; Hilton, S. Controls on the size and occurrence of pools in coarse-grained forest
+rivers. River Res. Appl. 2002, 18, 507–531. [CrossRef]
+88. Wohl, E.; Madsen, S.; MacDonald, L. Characteristics of log and clast bed-steps in step-pool streams of northwestern Montana.
+Geomorphology 1997, 20, 1–10. [CrossRef]
+89. Cadol, D.; Wohl, E. Variable contribution of wood to the hydraulic resistance of headwater tropical streams.Water Resour. Res.
+2013, 49, 4711–4723. [CrossRef]
+90. Dincă, L.; Achim, F. The management of forests situated on fields susceptible to landslides and erosion from the Southern
+Carpathians. Sci. Pap. Ser. Manag. Econ. Eng. Agric. Rural. Dev. 2019, 19, 183–188.
+91. Anderson, C.J.; Lockaby, B.G. The effectiveness of forestry best management practices for sediment control in the southeastern
+United States: A Literature Review. South. J. Appl. For. 2011, 35, 170–177. [CrossRef]
+92. Sawyers, B.C.; Bolding, M.C.; Aust, W.M.; Lakel III, W.A. Effectiveness and implementation costs of overland skid trail closure
+techniques in the Virginia Piedmont. J. Soil Water Conserv. 2012, 67, 300–310. [CrossRef]
+
+PAGE 27
+Forests 2025, 16, 495 27 of 28
+93. Cristan, R.; Aust, W.M.; Bolding, M.C.; Barrett, S.M. Estimated sediment protection efficiences for increasing levels of best
+management practices on forest harvests in the piedmont, USA. Forests 2019, 10, 997. [CrossRef]
+94. Raison, R.J. A review of the impacts of sustainable harvesting, non-harvest management and wildfire on net carbon emissions
+from Australian native forests. Aust. For. 2024, 87, 176–194. [CrossRef]
+95. Lee, M.R.; McNeil, D.J., Jr.; Mathis, C.L.; Grozinger, C.M.; Larkin, J.L. Microhabitats created by log landings support abundant
+flowers and insect pollinators within regenerating mixed-oak stands in the Central Appalachian Mountains. For. Ecol. Manag.
+2021, 497, 119472. [CrossRef]
+96. McGarigal, K.; Romme, W.H.; Crist, M.; Roworth, E. Cumulative effects of roads and logging on landscape structure in the San
+Juan Mountains, Colorado (USA). Landsc. Ecol. 2001, 16, 327–349. [CrossRef]
+97. Campu, V .R.; Borz, S.A. Amount and structure of tree damage when using cut-to-length system.Environ. Eng. Manag. J. 2017, 16,
+2053–2061. [CrossRef]
+98. Cântar, I.-C.; Ciontu, C.-I.; Dincă, L.; Borlea, G.F.; Cri¸ san, V .E. Damage and tolerability thresholds for remaining trees after timber
+harvesting: A case study from southwest Romania. Diversity 2022, 14, 193. [CrossRef]
+99. Kalyashov, V .; Tuan, A.D.; Hitrov, E.; Grigoreva, O.; Gurev, A.; Novgorodov, D. Modern systems of machinery and technologies
+for timber harvesting and reforestation in mountain forests. Resour. T echnol.2022, 19, 1–47. [CrossRef]
+100. Jodłowski, K.; Kalinowski, M. Current possibilities of mechanized logging in mountain areas.For. Res. Pap. 2018, 79, 365–375.
+[CrossRef]
+101. Available online: www.newfor.net (accessed on 15 February 2025).
+102. Visser, R.; Stampfer, K. Expanding ground-based harvesting onto steep terrain: A review.Croat. J. For. Eng. J. Theory Appl. For.
+Eng. 2015, 36, 321–331.
+103. Wang, J.; Long, C.; McNeel, J.; Baumgras, J. Productivity and cost of manual felling and cable skidding in central Appalachian
+hardwood forests. For. Prod. J. 2004, 54, 45–51.
+104. Proto, A.R.; Macrì, G.; Visser, R.; Russo, D.; Zimbalatti, G. Comparison of timber extraction productivity between winch and
+grapple skidding: A case study in Southern Italian Forests. Forests 2018, 9, 61. [CrossRef]
+105. Mologni, O.; Grigolato, S.; Cavalli, R. Harvesting systems for steep terrain in the Italian Alps: State of the art and future prospects.
+Contemp. Eng. Sci. 2016, 9, 1229–1242. [CrossRef]
+106. Borz, S.A.; Dinulică, F.; Bîrda, M.; Ignea, G.; Ciobanu, V .D.; Popa, B. Time consumption and productivity of skidding Silver fir
+(Abies alba Mill.) round wood in reduced accessibility conditions: A case study in windthrow salvage logging form Romanian
+Carpathians. Ann. For. Res. 2013, 56, 363–375.
+107. Russell, F.; Mortimer, D.A Review of Small-Scale Harvesting Systems in Use Worldwide and Their Potential Application in Irish Forestry ;
+COFORD: Dublin, Ireland, 2005; p. 56.
+108. Moskalik, T. Rozwój technik i technologii maszynowego pozyskiwania drewna [Development of machine timber harvesting
+techniques and technologies]. Sylwan 2002, 146, 31–38. (In Polish)
+109. Kapral, J. Nowe techniki i technologie le´ sne przyjazne ´ srodowisku [New environmentfriendly forest techniques and technologies].
+In Biblioteczka Le´ sniczego, 208th ed; ´Swiat Warszawa: Warszawa, Poland, 2004. (In Polish)
+110. Grigolato, S.; Panizza, S.; Pellegrini, M.; Ackerman, P .; Cavalli, R. Light-lift helicopter logging operations in the Italian Alps: A
+preliminary study based on GNSS and a video camera system. For. Sci. T echnol. 2016, 12, 88–97. [CrossRef]
+111. Heinimann, H.R.; Caminada, L. Helicopter logging in Switzerland. Analysis of selective logging operations. In Proceedings
+of a Joint Symposium of IUFRO 3.06 Forest Operations Under Mountainous Conditions and the 9th Pacific Northwest Skyline
+Symposium, Campbell River, BC, Canada, 13–16 May 1996.
+112. Stampfer, K.; Gridling, H.; Visser, R. Analyses of parameters affecting helicopter timber extraction. Int. J. For. Eng. 2002, 13, 61–68.
+[CrossRef]
+113. Lindenmayer, D.B.; Franklin, J.F. Managing Stand Structure as Part of Ecologically Sustainable Forest Management in Australian
+Mountain Ash Forests: Manejo de la Estructura como Parte del Manejo Ecológicamente Sustentable de los Bosques de Fresno de
+Montaña en Australia. Conserv. Biol. 1997, 11, 1053–1068. [CrossRef]
+114. Seidl, R.; Rammer, W.; Jäger, D.; Currie, W.S.; Lexer, M.J. Assessing trade-offs between carbon sequestration and timber production
+within a framework of multi-purpose forestry in Austria. For. Ecol. Manag. 2007, 248, 64–79. [CrossRef]
+115. Nordfjell, T.; Bacher, M.; Eriksson, L.; Kadlec, J.; Stampfer, K.; Suadicani, K.; Suwala, M.; Talbot, B. Operational factors influencing
+the efficiency in conversion. In Norway Spruce Conversion: Options and Consequences ; Spiecker, H., Hansen, K., Klimo, L.,
+Skovsgaard, J.P ., Sterba, H., Von Teuffel, K., Eds.; European Forest Institute: Boston, MA, USA, 2004; pp. 197–223.
+116. Luo, X.; He, H.S.; Liang, Y.; Wu, Z. Evaluating simulated effects of succession, fire, and harvest for LANDIS PRO forest landscape
+model. Ecol. Model. 2015, 297, 1–10. [CrossRef]
+117. Vorovencii, I.; Iordache, E. Identification and analysis of forest disturbances and fragmentation in Giurgeu mountains, Romania,
+using landsat data. Rural. Dev. 2013, 2013, 513. [CrossRef]
+
+PAGE 28
+Forests 2025, 16, 495 28 of 28
+118. Rahmati, O.; Falah, F.; Naghibi, S.A.; Biggs, T.; Soltani, M.; Deo, R.C.; Cerd à, A.; Mohammadi, F.; Bui, D.T. Land subsidence
+modelling using tree-based machine learning algorithms. Sci. T otal. Environ. 2019, 672, 239–252. [CrossRef] [PubMed]
+119. Shabani, S.; Pourghasemi, H.R.; Blaschke, T. Forest stand susceptibility mapping during harvesting using logistic regression and
+boosted regression tree machine learning models. Glob. Ecol. Conserv. 2020, 22, e00974. [CrossRef]
+120. Patrick, D.A.; Laxton, C.; Ball, D.; Collins, S.; Korzec, S.; Langevin, C.; Vimislik, J. A multi-scale evaluation of the effects of forest
+harvesting for woody biofuels on mammalian communities in a northern hardwood forest. Northeast. Nat. 2013, 20, 678–693.
+[CrossRef]
+121. Kirkland, G.L., Jr. Patterns of initial small mammal community change after clearcutting of temperate North American forests.
+Oikos 1990, 59, 313–320. [CrossRef]
+122. Brooks, R.T. Abundance, distribution, trends, and ownership patterns of early-successional forests in the northeastern United
+States. For. Ecol. Manag. 2003, 185, 65–74. [CrossRef]
+123. Hollie, D.R.; George, A.D.; Porneluzi, P .A.; Haslerig, J.M.; Faaborg, J. Avian community response to experimental forest
+management. Ecosphere 2020, 11, e03294. [CrossRef]
+124. Hunter, W.C.; Buehler, D.A.; Canterbury, R.A.; Confer, J.L.; Hamel, P .B. Conservation of disturbance-dependent birds in eastern
+North America. Wildl. Soc. Bull. 2001, 29, 440–455.
+125. Buehler, D.A.; Roth, A.M.; Vallender, R.; Will, T.C.; Confer, J.L.; Canterbury, R.A.; Swarthout, S.B.; Rosenberg, K.V .; Bulluck, L.P .
+Status and conservation priorities of Golden-winged Warbler (Vermivora chrysoptera) in North America. Auk 2007, 124, 1439–1445.
+[CrossRef]
+126. Fox, T.R. Sustained productivity in intensively managed forest plantations. For. Ecol. Manag. 2020, 138, 187–202. [CrossRef]
+127. McNabb, D. Tillage of compacted haul roads and landings in the boreal forests of Alberta, Canada. For. Ecol. Manag. 1994, 66,
+179–194. [CrossRef]
+128. Murray, C.; Buttle, J. Infiltration and soil water mixing on forested and harvested slopes during spring snowmelt, Turkey Lakes
+Watershed, central Ontario. J. Hydrol. 2005, 306, 1–20. [CrossRef]
+129. May, B.; Attiwill, P . Nitrogen-fixation by Acacia dealbata and changes in soil properties 5 years after mechanical disturbance or
+slash-burning following timber harvest. For. Ecol. Manag. 2003, 181, 339–355. [CrossRef]
+130. Dincă, L.; Murariu, G.; Enescu, C.M.; Achim, F.; Georgescu, L.; Murariu, A.; Timis, -Gânsac, V .; Holonec, L. Productivity differences
+between southern and northern slopes of Southern Carpathians (Romania) for Norway spruce, silver fir, birch and black alder.
+Not. Bot. Horti Agrobot. Cluj-Napoca 2020, 48, 1070–1084. [CrossRef]
+131. Douglas, I.; Pietroniro, A. Predicting road erosion rates in selectively logged tropical rain forests. Int. Assoc. Hydrol. Sci. Publ.
+2003, 279, 199–205.
+132. Montero, S.A.; Ellis, E.A. Carbon stock recovery from tree regeneration following selective logging in tropical forest of the Yucatan
+Peninsula, Mexico. Carbon Manag. 2023, 14, 2238672. [CrossRef]
+133. Robles, D.; Boulanger, Y.; Pascual, J.; Danneyrolles, V .; Bergeron, Y.; Drobyshev, I. Timber harvesting was the most important
+factor driving changes in vegetation composition, as compared to climate and fire regime shifts, in the mixedwood temperate
+forests of Temiscamingue since AD 1830. Landsc. Ecol. 2025, 40, 26. [CrossRef]
+134. Picchio, R.; Mederski, P .S.; Tavankar, F. How and how much, do harvesting activities affect forest Soil, regeneration and stands?
+Curr. For. Rep. 2020, 6, 115–128. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

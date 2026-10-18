@@ -1,0 +1,2467 @@
+PAGE 1
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98  
+https://doi.org/10.1186/s42408‑024‑00321‑8
+ORIGINAL RESEARCH Open Access
+© The Author(s) 2024. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which 
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the 
+original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or 
+other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line 
+to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory 
+regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this 
+licence, visit http://creativecommons.org/licenses/by/4.0/.
+Fire Ecology
+Mapping and assessment of ecological 
+vulnerability to wildfires in Europe
+Fátima Arrogante‑Funes1*, Florent Mouillot2, Bruno Moreira3, Inmaculada Aguado1 and Emilio Chuvieco1 
+Abstract 
+Background Wildfires play a significant and complex role in ecosystems, influencing various aspects of their func‑
+tioning and structure. These natural disturbances can positively and negatively impact ecosystems, shaping land‑
+scapes, nutrient cycles, biodiversity, and ecological processes. This study focuses on assessing and integrating the dif‑
+ferent factors that affect the ecological vulnerability to wildfires at the European scale. Our methodology follows three 
+steps. Firstly, ecological values based on biological distinctiveness and conservation status were estimated to under‑
+stand pre‑fire conditions better. Secondly, we obtain vegetation’s coping capacity (or resistance) to the impacts of fire, 
+considering the functional traits of plants and fire characteristics through a fire extreme scenario. Finally, post‑fire 
+recovery time was calculated by considering the species‑specific recovery time, recovery starting time, growth 
+recovery rate, and the environmental constraints affecting the optimal vegetation response. These three variables 
+were combined using a dynamic model that assumed the change of value due to wildfires integrated through‑
+out the recovery time.
+Results Our results indicate that the tundra biome emerges as the most ecologically vulnerable to fire, primarily 
+due to its high ecological values and long recovery time, which outweigh its moderate coping capacity. Following 
+closely, the temperate conifer forests also exhibit high vulnerability driven by their high recovery time, despite mod‑
+erate ecological and coping capacity values. The boreal forests rank next, with moderate vulnerability due to their 
+long recovery time and moderate coping capacity. The Mediterranean region, although having moderate ecologi‑
+cal values and recovery time, shows a notable vulnerability influenced by lower coping capacity. The temperate 
+broadleaf and mixed forests demonstrate relatively lower vulnerability owing to their balanced ecological values, 
+moderate recovery time, and substantial coping capacity. Lastly, the temperate grasslands, savannas, and shrublands 
+are the least vulnerable, benefiting from lower ecological values and the fastest recovery time, alongside moderate 
+coping capacity, which collectively reduce their overall fire vulnerability.
+Furthermore, we found that coping capacity is the factor that most influenced ecological vulnerability to wildfires.
+Conclusions The study identifies key zones for European or national policies on fire prevention and post‑wildfire 
+regeneration. It offers insights into effective forest management and conservation policies, applicable to current con‑
+ditions. Additionally, the methods can predict future ecological vulnerability to wildfires based on climatic and socio‑
+economic trends.
+Keywords Ecological vulnerability to wildfires, Recovery time, Ecological values, Coping capacity, Wildfires, 
+Vulnerability assessment
+*Correspondence:
+Fátima Arrogante‑Funes
+fatima.arrogante@uah.es
+Full list of author information is available at the end of the article
+
+PAGE 2
+Page 2 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+Resumen 
+Antecedentes Los fuegos de vegetación juegan un rol significativo y complejo en los ecosistemas, influenciando 
+varios aspectos de sus estructuras y funcionamiento. Estos disturbios naturales pueden impactar de manera posi‑
+tiva o negativa a los ecosistemas, modelando paisajes, ciclos de nutrientes, biodiversidad, y procesos ecológicos. 
+Este estudio se enfoca a determinar e integrar los diferentes factores que afectan la vulnerabilidad a los incendios 
+a escala europea. Nuestra metodología siguió tres etapas. En primer lugar, los valores ecológicos basados en distin‑
+tivos biológicos y estatus de conservación fueron estimados para entender mejor las condiciones previas al fuego. 
+Segundo, obtuvimos la capacidad de ajuste (o resistencia) de la vegetación a los impactos del fuego, considerando 
+las características funcionales de las plantas y las características de los fuegos en un escenario de fuegos extremos. 
+Finalmente, el tiempo de recuperación post fuego fue calculado considerando la recuperación específica de cada 
+especie, el tiempo de inicio de la recuperación, la tasa de recuperación del crecimiento y de los condicionantes ambi‑
+entales que afectan la respuesta óptima de la vegetación. Estas tres variables fueron combinadas usando un modelo 
+dinámico que supuso el cambio de valor debido al fuego, integrado a través del tiempo de recuperación.
+Resultados Nuestros resultados indicaron que el bioma de la Tundra emerge como el más ecológicamente vulner‑
+able al fuego, debido fundamentalmente a sus valores ecológicos y altos tiempos de recuperación, lo que supera su 
+moderada capacidad de afrontar loe efectos de ese disturbio. A este ecosistema le siguen los bosques templados de 
+coníferas, que también exhiben una alta vulnerabilidad debido a sus extensos tiempos de recuperación y su mod‑
+erada capacidad de ajuste al fuego. Los bosques boreales se ubican en tercer lugar, con una moderada vulnerabilidad 
+debido también a sus largos períodos de recuperación y moderada capacidad de ajuste a este disturbio. La región 
+Mediterránea, aunque presenta valores ecológicos y tiempos de recuperación moderados, muestra una notable 
+vulnerabilidad debido a su muy baja capacidad de adaptación. Los bosques deciduos y mixtos demostraron una vul‑
+nerabilidad relativamente más reducida debido fundamentalmente a sus valores ecológicos más balanceados y a una 
+sustancial capacidad de adaptación. Por último, los pastizales templados, las sabanas y los arbustales, resultaron los 
+menos vulnerables, que se benefician por su bajo valor ecológico y la más alta capacidad de recuperación además de 
+su moderada capacidad de ajuste, lo que colectivamente reducen su vulnerabilidad total al fuego. Además, encontra‑
+mos que la capacidad de ajuste es el factor que más influencia la vulnerabilidad ecológica a los fuegos de vegetación.
+Conclusiones Este estudio identifica zonas clave para políticas a nivel nacional o europeo sobre prevención de 
+incendios y en la regeneración post fuego. Ofrece perspectivas para el manejo efectivo de bosques y políticas de 
+conservación aplicables a las condiciones actuales. Adicionalmente, los métodos pueden predecir la vulnerabilidad 
+ecológica a fuegos de vegetación basados en tendencias climáticas y socio‑económicas.
+Background
+Wildfires play a significant and complex role in ecosys -
+tems, influencing various aspects of their functioning 
+and structure. These natural disturbances can positively 
+and negatively impact ecosystems, shaping landscapes, 
+nutrient cycles, biodiversity, and ecological processes 
+(Arrogante-Funes et al. 2024; Bond et al. 2005; Bowman 
+et al. 2009; Guyette et al. 2002; Midgley & Bond 2015).
+Ecosystems vary in their ability to withstand and 
+recover from wildfires based on factors such as vegeta -
+tion composition, fire history, and ecological processes. 
+Some ecosystems have adapted to periodic fires (Naveh 
+1975) and even depend on them for functioning (Midg -
+ley & Bond 2015). For example, certain plant species 
+have developed fire-adapted traits (Pausas et al. 2008), 
+such as thick bark or serotine cones that require fire 
+to open and release seeds (Baeza & Roy 2008). These 
+fire-related traits allow plants to avoid, resist, or tol -
+erate fire (individual, community or landscape level) 
+(Archibald et al. 2019), strengthening ecosystem resist -
+ance or enhancing recovery.
+However, many other ecosystems are less adapted to 
+wildfires, mainly when they exceed historical conditions 
+(i.e., more extreme or frequent fires) for which plants 
+have not developed appropriate traits (Cochrane & Laur -
+ance 2002). For example, intense and large wildfires can 
+cause significant damage to ecosystems, leading to habi -
+tat changes through landscape fragmentation (Driscoll 
+et al. 2021) and changes in vegetation composition (Alca-
+sena et al. 2016; Flannigan et al. 2009). The worst impacts 
+of degradation induced by fire in the medium and long 
+term include permanently disrupting natural processes, 
+reducing biodiversity and impairing ecosystem functions 
+(MMA 2006; Vallejo et  al. 2009). In addition, the loss 
+of vegetation cover after fire increases surface erosion 
+because the bare soil is exposed to raindrop impact and 
+surface runoff, especially in the first months after burning 
+(Giovannini et  al. 2001; Inbar et  al. 1998) and promotes 
+
+PAGE 3
+Page 3 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+the alteration of the nutrient pool (Vallejo et  al. 2009). 
+After a wildfire, the recovery process can be complex, 
+depending on vegetation traits and environmental condi -
+tions, and it may take years or even decades for the eco -
+system to recover its pre-fire state.
+Several frameworks have been developed to study 
+vulnerability to natural hazards. A vulnerability frame -
+work refers to a structured approach or model used to 
+understand and assess the potential losses and resilience 
+of communities and systems to the impact of natural 
+hazards such as wildfires (UNISDIR, 2009; Williams & 
+Kapustka 2000). The United Nations Office for Disaster 
+Risk Reduction (UNDRR) promotes the implementa -
+tion of the Sendai Framework for Disaster Risk Reduc -
+tion (accessed: May 2023, https:// www. undrr. org/ publi 
+cation/ sendai- frame work- disas ter- risk- reduc tion- 2015- 
+2030), which serves as a comprehensive framework for 
+understanding and addressing vulnerability and build -
+ing resilience to disasters. Within the Sendai Frame -
+work, three elements are considered in natural hazards 
+assessment: danger (probability that the event occurs), 
+exposure to population, and vulnerability (capacity to 
+experience damage caused by that hazard). Vulnerabil -
+ity assessment implies understanding and reducing the 
+potential losses caused by a particular hazard. Assess -
+ing vulnerability is crucial for minimizing human and 
+material damage from hazards. Often, preparedness 
+efforts focus on reducing vulnerability by enhancing 
+resistance or shortening recovery times for potentially 
+affected communities. In the context of wildfires, vulner -
+ability assessment involves estimating the various socio-
+economic and ecological factors that fires could impact, 
+which implies considering the values at stake, the resist -
+ance of the system to the effects of fire (commonly 
+termed coping capacity), and its regeneration ability 
+(frequently measured in recovery time to recuperate the 
+pre-fire values) (Chuvieco et al. 2023).
+Different methodologies have appeared in the last two 
+decades for assessing ecological vulnerability to wildfires, 
+particularly the components of ecological values and 
+resilience. Bisson et al. (2008) presented an index of plant 
+community resilience to fire but did not contemplate 
+water availability. Arianoutsou et al. (2011) evaluated the 
+post-fire resilience of the Pinus halepensis in Cape Soun -
+ion National Park, Greece, using GIS and multi-criteria 
+analysis. De la Riva et al. (2008), Alloza et al. (2006), and 
+Duguy et al. (2012) produced a qualitative index of eco -
+logical vulnerability to wildfires in Mediterranean zones. 
+Rodrigues et  al. (2014) developed quantitative criteria 
+for assessing ecological vulnerability in mainland Spain 
+through recovery time based on land cover, NDVI trends, 
+post-fire regeneration mechanisms (seeder or resprouter) 
+of the dominant plant species, and local modifiers of 
+resilience such as climatic and soil factors. Rivière et al. 
+(2023) evaluated the ecological vulnerability of South-
+Eastern France through a multi-criteria method based 
+on the presence of forest covers and fuel load, fire inter -
+val and forest management tools. Although at the local 
+scale Lecina-diaz et  al. (2021) incorporate the factor 
+coping capacity through tree bark thickness in the inte -
+gral approach of vulnerability, the coping capacity of the 
+ecosystem has not yet been well characterized in most 
+studies. At the European scale, the European Forest Fire 
+Information System (EFFIS) provides a map of ecological 
+vulnerability to wildfires, considering only ecological val -
+ues, which are understood as locations within the Natura 
+2000 network (San-Miguel-Ayanz et al. 2018).
+The wildfire vulnerability assessment can be greatly 
+benefited by using geographic information technologies, 
+as they can provide a comprehensive characterization 
+of vulnerable areas (Aretano et al. 2015; Chuvieco et al. 
+2023), helping to develop effective strategies for reducing 
+potential damages in a certain territory.
+The methodologies utilized in prior attempts to esti -
+mate ecological vulnerability to wildfires have exhibited 
+limitations in comprehensively considering regeneration 
+time, coping capacity, and the holistic characterization 
+of ecological values. Typically, the assessment of eco -
+logical value focuses only on biodiversity, neglecting the 
+conservation status, which plays a pivotal role in altering 
+the intrinsic vulnerability of a location to fire (Arrogante-
+Funes et  al. 2022; Dinerstein et  al. 1995; Ricketts et  al., 
+1999a). Moreover, the absence of a simulated fire scenario 
+spanning the entire study area constrains the capacity to 
+discern the total potential losses, constituting a funda -
+mental point of origin for vulnerability assessment as it 
+marks the initiation of the recovery process (UNISDIR, 
+2009; Williams & Kapustka 2000). Additionally, scant 
+attention has been paid to existing studies on the inher -
+ent nature of species in terms of functional traits. These 
+intrinsic characteristics significantly influence their abil -
+ity to rebound from disturbances (Chuvieco et al. 2014a, 
+b, 2023). As a result, key factors such as resistance or 
+recovery time lack the requisite detailed characterization, 
+impeding the establishment of a standardized process for 
+different regions, thereby hindering the comparison of 
+areas with varying levels of resilience to fire.
+This study develops a method to assess the ecologi -
+cal vulnerability to wildfires at the European scale by 
+characterizing its main components: ecological values, 
+potential losses, and ecosystems’ resistance and recov -
+ery (resilience). Our methodology presents a new holis -
+tic approach to estimating ecological vulnerability to 
+fires based on three components: (a) computation of eco-
+logical values that could be potentially affected by fire by 
+considering biological distinctiveness and conservation 
+
+PAGE 4
+Page 4 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+status of these ecological values; (b) estimation of the 
+coping capacity of the vegetation communities to the 
+effects of fires, by assessing the functional traits of the 
+plants that characterize the resistance to fire through a 
+fire extreme scenario; and (c) calculation of the post-fire 
+recovery time of vegetation by considering factors that 
+allow plants to regrowth after fires, mainly those func -
+tional traits associated to regrowth and the local modi -
+fiers of those traits. These are integrated by estimating 
+the total damages produced by the fires during the life 
+cycle of their impacts. Our methodology uses biologi -
+cal knowledge, statistical pre-processed techniques, and 
+heuristic methods, aiming to cover the complex inter -
+actions between wildfires, ecological values, vegetation 
+composition, forest management, soil, climatic, topog -
+raphy factors, and vegetation functional traits. The com -
+bination of ecological diversity, fire-prone landscapes, 
+human–environment interactions, climate variability, 
+transboundary collaboration, historical records of wild -
+fires, common policy frameworks, and socioeconomic 
+implications make Europe an exceptional territory for 
+studying vulnerability to wildfires and can provide valu -
+able to develop fire management strategies in other 
+regions facing similar challenges  (Chuvieco et  al. 2010, 
+2014a, b).
+Materials and methods
+The study area covered the continental European terri -
+tory and adjacent islands, excluding Cyprus (Fig.  A1). 
+Only terrestrial ecosystems were considered, as wild -
+fires do not directly affect water bodies. Unburnable 
+covers and croplands were removed from the analy -
+sis, as we were interested on wildland fires. The spatial 
+resolution of this work was 1 km × 1 km, and the units 
+per variable were discretized between 0 and 1000 to 
+facilitate the integration with other variables gener -
+ated within the FirEUrisk project (last accessed: Janu -
+ary 2024, https:// fireu risk. eu/), in which this research is 
+integrated.
+Framework
+The general scheme and integration methodology of our 
+approach to assessing ecological vulnerability is pre -
+sented in Fig.  1. Ecological potential losses (EPL) were 
+estimated considering the pre-fire ecological values, 
+mediated by the ecological resilience (ER), which implies 
+the capacity of the system to resist (coping capacity, CC). 
+These losses after fire are integrated throughout time, 
+considering the estimated time in which they will not 
+be available (which depends on recovery time, RT). The 
+different acronyms and terms used in the manuscript 
+are included in Table  5. We termed potential losses and 
+not actual losses, because this analysis is done before the 
+fire occurs, assuming a certain fire scenario. In our case, 
+this scenario was computed from the 95% worst propa -
+gation conditions for those days when a fire larger than 
+2000 ha occurred in Europe, thus indicating extreme fire 
+conditions.
+In the next paragraphs, we will review how the three 
+main components of the ecological vulnerability were 
+derived, first indicating the dimensions considered for 
+estimating the ecological values, then the copying capac -
+ity and finally the regeneration time.
+Figure  1 illustrates the dynamic process of ecologi -
+cal vulnerability assessment in the context of wildfire 
+events. Initiated from the baseline ecological value, the 
+occurrence of a wildfire leads to a reduction in this value, 
+resulting in ecological losses within the affected area. 
+However, amidst this devastation, the coping capacity of 
+the vegetation plays a crucial role in determining what 
+remains viable. Subsequently, a recovery phase ensues, 
+marked by the activation of functional traits influenced 
+by climatic and topographic factors as well as forest man-
+agement practices. This process aims to restore the pre-
+fire values, mitigating the ecological impacts sustained 
+during the wildfire event. This comprehensive vulner -
+ability assessment, as described in earlier studies (Chu -
+vieco et  al. 2014a , b), quantifies these potential losses 
+and acknowledges their persistence until the landscape 
+returns to its pre-fire conditions.
+Ecological values assessment
+The methodology used for ecological values assessment 
+(EVA) is based on characterizing the ecosystems’ bio -
+logical distinctiveness (BD) and conservation status (CS) 
+(Fig.  2) based on the methodology scheme proposed by 
+Dinerstein et  al. (1995) and Ricketts et  al. (1999a) and 
+previously used in the ecological vulnerability to wild -
+fire at global scale by Arrogante-Funes et al. (2022). We 
+stated that ecosystems hosting high taxonomic richness 
+(Brun et al. 2019) or rare plant communities or habitats 
+of endangered species highly contribute to their value 
+through their enhanced functioning (Basile 2022; Leitão 
+et  al. 2016; Tang et  al. 2023). The destruction or degra -
+dation of these valued ecological components, notably 
+by fires, can have long-term implications for ecosystem 
+health and conservation (Sritharan et al. 2022).
+Biological distinctiveness (BD) refers to a particular 
+biological group’s uniqueness and distinct characteristics, 
+emphasizing specific attributes at different ecological lev-
+els, from individuals to communities, thus characterizing 
+structural biodiversity from the point of view of its excep-
+tionality and in terms of ecosystem health (Ricketts et al., 
+1999a). The ecosystem’s conservation status (CS) refers 
+to its current condition and the threat it faces regarding 
+degradation, loss or endangerment. Assessing the CS of 
+
+PAGE 5
+Page 5 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+an ecosystem involves evaluating various aspects, includ -
+ing the state of its biodiversity and the presence of threats 
+(Ricketts et al., 1999a).
+Biological distinctiveness
+Biodiversity, represented by biological distinctiveness, 
+is essential for assessing the health of an ecosystem by 
+reflecting the variability of life forms in a specific region 
+(Dinerstein et  al. 1995). Taxonomic richness favors the 
+emergence of contrasted functional traits, thus maintain -
+ing vital ecosystem functions. Biological distinctiveness, 
+in preserving this functional diversity, ensures the con -
+tinuity and effectiveness of crucial processes (Ricketts 
+et  al., 1999a). Beyond any direct benefit, each life form 
+possesses a unique intrinsic value, contributing uniquely 
+to the richness and complexity of our planet’s biologi -
+cal fabric. Consequently, considering biological distinc -
+tiveness when evaluating ecosystem ecological values 
+becomes crucial (Dinerstein et al. 1995).
+We built an integrated BD index based on previous 
+studies by combining species richness, forest produc -
+tivity, species abundance, and key biodiversity areas 
+Fig. 1 Components of the ecological vulnerability to wildfires and integration approach
+
+PAGE 6
+Page 6 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+(Arrogante-Funes et al. 2022; Dinerstein et al. 1995; Rick-
+etts et al., 1999a). The characterization of species richness 
+is essential for understanding the biological diversity of an 
+ecosystem, providing insights into the relative importance 
+of each species and their contribution to the structure and 
+function of the ecosystem (Ricketts et  al., 1999a). Thus, 
+species richness was estimated through potential habitat 
+data for each species of mammals (278), birds (711), rep -
+tiles (156), amphibians (96), and vascular plants (20.000). 
+Habitat maps were downloaded from the IUCN reposi -
+tory (https:// www. iucnr edlist. org/ resou rces/ spati al- data-% 
+20dow nload last accessed: December 2023). For each spe-
+cies, a value of 1 was assigned to polygons where the pres-
+ence of that species was confirmed and 0 otherwise. These 
+binary data by species were transformed into rasters with a 
+spatial resolution of 1 km. Then, all species’ presences were 
+added at the pixel level to obtain the species richness for 
+Europe.
+Characterizing vegetation density of habitat is crucial 
+when estimating biological distinctiveness as it provides 
+a more comprehensive understanding of the ecosystem’s 
+varied interactions, structures, and functions (Dinerstein 
+et al. 1995). Utilizing biomass to indicate this abundance 
+offers an effective approach, considering primary pro -
+duction and habitat structure. This strategy is particularly 
+suitable when integrated with maps that assess individual 
+species based on censuses, allowing for a more holistic 
+approach in biodiversity assessment. For the density of 
+habitat, a forest biomass density map at 100 m resolution 
+for 2020 was used as a proxy (https:// data. jrc. ec. europa. 
+eu/ datas et/ d1fdf 7aa- df33- 49af- b7d5- 40d22 6ec0d a3—last  
+accessed: December 2023). This map comprises harmo -
+nized reference statistics regarding forest area in terms 
+of biomass density (gC/m 2) at national and subnational 
+scales. The spatial resolution was initially set at 100 m but 
+transformed to 1 km using a weighted average approach. 
+This adjustment involved aggregating data and assign -
+ing greater importance to information nearer the center 
+of each 1 km pixel. Such alterations in spatial resolution 
+are common in spatial data processing, aiming to bal -
+ance the trade-off between data precision and computa -
+tional efficiency (Martínez-Gordón et al. 2021). The shift 
+to coarser resolution facilitates analyses over larger areas 
+while preserving essential spatial patterns.
+Crowther et  al. (2019) emphasize the significance of 
+forest productivity through biogeochemistry in influenc -
+ing the decomposition and turnover of soil organic mat -
+ter and the fluxes with the health of the biodiversity and 
+the ecosystem. Forest productivity, as a proxy from plant 
+traits (Polley et  al. 2022), was calculated by Moreno-
+Martínez et  al. (2018) at 1 km spatial resolution based 
+on biogeochemistry continuous data about specific leaf 
+area (SLA)  (mm2  mg−1), leaf dry matter content (LDMC) 
+(g  g−1), leaf nitrogen content (LNC) (mg  g−1), and leaf 
+phosphorus content (LPC) (mg  g−1). Ren et  al. (2022) 
+synthesized the positive relationship between carbon 
+assimilation, SLA, and P/C leaf contents. Thus, the pre -
+vious databases were used as a proxy for carbon, nitro -
+gen, and phosphorus cycle productivity. The processing 
+sequence of this database utilizes machine learning 
+methodologies in conjunction with optical remote sens -
+ing data (MODIS/Landsat) and climate data to address 
+Fig. 2 Components of the estimation of ecological values
+
+PAGE 7
+Page 7 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+gaps and scale up in-situ measured leaf traits. Thus, the 
+previous databases were used as a proxy for carbon, 
+nitrogen, and phosphorus cycle productivity. After nor -
+malizing each variable, forest productivity was integrated 
+as a sum at the pixel level of the carbon, nitrogen and 
+phosphorus cycle production values.
+Key biodiversity areas are characterized by exceptional 
+biodiversity value stemming from their remarkable eco -
+logical integrity, globally significant ecosystems, and sub -
+stantial populations of animals, fungi, and plants. They 
+hold significant value for conserving biodiversity, and 
+their identification and protection play a crucial role in 
+combating global biodiversity loss. Key biodiversity areas 
+were obtained from the database of Potapov et al. (2008) 
+and can be viewed as biodiversity hotspots. The vector 
+data layers were converted into raster binary data, assign-
+ing a value of 1 where a key biodiversity area was present 
+and 0 where it was not.
+Conservation status
+An ecosystem’s conservation status (CS) refers to its 
+current condition and the threat it faces regarding deg -
+radation, loss, or endangerment (Ricketts et  al., 1999a). 
+It is crucial in assessing its ecological value (Dinerstein 
+et al. 1995). Firstly, a well-preserved ecosystem tends to 
+be healthier and more resilient, enabling it to withstand 
+disturbances and environmental changes (Ricketts et al., 
+1999a). The preservation of biodiversity in these ecosys -
+tems contributes to stability and resilience, promoting 
+essential services and facilitating adaptation to changing 
+conditions (Pausas et al. 2003). Healthy ecosystems offer 
+a broader and more effective range of services.
+Furthermore, establishing protected natural areas, 
+driven by esthetic, recreational, and biological appeal, 
+contributes to ecosystem conservation. In summary, an 
+ecosystem’s conservation status is essential for evaluating 
+and appreciating its ecological value and significance for 
+both nature and society (Ricketts et al., 1999a).
+For the assessment of the CS, we estimated five indi -
+cators following previous studies (Arrogante-Funes et al. 
+2022; Dinerstein et  al. 1995; Ricketts et  al. 1999): pres -
+ence of exceptional forests, places of special conserva -
+tion, human pressures, loss of forest, and unique habitat 
+preservation.
+Exceptional forests were computed from an ecological 
+point of view. Old-growth forests are important, albeit 
+more structural than functional, in conserving most ter -
+restrial diversity and enormously regulating the global 
+climate (de Assis Barros et  al. 2022). The intact forest 
+landscapes cartography (Potapov et  al. 2008) charts the 
+location and extent of the forests and terrestrial ecosys -
+tems that remain unaltered by humans, with a minimum 
+mapping unit of 500  km2.
+Places of special conservation, mainly in national parks 
+and reserves, play an essential role in conservation. We 
+extracted the European territory from the World Data -
+base on Protected Areas (WDPA), which was generated 
+as part of a project developed by the United Nations 
+Environment Programme (UNEP) and by the IUCN, 
+administered by the World Conservation Monitoring 
+Centre (WCMC) and UNEP (https:// data- gis. unep- 
+wcmc. org- last access: December 2023). In this study, we 
+only considered the terrestrial protected areas classi -
+fied under IUCN categories I–IV as for these categories, 
+there are reliable data verified on the ground, and they 
+are managed similarly, thus enabling us to assume that 
+they all have the same biodiversity conservation values. 
+The vector data layer was converted to raster binary data 
+by assigning 1 where a WDPA was located and 0 where it 
+was not.
+The human pressure indicator was collected from UNEP 
+(https:// wesr. unep. org/ index. php/ artic le/ biodi versi ty- and- 
+nature- loss—last accessed: January 2023). It was estimated 
+through landscape fragmentation mapping based on the 
+degree of fragmentation as a percentage through human 
+infrastructures, roads, and railways. Human pressure var-
+ies between 0, the lowest to un-fragmented or homogene-
+ous areas, to 1000, corresponding to highly degraded or 
+heterogeneous landscapes.
+The loss of forest indicator was obtained from global 
+forest extent and change from the dataset of Hansen et al. 
+(2013). This database compiles pixels based on Landsat 
+satellite images that have experienced vegetation loss 
+(2000–2013) due to various disturbances. For this study, 
+we classify pixels within the database period that exhibit 
+changes in vegetation cover as indicative of poor conser -
+vation status.
+Finally, unique habitat preservation (Howard et  al. 
+2020) was characterized based on potential habitat data 
+for each species belonging to the category of “critically 
+endangered, ” “endangered, ” and “vulnerable” of mam -
+mals, birds, reptiles, amphibians, and vascular plants. 
+The dataset was downloaded from the IUCN repository 
+(https:// www. iucnr edlist. org/ resou rces/ spati al- data-% 
+20dow nload —last accessed: December 2023). And we 
+replicated the same process of species richness to obtain 
+the final product of unique habitat preservation.
+Integration of EVA: principal components analysis
+Principal component analysis (PCA) is a multivariate 
+method that aims to reduce the complexity of a dataset 
+by identifying the most important variables or “princi -
+pal components” that explain the variation in the data 
+(Andersen et  al. 2009). Principal component analysis 
+(PCA) represents a pivotal analytical tool employed 
+by scientists to elucidate intricate relationships within 
+
+PAGE 8
+Page 8 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ecosystems, thereby enhancing the comprehension of 
+ecological values (Janžekovič & Novak 2012). The first 
+principal component represents the direction with the 
+greatest variation among samples.
+The first principal components are particularly impor -
+tant because they capture the largest amount of vari -
+ability among the data. This means that they effectively 
+summarize the essential information with fewer dimen -
+sions. The synergy effect between the variables is a key 
+aspect here; by reducing the dimensionality, PCA helps 
+to highlight the underlying structure and relationships 
+within the data that may not be immediately apparent 
+(Janžekovič & Novak 2012).
+To assess variable reliability in PCA, Bartlett’s test of sphe-
+ricity, Kaiser–Meyer–Olkin (KMO), and omega hierarchical 
+asymptotic statistics were computed (Appendix 2).
+The previously described indicators (from BD and CS) 
+were introduced in the PCA model, taking the positive 
+direction for values close to 1000 and negative for those 
+close to 0. Species richness, forest productivity, density of 
+habitat, key biodiversity areas, exceptional forest, unique 
+habitat preservation, and places of special conservation 
+conserve the original direction. In contrast, the human 
+pressure and loss of forest indicators inverse the direc -
+tion, taking values close to 1000 where human pressure 
+and loss of forest values were low. Regarding the previ -
+ous explanation, we selected the first PCA because it rep-
+resents the synergies between conservation status and 
+biological distinctiveness. For example, zones with fewer 
+roads and railways and a loss of forest cover conserve bet-
+ter ecological values.
+Assessing ecological resilience
+The methodology for estimating the ecosystem’s fire 
+response comprises copying capacity and recovery time 
+(Fig.  3) for vegetation. An ecosystem’s copying capacity 
+(CC) to wildfire refers to the ability to withstand or resist 
+wildfire events and limit their impact. It encompasses the 
+ecological characteristics and adaptations that enable an 
+ecosystem to minimize damage and maintain its struc -
+ture and functionality in the face of fire. Since plant CC 
+depends on both its physiological characteristics and fire 
+conditions, we estimated CC considering a particular fire 
+scenario assuming extreme conditions.
+On the other hand, ecosystem recovery time (RT) 
+after a wildfire refers to the length required to regain 
+pre-fire conditions. The recovery process involves 
+restoring vegetation, forest management tools, eco -
+logical processes, and biodiversity affected by the fire. 
+In this study, we estimate some relative indicators of 
+the RT based on functional traits of the vegetation and 
+local modifiers: species-specific recovery time, recov -
+ery starting time, growth recovery rate, and the envi -
+ronmental constraints.
+Fire scenario simulations
+Studying ecological resilience to fire entails integrating 
+fire scenarios to understand better the potential impact 
+of fire one ecological vulnerability (UNISDIR, 2009; Wil -
+liams & Kapustka 2000). Through these simulations, the 
+impact of various conditions on ecosystems, including 
+vegetation, fauna, and soil, can be thoroughly analyzed. 
+This understanding is crucial for assessing ecosystem 
+resilience and devising effective fire management strate -
+gies. Exposure to these simulations provides insights into 
+how components like vegetation, soil, and fauna respond 
+and adapt (UNISDIR, 2009; Williams & Kapustka 2000), 
+while also pinpointing weaknesses in environmental 
+resistance and identifying vulnerable areas susceptible to 
+significant damage during real wildfires.
+Fig. 3 Components of the estimation of ecological resilience
+
+PAGE 9
+Page 9 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+Within the FirEUrisk project, in which this research 
+was developed, a fire simulation scenario was created 
+by considering meteorological conditions of days in 
+which at least 1 fire larger than 2000 hectares occurred 
+in Europe within the time series 2001–2019. From 
+those days, the 95th percentile of the worst weather 
+conditions at noon (12 h) was computed. Weather 
+parameters for the selected days were computed using 
+ERA5-Land global re-analysis data. A topography-
+based transfer function was applied to the 1 km-reso -
+lution hourly ERA5-Land reanalysis data for variables 
+such as temperature, dew point temperature, relative 
+humidity, wind, and daily precipitation ( https:// cds. 
+clima  te.  coper  nicus.  eu/  cdsapp#  !/ datas  et/  reana  lysis-  
+era5- land? tab= overv iew, accessed: January 2023).
+These weather conditions were input into the Behave 
+program, along with fuels and topography (see Chu -
+vieco et al. 2023), to estimate the fire line intensity (FI), 
+which was selected as the main parameter to repre -
+sent potential fire behavior conditions for the extreme 
+scenario. The original value in kW/m was normal -
+ized to 0/1 using threshold values for fire suppres -
+sion proposed by Rothermel (Rothermel 1983 [Table 
+IV-18421]). Normalized values increased linearly from 
+0 to 0.5 for FI values between 0 and 346 kW/m (100 
+BTU/feet/s), implying fires that can be attacked by 
+fire brigades with manual tools, from 0.5 to 0.75 for FI 
+between 346 and 1731 kW/m (500 BTU/feet/s), where 
+machines and aircraft can be used, and from 0.75 to 
+1 for values ranging from that threshold to the maxi -
+mum FI. (Chuvieco et al. 2023).
+Coping capacity
+CC was assessed through Fire Line Intensity and vegeta -
+tion resistance to wildfires for the tree species present in 
+a 1-km pixel based on the tree potential habitat maps 
+(69 tree species) and the 7 non-forest land cover types 
+(Table 6, Appendix 1).
+Resistance of the vegetation to wildfires (RVW) was 
+derived from a resistance index FTrvwi varying between 0 
+(non-resistant) and 1 (fully resistant), based on three cri -
+teria used in Stevens et  al. ( 2020): (i) bark thickness (BT 
+in cm), which protects the cambium and other living tis -
+sues against high temperatures from ground fires; (ii) tree 
+height (THMAX in m); and (iii) basal crown height (BCH 
+in m) as the capacities of trees to escape crown torch -
+ing. These functional traits (FT) for each species are syn -
+thesized in Table 6 (Appendix 1). Each trait was rescaled 
+between 0 (no resistance) and 1 (the most resistant), and 
+the mean value of the three rescaled traits provided the 
+aggregated final FTrvw for each species i. The criteria for 
+selecting the tree species around Europe were based on the 
+general and specific plants related to the biomes (Diner -
+stein et al. 2017) (Table 6, Fig. 9 from Appendix 1).
+The final calculation of the RVW was on the following 
+model:
+where n is the number of species on pixel p, and i is 
+the species, TPHM is the tree potential habitat maps 
+(extracted from https:// www. iucnr edlist. org/ resou rces/ 
+spati al- data-% 20dow nload —last  accessed: December 
+2023), and FTrvw is the functional trait related to the 
+resistance of species i.
+For non-forested pixels, we set CC  = 0 for grasslands, 
+croplands, heathlands, and shrublands; none of the spe -
+cies in these land covers experience fire-resistant traits.
+Pixel level CC was finally calculated as in Eq. 2
+Finally, the CC result was normalized between 0 and 
+1000, where 0 represents areas with the least fire resist -
+ance, and 1000 represents the most resistant ones.
+Recovery time
+RT comprises the species-specific recovery time (RTi), 
+recovery starting time (RST), growth recovery rate (GR), 
+and the environmental constraints (EC) affecting the 
+optimal vegetation response, locally modified by climate, 
+soil erosion, forest management, and topography (Seidl 
+et al. 2011).
+Firstly, for characterizing the RT (in years) of the 69 
+tree species and the 7 non-forested land cover types, we 
+used each species’ yearly growth rate (GR, m.year-1) and 
+maximum tree height (THMAX, m) to derive the relative 
+growth rate RGR (%HMAX.year-1) and the time needed 
+for a species to reach its maximum height (RT in years) 
+as 1/RGR (Table 6, Appendix 1). Information from obser-
+vations (Schelhaas et  al. 2018 among others) and forest 
+growth models were used (Schworer et  al. 2014; Morin 
+et  al. 2021; Rohner et  al. 2018), assuming the starting 
+point was a seedling (when data were missing in forest 
+growth models or observations). BMAX and RG were 
+derived from the tree species with the same taxa or the 
+closest characteristics of tree height and wood density.
+However, post-fire regeneration is more complex than 
+a simple seed regeneration. We relied on the specific post-
+fire regeneration strategies from (Archibald et  al. 2019) to 
+define the species-specific regeneration starting time (RSTi), 
+a modifier, potentially anticipating or delaying the regenera-
+tion starting time (Table 6, Appendix 1). We collected infor-
+mation on tree species vegetative (resprouting) or seedling 
+(1)
+RVW = 1
+n
+i=1 TPHMi ×
+n
+i=1 TPHMi × FTrvwi
+(2)CC = RVW × (1 − FI)
+
+PAGE 10
+Page 10 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+emergence (serotiny, seed dispersal) response strategies. 
+We attributed an RST value of − 25 years for fire-tolerant 
+species regenerating from trunk buds and − 10 years for 
+fire-tolerant species resprouting from belowground mate-
+rial (Table  6, Appendix 1). For species regenerating from 
+the seed bank surviving the fire identified according to their 
+level of serotiny and their facility to regenerate from the 
+surviving seed bank found in the literature, we attributed 
+an RST value of 0. Finally, for species without resprout -
+ing ability nor post-fire germination from the seed bank, 
+regeneration relies only on seed dispersal from unburned 
+areas (Liu 2021). We then accounted for colonization delays 
+under inefficient dispersal strategy and time for the seed 
+to be dispersed from neighboring unaffected ecosystems. 
+Dispersal efficiency was related to seed mass and disper -
+sal strategies and maximum distances (Vargas et  al. 2023) 
+(Table  6, Appendix 1). We attributed a dispersal index DI 
+(in years) varying from 0 to 20 years according to their dis-
+persal distance TDMAX. DI was calculated from dispersal 
+distance rescaled rTDMAX between 0 (not dispersed) and 1 
+(long dispersal), so that DI = (1-rTDMAX)*20 and DI varies 
+between 0 for long distance dispersal and 20 years delay for 
+short distance dispersal. For species carrying multiple strat-
+egies, we kept the lowest RST between the strategies.
+Recovery time (RT, in years) was then calculated at the 
+pixel level, as the mean value (over species in presence), 
+of the cumulated species-specific regeneration starting 
+time RST (in years) and species-specific recovery time 
+(RTi in years) from biomass growth (Eq. 6).
+where n is the number of species on pixel p, i is the spe -
+cies, and TPHM is the tree potential habitat map.
+Adjustment of species‑specific recovery time (ARTi) 
+and recovery starting time (ARST) based on environmental 
+constraints (EC)
+As defined by RTi and RST, optimal post-fire dynamics 
+can be locally modified by environmental or manage -
+ment constraints (Nolan et  al. 2021). We used climatic 
+(rainfall, temperature and solar radiation), topo-edaphic 
+(soil erosion, topography), and management conditions 
+as the main local adjustment modifiers (adjustment of 
+(3)RT = 1/
+n∑
+i=1
+TPHMi×
+n∑
+i=1
+TPHMi x (RST i×ARST m+(ARST t+ARST c)+RT i×ARTic)
+(4)
+RT = 1/
+n∑
+i=1
+TPHMi ×
+n∑
+i=1
+TPHMi x (RSTi + RTi)
+species-specific recovery time (ARTi) and recovery start -
+ing point (ARST)) as used in process-based forest models 
+(Rohner et al. 2018) (Seidl et al. 2011).
+The climatic, constraint on RST (ARSTc) was derived 
+from the yearly mean annual precipitation (MAP) and 
+potential evapotranspiration (PET) based on a 20-year 
+time series from the 4-km resolution Terraclimate 
+Observatory (Abatzoglou et al. 2018). We considered that 
+these variables drive soil moisture and the subsequent 
+seed germination (Chamorro et al. 2017), allowing plants 
+to develop root systems after a wildfire for efficient water 
+and nutrient uptake (Bakker et al. 1996). ARSTc was cal -
+culated as the PET/MAP ratio (varying from 0.2 for wet 
+areas to 5 for dry areas) to modify the regeneration time 
+RST so that dry areas (PET > MAP) experience longer 
+regeneration time (up to a 5-year delay) and wet areas 
+(PET < MAPP) do not experience any regeneration delay.
+We then considered post-fire soil erosion as an inte -
+grated topographic adjustment modifier for regeneration 
+(ARSTt) that can reduce the seed bank, soil quality, and 
+the subsequent regeneration capacity of the vegetation 
+(Seidl et al. 2011). We used the soil erosion map (in t.ha-
+1) for Europe (https:// data. jrc. ec. europa. eu/ datas et -last 
+accessed: December 2023), developed using the revised 
+universal soil loss equation (RUSLE) with a spatial reso -
+lution of 1 km. The values were then transformed into a 
+categorical variable, 1 to lower values and 4 to highest 
+values according to the criterion for soil erosion due to 
+water, proposed by the Food and Agriculture Organiza -
+tion of the United Nations (FAO) (FAO/UNEP/UNESCO, 
+1979): 1 to values between 0 and 20, 2 to values between 
+20 and 50, 3 to values between 50 and 200, and 4 to val -
+ues over to 200, which is also applicable to fire erosion 
+processes (Chuvieco et al. 2014a, b). We used these val -
+ues as the potential delay in regeneration time (in years) 
+due to topography (ARSTt).
+Finally, humans might play a significant role in post-fire 
+forest recovery by stimulating regeneration through tree 
+plantations. We used the European forest management 
+(FM) map from Hengeveld et al. (2012) (ranging from 1 
+for non-managed forests to 6 for highly managed forests), 
+to derive the modifier (ARSTm = (6-FM)/5) for the regen-
+eration time RST so that RST is not delayed (ARSTm = 0) 
+when management was high (value = 6). Species RST 
+was > 0, and kept as its initial value when management 
+was low (value = 1).
+A climate-driven adjusted recovery time (ARTic) was 
+derived from mean annual temperature MAT, and the 
+
+PAGE 11
+Page 11 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+monthly precipitation amount (MAP/12) (Abatzoglou 
+et al. 2018) below soil available water capacity (AWC) 
+as in Eq.  7 in a multiplicative combination as used in 
+forest growth models (Schworer et al. 2014; Morin et al. 
+2021; Rohner et  al. 2018). We set a minimum growth 
+rate adjusted at 40% of the optimal for each climate 
+control thus reaching a minimum of growth at 16%, 
+when combined and reaching the observed 2 mm to 10 
+mm variation in tree growth observed at the European 
+territory scale (Schelhaas et al. 2018). We obtained the 
+climatic adjustment for recovery ARTic as in Eq. 5.
+We then modified Eq. 6 with management (ARSTm), 
+topographic (ARSTt), and climatic (ARSTc, ARTic) 
+modifiers applied to recovery starting time (RST) or 
+species-specific recovery time (RTi), as in Eq. 6.
+where n is the number of species on pixel p, and i is the 
+species.
+Integration of the ecological vulnerability to wildfires 
+at the European scale
+In this study, vulnerability assessment involved examin -
+ing potential damages from an ecological perspective. 
+In earlier projects (Chuvieco et al. 2014a , b), to deter -
+mine potential losses caused by fires, we calculated the 
+reduction in value (marginal loss) that occurs when an 
+area is burned. These losses persist in the landscape 
+until pre-fire conditions are restored, and the reduc -
+tion of values was considered throughout the estimated 
+recovery time.
+Recognizing the greater importance of present val -
+ues over future ones, as future benefits may be per -
+ceived as more uncertain, we estimated the equivalent 
+present value of marginal losses using a discount rate. 
+A common value of 2% was chosen for the discount 
+rate, aligning with the valuation literature (Azqueta 
+2007). A hyperbolic factor was introduced in the mar -
+ginal loss equation to prevent long-term effects from 
+becoming negligible. This factor ensures that the pen -
+alty applied to the future diminishes asymptotically to 
+zero, achieved by incorporating the Neperian logarithm 
+instead of the absolute number of years for recovery 
+(Azqueta 2007).
+(5)ARtic = (0.4 + 0.6 × (MAT + 9)/29) × (0.4 + 0.6 × min (MAP/12, AWC)∗0.002))
+(6)RT = 1/
+n∑
+i=1
+TPHMi×
+n∑
+i=1
+TPHMi x(RST i×ARST m+(ARST t+ARST c)+RT i×ARTic)
+The three factors—EVA, CC, and RT—were integrated 
+into ecological vulnerability to wildfires (EVW) using 
+Eq. 7. This follows the interactions shown in Fig. 1, which 
+we will describe below.
+where r is a discount rate of 2%; the EVW was normal -
+ized from 0 to 1000, with 0 indicating low vulnerability 
+and 1000 indicating high vulnerability.
+The first part of Eq.  9 represents the interaction 
+between EVA and CC and simulates the potential loss 
+of ecological values when an extreme fire occurs. Thus, 
+this part of the equation represents the starting point of 
+recovery or the condition in which an ecosystem would 
+be left after the fire (post-fire ecological values).
+Ecosystems with high EVA but low CC may suffer sig -
+nificant losses in habitat destruction, species loss, and 
+disruption of ecological processes. Conversely, an ecosys-
+tem with high CC may be better equipped to withstand 
+wildfires, reducing potential ecological losses (Chuvieco 
+et al. 2023).
+The next part of Eq.  9 represents the fluctuation of 
+recovery rates over time, as many authors reflect in post-
+fire regeneration trajectories through RT and r (Chu et al. 
+2016; Röder et al. 2008; Viana-Soto et al. 2017). Thus, this 
+part of the equation simulates the recovery of ecosystems 
+after a disturbance. While a logistic curve can represent 
+the fluctuation of RT over time, the area under the curve 
+can be used as one of many quantitative measures to assess 
+the recovery dynamics or patterns of an ecosystem follow-
+ing a disturbance such as wildfires (Decò et al. 2013).
+Sensitivity analyses
+The sensitivity analysis known as “one-at-a-time” is used 
+to assess the individual impact of each factor in the eco -
+logical vulnerability integration equation to wildfires 
+(Saltelli et al. 2000). Since the equation involves the inter-
+action of four factors: ecological value assessment (EVA), 
+coping capacity (CC), recovery time (RT), and a discount 
+rate (r), this type of analysis allows for the independent 
+modification of each of these factors while keeping the 
+others constant, observing how it affects the final result 
+of ecological vulnerability.
+(7)EVW = (EVA × (1 − (CC/1000))) × 1 − (1 + r)−lnRT
+r
+
+PAGE 12
+Page 12 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+The main purpose is to understand the relative sen -
+sitivity of each factor and its contribution to ecologi -
+cal vulnerability. By making changes one at a time, 
+researchers can identify which factors significantly 
+impact the overall result (Arrogante-Funes et al. 2022; 
+Maes et al. 2023). This analysis helps researchers and 
+scientists better understand the dynamics of the equa -
+tion and prioritize areas of focus or improvement 
+based on the relative influence of each factor.
+With this purpose, the weight of the four factors was 
+individually modified, ranging from − 50 to 50% of 
+each factor’s value on the EVW equation.
+Results
+Ecological values
+Figure 4 includes the EVA results based on the PCA’s first 
+axis. Table 1 provides a statistical summary of the results 
+by biome.
+This first principal component kept 0.79 of overall var -
+iability (Table 7, Appendix 1 ). The results of PCA statis -
+tical analyses are for KMO 0.83, Bartlett analyses p  value 
+0, and omega hierarchical asymptotic 0.71. The results 
+indicate that the data is suitable for conducting a princi -
+pal component analysis. Significant relationships among 
+the variables are evident based on the Bartlett test, and 
+Fig. 4 Map of ecological value assessment (EVA) in Europe, scaled from 1 (low value) to 1000 (maximum value). Areas assigned to 0 were 
+not assessed, indicating urban areas
+
+PAGE 13
+Page 13 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+the scale utilized in the analysis demonstrates good reli -
+ability, as indicated by the omega value. The value of spe-
+cies richness (0.59), unique habitat preservation (0.52), 
+places of special conservation (0.46), density of habitat 
+(0.39), and key biodiversity areas reach the highest con -
+tribution to the ecological value assessment (Table  7, 
+Appendix 1). Based on the PC1 axis, our EVA index 
+identifies concomitantly biologically rich ecosystems 
+with high biomass and recognized investment by nations 
+to conserve them.
+As shown in Fig.  4, the tundra had the highest ecologi -
+cal values. Half of the EVA values are above 844, with a 
+mean of 820.50 (Table  1); 10% of the values exceed 
+968.45.
+The next biome that stands out for its high yet mod -
+erate EVA is the temperate grasslands biome found in 
+the Danube Delta in Romania (Fig.  4). Half of the eco -
+logical values are above 794.7. However, the mean value 
+of 467.57 suggests the presence of many pixels with 
+low EVA values (Table  1). Note that this biome is very 
+scarcely distributed solely in this specific region of the 
+Danube Delta.
+Based on the development of the EVA, both regions 
+host a unique biodiversity reflected by exceptional spe -
+cies and key biodiversity areas factors as well as good 
+ecological health of the ecosystems represented through 
+the conservation status indicator.
+The others presented lower values than these two high 
+EVA regions (Table  1). Still, the boreal and Mediterra -
+nean regions stand out spatially (Fig.  4), being the for -
+mer slightly higher than those of the latter (Table  1). In 
+both regions, we find ecological values centered around 
+400 for Mediterranean areas and approximately 500 for 
+boreal regions.
+Furthermore, in Mediterranean regions, the range of 
+EVA values is the most extensive compared to the six 
+biomes, peaking at 983.8 (Table  1). This variation high -
+lights significant differences in geographical distribu -
+tion attributed to landscapes typically affected by human 
+activity. This influence is accurately reflected in the 
+human pressure indicator, where even the more natural 
+areas exhibit unique species conditions, as indicated by 
+preserving unique habitats and key biodiversity areas. 
+For example, the high EVA values in the Penibetic and 
+Sierra Morena mountains in mainland Spain contrast 
+with the low EVA values in the agroforestry landscapes of 
+northern Italy (Fig. 4). Regarding the boreal forests, these 
+zones suggest they contain many of Europe’s general spe-
+cies but do not present higher ratios of the exceptionality 
+diversity variable.
+The results for the temperate broadleaf forests, coni -
+fer forests, and mixed forests generally experience lower 
+EVA than the rest of Europe, as shown in the spatial dis -
+tribution for the EVA (Fig.  4) and the statistics (Table  1). 
+Despite this generality, we find areas with high ecological 
+values in the Caledon forests of Ireland, the Alps, and the 
+Danube Valley (Fig. 4).
+Coping capacity and recovery time
+The results obtained from applying the methodology for 
+CC and RT are shown in Figs.  5 and 6 respectively, with 
+their synthesis tables by biome (Tables  2 and 3). Notably, 
+these results of CC stem from the interaction between 
+the fire resistance functional traits for trees (while 
+shrublands and grasslands have been considered simi -
+larly responding to fire) and a scenario of extreme fire in 
+Europe.
+As observed in the provided Table  2 and Fig. 5, the CC 
+values were predominantly low to moderate across the 
+different biomes in the EU. For instance, the Mediterra -
+nean region, which covers 19% of the EU area, exhibited 
+a mean CC value of 180.73 on a 0–1000 scale, indicat -
+ing a moderate resistance to extreme fire scenarios. The 
+median CC value for this biome was 80.75, suggesting 
+that many areas have lower fire resistance, but with sig -
+nificant variability as shown by a high standard deviation 
+(193.95) and a 90th percentile (PCT90) value of 442.61. 
+This indicates that about 10% of the Mediterranean 
+region has high fire resistance, likely due to the presence 
+of fire-resistant tree species.
+Table 1 Summary zonal statistics of the EVA per European biome
+Biome % Area Min Max Mean Std Median PCT90
+Mediterranean region 19 0.10 983.90 340.42 276.60 379.74 722.66
+Temperate conifer forests 5 27.20 973.32 303.06 362.48 50.59 821.67
+Temperate broadleaf and mixed forests 56 25.50 994.38 153.97 255.88 51.60 795.73
+Tundra 5 66.93 999.69 820.50 291.84 844 968.45
+Temperate grasslands, savannas, and shrublands 1 37.64 925.76 467.57 372.46 794.70 799.29
+Boreal forests 14 59.52 988.01 479.97 286.74 488.02 844.05
+
+PAGE 14
+Page 14 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+In contrast, the temperate conifer forests, covering 
+5% of the EU area, showed a higher mean CC value 
+of 251.5 and a median of 216.6, with a notable PCT90 
+value of 611.46 (Table  2). This suggests that these 
+forests generally exhibit higher fire resistance, with 
+a substantial portion of the area having strong resist -
+ance due to the predominance of fire-resistant conifer 
+species.
+The temperate broadleaf and mixed forests, the most 
+extensive biome covering 56% of the EU area, presented a 
+mean CC value of 185.34 and a very low median of 21.44, 
+indicating that while some areas have high fire resistance, 
+a large part of this biome has very low resistance, as 
+reflected by the high standard deviation (231.3) and a 
+PCT90 value of 508.6 (Table 2).
+The tundra biome, which covers 5% of the EU area, 
+showed low fire resistance with a mean CC value of 
+84.63 and a median of 21.29 (Table  2). The PCT90 value 
+of 264.31 suggests that only a small portion of the tun -
+dra has moderately higher fire resistance, likely due to 
+the sparse and low vegetation.
+The temperate grasslands, savannas, and shrublands, 
+covering 1% of the EU area, had the lowest mean CC 
+value of 51.25 and a low median of 21.43 (Table  2). 
+Fig. 5 Map of the ecosystems’ coping capacity to fire over Europe (0 non‑resistance, 1000 high resistance)
+
+PAGE 15
+Page 15 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+Fig. 6 Map of recovery time (in years after fire) over Europe
+Table 2 Summary zonal statistics of the CC
+Biome % Area EU Min Max Mean Std Median PCT90
+Mediterranean region 19 0 999 180.73 193.95 80.75 442.61
+Temperate conifer forests 5 0 999 251.5 250.24 216.6 611.46
+Temperate broadleaf and mixed forests 56 0 1000 185.34 231.3 21.44 508.6
+Tundra 5 0 1000 84.63 163.62 21.29 264.31
+Temperate grasslands, savannas, and shrublands 1 0 999 51.25 119.51 21.43 64.31
+Boreal forests 14 0 1000 411.99 290.75 590.96 639.05
+
+PAGE 16
+Page 16 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+The low PCT90 value of 64.31 reflects the very low fire 
+resistance across this biome, consistent with the pre -
+dominance of grasslands and shrublands for which we 
+set the lowest resistance values.
+The boreal forests, covering 14% of the EU area, dem -
+onstrated the highest fire resistance with a mean CC 
+value of 411.99 and a median of 590.96 (Table  2). The 
+PCT90 value of 639.05 indicates that a significant portion 
+of this biome has very high fire resistance, due to the less 
+presence of croplands in this biome since the croplands 
+obtain 0 value in our approach.
+In our methodology, we have focused on functional 
+traits associated with trees, taking advantage of the avail -
+able data on their habitat distribution. This approach 
+is reflected in the spatial distribution of these values 
+(Fig. 5): forested areas exhibit higher CC values, while, in 
+contrast, grass or shrubland areas show lower CC values 
+that we set to 0. Nevertheless, contrasted values within 
+forests reflects the variety of resistance traits found 
+across EU tree species.
+The analysis shows that forested biomes, particularly 
+boreal forests and temperate conifer forests, exhibit 
+higher fire resistance due to the presence of fire-resist -
+ant tree species. Conversely, biomes such as temperate 
+grasslands, savannas, and shrublands and tundra exhibit 
+the lowest fire resistance, reflecting their sparse and 
+non-resistant vegetation. The Mediterranean region and 
+temperate broadleaf and mixed Forests show moderate 
+resistance but with significant variability, highlighting the 
+diversity of vegetation and its impact on fire resistance 
+within these biomes.
+As we can observe in Table  3 and Fig.  6, vegetation 
+recovery time (RT) after a fire varies significantly across 
+different biomes in the EU. This RT is influenced by sev -
+eral factors, including soil erosion, temperature, precipi -
+tation, human management practices, slope, and terrain 
+aspect, as well as the functional traits of different species, 
+such as resprouters and seeders. Grass and shrub species 
+generally recover faster than trees, as reflected in the fol -
+lowing observations.
+RT was estimated through years of tree recovery based 
+on functional traits and local modifiers that facilitate or 
+hinder recovery (Fig.  6, Table 3). A fixed value of 2 years 
+was set for grasslands and 10 years for shrublands.
+The Mediterranean region exhibits a moderate 
+recovery time. The mean RT value in years is 27.2, 
+indicating that vegetation recovery is neither fast nor 
+slow on average (Table  3). The median RT of 13.64 
+suggests that a significant portion of the area recov -
+ers relatively quickly, but the high standard deviation 
+(32.97) and PCT90 value (70.68) highlight consider -
+able variability, with some areas taking much longer to 
+recover, indicating spatial differences between higher 
+and lower values (Fig. 6 ).
+In contrast, temperate conifer forests show a relatively 
+longer recovery time. The mean RT value of 62.61 and a 
+high median of 50.24 indicate that these forests generally 
+take longer to recover than the other biomes, likely due 
+to the dominance of tree species with longer recovery 
+periods. The high PCT90 value of 130.79 further empha -
+sizes the extended recovery time for a significant portion 
+of this biome.
+Temperate broadleaf and mixed forests, which cov -
+ers the largest area, has a mean RT value of 32.04 and 
+a very low median of 22.47. This suggests that while 
+many areas recover quickly (likely due to the presence 
+of resprouting species and shrubs), significant portions 
+take much longer, as indicated by the high standard 
+deviation and PCT90 value, as in the Mediterranean 
+region.
+The tundra biome exhibits a generally fast recovery 
+time with a mean RT of 21.45 and a low median of 14.33. 
+However, the variability is high, as indicated by the stand-
+ard deviation of 25.63 and PCT90 value of 46.61, reflect -
+ing some areas with significantly longer recovery times 
+due to harsher conditions and limited vegetation types.
+Table 3 Summary zonal statistics of the RT
+Biome % Area EU Min Max Mean Std Median PCT90
+Mediterranean region 19 1 280.9 27.2 32.97 13.64 70.68
+Temperate conifer forests 6 1 281 62.61 47.6 50.24 130.79
+Temperate broadleaf and mixed forests 56 1 280.69 32.04 34.71 22.47 80.25
+Tundra 5 1 280.89 21.45 25.63 14.33 46.61
+Temperate grasslands, savannas, and shrublands 1 1 172.61 6.09 14.6 1.26 15.82
+Boreal forests 14 1 280.89 29.66 18.2 28.64 51.25
+
+PAGE 17
+Page 17 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+As in the previous case, temperate grasslands, savan -
+nas, and shrublands show the fastest recovery time with 
+a mean RT of 6.09 and a median of 1.26. The low PCT90 
+value of 15.82 indicates that the majority of this biome 
+recovers very quickly, likely due to the dominance of fast-
+recovering grass and shrub species.
+Finally, boreal forests show the longest recovery times, 
+with a high mean (29.66) and median (28.64). The high 
+variability (Std: 18.2) and PCT90 value (51.25) indicate 
+that recovery times are generally long, likely due to the 
+slow growth rates of boreal tree species and harsh cli -
+matic conditions.
+The biomes, from shortest to longest recovery time, are 
+as follows. Temperate grasslands, savannas, and shrub -
+lands exhibit the fastest recovery times due to the rapid 
+regrowth of grasses and shrubs. Next, the tundra also 
+recovers quickly, reflecting the resilience of its hardy 
+vegetation. Following this, the Mediterranean region 
+shows moderate recovery times with significant variabil -
+ity, indicating a mix of fast-recovering shrublands and 
+slower-recovering forested areas. Subsequently, temper -
+ate broadleaf and mixed forests have moderate recov -
+ery times, with a substantial portion recovering quickly 
+due to the presence of resprouting species. In contrast, 
+temperate conifer forests exhibit longer recovery times, 
+reflecting the slow regrowth of coniferous trees. Finally, 
+boreal forests have the longest recovery times, likely due 
+to slow-growing tree species and harsh environmental 
+conditions.
+Integrated ecological vulnerability to wildfire
+Based on the EVA, CC, and RT analyses, the ecological 
+vulnerability to wildfires (EVW) across evaluated Euro -
+pean lands shows moderate outcomes. Considering an 
+extreme fire scenario around 500 mean value of EVW, 
+the results reveal higher median values than the mean, 
+indicating generally lower vulnerability (Table  4). The 
+standard deviation surpassing the mean and median 
+underscores distinct spatial distributions across regions, 
+distinguishing between grasslands and wooded areas, 
+among others (Fig. 7), and for RT, we computed the EVW 
+map (Fig.  7) and a summary of zonal statistics based on 
+Europe’s different biomes.
+Despite this pattern, we can find areas with the high -
+est EVW values in the Scandinavian Peninsula (Fig.  7). 
+Table  4 illustrates that the tundra biome emerges as 
+the most vulnerable to wildfires based on its high mean 
+EVW, reflecting substantial susceptibility primarily 
+due to climate-related factors and vegetation charac -
+teristics. The considerable standard deviation (188.67) 
+indicates variability in vulnerability levels across tundra 
+regions. The median (399.86) and PCT90 (547.4) values 
+highlight areas within the tundra biome with elevated 
+vulnerability.
+The next more vulnerable biome was temperate coni -
+fer forests exhibit significant vulnerability to wildfires, 
+characterized by a relatively high mean EVW (157.51) 
+and substantial standard deviation (211.08). This vul -
+nerability is influenced by the prevalence of fire-prone 
+coniferous species and climatic conditions conducive to 
+fire spread, particularly in northern Europe and moun -
+tainous regions (Fig.  7). Furthermore, the elevated 
+PCT90 (527.6) value indicates localized areas with 
+heightened vulnerability.
+Boreal forests show moderate vulnerability to wild -
+fires, with a mean EVW (145.66) influenced by slow-
+growing tree species and environmental conditions 
+prone to fire outbreaks. The standard deviation sug -
+gests varying susceptibility across boreal landscapes 
+(162.58), with the PCT90 (426.68) value highlighting 
+regions of elevated vulnerability, particularly in North 
+Scandinavia.
+The next biome, but with lower EVW compared to 
+boreal forests, was the Mediterranean region, display -
+ing moderate vulnerability to wildfires, characterized by 
+a mean EVW (of 81.91) influenced by diverse landscape 
+types from fire-prone shrublands to more fire-resilient 
+forests (Fig.  7). The variability in vulnerability levels 
+across the region it was also indicated by the standard 
+deviation (141.88). The PCT90 value highlights areas 
+with heightened vulnerability, such as the Alps, stand out 
+in the Iberian sclerophyllous and semi-deciduous forests, 
+Table 4 Zonal statistics of the EVW values per biome in Europe
+Biome % Area EU Min Max Mean Std Median PCT90
+Mediterranean region 19 0 893.05 81.91 141.881313 24.57 339.39
+Temperate conifer forests 6 0.02 956.23 157.51 211.079439 31.13 527.60
+Temperate broadleaf and mixed forests 56 0 882.55 65.39 125.325281 21.10 217.97
+Tundra 5 0.02 1000 339.56 188.673707 399.86 547.40
+Temperate grasslands, savannas, and shrublands 1 0 714.90 55.07 102.944104 11.81 150.67
+Boreal forests 14 0 870.67 145.66 162.581745 40.19 426.68
+
+PAGE 18
+Page 18 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+such as the Penibetic mountain range, or the case of tem-
+perate conifers.
+The last two less vulnerable biomes were temperate 
+broadleaf and mixed forests and temperate grasslands, 
+savannas, and shrublands. The first shows a mean EVW 
+(65.39) influenced by a mix of deciduous and evergreen 
+species. The standard deviation (125.33) indicates vari -
+ability in vulnerability levels across temperate Europe, as 
+we can observe in France and Germany (Fig. 7), with the 
+median (21.1) and PCT90 (217.97) values highlighting 
+regions with elevated vulnerability due to forest composi-
+tion and climatic factors.
+The last biome, temperate grasslands, savannas, and 
+shrublands, exhibits the lowest vulnerability to wild -
+fires among the assessed biomes, characterized by a 
+relatively low mean EVW (55.07) and standard devia -
+tion (102.94). The resilience of grasslands, savannas, and 
+shrublands to fire is evident in the minimal variability in 
+vulnerability levels across these landscapes. The median 
+(11.81) and PCT90 (150.67) values reinforce the overall 
+Fig. 7 Map of ecological vulnerability to wildfire (EVW) integrating coping capacity (CC), recovery time (RT), and ecological value assessment (EVA) 
+over Europe (with 0 = low vulnerability, 1000 = high vulnerability)
+
+PAGE 19
+Page 19 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+low susceptibility to wildfires in temperate grassland and 
+shrubland ecosystems, as we can observe in the last lands 
+of the Danube River (Fig. 7).
+Sensitivity analyses
+The sensitivity of the methodology to estimate the inte -
+grated ecological vulnerability to wildfire (EVW) was 
+assessed through induced changes in the factors involved 
+in its estimation: ecological value assessment (EVA), 
+coping capacity (CC), recovery time (RT), and rate of 
+discount (r). Figure  8 shows the sensitivity of the EVW 
+integration method to changes in these factors by recal -
+culating the EVW while perturbing the parameters one 
+by one from − 50 to + 50% of their baseline value. The 
+results demonstrate that, after inducing different intensi -
+ties of change in the parameters, the average EVW result 
+barely varies. Thus, it was found that the EVW integra -
+tion method showed good stability in the face of varia -
+tions in its factors, as the percentage change was below 
+0.3% (Fig.  8). The most significant impact on EVW was 
+obtained by modifying coping capacity (CC), which 
+establishes potential ecological losses based on the ini -
+tial ecological value (EVA). A 50% decrease in coping 
+capacity resulted in a 0.13% increase in EVW, while a 50% 
+increase in coping capacity resulted in a 0.4% decrease in 
+EVW. The complete figure for all results is in the Appen -
+dix 1 (Fig. 10).
+Discussion
+Ecological values: first steps and toward further conceptual 
+frameworks
+We used the concept of ecological value assessment 
+(EVA) as an integrated index of ecosystem function -
+ing potentially affected by fires, informing about prior -
+ity regions to be protected from or managed after fires. 
+The concept of ecological value assessment is in fact still 
+loosely defined, so that independent studies assembled 
+contrasted information as reviewed in Amador-Cruz 
+et al. (2021). Our framework is informed by the key infor-
+mation list, adapted to fit the constraints of the Euro -
+pean-scale study area and data availability (Perrone et al. 
+2023).
+Based on this raw information, we computed spe -
+cies richness as the number of species. This first choice 
+is a simple approach when current new indices based 
+on functional richness (Legras et  al. 2018) or rarity-
+weighted richness (Albuquerque & Beier 2015) could 
+integrate species endemism or rarity and functional 
+redundancies between species. To maintain consist -
+ency in the information across both plants and animals, 
+Fig. 8 OAAT sensitivity analyses result in changing weights of each variable by separating from − 50 to 50% over the EVW integration
+
+PAGE 20
+Page 20 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+we utilized the number of species, with plants benefit -
+ing from extensive documentation of their traits from 
+the TRY database (Kattge et  al. 2020), while animals, 
+which have been less thoroughly investigated, are also 
+accounted for (Tobias et  al., 2022). Further improve -
+ments using a functional biogeography framework 
+(Violle et al. 2014) and refined species distribution will 
+certainly improve this ecological value assessment.
+Despite our assumptions guided by technical and con -
+ceptual constraints, we could propose a first attempt to 
+provide an ecological value assessment map for Europe. 
+Our final map illustrates how the European continent 
+encompasses diverse ecosystems and landscapes with 
+contrasted ecological values. Particularly, as many studies 
+reflect, the boreal forests of Scandinavia, the Carpathian 
+Mountains, Atlantic coastal areas, the Danube River 
+Basin, and the South Iberian Peninsula present higher 
+EVA due to the presence of particular species, such as 
+endemism, plus the general species supported in central 
+Europe ecosystems, considered being rich biodiversity 
+areas (Habel et al. 2013; Kayes et al. 2020; Mamos et al. 
+2021; Manzano et al. 2019).
+Our approach suggests the tundra has very high eco -
+logical values compared to the rest of the biomes, in con -
+trast to previous studies (Walker et al. 2001). The tundra 
+landscapes in the northern part of the Scandinavian Pen -
+insula showcase biodiversity that stands out for having 
+exceptional species in good condition compared to other 
+biomes with only widespread species (Hofgaard et  al. 
+2012). Many studies highlight that fires can negatively 
+impact the tundra’s high EVAs (Bret-Harte et  al. 2013; 
+Mccarty et al. 2021).
+Temperate broadleaf and mixed forests do not stand 
+out with the highest ecological values compared to 
+other biomes, reducing their intrinsic vulnerability. 
+This goes against what was reported by Marín et  al. 
+(2021) reporting a biodiversity hotspot in Central 
+Europe but only assessing the entire European territory 
+by quantifying biodiversity solely based on tree species. 
+Although using simple indices, our study considers an 
+extensive database of plant and animal taxa to charac -
+terize each biome as recommended by previous eco -
+logical value assessment frameworks (Dinerstein et al. 
+1995; Ricketts et al. 1999).
+However, landscape variability also plays a sig -
+nificant role, as spatial differences suggest that the 
+observed low vulnerability is not uniform across 
+the extensive territory of the biome. In those zones, 
+our study coincides with the findings of Marín et  al. 
+(2021). In some areas, such as the lands near the Dan -
+ube Valley and the Carpathians, the highly biodiverse 
+composition of the forest may influence local vulner -
+ability, emphasizing the importance of studying vari -
+ability at the regional level to fully comprehend the 
+dynamics of ecological vulnerability by biome, as many 
+authors highlighted about the frameworks of vulner -
+ability (Blaikie et al. 1994).
+Coping capacity, post‑fire recovery and ecological 
+vulnerability to wildfires: beyond vegetation
+Beside the geographical variety of EVAs contributing 
+to EVW, contrasted vegetation responses during fires 
+themselves (Midolo et  al. 2023) and after fire during 
+regeneration (Nolè et al. 2022) could be integrated in our 
+framework.
+While some ecosystems, such as Mediterranean for -
+ests, have developed adaptations that confer higher CC 
+values over the forested areas (Kühn et al. 2021), others, 
+like the tundra, exhibit lower CC due to the less efficient 
+functional traits of their flora to cope with high tempera -
+tures reached during combustion (Lashchinskiy et  al. 
+2020).
+The tundra landscapes of the Scandinavian Penin -
+sula are highly ecologically vulnerable to fire due to the 
+interaction between their rich ecological values, low 
+resistance capacity, and medium regeneration times. A 
+typically highly flammable organic horizon that spreads 
+fires rapidly increases the likelihood of intense fires 
+reaching these areas and reducing CC (Lashchinskiy et al. 
+2020).
+In general, the Mediterranean region also exhibits a 
+notable values of ecological vulnerability to wildfires, 
+attributed to its prominent ecological values, moder -
+ate coping capacity, and recovery times. These regions 
+showcase characteristics that reduce potential losses 
+and recovery times based on their resistance and regen -
+eration functional traits, making them among the most 
+adapted ecosystems (Baeza & Roy 2008). However, the 
+region displays high variability in the values of EVW due 
+to its heterogeneous landscape, where general values may 
+not fully represent this diversity, as also argued by Pausas 
+and Vallejo (1999).
+Specifically, certain zones in the Mediterranean, like 
+Spanish or Italian sclerophyllous and semi-deciduous 
+forests, exhibit lower RT values for forested areas com -
+pared with other forested zones of Europe owing to the 
+presence of resilient resprouter communities and higher 
+water availability from ocean and sea climate conditions 
+(Rodrigo et al. 2004; Rodrigues et al. 2014).
+Like the Scot and Alp forests, the temperate conif -
+erous biome in Europe shows a significant ecological 
+
+PAGE 21
+Page 21 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+vulnerability to wildfires, as the literature over Pinus 
+spp. suggested (Adámek et al. 2016). While they do not 
+possess high ecological values throughout their extent, 
+they exhibit a moderate coping capacity combined with 
+extended regeneration times under an extreme fire sce -
+nario, contrasting with previous studies (Adámek et al. 
+2016; Engelmark & Hytteborn 1999). The conifers of 
+these ecosystems do not have specific fire regeneration 
+functional traits, making them less effective in extreme 
+fire-prone environments (Aubin et  al. 2016). Broad -
+leaved forests show moderate coping capacity and 
+recovery time values, indicating a moderate ability to 
+cope with and recover from fires, as previously stated 
+(Maringer et al. 2016; Moris et al. 2017).
+The boreal forest ecosystems that dominate the coun -
+tries of Finland, Sweden, and Norway exhibit a more 
+moderate ecological vulnerability to wildfires compared 
+with the previous biomes. This is due to the biome’s 
+outstanding ecological values, with extensive regenera -
+tion times according to other authors (Héon et al. 2014; 
+Weldon & Grandin 2019), but with high coping capacity 
+due to the coarse bark-thickness of these species. While 
+boreal forest species have developed some functional 
+resistance traits to fire throughout their evolution as can-
+opy height, the overall regeneration is not as pronounced 
+as in more fire-prone ecosystems, which are more fire-
+adapted (Kühn et al. 2021).
+The temperate broadleaf and mixed forests biome in 
+Europe demonstrates the lowest ecological vulnerabil -
+ity to wildfires among the biomes studied that contains 
+tree species due to its regular ecological values and its 
+diverse tree species, including fire-resistant deciduous 
+and evergreen trees, and resprouting species that recover 
+quickly post-fire as Adie and Lawes (2023) illustrated 
+too. According to Bauhus et  al. (2017), this resilience is 
+enhanced by the favorable climatic conditions prevalent 
+in temperate regions, such as moderate temperatures 
+and adequate rainfall, which support rapid vegetation 
+recovery.
+Additionally, the biome’s mosaic of forested areas and 
+grasslands as in the case of the Mediterranean region, 
+with the latter recovering quickly due to rapid regrowth 
+of grasses and herbaceous plants, further reduces over -
+all vulnerability (Bauhus et al. 2017; Hamilton & Burton 
+2023).
+In Europe, temperate grasslands, savannas, and 
+shrublands such as the temperate grasslands of the 
+Danube Delta are among the ecosystems with the low -
+est ecological vulnerability to wildfire. These ecosys -
+tems exhibit diverse landscapes internally caused by 
+an equilibrium between nature and humans, similar to 
+what occurs in Mediterranean regions (Gastescu 1993). 
+Thus, the limited area of this biome in the Danube 
+Delta ecosystem in Romania shows a low EVW due to 
+the short regeneration period despite assembling high 
+EVA and very low CC.
+European grasslands, in general, show no fire resist -
+ance. Grasses are highly flammable and would be com -
+pletely consumed in fire (aboveground), unlike tree 
+structures, but grass structures experience shorter regen-
+eration times than trees (Keeley et al. 2011). Hence, the 
+grasslands may have the ability to regenerate quickly after 
+a fire (Gang et al. 2019; Ruprecht et al. 2015).
+We did not differentiate CC and RT between grass -
+land and shrubland species. Still, expanding the informa -
+tion in our database of species distribution for grasses or 
+shrubs would be necessary. As proposed by Keeley et al. 
+(2011), this would allow us to more accurately determine 
+the ecological vulnerability of these areas, where tree 
+cover does not represent all ecosystems.
+In our framework, we limited CC and RT assessment 
+to vegetation, whose response to fire is the most direct 
+and which constitutes the main habitat for animal spe -
+cies. We then hypothesized here that animal diversity 
+was equally affected and equally recovered after fires 
+as vegetation. This might not be fully true as animal 
+recovery is slower than vegetation (Jacquet & Pro -
+don 2009; Prodon & Diaz-Delgado 2021), and fire size 
+affecting landscape fragmentation might significantly 
+affect the recovery rate (Puig-Giron et al. 2022). Further 
+improvements should assemble animal traits related to 
+fire-affected habitat specificities, as well as landscape 
+fragmentation indices.
+Uncertainties
+Our EVW framework relies on multiple data sources 
+and assumptions, potentially sources of uncertainties. 
+Our sensitivity analysis results revealed that CC and 
+RT were both similarly relevant, as the extensive litera -
+ture reflects (Yi & Jackson 2021), but with the CC fac -
+tor standing out, a key factor to refine and pay attention 
+to. We could show that Europe exhibits contrasted vul -
+nerability to extreme fires throughout its territory. The 
+following ranking of ecosystems most vulnerable to fire 
+could be established: tundra, boreal forests, temperate 
+coniferous forests, Mediterranean regions, temperate 
+grasslands, and temperate deciduous and mixed for -
+ests. Interestingly, in line with the study on the vulner -
+ability of forest ecosystems to climate change in Europe 
+by Lindner et  al. (2010), the most vulnerable regions 
+coincide as the boreal and coniferous forests in the 
+northern UK, while Mediterranean areas are identified 
+
+PAGE 22
+Page 22 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+as moderately vulnerable, so that increasing fires with 
+climate change might enhance these already identified 
+vulnerable regions.
+Our framework provides a static map of EVW, 
+assuming constant species distribution maps and cli -
+mate modifiers. Based on these climate effects, we 
+could provide climate-responsive RT following obser -
+vations. For example, the tundra undergoes a short 
+growing season due to low temperatures, shorten -
+ing the time for vegetation to recover and regenerate 
+and contributing to a reduced regenerative capacity 
+after a fire (Boucher et al. 2020; Bret-Harte et al. 2013; 
+Strengbom et  al. 2001). Similarly, many areas in the 
+Mediterranean region report higher RT values due 
+to low water availability from insufficient rainfall and 
+consequent soil degradation caused by drought epi -
+sodes (Baeza et al. 2007; Bisson et al. 2008). Adequate 
+water availability post-fire is crucial for the germina -
+tion of most seeders (Moreno & Oechel 1992), as dry 
+conditions can delay post-fire regeneration in seeding 
+communities, as suggested by Rodrigo et  al. (2004). 
+Despite being a region with most European fires and 
+so considered good fire response, it does not emerge 
+as the least vulnerable region based on the extreme fire 
+scenario. In turn, as argued by Pausas et al. (2008), the 
+extreme fire scenario with high temperatures and pro -
+longed fire exposure results in a challenge to overcome 
+even by fire-adapted vegetation of the Mediterranean. 
+This can severely impact seed viability and soil quality 
+and hinder plant species’ successful germination and 
+regrowth (Moreira et  al. 2011). Furthermore, the loss 
+of vegetation cover, soil degradation, and dry weather 
+with limited water availability after fire can impede 
+seed germination, making it challenging for new plants 
+to establish themselves (Seidl et  al. 2011). Here, we 
+used simple linear relationships between mean annual 
+precipitation/temperature and CC or RT that could be 
+further used in future climate change scenarios and 
+forest species distribution (Mauri et al. 2022).
+A more dynamic EVW approach, re-evaluating CC, 
+RT, and EVA yearly, could consider potential cascading 
+effects (Ibanez et al. 2022) when fire recurrence reaches 
+short-term intervals below species maturity thresholds. 
+Depending on the time since the last fire, non-linear 
+responses could highly increase RT and the subsequent 
+EV W.
+Our methodological framework can finally be 
+applied at a regional scale with fine-resolution data 
+improving biodiversity information (Diví & Chytrý, 
+2018), fire scenario (Chuvieco et al. 2023), plant func -
+tional traits (Kattge et  al. 2020), biomass assessment 
+(Vallet et  al. 2023), and topo-climates (Ackerly et  al. 
+2020), for more local fire management strategies and 
+stakeholder concerns or empirical knowledge (Rivière 
+et al. 2023).
+Applicability
+Despite the disparity in spatial databases, inherent 
+assumptions and the uncertainty of the integration meth-
+ods inherent to these kinds of studies (Heuvelink 1998; 
+Heuvelink et al. 1989), we have proposed a standardized 
+methodology for assessing ecological vulnerability to 
+wildfires across Europe, developing the current assess -
+ment of wildfire vulnerability available at the European 
+Forest Fire Information system San-Miguel-Ayanz et  al. 
+(2018), relying on the Natura 2000 network alone. This 
+latter initial approach lacks fire scenarios and fails to con-
+sider the key component of ecosystem resilience.
+Our achievement is a significant step for the scientific 
+community in consolidating a standardized approach and 
+holds significant importance for the EU stakeholders. A 
+comprehensive framework allows for a holistic assess -
+ment of vulnerability, considering multiple factors such 
+as biodiversity richness and conservation status, vegeta -
+tion resilience to fire, and bioclimatic conditions affect -
+ing regeneration. This integrated approach facilitates 
+a deeper understanding of how different ecosystems 
+respond to wildfires and their potential for recovery, thus 
+providing a scientific basis for informed decision-making. 
+Standardized methodologies enable comparative evalua -
+tions of vulnerability across different European regions, 
+which is essential for identifying areas requiring prior -
+itized attention and additional resources. This optimizes 
+the allocation of funds and mitigation efforts.
+The ability to map these ecologically vulnerable zones 
+provides a valuable tool for society, legislation, and deci -
+sion-making to solve the current concerns of UNESCO 
+World Heritage (Durrant et al. 2023) and the specific bio-
+diversity (Biodiversity Strategy for 2030) (https:// eur- lex. 
+europa. eu/ legal- conte nt/ EN/ TXT/? uri= CELEX: 52020 
+DC038 0—last accessed: December 2023) and forest (New 
+EU Forest Strategy for 2030) (https:// eur- lex. europa. eu/ 
+legal- conte nt/ EN/ ALL/? uri= CELEX: 52021 DC057 2—last 
+accessed: December 2023) targets in risk reduction of 
+the European Green Deal. Moreover, the assessment of 
+ecological vulnerability enhances fire risk information 
+systems, by extending the traditional concept of danger 
+evaluation with new dimensions, reminding that risk 
+assessment should include both aspects, the physical 
+probability of the event and the potential damages that it 
+may cause.
+
+PAGE 23
+Page 23 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+Based on the vulnerability maps, the European Union 
+can allocate funds specifically to countries and regions 
+with higher vulnerability. This ensures that resources are 
+used efficiently to reduce wildfire risk and enhance eco -
+logical resilience. The data derived from these studies can 
+guide the development of specific wildfire management 
+policies, including forest management and ecosystem 
+restoration practices.
+Examples of effective measures include the selective 
+clearing of vegetation to reduce available biomass, man -
+aged grazing to control vegetation sustainably, and the 
+planting of shrubs and trees to restore degraded areas 
+with fire-resilient species (Jucker Riva et al. 2018). These 
+measures promote ecological recovery and protect 
+against erosion, contributing to the overall resilience of 
+ecosystems. Additional conservation practices, such as 
+the protection of specific species and the provision of 
+forage, can further enhance ecosystem resilience (Jucker 
+Riva et al. 2018).
+Areas identified with higher vulnerability can benefit 
+from more detailed studies using precise databases that 
+allow for a fine-grained identification of priority areas. 
+This facilitates more effective and targeted investments in 
+mitigation measures.
+Conclusions
+This study aims to present a first methodological frame -
+work for assessing ecological vulnerability to wildfires 
+at European scale based on the concepts of ecological 
+values, coping capacity, and recovery time after wild -
+fires. The method is based on map algebra, which could 
+ensure replicability on other regions and scales. Cop -
+ing capacity was a prominent factor when estimating 
+vulnerability. As a preliminary approximation, it can 
+be further refined to address uncertainties in the model 
+within specific areas.
+In conclusion, the tundra biome emerges as the most 
+ecologically vulnerable to fire, primarily due to its high 
+ecological values and significant recovery time, com -
+bined with a moderate coping capacity. Temperate coni -
+fer forests also exhibit high vulnerability to wildfires 
+driven by extensive recovery time, despite moderate 
+ecological and coping capacity values. The boreal for -
+ests rank next, with considerable vulnerability due to 
+their long recovery time and moderate coping capacity. 
+The Mediterranean region, although having moderate 
+ecological values and recovery time, shows a notable 
+vulnerability influenced by lower coping capacity. The 
+temperate broadleaf and mixed forests demonstrate rel -
+atively lower vulnerability owing to their balanced eco -
+logical values, moderate recovery time, and substantial 
+coping capacity. Lastly, the temperate grasslands, savan -
+nas, and shrublands are the least vulnerable, benefiting 
+from lower ecological values and the fastest recovery 
+time, alongside moderate coping capacity, which collec -
+tively reduce their overall fire vulnerability.
+The proposed method contributes a step forward to a 
+European-scale mapping of ecological vulnerability. This 
+component of the full framework includes additional vul-
+nerabilities such as those related to the socio-economic 
+values (ecosystem services, human infrastructure, and 
+houses) (Chuvieco et al. 2023).
+In any case, we consider the proposed method suffi -
+ciently strong to be valuable for the European Commu -
+nity since it is valid for identifying ecological priority 
+zones against wildfires, promoting successful regenera -
+tion after wildfires, and promoting effective forest man -
+agement practices and conservation policies.
+Appendix 1
+Table 5 List of terms through the manuscript with its acronyms
+Terms Acronyms
+Biological distinctiveness BD
+Conservation status CS
+Coping capacity CC
+Discount rate r
+Ecological potential losses EPL
+Ecological resilience ER
+Ecological values assessment EVA
+Ecological vulnerability to wildfires EVW
+Environmental constraints EC
+Fireline intensity FLI
+Principal component analyses PCA
+Recovery time RT
+Recovery starting time RST
+Species‑specific recovery time RTi
+Resistance of the vegetation to wildfires RVW
+Tree potential habitat maps TPHM
+Adjustment of recovery starting time ARST
+Adjustment of species‑specific recovery time ARTi
+
+PAGE 24
+Page 24 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+Fig. 9 The study area of Europe is classified into the biomes proposed by Dinerstein et al. (2017)
+
+PAGE 25
+Page 25 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+Table 6 List of plant species used to characterize the CC and RT
+Species Sub Land cover Resistance 
+(FTrvw)
+Regeneration starting 
+time (years) RST
+Maximum growth rate 
+(GR) (m.year − 1)
+Biomass max 
+(BMAX) (MgDW.
+ha)
+Grass grass 1 0.00 0 0.10 5
+Crop crop 2 0.01 0 1.00 5
+Peat peat 3 0.01 0 0.10 50
+Heath heath 4 0.02  − 2 0.20 50
+Shrub shrub 5 0.02  − 2 0.20 50
+Orchard orchard 6 0.08  − 10 0.09 300
+Vineyard vineyard 7 0.03  − 2 0.10 60
+Forest broadleaves 8 0.30 12 0.96 1
+Forest needleleaves 9 0.13  − 10 0.21 1
+Abies alba 9 0.17  − 10 0.21 391
+Acer campestre 8 0.13  − 10 0.25 71
+Acer opalus 8 0.32  − 10 0.22 71
+Acer platanoides 8 0.23  − 10 0.24 69
+Acer pseudoplatanus 8 0.16  − 10 0.24 201
+Alnus glutinosa 8 0.09  − 10 0.50 85
+Alnus incana 8 0.10  − 10 0.10 121
+Arbutus unedo 5 0.23  − 10 0.31 50
+Aria edulis 8 0.22  − 10 0.31 120
+Betula pendula 8 0.10 12 0.09 89
+Betula pubescens 8 0.13  − 10 0.51 89
+Borkhausenia intermedia 8 0.16  − 10 0.51 89
+Carpinus betulus 8 0.27  − 10 0.14 163
+Carpinus orientalis 8 0.20  − 10 0.51 163
+Castanea sativa 8 0.16  − 10 0.15 371
+Celtis australis 8 0.12  − 10 0.11 163
+Ceratonia siliqua 8 0.09  − 10 0.07 163
+Cormus domestica 8 0.23 17 0.20 163
+Corylus avellana 8 0.29  − 25 0.29 163
+Cupressus sempervirens 9 0.41  − 10 0.72 163
+Eucalyptus spp 10 0.33  − 10 0.26 300
+Fagus sylvatica 8 0.24  − 10 0.33 385
+Fraxinus angustifolia 8 0.13  − 10 0.10 126
+Fraxinus excelsior 8 0.21  − 10 0.50 126
+Fraxinus ornus 8 0.27 10 0.15 126
+Juglans regia 8 0.27 15 0.34 200
+Juniperus thurifera 5 0.05  − 10 0.10 50
+Larix decidua 8 0.09 11 0.09 232
+Laurus nobilis 8 0.15  − 10 0.12 50
+Malus sylvestris 8 0.07  − 10 0.48 90
+Olea europaea 11 0.42 10 0.94 400
+Ostrya carpinifolia 8 0.52 0 0.23 100
+Picea abies 9 0.28 1 0.17 272
+Pinus brutia 9 0.40 0 0.49 542
+Pinus cembra 9 0.50 3 0.60 542
+Pinus halepensis 9 0.45 0 0.70 294
+Pinus nigra 9 0.45 0 0.70 289
+Pinus pinaster 9 0.48 11 0.31 559
+Pinus pinea 9 0.07  − 10 0.36 559
+
+PAGE 26
+Page 26 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+Species Sub Land cover Resistance 
+(FTrvw)
+Regeneration starting 
+time (years) RST
+Maximum growth rate 
+(GR) (m.year − 1)
+Biomass max 
+(BMAX) (MgDW.
+ha)
+Pinus sylvestris 9 0.07  − 10 0.36 208
+Pistacia lentiscus 5 0.14  − 10 0.47 50
+Pistacia terebinthus 5 0.27  − 10 0.48 50
+Populus alba 8 0.30  − 10 0.44 225
+Populus nigra 8 0.16  − 10 0.23 225
+Populus tremula 8 0.16 12 0.23 87
+Prunus avium 8 0.92 9 2.16 90
+Prunus padus 8 0.09 11 0.09 90
+Pseudotsuga menziesii 8 0.36  − 10 0.25 266
+Pyrus communis 8 0.09  − 10 0.30 90
+Quercus cerris 8 0.31  − 10 0.17 400
+Quercus coccifera 8 0.30  − 10 0.25 50
+Quercus faginea 8 0.18  − 10 0.10 400
+Quercus frainetto 8 0.35  − 10 0.63 400
+Quercus ilex 8 0.24  − 10 0.30 443
+Quercus petraea 8 0.16  − 10 0.17 409
+Quercus pubescens 8 0.34  − 10 0.63 258
+Quercus pyrenaica 8 0.43  − 25 0.11 400
+Quercus robur 8 0.29  − 10 0.48 433
+Quercus suber 8 0.18  − 10 0.25 450
+Robinia pseudoacacia 8 0.12  − 10 0.19 400
+Salix alba 8 0.22  − 10 0.20 123
+Sorbus aucuparia 8 0.14  − 10 0.20 33
+Taxus baccata 8 0.27  − 10 0.40 514
+Tilia cordata 8 0.18  − 10 0.15 246
+Tilia platyphyllos 8 0.38  − 10 0.38 243
+Torminalis glaberrima 8 0.35  − 10 0.38 243
+Ulmus glabra 8 0.32  − 10 0.38 202
+Ulmus laevis 8 0.00 0 0.10 202
+Ulmus minor 8 0.01 0 1.00 202
+Table 7 Results of PCA based on ecological values assessment 
+and its explanatory variables
+Number of PCA Axis 1
+Explicability 0.79
+Eigenvectors 259.3
+Input layer Ecological values 
+assessment (EVA)
+Species richness 0.59
+Abundance of species 0.39
+Forest productivity 0.35
+Key biodiversity areas 0.38
+Exceptional forests 0.29
+Places of special conservation 0.46
+Human pressures  − 0.32
+Loss of forest  − 0.34
+Unique habitat preservation 0.52
+
+PAGE 27
+Page 27 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+Appendix 2
+PCA methodology: extra
+Bartlett’s test of sphericity evaluates redundancy 
+between variables by comparing the observed correlation 
+matrix with the identity matrix. The alternative hypoth -
+esis suggests sufficient correlation for data reduction 
+(Andersen et  al. 2009). The test is represented by Eq.  8, 
+where det(R) is the determinant of the correlation matrix, 
+N is the number of observations, and p is the number of 
+variables.
+KMO is a statistical measure determining data suit -
+ability for factor analysis; values below 0.5 indicate inade-
+quate sampling (Andersen et al. 2009). Equation 9 defines 
+the KMO test, where rjk is the correlation between the 
+(8)Bartlett =− log(det(R)) ∗(N − 1 − 2p + 5
+6 )
+variable in question and another, and pjk is the partial 
+correlation.
+Omega hierarchical asymptotic assesses the internal 
+consistency reliability of data, indicating the overall con -
+sistency of a measure. This test was chosen for its appropri-
+ateness in this context (Andersen et al. 2009). The equation 
+for omega hierarchical asymptotic is given in Eq. 10, repre-
+senting the ratio between true score variance and the sum 
+of variances and covariances of the data.
+(9)KMO =
+∑∑
+j�=kr2
+jk∑∑
+j�=k r2
+jk + ∑∑
+j�=k p2
+jk
+(10)ω =
+(∑ /afii9838)2
+j
+(∑ /afii9838)2
+j + (∑ σ)2
+ej
+Fig. 10 Results of the sensitivity analyses OAAT 
+
+PAGE 28
+Page 28 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+Acknowledgements
+Fátima Arrogante‑Funes was supported by a predoctoral scholarship (FPI) 
+from the Spanish Ministry of Science, Innovation and Universities (PRE2019‑
+089208). FirEUrisk project research was funded by the European Union’s 
+Horizon 2020 research and innovation program under Grant Agreement No. 
+101003890.
+Authors’ contributions
+FAF designed the study, organized and oversaw data collection, developed 
+the analysis approach, implemented the analysis, drafted the manuscript, and 
+contributed editorial input during manuscript preparation. FM organized and 
+oversaw data collection, implemented the analysis, and contributed with the 
+improvement of the manuscript. BM organized and oversaw data collection 
+and contributed to the improvement of the manuscript. IAS and EC obtained 
+funding, designed the study, drafted the manuscript, and contributed editorial 
+input during manuscript preparation. The authors read and approved the final 
+manuscript.
+Funding
+This research has been supported by the Ministerio de Ciencia, Innovación 
+y Universidades (grant no. PRE2019‑089208). Moreover, this paper is part of 
+the FirEUrisk project research funded by the European Union’s Horizon 2020 
+research and innovation program under Grant Agreement No. 101003890.
+Availability of data and materials
+The datasets used and/or analyzed here are available from the corresponding 
+author upon reasonable request.
+Declarations
+Ethics approval and consent to participate
+Not applicable.
+Consent for publication
+Not applicable.
+Competing interests
+The authors declare that they have no competing interests.
+Author details
+1 Environmental Remote Sensing Research Group, Department of Geology, 
+Geography and the Environment, Universidad de Alcalá, Calle Colegios 2, 
+28801 Alcalá de Henares, Spain. 2 UMR 5175 CEFE, University de Montpellier, 
+CNRS, IRD, 1919 Route de Mende, Montpellier, France. 3 Centro de Investiga‑
+ciones Sobre Desertificación, Consejo Superior de Investigaciones Científicas 
+(CIDE‑CSIC), Carretera CV‑315 Km. 107, Moncada 46113, Spain. 
+Received: 24 June 2024   Accepted: 26 August 2024
+References
+Abatzoglou, J. T., S. Z. Dobrowski, S. A. Parks, and K. C. Hegewisch. 2018. 
+TerraClimate, a high‑resolution global dataset of monthly climate and 
+climatic water balance from 1958–2015. Scientific Data 5: 1–12. https:// 
+doi. org/ 10. 1038/ sdata. 2017. 191.
+Ackerly, D. D., Kling, M. M., Clark, M. L., Papper, P ., Oldfather, M. F., Flint, A. L., & 
+Flint, L. E. (2020). Topoclimates, refugia, and biotic responses to climate 
+change. 288–297. https:// doi. org/ 10. 1002/ fee. 2204.
+Adámek, M., V. Hadincová, and J. Wild. 2016. Long‑term effect of wildfires on 
+temperate Pinus sylvestris forests: Vegetation dynamics and ecosystem 
+resilience. Forest Ecology and Management 380: 285–295. https:// doi. 
+org/ 10. 1016/j. foreco. 2016. 08. 051.
+Adie, H., and M. J. Lawes. 2023. Solutions to fire and shade: Resprouting, 
+growing tall and the origin of Eurasian temperate broadleaved forest. 
+Biological Reviews 98 (2): 643.
+Albuquerque, F., & Beier, P . (2015). Rarity-weighted richness : a simple and reliable 
+alternative to integer programming and heuristic algorithms for minimum 
+set and maximum coverage problems in conservation planning. 1–7. 
+https:// doi. org/ 10. 1371/ journ al. pone. 01199 05.
+Alcasena, F. J., M. Salis, N. J. Nauslar, A. E. Aguinaga, and C. Vega‑García. 2016. 
+Quantifying economic losses from wildfires in black pine afforestations 
+of northern Spain. Forest Policy and Economics 73: 153–167. https:// doi. 
+org/ 10. 1016/j. forpol. 2016. 09. 005.
+Alloza, M. J., Baeza, A., de la Riva, J. R., Duguy, B., Echeverría, M. T., Ibarra, P ., 
+Llovet, J., Pérez‑Cabello, F., & Vallejo, R. (2006). A model to evaluate the 
+ecological vulnerability to forest fires in Mediterranean ecosystems, 
+in: Viegas, D.X. (Ed.),. Proceedings of the 5th International Conference on 
+Forest Fire Research. Elsevier, 12.
+Amador‑cruz, F., B. L. Figueroa‑rangel, M. Olvera‑vargas, and M. E. Mendoza. 
+2021. A systematic review on the definition, criteria, indicators, 
+methods and applications behind the ecological value term. Ecological 
+Indicators 129 (June): 107856. https:// doi. org/ 10. 1016/j. ecoli nd. 2021. 
+107856.
+Andersen, T., J. Carstensen, E. Hernandez‑Garcia, and C. M. Duarte. 2009. 
+Ecological thresholds and regime shifts: Approaches to identification. 
+Trends in Ecology & Evolution 24 (1): 49–57.
+Archibald, S., S. Archibald, G. P . Hempson, and C. Lehmann. 2019. Research 
+Review A Unified Framework for Plant Life-History Strategies Shaped by Fire 
+and Herbivory.https:// doi. org/ 10. 1111/ nph. 15986.
+Aretano, R., T. Semeraro, I. Petrosillo, A. De Marco, M.R. Pasimeni, and G. Zurlini. 
+2015. Mapping ecological vulnerability to fire for effective conserva‑
+tion management of natural protected areas. Ecological Modelling 295: 
+163–175. https:// doi. org/ 10. 1016/j. ecolm odel. 2014. 09. 017.
+Arianoutsou, M., S. Koukoulas, and D. Kazanis. 2011. Evaluating post‑fire forest 
+resilience using GIS and multi‑criteria analysis: An example from Cape 
+Sounion National Park. Greece. Environ. Manage. 47: 384–397. https:// 
+doi. org/ 10. 1007/ s00267‑ 011‑ 9614‑7.
+Arrogante‑Funes, F., I. Aguado, and E. Chuvieco. 2022. Global Assessment and 
+Mapping of Ecological Vulnerability to Wildfires. 22 (9): 2981–3003.
+Arrogante‑Funes, Fátima., I. Aguado, and E. Chuvieco. 2024. Global impacts of 
+fire regimes on wildland bird diversity. Fire Ecology. https:// doi. org/ 10. 
+1186/ s42408‑ 024‑ 00259‑x.
+Aubin, I., A. D. Munson, F. Cardou, P . J. Burton, and I., Sabel, N., Pedlar, J. H., & 
+McKenney, D. 2016. Traits to stay, traits to move: A review of functional 
+traits to assess sensitivity and adaptive capacity of temperate and 
+boreal trees to climate change. Environmental Reviews 24 (2): 164–186.
+Azqueta D. (2007). Introducción a la economía ambiental, 2nd edn. (McGraw‑Hill: 
+Madrid (ed.)).
+Baeza, M. J., and J. Roy. 2008. Germination of an obligate seeder (Ulex parvi‑
+florus) and consequences for wildfire management. Forest Ecology and 
+Management 256: 685–693.
+Baeza, A. M. J., Valdecantos, A., Alloza, J. A., Vallejo, V. R., Centro, I., Ambientales, 
+D. E., Darwin, C. C. R., & Tecnoldgico, P . (2007). Human disturbance and 
+environmental factors as drivers of long-term post-fire regeneration pat-
+terns in Mediterranean forests. Stable URL : http:// www. jstor. org/ stable/ 
+44992 20 REFERENCES Linked references are available on JSTOR for this 
+article : long-term . 18(2), 243–252.
+Bakker, J. P ., P . Poschlod, R.J. Strykstra, R. M. Bekker, and K. Thompson. 1996. 
+Seed banks and seed dispersal: Important topics in restoration ecology. 
+Acta Botanica Neerlandica 45 (4): 461–490.
+Basile, M. 2022. Rare species disproportionally contribute to functional diver‑
+sity in managed forests. Scientific Reports 12 (1): 1–9. https:// doi. org/ 10. 
+1038/ s41598‑ 022‑ 09624‑9.
+Bauhus, J., Forrester, D. I., Gardiner, B., Jactel, H., Vallejo, R., & Pretzsch, H. (2017). 
+Ecological stability of mixed‑species forests. Mixed‑species forests. Ecol-
+ogy and Management, 337–382.
+Bisson, M., A. Fornaciai, A. Coli, F. Mazzarini, and M. T. Pareschi. 2008. The Veg‑
+etation Resilience After Fire (VRAF) index: Development, implementa‑
+tion and an illustration from central Italy. International Journal of Applied 
+Earth Observation and Geoinformation 10: 312–329. https:// doi. org/ 10. 
+1016/j. jag. 2007. 0A. 12. 003.
+Blaikie, P ., Y. Cannon, I. Davis, and B. Wisner. 1994. At risk: Natural hazards, peo-
+ple’s vulnerability and disasters. London: Routledge.
+Bond, W. J., F. I. Woodward, and G. F. Midgley. 2005. The global distribution of 
+ecosystems in a world without fire. New Phytologist 165 (2): 525–538. 
+https:// doi. org/ 10. 1111/j. 1469‑ 8137. 2004. 01252.x.
+Boucher, D., S. Gauthier, N. Thiffault, W. Marchand, M. Girardin, and M. Urli. 
+2020. How climate change might affect tree regeneration following fire 
+
+PAGE 29
+Page 29 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+at northern latitudes: A review. New Forests 51 (4): 543–571. https:// doi. 
+org/ 10. 1007/ s11056‑ 019‑ 09745‑6.
+Bowman, D. M. J. S., Balch, J. K., Artaxo, P ., Bond, W. J., Carlson, J. M., Cochrane, 
+M. A., D’Antonio, C. M., DeFries, R. S., Doyle, J. C., Harrison, S. P ., Johnston, 
+F. H., Keeley, J. E., Krawchuk, M. A., Kull, C. A., Marston, J. B., Moritz, M. A., 
+Prentice, I. C., Roos, C. I., Scott, A. C., … Pyne, S. J. (2009). Fire in the earth 
+system. Science, 324(5926), 481–484. https:// doi. org/ 10. 1126/ scien ce. 
+11638 86.
+Bret‑Harte, M. S., M. C. Mack, G. R. Shaver, D. C. Huebner, M. Johnston, C. 
+A. Mojica, C. Pizano, and J. A. Reiskind. 2013. The response of Arctic 
+vegetation and soils following an unusually severe tundra fire. 
+Philosophical Transactions of the Royal Society B: Biological Sciences, 
+368 (1624): 20120490. https:// doi. org/ 10. 1098/ rstb. 2012. 0490.
+Brun, P ., N. E. Zimmermann, C. H. Graham, S. Lavergne, L. Pellissier, T. 
+Münkemüller, and W. Thuiller. 2019. The productivity‑biodiversity 
+relationship varies across diversity dimensions. Nature Communica-
+tions 10 (1): 5691. https:// doi. org/ 10. 1038/ s41467‑ 019‑ 13678‑1.
+Chamorro, D., B. Luna, J.M. Ourcival, A. Kavgacı, C. Sirca, F. Mouillot, and J.M. 
+Moreno. 2017. Germination sensitivity to water stress in four shrubby 
+species across the Mediterranean Basin. Plant Biology 19 (1): 23–31.
+Chu, T., X. Guo, and K. Takeda. 2016. Remote sensing approach to detect 
+post‑fire vegetation regrowth in Siberian boreal larch forest. Ecologi-
+cal Indicators 62: 32–46.
+Chuvieco, E., I. Aguado, M. Yebra, H. Nieto, J. Salas, M.P . Martín, L. Vilar, J. 
+Martínez, S. Martín, P . Ibarra, J. de la Riva, J. Baeza, F. Rodríguez, J. R. 
+Molina, M. A. Herrera, and R. Zamora. 2010. Development of a frame ‑
+work for fire risk assessment using remote sensing and geographic 
+information system technologies. Ecological Modelling 221 (1): 46–58. 
+https:// doi. org/ 10. 1016/j. ecolm odel. 2008. 11. 017.
+Chuvieco, E., I. Aguado, S. Jurdao, M.L. Pettinari, M. Yebra, J. Salas, S. Hant‑
+son, J. De La Riva, P . Ibarra, M. Rodrigues, M. Echeverría, D. Azqueta, 
+M.V. Román, A. Bastarrika, S. Martínez, C. Recondo, E. Zapico, and F.J. 
+Martínez‑Vega. 2014a. Integrating geospatial information into fire 
+risk assessment. International Journal of Wildland Fire 23 (5): 606–619. 
+https:// doi. org/ 10. 1071/ WF120 52.
+Chuvieco, Emilio, S. Martínez, M.V. Román, S. Hantson, and M.L. Pettinari. 
+2014b. Integration of ecological and socio‑economic factors to assess 
+global vulnerability to wildfire. Global Ecology and Biogeography 23 (2): 
+245–258. https:// doi. org/ 10. 1111/ geb. 12095.
+Chuvieco, Emilio, Yebra, M., Martino, S., Thonicke, K., Gómez‑ Giménez, M., 
+San‑Miguel, J., Oom, D., Velea, R., Mouillot, F., Molina, J. R., Miranda, 
+A. I., Lopes, D., Salis, M., Bugaric, M., Sofiev, M., Kadantsev, E., Gitas, 
+I. Z., Stavrakoudis, D., Eftychidis, G., … Viegas, D. (2023). Towards an 
+integrated approach to wildfire risk assessment: when, where, what 
+and how may the landscapes burn. Fire , 6(5), 1–60. https:// doi. org/ 10. 
+3390/ fire6 050215.
+Cochrane, M. A., and W. F. Laurance. 2002. Fire as a large ‑scale edge effect in 
+Amazonian forests. Journal of Tropical Ecology 18 (3): 311–325. https://  
+doi. org/ 10. 1017/ S0266 46740 20022 37.
+Crowther, T. W., van den Hoogen, J., Wan, J., Mayes, M. A., Keiser, A. D., Mo, L., 
+Averill, C., & Maynard, D. S. (2019). The global soil community and its 
+influence on biogeochemistry. Science, 365(6455). https:// doi. org/ 10. 
+1126/ scien ce. aav05 50.
+de Assis Barros, L., M. Venter, C. Elkin, and O. Venter. 2022. Managing forests 
+for old‑growth attributes better promotes the provision of ecosystem 
+services than current age ‑based old‑growth management. Forest 
+Ecology and Management 511:120130.
+De la Riva, J. R., Ibarra, P ., & Alloza, J. M. (2008). Evaluación de la vulnerabili‑
+dad ecológica en incendios forestales a escala regional mediante TIG, 
+in: Hernández, L., JM, P . (Eds.),. Tecnologías de La Información Geográ-
+fica Para El Desarrollo Territorial. Servicio de Publicaciones y Difusión 
+Científica de La ULPGC, Las Palmas de Gran Canaria, 526–539.
+Decò, A., P . Bocchini, and D.M. Frangopol. 2013. A probabilistic approach for 
+the prediction of seismic resilience of bridges. Earthquake Engineer -
+ing & Structural Dynamics 42 (10): 1469–1487.
+Dinerstein, E., Olson, D., Graham, D., Webster, A., Pimm, S., Bookbinder, M., & 
+Ledec, G. (1995). A conservation assessment of the terrestrial ecoregions 
+of Latin America and the Caribbean. World Bank.
+Dinerstein, E., D. Olson, A. Joshi, C. Vynne, N. D. Burgess, E. Wikramanayake, 
+N. Hahn, S. Palminteri, P . Hedao, R. Noss, M. Hansen, H. Locke, E. C. 
+Ellis, B. Jones, C. V. Barber, R. Hayes, C. Kormos, V. Martin, E. Crist, … 
+and M. Saleem. 2017. An ecoregion‑based approach to protecting 
+half the terrestrial realm. BioScience 67 (6): 534–545. https:// doi. org/ 
+10. 1093/ biosci/ bix014.
+Diví, J., & Chytrý, M. (2018). High-resolution and large-extent mapping of plant 
+species richness using vegetation-plot databases. 89(December 2017), 
+840–851. https:// doi. org/ 10. 1016/j. ecoli nd. 2017. 11. 005.
+Driscoll, D. A., Armenteras, D., Bennett, A. F., Brotons, L., Clarke, M. F., Doherty, 
+T. S., Haslem, A., Kelly, L. T., Sato, C. F., Sitters, H., Aquilué, N., Bell, K., 
+Chadid, M., Duane, A., Meza‑Elizalde, M. C., Giljohann, K. M., González, 
+T. M., Jambhekar, R., Lazzari, J., … Wevill, T. (2021). How fire interacts 
+with habitat loss and fragmentation. Biological Reviews, 96(3), 
+976–998. https:// doi. org/ 10. 1111/ brv. 12687.
+Duguy, B., J. A. Alloza, M. J. Baeza, J. De La Riva, M. Echeverría, P . Ibarra, J. 
+Llovet, F. P . Cabello, P . Rovira, and R. V. Vallejo. 2012. Modelling the 
+ecological vulnerability to forest fires in mediterranean ecosystems 
+using geographic information technologies. Environmental Manage -
+ment 50 (6): 1012–1026. https:// doi. org/ 10. 1007/ s00267‑ 012‑ 9933‑3.
+Durrant, L. J., A. N. Vadher, and J. Teller. 2023. Disaster risk management and 
+cultural heritage: The perceptions of European world heritage site 
+managers on disaster risk management. International Journal of Disaster 
+Risk Reduction 89 (February): 103625. https:// doi. org/ 10. 1016/j. ijdrr. 2023. 
+103625.
+Engelmark, O., and H. Hytteborn. 1999. Coniferous forests. Acta Phytogeograph-
+ica Suecica 84: 55–74.
+FAO, UNEP , UNESCO. 1979. A provisional methodology for soil degradation assess-
+ment. Rome: Food and Agricultural Organization of the United Nations.
+Flannigan, M. D., M. A. Krawchuk, W. J. De Groot, B. M. Wotton, and L. M. Gow‑
+man. 2009. Implications of changing climate for global wildland fire. 
+International Journal of Wildland Fire 18 (5): 483–507. https:// doi. org/ 10. 
+1071/ WF081 87.
+Gang, C., Gao, X., Peng, S., Chen, M., Guo, L., & Jin, J. (2019). Satellite observa‑
+tions of the recovery of forests and grasslands in Western China. Journal 
+of Geophysical Research : Biogeosciences. Journal of Geophysical 
+Research: Biogeosciences, 124(7), 1905–1922. https:// doi. org/ 10. 1029/ 
+2019J G0051 98.
+Gastescu, P . 1993. The Danube Delta: Geographical characteristics and ecologi‑
+cal recovery. GeoJournal 29 (1): 57–67. https:// doi. org/ 10. 1007/ BF008 
+06866.
+Giovannini, G., R. Vallejo, S. Lucchesi, S. Bautista, S. Ciompi, and J. Llovet. 2001. 
+Effects of land use and eventual fire on soil erodibility in dry Mediter‑
+ranean conditions. Forest Ecology and Management 147: 15–23.
+Guyette, R. P ., R. M. Muzika, and D. C. Dey. 2002. Dynamics of an anthropo‑
+genic fire regime. Ecosystems 6 (4): 326–335. https:// doi. org/ 10. 1007/ 
+s10021‑ 002‑ 0115‑7.
+Habel, J. C., J. Dengler, M. Janišová, P . Török, C. Wellstein, and M. Wiezik. 2013. 
+European grassland ecosystems: Threatened hotspots of biodiversity. 
+Biodiversity and Conservation 22 (10): 2131–2138. https:// doi. org/ 10. 
+1007/ s10531‑ 013‑ 0537‑x.
+Hamilton, N. P ., and P . J. Burton. 2023. Wildfire disturbance reveals evidence of 
+ecosystem resilience and precariousness in a forest–grassland mosaic. 
+Ecosphere 14 (3): e44.
+Hansen, M. C., P . V. Potapov, R. Moore, M. Hancher, S. A. Turubanova, A. 
+Tyukavina, and J. R. Townshend. 2013. High‑resolution global maps of 
+21st‑century forest cover change. Science 342 (6160): 850–853.
+Hengeveld, G. M., Nabuurs, G.‑J., Didion, M., van den Wyngaert, I., Clerkx, A., & 
+Schelhaas, M.‑J. (2012). A forest management map of European forests. 
+Ecol. Soc., 17.
+Héon, J., D. Arseneault, and M.A. Parisien. 2014. Resistance of the boreal forest 
+to high burn rates. Proceedings of the National Academy of Sciences 111 
+(38): 13888–13893.
+Heuvelink, G. B. 1998. Error propagation in environmental modelling with GIS. 
+CRC Press.
+Heuvelink, G. B., P . A. Burrough, and A. Stein. 1989. Propagation of errors in spa‑
+tial modelling with GIS. International Journal of Geographical Information 
+System 3 (4): 303–322.
+Hofgaard, A., K. A. Harper, and E. Golubeva. 2012. The role of the circumarc‑
+tic forest‑tundra ecotone for Arctic biodiversity. Biodiversity 13 (3–4): 
+174–181. https:// doi. org/ 10. 1080/ 14888 386. 2012. 700560.
+Howard, C., C. H. Flather, and P . A. Stephens. 2020. A global assessment of the 
+drivers of threatened terrestrial species richness. Nature Communica-
+tions 11 (1): 1–10. https:// doi. org/ 10. 1038/ s41467‑ 020‑ 14771‑6.
+
+PAGE 30
+Page 30 of 31Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+Ibanez, T., Platt, W. J., Bellingham, P . J., Vieilledent, G., Franklin, J., Martin, P . H., 
+..., & Keppel, G. (2022). Altered cyclone–fire interactions are changing 
+ecosystems. Trends in Plant Science, 27(12), 1218–1230.
+Inbar, M., M. Tamir, and L. Wittenberg. 1998. Runoff and erosion processes after 
+a forest fire in Mount Carmel, a Mediterranean area. Geomorphology 24: 
+17–33. https:// doi. org/ 10. 1016/ S0169‑ 555X(97) 00098‑6.
+Jacquet, K., and R. Prodon. 2009. Measuring the postfire resilience of a bird–
+vegetation system: A 28‑year study in a Mediterranean oak woodland. 
+Oecologia 161 (4): 801–811.
+Janžekovič, F., & Novak, T. (2012). PCA–a powerful method for analyze ecologi‑
+cal niches. Principal Component Analysis–Multidisciplinary Applications, 
+Janžekovič, 127–142.
+Jucker Riva, M., J. Baeza, S. Bautista, M. Christoforou, I. Daliakopoulos, D. Had‑
+jimitsis, and G. Schwilch. 2018. How does land management contribute 
+to the resilience of Mediterranean forests and rangelands? A participa‑
+tory assessment. Land Degradation & Development 29 (10): 3721–3735.
+Kattge, J., Bönisch, G., Díaz, S., Lavorel, S., Prentice, I. C., Leadley, P ., &..., & Cuntz, 
+M. (2020). TRY plant trait database – enhanced coverage and open 
+access. Global Change Biology, 26(1), 119–188. https:// doi. org/ 10. 1111/ 
+gcb. 14904.
+Kayes, I., Mallik, A., & Bay, T. (2020). Boreal forests: distributions, biodiversity, and 
+management. 1–12.
+Keeley, J. E., J. G. Pausas, P .W. Rundel, W. J. Bond, and R. A. Bradstock. 2011. Fire 
+as an evolutionary pressure shaping plant traits. Trends in Plant Science 
+16 (8): 406–411. https:// doi. org/ 10. 1016/j. tplan ts. 2011. 04. 002.
+Kühn, N., Tovar, C., Carretero, J., Vandvik, V., Enquist, B. J., & Willis, K. J. (2021). 
+Globally important plant functional traits for coping with climate 
+change. Frontiers of Biogeography, 13(4), 0–18. https:// doi. org/ 10. 21425/ 
+F5FBG 53774.
+Lashchinskiy, N. N., A. A. Kartoziia, and A. N. Faguet. 2020. Permafrost degrada‑
+tion as a supporting factor for the biodiversity of tundra ecosystems. 
+Contemporary Problems of Ecology 13 (4): 401–411. https:// doi. org/ 10. 
+1134/ S1995 42552 00400 71.
+Lecina‑diaz, J., Martínez‑vilalta, J., Alvarez, A., Banqué, M., Birkmann, J., 
+Feldmeyer, D., Vayreda, J., & Retana, J. (2021). Characterizing forest vulner-
+ability and risk to climate-   change hazards. 126–133. https:// doi. org/ 10. 
+1002/ fee. 2278.
+Legras, G., Loiseau, N., & Gaertner, J.‑C. (2018). Functional richness : overview 
+of indices and underlying concepts. Acta Oecologica, 87(October 2017), 
+34–44. https:// doi. org/ 10. 1016/j. actao. 2018. 02. 007.
+Leitão, R. P ., Zuanon, J., Villéger, S., Williams, S. E., Baraloto, C., Fortune, C., Men‑
+donça, F. P ., & Mouillot, D. (2016). Rare species contribute disproportion‑
+ately to the functional structure of species assemblages. Proceedings 
+of the Royal Society B: Biological Sciences, 283(1828). https:// doi. org/ 10. 
+1098/ rspb. 2016. 0084.
+Lindner, M., M. Maroschek, S. Netherer, A. Kremer, A. Barbati, J. Garcia‑Gonzalo, 
+R. Seidl, S. Delzon, P . Corona, M. Kolström, M.J. Lexer, and M. Marchetti. 
+2010. Climate change impacts, adaptive capacity, and vulnerability of 
+European forest ecosystems. Forest Ecology and Management 259 (4): 
+698–709. https:// doi. org/ 10. 1016/j. foreco. 2009. 09. 023.
+Liu, B. R. 2021. Biphasic range expansions with short‑ and long‑distance 
+dispersal. Theoretical Ecology 14 (3): 409–427. https:// doi. org/ 10. 1007/ 
+s12080‑ 021‑ 00505‑x.
+Maes, J., A. G. Bruzón, J. I. Barredo, S. Vallecillo, P . Vogt, I. M. Rivero, and F. Santos‑
+Martín. 2023. Accounting for forest condition in Europe based on an 
+international statistical standard. Nature Communications 14 (1): 1–15. 
+https:// doi. org/ 10. 1038/ s41467‑ 023‑ 39434‑0.
+Mamos, T., K. Jażdżewski, Z. Čiamporová‑Zaťovičová, F. Čiampor, and M. 
+Grabowski. 2021. Fuzzy species borders of glacial survivalists in 
+the Carpathian biodiversity hotspot revealed using a multimarker 
+approach. Scientific Reports 11 (1): 1–23. https:// doi. org/ 10. 1038/ 
+s41598‑ 021‑ 00320‑8.
+Manzano, S., Carrión, J. S., López‑Merino, L., Jiménez‑Moreno, G., Toney, J. L., 
+Amstrong, H., Anderson, R. S., García‑Alix, A., Pérez, J. L. G., & Sánchez‑
+Mata, D. (2019). A palaeoecological approach to understanding 
+the past and present of Sierra Nevada, a Southwestern European 
+biodiversity hotspot. Global and Planetary Change, 175(December 2018), 
+238–250. https:// doi. org/ 10. 1016/j. glopl acha. 2019. 02. 006.
+Marín, A.I., D. Abdul Malak, A. Bastrup‑Birk, G. Chirici, A. Barbati, and S. Klee‑
+schulte. 2021. Mapping forest condition in Europe: Methodological 
+developments in support to forest biodiversity assessments. Ecological 
+Indicators 128: 107839. https:// doi. org/ 10. 1016/j. ecoli nd. 2021. 107839.
+Maringer, J., Conedera, M., Ascoli, D., Schmatz, D. R., & Wohlgemuth, T. (2016). 
+Resilience of European beech forests (Fagus sylvatica L.) after fire in a 
+global change context. International Journal of Wildland Fire, 25((6)), 
+699–710.
+Martínez‑Gordón, R., Morales‑España, G., Sijm, J., & Faaij, A. P . C. (2021). A review 
+of the role of spatial resolution in energy systems modelling: lessons 
+learned and applicability to the North Sea region. Renewable and 
+Sustainable Energy Reviews, 141(February). https:// doi. org/ 10. 1016/j. rser. 
+2021. 110857.
+Mauri, A., Girardello, M., Strona, G., Beck, P . S. A., Forzieri, G., Caudullo, G., 
+Manca, F., & Cescatti, A. (2022). EU-Trees4F , a dataset on the future 
+distribution of European tree species. 1–12. https:// doi. org/ 10. 1038/ 
+s41597‑ 022‑ 01128‑5.
+Mccarty, J. L., J. Aalto, V. V. Paunu, S. R. Arnold, S. Eckhardt, Z. Klimont, J. J. Fain, 
+N. Evangeliou, A. Venäläinen, N. M. Tchebakova, E. I. Parfenova, K. Kupi‑
+ainen, A. J. Soja, L. Huang, and S. Wilson. 2021. Reviews and syntheses: 
+Arctic fire regimes and emissions in the 21st century. Biogeosciences 18 
+(18): 5053–5083. https:// doi. org/ 10. 5194/ bg‑ 18‑ 5053‑ 2021.
+Midgley, G. F., and W. J. Bond. 2015. Future of African terrestrial biodiversity 
+and ecosystems under anthropogenic climate change. Nature Climate 
+Change 5 (9): 823–829. https:// doi. org/ 10. 1038/ nclim ate27 53.
+Midolo, G., Herben, T., Axmanová, I., Corrado Marcenò, R. P ., Bruelheide, H., 
+Karger, D. N., Aćić, S., Bergamini, A., Bergmeier, E., Biurrun, I., Bonari, G., 
+Čarni, A., Chiarucci, A., Sanctis, M. De, Demina, O., Dengler, J., Dziuba, T., 
+Fanelli, G., Garbolino, E., … Chytrý, M. (2023). Disturbance indicator val‑
+ues for European plants. Global Ecology and Biogeography, 32(1), 24–34.
+MMA. (2006). Los incendios Forestales en España. Subdirección General de Política 
+Forestal y Desertificación y Secretaría General para el Territorio y la Bíodiver-
+sidad Decenio 1996–2005.
+Moreira, F., O. Viedma, M. Arianoutsou, T. Curt, N. Koutsias, E. Rigolot, A. Barbati, 
+P . Corona, P . Vaz, G. Xanthopoulos, F. Mouillot, and E. Bilgili. 2011. 
+Landscape ‑ wildfire interactions in southern Europe: Implications for 
+landscape management. Journal of Environmental Management 92 (10): 
+2389–2402. https:// doi. org/ 10. 1016/j. jenvm an. 2011. 06. 028.
+Moreno, J. M., & Oechel, W. C. (1992). Factors controlling postfire seedling 
+establishment in southern California chaparral. Oecologia, 50–60.
+Moreno‑Martínez, Á., Camps‑Valls, G., Kattge, J., Robinson, N., Reichstein, M., 
+van Bodegom, P ., Kramer, K., Cornelissen, J. H. C., Reich, P ., Bahn, M., 
+Niinemets, Ü., Peñuelas, J., Craine, J. M., Cerabolini, B. E. L., Minden, V., 
+Laughlin, D. C., Sack, L., Allred, B., Baraloto, C., … Running, S. W. (2018). A 
+methodology to derive global maps of leaf traits using remote sensing 
+and climate data. Remote Sensing of Environment, 218(September), 
+69–88. https:// doi. org/ 10. 1016/j. rse. 2018. 09. 006.
+Morin, X., H. Bugmann, F. de Coligny, N. Martin St Paul, M. Cailleret, J. M. 
+Limousin, J. M. Ourcival, B. Prevosto, G. Simioni, M. Toigo, M. Vennetier, E. 
+Catteau, and J. Guillemot. 2021. Beyond forest succession: A gap model 
+to study ecosystem functioning and tree community composition 
+under climate change. Functional Ecology 35 (4): 955–975.
+Moris, J. V., G. Vacchiano, S. Ravetto Enri, M. Lonati, R. Motta, and D. Ascoli. 2017. 
+Resilience of European larch (Larix decidua Mill.) forests to wildfires in 
+the western Alps. New Forests 48: 663–683.
+Naveh, Z. 1975. The evolutionary significance of fire in the mediterranean 
+region. Vegetatio 29 (3): 199–208. https:// doi. org/ 10. 1007/ BF023 90011.
+Nolan, R. H., L. Collins, A. Leigh, M. K. J. Ooi, T. J. Curran, T. A. Fairman, V. Resco 
+de Dios, and R. Bradstock. 2021. Limits to post‑fire vegetation recovery 
+under climate change. Plant Cell and Environment 44 (11): 3471–3489. 
+https:// doi. org/ 10. 1111/ pce. 14176.
+Nolè, A., Rita, A., Spatola, M. F., & Borghetti, M. (2022). Biogeographic variability 
+in wildfire severity and post‑fire vegetation recovery across the Euro‑
+pean forests via remote sensing‑derived spectral metrics. Science of the 
+Total Environment, 823. https:// doi. org/ 10. 1016/j. scito tenv. 2022. 153807.
+Pausas, Juli G., & Vallejo, V. R. (1999). The role of fire in European Mediterranean 
+ecosystems. Remote Sensing of Large Wildfires, 3–16. https:// doi. org/ 10. 
+1007/ 978‑3‑ 642‑ 60164‑4_2.
+Pausas, Juli G., J. Carreras, A. Ferré, and X. Font. 2003. Coarse‑scale plant species 
+richness in relation to environmental heterogeneity. Journal of Vegeta-
+tion Science 14 (5): 661–668. https:// doi. org/ 10. 1111/j. 1654‑ 1103. 2003. 
+tb021 98.x.
+
+PAGE 31
+Page 31 of 31
+Arrogante‑Funes et al. Fire Ecology           (2024) 20:98 
+ 
+Pausas, J.G., Llovet, J., Rodrigo, A., & Vallejo, R. (2008). Are wildfires a disaster in 
+the Mediterranean basin ? – A review Vegetation changes Shrublands 
+dominated by resprouting species. International Journal of Wildland Fire, 
+1–22.
+Perrone, M., M. Di Febbraro, L. Conti, J. Divíšek, M. Chytrý, P . Keil, and M. Mala‑
+vasi. 2023. The relationship between spectral and plant diversity: Dis‑
+entangling the influence of metrics and habitat types at the landscape 
+scale. Remote Sensing of Environment 293:113591.
+Polley, H. W., H. P . Collins, and P . A. Fay. 2022. Community leaf dry matter 
+content predicts plant production in simple and diverse grassland. 
+Ecosphere 13 (5): 1–10. https:// doi. org/ 10. 1002/ ecs2. 4076.
+Potapov, P ., Yaroshenko, A., Turubanova, S., Dubinin, M., Laestadius, L., Thies, C., 
+Aksenov, D., Egorov, A., Yesipova, Y., Glushkov, I., Karpachevskiy, M., Kos‑
+tikova, A., Manisha, A., Tsybikova, E., & Zhuravleva, I. (2008). Mapping the 
+world’s intact forest landscapes by remote sensing. Ecology and Society, 
+13(2). https:// doi. org/ 10. 5751/ ES‑ 02670‑ 130251.
+Prodon, R., and R. Diaz‑Delgado. 2021. Assessing the postfire resilience of a 
+Mediterranean forest from satellite and ground data (NDVI, vegetation 
+profile, avifauna). Écoscience 28 (1): 81–91.
+Puig‑giron, R., Brotons, L., & Pons, P . (2022). Aridity, fire severity and proximity of 
+populations affect the temporal responses of open-habitat birds to wildfires 
+Tawny pipit. 272(July). https:// doi. org/ 10. 1016/j. biocon. 2022. 109661.
+Ren, L., Y. Huang, Y. Pan, X. Xiang, J. Huo, and J.M. Posada. 2022. Differential 
+investment strategies in leaf economic traits across climate regions 
+worldwide. Frontiers in Plant Science 13 (March): 1–15. https:// doi. org/ 
+10. 3389/ fpls. 2022. 798035.
+Ricketts, T. H., Dinerstein, E., Olson, D. M., & Loucks, C. (1999). Who’s where in 
+North America? Patterns of species richness and the utility of indicator 
+taxa for conservation. Bioscience, May.
+Rivière, M., J. Lenglet, A. Noirault, F. Pimont, and J.L. Dupuy. 2023. Mapping 
+territorial vulnerability to wildfires: A participative multi‑criteria analysis. 
+Forest Ecology and Management 539:121014.
+Röder, A., Hill, J., Duguy, B., Alloza, J. A., & Vallejo, R. (2008). Using long time 
+series of Landsat data to monitor fire events and post‑fire dynamics and 
+identify driving factors. A case study in the Ayora region (eastern Spain). 
+Remote Sensing of Environment, 112(1), 259–273.
+Rodrigo, A., J. Retana, and F.X. Picó. 2004. Direct regeneration is not the only 
+response of mediterranean forests to large fires. Ecology 85: 716–729. 
+https:// doi. org/ 10. 1890/ 02‑ 0492.
+Rodrigues, M., P . Ibarra, M. Echeverría, F. Perez‑Cabello, and J.D.L. Riva. 2014. 
+A method for regional‑scale assessment of vegetation recovery time 
+after high‑severity wildfires: Case study of Spain. Progress in Physical 
+Geography 38 (5): 556–575.
+Rohner, B., P . Waldner, H. Lischke, M. Ferretti, and E. Thürig. 2018. Predicting 
+individual‑tree growth of central European tree species as a function 
+of site, stand, management, nutrient, and climate effects. European 
+Journal of Forest Research 137 (1): 29–44. https:// doi. org/ 10. 1007/ 
+s10342‑ 017‑ 1087‑7.
+Rothermel, R. C. (1983). How to predict the spread and intensity of forest and 
+range fires (Vol. 143) (US Departm). US Department of Agriculture, Forest 
+Service, Intermountain Forest and Range Experiment Station.
+Ruprecht, E., A. Fenesi, E.I. Fodor, T. Kuhn, and J. Tökölyi. 2015. Shape deter‑
+mines fire tolerance of seeds in temperate grasslands that are not 
+prone to fire. Perspectives in Plant Ecology, Evolution and Systematics 17 
+(5): 397–404. https:// doi. org/ 10. 1016/j. ppees. 2015. 07. 001.
+Saltelli, A., Chan, K., & Scott, E. . (2000). Sensitivity analysis. Chichester, John Wiley 
+& Sons, LTD.
+San‑Miguel‑Ayanz, J., Costa, H., Rigo, D. de, Libertà, G., Vivancos, T. A., Durrant, 
+T., Nuijten, D., Peterl Löffler, & Moore, P . (2018). Basic criteria to assess 
+wildfire risk at the pan‑European level. EUR 29500 EN, ISBN 978–92–79–
+98200–2. https:// doi. org/ 10. 2760/ 052345.
+Schelhaas, M. J., G. M. Hengeveld, N. Heidema, et al. 2018. Species‑specific, 
+pan‑European diameter increment models based on data of 2.3 million 
+trees. Forest Ecosystems 5:21.
+Schworer, C., P . D. Henne, and W. Tinner. 2014. A model‑data comparison of 
+Holocene timberline changes in the Swiss Alps reveals past and future 
+drivers of mountain forest dynamics. Global Change Biology 20 (5): 
+1512–1526. https:// doi. org/ 10. 1111/ gcb. 12456.
+Seidl, R., P . M. Fernandes, T. F. Fonseca, F. Gillet, A. M. Jönsson, K. Merganičová, 
+and F. Mohren. 2011. Modelling natural disturbances in forest ecosys‑
+tems: A review. Ecological Modelling 222 (4): 903–924.
+Sritharan, M. S., B. C. Scheele, W. Blanchard, C. N. Foster, P . A. Werner, and 
+D. B. Lindenmayer. 2022. Plant rarity in fire‑prone dry sclerophyll 
+communities. Scientific Reports 12 (1): 1–10. https:// doi. org/ 10. 1038/ 
+s41598‑ 022‑ 15927‑8.
+Stevens, J. T., M. M. Klinh, D. W. Schwilk, J. M. Varner, and J. M. Kane. 2020. Bio‑
+geography of fire regimes in western U.S. conifer forests: A trait‑based 
+approach. Global Ecology and Biogeography 29 (5): 944–955.
+Strengbom, J., A. Nordin, T. Näsholm, and L. Ericson. 2001. Slow recovery of 
+boreal forest ecosystem following decreased nitrogen input. Functional 
+Ecology 15 (4): 451–457. https:// doi. org/ 10. 1046/j. 0269‑ 8463. 2001. 
+00538.x.
+Tang, R., S. Li, X. Lang, X. Huang, and J. Su. 2023. Rare species contribute greater to 
+ecosystem multifunctionality in a subtropical forest than common species 
+due to their functional diversity. Forest Ecology and Management 538 
+(March): 120981. https:// doi. org/ 10. 1016/j. foreco. 2023. 120981.
+Tobias, J. A., C. Sheard, A. L. Pigot, A. J. Devenish, J. Yang, F. Sayol, ... and M. 
+Schleuning. 2022. AVONET: morphological, ecological and geographical 
+data for all birds. Ecology Letters 25 (3): 581–597.
+UNISDIR, U. (2009). Making disaster risk reduction. Sensitive: Policy and Practical 
+Guidelines.
+Vallejo, R., Serrasolses, I., Alloza, J. A., Baeza, J., Bladé, C., Chirino, E., Duguy, B., 
+Fuentes, D., Pausas, J. G., & Valdecantos, A., Milagrosa, A. (2009). Long-
+term restoration strategies and techniques, in: Cerda A, R.P . (Ed.), Fire Effects 
+on Soils and Restoration Strategies. 373–398.
+Vallet, L., Schwartz, M., Ciais, P ., Wees, D. Van, Truchis, A. De, & Mouillot, F. (2023). 
+High-resolution data reveal a surge of biomass loss from temperate and 
+Atlantic pine forests, contextualizing the 2022 fire season distinctiveness in 
+France. 3803–3825.
+Vargas, P ., Heleno, R., & Costa, J. M. (2023). EuDiS ‑ a comprehensive database 
+of the seed dispersal syndromes of the European flora. Biodiversity Data 
+Journal, 11. https:// doi. org/ 10. 3897/ BDJ. 11. E1040 79.
+Viana‑Soto, A., I. Aguado, and S. Martínez. 2017. Assessment of post‑fire 
+vegetation recovery using fire severity and geographical data in the 
+mediterranean region (Spain). Environments 4 (4):90.
+Violle, C., Reich, P . B., Pacala, S. W., Enquist, B. J., & Kattge, J. (2014). The emer-
+gence and promise of functional biogeography. 111(38). https:// doi. org/ 
+10. 1073/ pnas. 14154 42111.
+Walker, M. D., Gould, W. A., & Chapin III, F. S. (2001). Scenarios of biodiversity 
+changes in arctic and alpine tundra. In Global biodiversity in a changing 
+environment: Scenarios for the 21st century (pp. 83–100). Springer New 
+York.
+Weldon, J., and U. Grandin. 2019. Major disturbances test resilience at a 
+long‑term boreal forest monitoring site. Ecology and Evolution 9 (7): 
+4275–4288.
+Williams, L. R. R., & Kapustka, L. A. (2000). Ecosystem vulnerability: a complex 
+interface with technical components. Environmental Toxicology and 
+Chemistry, 19(4 II), 1055–1058. https:// doi. org/ 10. 1002/ etc. 56201 90435.
+Yi, C., & Jackson, N. (2021). A review of measuring ecosystem resilience to 
+disturbance. Environmental Research Letters, 16(5). https:// doi. org/ 10. 
+1088/ 1748‑ 9326/ abdf09.
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in pub‑
+lished maps and institutional affiliations.

@@ -1,0 +1,713 @@
+PAGE 1
+Vol.:(0123456789)
+Natural Hazards (2024) 120:4657–4673
+https://doi.org/10.1007/s11069-023-06395-y
+1 3
+ORIGINAL PAPER
+Linking the future likelihood of large fires to occur 
+on mountain slopes with fuel connectivity and topography
+Marco Conedera1  · Jeremy Feusi1  · Gianni Boris Pezzatti1  · Patrik Krebs1 
+Received: 22 November 2023 / Accepted: 23 December 2023 / Published online: 24 January 2024 
+© The Author(s) 2024
+Abstract
+In the long run, ongoing climate change is expected to alter fuel production as well as the 
+frequency and severity of fire weather, which may result in an unprecedented frequency 
+of extreme fire events. In this paper we propose a simplified and spatially explicit method 
+to assess the probability of experiencing large fires, based on topography (slope length) 
+as well as extent and aggregation of the forested area (fuel connectivity). We considered 
+21 homogeneous pyroregions covering entire Switzerland as a study case and computed 
+the length of the upslope paths within the forested areas, simulating ignition points on a 
+systematic 100 × 100 m square grid. We then compared the obtained path lengths for each 
+pyroregion with selected historical large forest fire statistics (e.g., mean area of the largest 
+5% of fires, maximum burnt area per fire) collected over the course of the last 30 years. 
+This resulted in rather high R2 values, ranging from 0.558 to 0.651. The proposed approach 
+was shown to allow for an easy identification and geo-localization of potential hotspots in 
+terms of the likelihood for large fires to occur in mountainous regions, which is a prereq-
+uisite for a targeted planning of fire management measures aimed at preventing large fires 
+and related post-fire gravitative natural hazards.
+Keywords Steepest path · Slope-driven fires · Megafires · Fire behavior · Burnt area · 
+Switzerland
+ * Marco Conedera 
+ marco.conedera@wsl.ch
+ Jeremy Feusi 
+ Jeremy.feusi@wsl.ch
+ Gianni Boris Pezzatti 
+ boris.pezzatti@wsl.ch
+ Patrik Krebs 
+ patrik.krebs@wsl.ch
+1 Insubric Ecosystems Research Group, Swiss Federal Research Institute WSL, c/o Research 
+Campus, a Ramél 18, 6593 Cadenazzo, Switzerland
+
+PAGE 2
+4658 Natural Hazards (2024) 120:4657–4673
+1 3
+1 Introduction
+On a global scale, the observed wildfire regimes largely depend on the prevalent climate 
+and weather conditions, which in essence determine the requirements for a fire event to 
+occur (i.e., vegetation and related fuel buildup, fire-conducive environmental condi-
+tions), sometimes also providing the cause of ignition through the presence of lightning 
+(e.g., Krawchuk et al. 2009; Pausas and Ribeiro 2013). Human activity (land-use, ignition 
+sources, and suppression activity) and the fire prevalence itself (feedback effects on the 
+vegetation and post-fire fuel buildup dynamics) further modulate the resulting historical 
+fire regimes (Bond and Keely 2005; Archibald et al. 2013; Kelley et al. 2019).
+In the long run, however, ongoing climate change is expected to alter the fuel produc-
+tion as well as the frequency and severity of fire weather (Jones et al. 2022). For instance, 
+in some areas such as the Mediterranean and the Amazon, a human-induced increase of the 
+fire weather indices’ values beyond the pre-industrial levels is already visible (Abatzoglou 
+et al. 2019). In systems where biomass productivity is high and the fire activity is moisture 
+limited, this may lead to a partial shift from a fire-resistant to a fire-sensitive landscape 
+(e.g., McCarty et  al. 2020) or to a significant increase in fire activity (e.g., Hanes et  al. 
+2019) as postulated by the intermediate fire–productivity hypothesis (Pausas and Bradstock 
+2007). In these systems, severe fire weather combined with abundant fuel may in the future 
+result in an unprecedented frequency of extreme fire events sensu Tedim et  al. (2020), 
+which completely overwhelm the firefighting resources and represent significant threats 
+to people and infrastructure. Regarding these dynamics, recent evidence suggests that in 
+systems without fuel limitations, bottom-up variables such as the fuel characteristics (i.e., 
+load, connectivity, and diversity) and topography largely influence the difficulty of control-
+ling the spreading fire in severe fire weather conditions, fundamentally influencing the final 
+fire size (e.g., DeAngelis et al. 2015; Fernandes et al. 2016; Francis et al. 2023). Accord-
+ingly, even stationary fire–climate relationships that have remained largely unchanged over 
+the past centuries may be altered, resulting in non-stationary dynamics with feedback loops 
+which again involve vegetation, fuel load, and fuel connectivity, therefore potentially lead-
+ing to an unprecedented relevance of these effects in determining future average fire sizes 
+and burnt area on a regional scale (e.g., Williams and Abatzoglou 2016; Kitzberger et al. 
+2017; Littell 2018).
+Despite marked differences in regional fire regimes (e.g., Conedera et al. 2018; Galizia 
+et al. 2022), Central Europe—and the Alps in particular—are among the regions in which 
+climate change is likely to exacerbate the frequency and magnitude of fires in the future 
+(Wastl et  al. 2012, 2013; Berčák et  al. 2023). For instance, an increased frequency has 
+already been reported for lightning-induced fires, especially during summer drought years 
+(Conedera et al. 2006), although the burnt area has usually nevertheless remained of lim-
+ited extent for the time being (e.g., Müller et al. 2013). Anthropogenic fire activity, on the 
+other hand, has been mitigated by other factors such as land-use change (fuel type and con-
+nectivity across the landscape), legislation (ban of fire activities in the open), and fire sup-
+pression (e.g., Zumbrunnen et al. 2012; Pezzatti et al. 2013). As a general rule of thumb, 
+human-induced fire activity has increased in the last postwar period due to the abandon-
+ment of the marginal rural areas, which subsequently underwent a transition to forest, 
+intermittently becoming highly flammable fallow land (e.g., Gellrich et al. 2007). However, 
+most fires remained rather small in size thanks to a significant improvement in firefighting 
+strategies and the possibility of imposing fire bans in case of severe fire weather conditions 
+(e.g., Pezzatti et al. 2013; Müller et al. 2020; Bardsley et al. 2021). Nevertheless, in recent 
+
+PAGE 3
+4659Natural Hazards (2024) 120:4657–4673 
+1 3
+times, intense fires of relatively large size have increased in frequency (Valese et al. 2014; 
+Müller et al. 2020), raising concerns regarding the subsequent post-fire risks related to nat-
+ural hazards such as increased surface runoff, erosion, rockfall, debris flows, and shallow 
+landslides, and the threats to humans and infrastructures which these entail (e.g., Conedera 
+et al. 2003; Vergani et al. 2017; Melzner et al. 2019).
+In the future, the higher frequency of severe fire weather conditions combined with the 
+increasing flammability of the landscape may reduce the effectiveness of the traditional fire 
+management and suppression activities, further increasing the likelihood of large fires to 
+occur. Therefore, forest and fire managers are expected to be prepared for such scenarios, 
+despite the fact that the complexity of the interactions between the evolving climate, veg-
+etation, and related fuel load, as well as possible management interventions will make a 
+spatially explicit forecasting of such fire regimes highly non-trivial (e.g., Schoennagel et al. 
+2017; Jones et al. 2022).
+The aim of this paper is to present a simplified and spatially explicit method to test 
+the hypothesis that the likelihood of a region to experience large fires will to a large part 
+depend on topography (i.e., the slope, which modulates the speed at which the fire spreads 
+and induces an upslope convective heat flux) and fuel connectivity (i.e., the extent and 
+aggregation of vegetation cover with significant fuel buildup). We in particular assume that 
+future fire weather will be severe enough to sufficiently desiccate any type of fuel, making 
+it highly flammable and prone to the contagious upslope evolution of the fire front.
+For this purpose, we chose Switzerland as a case study which presents a remarkable 
+variety of geographic environments (from the Plateau to the Alps) and related fire regimes. 
+Based on fire statistics, topography, and dominant vegetation, we first divided the coun-
+try into homogeneous subregions (pyroregions) for which we then calculated possible fire 
+spread trajectories along the paths of steepest ascent. To validate the approach, the com-
+puted lengths of the fire paths contained within areas covered by forest-like vegetation (i.e., 
+forest, open forest stands, and shrubland) were then compared to the observed historical 
+fire activity within each pyroregion, such as the largest forest fires which occurred in the 
+last 30 years (i.e., 1990–2022).
+2  Material and methods
+2.1  Study area
+The study area is the entirety of Switzerland, which extends over 41,285  km2 largely 
+across the European Alps. The climate is strongly affected by the Alpine chain which 
+acts as a natural divide for weather systems, with the northern slope mostly influenced 
+by air masses from the Atlantic Ocean and the southern slope by those from the Mediter -
+ranean Sea. The average temperature in the lowlands ranges from 8 to 12 °C and decreases 
+with altitude. In the summer months (JJA), long and intense heatwaves may occur, with 
+maximum daily temperatures above 30 °C. Precipitation is usually higher in the summer 
+than in the winter and reaches yearly amounts ranging from 800 to more than 2000 mm 
+depending on the region and altitude. The highest amount of precipitation occurs in the 
+Alps, in the Alpine foothills (in particular on the southern slopes), and in the western Jura. 
+The driest region lies in the central part of the canton of Valais. Prolonged meteorological 
+droughts interrupted by heavy thunderstorms may occur in summer in the whole country, 
+whereas prolonged winter/spring dry periods take place mostly south of the Alps, where 
+
+PAGE 4
+4660 Natural Hazards (2024) 120:4657–4673
+1 3
+the desiccating effect of the drought may be additionally exacerbated by the dry katabatic 
+foehn wind (Mofidi et al. 2015; MeteoSwiss 2023).
+The forested area encompasses about a third of the territory (i.e., 13,271  km2, 32.1%) 
+and ranges from 200 to 2400 m asl depending on the region and the aspect (Abegg et al. 
+2023). Although strongly shaped by management, dominant forest vegetation is organized 
+along an altitudinal gradient starting with mixed broad-leaved stands in the lowlands, fol-
+lowed by forests dominated by beech and silver fir at mid elevation, and coniferous forests 
+(mainly spruce followed by European larch) at higher elevation (Conedera et al. 2017).
+Taking into account this climatological and ecological heterogeneity, Gonseth et  al. 
+(2001) proposed a subdivision of Switzerland into five main biogeographic regions (Fig. 1).
+Natural disturbances of the Swiss forests are mainly caused by wind (59%) and insects 
+(16%) (which do sometimes also interact), followed by snow and avalanches (15%). At pre-
+sent, forest fires are responsible for a mere 1.2% of the disturbed forest area, a rate which 
+is similar to drought-induced disturbances (1.6%), but less than the gaps caused by mass 
+movements (5.7%) (Scherrer et al. 2022). In the last three decades (1990–2022), the aver -
+age annual number of forest fires registered in Switzerland was ca. 1502, of which 12% 
+are of natural origin (lightning-induced fires in the summer period). However, marked dif-
+ferences among bioregions can be observed (Table  1). The average total burnt area is ca. 
+260 ha per year, most of which (46%) is concentrated on the southern slope of the Alps, 
+where fast-spreading winter surface fires greatly contribute to the total burnt area. As a 
+consequence, overall average fire size keeps quite small (i.e., 2.9 ha), although again with 
+significant regional differences as a function of prevalent climatological, vegetative, and 
+topographic conditions (Table  1; Pezzatti et al. 2009). Based on this heterogeneity of pyro-
+logical conditions and resulting fire regimes, Pezzatti et al. (2016) proposed dividing the 
+Fig. 1  Map of Switzerland showing the extent of the five main biogeographic regions (JUR = Jura; 
+PLA = Plateau; NOA = Northern Alps; WCA, ECA = Western and Eastern Central Alps; SOA = Southern 
+Alps) and pyroregions (progressive numbers)
+
+PAGE 5
+4661Natural Hazards (2024) 120:4657–4673 
+1 3
+country in 21 homogeneous fire regions (hereafter refereed as pyroregions; Fig.  1). Exist-
+ing differences in flammability among dominant forest species under normal fire weather 
+conditions tend however to disappear in the case of extreme fire weather, when any type of 
+forest become highly fire-conducive (e.g., Cruz et al. 2022; Conedera et al. 2023), allowing 
+fires to become relatively large, especially on steep slopes in mountainous regions. Nearly 
+all historical large-scale events in the last 30 years in Switzerland took place under severe 
+drought conditions (snow drought with lacking snowpack in the mountains in winter, pro-
+longed “hot” droughts in summer). Despite the windy conditions such as foehn, which usu-
+ally exacerbates the rate of spread and partially influences the initial fire front direction, 
+nearly all of these large events were slope-driven fires which rapidly spread along the for -
+est and shrubland vegetation on steep topography (see Supplementary Material 1), making 
+the suppression efforts highly problematic for the fire brigades (e.g., Krättli 2017; Pezzatti 
+et al. 2017; Gerold 2019; Gauye et al. 2023). In most cases, these fires implied the need to 
+employ sylvicultural and technical measures to avoid post-fire natural hazards and related 
+damage, which nevertheless could not be completely averted (e.g., Conedera et al. 2003; 
+Melzner et al. 2022). Therefore, fire management strategies have been developed in Swit-
+zerland at a federal (e.g., Reinhard et al. 2019) and cantonal level (e.g., Gerold 2019; Ghir-
+inghelli et al. 2019) to avoid large fires and related post-fire risks.
+2.2  Basic assumptions and methodological approach
+Since it is expected that the frequency of extreme fire weather will increase, for this study 
+we assume that in the future, topography (i.e., slope) and fuel connectivity (i.e., continuous 
+forest and shrubland cover) will be the main limiting factors for successfully controlling 
+fires, due on the one hand to the fast spread of the fire front on steep slopes with reduced 
+accessibility and on the other hand to the upslope convective heat flux released by the fire 
+(e.g., DeAngelis et al. 2015; Fernandes et al. 2016). Consequently, we conclude that the 
+final size of a forest fire will be directly related to the length of the steepest path within an 
+Table 1  General annual fire statistics by Swiss biogeographic region for the period 1990–2022
+Region Winter fires Summer fires Total 
+burnable 
+area
+Average 
+fire size
+Human-induced Human-induced Lightning-induced
+Number Total area Number Total area Number Total area
+N (± SD) ha (± SD) N (± SD) ha (± SD) N (± SD) ha (± SD) ha ha (± SD)
+JUR 3.85 
+(3.72)
+1.17 (2.06) 4.15 
+(5.06)
+0.64 (0.89) 0.12 
+(0.49)
+0.01 
+(0.03)
+4′131 0.40 (1.40)
+PLA 6.33 
+(5.95)
+1.04 (1.41) 8.18 
+(11.6)
+0.96 (1.65) 0.18 
+(0.47)
+0.00 
+(0.01)
+9′750 0.31 (0.78)
+NOA 4.70 
+(4.00)
+1.60 (3.07) 7.97 
+(10.4)
+1.24 (2.64) 1.33 
+(2.47)
+0.14 
+(0.46)
+8′077 0.28 (0.92)
+WCA 4.61 
+(6.57)
+13.3 (34.2) 7.39 
+(5.07)
+13.1 (55.4) 1.97 
+(2.16)
+0.17 
+(0.33)
+3′303 0.18 (0.39)
+ECA 2.97 
+(2.98)
+2.49 (4.69) 7.00 
+(4.75)
+1.40 (2.07) 2.15 
+(2.32)
+0.10 
+(0.14)
+4′648 5.39 (30.9)
+SOA 28.3 
+(20.1)
+192 (360) 20.8 
+(18.5)
+28.6(65.4) 7.03 
+(8.15)
+12.9 
+(36.0)
+3′389 2.38 (19.0)
+
+PAGE 6
+4662 Natural Hazards (2024) 120:4657–4673
+1 3
+area covered by woody vegetation. Here we define a steepest path as the 3D polyline or 
+linestring which starts at the point of ignition, proceeds up the slope following the direction 
+of maximal elevation gradient (i.e., gaining the most elevation across the shortest possible 
+horizontal distance), and stops where the path encounters large open areas which make it 
+possible or easier for the fire brigades to stop the fire front and extinguish the flames (e.g., 
+grassland, farmland, and rock faces).
+Foehn winds usually blow with strong and irregular gusts, which only partially lead to 
+a deviation of the main fire front from the upslope trajectory, contrary to the case in which 
+winds exert a constant strong lateral pressure (see Supplementary Material 1, Fig. SM1.1 
+and SM1.18). In conclusion, we assume that the future likelihood for a region to experi-
+ence large fires is positively correlated with the lengths of the steepest paths along a for -
+ested slope.
+To test this hypothesis, we simulated fire ignitions at each forested point (at most 40 m 
+away from the forest edge) on a systematic 100 × 100 m square grid and, for each point, 
+computed the steepest path within the forested area. We then compared the resulting path 
+lengths for each pyroregion with selected large fire statistics (e.g., total burnt area, mean 
+area of the largest 5% of fires, and maximum burnt area per fire) of the last 30 years (i.e., 
+1990–2022) as documented in the forest fire database “Swissfire” (https:// www. wsl. ch/ 
+swiss fire; Pezzatti et al. 2019). Here, each fire record includes the date and time at which 
+the fire was detected (i.e., when the fire was discovered) as well as the spatial coordinates 
+and/or municipality within which the fire ignition point occurred, allowing us to assign 
+each fire record to a pyroregion on the basis of the coordinates or the municipality of 
+the ignition point. Note that all large fires which occurred in the study region during this 
+period are registered in this dataset, i.e., including fires which did not occur entirely within 
+the forest. However, as one can see from Supplementary Material 1, these large fire events 
+were in nearly all cases associated with a forest-like vegetation cover and steep topographi-
+cal conditions.
+2.3  The steepest paths algorithm
+Over the past decades, several techniques and applications have been implemented in GIS 
+for the computation of vector features representing the lines of greatest slope both downhill 
+and uphill (e.g., Moore et al. 1988; Mitasova et al. 1995; Zhou et al. 2011) and different 
+terms are in use to indicate these particular terrain geometries (e.g., flow lines, flow trajec-
+tories, streamlines, fall line, steepest ascent lines, and surface flow path). Currently, flow 
+lines are exploited in multiple scientific fields such as the study of water runoff (Freitas 
+et al. 2016), the forecast of lava flow paths (Favalli et al. 2005), or the detection of ridges 
+(Koka et al. 2011). To our knowledge, however, this type of vector data has never been 
+intersected with forest cover distribution data for the purpose of estimating the likelihood 
+of fire occurrence over vast territories.
+The steepest paths algorithm represents a highly simplified approach for modeling the 
+spread of a slope-driven fire front assuming the presence of a homogeneous and highly 
+fire-conducive forest fuel bed. The input data for the algorithm are thus the topography 
+(slope, as derived from a digital elevation model—DEM in raster format) and the fuel con-
+nectivity (joint vector map representing the forest, open forest stand, and shrubland cover).
+The algorithm consists of a two-step approach (Fig.  2). In a first step, it determines the 
+ignition points on a regular grid (in our case of mesh size 100 × 100 m). It then computes 
+all steepest paths from these points along the slope until a summit (e.g., a mountain top) 
+
+PAGE 7
+4663Natural Hazards (2024) 120:4657–4673 
+1 3
+or a large flat region is reached. In a second step, the obtained lines are checked for fuel 
+connectivity in order to stop the paths when crossing open areas or vegetation covers other 
+than shrubs, open forest stands, and forests (see Supplementary Material 2 and Fig. SM2.1 
+for a detail explanation of the tool, including the precise parameters chosen for our study 
+case).
+The final output of the steepest path algorithm is a set of polyline features represent-
+ing the computed steepest paths. In our case, we will use the following two sets of three-
+dimensional polylines:
+– The “forest steepest paths,” i.e., the steepest path lines within the forested area (i.e., 
+forest, open forest stands, and shrublands) and truncated at the first point at which the 
+Fig. 2  Flowchart describing the steepest path algorithm
+
+PAGE 8
+4664 Natural Hazards (2024) 120:4657–4673
+1 3
+fire leaves the forested area for at least 40 m. Note that these lines can also start out-
+side the forested area as long as the horizontal distance between the starting point and 
+the woodland is less than this preset threshold value (Supplementary Materials 2, Fig. 
+SM2.1a).
+– The “full steepest paths,” i.e., all computed steepest path lines truncated at 2500 m asl, 
+i.e., assuming that the entire territory has transitioned to forested area (hypothetical 
+totally forested landscape, Supplementary materials 2, Fig. SM2.1b).
+A first release of the R script implementing the steepest path algorithm, accompanied 
+by detailed instructions and further explanations concerning the multiple calculation pro-
+cedures and usage options is available in a repository on GitHub (https:// github. com/ Insub 
+ric/ steep est_ paths_ tool).
+2.4  Statistical analysis
+In order to provide a descriptive statistical overview of the steepest paths obtained, we visu-
+alized the three-dimensional length of these line features for each pyroregion in the form of 
+a box plot. Regional differences were then assessed in terms of statistical significance using 
+the unpaired Wilcoxon rank-sum test. On the other hand, the fire regime characteristics 
+of each pyroregion were expressed by means of different metrics related to the total burnt 
+area and to large fires in particular. Explicitly, the selected variables are the total burnt 
+area summed across all fires, the mean burnt area of the largest 5% of fires, the mean burnt 
+area of the 5 largest fires, and the maximal area of any fire within the pyroregion. In order 
+to assess the relationship of the key parameters defining the current fire regime with the 
+calculated steepest paths, the logarithm of each fire regime metric was linearly regressed 
+on the median path length within each of the pyroregions, using the geom_smooth function 
+from the ggplot2 package (Wickham 2016).
+3  Results
+Figure  3 shows the dispersion of the obtained three-dimensional path lengths grouped by 
+pyroregion and main biogeographic region. Clear and significant differences exist among 
+the main biogeographic regions but also among most pyroregions. As expected, the south-
+ern regions display the largest three-dimensional path lengths, followed by the Central 
+Alps, the mountainous regions of Jura and the Northern Alps. The lack of steep mountains 
+in the Plateau region is reflected in the low median values reported in Fig. 3.
+When considering the linear regressions obtained by regressing the logarithm of the 
+selected fire metrics against the calculated medians of the steepest path lengths of each 
+pyroregion, we always obtain highly significant relationships (p < 0.001) and rather high 
+R2 values ranging from 0.558 for the total burnt area between 1990 and 2022 at the pyrore-
+gion level (see Supplementary Materials 3, Fig. SM3.1) to 0.644 for the average area of 
+the largest 5% of forest fires (Fig.  4), and to 0.651 for the area of the largest fire which 
+occurred during the considered period (see Supplementary Materials 3, Fig. SM3.2). 
+Based on these results, we define four likelihood classes for pyroregions with a similar pro-
+pensity for large fires to occur, by applying a regular thresholding to the computed median 
+three-dimensional length L of the forest steepest paths. Namely, we define a pyroregion to 
+have a low propensity if L < 150 m, medium propensity if L is between 150 and 200 m, 
+
+PAGE 9
+4665Natural Hazards (2024) 120:4657–4673 
+1 3
+high propensity if L is between 200 and 250  m, and very high propensity if L ≥ 250  m. 
+When analyzing the so-defined classes with respect to the proposed regression, we obtain 
+threshold maximum fire size values of 1.2 ha between the low and moderate classes, 4.0 ha 
+between the moderate and high classes, and 13.5 ha between the high and very high classes 
+(Fig. 4).
+Figure  5 shows the geographic distribution of the considered pyroregions in terms of 
+the propensity classes for large fires. As expected, low propensity classes are concentrated 
+on the Swiss Plateau, whereas the Central Alps and Southern Alps mostly display a high 
+propensity for large fires. The Northern Alps (mostly medium propensity) and Jura (mostly 
+high propensity) take an intermediate position.
+When analyzing the high-propensity class in detail, some regions such as the canton of 
+Valais (WCA1) appear to display slightly higher maximum burnt area than the regression 
+predicts (Fig. SM3.2), although they remain within the confidence interval range when 
+considering the mean area of the largest 5% of fires (Fig.  4). Others, such as Bregaglia and 
+Poschiavo (SOA4) or Engadina (ECA2), on the other hand, burn significantly less (Fig. 4).
+Figure  6a highlights the increase in the path lengths when simulating a Swiss landscape 
+which is completely forested up until 2500 m asl, e.g., due to a hypothetical suspension 
+of all land use. Interestingly, when comparing the metrics of the current fire regimes to 
+Fig. 3  Variability of each pyroregion in terms of the three-dimensional length of the forest steepest paths. 
+Box plots span from the 25th (lower limit) to the 75th percentile (upper limit) of the data. Blue dashes and 
+notches display the median values and the confidence intervals, respectively. Light blue lines represent the 
+median values of the correspondent bioregion. Whisker extents have been set to one time the interquartile 
+range. Only non-significant differences between pyroregions according to the unpaired Wilcoxon rank-sum 
+test are indicated as “ns” (p > 0.01), while all others are highly significant (p < 0.001)
+
+PAGE 10
+4666 Natural Hazards (2024) 120:4657–4673
+1 3
+the resulting steepest path lengths, the observed relationships become markedly weaker, 
+both in terms of statistical significance (p < 0.01) and R2 (0.301) (Fig.  6b). The very high-
+propensity class would however extend over 16 out of the 21 pyroregions (Fig. 6c).
+4  Discussion
+In this paper we applied a simplified and spatially explicit method for analyzing the pos-
+sible influences of topography (slope length and steepness) and fuel connectivity (contin-
+nuity and extent of the forested area) on the probability of large fires occurring in differ -
+ent subregions of Switzerland in the case of a future scenario with a higher frequency of 
+extreme fire weather conditions.
+The computed potential fire path lengths varied significantly among pyroregions within 
+and among most of the main biogeographic regions. Interestingly, median values of the 
+calculated path lengths highly correlate with the large fires’ statistics over the last 30 years. 
+The highest correlations are obtained when comparing with the recent largest fire events 
+within each pyroregion (e.g., largest observed fire event; the largest 5% of forest fires), 
+Fig. 4  Scatter plot showing the relationship between the mean area of the largest 5% of the fires which 
+occurred between 1990 and 2022 within a given pyroregion and the median three-dimensional length of the 
+forest steepest path lines. The gray area around the blue regression line represents the 95% confidence inter-
+val. Please note that the Y-axis has a logarithmic scale. Red vertical lines correspond to the threshold values 
+for the path lengths L separating the four large fire propensity classes: L = 150 m for discriminating between 
+low and medium (corresponding to a burnt area of 1.2 ha), L = 200 m for discriminating between medium 
+and high (corresponding to a burnt area of 4.0 ha), and L = 250 m for discriminating between high and very 
+high (corresponding to a burnt area of 13.5 ha)
+
+PAGE 11
+4667Natural Hazards (2024) 120:4657–4673 
+1 3
+confirming the prominent role of topography and fuel connectivity in shaping the fire 
+behavior, determining the difficulty of controlling a given fire event, and crucially influenc-
+ing the final burnt area (Moreira et al. 2010; Fernandes et al. 2016; Beverly et al. 2021; 
+Francis et al. 2023). According to our results, Switzerland can be subdivided into four dis-
+tinct classes in terms of present and future likelihood of experiencing large fires. Here, the 
+very high-propensity pyroregion corresponding to the canton of Valais (WCA1) already 
+displays a maximal burnt area slightly surpassing the expected maximal burnt area as com-
+puted using a linear regression (although still within the confidence interval when consid-
+ering the largest 5% of fires), whereas others such as Engadina (ECA2) and some south-
+ern valleys of Grisons (Bregaglia and Poschiavo, SOA4) are presently underrepresented in 
+terms of burnt area. In fact, this behavior in the canton of Valais (WCA1) is to be expected, 
+as even today, this is one of the driest regions of Switzerland (MeteoSwiss 2023). During 
+extreme drought periods combined with days of strong wind, possible fires are very likely 
+to spread into the crowns of the broadly diffused and dense coniferous forests, which often 
+results in large final burnt areas (Supplementary Materials 1, Fig. SM1.2). Conversely, the 
+mountain regions of the Engadina (ECA2) are currently characterized by a pronounced 
+continental climate, and this combined with the area’s high median elevation results in long 
+periods of snow cover, which most likely prevents large fires from occurring so far, espe-
+cially during the spring season. A similar effect of the generally high elevation of the terri-
+tory, despite a marked influence of foehn winds, may be the reason for the current absence 
+of large fires in the SOA4 pyroregion, especially in the case of the Poschiavo valley.
+The very low correlation coefficients obtained when comparing the current fire regimes 
+to the theoretical three-dimensional steep paths when supposing a transition to a total forest 
+cover of the Swiss landscape indirectly highlight the paramount role of fuel-consuming and 
+fuel-removing land uses in preventing large fires. Without such traditional agricultural or 
+Fig. 5  Map representing the classification of the 21 Swiss pyroregions into four classes according to the 
+current large fire propensity
+
+PAGE 12
+4668 Natural Hazards (2024) 120:4657–4673
+1 3
+pastoral activities on the mountain slopes, significant additional parts of Switzerland would 
+transition to the very high-propensity class regarding the likelihood for large fires to occur.
+From a methodological point of view, we propose a very simplified approach with 
+respect to existing spatially explicit fire simulations models and techniques (see Miller and 
+Ager 2013 for a short review). On the one hand, this prevents us from accurately simulating 
+the fire growth dynamics through different fuel types as well as loads and the related local 
+fire intensities, including possible effects of landscape and fuel management (e.g., Ager 
+et al. 2012). On the other hand, our approach allows the estimation of fire spread potential 
+using readily available GIS data and is particularly suitable for application even over vast 
+areas. Furthermore, our main focus is on simulating the effect of extreme fire weather con-
+ditions which induce fast-spreading and intense fire fronts on slopes with continuous fuel 
+cover. Details regarding the local fire intensity are not relevant in this context and omitting 
+these makes the approach highly flexible. Depending to the characteristics of the landscape 
+which is to be analyzed, one can add additional vegetation cover types that potentially sup-
+port fast fires of high intensities (i.e., fallow lands of any type if a cartography is available), 
+which were not considered in this study. Similarly, the parametrization of the tool (e.g., 
+distance from the forested area before a fire can be stopped) can be adapted to future fire 
+regime scenarios (e.g., high frequency and long-distance spotting during a fire). Finally, 
+possible effects of fuel breaks or fuel management activities can easily be simulated by 
+simply removing the target vegetation cover load where the interventions are planned.
+Fig. 6  Large fire propensity in a hypothetical Swiss landscape which is completely forested up until 2500 m 
+asl. a Variability for each pyroregion in terms of the three-dimensional length of the full steepest paths. 
+Box plots span from the 25th (lower limit) to the 75th percentile (upper limit) of the data. Blue dashes and 
+notches display the median values and the confidence intervals, respectively. Light blue lines represent the 
+median values of the correspondent bioregion. Whisker extents have been set to one time the interquartile 
+range. Only non-significant differences between pyroregions according to the unpaired Wilcoxon rank-sum 
+test are indicated as “ns” (p > 0.01), while all others are highly significant (p < 0.001). The red dots repre-
+sent the median path lengths when considering the present forested region (see Fig.  3). b Scatter plot show-
+ing the relationship between the mean area of the largest 5% of the fires which occurred between 1990 and 
+2022 within a given pyroregion and the median three-dimensional length of the full steepest paths. The gray 
+area around the blue regression line represents the 95% confidence interval. Please note that the Y-axis has a 
+logarithmic scale. Red vertical lines correspond to the threshold values for the path length L separating the 
+four large fire propensity classes (see Fig.  4 for further details). c Map representing the classification of the 
+21 Swiss pyroregions into four classes of large fire propensity, resulting from our analysis of a hypothetical 
+completely forested Swiss landscape
+▸
+
+PAGE 13
+4669Natural Hazards (2024) 120:4657–4673 
+1 3
+
+
+PAGE 14
+4670 Natural Hazards (2024) 120:4657–4673
+1 3
+5  Conclusions
+In mountainous regions, future fire management efforts should focus on preventing large 
+fires and related post-fire gravitative natural hazards. Here we presented a simplified 
+approach for identifying and mapping the areas with an elevated likelihood for large fires to 
+occur within a defined region of interest. Despite obvious oversimplifications, the proposed 
+spatially explicit approach yields results which are highly correlated with the current fire 
+regime and allow for an easy identification and geo-localization of potential hotspots in 
+terms of the likelihood for large fires to occur. This is a prerequisite for a targeted planning 
+of fire management measures and costly fire pre-suppression infrastructures such as water 
+points for aerial firefighting in particular.
+The suggested approach can be implemented using readily available GIS data (namely 
+a DEM and a vector map of the forested region) and is also relatively economical in terms 
+of computational resources meaning that it is suitable for application even over vast areas. 
+In addition, it can be integrated and combined with other approaches, considering further 
+characteristics of the landscape (ignition probability, aspect, dominant forest vegetation 
+and related fuel, post-fire susceptibility of the landscape, etc.) relevant for fire behavior, as 
+such allowing any region (e.g., whole country, province, and district) to be analyzed.
+Supplementary Information The online version contains supplementary material available at https:// doi. 
+org/ 10. 1007/ s11069- 023- 06395-y.
+Author contribution All authors contributed to the study conception and design. Material preparation, data 
+collection, and analysis were performed by JF and PK. The first draft of the manuscript was written by MC, 
+and all authors commented on previous versions of the manuscript. PK designed the figures. JF checked the 
+orthography of the final manuscript. All authors read and approved the final manuscript.
+Funding Open Access funding provided by Lib4RI – Library for the Research Institutes within the ETH 
+Domain: Eawag, Empa, PSI & WSL. The authors have not disclosed any funding.
+Declarations 
+Conflict of interest The authors have not disclosed any conflict of interest.
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, 
+which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long 
+as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Com-
+mons licence, and indicate if changes were made. The images or other third party material in this article 
+are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the 
+material. If material is not included in the article’s Creative Commons licence and your intended use is not 
+permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly 
+from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+References
+Abatzoglou JT, Williams AP, Barbero R (2019) Global emergence of anthropogenic climate change in fire 
+weather indices. Geophys Res Lett 46:326–336. https:// doi. org/ 10. 1029/ 2018G L0809 59
+Abegg M, Ahles P, Allgaier Leuch B et al (2023) Swiss national forest inventory NFI. Result tables and 
+maps of the NFI surveys 1983–2022 (NFI1, NFI2, NFI3, NFI4, NFI5.1–5) on the internet. [Published 
+online 30.05.2023]. Birmensdorf, Swiss Federal Research Institute WSL
+
+PAGE 15
+4671Natural Hazards (2024) 120:4657–4673 
+1 3
+Ager AA, Valliant NM, Finney MA, Preisler HK (2012) Analyzing wildfire exposure and source-sink rela-
+tionships on a fire prone forest landscape. For Ecol Manage 267:271–283. https:// doi. org/ 10. 1016/j. 
+foreco. 2011. 11. 021
+Archibald S, Lehmann CER, Gómez-Dans JL et al (2013) Defining pyromes and global syndromes of fire 
+regimes. PNAS 110:6442–6447. https:// doi. org/ 10. 1073/ pnas. 12114 66110
+Bardsley AM, Bardsley DK, Conedera M, Pütz M, RobinsonGM, Weber D (2021) Wildfire environmental 
+risk and deliberative planning in the locarnese region of Switzerland. Environ Manag 68(6):785–801. 
+https:// doi. org/ 10. 1007/ s00267- 021- 01523-5
+Berčák R, Holuša J, Kaczmarowski J et al (2023) Fire protection principles and recommendations in dis-
+turbed forest areas in Central Europe: a review. Fire 6:310. https:// doi. org/ 10. 3390/ fire6 080310
+Beverly JL, McLoughlin N, Chapman E (2021) A simple metric of landscape fire exposure. Landsc Ecol 
+36:785–801. https:// doi. org/ 10. 1007/ s10980- 020- 01173-8
+Bond W, Keeley J (2005) Fire as a global ‘herbivore’: the ecology and evolution of flammable ecosystems. 
+Trends Ecol Evol 20:387–394. https:// doi. org/ 10. 1016/j. tree. 2005. 04. 025
+Conedera M, Peter L, Marxer P, Forster F, Rickenmann D, Re L (2003) Consequences of forest fires on the 
+hydrogeological response of mountain catchments: a case study of the Riale Buffaga Ticino Switzer -
+land. Abstract Earth Surface Processes and Landforms 28(2):117–129. https:// doi. org/ 10. 1002/ esp. 425
+Conedera M, Cesti G, Pezzatti GB, Zumbrunnen T, Spinedi F (2006) Lightning-induced fires in the Alpine 
+region: an increasing problem. In: Viegas DX (ed) Figueira da Foz. Univ Coimbra, Coimbra, p 9
+Conedera M, Colombaroli D, Tinner W, Krebs P, Whitlock C (2017) Insights about past forest dynamics 
+as a tool for present and future forest management in Switzerland. Forest Ecol Manag 388:100–112. 
+https:// doi. org/ 10. 1016/j. foreco. 2016. 10. 027
+Conedera M, Krebs P, Valese E et al (2018) Characterizing Alpine pyrogeography from fire statistics. Appl 
+Geogr 98:87–99. https:// doi. org/ 10. 1016/j. apgeog. 2018. 07. 011
+Conedera M, Pezzatti GB, Guglielmetti A et  al (2023) Are high-severity burns in Alpine beech forests 
+related to eruptive fire behavior? Forestry, pp 1–9. https:// doi. org/ 10. 1093/ fores try/ cpad0 36
+Cruz MG, Alexander ME, Fernandes PM (2022) Evidence for lack of a fuel effect on forest and shrubland 
+fire rates of spread under elevated fire danger conditions: implications for modelling and management. 
+Int J Wildland Fire 31:471–479. https:// doi. org/ 10. 1071/ wf211 71
+De Angelis A, Ricotta C, Conedera M, Pezzatti GB (2015) Modelling the meteorological forest fire niche in 
+heterogeneous pyrologic conditions. PLoS One 10(2):e0116875. https:// doi. org/ 10. 1371/ journ al. pone. 
+01168 75
+Favalli M, Pareschi MT, Neri A, Isola I (2005) Forecasting lava flow paths by a stochastic approach. Geo-
+phys Res Lett 32:L03305. https:// doi. org/ 10. 1029/ 2004G L0217 18
+Fernandes PM, Monteiro-Henriques T, Guiomar N, Loureiro C, Barros AMG (2016) Bottom-up vari-
+ables govern large-fire size in Portugal. Ecosystems 19:1362–1375. https:// doi. org/ 10. 1007/ 
+s10021- 016- 0010-2
+Francis EJ, Pourmohammadi P, Steel ZL et  al (2023) Proportion of forest area burned at high-severity 
+increases with increasing forest cover and connectivity in western US watersheds. Landscape Ecol 
+38:2501–2518. https:// doi. org/ 10. 1007/ s10980- 023- 01710-1
+Freitas HRA, Freitas CC, Rosim S, Oliveira JRF (2016) Drainage networks and watersheds delineation 
+derived from TIN-based digital elevation models. Comput Geosci 92:21–37. https:// doi. org/ 10. 1016/j. 
+cageo. 2016. 04. 003
+Galizia LF, Curt T, Barbero R, Rodrigues M (2022) Understanding fire regimes in Europe. Int J Wildland 
+Fire 31:56–66. https:// doi. org/ 10. 1071/ WF210 81
+Gauye C, Bernard C, Moser B, Rigling A, Wohlgemuth T (2023) L’importance de l’exposition sur le reboi-
+sement suite à deux incendies de forêt en Valais. Schweiz Z Forstwes 174:238–242. https:// doi. org/ 10. 
+3188/ szf. 2023. 0238
+Gellrich M, Baur P, Koch B, Zimmermann NE (2007) Agricultural land abandonment and natural forest re-
+growth in the Swiss mountains: a spatially explicit economic analysis. Agric Ecosyst Environ 118:93–
+108. https:// doi. org/ 10. 1016/j. agee. 2006. 05. 001
+Gerold P (2019) Waldbrandmanagement im Kanton Wallis und Lehren aus dem Brand von Visp im Jahr 
+2011. Schweiz Z Forstwes 170:251–257. https:// doi. org/ 10. 3188/ szf. 2019. 0251
+Ghiringhelli A, Pezzatti GB, Conedera M (2019) Das Konzept «Waldbrand 2020» des Kantons Tessin. Sch-
+weiz Z Forstwes 170:242–250. https:// doi. org/ 10. 3188/ szf. 2019. 0242
+Gonseth Y, Wohlgemuth T, Sansonnens B, Buttler A (2001) Die biogeographischen Regionen der Schweiz. 
+Erläuterungen und Einteilungsstandard. Umwelt-Materialien 137. Bern, Bundesamt für Umwelt, Wald 
+und Landschaft (BUWAL)
+Hanes CC, Wang X, Jain P, Parisien M-A, Little JM, Flannigan MD (2019) Fire-regime changes in Canada 
+over the last half century. Can J For Res 49:256–269. https:// doi. org/ 10. 1139/ cjfr- 2018- 0293
+
+PAGE 16
+4672 Natural Hazards (2024) 120:4657–4673
+1 3
+Jones MW, Abatzoglou JT, Veraverbeke S et al (2022) Global and regional trends and drivers of fire under 
+climate change. Rev Geophys 60:e2020RG000726. https:// doi. org/ 10. 1029/ 2020R G0007 26
+Kelley DI, Bistinas I, Whitley R, Burton C, Marthews TR, Dong N (2019) How contemporary bioclimatic 
+and human controls change global fire regimes. Nat Clim Change 9:690–696. https:// doi. org/ 10. 1038/ 
+s41558- 019- 0540-7
+Kitzberger T, Falk DA, Westerling AL, Swetnam TW (2017) Direct and indirect climate controls predict 
+heterogeneous early-mid 21st century wildfire burned area across western and boreal North America. 
+PLoS ONE 12:e0188486. https:// doi. org/ 10. 1371/ journ al. pone. 01884 86
+Koka S, Anada K, Nomaki K, Sugita K, Tsuchida K, Yaku T (2011) Ridge detection with the steepest ascent 
+method. Procedia Comput Sci 4:216–221. https:// doi. org/ 10. 1016/j. procs. 2011. 04. 023
+Krättli S (2017) Ich hörte meine Familie schreien: «Der Wald brennt». Bünderwald 70:10–16
+Krawchuk MA, Moritz MA, Parisien M-A, Van Dorn J, Hayhoe K (2009) Global Pyrogeography: the Cur -
+rent and Future Distribution of Wildfire. PLoS ONE 4:e5102. https:// doi. org/ 10. 1371/ journ al. pone. 
+00051 02
+Littell JS (2018) Drought and fire in the Western USA: is climate attribution enough? Curr Clim Change 
+Rep 4:396–406. https:// doi. org/ 10. 1007/ s40641- 018- 0109-y
+McCarty JL, Smith TEL, Turetsky MR (2020) Arctic fires re-emerging. Nat Geosci 13(10):658–660. https:// 
+doi. org/ 10. 1038/ s41561- 020- 00645-5
+Melzner S, Shtober-Zisu N, Katz O, Wittenberg L (2019) Brief communication: post-wildfire rockfall risk 
+in the eastern Alps. Nat Hazard Earth Sys 19:2879–2885. https:// doi. org/ 10. 5194/ nhess- 19- 2879- 2019
+Melzner S, Conedera M, Pezzatti GB (2022) Post Waldbrand Risiko in den schweizerischen Gebirgen. 
+Wildbach- Und Lawinenverbau 86:120–130
+MeteoSwiss (2023). The climate of Switzerland. https:// www. meteo swiss. admin. ch/ clima te/ the- clima te- of- 
+switz erland. html. Accessed 16 August 2023.
+Miller C, Ager AA (2013) A review of recent advances in risk analysis for wildfire management. Int J Wild-
+land Fire 22:1–14. https:// doi. org/ 10. 1071/ wf111 14
+Mitasova H, Mitas L, Brown WM, Gerdes DP, Kosinovsky I, Baker T (1995) Modelling spatially and 
+temporally distributed phenomena: new methods and tools for GRASS GIS. Int J Geogr Inf Syst 
+9:433–446. https:// doi. org/ 10. 1080/ 02693 79950 89020 48
+Mofidi A, Soltanzadeh I, Yousefi Y, Zarrin A, Soltani M, Samakosh JM, Azizi G, Miller STK (2015) 
+Modeling the exceptional south Foehn event (Garmij) over the Alborz Mountains during the 
+extreme forest fire of December 2005. Nat Hazards 75:2489–2518. https:// doi. org/ 10. 1007/ 
+s11069- 014- 1440-9
+Moore ID, O’Loughlin EM, Burch GJ (1988) A contour-based topographic model for hydrological and 
+ecological applications. Earth Surf Proc Land 13:305–320. https:// doi. org/ 10. 1002/ esp. 32901 30404
+Moreira F, Catry FX, Rego F, Bacao F (2010) Size-dependent pattern of wildfire ignitions in Portu-
+gal: when do ignitions turn into big fires? Landsc Ecol 25:1405–1417. https:// doi. org/ 10. 1007/  
+s10980- 010- 9491-0
+Müller MM, Vacik H, Diendorfer G, Arpaci A, Formayer H, Gossow H (2013) Analysis of lightning-induced 
+forest fires in Austria. Theor Appl Climatol 111:183–193. https:// doi. org/ 10. 1007/ s00704- 012- 0653-7
+Müller MM, Vilà-Vilardell L, Vacik H (2020) Forest fires in the Alps - State of knowledge, future chal-
+lenges and options for an integrated fire management. EUSALP Action Group, Vienna, p 8
+Pausas JG, Bradstock RA (2007) Fire persistence traits of plants along a productivity and disturbance 
+gradient in Mediterranean shrublands of south-east Australia. Global Ecol Biogeogr 16:330–340. 
+https:// doi. org/ 10. 1111/j. 1466- 8238. 2006. 00283.x
+Pausas JG, Ribeiro E (2013) The global fire-productivity relationship: fire and productivity. Global Ecol 
+Biogeogr 22:728–736. https:// doi. org/ 10. 1111/ geb. 12043
+Pezzatti GB, Bajocco S, Torriani D, Conedera M (2009) Selective burning of forest vegetation in Can-
+ton Ticino (southern Switzerland). Plant Biosyst 143:609–620. https:// doi. org/ 10. 1080/ 11263 50090 
+32332 92
+Pezzatti GB, Zumbrunnen T, Bürgi M, Ambrosetti P, Conedera M (2013) Fire regime shifts as a con-
+sequence of fire policy and socio-economic development: an analysis based on the change point 
+approach. Forest Policy Econ 29:7–18. https:// doi. org/ 10. 1016/j. forpol. 2011. 07. 002
+Pezzatti GB, De Angelis A, Conedera M (2016) Potenzielle Entwicklung der Waldbrandgefahr im Kli-
+mawandel. In: Pluess AR, Augustin S, Brang P (eds) Wald im Klimawandel. Grundlagen für Adap-
+tationsstrategien. Haupt, Bern, pp 223–244
+Pezzatti GB, De Angelis A, Ryser D, Conedera M (2017) Wird die Waldbrandgefahr in Zukunft zune-
+hmen? Bündnerwald 70:17–22
+Pezzatti GB, Bertogliati M, Gache S et  al (2019) Swissfire: technisch modernisiert und dank Archivre-
+cherchen inhaltlich erweitert. Schweiz Z Forstwes 170:234–241. https:// doi. org/ 10. 3188/ szf. 2019. 0234
+
+PAGE 17
+4673Natural Hazards (2024) 120:4657–4673 
+1 3
+Reinhard M, Beyeler S, Plüss T et  al (2019) La gestion des incendies de forêts en Suisse: la vision 
+nationale de l’OFEV. Schweiz Z Forstwes 170:281–284. https:// doi. org/ 10. 3188/ szf. 2019. 0266
+Scherrer D, Ascoli D, Conedera M et al (2022) Canopy disturbances catalyse tree species shifts in Swiss 
+Forests. Ecosystems 25:199–214. https:// doi. org/ 10. 1007/ s10021- 021- 00649-1
+Schoennagel T, Balch JK, Brenkert-Smith H, Dennison PE, Harvey BJ, Krawchuk MA, Mietkiewicz N, 
+Morgan P, Moritz MA, Rasker R, Turner MG, Whitlock C (2017) Adapt to more wildfire in western 
+North American forests as climate changes. Proc Nat Acad Sci 114(18):4582–4590. https:// doi. org/  
+10. 1073/ pnas. 16174 64114
+Tedim F, Leone V, Coughlan M et al (2020) Extreme wildfire events: The definition. In: Tedim F, Leone 
+V, McGee TK (eds). Extreme wildfire events and disasters: root causes and new management strate-
+gies. Elsevier, Amsterdam, pp 3–29. https:// doi. org/ 10. 1016/ b978-0- 12- 815721- 3. 00001-1
+Valese E, Conedera M, Held AC, Ascoli D (2014) Fire, humans and landscape in the European Alpine 
+region during the Holocene. Anthropocene 6:63–74. https:// doi. org/ 10. 1016/j. ancene. 2014. 06. 006
+Vergani C, Werlen M, Conedera M, Cohen D, Schwarz M (2017) Investigation of root reinforcement 
+decay after a forest fire in a Scots pine (Pinus sylvestris) protection forest. Forest Ecol Manag 
+400:339–352. https:// doi. org/ 10. 1016/j. foreco. 2017. 06. 005
+Wastl C, Schunk C, Leuchner M, Pezzatti GB, Menzel A (2012) Recent climate change: Long-term 
+trends in meteorological forest fire danger in the Alps. Agr Forest Meteorol 162–163:1–13. https://  
+doi. org/ 10. 1016/j. agrfo rmet. 2012. 04. 001
+Wastl C, Schunk C, Lüpke M, Cocca G, Conedera M, Valese E, Menzel A (2013) Large-scale weather 
+types, forest fire danger, and wildfire occurrence in the Alps. Agr Forest Meteorol 168:15–25. 
+https:// doi. org/ 10. 1016/j. agrfo rmet. 2012. 08. 011
+Wickham H (2016) ggplot2: elegant graphics for data analysis. Springer-Verlag, New York
+Williams AP, Abatzoglou JT (2016) Recent advances and remaining uncertainties in resolving past and 
+future climate effects on global fire activity. Curr Clim Change Rep 2:1–14. https:// doi. org/ 10.  
+1007/ s40641- 016- 0031-0
+Zhou Q, Pilesjö P, Chen Y (2011) Estimating surface flow paths on a digital elevation model using a trian-
+gular facet network. Water Resour Res 47:W07522. https:// doi. org/ 10. 1029/ 2010W R0099 61
+Zumbrunnen T, Menéndez P, Bugmann H, Conedera M, Gimmi U, Bürgi M (2012) Human impacts on fire 
+occurrence: a case study of hundred years of forest fires in a dry alpine valley in Switzerland. Reg 
+Environ Change 12:935–949. https:// doi. org/ 10. 1007/ s10113- 012- 0307-4
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and 
+institutional affiliations.

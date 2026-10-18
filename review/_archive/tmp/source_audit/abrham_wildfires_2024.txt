@@ -1,0 +1,1349 @@
+PAGE 1
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  500 
+  
+Wildfires and Tourism in the Mediterranean: Balancing 
+Conservation and Economic Interests 
+ 
+Josef Abrham,a Jana Soukupova,b and Petr Prochazka c,* 
+ 
+Wildfires have been a recurrent issue in the Mediterranean region due to 
+its hot, dry summers and dense vegetation, exacerbated by human 
+activities and climate change. This paper examines the complex 
+relationship between wildfires and tourism in Southern E urope, focusing 
+on their regional patterns, interactions, and socio-economic impacts. The 
+study identifies key drivers of wildfire incidence, such as climatic 
+conditions, vegetation type, human activity, and topography, and analyzes 
+their implications for the tourism sector. Through a systematic review of 
+the literature, the authors highlight the increased frequency and intensity 
+of fires in the Mediterranean, which have caused significant ecological, 
+economic, and social damage. The research also discusses the regional 
+diversity of fire occurrences, revealing that most large fires a re 
+concentrated in Spain, Portugal, Greece, Italy, France, and Croatia, 
+among the most popular tourist destinations. The impact of wildfires on 
+tourism is multifaceted. At the same time, they decrease the attractiveness 
+of affected areas, leading to reduced visitor numbers and economic 
+losses. The paper suggests that effective fire management and prevention 
+strategies, including public awareness, sustainable tourism practices, and 
+international cooperation, are essential to mitigate the adverse effects of 
+wildfires. It calls for integrating risk management into tourism development 
+plans to enhance the resilience of Southern European destinations to 
+future fire events. 
+ 
+DOI: 10.15376/biores.20.1.500-526 
+ 
+Keywords: Wildfires; Tourism; Mediterranean; Southern Europe; Climate Change; Risk Management 
+ 
+Contact information: a: Department of Trade and Finance, Czech University of Life Science, Prague, 
+Czech Republic; b: Department of Water Resources and Environmental Modelling, Czech University of 
+Life Science, Prague, Czech Republic; c: Department of Economics, Czech University of Life Science, 
+Prague, Czech Republic; *Corresponding author: pprochazka@pef.czu.cz 
+ 
+ 
+INTRODUCTION 
+ 
+Climate and nature have created ideal conditions for fires to occur in the 
+Mediterranean since ancient times. Vegetation fires are frequent, especially during the 
+summer season, when the climate is dry and hot (Ruffault et al. 2016). In addition to 
+physical geography, the spread of fires in southern Europe is also facilitated by human 
+activity (Ricotta et al. 2014). Growing population, urbanization , and changes in land 
+management contributed to an increase in the number and intensity of fires in the 20 th 
+century (Aquilué et al. 2020; Sil et al. 2024). Forest fires in Mediterranean countries were 
+often caused by human activities such as agriculture, land burning, negligence , or even 
+intentional actions (Santín and Doerr 2016; Ascoli et al. 2021). In recent decades, fires 
+have become more frequent and more destructive, mainly due to climate change (Turco et 
+al. 2014). The forecasts for the coming years are not favorable for southern Europe. As 
+climate changes continue, fires are expected to become an increasingly pressing issue 
+
+PAGE 2
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  501 
+(Fréjaville and Curt 2015; Richards et al. 2023). Adaptation to new climate conditions, 
+quality prevention, crisis management, and raising public awareness of the issue are key to 
+reducing risks (Flannigan et al. 2006; Grünig et al. 2023). 
+Fires have significant ecological, economic , and social impacts in the 
+Mediterranean. Forest fires destroy large areas of natural vegetation, leading to loss of 
+biodiversity and long -term damage to ecosystems. The consequences of fires are 
+devastating not only for natural ecosystems but also for the  local economy and residents. 
+Fire-related damage slows the growth of gross domestic product, increases social spending, 
+and can sometimes lead to threats to the health and lives of residents. Among the most 
+affected sectors of the national economy are tourism, agriculture, forestry , and fishing 
+(Kalogiannidis et al. 2023). Tourism, which is crucial to the Mediterranean region, has 
+suffered significant damage in recent years due to the cancellation of bookings and 
+overnight stays in areas affected by the fires. Large wildfires also reduce the recreational 
+value of land and natural parks. The decline in the attractiveness of tourist destinations 
+negatively affects the income of businesses in the tourism industry and, by extens ion, 
+regional economies (Otrachshenko and Nunes 2022). For the above reasons, it is essential 
+to pay attention to research into the causes, progress , and effects of fires. At the political 
+level, it is necessary to plan and implement measures to mitigate the impact of wildfires 
+and protect the natural heritage in the region of Southern Europe (Bacciu et al. 2022). 
+In recent years, the growing interest of researchers and the professional public in 
+wildfires can be seen. Despite a considerable number of published articles and literature 
+reviews, there have been only a limited number of studies focusing on regional aspects of 
+fires and tourism in Southern Europe. As far as the authors know, a systematic literature 
+review on the given topic has not been published in recent decades. Previous research is 
+mostly geographically limited case studies that examined the effects of forest fires on 
+tourism in Portugal (Otrachshenko and Nunes 2022), the costs of wildfires in Spain (Perez-
+Mato et al. 2016), the influence of wildfires on tourist behaviors in Florida (Thapa et al. 
+2013), or the economic valuation of recreational activities in Spain (Molina et al. 2019). 
+Panel studies of European countries that focus on the issue of fires include tourism only 
+marginally (Fernandez-Anez et al. 2021; Meier et al. 2023).  
+The presented review aims to explore the mutual interactions between fires and 
+tourism in the Mediterranean. Based on the analysis of published studies, the main topics 
+and gaps in the scientific literature will be identified and possible directions for fu ture 
+research will be recommended. Specifically, the authors set the following sub-goals: (1) to 
+evaluate the geographical aspects and specifics of fires in Southern European countries, (2) 
+to analyze the regional -economic importance of tourism and interac tion with fires, (3) to 
+map approaches to risk prevention and building resilience systems of countries and 
+destinations concerning fires and other natural disasters.  
+Geographically, this work  includes an overview of the literature on the coastal 
+countries of southern Europe (Croatia, France, Greece, Italy, Portugal and Spain). The 
+countries listed were selected based on their importance in terms of fire and tourism. The 
+majority of large fires in Europe occur in the six countries surveyed (Colantoni et al. 2020; 
+San-Miguel-Ayanz et al. 2024). Fires are among the most dangerous natural disasters in 
+the analyzed countries, and at the same time, the  affected areas  are the most attractive 
+tourist destinations. According to World Trade Organization statistics, Southern Europe 
+has long been the most visited tourism region worldwide (World Tourism Organization 
+2024). 
+ 
+
+PAGE 3
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  502 
+MATERIALS AND METHODS 
+ 
+The review methodology was based on thematic analysis and synthesis of scientific 
+literature. The goal was to extract scientific articles published in the last 20 years. Most 
+articles were drawn from the Web of Science and Scopus databases. To refine the search 
+results and ensure the relevance of the identified literature, the procedure was to  define 
+inclusion criteria. Several steps were taken to  exclude certain articles for the following 
+reasons: duplicate articles in international databases, inadequate t argeting of titles, 
+abstracts, and keywords, and unavailability of full texts of articles in databases. 
+Subsequently, all of the articles’ texts were screened in detail. Studies were excluded that 
+did not meet the objectives of the review. The selection criteria also included a language 
+parameter (only articles published in English  were reviewed). Also analyzed were expert 
+documents and statistical data from the European Commission, the European Forest Fire 
+Information System, and EUROSTAT. The Interactive Map Generator (IMAGE) allows 
+the user to create statistical maps at the European, national, and regional levels. The study 
+included a spatial comparison of states and NUTS 2 regions according to the classification 
+of the European Union. 
+In the assessment of fire risks, a methodology that is based on existing studies and 
+reflects the multifaceted impact of fires using weights of individual factors based on expert 
+assessment was used. Through analyzing the direct and indirect relationships between the 
+factors affecting fires, a matrix was created that provides a clear quantification of these 
+relationships. To create the table of factors influencing wildfires, a comprehensive review 
+of existing literature was conducted, focusing on both primary and secondary sources that 
+examine the various contributors to wildfire risk. Studies were selected based on their 
+relevance, scope, and methodological rigor, including quantitative analyses, case studies, 
+and expert assessments. Each factor was identified, described, and evaluated for its 
+contribution to wildfire risk, and the data w ere synthesized into a matrix. The weights 
+assigned to each factor were determined by expert judgment. First, quantitative data from 
+multiple studies were aggregated to assess the relative importance of each factor. Then, 
+expert judgment was applied to adjust these weights, ensuring they accurately reflected the 
+multifaceted nature of wildfire risk in various geographic and socio-economic contexts. 
+ 
+ 
+REGIONAL PATTERNS OF WILDFIRES IN THE MEDITERRANEAN 
+ 
+The regional diversity of fires in Europe is influenced by geographical, 
+meteorological, topographic, and other specific conditions. The most threatened area is the 
+Mediterranean (Colantoni et al. 2020). In the Mediterranean, fires destroy significantly 
+larger forest areas than other natural hazards (tornadoes, parasites, insects, etc.). More than 
+60% of the total number of wildfires in Europe were concentrated in the six monitored 
+countries of southern Europe (Spain, Portugal, Italy, Greece, France , and Croatia) in the 
+last five years (San -Miguel-Ayanz et al. 2024). An even greater polarization of the six 
+analyzed countries is indicated by the indicator of total burned areas in hectares. Although 
+the statistics differ slightly according to meteorological conditions in individual years, the 
+studied countries of sout hern Europe have long -term reached more than 85% of the total 
+burned areas in Europe (San -Miguel-Ayanz et al. 2023). Regional differences between 
+European countries according to the total number of  burned areas over the last five years 
+are illustrated in Map 1, from which it is evident that the largest extent of burned areas in 
+
+PAGE 4
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  503 
+Europe was recorded in Spain, Italy, and Greece. It was followed by France, Portugal, and 
+Croatia. 
+As shown in Table 1 and Fig. 1, fire activity showed increasing trends in the 1980s 
+and 1990s. This was followed by a stable decade after 2000 and even a decline in 2010 to 
+2019. In the first four years of this decade (2020 to 2023), the number of large fires 
+increased again. In all analyzed Southern European countries except Portugal, the average 
+annual extent of burned areas increased compared to the last decade. The largest increase 
+in burnt areas in hectares was recorded in France and Greece. In France, 45% of the total 
+number of fires in the six monitored countries were detected in 2022, which is not usual in 
+the long term. In past decades it was more typical for Spain or Portugal (San-Miguel-Ayanz 
+et al. 2023; San-Miguel-Ayanz et al. 2024).  
+ 
+ 
+ 
+Map. 1. Burned areas (ha) in 25 European States (average 2019 to 2023); Source: San-Miguel-
+Ayanz et al. 2021, 2022, 2023, 2024 
+ 
+Table 1. Long-Term Development of Fires in Six Mediterranean Countries (1980 
+to 2023) 
+Burned Areas (ha) Croatia France Greece Italy Portugal Spain 
+Average 1980-1989 - 39157 52417 147150 73484 244788 
+Average 1990-1999 13040 22735 44108 118573 102203 161319 
+Average 2000-2009 15782 22363 49238 83878 160985 127229 
+Average 2010-2019 11241 12582 24220 63907 138084 94514 
+Average 2020-2023 14438 32935 78071 96636 62169 130734 
+Number of Fires Croatia France Greece Italy Portugal 
+al 
+Spain 
+Average 1980-1989 - 4910 1264 11575 7381 9515 
+Average 1990-1999 490 5538 1748 11164 22250 18152 
+Average 2000-2009 669 4421 1695 7259 28774 18369 
+Average 2010-2019 471 3913 946 5420 19362 11860 
+Average 2020-2023 132 9043 862 4690 7283 7107 
+Source: San-Miguel-Ayanz et al. 2023, 2024 
+
+
+PAGE 5
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  504 
+Developmental trends of the number  of fires and total burned areas in the six 
+countries studied over the past 44 years (1980 to 2023) can be traced from Table 1. The 
+statistics are expressed as averages of individual decades to abstract data from seasonal 
+weather variations. The data are dr awn exclusively from the database of the European 
+Forest Fire Information System (San-Miguel-Ayanz et al. 2023). Only fires over 30 ha are 
+included to compare forty-year periods. In the statistics until 2018, smaller fires were not 
+monitored, as current technological systems allow. 
+In the case of Greece, the most critical year was 2023, when the number of mapped 
+fires did not increase, but their size was extreme. The total burnt area of 175,000 ha was a 
+record because of the fires in the heavily forested Peloponnese peninsula in 2007 (Koutsias 
+et al. 2012; Ferrara et al. 2018; San-Miguel-Ayanz et al. 2024). In July and August 2023, 
+Greece was hit by large -scale forest fires that took place in several locations across the 
+country, with the most affected areas including the islands of R hodes, Euboea, and the 
+Attica region. The fire on the island of Rhodes strongly affected the tourism industry. Some 
+hotels and resorts were evacuated. Stays on the island were cancelled in the short term. In 
+addition to extensive damage to forest stands in  the regions of Eubia and Attica, the fires 
+also caused reduced air quality in the Greek capital (Dosiou et al. 2024). 
+ 
+ 
+Fig. 1. Burned Areas (ha) in Mediterranean Countries (1980 to 2023); Source: San-Miguel-Ayanz 
+et al. 2023, 2024 
+Meteorological conditions, topography, vegetation, and socio-economic conditions 
+are not homogeneous in Southern Europe ( Galizia et al.  2021; Doxa et al.  2022). Fire 
+activity therefore differs according to countries and regions. In recent decades, the number 
+of fires was highest in Spain, Portugal, and Italy. The incidence of fires in France, Greece, 
+and Croatia was lower. In the last five years, Greece has approached the values of the 
+countries of the Iberian Peninsula. The absolute numbers of fires in Croatia are 
+underestimated by the smallest area of the territory and the lowest number of inhabitan ts 
+of the monitored countries (Table 1). 
+Spain is one of the largest and most naturally diverse countries in Europe. Fires in 
+Spain are promoted by the Mediterranean climate (Pausas and Fernández -Muñoz 2012) 
+and anthropogenic factors. Most fires in Spain are caused by human activity. Changes in 
+the settlement of rural areas and soil overgrowth are important factors (Chergui et al. 2018). 
+Forest fire activities developed positively in the period 2010 to 2019 due to more effective 
+
+
+PAGE 6
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  505 
+response and monitoring (Turco et al. 2016; Fernandez-Anez et al. 2021). However, this 
+trend has not continued in recent years. In 2022, more than 70 large fires were recorded. 
+The extent of burned areas reached twenty-year highs. The geographic distribution of forest 
+fires was highly dependent on large fires (San -Miguel-Ayanz et al. 2023). Map 2 shows 
+the fire activities in the Spanish regions. In the current decade after 2000, the regions of 
+northwestern Spain (Galicia, Asturias, and Castilla i Leon) suffered the greatest number of 
+fires, as well as inland Extremadura at the border with Portugal and Andalusia on the 
+Mediterranean coast. 
+ 
+  
+ 
+Map. 2. Regional differentiation of the number of large fires in Spain (average 2018 to 2022); 
+Source: San-Miguel-Ayanz et al. 2021, 2022, 2023 
+ 
+  
+Map. 3. Regional differentiation of burned areas (ha) in Portugal (average 2018 to 2022); 
+Source: San-Miguel-Ayanz et al. 2019, 2020, 2021, 2022, 2023 
+ 
+Until the end of the last decade, Portugal had the highest number of fires per capita 
+in the entire Mediterranean. The causes were hot and dry summers and large continuous 
+areas of forests. In recent decades, the negative causes of fires also include anthr opogenic 
+influences and changes in socioeconomic behavior patterns (Nunes 2012; Oliveira et al. 
+2014; Parente et al . 2018). Socioeconomic factors that increase the risk of fires are 
+increasing urbanization and rural abandonment, changes in land use, popula tion density, 
+
+
+PAGE 7
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  506 
+and tourism. In the last decade, the highest fire activity is recorded in July, August, and 
+September. From a regional point of view, the central and northern parts of Portugal were 
+the most affected. Almost 75% of all fires in Portugal were concentrated in the regions 
+Center and North (Map 3). In central Portugal, the heavily forested regions around the cities 
+of Coimbra and Leiria were the most affected. In northern Portugal, these are the regions 
+of Braga, Porto, and Viana do Castelo (Meira Castro et al. 2020; Bergonse et al. 2022). In 
+recent years, fires in Madeira and the Algarve have also caused a decrease in arrivals and 
+sales in tourism (Neger et al. 2024). 
+Similar to other Southern European countries, there has been a higher fire activity 
+in Italy associated with the Mediterranean climate. The spread of fires is aided by 
+deepening drought and fire -prone vegetation. However, many fires have been caused by 
+intentional or unintentional human activities, such as hunting, pyromania, pasture 
+restoration, and residue burning (San-Miguel-Ayanz et al. 2022). The geographical effects 
+of fires differ from north to south in Italy (Telesca and Lasaponara 2010; Michetti and 
+Pinar 2019). As shown in Map 4, a higher number of burned areas has been recorded on 
+the islands (Sicily and Sardinia) and in the regions in the south of the Apennine Peninsula 
+(Campania, Calabria, Puglia, Lazio, and Basilicata); Northern Italy is less threatened. 
+ 
+ 
+ 
+ 
+Map 4. Regional differentiation of burned areas (ha) in Italy (average 2018 to 2022); Source: 
+San-Miguel-Ayanz et al. 2021, 2022, 2023 
+ 
+The climate in most of Greece is typically Mediterranean (Mitsopoulos et al. 2016). 
+From Map 5, a relatively high risk of fires threatens most Greek regions. Areas in the south, 
+north, west, east, and the capital city of Athens are affected. In the region of the capital city 
+of Athens (Attica), fires are caused by a combination of dense population, forest areas, and 
+a dry climate (Koutsias et al. 2012). Other threatened areas of Greece are the Peloponnese 
+peninsula in the south of the country, the second largest Greek island of Euboia, the 
+mountainous region of Thessaly, the western part of the largest Greek island of Crete, and 
+the northern region of Macedonia and Thrace. Finally, the islands in the Aegean Sea 
+
+
+PAGE 8
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  507 
+(Rhodes, Samos, and Kos) are also vulnerable. As mentioned in the previous text, the 
+increase in fires and burned areas in recent years is alarming in Greece (Papavasileiou and 
+Giannaros 2022; Dosiou et al. 2024). 
+ 
+ 
+Map 5. Regional differentiation of burned areas (ha) in Greece (average 2018 to 2022); Source: 
+San-Miguel-Ayanz et al. 2019, 2020, 2021, 2022, 2023 
+ 
+ 
+ 
+Map 6. Regional differentiation of burned areas (ha) in France (average 2018 to 2022); Source: 
+San-Miguel-Ayanz et al. 2019, 2020, 2021, 2022, 2023 
+ 
+France is the country with the largest area in the European Union, diverse 
+geography, and diverse climate. It is bordered to the west and north by the Atlantic Ocean 
+(the Bay of Biscay and the English Channel), and to the south by the Mediterranean Sea. 
+Different types of climate in the regions are important for the occurrence of fires. Most of 
+western and northern France has an oceanic climate with mild summers. The central and 
+
+
+PAGE 9
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  508 
+eastern parts of the country are influenced by the continental climate. The mountain regions 
+of the Alps, the Pyrenees, and the Massif Central are located in the colder zone (Terray and 
+Boé 2013). The Mediterranean climate is typical for the regions of southwest and southeast 
+France. The regions of the southwest with the Aquitaine massif and the southeast with 
+Mediterranean forests (Auvergne-Rhône-Alpes, Corsica, Aquitaine , and Provence-Alpes-
+Côte d'Azur) are the most exposed to fires (Ganteaume and Jappiot 2013; Ganteaume and 
+Long-Fournel 2015; Barbero et al. 2019). The Provence -Alpes-Côte d'Azur region, in 
+particular, is often affected by fires. Provence -Alpes-Côte d'Azur is a popular tourist 
+destination on the French Riviera, so fires are a closely watched topic in this region. Corsica 
+is also a highly threat ened region, where the dry climate and strong winds encourage the 
+spread of fires. Map 6 illustrates how the regions of southern France significantly exceed 
+other regions of continental France in terms of the number of fires and in particular the area 
+of the burned area. 
+Croatia, especially its karst region, has been frequently affected by forest fires in 
+recent years (Pavlek et al. 2017; Barčić et al. 2022; Posavec et al. 2023). The karst area 
+includes coastal regions, such as Dalmatia, Istria, and part of Kvarner. These areas are 
+prone to wildfires due to a combination of hot and dry summer weather, flammable 
+vegetation, windy conditions, and difficult terrain. Bóra (dry, cold wind blowing from the 
+interior) and jugo (moist southerly wind) can quickly spread fires over long distances 
+(Šiljković and Mamut 2016). The rocky terrain of the karst area with deep canyons makes 
+rescue processes difficult. Despite the mentioned natural factors, most of the fires in 
+Croatia in recent decades had obvious human causes (Kisić and Bogunović 2016). Fires 
+occur throughout the Croatian territory, although the most affected region is the central 
+Adriatic coast and the islands. The most burned areas can be found in Dalmatia, which is 
+covered by deciduous forests, scrub, garrigue, and thickets. This type of vegetation catches 
+fire easily in the dry season (Pavlek et al. 2017). Map 7 shows the different occurrences of 
+fires in the karst and continental areas of Croatia.  
+ 
+ 
+ 
+Map 7. Regional differentiation of burned areas (ha) in Croatia (average 2018 to 2022); Source: 
+San-Miguel-Ayanz et al. 2019, 2020, 2021, 2022, 2023 
+ 
+ 
+
+
+PAGE 10
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  509 
+CONDITIONS OF OCCURRENCE, PREVENTION, AND RESPONSE TO FIRES 
+IN THE MEDITERRANEAN 
+ 
+The Mediterranean generally has a climate in the regime of mild and wet winters 
+and dry and warm summer months. Dry summer weather has traditionally been a trigger 
+for wildfires. However, in the past, natural causes of fires, such as lightning strikes, 
+prevailed. Fire has been an important factor in changing the landscape here since the 
+Miocene; thus, it has an effect on the composition of the Mediterranean flora (Lionello et 
+al. 2014; Mitsopoulos et al. 2016). Anthropogenic activity has transformed the lan dscape 
+in favor of the expansion of settlements and infrastructure. As a result of urbanization and 
+intensive land use, there is a loss of biodiversity, soil degradation, and erosion. The loss of 
+soil retention capacity, together with changes in the microclimate, leads to the 
+susceptibility of the landscape to fires (Campo et al. 2006; Vieira et al. 2023). 
+Fires have historically represented some re-vegetation. Man has learned to use fires 
+by intentionally setting them to eliminate unwanted vegetation (Molina et al . 2019 ; 
+Fernandez-Anes et al. 2021). In some countries, prevention of the risk of large fires by 
+establishing controlled burning is considered, which hurts the environment, but the 
+economic and environmental benefits of this activity prevail (Khabarov et al. 2016; Bondur 
+et al. 2017; Molina et al. 2019). 
+If one focuses on the most important fire risks across southern Europe, they are 
+socio-economic causes, climate change , and the human factor. The anthropogenic factor 
+affects more than 80% of the occurrence and spread of fires in Europe (San-Miguel-Ayanz 
+et al. 2023). It is not only the use of machines and technology in the highly flammable 
+forest environment but also intentional arson and irresponsible behavior. Human activities, 
+such as careless handling of fire, illegal burning of vegetation, neglect of forest 
+management and expansion of buildings into threatened areas can increase the risk of fires 
+(Kolanek et al. 2021). Tourism (especially visits to inaccessible places and the behavior of 
+tourists) also contributes to this spread of fires. Other socio-economic causes of fire activity 
+can be found in the abandonment of the countryside and the ageing of the rural population. 
+Then, there is a change in land use. Some rural areas become overgrown and unmaintained. 
+The risk of fires is then higher (Oliveira et al. 2012; Fernandez-Anes et al. 2021). 
+Climate change has been creeping in southern Europe for several decades. Climate 
+change can affect the number and intensity of fires, but also extend the period of their 
+danger (Liu et al. 2010; Duane et al. 2021). Heat waves, massive dry spells , and windy 
+events are not only responsible for the creation , but above all for the spread of fires. 
+Frequent strong storms also come into play, although the risk of ignition by lightning is not 
+high. The Mediterranean region is the most affected by heat waves. Extremes in this course 
+of the Mediterranean climate are increasing. The summers are longer and warmer, and the 
+drought is deepening. Winter precipitation has shown a decreasing trend. Massive storms 
+with gusty winds and lots of lightning are common in the summer. According to some 
+studies, the worst situation is in the Iberian Peninsula ( Venäläinen et al. 2014; Khabarov 
+et al. 2016; Heisig et al. 2022). 
+The state and type of vegetation depend on climate changes, not only trees and 
+shrubs but also the herb layer. Vegetation species that require more water are disappearing 
+or are in worse condition. The surface temperature of the Mediterranean Sea is higher than 
+in the pre -industrial era. Droughts are more frequent and more intense. The sea level is 
+rising. The number of days with high and very high temperatures has doubled compared to 
+previous centuries. There are more intense storms with high lightning activity. Precipitation 
+
+PAGE 11
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  510 
+is distributed irregularly and decreases in the winter months. Thus, drought is most likely 
+to be the most influential factor in vegetation conditions and fire susceptibility (Ruffault et 
+al. 2016). 
+The Mediterranean hosts exceptional biodiversity in a unique environment. 
+Recurrent fires can lead to degradation and changes in the species composition of 
+ecosystems. The burnt area in the Natura 2000 system and other protected areas accounts 
+for around 60% of the total destroyed area in Europe. In some parts of the Mediterranean, 
+ecosystems have developed that have adapted to regular fires, for example, trees whose 
+seeds are released after a fire. However, even such ecosystems do not benefit from an 
+increase in the frequency and intensity of fires. Fires in the Mediterranean affect different 
+types of vegetation. As in the rest of Europe, the largest part of the affected areas consists 
+of deciduous, coniferous, and mixed forests, as well as agricultural land and other natural 
+areas. The share of destroyed coniferous forests is lower in the six countries studied than 
+in the northern parts of Europe. The only exception in southern Europe in this regard is 
+Spain. In Italy and Greece, agricultural land is more affected. An above-average proportion 
+compared to the rest of Europe is made up of evergreen sclerophyllous vegetation 
+throughout the Mediterranean.  Sclerophyllous forests, shrubs, and herbs are highly 
+flammable and can support the spread of fires ( Roszyk et al. 2020; San-Miguel-Ayanz et 
+al. 2023). 
+In the following text, some endangered species of southern European trees and 
+shrubs will be characterized. Aleppo pine ( Pinus halepensis) is often found on dry slopes 
+and soils. However, it is sensitive to fires, which can cause serious damage to seedlings 
+and young trees. The cork oak ( Quercus suber) is characteristic of the Mediterranean and 
+its bark is used to make cork stoppers. Fires can cause serious damage to mature trees and 
+thus affect the economic potential of this species. Juniper bushes ( Juniperus spp.) are 
+drought tolerant, but fires can degrade the vegetation and threaten the reproduction of these 
+species. Rosemary bushes (Rosmarinus officinalis) are often flammable and fast-spreading 
+shrubs. Fires can affect its population and habitat. Arbutus unedo is a characteristic species 
+of the Mediterranean. Fires can affect its occurrence and threaten the fruits, which are 
+important food for local animals. Myrtle bushes (Myrtus spp.) are often widespread in the 
+Mediterranean and fires can affect this p opular plant. Cytisus bushes (Cytisus spp.) are 
+flammable and fires can affect the distribution of these bushes. Cistus bushes (Cistus spp.) 
+are typical of dry Mediterranean environments and fires can affect the ecosystems in which 
+they occur. Thistle bushes (Calicotome spp.) are often flammable and at risk of fires. Bush 
+heather (Erica spp.) is common in the Mediterranean , and fires can affect its occurrence. 
+Eucalyptus forests are highly susceptible to fires due to the high content of oils in the 
+leaves. Eucalyptus forests are mainly found in Spain and Portugal ( Vázquez et al. 2002; 
+Médail 2022). 
+Fires have an advantage over other natural disasters, as they can be predicted to a 
+certain extent, and monitored and thus their effects can be reduced. Although fire 
+suppression plays a key role in protecting human life and property, the emphasis on 
+preventive activities is pragmatic and economically beneficial in the long term (Moreira et 
+al. 2020). In the entire Mediterranean region, it is necessary to improve spatial planning 
+precisely from the point of view of fire resistance. Mapping, tracking , and monitoring of 
+potentially dangerous areas is necessary for the effective management of field fires. 
+Especially at the border between cities and settlements and wild landscapes, it is necessary 
+to have a functioning and high -quality early warning system. It i s necessary to have 
+documents in the form of models and maps of the risk of fire spreading. During the season, 
+
+PAGE 12
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  511 
+it is necessary to have forecasts of potentially dangerous conditions. Finally, it is desirable 
+to improve the state of ecosystems, support the diversity of species and thus increase the 
+overall resilience of the landscape ( Lasanta et al. 2018; Bacciu et al . 2021). Southern 
+European countries should focus not only on their challenges but cooperate on 
+implementing preventive and adaptive measures across the region. Coordinated 
+cooperation is also supported within the policies and agencies of the European Uni on 
+(Heisig et al. 2022; Meier et al. 2023). 
+       Fire hazard prediction requires sophisticated approaches at the national and 
+European levels. An important element is the use of satellite mapping (Loepfe et al. 2014). 
+Areas after fires are monitored not only to assess the volume of emissions from fires but 
+also in terms of the speed of landscape recovery (Bondur et al. 2017). A key tool for fire 
+prediction is the modelling of fire occurrence using regression models, machine learning , 
+and simulation methods. Technological progress in the fields of a rtificial intelligence and 
+machine learning enables more accurate and efficient risk prediction, decision support 
+during interventions, as well as ex -post analysis and strategic planning. Artificial 
+intelligence can process and analyze data from camera systems, drones, and heat and smoke 
+sensors. As in other fields, artificial intelligence can predict based on historical data and 
+also simulate fire activities and situations (Oliveira et al. 2012; Salis et al. 2021; Cilli et al. 
+2022). Fighting fires require s technology and human resources. It is necessary to devote 
+funds to modern technology and equipment to extinguish fires effectively and to prevent 
+their spread. Strategies and procedures created for individual countries according to their 
+geographical spe cificities appear to be necessary. Public involvement is important to 
+prevent fires from starting and spreading. Increasing public awareness of fire risks and 
+good behavior in nature is key to reducing fires started by humans (Kountouris and 
+Remoundou 2011; Abt et al. 2015; Molina et al. 2019). 
+ 
+ 
+RISKS OF WILDFIRES IN THE MEDITERRANEAN 
+  
+For better insight into the issue and clarity, a table of factors affecting forest fires 
+was created, which is based on existing studies and reflects the multifaceted impact of fires 
+using the weights of individual factors based on expert assessment (see Table 2). Through 
+analyzing the direct and indirect relationships between the factors affecting fires, a matrix 
+was created that provides a clear quantification of these relationships. 
+To create the table of factors influencing wildfires, a comprehensive review of 
+existing literature was conducted, focusing on both primary and secondary sources that 
+examine the various contributors to wildfire risk.  
+Climatic Conditions and Fire Regimes: Research by Ruffault et al. (2016) identified 
+the critical role of climatic conditions, such as temperature and humidity, in driving large 
+fire events in Mediterranean ecosystems. This study provided data on how different 
+climatic variables interact to influence fire severity and frequency. Several studies identify 
+heat waves and drought as the most dangerous manifestations of climate change (Santos et 
+al. 2024). The occurrence of fires in these extreme situations is more frequent. Pausas and 
+Keeley (2021) also mention more frequent and extreme climatic conditions suitable for the 
+occurrence of fires. 
+Vegetation and Fuel Load: Studies by Ricotta and Di Vito (2014) modeled 
+landscape drivers of fire recurrence in Sardinia, Italy, highlighting the importance of 
+vegetation type and fuel load in fire spread. The analysis involved understanding the spatial 
+
+PAGE 13
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  512 
+distribution of vegetation and its contribution to fire propagation.  The importance of the 
+types and conditions of vegetation is mentioned by Arrogante -Funes et al.  (2024). 
+According to Ma et al. (2020), it is necessary to look into the type of vegetation, but also 
+its condition, i.e. vitality, water content and other substances in the fire risk assessment 
+wood.  On the contrary, Guion et al. (2022) mention a higher risk of fires during heat wave 
+periods, they mention the state of vegetation as less important. 
+Human Activity: Research by Kolanek et al.  (2021) examined the impact of 
+anthropogenic factors, such as agricultural activities, recreational practices, and urban 
+expansion, on the density of forest fires in Poland. Their findings helped assign weights to 
+human activity factors based on observed fire incidences and their correlation with human 
+presence and activities.  Similar conclusions were confirmed by several authors (Novo et 
+al. 2020; El Mazi et al . 2024). Berčák et al.  (2024) analyzed the influence of  human 
+activities on the frequency of fires in the Czech Republic. It was the human factor that 
+caused a massive fire in H řensko in 2022 when a large part of the protected area burned 
+down. Amruth et al. (2022) mention fires caused by tourists in risk areas. 
+Topography: The influence of topography on wildfire behavior was detailed by 
+Salis et al. (2021), who used simulation modeling to assess how elevation, slope, and aspect 
+affect fire exposure and transmission in Sardinia, Italy. The study ’s findings were crucial 
+in determining the weight of topographical factors in the matrix. Other studies mentioning 
+topography of the terrain as an important factor for the occurrence of fires are the works of 
+the authors Francos et al. (2021), which examines these effects i n the Iberian Peninsula. 
+Sakellariou et al. (2023) mentioned the availability of fireplaces for firefighting equipment. 
+ 
+Table 2. Table of Factors Influencing Wildfire 
+Factor Description Weight 
+Climatic Conditions Include temperature, humidity, wind speed, and 
+precipitation patterns that directly influence the 
+likelihood and severity of wildfires. 
+0.25 
+Vegetation Type and Fuel 
+Load 
+Refers to the type of vegetation and the amount of 
+combustible material available, which affects fire 
+spread and intensity. 
+0.20 
+Human Activity Encompasses human actions, such as agricultural 
+burning, recreational activities, and accidental or 
+intentional ignition sources. 
+0.20 
+Topography Includes elevation, slope, and aspect, which affect 
+fire behavior by influencing wind patterns and fuel 
+availability. 
+0.15 
+Socioeconomic Factors Involve the impact of population density, land use 
+patterns, and economic activities on fire risk. 
+0.10 
+Fire Prevention and 
+Management 
+Covers measures, like firebreaks, controlled 
+burns, and fire-fighting infrastructure, that reduce 
+the likelihood or impact of wildfires. 
+0.10 
+Source: Own creation 
+ 
+Socioeconomic Factors: The role of socioeconomic elements, such as population 
+density and land-use patterns, was explored by Chergui et al. (2018). This study assessed 
+fire-regime variability in the Mediterranean Basin and linked socioeconomic factors to fire 
+risk, which informed the weight assigned to these factors in the matrix.  De Diego et al. 
+(2023) indicate the high importance of socio-economic conditions in the territory of Spain. 
+Parente et al. (2019) reached similar conclusions in Portugal.  
+
+PAGE 14
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  513 
+Fire Prevention and Management: Bacciu et al.  (2022) discussed a systemic 
+approach to fire risk management, emphasizing the importance of preventive measures, 
+such as controlled burns and firebreaks, in reducing fire risks. Their findings contributed 
+to understanding the effectiveness of different ma nagement strategies and their 
+corresponding weight in the matrix.  Moreira et al.  (2020) have the same conclusions, 
+emphasizing the prevention of fires. Palaiologou et al. (2020) researched regions of Greece 
+where fires have caused major damage in recent years. 
+ 
+Matrix of Factors Influencing Wildfires 
+The matrix below presents the interactions and combinations of different factors 
+influencing wildfires, along with their respective weights. The matrix illustrates how each 
+factor contributes not only individually, but also in combination with others, reflecting the 
+complex dynamics of wildfire risk. 
+The matrix was created by synthesizing data from a systematic literature review, 
+focusing on studies that examined the interactions between various factors contributing to 
+wildfire risks. This approach involved analyzing both direct and indirect relationsh ips 
+between factors, using statistical models and expert assessments to quantify the strength of 
+these interactions. Weights for each interaction were determined by expert judgment. 
+Table 6 represents a matrix of interactions among key factors influencing wildfire 
+risk. The main factors listed are Climatic Conditions; Vegetation Type and Fuel Load; 
+Human Activity; Topography; Socioeconomic Factors; and Fire Prevention and 
+Management. The matrix illustrates how each factor interacts with others to influence 
+wildfire risk. The diagonal values in the table represent the direct weight of each factor, 
+indicating the independent influence of that factor on wildfire risk. For example, Climatic 
+Conditions have a direct weight of 0.25, highlighting the strong impact of weather 
+conditions (e.g., high temperatures, low humidity, and wind) on the likelihood of wildfires. 
+ 
+Table 3. Matrix: Interactions of Factors Influencing Wildfire 
+Factors Climatic 
+Conditions 
+Vegetation 
+Type and 
+Fuel Load 
+Human 
+Activity Topography Socioec. 
+Factors 
+Fire 
+Prevention 
+and 
+Management 
+Climatic 
+Conditions 0.25 0.10 0.05 0.05 0.03 0.02 
+Vegetation 
+Type and 
+Fuel Load 
+0.10 0.20 0.08 0.06 0.04 0.02 
+Human 
+Activity 0.05 0.08 0.20 0.07 0.05 0.03 
+Topography 0.05 0.06 0.07 0.15 0.04 0.03 
+Socioeconom
+ic Factors 0.03 0.04 0.05 0.04 0.10 0.02 
+Fire 
+Prevention 
+and 
+Management 
+0.02 0.02 0.03 0.03 0.02 0.10 
+Source: Own creation 
+ 
+The off -diagonal cells indicate the interaction weights between two factors, 
+reflecting how their combination impacts wildfire occurrence and severity. For instance, 
+the interaction between Climatic Conditions and Vegetation Type and Fuel Load is given 
+a w eight of 0.10, reflecting how dry conditions combined with dense vegetation 
+
+PAGE 15
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  514 
+significantly increase fire risk. Similarly, Human Activity interacts with Vegetation Type 
+and Fuel Load (0.08) due to activities, such as farming or recreational activities in 
+vegetated areas, which can easily lead to ignition under certain conditions. 
+Climatic Conditions (0.25). Climatic factors are critical in determining the dryness 
+of vegetation and the ease with which fires can start and spread. According to Guion et al. 
+(2022), climate change has been linked to more frequent and severe wildfire events, 
+emphasizing the high weight of this factor.  
+Vegetation Type and Fuel Load (0.20).  Dense vegetation and the availability of dry 
+fuel are major determinants of wildfire severity. The impact of vegetation type on fire 
+spread has been widely documented in studies, such as (Lin et al. 2024), which confirm 
+that areas with high fuel loads are more prone to intense wildfires.  
+Human Activity (0.20). Human-induced factors like land use, agricultural burning, 
+or accidental ignitions play a significant role in fire occurrences.  Topography (0.15). The 
+shape of the land influences how wildfires spread. For example, fires tend to move faster 
+uphill due to heat rising and pre-heating the vegetation above (Pais et al. 2021). The weight 
+of 0.15 reflects this relationship.  
+Socioeconomic Factors (0.05).  These factors include population density, 
+infrastructure, and economic conditions, indirectly affecting wildfire risk. Although they 
+are not primary contributors, socioeconomic factors influence the resources available for 
+prevention and response (Kala 2023).  
+Fire Prevention and Management (0.10).  The implementation of fire prevention 
+measures, such as controlled burns and public awareness campaigns, can significantly 
+mitigate wildfire risk. The weight of 0.10 emphasizes the importance of proactive 
+management strategies (Carta et al. 2023). 
+ 
+ 
+TOURISM AND WILDFIRES 
+ 
+The Mediterranean region is a leading destination for international tourism. In 
+2023, more than 700 million visitors stayed in the six monitored countries. Roughly three-
+quarters of them stayed in traditional accommodation facilities (hotels, boarding houses, 
+etc.), and one quarter were in capacities offered through sharing economy platforms 
+(EUROSTAT 2024). France and Spain are the most visited countries in the world. Italy has 
+long been in the world ’s top five, and Greece is in the world ’s top ten in term s of the 
+number of international arrivals (World Tourism Organization 2024). Visitors to the 
+Mediterranean are primarily looking for a favorable climate, beautiful nature , and rich 
+history. In addition to seaside recreation, the region also offers cultural monuments, 
+exceptional cuisine, and other attractions (Amelung and Viner 2006). 
+In the analyzed Southern European countries, tourism is an important sector of the 
+national economy with a high share of GDP, employment, and export of services. The 
+tourism industry in Southern Europe is related to other economic sectors, such as transport, 
+fishing, agriculture, energy, exchange services, or construction (Mejjad et al . 2022). In 
+2023, the share of the tourism economy, including related industries, was 9.2% of global 
+GDP. By contrast, in Croatia it was 26.3% GDP in the same year, in Greece 19.2%, in 
+Portugal 15.8%, in Spain 14.6%, in Italy 10.5%, and in France 9% (World Travel and 
+Tourism Council 2024). In Croatia and Greece, tourism is a pillar of the national and 
+regional economy. As can be seen from Map 8, the intensity of tourism in Southern 
+European countries is higher than in Northern, Central, and Eastern Europe. The intensity 
+
+PAGE 16
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  515 
+of tourism is expressed as a proportion of the number of overnight stays in mass 
+accommodation facilities to the number of inhabitants of a given country. It is therefore an 
+indicator of the relative importance of tourism for a given country. 
+Tourism is often concentrated in regions with high fire activity. Among the tourist 
+attractive regions with a relatively high fire risk are Andalusia, Galicia, Castilla and Leon 
+in Spain; Provence-Alpes-Côte d'Azur, Aquitaine and Corsica in France; Adriatic Croatia, 
+North and Algarve region in Portugal, Lazio, Sicily, Sardinia, Campania, Calabria, and 
+Puglia and the Greek islands (Crete, Rhodes, Samos, and Kos). Specifically, Lazio is the 
+most visited region in Italy. Adriatic Croatia and Greek islands (con sidering all islands in 
+total) ranks among the top five most visited regions in Europe. The Provence -Alpes-Côte 
+d'Azur region is the second most attractive French destination after Pari. Andalusia has the 
+highest number of overnight stays in tourist facili ties in continental Spain.  The Algarve 
+tourist region has the highest number of arrivals in Portugal (EUROSTAT, 2024).  
+ 
+ 
+ 
+Map 8. Number of overnight stays in EU countries in relative terms per inhabitant (2023); 
+Source: EUROSTAT (2024) 
+ 
+The scientific literature on fires and tourism in the Mediterranean is not very 
+extensive. For this reason, the following discussion primarily includes studies of southern 
+European countries, but also other relevant research on the topic from other regions of the 
+world. The relationship between fires and tour ism can be examined from different points 
+of view.  Economically oriented studies usually estimate how fires affect the tourism 
+industry and the regional development of the affected areas. Meier et al. (2023) quantified 
+the impacts of an average 2011 to 2018 fire season in Italy, Spain, Portugal, and Greece on 
+aggregate GDP output losses of 13  to 21 billion EUR. They link the decline in GDP and 
+employment mainly to the retail and tourism sectors. Otrachshenko and Nunes (2022) 
+presented a long-term forecast of the annual costs of fires for the Portuguese economy for 
+
+
+PAGE 17
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  516 
+the years 2030 and 2050. They estimate the impacts on domestic tourism to be between 17 
+and 24 million EUR, and inbound tourism between 18 and 38 million EUR. The authors of 
+this study estimate the cost by 2050 to more than quadruple. Lam-González et al. (2022) 
+set the possible losses of island tourism in Portugal due to fires at more than 250 EUR per 
+person. Neger et al. (2024) identified almost all of Spain and Portugal, Italy (especially 
+Sicily), several regions of Southern France and the Greek region of Thessaly as areas with 
+a high fire danger index within the six countries evaluated. 
+Another perspective on the interactio n between fires and tourism is offered by 
+studies of consumption behavior. Most research has found different visitor responses to 
+fires (Bauman et al. 2020). Tourism losses can be derived from the intensity and area of 
+the fire, but also from the attractiveness of the destination. Fires over large areas generally 
+have a greater effect on the frequency of recreational visits. The socio -demographic 
+characteristics of the visitors also play a significant role. Some groups according to age, 
+gender, and education may differ according to risk aversion (Kovačić et al. 2020). Visitors’ 
+reactions often change over time. In the short term, the fires will strongly affect tourism 
+demand. In the long term, the effect is minimal (Hystad and Keller 2008). Thapa et al. 
+(2023) identified tourist response to wildfires as a minority issue. They expect significant 
+impacts on consumption behavior only if visitors consider the risks of fires to be very high. 
+Fires are a worldwide social and economic problem that also has an environmental 
+impact. Destinations that are affected by wildfires may experience a decrease in tourist 
+numbers also due to damage to natural attractions (Leung and Catts 2013). Forest fires have 
+significant and often devastating impacts on the biosphere in the Mediterranean. This 
+region is one of the richest in biodiversity in Europe, but it is also one of the most threatened 
+due to frequent fires and climate change. Forest areas serve not o nly as market resources 
+but also as space for leisure and recreation. The value of forests is often valued using the 
+travel cost method (Prochazka and Abrham 2024). Large wildfires reduce the recreational 
+value of the area (Gellman et al. 2022). Endangered areas are less attractive to tourists, 
+resulting in a negative impact on businesses such as hotels, restaurants, transport services, 
+and museums (Otrachshenko  and Nunes 2022). In the case of a stay, fires can lead to 
+restrictions on tourist activities such as nature trips, outdoor sports, etc. The impact of fires 
+on natural resources and the related consequences of non -market losses are difficult to 
+estimate. Tourism demand is related to the intensity of the heat and the location of burned 
+areas (Hesseln et al. 2003). Sometimes, on the other hand, one encounters “fire tourism”, 
+where visitors purposefully go to a location that has been destroyed by fires just to see this 
+disaster up close. This practice tends to be dangerous and against the interest of the natural 
+recovery of the landscape after a fire (Bacciu et al. 2021; Otrachshenko and Nunes 2022). 
+ 
+ 
+DISCUSSION, LIMITATION AND FUTURE RESEARCH 
+ 
+Overall, the literature review confirmed growing research interest in wildfires. The 
+number of studies in the Google Scholar database has increased over the last decades. Most 
+of the analyzed articles were registered in the international databases Web of S cience and 
+Scopus. Published studies focused primarily on the causes and consequences of fires. This 
+research included climatic, natural, and anthropogenic factors. A significant share of 
+articles was also recorded on the prediction, prevention, and crisis  management of 
+wildfires. From the point of view of tourism, the effects of fires on the economy and 
+consumer behavior were evaluated in particular. This study provides evidence that 
+
+PAGE 18
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  517 
+wildfires and tourism have an interconnected relationship. Both phenomena interact 
+bilaterally. As a result, fires harm the frequency of recreational visits. The drop in demand 
+is due to concerns about the safety and quality of the stay. There is also a ri sk of damage 
+to tourism infrastructure and deterioration of the destination’s media image (Molina et al. 
+2019). Sometimes, however, a disaster can increase awareness of a given area and, over 
+time, stimulate arrivals. Paradoxically, this can lead to a positive relationship between fires 
+and tourism (Rosselló et al. 2020). In contrast, tourism itself can increase the risk of fires 
+due to overcrowding and careless behavior. 
+Accessing the interaction of fires and tourism continues to provide opportunities 
+for future research. At the regional, national and European level, there is a need to improve 
+the documentation of the effects of fires on tourism to be able to statistically  quantify and 
+evaluate these events. Previous studies are limited to estimates and predictions of the 
+effects of fires on tourism. In the literature, there is a complete lack of comprehensive 
+impact studies of a larger number of countries in Europe and the  world. The available 
+statistical data on fires are not uniform at the regional level, which was also a limitation in 
+our analysis of Mediterranean countries. The country reported data for regional units of 
+varying sizes. Unlike the other countries (Greece , Italy, France and Croatia), data were 
+available for Spain only in the case of the number of fires. Data on the total burnt area 
+could only be obtained for larger regions. 
+The present literature review includes several studies focused on preventing and 
+dealing with the effects of fires (Bacciu et al. 2021; Meier et al. 2023). However, there is 
+still a gap in the scientific literature in the research of crisis management at the level of 
+destinations and tourism policies. Given the increasing risks of forest fires, destinations 
+should incorporate risk management into their stra tegies. Research may include studying 
+the conditions governing access to certain areas during high fir e risk, creating emergency 
+plans, and developing sustainable tourism practices. Crises should be accompanied by 
+appropriate measures to ensure the long -term sustainability of business in the tourism 
+industry. Future research should identify and propose crisis scenarios for the entire course 
+of the crisis and the subsequent revival of tourism (specifically focused on ongoing 
+prevention, the course of the crisis and post -crisis revitalization). The presented literature 
+review also indicates a need to further research the role of the media and the mechanisms 
+of public opinion formation. Published studies confirm the influence of the media on the 
+behavior of tourists during fires  (Thapa et al. 2013; Otrachshenko and Nunes 2022 ). 
+Comprehensive research on the issue is, however, quite limited. At the same time, classic 
+and new media play an increasingly important role in providing relevant information that 
+determines the consumption behavior of visitors. 
+ 
+ 
+CONCLUSIONS  
+ 
+1. The rise in wildfires in Southern Europe is largely due to a combination of climate 
+change, increased human activity, and socio -economic factors, which have created 
+conditions conducive to more frequent and intense fire events. 
+2. Wildfires cause extensive ecological damage, including biodiversity loss and habitat 
+destruction, and have significant economic and social impacts, particularly in tourism-
+dependent regions. 
+
+PAGE 19
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  518 
+3. The relationship between wildfires and tourism is complex; while fires reduce the 
+attractiveness of affected areas and decrease visitor numbers, they may also lead to 
+increased awareness and interest in those areas, sometimes resulting in disaster tourism. 
+4. Effective fire management and prevention strategies, such as public awareness, 
+sustainable tourism practices, and international cooperation, are crucial to mitigating 
+the negative effects of wildfires and enhancing resilience. 
+5. There is a need to integrate fire risk management into tourism development plans to 
+safeguard the economic viability of tourism in Southern Europe and protect its natural 
+and cultural heritage. 
+6. Continued research and monitoring of fire trends, impacts, and management practices 
+are essential to developing adaptive strategies that address both the immediate and 
+long-term challenges posed by wildfires in this region. 
+ 
+ 
+ACKNOWLEDGMENTS 
+ 
+This paper was supported by the Czech University of Life Sciences, Faculty of Economics 
+and Management (2023B0004). 
+ 
+ 
+REFERENCES CITED 
+ 
+Abt, K. L., Butry, D. T., Prestemon, J. P., and Scranton, S. (2015). “Effect of fire 
+prevention programs on accidental and incendiary wildfires on tribal lands in the 
+United States,” International Journal of Wildland Fire 24(6), 749-762. DOI: 
+10.1071/WF14168  
+Amelung, B., and Viner, D. (2006). “Mediterranean tourism: exploring the future with 
+the tourism climatic index,” Journal of Sustainable Tourism 14(4), 349-366. DOI: 
+10.2167/jost549.0  
+Amrutha, K., Danumah, J. H., Nikhil, S., Saha, S., Rajaneesh, A., Mammen, P. C., Ajin, 
+R. S., Kuriakose, S. L. (2022). “Demarcation of forest fire risk zones in Silent Valley 
+National Park and the effectiveness of forest management regime,” Journal of 
+Geovisualization and Spatial Analysis 6(1), article 8. DOI: 10.1007/s41651-022-
+00103-3 
+Aquilué, N., Fortin, M. J., Messier, C., and Brotons, L. (2020). “The potential of 
+agricultural conversion to shape forest fire regimes in Mediterranean 
+landscapes,” Ecosystems 23(1), 34-51. DOI: 10.1007/s10021-019-00385-7  
+Arrogante-Funes, F., Mouillot, F., Moreira, B., Aguado, I., and Chuvieco, E. (2024). 
+“Mapping and assessment of ecological vulnerability to wildfires in Europe,” Fire 
+Ecology, 20(1), article 98. DOI: 10.1186/s42408-024-00321-8.  
+Ascoli, D., Moris, J. V., Marchetti, M., and Sallustio, L. (2021). “Land use change 
+towards forests and wooded land correlates with large and frequent wildfires in 
+Italy,” Annals of Silvicultural Research 46(2), 177-188. DOI: 10.12899/asr-2264  
+Bacciu, V., Sirca, C., and Spano, D. (2022). “Towards a systemic approach to fire risk 
+management,” Environmental Science & Policy 129, 37-44. DOI: 
+10.1016/j.envsci.2021.12.015  
+ 
+
+PAGE 20
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  519 
+ 
+Barbero, R., Curt T., Ganteaume A., Maillé E., Jappiot M., and Bellet A. (2019). 
+“Simulating the effects of weather and climate on large wildfires in France,” Natural 
+Hazards and Earth System Sciences 19(2), 441-454.   
+Barčić, D., Dubravac, T., Ančić, M., and Rosavec, R. (2022). “Analysis of the fire season 
+of 2020 in the Mediterranean bioclimatic zone of Croatian Adriatic.” South-east 
+European Forestry: SEEFOR, 13(2), 115-125. DOI: 10.15177/seefor.22-11  
+Bauman, M. J., Yuan, J., and Williams, H. A. (2020). “Developing a measure for 
+assessing tourists’ empathy towards natural disasters in the context of wine tourism 
+and the 2017 California wildfires,” Current Issues in Tourism 23(19), 2476-2491. 
+DOI: 10.1080/13683500.2019.1681944  
+Berčák, R., Holuša, J., Trombik, J., Resnerová, K., and Hlásny, T. (2024). “A 
+combination of human activity and climate drives forest fire occurrence in central 
+Europe: The case of the Czech Republic,” Fire 7(4), article 109. DOI: 
+10.3390/fire7040109  
+Bergonse, R., Oliveira, S., Zêzere, J. L., Moreira, F., Ribeiro, P. F., Leal, M., and Santos, 
+J. M. L. (2022). “Biophysical controls over fire regime properties in Central 
+Portugal,” Science of The Total Environment 810, article ID 152314. DOI: 
+10.1016/j.scitotenv.2021.152314 
+Bondur, V. G., Gordo, K. A., and Kladov, V. L. (2017). “Spacetime distributions of 
+wildfire areas and emissions of carbon-containing gases and aerosols in northern 
+Eurasia according to satellite-monitoring data,” Izvestiya, Atmospheric and Oceanic 
+Physics 53, 859-874. DOI: 10.1134/S0001433817090055  
+Campo, J., Andreu, V., Gimeno-García, E., González, O., and Rubio, J. L. (2006). 
+“Occurrence of soil erosion after repeated experimental fires in a Mediterranean 
+environment,” Geomorphology 82(3-4), 376-387. DOI: 
+10.1016/j.geomorph.2006.05.014 
+Carta, F., Zidda, C., Putzu, M., Loru, D., Anedda, M., and Giusto, D. (2023). 
+“Advancements in forest fire prevention: A comprehensive survey,” Sensors 23(14), 
+article 6635. DOI: 10.3390/s23146635 
+Chergui, B., Fahd, S. X., and Pausas, J. G. (2018). “Socioeconomic factors drive fire-
+regime variability in the Mediterranean Basin,” Ecosystems 21(4), 619-628. DOI: 
+10.1007/s10021-017-0172-6  
+Cilli, R., Elia, M., D’Este, M., Giannico, V., Amoroso, N., Lombardi, A., Pantaleo, E., 
+Monaco, A., Snesi, G., Tangaro, S., Bellotti, R., and Lafortezza, R. (2022). 
+“Explainable artificial intelligence (XAI) detects wildfire occurrence in the 
+Mediterranean countries of Southern Europe,” Scientific Reports 12(1), article 16349. 
+DOI: 10.1038/s41598-022-20347-9  
+Colantoni, A., Egidi, G., Quaranta, G., D’Alessandro, R., Vinci, S., Turco, R., and 
+Salvati, L. (2020). “Sustainable land management, wildfire risk and the role of 
+grazing in Mediterranean urban-rural interfaces: A regional approach from 
+Greece,” Land 9(1), article 21. DOI: 10.3390/land9010021  
+de Diego, J., Fernández, M., Rúa, A., and Kline, J. D. (2023). “Examining socioeconomic 
+factors associated with wildfire occurrence and burned area in Galicia (Spain) using 
+spatial and temporal data,” Fire Ecology 19(1), article 18. DOI: 10.1186/s42408-023-
+00173-8. 
+  
+
+PAGE 21
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  520 
+Dosiou, A., Athinelis, I., Katris, E., Vassalou, M., Kyrkos, A., Krassakis, P., and 
+Parcharidis, I. (2024). “Employing Copernicus land service and Sentinel-2 satellite 
+mission data to assess the spatial dynamics and distribution of the extreme forest fires 
+of 2023 in Greece,” Fire 7(1), article 20. DOI: 10.3390/fire7010020  
+Doxa, A., Kamarianakis, Y., and Mazaris, A. D. (2022). “Spatial heterogeneity and 
+temporal stability characterize future climatic refugia in Mediterranean Europe,” 
+Global Change Biology 28(7), 2413-2424. DOI: 10.1111/gcb.16072  
+Duane, A., Castellnou, M., and Brotons, L. (2021). “Towards a comprehensive look at 
+global drivers of novel extreme wildfire events,” Climatic Change 165(3), article 43. 
+DOI: 10.1007/s10584-021-03066-4  
+El Mazi, M., Boutallaka, M., Saber, E. R., Chanyour, Y., and Bouhlal, A. (2024). “Forest 
+fire risk modeling in Mediterranean forests using GIS and AHP method: Case of the 
+high Rif forest massif (Morocco),” Euro-Mediterranean Journal for Environmental 
+Integration 9(3), 1109-1123. DOI: 10.1007/s41207-024-00591-3 
+EUROSTAT (2024). “Database,” (https://ec.europa.eu/eurostat/web/main/data/database), 
+Accessed 02 Sept 2024.  
+Ferrara, C., Marchi, M., Carlucci, M., Mavrakis, A., Corona, P., and Salvati, L. (2018). 
+“The 2007 crisis and Greek wildfires: A multivariate analysis of suppression 
+times,” Environmental Monitoring and Assessment 190, 1-12. DOI: 10.1007/s10661-
+018-7086-4  
+Fernandez-Anez, N., Krasovskiy, A., Müller, M., Vacik, H., Baetens, J., Hukić, E., 
+Kapovic, M., Atanassova, I., Glushkova, M., and Bogunovic, I. (2021). “Current 
+wildland fire patterns and challenges in Europe: A synthesis of national 
+perspectives,” Air, Soil and Water Research 14, 1-19. DOI: 
+10.1177/11786221211028185  
+Flannigan, M. D., Amiro, B. D., Logan, K. A., Stocks, B. J., and Wotton, B. M. (2006). 
+“Forest fires and climate change in the 21 st century,” Mitigation and Adaptation 
+Strategies for Global Change 11, 847-859. DOI: 10.1007/s11027-005-9020-7 
+Francos, M., Sánchez-García, C., Girona-García, A., and Fernández-García, V. (2021). 
+“Influence of topography on sediment dynamics and soil chemical properties in a 
+Mediterranean forest historically affected by wildfires: NE Iberian Peninsula,” 
+Environmental Earth Sciences 80(12), article 436. DOI:10.1007/s12665-021-09731-2  
+Fréjaville, T., and Curt, T. (2015). “Spatiotemporal patterns of changes in fire regime and 
+climate: Defining the pyroclimates of south-eastern France (Mediterranean 
+Basin),” Climatic Change 129, 239-251. DOI: 10.1007/s10584-015-1332-3 
+Galizia, L. F., Curt, T., Barbero, R., and Rodrigues, M. (2021). “Understanding fire 
+regimes in Europe,” International Journal of Wildland Fire 31(1), 56-66. DOI: 
+10.1071/WF21081  
+Ganteaume, A., and Jappiot, M. (2013). “What causes large fires in Southern 
+France?,” Forest Ecology and Management 294, 76-85. DOI: 
+10.1016/j.foreco.2012.06.055  
+Ganteaume, A., and Long-Fournel, M. (2015). “Driving factors of fire density can 
+spatially vary at the local scale in south-eastern France,” International Journal of 
+Wildland Fire 24(5), 650-664. DOI: 10.1071/WF1320  
+Grünig, M., Seidl, R., and Senf, C. (2023). “Increasing aridity causes larger and more 
+severe forest fires across Europe,” Global Change Biology 29(6), 1648-1659. DOI: 
+10.1111/gcb.16547  
+ 
+
+PAGE 22
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  521 
+ 
+Gellman, J., Walls, M., and Wibbenmeyer, M. (2022). “Wildfire, smoke, and outdoor 
+recreation in the western United States,” Forest Policy and Economics 134, article ID 
+102619. DOI: 10.1016/j.forpol.2021.102619  
+Guion, A., Turquety, S., Polcher, J., Pennel, R., Bastin, S., and Arsouze, T. (2022). 
+“Droughts and heatwaves in the Western Mediterranean: Impact on vegetation and 
+wildfires using the coupled WRF-ORCHIDEE regional model (RegIPSL),” Climate 
+Dynamics 58(9), 2881-2903, DOI: 10.1007/s00382-021-05938-y  
+Heisig, J., Olson, E., and Pebesma, E. (2022). “Predicting wildfire fuels and hazard in a 
+central European temperate forest using active and passive remote sensing,” Fire 
+5(1), article 29. DOI: 10.3390/fire5010029  
+Hesseln, H., Loomis, J. B., González-Cabán, A., and Alexander, S. (2003). “Wildfire 
+effects on hiking and biking demand in New Mexico: A travel cost study,” Journal of 
+Environmental Management 69(4), 359-368. DOI: 10.1016/j.jenvman.2003.09.012  
+Hystad, P. W., and Keller, P. C. (2008). “Towards a destination tourism disaster 
+management framework: Long-term lessons from a forest fire disaster,” Tourism 
+Management 29(1), 151-162. DOI: 10.1016/j.tourman.2007.02.017 
+Kala, C. P. (2023). “Environmental and socioeconomic impacts of forest fires: A call for 
+multilateral cooperation and management interventions,” Natural Hazards Research 
+3(2), 286-294. DOI: 10.1016/j.nhres.2023.04.003.  
+Kalogiannidis, S., Chatzitheodoridis, F., Kalfas, D., Patitsa, C., and Papagrigoriou, A. 
+(2023). “Socio-psychological, economic and environmental effects of forest 
+fires,” Fire 6(7), article 280. DOI: 10.3390/fire6070280  
+Khabarov, N., Krasovskii, A., Obersteiner, M., Swart, R., Dosio, A., San-Miguel-Ayanz, 
+J., Durrant, T., Camia, A., and Migliavacca, M. (2016). “Forest fires and adaptation 
+options in Europe,” Regional Environmental Change 16, 21-30. DOI: 
+10.1007/s10113-014-0621-0  
+Kisić, I., and Bogunović, I. (2016). “Wildfire induced changes in forest soils in Southern 
+Croatia,” Radovi Šumarskog Fakulteta Univerziteta u Sarajevu 21(1), 91-97. DOI: 
+10.54652/rsf.2016.v1.i1.285  
+Kolanek, A., Szymanowski, M., and Raczyk, A. (2021). “Human activity affects forest 
+fires: The impact of anthropogenic factors on the density of forest fires in Poland,” 
+Forests 12(6), article 728. DOI: 10.3390/f12060728  
+Kountouris, Y., and Remoundou, K. (2011). “Valuing the welfare cost of forest fires: A 
+life satisfaction approach,” Kyklos 64(4), 556-578. DOI: 10.1111/j.1467-
+6435.2011.00520.x  
+Koutsias, N., Arianoutsou, M., Kallimanis, A. S., Mallinis, G., Halley, J. M., and 
+Dimopoulos, P. (2012). “Where did the fires burn in Peloponnisos, Greece the 
+summer of 2007? Evidence for a synergy of fuel and weather,” Agricultural and 
+Forest Meteorology 156, 41-53. DOI: 10.1016/j.agrformet.2011.12.006  
+Kovačić, S., Mărgărint, M. C., Ionce, R., and Miljković, D. (2020). “What are the factors 
+affecting tourist behavior based on the perception of risk? Romanian and Serbian 
+tourists’ perspective in the aftermath of the recent floods and wildfires in Greece,” 
+Sustainability 12(16), article 6310. DOI: 10.3390/su12166310  
+  
+
+PAGE 23
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  522 
+Lam-González, Y. E., León, C. J., de León, J., and Suárez-Rojas, C. (2022). “The impact 
+of degradation of islands’ land ecosystems due to climate change on tourists’ travel 
+decisions,” Land 11(10), article 1644. DOI: 10.3390/land11101644  
+Lasanta, T., Khorchani, M., Pérez-Cabello, F., Errea, P., Sáenz-Blanco, R., and Nadal-
+Romero, E. (2018). “Clearing shrubland and extensive livestock farming: Active 
+prevention to control wildfires in the Mediterranean mountains,” Journal of 
+Environmental Management 227, 256-266. DOI: 10.1016/j.jenvman.2018.08.104  
+Leung, Y. F., and Catts, G. (2013). “The joy of bioresources: Sustainable forest-
+recreation connections,” BioResources 8(1), 1-2.  DOI:10.15376/biores.8.1.1-2 
+Lin, D., Giannico, V., Lafortezza, R., Sanesi, G., and Elia, M. (2024). “Use of airborne 
+LiDAR to predict fine dead fuel load in Mediterranean forest stands of Southern 
+Europe,” Fire Ecology, 20(1), article 58. DOI: 10.1186/s42408-024-00287-7 
+Lionello, P., Abrantes, F., Gacic, M., Planton, S., Trigo, R., and Ulbrich, U. (2014). “The 
+climate of the Mediterranean region: Research progress and climate change impacts,” 
+Regional Environmental Change 14, 1679-1684. DOI: 10.1007/s10113-014-0666-0  
+Liu, Y., Stanturf, J., and Goodrick, S. (2010). “Trends in global wildfire potential in a 
+changing climate,” Forest Ecology and Management 259(4), 685-697.  DOI: 
+10.1016/j.foreco.2009.09.002  
+Loepfe, L., Rodrigo, A., and Lloret, F. (2014). “Two thresholds determine climatic 
+control of forest fire size in Europe and northern Africa,” Regional Environmental 
+Change 14, 1395-1404.  DOI: 10.1007/s10113-013-0583-7   
+Ma, W., Zhai, L., Pivovaroff, A., Shuman, J., Buotte, P., Ding, J., Christoffersen, B., 
+Knox , R., Moritz, M., Fisher, R.,  Koven, Ch., Kueppers, L. and Xu, C. (2020). 
+“Assessing climate change impacts on live fuel moisture and wildfire risk using a 
+hydrodynamic vegetation model,” Biogeosciences Discussions 18(13), 4005-4020. 
+DOI: 10.5194/bg-18-4005-2021 
+Médail, F. (2022). “Plant biogeography and vegetation patterns of the Mediterranean 
+islands,” The Botanical Review 88(1), 63-129. DOI: 10.1007/s12229-021-09245-3  
+Meier, S., Elliott, R. J., and Strobl, E. (2023). “The regional economic impact of 
+wildfires: Evidence from Southern Europe,” Journal of Environmental Economics 
+and Management 118, article ID 102787. DOI: 10.1016/j.jeem.2023.102787  
+Meira Castro, A. C., Nunes, A., Sousa, A., and Lourenço, L. (2020). “Mapping the causes 
+of forest fires in portugal by clustering analysis,” Geosciences 10(2), article 53. DOI: 
+10.3390/geosciences10020053 
+Mejjad, N., Rossi, A., and Pavel, A. B. (2022). “The coastal tourism industry in the 
+Mediterranean: A critical review of the socio-economic and environmental pressures 
+& impacts,” Tourism Management Perspectives 44, article ID 101007. DOI: 
+10.1016/j.tmp.2022.101007  
+Michetti, M., and Pinar, M. (2019). “Forest fires across Italian regions and implications 
+for climate change: A panel data analysis,” Environmental and Resource Economics 
+72(1), 207-246. DOI: 10.1007/s10640-018-0279-z  
+Mitsopoulos, I., Mallinis, G., Karali, A., Giannakopoulos, C., and Arianoutsou, M. 
+(2016). “Mapping fire behaviour under changing climate in a Mediterranean 
+landscape in Greece,” Regional Environmental Change 16, 1929-1940.  DOI: 
+10.1007/s10113-015-0884-0  
+  
+
+PAGE 24
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  523 
+Molina, J. R., González-Cabán, A., and y Silva, F. R. (2019). “Wildfires impact on the 
+economic susceptibility of recreation activities: Application in a Mediterranean 
+protected area,” Journal of Environmental Management 245, 454-463. DOI: 
+10.1016/j.jenvman.2019.05.131  
+Moreira, F., Ascoli, D., Safford, H., Adams, M. A., Moreno, J. M., Pereira, J. M., Catry, 
+F., Armesto, J., Bond, W., and González, M. E. (2020). “Wildfire management in 
+Mediterranean-type regions: Paradigm change needed,” Environmental Research 
+Letters 15(1), article ID 011001. DOI: 10.1088/1748-9326/ab541e   
+Neger, C., León-Cruz, J. F., and Gössling, S. (2024). “The tourism fire exposure index 
+for the European Union,” Tourism Management 103, article ID 104901. DOI: 
+10.1016/j.tourman.2024.104901  
+Novo, A., Fariñas-Álvarez, N., Martínez-Sánchez, J., González-Jorge, H., Fernández-
+Alonso, J. M., and Lorenzo, H. (2020). “Mapping forest fire risk—A case study in 
+Galicia (Spain),” Remote Sensing 12(22), article 3705. DOI: 10.3390/rs12223705  
+Nunes, A. N. (2012). “Regional variability and driving forces behind forest fires in 
+Portugal an overview of the last three decades (1980–2009),” Applied Geography 34, 
+576-586. DOI: 10.1016/j.apgeog.2012.03.002 
+Oliveira, S., Oehler, F., San-Miguel-Ayanz, J., Camia, A., and Pereira, J. M. (2012). 
+“Modeling spatial patterns of fire occurrence in Mediterranean Europe using multiple 
+regression and random forest,” Forest Ecology and Management 275, 117-129.  DOI: 
+10.1016/j.foreco.2012.03.003  
+Oliveira, S., Pereira, J. M., San-Miguel-Ayanz, J., and Lourenço, L. (2014). “Exploring 
+the spatial patterns of fire density in Southern Europe using geographically weighted 
+regression,” Applied Geography 51, 143-157.  DOI: 10.1016/j.apgeog.2014.04.002   
+Otrachshenko, V., and Nunes, L. C. (2022). “Fire takes no vacation: Impact of fires on 
+tourism,” Environment and Development Economics 27(1), 86-101. DOI: 
+10.1017/S1355770X21000012 
+Pais, C., Miranda, A., Carrasco, J., and Shen, Z. J. M. (2021). “Deep fire topology: 
+Understanding the role of landscape spatial patterns in wildfire occurrence using 
+artificial intelligence,” Environmental Modelling & Software 143, article 105122. 
+DOI: 10.1016/j.envsoft.2021.105122 
+Palaiologou, P., Kalabokidis, K., Ager, A. A., and Day, M. A. (2020). “Development of 
+comprehensive fuel management strategies for reducing wildfire risk in Greece,” 
+Forests 11(8), article 789. DOI: 10.3390/f11080789 
+Papavasileiou, G., and Giannaros, T. M. (2022). “The catastrophic 2021 wildfires in 
+Greece: An outbreak of pyroconvective events,” Environmental Sciences 
+Proceedings 17(1), article 7.  DOI: 10.3390/environsciproc2022017007  
+Parente, J., Amraoui, M., Menezes, I., and Pereira, M. G. (2019). “Drought in Portugal: 
+Current regime, comparison of indices and impacts on extreme wildfires,” Science of 
+The Total Environment 685, 150-173. DOI: 10.1016/j.scitotenv.2019.05.298 
+Parente, J., Pereira, M. G., Amraoui, M., and Tedim, F. (2018). “Negligent and 
+intentional fires in Portugal: Spatial distribution characterization,” Science of the 
+Total Environment 624, 424-437. DOI: 10.1016/j.scitotenv.2017.12.013  
+Pausas, J. G., and Fernández-Muñoz, S. (2012). “Fire regime changes in the Western 
+Mediterranean Basin: From fuel-limited to drought-driven fire regime,” Climatic 
+Change 110(1–2), 215-226. DOI: 10.1007/s10584-011-0060-6    
+  
+
+PAGE 25
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  524 
+Pausas, J. G., and Keeley, J. E. (2021). “Wildfires and global change,” Frontiers in 
+Ecology and the Environment 19(7), 387-395. DOI: 10.1002/fee.2359.  
+Pavlek, K., Bišćević, F., Furčić, P., Grđan, A., Gugić, V., Malešić, N., Moharić, P., 
+Vragović, V., Fuerst-Bjeliš, B., and Cvitanović, M. (2017). “Spatial patterns and 
+drivers of fire occurrence in a Mediterranean environment: A case study of southern 
+Croatia,” Geografisk Tidsskrift-Danish Journal of Geography 117(1), 22-35. DOI: 
+10.1080/00167223.2016.1266272 
+Perez-Mato, J., Arana, V., and Cabrera-Almeida, F. (2016). “Real-time autonomous 
+wildfire monitoring and georeferencing using rapidly deployable mobile 
+units,” Aerospace and Electronic Systems Magazine 31(2), 6-15. DOI: 
+10.1109/MAES.2016.150057  
+Posavec, S., Barčić, D., Vuletić, D., Vučetić, V., Čavlina Tomašević, I., and Pezdevšek 
+Malovrh, Š. (2023). “Forest fires, stakeholders’ activities, and economic impact on 
+state-level sustainable forest management,” Sustainability 15(22), 1-24. DOI: 
+10.3390/su152216080 
+Prochazka, P., and Abrhám, J. (2024). “Evaluation of environmental assets value on 
+Borneo using the travel cost method,” BioResources 19(3), 5811-5824. DOI: 
+10.15376/biores.19.3.5811-5824  
+Richards, J., Huser, R., Bevacqua, E., and Zscheischler, J. (2023). “Insights into the 
+drivers and spatiotemporal trends of extreme Mediterranean wildfires with statistical 
+deep learning,” Artificial Intelligence for the Earth Systems 2(4), article ID e220095. 
+DOI: 10.1175/AIES-D-22-0095.1  
+Ricotta, C., and Di Vito, S. (2014). “Modeling the landscape drivers of fire recurrence in 
+Sardinia (Italy),” Environmental Management 53(6), 1077-1084. DOI: 
+10.1007/s00267-014-0269-z  
+Rosselló, J., Becken, S., and Santana-Gallego, M. (2020). “The effects of natural 
+disasters on international tourism: A global analysis,” Tourism Management 79, 
+article ID 104080. DOI: 10.1016/j.tourman.2020.104080  
+Roszyk, E., Mania, P., Iwańska, E., Kusiak, W., and Broda, M. (2020). “Mechanical 
+performance of Scots pine wood from Northwestern Poland—A case 
+study,” BioResources 15(3), 6781-6794. DOI: 10.15376/biores.15.3.6781-6794  
+Ruffault, J., Moron, V., Trigo, R. M., and Curt, T. (2016). “Objective identification of 
+multiple large fire climatologies: An application to a Mediterranean ecosystem,” 
+Environmental Research Letters 11(7), article ID 075006. DOI: 10.1088/1748-
+9326/11/7/075006 
+Sakellariou, S., Sfougaris, A., Christopoulou, O., and Tampekis, S. (2023). “Spatial 
+resilience to wildfires through the optimal deployment of firefighting resources: 
+Impact of topography on initial attack effectiveness,” International Journal of 
+Disaster Risk Science 14(1), 98-112. DOI: 10.1007/s13753-023-00464-3.  
+Salis, M., Arca, B., Del Giudice, L., Palaiologou, P., Alcasena-Urdiroz, F., Ager, A, 
+Fiory, M., Pellizzarro, G., Scarpa, C., Schirru, M., et al. (2021). “Application of 
+simulation modeling for wildfire exposure and transmission assessment in Sardinia, 
+Italy,” International Journal of Disaster Risk Reduction 58, article ID 102189. DOI: 
+10.1016/j.ijdrr.2021.102189  
+San-Miguel-Ayanz, J., Durrant, T., Boca, R., Maianti, P., Libertà, G., Jacome Felix Oom, 
+D., Branco, A., de Rigo, D., Suarez-Moreno, M., Ferrari, D., et al. (2024). Advance 
+Report on Forest Fires in Europe, Middle East and North Africa 2023, Publications 
+Office of the European Union, Luxembourg, Luxembourg.  
+
+PAGE 26
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  525 
+San-Miguel-Ayanz, J., Durrant, T., Boca, R., Maianti, P., Liberta`, G., Jacome Felix 
+Oom, D., Branco, A., de Rigo, D., Suarez-Moreno, M., Ferrari, D., et al. (2023). 
+Forest Fires in Europe, Middle East and North Africa 2022, Publications Office of 
+the European Union, Luxembourg, Luxembourg.  
+San-Miguel-Ayanz, J., Durrant, T., Boca, R., Maianti, P., Libertá, G., Artés-Vivancos, T., 
+Oom, D., Branco, A., de Rigo, D., Ferrari, D., et al. (2022). Forest Fires in Europe, 
+Middle East and North Africa 2021, Publications Office of the European Union, 
+Luxembourg, Luxembourg.  
+San-Miguel-Ayanz, J., Durrant, T., Boca, R., Maianti, P., Libertá, G., Artés-Vivancos, T., 
+Oom, D., Branco, A., de Rigo, D., Ferrari, D., et al. (2021). Forest Fires in Europe, 
+Middle East and North Africa 2020, Publications Office of the European Union, 
+Luxembourg, Luxembourg.  
+Santín, C., and Doerr, S. H. (2016). “Fire effects on soils: The human 
+dimension,” Philosophical Transactions of the Royal Society B: Biological 
+Sciences 371(1696), 28-34. DOI: 10.1098/rstb.2015.0171    
+Santos, R., Russo, A., and Gouveia, C. M. (2024). “Co-occurrence of marine and 
+atmospheric heatwaves with drought conditions and fire activity in the Mediterranean 
+region,” Scientific Reports, 14(1), article 19233. DOI: 10.1038/s41598-024-69691-y  
+Sil, Â., Azevedo, J. C., Fernandes, P. M., and Honrado, J. P. (2024). “Will fire-smart 
+landscape management buffer the effects of climate and land-use changes on fire 
+regimes?,” Ecological Processes 13(1), article 57. DOI:10.1186/s13717-024-00535-3  
+Šiljković, Ž., and Mamut, M. (2016). “Forest fires in Dalmatia,” Bulletin of Geography. 
+Socio-economic Series 32, 117-130. DOI: 10.1515/bog-2016-0019 
+Telesca, L., and Lasaponara, R. (2010). “Analysis of time-scaling properties in forest-fire 
+sequence observed in Italy,” Ecological Modelling 221(1), 90-93. DOI: 
+10.1016/j.ecolmodel.2009.01.019  
+Terray, L., and Boé, J. (2013). “Quantifying 21st-century France climate change and 
+related uncertainties,” Comptes Rendus. Géoscience 345(3), 136-149. DOI: 
+10.1016/j.crte.2013.02.003 
+Thapa, B., Cahyanto, I., Holland, S. M., and Absher, J. D. (2013). “Wildfires and tourist 
+behaviors in Florida,” Tourism Management 36, 284-292.  DOI: 
+10.1016/j.tourman.2012.10.011  
+Turco, M., Bedia, J., Di Liberto, F., Fiorucci, P., von Hardenberg, J., Koutsias, N., Llasat, 
+M., Xystrakis, F., and Provenzale, A. (2016). “Decreasing fires in Mediterranean 
+Europe,” PLoS One 11(3), article ID e0150663. DOI: 10.1371/journal.pone.0150663 
+Turco, M., Llasat, M. C., von Hardenberg, J., and Provenzale, A. (2014). “Climate 
+change impacts on wildfires in a Mediterranean environment,” Climatic 
+Change 125(3), 369-380. DOI: 10.1007/s10584-014-1183-3  
+Vázquez, A., Pérez, B., Fernández‐González, F., and Moreno, J. M. (2002). “Recent fire 
+regime characteristics and potential natural vegetation relationships in Spain,” 
+Journal of Vegetation Science 13(5), 663-676. DOI: 10.1111/j.1654-
+1103.2002.tb02094.x    
+Venäläinen, A., Korhonen, N., Hyvärinen, O., Koutsias, N., Xystrakis, F., Urbieta, I. R., 
+and Moreno, J. M. (2014). “Temporal variations and change in forest fire danger in 
+Europe for 1960–2012,” Natural Hazards and Earth System Sciences 14(6), 1477-
+1490. DOI: 10.5194/nhess-14-1477-2014  
+
+PAGE 27
+ 
+PEER-REVIEWED ARTICLE  bioresources.cnr.ncsu.edu 
+ 
+ 
+Abrham et al. (2025). “Wildfires & tourism,” BioResources 20(1), 500-526.  526 
+Vieira, D. C. S., Borrelli, P., Jahanianfard, D., Benali, A., Scarpa, S., and Panagos, P. 
+(2023). “Wildfires in Europe: Burned soils require attention,” Environmental 
+Research 217, article ID 114936. DOI: 10.1016/j.envres.2022.114936   
+World Tourism Organization (2024). “World Tourism Barometer,” 
+(https://www.unwto.org/un-tourism-world-tourism-barometer-data), Accessed 02 
+Sept 2024.  
+World Travel & Tourism Council (2024). “Economic impact research,” 
+(https://wttc.org/research/economic-impact), Accessed 03 Sept 2024. 
+ 
+Article submitted: September 13, 2024; Peer review completed: October 13, 2024; 
+Revised version received and accepted: November 4, 2024; Published: November 18, 
+2024. 
+DOI: 10.15376/biores.20.1.500-526 
+
+PAGE 28
+© 2025. Notwithstanding the ProQuest Terms and Conditions, you may use this
+content in accordance with the terms available at
+https://bioresources.cnr.ncsu.edu/about-the-journal/editorial-policies/

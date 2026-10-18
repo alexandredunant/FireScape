@@ -1,0 +1,792 @@
+PAGE 1
+Article
+ASFORESEE: A Harmonized Model for Economic
+Evaluation of Forest Protection against Rockfall
+Cristian Accastello *
+ , Ettore Bianchi, Simone Blanc
+ and Filippo Brun
+Department of Agricultural, Forest and Food Sciences (DISAFA), University of Turin, Largo Paolo Braccini 2,
+10095 Grugliasco, TO, Italy
+* Correspondence: cristian.accastello@unito.it
+Received: 17 May 2019; Accepted: 9 July 2019; Published: 11 July 2019
+/gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045/gid00001
+/gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046
+Abstract: Gravitational hazards, such as rockfall, constitute a major risk in mountainous areas,
+threatening dwellers, goods, and infrastructures, and ultimately posing a challenge to their
+development. Ecosystem-based solutions for Disaster Risk Reduction (Eco-DRR), such as protection
+forests, can play a signiﬁcant role in mitigating these risks by integrating the protective structures
+currently adopted, which are often costly and could entail higher environmental impacts. This study
+develops an economic model called ASFORESEE (Alpine Space FORest Ecosystem Services Economic
+Evaluation) to assess the protective service forests provide against rockfall within a standardized
+framework adopting a precautionary approach. The Replacement Cost approach was adopted,
+measuring the protection e ﬀectiveness, the need for protection of the stakeholders and deﬁning
+a harmonized method for the design of the defensive structures. Applying the model to a case
+study in the Italian Alps, the results show the forest has a relevant protective eﬀect able to fulﬁl the
+stakeholders’ needs, with a value of 30,440 € ha−1, equal to 950 € ha−1 year−1, within the 25-year
+timespan considered. ASFORESEE could feasibly be adopted in other mountainous contexts, due to its
+harmonized structure reliant on minimal assumptions. Its adoption would foster the acknowledgment
+of the forest role and to further support the inclusion of Eco-DRR in local risk management plans.
+Keywords: alpine space; ecosystem-based solutions for Disaster Risk Reduction (Eco-DRR); ecosystem
+services; protection forest; replacement cost; gravitational hazards; natural hazards
+1. Introduction
+The Alpine Region is inhabited by approximately 14 million people, unevenly distributed within
+its boundaries, making it one of the most densely populated mountainous areas of the world [1]. In
+this area, and likewise other mountainous regions of Europe, in a perspective of increasing anthropic
+pressure and more intense and frequent natural hazards triggered by climate change [2,3], there is a
+rising need for protection from these threats. It is a given certainty that in the future it will be hardly
+possible to avoid the presence of elements, such as people, goods, infrastructures, and productive
+activities, located in areas subject to natural disasters [4].
+In the Alps, two main strategies to ensure satisfactory risk mitigation from natural hazards have
+traditionally been adopted: the construction of technical defense measures such as barriers, rockfall
+nets and dams; or the management of the Alpine ecosystems, e.g., mountain forests, to maintain or
+improve the protection [5,6]. This service, included in regulation Ecosystem Services (ES), consists of
+the mitigation of hazards triggered by gravity, such as rockfall, avalanches, and shallow landslides,
+thanks to the combined eﬀect of superﬁcial stabilization (e.g., of snow cover and rock cliﬀs) and the
+impediment created by the trunks of such forests [ 7]. In the modern era, as the anthropic pressure
+has risen to its current levels, the ﬁrst approach, based on artiﬁcial structures, has clearly become
+predominant [6]. Nonetheless, the adoption of such measures implies several drawbacks, such as
+Forests 2019, 10, 578; doi:10.3390/f10070578 www.mdpi.com /journal/forests
+
+PAGE 2
+Forests 2019, 10, 578 2 of 16
+high maintenance costs, visual impact and alteration of natural environments [6,8]. Conversely, the
+capacity of Ecosystem-based solutions for Disaster Risk Reduction (Eco-DRR) to provide aﬀordable,
+low-impact, and multifunctional solutions to risk mitigation is well known and has already been
+modelled in a number of studies [ 9–12]. Hence, recognizing the direct protective service provided
+by mountain forests to assets and people in local risk management strategies and in decision-making
+processes is of paramount importance to achieve a resilient and cost-eﬀective protection [13,14]. In this
+respect, the potential role of Eco-DRR has been underlined by several policy documents of international
+relevance [15,16].
+A reliable assessment of this service represents the cornerstone to give value to Eco-DRR and
+integrate them into risk management strategies, thus avoiding disproportionate public expenses in
+building defensive facilities [17]. Such an assessment can be performed in several alternative ways,
+utilizing both qualitative and quantitative methods, for instance, multi-criteria analysis, and expressed
+in diﬀerent alternative measurement units. Among the latter, monetary evaluations stand out for their
+ability to translate environmental functions into economic terms, favoring their understanding by
+policy and decision makers. Notwithstanding the important ethical and methodological issues in
+reducing such complex environmental services into monetary values [18,19], these methods still remain
+the most eﬀective instrument to measure the value of an ES, that would otherwise be overlooked.
+Consequently, their evaluation could help draw attention to their management and thus support the
+integration of Eco-DRR into risk management strategies [20,21]. Several studies have already been
+conducted, mainly in the alpine space, concerning the economic evaluation of the protective service of
+forests against the diﬀerent natural hazards inﬂuenced by its presence [ 22]. Among those, the study
+from Notaro and Paletto [ 23] represents a seminal example of the application of the Replacement
+Cost approach at landscape level. There, the methodological limitations of upscaling this method
+to areas larger than single protection forest stands were bypassed by involving a focus group of
+experts, in order to evaluate the inﬂuence of several forest features in providing protection from
+natural hazards in general. This study was followed by several other researches carried out in Italy,
+Switzerland, and France, where this approach was applied at forest stand-level [11,22,24]. Conversely,
+a more limited number of studies adopted other indirect evaluation methods, such as the Avoided
+Damages method, in which the protection service of a forest is valued in relation to the damages it
+prevents [12,25]. The majority of these studies focused on avalanche protection, narrowly adopting a
+stand-level focus [24,25]. Other studies instead emphasized the role of forests against other hazards, as
+shallow landslides [26] and debris ﬂows [ 17], but without providing a monetary evaluation of this
+service. Finally, direct methods of elicitation of stakeholders’ beliefs and willingness to pay were
+seldom adopted for such evaluations [27]. Additionally, their replicability is low, since the results are
+the consequence of the relation between the considered protection forest stand and its beneﬁciaries.
+In a nutshell, these studies showed a large variability of both the available methods and the units
+of measure of the results, which were alternatively presented as values, i.e., a lump sum of money,
+or incomes, often expressed as money ha−1 year−1 [22]. This heterogeneity leads to a general lack of
+consensus on the most suitable methodology to be applied in the evaluation of this ES, undermining
+its wider adoption in a standardized and replicable way.
+In consideration of the lack of the evaluations presented in these studies, the aim of this research
+is to develop a model for the economic evaluation of the protection forest service, harmonizing data on
+forest stands with technical and economic parameters into a replicable and standardized framework,
+able to consider the societal needs of livability and safety. The only natural hazard here considered is
+rockfall, a typology of landslide conﬁned to the detachment of individual rocks [28], which, despite its
+high speciﬁcity, constitutes a relevant issue for mountainous areas [29]. Moreover, as an additional
+objective, this model should be suitable to be adopted by decision makers and practitioners of Eco-DRR
+in any mountainous region aﬀected by rockfall, in order to standardize the assessment process and
+attribute value to protective forests, supplying easily understandable monetary information. This
+economic model, developed within the INTERREG Alpine Space project “ROCKtheALPs” is named
+
+PAGE 3
+Forests 2019, 10, 578 3 of 16
+ASFORESEE (Alpine Space FORest Ecosystem Services Economic Evaluation) and it is based on the
+traditional Replacement Cost approach, which resulted to be the most suitable method in terms of
+potential harmonization of the approach and of achievement of eﬀective outputs, as explained above.
+Its adoption in estimating the regulation ES of a forest is well documented [30], even if limited to only
+one of the many services that forests provide [31].
+The paper is structured as follows: Section 2.1 describes the framework of the model and its
+components. Then, in the following sections the demand for protection by stakeholders (Section 2.2), the
+technical data on forest eﬀectiveness (Section 2.3), protective facilities (Section 2.4), forest management
+(Section 2.5) and the methodology adopted for the economic evaluation (Section 2.6) are extensively
+explained. In the Results (Section 3), the model is applied to a selected case study, in order to test it on
+a real rockfall event and evaluate the protection ES supplied by the forest. Finally, ﬁndings, limitations,
+and possible future developments of ASFORESEE are discussed in the Discussion and Conclusion
+(Section 4) that complete the study.
+2. Materials and Methods
+2.1. Model Framework
+The ASFORESEE evaluation model is based on the Replacement Cost approach, one of the most
+suitable methods to assess regulation and protective ES [ 32] and whose adoption in mountainous
+areas is well documented [22,29,31]. The approach assumes that the value of the protective service
+ensured by forests against rockfall is equal to the expenditures that would be potentially incurred to
+reproduce the same service by artiﬁcial means. Its application is subject to three requisites: (i) the
+artiﬁcial structure hypothesized to replace the forest must have the same eﬀectiveness; (ii) it must be
+the least costly option available on the market, notwithstanding the ﬁrst requisite; (iii) there must be an
+interest of the stakeholders beneﬁting the service, to maintain and replace it, when lacking [33]. This
+approach also presents some limitations. Among others, when dealing with landscape or regional
+scale evaluations, the uncertainties due to the assumptions needed to adopt the method are high [22].
+Moreover, this approach is generally not able to emphasize the importance of the diﬀerent elements
+at risk, since it focuses on the forest rather than on the objects of the protection. Moreover, only one
+of the several ES provided by forests is considered, excluding other relevant regulation, cultural and
+provisioning ES. Nonetheless, given the aim of the study to provide a replicable model based on a
+standardized workﬂow and based on the available literature and empirical evidences, this approach
+resulted to be the most suitable.
+In consideration of the interactions between rockfall events, forest, hypothetical defensive facilities
+and expenses related to these elements, the model requires several technical, economic, and modelling
+inputs to be combined. The overall conceptual framework of ASFORESEE, depicting the logical ﬂow
+underlying its structure in shown in Figure 1.
+The present framework deﬁnes three possible options to evaluate the protective service, to be
+selected in consideration of the characteristics of the case study. Firstly, the role of the forest has to
+be veriﬁed in relation to the need for protection of the stakeholders (Section 2.2) and its eﬀectiveness
+against rockfall events (Section 2.3). In case the latter results insuﬃcient, Option A should be chosen.
+Alternatively, the Replacement Cost approach is adopted (Section 2.6), assessing the expenditures
+related to defensive structures (Section 2.4) and forest management (Section 2.5). Finally, a further
+discrimination is set to evaluate the forest performance in the light of a target protection level set
+by stakeholders. In the Option B, artiﬁcial protective measures (hereinafter “needed facilities”) are
+necessary to enhance the protection service supplied by the stand, which alone is not suﬃcient to fulﬁl
+the target protection level. Conversely, for Option C the stand eﬀectiveness is suﬃcient, and the costs of
+hypothetical artiﬁcial protective measures are assessed in order to quantify the forest protective value.
+
+PAGE 4
+Forests 2019, 10, 578 4 of 16
+Forests 2019, 10, x FOR PEER REVIEW 4 of 16 
+ 
+ 
+Figure 1. Conceptual framework of the ASFORESEE (A lpine Space FORest Ecosystem Services 
+Economic Evaluation) model. 
+2.2. Demand for Protection 
+The protection ES against rockfall provided by the forest to society only occurs when there is a 
+need for this protection [34]. Therefore, in order to measure the value of this service, its demand 
+should also be assessed [35]. For the regulation ES , the demand of this service can be defined via a 
+qualitative evaluation, considering both technical (e.g. the economic value of the exposed asset) and 
+social factors (e.g. its frequentation or relevance for the local community) [35]. Nonetheless, the level 
+of protection expected by stakeholders, which de fines a threshold of “acce ptable risk”, can range 
+widely in relation to the importance of the goods at risk [36]. In some contexts, the effectiveness of a 
+forest in protecting the exposed assets could result sufficient to fulfil stakeholders’ expectations. 
+However, in cases where the goods at risk are considered particularly valuable, the need to resist any 
+possible event, regardless of its intensity and frequency, justifies the implementation of artificial 
+protection measures able to provide the expected  level of protection [ 17]. Therefore, a proper 
+protection demand assessment is essential to understand whether th e effectiveness of a forest is 
+sufficient or needs to be integrated. In the ASFORESEE model, the demand for protection is currently 
+assessed in a qualitative way, involving the stakeholders affected by the rockfall risk. The actors 
+involved in the study constituted a focus group of  representatives of the academia, local forest 
+officials in charge of the planning and management of the forest, and consultants for the public safety 
+of the area. Their contribution has been collected through a specific workshop set up to acquire their 
+expectations regarding the protection of the goods at risk, in a 3-steps scale (low–medium–high). The 
+variables considered were (i) the frequentation of the area, (ii) its importance for the local community, 
+(iii) the protection measures already implemented, and (iv) its perceived or actual economic value. 
+Finally, as shown in Figure 1, their qualitative ev aluation is compared to the effectiveness provided 
+by the forest, determining the most suitable option to assess the value of the protection service. 
+Figure 1. Conceptual framework of the ASFORESEE (Alpine Space FORest Ecosystem Services
+Economic Evaluation) model.
+2.2. Demand for Protection
+The protection ES against rockfall provided by the forest to society only occurs when there is a
+need for this protection [34]. Therefore, in order to measure the value of this service, its demand should
+also be assessed [35]. For the regulation ES, the demand of this service can be deﬁned via a qualitative
+evaluation, considering both technical (e.g., the economic value of the exposed asset) and social factors
+(e.g., its frequentation or relevance for the local community) [35]. Nonetheless, the level of protection
+expected by stakeholders, which deﬁnes a threshold of “acceptable risk”, can range widely in relation
+to the importance of the goods at risk [36]. In some contexts, the eﬀectiveness of a forest in protecting
+the exposed assets could result suﬃcient to fulﬁl stakeholders’ expectations. However, in cases where
+the goods at risk are considered particularly valuable, the need to resist any possible event, regardless
+of its intensity and frequency, justiﬁes the implementation of artiﬁcial protection measures able to
+provide the expected level of protection [17]. Therefore, a proper protection demand assessment is
+essential to understand whether the eﬀectiveness of a forest is suﬃcient or needs to be integrated. In the
+ASFORESEE model, the demand for protection is currently assessed in a qualitative way, involving the
+stakeholders aﬀected by the rockfall risk. The actors involved in the study constituted a focus group of
+representatives of the academia, local forest oﬃcials in charge of the planning and management of the
+forest, and consultants for the public safety of the area. Their contribution has been collected through a
+speciﬁc workshop set up to acquire their expectations regarding the protection of the goods at risk, in a
+3-steps scale (low–medium–high). The variables considered were (i) the frequentation of the area, (ii)
+its importance for the local community, (iii) the protection measures already implemented, and (iv)
+its perceived or actual economic value. Finally, as shown in Figure 1, their qualitative evaluation is
+
+PAGE 5
+Forests 2019, 10, 578 5 of 16
+compared to the eﬀectiveness provided by the forest, determining the most suitable option to assess
+the value of the protection service.
+2.3. Forest Eﬀectiveness
+The ability of the forest to mitigate rockfall events has been deﬁned for ASFORESEE by adopting
+an index capable of measuring the eﬀect of the trees in reducing the frequency and intensity of the
+phenomena. Therefore, we only took into account those rockfall events where the forest can provide
+an eﬀective protective service, i.e., in the case of falling blocks with a volume not exceeding 10 m3 [33].
+Firstly, the protection forest should be partitioned, if necessary, into stands with homogeneous structural
+features [37]. The boundaries of these stands might have been already deﬁned within the Forest
+Management Plan. If the protection forest is composed of diﬀerent stands, the evaluation should be
+carried out separately for each homogeneous area and then weighted according to the size of each
+stand and summed into one single value.
+Several methods assessing the stand eﬀectiveness in rockfall protection can be found in literature.
+In this study, we adopted the Rockfall Protection Index (RPI), developed within the ARANGE
+project [38] for its ability to provide the model of a synthetic measure of the eﬀectiveness of the forest in
+stopping the falling blocks. In any case, it is worth underlining how these values remain independent
+from the model and are therefore adopted as mere input data. This index is based on a statistical
+approach for the computation of the maximum energy developed by the falling rock along the slope,
+consequently estimating the eﬀectiveness of the forest to stop it. This service is measured with a value
+between 0 and 1 in relation to the percentage of falling boulders stopped by the protection forest
+situated along their trajectory. The input needed to compute this index, whose validity is constant
+within a homogeneous forest stand, are the following:
+• Volume (m3), mass (kg) and shape of a block having a diameter equal to the 95th percentile of
+those measured during the ﬁeld data collection phase;
+• Maximum cliﬀ height (m);
+• Linear distance (m) between the rockfall source and the forest stand;
+• Slope (◦);
+• Main dendrometric parameters of the stand, such as density (n ha −1), DBH (cm), and species
+composition (%).
+Further information concerning the features of this index and its parameters can be found in the
+ARANGE project report [38], where the RPI equation is extensively reported and described.
+2.4. Defensive Facilities
+In order to harmonize the structural characteristics of the needed or hypothetical defensive facilities
+(introduced in Section 2.1), capable of supplying the desired protection service, ASFORESEE adopted
+the most common typology of structure available: rockfall nets. These barriers are a passive defense
+structure constituted by a hexagonal mesh on metal poles fastened to the slope [39]. The adoption of
+this structure is supported by several reasons, such as their widespread use in mountainous areas, their
+versatility, cost-eﬀectiveness, and easy installation [9]. Moreover, due to a speciﬁc European regulation
+deﬁning building and testing methodologies, called ETAG027 [40], it is possible to standardize their
+sizing, enabling the adoption of a common design. Therefore, these guidelines have been employed
+by ASFORESEE in sizing the artiﬁcial defensive facilities in relation to the features of the rockfall
+phenomena. The main parameter needed for this operation is the target kinetic energy Ek, i.e., the
+energy developed by a falling block having a 95th percentile diameter. This parameter reﬂects a
+standard and precautionary approach commonly adopted in such evaluations [22,41]. Following a
+probabilistic approach, the value of the 95th percentile of the falling blocks is deﬁned consequent to
+a ﬁeld survey, where the fallen blocks, deposited in transects along a slope gradient, are measured
+by their diameter and density [42]. We purposely adopted this parameter since it is consistent with
+
+PAGE 6
+Forests 2019, 10, 578 6 of 16
+the input data needed for the RPI, in order to facilitate the ﬁeld surveys. The equation adopted to
+compute this value is derived from the ETAG027 and integrated with the ISO 11211-4: 2012 technical
+norm, which deﬁnes the safety factors in designing the nets, in accordance with the precautionary
+principle [39,43]. In consideration of these aspects, the Ek is computed, as shown in Equation (1):
+Ek = 1
+2·TB·S2· γR· γB· γT (1)
+where Ek is the target kinetic energy in kilojoule (kJ), that is the energy of the target block hitting the
+net; TB is the mass of the spherical target block, estimated as the product of rock density (in kg·m−3),
+the diameter of the 95th percentile of the falling rocks (cm), and π value [44]; S is the testing speed
+of the rock, equal to 25 m s−1, as stated in the ETAG027 regulation [40]; γR is a risk factor assuming
+values between 1.00 and 1.20, following an increasing level of risk for people and goods, as established
+by ETAG027 regulation; γB is a block factor considering the reliability of the data adopted to estimate
+the mass of the target block, assuming values from 1.02 to 1.10 with decreasing data quality; and γT is
+a topographic factor that considers the uncertainties related to the topographic information available
+on the area at risk, assuming values from 1.02 to 1.10 with decreasing data quality.
+The adoption of the 95th percentile as reference value for theEk proves the precautionary approach
+laying behind the ASFORESEE, particularly for its inﬂuence on the defensive facility sizing. This
+approach is consistent with several other experiences on protection systems, such as [ 45–47], and
+inspired by the risk averse attitude of decision-makers responsible for the safety of dwellers and
+infrastructures. Additional precautionary measures are represented by the adoption of the Service
+Energy Level (SEL), an additional safety factor acting as a multiplier of the Ek with a constant value of
+3, as stated in the ETAG027 regulation [40]. The resulting value determines, via a matrix linking value
+ranges with corresponding parameters of the facility, the most relevant elements of the facility, i.e.,
+height and resistance of the materials. Thus, the designed facility is compliant with current European
+regulations, capable of withstanding multiple impacts whilst suﬀering a minimal eﬃciency reduction
+and does not require any extraordinary maintenance activity [43]. Once the height and resistance of the
+facility have been deﬁned, its sizing is completed by its width, equal to the extension of the slope subject
+to rockfall phenomena. Within the present model, one line of net barrier has been considered suﬃcient
+to replace the eﬀectiveness provided by the protection forest. This assumption is consistent with the
+range of events in which forests can play a relevant role [ 28] and satisﬁes the requirements of least
+expenditure, given an equal level of eﬀectiveness, established by the Replacement Cost approach [33].
+The last step is the deﬁnition of the overall cost of the structure in a standardized way, supplying
+the overall sum that constitutes the basis of the Replacement Cost approach [22]. To compute this value,
+several sources can be applied: among others, national or regional public works price lists; unitary
+building costs of similar structures, and values derived from scientiﬁc and grey literature [40,45,48]. The
+computation also includes indirect costs related to the implementation of the facility, e.g., administrative
+and supervising expenditure, direct costs were increased by 25%, in accordance with [49]. Concerning
+maintenance costs, they were not computed due to their reduced inﬂuence on the performance of
+the barrier within such a limited service life [49]. Similarly, costs for replacing the facility at the end
+of its service life were not computed because not included within the timespan considered for this
+case study (25 years). Applying this procedure, the expenses needed to build an artiﬁcial defensive
+facility are estimated adopting a 2% interest rate. According to [ 50], and as also showed in several
+similar studies [22], this value is the most suitable for discounting costs of public expenses having a
+lifetime similar to the one considered in this study and when the beneﬁt and cost ﬂow concerns only
+the present generation.
+2.5. Forest Management
+The ﬁnal element that contributes to the protection value deﬁnition is represented by the
+silvicultural activities carried out in the stand. It is largely acknowledged how the capacity of
+
+PAGE 7
+Forests 2019, 10, 578 7 of 16
+unmanaged forests to stop falling blocks is naturally subject to ﬂuctuations over time of their
+ability [28]. Forest eﬀectiveness can be hampered, among other factors, by dead trees, sub-optimal tree
+densities, or species composition, all factors that active management can improve [ 5]. Silvicultural
+activities in rockfall protection forests mainly consists of diversifying the stand structure, by means
+of interventions routinely performed every 10 to 15 years [ 51], to support the establishment and
+development of a 40-cm-or-more diameter tree class and an abundant regeneration. This approach
+aims to maintain, and possibly increase, the level of protection provided by the forest stand, ensuring
+in the meanwhile, its resilience, stability, and perpetuation. From an economic perspective, these
+interventions often result in negative stumpage values, due to the high harvesting costs, the low
+productivity rates of the operations and the low quality of the achievable assortments, as they are
+frequently located on steep slopes [22,52]. ASFORESEE estimates the management expenditures, using
+the following input data:
+• Area of the forest stand subject to the interventions (ha);
+• Number of interventions scheduled in the same area (n);
+• Growing stock (m3 ha−1);
+• Current annual increment of the stand (m3 ha−1);
+• Harvest intensity on the growing stock (%).
+Since these data are usually included in the dendrometric information contained in the Forest
+Management Plan of the stand, their computation does not require any further data collection phase.
+Whereas the plan was missing, an additional e ﬀort is required to hypothesize, together with local
+forest managers, the features and costs of the forestry operations to be implemented in the stand. In
+this study, the Spatial-based Economic Model (SEM), developed by [53], was adopted to compute the
+intervention cost of the planned interventions. SEM enables the computation of the stumpage value of
+a forest harvest by comparing diﬀerent working strategies and considering the environmental and
+logistic features of the stand and their inﬂuence on the productivity of the intervention. The net present
+value and the annuity value [54] of the forest management expenses has been computed by totaling
+the discounted stumpage values of the planned interventions, based on the price of the assortments
+collected with a survey on the local timber market.
+2.6. Replacement Cost Value
+Once the components of the ASFORESEE model have been deﬁned, the monetary evaluation
+was deployed using three alternative options. These options encompass all the possible conditions
+determined by the diﬀerent relationships between forest eﬀectiveness and the stakeholder needs. The
+description of these options is reported below:
+Option A. The forest does not reduce the rockfall risk in a signiﬁcant way, with the result that it is
+irrelevant for protection;
+Option B. The forest signiﬁcantly mitigates, but does not eliminate, the rockfall risk;
+Option C. The forest is fully e ﬀective in mitigating the considered rockfall event and can be
+considered as a reliable Eco-DRR.
+These alternative options represent the cornerstones of ASFORESEE, enabling the deﬁnition of
+the most suitable approach to evaluate the protection ES provided by the forest. Each of these options
+imply the use of a diﬀerent equation, developed to provide a protective value capable of reﬂecting the
+real role of the stand in risk mitigation. Therefore, in consideration of both supply of and demand for
+protection, the evaluation is performed for each option as follows:
+Option A. Here the protective role of the forest is marginal, as it is unable to signiﬁcantly reduce
+the rockfall risk and, consequently, does not satisfy the need for safety of the stakeholders. Hence,
+in option A, the protective value of the forest is null, because of the inability of the forest to mitigate
+the risk and/or the lack of interest in the protection service by the stakeholders. Nonetheless, if an
+opportunity for the stand to develop relevant protective features within the ASFORESEE timespan is
+
+PAGE 8
+Forests 2019, 10, 578 8 of 16
+detected, the protective value of the forest can be estimated as the expenditures incurred to support
+this improvement with dedicated silvicultural interventions. This management decision is justiﬁed by
+the legitimate expectation that the beneﬁts deriving from targeted interventions will enable the stand
+to acquire relevant protective features in the future. Therefore, Equation (2) measures the protective
+value against rockfall:
+Pv =
+t∑
+i=0
+Mi· 1
+(1 + r)i (2)
+where Pv is the protection value of the forest against rockfall risk; M is the diﬀerence between the
+possible revenues and the expenditures from the forest management, incurred in the period comprised
+between the present (0 in the equation) and the moment t, which corresponds to the considered
+timespan of the model, discounted at the present time i adopting the interest rate r.
+Option B. The second option is applied when the forest stand cannot guarantee a su ﬃcient
+safety level to satisfy stakeholder needs. On the other hand, the forest has a relevant and measurable
+protective eﬀect on rockfall risk that should be acknowledged. Therefore, in order to reﬂect the beneﬁts
+that the stand provides, its value is assessed by measuring the di ﬀerence between the value of a
+standard defensive facility and the value of a smaller facility providing a protection equal to the forest.
+The comparison between the necessary facility and the hypothetical one, in the case of the stand having
+no relevant protective role, is performed adopting the approach described in Section 2.4. Therefore,
+the measurable reduction of Ek provided by the forest determines a defensive structure of smaller size
+and, consequently, lower expenditure. In option B, the replacement cost value is then estimated, as
+shown in Equation (3):
+Pv = Fs− Fw f−
+t∑
+i=0
+Mi· 1
+(1 + r)i (3)
+where Pv is the protection value of the forest against rockfall risk;Fs would be the expenditures incurred
+to build a standard defensive facility, and replace it at the end of its service life, if no protective eﬀect
+of the stand existed; Fw f are the expenditures to build a smaller necessary facility, which takes into
+account the beneﬁts supplied by the forest; M is the diﬀerence between the possible revenues and
+the expenditures from the forest management, incurred in the period comprised between the present
+(0 in the equation) and the moment t, which corresponds to the considered timespan of the model,
+discounted at the present time i adopting the interest rate r.
+Option C. The third option is adopted when the forest supplies such a high level of protection
+that the stakeholder need for safety is fully met, ensuring an eﬀectiveness comparable with a defensive
+facility. Hence, the protection value will be equal to the expenditures of the hypothetical facility able to
+replace the stand, which provides the same performance [33]. Nonetheless, the equation is integrated
+with a reduction coeﬃcient applied to the protection value, in order to consider the real performance
+of the forest, which, even if satisfying the local demand for this ES, not necessarily ensures complete
+protection. Since this reduction coe ﬃcient represents the percentage of falling blocks stopped by
+the forest, the RPI value mentioned in Section 2.3 has been adopted. Its value has been modelled
+assuming the target kinetic energy of a falling block of a 95th percentile diameter, in accordance with
+the defensive facility sizing. This reduction coeﬃcient has not been adopted in option B since, there,
+the comparison did not focus directly on the forest, but rather involved two structures di ﬀering in
+size: one considering the eﬀects of the forest and one not. As in the previous options, management
+expenses are considered and subtracted from the overall amount (Equation (4)).
+Pv = (Fs·RPI)−
+t∑
+i=0
+Mi· 1
+(1 + r)i (4)
+where Pv is the protection value of the forest against rockfall risk; Fs would be the expenditures
+incurred to build a standard defensive facility, and replace it at the end of its service life, if there was
+
+PAGE 9
+Forests 2019, 10, 578 9 of 16
+no forest; RPI is the reduction coe ﬃcient, between 0 and 1, to return the forest e ﬀectiveness to its
+actual value of eﬀectiveness, equal to or lower than the designed defensive facility; M is the diﬀerence
+between the possible revenues and the expenditures from the forest management, incurred in the
+period comprised between the present (0 in the equation) and the moment t, which corresponds to the
+considered timespan of the model, discounted at the present time i adopting the interest rate r.
+Once the protection forest is assigned to one of the available options and all the cost items involved
+in the model are computed, the protection value of the forest against rockfall events can be assessed.
+The monetary results of the evaluation can be alternatively expressed as a sum for the whole stand, as
+a sum per hectare or as an annuity value, obtained by discounting the overall value to the present time,
+standing the 2% interest rate previously adopted.
+2.7. The Case Study
+The ASFORESEE model has been tested on a study area in the Western Italian Alps in order to
+validate its results. The selected forest is situated in the Piedmont region of Italy, above the village of
+Beaume (45◦04′36.1′′ N; 6◦82′80.8′′ E; Figure 2).
+Forests 2019, 10, x FOR PEER REVIEW 9 of 16 
+ 
+Once the protection forest is assigned to one of the available options and all the cost items 
+involved in the model are computed, the protection value of the forest against rockfall events can be 
+assessed. The monetary results of the evaluation can be alternatively expressed as a sum for the whole 
+stand, as a sum per hectare or as an annuity value, obtained by discounting the overall value to the 
+present time, standing the 2% interest rate previously adopted. 
+2.7. The Case Study 
+The ASFORESEE model has been tested on a study area in the Western Italian Alps in order to 
+validate its results. The selected forest is situated in the Piedmont region of Italy, above the village of 
+Beaume (45°04’36.1’’ N; 6°82’80,8’’ E; Figure 2).  
+ 
+Figure 2. The image represent the location of Piedmont  Region and the village of Beaume (black 
+location pin), where the case study is set. 
+This forest is actively managed since decades to preserve its protective service towards buildings 
+and their inhabitants against the risk of rockfall from the cliff above it. The stand, owned by the 
+Municipality itself, is an endalpic Scots Pine forest ( Pinus sylvestris L . )  o f  1 0  h a ,  w i t h  l a r g e  t r u n k  
+diameters prevailing. The need for protection fr om rockfall risk, manifested by local sources 
+(personal communication of the public forest managers) is high, since the rockfall activities are well-
+known, with potential partial damages to structures and goods, deriving from the falling blocks. 
+3. Results 
+The results of the application of ASFORESEE in the selected study area are reported below. For 
+this study, the model operates within a 25-year timespan, which corresponds both to the service life 
+of artificial facilities in standard conditions [40] and a reliable timespan for forest operation planning 
+[5]. Concerning forest effectivene ss, the characteristics of the stan d and of the falling blocks were 
+collected. Their values are shown in Table 1. 
+  
+Figure 2. The image represent the location of Piedmont Region and the village of Beaume (black
+location pin), where the case study is set.
+This forest is actively managed since decades to preserve its protective service towards buildings
+and their inhabitants against the risk of rockfall from the cli ﬀ above it. The stand, owned by the
+Municipality itself, is an endalpic Scots Pine forest ( Pinus sylvestris L.) of 10 ha, with large trunk
+diameters prevailing. The need for protection from rockfall risk, manifested by local sources (personal
+communication of the public forest managers) is high, since the rockfall activities are well-known, with
+potential partial damages to structures and goods, deriving from the falling blocks.
+3. Results
+The results of the application of ASFORESEE in the selected study area are reported below. For
+this study, the model operates within a 25-year timespan, which corresponds both to the service life of
+artiﬁcial facilities in standard conditions [40] and a reliable timespan for forest operation planning [5].
+
+PAGE 10
+Forests 2019, 10, 578 10 of 16
+Concerning forest eﬀectiveness, the characteristics of the stand and of the falling blocks were collected.
+Their values are shown in Table 1.
+Table 1. Study area data constituting the ASFORESEE input to compute the Rockfall Protection Index (RPI).
+Element Information Value Unit of Measure
+Forest stand Mean DBH 29.4 cm
+Tree density 289 n ·ha
+Stand area 10 ha
+Coniferous 89 %
+Broadleaves 11 %
+Block Diameter 95th percentile 0.65 m
+Rock density 2700 kg·m−3
+Cliﬀ height 60 m
+Slope Height di ﬀerence 120 m
+Mean slope 37 ◦
+Width 90 m
+The second step consisted in the measurement of the kinetic energy generated, in accordance with
+Equation (1). The values of the components for the study area are listed in Table 2. For the deﬁnition of
+these risk factors, the information collected from the stakeholders while assessing the demand side of
+the ES resulted relevant. In particular, the γR factor assumed a value of 1.10, in consideration of the
+moderate residual risk for people and goods in the area. The remaining two safety factors, γB and γT,
+assumed the least possible value (1.02) due to the high-quality level of the data, respectively resulting
+from sampling the fallen blocks in the ﬁeld and the high deﬁnition of the Digital Terrain Model (1×
+1m) adopted to compute the RPI.
+Table 2. Factors used to compute the kinetic energy.
+Kinetic Energy Components Value Unit of Measure
+Mass of the project block PB 6750 kg
+Block speed S 25 m·s−1
+Risk factor γR (1–1.2) 1.10 -
+Block mass factor γB (1.02–1.1) 1.02 -
+Topographic factor γT (1.02–1.1) 1.02 -
+The size parameters of the hypothetical facility to be built in absence of the forest were computed
+by employing the SEL coeﬃcient. Therefore, the defensive facility should be 6 m high and 90 m wide.
+Finally, the forest management interventions were planned together with the local forest managers
+responsible for the stand and the information available in the FMP . The area to be harvested was
+measured and two interventions were planned. Detailed information concerning these harvests are
+reported in Table 3.
+Table 3. Information concerning the harvesting operations planned in the forest.
+Management Data Value Unit of Measure
+Harvested area 7.27 ha
+Number of interventions 2 n
+Growing stock 293 m3·ha−1
+Annual increment 1.33 m3·ha−1
+Harvest intensity 20 %
+Once all the information was collected, data describing the technical performances of the forest
+and the hypothetical facility were computed (Table 4).
+
+PAGE 11
+Forests 2019, 10, 578 11 of 16
+Table 4. The technical results computed by ASFORESEE.
+Technical Results Value Unit of Measure
+Kinetic energy of the project block 2669 kJ
+RPI 0.99 -
+Kinetic energy absorbed by the forest 2519 kJ
+Residual kinetic energy 150 kJ
+Height of the hypothetical facility 6 m
+Width of the hypothetical facility 90 m
+In consideration of the aforementioned evaluation options, ASFORESEE assigned the study case
+to option C, where the forest satisﬁes the stakeholder need for protection. In this area, even though the
+demand for this protection ES of the forest is high, the forest proved to be eﬀective in mitigating the
+risk, corresponding to only 150 kJ not absorbed by the forest. Therefore, to value the protection service
+supplied, Equation (4) has been applied. The cost of the hypothetical facility was computed referring
+to market values reported in the regional price lists of Piedmont. For the study area, the Piedmont
+Region 2018 price list for public works has been adopted [48]. Based on its values, the overall building
+costs of the facility resulted in 316,400 €. Concerning the management of the area, the discounted
+expenses for the interventions were estimated in 8850 €, as computed by the SEM (Table 5).
+Table 5. The monetary results computed by ASFORESEE.
+Economic Results Value Unit of Measure
+Cost of the hypothetical facility 316,400 €
+Forest management cost 8850 €
+Value of the protection forest 304,380 €
+Unitary value 30,440 €·ha−1
+Annuity value 950 €·ha−1·year−1
+Therefore, the overall protective value of the forest stand against rockfall risk is 304,380 €,
+corresponding to 30,440 € ha−1. In order to provide more understandable information to stakeholders
+and decision makers, the results of ASFORESEE were expressed also as annuity value, i.e., the
+discounted yearly revenue generated by the forest for its protective role. For our case study, this value
+is equal to 950 €/ha/year, conﬁrming the high value of the service supplied.
+4. Discussion
+The Replacement Cost method, which constitutes the basis of ASFORESEE, resulted to be suitable
+for the aims of the model and capable of estimating the value of a single ES of the forest such as
+protection against rockfall. When compared to other evaluation methods, this approach enabled the
+value to be directly derived from the market prices of the goods selected to hypothetically replace the
+forest, minimizing the subjectivity of the evaluation [41]. This aspect actually represents one of the
+most relevant results provided by ASFORESEE: the broad reliance on technical data and input from
+other models (such as the RPI), greatly reduces the assumptions of the users and ensures its wide
+replicability. Even if, in some cases, this aspect could represent a limitation to the application of this
+approach, as far as the ES considered is merely a mechanical interaction between trees and rocks, the
+comparison with a corresponding artiﬁcial facility is suitable and reliable [33].
+Concerning the need to deﬁne the least costly substitute of the forest function [33], ASFORESEE
+satisﬁes this requisite by adopting the ETAG027 European guidelines, which allow the design of a
+standardized and cost-eﬀective structure [40]. Although kinetic energy may not always be a suﬃcient
+reference factor to design a facility, it has been proven how this value represents the most relevant
+factor [55]. Nevertheless, the precautionary approach adopted by ASFORESEE ensures a wide safety
+margin by including three safety factors in Equation (1) and considering the 95th percentile for the
+
+PAGE 12
+Forests 2019, 10, 578 12 of 16
+target block. Therefore, we can a ﬃrm that the subjective assumptions in the model are minimized
+both from the perspective of the needed protection level and of the design of the replacement facility.
+Further intrinsic limitations of the model concern the substantial diﬀerence between defensive
+facilities and protection forests. Whereas the former can be designed in relation to the safety needs
+and the speciﬁc existing risk, the performances of the latter can be enhanced only partially via
+dedicated management solutions, often with negative drawbacks in the short term [5]. Moreover, the
+operations needed to improve their protective eﬀectiveness often leads to negative stumpage values [52],
+as occurred in our case study. Nonetheless, ASFORESEE does not only consider proﬁtable forest
+interventions, rather, it computes the stumpage value of all interventions that should be performed
+in order to maintain or increase the eﬀectiveness of the forest stand. Conscious of the diﬃculties of
+performing such interventions, especially in areas interested by abandonment and poor implementation
+of the planned forest operation [52], we nonetheless aim to highlight their potential returns in terms of
+safety and risk mitigation, as attested by the high protective value of the stand. Finally, the temporal
+frame considered by the model represents a relevant variable that may inﬂuence its results. The
+protective function of a defensive facility e ﬀectively remains constant in standard environmental
+conditions during its service life, and then collapses abruptly at its conclusion [45]. Conversely, the
+forest stand is characterized by much longer dynamics, and is subject to unpredictable biotic and
+abiotic disturbances that can temporarily or permanently inﬂuence the ES provided [ 56]. For these
+reasons, we aim to test the model on diﬀerent timespans in the future, in order to study the variations
+in value caused by both the beneﬁts of a dedicated forest management and the increased costs of
+repeatedly substituting the defensive facility at the end of its service life, which are currently excluded
+from the evaluation. In a similar manner, the inﬂuence on the protective value of the forest resulting
+from the adoption of diﬀerent interest rates will also be tested.
+Although a real comparison with other studies results di ﬃcult due to the variety of methods
+and units of measures described above, the value obtained by testing ASFORESEE on a real case
+study are aligned to other similar experiences in the Alps where the Replacement Cost methods
+was adopted [22,41]. These studies, focusing on rockfall or avalanche protection, found comparable
+monetary values, comprised between 250 and 1900 € ha−1 year−1, in relation to the eﬀectiveness of
+the stand. On the other hand, studies with a diﬀerent methodological background, focusing on the
+damages avoided by the forests, found annuity values close to 100,000 €, due to the high value of the
+exposed assets [22]. Concerning the defensive facility adopted to replace the forest, we can assume that
+the design of a real structure would imply further adaptations to local conditions, leading to an increase
+of the design and building costs. Therefore, we would consider the 950 € ha−1 year−1 value of the
+protection service we estimated as a lower boundary. Nonetheless, when compared to other previous
+evaluations performed in similar contexts, we can reasonably assume that ASFORESEE generates valid
+results and thus provides the possibility to apply it to other contexts with minimal variations. The
+strengths of ASFORESEE can mainly be attributed to the high standardization of the defensive facility
+design process and diversiﬁed approach in computing the protection value using three alternative
+options. To all eﬀects, the deﬁnition of diﬀerent evaluation options reﬂects the speciﬁc conditions a
+protection forest may encounter and represents the principal innovative element of ASFORESEE.
+Obviously, further actions are necessary to put the evaluations generated by ASFORESEE into
+practice. Among others, the deﬁnition of the demand side of this ES could be implemented with a
+deeper involvement of the stakeholders in the phases of facility design. Similarly, further research could
+enable the model to evaluate several gravitational hazards instead of focusing only on rockfall, since a
+similar methodological approach seems suitable for all gravitational hazards. Further analysis of the
+elements aﬀecting the most the model outputs could also be implemented, e.g., applying a sensitivity
+analysis of the input factors of the model and a MonteCarlo simulation to study their combined
+inﬂuence on the results. Moreover, the relevance of such valuation is deployed only including Eco-DRR
+as protection forests, into the local risk management strategies (e.g., at municipality or catchment
+level) aimed at mitigating this natural risk in the most cost-e ﬀective way [14,57]. In this respect, it
+
+PAGE 13
+Forests 2019, 10, 578 13 of 16
+should be noted how the protection value we measured is not an exchange value, but rather, the
+translation in economic terms of the beneﬁts achievable through a dedicated management of the
+ecosystem generating it [58]. Nonetheless, as explained previously, similar valuations can represent a
+stepping-stone for the recognition of the ES value provided by the forest, and foster the implementation
+of dedicated management operations. In this regard, in order to improve the understanding of its
+measurement and widen its applicability, ASFORESEE expresses the result of the monetary evaluation
+in several ways. Therefore, the protective ES can be presented as a total value, in € per stand or in
+€ ha−1, or as a yearly beneﬁt, in € ha−1 year−1. Even if the latter form of valuation could lead to
+some misunderstanding, its adoption is widespread [22] and results to be the most suitable way to
+communicate with stakeholders, decision makers and other non-scientiﬁc actors given its immediacy
+and comprehensibility.
+5. Conclusions
+The risk mitigation against natural hazards, such as rockfall, is only one of the several ES that
+society beneﬁts from mountain forests [34], whose multi-functionality should be enhanced by targeted
+management, as stated in several national and international regulations [ 15]. In this context, our
+ASFORESEE evaluation model can support in recognizing the role of protection forests as a reliable,
+cost-eﬀective and forward-looking Eco-DRR and enhance its consideration both among scientists and
+non-academic stakeholders. Similarly, the monetary evaluation conﬁrms that the active management
+of protection forests can represent a sound investment to be integrated in local risk management
+strategies, in order to mitigate rockfall risks and ensure the livability of mountainous areas.
+Author Contributions: C.A. was involved in the conceptualization, methodology development and writing
+(original draft preparation) of the study; E.B. was involved in the conceptualization and methodology development;
+S.B. was involved in the methodology development and validation of the study; F.B. was involved in the writing
+(review and editing) and supervision of the paper.
+Acknowledgments: This research and the ASFORESEE development were funded by the INTERREG Alpine
+Space project n. 462 “ROCK the ALPS”.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1. Alpine Convention. Demographic Changes in the Alps; Report on the State of the Alps 5; Permanent Secretariat
+of the Alpine Convention: Innsbruck, Austria, 2015.
+2. UNISDR. Sendai Framework for Disaster Risk Reduction 2015–2030; United Nations: Geneva, Switzerland, 2015.
+3. Howard, P .H.; Sterner, T. Few and Not So Far between: A Meta-Analysis of Climate Damage Estimates.
+Environ. Resour. Econ. 2017, 68, 197–225. [CrossRef]
+4. EEA. Mapping the Impacts of Natural Hazards and Technological Accidents in Europe: An Overview of the Last
+Decade; European Environmental Agency Technical Report 13; Publications Oﬃce of the European Union:
+Luxembourg, 2010.
+5. Motta, R.; Haudemand, J.C. Protective forests and silvicultural stability—An example of planning in the
+Aosta Valley. Mt. Res. Dev. 2000, 20, 180–187. [CrossRef]
+6. Keiler, M.; Fuchs, S. Challenges for Natural Hazard and Risk Management in Mountain Regions of Europe.
+In Oxford Research Encyclopedia of Natural Hazard Science; Oxford University Press: Oxford, UK, 2018.
+7. MA. Ecosystems and Human Well-Being: A Framework for Assessment; Island Press: Washington, DC, USA, 2003.
+8. Holub, M.; Huebl, J. Local protection against mountain hazards—State of the art and future needs. Nat.
+Hazards Earth Syst. Sci. 2008, 8, 81–99. [CrossRef]
+9. Rimböck, A.; Höhne, R.; Rudolf-Miklau, F.; Pichler, A.; Suda, J.; Mazzorana, B.; Papež, J. Persistence of
+Alpine natural hazard protection. In Meeting Multiple Demands by Applying Systems Engine Ering and Life Cycle
+Management Principles in Natural Hazard Protection Systems in the Perimeter of the Alpine Convention; Platform
+on Natural Hazards of the Alpine Convention: Vienna, Austria, 2014.
+10. Miura, S.; Amacher, M.; Hofer, T.; San-Miguel-Ayanz, J.; Thackway, R. Protective functions and ecosystem
+services of global forests in the past quarter-century. For. Ecol. Manag. 2015, 352, 35–46. [CrossRef]
+
+PAGE 14
+Forests 2019, 10, 578 14 of 16
+11. Dupire, S.; Bourrier, F.; Monnet, J.-M.; Bigot, S.; Borgniet, L.; Berger, F.; Curt, T. Novel quantitative indicators
+to characterize the protective e ﬀect of mountain forests against rockfall. Ecol. Indic. 2016, 67, 98–107.
+[CrossRef]
+12. Moos, C.; Bebi, P .; Schwarz, M.; Stoﬀel, M.; Sudmeier-Rieux, K.; Dorren, L. Ecosystem-based disaster risk
+reduction in mountains. Earth-Sci. Rev. 2018, 177, 497–513. [CrossRef]
+13. Grilli, G.; Nikodinoska, N.; Paletto, A.; de Meo, I. Stakeholders’ Preferences and Economic Value of Forest
+Ecosystem Services: An Example in the Italian Alps. Balt. For. 2015, 21, 298–307.
+14. Onuma, A.; Tsuge, T. Comparing green infrastructure as ecosystem-based disaster risk reduction with gray
+infrastructure in terms of costs and beneﬁts under uncertainty: A theoretical approach. Int. J. Disaster Risk
+Reduct. 2018, 32, 22–28. [CrossRef]
+15. European Commission. A New EU Forest Strategy: For Forests and the Forest-Based Sector; EC: Brussels, Belgium,
+2013.
+16. Faivre, N.; Sgobbi, A.; Happaerts, S.; Raynal, J.; Schmidt, L. Translating the Sendai Framework into action:
+The EU approach to ecosystem-based disaster risk reduction. Int. J. Disaster Risk Reduct. 2018, 32, 4–10.
+[CrossRef]
+17. Fidej, G.; Mikos, M.; Rugani, T.; Jez, J.; Kumelj, S.; Diaci, J. Assessment of the protective function of forests
+against debris ﬂows in a gorge of the Slovenian Alps. iForest-Biogeosci. For. 2015, 8, 73–81. [CrossRef]
+18. Spangenberg, J.H.; Settele, J. Precisely incorrect? Monetising the value of ecosystem services. Ecol. Complex.
+2010, 7, 327–337. [CrossRef]
+19. Farley, J.; Voinov, A. Economics, socio-ecological resilience and ecosystem services.J. Environ. Manag. 2016,
+183, 389–398. [CrossRef] [PubMed]
+20. Gret-Regamey, A.; Kytziab, S. Integrating the valuation of ecosystem services into the Input-Output economics
+of an Alpine region. Ecol. Econ. 2007, 63, 786–798. [CrossRef]
+21. Daily, G.C.; Polasky, S.; Goldstein, J.; Kareiva, P .M.; A Mooney, H.; Pejchar, L.; Ricketts, T.H.; Salzman, J.;
+Shallenberger, R. Ecosystem services in decision making: Time to deliver. Front. Ecol. Environ. 2009, 7, 21–28.
+[CrossRef]
+22. Bianchi, E.; Accastello, C.; Trappmann, D.; Blanc, S.; Brun, F. The Economic Evaluation of Forest Protection
+Service against Rockfall: A Review of Experiences and Approaches.Ecol. Econ. 2018, 154, 409–418. [CrossRef]
+23. Notaro, S.; Paletto, A. Economic evaluation of the protective function of mountain forests: A case study
+from the Italian Alps. In The Evaluation of Forest Policies and Programmes; European Forest Institute: Joensuu,
+Finland, 2004.
+24. Cahen, M. Ouvrages de Parade Contre les Risques Naturels en Montagne et Fonction de Protection de la For êt:
+Analyse É conomique Comparative; IRSTEA—Cemagref: Grenoble, France, 2010.
+25. Teich, M.; Bebi, P . Evaluating the beneﬁt of avalanche protection forest with GIS-based risk analyses—A case
+study in Switzerland. For. Ecol. Manag. 2009, 257, 1910–1919. [CrossRef]
+26. Vergani, C.; Werlen, M.; Conedera, M.; Cohen, D.; Schwarz, M. Investigation of root reinforcement decay
+after a forest ﬁre in a Scots pine (Pinus sylvestris) protection forest. For. Ecol. Manag. 2017, 400, 339–352.
+[CrossRef]
+27. Olschewski, R.; Bebi, P .; Teich, M.; Hayek, U.W.; Gret-Regamey, A. Avalanche protection by forests—A choice
+experiment in the Swiss Alps. For. Policy Econ. 2012, 17, 19–24. [CrossRef]
+28. Dorren, L.K.A.; Berger, F. Balancing tradition and technology to sustain rockfall-protection forests in the
+Alps. For. Snow Landsc. Res. 2006, 80, 87–98.
+29. Dorren, L.K.A. A review of rockfall mechanics and modelling approaches. Prog. Phys. Geogr. 2003, 27, 69–87.
+[CrossRef]
+30. Farber, S.C.; Costanza, R.; Wilson, M.A. Economic and ecological concepts for valuing ecosystem services.
+Ecol. Econ. 2002, 41, 375–392. [CrossRef]
+31. de Groot, R.S.; Alkemade, R.; Braat, L.; Hein, L.; Willemen, L. Challenges in integrating the concept of
+ecosystem services and values in landscape planning, management and decision making. Ecol. Complex.
+2010, 7, 260–272. [CrossRef]
+32. Haines-Young, R.; Potschin, M. Common International Classiﬁcation of Ecosystem Eervices (CICES); Version 4.1;
+European Environmental Agency: Copenhagen, Denmark, 2012.
+33. Bockstael, N.E.; Freeman, A.M.; Kopp, R.J.; Portney, P .R.; Smith, V .K. On Measuring Economic Values for
+Nature. Environ. Sci. Technol. 2000, 34, 1384–1389. [CrossRef]
+
+PAGE 15
+Forests 2019, 10, 578 15 of 16
+34. Gret-Regamey, A.; Brunner, S.H.; Kienast, F. Mountain Ecosystem Services: Who Cares? Mt. Res. Dev. 2012,
+32, S23–S34. [CrossRef]
+35. Villamagna, A.M.; Angermeier, P .L.; Bennett, E.M. Capacity, pressure, demand, and ﬂow: A conceptual
+framework for analyzing ecosystem service provision and delivery. Ecol. Complex. 2013, 15, 114–121.
+[CrossRef]
+36. Wolﬀ, S.; Schulp, C.J.E.; Verburg, P .H. Mapping ecosystem services demand: A review of current research
+and future perspectives. Ecol. Indic. 2015, 55, 159–171. [CrossRef]
+37. Neuwenhuis, M. Terminology of Forest Management; IUFRO Secretariat: Vienna, Austria, 2000.
+38. Cordonnier, T.; Berger, F.; Elkin, C.; Lamas, T.; Martinez, M. Models and Likert Functions (Indicators) for
+Ecosystem Services; Deliverable D2.2; Institute of Silviculture, University of Natural Resources and Life
+Sciences: Vienna, Austria, 2014.
+39. Gottardi, G.; Govoni, L. Full-Scale Modelling of Falling Rock Protection Barriers. Rock Mech. Rock Eng. 2010,
+43, 261–274. [CrossRef]
+40. EOTA. ETAG 207—Guideline for European Technical Approval of Falling Rock Protection Kits ; European
+Organization for Technical Approval: Brussels, Belgium, 2012.
+41. Notaro, S.; Paletto, A. The economic valuation of natural hazards in mountain forests: An approach based
+on the replacement cost method. J. For. Econ. 2012, 18, 318–328. [CrossRef]
+42. Dussauge, C.; Grasso, J.-R.; Helmstetter, A. Statistical analysis of rockfall volume distributions: Implications
+for rockfall dynamics. J. Geophys. Res. Solid Earth 2003, 108. [CrossRef]
+43. Giacchetti, G.; Grimod, A. Eﬀect of Large Impacts Against Rockfall Barriers. In Landslide Science for a Safer
+Geoenvironment; Springer: Cham, Switzerland, 2014; Volume 3, pp. 83–89.
+44. Bourrier, F.; Lambert, S.; Baroth, J. A Reliability-Based Approach for the Design of Rockfall Protection Fences.
+Rock Mech. Rock Eng. 2015, 48, 247–259. [CrossRef]
+45. Faber, M.H.; Stewart, M.G. Risk assessment for civil engineering facilities: Critical overview and discussion.
+Reliab. Eng. Syst. Saf. 2003, 80, 173–184. [CrossRef]
+46. Bruendl, M.; Romang, H.E.; Bischof, N.; Rheinberger, C.M. The risk concept and its application in natural
+hazard risk management in Switzerland. Nat. Hazards Earth Syst. Sci. 2009, 9, 801–813. [CrossRef]
+47. Howald, E.P .; Abbruzzese, J.M.; Grisanti, C. An approach for evaluating the role of protection measures
+in rockfall hazard zoning based on the Swiss experience. Nat. Hazards Earth Syst. Sci. 2017, 17, 1127–1144.
+[CrossRef]
+48. Piedmont Region. Regional Price List for Public Expenditures; Regional Department for Public Works: Torino,
+Italy, 2018.
+49. Brun, F.; Mosso, A.; Blanc, S. Valutazioni economiche di interventi in foreste alpine di protezione. InEsperienze
+di Economia Applicata al Territorio Montano; CELID: Torino, Italy, 2012; Volume 1.
+50. Freeman, A.M., III; Herriges, J.A.; Kling, C.L. The Measurement of Environmental and Resource Values: Theory
+and Methods; RFF Press: New York, NY, USA; Routledge: Abingdon-on-Thames, UK, 2014.
+51. Rammer, W.; Brauner, M.; Ruprecht, H.; Lexer, M.J. Evaluating the eﬀects of forest management on rockfall
+protection and timber production at slope scale. Scand. J. For. Res. 2015, 30, 719–731. [CrossRef]
+52. Accastello, C.; Blanc, S.; Mosso, A.; Brun, F. Assessing the timber value: A case study in the Italian Alps. For.
+Policy Econ. 2018, 93, 36–44. [CrossRef]
+53. Accastello, C.; Brun, F.; Borgogno-Mondino, E. A Spatial-Based Decision Support System for wood harvesting
+management in mountain areas. Land Use Policy 2017, 67, 277–287. [CrossRef]
+54. Blanc, S.; Gasol, C.M.; Martínez-Blanco, J.; Muñoz, P .; Coello, J.; Casals, P .; Mosso, A.; Brun, F. Economic
+proﬁtability of agroforestry in nitrate vulnerable zones in Catalonia (NE Spain). Span. J. Agric. Res. 2019, 17,
+0101. [CrossRef]
+55. Grimod, A.; Giacchetti, G. Design Approach for Rockfall Barriers Tested According to ETAG 027. InLandslide
+Science for a Safer Geoenvironment; Springer: Cham, Switzerland, 2014; pp. 91–97.
+56. Bebi, P .; Seidl, R.; Motta, R.; Fuhr, M.; Firm, D.; Krumm, F.; Conedera, M.; Ginzler, C.; Wohlgemuth, T.;
+Kulakowski, D. Changes of forest cover and disturbance regimes in the mountain forests of the Alps. For.
+Ecol. Manag. 2017, 388, 43–56. [CrossRef]
+
+PAGE 16
+Forests 2019, 10, 578 16 of 16
+57. Accastello, C.; Blanc, S.; Brun, F. A Framework for the Integration of Nature-Based Solutions into
+Environmental Risk Management Strategies. Sustainability 2019, 11, 489. [CrossRef]
+58. Laurans, Y.; Rankovic, A.; Bille, R.; Pirard, R.; Mermet, L. Use of ecosystem services economic valuation for
+decision making: Questioning a literature blindspot. J. Environ. Manag. 2013, 119, 208–219. [CrossRef]
+© 2019 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).

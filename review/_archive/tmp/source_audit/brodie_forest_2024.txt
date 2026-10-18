@@ -1,0 +1,1691 @@
+PAGE 1
+Brodie et al. Fire Ecology           (2024) 20:17  
+https://doi.org/10.1186/s42408-023-00241-z
+ORIGINAL RESEARCH
+Forest thinning and prescribed burning 
+treatments reduce wildfire severity and buffer 
+the impacts of severe fire weather
+Emily G. Brodie1,2*  , Eric E. Knapp1, Wesley R. Brooks3, Stacy A. Drury1 and Martin W. Ritchie1 
+Abstract 
+Background The capacity of forest fuel treatments to moderate the behavior and severity of subsequent wildfires 
+depends on weather and fuel conditions at the time of burning. However, in-depth evaluations of how treatments 
+perform are limited because encounters between wildfires and areas with extensive pre-fire data are rare. Here, we 
+took advantage of a 1200-ha randomized and replicated experiment that burned almost entirely in a subsequent 
+wildfire under a wide range of weather conditions. We compared the impacts of four fuel treatments on fire sever-
+ity, including two thin-only, a thin-burn, a burn-only, and an untreated control. We evaluated four fire severity met-
+rics—tree mortality, average bole char height, percent crown volume consumed (PCVC), and percent crown volume 
+affected (PCVA)—and leveraged data from pre-fire surface and canopy fuels to better understand the mechanisms 
+driving differences in wildfire severity among treatments and how they changed with fire weather.
+Results We found strong mitigating effects of treatments on fire behavior and tree mortality, despite 20 years having 
+elapsed since mechanical thinning and 10 years since the second entry of prescribed fire. The thin-burn treatment 
+resulted in the lowest fire severity across all four metrics and the untreated control the highest. All four fire severity 
+metrics were positively associated with pre-fire canopy and surface fuel loads, with the exception that PCVC (a fire 
+severity metric related to crown fire behavior) was not associated with surface fuel load. The fire weather conditions 
+under which fuel treatment was most effective varied among fire severity metrics. Fuel treatment benefit was maxi-
+mized at intermediate burning index values for tree mortality, intermediate to high burning index values for PCVA, 
+and high burning index for bole char height and PCVC.
+Conclusions We conclude that reducing canopy bulk density via mechanical thinning treatments can help to limit 
+crown fire behavior for 20 years or more. However, reducing surface fuels is necessary to limit scorching and the total 
+crown impacts associated with tree mortality. Further, while fuel treatment effectiveness may decline under the most 
+severe fire weather conditions for fire severity metrics associated with tree mortality, it is maximized under severe 
+fire weather conditions for fire severity metrics associated with crown fire behavior (bole charring and torching). Our 
+results provide strong evidence for the use of fuel treatments to mitigate fire behavior and resulting fire severity even 
+under extreme fire weather conditions.
+Keywords Fuel treatment effectiveness, Wildfire-treatment outcomes, Thinning, Prescribed fire, Wildfire, Extreme fire 
+weather
+Open Access
+© The Author(s) 2024. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which 
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the 
+original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or 
+other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line 
+to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory 
+regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this 
+licence, visit http://creativecommons.org/licenses/by/4.0/.
+Fire Ecology
+*Correspondence:
+Emily G. Brodie
+emily.brodie@fire.ca.gov
+Full list of author information is available at the end of the article
+
+PAGE 2
+Page 2 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+Introduction
+The primary goal of forest thinning and prescribed 
+burning for fuel reduction, hereafter fuel treatment, 
+is to mitigate the effects of wildfire on ecological and 
+human communities by moderating fire behavior 
+and reducing fire severity outcomes (Agee & Skinner 
+2005; Finney 2001). Reducing wildfire severity is a key 
+management objective in dry mixed conifer forests in 
+the western USA, where over a century of fire exclu -
+sion has increased fuel loadings (Hankin et  al. 2023; 
+Knapp 2015; Knapp et  al. 2013; Stephens et  al. 2015) 
+and aridity associated with climate change is contribut -
+ing to more intense fire behavior (Abatzoglou & Wil -
+liams 2016). Together, such changes have resulted in 
+larger and higher severity fires than those that were 
+experienced historically (Hagmann et al. 2021; Parks & 
+Abatzoglou 2020). A broad literature demonstrates that 
+wildfire severity is reduced in areas that have received 
+fuel treatments for wildfire hazard or forest restora -
+tion, especially when treatments combine the use of 
+mechanical thinning and prescribed fire (for reviews, 
+see Fulé et al. 2012; Kalies & Yocom Kent 2016). How -
+ever, the extent to which treatments affect fire sever -
+ity depends on fuel loads, weather, and topography at 
+the time of burning, leading to different wildfire-treat -
+ment outcomes under different conditions (Prichard 
+et  al. 2020; Viedma et  al. 2020). As large, wind-driven 
+fire events become more common (Abatzoglou et  al. 
+2023; Stephens et  al. 2014) and as governments and 
+communities work to increase the pace and scale of 
+fuel treatments for forest health and community wild -
+fire protection (Forest Management Taskforce 2021; 
+Resumen 
+Antecedentes La capacidad de los tratamientos de combustibles forestales para moderar el comportamiento del 
+fuego y la severidad de incendios subsecuentes, dependen de las condiciones meteorológicas y de los combustibles 
+al momento del incendio. Sin embargo, las evaluaciones en profundidad sobre cómo estos tratamientos inciden en el 
+comportamiento del fuego son limitadas, dada la dificultad y rareza de hallar conjuntamente incendios actuales y en 
+esas mismas áreas contar con datos de incendios previos. En este trabajo, aprovechamos la oportunidad para estudiar 
+un experimento de diseño al azar y con réplicas en una superficie de 1200 ha, que se quemó casi completamente en 
+un incendio muy posterior al establecimiento del experimento y bajo un amplio rango de condiciones meteorológi-
+cas. Comparamos los impactos de cinco tratamientos sobre la severidad del fuego, incluyendo dos tipos de raleo, 
+raleo y quema prescripta, quema prescripta sola, y control. Evaluamos cuatro parámetros de severidad del fuego 
+-mortalidad de árboles, promedio de altura de carbonizado o chamuscado, porcentaje del volumen de copa consu-
+mido (PCVC) y porcentaje del volumen de copa afectado (PCVA)-, y aprovechamos datos tomados previo al incendio 
+sobre superficies y combustibles del dosel, para entender mejor los mecanismos conducentes a mostrar diferencias 
+en severidad del fuego entre tratamientos y cómo estos cambian con las condiciones meteorológicas del incendio.
+Resultados Encontramos fuertes efectos de mitigación de los tratamientos en el comportamiento del fuego y en 
+la mortalidad de árboles, a pesar de los 20 años transcurridos desde el raleo mecánico y 10 años desde la segunda 
+intervención con quemas prescriptas. El tratamiento de raleo y quemas prescriptas resultó en la menor severidad del 
+fuego entre todos los tratamientos, y el control resultó ser el de mayor severidad. La severidad registrada en los cuatro 
+tratamientos estuvo positivamente asociada con la carga de combustibles superficiales y del dosel, exceptuando 
+que la PCVC (el efecto de la severidad relacionada con el comportamiento del fuego en la corona) no se asoció con 
+la carga de combustibles superficiales. Las condiciones meteorológicas bajo las cuales los tratamientos fueron más 
+efectivos varió entre las medidas de severidad. El beneficio de los tratamientos fue maximizado a índices de quema 
+intermedios para la variable mortalidad de árboles, intermedio para índices altos de quema para PCVA, y altos valores 
+del índice de quema para la altura de chamuscado y PCVC.
+Conclusiones Concluimos que la reducción de la densidad del dosel a través del tratamiento mecánico de raleo 
+puede limitar el comportamiento del fuego en las copas por hasta 20 años o más luego de realizado este tratamiento. 
+Sin embargo, es necesaria también la reducción de los combustibles superficiales para limitar los impactos del coron-
+amiento y quema de la copa que se asocian con la mortalidad de los árboles. Además, mientras que la efectividad de 
+los tratamientos puede declinar en condiciones meteorológicas extremas para medidas como la severidad asociada 
+a la muerte de árboles, esta efectividad puede ser sin embargo maximizada en condiciones meteorológicas extremas, 
+cuando la severidad se asocia con el comportamiento del fuego en la corona (chamuscado o coronamiento del 
+fuego en las copas). Nuestros resultados proveen de una fuerte evidencia para recomendar el uso de tratamientos de 
+combustibles para mitigar el comportamiento del fuego y la severidad resultante, aún en condiciones meteorológicas 
+extremas.
+
+PAGE 3
+Page 3 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+Riechman et  al. 2014), understanding how fuels and 
+weather interact to impact wildfire-treatment outcomes 
+is increasingly important.
+Though hot, dry, and windy conditions tend to increase 
+fire behavior and fire severity outcomes, fuel treatments 
+can still be effective at weather extremes (Finney 1998; 
+Prichard et al. 2020; Prichard & Kennedy 2014). Indeed, if 
+fuel treatment effectiveness is defined as a relative meas -
+ure of the difference in fire severity outcomes between 
+treated and untreated areas, effectiveness can increase 
+as weather conditions become more extreme despite 
+higher absolute fire severity (Povak et al. 2020; Prichard 
+et al. 2020; Safford et al. 2012). Such evidence contrasts 
+with the idea that bottom-up controls (e.g., fuel loading) 
+are weakest under large, wind-driven fire events, with 
+high severity expected regardless of treatment or fuel 
+type (Lydersen et al. 2014; Graham et al.  2003). Dispari-
+ties are not well studied, and study outcomes are difficult 
+to compare given differences in the quality of fuel treat -
+ments, the many plot-based and remotely sensed meas -
+ures of fire severity, and the variety of definitions (both 
+relative and absolute) for fuel treatment effectiveness. 
+Reduced treatment effectiveness, with similar outcomes 
+between treated and untreated areas, may also occur 
+when weather conditions are mildest and fire severity is 
+low (Finney 1998; North et al. 2012). Given current evi -
+dence, we expect a unimodal relationship between fuel 
+treatment effectiveness and weather, with little benefit 
+conferred under the mildest conditions, maximum ben -
+efit under moderate conditions, and less benefit again 
+under the most extreme weather and climate scenarios. 
+However, more work is needed to explore the interaction 
+between fuels and weather and to identify thresholds for 
+desired wildfire-treatment outcomes (O’Connor et  al. 
+2017).
+Within and among treatments, wildfire-treatment out -
+comes are further influenced by the absolute amount and 
+arrangement of fuels at the time of burning. Reducing 
+fuels in the canopy via mechanical thinning of midstory 
+or overstory trees lowers the probability of active crown 
+fire (Finney 1998; Van Wagner 1977). However, thinning 
+also opens the mid- and overstory, potentially enhancing 
+fuel drying on the forest floor and leading to increased 
+mid-flame windspeeds, especially under wind-driven 
+conditions (Parsons et  al. 2018). Thus, simulation stud -
+ies have reported increased fire severity when the forest 
+midstory is removed entirely compared to when it is only 
+partially removed (Banerjee et  al. 2020). Reducing fuels 
+on the forest floor (known as surface fuels) via prescribed 
+fire or pile burning lessens fire rate of spread (Rothermel 
+1972) and fireline intensity (Byram 1959). In empirical 
+studies, treatments that target surface fuels along with 
+canopy fuels are more likely to reduce tree mortality, 
+crown scorching, and crown fire behavior (Prichard et al. 
+2020; Safford et  al. 2009). However, studying the inter -
+action of fuel treatments and wildfire is opportunistic 
+in nature and few research studies with permanent plot 
+networks have burned soon after sampling (e.g., Ritchie 
+et al. 2007). Thus, empirical studies of wildfire-treatment 
+outcomes generally lack pre-fire forest structure and fuel 
+data, resulting in datasets ill-suited to comparing the 
+influence of different fuel strata on fire severity.
+Further, most existing empirical studies of wildfire-
+treatment outcomes are largely observational, with sim -
+ple control-impact designs. Such observational designs 
+are unavoidable when tackling large-scale ecologi -
+cal questions, but can lead to more biased results than 
+designs that include pre-treatment data or randomly 
+assign treatment and control (Christie et al. 2019; Larsen 
+et al. 2019). Most fuel treatments are implemented non-
+randomly on the landscape based on a series of environ -
+mental and economic considerations (i.e., community 
+risk, funding allocation, distance from roads, and slope 
+steepness). Thus, measured or unmeasured differences 
+between treated and untreated areas may confound com-
+parisons after a wildfire, a statistical phenomenon known 
+as selection bias that can have important effects and even 
+change the sign of results (Simler-Williamson & Germino 
+2022). While weight of evidence backs the effectiveness 
+of fuel treatments in limiting wildfire severity, the field 
+still lacks the gold standard: results from a long-term rep-
+licated and controlled experiment that has burned in a 
+wildfire.
+Here, for the first time that we are aware of, we test 
+the effectiveness of fuel treatments at reducing subse -
+quent wildfire severity using a large-scale completely 
+randomized and replicated experimental design. We 
+take advantage of the 2021 Antelope fire, which burned 
+over 99% of a > 1300 ha, ~ 20-year-old silvicultural experi-
+ment testing a range of thinning and burning treatments 
+for restoring dry mixed conifer forest. During the 6 days 
+of burning within the experimental area, fire behavior 
+ranged from mild to extreme, with red flag wind condi -
+tions observed on the second day. We use this unprec -
+edented dataset to ask if fire severity outcomes were 
+improved within treated areas and whether the treatment 
+effect depended on fire weather conditions. We further 
+leverage pre-fire fuel data to compare the influence of 
+within-treatment canopy and surface fuels on fire sever -
+ity outcomes.
+Methods
+Location
+Treatment units were located within the Goosenest 
+Adaptive Management Area (GAMA) on the Klamath 
+National Forest in northeastern California (Fig.  1). This 
+
+PAGE 4
+Page 4 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+Fig. 1 Map of study units near the town of Tennant, California, on the Klamath National Forest. Colored dots represent the locations of study plots 
+within units and gray shading reflects the perimeter of the Antelope fire at the flight times listed
+
+PAGE 5
+Page 5 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+area is moderately productive (site index ~ 90 at base 
+age 50 (Barrett et  al. 1978)), and characteristic of the 
+interior pine forests of the Cascade Range. The local cli -
+mate is characterized by cool winters, warm summers, 
+and extended summer drought. Mean annual tempera -
+ture is 9.2 °C and mean annual precipitation is 42.1 cm, 
+with 66% arriving between November and March (West -
+ern Regional Climate Center 2022). Treatment units are 
+located between 1460 and 1770  m elevation on gentle 
+slopes (1 to 20%, median 5%) with northeasterly aspect 
+and no surface water or riparian areas. Soils are volcanic 
+and, in many places, topped by a 2.5–5-cm pumice layer.
+Historically, the study area was dominated by pon -
+derosa pine (Pinus ponderosa Dougl. Ex Laws.), increas -
+ing in white fir (Abies concolor [Gordon & Glend.] Lindl. 
+ex Hildebr.) abundance at higher elevations (Ritchie 
+2005). Red fir (Abies magnifica A. Murr.) was present at 
+the highest elevations in the study area, but infrequent. 
+Lower elevations contained occasional sugar pine (Pinus 
+lambertiana Dougl.), incense cedar (Calocedrus decur -
+rens Torr.), western juniper (Juniperus occidentalis 
+Hook.), and Douglas fir (Pseudotsuga menziesii [Mirb.] 
+Franco) (Ritchie 2005).
+Fire exclusion and logging associated with Euro-Amer -
+ican colonization changed forest composition and struc -
+ture at the study site. Before colonization, a combination 
+of lightning ignitions and indigenous burning resulted in 
+a fire regime of frequent and predominantly low sever -
+ity fires across much of California mixed conifer forest 
+(Agee 1994; Crawford et al. 2015; Fry & Stephens 2006). 
+As settler populations increased during the mid-1800s, 
+forced removal of indigenous people, criminalization of 
+cultural burning, and active fire suppression reduced fire 
+frequency on the landscape (Taylor et  al. 2016; Vinyeta 
+2021). A fire history study at the site indicated a median 
+historical fire return interval of 11  years (Carl Skinner, 
+unpublished report), within the 7–20-year range docu -
+mented from similar forests in the region (Agee 1994). 
+In the 1920s, commercial logging operations at GAMA 
+prioritized large ponderosa pine for extraction (Ritchie 
+2005). At this site, as in others throughout California 
+and the western USA, fire exclusion and the removal of 
+overstory pines favored the more shade tolerant and 
+fire-sensitive species, thus shifting the stands away from 
+pine (Brodie et al. 2023) and resulting in a predominantly 
+two species mix of white fir and ponderosa pine (Ritchie 
+2020). Fire exclusion also contributed to increased sur -
+face fuel loading and stand density (Agee & Skinner 2005; 
+Knapp et al. 2013). Such forests are less resilient to wild -
+fire and drought and have fewer of the large trees favored 
+by special status wildlife species (North et  al. 2017), 
+resulting in widespread need for forest restoration.
+Silvicultural treatment and design
+Two studies evaluating forest restoration techniques are 
+located at GAMA: the Little Horse Peak Interdisciplinary 
+Study (LHPIS) and the national Fire and Fire Surrogates 
+study (FFS) (McIver et al. 2009; Ritchie 2005). LHPIS was 
+designed to evaluate management strategies to acceler -
+ate development of late-successional features (large trees, 
+pine dominance, and an active fire regime) in second 
+growth stands (Ritchie 2005). Treatments included (1) 
+thinning only with emphasis on pine retention (hereaf -
+ter “Thin-P”), (2) thinning with emphasis on pine reten -
+tion and prescribed fire (hereafter “Thin-P-fire”), (3) 
+thinning with emphasis on retention of big trees of any 
+species (hereafter “Thin-BT”), and (4) a control treat -
+ment with no management activity (hereafter “Control”) 
+(Table 1). Each treatment was replicated five times for a 
+total of twenty ~ 40-ha treatment units that were assigned 
+to units in a completely randomized design. Units were 
+carefully selected based on uniformity of vegetation, 
+Table 1 Description of silvicultural treatments including number of replicates and total study plots per treatment
+Study Treatment Description Replicates Total plots
+LHPIS Control No management since logging in 1920s 5 90
+LHPIS Thin-BT Thin from below leaving all trees DBH > 76 cm and with a target spacing 
+of ~ 6–8 m between all dominant and co-dominant trees. All trees < 10 cm 
+DBH were felled following harvest. This was a typical “fuel reduction” treatment 
+for the Forest Service in California at the time
+5 91
+LHPIS Thin-P Radial thin from below leaving all pines with DBH > 30 cm and firs > 76 cm, 
+with a target spacing around dominant and co-dominant trees of ((their diam-
+eter (cm) + 12.7) × 0.12) meters. All trees < 10 cm DBH were felled following har-
+vest. To augment pine regeneration, 15% of the treatment area was converted 
+to 0.2–1.4 ha openings planted with ponderosa pine seedlings. The long-term 
+goal in this treatment was to create stands in which pine constituted at least 
+80% of basal area
+5 89
+LHPIS Thin-P-fire As in Thin-P above, but with broadcast burning in fall 2001 and fall 2010 5 91
+FFS Fire-only Broadcast burning fall 2002 and fall 2011 3 30
+
+PAGE 6
+Page 6 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+slope, and evidence of historical pine dominance and had 
+buffers of 100 m or more on all sides that were treated in 
+the same way (Ritchie 2005). Thinning treatments were 
+implemented between 1998 and 2000. Thinning was done 
+using whole tree harvest methods, with trees skidded to 
+landings and then trucked to staging areas for processing. 
+This minimized the addition of slash and other surface 
+fuels in the units. Broadcast burning was conducted in 
+Thin-P-fire units in the fall of 2001 and again in the fall of 
+2010 under mild weather conditions with moderate fine 
+fuel moisture (10-h fuel moisture averaged 11% in 2001 
+and 12% in 2010).
+The FFS study was overlaid on the LHPIS study in 2002, 
+and a portion of three replications of the Thin-P , Thin-P-
+fire, and Control treatments were used for collecting data 
+according to FFS protocols (McIver et  al. 2009; Weath -
+erspoon & McIver 2000). Because LHPIS did not have a 
+prescribed fire-only treatment, this was added in 2002 
+as part of the FFS study (hereafter “Fire-only”). The Fire-
+only treatment was implemented in three, 10-ha units 
+with approximately 100  m treatment buffers that were 
+burned in the fall of 2002 and again in the fall of 2011 
+under mild weather conditions with moderate fine fuel 
+moisture (10-h fuel moisture averaged 11% in 2001 and 
+12% in 2010).
+Prior to the Antelope fire, strong treatment differ -
+ences remained in structure and composition in both 
+the overstory and the understory (Fig.  2) (Ritchie 2005). 
+Treatments that included thinning contained 98–120 
+trees per hectare, five to seven times less than those of 
+Fig. 2 Pre-fire tree density, basal area, surface fuel mass, canopy bulk density, and shrub cover summarized by treatment type. Large dots represent 
+median, horizontal bars represent interquartile range, and small dots represent plot-level measures. Numerical values are in Additional file 1: Tables 
+S1 and S2
+
+PAGE 7
+Page 7 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+unthinned Control stands. Both Thin-P and Thin-P-fire 
+retained some higher density areas (e.g., planted open -
+ings or locations with higher pre-thinning pine density 
+[Table 1]) leading to greater within-stand variation. Pre-
+fire variability was less in Thin-BT units, where target 
+spacing between dominant and co-dominant trees was 
+relatively uniform (Table  1). Median large (> 50 cm) tree 
+height was 29  m and did not differ among treatments, 
+but Control and Fire-only treatments contained substan -
+tially more pole-sized (9.1–29.2 cm) trees (see Additional 
+file  1: Table  S1). Pole-sized trees were not only shorter 
+(median height 10  m), but had median crown base of 
+3  m compared to 11  m for large trees. Ten years after 
+the last prescribed fire, surface fuel mass remained low -
+est in the Thin-P-fire treatment (5.0  kg   m−2), and high -
+est in the Control treatment (8.4 kg   m−2). At the time of 
+the Antelope Fire, the understory was relatively sparse, 
+except in the Thin-P-fire treatment. Common shrub spe-
+cies included snowbrush (Ceanothus velutinus), Mahala 
+mat (Ceanothus prostratus), greenleaf manzanita (Arcto -
+staphylos patula), current (Ribes spp.), and big sage brush 
+(Artemesia tridentata). The thin-only and Thin-P-fire 
+treatments contained 5 times and 37 times more shrub 
+cover, respectively, than the Control, likely in response to 
+canopy opening (Knapp et  al. 2013; Richter et  al. 2019) 
+and canopy opening combined with fire-stimulated seed 
+germination (Knapp et al. 2012).
+In 2021, the Antelope fire burned through all 23 units 
+of the study. The fire began as a lightning ignition on the 
+Klamath National Forest on August 1st, 2021. On August 
+4th—the same day the fire reached and began burning 
+through the study units—a red flag warning was put in 
+place and fire activity increased with spot fires observed 
+0.8  km from the main fire. On August 5th, a state of 
+emergency was declared in Siskiyou County, California, 
+due to the Antelope fire. Extreme fire behavior (spotting 
+up to 1.6 km in front of the fire and flame lengths up to 
+30 m) continued through August 6th. The Antelope fire 
+burned through the last of the study units on August 9th 
+for a total of 6 days burning in the study area and includ -
+ing extreme, mild, and moderate fire behavior (Figs.  1 
+and 3). Only two out of 391 measurement plots in the 
+study were outside the final fire perimeter.
+Field sampling
+Plot size and data collection protocol differed somewhat 
+between LHPIS and FFS, though both surveyed trees 
+(≥ 9.1  cm diameter at 1.37  m tall [DBH]), shrub cover, 
+and surface fuels. For LHPIS, monuments for permanent 
+plots were installed on a 100-m grid in each unit. Vegeta -
+tion monitoring plots were then installed at every other 
+grid point, or 17–19 per unit, for a total of ~ 90 plots per 
+treatment and 361 plots total (Table  1). In 16-m radius 
+(0.08 ha) circular plots centered at monuments, sawtim -
+ber-sized trees (DBH ≥ 29.2  cm) were tagged and DBH, 
+height, and height to base of live crown were measured. 
+In nested 8-m radius (0.02 ha) plots, DBH of pole-sized 
+trees (9.1 to 29.2  cm DBH) were measured. Height and 
+height to base of live crown were only measured on the 
+first two pole-size trees encountered. Shrub cover was 
+measured using a line intercept method (Canfield 1941). 
+Woody surface fuel mass was measured using the pla -
+nar intercept method, recording 1-, 10-, and 100-h fuels 
+along a 100-m transect as in Brown (1974). Litter and 
+duff depth were measured at six duff pins (large nails 
+pounded into the ground leaving the head flush with 
+the top of the litter) located at 7, 21, 36, 64, 79, and 93 m 
+along the transect. The final measurement before the 
+2021 Antelope fire occurred in 2019 (Fig. 2).
+After the fire, in fall 2021 and spring 2022, trees in 
+LHPIS plots were resampled and data were taken for 
+tree- and plot-level fire severity metrics. At the tree 
+level, each sawtimber- and pole-sized tree was assessed 
+for fire-induced mortality. Trees that had any green nee -
+dles left on them were considered “live. ” Percent crown 
+volume consumed (PCVC) and percent crown volume 
+affected (PCVA; combined scorching and consumption 
+in tree canopy) were assessed using ocular estimates, and 
+minimum and maximum bole char height were measured 
+with a laser rangefinder or measuring tape. When the 
+tree was charred to the top, the tree height was recorded 
+for bole char height. At the plot level, ocular estimates 
+were made for likely total pre-fire shrub cover using hori-
+zontal photographs taken 23  m south of plot center. In 
+three plots where photographs were not available/miss -
+ing, values were imputed using parameters from a simple 
+linear regression between ocular estimates of shrub cover 
+and length of shrub cover on the 100 m transect in 2019. 
+Shrub cover transect values were not used throughout 
+because methods differed from FFS protocols, whereas 
+photos were shot the same way across studies and cap -
+tured a broader view.
+For the FFS study (Fire-only treatment), 10 plots were 
+established per unit at selected points on a 50-m grid for 
+a total of 30 plots. These fire-only plots were 20 × 50  m 
+(0.1 ha) rectangles divided evenly into ten, 10 × 10 m (100 
+ m2) subplots, each including two, 1  m2 quadrats. In the 
+five even-numbered subplots, trees > 10  cm DBH were 
+measured and tagged and shrub cover was visually esti -
+mated. Surface fuel mass was calculated as above using 
+two 20  m transects offset 2  m from the grid point and 
+with small woody fuels (1-, 10-, and 100-h) measured dis-
+tal to plot center. The last pre-fire measurements of FFS 
+plots were made in 2013. Post-fire measurements were 
+taken for trees and shrubs in fall 2021 and spring 2022 as 
+noted above for LHPIS.
+
+PAGE 8
+Page 8 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+Data acquisition and variables
+Time of burning was estimated using fire perimeter data 
+from the National Interagency Fire Center’s file transfer 
+site (FTP , https:// ftp. wildfi  re. gov/), which divided the 
+study area into five roughly 24-h fire progression periods 
+(see Fig.  1). Fire perimeters on FTP are generated from 
+tactical infrared flights flown about once a day (usually 
+at night) for use in fire suppression efforts by the inci -
+dent management team. We error-checked the dates 
+and times on fire perimeters by contacting the infrared 
+interpreter on the incident command team and ensuring 
+that time stamps on perimeters aligned with observa -
+tions on the ground.
+To capture variation in wind, relative humidity, temper-
+ature, and fuel moisture during the five progression peri -
+ods, we calculated burning index using FireFamilyPlus 
+version five and local weather data from the nearby Van 
+Bremmer Remote Automatic Weather Station (RAWS) 
+(Bradshaw & McCormick 2009; Deeming et  al.  1977; 
+Western Regional Climate Center 2022) (Fig.  3). Burning 
+Fig. 3 Fire weather for the days that the Antelope fire burned through the study area. Burning index is shown along with the weather variables 
+that most closely correlate with it: maximum wind gust (Max gust) and relative humidity (RH). Gray shading represents the fire progression periods 
+ending at the flight time indicated
+
+PAGE 9
+Page 9 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+index is a unitless measure of potential fire intensity com-
+bining elements of fire spread and energy release and 
+can also be conceptualized as ten times the predicted 
+flame length (Cohen & Deeming 1985). The Van Brem -
+mer RAWS is 6 km from the closest study plot and 13 km 
+from the furthest study plot, and we believe its data are 
+representative of the weather at the study site. We chose 
+to use the maximum burning index for each time inter -
+val to represent the most extreme weather experienced 
+within that period.
+To capture within-treatment variation in surface and 
+canopy fuels, we calculated canopy bulk density (kg/m 3) 
+and surface fuel mass (kg/m 2) at each plot. We used the 
+Forest Vegetation Simulator web version (release date: 
+September 30th, 2022) to calculate canopy bulk density. 
+We calculated small and coarse woody debris mass from 
+fuel transects as in Brown (1974) using species-specific 
+coefficients weighted by unit-level species composition 
+(Van Wagtendonk et  al. 1996). We calculated fuel bed 
+mass using the linear relationship between litter and duff  
+depth and dry weight from 50 litter and duff samples col -
+lected at GAMA (data not shown) (Van Wagtendonk 
+et al. 1998; Weatherspoon & McIver 2000). Site-specific 
+coefficients were lower than those published previously 
+for Yosemite National Park (Van Wagtendonk et  al. 
+1998) likely due to the comparatively lower productiv -
+ity at GAMA and the presence of pumice particles that 
+become incorporated within the humus layer over time 
+due to their tendency to float during precipitation events. 
+Lastly, because pre-fire data were collected in 2019 and 
+2013 for LHPIS and only in 2013 for FFS, we corrected 
+for accumulation of fuels in Fire-only plots by adding the 
+average plot-level change in fuels between 2013 and 2019 
+from Thin-P-fire plots: a difference of 2.4 kg/m 2 for sur -
+face fuels and 0.0 kg/m3 for canopy bulk density.
+Statistical modeling
+To study how weather impacted the effects of treatment 
+on fire severity, we modeled each of the four tree-level 
+fire severity metrics (mortality, bole char height, PCVC, 
+and PCVA) using the interaction of treatment and burn -
+ing index. To better understand within-treatment vari -
+ation and the relative influence of surface and canopy 
+fuels on different fire severity response variables, we rep -
+licated each model replacing the burning index—treat -
+ment interaction with the interaction of burning index 
+and both surface fuel mass and canopy bulk density. Each 
+model also contained categorical predictors to account 
+for variation in tree size (DBH) and species, which have 
+demonstrated effects on tree-level fire severity metrics 
+(Safford et al. 2012), as well as pre-fire shrub cover, which 
+can contribute to fire activity (Lydersen et al. 2014).
+Fire is a contagious process that may create its own 
+weather, reinforcing activity especially in high severity 
+areas and leading to spatial autocorrelation in the fire 
+severity response (Bradstock et  al. 2010; Peterson et  al. 
+2017). While it is important and increasingly common 
+to account for spatial autocorrelation when modeling 
+fire severity (Prichard et  al. 2020), the spatial term may 
+bias estimates of the coefficients of interest if they are 
+spatially indexed (i.e., weather and treatment/fuels) via a 
+phenomenon known as spatial confounding (Hanks et al. 
+2015; Hodges & Reich 2010). For example, large high 
+severity patches created during a single wind event may 
+be attributed to the spatial closeness of measurements 
+within the patch, thereby reducing the estimated effect 
+of a wind or weather variable. Though spatial confound -
+ing has been recognized and studied for years, no clear 
+solution has been reached. To strike a balance between 
+accounting for the spatial nature of the response and 
+recovering the most accurate estimates of the predictors, 
+we modeled plot geographic coordinates with multivari -
+ate spatial smooths using a relatively low number of basis 
+dimensions (15) (Wood 2017). We selected the number 
+of basis dimensions such that meaningful spatial autocor-
+relation (|Moran’s I|< 0.25) was eliminated from model 
+residuals and large high severity patches coinciding with 
+high wind events were identifiable on the smooth surface 
+(Additional file  1: Figure S1). However, we did not allow 
+smooths to fit small high severity patches more likely 
+caused by tree density and surface fuel differences among 
+treatment units. Because treatments were assigned ran -
+domly to plots with similar attributes, and because treat -
+ments are well-known to change fire behavior within 
+50 m of a treatment boundary (Ritchie et al. 2007; Safford 
+et  al. 2009), we believe that such unit-level differences 
+largely represent a treatment effect.
+We used three different model types for the four fire 
+severity responses in our study. For mortality, treated as 
+a zero or one outcome, we used a Bernoulli likelihood 
+with a logit link function. We modeled both PCVC and 
+PCVA as proportions using fractional logistic regres -
+sion, in which fractional inputs are used in a logistic 
+regression model with Binomial likelihood and logit link. 
+While both PCVA and PCVC are continuous quantities, 
+the binomial response is appropriate here because > 78% 
+of the trees in the study were either fully unaffected or 
+fully affected and the binomial likelihood can accommo -
+date intermediate values. We also conducted analyses of 
+proportions with zero–one-inflated beta models, a rela -
+tively common model type for proportional fire severity 
+data (Saberi et  al. 2022). However, when we compared 
+models using estimated log pointwise predictive density 
+(ELPD)—an approximation of leave-one-out cross vali -
+dation—we found that these complex mixture models 
+
+PAGE 10
+Page 10 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+were not preferred with /Delta1ELPD of − 985 (standard error 
+43) for the PCVA treatment model and − 817 (stand -
+ard error 62) for the PCVC treatment model (Vehtari 
+et al. 2017). We modeled average bole char height with a 
+square root transformation on the response and a Gauss -
+ian likelihood.
+All models were constructed in R version 4.2.2 (R Core 
+Team 2022) using the Bayesian modeling package brms 
+(Bürkner 2017). Models were run using four chains with 
+2000 iterations each and moderately regularizing priors 
+(i.e., Gaussian(0,1) on centered and scaled predictors). 
+We assured adequate sampling by visually assessing 
+trank plots and maintaining Rhat values of 1.01 or below 
+(Bürkner 2018; McElreath 2020). Model fit to sample was 
+evaluated using a series of posterior predictive checks to 
+ensure agreement between a variety of attributes of the 
+focal response variable and model-simulated responses. 
+Contrasts for categorical variables were estimated using 
+the emmeans package (Lenth 2023). Marginal effects for 
+continuous variables were calculated using the tidybayes 
+package (Kay 2020) at the means of continuous predic -
+tors and averaged over the two most numerous species 
+in the study—ponderosa pine and white fir—which make 
+up > 95% of the dataset. To reduce spatial influence for 
+overall predictions, all marginal effects were predicted 
+at the location where the smoothed surface was clos -
+est to zero. Because the majority of study units occupy 
+the northeast and southwest quadrants of the surface, 
+if the point closest to zero was in a data poor quadrant 
+we selected the location next closest to zero and so on 
+until the prediction point fell within one of the data-rich 
+quadrants.
+Results
+While all treatments experienced lower fire severity than 
+controls, reduction in severity was most pronounced 
+for Thin-P-fire (Fig.  4A; Additional file  1: Tables S3-S6). 
+Model-estimated probability of mortality was lower for 
+Thin-P-fire than for Control by 0.60 (95% highest den -
+sity continuous interval [HDCI] = [0.51, 0.69]) (Fig.  4A). 
+Similarly, the estimated fire severity reduction between 
+Thin-P-fire and Control was 7.38 m (6.42, 8.24) for aver -
+age bole char height, 86% (76, 95) for crown volume 
+consumed, and 68% (51,81) for crown volume affected 
+(Fig.  4A). The Thin-P-fire  treatment mean had low esti -
+mated model uncertainty for PCVC because only one 
+tree fully consumed/torched. Across all fire severity 
+response variables, estimates for Thin-BT, Thin-P , and 
+Fire-only treatments were lower than Control and higher 
+than Thin-P-fire.
+Within treatments, fire severity response variables gen-
+erally increased both with increasing pre-fire canopy bulk 
+density and surface fuel loads (Fig. 4B,C; Additional file 1: 
+Tables S7-S10). The exception was PCVC, which was not 
+statistically associated with pre-fire surface fuel loading 
+(Fig.  4C). Predicted marginal fire severity was also con -
+sistently lower for the Thin-P-fire treatment than for the 
+lowest measured values of canopy bulk density or surface 
+fuel mass (Fig.  4), indicating that, for individual trees, 
+being in a unit that received Thin-P-fire treatment was 
+more protective than being in a plot with lower relative 
+pre-fire fuel loading irrespective of the treatment the plot 
+received.
+Though fire severity generally increased with burning 
+index, the shape of this relationship depended on treat -
+ment and the fire severity response variable, and the 
+Thin-P-fire treatment maintained the lowest and most 
+stable fire severity response across burning index (Fig. 5A; 
+Table Additional file  1: Tables S3-S6). Similar to model 
+predictions for treatment main effects, the Control treat -
+ment formed the upper bound of fire severity marginal 
+response for interactions (Fig.  5A). The exception to the 
+trend of increasing severity with burning index occurred 
+in the Thin-P treatment, for which average bole char 
+height, PCVC, and PCVA declined with burning index 
+(respective marginal slopes =  − 0.30 [− 0.43, − 0.18]; − 0.13 
+[− 0.19, − 0.08]; − 0.10 [− 0.18, − 0.04]). For the Fire-only 
+treatment, PCVC also declined with burning index 
+(marginal slope =  − 0.19 [− 0.32, − 0.06]) (Fig. 5A). Any 
+observed decline of fire severity with burning index 
+is unrealistic and we therefore expect that trends in 
+these four cases were due to local factors that were not 
+accounted for in the data such as variations in weather 
+conditions at time scales shorter than the once-daily 
+infrared imaging.
+Plots with lower canopy bulk density had lower fire 
+severity values that were more stable across burning 
+index for all fire severity response variables (Fig.  5B). In 
+other words, the difference in severity between low (15th 
+percentile) and high (85th percentile) canopy bulk den -
+sity plots increased as fire weather became more extreme 
+(higher burning index). For surface fuel mass, fire sever -
+ity generally increased across burning index with the 
+same slope regardless of pre-fire values (Fig.  5C). The 
+one exception to this was PCVA, for which the difference 
+between 15 and 85th percentile surface fuel loads was 
+unimodal across burning index.
+To visualize the shape of the relationship between 
+fuel treatment effectiveness and fire weather, we plot -
+ted the differences in model predictions between the 
+most effective treatment (Thin-P-fire) and the Control 
+(Fig.  6). We found unimodal or plateaued relationships 
+between fire weather and fuel treatment effectiveness 
+for tree mortality and PCVA, meaning that fuel treat -
+ment effectiveness was greatest at moderate to high-
+moderate burning index (Fig.  6). For bole char height 
+
+PAGE 11
+Page 11 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+and PCVC, we found plateaued to increasing relation -
+ships between fuel treatment effectiveness and fire 
+weather, meaning that fuel treatment effectiveness con -
+tinued to improve as burning index increased (Fig. 6 ).
+We also found strong associations between fire severity 
+metrics and non-focal predictors. Across all models, trees 
+in plots with higher pre-fire shrub cover experienced 
+reduced fire severity (Additional file  1:  Tables S3-S10). 
+Fig. 4 Model-estimated marginal effects for A treatment, B canopy bulk density, and C surface fuel mass for four fire severity metrics: mortality, 
+average bole char height, percent crown volume consumed, and percent crown volume affected. Dots and horizontal lines indicate predicted 
+means. Vertical lines and shading represent 95% credible intervals for the mean. In A, letters indicate that 95% credible intervals for differences 
+between treatment groups do not cross zero. In B and C, solid lines indicate that the 95% credible interval for the coefficient does not cross zero
+
+PAGE 12
+Page 12 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+Larger trees were less likely to die and had reduced per -
+centages of crown volume consumed and affected (Addi -
+tional file  1: Tables S3, S5, S6, and S8-S10). However, 
+because larger trees were also taller, they had greater 
+absolute bole char heights (Additional file  1: Tables S4 
+and S7). Similarly, white fir (a species with a lower rela -
+tive DBH in this dataset) had lower estimated bole char 
+height than ponderosa pine in both models, and than 
+sugar pine and incense cedar in the treatment and pre-
+fire fuel models respectively (Additional file  1: Tables 
+S4 and S6). However, in both treatment and pre-fire 
+fuel models, white fir had greater estimated mortality 
+and PCVA than ponderosa pine and incense cedar, and 
+sugar pine had greater mortality than ponderosa pine 
+(Additional file  1: Tables S3, S6, S7, and S10). There was 
+no evidence for a difference in PCVC among species 
+(Additional file 1: Tables S3-S10).
+Discussion
+Although there have been many previous retrospec -
+tive studies of burn severity, this is the first large-scale 
+study of randomized and replicated thinning and pre -
+scribed fire treatments that we are aware of to burn 
+almost entirely in a wildfire. We found that fuel treat -
+ments reduced tree mortality, bole char height, crown 
+consumption, and crown scorching despite consider -
+able time since treatment—20  years since mechanical 
+thinning and 10  years since the last prescribed fire. In 
+Fig. 5 Model-estimated marginal effects for the interaction between burning index and A treatment, B canopy bulk density, and C surface fuel 
+mass shown for four fire severity metrics: mortality, average bole char height, percent crown volume consumed, and percent crown volume 
+affected. Lines and shading indicate predicted means and 95% credible intervals. Solid lines indicate that 95% credible intervals for interaction 
+coefficient do not cross zero
+
+PAGE 13
+Page 13 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+alignment with other studies (Fulé et  al. 2012; Kalies & 
+Yocom Kent 2016), we found that the combination of 
+crown fuel reduction (thinning) and surface fuel reduc -
+tion (prescribed burning) was by far the most effec -
+tive treatment (Fig.  7). Further, absolute pre-fire canopy 
+fuels were positively associated with all four fire severity 
+response variables and pre-fire surface fuels were posi -
+tively associated all fire severity response variables except 
+crown consumption. Plots with lower pre-fire canopy 
+fuels and those in units that received both mechanical 
+thinning and prescribed fire also conferred greater sta -
+bility and lower fire severity under extreme weather. Our 
+findings are relevant in part because they provide strong 
+empirical evidence that mechanical thinning of midstory 
+and co-dominant trees mitigates fire behavior and result-
+ing fire severity.
+Despite numerous studies documenting the amelio -
+rative effects of fuel treatments on subsequent wildfire 
+severity, opponents of forest fuel management frequently 
+cite papers highlighting the influence of thinning on 
+within-stand microclimate (e.g., Banerjee et  al. 2020; 
+Countryman 1956) as evidence of the potential for fuel 
+treatments to increase fire hazard. While reducing stand 
+density can lead to greater surface fuel drying (Kane 
+2021; Whitehead et  al. 2006) and higher surface wind 
+speeds (Bigelow & North 2012; Russell et  al. 2018), our 
+data provide clear evidence that the suppressing effect 
+of crown fuel reduction far outweighed any enhanc -
+ing effect of increased drying or higher windspeeds on 
+fire behavior. While outcomes are specific to forest type, 
+treatment type, and treatment execution (i.e., whether 
+there is abundant slash production), this finding is in line 
+with other reports (Weatherspoon et al. 1996, Agee and 
+Skinner 2005) as well as the numerous documentations 
+of reduced wildfire severity from adjacent treated and 
+untreated areas (e.g., Kalies and Yocum Kent 2016). Fur-
+ther, studies from forests where climate consists of long 
+precipitation-free periods have generally not shown any 
+Fig. 6 Fuel treatment effectiveness across burning index. Fuel treatment effectiveness is shown here as the differences from Fig. 5 between Control 
+and Thin-P-Fire for four fire severity response variables: tree mortality probability, average bole char height (BCH), percent crown volume consumed 
+(PCVC), and percent crown volume affected (PCVA)
+Fig. 7 Photo showing fire severity outcomes for one untreated Control unit (to the left of the road) and one adjacent Thin-P-fire unit (to the right 
+of the road). Besides reduction in severity due to lower surface and canopy fuel loads, slower fire spread rate likely also resulted in a change in fire 
+spread direction, from a head fire in the control to a flanking fire in the treated area. Additional photos of representative treatment outcomes are 
+in Additional file 1: Figure S2
+
+PAGE 14
+Page 14 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+significant difference in woody fuel moisture between 
+thinned and unthinned stands during wildfire season, 
+when fuel moistures are at their seasonal lows (Bigelow 
+& North 2012; Estes et  al. 2012; Faiella & Bailey 2007). 
+Overall, our results support findings that forests with 
+much lower tree densities and surface fuel loadings than 
+those in contemporary stands will be more resilient 
+under a warming and drying climate (North et al. 2022; 
+Stephens et al. 2020).
+One proposed benchmark for operational resilience 
+in modern forests is the historical range of variation for 
+forest structure and fuels (North et al. 2022), which was 
+likely achieved by many of the treatments in this study. 
+Pre-Antelope Fire densities in thinned stands (98–120 
+trees  ha−1) were within the estimated historical range of 
+variation for dry mixed conifer forest for trees > 10  cm 
+(65–315 trees  ha−1) (Knapp et  al. 2013; Safford & Ste -
+vens 2017; Scholl & Taylor 2006; Taylor 2004). Canopy 
+bulk density in all thinning treatments was about half of 
+the threshold of 0.1 kg   m−3 thought to predispose stands 
+to a risk of active crown fire behavior (Agee 1996; Gra-
+ham et  al. 1999). Prescribed fire effectively consumes 
+long dead and down material (Knapp et al. 2005), so after 
+two rounds of burning at intervals similar to the 11-year 
+historical fire return, and 10–11 years having transpired 
+since the last burn, surface fuel loading in the Thin-P-
+Fire treatment at the time of the Antelope Fire was likely 
+close to or within the historical range of variation. Sur -
+face fuels in the Fire-only treatment likely exceeded his -
+torical values on account of the ingrowth trees killed by 
+the first prescribed burn transitioning to fuel. Thin-only 
+treatments, on the other hand, had been without fire for 
+over a century and surface fuel loading values likely sub -
+stantially exceeded historical values.
+Fuel treatment effectiveness is generally assumed to 
+decline with time after treatment and 20 years is consid -
+ered close to the end of the practical life of a mechani -
+cal thin or prescribed burn (Hood et  al. 2020; Prichard 
+et al. 2017; Stephens et al. 2012). Studies of the self-lim -
+iting effects of wildfires also find 10 to 20 years to be an 
+approximate cutoff beyond which previous fire perime -
+ters fail to limit future wildfire spread (Collins et al. 2009; 
+Parks et al. 2013, 2015). Even so, we showed that 20-year-
+old thin-only treatments substantially reduced bole char 
+height and crown consumption compared to controls, 
+providing evidence that even older thinning treatments 
+can help to reduce crown fire behavior or prevent exces -
+sive fire severity (Drury 2019). Treatment longevity is 
+related to site productivity, and in many forests—includ -
+ing those found at this study site—it likely takes longer 
+than 20  years for the seedlings and saplings remaining 
+or establishing after treatment to become canopy fuels 
+(Ritchie 2020). Thus, crown fire potential is reduced 
+until the new cohort reaches the canopy, contributing to 
+increasing canopy bulk density and decreasing canopy 
+base height (Agee & Skinner 2005; Van Wagner 1977). 
+Fire intensity, on the other hand, is thought to be largely 
+governed by surface fuel loads (Keane 2015). Greater 
+mass of litter, duff, and dead and downed fuels are cor -
+related with higher overall flame lengths and energy 
+output (Agee & Skinner 2005; Rothermel 1972), which 
+increase the probability of non-consumptive crown dam -
+age, or scorching (Varner et  al. 2021). Correspondingly, 
+we found that thinning alone mainly changed the pro -
+portion of the crown effect involving consumption or 
+torching, but did not change total crown volume affected 
+(combined volume scorched and consumed) compared 
+to controls. Only treatments that included prescribed 
+fire reduced total crown loss. Our results confirm long-
+standing theoretical relationships (Rothermel 1972; Van 
+Wagner 1977) and provide empirical evidence that in 
+wildfires, canopy fuels are more strongly associated with 
+canopy consumption/torching and surface fuel loads are 
+more strongly associated with crown scorch.
+Surface fuel reduction is essential to limiting the com -
+bined crown volume scorched and consumed (Prich -
+ard et al. 2020; Raymond & Peterson 2005; Safford et al. 
+2009), which is the best predictor of tree mortality in 
+gymnosperms (Barker et  al. 2022; Cansler et  al. 2020). 
+While all treatments reduced tree mortality over the con-
+trols, we found the lowest mortality rates in combined 
+thinning and prescribed fire treatment, followed by the 
+fire-only treatment. The larger percentage of crown vol -
+ume consumed and greater bole char heights for the Fire-
+only treatment suggests that it experienced more intense 
+fire behavior, on average, than the other treatments. Two 
+cycles of prescribed burning alone did not substantially 
+thin the stand or reduce canopy bulk density (Fig.  2), 
+which may help explain this result. Inadequate density 
+and canopy fuel reduction is typical for prescribed burns 
+conducted under milder burning conditions and in long-
+fire suppressed stands where many trees have reached 
+fire-resistant sizes (Roccaforte et al. 2015; Schmidt et al. 
+2006). Furthermore, any trees killed by fire then fall to 
+the ground and become fuel (Agee and Skinner 2005), 
+which may have offset some of the immediate fuel reduc -
+tion benefits of prescribed burning. Unless more stand 
+thinning occurs with subsequent burns and the fire-killed 
+trees are consumed, resilience to these more challenging 
+wildfire conditions may be difficult to achieve.
+Our tree mortality findings could change over time if 
+tree death is delayed. Trees in our study were deemed 
+“live” if they had any green needles and a substantial pro-
+portion, especially in treatments that did not include pre-
+scribed fire, were heavily scorched in the Antelope Fire 
+with only a small amount of crown remaining green. We 
+
+PAGE 15
+Page 15 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+assessed whether delayed mortality is likely to change the 
+significance of differences in tree mortality among treat -
+ments by re-defining live trees as those with 25% or more 
+green crown and re-running models. Though not all trees 
+with over 75% crown volume affected will die (Thies et al. 
+2008), we found that relaxing the definition of a dead tree 
+eliminated the difference in mortality between the con -
+trol and the pine emphasis thin treatment, but not the 
+difference in mortality between the control and the thin 
+that emphasized large trees. This result highlights the 
+importance of retaining the largest most fire-resistant 
+trees in forest restoration and wildfire hazard treatments 
+if the goal is forest persistence.
+In addition to having the lowest post-fire severity 
+across metrics, the treatment that included both thin -
+ning and burning and plots with low pre-fire canopy bulk 
+density were the most stable, sustaining fuel treatment 
+effectiveness across the fire weather extremes sampled 
+here. Our finding is in alignment with other published 
+literature reporting sustained fuel treatment effective -
+ness under severe fire weather (Prichard & Kennedy 
+2014). Further, where the interaction between weather 
+and fuel treatment has been tested, there is evidence 
+that fuel treatment effectiveness may even increase with 
+more extreme fire weather (Povak et  al. 2020; Prich -
+ard et  al. 2020; Safford et  al. 2012). Safford et  al. (2012) 
+reported that the difference in mortality between treated 
+and untreated stands increased with decreasing 10-h 
+fuel moisture across 12 fires in dry mixed conifer forest 
+in California. Using regression-tree analysis on remotely 
+sensed fire severity data for single large fires, Prichard 
+et al. (2020) and Povak et al. (2020) discovered stronger 
+differences between treated and untreated areas under 
+more extreme (even plume-dominated) weather, though 
+only where variable importance was high. In contrast, 
+other studies find little to no difference in fire severity 
+between treated and untreated stands under the most 
+severe fire weather conditions (Lydersen et al. 2014; Gra -
+ham et al.  2003). Thus, existing literature contains exam-
+ples of both decline and improvement of fuel treatment 
+effectiveness under extreme fire weather.
+Our results provide a possible explanation for such 
+differences in the relationship between weather and 
+fuel treatment effectiveness by demonstrating that this 
+relationship depends on the tree-level fire severity met -
+ric used. For tree mortality and percent crown vol -
+ume affected, we found that top-down effects began to 
+overwhelm the difference between the most effective 
+treatment and the control under extreme fire weather 
+conditions. However, for both bole char height and per -
+cent crown consumption, treatment effects grew larger 
+as fire weather became more extreme. That fire sever -
+ity metrics associated with tree mortality were more 
+sensitive to fire weather than those associated with fire 
+behavior has broad implications for how we define both 
+fire severity and fuel treatment effectiveness (Morgan 
+et  al. 2014). Furthermore, such subtleties may not be 
+captured well by commonly used fire severity metrics 
+derived from 30  m resolution Landsat imagery, which 
+are not directly associated with tree-level measures of 
+fire severity (Lydersen et  al. 2016; Miller et  al. 2009). 
+Despite more severe absolute outcomes under extreme 
+weather, our study builds on existing evidence and helps 
+alleviate concerns that forest health and wildfire mitiga -
+tion treatments may not be worthwhile under expected 
+future weather conditions (Abatzoglou et  al. 2021; Box -
+all 2019). On the other end of the fire weather spectrum, 
+our results illustrate that under milder burning condi -
+tions, positive wildfire outcomes can be achieved in both 
+treated and untreated stands (Boisramé et al. 2017; Huff -
+man et al. 2020). Overall, we emphasize the importance 
+of the fire severity response metric used to explore treat -
+ment-weather interactions.
+Our ability to use treatment-weather interactions to 
+identify weather thresholds for desired treatment effects 
+was limited by coarse-scale data for time of burning. 
+Fire progression maps on larger fires are typically based 
+on daily infrared flights, often flown at night. While the 
+majority of area within a fire progression period is likely 
+to burn at the time of day when the most severe weather 
+occurs, ~ 24-h fire progression maps still force a single 
+value for weather variables during a burn period that 
+experienced a range of conditions. Furthermore, there is 
+typically more variation in temperature, relative humidity, 
+and wind between night and day than between maximum 
+values from 1 day to the next. Our selection of maximum 
+burning index to characterize the entire period means 
+that some plots are associated with more severe weather 
+values than they experienced at the time of burning. The 
+majority of the study plots also fell within four burn win -
+dows, increasing the possibility of spurious associations. 
+For example, if a substantial number of the study plots 
+assigned to the burn period with the highest burning 
+index actually burned under milder conditions at night 
+or in the early morning, it might produce an association 
+between high burning index and low fire severity. Such 
+issues are likely driving unrealistic results in which several 
+fire severity variables for some treatments declined with 
+burning index, which does not align with our understand-
+ing of the drivers of fire behavior (Finney 1998). Sub-daily 
+progression maps that provide information about what 
+time of day plots burned would allow for a deeper under -
+standing of treatment-weather interactions.
+Shrubs are known for burning with high intensity and 
+contributing greater severity effects under extreme fire 
+weather conditions (Coppoletta et  al. 2016; Lydersen 
+
+PAGE 16
+Page 16 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+et al. 2014). However, we found that high pre-fire shrub 
+cover was strongly associated with lower fire severity 
+outcomes across all models. The three most common 
+shrub species in the study area—snowbrush (Ceanothus 
+velutinous), greenleaf manzanita (Arctostaphylos pat -
+ula), and Mahala mat (Ceanothus prostratus)—are shade 
+intolerant and have a fire-stimulated seedbank (Conard 
+et  al. 1985; Keeley 1987). Pre-fire shrub abundance was 
+by far the highest in the Thin-P-Fire treatment (Fig.  2), 
+where both a suitable light environment and seed scari -
+fication by fire occurred. Thin-only treatments, Fire-only, 
+and Control treatments contained far less pre-fire shrub 
+cover due to the lack of either higher light conditions, 
+stimulation of shrub seedbank by fire, or both (Fig.  2). 
+The ameliorative impact of shrub cover on fire severity in 
+this study may be due to higher live fuel moisture levels 
+and generally low rates of litter fall under shrubs, which 
+might have impeded fire’s spread. Prostrate ceanothus, in 
+particular, typically does not burn (Ryan et al. 2013), and 
+other common species such as snowbrush and greenleaf 
+manzanita often have a dampening effect on fire behav -
+ior under milder fire weather conditions (Jaffe et al. 2021; 
+North et  al. 2019), mainly contributing to higher fire 
+intensity and severity when live fuel moistures are low 
+(Agee et al. 2002) and/or winds are strong. Alternatively, 
+it may be that plots with higher shrub cover were more 
+likely to be in the Thin-P-fire treatment, which also had 
+the lowest overall pre-fire surface and canopy fuels.
+The same attributes of shrubs that possibly contributed 
+to reduced fire severity under wildfire conditions in this 
+study may make prescribed burning more challenging in 
+the future. Live shrubs and surface fuels associated with 
+shrubs do not burn readily in the higher moisture condi -
+tions typical of prescribed burns conducted before and 
+after the main wildfire season (Baeza et al. 2002; Jaffe et al. 
+2021; Kupfer et  al. 2020). Thus, increasing shrub cover 
+with treatment represents a paradox for managers. Open-
+ing stands initially facilitates the safe reintroduction of 
+fire, but also may promote vegetation that limits the effec-
+tiveness of future prescribed fire. Future prescribed burns 
+in such stands may need to be conducted under drier 
+fuel moisture conditions for fire to spread, reduce fuels, 
+and keep shrub cover in check. The difference in shrub 
+response between the thinned and unthinned treatments 
+also suggests that more gradual or progressive opening of 
+the canopy may allay the shrub response by stimulating 
+germination under shadier conditions that are less ame -
+nable to shrub growth (Kern et al. 2013; Matthews 1991). 
+Burning prior to thinning has also been proposed and 
+tested (Weatherspoon 1988), but the added challenges 
+of reintroducing fire to unthinned and unnaturally dense 
+stands as well as the high number of seeds in the seedbank 
+(Knapp et al. 2012) may make this approach impractical.
+Conclusions and implications for management
+Weight of evidence has long supported the effectiveness 
+of well-implemented fuel treatments at reducing fire 
+severity compared to untreated areas and our results pro-
+vide the first such evidence that we are aware of from a 
+large-scale experiment with randomized and replicated 
+treatment units. We show that, even 20 years after thin -
+ning, lower canopy bulk density limits crown fire behav -
+ior in thin-only treatments. Once fire moves into the 
+crown and trees torch, ember production contributes to 
+extreme fire behavior including high spread rates. Thus, 
+there may be some longer-term benefit of thinning alone 
+on moderating fire behavior, even if it does not reduce 
+the proportion of trees dying. However, if the goal is for -
+est persistence in addition to alteration of fire behavior, 
+treatments that include burning are the most effective for 
+limiting crown scorch and tree mortality. Post-fire mor -
+tality rates may also be lower in treatments that specifi -
+cally target the retention of large trees.
+Despite coarse data regarding time of burning, we 
+show that differences in bole char height and percent -
+age of crown volume consumed between untreated and 
+treated stands increased with more extreme fire weather. 
+For other variables, maximum benefit of treatment was 
+found under moderate burning conditions (tree mortal -
+ity proportion), or the relationship plateaued with great -
+est benefit under moderate to extreme burning conditions 
+(percentage of crown volume affected). Under milder 
+burning conditions (without high winds and/or at higher 
+relative humidity), fire effects were largely beneficial in all 
+treatments, including the untreated controls. If positive 
+outcomes are possible for first-entry fire in mid-summer, 
+this suggests that we are potentially missing significant 
+opportunities for burning under less than extreme con -
+ditions at night or during the shoulder seasons. Tak -
+ing advantage of such times might be necessary to meet 
+aggressive new state and federal goals such as treating 1 
+million acres a year in California (Forest Management 
+Taskforce 2021; Swain et al. 2023). Overall, our combined 
+results represent overwhelming empirical support for 
+the use of fuel treatments, such as those studied here, to 
+reduce the severity of subsequent wildfire and maintain 
+lower fire severity. Further, our finding that the benefits of 
+fuel treatments are not eliminated by severe fire weather 
+validates the continued use of thinning and burning treat-
+ments for forest restoration and enhancing resilience to 
+wildfire even with changing climate and fire regimes.
+Abbreviations
+GAMA  Goosenest Adaptive Management Area
+FFS  Fire and Fire Surrogate Study
+LHPIS  Little Horse Peak Interdisciplinary Study
+DBH  Diameter at breast height (1.37 m)
+PCVA  Percent crown volume affected
+PCVC  Percent crown volume consumed
+
+PAGE 17
+Page 17 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+Supplementary Information
+The online version contains supplementary material available at https:// doi. 
+org/ 10. 1186/ s42408- 023- 00241-z.
+Additional file 1: Figure S1. Smooth surfaces representing underlying 
+spatial autocorrelation in fire severity for models in Tables S1-S8. Num-
+bered treatment units displayed for reference. Figure S2. Representative 
+photos of treatments after the 2021 Antelope fire for Control (a), Thin-BT 
+(b), Thin-P (c), Fire-only (d), and Thin-P-fire (e). Fire severity outcomes were 
+extremely variable within treatments and photos were selected such that 
+ocular estimates of percent crown volume affected matched the mean 
+observed value for each treatment type as closely as possible: 0.81 for 
+Control, 0.66 for Thin-BT, 0.88 for Thin-P , 0.74 for Fire-only, and 0.30 for 
+Thin-P-fire. Note that most of crown volume affected was consumed for 
+controls and scorched for treated areas. Table S1. Prefire tree density and 
+basal area median and interquartile range shown by treatment and tree 
+size. Table S2. Prefire surface fuel mass, canopy bulk density, and shrub 
+cover median and interquartile range shown by treatment. Table S3. 
+Summary for mortality model with treatment effects. Table S4. Summary 
+for bole char height model with treatment effects. Table S5. Summary 
+for model of percent crown volume consumed with treatment effects. 
+Table S6. Summary for model of percent crown volume affected with 
+treatment effects. Table S7. Summary for mortality model with prefire 
+fuels. Table S8. Summary for bole char height model with prefire fuels. 
+Table S9. Summary for model of percent crown volume consumed with 
+prefire fuels. Table S10. Summary for model of percent crown volume 
+affected with prefire fuels.
+Acknowledgements
+We thank the Klamath National Forest for their efforts installing the study 
+units and maintaining them for more than 20 years, and numerous individu-
+als who helped us take advantage of this unique opportunity by assisting 
+with the post-wildfire data collection, including Celeste Abbott, Ben Arm-
+strong, Joseph Birch, Rosemary Bloodnick, Bob Carlson, Joey Chong, Bonni 
+Corcoran, Kaelyn Finley, Drew Gilberti, Ethan Hammett, Elizabeth Hinojosa, 
+Chris Looney, Keli McElroy, Claire Monahan, Virginia Price, Kaitlyn Toledo, and 
+Katherine Wood.
+Authors’ contributions
+EEK and MWR participated in design of existing experiments at GAMA. EGB, 
+EEK, and SAD conceived of study goals and questions. EGB, EEK, MWR, and WB 
+consulted on and performed analysis. EGB wrote the majority of the manu-
+script and all authors contributed substantially to revisions.
+Funding
+Funding for post-wildfire measurements was supported by the California 
+Department of Forestry and Fire Protection (Grant number 8GG19804) as part 
+of the California Climate Investments Program and by the USDA Forest Service 
+Pacific Southwest Research Station. Post-treatment but pre-wildfire data col-
+lection was funded, in part, by the National Fire Plan and the USDA/DOI Joint 
+Fire Science Program (National Fire and Fire Surrogate Study).
+Availability of data and materials
+The data used to draw conclusions in this paper are currently in use by the 
+authors and will be published in their entirety simultaneous with the final in-
+progress publication. Until that time, the data may be accessed upon request 
+from the corresponding author.
+Declarations
+Ethics approval and consent to participate
+Not applicable.
+Consent for publication
+Not applicable.
+Competing interests
+The authors declare that they have no competing interests.
+Author details
+1 Pacific Southwest Research Station, USDA Forest Service, Redding, CA 96006, 
+USA. 2 Oak Ridge Institute for Science and Education, Oak Ridge, TN 37831, 
+USA. 3 Data Lab, University of California, Davis, CA 95616, USA. 
+Received: 22 August 2023   Accepted: 14 December 2023
+References
+Abatzoglou, J.T., and A.P . Williams. 2016. Impact of anthropogenic climate 
+change on wildfire across western US forests. Proceedings of the 
+National Academy of Sciences of the United States of America 113 (42): 
+11770–11775. https:// doi. org/ 10. 1073/ pnas. 16071 71113.
+Abatzoglou, J.T., C.A. Kolden, A.P . Williams, M. Sadegh, J.K. Balch, and A. Hall. 
+2023. Downslope wind-driven fires in the Western United States. Earth’s 
+Future 11 (5): e2022EF003471. https:// doi. org/ 10. 1029/ 2022E F0034 71.
+Abatzoglou, J. T., Battisti, D. S., Williams, A. P ., Hansen, W. D., Harvey, B. J., and 
+Kolden, C. A. 2021. Projected increases in western US forest fire despite 
+growing fuel constraints. Communications Earth & Environment. 2(1). 
+https:// doi. org/ 10. 1038/ s43247- 021- 00299-0
+Agee, J.K., and C.N. Skinner. 2005. Basic principles of forest fuel reduction treat-
+ments. Forest Ecology and Management 211 (1): 83–96. https:// doi. org/ 
+10. 1016/j. foreco. 2005. 01. 034.
+Agee, J.K., C.S. Wright, N. Williamson, and M.H. Huff. 2002. Foliar moisture 
+content of Pacific Northwest vegetation and its relation to wildland fire 
+behavior. Forest Ecology and Management. 167: 57–66 https:// www. fs. 
+usda. gov/ resea rch/ trees earch/ 20082.
+Agee, J. K. 1994. Eastside forest ecosystem health assessment: fire and weather 
+disturbances in terrestrial ecosystems of the eastern cascades. General 
+technical report PNW-GTR-319. Portland: U.S. Department of Agricul-
+ture, Forest Service, Pacific Northwest Research Station.
+Agee, J. K. 1996. The influence of forest structure on fire behavior. Pages 52-68 
+in Proceedings, 17th Forest Vegetation Management Conference, Red-
+ding, California.
+Baeza, M.J., M. De Luís, J. Raventós, and A. Escarré. 2002. Factors influencing fire 
+behaviour in shrublands of different stand ages and the implications for 
+using prescribed burning to reduce wildfire risk. Journal of Environmental 
+Management 65 (2): 199–208. https:// doi. org/ 10. 1006/ jema. 2002. 0545.
+Banerjee, T., W. Heilman, S. Goodrick, J.K. Hiers, and R. Linn. 2020. Effects of can-
+opy midstory management and fuel moisture on wildfire behavior. Sci-
+entific Reports 10: 17312. https:// doi. org/ 10. 1038/ s41598- 020- 74338-9.
+Barker, J.S., A.N. Gray, and J.S. Fried. 2022. The effects of crown scorch on post-
+fire delayed mortality are modified by drought exposure in California 
+(USA). Fire 5 (1): 1. https:// doi. org/ 10. 3390/ fire5 010021.
+Barrett, J. W. 1978. Height growth and site index curves for managed, even-
+aged stands of ponderosa pine in the Pacific Northwest. Research 
+paper PNW-232. Portland: U.S. Department of agriculture, forest service, 
+pacific Northwest forest and range experiment station. https:// doi. org/ 
+10. 5962/ bhl. title. 94197.
+Bigelow, S.W., and M.P . North. 2012. Microclimate effects of fuels-reduction 
+and group-selection silviculture: implications for fire behavior in Sierran 
+mixed-conifer forests. Forest Ecology and Management 264: 51–59. 
+https:// doi. org/ 10. 1016/j. foreco. 2011. 09. 031.
+Boisramé, G., S. Thompson, B. Collins, and S. Stephens. 2017. Managed wildfire 
+effects on forest resilience and water in the sierra Nevada. Ecosystems 
+20 (4): 717–732. https:// doi. org/ 10. 1007/ s10021- 016- 0048-1.
+Boxall, B. 2019. California is spending $32 million on a fire prevention strategy 
+that doesn’t work in high winds. Los Angeles Times. https:// www. latim es. 
+com/ proje cts/ wildfi  re- calif ornia- fuel- breaks- newsom- parad ise/
+Bradshaw, L. S., & McCormick, E. 2009. FireFamily Plus user’s guide, version 4.0 (p. 
+282). USDA Forest Service, Fire and Aviation Management.
+Bradstock, R.A., K.A. Hammill, L. Collins, and O. Price. 2010. Effects of weather, 
+fuel and terrain on fire severity in topographically diverse landscapes of 
+South-Eastern Australia. Landscape Ecology 25 (4): 607–619. https:// doi. 
+org/ 10. 1007/ s10980- 009- 9443-8.
+Brodie, E.G., E.E. Knapp, A.M. Latimer, H.D. Safford, M. Vossmer, and S.M. Bisbing. 
+2023. The century-long shadow of fire exclusion: historical data reveal 
+early and lasting effects of fire regime change on contemporary forest 
+
+PAGE 18
+Page 18 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+composition. Forest Ecology and Management 539: 121011. https:// doi. 
+org/ 10. 1016/j. foreco. 2023. 121011.
+Brown, J. K. 1974. Handbook for inventorying downed woody material. 
+General technical report INT-16. Ogden: U.S. Department of agriculture, 
+Forest Service, Intermountain Forest and Range Experiment Station.
+Bürkner, P .C. 2017. brms: An R package for Bayesian multilevel models using 
+Stan. Journal of Statistical Software 80 (1): 1–28. https:// doi. org/ 10. 
+18637/ jss. v080. i01.
+Bürkner, P .C. 2018. Advanced Bayesian multilevel modeling with the R package 
+brms. R Journal 10 (1): 395–411. https:// doi. org/ 10. 32614/ rj- 2018- 017.
+Byram, G. M. 1959. Combustion of forest fuels. In: Forest fire: control and use 
+(1st ed., pp. 61–89). McGraw-Hill.
+Canfield, R.H. 1941. Application of the line interception method in sampling 
+range vegetation. Journal of Forestry 39 (4): 388–394. https:// doi. org/ 10. 
+1093/ jof/ 39.4. 388.
+Cansler, C.A., S.M. Hood, P .J. van Mantgem, and J.M. Varner. 2020. A large data-
+base supports the use of simple models of post-fire tree mortality for 
+thick-barked conifers, with less support for other species. Fire Ecology 16 
+(1): 25. https:// doi. org/ 10. 1186/ s42408- 020- 00082-0.
+Western Regional Climate Center. (2022). Van Bremmer RAWS station. https:// 
+wrcc. dri. edu
+Christie, A.P ., T. Amano, P .A. Martin, G.E. Shackelford, B.I. Simmons, and W.J. 
+Sutherland. 2019. Simple study designs in ecology produce inaccurate 
+estimates of biodiversity responses. Journal of Applied Ecology 56 (12): 
+2742–2754. https:// doi. org/ 10. 1111/ 1365- 2664. 13499.
+Cohen, J. D., and J. E. Deeming. 1985. The national fire-danger rating system: 
+Basic equations. General technical report PSW-GTR-82. Berkeley: U.S. 
+Department of Agriculture, Forest Service, Pacific Southwest Forest and 
+Range Experiment Station. https:// doi. org/ 10. 2737/ PSW- GTR- 82.
+Collins, B.M., J.D. Miller, A.E. Thode, M. Kelly, J.W. van Wagtendonk, and S.L. 
+Stephens. 2009. Interactions among wildland fires in a long-established 
+sierra Nevada natural fire area. Ecosystems 12 (1): 114–128. https:// doi. 
+org/ 10. 1007/ s10021- 008- 9211-7.
+Conard, S. G., A. E. Jaramillo, K. Cromack, and S. Rose. 1985. The role of the 
+genus Ceanothus in western forest ecosystems. Report of a workshop 
+held Nov. 22–24, 1982, Corvallis,OR. General Technical Report PNW-
+GTR-182. Portland: USDA Forest Service, Pacific Northwest Research 
+Station. https:// www. fs. usda. gov/ pnw/ pubs/ pnw_ gtr182. pdf.
+Coppoletta, M., K.E. Merriam, and B.M. Collins. 2016. Post-fire vegetation and 
+fuel development influences fire severity patterns in reburns. Ecological 
+Applications 26 (3): 686–699. https:// doi. org/ 10. 1890/ 15- 0225.
+Countryman, C. M. 1956. Old growth conversion also converts fire climate. Fire 
+Control Notes 17 (4): 15–19.
+Crawford, J., S. Mensing, F. Lake, C. Skinner, and S. Zimmerman. 2015. Late 
+Holocene fire and vegetation reconstruction from the western Klamath 
+Mountains, California: A multidisciplinary approach for examining 
+potential human land-use impacts. The Holocene 25: 1341–1357.
+Deeming, J. E. , R. E. Burgan, and J. D. Cohen. 1977. The National fire-danger 
+rating system - 1978. Gen. Tech. Rep. INT-GTR-39, Ogden: U.S. Depart-
+ment of Agriculture, Forest Service, Intermountain Forest and Range 
+Experiment Station. https:// www. fs. usda. gov/ rm/ pubs_ series/ int/ gtr/ 
+int_ gtr039. pdf.
+Drury, S.A. 2019. Observed versus predicted fire behavior in an Alaskan black 
+spruce forest ecosystem: an experimental fire case study. Fire Ecology 15 
+(1): 35. https:// doi. org/ 10. 1186/ s42408- 019- 0053-9.
+Estes, B.L., E.E. Knapp, C.N. Skinner, F.C.C. Uzoh, B.L. Estes, E.E. Knapp, C.N. Skin-
+ner, and F.C.C. Uzoh. 2012. Seasonal variation in surface fuel moisture 
+between unthinned and thinned mixed conifer forest, northern Califor-
+nia, USA. International Journal of Wildland Fire 21 (4): 428–435. https:// 
+doi. org/ 10. 1071/ WF110 56.
+Faiella, S.M., and J.D. Bailey. 2007. Fluctuations in fuel moisture across restora-
+tion treatments in semi-arid ponderosa pine forests of northern Ari-
+zona, USA. International Journal of Wildland Fire 16 (1): 119–127. https:// 
+doi. org/ 10. 1071/ WF060 18.
+Finney, M.A. 2001. Design of regular landscape fuel treatment patterns for 
+modifying fire growth and behavior. Forest Science 47 (2): 219–228. 
+https:// doi. org/ 10. 1093/ fores tscie nce/ 47.2. 219.
+Finney, M. A. 1998. FARSITE: Fire Area Simulator—Model Development and 
+Evaluation. Research Paper RMRS-RP-4. Ogden: U.S. Department of 
+Agriculture, Forest Service, Rocky Mountain Research Station. https:// 
+doi. org/ 10. 2737/ RMRS- RP-4.
+Forest Management Taskforce. 2021. California’s Wildfire and Forest Resilience 
+Action Plan (p. 46). California Department of Water Resources, Public 
+Affairs Office, Creative Services Branch. https:// fmtf. fire. ca. gov/
+Fry, D.L., and S.L. Stephens. 2006. Influence of humans and climate on the fire 
+history of a ponderosa pine-mixed conifer forest in the southeastern 
+Klamath Mountains California. Forest Ecology and Management 223 
+(1–3): 428–438. https:// doi. org/ 10. 1016/j. foreco. 2005. 12. 021.
+Fulé, P .Z., J.E. Crouse, J.P . Roccaforte, and E.L. Kalies. 2012. Do thinning and/
+or burning treatments in western USA ponderosa or Jeffrey pine-
+dominated forests help restore natural fire behavior? Forest Ecology and 
+Management 269: 68–81. https:// doi. org/ 10. 1016/j. foreco. 2011. 12. 025.
+Graham, R. T., A. E. Harvey, T. B. Jain, and J. R. Tonn. 1999. The effects of thin-
+ning and similar stand treatments on fire behavior in Western forests. 
+General technical report PNW-GTR-463. Portland: U.S. Department of 
+Agriculture, Forest Service, Pacific Northwest Research Station. https:// 
+doi. org/ 10. 2737/ PNW- GTR- 463.
+Graham, R. T., Technical Editor. 2003. Hayman fire case study. General technical 
+report RMRS-GTR-114. Ogden: U.S. Department of Agriculture, Forest 
+Service, Rocky Mountain Research Station, 396.
+Hagmann, R. K., P . F. Hessburg, S. J. Prichard, N. A. Povak, P . M. Brown, P . Z. Fulé, 
+R. E. Keane, E. E. Knapp, J. M. Lydersen, K. L. Metlen, M. J. Reilly, A. J. 
+Sánchez Meador, S. L. Stephens, J. T. Stevens, A. H. Taylor, L. L. Yocom, M. 
+A. Battaglia, D. J. Churchill, L. D. Daniels, A. E. M. Waltz. 2021. Evidence for 
+widespread changes in the structure, composition, and fire regimes of 
+western North American forests. Ecological Applications 31(8): e02431. 
+https:// doi. org/ 10. 1002/ eap. 2431.
+Hankin, L. E., C. T. Anderson, G. J. Dickman, P . Bevington, and S. L. Stephens. 
+2023. How forest management changed the course of the Washburn 
+fire and the fate of Yosemite’s giant sequoias (Sequoiadendron gigan-
+teum). Fire Ecology 19: 40. https:// doi. org/ 10. 1186/ s42408- 023- 00202-6.
+Hanks, E.M., E.M. Schliep, M.B. Hooten, and J.A. Hoeting. 2015. Restricted spatial 
+regression in practice: geostatistical models, confounding, and robust-
+ness under model misspecification. Environmetrics 26 (4): 243–254. 
+https:// doi. org/ 10. 1002/ env. 2331.
+Hodges, J.S., and B.J. Reich. 2010. Adding spatially-correlated errors can mess 
+up the fixed effect you love. The American Statistician 64 (4): 325–334. 
+https:// doi. org/ 10. 1198/ tast. 2010. 10052.
+Hood, S. M., C. R. Keyes, K. J. Bowen, D. C. Lutes, and C. Seielstad. 2020. Fuel 
+treatment longevity in ponderosa pine-dominated forest 24 years after 
+cutting and prescribed burning. Frontiers in Forests and Global Change, 3. 
+https:// www. front iersin. org/ artic les/ 10. 3389/ ffgc. 2020. 00078.
+Huffman, D.W., J.P . Roccaforte, J.D. Springer, and J.E. Crouse. 2020. Restoration 
+applications of resource objective wildfires in western US forests: a 
+status of knowledge review. Fire Ecology 16 (1): 18. https:// doi. org/ 10. 
+1186/ s42408- 020- 00077-x.
+Jaffe, M.R., B.M. Collins, J. Levine, H. Northrop, F. Malandra, D. Krofcheck, M.D. 
+Hurteau, S.L. Stephens, and M. North. 2021. Prescribed fire shrub 
+consumption in a Sierra Nevada mixed-conifer forest. Canadian 
+Journal of Forest Research 51 (11): 1718–1725. https:// doi. org/ 10. 1139/ 
+cjfr- 2020- 0454.
+Kalies, E.L., and L.L. Yocom Kent. 2016. Tamm review: are fuel treatments effec-
+tive at achieving ecological and social objectives? A systematic review. 
+Forest Ecology and Management 375: 84–95. https:// doi. org/ 10. 1016/j. 
+foreco. 2016. 05. 021.
+Kane, J.M. 2021. Stand conditions alter seasonal microclimate and dead fuel 
+moisture in a Northwestern California oak woodland. Agricultural and 
+Forest Meteorology 308–309: 108602. https:// doi. org/ 10. 1016/j. agrfo 
+rmet. 2021. 108602.
+Kay, M. 2020. tidybayes: Tidy Data and “Geoms” for Bayesian Models. https:// 
+github. com/ mjskay/ tidyb ayes
+Keane, R. E. 2015. Wildland fuel fundamentals and applications. Springer Inter-
+national Publishing. https:// doi. org/ 10. 1007/ 978-3- 319- 09015-3.
+Keeley, J.E. 1987. Role of fire in seed germination of woody taxa in California 
+chaparral. Ecology 68 (2): 434–443. https:// doi. org/ 10. 2307/ 19392 75.
+Kern, C.C., A.W. D’Amato, and T.F. Strong. 2013. Diversifying the composition 
+and structure of managed, late-successional forests with harvest gaps: 
+what is the optimal gap size? Forest Ecology and Management 304: 
+110–120. https:// doi. org/ 10. 1016/j. foreco. 2013. 04. 029.
+Knapp, E.E. 2015. Long-term dead wood changes in a Sierra Nevada mixed coni-
+fer forest: habitat and fire hazard implications. Forest Ecology and Manage-
+ment 339 (1): 87–95. https:// doi. org/ 10. 1016/j. foreco. 2014. 12. 008.
+
+PAGE 19
+Page 19 of 20
+Brodie et al. Fire Ecology           (2024) 20:17 
+ 
+Knapp, E.E., C.P . Weatherspoon, and C.N. Skinner. 2012. Shrub seed banks 
+in mixed conifer forests of northern California and the role of fire in 
+regulating abundance. Fire Ecology 8 (1): 1. https:// doi. org/ 10. 4996/ firee 
+cology. 08010 32.
+Knapp, E.E., C.N. Skinner, M.P . North, and B.L. Estes. 2013. Long-term overstory 
+and understory change following logging and fire exclusion in a Sierra 
+Nevada mixed-conifer forest. Forest Ecology and Management 310: 
+903–914. https:// doi. org/ 10. 1016/j. foreco. 2013. 09. 041.
+Kupfer, J.A., A.J. Terando, P . Gao, C. Teske, and J.K. Hiers. 2020. Climate change 
+projected to reduce prescribed burning opportunities in the South-
+Eastern United States. International Journal of Wildland Fire 29 (9): 
+764–778. https:// doi. org/ 10. 1071/ WF191 98.
+Larsen, A.E., K. Meng, and B.E. Kendall. 2019. Causal analysis in control–impact 
+ecological studies with observational data. Methods in Ecology and 
+Evolution 10 (7): 924–934. https:// doi. org/ 10. 1111/ 2041- 210X. 13190.
+Lenth, R. V. 2023. emmeans: Estimated Marginal Means, aka Least-Squares 
+Means [R package version 1.8.6]. https:// CRAN.R- proje ct. org/ packa ge= 
+emmea ns
+Lydersen, J.M., M.P . North, and B.M. Collins. 2014. Severity of an uncharacter-
+istically large wildfire, the Rim Fire, in forests with relatively restored 
+frequent fire regimes. Forest Ecology and Management 328: 326–334. 
+https:// doi. org/ 10. 1016/j. foreco. 2014. 06. 005.
+Lydersen, J.M., B.M. Collins, J.D. Miller, D.L. Fry, and S.L. Stephens. 2016. Relating 
+fire-caused change in forest structure to remotely sensed estimates of 
+fire severity. Fire Ecology 12 (3): 99–116. https:// doi. org/ 10. 4996/ firee 
+cology. 12030 99.
+Matthews, J. D. 1991. The irregular shelterwood system. In Silvicultural Systems. 
+Clarendon Press.
+McElreath, R. 2020. Statistical rethinking: a bayesian course with examples in R 
+and Stan. CRC Press.
+McIver, J., A. Youngblood, and S.L. Stephens. 2009. The National Fire and fire 
+surrogate study: ecological consequences of fuel reduction methods 
+in seasonally dry forests. Ecological Applications 19 (2): 283–284. https:// 
+doi. org/ 10. 1890/ 07- 1785.1.
+Miller, J.D., E.E. Knapp, C.H. Key, C.N. Skinner, C.J. Isbell, R.M. Creasy, and J.W. 
+Sherlock. 2009. Calibration and validation of the relative differenced 
+Normalized Burn Ratio (RdNBR) to three measures of fire severity in the 
+Sierra Nevada and Klamath Mountains, California, USA. Remote Sensing of 
+Environment 113 (3): 645–656. https:// doi. org/ 10. 1016/j. rse. 2008. 11. 009.
+Morgan, P ., R.E. Keane, G.K. Dillon, T.B. Jain, A.T. Hudak, E.C. Karau, P .G. Sikkink, 
+Z.A. Holden, and E.K. Strand. 2014. Challenges of assessing fire and 
+burn severity using field measures, remote sensing and modelling. 
+International Journal of Wildland Fire 23 (8): 1045–1060. https:// doi. org/ 
+10. 1071/ WF130 58.
+North, M., B.M. Collins, and S. Stephens. 2012. Using fire to increase the scale, 
+benefits, and future maintenance of fuels treatments. Journal of Forestry 
+110 (7): 392–401. https:// doi. org/ 10. 5849/ jof. 12- 021.
+North, M.P ., J.T. Kane, V.R. Kane, G.P . Asner, W. Berigan, D.J. Churchill, S. Conway, 
+R.J. Gutiérrez, S. Jeronimo, J. Keane, A. Koltunov, T. Mark, M. Moskal, T. 
+Munton, Z. Peery, C. Ramirez, R. Sollmann, A.M. White, and S. Whitmore. 
+2017. Cover of tall trees best predicts California spotted owl habitat. 
+Forest Ecology and Management 405: 166–178. https:// doi. org/ 10. 1016/j. 
+foreco. 2017. 09. 019.
+North, M.P ., R.E. Tompkins, A.A. Bernal, B.M. Collins, S.L. Stephens, and R.A. York. 
+2022. Operational resilience in western US frequent-fire forests. Forest 
+Ecology and Management 507: 120004. https:// doi. org/ 10. 1016/j. foreco. 
+2021. 120004.
+North, M. P ., J. T. Stevens, D. F. Greene, M. Coppoletta, E. E. Knapp, A. M. Latimer, 
+C. M. Restaino, R. E. Tompkins, K. R. Welch, R. A. York, D. J. N. Young, J. N. 
+Axelson, T. N. Buckley, B. L. Estes, R. N. Hager, J. W. Long, M. D. Meyer, S. 
+M. Ostoja, H. D. Safford, P . Wyrsch. 2019. Tamm Review: Reforestation 
+for resilience in dry western U.S. forests. Forest Ecology and Manage-
+ment 432: 209–224. https:// doi. org/ 10. 1016/j. foreco. 2018. 09. 007.
+O’Connor, C.D., D.E. Calkin, and M.P . Thompson. 2017. An empirical machine 
+learning method for predicting potential fire control locations for pre-
+fire planning and operational fire management. International Journal of 
+Wildland Fire 26 (7): 587–597. https:// doi. org/ 10. 1071/ WF161 35.
+Parks, S.A., and J.T. Abatzoglou. 2020. Warmer and drier fire seasons contribute 
+to increases in area burned at high severity in western US forests from 
+1985 to 2017. Geophysical Research Letters 47 (22): e2020GL089858. 
+https:// doi. org/ 10. 1029/ 2020G L0898 58.
+Parks, S.A., C. Miller, C.R. Nelson, and Z.A. Holden. 2013. Previous fires moderate 
+burn severity of subsequent wildland fires in two large western US 
+wilderness areas. Ecosystems 17 (1): 29–42. https:// doi. org/ 10. 1007/ 
+s10021- 013- 9704-x.
+Parks, S.A., L.M. Holsinger, C. Miller, and C.R. Nelson. 2015. Wildland fire as a 
+self-regulating mechanism: the role of previous burns and weather 
+in limiting fire progression. Ecological Applications 25 (6): 1478–1492. 
+https:// doi. org/ 10. 1890/ 14- 1430.1.
+Parsons, R.A., F. Pimont, L. Wells, G. Cohn, W.M. Jolly, F. de Coligny, E. Rigolot, 
+J.-L. Dupuy, W. Mell, and R.R. Linn. 2018. Modeling thinning effects on 
+fire behavior with STANDFIRE. Annals of Forest Science 75 (1): 1. https:// 
+doi. org/ 10. 1007/ s13595- 017- 0686-2.
+Peterson, D.A., E.J. Hyer, J.R. Campbell, J.E. Solbrig, and M.D. Fromm. 2017. A 
+conceptual model for development of intense pyrocumulonimbus in 
+Western North America. Monthly Weather Review 145 (6): 2235–2255. 
+https:// doi. org/ 10. 1175/ MWR-D- 16- 0232.1.
+Povak, N.A., V.R. Kane, B.M. Collins, J.M. Lydersen, and J.T. Kane. 2020. Multi-
+scaled drivers of severity patterns vary across land ownerships for the 
+2013 Rim Fire, California. Landscape Ecology 35 (2): 293–318. https:// doi. 
+org/ 10. 1007/ s10980- 019- 00947-z.
+Prichard, S.J., and M.C. Kennedy. 2014. Fuel treatments and landform modify 
+landscape patterns of burn severity in an extreme fire event. Ecological 
+Applications 24 (3): 571–590. https:// doi. org/ 10. 1890/ 13- 0343.1.
+Prichard, S.J., C.S. Stevens-Rumann, and P .F. Hessburg. 2017. Tamm review: 
+shifting global fire regimes: lessons from reburns and research needs. 
+Forest Ecology and Management 396: 217–233. https:// doi. org/ 10. 1016/j. 
+foreco. 2017. 03. 035.
+Prichard, S. J., N. A. Povak, M. C. Kennedy, and D. W. Peterson. 2020. Fuel treat-
+ment effectiveness in the context of landform, vegetation, and large, 
+wind-driven wildfires. Ecological Applications 30 (5): e02104. https:// doi. 
+org/ 10. 1002/ eap. 2104
+R Core Team. (2022). R: A language and environment for statistical computing 
+[Computer software]. R Foundation for Statistical Computing. https:// 
+www.r- proje ct. org/
+Raymond, C.L., and D.L. Peterson. 2005. Fuel treatments alter the effects of 
+wildfire in a mixed-evergreen forest, Oregon, USA. Canadian Journal of 
+Forest Research 35 (12): 2981–2995. https:// doi. org/ 10. 1139/ x05- 206.
+Richter, C., M. Rejmanek, J.E.D. Miller, K.R. Welch, J. Weeks, and H.D. Safford. 
+2019. The species diversity x fire severity relationship is hump-shaped 
+in semiarid yellow pine and mixed conifer forests. Ecosphere 10 (10): 
+e02882. https:// doi. org/ 10. 1002/ ecs2. 2882.
+Riechman, J.A., L.O. Park, C.M. Ruffner, and J.W. Groninger. 2014. Challenges 
+and motivations behind sustaining a volunteer-based forest manage-
+ment organization: a case study of the southeastern Illinois prescribed 
+burn association. Journal of Forestry 112 (2): 215–220. https:// doi. org/ 10. 
+5849/ jof. 12- 110.
+Ritchie, M.W., C.N. Skinner, and T.A. Hamilton. 2007. Probability of tree survival 
+after wildfire in an interior pine forest of northern California: effects of 
+thinning and prescribed fire. Forest Ecology and Management 247 (1–3): 
+200–208. https:// doi. org/ 10. 1016/j. foreco. 2007. 04. 044.
+Ritchie, M. W. (2005). Ecological research at the goosenest adaptive man-
+agement Area in northeastern California. General technical report 
+PSW-GTR-192. Berkeley: U.S. Department of Agriculture, Forest 
+Service, Pacific Southwest Research Station. https:// doi. org/ 10. 2737/ 
+PSW- GTR- 192.
+Ritchie, M. W. 2020. Effects of thinning and prescribed fire in the Goosenest 
+Adaptive Management Area in northeastern California. In: Pile, Lauren 
+S.; Deal, Robert L.; Dey, Daniel C.; Gwaze, David; Kabrick, John M.; Palik, 
+Brian J.; Schuler, Thomas M., Comps. The 2019 National Silviculture 
+Workshop: a focus on forest management-research partnerships. Pages 
+193-206, in General Technical Report NRS-P-193. Madison: U.S. Depart-
+ment of Agriculture, Forest Service, Northern Research Station. https:// 
+doi. org/ 10. 2737/ NRS- GTR-P- 193- paper 25
+Roccaforte, J.P ., D.W. Huffman, P .Z. Fule, W.W. Covington, W.W. Chancellor, M.T. 
+Stoddard, and J.E. Crouse. 2015. Forest structure and fuels dynamics 
+following ponderosa pine restoration treatments, White Mountains, 
+Arizona, USA. Forest Ecology and Management 337: 174–185.
+Rothermel, R. C. 1972. A mathematical model for predicting fire spread in 
+wildland fuels. Research Paper INT-115. Ogden: U.S. Department of 
+Agriculture, Forest Service, Intermountain Forest and Range Experiment 
+Station. https:// www. fs. usda. gov/ resea rch/ trees earch/ 32533.
+
+PAGE 20
+Page 20 of 20Brodie et al. Fire Ecology           (2024) 20:17 
+Russell, E.S., H. Liu, H. Thistle, B. Strom, M. Greer, and B. Lamb. 2018. Effects of thin-
+ning a forest stand on sub-canopy turbulence. Agricultural and Forest Mete-
+orology 248: 295–305. https:// doi. org/ 10. 1016/j. agrfo rmet. 2017. 10. 019.
+Ryan, K. C., E. E. Knapp, and J. M. Varner. 2013. Prescribed fire in North American 
+forests and woodlands: history, current practice, and challenges. Fron-
+tiers in Ecology and the Environment 11 (Online Issue 1): e15–e24. https:// 
+doi. org/ 10. 1890/ 120329.
+Saberi, S.J., M.C. Agne, and B.J. Harvey. 2022. Do you CBI what I see? The 
+relationship between the composite burn index and quantitative field 
+measures of burn severity varies across gradients of forest structure. 
+International Journal of Wildland Fire 31 (2): 112–123. https:// doi. org/ 10. 
+1071/ WF210 62.
+Safford, H.D., D.A. Schmidt, and C.H. Carlson. 2009. Effects of fuel treatments 
+on fire severity in an area of wildland–urban interface, Angora Fire, Lake 
+Tahoe Basin California. Forest Ecology and Management 258 (5): 773–787. 
+https:// doi. org/ 10. 1016/j. foreco. 2009. 05. 024.
+Safford, H.D., J.T. Stevens, K. Merriam, M.D. Meyer, and A.M. Latimer. 2012. Fuel 
+treatment effectiveness in California yellow pine and mixed conifer 
+forests. Forest Ecology and Management 274: 17–28. https:// doi. org/ 10. 
+1016/j. foreco. 2012. 02. 013.
+Safford, H. D., and J. T. Stevens. 2017. Natural range of variation for yellow pine 
+and mixed-conifer forests in the Sierra Nevada, southern Cascades, and 
+Modoc and Inyo National Forests, California, USA. General Technical 
+Report PSW-GTR-256. Berkeley: U.S. Department of Agriculture, Forest 
+Service, Pacific Southwest Research Station. https:// www. fs. usda. gov/ 
+trees earch/ pubs/ 55393.
+Schmidt, L., M.G. Hille, and S.L. Stephens. 2006. Restoring northern sierra 
+nevada mixed conifer forest composition and structure with prescribed 
+fires of varying intensities. Fire Ecology 2 (2): 2. https:// doi. org/ 10. 4996/ 
+firee cology. 02020 20.
+Scholl, A.E., and A.H. Taylor. 2006. Regeneration patterns in old-growth red fir-
+western white pine forests in the northern Sierra Nevada, Lake Tahoe, 
+USA. Forest Ecology and Management 235 (1–3): 143–154. https:// doi. 
+org/ 10. 1016/j. foreco. 2006. 08. 006.
+Simler-Williamson, A.B., and M.J. Germino. 2022. Statistical considerations of 
+nonrandom treatment applications reveal region-wide benefits of 
+widespread post-fire restoration action. Nature Communications 13 (1): 
+3472. https:// doi. org/ 10. 1038/ s41467- 022- 31102-z.
+Stephens, S.L., B.M. Collins, and G. Roller. 2012. Fuel treatment longevity in a 
+Sierra Nevada mixed conifer forest. Forest Ecology and Management 285: 
+204–212. https:// doi. org/ 10. 1016/j. foreco. 2012. 08. 030.
+Stephens, S.L., N. Burrows, A. Buyantuyev, R.W. Gray, R.E. Keane, R. Kubian, S. Liu, F. 
+Seijo, L. Shu, K.G. Tolhurst, and J.W. van Wagtendonk. 2014. Temperate and 
+boreal forest mega-fires: characteristics and challenges. Frontiers in Ecology 
+and the Environment 12 (2): 115–122. https:// doi. org/ 10. 1890/ 120332.
+Stephens, S.L., J.M. Lydersen, B.M. Collins, D.L. Fry, and M.D. Meyer. 2015. His-
+torical and current landscape-scale ponderosa pine and mixed conifer 
+forest structure in the southern Sierra Nevada. Ecosphere 6 (5): 1–63. 
+https:// doi. org/ 10. 1890/ ES14- 00379.1.
+Stephens, S.L., A.L.R. Westerling, M.D. Hurteau, M.Z. Peery, C.A. Schultz, and S. 
+Thompson. 2020. Fire and climate change: conserving seasonally dry 
+forests is still possible. Frontiers in Ecology and the Environment 18 (6): 
+354–360. https:// doi. org/ 10. 1002/ fee. 2218.
+Swain, D.L., J.T. Abatzoglou, C. Kolden, K. Shive, D.A. Kalashnikov, D. Singh, and 
+E. Smith. 2023. Climate change is narrowing and shifting prescribed fire 
+windows in western United States. Communications Earth & Environ-
+ment 4 (1): 1. https:// doi. org/ 10. 1038/ s43247- 023- 00993-1.
+Taylor, A.H. 2004. Identifying forest reference condition on early cut-over 
+lands, Lake Tahoe Basin, USA. Ecological Applications 14 (6): 1903–1920. 
+https:// doi. org/ 10. 1890/ 02- 5257.
+Taylor, A.H., V. Trouet, C.N. Skinner, and S. Stephens. 2016. Socioecological tran-
+sitions trigger fire regime shifts and modulate fire–climate interactions 
+in the Sierra Nevada, USA, 1600–2015 CE. Proceedings of the National 
+Academy of Sciences 113 (48): 13684–13689. https:// doi. org/ 10. 1073/ 
+pnas. 16097 75113.
+Thies, W. G., D. J. Westlind, M. Loewen, and G. Brenner. 2008. A field guide to 
+predict delayed mortality of fire-damaged ponderosa pine: Applica-
+tion and validation of the Malheur model. General Technical Report 
+PNW-GTR-769. Portland: U.S. Department of Agriculture, Forest 
+Service, Pacific Northwest Research Station. https:// doi. org/ 10. 2737/ 
+PNW- GTR- 769.
+Van Wagner, C.E. 1977. Conditions for the start and spread of crown fire. 
+Canadian Journal of Forest Research 7 (1): 23–34. https:// doi. org/ 10. 
+1139/ x77- 004.
+Van Wagtendonk, J., J. Benedict, and W. Sydoriak. 1996. Physical properties of 
+Woody fuel particles of Sierra Nevada conifers. International Journal of 
+Wildland Fire 6 (3): 117. https:// doi. org/ 10. 1071/ WF996 0117.
+Van Wagtendonk, J., J.M. Benedict, and W.M. Sydoriak. 1998. Fuel bed charac-
+teristics of Sierra Nevada conifers. Western Journal of Applied Forestry 13 
+(3): 73–84. https:// doi. org/ 10. 1093/ wjaf/ 13.3. 73.
+Varner, J.M., S.M. Hood, D.P . Aubrey, K. Yedinak, J.K. Hiers, W.M. Jolly, T.M. Shear-
+man, J.K. McDaniel, J.J. O’Brien, and E.M. Rowell. 2021. Tree crown injury 
+from wildland fires: Causes, measurement and ecological and physi-
+ological consequences. New Phytologist 231 (5): 1676–1685. https:// doi. 
+org/ 10. 1111/ nph. 17539.
+Vehtari, A., A. Gelman, and J. Gabry. 2017. Practical Bayesian model evaluation 
+using leave-one-out cross-validation and WAIC. Statistics and Comput-
+ing 27 (5): 1413–1432. https:// doi. org/ 10. 1007/ S11222- 016- 9696-4/ 
+FIGUR ES/ 12.
+Viedma, O., F. Chico, J. J. Fernandez, C. Madrigal, H. D. Safford, and J. M. Moreno. 
+2020. Disentangling the role of prefire vegetation vs. burning condi-
+tions on fire severity in a large forest fire in SE Spain. Remote Sensing of 
+Environment 247 (111891). https:// doi. org/ 10. 1016/j. rse. 2020. 111891.
+Vinyeta, K. 2021. Under the guise of science: how the US Forest Service 
+deployed settler colonial and racist logics to advance an unsubstanti-
+ated fire suppression agenda. Environmental Sociology 00 (00): 1–15. 
+https:// doi. org/ 10. 1080/ 23251 042. 2021. 19876 08.
+Weatherspoon, C. P ., & McIver, J. 2000. A proposal to the Joint Fire Science Pro-
+gram: A national study of the consequences of fire and fire surrogate 
+treatments (p. 115).
+Weatherspoon, C. P . 1988. Preharvest prescribed burning for vegetation 
+management: Effects on Ceanothus velutinus seeds in duff and soil. 
+Proceedings of the 9th Annual Vegetation Management Conference, 
+Redding, California, 125–141.
+Weatherspoon, C. P . 1996. Fire-silviculture relationships in Sierra forests, pp. 
+1167-1176 in Sierra Nevada ecosystem project: Final report to Congress, 
+vol. II. Assessments and scientific basis for management options. Davis: 
+University of California, Centers for Water and Wildland Resources.
+Whitehead, R. J., Russo, G. L., Hawkes, B. C., Taylor, S. W., Brown, B. N., Barclay, H. 
+J., & Benton, R. A. 2006. Effect of a spaced thinning in mature lodgepole 
+pine on within-stand microclimate and fine fuel moisture content. In: 
+Andrews, Patricia L.; Butler, Bret W., Comps. 2006. Fuels Management-
+How to Measure Success: Conference Proceedings. 28–30 March 2006; 
+Portland: U.S. Proceedings RMRS-P-41. U. S. Department of Agriculture, 
+Forest Service, Rocky Mountain Research Station. p. 523–536. https:// 
+www. fs. usda. gov/ resea rch/ trees earch/ 25975.
+Wood, S. N. 2017. Generalized Additive Models: An Introduction with R, Sec-
+ond Edition (2nd edition). Chapman and Hall/CRC.
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in pub-
+lished maps and institutional affiliations.

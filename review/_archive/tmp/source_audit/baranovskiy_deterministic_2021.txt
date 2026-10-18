@@ -1,0 +1,1371 @@
+PAGE 1
+forecasting
+Article
+Deterministic-Probabilistic Approach to Predict
+Lightning-Caused Forest Fires in Mounting Areas
+Nikolay Baranovskiy
+/gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045/gid00001
+/gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046
+Citation: Baranovskiy, N.
+Deterministic-Probabilistic Approach
+to Predict Lightning-Caused Forest
+Fires in Mounting Areas. Forecasting
+2021, 3, 695–715. https://doi.org/
+10.3390/forecast3040043
+Academic Editor: Salvador
+García-Ayllón Veintimilla
+Received: 19 August 2021
+Accepted: 23 September 2021
+Published: 27 September 2021
+Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
+iations.
+Copyright: © 2021 by the author.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+School of Energy and Power Engineering, Tomsk Polytechnic University, 634050 Tomsk, Russia;
+ﬁredanger@yandex.ru
+Abstract: Forest ﬁres from lightnings create a tense situation in various regions of states with forested
+areas. It is noted that in mountainous areas this is especially important in view of the geophysical
+processes of lightning activity. The aim of the study is to develop a deterministic-probabilistic
+approach to predicting forest ﬁre danger due to lightning activity in mountainous regions. To
+develop a mathematical model, the main provisions of the theory of probability and mathematical
+statistics, as well as the general theory of heat transfer, were used. The scientiﬁc novelty of the
+research is due to the complex use of probabilistic criteria and deterministic mathematical models
+of tree ignition by a cloud-to-ground lightning discharge. The paper presents probabilistic criteria
+for predicting forest ﬁre danger, taking into account the lightning activity, meteorological data, and
+forest growth conditions, as well as deterministic mathematical models of ignition of deciduous
+and coniferous trees by electric current of a cloud-to-ground lightning discharge. The work uses
+synthetic data on the discharge parameters and characteristics of the forest-covered area, which
+correspond to the forest ﬁre situation in the Republic of Altay and the Republic of Buryatia (Russian
+Federation). The dependences of the probability for occurrence of forest ﬁres on various parameters
+have been obtained.
+Keywords: forest fire; danger; probability; lightning; deterministic; probabilistic; prediction; mounting area
+1. Introduction
+Forest ﬁres occur as a result of natural and anthropogenic causes [1]. The main natural
+cause of forest ﬁres is the impact of the cloud-to-ground lightning discharges on forest
+fuels [2]. The factor of lightning activity is taken into account in one way or another in the
+Canadian and American systems for predicting forest ﬁre danger [3,4], as well as in the
+Information System for Remote Monitoring of Forest Fires ISDM-Rosleskhoz in the Russian
+Federation [5]. However, predicting forest ﬁre danger in mountainous terrain has its own
+characteristics [6,7], which must be taken into account when developing such methods.
+There are various methods for predicting forest ﬁre danger, for example, statistical [ 8],
+empirical [9], probabilistic [10], simulation [11], deterministic [12], and a number of others.
+In this paper, it is proposed to focus on an integrated deterministic-probabilistic approach,
+when the predicting methodology is based both on probabilistic formulas and deterministic
+models, for example, as is done in the methodology for predicting forest ﬁres caused by the
+action of focused solar radiation [13,14]. It is assumed that the level of forest ﬁre danger is
+assessed from the standpoint of probability theory, and individual terms in the probabilistic
+criterion are assessed based on statistical data and the results of numerical modeling of
+the ignition of deciduous and coniferous trees by the cloud-to-ground lightning discharge.
+The interval of changes in the probability of forest ﬁres should be divided into ﬁve subin-
+tervals that correspond to different levels of forest ﬁre danger (extreme, high, medium,
+low, very low or none). Lightning activity is assessed using various hardware and infor-
+mation systems. Australia uses the Austrian Lightning Detection and Information System
+(ALDIS) [15–24]. The system uses Magnetic Direction Finding (MDF) and Time of Arrival
+Forecasting 2021, 3, 695–715. https://doi.org/10.3390/forecast3040043 https://www.mdpi.com/journal/forecasting
+
+PAGE 2
+Forecasting 2021, 3 696
+(TOA) [15]. ALDIS provides the coordinates of the discharge, polarity, amperage, and num-
+ber of strokes in a multi-stroke [19]. In Switzerland, for example, the European Cooperation
+for Lightning Detection network (EUCLID) project is used [25–29]. For each discharge,
+the EUCLID provides coordinates, date and exact time, type of discharge, multiplicity,
+polarity, and current. It should be noted that many researchers have paid attention to the
+relationship between lightning activity and precipitation [10,30–35]. A positive correlation
+has been shown between lightnings and precipitation. In China, for example, the Yunnan
+Lightning Detection Network (YNLDN) is used, which consists of 23 sensors and uses
+the Improved Performance through Combined Technology (IMPACT) method [ 36]. In
+Malaysia, the authors used the Surveillance et Alerte Foudre par Interferometrie Radio-
+electrique (SAFIR 300) system with 8 sensors [37,38]. In Colombia, the LINET method for
+detecting lightning discharges [39–42] was used to analyze lightning activity.
+The aim of the study is to develop a deterministic-probabilistic approach to predicting
+forest ﬁre danger due to lightning activity in mountainous regions using data from the
+World Wide Lightning Location Network (WWLLN).
+2. Region of Interest
+Two typical territories are considered, which are characterized by the presence of
+forested areas in mountainous terrain. The ﬁrst study area is the territory of the Altay
+Republic (Russian Federation). The second study area is mountainous areas in the Republic
+of Buryatia (Russian Federation) [43,44].
+The Republic of Buryatia is an entity located in Eastern Siberia, near Lake Baikal. The
+subject is bordered by the Trans-Baikal Territory in the east, the Irkutsk region in the west,
+the Republic of Tyva in the south-west and Mongolia in the south. The largest cities in the
+republic are the administrative center—the city of Ulan-Ude, as well as Severobaikalsk,
+Gusinoozersk, Kyakhta and Zakamensk. Until 2019, the Republic of Buryatia was part
+of the Siberian Federal District, but since 2019, the republic has become part of the Far
+Eastern Federal District. In general, among all subjects of Siberia and the Far East, the
+Republic of Buryatia is distinguished by an increased number of wildﬁres that occur
+annually and cause signiﬁcant damage to the economy, ecology, and population of the
+region. The climate of the Republic of Buryatia is sharply continental, as a result of which
+the region is characterized by cold winters and hot summers. In terms of the number of
+sunny days, Buryatia is comparable to the Crimea. The average temperature in summer
+is +18.5 degrees, in winter—22, and the average annual temperature is—1.6 degrees. On
+average, 244 mm of precipitation falls annually. In territorial terms, more than half (73%)
+of the territory of Buryatia is occupied by forests, 6% is occupied by water bodies, 11% is
+agricultural land, 1% is reindeer pastures, 9% is land for other purposes. The relief of the
+republic is predominantly mountainous. In terms of species composition in the Republic of
+Buryatia, the largest areas are occupied by coniferous forests (more than 60% of the total
+forest area in Buryatia). Larches grow most of all in the region (about 50% of all plant
+species). More than 10% of all forest plantations belongs to pine. It is also worth noting
+that most of the forests of Buryatia are located in mountainous areas. Forests have a fairly
+pronounced altitudinal-belt structure and are subdivided (in order of increasing heights)
+into 9 high-altitude forest growth belts: steppe; forest-steppe; light coniferous taiga; frozen
+taiga; cedar-ﬁr taiga; cedar taiga; subalpine; tundra-alpine.
+Another important reason for the high wildﬁre hazard on the territory of Buryatia
+is the uneven distribution of precipitation. The regions of the Eastern Sayan and the
+Baikal region (with the exception of the Barguzin valley) receive moisture in the form of
+precipitation of 500–800 mm, in the mountains up to 1000–2000 mm per year. Relatively
+little precipitation falls on the Vitim plateau (300–450 mm) and even less in the Selenga
+Transbaikalia (200–400 mm).
+The territory of the Republic of Altay is 92.6 thousand km 2. The Altai Republic is
+located in the very center of Asia at the junction of the Siberian taiga, Kazakh steppes
+and semi-deserts of Mongolia. It is a mountainous country with an extremely picturesque
+
+PAGE 3
+Forecasting 2021, 3 697
+landscape. The territory of the republic consists of 11 municipalities uniting 92 rural
+administrations, which include 245 settlements, the only city of Gorno-Altaisk is the capital
+of the Altai Republic. The distance from Gorno-Altaysk to Moscow is 3641 km, from
+Gorno-Altaysk to Barnaul—250 km, from Gorno-Altaysk to the nearest railway station
+(Biysk)—100 km. The area of the territory of the republic is 92,902 sq. Km, which is 0.55
+of the territory of the Russian Federation, of which: agricultural lands make up 19%,
+forests—47%, water areas—0.9% and other lands—33.1%. The territory of the Republic
+stretches for more than 350 km from north to south and 400 from east to west, from a low
+mountainous zone to a high mountain zone, which causes a signiﬁcant difference in the
+natural and economic complex of 10 regions of the republic [45].
+The Altai Republic is located in the center of the Eurasian continent, has an external
+border with China, Mongolia, Kazakhstan and an internal border with the constituent
+entities of the Russian Federation—the republics of Tuva and Khakassia, the Altai Territory
+and the Kemerovo Region.
+The climate is temperate continental, with relatively short hot summers (June–August)
+and long (November–March) cold winters. Climate-forming factors are: continental arctic
+air freely reaching the interior throughout the year, warm and humid western air masses
+coming from the Atlantic Ocean, warm southwestern and southern winds and local cy-
+clones and pheno-like air currents formed by the relief of a mountainous country. As a
+rule, the determining factor in the formation of weather conditions is the movement of the
+western air masses.
+The relief, which forms a vertical climatic zoning—a zone of low mountain climate
+(up to 500–600 m), a zone of a middle mountain climate (from 500 to 1500 m and more),
+a zone of high mountain climate (over 2000–2500 m), has a signiﬁcant impact on the
+climate of Gorny Altai. The relief of the republic is characterized by high ridges sep-
+arated by narrow and deep river valleys, rare wide intermontane basins. The highest
+mountain—Belukha—4506 m, is the highest point in Siberia.
+Communications. Automobile transport is the leading one in the republic. The length
+of highways is more than 3.2 thousand km, of which 541 km are the main highway, the
+federal highway Novosibirsk-Biysk-Tashanta (Chuysky tract).
+Demography . The population of the Altai Republic as of 1 January 2019 was 218,866 people.
+The capital is Gorno-Altaysk, the only city in the republic, located in its northwestern
+part. Territory—91 sq. Km. The city of Gorno-Altaysk as a settlement of Ulala was founded
+in 1830, received the status of a city in 1928. The distance from Gorno-Altaysk to Moscow
+is 3641 km, to the nearest railway station Biysk—100 km. The population of the city as of
+1 January 2019 was 63,845 people.
+Such unique natural sites as Lake Teletskoye, Mount Belukha, Altai and Katunsky
+reserves were included in the list of World Heritage of Humanity by UNESCO decision.
+3. Materials and Methods
+The following physical model is proposed for the ignition of a deciduous tree by
+the cloud-to-ground lightning discharge. A freestanding deciduous tree, such as birch, is
+considered. It is believed that the structure of the trunk of a deciduous tree is represented
+by a moisture-conducting core and a bark layer. At the moment a lightning discharge
+strikes a deciduous tree, an electric current of the discharge passes through the core. The
+tree trunk heats up as a result of heat generation according to the Joule-Lenz law. As
+the temperature rises, the trunk of a deciduous tree is ignited. Additional assumptions:
+(1) moisture evaporation from the core is neglected, (2) wood pyrolysis is neglected, (3) the
+thermophysical characteristics of the core and the bark layer do not depend on temperature,
+(4) the monolithic structure of the tree trunk is considered.
+Mathematically, the heat transfer process before the ignition of a deciduous tree trunk
+is described by partial differential equations of parabolic type with the assignment of the
+corresponding initial and boundary conditions. Geometric areas are presented in Figure 1.
+
+PAGE 4
+Forecasting 2021, 3 698
+Forecasting 2021, 3 FOR PEER REVIEW  4 
+ 
+Mathematically, the heat transfer process before the ignition of a deciduous tree 
+trunk is described by partial differential equations of parabolic type with the assignment 
+of the corresponding initial and boundary conditions. Geometric areas are presented in 
+Figure 1. 
+ 
+Figure 1. Decision area for deciduous tree trunk: 1—core; 2—bark layer; R1—boundary between 
+core and bark layer; Rs—tree trunk radius. 
+Unsteady heat conduction equations for core and bark layer: 
+WWLLNWr
+Trrrt
+Tс +
+
+
+
+
+∂
+∂
+∂
+∂=∂
+∂ 1
+11
+λρ , (1)
+
+
+
+
+
+∂
+∂
+∂
+∂=∂
+∂
+r
+Trrrt
+Tс 2
+22
+λρ ,
+ 
+(2)
+Initial conditions: 
+00 iti TT == , (3)
+Boundary conditions for the center of tree trunk: 
+0
+0
+1
+1 =∂
+∂
+=rr
+Tλ , (4)
+Boundary conditions for the line connected core and bark layer: 
+1
+2
+2
+1
+1
+1
+RrRr r
+T
+r
+T
+== ∂
+∂=∂
+∂ λλ , 21 TT = , (5)
+Boundary conditions for the external surface of the bark: 
+)( 2
+2
+2 TTr
+T
+e
+Rr
+−=∂
+∂
+=
+αλ , (6)
+where Ti, ρi, ci, λi are the temperature [K], density [kg/m 3], heat capacity [J/(kg ·K)], and 
+thermal conductivity [W/(m·K)] (i = 1 is the core, i = 2 is the bark layer); t is the temporal 
+coordinate; r is the spatial coordinate; R1 is the border of the core and the bark layer; R is 
+the radius of a deciduous tree; α is the heat transfer coefficient; WWWLLN is the power of the 
+discharge registered by WWLLN; index 0 corresponds to the parameters at the initial 
+moment of time. 
+The following physical model of the ignition of a coniferous tree by the 
+cloud-to-ground lightning discharge is propos ed. A stand-alone coniferous tree, such as 
+Figure 1. Decision area for deciduous tree trunk: 1—core; 2—bark layer; R1—boundary between
+core and bark layer; Rs—tree trunk radius.
+Unsteady heat conduction equations for core and bark layer:
+ρ1c1
+∂T
+∂t = λ1
+r
+∂
+∂r
+(
+r ∂T
+∂r
+)
++ WWWLLN , (1)
+ρ2c2
+∂T
+∂t = λ2
+r
+∂
+∂r
+(
+r ∂T
+∂r
+)
+, (2)
+Initial conditions:
+Ti|t=0 = Ti0, (3)
+Boundary conditions for the center of tree trunk:
+λ1
+∂T1
+∂r
+⏐⏐⏐⏐
+r=0
+= 0, (4)
+Boundary conditions for the line connected core and bark layer:
+λ1
+∂T1
+∂r
+⏐⏐⏐⏐
+r=R1
+= λ2
+∂T2
+∂r
+⏐⏐⏐⏐
+r=R1
+, T1 = T2, (5)
+Boundary conditions for the external surface of the bark:
+λ2
+∂T2
+∂r
+⏐⏐⏐⏐
+r=R
+= α(Te− T2), (6)
+where Ti, ρi, ci, λi are the temperature [K], density [kg/m3], heat capacity [J/(kg·K)], and
+thermal conductivity [W/(m·K)] (i = 1 is the core, i = 2 is the bark layer); t is the temporal
+coordinate; r is the spatial coordinate; R1 is the border of the core and the bark layer; R is
+the radius of a deciduous tree; α is the heat transfer coefﬁcient;WWWLLN is the power of
+the discharge registered by WWLLN; index 0 corresponds to the parameters at the initial
+moment of time.
+The following physical model of the ignition of a coniferous tree by the cloud-to-
+ground lightning discharge is proposed. A stand-alone coniferous tree, such as pine, is
+considered. It is believed that the structure of the trunk of a coniferous tree is represented
+by a resinous core, a moisture-conducting subcrustal layer, and a bark layer. At the moment
+a lightning discharge strikes a coniferous tree, the electric current of the discharge passes
+through the subcrustal zone of the tree. The tree trunk heats up as a result of heat generation
+according to the Joule-Lenz law. As a result of an increase in temperature, the trunk of
+
+PAGE 5
+Forecasting 2021, 3 699
+a coniferous tree is ignited. Additional assumptions: (1) Moisture evaporation from the
+subcrustal layer is neglected; (2) wood pyrolysis is neglected; (3) the thermophysical
+characteristics of the core, subcrustal layer and bark layer do not depend on temperature;
+(4) the monolithic structure of the tree trunk is considered.
+Mathematically, the process of heat transfer before the ignition of a coniferous tree
+trunk is described by partial differential equations of parabolic type with the assignment
+of the corresponding initial and boundary conditions. Geometric areas are presented
+in Figure 2.
+Forecasting 2021, 3 FOR PEER REVIEW  5 
+ 
+pine, is considered. It is believed that the st ructure of the trunk of a coniferous tree is 
+represented by a resinous core, a moisture-conducting subcrustal layer, and a bark layer. 
+At the moment a lightning discharge strikes a coniferous tree, the electric current of the 
+discharge passes through the subcrustal zone of the tree. The tree trunk heats up as a 
+result of heat generation according to the Joule-Lenz law. As a result of an increase in 
+temperature, the trunk of a coniferous tree is  ignited. Additional assumptions: (1) Mois-
+ture evaporation from the subcrustal layer is neglected; (2) wood pyrolysis is neglected; 
+(3) the thermophysical characteristics of the core, subcrustal layer and bark layer do not 
+depend on temperature; (4) the monolithic structure of the tree trunk is considered. 
+Mathematically, the process of heat transfer before the ignition of a coniferous tree 
+trunk is described by partial differential equations of parabolic type with the assignment 
+of the corresponding initial and boundary conditions. Geometric areas are presented in 
+Figure 2. 
+ 
+Figure 2. Decision area for coniferous tree trunk: 1—core; 2—subcrustal layer; 3—bark layer; 
+R2—boundary between core and subcrustal laye r; R1—boundary between subcrustal and bark 
+layer; Rs—tree trunk radius. 
+Unsteady heat conduction equations for core, subcrustal, and bark layer: 
+
+
+
+
+
+∂
+∂
+∂
+∂=∂
+∂
+r
+Trrrt
+Tс 1
+11
+λρ , (7)
+WWLLNWr
+Trrrt
+Tс +
+
+
+
+
+∂
+∂
+∂
+∂=∂
+∂ 2
+22
+λρ ,
+ 
+(8)
+
+
+
+
+
+∂
+∂
+∂
+∂=∂
+∂
+r
+Trrrt
+Tс 3
+33
+λρ ,
+ 
+(9)
+Initial conditions: 
+00 iti TT == , (10)
+Boundary conditions for the center of tree trunk: 
+0
+0
+1
+1 =∂
+∂
+=rr
+Tλ , (11)
+Boundary conditions for the line connected core and subcrustal layer: 
+Figure 2. Decision area for coniferous tree trunk: 1—core; 2—subcrustal layer; 3—bark layer;
+R2—boundary between core and subcrustal layer; R1—boundary between subcrustal and bark layer;
+Rs—tree trunk radius.
+Unsteady heat conduction equations for core, subcrustal, and bark layer:
+ρ1c1
+∂T
+∂t = λ1
+r
+∂
+∂r
+(
+r ∂T
+∂r
+)
+, (7)
+ρ2c2
+∂T
+∂t = λ2
+r
+∂
+∂r
+(
+r ∂T
+∂r
+)
++ WWWLLN , (8)
+ρ3c3
+∂T
+∂t = λ3
+r
+∂
+∂r
+(
+r ∂T
+∂r
+)
+, (9)
+Initial conditions:
+Ti|t=0 = Ti0, (10)
+Boundary conditions for the center of tree trunk:
+λ1
+∂T1
+∂r
+⏐⏐⏐⏐
+r=0
+= 0, (11)
+Boundary conditions for the line connected core and subcrustal layer:
+λ1
+∂T1
+∂r
+⏐⏐⏐⏐
+r=R1
+= λ2
+∂T2
+∂r
+⏐⏐⏐⏐
+r=R1
+, T1 = T2, (12)
+
+PAGE 6
+Forecasting 2021, 3 700
+Boundary conditions for the line connected subcrustal and bark layers:
+λ2
+∂T2
+∂r
+⏐⏐⏐⏐
+r=R2
+= λ3
+∂T3
+∂r
+⏐⏐⏐⏐
+r=R2
+, T1 = T2, (13)
+Boundary conditions for the external surface of the bark:
+λ3
+∂T3
+∂r
+⏐⏐⏐⏐
+r=R
+= α(Te− T3), (14)
+where Ti, ρi, ci, λi are the temperature [K], density [kg/m3], heat capacity [J/(kg·K)], and
+thermal conductivity [W/(m·K)] (i = 1 is the core, i = 2 is the subcrustal layer, i = 3 is the
+bark layer); t is the temporal coordinate; r is the spatial coordinate; R1 is the border of
+the core and subcrustal layer; R2 is the border of the subcrustal and bark layers; R is the
+radius of the coniferous tree; α is the heat transfer coefﬁcient; WWWLLN is the power of
+the discharge registered by WWLLN; index 0 corresponds to the parameters at the initial
+moment of time.
+These two models can be compared and contrasted. Both models uses unsteady heat
+conduction equations to determine temperature distribution in tree trunk. The number of
+equations is different for coniferous and deciduous tree trunk according to its structure.
+Boundary conditions are similar for these models but take into account the differences in
+tree trunk structure for coniferous and deciduous trees.
+Moreover, we can single out the probability that forest fuel reaches the state of forest
+ﬁre maturity. In our case, the “maturation” of the forest fuel is determined by the drying
+process of the forest fuel layer under the inﬂuence of external conditions. This process can
+be quantitatively characterized by the drying time of the forest fuel layer. The drying time
+of the forest fuel layer refers to the period of time during which the moisture content of the
+layer reaches a critical value. For example, for pine needles it is 13%. The drying time of
+the forest fuel layer makes it possible to determine the probability of forest ﬁres by weather
+conditions Pj(D).
+To determine the value of Pj(D), it should be taken into account that, as a rule, tanning
+occurs in the daytime. Obviously, Pj(D) takes its maximum value when the time interval
+up to the prediction hour (as a rule, the occurrence of most ﬁres falls in the middle of the
+day) coincides with the drying time of the j-th time interval of the ﬁre danger season in
+the i-th section of the controlled territory. The value of the ﬁre season in days, as a rule, is
+known from statistical data on the forestry archives. As a result, for the quantity Pj(D), the
+formula was obtained:
+Pj(D) =
+
+
+
+0
+kh exp
+(
+−
+[
+∆
+__
+t j
+]2) , ∆
+__
+t j = tj− tj∗
+tj∗ , (15)
+where kh is the correction factor for precipitation accounting (Table 1), tj is the current time;
+tj* is the drying time of forest fuel to critical value of moisture content; 0 in (15) corresponds
+to the case when there are no forest fuels on the forest area (the surface of roads, rivers,
+lakes, and water-saturated swamps). For dry thunderstorms kh = 1 can be used.
+To calculate the drying time for a layer of forest fuel material, a deterministic mathe-
+matical model presented in [46] was used. This mathematical model takes into account
+external meteorological conditions, such as wind speed, ambient temperature, long-wave
+and short-wave solar radiation, heat exchange with the surface layer of the atmosphere
+and the surface layer of the soil. In addition, this mathematical model takes into account
+the properties of a speciﬁc forest fuel material and therefore, indirectly takes into account
+the forest growing conditions in the controlled area.
+
+PAGE 7
+Forecasting 2021, 3 701
+Table 1. Precipitation coefﬁcient [47].
+Daily
+Precipitation, mm No 0.1–0.9 1.0–2.9 3.0–5.9 6.0–14.9 15.0–19.9 20 and
+More
+kh 1.0 0.8 0.6 0.4 0.2 0.1 0.0
+Below are the main assumptions and suggestions used in the development of a
+probabilistic criterion for predicting forest ﬁre danger from lightning in mountainous areas:
+- In the statistics of forest ﬁres, the vast majority of incidents are caused by lightning
+activity (this is true for mounting areas remote from settlements);
+- Both deciduous and coniferous trees grow in the forested area;
+- With increasing altitude, the frequency of cloud-to-ground lightning discharges in-
+creases (this is true for mounting areas according to data from WWLLN [45]);
+- Average long-term climatic data for the controlled area are used [48];
+- Ignition of trees is simulated under the assumption of a thermophysical model;
+- Typical tree characteristics are used (thermophysical, geometrical properties) [49].
+P(FF/M, Mj, L) =
+{ 0, no_ignition
+1, ignition , (16)
+That is, zero if mathematical modeling showed the absence of ignition of the forest
+fuels and one if it is numerically established that a forest fuels has ignited.
+The probability terms in Equation (20) can be estimated as follows:
+P(M) = NWWLLN
+NTF
+, (17)
+where NTF is the total number of days in the ﬁre season; NWWLLN is the number of days
+that WWLLN recorded lightning activity over the controlled area.
+P(Mj/M) = NHC
+NTD
+, (18)
+where NTD is the total number of lightning strikes registered by WWLLN; NHC is the
+number of high energy discharges recorded by the WWLLN.
+P(L) = AC
+AMAX
+, (19)
+where AC is the current altitude above sea level, for the controlled wooded area; AMAX is
+the maximum altitude above sea level for the study region.
+It is necessary to rely on the rigorous mathematical results of risk analysis [50], when
+the threat of any catastrophic phenomenon is assessed by its probability. The following
+probabilistic criterion for forest ﬁre danger caused by lightning activity is proposed:
+Pj = P(M)P(Mj/M)P(L)Pj(D)P(FF/M, Mj, L), (20)
+where Pj is the probability of a forest ﬁre from lightning activity for the j-th day of the
+ﬁre-dangerous season;P(M) is the probability of lightning activity in the controlled forest-
+covered area; P(Mj/M) is the probability of the cloud-to-ground lightning discharges in
+the controlled forest-covered area; P(L) is the probability of the cloud-to-ground lightning
+discharge hitting an area above a certain height above sea level; P(FF/M,Mj,L) is the
+probability of ignition of a forest fuels as a result of the cloud-to-ground lightning discharge,
+provided that the lightning front passes over the forest-covered area above a certain height
+above sea level.
+
+PAGE 8
+Forecasting 2021, 3 702
+Probabilistic part (5) also takes into account the dependence of ignition probability
+on forest growth conditions and meteorological data during ﬁrst part of the day accord-
+ing to mathematical model to calculate dry time of forest fuel layer under the external
+meteorological conditions [46].
+Suggested approach consists of two interconnected parts: probabilistic criterion
+that formulated in Equations (15)–(20) and two deterministic models to calculate igni-
+tion conditions for coniferous and deciduous trees presented in Equations (1)–(6) and
+Equations (7)–(14). This approach to predict forest ﬁre danger can be described as Figure 3.
+First stage is a setup of initial conditions. Four types of initial conditions are considered,
+namely, meteorological data, tree characteristic, WWLLN data, and relief. Next stage is
+computing of ignition conditions for coniferous and deciduous trees accompanied with
+calculation of probabilistic part (17)–(19). Next stage is calculation of probabilistic criterion
+and determination of forest ﬁre probability according to (20). Finally, probability of forest
+ﬁre occurrence can be presented as ﬁve subintervals of [0, 1] range: extreme, high, medium,
+low, very low, or none.
+Forecasting 2021, 3 FOR PEER REVIEW  8 
+ 
+discharge, provided that the lightning front passes over the forest-covered area above a 
+certain height above sea level. 
+Probabilistic part (5) also takes into account the dependence of ignition probability 
+on forest growth conditions and meteorological  data during first part of the day accord-
+ing to mathematical model to calculate dry time of forest fuel layer under the external 
+meteorological conditions [46]. 
+Suggested approach consists of two interconnected parts: probabilistic criterion that 
+formulated in Equations (15)–(20) and two deterministic models to calculate ignition 
+conditions for coniferous and deciduous trees  presented in Equations (1)–(6) and Equa-
+tions (7)–(14). This approach to predict forest  fire danger can be described as Figure 3. 
+First stage is a setup of initial conditions. Four types of initial conditions are considered, 
+namely, meteorological data, tree characterist ic, WWLLN data, and relief. Next stage is 
+computing of ignition conditions for conife rous and deciduous trees accompanied with 
+calculation of probabilistic part (17)–(19). Next stage is calculation of probabilistic crite-
+rion and determination of forest fire probabil ity according to (20). Finally, probability of 
+forest fire occurrence can be presented as five subintervals of [0, 1] range: extreme, high, 
+medium, low, very low, or none. 
+ 
+Figure 3. Scheme of methodology to predict forest fire danger. 
+Forest fire danger scale has been presented in Table 2. 
+ 
+Figure 3. Scheme of methodology to predict forest ﬁre danger.
+Forest ﬁre danger scale has been presented in Table 2.
+In this paper, it is proposed to use synthetic data on the parameters of lightning
+activity, since this is a pioneering work on using the deterministic-probabilistic method
+to predict forest ﬁre dangers in mountainous areas, not all statistical data are currently
+available. It is proposed to identify a group of parameters that will serve as input data for
+assessing the probability of a forest ﬁre on a typical day of a ﬁre dangerous season.
+
+PAGE 9
+Forecasting 2021, 3 703
+Three scenarios of forest ﬁre danger are considered for each territory. Below are
+the main scenarios for the occurrence of forest ﬁres from lightning in mountainous areas.
+Table 3 shows the typical scenarios that characterize lightning activity. Scenarios of low,
+moderate, and high forest ﬁre danger are considered. These scenarios differ in the length of
+the ﬁre season, the number of days with lightnings, and the typical number of high energy
+discharges. According to [51], it can be assumed that it is the high-energy discharges that
+will be cloud-to-ground discharges. It should be noted that at the moment the World Wide
+Lightning Location Network does not provide data on the type of lightning discharge,
+but makes it possible to use the geographical coordinates and energy characteristics of
+the lightning discharge [52]. Three types of scenarios for lightning activity are considered:
+Low, Moderate, and High.
+The work uses data from the WWLLN for 2010–2015. The nearest ﬁve WWLLN
+stations to Gorno-Altaysk and Ulan-Ude until 2015 are Bryansk ( ≈3200 km), Yakutsk
+(≈2600 km), Beijing (≈2900 km), Lanzhou (≈2700 km), Vladivostok (≈3600 km). The
+network registers data throughout the year. Data on atmospheres recorded by WWLLN
+contain the following indicators: date, time, latitude, longitude, error, and number of
+stations in which the electromagnetic pulse was recorded [53].
+The time of registration of the lightning discharge by the WWLLN network is car-
+ried out at a worldwide coordinated time. To estimate the daily stroke of the lightning
+discharges, the time was recalculated for each discharge from the universal coordinated
+time to the local solar time. An analysis of the lightning-density distribution map is pre-
+sented, which was calculated from the number of atmospherics recorded by the WWLLN
+in 10 km× 10 km sections [54].
+The WWLLN receiver consists of a VLF antenna, a VLF preampliﬁer (mounted at
+the bottom of the antenna). A separate small GPS antenna is also installed. In addition,
+a service node is connected. All these components are connected to a personal computer
+using various cables [55,56].
+It should be noted that such a node can be built in any country to detect lightning
+discharges at a distance of up to 10 thousand km. The maximum signal from a lightning
+strike is ﬁxed at frequencies around 10 kHz. Each node transmits data to the central
+computer, where centralized data processing takes place.
+Membership in the WWLLN network is not limited to any political requirements.
+The WWLLN network nodes work on volunteer basis. The network is really international.
+The optimal distance is 3000 km from node to the node for detecting lightning discharges.
+For the functioning of the node, a Pentium III or more powerful processor is sufﬁcient.
+It should be noted that the sound card can be either integrated in the motherboard, or
+made in a separate version (the parameters of the sound card affect the passage of the
+signal through the sound channel). The personal computer of the node can operate under
+a Windows or Unix system. The node installed in Gorno-Altaysk State University operates
+under the control of the Ubuntu system [55,56].
+Table 3 provides information on different scenarios of lightning activity for Republic
+of Buryatiya and Republic of Altay. Three scenarios are considered. Low lightning activity
+is characterized by the lowest number of days with lightning discharges registered by
+WWLLN network. Each parameter is ﬁxed for a speciﬁed scenario. Moreover, it should be
+noted that ﬁre dangerous season length is different for each study area.
+Table 4 presents typical scenarios that characterize the altitudinal zonation of a forested
+area. Scenarios of low, moderate, and high forest ﬁre danger are also considered. The
+main predictor in this table is the elevation of a typical wooded area relative to sea level.
+Three scenarios are considered. Low lightning activity is characterized by lowest altitude
+of forested area. Each parameter is ﬁxed for a speciﬁed scenario. Moreover, it should be
+noted that ﬁre dangerous season length is different for each study area.
+
+PAGE 10
+Forecasting 2021, 3 704
+Table 2. Forest ﬁre danger scales (level).
+Fire Danger Class, Pj Regulations for Forest Protection Services [57]
+Pj∈ [0, 0.2], (I)
+No ﬁre danger
+Ground-based patrols are carried out in places of ﬂammable work, in
+order to monitor compliance with ﬁre safety rules in the forest. Duty
+on ﬁre observation towers (FOT) is not carried out.
+Pj∈ (0.2, 0.4], (II)
+Lowﬁre danger
+Ground patrolling is carried out in areas assigned to classes I and II
+of natural ﬁre danger, as well as in places of mass visits and rest of
+the population from 11 to 17 h. Duty at the night vision gates and at
+reception points from 11 to 17 h.
+Pj∈ (0.4, 0.6], (III)
+Medium ﬁre danger
+Ground patrolling is carried out from 10 to 19 h, in areas assigned to
+the ﬁrst three classes of ﬁre danger, and is especially intensiﬁed in the
+places of work and places most visited by the population. Duty at the
+FOT and at points of reception of reports from 10 to 19 h, at points of
+reception of reports from 10 to 17 h.
+Pj∈ (0.6, 0.8], (IV)
+High ﬁre danger
+Ground patrolling is carried out from 8 to 20 h in places of work, as
+well as in places visited by the population, regardless of the class of
+ﬁre danger to which the sections are assigned. Duty hours on FOT
+are carried out during the whole daylight hours, at the points of
+reception of reports from 8 to 20 h.
+Pj∈ (0.8, 1], (V)
+Extreme ﬁre danger
+Ground patrolling is carried out throughout the daylight hours, and
+in the most dangerous places around the clock. To help the forest
+guard and temporary ﬁremen, workers and employees of the forestry,
+a public asset and the police are involved in patrolling. Duty on FOT
+and at points of reception of reports are carried out, as in the IV class
+of ﬁre danger.
+Table 3. Inﬂuence of characteristics of lightning activity.
+Scenario N TF NWWLLN NHC NTD AC, m A MAX, m W WWLLN, MW
+Altay
+Republic,
+Low
+200 25 20 100 1000 4000 2500
+Altay
+Republic,
+Moderate
+200 30 25 100 1000 4000 2500
+Altay
+Republic,
+High
+200 35 30 100 1000 4000 2500
+Republic of
+Buryatiya,
+Low
+160 20 20 100 1000 2683 2500
+Republic of
+Buryatiya,
+Moderate
+160 25 25 100 1000 2683 2500
+Republic of
+Buryatiya,
+High
+160 30 30 100 1000 2683 2500
+* WWLLN is World Wide Lightning Location Network, MAX is maximum.
+Table 5 provides descriptions of scenarios for the ignition of a forest fuels, namely,
+the trunk of a deciduous or coniferous tree by an electric current of the cloud-to-ground
+lightning discharge. The main predictor in this table is the power of the cloud-to-ground
+lightning discharge. Three scenarios of forest ﬁre danger are presented in accordance with
+the magnitude of the power of a cloud-to-ground lightning discharge. Each parameter is
+ﬁxed for a speciﬁed scenario. Furthermore, it should be noted that ﬁre dangerous season
+length is different for each study area.
+
+PAGE 11
+Forecasting 2021, 3 705
+Table 4. Inﬂuence of the altitude of the forested area above sea level.
+Scenario N TF NWWLLN NHC NTD AC, m A MAX, m W WWLLN, MW
+Altay
+Republic,
+Low
+200 25 20 100 1000 4000 2500
+Altay
+Republic,
+Moderate
+200 25 20 100 1500 4000 2500
+Altay
+Republic,
+High
+200 25 20 100 2000 4000 2500
+Republic of
+Buryatiya,
+Low
+160 20 20 100 1000 2683 2500
+Republic of
+Buryatiya,
+Moderate
+160 20 20 100 1500 2683 2500
+Republic of
+Buryatiya,
+High
+160 20 20 100 2000 2683 2500
+* WWLLN is World Wide Lightning Location Network, MAX is maximum.
+Table 5. Inﬂuence of characteristics of lightning activity on ignition.
+Scenario N TF NWWLLN NHC NTD AC, m A MAX, m W WWLLN, MW
+Altay
+Republic,
+Low
+200 25 20 100 1000 4000 1500
+Altay
+Republic,
+Moderate
+200 30 25 100 1000 4000 2500
+Altay
+Republic,
+High
+200 35 30 100 1000 4000 3500
+Republic of
+Buryatiya,
+Low
+160 20 20 100 1000 2683 1500
+Republic of
+Buryatiya,
+Moderate
+160 25 25 100 1000 2683 2500
+Republic of
+Buryatiya,
+High
+160 30 30 100 1000 2683 3500
+* WWLLN is World Wide Lightning Location Network, MAX is maximum.
+4. Results and Discussion
+It should be noted that the results of experiments to determine the kinetic mechanism
+(and its parameters) of the ignition of large wood blocks (including a high-energy electric
+discharge) are still unknown. The difﬁculty of implementing an experimental study of
+this process is obvious. However, there is an approach [58], within which the conditions
+of ignition of deciduous wood (birch) are described by two parameters (heat ﬂow and
+temperature of the ignition surface, Tables 6 and 7).
+
+PAGE 12
+Forecasting 2021, 3 706
+Table 6. Experimental data for deciduous tree [58].
+Ignition Delay, s Heat Flux, kW/m2 Surface Temperature, K
+136 15 -
+61.2 21 645
+17.2 42 688
+1.8 125 755
+0.43 210 801
+Table 7. Experimental data for coniferous tree [58].
+Ignition Delay, s Heat Flux, kw/m2 Surface Temperature, K
+63.5 12.5 658
+45.0 21 700
+11.1 42 726
+2.6 84 773
+0.4 210 867
+The distribution of temperature along the radius of the trunk of a deciduous tree
+without taking into account the surface layer of water at different points in time during the
+action of a lightning discharge is shown in Figure 4: (1) t = 0.01 s; (2) 0.1 s; (3) 0.3 s; (4) 0.5 s.
+Figure 5 shows the dependence of the temperature of the ignition surface and the density
+of the heat ﬂux to this surface on time.
+Forecasting 2021, 3 FOR PEER REVIEW  13 
+ 
+ 
+Figure 4. Temperature distribution along the radius of the deciduous tree trunk at different points 
+in time. 
+. 
+Figure 5. Temperature of the ignition surface and heat flux to the ignition surface at different times 
+(deciduous tree). 
+In Figure 5, numbers indicate: 1—temperature in the trunk at the border of the bark 
+and core; 2—temperature on the surface of the bark during heat release in the surface 
+layer of water; 3—heat flux to the ignition surface from the trunk core; 4—heat flux to the 
+ignition surface from the surface layer of water. The ignition conditions were determined 
+from the experimental data [58] (Table 6). 
+Figure 6 shows the temperature distribution along the radius of a tree trunk at var-
+ious points in time before and at the time of ignition of a tree trunk by electric current: (1) 
+Figure 4. Temperature distribution along the radius of the deciduous tree trunk at different points
+in time.
+
+PAGE 13
+Forecasting 2021, 3 707
+Forecasting 2021, 3 FOR PEER REVIEW  13 
+ 
+ 
+Figure 4. Temperature distribution along the radius of the deciduous tree trunk at different points 
+in time. 
+. 
+Figure 5. Temperature of the ignition surface and heat flux to the ignition surface at different times 
+(deciduous tree). 
+In Figure 5, numbers indicate: 1—temperature in the trunk at the border of the bark 
+and core; 2—temperature on the surface of the bark during heat release in the surface 
+layer of water; 3—heat flux to the ignition surface from the trunk core; 4—heat flux to the 
+ignition surface from the surface layer of water. The ignition conditions were determined 
+from the experimental data [58] (Table 6). 
+Figure 6 shows the temperature distribution along the radius of a tree trunk at var-
+ious points in time before and at the time of ignition of a tree trunk by electric current: (1) 
+Figure 5. Temperature of the ignition surface and heat ﬂux to the ignition surface at different times
+(deciduous tree).
+In Figure 5, numbers indicate: 1—temperature in the trunk at the border of the bark
+and core; 2—temperature on the surface of the bark during heat release in the surface
+layer of water; 3—heat ﬂux to the ignition surface from the trunk core; 4—heat ﬂux to the
+ignition surface from the surface layer of water. The ignition conditions were determined
+from the experimental data [58] (Table 6).
+Figure 6 shows the temperature distribution along the radius of a tree trunk at var-
+ious points in time before and at the time of ignition of a tree trunk by electric current:
+(1) t = 0.01 s; (2) 0.1 s; (3) 0.3 s; (4) 0.5 s. Figure 7 shows the time dependence of the heat
+ﬂux from the subcortical zone to the ignition surface of the tree trunk and the temperature
+of this boundary at various points in time. The ignition conditions of the trunk wood were
+determined by experimental data [58] (Table 7):
+Forecasting 2021, 3 FOR PEER REVIEW  14 
+ 
+t = 0.01 s; (2) 0.1 s; (3) 0.3 s; (4) 0.5 s. Figure 7 shows the time dependence of the heat flux 
+from the subcortical zone to the ignition su rface of the tree trunk and the temperature of 
+this boundary at various points in time. The ignition conditions of the trunk wood were 
+determined by experimental data [58] (Table 7): 
+ 
+Figure 6. The temperature distribution along the radius  of the coniferous tree trunk at various 
+points in time (duration of the discharge is 500 ms): (1) t = 0.01 s; (2) 0.1 s; (3) 0.3 s; (4) 0.5 s. 
+ 
+Figure 7. The heat flux from the subcortical zone (2) to  the ignition surface and its temperature (1) 
+at various points in time (coniferous tree). 
+Figure 8 shows the dependence of the probability of a forest fire as a result of the 
+cloud-to-ground lightning discharge on the territory of the Altai Republic during the first 
+Figure 6. The temperature distribution along the radius of the coniferous tree trunk at various points
+in time (duration of the discharge is 500 ms): (1) t = 0.01 s; (2) 0.1 s; (3) 0.3 s; (4) 0.5 s.
+
+PAGE 14
+Forecasting 2021, 3 708
+Forecasting 2021, 3 FOR PEER REVIEW  14 
+ 
+t = 0.01 s; (2) 0.1 s; (3) 0.3 s; (4) 0.5 s. Figure 7 shows the time dependence of the heat flux 
+from the subcortical zone to the ignition su rface of the tree trunk and the temperature of 
+this boundary at various points in time. The ignition conditions of the trunk wood were 
+determined by experimental data [58] (Table 7): 
+ 
+Figure 6. The temperature distribution along the radius  of the coniferous tree trunk at various 
+points in time (duration of the discharge is 500 ms): (1) t = 0.01 s; (2) 0.1 s; (3) 0.3 s; (4) 0.5 s. 
+ 
+Figure 7. The heat flux from the subcortical zone (2) to  the ignition surface and its temperature (1) 
+at various points in time (coniferous tree). 
+Figure 8 shows the dependence of the probability of a forest fire as a result of the 
+cloud-to-ground lightning discharge on the territory of the Altai Republic during the first 
+Figure 7. The heat ﬂux from the subcortical zone (2) to the ignition surface and its temperature (1) at
+various points in time (coniferous tree).
+Figure 8 shows the dependence of the probability of a forest ﬁre as a result of the
+cloud-to-ground lightning discharge on the territory of the Altai Republic during the ﬁrst
+half of the day according to Table 2. Low, moderate, and high scenarios of lightning activity
+are considered.
+Forecasting 2021, 3 FOR PEER REVIEW  15 
+ 
+half of the day according to Table 2. Low, moderate, and high scenarios of lightning ac-
+tivity are considered. 
+ 
+Figure 8. Dependence of the probability of a forest fire as a result of the cloud-to-ground lightning 
+discharge on the territory of the Altay Republic during the first half of the day. 
+The curves of the probability of forest fire  occurrence, typical for scenarios of low, 
+moderate, and high forest fire danger, are presented. The time interval is considered from 
+midnight to 13 o’clock in the afternoon. The choice of this time interval is due to a num-
+ber of forest fire danger factors. It is kn own [2] that most of cloud-to-ground lightning 
+discharges occur at night. This determines the choice of the lower time limit around 
+midnight. Second, from the morning hours until 13:00 there is an intensive evaporation of 
+moisture from forest fuels [46]. It is at 13 o’ clock in the afternoon that the peak of forest 
+fire danger caused by meteorological conditions is usually observed [50]. Therefore, it is 
+important for forest fire protection services to understand what level of forest fire danger 
+will be by 13 o’clock local time. 
+Figure 9 shows the dependence of the probability of a forest fire as a result of the 
+cloud-to-ground lightning discharge on the terri tory of the Republic of Buryatia in the 
+first half of the day according to Table 2. Low, moderate, and high scenarios of lightning 
+activity are considered. 
+Figure 8. Dependence of the probability of a forest ﬁre as a result of the cloud-to-ground lightning
+discharge on the territory of the Altay Republic during the ﬁrst half of the day.
+The curves of the probability of forest ﬁre occurrence, typical for scenarios of low,
+moderate, and high forest ﬁre danger, are presented. The time interval is considered
+from midnight to 13 o’clock in the afternoon. The choice of this time interval is due to a
+number of forest ﬁre danger factors. It is known [2] that most of cloud-to-ground lightning
+discharges occur at night. This determines the choice of the lower time limit around
+midnight. Second, from the morning hours until 13:00 there is an intensive evaporation of
+moisture from forest fuels [46]. It is at 13 o’clock in the afternoon that the peak of forest
+
+PAGE 15
+Forecasting 2021, 3 709
+ﬁre danger caused by meteorological conditions is usually observed [50]. Therefore, it is
+important for forest ﬁre protection services to understand what level of forest ﬁre danger
+will be by 13 o’clock local time.
+Figure 9 shows the dependence of the probability of a forest ﬁre as a result of the
+cloud-to-ground lightning discharge on the territory of the Republic of Buryatia in the ﬁrst
+half of the day according to Table 2. Low, moderate, and high scenarios of lightning activity
+are considered.
+Forecasting 2021, 3 FOR PEER REVIEW  16 
+ 
+ 
+Figure 9. Dependence of the probability of a forest fire as a result of the impact of the 
+cloud-to-ground lightning discharge on the territory  of the Republic of Buryatia during the first 
+half of the day. 
+Figure 9 also shows curves typical for scenarios of low, moderate, and high forest 
+fire danger. Similarly, the calculation of the probability was carried out from midnight to 
+13:00 local time. 
+Figure 10 shows the dependence of the probability of a forest fire, due to the altitude 
+of the forested area above sea level when exposed to the cloud-to-ground lightning dis-
+charge for the Altay Republic according to Table 3. Low, moderate, and high scenarios of 
+lightning activity are considered. 
+ 
+Figure 9. Dependence of the probability of a forest ﬁre as a result of the impact of the cloud-to-ground
+lightning discharge on the territory of the Republic of Buryatia during the ﬁrst half of the day.
+Figure 9 also shows curves typical for scenarios of low, moderate, and high forest ﬁre
+danger. Similarly, the calculation of the probability was carried out from midnight to 13:00
+local time.
+Figure 10 shows the dependence of the probability of a forest ﬁre, due to the altitude of
+the forested area above sea level when exposed to the cloud-to-ground lightning discharge
+for the Altay Republic according to Table 3. Low, moderate, and high scenarios of lightning
+activity are considered.
+Forecasting 2021, 3 FOR PEER REVIEW  16 
+ 
+ 
+Figure 9. Dependence of the probability of a forest fire as a result of the impact of the 
+cloud-to-ground lightning discharge on the territory  of the Republic of Buryatia during the first 
+half of the day. 
+Figure 9 also shows curves typical for scenarios of low, moderate, and high forest 
+fire danger. Similarly, the calculation of the probability was carried out from midnight to 
+13:00 local time. 
+Figure 10 shows the dependence of the probability of a forest fire, due to the altitude 
+of the forested area above sea level when exposed to the cloud-to-ground lightning dis-
+charge for the Altay Republic according to Table 3. Low, moderate, and high scenarios of 
+lightning activity are considered. 
+ 
+Figure 10. Dependence of the probability of a forest ﬁre, due to the altitude (low, moderate and
+high scenarios) of the forested area above sea level when exposed to the cloud-to-ground lightning
+discharge for the Altay Republic in the ﬁrst half of the day.
+
+PAGE 16
+Forecasting 2021, 3 710
+Figure 10 shows curves typical for scenarios of low, moderate, and high forest ﬁre
+danger. The choice of the characteristics of various scenarios is due to the fact that it was
+previously established that large values of the cloud-to-ground discharge current and their
+number are characteristic of higher mountainous regions [46].
+Figure 11 shows the dependence of the probability of a forest ﬁre, due to the height of
+the forested area above sea level when exposed to the cloud-to-ground lightning discharge
+for the Republic of Buryatia according to Table 3. Low, moderate, and high scenarios of
+lightning activity are considered.
+Forecasting 2021, 3 FOR PEER REVIEW  17 
+ 
+Figure 10. Dependence of the probability of a forest fi re, due to the altitude (low, moderate and 
+high scenarios) of the forested area above sea level when exposed to the cloud-to-ground lightning 
+discharge for the Altay Republic in the first half of the day. 
+Figure 10 shows curves typical for scenario s of low, moderate, and high forest fire 
+danger. The choice of the characteristics of various scenarios is due to the fact that it was 
+previously established that large values of  the cloud-to-ground discharge current and 
+their number are characteristic of higher mountainous regions [46]. 
+Figure 11 shows the dependence of the probab ility of a forest fire, due to the height 
+of the forested area above sea level when exposed to the cloud-to-ground lightning dis-
+charge for the Republic of Buryatia according to Table 3. Low, moderate, and high sce-
+narios of lightning activity are considered. 
+ 
+Figure 11. Dependence of the probability of a forest fire due to the altitude (low, moderate, and 
+high scenarios) of the forested area above sea level when exposed to the cloud-to-ground lightning 
+discharge for the Republic of Buryatia in the first half of the day. 
+Figure 11 also shows curves typical for different scenarios of forest fire danger. 
+Figure 12 shows a binary diagram of the pr obability of ignition  for deciduous or 
+coniferous tree trunk by the cloud-to-groun d lightning discharge current according to 
+Table 4. Typical range of lightning discharge magnitude is used for calculations. 
+Figure 11. Dependence of the probability of a forest ﬁre due to the altitude (low, moderate, and
+high scenarios) of the forested area above sea level when exposed to the cloud-to-ground lightning
+discharge for the Republic of Buryatia in the ﬁrst half of the day.
+Figure 11 also shows curves typical for different scenarios of forest ﬁre danger.
+Figure 12 shows a binary diagram of the probability of ignition for deciduous or
+coniferous tree trunk by the cloud-to-ground lightning discharge current according to
+Table 4. Typical range of lightning discharge magnitude is used for calculations.
+Forecasting 2021, 3 FOR PEER REVIEW  18 
+ 
+ 
+Figure 12. Binary diagram of the probability of igni tion for tree trunk by the cloud-to-ground 
+lightning discharge current. 
+The value of the probability of ignition for tree trunk for synthetic data turned out to 
+be the same for similar scenarios of ignition  by the cloud-to-ground lightning discharge, 
+for both deciduous and coniferous trees. It is clear that with the same energy characteris-
+tics, the probability of ignition of a tree trunk by the cloud-to-ground lightning discharge 
+will be the same both for the territory of the Altay Republic and for the territory of the 
+Republic of Buryatia. 
+Separately, it is necessary to characterize the processes of ignition of deciduous and 
+coniferous trees by the cloud-to-ground lightn ing discharge. Despite the fact that in the 
+presented calculations using a one-dimensional mathematical formulation for deciduous 
+and coniferous trees, the ignition conditions turned out to be the same, in reality there 
+will be differences. As studies of the proce sses of ignition of deciduous and coniferous 
+trees by the cloud-to-ground lightning discharge in two-dimensional and 
+three-dimensional formulations have shown [50], the ignition delays and conditions 
+themselves will slightly differ. First, this is due to the geometric and structural hetero-
+geneity of the trunk of deciduous and coniferous trees [59]. 
+In a deciduous tree, the trunk can be cond itionally divided into two layers, repre-
+sented by the core and the bark layer. The core contains vessels that conduct moisture. 
+Ignition is susceptible to inter-vessel wood near the surface vessels. Since it is possible to 
+access oxygen in the air, at certain conc entrations of oxygen and gaseous pyrolysis 
+products and the temperature of the gas mixt ure, gas-phase ignition of the tree trunk 
+occurs. With the passage of an electric curre nt in internal vessels, both thermal stresses 
+and processes of intense vaporization can ar ise. Together, these processes can cause the 
+trunk of a deciduous tree to rupture. Ca lculation based on two-dimensional and 
+three-dimensional mathematical formulations [50] shows that the ignition of the trunk 
+occurs in the zone of localization of cracks in the bark layer. 
+The structure of the coniferous tree is some what different [59]. In the trunk of a co-
+niferous tree, three zones can be distinguishe d: the resinous core, the subcrustal layer, 
+and the bark. Moisture in the trunk of a co niferous tree moves in a narrow subcrustal 
+zone. It is here that the Joule heat is released and the subsequent ignition of the conifer-
+ous tree trunk occurs. Moreover, the same physicochemical processes are characteristic 
+Figure 12. Binary diagram of the probability of ignition for tree trunk by the cloud-to-ground
+lightning discharge current.
+
+PAGE 17
+Forecasting 2021, 3 711
+The value of the probability of ignition for tree trunk for synthetic data turned out to
+be the same for similar scenarios of ignition by the cloud-to-ground lightning discharge, for
+both deciduous and coniferous trees. It is clear that with the same energy characteristics,
+the probability of ignition of a tree trunk by the cloud-to-ground lightning discharge will
+be the same both for the territory of the Altay Republic and for the territory of the Republic
+of Buryatia.
+Separately, it is necessary to characterize the processes of ignition of deciduous and
+coniferous trees by the cloud-to-ground lightning discharge. Despite the fact that in the
+presented calculations using a one-dimensional mathematical formulation for deciduous
+and coniferous trees, the ignition conditions turned out to be the same, in reality there will
+be differences. As studies of the processes of ignition of deciduous and coniferous trees
+by the cloud-to-ground lightning discharge in two-dimensional and three-dimensional
+formulations have shown [50], the ignition delays and conditions themselves will slightly
+differ. First, this is due to the geometric and structural heterogeneity of the trunk of
+deciduous and coniferous trees [59].
+In a deciduous tree, the trunk can be conditionally divided into two layers, represented
+by the core and the bark layer. The core contains vessels that conduct moisture. Ignition
+is susceptible to inter-vessel wood near the surface vessels. Since it is possible to access
+oxygen in the air, at certain concentrations of oxygen and gaseous pyrolysis products and
+the temperature of the gas mixture, gas-phase ignition of the tree trunk occurs. With the
+passage of an electric current in internal vessels, both thermal stresses and processes of
+intense vaporization can arise. Together, these processes can cause the trunk of a deciduous
+tree to rupture. Calculation based on two-dimensional and three-dimensional mathematical
+formulations [50] shows that the ignition of the trunk occurs in the zone of localization of
+cracks in the bark layer.
+The structure of the coniferous tree is somewhat different [ 59]. In the trunk of a
+coniferous tree, three zones can be distinguished: the resinous core, the subcrustal layer,
+and the bark. Moisture in the trunk of a coniferous tree moves in a narrow subcrustal zone.
+It is here that the Joule heat is released and the subsequent ignition of the coniferous tree
+trunk occurs. Moreover, the same physicochemical processes are characteristic that occur
+in deciduous trees. However, thermal stresses and intense vaporization occur in a narrow
+subcrustal zone. Therefore, for a coniferous tree, the breakdown of the bark layer is more
+characteristic. The heated or burning fragments of the bark fall out onto the layer of the
+ground combustible material and can lead to its ignition [50]. As a result, a surface forest
+ﬁre occurs.
+It is also necessary to characterize the results obtained for assessing the probability of
+a forest ﬁre for various scenarios of forest ﬁre danger. Analysis of Figures 8 and 9 shows
+that the absolute probabilities of a forest ﬁre as a result of the impact of the cloud-to-ground
+lightning discharge are quite small. However, this value is not null. These values are
+comparable both for the territory of the Altay Republic and for the territory of the Republic
+of Buryatia. The differences in the numerical values are due to the difference in the duration
+of the ﬁre dangerous season and the parameters of lightning activity. Figures 8 and 9 show
+that the maximum probability of a forest ﬁre is typical for noon. Earlier it was indicated,
+what caused this pattern. A comparative analysis of various scenarios shows a natural
+increase in the probability of a forest ﬁre for a scenario of high forest ﬁre danger compared
+to scenarios of low and moderate danger.
+Analysis of Figures 10 and 11 shows that when the forested area is located at a higher
+altitude relative to sea level, the probability of a forest ﬁre is also higher. This is clearly
+seen in the curves corresponding to scenarios of low, moderate, and high forest ﬁre danger.
+The absolute values of the probability of a forest ﬁre are also comparable for the territory
+of the Altay Republic and the territory of the Republic of Buryatia.
+It should be noted that the probability of a forest ﬁre is comparable to the proportion of
+trees ignited during a lightning discharge [15–24]. Thus, parametric analysis and scenario
+modeling show the adequacy of the change in the probability of a forest ﬁre when the
+
+PAGE 18
+Forecasting 2021, 3 712
+initial data included in the formula of the probabilistic criterion are varied. It should be
+noted that the obtained formula for assessing the probability of a forest ﬁre as a result of
+the cloud-to-ground lightning discharge can be used in conjunction with the methodology
+for predicting the number of forest ﬁres [60].
+It should also be added that since 2011, a simpler probabilistic formula has been used
+in ISDM-Rosleskhoz in the Russian Federation [ 5]. This criterion uses statistics on the
+occurrence of forest ﬁres. The development of a new probabilistic criterion for predicting
+forest ﬁres, presented in this work, will allow in the near future to modernize the block
+for calculating the probability of forest ﬁres from lightnings in ISDM-Rosleskhoz, taking
+into account the real data on cloud-to-ground lightning discharges and in mountainous
+terrain. This study is part of two large projects to develop methods for predicting forest
+ﬁre dangers. Within the framework of the ﬁrst regional project on the territory of the
+Altay Republic, next year, it is planned to collect statistics on forest ﬁres in forestry and
+conduct a retrospective analysis of the developed probabilistic criterion for the occurrence
+of forest ﬁres, taking into account statistics on the occurrence of forest ﬁres and real data on
+lightning discharges registered by the WWLLN system. Prospects for development within
+the framework of the second project with the support of JSC Russian Railways are due
+to a joint analysis of the conditions for the occurrence of forest ﬁres from lightnings and
+the impact of the railway in buffer zones on the territory of the Republic of Buryatia. It
+should be noted that the question of how to divide the interval of change in the probability
+of a forest ﬁre into ﬁve subintervals corresponding to different levels of forest ﬁre danger
+remains open. They will probably be uneven.
+5. Conclusions
+Thus, in this work, we propose an integrated deterministic-probabilistic approach to
+predicting forest ﬁre dangers due to lightning activity in mountainous terrain. As a result of
+the study, a probabilistic criterion for assessing the occurrence of a forest ﬁre caused by the
+impact of the cloud-to-ground lightning discharge has been developed. Scenario modeling
+and parametric analysis made it possible to establish that the calculated probability of a
+forest ﬁre occurrence adequately reﬂects the change in the initial data. Moreover, consistent
+results were obtained for scenarios of low, moderate, and high lightning activity.
+A quantitative analysis shows that, depending on the local time, the duration of the
+ﬁre dangerous season, the characteristics of lightning activity and the topography of the
+study area, the probability of a forest ﬁre is about 0.01–0.02 in absolute terms. These values
+are similar to the percentage of trees ignited by the cloud-to-ground lightning discharges.
+As a result of research [30], it was found that the efﬁciency of a thunderstorm (the number
+of forest ﬁres to the number of lightning discharges) for Catalonia is about 1/400. Thus,
+only a few discharges lead to a forest ﬁre and the development of methods for identifying
+potential discharges that will lead to a ﬁre, among the total number, is very important for
+predicting forest ﬁre hazards caused by a thunderstorm [30].
+Thus, this paper presents a deterministic-probabilistic approach to predicting forest
+ﬁre danger due to thunderstorm activity. The deterministic part is based on physical and
+mathematical models of forest fuel drying and ignition of coniferous and deciduous trees
+by a cloud-to-ground lightning discharge. Heat transfer in a tree trunk under the inﬂuence
+of a cloud-to-ground lightning discharge is described mathematically using the unsteady
+heat conduction equations with the corresponding initial and boundary conditions. These
+equations are solved by the ﬁnite difference method. As a result of numerical modeling,
+the conditions for the ignition of a tree can be determined: the temperature of the ignition
+surface and the heat ﬂux from the heat release zone in the tree trunk to the bark layer. At
+certain values of these parameters, which are presented in Tables 6 and 7, the ignition of
+a tree trunk by a cloud-to-ground lightning discharge can be ﬁxed. Using Equation (16),
+one can determine the binary dependence of the ignition probability. The ﬁnal probability
+of a forest ﬁre depends on time, since the probabilistic part (15) is calculated using a
+mathematical model of forest fuel drying. Such a model describes the evaporation of
+
+PAGE 19
+Forecasting 2021, 3 713
+moisture from a forest fuel under the inﬂuence of external meteorological conditions and
+depends on the time coordinate.
+The paper proposes to use a forest ﬁre probability scale in accordance with Table 2.
+However, as a result of calculating the values of the ﬁnal probability, they are very small
+and, perhaps, one should speak not about the level of forest ﬁre danger, but about the
+probability of ignition as a result of a cloud-to-ground lightning discharge. As is known,
+not all cloud-to-ground discharges lead to the ignition of forest fuel, and not all ignitions
+pass into the stage of stable ﬂame propagation, which is characteristic for a surface forest
+ﬁre. The issue of forest ﬁre danger scales should be worked out in subsequent studies
+using real data for a speciﬁc period of the deﬁnite ﬁre season.
+Further studies will be aimed at conducting a retrospective analysis of the obtained
+probabilistic criterion for the occurrence of a forest ﬁre using statistical data and parameters
+of lightning activity recorded by the WWLLN network. This will allow in the future to
+validate the developed probabilistic criterion.
+Funding: The reported study was funded by RFBR. Project number 20-45-040012 (synthetic modeling
+for Republic of Altay). The reported study was funded by RFBR, Sirius University of Science and
+Technology, JSC Russian Railways and Educational Fund “Talent and success”, project number
+20-31-51001 (synthetic modeling for Republic of Buryatiya). The APC was funded by MDPI.
+Institutional Review Board Statement: Not applicable.
+Informed Consent Statement: Not applicable.
+Data Availability Statement: Data can be provided by the request for author.
+Conﬂicts of Interest: The author declares no conﬂict of interest.
+References
+1. Baranovskiy, N.V . Predicting, Monitoring, and Assessing Forest Fire Dangers and Risks. IGI Glob. 2020. [CrossRef]
+2. Ivanov, V .A. Methodological Foundations of the Classiﬁcation of Forests in Central Siberia by the Degree of Fire Danger from
+Lightnings. Ph.D. Thesis, SibSTU, Krasnoyarsk, Russia, 2006; p. 350. (In Russian).
+3. Wang, X.; Wotton, B.M.; Cantin, A.S.; Parisien, M.-A.; Anderson, K.; Moore, B.; Flannigan, M.D. cffdrs: An R package for the
+Canadian Forest Fire Danger Rating System. Ecol. Process. 2017, 6, 5. [CrossRef]
+4. WFAS: Wildland Fire Assessment System. Available online: https:www.wfas.net/ (accessed on 10 August 2021).
+5. Podolskaya, A.S.; Ershov, D.V .; Shulyak, P .P . Application of the method for assessing the likelihood of forest ﬁres in ISDM-
+Rosleskhoz. Mod. Probl. Remote Sens. Earth Space 2011, 8, 118–126. (In Russian)
+6. Muller, M.M.; Vila-Vilardell, L.; Vacik, H. Towards an integrated forest ﬁre danger assessment system for the European Alps.Ecol.
+Inform. 2020, 60, 101151. [CrossRef]
+7. Wastl, C.; Schunka, C.; Lüpkea, M.; Cocca, G.; Conedera, M.; Valese, E.; Menzel, A. Large-scale weather types, forest ﬁre danger,
+and wildﬁre occurrence in the Alps. Agric. For. Meteorol. 2013, 168, 15–25. [CrossRef]
+8. Grishin, A.M.; Filkov, A.I. A deterministic-probabilistic system for predicting forest ﬁre danger. Fire Saf. J. 2011, 46, 56–62.
+[CrossRef]
+9. Nesterov , V .G. Combustibility of the Forest and Methods of Its Determination; Goslesbumizdat: Moscow, Russia, 1949; p. 76. (In Russian)
+10. Nieto, H.; Aguado, I.; Garcia, M.; Chuvieco, E. Lightning-caused ﬁres in Central Spain: Development of a probability model of
+occurrence for two Spanish regions. Agric. For. Meteorol. 2012, 162–163, 35–43. [CrossRef]
+11. Titaev, P .S. Simulation model of the probability of forest ﬁres taking into account lightning activity and anthropogenic factor.Fire
+Explos. Saf. 2015, 24, 44–53. (In Russian)
+12. Baranovskiy, N.V .; Kuznetsov, G.V .; Nemova, T.N. Mathematical computing of coniferous tree ignition by the cloud-to-ground
+lightning discharge using Joule-Lenz’s law. Int. J. Electr. Comput. Eng. 2017, 7, 1337–1346. [CrossRef]
+13. Kuznetsov, G.V .; Baranovskiy, N.V . Focused sun’s rays and forest ﬁre danger: New concept.Proc. SPIE-Int. Soc. Opt. Eng. 2013,
+8890, 889011.
+14. Baranovskiy, N.V . Mathematical modeling for the forest fuel layer ignition caused by focused solar radiation ﬂux. Proc. SPIE-Int.
+Soc. Opt. Eng. 2015, 9680, 96805L.
+15. Muller, M.M.; Vacik, H. Characteristics of lightnings igniting forest ﬁres in Austria.Agric. For. Meteorol. 2017, 240–241, 26–34.
+[CrossRef]
+16. Lee, B.S.; Alexander, M.E.; Hawkes, B.C.; Lynham, T.J.; Stocks, B.J.; Engleﬁeld, P . Information systems in support of wildland ﬁre
+management decision making in Canada. Comput. Electron. Agric. 2002, 37, 185–198. [CrossRef]
+17. Diendorfer, G. Lightning location system (LLS). In Proceedings of the IX International Symposium on Lightning Protection, Foz
+do Iguacu, Brazil, 26–30 November 2007.
+
+PAGE 20
+Forecasting 2021, 3 714
+18. Schulz, W.; Cummins, K.L.; Diendorfer, G.; Dorninger, M. Cloud-to-ground lightning in Austria: A 10-year study using data from
+a lightning location system. J. Geophys. Res. 2005, 110, D9. [CrossRef]
+19. Austrian Lightning Detection and Information System (ALDIS). Lightning Statistics Austria. 2009. Available online: http:
+www.aldis.at (accessed on 27 July 2021).
+20. Biagi, C.J.; Cummins, K.L.; Kehoe, K.E.; Krider, P .E. National Lightning Detection Network (NLDN) performance in southern
+Arizona, Texas and Oklahoma in 2003–2004.J. Geophys. Res. 2007, 112, D05208. [CrossRef]
+21. Castedo-Dorado, F.; Rodriguez-Perez, J.R.; Marcos-Menendez, J.L.; Alvarez-Taboada, M.F. Modelling the probability of lightning-
+induced forest ﬁre occurrence in the province of Leon (NW Spain).For. Syst. 2011, 20, 95–107. [CrossRef]
+22. Outcalt, K.W. Lightning, ﬁre and longleaf pine: Using natural disturbance to guide management. For. Ecol. Manag. 2008,
+255, 3351–3359. [CrossRef]
+23. Podur, J.; Martell, D.L.; Csillag, F. Spatial patterns of lightning caused forest ﬁres in Ontario, 1976–1998. Ecol. Model. 2003,
+164, 1–20. [CrossRef]
+24. Schulz, W. Location accuracy improvements of the Austrian lightning location system during the last 10 years. In Proceedings of
+the 9th Asia-Paciﬁc International Conference on Lightning (APL), Nagoya, Japan, 23–27 June 2015.
+25. Vecin-Arias, D.; Castedo-Dorado, F.; Ordonez, C.; Rodriguez-Perez, R.J. Biophysical and lightning characteristics drive lightning-
+induced ﬁre occurrence in the central plateau of the Iberian Peninsula. Agric. For. Meteorol. 2016, 225, 36–47. [CrossRef]
+26. Krawchuk, M.A.; Cumming, S.G.; Flannigan, M.D.; Wein, R.W. Biotic and abiotic regulation of lightning ﬁre initiation in the
+mixedwood boreal forest. Ecology 2006, 87, 458–468. [CrossRef]
+27. Verdu, F.; Salas, J.; Vega-Garcia, C. A multivariate analysis of biophysical factors and forest ﬁres in Spain, 1991–2005. Int. J.
+Wildland Fire 2012, 21, 498–509. [CrossRef]
+28. Moris, J.V .; Conedera, M.; Nisi, L.; Bernardi, M.; Cesti, G.; Pezzatti, G.B. Lightning-caused ﬁres in the Alps: Identifying the
+igniting strokes. Agric. For. Meteorol. 2020, 290, 107990. [CrossRef]
+29. European Cooperation for Lightning Detection (EUCLID). Available online: http:www.euclid.org (accessed on 27 July 2021).
+30. Pineda, N.; Rigo, T. The rainfall factor in lightning-ignited wildﬁres in Catalonia. Agric. For. Meteorol. 2017, 239, 249–263.
+[CrossRef]
+31. Marshall, J.S.; Radhakant, S. Radar precipitation maps as lightning indicators. J. Appl. Meteorol. 1978, 5, 165–166. [CrossRef]
+32. Sheridan, S.C.; Grifﬁths, J.F.; Orville, R.E. Warm season cloud-to-ground lightning-precipitation relationships in the south-central
+United States. Weather. Predict. 1997, 12, 449–458. [CrossRef]
+33. Petersen, W.A.; Rutledge, S.A. On the relationship between cloud-to-ground lightning and convective rainfall. J. Geophys. Res.
+1998, 103, 14025–14040. [CrossRef]
+34. Soula, S.; Chauzy, S. Some aspects of the correlation between lightning and rain activities in lightnings. Atmos. Res. 2001,
+56, 355–373. [CrossRef]
+35. Pineda, N.; Rigo, T.; Bech, J.; Soler, X. Lightning and precipitation relationship in summer lightnings: Case studies in the north
+western Mediterranean region. Atmos. Res. 2007, 85, 159–170. [CrossRef]
+36. Xie, Y.; Xu, K.; Zhang, T.; Liu, X. Five-year study of cloud-to-ground lightning activity in Yunnan province, China.Atmos. Res.
+2013, 129–130, 49–57. [CrossRef]
+37. Chan, H.G.; Mohamed, A.I.B. Investigation on the occurrence of positive cloud-to-ground (+CG) lightning in UMP Pekan. J.
+Atmos. Sol. Terr. Phys. 2018, 179, 206–213. [CrossRef]
+38. Suparta, W.; Adnan, J.; Alauddin, M.; Ali, M. Monitoring the association between GPS PWV and lightning activity during the
+2009 Winter Monsoon over Bangi Malaysia. In Proceedings of the 2011 International Conference on Environment Science and
+Engineering IPCBEE, Bail Island, Indonesia, 1–3 April 2011; Volume 8, pp. 101–106.
+39. Aranguren, D.; Lopez, J.; Inampues, J.; Torres, H.; Betz, H. Cloud-to-ground lightning activity in Colombia and the inﬂuence of
+topography. J. Atmos. Sol. Terr. Phys. 2017, 154, 182–189. [CrossRef]
+40. Holler, H.; Betz, H.D.; Schmidt, K.; Calheiros, R.; May, P .; Houngninou, E.; Scialom, G. Lightning characteristics observed by a
+VLF/LF lightning detection network (LINET) in Brazil, Australia, Africa and Germany. Atmos. Chem. Phys. 2009, 9, 7795–7824.
+[CrossRef]
+41. Betz, H.D.; Schmidt, K.; Oettinger, W.P .; Wirz, M. Lightning detection with 3D-discrimination of intra-cloud and cloud-to-ground
+discharges. J. Geophys. Res. Lett. 2004, 31, L11108. [CrossRef]
+42. Betz, H.D.; Schmidt, K.; Fuch, B.; Oettinger, W.P .; Holler, H. Cloud lightning: Detection and utilization for total lightning
+measured in the VLF/LF regime. J. Lightning Res. 2009, 2, 1–17.
+43. Badmaev, N.B.; Bazarov, A.V .; Sychev, R.S. Forest Fire Danger Assessment Using Meteorological Trends: Case Study. InPredicting,
+Monitoring, and Assessing Forest Fire Dangers and Risks; Baranovskiy, N., Ed.; IGI Global: Hershey, PA, USA, 2020; pp. 183–208.
+44. Badmaev, N.; Bazarov, A. Correlation analysis of terrestrial and satellite meteodata in the territory of the Republic of Buryatia
+(Eastern Siberia, Russian Federation) with forest ﬁre statistics. Agric. For. Meteorol. 2021, 297, 108245. [CrossRef]
+45. Emercom for Republic of Altay. Available online: https:04.mchs.gov.ru/ (accessed on 14 September 2021).
+46. Grishin, A.M.; Baranovskij, N.V . Comparative analysis of simple models of drying of the layer of forest combustibles, including
+the data of experiments and natural observations. Inzhenerno-Fiz. Zhurnal 2003, 76, 166–169. [CrossRef]
+47. Zhdanko, V .A.; Gritsenko, M.V .Method of Analysis of Forest Fire Seasons, Practical Recommendations; LenNIILH: Leningrad, Russia,
+1980. (In Russian)
+
+PAGE 21
+Forecasting 2021, 3 715
+48. Scientiﬁc and Applied Reference Book on the Climate of the USSR. Series 3. Long-Term Data. Parts 1-6. Issue 20. In Tomsk,
+Novosibirsk, Kemerovo Regions and Altai Territory; Gidrometeoizdat: St. Petersburg, Russia, 1993; p. 718. (In Russian)
+49. Abaimov, V .F. Dendrology; Academy: Moscow, Russia, 2009. (In Russian)
+50. Baranovskiy, N.V . (Ed.)Forest Fire Danger Prediction Using Deterministic-Probabilistic Approach; IGI Global: Hershey, PA, USA, 2020.
+51. Karanina, S.Y.; Baranovskiy, N.V .; Karanin, A.V .; Belikova, M.Y. Estimation of Return-Stroke Peak Current of Lightning Strokes
+Registered by WWLLN: A Case Study. Int. Rev. Electr. Eng. 2021, 16, 275–285.
+52. Hutchins, M.L.; Holzworth, R.H.; Rodger, C.J.; Brundell, J.B. Far-ﬁeld power of lightning strokes as measured by the World Wide
+Lightning Location Network. J. Atmos. Ocean. Technol. 2012, 29, 1102–1110. [CrossRef]
+53. World Wide Lightning Location Network. Available online: https:wwlln.net/ (accessed on 15 September 2021).
+54. Karanina, S.Y.; Kocheeva, N.A.; Belikova, M.Y.; Baranovskiy, N.V . Analysis of a thunderstorm activity according to WWLLN: A
+case study. Int. Rev. Electr. Eng. 2018, 13, 69–79. [CrossRef]
+55. WWLLN Handbook for Setting up the WWLLN station. Available online: wwlln.net/WWLLN_Stn_Hbook_2011.pdf (accessed
+on 26 December 2017).
+56. Hardware for a WWLLN site. Available online: http:webﬂash.ess.washington.edu/Hardware_for_a_WWLLN_site1.pdf (accessed
+on 26 December 2017).
+57. Shchetinsky, E.A. Extinguishing Forest Fires: A Guide for Forest Fireﬁghters, 3rd ed.; Federal Forest Service of the Russian Federation:
+Moscow, Russia, 2002; p. 104. (In Russian)
+58. Zabolotny, A.E.; Zabolotnaya, M.M.; Zabolotnaya, Y.A.; Timoshin, V .N. Determination of safe use zones of solid fuel generators
+of ﬁre extinguishing aerosols. Issues Spec. Eng. 1995, 7–8, 15–21. (In Russian)
+59. Esau, K. Anatomy of Seed Plants; Wiley: Hoboken, NJ, USA, 1977; p. 576.
+60. Baranovskiy, N.V . Predicting Forest Fire Numbers Using Deterministic-Probabilistic Approach. InPredicting, Monitoring, and
+Assessing Forest Fire Dangers and Risks; Baranovskiy, N., Ed.; IGI Global: Hershey, PA, USA, 2020; pp. 89–100.

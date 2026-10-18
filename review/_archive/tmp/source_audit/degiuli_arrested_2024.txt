@@ -1,0 +1,1034 @@
+PAGE 1
+Citation: De Giuli, M.; Winkler, M.;
+Deola, T.; Henschel, J.; Sass, O.; Wolff,
+P .; Jentsch, A. Arrested Succession on
+Fire-Affected Slopes in the
+Krummholz Zone and Subalpine
+Forest of the Northern Limestone
+Alps. Diversity 2024, 16, 366.
+https://doi.org/10.3390/d16070366
+Academic Editor: Michael Wink
+Received: 9 May 2024
+Revised: 19 June 2024
+Accepted: 21 June 2024
+Published: 26 June 2024
+Copyright: © 2024 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+diversity
+Article
+Arrested Succession on Fire-Affected Slopes in the Krummholz
+Zone and Subalpine Forest of the Northern Limestone Alps
+Marta De Giuli 1
+ , Markus Winkler 2, Thomas Deola 1
+ , Julia Henschel 1, Oliver Sass 2
+ , Peter Wolff 1
+and Anke Jentsch 1,2, *
+1 Department of Disturbance Ecology and Vegetation Dynamics, University of Bayreuth,
+95448 Bayreuth, Germany; marta.degiuli@uni-bayreuth.de (M.D.G.); thomas.deola@uni-bayreuth.de (T.D.);
+peter.wolff@uni-bayreuth.de (P .W.)
+2 Department of Geomorphology, University of Bayreuth, 95448 Bayreuth, Germany;
+markus.c.winkler@uni-bayreuth.de (M.W.); oliver.sass@uni-bayreuth.de (O.S.)
+* Correspondence: anke.jentsch@uni-bayreuth.de
+Abstract: Fire in the Northern Alps is comparatively rare. Yet, previous human-ignited fire events in
+subalpine forests up to the treeline have triggered severe fire damage to vegetation and soil. Here,
+we investigate post-fire vegetation dynamics in the Northern Limestone Alps about 80 years after
+disturbance. We observed higher species richness in burned compared to unburned vegetation
+and clearly distinct floristic communities emerging after fire-driven forest removal, with several
+alpine specialist species uniquely found in the burned subalpine sites. The functional composition of
+vegetation was also distinct, with higher relative forb cover in burned plots. This difference was likely
+driven by disturbance-related environmental changes, such as increased light availability, offering
+safe sites for subalpine and alpine species. Due to a general lack of tree encroachment, we consider this
+a case of arrested succession after fire. We conclude that the recovery of fire-affected subalpine forests
+is modulated by complex interactions of climatic and biotic filters producing extreme site conditions,
+controlling the recolonization of the disturbed areas by forest species while providing safe sites for
+the establishment of a rich subalpine and alpine low-statured flora. The coupling of disturbance and
+abiotic filters makes high-elevation treeline ecotones very vulnerable to climate change.
+Keywords: vegetation dynamics; wildfire; recovery; alpine communities; calcareous alps; arrested
+succession; microclimate; floristic survey;Pinus mugo; extreme site; diversity; high-elevation ecosystem
+1. Introduction
+The high montane regions of the European Alps are unfamiliar with fire as a distur-
+bance [1], with reconstructed fire frequencies in northern Tyrol in the range of hundreds
+of years [2,3]. Soil and microclimate variability, vegetation types, land use changes, and
+the high heterogeneity of alpine relief resulting in landscape fragmentation are key fac-
+tors in shaping fire regimes at high elevations [4–6], These factors themselves are closely
+related to vegetation dynamics [2,7,8]. In these alpine systems, disturbance regimes are
+often associated with climatic events such as extreme temperatures, wind, and ice, as well
+as geomorphological events such as avalanches, rockslides, and permafrost, rather than
+fire [9]. However, fire is known to occur occasionally in the European Alps, triggering
+successional dynamics [10–14] and amplifying many of these geomorphological distur-
+bances, with observed increases in soil erosion rates [15,16], debris flows [16], and avalanche
+occurrences [17] after fire. In alpine regions, in particular, alterations to compounding
+disturbances are expected with climate change [18], especially with changes such as the
+projected temperature increase, the lengthening of the growing season, and change in snow
+cover [19–21]. These projected changes are affecting the aridity and flammability of areas
+already prone to fire: southern aspects [10,22]. Despite the growing body of research on the
+Diversity 2024, 16, 366. https://doi.org/10.3390/d16070366 https://www.mdpi.com/journal/diversity
+
+PAGE 2
+Diversity 2024, 16, 366 2 of 18
+effects of fire on mountain forest ecosystems [23–26], the effects of the introduction of fire
+on krummholz vegetation have been mostly neglected.
+Krummholz vegetation, composed of dwarfed or stunted vegetation formed by the
+continued pressure of wind and low temperatures, is found in treeline landscapes in the
+subalpine and subarctic zones [27]. Due to the short stature of the woody vegetation in this
+system, any unlikely fire consumes whole individuals from trunk to treetop, drastically
+altering resource ratios and the nature of the limiting factor, i.e., moving the system from
+nutrient limitation to water limitation [28]. Studies globally have found long-term effects
+on post-fire vegetation dynamics in these krummholz systems, with burned areas reported
+to more closely resemble the species composition of subalpine grasslands than their original
+communities [29–32]. However, predicting post-fire forest recovery versus regime shift to
+open montane grasslands remains an ecological challenge.
+In the Northern Limestone Alps, krummholz vegetation is mostly composed of Pinus
+mugo Turra individuals disrupted by vertical, gravity-dependent mechanical disturbance,
+yielding a heterogeneous pattern, often with minimal understory community (Figure 1).
+The removal of this layer of vegetation, either by fire or other disturbances, causes a
+successional cascade with the recruitment of fast-growing pioneer forbs and graminoids
+peaking within the first couple of years after disturbance, followed by slower recruitment
+of woody vegetation [ 14]. These successional dynamics vary in speed and magnitude
+with elevation and moisture availability—often affected by slope aspect [ 12,33]. When
+conditions are particularly extreme, successional dynamics may pause or arrest at a stage
+prior to that which existed pre-disturbance, raising questions about the system’s ability to
+return to the former steady state, here, to subalpine forest dynamics.
+Diversity 2024, 16, x FOR PEER REVIEW 2 of 18 
+ 
+ 
+cover [19–21]. These projected changes are affecting the aridity and flammability of areas 
+already prone to fire: southern aspects [ 10,22]. Despite the growing body of research on 
+the effects of fire on mountain forest ecosystems [23–26], the effects of the introduction of 
+fire on krummholz vegetation have been mostly neglected. 
+Krummholz vegetation, composed of dwarfed or stunted vegetation formed by the 
+continued pressure of wind and low temperatures, is found in treeline landscapes in the 
+subalpine and subarctic zones [ 27]. Due to the short stature of the woody vegetation in  
+this system, any unlikely fire consumes whole individuals from trunk to treetop, drasti-
+cally altering resource ratios and the nature of the limiting factor, i.e., moving the system 
+from nutrient limitation to water limitation [ 28]. Studies globally have f ound long-term 
+effects on post-fire vegetation dynamics in these krummholz systems, with burned areas 
+reported to more closely resemble the species composition of subalpine grasslands than 
+their original communities [29–32]. However, predicting post-fire forest recovery versus 
+regime shift to open montane grasslands remains an ecological challenge. 
+In the Northern Limestone Alps, krummholz vegetation is mostly composed of Pinus 
+mugo Turra individuals disrupted by vertical, gravity-dependent mechanical disturbance, 
+yielding a heterogeneous pattern, often with minimal understory community (Figure 1). 
+The removal of this layer of vegetation, either by fire or other disturbances, causes a suc-
+cessional cascade with the recruitment of fast -growing pioneer forbs a nd graminoids 
+peaking within the first couple of years after disturbance, followed by slower recruitment 
+of woody vegetation [14]. These successional dynamics vary in speed and magnitude with 
+elevation and moisture availability—often affected by slope aspe ct [12,33]. When condi-
+tions are particularly extreme, successional dynamics may pause or arrest at a stage prior 
+to that which existed pre-disturbance, raising questions about the system ’s ability to re-
+turn to the former steady state, here, to subalpine forest dynamics. 
+  
+Figure 1. Treeline landscapes with krummholz patches forming woody patches on rocky outcrops, 
+i.e., Ammergebirge, or dense thickets on shallow soils, i.e., Wetterstein (@A.Jentsch). 
+The conservation potential of these open subalpine areas is significant both as a refu-
+gia for species that are unable to outcompete others while tracking their climatic and biotic 
+niches and as clusters of high diversity [ 29,34]. Soon after disturbance, th ese open sites 
+provide habitat to important fauna as well, with the Bavarian Alps homing three endan-
+gered species of grouse, namely Tetrao urogallus L., Tetrao tetrix L., and Tetrastes bonasia L., 
+which need a mix of open woodland and grassland to survive [35,36]. In part due to this, 
+the Arnspitze massif in the Northern Limestone Alps has been a designated nature pro-
+tection area (Naturschutzgebiet) since 1942, ironically five years before the first fire. Dras-
+tic changes in vegetation and character could im pact the region ’s ability to effectively 
+serve this purpose of nature protection, making the understanding of these dynamics 
+more pressing. 
+Figure 1. Treeline landscapes with krummholz patches forming woody patches on rocky outcrops,
+i.e., Ammergebirge, or dense thickets on shallow soils, i.e., Wetterstein (@A.Jentsch).
+The conservation potential of these open subalpine areas is significant both as a
+refugia for species that are unable to outcompete others while tracking their climatic and
+biotic niches and as clusters of high diversity [29,34]. Soon after disturbance, these open
+sites provide habitat to important fauna as well, with the Bavarian Alps homing three
+endangered species of grouse, namelyTetrao urogallusL., Tetrao tetrixL., and Tetrastes bonasia
+L., which need a mix of open woodland and grassland to survive [ 35,36]. In part due to
+this, the Arnspitze massif in the Northern Limestone Alps has been a designated nature
+protection area (Naturschutzgebiet) since 1942, ironically five years before the first fire.
+Drastic changes in vegetation and character could impact the region’s ability to effectively
+serve this purpose of nature protection, making the understanding of these dynamics
+more pressing.
+Given the importance of nature conservation of these open krummholz stands and the
+lack of studies on their post-fire recovery, we aim to investigate the vegetation dynamics
+and their potential drivers 75 years after the fire in the Northern Limestone Alps. Here,
+
+PAGE 3
+Diversity 2024, 16, 366 3 of 18
+we included halted regeneration and emerging plant species diversity. First, we tested
+whether the plant communities on burned slopes were compositionally distinct from those
+on unburned slopes and whether they had higher species diversity. We expected the
+removal of woody, shading vegetation and the opening of new niches by fire to alter the
+biotic and abiotic filters, enabling the colonization of novel species. Second, we used
+species elevational range data to compare the ‘elevational niche space’ of burned and
+unburned slopes, anticipating a preferential encroachment of alpine specialists or lowland
+colonizer species in burned areas. We further disentangled these community differences
+by comparing the environmental indicator values of the species. Third, we looked more
+closely at the potential environmental drivers of these observed differences, including soil
+depth and P . mugocover as a proxy for light availability.
+2. Materials and Methods
+2.1. Study Site
+Our study area is in the Wetterstein mountain range in the Northern Limestone Alpson
+the southern and eastern slopes of the Große Arnspitze (2196 m a.s.l.; 47.40◦ N, 11.22◦ W),
+hereafter referred to as Arnspitze. The peak is part of the Arnspitze massif located on
+the border between Austria and Germany, approximately 20 km northwest of Innsbruck,
+Austria (Figure 2). It lies between the suboceanic, cool, and humid northern edge of the
+European Alps and the subcontinental, warm, and dry Tyrolean Inn Valley. The average
+annual temperature in Innsbruck (574 m) and Mittenwald (915 m) is 8.6 ◦C and 6.5 ◦C,
+respectively, and near zero at the elevation of the summit. The precipitation in the area has a
+distinct summer maximum, characterized by frequent, intense thunderstorms, and a mean
+annual precipitation of 850 mm and 1430 mm in Innsbruck and Mittenwald, respectively,
+mirroring the expected elevational trend [ 10]. The mean annual precipitation for the
+massif is approximated between 1500 and 1750 mm [ 37,38]. The area is characterized
+by Wettersteinkalk limestone, a very pure limestone with a CaCO3 content of 95.6% [39],
+which slows the rate of soil formation [40] and leads to karstification. The rapid drainage
+of the karstified limestone coupled with the high annual evaporation results in very little
+available surface water and a very dry environment [37,41].
+Diversity 2024, 16, x FOR PEER REVIEW 3 of 18 
+ 
+ 
+Given the importance of nature conservation of these open krummholz stands and 
+the lack of studies on their post-fire recovery, we aim to investigate the vegetation dynam-
+ics and their potential drivers 75 years after the fire in the Northern Limestone Alps. Here, 
+we included halted regeneration and emerging plant species diversity. First, we test ed 
+whether the plant com munities on burned slopes were compositionally distinct from 
+those on unburned slopes and whether they had higher species diversity. We expected the 
+removal of woody, shading vegetation and the opening of new niches by fire to alter the 
+biotic and abiotic filters, enabling the colonization of novel species. Second, we used spe-
+cies elevational range data to compare the ‘elevational niche space ’ of burned and un-
+burned slopes, anticipating a preferential encroachment of alpine specialists or lowland 
+colonizer species in burned areas. We further disentangle d these community differences 
+by comparing the environmental indicator values of the species. Third, we look ed more 
+closely at the potential environmental drivers of these observed differences, including soil 
+depth and P. mugo cover as a proxy for light availability. 
+2. Materials and Methods 
+2.1. Study Site 
+Our study area is in the Wetterstein mountain range in the Northern Limestone Alps 
+on the southern and eastern slopes of the Große Arnspitze (2196 m a.s.l.; 47.40° N, 11.22° 
+W), hereafter referred to as Arnspitze. The peak is part of the Arnspitze massif located on 
+the border between Austria and Germany, approximately 20 km northwest of Innsbruck, 
+Austria (Figure 2). It lies between the suboceanic, cool , and humid northern edge of the 
+European Alps and the subcontinental, warm, and dry Tyrolean Inn Valley. The average 
+annual temperature in Innsbruck (574 m) and Mittenwald (915 m) is 8.6  °C and 6.5  °C, 
+respectively, and near zero at the elevation of the summit.  The precipitation in the area 
+has a distinct summer maximum, characterized by frequent, intense thunderstorms, and 
+a mean annual precipitation of 850 mm and 1430 mm in Innsbruck and Mittenwald, re-
+spectively, mirroring the expected elevational trend [ 10]. The mean annual precipitation 
+for the massif is approximated between 1500 and 1750 mm [ 37,38]. The area is character-
+ized by Wettersteinkalk limestone, a very pure limestone with a CaCO 3 content of 95.6% 
+[39], which slows the rate of soil formation [40] and leads to karstification. The rapid drain-
+age of the karstified limestone coupled with the high annual evaporation results in very 
+little available surface water and a very dry environment [37,41].  
+ 
+Figure 2. Location of the Arnspitze massif, Germany (left) and of the 41 sampling plots. Source: ESRI
+World Imagery.
+
+PAGE 4
+Diversity 2024, 16, 366 4 of 18
+The treeline ecotone in the Northern Limestone Alps is at an elevation of 1800–2400 m,
+lower than in the central Swiss Alps, in part due to the cooler conditions at this northern
+fringe. It is characterized by a mix of open stands of Picea abies (L.) H.Karst. some-
+times mixed with Larix decidua Mill. ( Piceion excelsae Pawłowski et al. 1928) and P . mugo
+krummholz vegetation, partly forming dense thickets (Erico-Pinion mugo Leibundgut 1948).
+On these slopes, the krummholz vegetation is observed ranging from 1200 m to the ridges
+at 2050 m of elevation [10], and the rocky slopes without scree cover are occupied by small
+statured vegetation including dwarf shrubs such as Dryas octopetala L. and Daphne striata
+Tratt., graminoids, forbs, and ferns. These taxa mostly belong to Seslerion caeruleae Br.-Bl. in
+Br.-Bl. et Jenny, with some components ofPotentillion caulescentis Br.-Bl. in Br.-Bl. et Jenny
+1926, the latter presumably spread from nearby cliffs untouched by the fires.
+In May 1946, the southern slope of the Arnspitze burned for about 11 days [42], con-
+suming 5–6 ha of forest (dominated by P . abies) and approximately 100 ha of krummholz
+stands (dominated by P . mugo) at elevations of 1200–2000 m (Figure 3). Large swaths of the
+slope were left stripped of vegetation and humus soil [43]. Prior to the fire, the slope had
+an even cover of either P . mugoat higher elevations or forest at lower elevations (compare
+Figure 3a,b; see Sass, 2019). The effect of severe fires such as this on geomorphological pro-
+cesses has been subject to several investigations [43,44], demonstrating that the measured
+erosion rates on the burned, southern slope are about 10 times higher than on unburned
+slopes [35]. Two more, probably less severe forest fires were discovered in the area using
+radiocarbon dating [42]: one about 1266–1012 BCE, the other 1206–1292 CE [43].
+Diversity 2024, 16, x FOR PEER REVIEW 4 of 18 
+ 
+ 
+Figure 2. Location of the Arnspitze massif, Germany (left) and of the 41 sampling plots. Source: ESRI 
+World Imagery. 
+The treeline ecotone in the Northern Limestone Alps is at an elevation of 1800–2400 
+m, lower than in the central Swiss Alps, in part due to the cooler conditions at this northern 
+fringe. It is characterized by a mix of open stands of Picea abies (L.) H.Karst. sometimes 
+mixed with Larix decidua Mill. (Piceion excelsae Pawłowski et al. 1928) and P. mugo krumm-
+holz vegetation, partly forming dense thickets ( Erico-Pinion mugo Leibundgut 1948). On 
+these slopes, the krummholz vegetation is observed ranging from 1200 m to the ridges at 
+2050 m of elevation [10], and the rocky slopes without scree cover are occupied by small 
+statured vegetation including dwarf shrubs such as Dryas octopetala L. and Daphne striata 
+Tratt., graminoids, forbs, and ferns. These taxa mostly belong to Seslerion caeruleae Br.-Bl. 
+in Br.-Bl. et Jenny, with some components of Potentillion caulescentis Br.-Bl. in Br. -Bl. et 
+Jenny 1926, the latter presumably spread from nearby cliffs untouched by the fires. 
+In May 1946, the southern slope of the Arnspitze burned for about 11 days [42], con-
+suming 5–6 ha of forest (dominated by P. abies) and approximately 100 ha of krummholz 
+stands (dominated by P. mugo) at elevations of 1200–2000 m (Figure 3). Large swaths of 
+the slope were left stripped of vegetation and humus soil [ 43]. Prior to the fire, the slope 
+had an even cover of either P. mugo at higher elevations or forest at lower elevations (com-
+pare Figure 3a,b; see Sass, 2019). The effect of severe fires such as this on geomorphological 
+processes has been subject to several investigations [43,44], demonstrating that the meas-
+ured erosion rates on the burned, southern slope are about 10 times higher than on un-
+burned slopes [35]. Two more, probably less severe forest fires were discovered in the area 
+using radiocarbon dating [42]: one about 1266–1012 BCE, the other 1206–1292 CE [43]. 
+ 
+Figure 3. (a) Pre-fire eastern slope of the Arnspitze (Wetterstein, Northern Limestone Alps) harbor-
+ing subalpine forest and krummholz vegetation (@R.Rischreiter, before 1946) versus (b) post-fire 
+Eastern slope of the Arnspitze 80 years later devoid of woody vegetation exposing bare rock 
+(@A.Jentsch in 2023). 
+2.2. Sampling Design 
+A total of 41 plots were established over the span of two years 2020–2021 during the 
+months of July and August: 32 on the eastern slope and 9 on the southern slope of Arn-
+spitze. Each 3 × 3 m square plot was aligned so that the upper edge wa s parallel to the 
+contour line, thus pointing toward the summit or ridge. The plots were located between 
+1800 m and 1950 m of elevation, in areas that were safely accessible by the samplers. The 
+positions of the plots can be seen in the map (Figure 2).  
+The 20 plots established in 2020 were all located in the 1946–1947 fire scar, while the 
+21 plots established in 2021 were partly in the fire scar, partly in the adjacent intact 
+krummholz pine or forested stands (fire history status seen in Figure 2). A total of 26 plots 
+were established in the fire scar, hereafter ‘burned plots’, and 15 in intact krummholz or 
+forested sites, hereafter ‘unburned plots’. The placement of the burned plots was random 
+within the former krummholz vegetation (taken from historical p hotographs), while the 
+Figure 3. (a) Pre-fire eastern slope of the Arnspitze (Wetterstein, Northern Limestone Alps) harboring
+subalpine forest and krummholz vegetation (@R.Rischreiter, before 1946) versus (b) post-fire Eastern
+slope of the Arnspitze 80 years later devoid of woody vegetation exposing bare rock (@A.Jentsch
+in 2023).
+2.2. Sampling Design
+A total of 41 plots were established over the span of two years 2020–2021 during
+the months of July and August: 32 on the eastern slope and 9 on the southern slope of
+Arnspitze. Each 3 × 3 m square plot was aligned so that the upper edge was parallel to the
+contour line, thus pointing toward the summit or ridge. The plots were located between
+1800 m and 1950 m of elevation, in areas that were safely accessible by the samplers. The
+positions of the plots can be seen in the map (Figure 2).
+The 20 plots established in 2020 were all located in the 1946–1947 fire scar, while
+the 21 plots established in 2021 were partly in the fire scar, partly in the adjacent intact
+krummholz pine or forested stands (fire history status seen in Figure 2). A total of 26 plots
+were established in the fire scar, hereafter ‘burned plots’, and 15 in intact krummholz or
+forested sites, hereafter ‘unburned plots’. The placement of the burned plots was random
+within the former krummholz vegetation (taken from historical photographs), while the
+unburned plots were preferentially selected to be characteristic of the unaffected slope,
+both floristically and geophysically.
+
+PAGE 5
+Diversity 2024, 16, 366 5 of 18
+2.3. Soil Depth
+To determine the soil thickness in each plot, a 1 m long metal rod with 5 cm markings
+was pushed into the soil until it encountered resistance. Measurements were taken using
+5 cm intervals, rounding up (i.e., 12.8 cm of soil recorded as 15 cm), with shallow soils less
+than 5 cm in depth categorized as 2.5 cm deep. A total of five of these measurements were
+taken in each plot, one in the geometric center of the square and once along each diagonal,
+halfway between the center and the corner. To account for potential within-plot variation
+in soil depth, the median soil depth per plot was used for all subsequent analyses.
+2.4. Species Composition
+Vascular plant species composition and cover were assessed in each plot. Nomen-
+clature was checked and updated according to Plants of the World Online [ 45]. Plant
+individuals were identified in the field with 186 identified to the species level, 37 only
+to the genus level, and 3 remained unidentified. For completeness, the entire species list
+was only used in the species diversity and composition analyses. Species cover in percent
+was assessed using the Londo scale [46], a decimal scale with an appropriate fine grain to
+approximate cover separate from abundance.
+Ecological indicator values (EIVs) for each taxon identified to the species level were ex-
+tracted from both Ellenberg and Landolt repositories [47,48]. Ellenberg EIVs are commonly
+used bioindicator values with a long-standing tradition in Central Europe. To balance
+this with our study site location (in the Alps), we also included Landolt EIVs which were
+formulated for Switzerland in particular and may have a more accurate representation
+of the indicator values for the species we observed at higher elevations. We focused on
+the following EIVs: temperature, light, moisture, moisture variability, nutrients, humus
+content, reaction/soil pH, root depth, dominance in situ, and soil aeration.
+We tested whether burned and unburned sites differed in their species richness, plant
+community composition, species’ elevational range, and species’ ecological indicator values.
+We determined the alpha, beta, and gamma diversity across all plots and between fire
+histories (burned vs. unburned). We calculated the Shannon index [ 49] as the alpha
+diversity metric rather than the Simpson index to obtain a balanced weight of rare species,
+using the diversity() function in the vegan R package. We used Whittaker’s multiplicative
+beta diversity [50], which is determined as follows:
+β = S
+m
+where S is the number of species in a composite community, and m is the mean number of
+species per plot. We used the total number of unique species present in each plot as the
+species richness, testing the significance of this difference with a t-test using the function
+t_test() in R.
+To evaluate whether the two types of plots were occupied by distinctly different plant
+communities, we compared the species composition of each plot. We tested this distinctness
+with a PERMANOVA using distance matrices with the function adonis2() in the vegan
+R package. We visualized these results with a non-multidimensional scaling (NMDS)
+ordination of the Bray–Curtis dissimilarity in species space using the metaMDS() function
+from the vegan R package.
+To look at the abundance of each functional group—specifically forbs and
+graminoids—we tested the difference between the relative cover of each group in the
+burned and unburned plots with a t-test using the function t_test() in R. Relative cover was
+calculated as the total functional group cover in a plot divided by the total vegetative cover
+in the plot.
+2.5. Species Elevational Ranges
+To look at plant community composition as a function of elevation, we tested for a
+difference in the elevational range of the species present in each site type, as well as the
+
+PAGE 6
+Diversity 2024, 16, 366 6 of 18
+species occurring uniquely in each. The elevational range data were obtained from the
+Swiss National Databank of Vascular Plants [51]. We tested for differences in maximum
+elevation, minimum elevation, range breadth (maximum elevation − minimum elevation),
+and relative elevational distance of the plot elevation from the species’ minimum elevation
+(1900 − minimum elevation)/range breadth) for species in each site type with a t-test using
+the function t_test() in R, and plotted using the helper package ggbreak [52].
+2.6. Krummholz Species Recruitment
+To investigate the edge changes in the present krummholz vegetation, we used freely
+available orthophotos provided by the Land Tyrol (© TIRIS geoinformation system), com-
+paring pictures taken in 1974, 2001, and 2016 with UAV images taken in situ (2021).
+3. Results
+3.1. Effect of Fire on Species Composition and Plant Functional Types
+Across all 41 plots, the Shannon diversity index was 2.5± 0.8, while the average species
+diversity in each plot (±SD) was 31.7 ± 10.8, beta diversity (total number of species/mean
+number of species per site) was 89, and gamma diversity (total number of species across
+all plots) was 226. Species richness varied significantly between burned and unburned
+plots (Figure 4b, p = 0.05), with burned plots having the greatest species richness per plot
+(average species/plot ± SD; 35.1 ± 8.8 vs. 25.8 ± 11.5). This pattern also carries across
+the alpha, beta, and gamma diversity metrics, where we see burned plots having a higher
+alpha Shannon index and gamma diversity but lower beta diversities, 4.2 vs. 2.8, 174 vs.
+136, and 3.9 vs. 6.7, respectively.
+The community composition was significantly different between the burned and
+unburned sites (p-value < 0.001) (Figure 4a,b). Species unique to burned plots included
+Carex curvula All., Ranunculus alpestris L., Rumex scutatus L., and Pedicularis kerneri Dalla
+Torre. Species unique to unburned plots included Alchemilla flabellata Buser, Calamagrostis
+varia (Schrad.) Host, and Trollius europaeus L. We observed a clustering of plots by fire
+history with burned plots occupying a more circular cluster than unburned plots (orange
+area on the NMDS, Figure 4a). This result is consistent with our earlier observation of beta
+and gamma diversity, indicating a more uniform community composition among burned
+plots than among unburned plots.
+We were interested in looking at these compositional differences from a perspective
+of functional type—specifically, differences in forb and graminoid cover (Figure 4c). Our
+results indicate a significant difference in forb, graminoid, shrub, and tree cover in fire-
+affected slopes (Figure 4c; p < 0.001, p = 0.035, p = 0.003, p < 0.001, respectively), with
+relative forb and graminoid cover higher in burned plots (0.64 ± 0.20 vs. 0.20 ± 0.15 and
+0.24 ± 0.12 vs. 0.12 ± 0.12, respectively). We observed an inversion of this pattern for
+trees and shrubs, where burned plots had hardly any tree or shrub cover compared to
+the 0.52 ± 0.24 and 0.16 ± 0.12 of the unburned plots (Figure 4c). The top three dominant
+taxa in each of these categories are highlighted in Table 1. Excluding trees, of which there
+were only three species present at our site, we observed two species that were dominant in
+both burn categories: Dryas octopetala (Figure 5) and Rhododendron hirsutum. This hints at
+either a slow homogenization of the communities 80 years after disturbance or the ability
+of these taxa to colonize the disturbed terrain in an effective manner. The large differences
+in mean plot covers of these taxa, coupled with the clear distinction of the communities
+seen in Figure 4a and their unique functional composition, provide more support to the
+latter suggestion.
+
+PAGE 7
+Diversity 2024, 16, 366 7 of 18
+Diversity 2024, 16, x FOR PEER REVIEW 6 of 18 
+ 
+ 
+2.5. Species Elevational Ranges 
+To look at plant community composition as a function of elevation, we tested for a 
+difference in the elevational range of the species present in each site type , as well as the 
+species occurring uniquely in each. The elevational range data were obtained from the 
+Swiss National Databank of Vascular Plants [ 51]. We tested for differences in maximum 
+elevation, minimum elevation, range breadth (maximum elevation − minimum elevation), 
+and relative elevational distance of the plot elevation from the species’ minimum elevation 
+(1900 − minimum elevation)/range breadth) for species in each site type with a t-test using 
+the function t_test() in R, and plotted using the helper package ggbreak [52]. 
+2.6. Krummholz Species Recruitment 
+To investigate the edge changes in the present krummholz vegetation, we used freely 
+available orthophotos provided by the Land Tyrol (© TIRIS geoinformation system), com-
+paring pictures taken in 1974, 2001, and 2016 with UAV images taken in situ (2021). 
+3. Results 
+3.1. Effect of Fire on Species Composition and Plant Functional Types 
+Across all 41 plots, the Shannon diversity index was 2.5 ± 0.8, while the average spe-
+cies diversity in each plot ( ±SD) was 31.7 ± 10.8, beta diversity (total number of spe-
+cies/mean number of species per site) was 89, and gamma diversity (total number of spe-
+cies across all plots) was 226. Species richness varied significantly between burned and 
+unburned plots (Figure 4b, p = 0.05), with burned plots having the greatest species richness 
+per plot (average species/plot ± SD; 35.1 ± 8.8 vs. 25.8 ± 11.5). This pattern also carries  
+across the alpha, beta, and gamma diversity metrics, where we see burned plots having a 
+higher alpha Shannon i ndex and gamma diversity but lower beta diversities, 4.2 vs . 2.8, 
+174 vs. 136, and 3.9 vs. 6.7, respectively.  
+ 
+Figure 4. Analysis of community composition of the burned and unburned plots: (a) NMDS ordina-
+tion using Bray–Curtis dissimilarity of plots in species space. Convex hulls show burned (orange)
+and unburned (green) plots. Blue vectors are the Landolt ecological indicator values of the species
+in the analysis. (b) Comparison of species richness and (c) comparison of the relative cover of func-
+tional types (forb, graminoid, and tree) of plots by fire history (orange: burned, green: unburned).
+Significance levels indicated by “***” = 0.001, “**” = 0.01, and “*” = 0.05.
+Table 1. Top three dominant taxa of each functional type (forb, graminoid, shrub, and tree) by mean
+plot cover (percentage) in burned and unburned plots.
+Forb Graminoid Shrub Tree
+Burned
+D. octopetala
+(14.4%)
+Nardus stricta L.
+(11.7%)
+Rhododendron hirsutum L.
+(2%)
+P . abies
+(5.2%)
+Crepis foetida L.
+(11%)
+Carex humilis Leyss.
+(5.75%)
+Vaccinium vitis-idea L.
+(1.3%)
+L. decidua
+(3%)
+Gymnocarpium robertianum
+(Hoffm.) Newman
+(10%)
+C. curvula
+(4.85%)
+Vaccinium myrtillus L.
+(0.7%)
+P . mugo
+(1%)
+Unburned
+Viola biflora L.
+(9.1%)
+Alpagrostis alpina (Scop.) P .M. Peterson,
+Romasch., Soreng & Sylvester
+(20.0%)
+Rhododendron ferrugineum L.
+(15.2%)
+P . mugo
+(54.2%)
+Erica carnea L.
+(7.3%)
+Carex sempervirens Vill.
+(19.6%)
+R. hirsutum
+(12.3%)
+P . abies
+(23.1%)
+D. octopetala
+(5.4%)
+Luzula campestris (L.) DC.
+(15.0%)
+Vaccinium uliginosum L.
+(6.8%)
+L. decidua
+(14.3%)
+
+PAGE 8
+Diversity 2024, 16, 366 8 of 18
+Diversity 2024, 16, x FOR PEER REVIEW 8 of 18 
+ 
+ 
+Unburned Viola biflora L. 
+(9.1%) 
+Alpagrostis alpina (Scop.) P.M. 
+Peterson, Romasch., Soreng & 
+Sylvester 
+(20.0%) 
+Rhododendron  
+ferrugineum L.  
+(15.2%) 
+P. mugo 
+(54.2%) 
+Erica carnea L. 
+(7.3%) 
+Carex sempervirens Vill. 
+(19.6%) 
+R. hirsutum  
+(12.3%) 
+P. abies 
+(23.1%) 
+D. octopetala 
+(5.4%) 
+Luzula campestris (L.) DC. 
+(15.0%) 
+Vaccinium uliginosum L.  
+(6.8%) 
+L. decidua 
+(14.3%) 
+ 
+Figure 5. Characteristic open patch krummholz ecotone species, Dryas octopetala and Globularia cor-
+difolia, with Pinus mugo in the background , covering shallow soil in the Northern Limestone Alps 
+(@A.Jentsch in 2023). 
+Figure 5. Characteristic open patch krummholz ecotone species, Dryas octopetala and Globularia
+cordifolia, with Pinus mugo in the background, covering shallow soil in the Northern Limestone Alps
+(@A.Jentsch in 2023).
+The difference in relative cover of the functional types is likely driven by a change in
+species diversity after fire, where forb species richness is significantly (p = 0.005) higher
+in burned plots (27.9 ± 7.6) than in unburned plots (18.2 ± 10.6), as is graminoid species
+richness (p = 0.029) between burned plots (5.2 ± 1.7) and unburned plots (3.37 ± 2.1).
+However, this increase in richness does not seem to translate to a greater number of rare or
+endangered species, as we see slightly fewer endangered taxa present in burned plots. As
+seen in Figure 6, this does not insinuate a larger number of ruderal species in burned plots,
+and the main ruderal taxa present (C. varia) is only present in unburned plots.
+
+PAGE 9
+Diversity 2024, 16, 366 9 of 18
+Diversity 2024, 16, x FOR PEER REVIEW 9 of 18 
+ 
+ 
+ 
+Figure 6. Elevation ranges of taxa identified to the species level found uniquely in burned plots
+(orange), unburned plots (green), or common to both (gray). The red dotted line indicates the
+elevation of the sampling plots.
+
+PAGE 10
+Diversity 2024, 16, 366 10 of 18
+3.2. Elevational Ranges of Colonizing Forbs and Graminoids
+The elevational ranges of all the species present in both the burned and unburned
+plots were very similar (Figure 6). While the species in unburned plots had generally lower
+values (Figure 7a–d), we did not find a significant difference (Figure 7a–c) in minimum
+elevation (323 m ± 109; 324 m ± 188), maximum elevation (2948 m ± 428; 2936 m ± 387),
+and elevation range breadth (2625 m ± 438; 2612 m ± 404) between the species uniquely
+present in burned or unburned plots. These results seem to indicate that the species growing
+in burned areas do not have distinctly different elevational niches from those growing
+in unburned areas. This is further supported by the lack of significant difference in the
+relative distance of plot elevation from the range minima between the species in burned
+and unburned plots (64.0% ± 43.8; 61.5% ± 10.9), as seen in Figure 7d.
+Diversity 2024, 16, x FOR PEER REVIEW 10 of 18 
+ 
+ 
+Figure 6. Elevation ranges of taxa identified to the species level found uniquely in burned plots 
+(orange), unburned plots (green), or common to both (gray). The red dotted line indicates the eleva-
+tion of the sampling plots.  
+3.2. Elevational Ranges of Colonizing Forbs and Graminoids 
+The elevational ranges of all the species present in both the burned and unburned 
+plots were very similar (Figure 6). While the species in unburned plots had generally 
+lower values (Figure 7a–d), we did not find a significant difference (Figure 7a–c) in mini-
+mum elevation (323 m ± 109; 324 m ± 188), maximum elevation (2948 m ± 428; 2936 m ± 
+387), and elevation range breadth (262 5 m  ± 438; 261 2 m  ± 404) between the species 
+uniquely present in burned or unburned plots. These results seem to indicate that the spe-
+cies growing in burned areas do not have distinctly different elevational niches from those 
+growing in unburned areas. This is further supported by the lack of significant difference 
+in the relative distance of plot elevation from the range minima between the species in 
+burned and unburned plots (64.0% ± 43.8; 61.5% ± 10.9), as seen in Figure 7d. 
+ 
+Figure 7. (a–d) Comparison of range extents of all species found in the burned and unburned plots; 
+species unique to each fire history are in orange and green, respectively, while species common  to 
+both fire histories are in gray: (a) minimum limit of each species present; (b) maximum limit of each 
+species; (d) the elevation extent (calculated as maximum elevation  − minimum elevation) for each 
+species; (c) location and relative elevational distance of the plot (1900 m) from the minimum eleva-
+tion limit of each species (calculated as (1900 − minimum elevation)/elevation extent). 
+Figure 7. (a–d) Comparison of range extents of all species found in the burned and unburned plots;
+species unique to each fire history are in orange and green, respectively, while species common to
+both fire histories are in gray: (a) minimum limit of each species present; (b) maximum limit of each
+species; (d) the elevation extent (calculated as maximum elevation − minimum elevation) for each
+species; (c) location and relative elevational distance of the plot (1900 m) from the minimum elevation
+limit of each species (calculated as (1900 − minimum elevation)/elevation extent); NS indicates
+non-significant.
+The same trends were seen in the elevational ranges of the subset of species unique
+to each fire history (burned vs. unburned): They did not vary significantly in minimum
+
+PAGE 11
+Diversity 2024, 16, 366 11 of 18
+elevation (334 m ± 206; 334 m ± 194), maximum elevation (2853 m ± 573; 2748 m ± 417),
+elevation range breadth (2519 m ± 556; 2404 m ± 425), or relative elevational distance
+of plot location from range minima (71.9% ± 43.8; 66.9% ± 10.9). These results indicate
+that species colonizing the burned sites come from similar elevational ranges rather than
+representing a net upward shift of valley-dwelling species or a downward shift of alpine
+species. This is likely due to abiotic filters preventing their immigration and establishment.
+The 29 species unique to unburned plots include A. flabellata and T. europaeus, but also C.
+varia (a grass that commonly thrives after disturbance). The 47 species unique to burned
+plots include subalpine–alpine specialists, such as Antennaria dioica (L.) Gaertn., C. curvula,
+R. alpestris, Gentiana nivalis L., and P . kerneri, as well as the two outliers Asplenium obovatum
+ssp. billotii (F.W.Schultz) O.Bolòs, Vigo, Masalles & Ninot, and Jucus stygius L., which have
+documented elevational ranges of 200–450 m and 870–1470 m, respectively [53].
+3.3. Effect of Fire on Community Ecologic Indicator Values
+The temperature indicator value of the species supports the results found above, with
+inconclusive results due to the mismatch between the temperature Ellenberg and Landolt
+indicator values between species present in burned and unburned plots (Table 2). Similarly,
+the species indicative of nutrient availability (both Ellenberg and Landolt) did not vary
+significantly between burned and unburned plots. The species present in the burned area
+had significantly higher soil aeration (3.07, 2.61, p < 0.001), light (3.80, 3.46, p < 0.001), and
+pH (3.45, 3.28, p = 0.024) Landolt indicator values (Table 2). This contrasted with their
+significantly lower dominance in situ (2.36, 2.59, p < 0.001), humus content (3.00, 3.53,
+p < 0.001), moisture (2.75, 2.85, p = 0.043) Landolt indicator values compared to unburned
+plots. These results are robust to the exclusion of trees in the analyses, which, due to their
+very different rooting architecture and physiological requirements, could cause skewing of
+the data. Species present in burned plots are thus indicative of dryer, rockier, more basic
+soils that receive a high amount of sunlight. Taken with the inconclusive results of the
+temperature indicator value, this implies that the species present in these communities
+vary in their physical requirements rather than elevational provenance.
+Table 2. Table of significance in variation in Ellenberg and Landolt indicator values for communities
+in burned and unburned plots. Significance levels indicated by “****” = 0.0001, “**” = 0.01, and
+“*” = 0.05; ns and grayed-out rows indicate non-significant results.
+Indicator Source Mean Burned Mean Unburned Statistic p-Value Significance
+Aeration Landolt 3.07 2.61 5.09 <<0.001 ****
+Dominance in situ Landolt 2.36 2.59 −3.99 <<0.001 ****
+Humus content Landolt 3.00 3.53 −6.53 <<0.001 ****
+Light Ellenberg 7.44 6.91 5.50 <<0.001 ****
+Landolt 3.80 3.46 5.74 <<0.001 ****
+Moisture Ellenberg 4.71 4.93 −2.44 0.015 *
+Landolt 2.75 2.85 −2.02 0.043 *
+Moisture variability Landolt 1.50 1.57 −1.45 0.148 ns
+Nutrients Ellenberg 2.96 3.02 −0.57 0.571 ns
+Landolt 2.29 2.28 0.12 0.902 ns
+Reaction/Soil pH Ellenberg 6.61 6.12 2.81 0.005 **
+Landolt 3.45 3.28 2.27 0.024 *
+Root depth Landolt 1.82 1.90 −1.08 0.279 ns
+Temperature Ellenberg 2.91 3.05 −1.64 0.102 ns
+Landolt 2.35 2.26 2.03 0.043 *
+
+PAGE 12
+Diversity 2024, 16, 366 12 of 18
+These results can be seen visually affecting the community composition NMDS in
+Figure 4a, with the burned community shifting along the light indicator value vector and
+the unburned community shifting along the humus content and dominance in situ indicator
+value vectors.
+3.4. Krummholz Species Recruitment
+We observed no clear evidence of tree regeneration (both individual species and
+combined) in the burned sites. Changes in woody canopy cover in time occurred only in
+unburned areas (Figure 8), visible in the filling of canopy gaps, with no discernable change
+in the canopy boundary. This is supported by the lack of tree cover in burned plots, where
+the mean tree cover per plot was less than 0.08% (Figure 4c).
+Diversity 2024, 16, x FOR PEER REVIEW 12 of 18 
+ 
+ 
+These results can be seen visually affecting the community composition NMDS in 
+Figure 4a, with the burned community shifting along the light indicator value vector and 
+the unburned community shifting along the humus content and dominance in situ indi-
+cator value vectors. 
+3.4. Krummholz Species Recruitment 
+We observed no clear evidence of tree regeneration (both individual species and com-
+bined) in the burned sites. Changes in woody canopy cover in time occurred only in un-
+burned areas (Figure 8), visible in the filling of canopy gaps, with no discernable change 
+in the canopy boundary. This is supported by the lack of tree cover in burned plots, where 
+the mean tree cover per plot was less than 0.08% (Figure 4c). 
+ 
+Figure 8. Patterns of P. mugo growth on a section of the southern slope of the Arnspitze at approxi-
+mately 1600 m a.s.l. in (a) 1974, (b) 2001, (c) 2020, and (d) overview (section of interest outlined in 
+red) data: (a,b,d) orthophotos (LBA.TIROL.GV.AT, DATA.TIROL.GV.AT), (c) orthomosaic created 
+from project UAV data. 
+3.5. Potential Drivers of Post-Fire Regime Shift 
+Evidence from plot proxy data and measured environmental data suggests that the 
+trend of increased forb diversity after fire is driven mostly by increasing light availability 
+and partly by decreasing soil depth. As a proxy of light extinction, we recorded P. mugo 
+cover, which was strongly related to fire history with burned plots having no cover and 
+unburned plots an average of 32% cover (p < 0.001). Forb richness varied significantly with 
+P. mugo cover (Figure 9a). Plots with low P. mugo cover (<25%) had s ignificantly higher 
+forb diversity than plots with higher cover (28.3 ± 9.0; 18.6 ± 8.8; p = 0.018), but we observed 
+no significant variation in graminoid diversity with P. mugo cover (4.8 ± 1.9; 4.1 ± 2.2; p > 
+0.05). While forb richness responded to P. mugo cover, we observed no significant response 
+in the relative cover of forbs and graminoids (Figure 9b). 
+Figure 8. Patterns of P . mugogrowth on a section of the southern slope of the Arnspitze at approxi-
+mately 1600 m a.s.l. in (a) 1974, (b) 2001, (c) 2020, and (d) overview (section of interest outlined in
+red) data: (a,b,d) orthophotos (LBA.TIROL.GV .AT, DATA.TIROL.GV .AT), (c) orthomosaic created
+from project UAV data.
+3.5. Potential Drivers of Post-Fire Regime Shift
+Evidence from plot proxy data and measured environmental data suggests that the
+trend of increased forb diversity after fire is driven mostly by increasing light availability
+and partly by decreasing soil depth. As a proxy of light extinction, we recorded P . mugo
+cover, which was strongly related to fire history with burned plots having no cover and
+unburned plots an average of 32% cover (p < 0.001). Forb richness varied significantly with
+P . mugocover (Figure 9a). Plots with low P . mugocover (<25%) had significantly higher forb
+diversity than plots with higher cover (28.3 ± 9.0; 18.6 ± 8.8; p = 0.018), but we observed no
+significant variation in graminoid diversity withP . mugocover (4.8 ± 1.9; 4.1 ± 2.2; p > 0.05).
+While forb richness responded to P . mugocover, we observed no significant response in the
+relative cover of forbs and graminoids (Figure 9b).
+
+PAGE 13
+Diversity 2024, 16, 366 13 of 18
+Diversity 2024, 16, x FOR PEER REVIEW 13 of 18 
+ 
+ 
+ 
+Figure 9. (a) Comparison of plots with high vs . low Pinus mugo cover in species richness and ( b) 
+relative cover by the functional group of plots grouped by P. mugo cover class. Significance levels 
+indicated by “*” = 0.05; NS indicates non-significant. 
+Though burned and unburned plots did not vary significantly in elevation, aspect, or 
+slope, they showed distinctly different community compositions (Figure 4a) and forb spe-
+cies relative cover (Figure 4c). Soil depth and variability also changed significantly as a 
+function of fire history, with 27.4 cm ± 18.6 mean soil depth in burned plots compared to 
+41.2 cm ± 21.0 in unburne d plots. Forb species diversity varied significantly with soil 
+depth, with diversity decreasing with an increase in the substrate (Figure 10a). Plots with 
+the shallowest soils had the greatest richness per plot (30.8 ± 8.2), significantly greater than 
+the mid-depth (19.8 ± 9.0; p = 0.007) and deepest soils (21.4 ± 5.2, p = 0.009). However, we 
+did not observe a significant difference in species diversity between the deeper two soil 
+depths (Figure 10b). 
+ 
+Figure 10. Forb species richness by (a) median soil depth and (b) median soil depth class. Signifi-
+cance levels indicated by “**” = 0.01; NS indicates non-significant. 
+4. Discussion 
+Understanding the dynamics of fire recovery in the subalpine and alpine belt is be-
+coming increasingly important as these zones are becoming hotspots for change [ 18,20] 
+and priorities for biodiversity conservation [34]. The long-term fire recovery of subalpine 
+Figure 9. (a) Comparison of plots with high vs. low Pinus mugo cover in species richness and
+(b) relative cover by the functional group of plots grouped by P . mugocover class. Significance levels
+indicated by “*” = 0.05; NS indicates non-significant.
+Though burned and unburned plots did not vary significantly in elevation, aspect,
+or slope, they showed distinctly different community compositions (Figure 4a) and forb
+species relative cover (Figure 4c). Soil depth and variability also changed significantly as
+a function of fire history, with 27.4 cm± 18.6 mean soil depth in burned plots compared
+to 41.2 cm ± 21.0 in unburned plots. Forb species diversity varied significantly with soil
+depth, with diversity decreasing with an increase in the substrate (Figure 10a). Plots with
+the shallowest soils had the greatest richness per plot (30.8 ± 8.2), significantly greater than
+the mid-depth (19.8 ± 9.0; p = 0.007) and deepest soils (21.4 ± 5.2, p = 0.009). However, we
+did not observe a significant difference in species diversity between the deeper two soil
+depths (Figure 10b).
+Diversity 2024, 16, x FOR PEER REVIEW 13 of 18 
+ 
+ 
+ 
+Figure 9. (a) Comparison of plots with high vs . low Pinus mugo cover in species richness and ( b) 
+relative cover by the functional group of plots grouped by P. mugo cover class. Significance levels 
+indicated by “*” = 0.05; NS indicates non-significant. 
+Though burned and unburned plots did not vary significantly in elevation, aspect, or 
+slope, they showed distinctly different community compositions (Figure 4a) and forb spe-
+cies relative cover (Figure 4c). Soil depth and variability also changed significantly as a 
+function of fire history, with 27.4 cm ± 18.6 mean soil depth in burned plots compared to 
+41.2 cm ± 21.0 in unburne d plots. Forb species diversity varied significantly with soil 
+depth, with diversity decreasing with an increase in the substrate (Figure 10a). Plots with 
+the shallowest soils had the greatest richness per plot (30.8 ± 8.2), significantly greater than 
+the mid-depth (19.8 ± 9.0; p = 0.007) and deepest soils (21.4 ± 5.2, p = 0.009). However, we 
+did not observe a significant difference in species diversity between the deeper two soil 
+depths (Figure 10b). 
+ 
+Figure 10. Forb species richness by (a) median soil depth and (b) median soil depth class. Signifi-
+cance levels indicated by “**” = 0.01; NS indicates non-significant. 
+4. Discussion 
+Understanding the dynamics of fire recovery in the subalpine and alpine belt is be-
+coming increasingly important as these zones are becoming hotspots for change [ 18,20] 
+and priorities for biodiversity conservation [34]. The long-term fire recovery of subalpine 
+Figure 10. Forb species richness by (a) median soil depth and (b) median soil depth class. Significance
+levels indicated by “**” = 0.01; NS indicates non-significant.
+4. Discussion
+Understanding the dynamics of fire recovery in the subalpine and alpine belt is be-
+coming increasingly important as these zones are becoming hotspots for change [ 18,20]
+
+PAGE 14
+Diversity 2024, 16, 366 14 of 18
+and priorities for biodiversity conservation [34]. The long-term fire recovery of subalpine
+krummholz—including evidence of arrested succession—is not well studied and is an issue
+that needs to be monitored to help address pressing ecological and safety concerns in the
+mountains. These studies need to be held in the context of changing climate and disturbance
+regimes [54], shifting snow [20,21] and growing periods [20], as well as water availability
+affected by changing temperature and summer precipitation regimes [19], increased fire
+risk and natural fire occurrence [55], and the subsequent risk of soil erosion [ 15,16] and
+avalanche occurrence [17]. Critically, these environmental changes may have already al-
+tered baseline climatic conditions necessary for the complete post-fire recovery of subalpine
+systems and the recruitment of currently absent woody vegetation. These halted succes-
+sional subalpine krummholz dynamics can trigger a regime shift to open, high-elevation
+tundra [31,56] generating novel habitats for biodiversity of high nature value.
+In the Northern Limestone Alps, fire seems to have a distinct impact on the plant com-
+munity in the krummholz zone: entirely removing woody , krummholz vegetation—here
+P . mugo—and shifting the community toward a herbaceously dominated, species-rich,
+subalpine grassland. This is a more homogeneous community, as seen by the lower beta di-
+versity and closer clustering of the burned plots (compare Figure 4a). This homogenization
+toward species-rich subalpine grassland or tundra has also been observed in other stud-
+ies, where previously krummholz or shrubby subalpine vegetation gained richness while
+losing woody dominance and spatial heterogeneity after fire [ 29,31]. This plant species
+diversity is gained mostly through forb and graminoid diversity, which is significantly
+higher in burned plots than in unburned plots (Figure 4c). The ecological indicator values
+of the species present in the communities also indicate a shift toward plant species that are
+associated with drier, brighter sites with shallower soils in burned areas (Table 2), likely
+driven by the removal of the P . mugobiotic filter by fire, providing more light and freeing
+substrate for potential herbaceous colonizers.
+Though this shift in species composition could also open niches for lowland distur-
+bance specialists or ruderal invasives [57,58], we did not see a variation in the elevation
+ranges of the species between burned and unburned sites (Figure 6) or the presence of
+“weeds” in burned plots (Figure 4). By contrast, certain alpine specialist species were
+found only in burned plots, such as C. curvula, P . kerneri, Plantago atrata Hoppe, Veronica
+fruticans Jacq., and Poa supina Schrad., while others such as Festuca alpina Suter, D. striata,
+and Veronica aphylla L. were observed growing in both burned and unburned plots. This,
+coupled with other species found only in unburned sites such asGentiana acaulis L., Gentiana
+bavarica L., and Globularia nudicaulis L., which appeared to be unable to colonize the burned
+sites, seems to indicate that the new community is not composed of species novel to these
+elevations, rather a new grouping of species already present at these elevations.
+The homogeneity and richness of the post-fire communities give us a potential insight
+into the duration of recovery. Our survey was conducted just under 80 years after the latest
+occurrence of fire on these slopes. Though these systems are known to take decades or even
+centuries to recover [3], the complete lack of P . mugoseedlings indicates that the herbaceous
+vegetative recovery is temporally different from that of woody species. This observation is
+consistent with other studies that observed little to no woody species regeneration within
+the first half-century after fire and reconstructed a recovery time of over 150 years for
+the restocking of woody krummholz vegetation [29–31]. However, sites recovering from
+fire in subalpine forests in the Valais in the Central Alps see a significant rewooding after
+only 10 years, with aspect playing a significant role in the successful reestablishment of
+seedlings: northern aspects had a 17-fold increase in stem density compared to southern
+aspects 19 years after fire [14,33].
+Potential drivers of this arrested succession could be three-fold. Here, we have shown
+a lack of tree seedling recruitment in burned areas (Figure 8), likely due to prolonged
+periods with frozen soil and the potential of extreme temperatures, in line with Walker
+et al. 2010 [ 59]. We have also uncovered that limited substrate availability (in the form
+of soil depth) is a key driver of forb diversity and can thus be key to supporting a viable
+
+PAGE 15
+Diversity 2024, 16, 366 15 of 18
+herbaceous recovery while preventing the establishment of P . mugoseedlings [60]. The
+third factor, not discussed in this paper, that prevents the establishment of seedlings could
+be linked to browsing or grazing pressure from ungulates [61].
+Climate change is bringing other abiotic stressors into the picture, though with predic-
+tions for the Eastern Alps indicating increases in summer and autumn temperatures as well
+as in the frequency and severity of heatwaves [62,63]. Beniston et al. (2004) [62] forecast a
+shift in precipitation expected in the northern Eastern Alps from large summer events to
+spring and autumn rainfall. Combined with forecasted earlier snowmelt dates [20,21,64],
+these stressors will expose vegetation to longer, likely more intense, dry conditions, leading
+to increased fire risk in much of this zone [ 10,22]. While in the past, fire management
+strategies may not have been considered necessary in these areas, the projected increase in
+fire risk coupled with the long-term impacts of fire on vegetation analyzed in this study, as
+well as on other abiotic factors [10–18], necessitates bringing this management strategy to
+the forefront.
+5. Conclusions
+Albeit potentially temporary, these post-fire subalpine herbaceous communities are
+vital for the protection of diversity in our mountains and can be useful to help mitigate
+the negative effects of our changing alpine climates by acting as refugia for an array of
+threatened and endangered species. To further understand the dynamics of recovery in
+these systems and decipher whether the community shift we have observed is a plateau
+in the successional return to the previously woody krummholz vegetation or rather an
+alternate subalpine grassland steady state, it is important to look at the system as a whole—
+combining biotic and abiotic factors and placing this one site within the context of many
+others. Studies in other such sites are scarce (but see [14] for more forested sites in the Euro-
+pean Alps and [30,31] for sites in Japan and the USA, respectively), and a thorough analysis
+of the abiotic elements present in these extreme post-fire habitats is lacking (see [42]). Given
+this gap, we recommend further investigation into understanding the causes of P . mugo
+regeneration failure in these scenarios with a focus on micrometeorological factors and seed,
+seedling, and sapling physiology, as well as the impact of ungulate browsing. Management
+of these areas should include these results in their assessment of new conservation goals,
+making sure to balance the ability of fire to create more open systems with the likelihood
+that these changes may be permanent.
+Author Contributions: Conceptualization, A.J. and O.S.; field data collection, T.D., J.H., A.J.,
+M.W. and P .W.; formal analysis, M.D.G.; writing—original draft preparation, M.D.G. and A.J.;
+writing—review and editing, M.D.G., T.D., A.J., O.S., M.W. and P .W. All authors have read and agreed
+to the published version of the manuscript.
+Funding: We acknowledge a small grant by the Bayreuth Center of Ecology and Environmental
+Research (BayCEER) at the University of Bayreuth, Germany and the Open Access Publishing Fund
+of the University of Bayreuth.
+Institutional Review Board Statement: Not applicable.
+Data Availability Statement: Data will be made available upon request.
+Conflicts of Interest:The authors declare no conflicts of interest. The funders had no role in the design
+of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or
+in the decision to publish the results.
+References
+1. Breckle, S.-W.; Lawlor, G.; Lawlor, D.W.; Walter, H.; Breckle, S.-W.; Walter, H.Walter’s Vegetation of the Earth: The Ecological Systems
+of the Geo-Biosphere, 4th ed.; Springer: Berlin/Heidelberg, Germany, 2002; ISBN 978-3-540-43315-6.
+2. Genries, A.; Muller, S.D.; Mercier, L.; Bircker, L.; Carcaillet, C. Fires Control Spatial Variability of Subalpine Vegetation Dynamics
+during the Holocene in the Maurienne Valley (French Alps). Écoscience 2009, 16, 13–22. [CrossRef]
+3. Sass, O.; Heel, M.; Leistner, I.; Stöger, F.; Wetzel, K.; Friedmann, A. Disturbance, Geomorphic Processes and Recovery of Wildfire
+Slopes in North Tyrol. Earth Surf. Process. Landf. 2012, 37, 883–894. [CrossRef]
+
+PAGE 16
+Diversity 2024, 16, 366 16 of 18
+4. Carcaillet, C.; Ali, A.A.; Blarquez, O.; Genries, A.; Mourier, B.; Bremond, L. Spatial variability of fire history in subalpine forests:
+From natural to cultural regimes. Ecoscience 2009, 16, 1–12. [CrossRef]
+5. Zumbrunnen, T.; Menéndez, P .; Bugmann, H.; Conedera, M.; Gimmi, U.; Bürgi, M. Human impacts on fire occurrence: A case
+study of hundred years of forest fires in a dry alpine valley in Switzerland. Reg. Environ. Chang. 2012, 12, 935–949. [CrossRef]
+6. Leys, B.; Carcaillet, C. Subalpine fires: The roles of vegetation, climate and, ultimately, land uses. Clim. Chang. 2016, 135, 683–697.
+[CrossRef]
+7. Higuera, P .E.; Brubaker, L.B.; Anderson, P .M.; Hu, F.S.; Brown, T.A. Vegetation mediated the impacts of postglacial climate change
+on fire regimes in the south-central Brooks Range, Alaska. Ecol. Monogr. 2009, 79, 201–219. [CrossRef]
+8. Leys, B.; Finsinger, W.; Carcaillet, C. Historical range of fire frequency is not the Achilles’ heel of the Corsican black pine ecosystem.
+J. Ecol. 2014, 102, 381–395. [CrossRef]
+9. Tinner, W.; Conedera, M.; Ammann, B.; Lotter, A.F. Fire Ecology North and South of the Alps since the Last Ice Age.Holocene
+2005, 15, 1214–1226. [CrossRef]
+10. Sass, O.; Wetzel, K.-F.; Friedmann, A. Landscape Dynamics of Sub-Alpine Forest Fire Slopes in the Northern Alps-Preliminary
+Results. Z. Für Geomorphol. Suppl. 2006, 142, 207–227.
+11. Moser, B.; Gimmi, U.; Wohlgemuth, T. Ausbreitung Des Erdbeerspinats Blitum Virgatum Nach Dem Waldbrand von Leuk, Wallis
+(2003). Bot. Helv. 2006, 116, 179–207. [CrossRef]
+12. Moser, B.; Temperli, C.; Schneiter, G.; Wohlgemuth, T. Potential Shift in Tree Species Composition after Interaction of Fire and
+Drought in the Central Alps. Eur. J. For. Res. 2010, 129, 625–633. [CrossRef]
+13. Wohlgemuth, T.; Hester, C.; Jost, A.-R.; Wasem, U.; Moser, B. Dynamik Der Wiederbewaldung Im Waldbrandgebiet von Leuk
+(Wallis)|Recruitment Dynamics Following the Forest Fire near Leuk (Valais).Schweiz. Z. Forstwes. 2010, 161, 450–459. [CrossRef]
+14. Wohlgemuth, T.; Moser, B. Zehn Jahre Vegetationsdynamik Auf Der Waldbrandfläche von Leuk (Wallis).Schweiz. Z. Forstwes.
+2018, 169, 279–289. [CrossRef]
+15. Shakesby, R.A. Post-Wildfire Soil Erosion in the Mediterranean: Review and Future Research Directions.Earth-Sci. Rev. 2011,
+105, 71–100. [CrossRef]
+16. Mandrone, G.; Vacha, D.; Chicco, J. Post-Wildfire Erosion Rates and Triggering of Debris Flows: A Case Study in Susa Valley
+(Bussoleno). E3S Web Conf. 2023, 415, 1–4. [CrossRef]
+17. Sass, O.; Heel, M.; Hoinkis, R.; Wetzel, K.-F. A Six-Year Record of Debris Transport by Avalanches on a Wildfire Slope (Arnspitze,
+Tyrol). Z. Geomorphol. 2010, 54, 181–193. [CrossRef]
+18. Seidl, R.; Thom, D.; Kautz, M.; Martin-Benito, D.; Peltoniemi, M.; Vacchiano, G.; Wild, J.; Ascoli, D.; Petr, M.; Honkaniemi, J.; et al.
+Forest Disturbances under Climate Change. Nat. Clim. Chang. 2017, 7, 395–402. [CrossRef] [PubMed]
+19. Auer, I.; Böhm, R.; Jurkovic, A.; Lipa, W.; Orlik, A.; Potzmann, R.; Schöner, W.; Ungersböck, M.; Matulla, C.; Briffa, K.; et al.
+HISTALP—Historical Instrumental Climatological Surface Time Series of the Greater Alpine Region. Int. J. Climatol. 2007,
+27, 17–46. [CrossRef]
+20. Gobiet, A.; Kotlarski, S.; Beniston, M.; Heinrich, G.; Rajczak, J.; Stoffel, M. 21st Century Climate Change in the European Alps—A
+Review. Sci. Total Environ. 2014, 493, 1138–1151. [CrossRef]
+21. Klein, G.; Vitasse, Y.; Rixen, C.; Marty, C.; Rebetez, M. Shorter Snow Cover Duration since 1970 in the Swiss Alps Due to Earlier
+Snowmelt More than to Later Snow Onset. Clim. Chang. 2016, 139, 637–649. [CrossRef]
+22. Cansler, C.A.; McKenzie, D.; Halpern, C.B. Area Burned in Alpine Treeline Ecotones Reflects Region-Wide Trends.Int. J. Wildland
+Fire 2016, 25, 1209. [CrossRef]
+23. Dupire, S.; Curt, T.; Bigot, S.; Fréjaville, T. Vulnerability of Forest Ecosystems to Fire in the French Alps. Eur. J. For. Res. 2019,
+138, 813–830. [CrossRef]
+24. Moris, J.V .; Vacchiano, G.; Ravetto Enri, S.; Lonati, M.; Motta, R.; Ascoli, D. Resilience of European Larch (Larix decidua Mill.)
+Forests to Wildfires in the Western Alps.New For. 2017, 48, 663–683. [CrossRef]
+25. Maringer, J.; Ascoli, D.; Küffer, N.; Schmidtlein, S.; Conedera, M. What Drives European Beech (Fagus sylvatica L.) Mortality after
+Forest Fires of Varying Severity? For. Ecol. Manag. 2016, 368, 81–93. [CrossRef]
+26. Frejaville, T.; Curt, T.; Carcaillet, C. Bark Flammability as a Fire-Response Trait for Subalpine Trees. Front. Plant Sci. 2013, 4, 466.
+[CrossRef] [PubMed]
+27. Körner, C. The Cold Range Limit of Trees. Trends Ecol. Evol. 2021, 36, 979–989. [CrossRef] [PubMed]
+28. Jentsch, A.; White, P . A Theory of Pulse Dynamics and Disturbance in Ecology. Ecology 2019, 100, e02734. [CrossRef] [PubMed]
+29. Douglas, G.W.; Ballard, T.M. Effects of Fire on Alpine Plant Communities in the North Cascades, Washington. Ecology 1971,
+52, 1058–1064. [CrossRef]
+30. Tomback, D.F. Post-Fire Regeneration of Krummholz Whitebark Pine: A Consequence Of Nutcracker Seed Caching.Madroño
+1986, 33, 100–110.
+31. Takahashi, K. Damage of Alpine Vegetation by the 2009 Fire on Mt. Shirouma, Central Japan: Comparison between Herbaceous
+Vegetation and Pinus Pumila Scrub. Landsc. Ecol. Eng. 2012, 8, 123–128. [CrossRef]
+32. Kalas, M.M.; Berg, C. Regeneration of High Montane Plant Communities in the “Nationalpark Kalkalpen” (Northern Alps) after
+Fire Events. In Proceedings of the 5th Symposium for Research in Protected Areas, Mittersill, Austria, 10–12 June 2013.
+33. Gauye, C.; Bernard, C.; Moser, B.; Rigling, A.; Wohlgemuth, T. L’importance de l’exposition Sur Le Reboisement Suiteà Deux
+Incendies de Forêt En Valais. Schweiz. Z. Forstwes. 2023, 174, 238–242. [CrossRef]
+
+PAGE 17
+Diversity 2024, 16, 366 17 of 18
+34. Geppert, C.; Bertolli, A.; Prosser, F.; Marini, L. Red-Listed Plants Are Contracting Their Elevational Range Faster than Common
+Plants in the European Alps. Proc. Natl. Acad. Sci. USA 2023, 120, e2211531120. [CrossRef] [PubMed]
+35. Schweiger, A.-K.; Nopp-Mayr, U.; Zohmann, M. Small-Scale Habitat Use of Black Grouse (Tetrao tetrix L.) and Rock Ptarmigan
+(Lagopus Muta Helvetica Thienemann) in the Austrian Alps. Eur. J. Wildl. Res. 2012, 58, 35–45. [CrossRef]
+36. Scridel, D.; Tenan, S.; Brambilla, M.; Celva, R.; Forti, A.; Fracasso, I.; Volcan, G.; Dorigatti, E.; Anderle, M.; Marchesini, A.
+Early-Succession Secondary Forests Following Agropastoral Abandonment Are Key Winter Habitats for the Conservation of a
+Priority Bird in the European Alps. Eur. J. For. Res. 2022, 141, 1029–1043. [CrossRef]
+37. Baumgartner, A.; Reichel, E.; Weber, G. Der Wasserhaushalt Der Alpen: Niederschlag, Verdunstung, Abfluß u. Gletscherspende Im
+Gesamtgebiet d. Alpen Im Jahresdurchschnitt Für d. Normalperiode 1931–1960; Mit 68 Tab; R. Oldenbourg: München, Germany, 1983;
+ISBN 978-3-486-27251-2.
+38. Schiechtl, H.; Stern, R.; Meisel, K. Karte Der Aktuellen Vegetation von Tirol 1:100,000. XI. Teil: Blatt 2 Lechtaler Alpen-Wetterstein.
+Grenoble 1987, XXX, 25–48.
+39. Hüttl, C. Steuerungsfaktoren und Quantifizierung der Chemischen Verwitterung auf dem Zugspitzplatt (Wettersteingebirge, Deutschland): Mit
+77 T abellen; Münchener Geographische Abhandlungen Reihe B; Geobuch-V erl: München, Germany , 1999; ISBN 978-3-925308-51-2.
+40. Sass, O.; Haas, F.; Schimmer, C.; Heel, M.; Bremer, M.; Stöger, F.; Wetzel, K. Impact of Forest Fires on Geomorphic Processes in the
+Tyrolean Limestone Alps. Geogr. Ann. Ser. Phys. Geogr. 2012, 94, 117–133. [CrossRef]
+41. Korch, O.; Friedmann, A. Vegetation und Vegetationsdynamik auf dem Zugspitzplatt (Bayerische Alpen) Natur- und Kultur-
+landschaft im hochalpinen Raum als Produkt natürlicher, anthropogener und zoogener Einflüsse. Polarforschung 2016, 86, 35–45.
+[CrossRef]
+42. Sass, O. Waldbrände in den Nordtiroler Kalkalpen: Verbreitung-Geschichte-Regeneration; Innsbrucker Geographische Studien; Geogra-
+phie Innsbruck: Innsbruck, Austria, 2019; ISBN 978-3-901182-44-0.
+43. Heel, M. Waldbrände in den Nördlichen Kalkalpen: Raumzeitliche Verteilung und Beispiele Lokaler Auswirkungen. Ph.D. Thesis,
+Universität Augsburg, Augsburg, Germany, 2016.
+44. Stine, M.B.; Butler, D.R. Effects of Fire on Geomorphic Factors and Seedling Site Conditions within the Alpine Treeline Ecotone,
+Glacier National Park, MT. Catena 2015, 132, 37–44. [CrossRef]
+45. Plants of the World Online. Facilitated by the Royal Botanic Gardens, Kew. Available online: http://www.plantsoftheworldonline.
+org/ (accessed on 17 May 2024).
+46. Londo, G. The decimal scale for releves of permanent quadrats. Vegetatio 1976, 33, 61–64. [CrossRef]
+47. Ellenberg, H.; Weber, H.E.; Düll, R.; Wirth, V .; Werner, W.Zeigerwerte von Pflanzen in Mitteleuropa; Scripta Geobotanica; 3. Durchge-
+sehene Auflage.; Verlag Erich Goltze GmbH & Co KG: Göttingen, Germany, 2001; ISBN 978-3-88452-518-0.
+48. Landolt, E. Flora Indicativa: Ökologische Zeigerwerte und Biologische Kennzeichen zur Flora der Schweiz und der Alpen; 2. Völlig Neu
+Bearbeitete und Erweiterte Aufl.; Haupt: Bern, Switzerland, 2010; ISBN 978-3-258-07461-0.
+49. Hill, M.O. Diversity and evenness: A unifying notation and its consequences. Ecology 1973, 54, 427–473. [CrossRef]
+50. Whittaker, R.H. Evolution and measurement of species diversity. Taxon 1972, 21, 213–251. [CrossRef]
+51. Jutzi, M.; Vilpert, M.; Juillerat, P .; Eggenberg, S. Swiss National Databank of Vascular Plants. Version 1.15. Swiss National
+Biodiversity Data and Information Centres—Infospecies.ch. 2023. Occurrence Dataset. Accessed via GBIF.org. Available online:
+https://doi.org/10.15468/7jffp3 (accessed on 1 December 2023).
+52. Xu, S.; Chen, M.; Feng, T.; Zhan, L.; Zhou, L.; Yu, G. Use Ggbreak to Effectively Utilize Plotting Space to Deal with Large Datasets
+and Outliers. Front. Genet. 2021, 12, 774846. [CrossRef]
+53. Hess, H.E.; Landolt, E.; Hirzel, R. Flora der Schweiz und Angrenzender Gebiete; 1: Pteridophyta bis Caryophyllaceae; 2. Durchges.
+Aufl.; Birkhäuser: Basel Stuttgart, Germany, 1976; ISBN 978-3-7643-0843-8.
+54. Wohlgemuth, T.; Jentsch, A.; Seidl, R. Disturbance Ecology; Springer Nature: Berlin/Heidelberg, Germany, 2022; Volume 32,
+ISBN 3-030-98756-6.
+55. Wastl, C.; Schunk, C.; Leuchner, M.; Pezzatti, G.B.; Menzel, A. Recent Climate Change: Long-Term Trends in Meteorological
+Forest Fire Danger in the Alps. Agric. For. Meteorol. 2012, 162, 1–13. [CrossRef]
+56. Daskalova, G.N.; Myers-Smith, I.H.; Bjorkman, A.D.; Blowes, S.A.; Supp, S.R.; Magurran, A.E.; Dornelas, M. Landscape-Scale
+Forest Loss as a Catalyst of Population and Biodiversity Change. Science 2020, 368, 1341–1347. [CrossRef] [PubMed]
+57. Haider, S.; Palm, S.; Bruelheide, H.; de Villemereuil, P .; Menzel, A.; Lachmuth, S. Disturbance and Indirect Effects of Climate
+Warming Support a Plant Invader in Mountains. Oikos 2022, 2022, e08783. [CrossRef]
+58. Lembrechts, J.J.; Pauchard, A.; Lenoir, J.; Nuñez, M.A.; Geron, C.; Ven, A.; Bravo-Monasterio, P .; Teneb, E.; Nijs, I.; Milbau, A.
+Disturbance is the key to plant invasions in cold environments. Proc. Natl. Acad. Sci. USA 2016, 113, 14061–14066. [CrossRef]
+[PubMed]
+59. Walker, L.R.; Wardle, D.A.; Bardgett, R.D.; Clarkson, B.D. The Use of Chronosequences in Studies of Ecological Succession and
+Soil Development. J. Ecol. 2010, 98, 725–736. [CrossRef]
+60. Šenfeldr, M.; Treml, V . Which Generative Reproduction Characteristics Determine Successful Establishment of the Subalpine
+Shrub Pinus mugo? J. Veg. Sci. 2020, 31, 403–415. [CrossRef]
+61. Simon, A.; Katzensteiner, K.; Gratzer, G. Drivers of Forest Regeneration Patterns in Drought Prone Mixed-Species Forests in the
+Northern Calcareous Alps. For. Ecol. Manag. 2019, 453, 117589. [CrossRef]
+
+PAGE 18
+Diversity 2024, 16, 366 18 of 18
+62. Beniston, M. The 2003 heat wave in Europe: A shape of things to come? An analysis based on Swiss climatological data and
+model simulations. Geophys. Res. Lett. 2004, 31, L02202. [CrossRef]
+63. Beniston, M. August 2005 intense rainfall event in Switzerland: Not necessarily an analog for strong convective events in a
+greenhouse climate. Geophys. Res. Lett. 2006, 33, L05701. [CrossRef]
+64. Beniston, M.; Keller, F.; Goyette, S. Snow pack in the Swiss Alps under changing climatic conditions: An empirical approach for
+climate impacts studies. Theoret. Appl. Climatol. 2003, 74, 19–31. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

@@ -1,0 +1,944 @@
+PAGE 1
+Article https://doi.org/10.1038/s41467-023-36052-8
+Climate teleconnections modulate global
+burned area
+Adrián Cardil 1,2,3 ,M a r c o sR o d r i g u e s4,5,M a r i oT a p i a2, Renaud Barbero6,
+Joaquin Ramírez2, Cathelijne R. Stoof 7, Carlos Alberto Silva 8,
+Midhun Mohan9 & Sergio de-Miguel 1,3
+Climate teleconnections (CT) remotely inﬂuence weather conditions in many
+r e g i o n so nE a r t h ,e n t a i l i n gc h a n g e si np r i m a r yd r i v e r so fﬁre activity such as
+vegetation biomass accumulation and moisture. We reveal signiﬁcant rela-
+tionships between the main global CTs and burned area that vary across and
+within continents and biomes according to both synchronous and lagged
+signals, and marked regional patterns.Overall, CTs modulate 52.9% of global
+burned area, the Tropical North Atlantic mode being the most relevant CT.
+Here, we summarized the CT-ﬁre relationships into a set of six global CT
+domains that are discussed by continent, considering the underlying
+mechanisms relating weather patterns and vegetation types with burned area
+across the different world’s biomes. Ourﬁndings highlight the regional CT-ﬁre
+relationships worldwide, aiming to further supportﬁre management and
+policy-making.
+Wildﬁr e sp l a ya ni n t e g r a lr o l ei ns h a p i n ge c o s y s t e m s’ composition and
+species evolution at global scale1, while causing substantial impacts on
+climate, human health and socioeconomic activities. Previous research
+has reported a signiﬁcant decrease in global burned area (BA) due to
+agricultural expansion and intensi ﬁcation
+2. Yet, the severity and
+intensity of extreme wildﬁre events associated with climate change are
+expected to progressively threaten ecosystems in several biomes,
+increasing risks to communities worldwide
+2,3. As a consequence, dis-
+entangling the drivers governing the global BA is essential to anticipate
+changes in ﬁre regimes in the forthcoming decades in the face of cli-
+mate change4.
+Climate teleconnections (CTs; i.e. signiﬁcant climate responses in
+a region far from the perturbation source, either concurrent with or
+time lagged
+4,5) are usually derived from sea surface temperature (SST)
+or atmospheric pressure variations from seasonal to interdecadal
+timescales. A number of CTs have been shown to play a prominent role
+in modulating weather conditions globally
+6,7. These patterns are
+usually cyclic in nature, and impact ecosystems’ primary productivity
+and fuel moisture, which are key drivers ofﬁre behavior and BA8,9.I ti s
+also well-known that CTs may in ﬂuence wild ﬁre activity through
+immediate to lagged effects by modulating moisture conditions or fuel
+build-up processes, which are strongly dependent on the environ-
+mental conditions of the ecosystems
+3,5. Although the relationships
+between wildﬁres and CTs have been studied in several regions across
+the globe3–5,10, and the effects of CTs on weather patterns are expected
+to become more extreme in the future as a result of climate change 4,
+no global synthesis of synchronous or lagged CT- ﬁre associations in
+the different biomes worldwide has been addressed so far in the
+literature.
+Here, we explore the complex associations through cross-
+correlation analysis between the major modes of SSTs and CTs
+(Fig. 1 and S.1. 2) driving large-scale atmospheric anomalies and global
+BA from 1982 to 2018 at 0.5° pixel resolution (Fig.1; FireCCILT11 global
+BA product
+11), translating them into transboundary CT domains (CTD)
+Received: 31 March 2022
+Accepted: 12 January 2023
+Check for updates
+1Joint Research Unit CTFC— AGROTECNIO— CERCA, Solsona, Spain.2Technosylva Inc, La Jolla, CA, USA.3Department of Crop and Forest Sciences, University
+of Lleida, Lleida, Spain.4Department of Geography and Land Management, University of Zaragoza, Zaragoza, Spain.5GEOFOREST Research Group, University
+Institute for Research in Environmental Sciences of Aragon (IUCA), Zaragoza, Spain.6INRAE, RECOVER, Aix-Marseille University, Aix-en-Provence 13182,
+France.7Department of Environmental Sciences, Wageningen University, PO box 47, 6700 AA Wageningen, The Netherlands.8Forest Biometrics and Remote
+Sensing Laboratory (Silva Lab), School of Forest, Fisheries, and Geomatics Sciences, University of Florida, PO Box 110410 Gainesville, FL 32611, USA.
+9Department of Geography, University of California-Berkeley, Berkeley, CA 94709, USA. e-mail: acardil@tecnosylva.com; sergio.demiguel@udl.cat
+Nature Communications|          (2023) 14:427 1
+1234567890():,;
+1234567890():,;
+
+PAGE 2
+using a hierarchical clustering approach. These CTD correspond to
+regions with similar BA responses to CTs at various time lags. Through
+this study we aim to unravel and clarify the linkages between CTs and
+BA on different continents and biomes, considering synchronous and
+lagged signals of CTs not previously analyzed at the global scale (e.g.,
+Arctic and Antarctic modes). This analysis helps to improve our
+understanding of the role of CTs affecting the natural variability of
+global BA, allowing for anticipating severe, adverse, and prolongedﬁre
+seasons. Our ﬁndings are expected to be useful for forest and ﬁre
+agencies, particularly in emerging regions where long-range danger
+and risk assessments remain unavailable. The comprehension of these
+natural system dynamics contributes to the further development of
+ongoingﬁre and climate policies and practices aiming to minimizeﬁre-
+related carbon emissions and negative impacts on societies.
+Results and discussion
+Our results revealed statistically signi ﬁcant relationships between
+CTs and BA worldwide ( P < 0.05; Figs. 2, 3 and S.1 –8), while also
+identifying regional patterns summarized into a set of six CT
+domains (CTD; Fig. 3). Most of the CTDs (2, 3, 4, 5 and 6) showed
+characteristic large-scale CT- ﬁre patterns in speci ﬁc regions, while
+CTD 1 had a scattered distribution across global biomes. CTD2
+expanded over large areas in southern Australia, South America
+(Colombia, Equator and Perú), eastern Africa, Ukraine and south-
+eastern Russia; CTD3 in tropical Africa and America; CTD4 in the
+African savanna; CTD5 in central and South America and eastern
+Russia; and CTD6 in southern Africa, northern Australia, Cerrado
+(Brazil), India and the Asian Boreal taiga. During the peak of the ﬁre
+season (accounting for 84.3 % of the total annual BA; Fig. 1B, C; see
+supplementary materials for more details), CTs were responsible
+for modulating 52.9% of the interannual variability in global BA
+(P <0 . 0 5 ;T a b l e1; Fig. S.9). TNA is the leading CT mode related to BA
+globally, especially in the northern hemisphere, being associated
+with 25.7% of the total global BA. Changes in convective activity
+induced by trade winds and latent heat ﬂux anomalies are thought
+to modulate the SST variability in the region
+12. TNA dominates
+variability in terrestrial evaporation and drought in relatively large
+regions of both hemispheres due to different physical mechanisms
+explained in the SM
+7,13. In the Southern hemisphere, SAM is the
+leading CT mode of climate variability associated with changes in
+the position and strength of the polar jet around Antarctica
+14. This
+variability drives large ﬂuctuations in weather and climate up from
+the troposphere to the lower stratosphere 15, which can result in
+signiﬁcant linkages with BA, as shown in our analysis. The SAM was
+associated with 12.3% of the total global BA (Table 1), due to its
+signiﬁcant in ﬂuence across the African savanna, Australia and the
+South American Savanna (Cerrado; Fig. 2C and S1.8).
+Most CTs considered in this analysis featured signi ﬁcant syn-
+chronous and lagged signals between CTs and BA. The 0- and 6-month
+lags were the most important for explaining global BA (Table1;F i g s .2
+and S1.8), as per their inﬂuence on weather conditions during the ﬁre
+season peak (lag 0), and the effect on biomass accumulation and long-
+term drought leading to dry fuels and ﬂammable landscapes (lag 6).
+TNA, EA and EP had synchronous and signiﬁcant correlations with BA,
+whereas PNA, WP, SAM and NAO were found to predominantly relate
+to BA through lagged effects. Our study conﬁrms and further expands
+our knowledge on the prominent role of CTs in modulating global BA
+through important remote climate feedbacks operating at different
+spatio-temporal scales, either concurrent or asynchronous, and
+entailing regional to global impacts. These connections directly
+Fig. 1 | Global burned area (BA), climate teleconnections (CT) and biomes.
+A Location of the studied CTs and average annual BA (km2; 0.5° pixel resolution)
+from 1982 to 2018 during the ﬁre season peak (Atlantic Multidecadal Oscillation
+(AMO); Arctic Oscillation (AO); East Atlantic (EA); El Niño 3.4 SST index (ENSO);
+Eastern Paciﬁc (EP); Indian Ocean Dipole (IOD); North Atlantic Oscillation (NAO);
+Paciﬁc Decadal Oscillation (PDO); Paciﬁc North American (PNA); Southern Annular
+Mode (SAM); Tropical North Atlantic (TNA); Tropical South Atlantic (TSA); Western
+Paciﬁc (WP)); (B) Fire season peak, deﬁned as the three consecutive months with
+the highest BA. The capital letters in the legend represent the initial letter of each
+month; (C) Percentage of annual BA during theﬁre season peak; (D) Distribution of
+the Earth’s 14 terrestrial biomes
+63. Fire data: FireCCILT11 global BA product11. Pro-
+jection: Robinson (EPSG:54030).
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 2
+
+PAGE 3
+inﬂuence biomass accumulation and moisture content associated with
+changing weather conditions.
+The spatial extent of in ﬂuence of each CT varied from sub-
+continental (WP, EP, EA, AO, IOD) to global scale (AMO, TNA, TSA,
+NAO, PNA, PDO, ENSO, SAM). Altogether, more than half of the
+global interannual BA (52.9%) can be explained by CTs. This is
+slightly higher than previously thought (48.0%) as prior studies
+did not include the essential effect of SAM
+8, affecting the major
+BA hotspots in the southern hemisphere due to changes in the
+strength and position of the polar jet around Antarctica
+14.O u r
+analysis also shows that global BA is largely explained by TNA and
+AMO, rather than by ENSO, as previously thought
+8. However,
+although our analysis did not ﬁnd any signi ﬁcant correlation
+between TNA and ENSO (Fig. S1), some studies suggest that the
+low-frequency component of ENSO in the Paci ﬁci sa s s o c i a t e d
+with TNA anomalies through inter-basin connections
+16.
+The six ﬁre-CT domains identi ﬁed in this paper allow for
+better comprehension of regional to global ﬁre activity, which is
+useful to anticipate BA, adverse ﬁre seasons and forecast which
+areas of the world are likely to burn simultaneously in the future 8.
+As such, the CT associations with BA highlighted in our analysis
+provide valuable information for land managers and emergency
+services worldwide, particularly in regions where long-range ﬁre
+risk forecasts are not readily available. The percentage of BA
+modulated by CTs is high, given that ﬁre is not just controlled by
+global climate but also regionally by land management, ﬁre sup-
+pression capabilities and practices.
+There is increasing evidence that some CTs are non-stationary,
+strengthening or weakening their signal on multi-decadal timescales;
+behavior which may further inﬂuence climate and BA
+6. The source of
+these low-frequency changes is still unclear but may arise due to
+internal variability of the climate system or anthropogenic climate
+change
+17. In fact, the trends of some CT indices is a well-established
+phenomenon and has already been linked to climate change 17.F o r
+instance, previous research identiﬁed an intensiﬁcation of TNA varia-
+bility under climate warming. This enhanced variability may
+strengthen the ENSO-forced PNA pattern and tropospheric tempera-
+ture anomalies due to an eastward shift of ENSO-induced equatorial
+Paciﬁc convection and of enhanced ENSO variability, which may rein-
+force the associated wind and moist convection anomalies
+18. Also, a
+robust positive trend in the SAM is projected for the end of the 21st
+century under different climate change scenarios due to its response
+Fig. 2 | Synchronous (0-month lag) and lagged (3, 6 and 9 months) Pearson R
+correlation between climate teleconnections (CT) and burned area (BA) during
+the ﬁre season peak from 1982 to 2018. The maps at 0.5°x 0.5° pixel resolution
+represent the correlations at P < 0.05 (|R| > = 0.34) and P <0 . 1 0( | R |>=0 . 2 9 )
+between BA and CTs. The six most important CTs in terms of modulated global BA
+are presented, namely Atlantic Multidecadal Oscillation (AMO (lag 0)), Tropical
+North Atlantic (TNA (lag 0)), Paciﬁc North American (PNA (lag 3)), Western Paciﬁc
+(WP (lag 6)), Paciﬁc Decadal Oscillation (PDO (lag 9)) and Southern Annular Mode
+(SAM (lag 9)). See the supplementary materials for other CT modes and lags.
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 3
+
+PAGE 4
+to stratospheric ozone depletion over Antarctica14, which could result
+in rainfall decreases in the midlatitudes and increases in the high lati-
+tudes of the southern hemisphere, leading to potential and dramatic
+changes in BA at sub-continental scales
+15. Also, CTs may show asym-
+metric behavior in magnitude, duration or seasonal timing in relation
+to their positive and negative phases, resulting in climate responses
+that may be non-linear or sensitive only to a speciﬁcC Tp h a s e
+19. In light
+of the uncertain global changes in the forthcoming decades, it is wise
+to recognize that the observed relationships reported in this study may
+change in strength and nature in the future.
+Below, we highlight the main ﬁndings by continent and biome to
+facilitate interpretation considering the underlying weather patterns
+behind the CT- ﬁre associations at subcontinental scales. Extended
+insights into global CT- ﬁre relationships and potential mechanisms
+explaining these patterns are shown in the Supplementary Materials
+due to space constraints.
+Africa
+Africa accounts for about 70% of BA11 and 50% of ﬁre carbon emissions
+worldwide20. Correlations between weather patterns and some CTs
+have been recently investigated13, but few studies have addressed the
+linkage between CTs and wild ﬁres in Africa 4.M o s tﬁres occurred in
+areas occupied by savannas (CTD 4). However, other biomes such as
+the tropical moist forest of the Congo Basin (CTD 3), one of the most
+biodiverse areas on Earth, also deserve special attention given the
+increasing anthropogenic pressure it is experiencing.
+Savanna ﬁres responded mostly to +TNA (lag 0 and 3), +AMO,
++SAM (lag 9), +EA (lag 9) and +ENSO in the northern hemisphere (CTD
+Fig. 3 | Climate teleconnection domains (CTD) characterizing CT-ﬁre associa-
+tions worldwide.These domains were derived by applying a hierarchical clustering
+approach to the correlation coefﬁcients obtained for the different combinations of
+CTs and lag windows at pixel level. A Spatial distribution of the six CTD.
+B Characterization of the CTD based on the relationship between each CT and
+burned area at a given time lag. Colored bars indicate the corresponding CT; color
+brightness relates (from darker to lighter) to the median, 75th and 95th percentile
+of Pearson’s R. Correlative bars with the same color are ordered from lag 0 to 9.
+Dashed lines mark the signiﬁcance threshold (P < 0.05 (|R| > 0.34) and P <0 . 1 0( |
+R| > 0.29)). Atlantic Multidecadal Oscillation (AMO); Arctic Oscillation (AO); East
+Atlantic (EA); El Niño 3.4 SST index (ENSO); Eastern Paciﬁc (EP); Indian Ocean
+Dipole (IOD); North Atlantic Oscillation (NAO); Paciﬁc Decadal Oscillation (PDO);
+Paciﬁc North American (PNA); Southern Annular Mode (SAM); Tropical North
+Atlantic (TNA); Tropical South Atlantic (TSA); Western Paciﬁc( W P ) .
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 4
+
+PAGE 5
+4); +AMO, +TNA (lag 0, 6 and 9), -SAM (lag 9), +PNA (lag 0),–PNA (lag
+3) and -NAO (lag 6 and 9) in the southern hemisphere (CTD 4); both
++IOD and +ENSO conditions in East Africa (CTD 2), related to above-
+average rainfall, were negatively correlated with BA
+21,s p e c iﬁcally in
+Kenyan and Ethiopian subtropical grass-savanna biome (lag 0, 3 and 6).
+Our analysis revealed signi ﬁcant lagged CT- ﬁre relationships, in
+accordance with ﬁre dynamics in this biome, driven by a rapid fuel
+build-up during the wet season and by a warm season capable of drying
+fuels out. +TNA (lag 0 and 3) and +AMO were correlated with increased
+BA likely due to changes in atmospheric circulation driving lower
+precipitation
+22. The +SAM (lag 9) was strongly correlated with
+increased BA in the CTD 4 (northern savanna; lag 9) and decreased BA
+in CTD 4 (southern savannas) likely due to altered precipitation and
+vegetation moisture
+15. Also, in the CTD 4 in the southern hemisphere,
++NAO (lag 6 and 9) was associated with reduced BA, which is consistent
+with the fact that it promotes wetter conditions prior to theﬁre season
+peak
+23. +PNA (lag 3) was associated with decreasing BA as it is poten-
+tially linked to above average convective precipitation over central
+Africa during the monsoon season.
+We found that BA in the tropical moist forest biome (CTD 3) was
+mainly associated with -TNA (lag 0) and PNA (lag 0, 3, and 9), which
+promoted wetter conditions while BA diminished, and +SAM (lag 9)
+which promoted drought conditions thereby possibly boosting BA
+24.
+In southern Africa (CTD 1, 2 and 6; Fig.1D), we found signiﬁcant effects
+of TNA, AMO, ENSO (lag 3, 6 and 9), PNA (lag 0), NAO (lag 9), AO (lag
+9), EA (lag 0 and 9), EP (lag 0), IOD (lag 0 and 6), and SAM (lag 9) on BA.
+The +SAM (lag 9) promoted BA due to reduced rainfall in the austral
+summer in Angola (CTD 6). PNA (lag 3) was positively correlated with
+BA because of increased precipitation promoting biomass before the
+ﬁre season. NAO and AO inﬂuenced precipitation with a marked dipole
+in CTD 2 and 6. In CTD 6, precipitation during austral winter (lag 6 and
+9) increases with +NAO, whereas the opposite occurs in CTD 2, in ﬂu-
+encing BA accordingly
+23.
+Americas
+Wildﬁres in the Americas affected a diverse range of biomes each
+displaying unique ﬁre regimes and peak season timing. Most of the
+ﬁres occurred in the tropical savannas (Colombian Llanos, CTD 3, and
+Cerrado CTD 6), where teleconnections such as +PDO and +ENSO,
+linked to anomalously warm and dry conditions 25, concurred in cor-
+relation with increased BA, while +IOD and +SAM, which are known to
+foster precipitation, were both associated with reduced BA
+25.+ T N A
+and +AMO drive increases in BA in CTD 6 probably due to signi ﬁcant
+increases in terrestrial evaporation during and before the ﬁre sea-
+son peak7.
+Amazon ﬁres (CTD 2) threaten one of the most megadiverse
+regions in the world. CTs associated with increases in BA included
+the +AMO, +TNA, +NAO and the +SAM, particularly at 9-month lag
+25.
+Drought is mediated by +TNA and +AMO associated with a sus-
+tained northward position of the ITCZ
+26. +PNA is accompanied by
+positive precipitation anomalies, diminishing ﬁre activity, in the
+austral summer 27. In the southern end of the continent, Patagonia
+and the Pampas (CTD 2 and 6), within the temperate grassland and
+shrubland biome, +SAM is known to boost wild ﬁre activity by pro-
+moting signiﬁcantly warmer and drier conditions during the austral
+summer25,28.
+Wildﬁres within the North American taiga biome are a dominant
+disturbance shaping landscape diversity. The positive phases of PDO,
+ENSO, and IOD correlate with anomalously warmer and drier condi-
+tions across all of the Paci ﬁc Northwest and Canada, and are likely
+r e s p o n s i b l ef o rt h eo b s e r v e di n c r e a s ei nB Aa tt h e9 - m o n t hl a g
+29,30.T h e
++SAM is known to drive cooler temperatures across northern latitudes
+in North America, which is re ﬂected in the decrease in BA at the
+9-month lag
+27. Also, EA, AO, NAO, EP and WP correlate with BA at
+different time lags due to changes in terrestrial evapotranspiration as
+found by previous research7. The southeastern United States hosts a
+number of primarily temperate ecoregions. The positive phases of
+NAO, EA and ENSO were all positively correlated with BA through
+producing cooler and wetter conditions as identi ﬁed by previous
+research
+31.C T -ﬁre relationships in western United States were gen-
+erally weak, mainly related to +AMO, +PDO and +ENSO, which may
+induce drought conditions and increased BA. BA in Southern Mexico
+and Central America (CTD 5) is correlated with the positive phases of
+AMO, TNA, ENSO and PDO, all of them associated with drought
+conditions
+32.
+Asia
+Asia’s major BA hotspots are located in the temperate steppe (central
+Asia), the tropical and subtropical dry forests of southeastern Asia
+(India, Thailand) and the temperate broadleaf forests of China. BA in
+southern Asia (CTD 5 and 6), mainly correlated with -ENSO (lags 0, 3
+and 6), -PDO, -IOD (lag 3), AMO, TNA, +SAM (lags 0 and 3), TSA (lags 6
+a n d9 ) ,+ E A( l a g6 ) ,- E P( l a g3 )a n d+ W P( l a g6a n d9 ) ,w i t haﬁre season
+extending from January to May varying latitudinally across the con-
+tinent (Fig.1). BA across mainland SE Asia correlated with +ENSO (lag 0,
+3) +PDO, +IOD (lag 3, 6 and 9), +EP (lag 9), +TNA (lag 0, 3), +AMO and
++EA (lag 3). +PDO in ﬂuences the East Asian Summer Monsoon, mod-
+ulating drought across the region
+33, +ENSO ampli ﬁes frequency,
+duration and intensity of heat waves and drought in much of Indo-
+china, therefore likely contributing to increases in BA
+34. +IOD restricts
+rainfall in June-August, particularly in Cambodia and central Laos,
+w h e r ew ew i t n e s st h eg r e a t e s tB Ai n c r e a s e s .W i l dﬁre activity in the
+Maritime region of SE Asia, often related to peatland ﬁres, was pre-
+dominantly associated with drought mediated by the positive phases
+of ENSO (lag 0, 3 and 6), TNA (lag 0), IOD (lag 0), PNA (lag 6),
+WP (lag 9).
+Eastern Asia (China) holds the world’s largest subtropical forests,
+and falls mostly within the CTDs 1, 2, 3 and 6, with a ﬁre season peak
+timing varying latitudinally (Fig. 1). We found signi ﬁcant effects of
++ENSO on BA (lag 6 and 9), probably ampliﬁed by +PDO
+35.R e d u c t i o ni n
+BA was found under +AMO and +TNA (lag 0), which have been
+reported to enhance precipitation over the region
+36. Also, +EA (lag 0),
++EP (lag 0) and +WP (lag 9) correlated with increased BA, all these
+Table 1 | Climate teleconnections (CTs) modulate 52.9% of the
+global burned area (BA)
+Lag 0 Lag 3 Lag 6 Lag 9 Any lag
+TNA 18 13.7 10.7 10.4 25.7
+PNA 5.6 12.5 4 6 24.3
+AMO 15.9 13.3 12.1 12.3 22.3
+WP 2.9 2.6 7.1 6 16.6
+NAO 4.8 3.5 5.7 4.2 16.1
+EA 5.6 4.6 4 5.3 16
+EP 5.8 5.3 2.7 3.1 15.4
+PDO 4.9 4.1 4.4 7.5 12.5
+SAM 2.3 2.2 2 6.6 12.3
+AO 3.2 2.4 3 2 10
+IOD 2.8 2.7 2.8 2.7 9.1
+ENSO 3.2 3.8 3.5 2.7 8.1
+TSA 2.2 2.9 2.4 3.1 8
+Global 52.9
+Percentage of annual BA modulated by the corresponding CT and studied lag (synchronous and
+lagged signals) as represented by those pixels with statistically signiﬁcant correlation (P < 0.05)
+between CT indices and BA during the ﬁre season peak.
+AMO Atlantic Multidecadal Oscillation;AO Arctic Oscillation;EA East Atlantic;ENSO El Niño 3.4
+SST index; EP Eastern Paciﬁc; IOD Indian Ocean Dipole; NAO North Atlantic Oscillation;PDO
+Paciﬁc Decadal Oscillation;PNA Paciﬁc North American; SAM Southern Annular Mode;TNA
+Tropical North Atlantic;TSA Tropical South Atlantic;WP Western Paciﬁc.
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 5
+
+PAGE 6
+driving weather conditions of limited precipitation, high temperature
+and dry fuels during ﬁre seasons37,38.
+The Asian Boreal taiga is a vast landscape dominated by con-
+iferous forests. The western taiga across the Ural Mountains (CTD 6)
+experienced heightened BA during the positive phase of AO (lag 0, 3
+and 9), NAO (lag 3 and 9), EA (lag 9), WP (lag 6 and 9) and SAM (lag 6).
+Reductions in BA correlated with the positive phases of IOD (lag 0, 3
+and 6) and AMO. Eastern Siberia (CTD 5) appeared to be susceptible to
+increases in BA during +NAO, +AO, +PNA (lag 3, 6) and +IOD (lag 0)
+events. We also observed similar impacts of AO and NAO (both highly
+correlated, partly due to shared storm tracks) between the north-
+eastern Atlantic and Arctic regions during the wintertime
+39.N A Ow a s
+found to be positively correlated with BA at 9-month time lag, which
+may indicate fuel build-up connecting to ﬁre activity within the
+Siberian taiga.
+The Eurasian Steppe (or Great Steppe) is among the largest
+grasslands in the world, extending from Hungary to China. Around
+90% of BA in Central Asia was located within Kazakhstan (CTD 2 and
+6)
+11. AMO, TNA, PNA and EA were the most prominent teleconnections
+related to wildﬁre activity in this region. Spring EA is associated with
+decreased summertime precipitation and reduced aboveground net
+primary productivity
+40. It has also been observed that a signi ﬁcantly
+higher sea level pressure and geopotential height in the summer fol-
+lowing a warm winter AMO could lead to adiabatic warming and ele-
+vated risk of wildﬁres.
+Europe
+Approximately, half a million hectares are burned across Europe every
+year. More than 85% of the BA is located in southern Europe, a Medi-
+terraneanﬁre-prone area
+11.C T -ﬁre relationships in Europe were weaker
+compared to other continents, because a considerable part of the
+continent is under relatively low-ﬁre prone climate regimes in a frag-
+mented landscape, which contributes to fading these relationships.
+NAO is among the most notable CTs with signi ﬁcant in ﬂuence
+within Europe
+5. +NAO is associated with northward shifts in the loca-
+tion and intensity of the North Atlantic jet stream responsible for
+driving moisture transport across Europe. +NAO correlated with
+reduced BA in temperate continental and Scandinavian Europe (lag 3,
+Fig. S4), likely owing to increased westerly winds, which bring moist air
+into Europe producing mild winters accompanied with frequent rain
+6
+prior to the ﬁre season peak. +EA, often in its connection with NAO,
+correlated with increasing BA across central and western Europe (lag
+9) likely due to warm temperature and low precipitation anomalies in
+late spring
+41. In contrast, +EA was associated with decreased BA in
+eastern Europe. Fires in the Mediterranean and temperate regions
+were mostly related to +PDO, +IOD and +ENSO, which are linked to
+anomalies in precipitation, promoting vegetation build-up before the
+ﬁre season peak
+5,42. TSA positively correlated with BA in the Spanish
+Mediterranean coast (lag 9), whereas +AMO and +TNA (lag 3, 6 and 9)
+were predominantly associated with increased BA in Greece and
+Turkey.
+Oceania
+The 2019 –2020 extraordinary Australian wild ﬁres showed how cli-
+matic events can cause unprecedented large-scale impacts through the
+combination of sustained record-breaking high temperatures with low
+precipitation
+10. The equatorial Paciﬁc SST variability is the main driver
+of observed precipitation patterns although the Indic and Atlantic
+Oceans also in ﬂuence Australian precipitation and temperature by
+altering the tropical Paciﬁc climate through the trans-basin variability
+mechanism
+43,44. Two CTDs (2, and 6; Fig.3)e n c o m p a s s e dt h em a i nC T -
+ﬁre relationships in this continent. In northern Australia (CTD 6), BA is
+enhanced by +AMO, +TNA (lag and 9), +IOD (lag 0, 3 and 6) and -PDO.
+In the CTD 2, in addition to the effects of the aforementioned CTs, we
+found an effect of +ENSO in southeastern Australia that brings
+increased surface air temperature and drought conditions
+45,p o t e n -
+tially coupled with +IOD46. +IOD brings easterly wind anomalies across
+the Indian Ocean that diminish rainfall over Australia46. Precipitation is
+enhanced over northern Australia by +PDO in contrast to the eastern
+and western ends where it is weakened 40.T S Ap o s i t i v e l yc o r r e l a t e d
+with BA in southeastern Australia probably due to increased surface air
+temperature during the Austral summer. As expected, the effects of
+TNA and AMO in this region attained opposite signs. Also, +EP (lag 3),
++WP (lag 6), PNA (lag 3 and 6), +EA (lag 3 and 6) and +NAO (lag 6)
+appear to relate to increases in BA in the CTD 2 as found by Shi and
+Touge (2022)
+47. +SAM (lag 6) was found to be negatively correlated
+with BA, likely due to concurring cool and wet conditions over
+southeastern Australia
+28.
+Methods
+Fire data
+We analyzed global burned area (BA) for the period 1982–2018 (Fig.1A)
+from the FireCCILT1111, developed within the European Space Agency’s
+(ESA) Climate Change Initiative (CCI) program under the Fire Dis-
+turbance project (https://climate.esa.int/en/projects/ﬁre/,l a s ta c c e s s :
+3 June 2021). The product was assembled using spectral information
+from the AVHRR sensor (Advanced Very High-Resolution Radiometer)
+and Land Long Term Data Record (LTDR) version 5 dataset produced
+by NASA (National Aeronautics and Space Administration). The Fire-
+CCILT11 includes monthly global BA data estimates at 0.05° cell reso-
+lution. Data was resampled at 0.5° resolution based on the monthly
+scale to facilitate data handling and processing while enhancing pat-
+tern recognition. There are several existing global BA datasets that
+could have been used in this study
+47. However, we selected the Fire-
+CCILT11 global BA product as the most suitable dataset because the
+time series is long and it performs better than other global BA products
+in terms of small wildﬁre detection capacity
+47.
+Climate teleconnections data
+Using a 3-month moving average, we analyzed the main climate tele-
+connections (CTs) modulating weather patterns at global scale known
+to inﬂuence wildﬁre activity from regional to continental scales
+3,5,10,28,48,
+namely:
+The Atlantic Multidecadal Oscillation (AMO) index refers to Sea
+Surface Temperature (SST) variation of the North Atlantic Ocean (0-
+70°N) on the timescale of several decades
+49.
+Arctic Oscillation (AO) teleconnection or Northern Annular Mode
+(NAM) is highly related to the NAO and is derived as a function of
+winter sea level pressure (geopotential heights) and surface air
+temperature ﬂuctuations over mid to high latitudes (>20°N) in the
+Northern Hemisphere
+50.
+The East Atlantic (EA) teleconnection pattern index consists of a
+north-south dipole of sea level pressure anomaly centers spanning
+the North Atlantic from east to west and is often drawn comparisons
+with the NAO due to their similar structure51.
+The El Niño 3.4 SST index, also commonly referred to as ENSO, is
+derived from HadISST1 and is calculated as a function of area
+averaged sea surface temperature anomalies (SST) from 5°S –5°N
+and 170°−120°W
+52.
+The Eastern Paci ﬁc (EP) teleconnection pattern is a convective
+dipole and it has two primary sea level pressure centers in the North
+Paciﬁc and two secondary centers in North Asia and subtropical
+Paciﬁc
+53.
+Indian Ocean Dipole (IOD) is de ﬁned as the difference in SST
+between the tropical west Indian Ocean (50°E-70°E, 10°S-10°N) and
+the tropical southeastern Indian Ocean (90°E −110°E, 10°S-
+equator)
+54.
+The North Atlantic Oscillation (NAO) index is based on the differ-
+ences in atmospheric pressure at sea level between Gibraltar and
+Reykjavik and is distinguished for its strong in ﬂuence on climate
+variability in the Northern Hemisphere
+55.
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 6
+
+PAGE 7
+The Paciﬁc Decadal Oscillation (PDO) index phases are de ﬁned as
+cool and warm regimes based on monthly SST anomalies in the
+North Paciﬁc Ocean, poleward of 20°N, and are known for driving
+interdecadal climate variability across the Paciﬁc
+56.
+The Paciﬁc North American teleconnection pattern (PNA) is among
+the more noteworthy modes of low-frequency variability in the
+Northern Hemisphere extratropics. The PNA is linked with strong
+ﬂuctuations in the magnitude and location of the East Asian jet
+stream
+51. The PNA index is obtained by projecting the PNA loading
+pattern to the daily anomaly 500 millibar height ﬁeld over 0-90°N.
+Southern Annular Mode (SAM), otherwise known as the Antarctic
+Oscillation (AAO), is the dominant mode of atmospheric variability
+in the Southern Hemisphere and is calculated as the difference in
+zonal mean sea level pressure (SLP) between 40°S and 65°S
+57,58.
+The Tropical North Atlantic (TNA) index is deﬁned as monthly SST
+anomalies in the Atlantic Ocean from 5.5°N to 23.5°N and 15°W to
+57.5°W. This SST anomaly affects the atmospheric pressure gradient
+and translates into trade wind anomalies near the equator
+59.
+The Tropical South Atlantic (TSA) index is deﬁned as monthly SST
+anomalies in the Atlantic Ocean from Equator to 20°S and 10°E
+to 30°W
+59.
+The Western Paci ﬁc (WP) teleconnection pattern is de ﬁned as a
+geopotential height anomaly, characterized by jetstream move-
+ments. Its dipole is distributed from the Kamchatka peninsula to
+southeastern Asia
+60.
+The CT indices were retrieved from the National Centers for
+Environmental Information and National Weather Service (NOAA).
+Climate teleconnections associations
+We analyzed the relationships among the CTs during the study period
+(1982–2018) using Principal Component Analysis (PCA) and Pearsons’s
+correlation coefﬁcients. We found that most of the CT indexes were
+not signi ﬁcantly correlated except for both ENSO/PDO ( r =0 . 4 2 ) ,
+AMO/TNA/TSA (r =0 . 8 3 )a n dA O / N A O(r = 0.60), which were positively
+and signi ﬁcantly ( P < 0.05) correlated. PCA biplots further support
+these links with TNA/AMO, ENSO/PDO and AO/NAO being clearly
+aligned in the PC1–PC2 space (Fig. 4).
+Statistical analysis
+Several analyses were conducted to test for signi ﬁcant relationships
+between CTs and BA. We ﬁrst identiﬁed the ﬁre season peak at pixel
+level across the globe (0.5° x 0.5° resolution) to focus on the mainﬁre
+season. Then we conducted a cross-correlation analysis calculating the
+Spearman’s rho and Pearson ’s R correlation coef ﬁcients between
+annual time series of BA in ﬁre season peak and CTs. Finally, we syn-
+thesized the observed associations into climate teleconnection
+domains (CTD) that represent characteristic large-scale CT- ﬁre pat-
+terns from local to subcontinental scales. All statistical analyses and
+tests were conducted using the R software
+61 with a conﬁdence level of
+95% (P < 0.05).
+The timing of the main ﬁre season varies spatially across the
+globe. To properly assess the in ﬂuence of CTs on BA, we therefore
+ﬁrst analyzed the spatial timing of the main ﬁre season, de ﬁned as
+the 3 consecutive months accumulating the highest average BA
+(Fig. 1B). We calculated this ﬁre season peak at pixel level to sub-
+sequently analyze CT- ﬁre associations, including synchronous or
+lagged relationships due to fuel built-up processes, and weather
+conditions in ﬂuencing ﬁre behavior. Finally, we calculated the
+percentage of annual burned area during the ﬁre season peak to
+highlight the relevance of the analysis in each region (Fig. 1C). The
+ﬁre season peak serves as a temporal baseline to implement cross-
+correlation analysis, corresponding to lag 0 or synchronous
+association in the cross-correlation analysis.
+To analyze the linkages between CTs and BA, both the Spearman’s
+rho and the Pearson ’s R correlation coef ﬁcients were calculated
+between annual time series of BA during theﬁre season peak and CTs
+at pixel level (0.5° x 0.5° resolution). In addition to synchronous cor-
+relation (i.e., lag = 0 or synchronous to the ﬁre season peak), we
+investigated asynchronous effects of the CTs’ signal on BA by explor-
+ing a lag of 3, 6 and 9 months before the ﬁre season peak time. The
+spatial pattern of correlations was summarized in maps depicting the
+direction (either positive or negative) and the signi ﬁcance (p <0 . 0 5
+and p < 0.1) to better display the CT-ﬁre association. Time series were
+detrended before correlation analysis by implementing a Seasonal and
+Trend Decomposition (STL), i.e., subtracting the “trend” component
+from the original time series
+48. The STL procedure was applied to both
+CT and BA monthly time series before computing the lagged averages.
+The procedure consists of splitting the original series into its ‘trend’,
+‘seasonal’ and ‘random’ components, retaining only the latter two, i.e.,
+removing the tendency in the time series. The procedure was con-
+ducted at pixel level in the case of BA data, and globally for each CT
+pattern. Once the STL was performed, the detrended time series wereFig. 4 | Relationships among climate teleconnections (CT) from 1982 to 2018
+using Principal Component Analysis (PCA). AFirst versus second PCA compo-
+nent (34.0% of variance); (B) third versus fourth PCA component (20.2% of
+variance). Color indicates the importance of the component for each variable as the
+square cosine.
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 7
+
+PAGE 8
+aggregated as a 3-month average and correlation was calculated
+between seasonal BA during the ﬁre season peak and the corre-
+sponding 3-month lagged interval (3, 6 and 9 months before the ﬁre
+season peak) of CT indexes. BA was log-transformed to achieve a
+normal distribution, as required for Pearson ’s R linear correlation
+analysis.
+Finally, in order to better understand the relationship between
+climatic forcing and BA at multiple time scales, we summarized
+individual CT- ﬁre associations into a set of CTDs. These CTD were
+derived by applying cluster analysis to the Pearson ’s correlation
+coefﬁcients obtained for the different combinations of CTs and lag
+windows at pixel level. We synthesized the association with the four
+analyzed time lags, grouping pixels into clusters depicting similar
+linkages. A hierarchical clustering approach was implemented in
+combination with ward.D2 acting as agglomeration criterion and
+Canberra Distance as a measure of dissimilarity to minimize inter-
+group variance. The number of clusters (i.e. climate domains) was
+optimized in accordance with all the criteria available in the nbClust
+R package
+62. The observed distribution of CT- ﬁre correlations was
+used to characterize the resulting climate domains, highlighting the
+most prominent driving patterns in terms of in ﬂuence and direction
+of the relationship at a given time lag. To do so, we displayed the
+pixel-based correlation distribution at each CTD and lag, high-
+lighting their signi ﬁcance level. We mapped the spatial distribution
+of the resulting CTDs.
+Reporting summary
+Further information on research design is available in the Nature
+Portfolio Reporting Summary linked to this article.
+Data availability
+The global burned area data from the FireCCILT1111, developed within
+the European Space Agency ’s (ESA) Climate Change Initiative (CCI)
+program under the Fire Disturbance project is publicly available
+(https://climate.esa.int/en/projects/ﬁre/, last access: 4 December
+2022). The climate teleconnection indices were retrieved from the
+National Centers for Environmental Information and National Weather
+Service (NOAA; https://www.cpc.ncep.noaa.gov/, last access: 4
+December 2022).
+Code availability
+The processing codes used in this study are available from the corre-
+sponding authors upon request.
+References
+1. Bond, W. J., Woodward, F. I. & Midg ley, G. F. The global distribution
+of ecosystems in a world withoutﬁre. N. Phytol.165,5 2 5–538 (2005).
+2. Andela, N. et al. A human-driven decline in global burned area.
+Science 356,1 3 5 6–1361 (2017).
+3. Cardil, A. et al. Coupled effec ts of climate teleconnections on
+drought, Santa Ana winds and wildﬁres in southern California.Sci.
+Total Environ. 765,1 4 2 7 8 8( 2 0 2 1 ) .
+4. Mariani, M., Veblen, T. T. & Williamson, G. J. Climate change
+ampliﬁcations of climate-ﬁre teleconnections in the southern cli-
+mate change ampli ﬁ cations of climate-ﬁre teleconnections in the
+Southern Hemisphere.Geophys. Res. Lett. 45,5 0 7 1–5081 (2018).
+5. Rodrigues, M., Peña-Angulo, D., Russo, A., Zúñiga-Antón, M. &
+Cardil, A. Do climate teleconnections modulate wildﬁre-prone
+conditions over the Iberian Peninsula?Environ. Res. Lett. 16,
+044050 (2021).
+6. Hurrell, J. W. Decadal trends in the North Atlantic oscillation:
+regional temperatures and precipitation.Science 269,
+676–679 (1995).
+7. Martens, B., Waegeman, W., Dorigo, W. A., Verhoest, N. E. & Miralles,
+D. G. Terrestrial evaporation response to modes of climate varia-
+bility. NPJ Clim. Atmos. Sci. 1,1 –7( 2 0 1 8 ) .
+8. Chen, Y., Morton, D. C., Andela, N., Giglio, L. & Randerson, J. T. How
+much global burned area can be forecast on seasonal time scales
+using sea surface temperatures?Environ. Res. Lett. 11,
+045001 (2016).
+9. Chen, Y. et al. Forecasting Fire Season Severity in South America
+Using Sea Surface Temperature Anomalies.Science 334,
+787–791 (2011).
+10. Abram, N. J. et al. Connections of climate change and variability to
+large and extreme forest ﬁres in southeast Australia.Commun.
+Earth Environ. 2,1 –17 (2021).
+11. Otón, G., Lizundia-Loiola, J., Pettinari, M. L. & Chuvieco, E. Devel-
+opment of a consistent global long-term burned area product
+(1982–2018) based on AVHRR-LTDR data. Int. J. Appl. Earth Obs.
+Geoinf. 103,1 0 2 4 7 3( 2 0 2 1 ) .
+12. En ﬁeld, D. B., Mestas-Nuñez, A. M. & Trimble, P. J. The Atlantic
+Multidecadal Oscillation and its relation to rainfall and riverﬂows in
+the continental U.S. Geophys. Res. Lett. 28,2 0 7 7–2080 (2001).
+13. Singh, J., Ashfaq, M., Skinner, C. B., Anderson, W. B. & Singh, D.
+Ampliﬁed risk of spatially compounding droughts during co-
+occurrences of modes of natural ocean variability.Npj Clim. Atmos.
+Sci. 4, 7 (2021).
+14. Fogt, R. L. & Marshall, G. J. The S outhern Annular Mode: Variability,
+trends, and climate impacts across the Southern Hemisphere.
+WIREs Clim. Change 11,e 6 5 2( 2 0 2 0 ) .
+15. Lim, E.-P. et al. The impact of the Southern Annular Mode on future
+changes in Southern Hemisphere rainfall.Geophys. Res. Lett. 43,
+7160–7167 (2016).
+16. García-Serrano, J., Cassou, C., Douville, H., Giannini, A. & Doblas-
+Reyes, F. J. Revisiting the ENSO Teleconnection to the Tropical
+North Atlantic. J. Clim. 30, 6945–6957 (2017).
+17. Miller, R. L., Schmidt, G. A. & Shindell, D. T. Forced annular varia-
+tions in the 20th century Intergovernmental Panel on Climate
+Change Fourth Assessment Report models.J. Geophys. Res.
+Atmospheres111, D18101 (2006).
+18. Yang, Y. et al. Greenhouse warming intensi ﬁes north tropical
+Atlantic climate variability.Sci. Adv. 7, eabg9690 (2021).
+19. Sun, X., Renard, B., Thyer, M., Westra, S. & Lang, M. A global analysis
+of the asymmetric effect of ENSO on extreme precipitation.J.
+Hydrol. 530,5 1–65 (2015).
+20. Van Der Werf, G. R. et al. Global ﬁre emissions estimates during
+1997-2016.Earth Syst. Sci. Data 9, 697–720 (2017).
+21. Moore, S. M. et al. El Niño and the shifting geography of cholera in
+Africa. Proc. Natl. Acad. Sci. 114, 4436–4441 (2017).
+22. Nouaceur, Z. & Murarescu, O. Rain fall variability and trend analysis
+of rainfall in West Africa (Senegal, Mauritania, Burkina Faso).Water
+12,1 7 5 4( 2 0 2 0 ) .
+2 3 . L ü d e c k e ,H . - J . ,M ü l l e r - P l a t h ,G . ,W a l l a c e ,M .G .&L ü n i n g ,S .D e c a d a l
+and multidecadal natural variability of African rainfall.J. Hydrol.
+Reg. Stud. 34,1 0 0 7 9 5( 2 0 2 1 ) .
+24. Purich, A., Cowan, T., Min, S.-K. & Cai, W. Autumn precipitation
+trends over southern hemisphere midlatitudes as simulated by
+CMIP5 models. J. Clim. 26,8 3 4 1–8356 (2013).
+25. Reboita, M. S. et al. Impacts of teleconnection patterns on South
+America climate.
+Ann. NY Acad. Sci. 1504, 116–153 (2021).
+26. Towner, J. et al. In ﬂuence of ENSO and tropical Atlantic climate
+variability on ﬂood characteristics in the Amazon basin.Hydrol.
+Earth Syst. Sci. 25,3 8 7 5–3895 (2021).
+27. Kistler, R. et al. The NCEP-NCAR 50-year reanalysis: monthly means
+CD-ROM and documentation.Bull. Am. Meteorol. Soc. 82,
+247–267 (2001).
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 8
+
+PAGE 9
+28. Holz, A. et al. Southern Annular Mode drives multicentury wild ﬁre
+activity in southern South America.Proc. Natl. Acad. Sci. 114,
+9552–9557 (2017).
+29. Newman, M. et al. The Paci ﬁc decadal oscillation, revisited.J. Clim.
+29,4 3 9 9–4427 (2016).
+3 0 . D a i ,A .&W i g l e y ,T .M .L .G l o b a lp a t t e r n so fE N S O - i n d u c e dp r e -
+cipitation.Geophys. Res. Lett. 27,1 2 8 3–1286 (2000).
+3 1 . G o o d r i c k ,S .L .&H a n l e y ,D .E .F l o r i d aw i l dﬁre activity and atmo-
+spheric teleconnections.Int. J. Wildland Fire 18,4 7 6–482 (2009).
+32. Montero-Martínez, M. J., Pita-Díaz, O. & Andrade-Velázquez, M.
+Potential inﬂuence of the atlantic multidecadal oscillation in the
+recent climate of a small basin in Central Mexico. Atmosphere13,
+339 (2022).
+33. Dong, X. In ﬂuences of the Paciﬁc decadal oscillation on the east
+Asian summer monsoon in non‐ENSO years. Atmos. Sci. Lett. 17,
+115–120 (2016).
+3 4 . R ä s ä n e n ,T .A . ,L i n d g r e n ,V . ,G u i l l a u m e ,J .H .A . ,B u c k l e y ,B .M .&
+Kummu, M. On the spatial and temporal variability of ENSO pre-
+cipitation and drought teleconnection in mainland Southeast Asia.
+Clim 12, 1889–1905 (2016).
+35. Chan, J. C. L. & Zhou, W. PDO, ENSO and the early summer mon-
+soon rainfall over south China. Geophys. Res. Lett. 32,
+L08810 (2005).
+3 6 . L i ,S .&B a t e s ,G .T .I nﬂuence of the Atlantic Multidecadal Oscillation
+on the winter climate of East China. Adv. Atmos. Sci. 24,
+126–135 (2007).
+37. Wu, Z., Li, J., Wang, B. & Liu, X. Can the Southern Hemisphere
+annular mode affect China winter monsoon?J. Geophys. Res.
+Atmospheres114, D11107 (2009).
+38. Yao, Q. et al. Paci ﬁc-Atlantic Ocean inﬂuence on wildﬁres in
+northeast China (1774 to 2010). Geophys. Res. Lett. 44,
+1025–
+1033 (2017).
+39. Rogers, J. & McHugh, M. On the separability of the North Atlantic
+oscillation and Arctic oscillation.Clim. Dyn. 19,5 9 9–608
+(2002).
+40. Jiao, C. et al. The impact of teleconnections on the temporal
+dynamics in aboveground net primary productivity of the Mon-
+golian Plateau grasslands.Int. J. Climatol. 41,6 5 4 1–6555 (2021).
+41. Ionita, M. The Impact of the East Atlantic/Western Russia Pattern on
+the Hydroclimatology of Europe from Mid-Winter to Late Spring.
+Climate 2,2 9 6–309 (2014).
+42. Saji, N. & Yamagata, T. Possible impacts of Indian Ocean Dipole
+mode events on global climate. Clim. Res. 25,1 5 1–169
+(2003).
+43. McGregor, S. et al. Recent Walker circulation strengthening and
+Paciﬁc cooling ampliﬁed by Atlantic warming.Nat. Clim. Change4,
+888–892 (2014).
+44. Xue, J. et al. Decadal-scale tel econnection between South Atlantic
+SST and southeast Australia surface air temperature in austral
+summer. Clim. Dyn. 50,2 6 8 7–2703 (2018).
+4 5 . P o w e r ,S . ,C a s e y ,T . ,F o l l a n d ,C . ,C o l m a n ,A .&M e h t a ,V .I n t e r -
+decadal modulation of the impact of ENSO on Australia.Clim. Dyn.
+15,3 1 9–324 (1999).
+46. Bureau of Meteorology (Australian Government). The Indian Ocean
+Dipole (IOD). http://www.bom.gov.au/climate/enso/history/ln-
+2010-12/IOD-what.shtml(2022).
+47. Shi, K. & Touge, Y. Characterization of global wild ﬁre burned area
+spatiotemporal patterns and underlying climatic causes.Sci. Rep.
+12, 644 (2022).
+4 8 . K i t z b e r g e r ,T . ,B r o w n ,P .M . ,H e y e r d a h l ,E .K . ,S w e t n a m ,T .W .&
+V e b l e n ,T .T .C o n t i n g e n tP a c iﬁc-Atlantic Ocean inﬂuence on mul-
+ticentury wildﬁre synchrony over western North America.Proc. Natl
+Acad. Sci. 104,5 4 3–548 (2007).
+49. Frajka-Williams, E., Beaulieu, C. & Duchez, A. Emerging negative
+Atlantic Multidecadal Oscillation index in spite of warm subtropics.
+Sci. Rep. 7,1 –8( 2 0 1 7 ) .
+50. Thompson, D. W. J. & Wallace, J. M. The Arctic oscillation signature
+in the wintertime geopotential height and temperatureﬁelds.
+Geophys. Res. Lett. 25,1 2 9 7–1300 (1998).
+51. Barnston, A. G. & Livezey, R. E. Classi ﬁcation, Seasonality and Per-
+sistence of Low-Frequency Atmospheric Circulation Patterns.Mon.
+Weather Rev. 115,1 0 8 3–1126 (1987).
+52. Rayner, N. A. et al. Global analyses of sea surface temperature, sea
+ice, and night marine air temperature since the late nineteenth
+century. J. Geophys. Res. Atmospheres108,4 4 0 7
+(2003).
+53. Dai, Y. & Tan, B. On the role of the eastern Paci ﬁc teleconnection in
+ENSO impacts on wintertime weather over East Asia and North
+America. J. Clim. 32,1 2 1 7–1234 (2019).
+5 4 . S a j i ,N .H . ,G o s w a m i ,B .N . ,V i n a y a c h a n d r a n ,P .N .&Y a m a g a t a ,T .A
+dipole mode in the tropical Indian Ocean. Nature 401,
+360–363 (1999).
+55. Jones, P. D., Jonsson, T. & Wheeler, D. Extension to the North
+Atlantic oscillation using early instrumental pressure observations
+from Gibraltar and south-west Iceland.Int. J. Climatol. 17,
+1433–1450 (1997).
+56. Mantua, N. J., Hare, S. R., Zhang, Y., Wallace, J. M. & Francis, R. C. A
+Paciﬁc Interdecadal Climate Oscillation with Impacts on Salmon
+Production*.Bull. Am. Meteorol. Soc. 78,1 0 6 9–1080 (1997).
+57. Gong, D. & Wang, S. De ﬁnition of Antarctic Oscillation index.Geo-
+phys. Res. Lett. 26,4 5 9–462 (1999).
+58. Marshall, G. J. Trends in the Southern Annular Mode from Obser-
+vations and Reanalyses.J. Clim. 16,4 1 3 4–4143 (2003).
+59. Yihui, D. & Chan, J. C. The East Asian summer monsoon: an over-
+view. Meteorol. Atmos. Phys.89, 117–142 (2005).
+60. Choi, K.-S. & Moon, I.-J. In ﬂuence of the Western Paciﬁct e l e -
+connection pattern on Western North Paciﬁct r o p i c a lc y c l o n e
+activity. Dyn. Atmos. Oceans 57,1 –16 (2012).
+61. R Core Team. R: A Language and Environment for Statistical Com-
+puting. (R Foundation for Statistical Computing, 2019).
+6 2 . C h a r r a d ,M . ,G h a z z a l i ,N . ,B o i t e a u ,V .&N i k n a f s ,A .N b C l u s t :A nR
+Package for Determining the Relevant Number of Clusters in a Data
+Set. J. Stat. Softw. 61,1 –
+36 (2014).
+63. Dinerstein, E. et al. An ecoregion-based approach to protecting half
+the terrestrial realm.Bioscience67,5 3 4–545 (2017).
+Acknowledgements
+We thank Lorea Garcia for her insights and useful suggestions in the
+interpretation of CT-ﬁre relationships during the review process of the
+manuscript. This project received funding from the Spanish Ministry of
+Science and Innovation, project FIREPATHS (PID2020-116556RA-I00)
+(authors receiving funding: A.C. and M.R.) and the European Union’ s
+Horizon 2020 research and innovation programme MSCA-ITN-2019—
+Innovative Training Networks undergrant agreement No. 860787 (Pyr-
+oLife) (authors receiving funding: A.C., M.T. and C.S.), and the European
+Horizon 2020 research and innovation programme under grant agree-
+ment No. 101037419 (FIRE-RES) (authors receiving funding: A.C., J.R.,
+C.S. and S.d.M.).
+Author contributions
+A.C., M.R. and S.d.M. designed and drafted the manuscript and con-
+ducted the analyses. A.C., M.R., M.T., R.B., J.R., C.S., C.A.S., M.M. and
+S.dM commented and revised the manuscript.
+Competing interests
+The authors declare no competing interests.
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 9
+
+PAGE 10
+Additional information
+Supplementary informationThe online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-023-36052-8.
+Correspondenceand requests for materials should be addressed to
+Adrián Cardil or Sergio de-Miguel.
+Peer review informationNature Communicationsthanks Keyan Fang,
+Gonzalo Oton, and the other, anonymous, reviewer(s) for their con-
+tribution to the peer review of this work. Peer reviewer reports are
+available.
+Reprints and permissions informationis available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jur-
+isdictional claims in published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as
+long as you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons license, and indicate if
+changes were made. The images or other third party material in this
+article are included in the article’ s Creative Commons license, unless
+indicated otherwise in a credit line to the material. If material is not
+included in the article’ s Creative Commons license and your intended
+use is not permitted by statutory regulation or exceeds the permitted
+use, you will need to obtain permission directly from the copyright
+holder. To view a copy of this license, visithttp://creativecommons.org/
+licenses/by/4.0/.
+© The Author(s) 2023
+Article https://doi.org/10.1038/s41467-023-36052-8
+Nature Communications|          (2023) 14:427 10

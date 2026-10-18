@@ -1,0 +1,810 @@
+                                                                  Environmental Challenges 21 (2025) 101357
+
+
+                                                                   Contents lists available at ScienceDirect
+
+
+                                                               Environmental Challenges
+                                                          journal homepage: www.elsevier.com/locate/envc
+
+
+
+
+Modeling wildfires in the Alpine context: Lessons learnt from real case studies
+Luca Malanchini a ,∗, Nicolò Perello b , Andrea Trucchia b , Lorenzo M.W. Rossi a ,
+Paolo Fiorucci b , Giorgio Vacchiano a
+a Department of Agricultural and Enviromental Sciences (DiSAA), University of Milan, Via Celoria 2, 20133 Milano, Italy
+b
+    CIMA Research Foundation, via Armando Magliotto 2, 17100 Savona, Italy
+
+
+
+ARTICLE                 INFO                              ABSTRACT
+
+Keywords:                                                     In the Alpine region, climate change is altering the predisposing factors of wildfires, leading to an increase
+Wildfire modeling                                         in their frequency and intensity. This trend, combined with the inherent vulnerability of Alpine forest stands,
+Wildfire risk management                                  underscores the growing importance of fire modeling as a fundamental tool to support both prevention
+Fire simulation
+                                                          strategies and emergency response. This study compares two wildfire simulation models — FlamMap and
+FlamMap
+PROPAGATOR
+                                                          PROPAGATOR — which, although both widely used in Italy, are based on fundamentally different modeling
+Alpine region
+                                                          approaches.
+Climate change                                                The models are applied to three significant case studies in Lombardia’s Alpine area that took place in the
+                                                          period 2017–2022 (Tirano, Campolaro, and Sonico Wildfires), allowing a comparison of their performance in
+                                                          reproducing fire spread, rate of spread, and fireline intensity under varying topographic, vegetational, and
+                                                          meteorological conditions. Results indicate that both models reasonably captured the propagation of the three
+                                                          wildfires, although substantial differences emerged in fireline intensity and rate of spread, reflecting their
+                                                          distinct modeling assumptions. A closer examination of the outputs, combined with the specific input data
+                                                          required by each model, suggests that FlamMap is more suitable for planning contexts due to its ability to
+                                                          capture fine-scale fuel-topography interactions, while PROPAGATOR is better suited for operational scenarios
+                                                          thanks to its flexibility, fast implementation and computation, and capacity to incorporate time-varying wind.
+                                                              The analysis benefited from detailed information provided by local managers directly involved in the
+                                                          events, which helped reconstruct the actual fire dynamics and evaluate model outputs against real-world cases.
+                                                          These findings emphasize the critical role of accurate wind and fuel data, as well as the need for a structured
+                                                          database of past wildfires in the Alpine context to improve model calibration and reliability. Overall, this study
+                                                          provides practical insights to support stakeholders in selecting appropriate modeling tools across different
+                                                          phases of wildfire risk management and underscores the need for further refinement of simulation systems
+                                                          tailored to complex mountain landscapes.
+
+
+
+1. Introduction                                                                                et al., 2022; Kirschner et al., 2024). The Mediterranean climate that
+                                                                                               characterizes southern Italy and coastal areas, marked by wet springs
+    Climate change is increasing the potential for wildfire occurrence                         that increase fuel availability, followed by prolonged summer droughts,
+due to more frequent and intense droughts, combined with extended                              frequent heatwaves, and strong winds, creates highly flammable con-
+periods of unfavorable fire weather conditions that reduce vegetation                          ditions during the summer season. On the other hand, the Temperate
+moisture and favor wildfire occurrence and spread (Popescu et al.,                             climate of the norther Italy, Alpine Arc and Apennines mountains, is
+2022; Jones et al., 2024).                                                                     characterized by windy and dry fuel conditions especially in winter and
+    These factors, combined with the socio-economic changes, land
+                                                                                               spring seasons, favoring there wildfire activity during this period (Blasi
+abandonment and land use changes we have been witnessing in re-
+                                                                                               et al., 2019; Trucchia et al., 2022). The country’s complex topography
+cent decades may exacerbate the fire regime in areas already heavily
+                                                                                               and fuel-rich vegetation further exacerbate fire spread and intensity.
+affected by the phenomenon, such as Italy (Mantero et al., 2020;
+                                                                                               Moreover, human activities such as land abandonment, agricultural
+Ganteaume et al., 2021). Italy’s wildfire susceptibility is rooted in a
+combination of climatic, ecological, and anthropogenic factors, and the                        burning, and accidental or intentional ignitions significantly contribute
+diversification of these components through the national territory (Elia                       to fire occurrence (Ascoli et al., 2024). Climate change is intensifying
+
+
+    ∗ Corresponding author.
+       E-mail address: luca.malanchini@unimi.it (L. Malanchini).
+
+https://doi.org/10.1016/j.envc.2025.101357
+Received 8 July 2025; Received in revised form 20 October 2025; Accepted 25 October 2025
+Available online 29 October 2025
+2667-0100/© 2025 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-
+nc-nd/4.0/).
+L. Malanchini et al.                                                                                                     Environmental Challenges 21 (2025) 101357
+
+
+these dynamics worldwide, as well as in Italy, by lengthening the fire               Grid-based stochastic models are lightweight, versatile, and eas-
+season and increasing the frequency of extreme weather events (Duane             ily integrable with existing databases. With some preliminary setup,
+et al., 2021; Richardson et al., 2022), however with marked regional             they can effectively account for spatial and temporal heterogeneity,
+contrasts around the World (Doerr and Santín, 2016). In 2023 alone,              such as variations in vegetation types, topography, and meteorological
+Italy experienced 4,265 forest fires, a 34.7% decrease compared to               conditions. Furthermore, these models can be seamlessly coupled with
+2022, yet the average area burned per fire nearly doubled, rising                Geographic Information Systems (GIS) and can use (potentially real-
+from 10.9 to 20.8 hectares, resulting in a net increase in total burned          time) meteorological data as inputs (Alexandridis et al., 2011). Among
+area (San-Miguel-Ayanz et al., 2018; Berardi et al., 2025).                      these models, stochastic Cellular Automata (CA) models for wildfire
+    The Alpine region is particularly vulnerable to the increasing wild-         simulations are some of the most well-known examples. CA models
+fire risk due to rising temperatures and shifting precipitation patterns,        discretize spatial interactions using square or hexagonal grids (Encinas
+indicating a substantial worsening of fire weather conditions (Cane              et al., 2007), with fire spreading from burning cells to neighboring
+et al., 2013; Hetzer et al., 2024). Moreover, forest stands in the Alpine        ones through probabilistic rules. Although CA models may simplify
+range, such as temperate conifer forests (Arrogante-Funes et al., 2024),         the underlying physical processes, their modular nature allows them
+and forests dominated by thin-barked species like Fagus sylvatica and            to achieve the desired levels of complexity and accuracy.
+Abies alba, exhibit high mortality rates after wildfires (Maringer et al.,           One such example used in Italy is PROPAGATOR, a semi-empirical
+2016; Dupire et al., 2019), as these species have not evolved within             stochastic CA model (Trucchia et al., 2020), developed in 2008 by the
+a fire-adapted regime. This peculiar set of conditions have contributed          CIMA Research Foundation1 for the Italian Civil Protection Department.
+to challenge wildfire suppression efforts and wildfire risk management           The primary objective of the model is to rapidly simulate possible
+systems. The increase intensity of wildfire events across the Alpine             wildfire evolution, providing scenarios during the response phase to
+Arc, together with the high sensitivity of its forest species, calls for         ongoing emergencies (Perello et al., 2024). In Italy, the model is
+a new approach centered on mitigating impacts through preventive                 currently available to the Italian Civil Protection Department through
+management (Seidl et al., 2017), and for dedicated research on this              a user-friendly web application in MyDewetra platform (Italian Civil
+region (Müller et al., 2020).                                                    Protection Department and CI.M.A. Research Foundation, 2014) . Since
+    The implementation of preventive measures requires increased ef-             its initial release in 2008, the model has been applied and tested in
+forts from the scientific community to adopt integrated fire man-                numerous national and European projects (Consortium, 2020, 2019;
+agement and innovative modeling strategies to support stakeholders               Lantero et al., 2022). Stakeholder feedback has been crucial in en-
+involved in wildfire risk management (Chuvieco et al., 2023). Wildfire           hancing its performance and capabilities. Despite these advancements,
+modeling plays a crucial role in understanding the complex relation-             PROPAGATOR has predominantly been utilized as a rapid-response tool
+ships between fire occurrence, driving factors, and impacts, addressing          for emergencies (Trucchia et al., 2024), with limited application in
+the prevention, suppression, and recovery phases. This comprehensive             long-term forecasting and planning (Perello et al., 2024).
+framework can be applied to decision-making processes at various                     Both models serve as references used in Italy in different contexts
+levels, ranging from landscape management to household protection                and for different purposes, also reflecting the diversity of expertise
+and evacuation planning (Oliveira et al., 2021).                                 and institutions involved in the field of wildland fire management in
+    In this framework, two widely used approaches to wildfire modeling           the country (Sapountzaki et al., 2011; Kirschner et al., 2024; Verde
+are: (i) empirical and semi-empirical models, which rely on statistically        et al., 2024). FlamMap is actively used especially during wildfire risk
+derived laws of fire propagation (Rothermel, 1972); (ii) stochastic              assessment and land-use planning phases, particularly for drafting the
+grid-based models, where evolving quantities are typically described             regional plans for wildfire risk management (i.e., piani AIB, Kirschner
+through spatial and temporal discretization by implementing local                et al., 2024). The PROPAGATOR model, on the other hand, is used
+interactions. These models simulate the propagation of the fire front            within the context of emergency response and civil protection, as it is
+from one cell to its neighboring cells by applying detailed localized            made available to the Italian Civil Protection Department.
+evolution rules that incorporate either the underlying physics at the                Given the prominent role of these wildfire modeling tools in the Ital-
+desired resolution or semi-empirical rules of fire propagation (Alexan-          ian fire management system, at both regional and national levels, and
+dridis et al., 2011). See Sullivan (2009b,a) for a more comprehensive            the need for targeted research on wildfire risk management in Alpine
+description of wildfire modeling approaches.                                     environments, this study investigates the potential applicability and
+    Although it is widely acknowledged that none of these modeling               reliability of the PROPAGATOR and FlamMap models within the Alpine
+frameworks can be universally deemed the ‘‘best’’ for wildfire risk              Arc. Although some studies are emerging on the use of FlamMap
+management, stakeholders often require guidelines to select the most             in the Alpine context for wildfire risk mapping are emerging (Mauri
+appropriate approach for each specific task, as each method has its              et al., 2025, 2024), to be the best of our knowledge, no comparison
+own strengths and limitations. No model is perfect but some models               studies between these two models in the Alpine region is present,
+are useful, depending on the objective and constraints required.                 which can support in a more accurate decision on the use of the two
+    Empirical models are relatively straightforward to implement and             models for different application in wildfire management. The aim is
+require minimal computational resources. They can approximate fire-              to understand whether these models are suitable for supporting the
+spread dynamics within known constraints due to their simplified                 distinct phases of wildfire risk management in this context – namely
+structure. However, since most of these models are derived from con-             planning, prevention, and emergency response – in terms of required
+trolled laboratory experiments, their reliability in predicting wildfire         data and operational applicability; and what limitations may arise from
+                                                                                 the models themselves or from the availability and characteristics of
+behavior under different conditions and within complex landscapes
+                                                                                 the input data needed for their effective operational use in the Alpine
+(e.g., Alpine environments) remains limited (Sullivan, 2009a).
+                                                                                 context. To explore these questions, we applied both models to three
+    In the European and Italian context, FlamMap — a semi-empirical
+model — is widely used for wildfire risk assessment (Mitsopoulos
+et al., 2015; Yavuz et al., 2018; Regione Piemonte, 2021; Mauri et al.,             1
+                                                                                      CIMA Research Foundation is a research organization dedicated to disaster
+2024). Developed by the United States Department of Agriculture Forest
+                                                                                 risk mitigation, with a particular focus on climate change-related hazards,
+Service (USDA) (Finney, 2006), this software enables researchers and             including floods, wildfires, droughts, and the loss of terrestrial and marine
+fire management professionals to simulate fire spread, intensity, and            biodiversity. Additionally, it serves as an operational structure within the
+potential impacts across a range of environmental scenarios, thereby             National Civil Protection Service, as established by Italian Legislative Decree
+supporting wildfire preparedness and response planning.                          1/2018 (Civil Protection Code).
+
+
+                                                                             2
+L. Malanchini et al.                                                                                                    Environmental Challenges 21 (2025) 101357
+
+
+
+
+                          Fig. 1. Geographical context of the three case studies and overview of the main territorial information.
+
+
+case studies corresponding to wildfires that occurred in Lombardia               from the regional wildfire dataset for Lombardia (2007–2022), only
+region (Italy) in recent years, each under different meteorological and          events larger than 50 hectares were considered. Among these, priority
+propagation conditions: (i) fuel and morphology-driven fire, (ii) wind-          was given to wildfires that occurred in relatively recent years, to ensure
+driven fire, and (iii) fire with complex wind and spread dynamics. By            the availability of reliable input data, and that presented sufficient
+examining the required input data, potential outputs, and model be-              documentation regarding fire progression and suppression activities.
+havior under different propagation regimes, the results aim to support           The information regarding impact on local communities and opera-
+stakeholders in selecting the most appropriate model for the various             tional complexity, and the different suppression activities implemented,
+phases of wildfire management – ranging from planning and prevention             were collected through interviews conducted with local government
+to decision-making during suppression activities – and to highlight              officials and emergency management personnel, who supported in the
+potential areas for improvement to enhance their effective use in Alpine         selection of the events. The data availability on different wildfire events
+environments.                                                                    imposed an important constraint in events’ selection, given the lack
+   The paper is structured as follows: the next section describes the            of systematic data collection at national level — some comments on
+case studies, followed by a brief presentation of the models and the             this will be considered in the Discussion section. The final selection
+simulation settings adopted. Subsequently, the results are presented             included three wildfires that differed in size, terrain, vegetation, and
+and discussed in the dedicated sections. The paper concludes by sum-             firefighting dynamics, allowing for a representative comparison across
+marizing the main findings related to the use of the two models                  diverse conditions.
+in wildfire risk management, with particular attention to the Alpine                 The selected events represent three different wildfire scenarios, with
+context.                                                                         varying propagation conditions and increasing levels of complexity.
+                                                                                 The Case Study A (Tirano Fire) represents wildfire driven by fuel and
+2. Material and methods                                                          topography; the Case Study B (Campolaro Fire) represent a wind driven
+                                                                                 wildfire; and the Case Study C (Sonico Fire) represents complex wind
+2.1. Case studies                                                                and spread patterns, with different phases of spreading and reignition.
+                                                                                     In Fig. 1, the geographical context of the three case studies is
+    This section describes the three case studies selected for analyzing         presented. The fire regime of the region is characterized by wildfires
+the behavior of the two models. The events were chosen among the                 mainly occurring in the Alpine area during the winter and spring
+wildfires occurred in Lombardia region (in northern Italy) between               seasons, typically driven by morphology and wind conditions, as well
+2017 and 2022, based on relevance, data availability, and variability            as particularly dry fuel conditions following the end of winter season.
+in environmental and operational conditions.                                     Regarding wind conditions, it is typical for Foehn wind conditions to
+    Relevance was assessed by considering the significance of each               develop in the area due to the presence of Alpine Arc, a warm, dry,
+wildfire in terms of size – obtained by official burned area datasets            downslope wind descending from the mountains toward the valleys,
+– impact on local communities, and operational complexity. Starting              which favor wildfire occurrence and spread.
+
+                                                                             3
+L. Malanchini et al.                                                                                                       Environmental Challenges 21 (2025) 101357
+
+
+                   Table 1
+                   Comparative summary of the three wildfires.
+                       Case Studies              Tirano Fire                         Campolaro Fire                   Sonico Fire
+                       Period                    March 11–15, 2022                   January 4–6, 2017                March 23–29, 2022
+                       Affected area             70 ha                               260 ha                           211 ha
+                       Weather conditions        Moderate wind and dry               Strong wind (Foehn), dry         Moderate wind with
+                                                 fuels                               fuels                            complex
+                                                                                                                      topographic-driven pattern,
+                                                                                                                      dry fuels
+                       Propagation dynamics      Topographic fuel-driven             Wind-driven fire                 Complex spread dynamics,
+                                                 fire                                                                 fire re-ignition and
+                                                                                                                      particular convective
+                                                                                                                      trigger on the top
+                       Fire-fight actions        Helicopter activity on              Important activity on the        Important activity on the
+                                                 flanks, ground teams                right side downstream near       left side to contain the
+                                                 concentrate on the right            the township. Tail               spread with ground squad.
+                                                 side in protection of               containment activity on          Activity on the ridge of
+                                                 houses in the hamlet of             the left. On the second          the right valley (ground
+                                                 Zare. Containment                   day, activity of aerial and      squads) and helicopter
+                                                 activities on the right low         ground assets on the left        activity to slow spread.
+                                                 to the burned area.                 side to slow the
+                                                 Containment on the road             propagation.
+                                                 in the lower part of the
+                                                 wildfire.
+
+
+
+    To collect information for this study, experts who were involved                 gathered from local experts, the wind in Campolaro during the event
+in the wildfires during or after the events were consulted. Directors                was blowing from the west along the valley’s axis. The fire started in
+of firefighting operations for the Comunità Montana della Val Camonica               the afternoon above the road leading to Campolaro, spreading uphill
+and from the Agricultural and Forestry Sector of the Comunità Montana                and to the east, driven by the wind. Significant firefighting efforts were
+della Valtellina di Tirano2 provided insights into the Sonico and Cam-               carried out along the road and near houses on the right flank, while
+polaro wildfires, and Tirano wildfire, respectively. These professionals             containment actions were focused on the left flank of the fire’s tail. On
+provided valuable details about the firefighting operations and the                  the second day, both aerial and ground resources were deployed on the
+evolution of the wildfires, as well as important information about the               left side to slow the fire’s propagation.
+local weather conditions during the events. The summary of the three
+events is reported in Table 1.                                                       2.1.3. Case study C: Sonico fire
+                                                                                         The third case study is the wildfire that occurred in Sonico munic-
+2.1.1. Case study A: Tirano fire                                                     ipality (Brescia province, Lombardia region, Italy) on March 23, 2022.
+    The first case study is the wildfire that occurred in Tirano munici-             Located on the right side of Val Camonica above the town, it spread
+pality (Sondrio province, Lombardia region, Italy) on March 11, 2022,                in the lateral valley of Val Rabbia, reaching almost the top of Monte
+on the southern side of Monte Masuccio, facing Tirano. The fire started              Foppa. The wind conditions during the event were typical for the area in
+in the late afternoon near the houses in Piazzo (see Fig. 1), spreading              spring, following the usual wind patterns shaped by the terrain, namely:
+slowly below the road for approximately 24 h, with firefighting efforts              morning uphill wind and afternoon downhill. The ignition point was
+focused on the area below the road and near the houses. Moderate                     located south of Sonico at the edge of the forest. The fire began
+to low wind characterized the event, however dry fuels conditions                    spreading uphill, following the slope and the fuels characteristics. The
+typically observed in the region in the late winter period were present,             spread was halted on the left flank by ground crews. At the top of Val
+with availability of fuel for spreading. On the morning of March 13, the             Rabbia, a line of firefighters was established to contain the fire along
+fire reignited above the road, spreading faster northward, driven by the             the ridge. However, on the March 27th, after an apparently quiet phase,
+available fuels. Near the village of Zare, firefighting were carried out             the fire reignited, spreading throughout the valley, reaching the ridge,
+to protect the houses with ground crews. Helicopters were used on the                and continuing into the upper grasslands with a particular convective
+left and right flanks to contain the fire’s spread through aerial water              trigger on the top which allowed the fire to reach the opposite slope.
+drops.
+                                                                                     2.2. Propagation models
+2.1.2. Case study B: Campolaro fire
+    The second case study is the wildfire occurred in Campolaro mu-                     In the following paragraphs, a brief description of the two models
+nicipality (Brescia province, Lombardia region, Italy) on January 4,                 used in this study is presented.
+2017. The wildfire was located on the southern side of Monte Trabucco,
+in a lateral valley of Val Camonica, oriented east–west. The day was                 2.2.1. FlamMap model
+characterized by a strong, dry and hot wind from north (Foehn wind).
+                                                                                        FlamMap 6.2 (Finney, 2006) is a fire behavior modeling software
+                                                                                     that simulates potential fire spread and intensity under constant envi-
+The configuration of the valley, oriented from east to west, caused the
+                                                                                     ronmental conditions. It is available as a free desktop application (https:
+channeling of the wind coming from the north along the Camonica Val-
+                                                                                     //research.fs.usda.gov/firelab/projects/flammap). FlamMap uses
+ley, leading to a significant change in direction. Based on information
+                                                                                     Rothermel’s surface fire rate of spread model (Rothermel, 1972) along
+                                                                                     with a two-dimensional Minimum Travel Time (MTT) algorithm (Finney,
+  2
+     A Comunità Montana is a form of local authority established under Italian       2002) to predict fire growth patterns and delineation of wildfire spread.
+national law (Law No. 1102 of December 3 1971, and Legislative Decree No.            Unlike dynamic fire simulators, FlamMap does not model temporal
+267/2000). It is composed of a group of neighboring municipalities located           variations in weather or suppression actions, making it ideal for assess-
+in mountainous or partially mountainous areas, with the main purpose of              ing fire behavior potential across landscapes, useful for risk mapping
+promoting economic, social, and environmental development in the area.               and risk mitigation planning (Mauri et al., 2024).
+
+                                                                                 4
+L. Malanchini et al.                                                                                                              Environmental Challenges 21 (2025) 101357
+
+
+                   Table 2
+                   Simulation settings of each model.
+                                               FlamMap                                                         PROPAGATOR
+                       Landscape inputs                              Elevation                                                 Elevation
+                                                                       Slope                                           Fuel Models (PROPAGATOR)
+                                                                      Aspect
+                                                                   Canopy cover
+                                                             Fuel Models (Scott, 2005)
+                       Weather inputs                                 Wind                                                       Wind
+                                                                  Fuel moisture                                              Fuel moisture
+                       Outputs                                      Arrival time                                             Fire probability
+                                                                    Major paths                                                 Isochrones
+                                                                  Rate of spread                                             Rate of spread
+                                                                 Fireline intensity                                         Fireline intensity
+                       Settings                Resolution                                     10 m             Resolution            20 m
+                                               Interval for Minimum Travel Paths              100              Spotting              no
+                                               Spot probability                               0.001
+                                               Spot delay                                     0
+                                               Lateral search depth                           6
+                                               Vertical search depth                          4
+
+
+
+    The software requires the creation of a Landscape file, containing                    heavy actions (i.e., the extensive use of suppression actions, machinery
+all the vegetational and morphological information. The landscape                         for fuel removal, or similar firefighting measures that create a barrier
+information required by the software includes elevation, slope, as-                       for the fire propagation). A spotting model can also be activated (López-
+pect, canopy cover and fuel model maps - the latter referred to ei-                       De-Castro et al., 2024) i.e., to include the transport of burning pieces
+ther Scott (2005) or Anderson (1982) fuel classifications. Regarding                      of material by wind, which can ignite new fires at a distance from the
+weather information, wind (speed and direction) and fuel moisture                         main fire.
+conditions must be specified, which are considered fixed during the                           The input data drives the probabilistic propagation of the fire
+whole simulation.                                                                         between grid cells following the ignition(s). As a stochastic framework,
+    FlamMap provides static maps of potential fire behavior based on                      the model runs an ensemble of multiple simulations, providing outputs
+these fixed environmental conditions. The main outputs include Rate                       at each simulation time step (e.g., every hour), including: the fire
+of Spread, Fireline Intensity, and Flame Length, offering insights into fire              probability map (i.e., the probability of each cell to be affected by the
+dynamics across different scenarios based on inputs provided. Addi-                       wildfire within that specific time step); isochrones of the most probable
+tionally, the MTT algorithm within FlamMap simulates the minimum                          burned areas at different thresholds - typically greater than 50% or 75%
+travel path of fire, calculating its direction and speed of propagation                   probability; rate of spread and fireline intensity maps.
+over a heterogeneous landscape, and producing then fire front arrival                         More details on the model and equations can be found in Trucchia
+                                                                                          et al. (2020).
+times and major propagation pathways, essential for planning suppres-
+sion strategies and risk management. The software can be either used
+                                                                                          2.3. Models set up
+for simulating single events (as done in this study) or for planning
+by simulating multiple artificial events through the landscapes. In the
+                                                                                             After reconstructing the dynamics of the case studies, the data
+latter case, the software produces also fire probability maps, often used
+                                                                                          needed for the simulation of the events were collected, and the sim-
+for landscape planning (Mollocana-Lara et al., 2025).
+                                                                                          ulations were configured to reflect the progression of the events. The
+                                                                                          summary of the simulations settings is reported in Table 2.
+2.2.2. PROPAGATOR model
+    PROPAGATOR is a wildfire simulation model based on a stochastic                       2.3.1. Models input data
+Cellular Automata framework (Trucchia et al., 2020, 2024; Perello                            In the following paragraphs, the description of the input data for
+et al., 2024). The model was developed to provide a decision-support                      simulations is presented.
+tool during emergency situations, with particular focus on Civil Pro-
+tection. For this reason, simulation rapidity and simple input data are                   Landscape inputs. Different static inputs are needed in both the models
+the core aspects of the model. The model is available as a python                         to represent the landscape information.
+open source code on GitHub (https://github.com/CIMAFoundation/                                The topography information represent a common static input of
+propagator_sim) as well as provided though a user-friendly web-GIS ap-                    the two models: while PROPAGATOR uses only an elevation file, other
+                                                                                          derived topographic information (e.g., slope and aspect) are required
+plication (i.e. MyDewetra platform, Italian Civil Protection Department
+                                                                                          by FlamMap. For the Elevation layer of the two models, the Tinitaly
+and CI.M.A. Research Foundation, 2014) within specific collaboration
+                                                                                          DEM (Tarquini et al., 2007) was used, while the Slope and Aspect layer
+agreements with the developer entity.
+                                                                                          needed by FlamMap were calculated on QGIS using GDAL algorithms
+    The model takes elevation and fuel type as input, using a custom
+                                                                                          (QGIS version 3.34.9, 2024) starting from the DEM data.
+simplified fuel classification specific to the model, namely: grasslands,
+                                                                                              Canopy cover and fuel model layers are needed to FlamMap. For
+shrubs, broadleaves, fire-prone conifers, agro-forestry areas, non fire-
+                                                                                          the Canopy cover layer the Tree cover Density 2018 from Coperni-
+prone forests, and non-vegetated areas. Fuel information is typically
+                                                                                          cus (Copernicus Land Monitoring Service, 2019) at 10-meter resolution
+derived from land-use maps, representing a coarse classification of fuel
+                                                                                          was used. The last layer needed by FlamMap, i.e. Fuel Model, was
+types for rapid simulations in the emergency phase. Additionally, the                     created starting from the Fuel Type association from annex 8 of the
+model incorporates wind and fuel moisture data. Dynamic inputs can be                     Piano Antincendio Boschivo3 of Lombardia region (i.e., the regional
+provided at an hourly or even minute-by-minute resolution during the
+simulation, along with firefighting activities, supporting the dynamic
+description of the event and the planning of suppression operations                         3
+                                                                                               Regions in Italy coordinate their own wildfire management system, pro-
+during the emergency phase. Specifically, the model includes four                         viding a regional plan which serve as framework for the wildfire-related
+possible suppression actions: Canadairs, helicopters, waterlines, and                     activities at the regional level.
+
+
+                                                                                      5
+L. Malanchini et al.                                                                                                           Environmental Challenges 21 (2025) 101357
+
+
+                   Table 3
+                   Summary of meteorological data sources and periods for each case study, and of the moisture scenarios used for the two models.
+                   The RISICO fuel moisture presented here is intended as the mean value obtained during the event.
+                       Case study                                Tirano                        Campolaro                      Sonico
+                       ARPA meteorological station               Tirano – Eliporto             Breno – Lago della Vacca       Edolo – Centrale ENEL
+                       Coordinates (latitude–longitude)          46.20◦ N – 10.21◦ E           45.95◦ N – 10.45◦ E            46.17◦ N – 10.37◦ E
+                       Data Period                               11 March–15 March             4 January – 6 January          23 March–29 March
+                       Moisture from RISICO                      15.0%                         12.2%                          12.7%
+                       Live Fuel Moisture scenario (FlamMap)     L2                            L2                             L2
+                       Dead Fuel Moisture scenario (FlamMap)     D4                            D3                             D3
+
+
+
+wildfire risk management plan) (Lombardia, 2024), which has been                            Regarding fuel moisture data, the FlamMap model requires a fixed
+used to join fuel type with forest types and land cover to create a map                 moisture content for each fuel size class (1-hr, 10-hr, 100-hr, live
+for each case study. After that, at each fuel type was associated with a                herbaceous, and live woody). Since the RISICO outputs are not cate-
+Standard Fuel Model (Scott, 2005) required by FlamMap.                                  gorized by fuel size, this information was used to select the appropriate
+    For what regards the fuel information for PROPAGATOR, CORINE                        moisture scenario from Scott and Burgan’s Standard Fire Behavior Fuel
+2018 land cover map was used (European Environment Agency, 2020),                       Models (Scott, 2005) - it is described in Table 3. For PROPAGATOR, a
+as considered for the operational implementation of the model within                    single proxy of fuel moisture is required - the hourly fuel moisture time
+the Italian Civil Protection system, associating the different classes                  series directly derived from the RISICO model were used.
+to the customed fuel types described before. The different landscape
+inputs needed by the models are listed in Table 2.                                      2.3.2. Simulations settings
+                                                                                            To finalize the input for both models, the simulation parameters
+Weather conditions. The weather information required by both the                        were configured. The ignition points and the Time Simulations were set
+models includes wind speed and direction, as well as fuel moisture                      based on the wildfire events dataset and expert input (see Table 4). For
+content.                                                                                what regards Tirano fire, the event was split into two parts, following
+    Wind-related data were obtained from the ARPA4 meteorological                       the first spreading below the road (1440 min) and then the new ignition
+station closest to each event (see Table 3).                                            in the upper part (after the first part, for 2160 min). For what regards
+    Considering that in FlamMap all fire behavior calculations assume                   Sonico fire, the same approach was adopted, splitting the fire into a first
+constant wind speed and wind direction over time (Finney, 2006), the                    part (4320 min) and then the new ignition which accounted for much of
+mean wind speed and predominant direction were calculated based on                      the burned area (after the first part, for 2880 min). In this case, the new
+the hourly average data for the entire duration of each event. The wind                 ignition was set starting from the first fire burned area. The need to split
+information have been used in FlamMap as input for the WindNinja                        these two events was driven by the need to reflect the two expansion
+option within the model. This tool integrates wind speed and direction                  phases that were observed during both the events, and to better reflect
+                                                                                        the observed behavior within the simulations. Regarding Campolaro
+with the landscape’s topography to generate wind grids and vectors,
+                                                                                        Fire, a unique ignition was set following the observed dynamics of the
+thereby providing spatialized wind information. For PROPAGATOR,
+                                                                                        event.
+given its capability to accept time-dependent inputs, the original ob-
+                                                                                            For what regards FlamMap simulation setting, the Resolution of
+served wind data were used - however, no spatialization of the wind is
+                                                                                        calculations (i.e., 10 m) and the Interval for Minimum Travel Paths
+considered in this model.
+                                                                                        were adjusted to achieve a balance between computational speed and
+    Due to the specific morphology of the Campolaro Valley and the
+                                                                                        result accuracy. Other parameters, such as Spot Probability, Spotting
+distance between the ARPA weather station and the fire location, the                    Delay, Lateral Search Depth, and Vertical Search Depth, were kept at
+recorded wind direction was adjusted to better reflect local conditions                 the software’s default settings. For PROPAGATOR, no further parame-
+of the Campolaro Fire event. Based on observations from the incident                    ters setting are needed apart of the spotting option — no spotting model
+commander on-site, it was assumed that the wind followed the natural                    was adopted given the missing information on spotting dynamics. With
+axis of the valley, as this was deemed more representative of the actual                respect to FlamMap spatial resolution, the PROPAGATOR input and
+fire behavior. This wind direction modification has been implemented                    output have been provided at 20 m resolution following the operational
+for both the models. In addition, for this event two wind speed scenar-                 implementation of the system. The different simulation settings for the
+ios were tested for FlamMap: one based on the average speed excluding                   two models are reported in Table 2.
+minimum values, and another using the maximum recorded speed. The                           For both the models, the firefighting activity obtained by the in-
+two scenarios have been tested to reflect the strong wind conditions                    sights of the personnel directly involved in the events, was used setting
+observed during the event. For PROPAGATOR, given the possibility of                     them barriers. In particular, to make the results comparable and fol-
+including hourly wind variations and then sudden wind changes, the                      lowing the FlamMap settings, the heavy action option was adopted
+hourly recorded wind speed has been used.                                               for PROPAGATOR without any further distinction. The areas where
+    It is important to note that the available wind data for all the                    firefighting activity has been considered in simulations can be observed
+wildfires were already provided as hourly averages, meaning that short-                 in Fig. 1.
+term strong gusts, which could significantly influence fire propagation,
+were not captured.                                                                      2.3.3. Models outputs data
+    Since no sensors were available to directly measure fuel moisture                       To compare the simulations from the two models, the outputs were
+content, information from the RISICO model was used instead (Perello                    chosen to describe fire behavior and be compatible between the models.
+et al., 2025).                                                                          Fireline Intensity and Rate of Spread, key fire behavior parameters, are
+                                                                                        common to both models and serve as a good basis for comparison.
+                                                                                        Arrival Time and Major Paths outputs from FlamMap were used to
+   4
+      ARPA (Agenzia Regionale per la Protezione dell’Ambiente) is Italy’s network       analyze the propagation patterns of each model and compare them with
+of regional environmental protection agencies. Each ARPA monitors air, water,           the actual fire perimeter recorded in the dataset. For PROPAGATOR,
+soil, and environmental risks, supporting public authorities with data, assess-         the fire probability obtained in the last time step, and the different
+ments, and compliance checks. They operate regionally but are coordinated               isochrones obtained during the simulation time (with thresholds set
+at the national level through the SNPA system (Sistema Nationale Protezione             at 50% probability), were used for the same purpose. The different
+Ambiente).                                                                              outputs of the two models are reported in Table 2.
+
+                                                                                    6
+L. Malanchini et al.                                                                                                           Environmental Challenges 21 (2025) 101357
+
+
+                   Table 4
+                   Ignition points and time simulation settings for each case study.
+                       Case study                               Tirano                             Campolaro                     Sonico
+                       Ignition Point (latitude–longitude)      46.22◦ N - 10.20◦ E                45.92◦ N - 10.38◦ E           46.15◦ N - 10.38◦ E
+                       Time Simulation (min)                    1440/2160                          1440                          4320/2880
+
+
+
+3. Results                                                                                however, there is a significant difference in the extent of the burned
+                                                                                          area depending on the wind speed (compare Fig. 3a and Fig S.2
+    As previously described, two simulations were carried out for each                    supplementary materials). For comparison with PROPAGATOR, the
+case study – one for each model – in order to compare their results                       second scenario – with a wind speed of 36 km/h – was selected to
+and highlight any differences, using real wildfire data as a reference                    be more coherent with the insights from local managers and with
+to assess the reliability of the simulations. The arrival time and major                  the final burned area. Both models significantly underestimate the
+paths generated by FlamMap were compared with the isochrones and                          westward propagation of the fire, rather advances eastward along the
+fire probability maps produced by PROPAGATOR, using the actual fire                       upper part of the slope. FlamMap fails to capture the fire’s downslope
+perimeter to verify whether the simulated fire progression aligns with                    spread, which is better represented by PROPAGATOR, although with
+the real fire spread. To evaluate how the models reconstruct the main                     lower probability (see Fig. 3b). Overall, PROPAGATOR more accurately
+descriptors of fire behavior, the rate of spread and fireline intensity                   reproduces the shape of the fire perimeter (Fig. 3b), while FlamMap
+produced by the two models were compared to identify any qualitative                      provides more detailed information on the internal dynamics of fire
+differences.                                                                              spread within the burned area for what regards the other fire behavior
+                                                                                          descriptors.
+3.1. Case study A: Tirano fire                                                                As with the first case study, the fire behavior descriptors reveal
+                                                                                          differences in both scale and the type of information provided by the
+    The outputs of the two simulations, the one below the road and the                    models. FlamMap highlights two areas with high values of Rate of
+one spread uphill were visualized together in Fig. 2. The Arrival Time                    Spread and Fireline Intensity, offering insights into the fire’s spread
+output of FlamMap shows a credible burned area, closely matching the                      dynamics (Fig. 3c and Fig. 3e). PROPAGATOR, on the other hand, shows
+actual fire perimeter (Fig. 2a) and the Major Paths generated by the                      high values during the initial phase of the fire, and in the middle area
+model depict a plausible evolution of the fire. Given the stochastic na-                  of the event (Fig. 3d and Fig. 3f). Additional high values appear in
+ture of PROPAGATOR, the fire probability map has to be read together                      the lower section of the area, which is not considered in the FlamMap
+with isochrones, which highlight the areas with greater probability.                      simulations given that the model does not simulate a fire spreading in
+The fire probability map from PROPAGATOR shows a broader potential                        this area.
+fire spread extending well beyond the actual perimeter, particularly
+along the slope in a northerly direction, but with very low probability                   3.3. Case study C: Sonico fire
+(Fig. 2b). The possibility of further spread in PROPAGATOR is mainly
+due to the continuity of fuel and the topography of the area, although                        The complexity of the Sonico fire – both in terms of wind conditions
+the relatively high fuel moisture values depicted for this event limits                   and fire spread dynamics – made this case the most challenging to
+the spreading probability to lower values. As result, the area with                       analyze. The outputs from the two model simulations, carried out to
+higher fire probability is limited to the area of the actual fire perimeter,              capture the fire’s re-ignition, were combined into a single output for
+aligning with the real scenario and with FlamMap. The isochrones, in                      comparison purposes. In the first FlamMap simulation (Fig. 4a), the
+fact, depict a fire spread more consistent with the actual event.                         fire spread across the slope, stopping only due to the barrier created
+    Both models identify limited fire spread during the initial phase of                  by firefighting actions. The PROPAGATOR simulation (Fig. 4b) shows
+the event (i.e., the lower perimeter), followed by more extensive spread                  a similar spread pattern, though with a more limited area and more
+in the upper, second perimeter - it is consistent with what observed dur-                 independent with respect to the application of firefighting actions.
+ing the real event according to the information gathered on this event                    In contrast, in the second simulation, FlamMap displays slower fire
+(see Material and Methods section). In the second phase, both models                      propagation, following the upper part of the valley as the main di-
+indicate the potential for a main propagation direction aligned with                      rection. It underestimates the final fire perimeter and fails to capture
+the local topography, consistent with the fire type (i.e., topographic                    the specific dynamics of the later phases of the event. PROPAGATOR,
+wildfire).                                                                                on the other hand, more accurately follows the actual fire perimeter,
+    The comparison of Fireline Intensity (FI) and Rate of Spread (ROS)                    even overestimating the spread in the upper section. However, the final
+reveals that the two models operate within completely different value                     isochrones produced by PROPAGATOR highlighting the most probable
+ranges (see Fig. 2c,d and Fig. 2e,f respectively). FlamMap outputs show                   area are very similar to those of FlamMap.
+higher values of ROS and FI in the western part of the fire, along with                       The comparison of Fireline Intensity and Rate of Spread shows sim-
+some extreme hotspots in the central area. In contrast, the output from                   ilar characteristics to those observed in the other case study (see Figs.
+PROPAGATOR appears highly variable, with scattered values due to the                      4c,d and Figs. 4e,f). The FlamMap simulation displays high intensity
+cellular automata nature of the model, which operates cell-wise. An                       and rapid expansion during the initial phase of the fire, while in the
+increase in ROS and FI is observed in the western part of the wildfire,                   later phase, both indicators show lower values, except in a localized
+as pointed out by FlamMap, and in the right side (see Fig. 2c and Fig.                    area. PROPAGATOR, in contrast, presents more uniform FI and ROS
+2e, respectively). In both models, the first part of the wildfire (e.g., the              values across the entire perimeter, with higher values concentrated in
+lower part of the event) is characterized by low rate of spread and                       the upper parts of the first and second phases of fire spreading.
+intensity.
+                                                                                          4. Discussion
+3.2. Case study B: Campolaro fire
+                                                                                              Unlike other comparative modeling studies (Khalaf et al., 2024;
+   The Campolaro fire was characterized by strong wind conditions.                        Mohammad Beyki et al., 2025), this work not only analyzes the dif-
+The influence of wind in this case study is evident from the FlamMap                      ferences between model outputs but also aims to identify the main
+simulations carried out using two different wind speed scenarios. In                      limitations and shortcomings of the models when applied to the Italian
+both cases, the simulations reproduce the main direction of fire spread;                  Alpine context The valuable collaboration with local fire managers
+
+                                                                                      7
+L. Malanchini et al.                                                                                                 Environmental Challenges 21 (2025) 101357
+
+
+
+
+Fig. 2. Tirano Fire: (a) Arrival time and major paths from FlamMap; (b) Isochrones and fire probability from PROPAGATOR; (c) rate of spread from FlamMap;
+(d) rate of spread from PROPAGATOR; (e) fireline intensity from FlamMap; (f) fireline intensity from PROPAGATOR.
+
+
+directly involved in the events enabled a more accurate reconstruction          as time-varying wind and suppression actions. This distinction is con-
+of wildfire dynamics, allowing for a grounded comparison of model               sistent with recent applications in Italy, including the use of PROPAGA-
+outputs against real-world cases.
+                                                                                TOR for prescribed fire planning in Liguria (Perello et al., 2024), and
+                                                                                the deployment of FlamMap to assess fire severity in Sardinia (Salis
+    Our findings confirm that FlamMap and PROPAGATOR serve com-                 et al., 2016).
+plementary roles within the wildfire risk management cycle. FlamMap,                In terms of fire evolution and simulated burned area compared
+with its capacity to model fine-scale fuel-topography interactions, is          to the actual one, the two models perform reasonably well, although
+                                                                                with some differences. In the first case study, the two models produce
+particularly suited for strategic planning and prevention. In contrast,
+                                                                                broadly similar results, with FlamMap more specific capturing certain
+PROPAGATOR demonstrates greater operational flexibility, offering               behavioral and propagation dynamics. In the second case, PROPA-
+rapid simulations and the ability to incorporate dynamic inputs such            GATOR provides a more accurate reconstruction of the fire, due to
+
+                                                                            8
+L. Malanchini et al.                                                                                                   Environmental Challenges 21 (2025) 101357
+
+
+
+
+Fig. 3. Campolaro Fire: (a) Arrival time and major paths from FlamMap; (b) Isochrones and fire probability from PROPAGATOR; (c) rate of spread from FlamMap;
+(d) rate of spread from PROPAGATOR; (e) fireline intensity from FlamMap; (f) fireline intensity from PROPAGATOR.
+
+
+its greater ability to simulate the significant impact of wind and its           study, where the change in fuel cover – from ‘‘forest’’ to ‘‘grassland’’
+temporal variation. In the third and most complex case study, both               (see Figure S.1d in the Supplementary Material) – causes an abrupt
+PROPAGATOR and FlamMap struggle to reproduce in detail the com-                  change in fireline intensity and rate of spread.
+plex dynamics that occurred during the final phase of the fire; however,             PROPAGATOR assigns these two variables the role of proxies to
+PROPAGATOR appears to better capture the potential development of                guide firefighting actions, primarily aiming to highlight areas of general
+the fire front.                                                                  increase in rate of spread and fireline intensity for operational pur-
+    The fire behavior outputs (Rate of Spread and Fireline Intensity)            poses, rather than providing a detailed representation of fire behavior.
+reveal substantial differences between the two models.                           This approach emphasizes zones where a reduction in intensity could
+    PROPAGATOR results appear to be highly dependent on the fuel                 enhance suppression effectiveness or, on the other hand, increases in
+map adopted, with fire behavior values varying significantly according           fireline intensity due to combination of land cover types, topography
+to land use changes. This is particularly evident in the Campolaro case          and weather conditions could complicate firefighting activities. These
+
+                                                                             9
+L. Malanchini et al.                                                                                                 Environmental Challenges 21 (2025) 101357
+
+
+
+
+Fig. 4. Sonico Fire: (a) Arrival time and major paths from FlamMap; (b) Isochrones and fire probability from PROPAGATOR; (c) rate of spread from FlamMap;
+(d) rate of spread from PROPAGATOR; (e) fireline intensity from FlamMap; (f) fireline intensity from PROPAGATOR.
+
+
+features combined with the model’s ease and speed of use make it more           inputs such as the fuel map, and where detailed outputs linked to
+suitable for emergency response.                                                management prescriptions are essential.
+    In contrast, FlamMap, which is based on a different modeling                    The difference between the two models in handling wind dynamics
+approach that employs a more detailed fuel map derived from standard            is evident. PROPAGATOR supports temporal variability in wind speed
+fire behavior fuel models (Rothermel, 1972; Finney, 2002; Trucchia              and direction, allowing it to simulate dynamic changes that can re-
+et al., 2020), is better able to capture intra-fuel behavioral dynam-           sult in substantial variations in fire behavior. This leads to a more
+ics. These dynamics are more closely related to the interaction be-             accurate reconstruction of wildfire evolution under fluctuating wind
+tween fuel characteristics and topographic conditions. These differ-            conditions. Conversely, FlamMap incorporates spatial variability in
+ences in map availability and model usage make FlamMap more                     wind as influenced by topography, enabling the model to represent
+suitable for planning-oriented analyses, where the absence of time              topography-driven fire behavior with greater detail. This distinction
+constraints in the simulation allows for the acquisition of detailed            becomes particularly relevant in scenarios characterized by pronounced
+
+                                                                           10
+L. Malanchini et al.                                                                                                      Environmental Challenges 21 (2025) 101357
+
+
+wind variability – such as Campolaro and Sonico Fires – where PROP-                5. Conclusions
+AGATOR tends to perform more accurately. In contrast, under more
+stable and low wind conditions, as observed in Tirano Fire, FlamMap                    The Alpine region represents a vulnerable context in light of the
+demonstrates better performances.                                                  projected increase in wildfire activity under future socio-economic
+    Wind is one of the main factors that influence the fire regime in              and climate change scenarios. Dedicated studies help to highlight the
+                                                                                   unique features and challenges of wildfire research in this environment.
+the Alpine region (Zumbrunnen et al., 2009; Mauri et al., 2024). Our
+                                                                                       It is essential to connect such studies to actionable insights for stake-
+results, as expected, show that wind significantly affects the simulation
+                                                                                   holders, enabling informed wildfire risk management and enhancing
+outputs of both models; therefore, having access to accurate wind data
+                                                                                   the impact of scientific research. A crucial aspect in this regard is
+is crucial for reliably modeling fire behavior, both in planning and
+                                                                                   wildfire modeling and the evaluation of simulation tools tailored to the
+operational contexts. The complex Alpine topography results in strong
+                                                                                   Alpine context.
+variations in wind behavior from one valley to another, as clearly                     This study examined two simulation models widely used in Italy —
+observed in this study, making it difficult to obtain the information              FlamMap and PROPAGATOR — to simulate three significant wildfire
+required for the simulations.                                                      events in the Alpine area of the Lombardia Region. The analysis show
+    Similarly, fuel moisture conditions (both the live canopy component            that both models have proven to be effective tools in this setting,
+and the dead material such as litter) greatly influence fire behavior and          with their respective strengths and limitations identified in relation
+the likelihood of wildfires, especially during particularly dry periods,           to different phases of the wildfire risk management cycle. FlamMap
+such as following the winter season in the Alpine region under analysis.           is particularly suited for planning and prevention due his fine-scale
+This aspect revealed for example in Tirano case study, where the effect            fuel-topography interactions although PROPAGATOR is better suited for
+of relatively high fuel moisture conditions affected the spreading prob-           operational scenarios thanks to its flexibility, fast implementation and
+ability simulated in PROPAGATOR. In our simulations, we used a fuel                capacity to incorporate time-varying variables.
+moisture model to approximate these conditions, assigning scenarios                    The study highlights several critical challenges that must be ad-
+                                                                                   dressed to improve wildfire modeling in the Alps, particularly those
+in FlamMap and using fuel moisture time series in PROPAGATOR.
+                                                                                   related to the availability and accuracy of input data. In this complex
+However, obtaining this information in a more detailed and spatially
+                                                                                   environment, detailed wind dynamics, fuel moisture data, vegetation
+distributed manner would allow for better calibration and configuration
+                                                                                   information, and records of firefighting operations are often scarce
+of the simulation models, thereby developing more reliable scenarios
+                                                                                   or spatially inconsistent, which limits the capacity to parameterize
+for wildfire risk management.                                                      and validate models effectively. Addressing these issues requires not
+    The Alpine context is also characterized by a high degree of land-             only expanding and densifying local monitoring networks but also
+scape heterogeneity, which results in markedly different fire dynam-               improving the fine-scale modeling of meteorological and fuel-related
+ics depending on the vegetation cover and its conditions. Updating                 variables, together with the development of a comprehensive, standard-
+and producing maps that include essential information for simulations              ized database of past wildfire events to support model calibration and
+– such as fuel models – would not only accelerate the preparation                  validation.
+of simulations either during planning or emergency phases, but also                    Refining simulation tools adapted to the Alpine context would
+significantly improve their accuracy.                                              enhance preparedness for future events in the region. Furthermore,
+    In all three case studies, implementing firefighting activities was            studies like the one proposed in this paper can provide stakeholders
+challenging due to difficulties in obtaining accurate information. The             with valuable guidance on selecting appropriate tools for the various
+                                                                                   phases of the wildfire risk management cycle.
+impact of these activities is evident in the Sonico and Tirano case
+studies, where the barriers used to simulate ground operations altered
+                                                                                   CRediT authorship contribution statement
+fire spread. Firefighting efforts carried out by helicopters were not
+considered in the simulation due to the FlamMap model’s inability to
+                                                                                       Luca Malanchini: Writing – original draft, Visualization, Methodol-
+effectively represent such interventions. The differences observed in the          ogy, Formal analysis, Data curation, Conceptualization. Nicolò Perello:
+lateral section of the Tirano fire (see Fig. 2a) are likely attributable           Writing – review & editing, Visualization, Software, Methodology, For-
+to aerial suppression activities. The capability of PROPAGATOR to                  mal analysis, Data curation. Andrea Trucchia: Supervision, Concep-
+simulate a broader range of firefighting operations confirms its pre-              tualization. Lorenzo M.W. Rossi: Writing – review & editing, Super-
+dominant role in emergency response and underscores the importance                 vision, Conceptualization. Paolo Fiorucci: Writing – review & edit-
+of accurately recording suppression efforts.                                       ing, Supervision. Giorgio Vacchiano: Writing – review & editing,
+    Despite the limitations described above and possibilities of refine-           Supervision.
+ments, the two models have proven to be effective tools for simulating
+wildfires in the Alpine context, each with a primary role in different             Declaration of competing interest
+phases of the wildfire risk management cycle. However, during the
+preparation and simulation of these case studies, some critical issues                 The authors declare that they have no known competing finan-
+emerged, mainly related to the availability of essential data for analysis,        cial interests or personal relationships that could have appeared to
+                                                                                   influence the work reported in this paper.
+on which it is important to focus future efforts. Improving the moni-
+toring and mapping of wind, fuel moisture, and vegetation is essential
+                                                                                   Acknowledgments
+to increase the accuracy and reliability of wildfire simulations (Rios
+et al., 2014). This includes developing high-resolution meteorological
+                                                                                      We thank Dario Entrade, director of firefighting operations for the
+forecasting systems and producing updated, spatially explicit fuel maps            Comunità Montana della Val Camonica, and Alessandro Gervasini, from
+tailored to Alpine conditions. Building structured databases of past               the Agricultural and Forestry Sector of the Comunità Montana della
+wildfire events and suppression activities would support better model              Valtellina di Tirano, for their valuable insights of the wildfire events.
+calibration and validation. Such resources would enable more robust                We thank Rachele Gamba, a researcher from the University of Turin,
+scenario development for both planning and emergency response and                  who collaborated with the University of Milan to create the fuel map for
+facilitate the refinement of empirical and semi-empirical simulation               Lombardia used in the FlamMap simulations. The research activities
+tools.                                                                             described in this paper have been partially funded by the italian ‘‘Piano
+
+                                                                              11
+L. Malanchini et al.                                                                                                                               Environmental Challenges 21 (2025) 101357
+
+
+Nazionale di Ripresa e Resilienza - PNRR’’, Missione 4 Componente                                   Finney, M.A., 2006. An overview of FlamMap fire modeling capabilities. In: Andrews,
+2, Investimento 1.3 - D.D. 1243 2/8/2022, project RETURN ‘‘Multi                                         Patricia L.; Butler, Bret W., Comps. 2006. Fuels Management-how To Measure
+                                                                                                         Success: Conference Proceedings. 28-30 March 2006; Portland, OR. Proceedings
+risk science for resilient communities under a changing climate’’ -
+                                                                                                         RMRS-P-41. Fort Collins, CO: US Department of Agriculture, Forest Service, Rocky
+Partenariato Esteso PE00000005 - M.I.U.R Ministry of Education and                                       Mountain Research Station. P. 213-220. 41.
+Merit. CUP B57G22001180002                                                                          Ganteaume, A., Barbero, R., Jappiot, M., Maillé, E., 2021. Understanding future changes
+                                                                                                         to fires in Southern Europe and their impacts on the wildland-urban interface. J.
+                                                                                                         Saf. Sci. Resil. 2 (1), 20–29. http://dx.doi.org/10.1016/j.jnlssr.2021.01.001.
+Appendix A. Supplementary data                                                                      Hetzer, J., Forrest, M., Ribalaygua, J., Prado-López, C., Hickler, T., 2024. The fire
+                                                                                                         weather in Europe: large-scale trends towards higher danger. Environ. Res. Lett.
+    Supplementary material related to this article can be found online                                   19 (8), 084017.
+                                                                                                    Italian Civil Protection Department, CI.M.A. Research Foundation, 2014. The dewetra
+at https://doi.org/10.1016/j.envc.2025.101357.
+                                                                                                         platform: A multi-perspective architecture for risk management during emergencies.
+                                                                                                         In: Hanachi, C., Bénaben, F., Charoy, F. (Eds.), Information Systems for Crisis
+Data availability                                                                                        Response and Management in Mediterranean Countries. Springer International
+                                                                                                         Publishing, Cham, pp. 165–177.
+                                                                                                    Jones, M.W., Kelley, D.I., Burton, C.A., Di Giuseppe, F., Barbosa, M.L.F., Brambleby, E.,
+    Data will be made available on request.                                                              Hartley, A.J., Lombardi, A., Mataveli, G., McNorton, J.R., et al., 2024. State of
+                                                                                                         wildfires 2023–2024. Earth Syst. Sci. Data 16 (8), 3601–3685.
+                                                                                                    Khalaf, M.W.A., Jouibary, S.S., Jahdi, R., 2024. Performance analysis of ConvLSTM,
+References                                                                                               FlamMap, and CA algorithms to predict wildfire spread in Golestan National Park,
+                                                                                                         NE Iran. Environ. Model. Assess. 29 (3), 489–502.
+                                                                                                    Kirschner, J., Ascoli, D., Moore, P., Clark, J., Calvani, S., Boustras, G., 2024. Governance
+Alexandridis, A., Russo, L., Vakalis, D., Bafas, G., Siettos, C., 2011. Wildland fire spread
+                                                                                                         drivers hinder and support a paradigm shift in wildfire risk management in Italy.
+     modelling using cellular automata: evolution in large-scale spatially heterogeneous
+                                                                                                         Reg. Environ. Chang. 24 (13), http://dx.doi.org/10.1007/s10113-023-02174-4.
+     environments under fire suppression tactics. Int. J. Wildland Fire 20 (5), 633–647.
+                                                                                                    Lantero, F., Du Jardin, P., Pesle, F., Parodi, V., Vergante, S., Galardi, M., 2022. The
+Anderson, H.E., 1982. Aids to Determining Fuel Models for Estimating Fire Behavior.
+                                                                                                         medcoopfire project. Environ. Sci. Proc. 17 (1), 102. http://dx.doi.org/10.3390/
+     U.S. Department of Agriculture, Forest Service, Intermountain Forest and Range
+                                                                                                         environsciproc2022017102.
+     Experiment Station, http://dx.doi.org/10.2737/int-gtr-122.
+                                                                                                    Lombardia, R., 2024. Piano regionale delle attività di prevenzione e lotta attiva contro
+Arrogante-Funes, F., Mouillot, F., Moreira, B., Aguado, I., Chuvieco, E., 2024. Mapping
+                                                                                                         gli incendi boschivi 2024.
+     and assessment of ecological vulnerability to wildfires in Europe. Fire Ecol. 20 (1),
+                                                                                                    López-De-Castro, M., Trucchia, A., di Cella, U.M., Fiorucci, P., Cardillo, A., Pagnini, G.,
+     98.
+                                                                                                         2024. Fire-spotting modelling in operational wildfire simulators based on cellular
+Ascoli, D., Moris, J., Marchetti, M., Sallustio, L., 2024. Land use change towards forests               automata: A comparison study. Agricult. Forest. Meterol. 350, 109989.
+     and wooded land correlates with large and frequent wildfires in Italy. Ann. Silvic.
+                                                                                                    Mantero, G., Morresi, D., Marzano, R., Motta, R., Mladenoff, D., Garbarino, M., 2020.
+     Res. 46 (2), 177–188. http://dx.doi.org/10.12899/asr-2264.
+                                                                                                         The influence of land abandonment on forest disturbance regimes: a global review.
+Berardi, D., Galuppi, M., Libertà, A., Lombardi, M., 2025. Forecasting of wildfire                       Landsc. Ecol. 35, 2723–2744. http://dx.doi.org/10.1007/s10980-020-01147-w.
+     probability occurrence: Case study of a Mediterranean Island of Italy. Land (ISSN:
+                                                                                                    Maringer, J., Ascoli, D., Küffer, N., Schmidtlein, S., Conedera, M., 2016. What
+     2073-445X) 14 (2), http://dx.doi.org/10.3390/land14020277, URL https://www.
+                                                                                                         drives European beech (Fagus sylvatica L.) mortality after forest fires of varying
+     mdpi.com/2073-445X/14/2/277.
+                                                                                                         severity? Forest Ecol. Manag. 368, 81–93.
+Blasi, C., Capotorti, G., Copiz, R., Guida, D., Mollo, B., Smiraglia, D., Zavattero, L.,            Mauri, L., Taccaliti, F., Lingua, E., 2024. Modeling the interaction between wildfires
+     2019. Terrestrial Ecoregions of Italy. Map and Explanatory notes. Firenze Global                    and windthrows: A pilot case study for Italian Alps. J. Environ. Manag. (ISSN:
+     Map S.r.l., ISBN: 978-88-97091-04-2.                                                                0301-4797) 371, 123150. http://dx.doi.org/10.1016/j.jenvman.2024.123150, URL
+Cane, D., Wastl, C., Barbarino, S., Renier, L., Schunk, C., Menzel, A., 2013. Projection                 https://www.sciencedirect.com/science/article/pii/S0301479724031360.
+     of fire potential to future climate scenarios in the alpine area: some methodological          Mauri, L., Taccaliti, F., Lingua, E., 2025. Integrating LiDAR data and semi-empirical
+     considerations. Clim. Change 119, 733–746.                                                          fire model in mapping the interaction between wildfire and bark beetle outbreak.
+Chuvieco, E., Yebra, M., Martino, S., Thonicke, K., Gómez-Giménez, M., San-Miguel-                       In: Borgogno-Mondino, E., Zamperlin, P. (Eds.), Geomatics for Green and Digital
+     Ayanz, J., Oom, D., Velea, R., Mouillot, F., Molina, J., Miranda, A., Lopes, D.,                    Transition. Springer Nature Switzerland, Cham, pp. 238–251.
+     Salis, M., Bugaric, M., Sofiev, M., Kadantsev, E., Gitas, I., Stavrakoudis, D.,                Mitsopoulos, I., Mallinis, G., Arianoutsou, M., 2015. Wildfire risk assessment in a typical
+     Eftychidis, G., Bar-Massada, A., Neidermeier, A., Pampanoni, V., Pettinari, M.,                     mediterranean wildland–urban interface of Greece. Environ. Manag. 55, 900–915.
+     Arrogante-Funes, F., Ochoa, C., Moreira, B., Viegas, D., 2023. Towards an integrated           Mohammad Beyki, S., Gameiro Lopes, A., Laím, L., Santiago, A., 2025. Comparative
+     approach to wildfire risk assessment: When, where, what and how may the                             analysis of wildfire simulation tools: Discrepancies in rothermel model-based
+     landscapes burn. Fire 6 (5), 215. http://dx.doi.org/10.3390/fire6050215.                            software under varying wind and slope conditions. Int. J. Disaster Risk Reduct.
+Consortium, A., 2019. EnhANcing emergency management and response to extreme                             (ISSN: 2212-4209) 121, 105431. http://dx.doi.org/10.1016/j.ijdrr.2025.105431,
+     WeatHER and climate events (ANYWHERE). http://dx.doi.org/10.3030/700099,                            URL https://www.sciencedirect.com/science/article/pii/S2212420925002559.
+     (Accessed 31 December 2019).                                                                   Mollocana-Lara, J.G., Obando-Proaño, K.J., Córdova-Luspa, B.G., 2025. Wildfire
+Consortium, S., 2020. Structured approaches for forest fire emergencies in resilient                     mitigation and evaluation of firebreaks through FlamMap simulations in high-
+     societies (SAFERS). http://dx.doi.org/10.3030/869353.                                               susceptibility areas of the metropolitan district of quito. Fire 8 (5), 189. http:
+Copernicus Land Monitoring Service, 2019. Tree cover density 2018, raster 10                             //dx.doi.org/10.3390/fire8050189.
+     m.     http://dx.doi.org/10.2909/486f77da-d605-423e-93a9-680760ab6791,             URL         Müller, M., Vilà-Vilardell, L., Vacik, H., 2020. Forest fires in the alps – state of
+     https://sdi.eea.europa.eu/catalogue/copernicus/api/records/486f77da-d605-423e-                      knowledge, future challenges and options for an integrated fire management.
+     93a9-680760ab6791?language=all, (Accessed 26 April 2025).                                           EUSALP. Action Group 8..
+Doerr, S., Santín, C., 2016. Global trends in wildfire and its impacts: Perceptions                 Oliveira, S., Rocha, J., Sá, A., 2021. Wildfire risk modeling. Curr. Opin. Environ. Sci.
+     versus realities in a changing world. Philos. Trans. R. Soc. B 371 (1696), http:                    Heal. 23, 100274.
+     //dx.doi.org/10.1098/rstb.2015.0345.                                                           Perello, N., Trucchia, A., Baghino, F., Asif, B.S., Palmieri, L., Rebora, N., Fiorucci, P.,
+Duane, A., Castellnou, M., Brotons, L., 2021. Towards a comprehensive look at global                     2024. Cellular automata-based simulators for the design of prescribed fire plans:
+     drivers of novel extreme wildfire events. Clim. Change 165 (43), http://dx.doi.org/                 the case study of Liguria, Italy. Fire Ecol. 20 (1), 7.
+     10.1007/s10584-021-03066-4.                                                                    Perello, N., Trucchia, A., D’Andrea, M., Meschi, G., Ghasemiazma, F., Degli Esposti, S.,
+Dupire, S., Curt, T., Bigot, S., Fréjaville, T., 2019. Vulnerability of forest ecosystems to             Fiorucci, P., Ferraris, L., Gollini, A., Negro, D., 2025. Fuel-aware forest fire danger
+     fire in the French Alps. Eur. J. For. Res. 138 (5), 813–830.                                        rating system RISICO: a comparative study for Italy. Int. J. Wildland Fire 34,
+Elia, M., Giannico, V., Ascoli, D., Argañaraz, J., D’Este, M., Spano, G., Lafortezza, R.,                WF25023. http://dx.doi.org/10.1071/WF2502.
+     Sanesi, G., 2022. Uncovering current pyroregions in Italy using wildfire metrics.              Popescu, A., Paulson, A., Christianson, A.C., Sullivan, A.S., Tulloch, A., Bilbao, B.,
+     Ecol. Process. 11, 15. http://dx.doi.org/10.1186/s13717-022-00360-6.                                Mathison, C., Robinson, C., Ganz, D., Nangoma, D., et al., 2022. Spreading
+Encinas, L.H., White, S.H., Del Rey, A.M., Sánchez, G.R., 2007. Modelling forest fire                    like wildfire: The rising threat of extraordinary landscape fires-a rapid response
+     spread using hexagonal cellular automata. Appl. Math. Model. 31 (6), 1213–1227.                     assessment.
+European Environment Agency, 2020. CORINE Land Cover (CLC) 2018, Version                            Regione Piemonte, 2021. Piano regionale per la programmazione delle attività di
+     2020_20u1. Copernicus Land Monitoring Service, European Environment Agency,                         previsione, prevenzione e lotta attiva contro gli incendi boschivi 2021 - 2025.
+     https://land.copernicus.eu/pan-european/corine-land-cover/clc2018.                             Richardson, D., Black, A., Irving, D., Matear, R., Risbey, J., 2022. Global increase in
+Finney, M.A., 2002. Fire growth using minimum travel time methods. Can. J. Forest                        wildfire potential from compound fire weather and drought. Npj Clim. Atmos. Sci.
+     Res. 32 (8), 1420–1424.                                                                             5, 23. http://dx.doi.org/10.1038/s41612-022-00248-4.
+
+
+                                                                                               12
+L. Malanchini et al.                                                                                                                                Environmental Challenges 21 (2025) 101357
+
+
+Rios, O., Jahn, W., Rein, G., 2014. Forecasting wind-driven wildfires using an inverse             Sullivan, A., 2009b. Wildland surface fire spread modelling, 1990-2007. 1: Physical and
+     modelling approach. Nat. Hazards Earth Syst. Sci. 14 (6), 1491–1503.                               quasi-physical models. Int. J. Wildland Fire 18 (4), 349–368. http://dx.doi.org/10.
+Rothermel, R.C., 1972. A mathematical Model for Predicting Fire Spread in Wildland                      1071/WF06143.
+     Fuels. vol. 115, Intermountain Forest & Range Experiment Station, Forest Service,             Tarquini, S., Isola, I., Favalli, M., Mazzarini, F., Bisson, M., Pareschi, M.T., Boschi, E., et
+     US . . . .                                                                                         al., 2007. TINITALY/01: a new triangular irregular network of Italy. Ann. Geophys.
+Salis, M., Arca, B., Alcasena, F., Arianoutsou, M., Bacciu, V., Duce, P., Duguy, B.,                    50 (3), 407–425.
+     Koutsias, N., Mallinis, G., Mitsopoulos, I., Moreno, J.M., Pérez, J.R., Urbieta, I.R.,        Trucchia, A., D’Andrea, M., Baghino, F., Fiorucci, P., Ferraris, L., Negro, D., Gollini, A.,
+     Xystrakis, F., Zavala, G., Spano, D., 2016. Predicting wildfire spread and behaviour               Severino, M., 2020. PROPAGATOR: An operational cellular-automata based wildfire
+     in mediterranean landscapes. Int. J. Wildland Fire 25 (10), 1015–1032. http:                       simulator. Fire 3 (3), 26.
+     //dx.doi.org/10.1071/WF15081.                                                                 Trucchia, A., D’Andrea, M., Baghino, F., Perello, N., Rebora, N., Fiorucci, P., 2024.
+San-Miguel-Ayanz, J., Durrant, T., Boca, R., Libertà, G., Branco, A., DE, R., Ferrari, D.,              Experiences and lessons learnt in wildfire management with PROPAGATOR, an op-
+     Maianti, P., ARTES, V.T., PFEIFFER, H., et al., 2018. Forest fires in europe, middle               erational cellular-automata-based wildfire simulator. Responding Extrem. Weather.
+     east and north africa 2018.                                                                        Events 49–76.
+Sapountzaki, K., Wanczura, S., Casertano, G., Greiving, S., Xanthopoulos, G., Ferrara, F.,         Trucchia, A., Meschi, G., Fiorucci, P., Gollini, A., Negro, D., 2022. Defining wildfire
+     2011. Disconnected policies and actors and the missing role of spatial planning                    susceptibility maps in Italy for understanding seasonal wildfire regimes at the
+     throughout the risk management cycle. Nat. Hazards 59, 1445–1474. http://dx.                       national level. Fire 5 (1), 30. http://dx.doi.org/10.3390/fire5010030.
+     doi.org/10.1007/s11069-011-9843-3.                                                            Verde, J., Torres, J., Marques, R., Franc, R., Flores, E., Casartelli, V., Marengo, A.,
+Scott, J.H., 2005. Standard Fire Behavior Fuel Models: a Comprehensive Set for Use                      Melinato, S., Mysiak, J., Salpina, D., Brǎilescu, C., Marteil, E., Sorensen, J.,
+     with Rothermel’s Surface Fire Spread Model. US Department of Agriculture, Forest                   Spitoni, G., 2024. Wildfire Peer Review Report: Italy 2024. Technical Report,
+     Service, Rocky Mountain Research Station.                                                          UCPM, http://dx.doi.org/10.25424/cmcc-xx3k-we21.
+Seidl, R., Thom, D., Kautz, M., Martin-Benito, D., Peltoniemi, M., Vacchiano, G.,                  Yavuz, M., Sağlam, B., Küçük, Ö., Tüfekçioğlu, A., 2018. Assessing forest fire behavior
+     Wild, J., Ascoli, D., Petr, M., Honkaniemi, J., et al., 2017. Forest disturbances                  simulation using FlamMap software and remote sensing techniques in western Black
+     under climate change. Nat. Clim. Chang. 7 (6), 395–402.                                            Sea Region, Turkey. Kastamonu Univ. J. For. Fac. 18 (2), 171–188.
+Sullivan, A., 2009a. Wildland surface fire spread modelling, 1990–2007. 2: Empirical               Zumbrunnen, T., Bugmann, H., Conedera, M., Bürgi, M., 2009. Linking forest fire
+     and quasi-empirical models. Int. J. Wildland Fire 18 (4), 369–386. http://dx.doi.                  regimes and climate—a historical analysis in a dry inner alpine valley. Ecosystems
+     org/10.1071/WF06142.                                                                               12, 73–86.
+
+
+
+
+                                                                                              13
+

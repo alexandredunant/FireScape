@@ -1,0 +1,1414 @@
+PAGE 1
+RESEARCH PAPER 
+https://doi.org/10.1071/WF24160 
+Assessing the suppr ession difficulty of wildland fir es f or initial 
+a t tack r esponse 
+Adrián Cardil
+A,B,C,
+*
+, Adrián Jiménez-Ruano
+A
+, Santiago Monedero
+A
+, Phillip SeLegue
+D
+, Macarena Ortega
+A,E
+,  
+Raúl Quilez
+A
+, Jeff Fuentes
+D
+, Geoff Marshall
+D
+, Robert Clark
+D
+, Tim Chavez
+D
+, Sergio de-Miguel
+B,C
+,  
+Tomás Quiñones
+A
+, Fernando Bezares
+A
+, Scott Purdy
+A
+, Kristen Allison
+F
+, Tim Metzger
+A
+, Chris Waters
+A
+,  
+Midhun Mohan
+G 
+and Joaquín Ramirez
+A,H,
+*  
+ABS TRA CT 
+Background. Fire simulation frameworks and decision support systems (DSSs) are critical tools in 
+fire response dispatching that need to consider factors influencing fire spread and suppression 
+difficulty while provide easily interpreted indexes. Aims. We present a new user-friendly Initial 
+Attack Assessment (IAA) index, ranging from 1 to 5, designed to quickly and efficiently evaluate 
+wildfires from their onset. Methods. We used 26,907 California’s wildfire ignitions to run 
+automatic simulations. The Fire Behavior Index (FBI), Terrain Difficulty Index (TDI) and IAA were 
+determined using size-based and fire behavior outputs from each simulation. Initial attack success 
+was evaluated by comparing simulations with real fire sizes. Binary models were calibrated and 
+validated to predict success based on IAA, FBI and TDI, and suppression response time. K ey 
+results. The IAA effectively identified fires exceeding suppression capacity. Higher levels of IAA, 
+FBI and TDI were associated with reduced success odds, IAA=5 giving a 90% decrease in the odds 
+of initial attack success. Response time and its interaction with terrain difficulty were also 
+influential. Conclusions. The IAA is a powerful index to feed DSSs, prioritizing fire response 
+and predicting the probability of control at a small size. Implications. This ensures practicality for 
+end-users, allowing agencies and utilities to better respond to wildfires.  
+K e ywor ds: decision-making, dynamic wildfire risk modeling, FBI, Fire Behavior Index, fire 
+simulators, fire suppression, IAA, Initial Attack Assessment, suppression difficulty, TDI, Terrain 
+Difficulty Index, wildland fire. 
+Intr oduction 
+Wildfires are a global phenomenon with remarkable impacts on both the environment 
+and economic realms (Molina-Terrén et al. 2019). In the context of changing fire regimes 
+and more intense fires due to climate change (Duane et al. 2021), the importance of 
+decision support systems (DSSs) aiming to aid fire suppression is increasing worldwide, 
+particularly in the United States (Fillmore and Paveglio 2023). The California 
+Department of Forestry and Fire Protection (CAL FIRE) has developed advanced DSSs 
+since 2014. These include the Resource Deployment Index (RDI), a forecasting system 
+that helps to optimize resource allocation before fires escalate, the Resource Deployment 
+Strategy 2 (RDS 2), a real-time tool used during active incidents to improve deployment 
+decisions, and the Incident Support Analysis (ISA), which provides incident-specific 
+analysis to guide decision-making, ensuring that operations are aligned with the situation 
+needs. These systems incorporate geospatial data, graphics coupled with operational fire 
+behavior indicators such as fire ignition probability, behavior (intensity, rate of spread), 
+fire simulations and weather forecasts (all these elements are integrated in Technosylva’s 
+Wildfire Analyst (WFA)). This allows CAL FIRE and other agencies to assess wildfire 
+dynamic risks effectively. 
+For full list of author affiliations and 
+declarations see end of paper 
+*Corr espondence to: 
+Adrián Cardil 
+Technosylva Inc, La Jolla, CA, USA 
+Email: acardil@technosylva.com  
+Joaquín Ramirez 
+Technosylva Inc, La Jolla, CA, USA 
+Email: jramirez@technosylva.com  
+Rece ived: 23 September 2024 
+Acc epted: 29 October 2025 
+Published: 11 December 2025 
+Cite this: Cardil A et al. (2025) Assessing the 
+suppression difficulty of wildland fires for 
+initial attack response. International 
+Journal of Wildland Fire 34, WF24160.  
+doi:10.1071/WF24160 
+© 2025 The Author(s) (or their employer(s)). 
+Published by CSIRO Publishing on behalf of 
+IAWF.  
+This is an open access article distributed 
+under the Creative Commons Attribution- 
+NonCommercial-NoDerivatives 4.0 
+International License (CC BY-NC-ND) 
+OPEN ACCESS  
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 2
+DSSs operate across several phases of fire management 
+including prevention, preparedness, detection, response and 
+suppression, and recovery. Operational fire risk assessments 
+enable forecasting of areas at risk, facilitating early warning 
+and pre-organization of firefighting units on the territory 
+(Calkin et al. 2011; Brown et al. 2021; Taylor and Nadeem 
+2022), and informing decision-making in the utility sector to 
+mitigate ignition potential from electrical infrastructure 
+(Technosylva 2025). Estimation of potential fire behavior 
+is critical to assess fire risk and evaluate the probability of 
+fires becoming large at the beginning of any fire events. In 
+this sense, Initial Attack (IA) refers to fires that can be 
+contained by the first resources dispatched, without a sub -
+stantial augmentation and within the first several hours of 
+the reported time (Merrill and Alexander 1987; Rashidi et al. 
+2018). Generally, early actions may be sizing up, patrolling, 
+monitoring, holding action, or aggressive IA (National 
+Wildfire Coordinating Group 2014). Efforts involved in the 
+IA are coordinated by an incident commander, who sets fire 
+spread containment objectives. In Mediterranean regions, 
+fires that escape IA are those that result in the largest burned 
+areas (Rodrigues et al. 2019). These fires have the potential 
+to cause severe impacts on the environment, infrastructure 
+and human lives, and they frequently incur the highest 
+economic costs (Rideout et al. 2011; Rodrigues et al. 2020;  
+Sakellariou et al. 2023). Recently, the rise of megafires has 
+highlighted the need for better understanding and manage -
+ment of incipient wildfires (Varga et al. 2022). In this con -
+text, it has become essential to build more explicit indexes 
+that group together the most significant factors in incipient 
+fires aiming to explain the potential for a fire to exceed 
+initial suppression attack. 
+IA success can be measured using different metrics such 
+as final fire size and time to control fire spread, among 
+others (Cardil et al. 2019). In the United States, CAL FIRE 
+established a fire containment threshold objective of 
+approximately 4 ha (10 acres) for all unplanned fires until 
+under control during the first burning period (State of 
+California, unpubl. data). Indeed, their target for a success -
+ful IA is high (95% of incidents). However, the substantial 
+impact of only 3% or fewer of fires – which cause most of the 
+impact – underlines the importance of this metric. Factors 
+influencing fire suppression success in the IA are diverse and 
+several studies have addressed this topic. Cardil et al. (2019) 
+pointed out that fuel types, ignition cause and fire intensity 
+significantly influenced IA success in eastern Canada.  
+Rodrigues et al. (2019) stated that early detection, ground 
+accessibility and aerial support governed the broad spatial 
+pattern of fire containment probability. Other authors 
+found that situational information about a fire obtained 
+during IA provides better estimates of its initial contain -
+ment success likelihood compared with models relying 
+only on initial report data (Wheatley et al. 2022). In gen -
+eral terms, it seems that weather conditions, travel delay, 
+slope and distance from roads are factors that allow 
+acceptable discrimination of those wildfires contained to 
+~4.9 hectares(Plucinski et al. 2023). 
+Here, we proposed an Initial Attack Assessment index 
+(IAA) as a dynamic risk indicator easily comprehensible by 
+operational end-users. It synthesizes the wildfire risk model -
+ing implemented in Technosylva’s WFA. Since its inception 
+in 2019, fire agencies, electrical utilities and the insurance 
+sector have employed the IAA index in both America and 
+Europe. Its main advantage is that it brings together multiple 
+factors in a single numerical and chromatic category, so that 
+firefighting brigades already have an estimation of what to 
+expect before they even see the fire. The IAA is the result of 
+collaboration between CAL FIRE and Technosylva aiming to 
+address California’s challenging wildfires, with over 4 years of 
+implementation demonstrating its value through extensive 
+operational use. It was built based on expert criteria to sum -
+marize terrain difficulty and fire behavior metrics into a single 
+index valuable for preparedness, dispatching, response and 
+incident prioritization. Specifically, it aims to evaluate the 
+difficulties anticipated by the response teams during the first 
+1–2 h after ignition time, being used by CAL FIRE to prepare 
+the most appropriate emergency resources for dispatching and 
+responding in the early phases of wildfires. 
+In this work, we sought to evaluate IAA index performance 
+in terms of likelihood of IA success. Therefore, we explored 
+how different fire behavior metrics and difficulty indices 
+relate to IA outcomes. We collected and simulated a total of 
+26,907 wildfires retrieved from the Integrated Reporting of 
+Wildfire Information (IRWIN) and examined the response 
+time of fire suppression resources deployed by CAL FIRE for 
+9886 incidents. Our main objectives were: (a) assess the odds 
+of IA success employing the proposed IAA index; (b) estimate 
+wildfire potential when the IA failed; (c) explore the strength 
+and sign of the associations between IA and the IAA levels and 
+fire-terrain related sub-indices; (d) evaluate the contribution 
+of response time of suppression resources in the prediction of 
+IA success or fail; and (e) demonstrate the performance of the 
+IAA index with recent incidents in other areas. 
+Ma terials and methods 
+Study area 
+The study area encompasses the entire territory of the state 
+of California, USA. Over the last decades, wildfires signifi -
+cantly impacted both forested lands and wildland–urban 
+interface areas within this region (Fig. 1). The main vegeta -
+tion types are shrublands, forests and herbaceous according 
+to the United States National Land Cover Database (NLCD), 
+representing 39.0, 18.6 and 13.5% of the territory, respec -
+tively (Jin et al. 2019). The region is characterized by 
+Mediterranean climate, with two main variations (California 
+Department of Fish and Wildlife 2021): (a) a temperate cli -
+mate along the Pacific coast and the western face of the Sierra 
+A. Cardil et al.                                                                                      International Journal of Wildland Fire 34 (2025) WF24160 
+2 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 3
+Nevada Ranges, and (b) more continental conditions in the 
+hinterlands characterized by hotter summers and colder 
+winters. In both areas, precipitation is concentrated during 
+winter. In addition, there are north-to-south increasing and 
+decreasing gradients in annual temperature and precipita -
+tion, respectively. From September to May, the dry and 
+strong Diablo and Santa Ana winds typically come from the 
+Great Basin towards the west, having a very marked desic -
+cating effect, especially in early fall (autumn), when they 
+produce great temperatures, noticeable drops in relative 
+humidity and high wind gusts (Raphael 2003; Mass and 
+Ovens 2019). As a result, wildfire risk and fire behavior 
+increase considerably. 
+Da ta 
+Fire da ta 
+Wildfire data in the period 2020–2023 were retrieved 
+from a total of 26,907 fire records in the IRWIN interagency 
+database, which collects and reports fire events with a 
+unique identification code for both federal and non-federal 
+fires (Picotte et al. 2020). Its main advantage is that it 
+facilitates the exchange of data between many wildland fire 
+applications, reducing redundant data, and improving data 
+consistency, accuracy and availability (National Interagency 
+Fire Center 2023). Fire incidents reported across the US 
+provide detailed information (Sanchez et al. 2021) and we 
+selected the variables shown in Table 1. 
+CAL FIRE suppr ession da ta 
+We included an exploratory analysis of the response time of 
+fire suppression resources deployed by the CAL FIRE agency 
+for 9886 incidents in the period 2020–2023. The fields 
+included were: Incident Number (i.e. same ID as from 
+IRWIN), incident date, name, final burned area, coordinates, 
+and two date–time fields (alarm date/time and first resource 
+on scene). From these last two fields, we computed a new 
+time variable: response time (RT) as the number of minutes 
+between the ‘AlarmDateTime’ and ‘FirstResourceOnScene’ 
+fields, representing the time between a fire alert being 
+received and the arrival of the first resources at the ignition 
+site (Arienti et al. 2006). It should be noted that a fire may 
+have started before the alarm was issued, which could affect 
+our results. Prior to inclusion in the models, RT required a 
+logarithmic transformation because its distribution was left- 
+skewed. 
+WF A automa ted simula tions and Initial At tack 
+Assessment index co mputat ion 
+We automatically simulated fire incidents with weather 
+forecasts and diverse semi-empirical fire spread models 
+implemented in WFA. We employed Rothermel’s (1972) 
+surface fire spread model, Van Wagner’s (1977) crown initi -
+ation fire model, Rothermel’s (1991) crown spread model,  
+Albini’s (1976) spotting model, Andrews’ (2012) conversion 
+factor of wind profile and Finney’s (2002) Minimum Travel 
+IAA index
+1 2
+200100
+N
+0 km 200100
+N
+0 km
+3 4
+ 40 400 4000 >4000
+5
+Hectares 
+burned (I
+A failed)
+Californi
+a state b
+orders
+Fig. 1. Initial Attack Assessment index (IAA) for Californian fires retrieved by IRWIN from 2020 to 2023 
+(n = 26,907) considering the initial attack success (left: success (fire size <4 ha); right: fail (fire size >4 ha). 
+Wildfires were independently simulated using WFA to obtain their corresponding IAA. The actual reported fire 
+size is represented by graduated circles.   
+www.publish.csiro.au/wf                                                                          International Journal of Wildland Fire 34 (2025) WF24160 
+3 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 4
+Time algorithm. Regarding the surface fuel types and 
+canopy characteristics, Technoslyva Inc. generated several 
+layers (one per year at the start of the fire season) at 30-m 
+spatial resolution using the Scott and Burgan (2005) fuel 
+family improved with custom fuel types for timber areas (see  
+Cardil et al. (2023) for more details). We retrieved hourly 
+gridded weather data at 2 km employing an improved version 
+of the Weather Research and Forecasting (WRF) model. These 
+high-resolution mesoscale weather predictions have been 
+applied in California’s daily fire risk, rainfall and prevailing 
+wind events (Brewer and Clements 2020). The WRF forecast 
+serves to drive fire spread models and its configuration has 
+been validated specifically for high-impact fire weather sce -
+narios (Carpenter et al. 2024). It is initialized daily using the 
+Global Forecast System, minimizing model uncertainty or 
+drift that can be introduced by inaccurate boundary condi -
+tions. Mean wind speed and direction at 10 m height above 
+the terrain were employed. For dead Fuel Moisture Content 
+(FMC) calculation, we followed Nelson’s (2000) method 
+using weather data, which included a soil moisture correc -
+tion. In turn, live FMC was computed using machine learning 
+models trained with the US National Fuel Moisture Database 
+(WFAS 2022; Cardil et al. 2023). 
+The IAA was computed using two different sub-indices: 
+Fire Behavior Index (FBI) and Terrain Difficulty Index (TDI); 
+see Supplementary Materials S2 and S3 for details. The IAA, 
+FBI and TDI are represented by five categories, from 1 to 5 
+(Tables 2 and 3). The higher the value, the more active the 
+fire behavior, the more complex the terrain, and thus the 
+more likely the IA is to fail, posing a potential threat. 
+Modeling proc ess 
+The different statistical modeling approaches employed in 
+this study to assess the relationships between IA success and 
+the proposed indexes are shown in Fig. 2. Firstly, we fitted a 
+logistic Generalized Linear Model (GLM) using the binomial 
+family and setting the binary dependent variable, using the 
+threshold of 4 ha burned as a wildfire successfully con -
+tained. We included the five IAA classes as predictors (i.e. 
+IA Success–Failure ~ IAA levels) and employed 26,907 real fire 
+incidents reported in California from 2020 to 2023. We also 
+compared the IAA index between wildfires reported by CAL 
+FIRE and other agencies to evaluate differences in IA success for 
+the different IAA categories. In addition, another binomial 
+univariate GLM was adjusted by incorporating the simulated 
+sub-indices employed to compute IAA index (FBI and TDI) to 
+evaluate the strength and sign of their association with the 
+response variable (i.e. IA Success–Failure ~ TDI + FBI). 
+Finally, we conducted an additional GLM to analyze the effect 
+T able 1. Description of the variables selected from the IRWIN 
+dataset and fire-related variables from fire simulations using WFA.    
+Code Data element description   
+IncidentCode Unique fire identifier in string for mat 
+IncidentName Name of the fire incident 
+ReportedTimest amp Fire disco v ery da te/ time with the forma t 
+Y-M-D HH:MM:SS 
+IncidentLocationX Ignition loca tion – latitude in UTM 
+Merca tor (m) 
+IncidentLocationY Ignition loca tion – longitude in UTM 
+Merca tor (m) 
+DailyAcres A measure of area burned reported for a fire 
+Disco v eryAcres An estimation of area burning on the 
+disco very of the fire 
+IAA Initial Attack Assessment index (from 1 to 5) 
+FBI Fire Behavior Index (from 1 to 5) 
+TDI_2h Average Terrain Difficulty Index at 2 h within 
+the simulated fire perimeter (from 1 to 5) 
+SIZE_1H Fire size at 1 h of the simulated fire (ha) 
+PERIMETER_1h Length (m) of the simulated fire perimeter 1 h 
+after the ignition time 
+FLAME_LENGTH Average length of the flame (m) within the 
+simulated fire perimeter in the first hour 
+ROS Average rate of spread (km/h) within the 
+simulated fire perimeter in the first hour 
+AVG_SLOPE Averaged slope (%) at the location of the fire 
+Bold rows indicate variables selected from the IRWIN dataset.  
+T able 2. Fire Behavior Index (FBI) construction matrix that relates rate of spread (ROS, km/h) and flame length (FL, m) to be categorized into 
+five classes following the criteria of  Rothermel (1983).          
+FBI R OS (km/h) 
+0–0.04 0.04–0. 1 0. 1–0.4 0.4 –1 1–3 >3   
+FL (m) 0–0.3 1 1 1 1 2 3 
+0.3–1.2 1 1 2 2 3 4 
+1.2–2.4 1 2 2 3 4 5 
+2.4–3.6 1 2 3 3 4 5 
+3.6–7.6 2 3 3 4 5 5 
+>7.6 3 3 4 4 5 5   
+A. Cardil et al.                                                                                      International Journal of Wildland Fire 34 (2025) WF24160 
+4 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 5
+of RT on IA success (i.e. IA Success–Failure ~ TDI × RT + FBI) 
+with 9886 fire incidents from the CAL FIRE agency from 2020 
+to 2023. In this case, we included an interaction term for the 
+sub-indices TDI × RT together with the FBI. 
+In order to assess the association between the different 
+levels of IAA and its sub-components and the odds of IA 
+success, we evaluated odds ratio (OR) coefficient estimates. 
+OR is commonly employed in the context of logistic regres -
+sion models, and represents the ratio of the probability of an 
+event occurring relative to the odds of it not occurring, 
+given one or more predictors (Hauck 1987). 
+Additionally, we conducted a correlation analysis with all 
+the main fire behavior metrics from simulation and an 
+ANOVA test to compare them based on IA failure and suc -
+cess (Chambers et al. 1992). Models training and calibration 
+were carried out using the R environment (R Core Team 
+2021) and the R package stats was employed for ANOVA 
+testing correlation analyses and for odds ratio coefficients 
+estimation. 
+Finally, we conducted individual WFA simulations for six 
+incidents outside California to demonstrate the performance 
+of IAA in other environments and fire conditions. Three 
+wildfires were recorded on USA Labor Day of 2020 (in 
+Oregon), one was recorded in Colorado (July 2020), one 
+in Montana (August 2023) and a wildfire in Spain (July 
+2022). The Spanish case was well monitored by firefighters 
+and affected a wildland–urban interface (WUI). Further, the 
+model’s performance was assessed during the 2025 Los 
+Angeles fires to examine a scenario characterized by fire 
+simultaneity. 
+Results 
+IAA index performanc e 
+Table 4 shows the number of fires, their average and total 
+burned area in California for each IAA category. The total 
+burned area statewide was almost 3 million ha, with a 
+maximum burned area per incident of 389,837 ha (Dixie 
+fire, July 2021). The actual mean burned area for all fires 
+was 111.5 ha. Regarding the official total surface burned 
+area by IAA classes, IAA-3 accounted for the highest 
+(946,742 ha) and IAA-1 for the lowest (354,829 ha). 
+Terrain conditions (TDI, Accessibility Index, Penetrability 
+Index, Construction Index and AVG_SLOPE), fire behavior 
+(rate of spread (ROS) and FBI), fire spread metrics (such as 
+PERIMETER_1h) and the IAA index were significantly higher 
+T able 3. Initial Attack Assessment (IAA) index construction matrix 
+that relates Terrain Difficulty Index (TDI) and Fire Behavior Index (FBI) 
+to be categorized into five classes.         
+IAA index TDI 
+1 2 3 4 5   
+FBI 1 1 1 1 2 3 
+2 1 2 2 3 3 
+3 3 3 3 4 5 
+4 4 4 5 5 5 
+5 5 5 5 5 5   
+Assess th
+e
+probab
+ility of 
+IA
+success w
+ith the I
+AA
+index
+All agenc
+ies
+26,907 in
+cidents
+Researc
+h
+objective
+s
+01
+02
+03
+Data
+subsets
+Models
+formulati
+on
+IA Succes
+s–Failure
+ ~ IAA le
+vels
+IA Succes
+s–Failure
+ ~ TDI + 
+FBI
+IA Succes
+s–Failure
+ ~ TDI x 
+RT + FBI
+CAL FIRE
+18,697 in
+cidents
+Non-CAL F
+IRE
+8210 inci
+dents
+Explore the
+associati
+ons betwe
+en
+IA succes
+s and
+FBI-TDI
+All agenc
+ies
+26,907 in
+cidents
+Evalua
+te the Re
+sponse
+Tim
+e (RT) co
+ntributio
+n
+in 
+the IA su
+ccess
+CAL FIRE
+9886 inci
+dents
+Fig. 2 . Schematic modeling process that includes the three main research objectives related with the 
+wildfire data subsets employed and their corresponding univariate logistic regression models.   
+www.publish.csiro.au/wf                                                                          International Journal of Wildland Fire 34 (2025) WF24160 
+5 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 6
+in fires where the IA failed compared with those where 
+it was successful (Table 5), highlighting the potential of 
+using fire simulations and suppression difficulty indices 
+to assess IA success. For instance, in cases where the IA 
+was successful, the total simulated fire perimeter at Hour 
+1 (PERIMETER_1h), without considering fire suppression, 
+was 444.43 m (1.23 ha), far below the CAL FIRE success 
+threshold size. When the IA failed, PERIMETER_1h was 
+significantly larger, with an average value of 1612 m. The 
+only variables with a non-significant difference were 
+SIZE_1H and flame length. 
+The GLM fitted with the five categories of IAA index as 
+predictors (i.e. IA Success–Failure ~ IAA levels) illustrated 
+its contribution to IA success. In that sense, all the classes 
+were significant in the model (Table 6). Moreover, there was 
+an increase in negative estimated coefficients, showintg that 
+as the IAA index increases, IA success decreases. 
+When comparing the GLMs trained with different wildfire 
+agencies, moderate differences appear (Table 7). For the 
+GLM fitted with CAL FIRE incidents, the probability of IA 
+success increases above 89%, including the highest values of 
+IAA (4 and 5, with a 94.8 and 89.5%, respectively). In 
+contrast, excluding these wildfires from the database, the 
+probability of being successful in the IA slightly decreased to 
+89 and 81.1% for the IAA-4 and IAA-5 categories, 
+respectively. 
+The probability of IA success based on the different IAA 
+values for different fire size thresholds is shown in Figs 3 and 4. 
+The limit established by 4 ha follows the same parallel decreas -
+ing line as the rest (i.e. 2, 20 and 40 ha), while the level of the 
+IAA index increases (Fig. 3, panel a). However, when fires 
+escape IA, the index explains that the average final fire size 
+(in hectares) is larger as the index grows (Fig. 3, panel b), 
+especially for the highest IAA values (4 and 5). 
+IAA lev els, fire beha vior–terr ain metrics and initial 
+a t tack suc ces s: odds ra tios 
+Fig. 4 shows the strength and sign of the relationship between 
+the IAA levels (panel a), fire behavior–terrain metrics (panel b) 
+and IA success employing the GLMs adjusted with the IAA 
+classes (i.e. IA Success–Failure ~ IAA levels) and its sub- 
+component categories (i.e. IA Success–Failure ~ TDI + FBI). 
+Note that a value greater than 1 indicates an increase in the 
+odds (positive association), less than 1 indicates a decrease 
+(negative association) and close to 1 means no significant 
+effect. Generally, the highest levels of the predictor (i.e. IAA- 
+5, FBI-5 and TDI-5) showed the strongest relationships with IA 
+success, all showing a negative association. Using IAA-1 as the 
+reference category, results indicated a significant and progres -
+sive decrease in the odds of IA success across higher IAA levels. 
+Compared with IAA-1, the odds of success were 64% lower in 
+T able 4. Summary of the number of fire incidents (N), mean and 
+total burned area (BA) in hectares for each IAA level and their 
+corresponding initial attack success rate (in parentheses).        
+Metric IAA-1 IAA-2 IAA-3 IAA-4 IAA-5   
+N 19,220 
+(98.3%) 
+2175 
+(95.5%) 
+4246 
+(94.5%) 
+809 
+(92.8%) 
+457 
+(84.2%) 
+Mean 
+BA (ha) 
+18.45 204 223 574 1731 
+Total 
+BA (ha) 
+354,829 443,362 946,472 464,711 790,991   
+T able 5. Fire behavior metrics from fire simulations based on the 
+initial attack failure and success.     
+V ariable (unit) Initial a t tack failure Initial attack succ ess   
+IAA  2.29 ± 1.32***  1.53 ± 0.95*** 
+FBI  2.25 ± 0.941***  1.79 ± 0.788*** 
+TDI_2h  2.09 ± 1.39***  1.40 ± 0.905*** 
+Accessibility Index  6.14 ± 4.17***  4.03 ± 3.9*** 
+Penetrability Index  4.79 ± 1.96***  3.58 ± 1.85*** 
+Construction Index  2.14 ± 2.14***  1.55 ± 1.36*** 
+SIZE_1H (ha)  21.8 ± 95  17.21 ± 1161 
+PERIMETER_1h (m)  1612 ± 5318***  444.43 ± 2,202.68*** 
+FLAME_LENGTH (m)  1.65 ± 2.06  1.15 ± 10.4 
+ROS (km/h)  0.364 ± 0.411**  0.225 ± 1.36** 
+AVG_SLOPE (%)  10.7 ± 9.68***  6.54 ± 7.53*** 
+The table shows the mean and s.d. values. Significant differences between 
+IA failure and IA success are indicated based on ANOVA P-values 
+(***P < 0.001; **P < 0.01).  
+T able 6. Model coefficients obtained for the generalized logistic 
+regression model using the five categories of IAA as predictors.       
+IAA categ ory Coefficient s.e. Z v alue P v alue   
+IAA-2  −0.990  0.117  −8.444  <0.001 
+IAA-3  −1.189  0.087  −13.591  <0.001 
+IAA-4  −1.483  0.147  −10.082  <0.001 
+IAA-5  −2.367  0.139  −16.929  <0.001 
+Note that IAA-1 was considered by the model as the reference category.  
+T able 7 . Comparison between probability of initial attack success 
+for CAL FIRE incidents and those from other agencies.         
+Succ ess 
+thr eshold 
+(4 ha) 
+N IAA 
+1 (%) 2 (%) 3 (%) 4 (%) 5 (%)   
+All agencies 26,907  98.3  95.5  94.5  92.8  84.2 
+CAL FIRE 18,697  97 . 9  96  94.4  94.8  8 9 .5 
+No CAL FIRE 8210  97.2  93.2  92.8  89  81.1 
+Modeled logistic probability based on the IAA index classes for a fire incident 
+threshold greater than 4 ha. Bold values indicate successful initial attack 
+probabilities for CAL FIRE incidents.  
+A. Cardil et al.                                                                                      International Journal of Wildland Fire 34 (2025) WF24160 
+6 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 7
+IAA-2 (OR = 0.37), 70% lower in IAA-3 (OR = 0.30), 78% 
+lower in IAA-4 (OR = 0.23) and 90% lower in IAA-5 
+(OR = 0.10). 
+A similar pattern was observed for FBI and TDI 
+coefficient ORs (Fig. 4, panel b). As values increased across 
+both indices, the odds for successful IA declined markedly. 
+For instance, the ORs for FBI-5 and TDI-5 were 0.15 and 
+0.17, respectively, indicating an approximately 85% reduc -
+tion in the odds of IA success relative to their respective 
+reference groups (i.e. FBI-1 and TDI-1). Intermediate cate -
+gories, such as FBI-3 (OR = 0.35) and TDI-3 (OR = 0.46), 
+also showed substantial decreases. In addition, FBI and TDI 
+indices are not strongly correlated (see Supplementary 
+Fig. S1 in the Supplementary Material S1). 
+1.00
+0.95
+0.90
+P
+r
+o
+b
+a
+b
+i
+l
+i
+t
+y
+5000
+0
+1 2 3
+ >2 >4 >20 >4 0
+IAA
+ Fire size  (ha) IAA
+4 5 1
+ 1
+2
+ 2
+3
+ 3
+IAA
+(a)
+(b)
+4
+ 4
+5
+ 5
+10,000
+15,000
+F
+i
+r
+e
+ 
+s
+i
+z
+e
+ 
+(
+h
+a
+)
+0.85
+Fig. 3. (a) Comparison of the modeled probability of initial attack success based on the IAA classes for different fire 
+size objectives in ha. (b) Comparison of average fire size (ha) when the initial attack fails (i.e. those escaped fires > 4 ha) 
+for each IAA class.   
+0.0
+IAA-5
+(a)
+(b)
+IAA-4
+IAA-3
+IAA-2
+FBI-5
+TDI-5
+TDI-4
+FBI-4
+FBI-3
+TDI-2
+TDI-3
+FBI-2
+0.1 0.2 0.3
+0.4
+0.5
+0.6
+0.7
+0.8 0.9 1.0
+1.1
+Odds rati
+o
+0.0 0.1 0.2
+0.3 0.4 0.5
+0.6 0.7 0.8
+0.9 1.0 1.1
+ Odds rati o
+Fig. 4. Odds ratios (x-axis) of the association 
+between IAA levels (y-axis on panel a), Fire 
+Behavior Index (FBI) and Terrain Difficulty 
+Index (TDI) categories (y-axis on panel b) and 
+initial attack according to the binomial GLMs: 
+IA Success–Failure ~ IAA levels and IA 
+Success–Failure ~ TDI + FBI, respectively. Black 
+points show the estimated odds ratio (OR) and 
+horizontal lines represent the 95% confidence 
+level. The dashed red vertical line (OR = 1) indi -
+cates that there is no effect or association 
+between the explanatory variables and the 
+response variable. Note that IAA-1, TDI-1 and 
+FBI-1 are the reference groups (OR = 1).   
+www.publish.csiro.au/wf                                                                          International Journal of Wildland Fire 34 (2025) WF24160 
+7 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 8
+Response time eff ect on initial a t tack succ ess 
+Fire simulation metrics had a significant effect on the IA 
+success (Tables 5 and 6). However, fire suppression 
+resources also played a key role in explaining the IA success. 
+Here, we analyze the RT and TDI from fire incidents involv -
+ing CAL FIRE’s suppression resources during IA (employing 
+the GLM: IA Success–Failure ~ TDI × RT + FBI). We found 
+a significant interaction between TDI and RT (Fig. 5), which 
+had a substantial influence on IA success. Overall, the prob -
+ability of successfully containing the fire within the first 2 h 
+decreases as both TDI and response times increase. In other 
+words, longer response times and higher TDI values are 
+associated with lower chances of successful initial contain -
+ment, with probability values ~0.80. Although the proba -
+bility of IA success was higher (over than 0.95) at lower TDI 
+values (Fig. 5), it decreased as RT grew. Conversely, when 
+TDI values were high, the RT had a little effect, resulting in 
+the lowest IA success rates. 
+IAA use cases 
+2025 January Californian fir es 
+On 6–9 January 2025, two significant and damaging 
+wildfires – the Palisades and Eaton fires – occurred in the 
+Los Angeles area. Even though there was a high fire simul -
+taneity scenario with 360 ignitions across California during 
+this period, most fires remained small and were successfully 
+contained during the IA phase. However, the Palisades Fire 
+destroyed 6837 structures and caused 12 civilian fatalities 
+(CAL FIRE 2025a), making it the most damaging wildfire 
+recorded in Los Angeles and the third-most destructive in 
+California. The Eaton fire caused even greater losses, with 
+9414 structures destroyed and at least 19 fatalities (CAL 
+FIRE 2025b), ranking it as the second-most destructive wild -
+fire in the state’s history. 
+From all IRWIN’s incidents reported from 6 to 9 January 
+2025, we selected those that were automatically simulated 
+by CAL FIRE’s WFA (n = 360, see Fig. 6, panel a). The 
+Palisades and Eaton fires (Fig. 6, panel b) affected the largest 
+areas (9489 and 5674 ha, respectively) and represented the 
+greatest challenges to containment (i.e. both incidents with 
+an IAA-5). Most of the remaining incidents reported those 
+days were successfully contained during the IA phase (312 
+incidents were assigned IAA-1, 1 was classified as IAA-2, 30 
+as IAA-3, 4 as IAA-4 and 7 as IAA-5). Importantly, all these 
+fires remained small (with burned areas under 4 ha), indi -
+cating no significant propagation. Only two wildfires 
+(Tayler and Scout) slightly exceeded the 4-ha threshold, 
+but their limited size does not warrant classification as 
+escaped fires. In contrast, the Kenneth and Hurst fires 
+grew to 425.7 and 323.0 ha respectively, with an IAA 
+value of 3. These larger extents may be partially attributed 
+to the simultaneity of incidents across California during 
+those days, which could have constrained suppression 
+resources. 
+WF A simula tions outside Califo rnia 
+We conducted six simulations through WFA outside 
+California to demonstrate IAA performance in other regions 
+(Table 8). The selected fires became large through their 
+duration, with different fire spread patterns. Note that the 
+IAA index was designed for the IA phase (first 2 h after 
+reported ignition) and thus, the results must be interpreted 
+with that consideration. In those events when fire agencies 
+are not capable of containing incipient fires in that time, it is 
+probable that any incident will become a large and very 
+destructive one (e.g. Archie Greek in Oregon or Pine Gulch 
+in Colorado). For instance, the Archie Creek Fire showed 
+fast growth (~60 km/h winds) reaching almost 4900 ha 
+during the first 2 h (Borsum and Plouffe 2022), exceeding 
+fire suppression capabilities, with an IAA value of 5. In the 
+Pine Gulch Fire, uncontrollable propagation in the early 
+stages of the attack forced large evacuations (NOAA 
+2020). In other cases, although the FBI was less intense 
+but the TDI was high, the latter factor could really compli -
+cate fire accessibility and lead to an escaped fire (e.g. 
+Lionshead fire Oregon). In this particular case, this 
+natural-caused fire ignited with initial slow propagation in 
+the first days (FBI = 2), until on 8 September, it grew large, 
+driven by a historic strong-wind event (USDA Forest Service 
+2020). In contrast, other fire incidents registered a moderate 
+TDI but a high or extreme FBI, such as Holiday Farm in 
+Oregon (Urness and Rein 2021), Pine Gulch in Colorado 
+and Pont de Vilomara in Spain, generally leading to more 
+relevant impacts in terms of area burned and buildings 
+threatened or destroyed as well as significant population 
+evacuations. In the case of the Spanish wildfire, rapid con -
+vective propagation with adverse fire behavior (FBI = 5) 
+impacted 29 residences in a nearby WUI during the first 
+75
+50
+25
+0
+1 2 3
+TD
+I
+ Predicted  initial attack su ccess
+ 0.80 0.85 0.90 0.95
+R
+e
+s
+p
+o
+n
+s
+e
+ 
+t
+i
+m
+e
+ 
+(
+m
+i
+n
+)
+4 5
+Fig. 5. Interaction plot between response time (RT; in minutes) and 
+TDI for predicted Initial Attack success employing the GLM: IA 
+Success–Failure ~ TDI × RT + FBI. Note that the closer the value to 1, 
+the more probable that the IA is successful, and vice versa.  
+A. Cardil et al.                                                                                      International Journal of Wildland Fire 34 (2025) WF24160 
+8 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 9
+hour after ignition. Finally, wildfires with both indices high 
+(e.g. Archie Greek Fire in Oregon and River Road East in 
+Montana) represent the worst scenario in terms of fire 
+containment. 
+Discussion 
+In this study, we propose a dynamic index, the IAA, to 
+evaluate the difficulty of IA, validated extensively with 
+data from 26,907 real wildfires in California from 2020 to 
+2023, simulated using Technosylva’s WFA. The index was 
+initially developed based on expert criteria and preliminar -
+ily tested against fires during the latest fire seasons by 
+Technosylva and CAL FIRE. Building on this foundation, 
+this paper provides further insights into the performance 
+of the IAA by utilizing more fire data and analyzing how 
+other fire-related metrics may improve estimation of IA 
+success. 
+The IAA index behaves with a negative relationship with 
+the odds of IA success. The GLM-IAA model’s OR analysis 
+showed that a fire with an IAA-5 rating has 90% higher odds 
+of escaping control than one with an IAA-1 (Fig. 4, panel a). 
+Even more importantly, in those cases when IA failed, the 
+index was able to capture the fire’s potential to become large 
+(Fig. 3, panel b). Also, logistic regression employing fire behav -
+ior and terrain metrics (i.e. IA Success–Failure ~ TDI + FBI) 
+showed  that FBI and TDI also have strong and negative 
+relationships with IA success (Fig. 4, panel b), highlighting 
+that both IAA sub-components are strongly associated with 
+1
+2
+3
+4
+5
+313
+N
+200 km
+(a)
+(b)
+1
+33
+4
+9
+99.68%
+IAA
+Number of
+ fires
+IA succes
+s rate
+Escaped and 
+large wil
+dfires
+Tayler (5
+.8 ha)
+–
+–
+Scout (4.7 
+ha)
+Kenneth (
+425.7 ha)
+Hurst (32
+3 ha)
+Eaton (56
+74 ha)
+Palisades
+ (9489 ha
+)
+100%
+90.9%
+100%
+77.8%
+Fig. 6. (a) Fire simulations (n = 360) were automatically conducted for the period of 6–9 January 
+2025. The colored dots represent the IAA category assigned to each simulation. (b) The number of 
+incidents per IAA level, along with the IA success rate (%), and the names of escaped (>4 ha) and large 
+wildfires are shown across IAA classes (1–5). Fire names are followed by their respective burned area in 
+hectares.   
+www.publish.csiro.au/wf                                                                          International Journal of Wildland Fire 34 (2025) WF24160 
+9 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 10
+decreased containment odds. These relationships support the 
+use of the IAA index to justify the deployment of additional 
+resources and the prioritization of specific fires during periods 
+of fire simultaneity, especially considering the substantial costs 
+and damages associated with IA failures in California (Fried 
+et al. 2008; Legislative Analyst’s Office 2020). 
+Following the 4 ha threshold adopted for fires by CAL 
+FIRE (Li and Banerjee 2021), the IA success rates were very 
+high in line with the predictions of the IAA model. This 
+likely reflects CAL FIRE’s overall more aggressive response 
+strategy than intrinsic differences in fire behavior. However, 
+we identified some fire events that exceeded the IA for the 
+highest IAA classes (i.e. 4 and 5). Our findings highlighted 
+that most of these fires were associated with difficult terrain, 
+adverse accessibility conditions and high fuel continuity – 
+factors largely captured by the TDI – as well as challenging 
+fire behavior, captured by the FBI. Some of these fires 
+started and propagated in very remote areas, thus with 
+higher chances to escape control (Kucuk et al. 2017). 
+Steep slopes were among the most critical factors affecting 
+the effectiveness of IA, primarily owing to the difficulties for 
+ground suppression brigades in carrying out fire control 
+tasks (Rodrigues et al. 2019), increasing the need for aerial 
+operations in the majority of cases (Plucinski et al. 2012). 
+Furthermore, high density and continuity of mature fuel 
+types could aggravate actual access through the terrain, 
+representing a major obstacle to opening effective suppres -
+sion lines (Reimer et al. 2019), while, at the same time, 
+being one of the main triggers for fire spread (O’Connor 
+et al. 2017). Moreover, accessibility or time spent by con -
+tainment efforts along a road network determines the suc -
+cess of the IA. All of these aspects were integrated into and 
+represented by our TDI, inspired by the Suppression 
+Difficulty Index proposed by Rodríguez y Silva et al. 
+(2020), and in the developed IAA index. Our analysis also 
+highlights distinct differences in fire behavior metrics 
+derived from simulation outputs when comparing cases of 
+IA success versus failure. For instance, PERIMETER_1h, ROS 
+and FBI largely determined the probability of fire potential 
+early containment, in line with previous research (Arienti 
+et al. 2006). These aspects are really relevant, because fire 
+behavior influences suppression method choices (Daniels 
+et al. 2024) and fast-growing fires are the most destructive 
+and deadly (Balch et al. 2024). Also, this factor may become 
+even more important considering that severe and extreme 
+fire-weather conditions could be exacerbated as a conse -
+quence of anthropogenic climate change (Dong et al. 2022;  
+Jones et al. 2022). 
+When a fire starts, fire responders conduct a size-up to 
+determine strategy and tactics. This process considers fac -
+tors like fire location, fuel type, fire behavior and short-term 
+fire weather forecast, which are considered by our IAA 
+model. However, beyond FBI and TDI, there are more fac -
+tors that may influence IA failure, such as travel delays 
+caused by low site accessibility, as well as the availability, 
+T able 8. Description of the fire incidents studied outside California employed for demonstration of the performance of the IAA generated in the WFA simulations.         
+Name (State) Date/ time (h) Size (ha) IAA FBI TDI Impacts observed   
+Holiday Farm (Oregon) 07 Sep 2020 20:20 70,169 5 5 2 Most structures of Blue River were destroyed (400 homes). 
+Archie Creek (Oregon) 08 Sep 2020 7:37 53,254 5 5 4 Fire grew rapidly (64 km/h gusts); in the first 2 h, burned nearly 3035 ha. 
+Lionshead (Oregon) 16 Aug 2020 10:45 80,267 2 1 4 Lightning fire spread slowly until 8 Sep, ending with 264 homes lost. 
+River Road East (Montana) 18 Aug 2023 13:18 7006 5 4 4 More than 55 buildings destroyed (including 15 residences). 
+Pine Gulch (Colorado) 31 Jul 2020 17:15 56,171 5 5 3 Lightning fire that initial attack was unable to contain, as it spread rapidly, ending in evacuation of residences. 
+Pont de Vilomara (Spain) 17 Jul 2022 13:04 1696 5 5 3 Rapid convective propagation in the first hour (29 residences affected). 
+Date/time is in local time; size: official reported burned area in hectares. IAA, FBI and TDI indices values in the simulation output, and main impacts observed distinguishing that particular wildfire event.  
+A. Cardil et al.                                                                                      International Journal of Wildland Fire 34 (2025) WF24160 
+10 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 11
+type, amount and response speed of suppression resources 
+(Arienti et al. 2006; Rodrigues et al. 2019; Sakellariou et al. 
+2023). Our analysis revealed a significant interaction 
+between suppression RT and TDI. This suggests that RT 
+could be incorporated into a future Initial Response Assessment 
+index (IRA) as a third dimension (i.e. TDI × RT × FBI). 
+The likelihood of IA success is greater in more accessible 
+terrain, whereas this probability decreases as RT increases. 
+In that sense, some studies have pointed out the crucial 
+importance of minimizing delays within the first hours 
+after fire discovery to reduce the likelihood of an escaped 
+fire (Marshall et al. 2022). 
+Use of the IAA index can support the appropriate dispatch 
+of suppression resources (Wollstein et al. 2022). Situation 
+reports for a particular incident support decision-making 
+under conditions of fire simultaneity – such as the 2025 LA 
+fire event – by enabling fire agencies and utilities to identify 
+areas at risk and prioritize fire response to more effectively 
+reduce overall impacts (Plucinski 2013). These findings point 
+to seeking a balance between the initial fire size and behav -
+ior, the available resources and their location, and the poten -
+tial threat to high-value assets at risk. Collectively, all of these 
+factors will condition the response to fire in the first attack. 
+This underscores the value of the Technosylva’s Response 
+Complexity (RCX) metric that integrates IAA with fire simul -
+taneity and assets threatened (e.g. buildings impacted). Such 
+a composite metric could also support more consistent priori -
+tization by quantifying not just the likelihood of containment 
+success, but the relative consequence of each incident, 
+enabling more data-driven, equitable suppression decisions 
+across multiple simultaneous events. 
+The IAA can be effectively extrapolated to regions outside 
+California, as shown in this study. In all cases, both our 
+index, IAA, and its two sub-indices, FBI and TDI, produced 
+results consistent with the diversity of containment proba -
+bility, fire behavior and terrain difficulty. However, we 
+recognize some limitations of our study. Notably, we are 
+aware of the inherent imbalance in the fire data, because the 
+majority of fires (97.02% of the cases) had a successful IA. 
+Our analysis does not account for other critical factors 
+influencing IA success, such as the amount and type of 
+resources deployed within the first 2 h after a fire begins, 
+owing to data limitations. Lastly, the initial fire coordinates 
+recorded by fire departments are sometimes inaccurate, 
+occasionally located outside the officially reported perime -
+ter or near roads, which can lead to erroneous IAA values. 
+This represents a potential source of error that should be 
+considered. 
+Since 2020, CAL FIRE has leveraged advanced GIS 
+(Geographic Information System)-based technologies, 
+including the IAA index to manage the complexity of 
+wildfires more efficiently. In that sense, the IAA index is 
+valuable, as it simplifies complex fire dynamics into a scal -
+able metric, evaluated daily across units, providing real- 
+time data to field teams. At the same time, each reported 
+fire is automatically simulated and assigned an IAA score, 
+along with its sub-indices FBI and TDI. These assessments 
+are integrated into the Computer Aided Dispatch (CAD) 
+system, delivering one-page reports and interactive maps 
+to incident commanders, supervisors and responders. In 
+2023, CAL FIRE collaborated with Technosylva to validate 
+fire spread modeling, confirming that current fire spread 
+models are accurate for real-time assessment of IA fires, 
+supporting CAL FIRE’s operational decisions (Cardil et al. 
+2023). In addition, CAL FIRE integrates WFA’s platform 
+with complementary technologies and data sources, enhan -
+cing accuracy through ongoing simulation calibration and 
+predictive verification. Currently, WFA provides daily fore -
+casting and real-time spread predictions, allowing the CAL 
+FIRE dispatch system to preposition resources based on 
+predictive fire analysis, which enhances their ability to 
+respond effectively to incipient wildfires. Finally, the IAA 
+is being adopted beyond California, including North 
+American utilities, the British Columbia wildfire service 
+(Canada), several agencies in Europe and the European 
+FIRE-RES project aimed at dealing with extreme wildfire 
+events, underscoring its importance in improving wildfire 
+response and management strategies. 
+Conclusions 
+In this study, we introduced the IAA index for assessing 
+initial attack success, validated through 26,907 California 
+wildfires from 2020 to 2023. Our analysis, which employed 
+logistic regression models incorporating the IAA index and 
+its key sub-components – the Terrain Difficulty Index (TDI) 
+and Fire Behavior Index (FBI) from Technosylva’s Wildfire 
+Analyst (WFA) – along with suppression response time, 
+revealed strong and statistically significant relationships 
+with IA outcomes. The analysis showed a clear negative 
+correlation between IAA values and IA success rates: fires 
+rated at IAA-5 were found to have 90% higher odds of 
+escaping initial control compared with those rated IAA-1, 
+highlighting the index’s critical role for operational decision 
+support and strategic planning. Both the FBI and TDI showed 
+strong negative correlations with IA success, and response 
+time significantly influenced the probability of IA success in 
+interaction with terrain difficulty. To conclude, the IAA index 
+remains a valuable tool owing to its simplicity and robust -
+ness. It continues to support utilities, CAL FIRE and other fire 
+agencies in key stages of daily and real-time decision-making, 
+including the preparation and allocation of appropriate 
+resources for fire risk analysis, as well as dispatch and 
+response during the early detection of wildfires. 
+Supplementary ma terial 
+Supplementary material is available online. 
+www.publish.csiro.au/wf                                                                          International Journal of Wildland Fire 34 (2025) WF24160 
+11 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 12
+Ref ere nces 
+Albini FA (1976) Estimating wildfire behavior and effects. General 
+Technical Report INT-30. (USDA Forest Service, Intermountain 
+Forest and Range Experiment Station: Ogden, UT) 
+Andrews PL (2012) Modeling wind adjustment factor and midflame 
+wind speed for Rothermel’s surface fire spread model. General 
+Technical Report RMRS-266. (USDA Forest Service, Rocky 
+Mountain Research Station: Fort Collins, CO) 
+Arienti MC, Cumming SG, Boutin S (2006) Empirical models of forest 
+fire initial attack success probabilities: the effects of fuels, anthropo -
+genic linear features, fire weather, and management. Canadian 
+Journal of Forest Research 36(12), 3155–3166. doi:10.1139/x06-188 
+Balch JK, Iglesias V, Mahood AL, Cook MC, Amaral C, DeCastro A, Leyk 
+S, McIntosh TL, Nagy RC, St. Denis L, Tuff T, Verleye E, Williams AP, 
+Kolden CA (2024) The fastest-growing and most destructive fires in 
+the US (2001 to 2020). Science 386(6720), 425–431. doi:10.1126/ 
+science.adk5737 
+Borsum D, Plouffe K (2022) Archie Creek Fire, Western Oregon. ESRI. 
+Available at https://storymaps.arcgis.com/stories/ce3ee5f7c17040419675- 
+88e93dbad175 [verified 27 July 2024] 
+Brewer MJ, Clements CB (2020) The 2018 Camp Fire: meteorological 
+analysis using in situ observations and numerical simulations. 
+Atmosphere 11(1), 47. doi:10.3390/atmos11010047 
+Brown GG, Koyak RA, Salmerón J, Scholz Z (2021) Optimizing pre -
+positioning of equipment and personnel for Los Angeles County Fire 
+Department to fight wildland fires. INFORMS Journal on Applied 
+Analytics 51(6), 435–449. doi:10.1287/inte.2021.1084 
+CAL FIRE (2025a) Incident Update: Palisades Fire. California Department 
+of Forestry and Fire Protection. Available at https://www.fire.ca.gov/ 
+incidents/2025/1/7/palisades-fire (last accessed 13 November 2025) 
+CAL FIRE (2025b) Incident Update: Eaton Fire. California Department 
+of Forestry and Fire Protection. Available at https://www.fire.ca.gov/ 
+incidents/2025/1/7/eaton-fire (last accessed 13 November 2025) 
+California Department of Fish and Wildlife (Ed.) (2021) ‘Atlas of the 
+Biodiversity of California.’ 2nd edn. (Independent Publisher: USA) 
+Calkin DE, Thompson MP, Finney MA, Hyde KD (2011) A real-time risk 
+assessment tool supporting wildland fire decisionmaking. Journal of 
+Forestry 109(5), 274–280. doi:10.1093/jof/109.5.274 
+Cardil A, Lorente M, Boucher D, Boucher J, Gauthier S (2019) Factors 
+influencing fire suppression success in the province of Quebec 
+(Canada). Canadian Journal of Forest Research 49(5), 531–542. 
+doi:10.1139/cjfr-2018-0272 
+Cardil A, Monedero S, Selegue P, Navarrete MÁ, De-Miguel S, Purdy S, 
+Marshall G, Chavez T, Allison K, Quilez R, Ortega M, Silva CA, 
+Ramirez J (2023) Performance of operational fire spread models in 
+California. International Journal of Wildland Fire 32, 1492–1502. 
+doi:10.1071/WF22128 
+Carpenter RL, Gowan TA, Lillo SP, Strenfel SJ, Eiserloh AJ, Duffey EJ, 
+Qu X, Capps SB, Liu R, Zhuang W (2024) Improving a WRF-based 
+high-impact weather forecast system for a Northern California power 
+utility. Atmosphere 15(10), 1244. doi:10.3390/atmos15101244 
+Chambers JM, Freeny AE, Heiberger RM (1992) Analysis of variance; 
+designed experiments. In Statistical Models in S. (Eds JM Chambers, 
+TJ Hastie) pp. 145–193. (Wadsworth & Brooks/Cole, Pacific 
+Grove, CA) 
+Daniels MC, Braziunas KH, Turner MG, Ma T-F, Short KC, Rissman AR 
+(2024) Multiple social and environmental factors affect wildland fire 
+response of full or less-than-full suppression. Journal of Environmental 
+Management 351, 119731. doi:10.1016/j.jenvman.2023.119731 
+Dong C, Williams AP, Abatzoglou JT, Lin K, Okin GS, Gillespie TW, 
+Long D, Lin Y-H, Hall A, MacDonald GM (2022) The season for large 
+fires in southern California is projected to lengthen in a changing 
+climate. Communications Earth & Environment 3(1), 22. doi:10.1038/ 
+s43247-022-00344-6 
+Duane A, Castellnou M, Brotons L (2021) Towards a comprehensive 
+look at global drivers of novel extreme wildfire events. Climatic 
+Change 165(3–4), 43. doi:10.1007/s10584-021-03066-4 
+Fillmore SD, Paveglio TB (2023) Use of the Wildland Fire Decision 
+Support System (WFDSS) for full suppression and managed fires 
+within the Southwestern Region of the US Forest Service. 
+International Journal of Wildland Fire 32(4), 622–635. doi:10.1071/ 
+WF22206 
+Finney MA (2002) Fire growth using minimum travel time methods. 
+Canadian Journal of Forest Research 32(8), 1420–1424. doi:10.1139/ 
+x02-068 
+Fried JS, Gilless JK, Riley WJ, Moody TJ, de Blas CS, Hayhoe K, Mortiz 
+M, Stephens S, Torn M (2008) Predicting the effect of climate change 
+on wildfire behavior and initial attack success. Climatic Change 
+87(Supplement 1), S251–S264. doi:10.1007/s10584-007-9360-2 
+Hauck WW (1987) Estimation of a Common Odds Ratio. In 
+‘Biostatistics: Advances in Statiscal Sciences Festschrift in Honor of 
+Professor V. M. Joshi’s 70th Birthday. Volume V’. (Eds IB MacNeill, 
+GJ Umphrey, A Donner, VK Jandhyala) pp. 125–149. (Springer 
+Netherlands: Dordrecht) 
+Jin S, Homer C, Yang L, Danielson P, Dewitz J, Li C, Zhu Z, Xian G, 
+Howard D (2019) Overall methodology design for the United States 
+National Land Cover Database 2016 Products. Remote Sensing 
+11(24), 2971. doi:10.3390/rs11242971 
+Jones MW, Abatzoglou JT, Veraverbeke S, Andela N, Lasslop G, Forkel 
+M, Smith AJP, Burton C, Betts RA, van der Werf GR, Sitch S, 
+Canadell JG, Santín C, Kolden C, Doerr SH, Le Quéré C (2022) 
+Global and regional trends and drivers of fire under climate change. 
+Reviews of Geophysics 60(3), e2020RG000726. doi:10.1029/ 
+2020RG000726 
+Kucuk O, Topaloglu O, Altunel AO, Cetin M (2017) Visibility analysis of 
+fire lookout towers in the Boyabat State Forest Enterprise in Turkey. 
+Environmental Monitoring and Assessment 189(7), 329. doi:10.1007/ 
+s10661-017-6008-1 
+Legislative Analyst’s Office (2020) State wildfire response costs esti -
+mated to be higher than budgeted. Available at https://www.lao.ca. 
+gov/Publications/Report/4285 [verified 23 April 2025] 
+Li S, Banerjee T (2021) Spatial and temporal pattern of wildfires in 
+California from 2000 to 2019. Scientific Reports 11, 8779. 
+doi:10.1038/s41598-021-88131-9 
+Marshall E, Dorph A, Holyland B, Filkov A, Penman TD (2022) 
+Suppression resources and their influence on containment of forest 
+fires in Victoria. International Journal of Wildland Fire 31(12), 
+1144–1154. doi:10.1071/WF22029 
+Mass CF, Ovens D (2019) The Northern California Wildfires of 8–9 
+October 2017: the role of a major downslope wind event. Bulletin of 
+the American Meteorological Society 100(2), 235–256. doi:10.1175/ 
+BAMS-D-18-0037.1 
+Merrill DF, Alexander ME (1987) ‘Glossary of Forest Fire Management 
+Terms.’ (Canadian Committee on Forest Fire Management: Ottawa) 
+Molina-Terrén DM, Xanthopoulos G, Diakakis M, Ribeiro L, Caballero 
+D, Delogu GM, Viegas DX, Silva CA, Cardil A (2019) Analysis of forest 
+fire fatalities in southern Europe: Spain, Portugal, Greece and 
+Sardinia (Italy). International Journal of Wildland Fire 28(2), 85. 
+doi:10.1071/WF18004 
+National Interagency Fire Center (2023) Information Technology. 
+Available at https://www.nifc.gov/programs/information-technology 
+[verified 1 March 2024] 
+National Wildfire Coordinating Group (2014) Aerial Supervision 
+Logbook. Available at https://www.nwcg.gov/publications [verified 
+1 March 2024] 
+Nelson RM (2000) Prediction of diurnal change in 10-h fuel stick 
+moisture content. Canadian Journal of Forest Research 30, 
+1071–1087. doi:10.1139/x00-032 
+NOAA (2020) Pine Gulch Wildfire 2020. Available at https://www. 
+weather.gov/gjt/PineGulchWildfire [verified 25 July 2024] 
+O’Connor CD, Calkin DE, Thompson MP (2017) An empirical machine 
+learning method for predicting potential fire control locations for pre- 
+fire planning and operational fire management. International Journal 
+of Wildland Fire 26(7), 587–597. doi:10.1071/WF16135 
+Picotte JJ, Bhattarai K, Howard D, Lecker J, Epting J, Quayle B, Benson 
+N, Nelson K (2020) Changes to the Monitoring Trends in Burn 
+Severity program mapping production procedures and data products. 
+Fire Ecology 16(1), 16. doi:10.1186/s42408-020-00076-y 
+Plucinski MP (2013) Modelling the probability of Australian grassfires 
+escaping initial attack to aid deployment decisions. International 
+Journal of Wildland Fire 22(4), 459–468. doi:10.1071/WF12019 
+Plucinski MP, McCarthy GJ, Hollis JJ, Gould JS (2012) The effect of 
+aerial suppression on the containment time of Australian wildfires 
+estimated by fire management personnel. International Journal of 
+Wildland Fire 21(3), 219–229. doi:10.1071/WF11063 
+A. Cardil et al.                                                                                      International Journal of Wildland Fire 34 (2025) WF24160 
+12 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 13
+Plucinski MP, Dunstall S, McCarthy NF, Deutsch S, Tartaglia E, Huston 
+C, Stephenson AG (2023) Fighting wildfires: predicting initial attack 
+success across Victoria, Australia. International Journal of Wildland 
+Fire 32(12), 1689–1703. doi:10.1071/WF23053 
+Raphael MN (2003) The Santa Ana winds of California. Earth Interactions 
+7(8), 1–13. doi:10.1175/1087-3562(2003)007<0001:TSAWOC>2. 
+0.CO;2 
+Rashidi E, Medal H, Hoskins A (2018) An attacker-defender model for 
+analyzing the vulnerability of initial attack in wildfire suppression. 
+Naval Research Logistics 65(2), 120–134. doi:10.1002/nav.21792 
+R Core Team (2021) ‘R: A Language and Environment for Statistical 
+Computing.’ (R Foundation for Statistical Computing: Vienna, Austria) 
+Available at https://www.r-project.org/ [verified 26 May 2025] 
+Reimer J, Thompson DK, Povak N (2019) Measuring initial attack 
+suppression effectiveness through burn probability. Fire 2(4), 60. 
+doi:10.3390/fire2040060 
+Rideout D, Wei Y, Kirsch A (2011) Optimal allocation of initial attack 
+resources to multiple wildfire events. International Journal of Safety 
+and Security Engineering 1(3), 312–325. doi:10.2495/SAFE-V1-N3- 
+312-325 
+Rodrigues M, Alcasena F, Vega-García C (2019) Modeling initial attack 
+success of wildfire suppression in Catalonia, Spain. Science of The 
+Total Environment 666, 915–927. doi:10.1016/j.scitotenv.2019. 
+02.323 
+Rodrigues M, Alcasena F, Gelabert P, Vega-García C (2020) Geospatial 
+modeling of containment probability for escaped wildfires in a 
+Mediterranean region. Risk Analysis 40(9), 1762–1779. doi:10.1111/ 
+risa.13524 
+Rodríguez y Silva F, O’Connor CD, Thompson MP, Molina Martínez JR, 
+Calkin DE (2020) Modelling suppression difficulty: current and future 
+applications. International Journal of Wildland Fire 29(8), 739–751. 
+doi:10.1071/WF19042 
+Rothermel RC (1972) A mathematical model for predicting fire spread 
+in wildland fuels. Research Paper INT-115. (USDA Forest Service, 
+Intermountain Forest and Range Experiment Station: Ogden, UT) 
+Rothermel RC (1983) How to Predict the Spread and Intensity of Forest 
+and Range Fires. General Technical Report INT-143. USDA (Forest 
+Service, Intermountain Forest and Range Experiment Station: Ogden, UT) 
+Rothermel RC (1991) Predicting behavior and size of crown fires in the 
+northern Rocky Mountains. Research Paper INT-438. (USDA Forest 
+Service, Intermountain Forest and Range Experiment Station: Ogden, 
+UT) 
+Sakellariou S, Sfougaris A, Christopoulou O, Tampekis S (2023) Spatial 
+resilience to wildfires through the optimal deployment of firefighting 
+resources: impact of topography on initial attack effectiveness. 
+International Journal of Disaster Risk Science 14(1), 98–112. 
+doi:10.1007/s13753-023-00464-3 
+Sanchez D, Eagleston H, Anker B, Jenkins LT, Gunda T (2021) Not all 
+disasters are created equal: an evaluation of water issues in fire and 
+hurricane media coverage in the United States. Water 13(24), 3655. 
+doi:10.3390/w13243655 
+Scott JH, Burgan RE (2005) Standard fire behavior fuel models: a 
+comprehensive set for use with Rothermel’s surface fire spread 
+model. RMRS-GTR-153. (USDA Forest Service, Rocky Mountain 
+Research Station: Fort Collins, CO) 
+Taylor SW, Nadeem K (2022) Predicting daily initial attack aircraft 
+targets in British Columbia. International Journal of Wildland Fire 
+31(4), 469–469. doi:10.1071/WF21090 
+Technosylva (2025) ‘FireSight - Learn how you can analyze and reduce 
+your asset risk.’ (Technosylva) Available at https://technosylva.com/ 
+products/wildfire-analyst/firesight/ [verified 26 May 2025] 
+Urness Z, Rein H (2021) Oregon wildfires: 20 of the state’s biggest since 
+2002. Salem Statesman Journal, 20 July 2021. Available at https:// 
+www.statesmanjournal.com/story/news/2021/07/20/oregon-wildfires- 
+20-biggest-since-2002/7985470002/ [verified 24 July 2024] 
+USDA Forest Service (2020) Willamette National Forest: Lionshead 
+Fire Story & Data. Available at https://www.fs.usda.gov/detailfull/ 
+willamette/fire/?cid=fseprd835648 [verified 29 July 2024] 
+Van Wagner CE (1977) Conditions for the start and spread of crown fire. 
+Canadian Journal of Forest Research 7(1), 23–34. doi:10.1139/x77-004 
+Varga K, Jones C, Trugman A, Carvalho LMV, McLoughlin N, Seto D, 
+Thompson C, Daum K (2022) Megafires in a warming world: what 
+wildfire risk factors led to California’s largest recorded wildfire. Fire 
+5(1), 16. doi:10.3390/fire5010016 
+WFAS (2022) Wildland Fire Assessment System (WFAS) database. 
+Available at https://www.wfas.net/index.php/national-fuel-moisture- 
+database-moisture-drought-103 [verified 12 March 2024] 
+Wheatley M, Wotton BM, Woolford DG, Martell DL, Johnston JM 
+(2022) Modelling initial attack success on forest fires suppressed by 
+air attack in the province of Ontario, Canada. International Journal of 
+Wildland Fire 31(8), 774–785. doi:10.1071/WF22006 
+Wollstein K, O’Connor C, Gear J, Hoagland R (2022) Minimize the bad 
+days: wildland fire response and suppression success. Rangelands 
+44(3), 187–193. doi:10.1016/j.rala.2021.12.006 
+www.publish.csiro.au/wf                                                                          International Journal of Wildland Fire 34 (2025) WF24160 
+13 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025
+
+
+PAGE 14
+Data a v ailability. The data that support the findings of this study are classified. Restrictions apply to the availability of these data, which were used under 
+license for this study. 
+Conflicts of interest. The authors declare that they have no conflicts of interest. 
+Declara tion of funding. This research was funded by the Spanish Ministry of Science, Innovation and Universities and the State Investigation Agency (MCIU- 
+AEI institution code: 10.13039/501100011033) by means of the ‘Torres Quevedo’ grant (PTQ2022-012740). It also received funding from the European Union under 
+the Horizon 2020 research and innovation program via the Marie Skłodowska-Curie grant agreement no. 860787 (PyroLife Innovative Training Network; 
+https://pyrolife.lessonsonfire.eu/), a project in which a new generation of experts is trained in integrated fire management; through the Horizon 2020 Project 
+‘Innovative technologies and socio-ecological-economic solutions for fire resilient territories in Europe’ – FIRE-RES (Grant agreement ID:101037419, https:// 
+cordis.europa.eu/project/id/101037419/results); and via the FIRE-ADAPT project, supported by the Marie Skłodowska-Curie Actions Staff Exchanges 2021 
+scheme within the Horizon Europe program (HORIZON-MSCA-2021-SE, Grant Agreement No. 101086416). 
+Acknowledgements. We would like to thank Eugene Oliver from CAL FIRE for providing suppression resource data. We also acknowledge the project 
+FIRE-RES (grant agreement ID: 101037419) for implementing the IAA index in its operational platform to deal with extreme wildfire events at European scale. 
+Author affiliations 
+A
+Technosylva Inc, La Jolla, CA, USA. Email: ajimenez@technosylva.com, smonedero@technosylva.com, mortega@technosylva.com, rquilez@technosylva.com, 
+tquinones@technosylva, fbezares@technosylva.com, spurdy@technosylva.com, tmetzger@technosylva.com, cwaters.c@technosylva.com 
+B
+Department of Agricultural and Forest Sciences and Engineering, University of Lleida, Lleida, Spain. Email: sergio.demiguel@udl.cat 
+C
+Forest Science and Technology Centre of Catalonia (CTFC), Solsona, Spain. 
+D
+CAL FIRE Sacramento Headquarters Intel, Sacramento, CA, USA. Email: phillip.selegue@fire.ca.gov, jeff.fuentes@fire.ca.gov, robert.clark@fire.ca.gov, tim. 
+chavez@fire.ca.gov 
+E
+Forest Fire Laboratory, Department of Forest Engineering, University of Córdoba, Campus de Rabanales, 14071, Córdoba, Spain. 
+F
+USDA Forest Service, Pacific Southwest Region, Operations Southern California, Riverside, CA 92518, USA. Email: kristen.allison@usda.gov 
+G
+Department of Geography, University of California-Berkeley, Berkeley, CA 94709, USA. Email: mid_mohan@berkeley.edu 
+H
+Department of Agricultural and Forest Sciences, University of León, 24009, León, Spain.    
+A. Cardil et al.                                                                                      International Journal of Wildland Fire 34 (2025) WF24160 
+14 
+Downloaded from http://connectsci.au/wf/article-pdf/doi/10.1071/WF24160/1834229/wf24160.pdf by guest on 11 December 2025

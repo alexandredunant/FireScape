@@ -1,0 +1,535 @@
+PAGE 1
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 1 
+Lightning-induced fires in the Alpine region: 
+An increasing problem 
+ 
+Conedera M. 
+WSL Swiss Federal Research Institute, Sottostazione Sud delle Alpi, via Belsoggiorno 22, 
+CH-6500 Bellinzona, Switzerland, marco.conedera@wsl.ch 
+ 
+Cesti G. 
+Regione Autonoma Valle d'Aosta, Direzione Foreste, Nucleo antincendi boschivi, I-11020 
+Quart, Italy, g.cesti@regione.vda.it 
+ 
+Pezzatti G.B. 
+WSL Swiss Federal Research Institute, Sottostazione Sud delle Alpi, via Belsoggiorno 22, 
+CH-6500 Bellinzona, Switzerland, boris.pezzatti@wsl.ch 
+ 
+Zumbrunnen T. 
+WSL Swiss Federal Research Institute WSL, Zürcherstrasse 111, CH-8903 Birmensdorf, 
+Switzerland, thomas.zumbrunnen@wsl.ch 
+ 
+Spinedi F. 
+Federal Office of Meteorology and Climatology MeteoSwiss, CH-6605 Locarno-Monti, 
+Switzerland, fosco.spinedi@meteoswiss.ch 
+ 
+ 
+Abstract: Fires ignited by lightning are not considered a serious problem in Europe and, in 
+particular, the Mediterranean region where lightning is only a minor cause of forest fires. In the 
+Central Alps and especially on the southern slope of th e Alps, however, lightning fires are 
+common in summer time, have increased in frequency, and resulted in increasing costs for their 
+control. Based on historical records dating back over several decades, we analysed frequency, 
+distribution pattern, differences in features as compared with man-induced fires, and relationships 
+with meteorological conditions for representative regions of the Central Alps (cantons of Valais 
+and the Grisons in Switzerland) and the southern slope of the Alps (Valle d’Aosta in Ital
+y and 
+canton of Ticino in southern Switzerland).  
+In the Alps, lightning-induced fires occur from May to October with a peak in July -August (78% 
+of the events!). These fires differ from fires of anthropogenic origin in geographic distribution and 
+duration. For example, lightning-induced fires occur at higher elevations on steeper relief and are 
+usually harder to extinguish because of underground fires. In hot and dry summers, such as the 
+drought-period in summer 2003, lightning-fires have become particularly frequent with significant 
+higher burned area and fighting costs. This is an important point that has to be taken in 
+consideration in view of the postulated climate change toward an increase in severity and 
+frequency of prolonged summer drought-periods. 
+ 
+Keywords: natural forest fires, Alps, fire control, lightning-induced fire 
+ 
+ 
+1. Introduction 
+ 
+In most forest ecosystems lightning is the only natural source of ignition in natural 
+fire regimes (Pyne et al. , 1996). The s tudy of lightning-induced fires is th erefore of 
+
+PAGE 2
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 2 
+particular relevance for ecological reasons, lightning fires being a primary agent of forest 
+renewal and succession (Podur 
+et al. , 2003; Larjavaara et al.  2005a). From a management 
+point of view, lightning-induced fires occur mostly in more remo te locations and therefore 
+detection and arrival of fire fighters for suppression activities are usually delayed. In case of 
+intense lightning activity following a drought period, this causes an aggregation in time and 
+space of lightning-ignited fires, which may put a strain on the initial attack by the fire 
+brigades and thus lead to longer and more difficult fire fighting campaigns (Podur et al.  
+2003; Wotton & Martell 2005). 
+In the boreal and subalpine forests of Canada, lightnings cause around 60% of the 
+forest fires and over 80% of the area burned (Nash & Johnson 1996). In the boreal forest of 
+Fennoscandia there is a high density of lightning -ignited fires, especially in the southern 
+part (0.1 to 0.2 fires/years 100 ha), whereas the humid part in the nort h has a very low 
+density of lightning fires (0.01 to 0.03 fires/years 100 ha) (Granström 1993; Larjavaara et 
+al. 2005b ). As a consequence, research on lightning behaviour related to forest fire has a 
+long tradition in the boreal regions ( Podur et al.  2003 ). In the Mediterranean countries, 
+lightning ignited fires have long be en ignored b y wildfire research as the events were 
+regarded as statistically insignificant (1-2 % of t he events according to Susmel 1973) in 
+most regions. Recently however, the existence  of a significant lightning fire regime has 
+been reported for a Mediterranean area such as the NE coast of the Iberian Peninsula 
+(Vasquez & Moreno 1998; Galan et al. 2002). 
+Frequency and distribution of lightning-caused forest fires depend on  weather 
+(drought or lac k of pre cipitation, frequency and type of the thunderstorms and of the 
+associated lightning discharges, ventilation), fuel (type, moisture, density and depth) and 
+topography conditions (Flannigan & Wotton 1991; Anderson 2002; Cesti  et al.  2005 ; 
+Larjavaara et al.  2005a) . Some authors suggest in this context that changes in summer 
+weather conditions and land use may lead to an altered lightning-ignited fire regime in the 
+future (Street 1982; Flannigan & van Wagner 1991; Balling et al. 1992 ; Weber & Stocks 
+1998). 
+In this paper we present and discuss data on the occurrence and characteristics of 
+lightning-ignited fires in the Western and Central Alps. 
+ 
+ 
+2. 
+Methods 
+ 
+Wildfire data for the Alpine region are scarce and heterogeneous. In Switzerland, 
+systematic forest fire data have been collected for the canton of Ticino (100 years coverage) 
+and the canton of the Grisons (25 years), whereas in the canton of Valais a historical survey 
+of forest fire events is currently ongoing. In Valle d'Aosta (Italy) data hav
+e been collected 
+since 1961. All existing data are collected in the forest fire data-base of WSL (Pezzatti et 
+al. 2005). When complete, the information entered in the forest fire data -base includes date, 
+ignition time and duration of the fire event, estima ted cause, location (ignition point and 
+burned perimeter), and total area burned. 
+For the Canton Ticino, we performed the analysis of the meteorological conditions 
+related to lightning-ignited fires. To this purpose, we calculated the Canadian Forest Fire 
+Weather Index (FWI) and the related subindexes (FFMC, DMC, DC)  ( van Wagner 1987, 
+Lawson et al.  1996) , for the meteorological station of Meteoswiss located in Locarno -
+Monti (Fig. 1). 
+
+PAGE 3
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 3 
+ 
+Fig. 1. Study area. 
+ 
+In the same meteorological station for the period 1 982-2004 the daily number of 
+lightning discharges in a radius within 3 and 300 km was registered by means of electric 
+field antennas. We consider this information as a rough estimation of the discharge activity 
+since the incoming electromagnetic signal was  not verified during registration (possible 
+other sources, number of return strokes, etc.) and a lightning location system was missing. 
+Due to the inconsistency of the data available, results are presented using different 
+data sets according to the availability and reliability of the information. 
+ 
+ 
+3. 
+Results and discussion 
+ 
+The relative importance of lightning-caused fires increased in the last decades in the 
+Alps. For the study area covering the Swiss Alps and Valle d'Aosta, lightning was the cause 
+of 4.3% o f the total number of fires in the 1980ies. This percentage rose to 8.1% for the 
+period 1991-2004. The highest proportion of lightning-ignited fires with respect to the total 
+number of forest fires was registered in the canton of the Grisons (26.8% in the period 
+1991-2004). For the period 1991 -2004, the highest concentration of lightning-ignited forest 
+fires took place in the canton Ticino where 0.25 events per year and 100 km 2 were 
+registered. This means that 33.8% of all forest fires events happened betwe en May and 
+October in canton Ticino in the last 15 years were ignited by lightning. 
+There is a great annual variability among and within each single region (Fig. 2). Not 
+even the extremely dry and hot summer 2003 was a lightning-fire year throughout the study 
+area: significant high frequency of lightning-ignited fires is reported for the Grisons and 
+valle d'Aosta, whereas in the Canton of Valais, very few lightning-fire events occurred, 
+probably because of the different (low) thunderstorm and strike frequency in the area. 
+ 
+
+PAGE 4
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 4 
+ 
+ 
+Fig. 2. Annual frequency (bars) and area burned (dots) by lightning-ignited fires in the study 
+area for the period 1961 -2004 (TI = Ticino; GR = Grisons; VS = Valais; AO = Valle 
+d’Aosta). 
+ 
+
+PAGE 5
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 5 
+0
+10
+20
+30
+40
+50
+60
+Jan Feb Mar apr May Jun Jul Aug Sep Oct Nov Dec
+%
+Ticino
+Grisons
+Valais
+Valle d'Aosta
+ 
+Fig. 3. Monthly distribution of lightning-ignited fires in the study area in the period 1991-2004 
+ 
+ 
+In t he Alps, lightning-caused forest fires usually occur between May and October 
+(Fig. 3). Similar to what other authors reported for the boreal area (Granström 1993; 
+Wotton & Martell 2005), the bulk of  the events (90.9%) takes place during the warm 
+summer months of June to August, with some differences within the regions because of the 
+different elevation, expositions and start of the warm season. 
+ 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+1 2 3 4 5 6 7
+holdover duration (days)
+%
+Ticino (estimation from the period 1981-2004)
+Valle d'Aosta (observed in 2003)
+ 
+ 
+Fig. 4. Time elapsing between lightning-strike and fire detection in the Alps. 
+ 
+ 
+In the Alps, very few observations exist about the process and the time usually 
+elapsing between ignition through a lightning strike and the detection of the fire (holdover 
+duration). Similar to what is reported for the Boreal and subalpine forests of Canada (Nash 
+& Johnson 1996; Wotton & Martell 2005), there is a time lag (holdover duration) between 
+
+PAGE 6
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 6 
+the lightning strike and the detection of the fire (Fig. 4). For the canton of Ticino we 
+estimated the holdover duration searching backwards for the first days with discharges from 
+the time of the notification of a lightning-ignited fire. This may cause an underestimation of 
+the holdover duration since we do not  have precise information about the location of the 
+discharges. Generally speaking, the shorter holdover duration in the Alps (96 -98% of the 
+events are detected within 3 days) compared to Canada (only 76 -78% of the events are 
+detected within 3 days, Nash &  Johnson 1996; Wotton & Martell 2005) may be due to the 
+greater chance of  a starting fire to be detected in the Alps (higher population density and 
+favourable detecting conditions on the steep slopes). 
+ 
+ 
+0
+500
+1000
+1500
+2000
+2500
+TI GR AO
+altitude (m a.s.l.)
+0
+30
+60
+90
+120
+150
+TI GR AO
+slope (%)
+0
+20
+40
+60
+80
+100
+TI GR AO
+duration (hours)
+ 
+ A B C 
+ 
+Fig. 5. Different characteristics of lightning-ignited (dots) and anthropogenic (squares) fires in the 
+vegetation period (May to October). A = altitude of the ignition point; B= mean slope of the 
+burned area; C = duration of the fire event ; period 1981-2004 (TI = Ticino; GR = Grisons; 
+AO = Valle d’Aosta). 
+ 
+ 
+In contrast to the situation in the boreal forests o f Canada (Weber & Stocks 1998), 
+fires caused by lightning were only responsible for 4.1% of the total burned area in the Alps 
+(period 1991-2004). Similar to what Vasquez & Moreno (1998) report for peninsular Spain, 
+lightning-caused fires as a rule produce small-size fires. In fact, lightning usually causes 
+fires in the coniferous forests at high elevation in the Alps. Such fires are often started by a 
+underground ignition that may keep smouldering locally for days and weeks. Lightning-
+ignited fires thus tend to be clustered toward higher elevation, steeper slopes and to last 
+longer before being extinguished than the anthropogenic fires that occur in the same period 
+(Fig. 5). The differences are high significant (non parametric Mann-Whitney U-test) for all 
+the analysed characteristics in the canton of Ticino and Valle d'Aosta. This is not the case 
+in the canton of the Grisons, where the general high elevation of the territory reduces the 
+difference between naturally induced and anthropogenic fires. In fact, hu
+man caused fires 
+usually occur in areas with high population density or improved access (Weber & Stocks 
+1998).
+ 
+In extreme drought -summers or under particular fuel and topographic conditions, 
+lightning-fires are more likely to turn into surface or crown fir es causing a significant 
+increase in the fire frequency and/or burned area. This was the case in 1976, 1983 -84, 
+1990-91 and 2003 in Ticino; 1983 -84 and 2003 in the Grisons; 2003 in Valle d'Aosta (Fig. 
+2). 
+ 
+*** *** *** *** *** ** n.s. n.s. 
+
+PAGE 7
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 7 
+Figure 6 show s the relationship between the mean v alue of the Canadian Forest 
+Fire Weather Index (FWI) and of the Drought Code (DC) for the summer months and 
+number and characteristics of the corresponding lightning-ignited fires. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fig. 6. Mean values of FWI and DC for the summer months June to August in Locarno-Monti with 
+respect to the number of fires (A), total burned area (B) and total fighting costs (C) in the 
+canton Ticino (period 1982-2004). 
+ 
+ 
+ 
+ 
+R2 = 0.6943
+R2 = 0.6779
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+0 5 10 15 20 25 30
+Number of lighting-ignited fires
+FWI
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+DC
+FWI DC
+R2 = 0.6795
+R2 = 0.6709
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+0.01 0.1 1 10 100 1000
+Burned area [ha]
+FWI
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+DC
+R2 = 0.6149
+R2 = 0.5087
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+100 1000 10000 100000 1000000
+Total costs [CHf]
+FWI
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+DC
+A 
+B 
+C 
+
+PAGE 8
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 8 
+ 
+Fire frequency (Fig. 6A), total area burned (Fig. 6 B) and  t otal fighting costs (Fig. 
+6C) tend to increase with increasing values of FWI and DC. Both indexes correlate well 
+with the analysed response variable and the correlations are throughout high significant (p 
+< 0.001) with the only exception of the fighting costs with respect to the FWI (p < 0.01). 
+This is probably due to the fact that mean values over the summer very well describe the 
+dryness of the season, which is not the case for the daily values, especially the FWI. Daily 
+observations of the FWI in Valle  d’Aosta where the Canadian Forest Fire Weather Index 
+has been used since the early 1990ies (Cesti & Cerise 1992) show the limited correlation 
+between the FWI values of the day (or of the days before the event) and the lightning -
+ignited fires (data not shown). 
+ 
+ 
+ 
+ 
+4. Conclusions 
+ 
+The statistical data on lightning-ignited fires confirmed the existence of a natural 
+fire regime in the Alps as already demonstrated by Tinner et al.  (200 5) for the past. 
+Frequency and severity of lightning-ignited fires seem to be st rongly dependent on seasonal 
+weather conditions. In the light of a possible climate change towards an increased 
+frequency of hot and dry summers (Schär et al. 2004), our results suggest that in the future, 
+lightning-induced fires may assume a significant e cological role and have a higher 
+economical impact in the Alps, as already suggested by Schumacher (2004) who used a 
+modelling approach. 
+ 
+ 
+Acknowledgements 
+ 
+We are grateful to Peter Longatti for the English revision of the text. 
+ 
+ 
+5. Literature cited 
+ 
+Anderson, K., 2002. A model to predict lightning -caused fire occurrences. International 
+Journal of Wildland Fire 11: 163-172. 
+Balling, R.C., Meyer, G.A., Wells, S.G., 1992. Climate c hange in Yellowstone National 
+Park: Is the drought-related risk of wildfires increasing? Climate change, 22: 35-45. 
+Cesti, G. , Cerise, A. 1992 . Aspetti degli incendi boschivi. Analisi dei comportamenti 
+particolari del fuoco e delle sue tipologie negli incendi boschivi. Esame di una realtà 
+alpina. Musumeci editore, Quart (AO), 295 pp. 
+Cesti, G., Conedera, M., Spinedi, F., 2005. Considerazioni sugli incendi boschivi causati da 
+fulmini. Schweiz. Z. Forstwes. 156, 9: 353-361. 
+Flannigan, M.D., van Wagner, C.E., 1991. Climate change and wildfires in Canada. 
+Canadian Journal of Forest Research, 21: 66-72. 
+Flannigan, M.D., Wotton, B.M., 1991. Lightning-ignited forest fires i n Northwestern 
+Ontario. Canadian Journal of Forest Research, 21: 277-287. 
+
+PAGE 9
+V International Conference on Forest Fire Research  
+D. X. Viegas  (Ed.), 2006 
+ 
+ 9 
+Galán, M., Castellnou, M., Arilla, E., Martinez, E., Lleonart, S., Larrañaga, A., Lopez, M. 
+2002: Fire events on the NE Mediterranean coast of the Iberian Peninsula and 
+lightning fires in Catalonia: Is there a significant fire regime? In: Viegas, D.X. (ed .) 
+IV International Conference on Forest Fire Research, Luso, Portugal [CD -ROM] 
+Rotterdam, Millpress, 11 p. 
+Granström, A., 1993. Spatial and temporal variation in lightning ignitions in Sweden. 
+Journal of Vegetation Science, 4: 737-744. 
+Larjavaara, M., Pennanen, J., Tuomi, T.J., 2005 a. Lightning that ignites forest fires i n 
+Finland. Agricultural and Forest Meteorology, 132: 171-180. 
+Larjavaara, M., Kuu luvainen, T., Hannu, H.R., 2005b. Spatial distribution of l ightning-
+ignited forest fires in Finland. Forest Ecology and Management, 208: 177-188. 
+Lawson B.D., Armitage O.B., Hoskins W.D., 1996 Diurnal Variati on in the Fine Fuel 
+Moisture Code: Tables and Computer Source Code. Canada -British Columbia 
+Partnership Agreement on Forest Resource Development: FRDA II, Ministry of 
+Forest – Canadian Forest Service, Victoria, p. 20. 
+Nash, C.H., Johnson, E.A., 1996. Synop tic climatology of lightning-caused forest fires in 
+subalpine and boreal forests. Canadian Journal of Forest Research, 26: 1859-1874. 
+Pezzatti, G.B., Conedera, M., Kaltenbrunner, A., 2005. Die neue Waldbranddatenbank. 
+Bündnerwald, 58, 6: 37-39. 
+Pyne, S.J., Andrews, P.L., Laven, R.D., 1996. Introduction to Wildland fire. John Wiley & 
+Sons., 769 p. 
+Podur, J., Martell, D.L., Csillag, F., 2003. Spatial pattern of lightning-caused forest fires in 
+Ontario, 1976-1998. Ecological Modelling, 164: 1-20. 
+Schär, C., Vi dale, P.L., L üthi, D., F rei, C., H äberli, C., L iniger, M.A. , A ppenzeller, C.,  
+2004. The role of increasing temperature variability in European summer 
+heatwaves. Nature, 427: 332-336.  
+Schumacher, S., 2004. The role of large -scale disturbances and climate for the dynamics of 
+the landscape in European Alps, PhD-thesis ETHZ no. 15573, Zurich, 141 pp. 
+Street, R.B., 1989. Climate C hange and Forest Fires in Ontario. In: Proceedings of the 10th 
+Conference on Fire and Forest Meteorology, April 17 -21 1989, Ottawa, C anada, 
+177-182. 
+Susmel, L., 1973. Developpment and present problems of forest fire control in the 
+Mediterranean region. FAO Report, Rome, 100 p. 
+Tinner, W., Allgöwer, B., Ammann, B., Conedera, M. , Gobet, E. , Lotter, A.F. , Stähli, M., 
+2005. Ausmass und Auswirkungen der Waldbrände auf die Vegetation der Schweiz 
+im Laufe der Jahrtausende. Schweiz. Zeitschrift für das Forstwesen. 156, 9: 325 -
+330. 
+Van Wagner, C.E., 1987. Development and structure of the C anadian Forest Fire Weather 
+Index System. Canadian Forestry Service, Tech. Rep. 35, Ottawa, 37 p. 
+Vasquez, A., Moreno, J.M., 1998. Patterns of lightning- and people -caused fires in 
+Peninsular Spain. International Journal of Wildland Fire 8, 2: 103-115. 
+Weber, M.G., Stocks, B.J., 1998. Forest fires and sustainabil ity in the boreal f orests of 
+Canada. Ambio, 27: 545-550. 
+Wotton, B.M., Martell, D.L., 2005. A l ightning fire occurrence model for Ontario. 
+Canadian Journal of Forest Research, 35: 1389-1401. 
+ 

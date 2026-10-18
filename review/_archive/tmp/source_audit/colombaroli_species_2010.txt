@@ -1,0 +1,1041 @@
+PAGE 1
+Species responses to ﬁre, climate and human
+impact at tree line in the Alps as evidenced by
+palaeo-environmental records and a dynamic
+simulation model
+Daniele Colombaroli 1*, Paul D. Henne 1,2, Petra Kaltenrieder 1, Erika Gobet 1 and
+Willy Tinner 1
+1Institute of Plant Sciences and Oeschger Centre for Climate Change Research, University of Bern, CH-3013 Bern,
+Switzerland; and 2Department of Environmental Sciences, Forest Ecology, Swiss Federal Institute of Technology
+Zu¨ rich, CH-8092 Zu¨ rich, Switzerland
+Summary
+1. We use high-resolution records of macroscopic charcoal and plant remains from sediments of a
+lake in the Swiss Alps (Gouille´Rion, 2343 m a.s.l.) to reconstruct local ﬁre variability and vegeta-
+tion dynamics over the last 12 000 years.
+2. Species response to ﬁre variability and to summer temperature was obtained by combining
+regression analyses between contiguous series of plant macrofossils, macroscopic charcoal and an
+available reconstruction of past summer temperature.
+3. With a dynamic landscape vegetation model (L andClim), we simulated ﬁre regimes using two
+levels of ignition frequency and moisture availability to disentangle the role of climate vs . humans
+on ﬁre occurrence. The simulation results show that human disturbance was relevant in control-
+ling the ﬁre variability and are in agreement with pollen evidence of human impact from previous
+studies from Gouille´Rion.
+4. Our results show that ﬁre is a natural disturbance agent in the tree line ecotone. Biomass avail-
+ability controlled the ﬁre regime until increased land use and anthropogenic ﬁre during the past
+4000 years changed species composition and vegetation structure close to the tree line.
+5. Important species at the tree line ecotone such as Pinus cembra greatly beneﬁtted from periods
+with temperature above the modern mean July temperature, if anthropogenic ﬁre disturbance was
+not too severe, such as during the Bronze Age (c. 4000 cal. years bp).
+6. When mean July temperatures were lower than modern mean July values, Juniperus nana and
+Larix decidua were at an advantage over P. cembra. With increasing anthropogenic ﬁre, open lands
+with J. nana replaced L. decidua and P. cembra forest stands.
+7. Synthesis. Fire activity was low to moderate during the early and mid-Holocene. Intensiﬁed land
+use coupled with ﬁre occurrence since the Bronze Age ( c. 4000 cal. years bp) had a larger impact on
+species composition near the tree line than climate change. Although climate change will alter vege-
+tation composition, future dynamics of mountain forests will be co-determined by anthropogenic
+ﬁre. For example, high ﬁre variability may impede upslope establishment of forests in response to
+climatic warming as expected for this century, with serious implications for forest diversity.
+Key-words: Alps, Bronze Age, dynamic vegetation model, ﬁre history, human impact,
+LandClim model, macroscopic charcoal, palaeoecology and land-use history, regression analyses,
+tree line ecotone
+Introduction
+Fire is a prominent factor driving vegetational pathways in
+many mountain ecosystems (Carcaillet 1998; Gobet et al.
+2003; Sta¨ hli et al. 2006). For instance, at low altitude, forest*Correspondence author. E-mail: daniele.colombaroli@ips.unibe.ch
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society
+Journal of Ecology 2010, 98, 1346–1357 doi: 10.1111/j.1365-2745.2010.01723.x
+
+
+PAGE 2
+ﬁres promote dominance by ﬁre-prone or early successional
+species, whereas at higher altitude, where conditions are
+moister, infrequent ﬁres allow t he establishment of ﬁre-sensi-
+tive or late-successional species (e.g. the Paciﬁc Northwest,
+Agee 1993). Under natural conditions, ﬁre occurrence is gener-
+ally controlled by ignition frequency and fuel dryness,
+although in the Alpine regio n humans have intentionally
+altered ﬁre regimes since the N eolithic and perhaps earlier
+(Gobet et al. 2003; Carcaillet et al. 2009). However, with the
+exception of particularly ﬁre-prone areas, ﬁre frequency in the
+Alps is generally low under present climatic conditions and
+land-use patterns. Most historical ﬁres occurred in drier south-
+slope (Conederaet al. 2004) or in submontane forests of conti-
+nental, rain-sheltered valleys (e.g. the Swiss Rhone valley;
+Zumbrunnen et al. 2009) and were of anthropogenic origin.
+Fire is less frequent in higher-e levation forests, where high-
+elevation livestock grazing has kept biomass low for millennia
+and the climate is cooler and moister. However, the tree
+line ecotone is also highly sensitive to climatic and land-use
+changes that may alter the susc eptibility to ﬁre occurrence.
+For example, ongoing agricultural abandonment favours
+afforestation and increases fuel loads in former high-elevation
+pastures (Rutherfordet al. 2008). Furthermore, rising temper-
+atures induce upslope migration of individual species and
+allow rapid (i.e. decadal-scale)upslope tree line expansion into
+unforested landscapes (e.g. Harsch, Hulme & McGlone 2009).
+Climatic change may also increase the incidence of hot, dry
+weather conditions that favour ﬁre occurrence in previously
+moist ecosystems. In agreement, recent studies concluded that
+ﬁre frequency and intensity are likely to increase in the future
+as average temperatures rise andsummer precipitation declines
+(IPCC 2007; Marlonet al. 2009).
+Two approaches, palaeo-environmental reconstructions
+(e.g. sedimentary analyses ) and dynamic modelling are
+commonly used to study the interactions among climate, ﬁre
+occurrence, land use and vegetation beyond the annual to dec-
+adal scale of observations and experiments (Kelleret al. 2002;
+Tinner et al. 2005; Schumacher & Bugmann 2006; Brubaker
+et al. 2009; Conedera et al. 2009). Retrospective studies using
+lake-sediment charcoal as a proxy for past ﬁre regimes provide
+valuable long-term ﬁre-regime records, but are still rare in the
+Alps. When paired with high temporal-resolution and contigu-
+ous palaeobotanical reconstructions, charcoal records can be
+used to infer the ecological impacts of changing ﬁre regimes
+over millennia (Tinner et al. 1999; Whitlock & Millspaugh
+2001). This approach is extremely time-consuming and thus
+even more rare (Conedera et al. 2009). Dynamic vegetation
+models can bolster interpreta tions of sedimentary series by
+testing competing hypotheses, because the underlying factors
+of environmental change can be isolated in mechanistic model
+experiments (Keller et al. 2002; Anderson et al. 2006; Heiri
+et al. 2006). In addition, models can simulate competing
+scenarios to examine vegetational responses at spatial and tem-
+poral resolutions unobtainable from sedimentary series. Fur-
+thermore, dynamic landscape models that are validated using
+long-term palaeoecological reconstructions may be conﬁdently
+employed to simulate future vegetation outcomes.
+In this paper, we use a Holocene macroscopic charcoal and
+macrofossil lake-sediment record from the Swiss Central Alps
+that has been previously published (Kaltenrieder, Tinner &
+Ammann 2005). The well-dated contiguous macroscopic
+charcoal and plant macrofossil records are used for the ﬁrst
+time to reconstruct local ﬁre history and to derive responses
+of tree line vegetation to ﬁre occurrence. Then, we statistically
+compare our local records with quantitative climate recon-
+structions from another site in the Alps (i.e. Hinterburgsee,
+Heiri et al. 2003) to gain insights into vegetation responses to
+Holocene climatic change. We c ompare our ﬁre reconstruc-
+tion with ﬁre events simulated by the L andClim dynamic
+landscape vegetation model to examine with high spatial and
+temporal precision potential forcing mechanisms of ﬁre-
+regime change. The model simulation allows us to better
+understand whether climate and ⁄ or human impact better
+explain the observed Holocene ﬁre regime changes. Our
+results might be relevant to better direct future environmental
+development under global ch ange scenarios, such as the
+response of the tree line ecotone to warming temperature and
+increasing anthropogenic ﬁre.
+Materials and methods
+STUDY SITE
+Gouille´Rion (46/C176 09¢25¢¢ N, 07/C176 21¢45¢¢ E) is a small lake (0.5 ha) with
+a catchment area of c. 80 ha, located at 2343 m a.s.l. in the Rhone
+Valley of the Swiss central Alps (Fig. 1). The valley is relatively dry,
+with precipitation (mean: c. 1100 mm year )1) most abundant during
+winter and temperatures (annual mean: c.1 /C176 C) with maximum
+values in July ( c.8 /C176 C, Thornton, Running & White 1997). Fires in
+the region are mostly concentrated in the late summer when climatic
+conditions are warm and dry. However, historical records indicate
+human activities during the last 100 years were more important than
+climate in controlling ﬁre occurrence (Zumbrunnen et al. 2009).
+The lake is situated within the modern tree line ecotone, which
+represents the transition zone between the closed forest (i.e. the tim-
+berline, 2100 m a.s.l.) and upper limit of individual tree species (i.e.
+the tree line limit, c. 2350 m a.s.l., with single trees > 2 m, Arno &
+Hammerly 1993; Ko¨ rner 1999). Today, the tree line ecotone is mostly
+composed of Pinus cembra L., Larix decidua Mill., together with Vac-
+cinium and Rhododendron species in the understorey (Kaltenrieder,
+Tinner & Ammann 2005). Although L. decidua and P. cembra are not
+under their optimal growing conditions at tree line, they are the only
+trees that can survive and reproduce under these harsh continental
+climatic conditions (Ozenda 1988; Ellenberg 1996). Open woody veg-
+etation around Gouille´Rion established during the Bronze Age with
+dwarf shrubs Juniperus nana Willd. and Alnus viridis Dc. (Tinner,
+Ammann & Germann 1996; Kaltenrieder, Tinner & Ammann 2005).
+Picea abies L. dominates nearby forests at lower altitudes (800 to
+about 1700 m a.s.l.).
+CHRONOLOGY, PLANT MACROFOSSILS AND
+STATISTICAL TREATMENT OF CHARCOAL DATA
+Continuous macrofossil records including charcoal area concentra-
+tions (mm2 cm)3) were available from previous studies and full meth-
+odological descriptions are provided elsewhere (Tinner, Ammann &
+Germann 1996; Kaltenrieder, Tinner & Ammann 2005; Tinner &
+Species responses to ﬁre at tree line in the Alps 1347
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 3
+Kaltenrieder 2005). We used c. 22–25 cm3 of sediment and sieved
+through a 0.2-mm mesh screen to gain all macrofossils, including
+charcoal particles. We amalgamated three records (GR1, GR2 and
+GR 6–7) according to their independent accelerator mass spectrome-
+try radiocarbon chronologies (see Appendix S1 in Supporting Infor-
+mation). The period 12 000–2600 cal. years bp (GR 6 ⁄ 7) is covered
+by the macrofossil (and charcoal) record published in Kaltenrieder,
+Tinner & Ammann (2005) and reaches a continuous sampling resolu-
+tion of 0.5 cm (44 ± 19 years per sample, total of 212 samples). The
+last 2600 years (GR1 and 2) are presented in Tinner, Ammann &
+Germann (1996) and reach a sample resolution of 3 cm (62 ±11 years
+per sample, total of 39 samples). Only terrestrial plant macro-
+fossils were used for dating (Tinner, Ammann & Germann 1996;
+Kaltenrieder, Tinner & Ammann 2005). The chronology of the new
+synthesis macrofossil record (total of 39 radiocarbon dates) spanning
+the entire Holocene is described in detail in Appendix S1.
+Charcoal area concentrations were not statistically analysed in
+previous studies of Gouille´Rion. We interpolated all charcoal area
+concentrations to the median sample resolution (51 years) and con-
+verted to charcoal accumulation rates (CHAR, lm
+2 cm)2 year)1).
+We smoothed CHAR values with a standard Locally Weighted
+Scatterplot Smoothing (LOWESS, 800-year window) to identify
+background charcoal (BCHAR, which might be secondary deposited
+charcoal or reﬂect regional ﬁre activity, Whitlock & Larsen 2001).
+Smoothing using a robust LOWESS resulted in the same number of
+ﬁre events. Residuals were obtained by subtracting (untransformed)
+raw CHAR from the BCHAR values. To reconstruct inferred ﬁre
+frequency (IFF, ﬁre episodes per 500 and 1000 years), we compared
+two different approaches to identify thresholds values, i.e. the values
+above which local ﬁre episodes are identiﬁed from residual peaks. We
+ﬁrst considered a locally deﬁned threshold (Higuera et al. 2008) based
+on the 90th percentile of the noise distribution, as deﬁned by a Gauss-
+ian mixture model (Gavin, Brubaker & Lertzman 2003a). The local
+threshold method is appropriate in our case because long-term
+changes in fuel availability and species composition may have
+affected charcoal production around the site (Tinner et al. 2005). In
+this analysis we did not perform a minimum-count screening, because
+CHAR values are based on area rather than number. We also consid-
+ered a more conservative approach, using a globally deﬁned threshold
+value based on the 99th percentile of the noise distribution. In a ﬁnal
+step, we smoothed the IFF over 500- and 1000-year windows to eval-
+uate trends in biomass burning over time. For the analyses, we used
+the Charanalysis software by Higueraet al. (2008).
+TESTING RECONSTRUCTED FIRE REGIMES WITH A
+DYNAMIC LANDSCAPE MODEL
+We tested competing scenarios explaining the observed dynamics
+among climate, ﬁre occurrence, human impact and vegetation with
+the L andClim model (Schumacher, Bugmann & Mladenoff 2004;
+Schumacher & Bugmann 2006). L andClim is a spatially explicit sto-
+chastic model consisting of a local model simulating forest succession
+and a landscape model simulating disturbance processes such as ﬁre,
+wind and harvest. L andClim operates on long time scales (hundreds
+to thousands of years) at a spatial extent large enough to encompass
+landscape- to regional-scale disturbance events (i.e. up toc. 100 km
+2),
+but at ﬁne enough resolution to capture local physiographical varia-
+tion (i.e. grid cells of 25 · 25 m). Fire events and vegetation composi-
+tion are emergent properties of the model that dynamically respond
+to changing climatic conditions. Vegetation composition is simulated
+using competitive interactions based on species-speciﬁc tolerances for
+moisture availability, temperature, light, as well as growth rates and
+maximum size. Fire occurrence requires an ignition source, and the
+probability that a ﬁre spreads is determined using an exponential rela-
+tionship between a drought index calculated from climatic and
+edaphic conditions, and a ﬁre-spread coefﬁcient (Appendix S2.1;
+Schumacher et al. 2006). LandClim has been previously used to simu-
+late wildﬁre in mountain ecosystems in both the European Alps and
+North American Rocky Mountains (e.g. Schumacher et al. 2006).
+For complete documentation of L andClim and the L andClim ﬁre
+Fig. 1. Location of the investigated site in
+the Central Swiss Alps. The catchment area
+(500 m radius, dashed circle) corresponds to
+c. 80 ha and to the simulated area burned.
+The position of the site allows ﬁre to spread
+just from the north-facing slope, decreasing
+the probability for ﬁre to spread from the
+drier south-facing slope.
+1348 D. Colombaroli et al.
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 4
+routine see Schumacher, Bugmann & Mladenoff (2004), Schumacher
+& Bugmann (2006) and Appendix S2.1–S2.4.
+We simulated vegetation and ﬁre dynamics within a 500-m radius
+(c. 78 ha landscape) of Gouille´Rion. Because ﬁres may also spread
+into our study landscape, we produced exploratory simulations with
+a larger landscape (i.e. within a 3-km radius of Gouille´Rion, Appen-
+dix S2.4). In any case, our chosen landscape radius (500 m) matches
+the local source area of macroscopic charcoal (0–500 m, e.g. Lynch
+et al. 2002) and of plant macrofossils (0–100 m, Birks 2001) and,
+most importantly, it encompasses the Gouille ´ Rion watershed.
+Climatic inputs to LandClim were estimated by overlaying a quantita-
+tive chironomid-inferred reconstruction of Holocene July average
+temperature anomaly from Hinterburgsee, a subalpine lake in the
+northern Swiss Alps, with modern temperature and precipitation data
+(Heiri et al. 2003, 2006). Modern climatic data were obtained from
+weather station data from the period 1960 to 2006 that was interpo-
+lated to a 1-ha resolution using the DAYMET model (Thornton,
+Running & White 1997; Swiss Federal Institute for Forest Snow and
+Landscape Research). Precipitation variation is determined using the
+distribution of precipitation abundance in the period 1960–2006 and
+the modern relationship between temperature and precipitation. All
+extant Central European trees were included in our simulations, with
+the exception ofPinus mugo, which is most competitive on carbonatic
+soils, does not grow in the region and is absent in the fossil record. We
+also expanded the species list used in previous L andClim studies by
+including J. nana, a shrub species that is abundant in the macrofossil
+record. Juniperus nana life-history parameters follow Ellenberg
+(1996).
+We compared LandClim output from four scenarios (10-year time
+steps, each averaged over 25 replicates) to Gouille ´Rion ﬁre recon-
+structions. Each simulation represents a different combination of
+moisture availability and ignition frequency. Our ﬁrst scenario (S-1),
+builds on previous modelling and palaeobotanical efforts at Gouille´
+Rion. P.D. Henne, C.M. Elkin, B. Reinekink, H. Bugmann and
+W. Tinner (unpublished data) demonstrated that the reconstructed
+vegetational dynamics during the early Holocene (i.e. before
+8000 cal. years bp) could only occur with drier-than-present soil con-
+ditions. Thus, we simulated Holocene vegetation and ﬁre occurrence
+using poorly developed soils, and precipitation 30% lower than at
+present (for details about parameters used in the simulations see
+Appendix S2.2). Because precipitation likely increased during the
+middle Holocene and soil depth increased with time, a second
+scenario (S-2) uses modern precipitation abundance and soil depths.
+We used an ignition coefﬁcient for S-1 and S-2 (Appendix S2.1–
+S2.3) that is consistent with natural ignition frequencies for the
+central Alps (i.e. 0.002; Schumacher et al. 2006). Higher ignition
+frequency is a consistent consequence of increasing human land use
+worldwide. For example, increasing ﬁre frequency and consequent
+vegetational change throughout the Alps c. 4000 cal. years bp coin-
+cided with intensiﬁed land use during the Bronze Age (Tinner et al.
+2003). Therefore, scenarios three (S-3) and four (S-4) mimic intensi-
+fying land use during the late Holocene by increasing the ignition
+coefﬁcient 10-fold (i.e. from 0.002 to 0.02, see Appendix S2.2). This
+degree of change is consistent with the ﬁndings of Zumbrunnen
+et al. (2009) when comparing areas with low vs. high population
+density and land use. We further justiﬁed this approach with a sensi-
+tivity test that varied the ignition coefﬁcient from 0.001 to 0.2 and
+found that the area burned does not increase linearly with the num-
+ber of ignitions (Appendix S2.3). We used modern precipitation
+abundance and soil conditions for S-3, and used 30% less precipita-
+tion than at present in S-4. Soil conditions and the percentage of
+modern precipitation abundance remain constant through time
+within each model run. To facilitate comparison of simulated and
+reconstructed ﬁre regimes, we plotted total simulated burned cells at
+10-cells bin intervals and surface area burned at 10-year intervals.
+Additionally, we plotted events that burned a large portion of the
+landscape (i.e. at least 10%) for comparison among simulations.
+Those events in any case cannot be compared to our reconstructed
+events from sediment charcoal since they were not statistically trea-
+ted the same way.
+REGRESSION ANALYSES
+Unimodal or linear responses of species to environmental variables
+can be used to identify species environmental optima and disturbance
+tolerances. We examined the relationship between tree species abun-
+dance and Holocene summer temperature and ﬁre frequency by ﬁt-
+ting macrofossil percentage data with multiple regression models. We
+used a Generalized Additive Models (GAM; Hastie & Tibshirani
+1990) to describe the dependence of the three important woody plant
+species P. cembra, L. decidua and J. nana to local ﬁre impact and sum-
+mer temperature. We used plant macrofossils (%) as a proxy for
+species abundance at a local scale (0–100 m, Birks 2001). Plant mac-
+rofossil concentrations show similar trends as percentages at Gouille´
+Rion (Kaltenrieder, Tinner & Ammann 2005). Also, we used positive
+macroscopic charcoal residuals (i.e. the fraction of sediment charcoal
+not including background; Clark, Royall & Chumbley 1996; Lynch
+et al. 2002; Gavin, Brubaker & Lertzman 2003b). Macroscopic
+CHAR inﬂux (including the background component) is instead more
+appropriate when compared with extra-local to regional-scale vegeta-
+tional proxies such as pollen (Colombaroliet al. 2008). The departure
+from mean Holocene July temperatures, as reconstructed from chi-
+ronomid assemblages at Hinterburgsee (Heiriet al. 2003) was used as
+a quantitative proxy for Holocene temperature variation in the Alps.
+For the analyses, we considered a maximum of two degrees of free-
+dom and a Poisson distribution of the data. Stepwise selection based
+on the degrees of freedom (i.e. the polynomial order of the function)
+was used to identify the optimum model complexity that is alternative
+to the null model (i.e. no changing of species values with the predic-
+tor). This is done by choosing the model with the lowest AIC value
+(Akaike Information Criterion), which allows estimation of the parsi-
+mony of a particular regression model based on the residual variance
+(i.e. the difference between the observed and the ﬁtted value). Finally,
+we evaluated the outputs of distinct regression models by comparing
+the residual values of Generalized Linear Models vs. GAM. For all
+the analysis, we used Canoco 3.0.
+Results
+IDENTIFICATION OF CHARCOAL PEAKS,
+RECONSTRUCTED INFERRED FIRE FREQUENCY AND
+MEAN FIRE INTERVAL
+We identiﬁed 23 local ﬁre episodes during the last 12 000 years
+using a local threshold value (Higuera et al. 2008 and Fig. 2).
+The reconstructed ﬁre events f rom sediment charcoal likely
+represent a cluster of ﬁre events that cannot be captured at
+yearly scale because of the sample resolution (51 years in our
+case, see also Whitlock & Larsen 2001). Charcoal accumula-
+tion rates (CHAR) of particles > 200 lm average between
+1000 and 3000 lm
+2 cm)2 year)1, with maxima of
+4000 lm2 cm)2 year)1 around 3000 and 1000 cal. years bp,
+Species responses to ﬁre at tree line in the Alps 1349
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 5
+and minimum values before 7500 cal. years bp (Fig. 2a).
+Background component (BCHAR) increases after 7500 cal.
+years bp, reaching maximum values around 6000, 3000 and
+1000 cal. years bp (Fig. 2a). The resolution of the charcoal
+record (51 years) deﬁnes the minimum detectable mean return
+interval, with the sample resolution ideally one-ﬁfth of the ﬁre
+return interval (Clark 1988; Higueraet al. 2007). Thus the min-
+imum reliably detectable mean ﬁre return interval for Gouille ´
+Rion is c. 250 years. Overall, mean ﬁre interval values (MFI)
+range between c. 250–900 years per ﬁre, and corresponding
+IFF ranges between 1–4 ﬁres episodes per 1000 cal. years bp
+with highest values registered around 8500, 6000 and 3000 cal.
+years bp (Fig. 2b). Signal-to-noiseindex, which is an indicator
+of how distinct peaks are from background (Higuera et al.
+2009), show minimum values (i.e. maximum of noise) at
+c. 2500, 4000 and 7000 cal. years bp (Fig. 2c). The alternative,
+more conservative, reconstruction, which uses a globally
+deﬁned threshold value (Fig. 2d), identiﬁes a total of 17
+ﬁre episodes. Those events are mostly associated with the
+highest raw CHAR values and are grouped in two periods,
+between 7000–5000 cal. years bp and 4000–1000 cal. years bp
+(Fig. 2d).
+The comparison between the plant macrofossil record and
+reconstructed ﬁre frequency (Fig. 3) shows that the P. cembra
+expansion (c. 9000 cal. years bp) occurred when ﬁre frequency
+values were highest in the record (i.e. c. 3 episodes per
+1000 years). However, P. cembra decreased after 4000 cal.
+years bp, during a phase of increasing IFF values, which
+favouredJ. nana and L. decidua (Fig. 3d). In contrast, the ﬁrst
+expansion of L. decidua (c. 11 600 cal. years bp) started before
+the occurrence of charcoal-inferred local ﬁres.
+SIMULATED FIRE REGIMES AT GOUILLE ´ RION
+Ignition frequency has a larger impact on simulated ﬁre fre-
+quency and size than climatic conditions. For example, Land-
+Clim simulates comparable ﬁre frequencies and ﬁre sizes in
+scenario S-1 (dry, low ignition) and S-2 (wet, low ignition;
+Fig. 4). In both scenarios, most simulated ﬁres are small
+(< 1 ha), and the most severe events do not burn more than
+10% of the total landscape (Fig. 4a,b). These values are consis-
+tent with Zumbrunnen et al. (2009), who found that 85% of
+ﬁres in Valais from 1900 to 2000 were < 1 ha, because land-
+scape fragmentation is responsible for a patchy ﬁre pattern.
+Thus, our basic unit of analysis (25 · 25 m grid cell) is consis-
+tent with the minimum patch size that is likely to burn in
+cultural landscapes. Overall, ﬁre size distribution is also similar
+between the simulations with more frequent ignitions despite
+climatic and edaphic differences (S-3 and S4, Fig. 4c,d). Also,
+the number of ﬁres simulated in the high ignition scenarios
+is well below the maximum number of ﬁres that could burn
+with unlimited ignitions (Appe ndix S2.3). Average ﬁre sizes
+are larger when ignition is high (c. 1–2 ha), and the frequency
+of large events (e.g. > 10 ha) increases, but not proportion-
+ally, with the number of ignitions. Also, increased frequency of
+larger events following higher ignition coefﬁcients can be
+(a)
+(b)
+(c)
+(d)
+Fig. 2. The reconstructed local ﬁre history around Gouille ´Rion. (a) Raw CHAR (charcoal accumulation rates lm2 cm)2 year)1) and BCHAR
+(i.e. background charcoal, dashed line); (b) reconstructed ﬁre episodes around the lake, inferred ﬁre frequency (IFF; 1000 and 500 years windows,
+respectively) and positive residuals (bars); (c) signal-to-noise index 0-1 (Higueraet al. 2009); (d) a more conservative ﬁre reconstruction, identify-
+ing peaks (crosses) with high absolute values of positive residuals and corresponding IFF (1000 years window). Shadowed areas show periods
+with increased values of total CHAR and BCHAR. Most of the analysis of this study is based on the interpretation in (b).
+1350 D. Colombaroli et al.
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 6
+partly related to a possible effect of proximity of ignitions
+(Appendix S2.3). Despite the dominant impact of ignition
+frequency on ﬁre regimes, scenarios with dry climate do simu-
+late larger ﬁre sizes (i.e. up to 80% larger in the dry climate
+scenarios; Fig. 4d). Consider ing a larger landscape (total
+radius of 3 km, Appendix S2.4) did not increase ﬁre frequency
+within the dominant charcoal source area (i.e. within 500 m of
+Gouille´Rion). However, infrequent very large ﬁres that spread
+from the larger landscape did increase the maximum ﬁre size
+for scenario S1 (Appendix S2.4).
+SPECIES RESPONSE CURVES
+Generalized Additive Models show species response to vary-
+ing macrocharcoal residuals. For instance J. nana shows a
+positive linear response, whereas L. decidua exhibits a nega-
+tive response (Fig. 5a). The decline of P. cembra with increas-
+ing positive charcoal residuals is more marked than in L.
+decidua. The response of L. decidua and J. nana to recon-
+structed summer July temperature shows an optimum 2 /C176 C
+below the Holocene (and also the modern) mean July tem-
+perature of 8.1 /C176 C (Fig. 5b). In contrast, P. cembra increases
+when average July temperature was above the Holocene
+mean.
+Distinct responses of speci es to reconstructed summer
+temperature and to charcoal residuals show that these two
+variables are not correlated (Pe arson correlation positive
+CHAR residuals and July summer temperature = 0.046).
+Visual correlation between ﬁre f requency, July temperature
+and normalized CHAR show that charcoal and summer tem-
+perature are positively correlated before 7500 cal. yearsbp,a n d
+negatively correlated afterc. 7500 cal. yearsbp (Fig. 3b).
+Discussion
+FIRE VARIABILITY AT GOUILLE ´ RION OVER THE LAST
+12 000 YEARS
+Reconstructed local ﬁre episodes show that the trend in local
+biomass burning changed over time (Fig. 2). The causes of
+ﬁre regime changes in terms of frequency and size are often
+ambiguous, because ﬁre occurrence reﬂects the integrated
+effects of (i) climatic variabilit y at a decadal-to-centennial
+scale (affecting vegetation composition) and at an interannual
+scale (i.e. changes in temperat ure and moisture that control
+fuel ﬂammability and ignition probability); (ii) changes in
+species composition, e.g. through the immigration of more
+ﬁre-prone species and (iii) human-related activities such as
+grazing and land clearance, which limit the availability of fuel
+or directly increase ﬁre occurrence by ignition. On the basis of
+the palaeo-environmental record (e.g. pollen, macrofossils),
+we discuss how the observed variability in ﬁre occurrence
+might be related to the above factors over a long time scale
+(last 12 000 years).
+During the transition between the Late Glacial and early
+Holocene (c. 12 000–10 000 cal. years bp) local ﬁre activity was
+negligible near Gouille´ Rion (Fig. 2b). Around 11 350 cal.
+years bp,o n l y c. 200 years after temperature had abruptly
+increased by about 3–4 /C176 C, the tree line moved upward by
+about 800 m and reached Gouille´Rion elevation (2343 a.s.l.,
+Tinner & Kaltenrieder 2005). However, the presence of
+(a)
+(b)
+(c)
+(d)
+Fig. 3. Fire–vegetation relationship (a) inferred ﬁre frequency (IFF
+continuous line), raw charcoal accumulation rates (CHAR) and trend
+in background charcoal (BCHAR, dashed line); (b) departure from
+mean July summer temperature (Heiri et al. 2003). Shadowed areas
+represent phases of concordance (shadowed area with dashed line)
+and discordance (shadowed area with continuous line) between
+summer temperature and charcoal data; (c) trend of afforestation at
+the tree line limit, with the expansion of the shrub ecotone around
+4500 cal. years bp; (d) percentages of macrofossil for L. decidua ,
+P. cembra and J. nana (modiﬁed from Kaltenrieder, Tinner &
+Ammann 2005).
+Fig. 4. The four scenarios of ﬁre simulations on a total area of c. 78 ha around Gouille´Rion, Switzerland, corresponding to a radius of 500 m
+around the lake. Histograms (left side) represent binned numbers of cells at 10-cell intervals. Cumulative ogive curves are shown (dashed lines
+increasing right to left). Diagrams (right side) are 10-year averages of burned cells with corresponding events > 10% of landscape (dots). (a) S-1:
+scenario with dry and low number of ignitions; (b) S-2: scenario with wet and low ignitions; (c) S-3: scenario with wet and high ignitions; (d) S-4:
+scenario with dry and high ignitions; (e) raw charcoal accumulation rates (CHAR, histograms, exaggeration 2x) and background charcoal
+(BCHAR, dashed line). Wet conditions in S-2 and S-3 correspond to present mean values.
+Species responses to ﬁre at tree line in the Alps 1351
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 7
+(a)
+(b)
+(c)
+(d)
+(e)
+1352 D. Colombaroli et al.
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 8
+heliophilous J. nana, Dryas octopetala L., Rumex,a n d Salix
+macrofossils at this time (Tinner & Kaltenrieder 2005; Fig. 3d)
+indicates that L. decidua grew in an open environment and
+biomass was probably too low to support ﬁre occurrence
+(Tinner, Ammann & Germann 1996). At lower altitudes (e.g.
+Upper Engadine, Gobet et al. 2003), where conditions were
+probably drier, ﬁre occurred in parkland environments domi-
+nated byPinus species.
+Fires ﬁrst occurred between 10 000 and 8000 cal. years bp
+(four episodes per 1000 years, MFI = 250 years), when
+P. cembra formed closed forests with higher biomass (Tinner
+& Kaltenrieder 2005). Increasing ﬁre occurrence was probably
+promoted by higher fuel availa bility as well as the generally
+warm and dry conditions during the early Holocene. Around
+8400 cal. years bp L. decidua forests collapsed, probably in
+response to strong climatic changes (see discussion in Tinner &
+Kaltenrieder 2005). Subsequently climatic conditions became
+less continental and moister, probably resulting in a decrease
+of ﬁre frequency (8000–7000 cal. years bp).
+After 7500 cal. years bp, it is difﬁcult to assess whether the
+observed ﬁre variability was mostly human- or climatically dri-
+ven, since in nearby Sion ( c. 8 km away) rather intense early
+Neolithic farming had established by 7300 cal. yearsbp (Curdy,
+Leuzinger & Leuzinger-Piccand 2003). Between 7500 and
+3000 cal. years bp, a total of 12 local ﬁre episodes occurred,
+with a period of higher IFF and raw CHAR values from 7500
+to 5500 and a period of increasing IFF from 4500 to 2000 cal.
+years bp (Fig. 2b). These periods cover the Neolithic (c. 7500–
+4200 cal. years bp) and the Bronze Age (c. 4200–2800 cal. years
+bp) and may relate to human-induced ﬁre activity around the
+site. Indeed, an increase of human impact during the Neolithic
+and especially during the Bro nze Age is documented in the
+Gouille´R i o np o l l e nr e c o r d( T i n n e r ,A m m a n n&G e r m a n n
+1996).
+After 3000 cal. years bp, a general decrease in ﬁre activity
+occurred, with the exception of the Medieval period. Again,
+it is likely that the Medieval peak in ﬁre activity relates to land
+use. Drier conditions during the Medieval Climate Anomaly
+may have promoted agricultural activity and thus ﬁre use, or
+directly contributed to more ﬁres because of generally drier
+conditions. In any case the establishment of today’s open
+pastoral landscape with krumm holz and dwarf shrubs (e.g.
+L. decidua, Betula pubescens, P. abies, J. nana, D. octopetala,
+Vaccinium gaultherioides, Empetrum hermaphroditum ,
+Rhododendron ferrugineum and Salix)a n dh e r b s( e . g .Poten-
+tilla, Saxifraga and Carex) occurred at c. 1700 cal. years bp
+(Tinner, Ammann & Germann 1996; Kaltenrieder, Tinner &
+Ammann 2005). Inferred ﬁre frequency decreased to 1–2
+episodes per 1000 years (MFI: 500–1000 years), following a
+general decrease in biomass availability. Landscape openness
+reached a maximum at the end of the Medieval period
+(500 cal. years bp) and reforestation occurred regionally during
+the last century, following land abandonment and forest
+conservation policy (Rutherfordet al. 2008).
+Overall, our ﬁre reconstruction shows that MFI values
+(c. 250–1000 years per ﬁre, with c. 250 corresponding to the
+minimum reliably detectable return interval, Clark 1988) are
+comparable to the lower values found in a similar study from
+the central Alps, whereP. mugo forests burned with a MFI of
+230 years and P. abies forests with value ofc. 600 years (Sta¨ hli
+et al. 2006; Genries et al. 2009), but are also highly variable if
+compared to historical data in the region (Zumbrunnen et al.
+2009).
+DISENTANGLING CLIMATIC AND HUMAN INFLUENCES
+ON FIRE VARIABILITY
+Climatic and anthropogenic causes of ﬁre-regime changes
+are difﬁcult to disentangle usin g sedimentary records alone.
+For example, increasing CHAR and BCHAR values after
+7200 cal. years bp indicate a change in ﬁre regime while the
+vegetation type re mained constant ( P. cembra forest with
+L. decidua, Fig. 3d). Regional archaeological and pollen data
+(Welten 1982; Curdy, Leuzinger & Leuzinger-Piccand 2003;
+Harrison & Heyd 2007) as well as the absence of climatic
+evidence for a marked change at 7200 cal. years bp (Reasoner
+& Tinner 2008) suggest that humans caused this ﬁre-regime
+shift. However, the lack of local evidence at Gouille ´Rion
+makes it difﬁcult to deﬁnitively assign a human cause.
+Nonetheless, our LandClim simulation allows us to examine
+independently the effect of climatic (i.e. moisture availability)
+and anthropogenic (i.e. number of ignitions) conditions on the
+extent of area burned around the lake.
+In scenarios with low ignition (Fig. 4a,b), changing
+the degree of moisture availability in the landscape has a
+negligible effect on the area b urned. Most of the ﬁres in the
+(a) (b)
+Fig. 5. (a) Species response curves to CHAR
+(charcoal accumulation rates) positive resid-
+uals; (b) response curves to Holocene mean
+summer temperature, which is approxi-
+mately equal to the present mean July tem-
+perature (8.1 /C176 C).
+Species responses to ﬁre at tree line in the Alps 1353
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 9
+landscape are very small for both simulations (< 1 ha,
+Fig. 4, histograms), and drier conditions also trigger ﬁre
+episodes of limited extent (< 5 ha). The competing scenarios
+under modern precipitation abundance (Fig. 4c,d) show that
+changing the number of ignitions greatly increases the total
+area burned. Most of the ﬁre episodes burned areas covering
+up to 2 ha (Fig. 4, histograms), and several events cover
+10–50% of the simulated landscape (Fig. 4, diagrams). When
+coupled to drier conditions (Fig. 4d) the increased number of
+ignitions results in ﬁres burning a greater portion of the land-
+scape, although the number of smaller ﬁre episodes remains
+comparable (Fig. 4c,d, histograms). Thus, our simulations
+show that ignition frequency has a larger impact than climatic
+conditions on the ﬁre regime. Also, number of ignitions may
+greatly affect the size of area burned, when exacerbated by
+drier conditions.
+Simulation results indicate that the CHAR increase after
+7200 cal. years bp, probably relates to increased human impact
+during the Neolithic, which promoted ﬁre occurrence through
+more frequent ignitions. Charcoal data also provide evidence
+that human disturbance overrode climatic control of local ﬁres
+after the Neolithic. For example, the slight IFF increase
+between c. 8500 and 9500 cal. years bp (i.e. 3–4 episodes per
+1000 years) matches the quantitative reconstruction of mean
+July temperature (Fig. 3b and Heiriet al. 2003). Thus the like-
+lihood that hot, dry conditions conducive to ﬁre occurrence
+occurred in any single year probably also increased during this
+interval. Summer temperature is in fact a major controlling
+factor for ﬁre regime in subalp ine areas in the modern land-
+scape (Zumbrunnenet al. 2009). Conversely, around 6500 and
+4500 cal. years bp, despite July temperature below the average,
+IFF increases (Fig. 3b).
+RESPONSE OF THE TREE LINE ECOTONE TO FIRE
+VARIABILITY
+Our data provide clear evidence that occurrence of natural
+ﬁres decisively inﬂuenced vegetational dynamics when human
+impact was negligible prior to 7200 cal. years bp.D u r i n gt h e
+early Neolithic, control over the ﬁre regime shifted from
+natural to human-driven, but t ree line persisted at a higher
+elevation than at present (Tinner & Theurillat 2003; Heiri
+et al. 2006). Only after 4500 cal. years bp (onset of Bronze
+Age Alpine farming; Kaltenrieder, Tinner & Ammann 2005;
+Reasoner & Tinner 2008), did timberline (but not tree line)
+descend by several hundred metres. This shift was coupled
+with the establishment of a larg er tree line ecotone, similarly
+to present-day J. nana subalpine dwarf shrublands (Tinner
+2006). Palaeo data suggest that this was probably caused by
+burning, grazing and clear-cutting during the Bronze Age
+(Tinner & Theurillat 2003). Acc ordingly, modelling efforts
+also simulate the timberline a bove the elevation of Gouille ´
+Rion after 4500 cal. years bp despite palaeobotanical evidence
+to the contrary (Kaltenrieder, Tinner & Ammann 2005;
+Tinner & Kaltenrieder 2005; Heiri et al. 2006). Our new data
+show that the enlargement of th et r e el i n ee c o t o n eo c c u r r e d
+together with an increase of IFF (three ﬁre episodes in
+1000 years). However, because neither ﬁre frequency nor raw
+CHAR values exceeded values registered before (i.e. at 6000
+and 8000 cal. years bp; Fig. 2b), ﬁre impact alone was proba-
+bly not the only factor promoting J. nana shrublands around
+4500 cal. years bp. Instead, it is likely that open environments
+were maintained by ﬁre occurrence and increasing grazing
+activity at higher altitudes during the Bronze Age, when
+Alpine summer farming started (Tinner, Ammann &
+Germann 1996; Reasoner & Tinner 2008). Thus, fast natural
+up-slope movement of the tree line ecotone following rapid
+climate changes (Tinner & Kalt enrieder 2005) is likely to be
+counter-balanced by anthropogenic ﬁres, which can strongly
+constrain upslope migration of trees.
+RESPONSE OF SPECIES TO FIRE IMPACT AND SUMMER
+TEMPERATURE
+Fire occurrence and summer temperature are likely to be
+correlated at our location under natural conditions. Drier
+conditions that accompany higher temperatures should pro-
+mote ﬁre occurrence. Therefore, species response curves
+should respond in the same way to these co-varying variables.
+Our data instead show distinct responses of species to ﬁre
+impact and summer temperature (Fig. 5), supporting our con-
+clusion that the ﬁre regime reﬂects human disturbances more
+strongly than climate variability, at least since the Bronze Age
+(c. 4000 cal. years bp). Speciﬁcally, response curves suggest
+that temperatures above the Holocene mean favourP. cembra
+over L. decidua and J. nana, w h e r e a sc o o l e rt e m p e r a t u r e s
+(1–3 /C176 C below the Holocene mean) favour L. decidua and
+J. nana . Accordingly, data from previous investigations
+also show that L. decidua expanded when P. cembra forest
+declined during cold phases; instead P. cembra was advan-
+taged during stable periods with higher temperature (Wick &
+Tinner 1997). In contrast, P. cembra , the species most
+favoured by higher temperature, responds most negatively
+to increasing ﬁre impact. Larix decidua also declines with
+increasing ﬁre impact but is not as strongly affected as
+P. cembra,a n d J. nana is most abundant when ﬁre frequency
+is highest in the record.
+Our results can be explained by the ecological preference of
+pioneer and heliophilousL. decidua and J. nana, which today
+are outcompeted by shade-tolerant P. cembra under undis-
+turbed conditions (Ellenberg 1996). The re-expansion of
+L. decidua at the beginning of the Bronze Age ( c. 4000 cal.
+years bp, Fig. 3d) occurred as ﬁre and grazing activity
+increased. This is in agreement with previous studies showing
+that agri-pastoral activities promoted L. decidua and Alnus
+viridis D.C. (Gobet et al. 2003). Timber exploitation may
+have also favoured L. decidua by eliminating late-successional
+trees such as P. cembra (Tinner, Ammann & Germann 1996;
+Zoller, Erny-Rodman & Punchakunnel 1996). Regression
+curves together with time series analysis show that P. cembra
+is more sensitive to burning (60 years after ﬁres, cross correlo-
+grams in Appendix S3) than L. decidua, which is rather
+ﬁre resilient because of its resprouting capacity and
+rapid establishment on mineral soils (Tranquillini 1979).
+1354 D. Colombaroli et al.
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 10
+Accordingly, palaeoecological data show that distribution of
+P. cembra w a sw i d e ri nt h ep a s tw h e nﬁ r ew a sl e s sf r e q u e n t
+(Carcaillet 1998; Genrieset al. 2009). Open conditions created
+by ﬁre around 4500 cal. years bp that favoured J. nana
+(200 years after ﬁres, Appendix S3) are in accordance with its
+ecological requirements (i.e. very shade-intolerant, Ellenberg
+1996). Moreover, cattle refrain from grazing the pointed
+needles of J. nana.
+Overall, the dominant tree line species (i.e. P. cembra and
+L. decidua) show different optima in respect to July summer
+temperature, and the presence ofP. cembrais highly limited by
+ﬁre occurrence. Under a more se vere ﬁre regime, which in the
+Late Holocene was mainly controlled by systematic burning,
+heliophilous species such as J. nana and L. decidua are at an
+advantage. Also, values of the threshold above which
+L. decidua–P. cembraforests switched toJuniperusshrublands,
+with isolated L. decidua (c. 3000 lmc m
+)2 year)1, Fig. 5a)
+occurred when ﬁre regime mostly switched from natural to
+anthropogenic (Fig. 2a). It is likely that without human distur-
+bance, the tree line would raise. Rising temperatures could lead
+to further upslope tree line expansion, especially byP. cembra,
+which reaches the highest elevations of all European trees,
+especially on acidic soils (Bra¨ ndli 1998). However, this conclu-
+sion is entirely dependent on future disturbance. Increasing ﬁre
+activity and⁄ or grazing would favour continued dominance by
+J. nanaand L. decidua.
+Conclusion
+Our new quantitative reconstruction of ﬁre regime and
+environmental response of species, combined with model simu-
+lations, allows us to better determine the nature of the
+observed variability of ﬁre and to understand species response
+to important ecological factors such as ﬁre impact and summer
+temperature. Our results support the hypothesis that local
+disturbance (such as ﬁre occurrence and grazing) will be deci-
+sive in whether the timberline reaches its potential altitudinal
+limit (Shankman 1984; Stueveet al. 2009) under future global
+warming conditions, as was the case during the past four mil-
+lennia.
+Our data suggest that in the future anthropogenic ﬁre occur-
+rence will heavily affect ecosystems at the tree line ecotone.
+If climate should change towards warmer and⁄ or drier condi-
+tions in the next decades (as anticipated for the Alps, IPCC
+2007), environmental effects are likely to be exacerbated by
+anthropogenic ﬁres, which today represent 90% of the total
+number of ﬁre in the Alpine area (Zumbrunnen et al. 2009).
+The future of forest-management practices in the Alps (e.g.
+ﬁre exclusion) may gain attention in the next decade as in the
+Paciﬁc Northwest of the U.S., where it is debated whether
+increased fuel loads following policy of ﬁre suppression led
+to greatly increased risk of high severity ﬁre compared to pre-
+settlement forests (e.g. Taylor & Skinner 1998; Donato et al.
+2009). Anthropogenic suppression of various disturbances
+(grazing, ﬁre occurrence) may a lter forest composition and
+structure at the timberline, stimulating the discussion over
+timberline restoration and nature conservation in the Alps.
+Allowing natural ﬁre disturbance is relevant for keeping
+important ecosystem functions such as forest regeneration,
+biodiversity and also biomass control (Sta¨ hli et al. 2006). It
+has been suggested that rapid upslope migration of trees in
+response to climatic warming is important for maintaining
+forest diversity under rapid warming conditions (Tinner &
+Kaltenrieder 2005). Our study shows that increased ﬁre impact
+is a decisive factor in creatin g open lands and impeding the
+recovery or establishment of forests. Thus, only control of ﬁre
+impact close to the tree line may allow subalpine trees to
+expand to higher areas under global climate change conditions
+a n dh e l pt om a i n t a i nf o r e s td i v e r s i t yi nt h eA l p s .
+Acknowledgements
+Support and advice on LandClim from Che Elkin and Harald Bugmann made
+model simulations possible. We thank Richard Bradshaw, Philip Higuera and
+an anonymous referee for comments on the manuscript. This study was
+ﬁnanced to D.C. by the Oeschger Centre for Climate Change Research, Univer-
+sity of Bern.
+References
+Agee, J.K. (1993)Fire Ecology of Paciﬁc Northwest Forests. Island Press, Wash-
+ington, DC.
+Anderson, N.J., Bugmann, H., Dearing, J.A. & Gaillard, M.J. (2006) Linking
+palaeoenvironmental data and models to understand the past and to predict
+the future. Trends in Ecology & Evolution, 21, 696–704.
+Arno, S.F. & Hammerly, R.P. (1993) Timberline – Mountain and Arctic Forest
+Frontiers. The Mountaineers, Seattle, 304 pp.
+Birks, H.H. (2001) Plant macrofossils. Tracking Environmental Change Using
+Lake Sediments (eds J.P. Smol, H.J.B. Birks & W.M. Last), pp. 49–74.
+Kluwer, Dordrecht.
+Bra¨ ndli, U.-B. (1998) Die ha¨uﬁgsten Waldba¨ume der Schweiz . Ergebnisse aus
+dem Landesforstinventar 1983–85: Verbreitung, Standort und Ha ¨ uﬁgkeit
+von 30 Baumarten. 2. Auﬂage. Ber. Eidgeno ¨ ss. Forschungsanstalt fu¨rW a l d ,
+Schnee und Landschaft, 342,2 7 8S .
+Brubaker, L.B., Higuera, P.E., Rupp, T.S., Olson, M., Anderson, P.M. & Hu,
+F.S. (2009) Linking sediment charcoal records and ecological modeling to
+understand causes of past ﬁre-regime change in Alaskan boreal forests.
+Ecology, 90, 1788–1801.
+Bugmann, H. (1994) On the ecology of mountainous forests in a changing cli-
+mate: a simulation study. PhD Thesis No. 10¢638, ETH Zurich, Switzerland,
+258 pp.
+Bugmann, H.K.M. & Solomon, A.M. (2000) Explaining forest composition
+and biomass across multiple biogeographical regions. Ecological Applica-
+tions, 10, 95–114.
+Carcaillet, C. (1998) A spatially precise study of Holocene ﬁre history, climate
+and human impact within the Maurienne valley, North French Alps.Journal
+of Ecology, 86, 384–396.
+Carcaillet, C., Ali, A.A., Blarquez, O., Genries, A., Mourier, B. & Bremond, L.
+(2009) Spatial variability of ﬁre history in subalpine forests: from natural to
+cultural regimes.Ecoscience, 16, 1–12.
+Clark, J.S. (1988) Particle motion and the theory of charcoal analysis –
+source area, transport, deposition, and sampling. Quaternary Research, 30,
+67–80.
+Clark, J.S., Royall, P.D. & Chumbley, C. (1996) The role of ﬁre during climate
+change in an eastern deciduous forest at Devil’s Bathtub, New York.
+Ecology, 77, 2148–2166.
+Colombaroli, D., Vanniere, B., Emmanuel, C., Magny, M. & Tinner, W. (2008)
+Fire-vegetation interactions during the Mesolithic-Neolithic transition at
+Lago dell’Accesa, Tuscany, Italy. The Holocene, 18, 679–692.
+Conedera, M., Corti, G., Piccini, P., Ryser, D., Guerini, F. & Ceschi, I. (2004)
+La gestione degli incendi boschivi in Canton Ticino: tentativo di una sintesi
+storica. Schweizerische Zeitschrift fu¨r Forstwesen, 155
+, 263–277.
+Conedera, M., Tinner, W., Neff, C., Meurer, M., Dickens, A.F. & Krebs, P.
+(2009) Reconstructing past ﬁre regimes: methods, applications, and
+relevance to ﬁre management and conservation. Quaternary Science Reviews,
+28, 555–576.
+Species responses to ﬁre at tree line in the Alps 1355
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 11
+Curdy, P., Leuzinger, U. & Leuzinger-Piccand, C. (2003) Cahiers d’arche´ologie
+romande 95.Constellasion, hommage a` Alain Gallay.
+Donato, D.C., Fontaine, J.B., Robinson, W.D., Kauffman, J.B. & Law, B.E.
+(2009) Vegetation response to a short interval between high-severity wildﬁres
+in a mixed-evergreen forest.Journal of Ecology, 97, 142–154.
+Ellenberg, H. (1996) Vegetation Mitteleuropas mit den Alpen in o ¨kologischer
+Sicht. E. Ulmer, Stuttgart.
+Gavin, D.G., Brubaker, L.B. & Lertzman, K.P. (2003a) Holocene ﬁre history
+of a coastal temperate rain forest based on soil charcoal radiocarbon dates.
+Ecology, 84, 186–201.
+Gavin, D.G., Brubaker, L.B. & Lertzman, K.P. (2003b) An 1800-year
+record of the spatial and temporal distribution of ﬁre from the west coast
+of Vancouver Island, Canada. Canadian Journal of Forest Research , 33,
+573–586.
+Genries, A., Morin, X., Chauchard, S. & Carcaillet, C. (2009) The function of
+surface ﬁres in the dynamics and structure of a formerly grazed old subalpine
+forest. Journal of Ecology, 97, 728–741.
+Gobet, E., Tinner, W., Hochuli, P.A., van Leeuwen, J.F.N. & Ammann, B.
+(2003) Middle to Late Holocene vegetation history of the Upper Engadine
+(Swiss Alps): the role of man and ﬁre. Vegetation History and Archaeobotany,
+12, 143–163.
+Harrison, R. & Heyd, V. (2007) The transformation of Europe in the third
+millennium BC: the example of ‘Le Petit-Chasseur I+III’ (Sion, Valais,
+Switzerland).Praehistorische Zeitschrift, 82, 129–214.
+Harsch, M.A., Hulme, P.E. & McGlone, M.S. (2009) Are treelines advancing?
+A global meta-analysis of treeline response to climate warming. Ecology
+Letters, 12,1 0 .
+Hastie, T.J. & Tibshirani, R.J. (1990) Generalized Additive Models. Chapman
+and Hall, London.
+Heiri, O., Lotter, A.F., Hausmann, S. & Kienast, F. (2003) A chironomid-
+based Holocene summer air temperature reconstruction from the Swiss Alps.
+The Holocene, 13, 477–484.
+Heiri, C., Bugmann, H., Tinner, W., Heiri, O. & Lischke, H. (2006) A model-
+based reconstruction of Holocene treeline dynamics in the Central Swiss
+Alps. Journal of Ecology, 94, 206–216.
+Higuera, P.E., Peters, M.E., Brubaker, L.B. & Gavin, D.G. (2007) Understand-
+ing the origin and analysis of sediment-charcoal records with a simulation
+model. Quaternary Science Reviews, 26,1 7 9 0 .
+Higuera, P.E., Brubaker, L.B., Anderson, P.M., Brown, T.A., Kennedy, A.T.
+& Hu, F.S. (2008) Frequent ﬁres in ancient shrub tundra: implications of
+paleorecords for arctic environmental change. PLoS ONE , 3, article no.
+e0001744.
+Higuera, P.E., Brubaker, L.B., Anderson, P.M., Hu, F.S. & Brown, T.A.
+(2009) Vegetation mediated the impacts of postglacial climatic change on ﬁre
+regimes in the south-central Brooks Range, Alaska.Ecological Monographs,
+79, 201–219.
+IPCC (2007) Climate Change 2007: The Physical Science Basis Contribution
+of Working Group I). The Fourth Assessment Report of the Intergovern-
+mental Panel on Climate Change . Cambridge University Press, Cambridge,
+UK.
+Kaltenrieder, P., Tinner, W. & Ammann, B. (2005) Long-term vegetation
+history at timberline in the Swiss Alps (Alpe d’ Essertse, VS).Botanica Helve-
+tica, 115, 137–154 (In German).
+Keller, F., Lischke, H., Mathis, T., Mohl, A., Wick, L., Ammann, B. &
+Kienast, F. (2002) Effects of climate, ﬁre, and humans on forest dynamics:
+forest simulations compared to the palaeoecological record. Ecological
+Modelling, 152, 109–127.
+Ko¨ rner, C. (1999)Alpine Plant Life. Springer, Berlin, 338 pp.
+Lynch, J.A., Clark, J.S., Bigelow, N.H., Edwards, M.E. & Finney, B.P. (2002)
+Geographic and temporal variations in ﬁre history in boreal ecosystems of
+Alaska. Journal of Geophysical Research-Atmospheres, 108, 8152.
+Marlon, J.R., Bartlein, P.J., Walsh, M.K., Harrison, S.P., Brown, K.J.,
+Edwards, M.E. et al. (2009) Wildﬁre responses to abrupt climate change in
+North America. Proceedings of the National Academy of Sciences of the
+United States of America, 106, 2519–2524.
+Ozenda, P. (1988)Die Vegetation der Alpen. Gustav Fischer, Stuttgart, 353 pp.
+Reasoner, M. & Tinner, W. (2008) Holocene treeline ﬂuctuations. Encyclopedia
+of Paleoclimatology and Ancient Environments(ed. V. Gornitz), pp. 442–446.
+Springer, Dordrecht.
+Rutherford, G.N., Bebi, P., Edwards, P.J. & Zimmermann, N.E. (2008) Assess-
+ing land-use statistics to model land cover change in a mountainous land-
+scape in the European Alps.Ecological Modelling, 212, 460–471.
+Schumacher, S. & Bugmann, H. (2006) The relative importance of climatic
+effects, wildﬁres and management for future forest landscape dynamics in
+the Swiss Alps.Global Change Biology, 12, 1435–1450.
+Schumacher, S., Bugmann, H. & Mladenoff, D.J. (2004) Improving the formu-
+lation of tree growth and succession in a spatially explicit landscape model.
+Ecological Modelling, 180, 175–194.
+Schumacher, S., Reineking, B., Sibold, J. & Bugmann, H. (2006) Modeling the
+impact of climate and vegetation on ﬁre regimes in mountain landscapes.
+Landscape Ecology, 21, 539–554.
+Shankman, D. (1984) Tree regeneration following ﬁre as evidence of timberline
+stability in the Colorado front range, USA. Arctic and Alpine Research, 16,
+413–417.
+Sta¨ hli, M., Finsinger, W., Tinner, W. & Allgower, B. (2006) Wildﬁre
+history and ﬁre ecology of the Swiss National Park (Central Alps): new
+evidence from charcoal, pollen and plant macrofossils. The Holocene ,
+16, 805–817.
+Stueve, K.M., Cerney, D.L., Rochefort, R.M. & Kurth, L.L. (2009) Post-ﬁre
+tree establishment patterns at the alpine treeline ecotone: Mount Rainier
+National Park, Washington, USA. Journal of Vegetation Science , 20,1 0 7 –
+120.
+Taylor, A.H. & Skinner, C.N. (1998) Fire history and landscape dynamics in a
+late-successional reserve, Klamath Mountains, California, USA. Forest
+Ecology and Management, 111, 285–301.
+Thornton, P.E., Running, S.W. & White, M.A. (1997) Generating surfaces of
+daily meteorological variables over large regions of complex terrain.Journal
+of Hydrology, 190, 214–251.
+Tinner, W. (2006) Treeline studies. Encyclopedia of Quaternary Science
+(ed. S.A. Elias), pp. 2374–2383. Elsevier, Amsterdam.
+Tinner, W., Ammann, B. & Germann, P. (1996) Treeline ﬂuctuations recorded
+for 12,500 years by soil proﬁles, pollen, and plant macrofossils in the Central
+Swiss Alps. Arctic and Alpine Research, 28, 131–147.
+Tinner, W. & Kaltenrieder, P. (2005) Rapid responses of high-mountain vege-
+tation to early Holocene environmental changes in the Swiss Alps.Journal of
+Ecology, 93, 936–947.
+Tinner, W. & Theurillat, J.P. (2003) Uppermost limit, extent, and ﬂuctuations
+of the timberline and treeline ecocline in the Swiss Central Alps during the
+past 11,500 years. Arctic Antarctic and Alpine Research, 35, 158–169.
+Tinner, W., Hubschmid, P., Wehrli, M., Ammann, B. & Conedera, M. (1999)
+Long-term forest ﬁre ecology and dynamics in southern Switzerland. Journal
+of Ecology, 87, 273–289.
+Tinner, W., Lotter, A.F., Ammann, B., Conedera, M., Hubschmid, P., van
+Leeuwen, J.F.N. & Wehrli, M. (2003) Climatic change and contemporane-
+ous land-use phases north and south of the Alps 2300 BC to 800 AD.Quater-
+nary Science Reviews, 22, 1447–1460.
+Tinner, W., Conedera, M., Ammann, B. & Lotter, A.F. (2005) Fire ecology
+north and south of the Alps since the last ice age. The Holocene, 15, 1214–
+1226.
+Tranquillini, W. (1979) Physiological Ecology of the Alpine Timberline .
+Springer, Berlin.
+Welten, M. (1982) Vegetationsgeschichtliche Untersuchungen in den westlichen
+Schweizer Alpen: Bern – Wallis.Denkchriften der Schweizerischen Naturfors-
+chenden Gesellschaft, 95,1 – 1 0 4 .
+Whitlock, C. & Larsen, C.P.S. (2001) Charcoal as a ﬁre proxy. Tracking Envi-
+ronmental Change Using Lake Sediments , Vol. 3 (eds. J.P. Smol, H.J.B.
+Birks, W.M. Last), pp. 75–97. Kluwer Academic Publishers, Dordrecht.
+Whitlock, C. & Millspaugh, S.H. (2001) A paleoecologic perspective on past
+plant invasions in Yellowstone.Western North American Naturalist, 61,3 1 6 –
+327.
+Wick, L. & Tinner, W. (1997) Vegetation changes and timberline ﬂuctuations
+in the Central Alps as indicator of Holocene climatic oscillations.Arctic and
+Alpine Research, 29, 445–458.
+Zoller, H., Erny-Rodman, C. & Punchakunnel, P. (1996) The History of
+Vegetation and Land Use in the Lower Engadine (Switzerland). Pollen
+Record of the Last 13,000 years . Nationalpark-Forschung in der Schweiz,
+Zernez 86 p.
+Zumbrunnen, T., Bugmann, H., Conedera, M. & Burgi, M. (2009) Linking
+forest ﬁre regimes and climate – a historical analysis in a dry inner Alpine
+valley. Ecosystems, 12, 73–86.
+Received 11 March 2010; accepted 3 August 2010
+Handling Editor: Richard Bradshaw
+Supporting Information
+Additional Supporting Information may be found in the online ver-
+sion of this article:
+1356 D. Colombaroli et al.
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+PAGE 12
+Appendix S1. Radiocarbon dates and chronology.
+Appendix S2. The LandClim model.
+Appendix S3. Time series analysis.
+As a service to our authors and readers, this journal provides support-
+ing information supplied by the authors. Such materials may be
+re-organized for online delivery, but are not copy-edited or typeset.
+Technical support issues arising from supporting information (other
+than missing ﬁles) should be addressed to the authors.
+Species responses to ﬁre at tree line in the Alps 1357
+/C211 2010 The Authors. Journal compilation /C211 2010 British Ecological Society, Journal of Ecology, 98, 1346–1357
+ 13652745, 2010, 6, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2745.2010.01723.x by Universiti Bolzano, Wiley Online Library on [20/08/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

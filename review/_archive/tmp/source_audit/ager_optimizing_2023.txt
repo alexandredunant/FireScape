@@ -1,0 +1,958 @@
+PAGE 1
+RESEA RCH ARTICL E
+Optimizing the implementation of a forest
+fuel break network
+Alan A. Ager
+1
+, Michelle A. Day
+ID
+1
+*, Bruno A. Aparı ´ cio
+ID
+2
+, Rachel Houtman
+1,3
+,
+Andrew Stinchfield
+4
+1 USDA Forest Service, Rocky Mountain Research Station , Missoula Fire Sciences Lab, Missoula, Montana,
+United States of America, 2 Interna tional Visiting Scholar, USDA Forest Service, Rocky Mountain Research
+Station , Missoula Fire Sciences Lab, Missoula, Montana, United States of America, 3 Oregon State
+University , College of Forestry, Forest Ecosyste ms & Society, Corvallis, Oregon, United States of America,
+4 USDA Forest Service, Umatil la National Forest, Pendleton, Oregon, United States of America
+* michelle.d ay@usd a.gov
+Abstract
+Methods and models to design, prioritize and evaluate fuel break networks have potential
+application in many fire-prone ecosystems where major increases in fuel management
+investments are planned in response to growing incidence of wildfires. A key question facing
+managers is how to scale treatments into manageable project areas that meet operational
+and administrative constraints, and then prioritize their implementation over time to maxi-
+mize fire management outcomes. We developed and tested a spatial modeling system to
+optimize the implementation of a proposed 3,538 km fuel break network and explore trade-
+offs between two implementation strategies on a 0.5 million ha national forest in the western
+US. We segmented the network into 2,766 treatment units and used a spatial optimization
+model to compare linear versus radial project implementation geometries. We hypothesized
+that linear projects were more efficient at intercepting individual fire events over larger spa-
+tial domains, whereas radial projects conferred a higher level of network redundancy in
+terms of the length of the fuel break exposed to fires. We simulated implementation of the
+alternative project geometries and then examined fuel break-wildfir e spatial interactions
+using a library of simulated fires developed in prior work. The results supported the hypothe-
+sis, with linear projects exhibiting substantially greater efficiency in terms of intercepting
+fires over larger areas, whereas radial projects had a higher interception length given a fire
+encountered a project. Adding economic objectives made it more difficult to obtain alterna-
+tive project geometries, but substantia lly increased net revenue from harvested trees. We
+discuss how the model and results can be used to further understand decision tradeoffs and
+optimize the implementation of planned fuel break networks in conjunction with landscape
+conservation, protection, and restoration management in fire prone regions.
+Introduction
+Methods and models to design, prioritize and evaluate fuel break networks have potential
+global application where major increases in fuel management investments are planned in
+PLOS ONE
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 1 / 23
+a1111111111
+a1111111111
+a1111111111
+a1111111111
+a1111111111
+OPEN ACCESS
+Citation: Ager AA, Day MA, Aparı ´ cio BA, Houtman
+R, Stinchfi eld A (2023) Optimizing the
+implementa tion of a forest fuel break network.
+PLoS ONE 18(12): e0295392. https://do i.org/
+10.1371/ journal.pone. 0295392
+Editor: Paul Pickell, Univers ity of British Columbia,
+CANADA
+Received: March 16, 2023
+Accepted: November 21, 2023
+Published: December 13, 2023
+Copyright: This is an open access article, free of all
+copyright, and may be freely reproduced,
+distributed, transmi tted, modifie d, built upon, or
+otherwise used by anyone for any lawful purpose.
+The work is made available under the Creative
+Commons CC0 public domain dedication.
+Data Availabilit y Statement: The DOI for the
+archived data associated with this publication is:
+https://do i.org/10.7267/k w52jj18p.
+Funding: This work was funded by the USDA
+Forest Service, Rocky Mountain Researc h Station
+and the National Fire Decision Support Center. B.A.
+Aparı ´ cio acknowled ges the Foundation for Science
+and Technology, I.P. - FCT for the individual
+research grant (UI/BD/150755/ 2020); and for the
+funding provided to the Forest Research Centre
+(UIDB/00239 /2020). No additional external funding
+was received for this study. The funders had no
+
+PAGE 2
+response to a growing incidence of wildfires. Proposals to build new and expand existing linear
+fuel breaks networks (FBN) have emerged as part of several national initiatives in the US and
+elsewhere [1–4] in response to wildland fire events that are increasingly challenging the effi-
+ciency of suppression operations and causing tragic loss of human life [5–9]. Here, we distin-
+guish FBNs as a subset of many alternative spatial treatment strategies where segments of
+reduced fuel loadings are interconnected to create a network, and are typically built on a core
+of existing roads to minimize cost and maximize fire control, ingress, egress and safety [10,11].
+Natural barriers are also used, including low-flammability vegetation [12], and non-vegetated
+features such as lakes and rivers. Fire suppression modeling using historic wildfire events can
+also be used to locate FBN segments [13]. Mechanical treatments to reduce fuels where neces-
+sary within FBNs include thinning, mastication, mowing, grinding, and discing [3]. Treat-
+ments also include re-vegetating plowed areas with fire resistant vegetation to create green fuel
+breaks where the composition and moisture in the fuels substantially slows fire spread [3]. It is
+widely recognized that fuel breaks are unlikely to halt fire progression without suppression
+resources [14,15], and on average their effectiveness is around 60% as measured in the sage-
+brush biome [16]. The availability of suppression resources are highly variable and dependent
+on local fire behavior at the point of encounter with the fuel break [17].
+Application of FBN strategies spans diverse fire regimes and underlying fuel types ranging
+from grass, shrub steppe, Mediterranean shrub, pine plantations, and boreal forests [4,10,18–
+22]. For instance, US federal land management agencies are implementing 17,700 km of fuel
+breaks on 90 million ha in the western US to manage the invasive grass-fire cycle in sagebrush
+steppe, where fire is increasingly threatening habitat for the endangered sage grouse [3]. In
+China, FBNs have been used in the boreal forests since 1988 in the Heilongjiang Province to
+help reduce negative impacts from fires [4]. In Portugal, a new 10-year fuel management plan
+[1] calls for the implementation of a nation-wide FBN covering 3,538 km that traverses multi-
+ple fire regimes, peri-urban landscapes interspersed with forest plantations, and abandoned
+agricultural areas. Similar efforts and strategies to containerize landscapes with FBNs exist in
+all European Union fire-prone regions [19,22,23]. It is safe to assume that expansion of exist-
+ing and building of new fuel break networks as a fire protection strategy, in concert with other
+landscape treatment strategies, will only accelerate in the future as climate change and urban
+encroachment into wildlands exacerbate human risk from wildland fire.
+Mapping FBNs is largely left to local expert opinion and considers historic fire regime, pre-
+dominant wind direction, fuel type, proximity to communities, local ecological impacts, and
+cost [10,19,22]. More recently, mapping the optimal locations for fuel breaks was also assessed
+using predicted patterns of fire behavior, access to suppression resources, containment proba-
+bility and other factors [13]. However, localized methods for delineating FBNs that span hun-
+dreds of kilometers over millions of hectares based on expert opinion could be improved with
+optimization models that are able to analyze design alternatives (density, width, treatment
+methods) [4,23] and predict effectiveness under stochastic wildfire futures [24]. Important tra-
+deoffs among design parameters are not well studied, and thus generalities are yet to be arrived
+at due to the diverse fire systems in which FBNs are employed. For instance, given a fixed bud-
+get and specifications for residual fuels [22], site-specific treatments can be allocated and opti-
+mized based on expected fire behavior, with wider firebreaks being used in forests (e.g.,
+coniferous forests) where there is higher potential for crown fires, and narrower firebreaks
+used to reduce fire spread in a fuels that typically propagate only surface fires [22,25]. At larger
+scales, optimizing fuel break networks requires some understanding of how changing network
+density (km/km
+2
+) versus the width of the individual fuel break segments affects network cost
+and effectiveness. In one recent simulation study in boreal forests it was concluded that for a
+given total treated area, higher density networks at narrow widths were more effective at
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 2 / 23
+role in study design, data collection and analysis,
+decision to publish, or preparation of the
+manuscript.
+Competing interests : The authors have declared
+that no competing interests exist.
+
+PAGE 3
+reducing burn probability than lower density, wider networks widths [4], consistent with prior
+findings [21,23].
+Given that major initiatives are being formulated to build new and expand existing FBNs,
+models and tools are needed to both design and map optimal networks, and plan their imple-
+mentation over space and time. Proposed national or regional FBNs will take many years to
+implement on lands that have inherently wide variation in cost effectiveness and ecological
+impacts [26,27]. Despite many studies to optimally locate fuel breaks dispersed across land-
+scapes [28–30], there are few case studies where proposed FBNs have undergone rigorous eval-
+uation in terms of tradeoffs, feasibility, and optimal prioritization and implementation
+strategies [4,24]. The importance of spatial prioritization in restoration, risk reduction, and
+conservation in terms of achieving outcomes has been widely discussed in prior literature [31–
+33]. Fuel break networks on national forests in the western US will be constructed with a series
+of sequential projects over the next 10–20 years to broadly meet logistical, administrative, and
+planning guidelines, with each project treating hundreds to thousands of hectares to connect
+fuel break segments. The analytical problem at hand is to create a strategic plan with defined
+priorities and treatment schedules that can be used to estimate required funding, workforce,
+machinery, as well as other inputs and outputs including net revenue from harvesting
+operations.
+To address selected gaps described above, we studied the effect of alternative prioritization
+scenarios for a proposed FBN on a western US forested landscape that, like many areas glob-
+ally, has experienced a significant increase in large, severe wildfire in the last three decades.
+The study area was the Umatilla National Forest, where staff mapped a 3,538 km fuel break
+network using expert opinion from local fire management experts. The original purpose of the
+delineation was an exercise in fire planning to identify control locations in advance of fire
+events. However, assessment of the fuel conditions and potential fire behavior by UNF staff
+indicated the need for substantial forest and fuel management activities over 10–20 years to
+render the network safe for suppression activities. The UNF needs a longer-term prioritization
+plan to identify what segments should be built first, and how an overall implementation strat-
+egy can be optimized in terms of both economics and improving fire management.
+We used a scenario planning model to analyze alternative implementation scenarios where
+treatment segments were organized into planning areas and scheduled using divergent geome-
+tries and management priorities. For instance, what are the tradeoffs between implementing
+treatments in a radial geometry, i.e. a dense, semi-circular web of treatments that radiate from
+the project centroid, or alternatively as linear segments that span longer distances, and how
+does geometry affect the attainment of other forest management objectives, including generat-
+ing revenue for larger landscape restoration projects. These design alternatives are not ana-
+lyzed in conventional project planning and prioritization since landscape (versus fuel break)
+treatments are generally dispersed throughout project areas to meet broad restoration and
+resiliency goals [34]. We discuss the results in terms of prioritizing proposed large scale net-
+works in concert with extensive forest and fuel management focused on restoring resiliency in
+the fire excluded forests in the western US.
+Materials and methods
+Study area
+The study area was the 520,000 ha Umatilla National Forest (henceforth UNF) located in the
+Blue Mountain ecoregion [35] within northeast Oregon and southeast Washington State
+(Fig 1). Elevations generally range from 900 m to 1,500 m, with higher peaks close to 3,000 m.
+Dry forests of ponderosa pine (Pinus ponderosa Lawson & C. Lawson) dominate lower
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 3 / 23
+
+PAGE 4
+elevations, with dry mixed conifer (grand fir (Abies grandis (Douglas ex D. Don) Lindl) and
+Douglas-fir (Pseudotsuga menziesii (Mirb.) Franco)) at higher elevations. Cold dry forested
+areas are dominated by lodgepole pine (Pinus contorta Douglas ex Loudon) at higher eleva-
+tions. Basalt scablands and extensive grasslands are common along west facing steep canyon
+lands where soil moisture limits the development of vegetation [36].
+Wildfires on the national forest are common with an average of 94 ignitions per year, with
+a mean fire size of 52 ha, calculated over the period 1992–2020 [37]. The largest fire burning
+on the UNF during this period was the Columbia Complex (44,215 ha). Other significant fires
+over the last 28 years include Butte Creek (32,460 ha), Red Hill (21,630 ha), School (21,043 ha),
+Monument Complex (13,092 ha), and Green Ridge (17,188 ha).
+Fuel break network
+The UNF designed a fuel break network in 2020 using expert opinion from local fire manage-
+ment staff. The FBN consisted of 1,752 km within the UNF boundary and 1,787 km on adja-
+cent lands, with a planned 150 m buffer from the road centerline (300 m width total) to allow
+Fig 1. Study area showing the proposed fuel break networ k (FBN) and the Umatilla National Forest. Note that the FBN
+was designe d by planners to extend beyond the boundari es of the national forest and within federally designated wilderness
+areas. The curren t study analyzed the portion of the FBN on the Umatil la National Forest and available for managem ent
+under the current forest plan. Black fuel break network segments (FBN Off NF) are on private land.
+https://doi. org/10.1371/j ournal.pone .0295392.g00 1
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 4 / 23
+
+PAGE 5
+for suppression and other fire management activities. The 300 m FBN width was established
+by federal legislation [38] and is consistent with recommendations in prior literature [39–41].
+The total area within the buffered network inside and outside the UNF, including roads
+used to delineate the network, was 109,659 ha with 67,496 ha on the UNF (62%). Within the
+UNF, 56,198 ha (83%) were available for management on the UNF, meaning they were outside
+of protected areas (Fig 2A). Fuel breaks wholly contained within non-Forest Service or pro-
+tected areas were not analyzed in the study, although we note that these segments will add con-
+siderable complexity to the implementation since mechanical treatments are prohibited in
+protected areas, and implementing treatments on non-federal lands are not guaranteed. The
+area of the roadbed was included in the estimate since they are delineated as a line feature, and
+thus the area of vegetation was overestimated by about 3%. About 2% of the entire FBN area
+was classified as non-conifer forest (Fig 2A) and was not considered for treatments. Note that
+non-conifer forests are generally basalt scablands and grasslands that do not support the devel-
+opment of significant fuel loadings.
+Modeling fuel treatments in fuel break segments
+We created 2,766 treatment units by subdividing the FBN into 1,000-m long x 300-m wide seg-
+ments. Segments were intersected with the UNF’s vegetation polygon layer (n = 25,137 poly-
+gons intersecting the segments) and attributed with the associated tree inventory data
+maintained in the UNF’s FSVeg database (Fig 3) (S1 Appendix) [42]. The inventory data
+included trees per ha by species and diameter measured at breast height (1.6 m above ground).
+Fig 2. Ownershi p and treatm ent compositi on of the proposed fuel break network. A) Proportion of the fuel break network area by ownershi p and
+protection status. B) Proportio n requiring thinning and pile burn treatments for segments that are on the Umatilla National Forest (UNF) and not in
+protected areas (USFS Available), as determine d from processing forest inventory data with the Forest Vegetation Simulator . See Methods section for details
+on fuel treatm ent prescrip tions. Note data in (A) represent the entire network as originally mapped both on and off the UNF, whereas the simulated
+treatments and response targeted the subset of land on the UNF and outside of protected areas as shown in (B). The total area in (A) is 109,659 ha, or 3,538
+km linear distance of fuel treatments. Associated data are in Table S2.1 in S2 Appendi x.
+https://doi.o rg/10.1371/j ournal.pone .0295392.g002
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 5 / 23
+
+PAGE 6
+The inventory consisted of measured field plot data collected using the Forest Service FSVeg
+protocol [42]. Polygons lacking current stand exam data were assigned inventory data using
+statistical imputation [43] automated within the FSVeg system.
+Potential treatments for each segment were simulated with the Forest Vegetation Simulator
+(FVS) Blue Mountains variant [44] and consisted of thinning all stands that exceeded 15% for-
+est canopy cover. The thinning prescription was developed by UNF staff specifically for the
+FBN with the objective of reducing crown fuels significantly below thresholds for crown fire
+behavior [45]. Simulated thinning prioritized the removal of smaller trees of fire-intolerant
+species (e.g., grand fir) to reduce ladder fuels that contribute to torching and crowning fire
+behavior. The maximum tree size for harvest was set at 53.3 cm diameter at breast height for
+all species excluding grand fir to conform to harvest guidelines on eastern Oregon national for-
+ests [46]. The maximum tree size for harvest of grand fir was set at 76.2 cm, as specified under
+the amended UNF plan guidelines [47]. Thin-from-below treatments were followed with sim-
+ulated slash disposal by using the FVS FUELMOVE keyword [48], which has the same effect as
+the pile burn process in terms of removing fuels from the site. This treatment assumed both
+hand and machine piling of harvest residue and downed woody material. We also identified
+stands requiring surface fuel treatment without thinning as those with less than 15% canopy
+closure and predicted fire behavior estimated from FSim [49] wildfire simulation outputs [50].
+Specifically, if greater than 20% of simulated fires that encountered the fuel break segment
+exhibited a flame length > 1.2 m the segment was identified for surface fuel treatment (Fig
+S1.1 in S1 Appendix). FVS outputs included estimated merchantable thin volume per cubic
+feet by species and diameter for each FBN segment. Volume was converted to metric (m
+3
+) and
+used to calculate net revenue as described below. Note that the prescriptions used in this study
+for the FBN differ significantly from those used in local forest restoration projects where thin-
+ning is based on stand density index thresholds [51] and broadcast burning is used in the dry
+forest vegetation group [26].
+Modeling alternative project geometries
+As described above, the UNF plans to implement the FBN over the next 10–20 years in a
+sequence of prioritized project areas, each treating between 800–1,200 ha. There are two diver-
+gent spatial strategies being considered to implement individual fuel break projects: 1)
+Fig 3. Example fuel break network (FBN) section. Umatilla National Forest stand polygons delineated as part of the
+forest vegetation inventory data were assigned to each segment.
+https://d oi.org/10.1371/j ournal.pon e.0295392.g0 03
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 6 / 23
+
+PAGE 7
+fragment the forests into increasingly smaller parcels by implementing projects that consist of
+long linear fuel breaks (Fig 4A); or 2) implement projects by treating all interconnected fuel
+breaks thus creating high density radial networks one project at a time (Fig 4B). To analyze the
+cost and benefits of these alternative scenarios we first created sequences of radial versus linear
+projects using the ForSys planning model (S1 Appendix) [26,52]. We set the treatment goal
+between 800 and 1,200 ha per project, or approximately 30 km of fuel breaks. Linear projects
+were created by maximizing the distance between adjoining segments within each project and
+radial projects were created by aggregating adjacent network segments based on distance to
+the project centroid. The model used every segment as a seed, building projects by adding seg-
+ments to maximize the distance objective until the project area reached a maximum of 1,200
+ha. This process was repeated using the remaining segments that were not assigned to projects
+in previous interactions until the remaining segments could not meet the minimum area con-
+straint. Initial testing showed that as optimal projects were built it became increasingly difficult
+for the algorithm to aggregate segments to meet the 1,200-ha target due to the dispersion of
+available segments and the irregular UNF boundary.
+To understand how optimizing alternative geometries might affect the net revenues from
+harvesting trees and treating fuels we simulated two additional scenarios that used an objective
+function weighted with the sum of revenue and distance for a total of four scenarios (Table 1).
+For this purpose, we standardized the revenue and distance by converting to percent of the
+maximum values. We note that in prior work with the ForSys model we explored a range of
+Fig 4. Example project geometr ies analyzed in the study. Linear fuel break network (FBN) project (A) has a sinuosity value of 1.5 and a linear distance of 73
+km. Radial FBN project (B) has a sinuosity value of 4.36 and a linear distance of 50 km. Each project treated approximate ly the same area. We hypothesiz ed that
+radial projects have a higher overlap with a given fire, whereas linear projects have a higher probability of encounter with a random wildfire over a larger spatial
+domain on the Umatilla National Forest. See Fig 5 for a description of the sinuosit y index.
+https://do i.org/10.1371/j ournal.pone .0295392.g00 4
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 7 / 23
+
+PAGE 8
+weighting schemes to quantify revenue tradeoffs [53] but excluded this line of inquiry from
+the current study largely for space reasons.
+Response variables
+The linearity of the resulting projects was measured with a sinuosity index calculated as the
+ratio between the total length of the FBN project and the straight line that connects the two far-
+thest points [54] (Fig 5). A high sinuosity index represents a radial shape network of treat-
+ments whereas low values are found for linear projects. A sinuosity value of 1 represents a
+straight line, which is likely impossible to obtain in montane landscapes.
+The efficiency of projects to intercept fires was measured using a library of simulated fires
+(n = 32,894) from the FSim fire model completed by the UNF as part of prior prioritization work
+[26,50,55]. We intersected all simulated fire perimeters with the FBN and calculated: 1) the total
+fires encountered per project, 2) the total length of intersection between the FBN and the fire
+perimeter per area burned in the project, 3) the total area burned by fires that encountered fuel
+Table 1. Description of scenario s and selection criteria to build project areas from fuel break segments.
+Scenario objective for creating projects Name Scenario number Selection criteria for adding adjacent segments to build a project area
+Radial shape Radial 1 Minimi ze distance to project centroid
+Radial shape and maximize revenue Radial + Revenue 2 Maximize revenue and minimize distanc e to project centroid
+Linear shape Linear 3 Maximize distance to project centroid
+Linear shape and maximiz e revenue Linear + Revenue 4 Maximize both revenue and distance to project centroid
+https://do i.org/10.1371/j ournal.pone .0295392.t001
+Fig 5. Sinuosity index (SI). SI, also called tortuosity [54], is the ratio of the total length along the network and the
+Euclidean distance between the endpoints . High values indicate a more sinuous geometry.
+https://d oi.org/10.1371/j ournal.pon e.0295392.g0 05
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 8 / 23
+
+PAGE 9
+breaks in each project, and 4) the area surrounding the fuel break project that enclosed ignition
+points for fires that spread to at least one of the fuel breaks in the project (Table 2). We adopted
+the term “fireshed” for the latter metric, consistent with prior use to link fire ignition locations
+with the resulting fire perimeter and associated impacts [52]. The intersection length was calcu-
+lated by summing the length of fuel break segments that intersected a project divided by the total
+burned area of the same fires (i.e., the fires that encountered the project). In this way, potential
+differences in burn probability (Fig S2.1 in S2 Appendix) and project size among projects are
+removed from the metric. Each project’s fireshed area was computed by mapping the spatial
+extent of the fire ignitions that generated fires that intercepted the fuel break (Fig 6). From these
+ignition points we created an ignition density surface and eliminated the area representing the
+Table 2. Metrics used in the scenario modeling either as response metrics or objectives. All metrics summar ized at the project scale.
+Metric Definition Units Scenarios analyzed
+3
+Net revenue
+1
+Value of logs at mill after subtracting harvesting, fuel treatment , and transportat ion costs
+2
+US Dollars All
+Intersecti on length The overlap between simulated wildfire s and the length of the fuel break Meters Scenarios 1&3
+Unique fire encounters Percent of all simulated fires that intercept a fuel break at least once Scenarios 1&3
+Project geometry Sinuosity Index All
+Fireshed area Area that encloses 88% of ignition s that encounte r a fuel break project Hectares
+1
+Methods to estimate revenue have been reported in several prior publications [26,53,55] and are summar ized in S1 Appendix. See Methods text for additional details.
+2
+Source: Forest Vegetation Simulator.
+3
+See Table 1.
+https://do i.org/10.1371/j ournal.pone .0295392.t002
+Fig 6. Example of two firesheds created by optimizi ng different geometries A) radial and B) linear. Firesheds were
+defined as the area that encloses 88% of the ignitions that encounter the fuel breaks within a simulate d project area.
+https://d oi.org/10.1371/j ournal.pon e.0295392.g0 06
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 9 / 23
+
+PAGE 10
+lowest 10% in ignition density in order to exclude outliers, i.e., extreme fire events. Finally, we
+smoothed the boundary of the resulting area to create the fireshed, resulting in 88% of ignitions
+falling within the fireshed, as averaged across all firesheds.
+Net revenue (Table 2) was used as both an objective in the optimization of mixed objective
+scenarios, and as a response variable in the pure geometry scenarios. Revenue was calculated
+as a residual value based on the difference between log values and the harvesting, hauling and
+fuel reduction costs, as described in prior studies [26,53,55]. Parameters for costs were
+obtained from local timber sale planning staff [Appendix C in 53] and updated in 2020 with
+input from the UNF (S1 Appendix). These included stratified costs for logging, transportation,
+and harvesting system. Pile burn treatments were assigned a cost of $1,110 per ha. The size
+and species composition of logs from harvesting were tracked in FVS and revenue and mer-
+chantable volume were calculated using the economics extension in FVS [56]. Average log
+value by species and small end diameter were obtained from dimensional timber mills within
+the study area. Net revenue was estimated as the revenue less costs and assigned to each FBN
+segment based on area weighted values to account for the different stand polygon areas in each
+segment (Figs S2.2 and S2.3 in S2 Appendix). As noted in prior work the estimation of net rev-
+enue omitted: 1) planning and contracting costs, 2) cost of road maintenance and construc-
+tion, and 3) removal of non-merchantable volume generated from thinned stands and
+marginally merchantable pulpwood material. These additional components were not included
+because most are budgeted outside the project planning and prioritization process. We also
+did not consider the cost of maintaining fuel breaks over time, which will be substantial given
+that re-treatments will be required every 10–20 years depending on the vegetation type. The
+financial calculations provided approximate values adequate to examine the economic impacts
+of alternative project geometries and fire management tradeoffs on the UNF. See S1 Appendix
+for more detailed information regarding the computation of costs and revenue.
+Analysis of scenario outputs
+To examine the performance of the ForSys planning model algorithm when building alterna-
+tive project geometries from the FBN segments, we plotted the sinuosity index (Fig 5) against
+the sequential project number generated by the model. We expected that the desired geometry,
+radial versus linear, would be more difficult to obtain as implemented projects increase, given
+fewer options to aggregate segments into projects that meet the minimum area constraint,
+especially given the irregular shape of the UNF. We then analyzed the relationship between
+project geometry and the four selected response variables described above using scatter plots
+and correlation analyses. After recognizing limitations in the ForSys algorithm to create a per-
+fectly ordered sequence of project geometries (identified in the model evaluation above), we
+re-sorted the population of projects for each scenario according to the sinuosity index to
+obtain an ideal geometry and used the re-ordered sequence to examine the rate at which the
+project firesheds expanded across the UNF for the alternative geometry scenarios. In this pro-
+cess the cumulative fireshed area was calculated as projects were implemented and plotted
+against the length of the fuel break. Finally, to examine tradeoffs between project geometry
+and the economics of implementation, we plotted cumulative revenue as projects were imple-
+mented for the two geometry and two mixed-objective scenarios.
+Results
+Treatments required to meet FBN fuel loads
+Modeling the forest and fuel management treatment prescriptions in FVS on the portion of
+the FBN available for management yielded estimates of area requiring treatments to meet fuel
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 10 / 23
+
+PAGE 11
+break thresholds on the UNF (Fig 2B). We found that about 97% of the available FBN within
+the UNF will require thinning combined with pile burn treatments, whereas 24% requires pile
+and burn only (Fig 2B). About 1% of the forested area within the fuel break network met cur-
+rent fuels standards to qualify as a fuel break segment. About 2% was in scablands and grass
+shrub areas that do not support forest vegetation. Thus, UNF-wide implementation of the
+FBN to meet fuel loading objectives that potentially provide for ingress and egress for fire
+operations will require treatments on an estimated 52,896 ha.
+Optimizing alternative project geometries
+The FBN segments identified as requiring treatment were allocated into discrete project areas
+optimized for different project geometries using the ForSys model. Each project treated
+between 800 and 1,200 ha following operational goals set by the UNF. The model was effective
+at achieving desired scenarios, linear versus radial, as measured by the sinuosity index (Figs 4
+and 5). However, this effectiveness declined as additional projects were added to the scenarios
+(Fig 7, Table 3) and the project scale sinuosity for the different scenarios showed clear differ-
+ences until about 50% of the area was treated, at which point the program was unable to build
+the targeted geometry (Fig 7A). The degree of sinuosity in Fig 7 can be translated to project
+geometries using two examples shown in Fig 4 that show simulated projects with a relatively
+low (1.5, linear) and high (4.4, radial) sinuosity index. In terms of total treated area, the geome-
+try scenarios (linear, radial) were able to build 32–33 projects that met the 800–1,200 ha treat-
+ment target, equivalent to treating 71–75% of the fuel break network that was both available
+and in need of treatment on the UNF depending on the scenario (Table 3). Stray segments
+remained outside project areas where the algorithm was unable to connect a sufficient number
+of segments to meet the project area constraint.
+Addition of objectives for revenue (Fig 7) moderately degraded the resulting geometry (e.g.,
+Linear + Revenue). Overall, the scenarios treated between 73–76% of the available area in need
+of treatment within the network in 33–34 projects. These results indicated that the optimiza-
+tion algorithm in the ForSys model was capable of building projects with a range of geometries
+but was less effective at perfect sequencing of the projects according to sinuosity and organiz-
+ing all available treatment segments into projects. Despite these inadequacies, the model was
+able to generate a wide range of project geometries within the target treatment areas to exam-
+ine the effect on response variables and examine economic tradeoffs.
+Effect of project geometry on response variables
+At the scale of projects, scatterplots and correlation analyses revealed that projects imple-
+mented with a more linear shape (lower sinuosity) intersected a higher number of unique fires
+(Fig 8A), intersected a shorter length of the FBN per ha burned in the project (Fig 8B), and
+were associated with larger firesheds (Fig 8C) compared to projects with a radial shape (i.e.,
+high sinuosity). Linear projects had a lower redundancy as measured by the total intersect
+length (Fig 8B) in meters per ha burned ranging from about 0.4 to 1.3. Linear projects had a
+larger fireshed area, meaning they intercepted ignitions from a larger geographic area com-
+pared to radial projects (Fig 8C). The three projects with the lowest sinuosity intercepted fire
+ignitions from between 85,000 ha to nearly 125,000 ha of the surrounding area. At higher levels
+of sinuosity this value was reduced to approximately 50,000 ha with substantial variability
+among projects (Fig 8C). There was little detectible effect of geometry on potential revenue at
+the scale of individual projects (Fig 8D).
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 11 / 23
+
+PAGE 12
+Table 3. Fuel break scenar ios, area treated, total revenue, and timber volume as a result of project implemen tation.
+Scenario Geometry Total area
+treated (ha)
+Percent treated of the availabl e land
+needing treatment
+Total revenue
+(millions $)
+Number of viable
+projects
+1
+Total merchantabl e volume
+(million m
+3
+)
+1 Radial 39,491 74.7 63.4 33 2.07
+2 Radial
++ Revenue
+40,008 75.6 74.5 34 2.25
+3 Linear 37,338 70.6 65.5 32 2.01
+4 Linear
++ Revenue
+38,697 73.2 64.6 33 2.05
+1
+Viable project areas were defined as a minimum of 800 ha and a maximum of 1,200 ha of the 52,896 ha of forested lands available and needing treatmen t.
+https://do i.org/10.1371/j ournal.pone .0295392.t003
+Fig 7. Scenario sinuosity results. A) Model outputs showing fuel break project sinuosity as successive projects are implemen ted for alternative geometries , and
+combined geometry and revenue directly from the ForSys model. Outputs are smoothed with a loess function with a span = 0.75 [57]. Unsmoothed figure
+version in Fig S2.4 in S2 Appendix B. B) Same as A after sorting the population of geometry-on ly projects (Scenarios 1 and 3, Table 1) based on the sinuosity
+variable to simulate an ordinal implemen tation based on geometry objectives. The latter sequenc e was adopted to simulate project implemen tation scenario s
+and analyze responses. Note that mixed-ob jective projects were not sorted based on sinuosit y.
+https://do i.org/10.1371/j ournal.pone .0295392.g00 7
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 12 / 23
+
+PAGE 13
+Scenario implementation
+Implementation scenarios optimized for alternative geometries were created by first re-sorting
+the model outputs based on project sinuosity and then sequencing the projects and associated
+treatments. We then measured the resulting incremental expansion of the total FBN fireshed
+area. As explained in the Methods section, post-processing corrected for the deficiencies in the
+algorithm to create perfect ordinal scenarios for the respective geometries. For each scenario,
+the incremental, non-overlapping fireshed area was identified and used to build cumulative
+Fig 8. Scatter plots of project sinuosity versus four response variables for the populati on of projects genera ted by the ForSys model. A) percent of total
+fires that intersected the project; B) total intersectio n length (meters) per hectare burned for fires that intersected the fuel break segments in each project. A low
+value indicates few opportuni ties to engage in fire suppression activities, while a large value indicates higher redundanc y as the same fire perimeter intersects
+the same project at multiple points; C) fireshed area surroundin g the fuel break segments, defined as the area that encloses 88% of the ignition points for fires
+that intersected the project; and D) projected net revenue from forest and fuel managem ent per project. Collectively the graphs show that radial projects have
+more redundanc y in terms of fire overlap per unit area burned in a project, but linear projects intercept more unique fire events over a larger area of ignitions.
+Sinuosity index illustrate d in Fig 5.
+https://do i.org/10.1371/j ournal.pone .0295392.g00 8
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 13 / 23
+
+PAGE 14
+fireshed area graphs. The results showed that linear projects were more efficient at expanding
+the fuel break firesheds compared to radial ones (Fig 9A). When implementing 50% of the lin-
+ear FBN (about 800 km) the fireshed area was 756,355 ha versus 592,561 ha for the radial FBN.
+The fireshed area increase per FBN kilometer implemented (Fig 9B) showed higher efficiency
+of the linear projects until about 500 km (31%) of the FBN was implemented. After this point,
+the firesheds of additional implemented projects increasingly overlapped firesheds of the pre-
+viously implemented projects, thus resulting in a slower increase of the FBN fireshed area.
+Economic tradeoffs and efficiencies
+The effect of adding revenue as a weighted objective substantially increased the revenue
+response, generating over twice as much revenue when the first 800 km were implemented
+(50% of the network, Fig 10). Total revenue generated by the projects selected for the different
+scenarios, it ranged from a high $74.5 million for the Radial + Revenue scenario to a low of
+$63.4 million for the Radial scenario. Note that these revenue differences were due to the reve-
+nue composition of the subset of segments selected as part of each scenario, which ranged
+from 70.6% to 75.6% of the total segments. There was little detectable relationship between
+geometry and revenue at the scale of individual projects (Figs 8D and 11). However, the most
+linear projects in general had higher fireshed area, and in some cases relatively high potential
+revenue as well, thus providing the highest economic efficiency in terms of fireshed area and
+potential revenue (Fig 11).
+Discussion
+We examined alternative spatial scenarios to prioritize and schedule the construction of a
+large-scale fuel break network similar to those being proposed in many fire impacted regions
+globally. The premise for the work is that correct prioritization in the early phases of imple-
+mentation will have manifold effects and lasting outcomes as the remaining segments are
+treated, as discussed for other vegetation management systems [58]. We found that projects
+implemented with a more linear shape (lower sinuosity) intersected a higher number of
+unique fires, intersected a shorter length of the FBN per ha burned by fires encountering the
+project, and were associated with larger firesheds. Geometry had no consistent effect on net
+revenue, and including the latter as a project objective substantially increased the projected
+financial value of projects. The results illustrate how different prioritization strategies for
+implementing fuel break projects can affect performance and cost, and are relevant for both
+predefined and mapped FBNs yet to be implemented, as well as the design of future networks.
+We reiterate that proposed fuel break networks in Portugal [1,24,59], Ukraine [18], China [4],
+western US rangelands [20,60], and other countries [19], will take perhaps decades to imple-
+ment on lands that have inherently wide variation in terms of cost effectiveness, social, envi-
+ronmental and ecological impacts. As a result, these investments warrant careful prioritization
+to ensure desired short- and long-term benefits from fuel treatment [61]. The importance of
+establishing and communicating spatial priorities in restoration, conservation, and risk mitiga-
+tion planning has been discussed for many aspects including financial and ecological outcomes
+[32,62].
+Specific tradeoffs between FBN design parameters, cost effectiveness, failure rates [24], and
+ecological impacts [20] will vary significantly among fire regimes and social-ecological sys-
+tems, although literature comparing different systems is rare. In general, for given treated area,
+larger width improves FBN effectiveness but increases costs and potential ecological impacts.
+Studies have suggested the minimum firebreak width required is 1.5 times the length of the
+fire flame for surface fires and 2.5 times the stand height for crown fires [63]. Zong et al. [4]
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 14 / 23
+
+PAGE 15
+Fig 9. Fuel break fireshed effects. A) Cumulative area within a fuel break fireshed with increasing length of fuel
+breaks implemented for alternative project geometries , linear versus radial. The graph shows that for a given distanc e
+treated, linear fuel break projects have firesheds that cover more area, meaning that more fires are intercept ed. The
+graph also shows declining addition of fireshed area when about half of the FBN is treated (1,000 km). B) Efficiency of
+fuel break length on fireshed area for the two geometry scenario s showing the incremental increase in fireshed area as
+projects are implemen ted. Outputs are smoothed with a loess function with a span = 0.75 [57]. See Fig 6 for definitio n
+of firesheds.
+https://d oi.org/10.1371/j ournal.pon e.0295392.g0 09
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 15 / 23
+
+PAGE 16
+examined fuel break width versus density for boreal forests in China and found that under an
+assumed fire behavior, 30 m width fuel breaks can stop surface fire spread in grass and forests
+and low-intensity, intermittent crown fire in forests; 60 m width firebreaks can block crown fire
+spread in mixed deciduous coniferous forest; and 90 m width can stop crown fires in evergreen
+coniferous forest. In the western US Great Basin, a FBN is being implemented to protect habitat
+for the greater sage-grouse (Centrocercus urophasianus) [3] and local fire managers subscribe to
+the idea that “the wider the fuel break, the better”, although widening fuel breaks disturbs larger
+area with potential negative ecological consequences [64]. For instance, fuel breaks can act as a
+conduit for cheatgrass invasion into otherwise uninvaded locations [20,65]. Despite recommen-
+dations concerning width and density, it is important to note that the optimum width can only
+be described as an exceedance probability [24] since fire events that encounter a fuel break
+could have markedly different flame lengths depending on spread direction and fire weather.
+And, the effectiveness per unit width among different firebreak compositions (rock, water,
+treated vegetation) in terms of the effect on fire spread is not the same [10,66].
+Fig 10. Cumulative net revenue generated from implemen ting a sequence of projects optimized for alternative geometr ies (linear versus radial) and for a
+combined geometr y and revenue objective. Note geometry scenarios were resorted from the model outputs to create an idealized scenario sorted by sinuosit y,
+and mixed revenue-g eometry. Scenarios are graphed in the order generated from the model. Outputs are smoothed with a loess function with a span = 0.75
+[57].
+https://do i.org/10.1371/j ournal.pone .0295392.g01 0
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 16 / 23
+
+PAGE 17
+It is widely recognized that fuel breaks are not a panacea as they frequently fail to function
+as intended during wildfire events [14,17]. In the current study the fuel break prescription
+called for thinning to <15% canopy closure, eliminating the possibility of crown fire within
+the fuel break [45] and thereby reducing the probability of failure from spot fires burning over
+the 300 m wide treatments. Coupling FBNs with landscape scale forest restoration and resil-
+iency management [67] can further improve the effectiveness of linear fuel breaks despite
+important differences in long-term objectives. Thus co-implementation will remain an impor-
+tant fuel management strategy on remote wildlands where operational economics drive treat-
+ment extent and project locations. Narrow, linear fuel breaks do not significantly contribute to
+broader landscape forest health and resiliency objective [67], but rather are a stopgap to
+Fig 11. Scatter plot of fireshed area agains t projected net revenue from forest managemen t per project for the linear and radial scenarios. Data are shown
+for 10 projects for each scenario that best achieved the desired geometry, linear versus radial, based on sinuosity. Sinuosity index illustrated in Fig 5. Fireshed
+area is estimated independen tly for each project rather than cumul atively as shown in Fig 9. See Fig 6 for definitio n of fuel break firesheds.
+https://do i.org/10.1371/j ournal.pone .0295392.g01 1
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 17 / 23
+
+PAGE 18
+prevent irreversible loss to ecosystem values by enhancing opportunities for firefighters. For
+instance, co-prioritization of multiple strategies [68] that couple the results in this study with
+that of our prior prioritization of projects to restore resiliency [26,69] and optimize the use of
+prescribed fire [55] within the study area are needed. Similar multifaceted approaches have
+been discussed for the Portuguese fuel management initiatives [59]. For instance, robust land-
+scape restoration projects that treat 30% to 40% of the landscape, including treatments along
+roads, provide substantially more fire control possibilities than a FBN and thus the latter are
+not a priority in these areas. Conversely, portions of national forests where economic opportu-
+nities are scarce and fire issues are significant could be the priorities for FBNs.
+We acknowledge many limitations of the study, some unique to our methods, and others
+universal among studies that use wildfire simulation to predict outcomes. In general, estimat-
+ing the potential benefits of alternative prioritization schemes and spatially optimized treat-
+ments with some level of certainty is challenging given the difficulty of predicting the location,
+timing, and magnitude of future fire events relative to treated areas, and the availability of sup-
+pression resources to deploy at the critical fuel break locations. As in prior work [24,52], our
+approach to examine uncertain effects on future fires was to use a large library of simulated
+fires and coarsely examine their spatial interactions measured with multiple metrics. More in
+depth analyses are possible by re-simulating fires and examining the failure rate of the fuel
+break networks [18,24] and avoided losses [24], although this requires tenuous assumptions
+about fire intensity thresholds where fuel breaks fail or prevent suppression crews from engag-
+ing the fire at a specific point in time. A probabilistic approach to estimating failure rate used
+by Aparı ´ cio et al. [24] is the only case study to our knowledge that factored uncertainty into
+the assessment of potential fuel break burn over.
+We are also aware of many other prioritization metrics that could be useful to prioritize
+FBN treatments, including suppression difficulty indices, containment probability, and burn
+over rates [13,24,70]. These and other variables can be easily incorporated into our modeling
+framework although the effect of implementation geometry will persist. Another limitation
+specific to our approach is that fuel treatment projects are interdependent in terms of effects
+on wildfire and thus fuel break projects could change the priority of other projects in the vicin-
+ity when they are evaluated based on fire likelihood, and to a lesser extent severity, although
+this is not the case for financial objectives. Our sequential projects were widely spaced around
+the UNF and thus project to project interactions at the scale of the UNF will not materialize
+until a significant portion of the network is constructed. Future wildfires will change the rela-
+tive priorities as well, as observed in the 2022 and prior wildfire seasons in the western US
+where the authors have noted a substantial number of planned and partially implemented
+projects burned over by wildfire. Uncertainty about future fire regimes will affect the reliability
+of predicted outcomes, as widely discussed in the conservation planning and restoration litera-
+ture [71–73]. Thus, despite sophisticated modeling platforms like used elsewhere [e.g., 4], pre-
+dicted outcomes are approximate solutions to real-world planning problems [73] and thus
+carry significant planning risk [58,72–74]. The wide use of probabilistic wildfire simulation to
+estimate wildfire risk and prioritize fuel management investments in the US and elsewhere
+should be tempered with the understanding that outputs carry significant uncertainty that is
+rarely quantified in planning and policy documents [but see 52].
+Our modeling framework is easily applicable to other fire regimes and management sys-
+tems to analyze priorities and design tradeoffs for proposed FBNs, and for other conservation
+and restoration planning problems as well [75,76]. Our future avenues of work will use artifi-
+cial landscapes where selection of FBN segments is not constrained by real world features
+(existing roads, boundaries) such that the topological relationship between geometry and
+response metrics can be isolated and extrapolated to a wider array of fire regimes and
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 18 / 23
+
+PAGE 19
+management systems. In this way future planning efforts can draw from these underlying rela-
+tionships to optimize implementation scenarios without detailed modeling efforts as demon-
+strated here.
+Supporting information
+S1 Appendix. Economics and modeling methodology.
+(PDF)
+S2 Appendix. Supplementary figures and tables.
+(PDF)
+Acknowledgmen ts
+We thank Umatilla National Forest staff including Richard Gardner and Don Justice for their
+technical assistance with designing. We thank Pedro Belavenutti for his prior work on fuel
+break optimization that motivated the current study. We also thank Cody Evers and Chris
+Ringo for their contribution to various aspects of this study.
+Author Contributions
+Conceptualization: Alan A. Ager, Andrew Stinchfield.
+Data curation: Michelle A. Day, Rachel Houtman.
+Formal analysis: Michelle A. Day, Bruno A. Aparı ´ cio.
+Funding acquisition: Alan A. Ager.
+Methodology: Alan A. Ager, Bruno A. Aparı ´ cio.
+Project administration: Michelle A. Day.
+Software: Michelle A. Day, Bruno A. Aparı ´ cio.
+Supervision: Alan A. Ager.
+Validation: Alan A. Ager, Michelle A. Day, Bruno A. Aparı ´ cio, Rachel Houtman, Andrew
+Stinchfield.
+Visualization: Michelle A. Day, Bruno A. Aparı ´ cio.
+Writing – original draft: Alan A. Ager, Michelle A. Day, Bruno A. Aparı ´ cio, Rachel
+Houtman.
+Writing – review & editing: Alan A. Ager, Michelle A. Day, Bruno A. Aparı ´ cio, Rachel Hout-
+man, Andrew Stinchfield.
+References
+1. AGIF. National plan for integrated wildfire managemen t 2020–2030. Lisbon: Agency for Integrated
+Rural Fire Managem ent, 2020.
+2. USDA Forest Service. Confrontin g the wildfire crisis: A 10-year implementa tion plan. Washingto n, D.C.:
+2022 FS-1187b. Availab le from: https://ww w.fs.usda.g ov/managin g-land/wi ldfire-crisis.
+3. Pilliod DS, Jeffries MA, Welty JL, Arkle RS. Protecting restorat ion investments from the cheatgra ss-fire
+cycle in sagebrus h steppe. Conservation Science and Practice. 2021; 3(10). https://doi.or g/10.111 1/
+csp2.508
+4. Zong X, Tian X, Wang X. An optimal firebreak design for the boreal forest of China. Science of The
+Total Enviro nment. 2021; 781: 146822. https://d oi.org/10.101 6/j.scitotenv .2021.146822
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 19 / 23
+
+PAGE 20
+5. Cruz MG, Sullivan AL, Gould JS, Sims NC, Banniste r AJ, Hollis JJ, et al. Anatomy of a catastrophi c wild-
+fire: the Black Saturday Kilmore East fire in Victoria, Australia. Forest Ecology and Managemen t. 2012;
+284: 269–85.
+6. Molina-T erre ´ n DM, Xantho poulos G, Diakakis M, Ribeiro L, Caballero D, Delogu GM, et al. Analysis of
+forest fire fatalitie s in Southern Europe: Spain, Portugal, Greece and Sardinia (Italy). International Jour-
+nal of Wildland Fire. 2019; 28(2): 85. https://doi.or g/10.107 1/wf18004
+7. Brown H. The Camp Fire tragedy of 2018 in Californi a. Fire Managemen t Today. 2020; 78(2): 11–20.
+8. Ribeiro LM, Rodrigu es A, Lucas D, Viegas DX. The impact on structures of the Pedro ´ gão Grande Fire
+Complex in June 2017 (Portugal) . Fire. 2020; 3(4): 57. https://doi. org/10.3390/fi re3040057
+9. Duane A, Castellnou M, Brotons L. Towards a comprehe nsive look at global drivers of novel extreme
+wildfire events. Climatic Change. 2021; 165(3–4). https://doi. org/10.1007/s1 0584-021-0 3066-4
+10. Oliveira TM, Barros AMG, Ager AA, Fernandes PM. Assessing the effect of a fuel break network to
+reduce burnt area and wildfire risk transmiss ion. International Journal of Wildland Fire. 2016; 25(6):
+619–32.
+11. Laschi A, Foderi C, Fabiano F, Neri F, Cambi M, Mariotti B, et al. Forest road planning, construct ion and
+maintena nce to improve forest fire fighting : a review. Croatian Journal of Forest Engineering. 2019; 40:
+207–19.
+12. Cui X, Alam MA, Perry GL, Paterso n AM, Wyse SV, Curran TJ. Green firebreaks as a managemen t tool
+for wildfires: Lessons from China. J Environ Manage. 2019; 233: 329–36. Epub 20181222. https://doi.
+org/10.1016/ j.jenvman.2 018.12.043 PMID: 30584964.
+13. O’Conno r CD, Calkin DE, Thompson MP. An empirical machine learning method for predicting potentia l
+fire control locations for pre-fire planning and operational fire managemen t. Interna tional Journal of
+Wildland Fires. 2017; 26(7): 587–97. https:// doi.org/10.10 71/WF161 35
+14. Syphard AD, Keeley JE, Brennan TJ. Factors affecting fuel break effectiveness in the control of large
+fires on the Los Padres National Forest, California. Interna tional Journal of Wildland Fire. 2011; 20:
+764–75.
+15. Syphard AD, Keeley JE, Brennan TJ. Comparing the role of fuel breaks across southern California
+national forests. Forest Ecology and Managemen t. 2011; 261(11 ): 2038–4 8.
+16. Weise CL, Brussee BE, Coates PS, Shinnem an DJ, Crist MR, Aldridge CL, et al. A retrosp ective
+assessmen t of fuel break effectivenes s for containing rangeland wildfires in the sagebru sh biome. Jour-
+nal of Environm ental Managemen t. 2023; 341: 117903. https:// doi.org/10.10 16/j.jenvma n.2023.
+117903 Availab le from: https://doi.or g/10.101 6/j.jenvman .2023.11 7903. PMID: 37146489
+17. Gannon B, Wei Y, Belval E, Young J, Thompson M, O’Conn or C, et al. A quantita tive analysis of fuel
+break effective ness drivers in Southern California ational forests. Fire. 2023; 6(3): 104.
+18. Ager AA, Lasko R, Myroniuk V, Zibtsev S, Day MA, Usenia U, et al. The wildfire problem in areas con-
+taminated by the Chernob yl disaster. Science of The Total Environmen t. 2019; 696: 133954 . https://
+doi.org/10.10 16/j.scitotenv.2 019.133954
+19. Xanthopoulo s G, Caballero D, Galante M, Alexand rian D, Rigolot E, Marzano R. Forest fuels manage-
+ment in Europe. In: Andrews PL, Butler B.W., editor. Fuels Managemen t-How to Measure Success;
+28–30 March 2006; Portland, OR. Fort Collins, CO: U.S. Department of Agriculture, Forest Service,
+Rocky Mountain Resea rch Station; 2006.
+20. Shinnem an DJ, Germino MJ, Pilliod DS, Aldridge CL, Vaillant NM, Coates PS. The ecologica l uncer-
+tainty of wildfire fuel breaks: examples from the sagebrus h steppe. Frontiers in Ecology and the Envi-
+ronment. 2019; 17(5): 279–88. https://do i.org/10.1002 /fee.2045
+21. Demir M, Kucukos manoglu A, Hasdem ir M, Acar H, Ozturk T. Assessme nt of forest roads and fire-
+breaks in Turkey. African Journal of Biotechn ology. 2009; 8(18): 4553–6 1.
+22. Ascoli D, Russo L, Giannino F, Siettos C, Moreira F. Firebreak and Fuelbreak . In: Manzello SL, editor.
+Encycloped ia of Wildfires and Wildland-U rban Interface (WUI) Fires. Cham: Springer Interna tional
+Publishing; 2018. pp. 1–9.
+23. Duguy B, Alloza JA, Ro ¨ der A, Vallejo R, Pastor F. Modelin g the effects of landscape fuel treatments on
+fire growth and behaviour in a Mediterranea n landscape (easter n Spain). International Journal of Wild-
+land Fire. 2007; 16: 619–32.
+24. Aparı ´ cio BA, Alcasena F, Ager AA, Chung W, Pereira JMC. Evaluati ng priority locations and potential
+benefits for building a nation-wide fuel break network in Portugal. Journal of Environm ental Manage-
+ment. 2022; 320: 115920 . https://doi.or g/10.1016/ j.jenvman.2 022.115920 Availab le from: https://do i.
+org/10.1016/ j.jenvman.2 022.115920. PMID: 35933873
+25. Wilson AA. Width of firebreak that is necessary to stop grass fires: some field experime nts. Canadian
+Journal of Forest Research. 1988; 18(6): 682–7.
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 20 / 23
+
+PAGE 21
+26. Belavenut ti P, Chung W, Ager AA. The economic reality of the forest and fuel managemen t deficit on a
+fire prone western US nationa l forest. Journal of Environment al Managem ent. 2021; 293: 112825.
+https://doi.or g/10.101 6/j.jenvman .2021.11 2825 PMID: 34289588
+27. Merriam KE, Keeley JE, Beyers JL. Fuel breaks affect nonnative species abundanc e in Californian
+plant commu nities. Ecologica l Applications . 2006; 16(2): 515–27. https://do i.org/10.1890 /1051-0761
+(2006)016 [0515:fba nsa]2.0.co;2 PMID: 167110 41
+28. Chung W, Jones G, Krueger K, Bramel J, Contrera s M. Optimisin g fuel treatments over time and space.
+International Journal of Wildland Fire. 2013; 22: 1118–33. https://doi. org/http%3A//d x.doi.org /10.1071 /
+WF12138
+29. Finney MA, Seli RC, McHugh CW, Ager AA, Bahro B, Agee JK. Simulation of long-term landscape -level
+fuel treatment effects on large wildfires. Internationa l Journal of Wildland Fire. 2007; 16: 712–27.
+30. Wei Y, Rideout D, Kirsch A. An optimization model for locating fuel treatments across a landscape to
+reduce expected fire losses. Canadian Journal of Forest Researc h. 2008; 38(4): 868–77.
+31. Pohjanm ies T, Eyvindson K, Mo ¨ nkko ¨ nen M. Forest managemen t optimizat ion across spatial scales to
+reconcile economic and conservatio n objectives. PloS ONE. 2019; 14(6): e0218213. https:// doi.org/10.
+1371/journa l.pone.0 218213 PMID: 3118112 4
+32. Brudvig LA. Toward prediction in the restora tion of biodivers ity. Journal of Applied Ecology. 2017; 54(4):
+1013–7.
+33. Moilane n A, Leathwick JR, Quinn JM. Spatial prioritization of conserva tion managemen t. Conserva tion
+letters. 2011; 4(5): 383–93.
+34. Ager AA, Day MA, Vogler K. Production possibility frontiers and socioecolog ical tradeo ffs for restorat ion
+of fire adapted forests. Journal of Environm ental Managemen t. 2016; 176: 157–68. https://doi.o rg/10.
+1016/j.jenv man.2016 .01.033 PMID: 270331 66
+35. USDA Forest Service. Bailey’s Ecoregions of the Contermino us United States. In: USDA Forest Ser-
+vice, editor.: United States Geological Survey; 1994.
+36. Geist J, Cochran P, editors. Influences of volcanic ash and pumice depositio n on productivit y of western
+interior forest soils. Gen. Tech. Rep. INT-280. Proceedings— managem ent and productivi ty of Western-
+montane forest soils; 1991; Ogden, UT: USDA Forest Service, Intermoun tain Research Station.
+37. Spatial wildfire occurren ce data for the United States, 1992–2 020 [FPA_FOD _20221014] (6th Edition)
+[Internet ]. USDA Forest Service, Rocky Mountain Research Station. 2022 [cited 38 March 2022].
+Accessed : https://doi.or g/10.2737/ RDS-2013- 0009.6.
+38. U.S. House of Representa tives. H.R.3684 - Infrastructu re Investment and Jobs Act. Washingto n, D.C.:
+U.S. Government Publishing Office; 2022.
+39. Dennis FC. Fuelbreak guidelines for forested subdivis ions & communities . Colorado State Forest Ser-
+vice, 2005. Available from: https://m ountainsch olar.org/han dle/10217/450 82.
+40. Ingalsbee T. Fuelbreak s for wildland fire managem ent: A moat or a drawbri dge for ecosystem fire resto-
+ration. Fire Ecology. 2005; 1(1): 85–99.
+41. Mooney C. Fuelbreak effectiven ess in Canada’s boreal forests: a synthes is of current knowledge. Final
+Report. FPInnova tions, 2010. Available from: https:// library.fpinno vations.ca /media/FOP/9 438.pdf.
+42. USDA Forest Service, Natural Resource Manager . FSVeg Common Stand Exam User Guide. USDA
+Forest Service; [cited 27 Sept 2023]. Availab le from: https:// www.fs.usd a.gov/nrm/fsv eg/index.
+shtml#sof tware.
+43. Crookston NL, Moeur M, Renner D. Users guide to the most similar neighb or imputation program Ver-
+sion 2. Gen. Tech. Rep. Ogden, UT: USDA Forest Service, Rocky Mountain Research Station, 2002
+RMRS-GTR -96.
+44. Keyser CE, Dixon GE. Blue Mountain s (BM) Variant Overview– Forest Vegetation Simulato r. Interna l
+Rep. Fort Collins, CO: USDA Forest Service, Forest Managem ent Service Center, 2015.
+45. Keyes CR, O’Hara KL. Quantify ing stand targets for silvicultura l prevention of crown fires. Western
+Journal of Applied Forestry. 2002; 17: 101–9. 140.
+46. USDA, USDI. Record of decision for amendmen ts to Forest Service and Bureau of Land Managemen t
+Planning departme nts within the range of the Northern Spotted Owl. Portland, OR: USDA Forest Ser-
+vice and USDI Bureau of Land Managemen t, 1994 April 13, 1994. Report No.
+47. USDA Forest Service, Pacific Northwes t Region. Forest plans amendment. Forest managemen t direc-
+tion for large diameter trees in eastern Oregon and southeaster n Washingto n. Enviro nmental assess-
+ment. Portland, OR: USDA Forest Service, Pacific Northw est Region, 2021.
+48. Rebain SA, Reinhardt E, Crooks ton NL, Beukema SJ, Werner AK, Greenoug h JA. The Fire and Fuels
+Extension to the Forest Vegetation Simulato r: updated model documentati on. Internal Report. Fort Col-
+lins, CO: USDA Forest Service, Forest Managemen t Service Center, 2010.
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 21 / 23
+
+PAGE 22
+49. Finney MA, McHugh CW, Grenfell IC, Riley KL, Short KC. A simulation of probabilistic wildfire risk com-
+ponents for the continenta l United States. Stochastic Environmental Researc h and Risk Assessme nt.
+2011; 25: 973–10 00. https://doi.or g/10.100 7/s00477-011- 0462-z
+50. Helmbrecht D. Blue Mountain s forest resiliency project: Quantitativ e wildfire risk assessmen t. Prepared
+for the Ochoco, Umatilla, and Wallowa- Whitman National Forests. USDA Forest Service, 2019.
+51. Powell D. Range of variation recommend ations for dry, moist, and cold forests. White Paper. Pendleton ,
+OR: USDA Forest Service, Pacific Northw est Region, 2010 F14-SO-W P-Silv-03.
+52. Ager AA, Evers CR, Day MA, Alcasena FJ, Houtman R. Planning for future fire: scenario analysis of an
+accelerate d fuel reduction plan for the western United States. Landscape and Urban Planning. 2021 5
+July, 2022; 215: 104212 . https://doi.or g/10.1016/ j.landurbpla n.2021.104212 Availab le from: https://
+www.fs.u sda.gov/tree search/pu bs/63129 .
+53. Ager AA, Vogler KC, Day MA, Bailey JD. Economic opportunitie s and trade-offs in collabor ative forest
+landscape restoration. Ecologi cal Economics . 2017; 136: 226–39 .
+54. Bullitt E, Gerig G, Pizer SM, Lin W, Aylward SR. Measurin g tortuosity of the intracerebra l vasculatu re
+from MRA images. IEEE Transaction s on Medical Imaging. 2003; 22(9): 1163–71. https://doi.or g/10.
+1109/TMI.20 03.8169 64 PMID: 12956271
+55. Belavenut ti P, Ager AA, Day MA, Chung W. Designing forest restoration projects to optimize the appli-
+cation of broadcast burning. Ecological Economics . 2022; 201: 107558 . https://doi.or g/10.101 6/j.
+ecolecon.2 022.1075 58
+56. Martin F. User Guide to the Economic Extension (ECON) of the Forest Vegeta tion Simulator. Fort Col-
+lins, CO: U. S. Department of Agriculture, Forest Service, Forest Managemen t Service Center, 2013.
+57. Cleveland WS. Robus t locally weighted regressi on and smoothing scatterplots. Journal of the American
+statistical associ ation. 1979; 74(368): 829–36.
+58. Brudvig LA, Barak RS, Bauer JT, Caughlin TT, Laughlin DC, Larios L, et al. Interpreting variation to
+advance predictive restoration science. Journal of Applied Ecology. 2017; 54(4): 1018–27.
+59. Benali A, Sa ´ ACL, Pinho J, Fernandes PM, Pereira JMC. Understand ing the impact of different land-
+scape-leve l fuel managemen t strategie s on wildfire hazard in Central Portugal. Forests. 2021; 12(5):
+522. https://do i.org/10.3390 /f120505 22
+60. Shinnem an DJ, Strand EK, Pellant M, Abatzogl ou JT, Brunson MW, Glenn NF, et al. Future direction of
+fuels managem ent in sagebrus h rangelands. Rangelan d Ecology & Managemen t. 2023; 86: 50–63.
+61. Hunter ME, Taylor MH. The economic value of fuel treatments: A review of the recent literature for fuel
+treatment planning. Forests. 2022; 13(12): 2042. https://doi.or g/10.3390 /f13122042 Available from:
+https://doi.or g/10.339 0/f13122042.
+62. Moilane n A, Possingham HP, Wilson KA. Chapter 19 –spatial conservat ion prioritization : past, present
+and future. Spatia l Conse rvation Prioritisatio n: Quantitat ive Methods and Computat ional Tools (eds
+Moilane n A, Wilson KA & Possingh am HP), pp 260–268 Oxford University Press, Oxford . 2009.
+63. Hirsch K, Martell DL. A review of initial attack fire crew producti vity and effectivene ss. International Jour-
+nal of Wildland Fire. 1996; 6: 199–215.
+64. Knick S, Connelly JW, editors. Greater sage-grouse: ecology and conservat ion of a landscape species
+and its habitats. Berkele y and Los Angeles , California: Univers ity of Californi a Press; 2011.
+65. Crist MR, Chambers JC, Phillips SL, Prentice KL, Wiechman LA, editors. Science framework for con-
+servation and restoration of the sagebrush biome: Linking the Department of the Interio r’s Integrated
+Rangelan d Fire Managem ent Strategy to long-rerm strategic conservatio n actions. Part 2. Managemen t
+Applications . Gen. Tech. Rep. RMRS-GTR -389. Fort Collins, CO: USDA, Forest Service, Rocky
+Mountain Research Station; 2019.
+66. Price OF, Edward s AC, Russell-Smith J. Efficacy of perman ent firebreaks and aerial prescrib ed burning
+in western Arnhem Land, Northern Territory, Austral ia. International Journal of Wildland Fire. 2007; 16:
+295–305.
+67. North MP, Tompkins RE, Bernal AA, Collins BM, Stephe ns SL, York RA. Operation al resilience in west-
+ern US frequen t-fire forests. Forest and Ecology Managemen t. 2022; 507. https://doi.or g/10.101 6/j.
+foreco.20 21.120004
+68. Wang H-H, Finney MA, Song Z-L, Wang Z-S, Li X-C. Ecologica l techniques for wildfire mitigation : Two
+distinct fuelbreak approac hes and their fusion. Forest Ecology and Managem ent. 2021; 495. https:// doi.
+org/10.1016/ j.foreco.2021. 119376
+69. Haugo R, Zanger C, DeMe o T, Ringo C, Shlisky A, Blanken ship K, et al. A new approach to evaluate
+forest structure restora tion needs across Oregon and Washingto n, USA. Forest Ecology and Manage-
+ment. 2015; 335: 37–50. https://doi.or g/10.1890/ 120329
+70. Alcasena F, Ager A, Le Page Y, Bessa P, Loureiro C, Oliveira T. Assessi ng wildfire exposure to commu -
+nities and protected areas in Portugal. Fire. 2021; 4(4): 82. https://doi.or g/10.339 0/fire404008 2
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 22 / 23
+
+PAGE 23
+71. Runge CA, Tulloch AI, Possingh am HP, Tulloch VJ, Fuller RA. Incorporating dynamic distribu tions into
+spatial prioritiz ation. Diversity and Distribut ions. 2016; 22(3): 332–43.
+72. McCarthy MA, Thomps on CJ, Moore AL, Possingh am HP. Designing nature reserves in the face of
+uncertaint y. Ecology Letters. 2011; 14(5): 470–5. https://doi.or g/10.111 1/j.1461-024 8.2011.0 1608.x
+PMID: 213712 31
+73. Langford WT, Gordon A, Bastin L. When do conservatio n planning methods deliver? Quant ifying the
+consequen ces of uncertaint y. Ecologica l Informatics. 2009; 4(3): 123–35 .
+74. McCarthy MA. Contendin g with uncertaint y in conservatio n managemen t decisions. Ann N Y Acad Sci.
+2014; 1322: 77–91. https://doi.or g/10.111 1/nyas.1250 7 PMID: 251389 20; PMCID: PMC431289 6.
+75. Jones KR, Watson JE, Possingh am HP, Klein CJ. Incorporating climate change into spatial conserva-
+tion prioritisation : A review. Biologic al Conse rvation. 2016; 194: 121–30.
+76. Kukkala AS, Moilanen A. Core concepts of spatial prioritisation in systematic conservatio n planning.
+Biological Reviews. 2013; 88(2): 443–64 . https://doi.or g/10.111 1/brv.12008 PMID: 23279291
+PLOS ONE
+Optimizin g fuel break networks
+PLOS ONE | https://doi.or g/10.137 1/journal.po ne.02953 92 December 13, 2023 23 / 23

@@ -1,0 +1,966 @@
+PAGE 1
+Contents lists available at ScienceDirect
+Applied Geography
+journal homepage: www.elsevier.com/locate/apgeog
+Characterizing Alpine pyrogeography from ﬁre statistics
+M. Conedera a,∗, P. Krebs a, E. Valese b, G. Cocca c, C. Schunk d, A. Menzel d,e, H. Vacik f, D. Cane g,h,
+A. Japelj i, B. Muri j, C. Ricotta k, S. Oliveri l, G.B. Pezzatti a
+a Swiss Federal Research Institute WSL, Insubric Ecosystems Research Group, A Ramél 18, CH-6593 Cadenazzo, Switzerland
+b Veneto Region Civil Protection Bureau, Via Paolucci 34, I-30175 Marghera, Venice, Italy
+c ERSAF, Regional Agency for Agricultural and Forestry Services, Via Oliva, 32, I-25084 Gargnano, Brescia, Italy
+d Ecoclimatology, Technische Universität München, Hans-Carl-von-Carlowitz-Platz 2, D-85354 Freising, Germany
+e Institute for Advanced Study, Technische Universität München, Lichtenbergstraße 2a, D-85748 Garching, Germany
+f Institute of Silviculture, University of Natural Resources and Life Sciences, Vienna, Peter Jordanstr. 82, A-1190 Vienna, Austria
+g Agenzia Regionale per la Protezione Ambientale, Via Pio VII 9, I-10135 Torino, Italy
+h IIS Pascal, Via Carducci 4, I-10094 Giaveno, Italy
+i Slovenian Forestry Institute, Ve čna Pot 2, 1000 Ljubljana, Slovenia
+j Slovenian Environment Agency, Vojkova 1b, 1000 Ljubljana, Slovenia
+k Department of Environmental Biology, University of Rome ‘La Sapienza ’, Piazzale Aldo Moro 5, I-00185 Roma, Italy
+l Università Cattolica del Sacro Cuore di Brescia, Via dei Musei, 41, I-25121 Brescia, Italy
+ARTICLE INFO
+Keywords:
+Fire regime metrics
+Fire seasonality
+Fire density
+Cluster analysis
+RDA
+ABSTRACT
+In this paper, we describe current ﬁre characteristics in the Alpine region using a ten-year forest ﬁre record at the
+third and lowest resolution of the European Classi ﬁcation of Territorial Units for Statistics (NUTS3). To this
+purpose, we performed hierarchical clustering based on the Bray-Curtis dissimilarity index on ﬁve pyrogeo-
+graphic metrics. This resulted in three main geographically well-distinguished clusters (Southern, Northern, and
+Maritime Alps) and two small groups of outliers. From a geographic point of view, we found a clear di ﬀer-
+entiation between the high ﬁre density on the southern slope of the Alps and the substantially lower proportion
+of burnt areas registered in the north. The most relevant climatic (e.g., frequency and length of drought periods),
+environmental (e.g., vegetation types, mean elevation and predominant orientation of valleys), and socio-eco-
+nomic (e.g., population density and educational level) drivers for the described clusters of ﬁre characteristics
+were also identi ﬁed. The proposed pyrogeographic characterisation may represent an important baseline for
+detecting future shifts in ﬁre occurrence or anomalous ﬁre seasons.
+1. Introduction
+Since its domestication by humans, ﬁre on Earth depends on both
+climatic and ecological factors, as well as the cultural use of ﬁre
+(Fernandes, 2013 ; Pyne, 1997 ). Humans may in ﬂuence ﬁre activity
+directly through setting and controlling ﬁres, but also indirectly by
+modifying the ﬂammability of landscapes through management, and,
+more recently, anthropogenically induced climate change ( Bowman
+et al., 2011 ). As a consequence, resulting ﬁre activity re ﬂects not only
+the natural ﬁre environment ( ﬁre proneness based on climate and ve-
+getation) but also the way mankind perceives and relates to the land-
+scape ( Coughlan & Petty, 2012). Furthermore, factors a ﬀecting ﬁre
+occurrence may act at di ﬀerent scales resulting in complex spatially-
+correlated patterns in ﬁre regimes ( Boulanger et al., 2013).
+The best way to illustrate such multi-scaled spatio-temporal
+interactions between ﬁre and the environment is to select suitable re-
+curring ﬁre characteristics and dimensions, so that homogeneous pyr-
+oregions may be distinguished within deﬁ ned space-time windows
+(Bradstock, Gill, & Williams, 2012; Falk & Swetnam, 2003 ; Krebs,
+Pezzatti, Mazzoleni, Talbot, & Conedera, 2010; Morgan, Hardy,
+Swetnam, Rollins, & Long, 2001 ). Diﬀerent quantitative and qualitative
+approaches exist for deﬁ ning such pyroregions at di ﬀerent temporal
+and spatial scales (see Moreno & Chuvieco, 2013 for a short review). A
+large body of literature has been published reporting on global, con-
+tinental, and regional-level, as well as past, present, and future pyr-
+ogeography, including related driving factors (e.g., Archibald,
+Lehmann, Gomez-Dans, & Bradstock, 2013; Bowman, O'Brien, &
+Goldammer, 2013 ; Pausas & Paula, 2012 ).
+The very steep environmental gradient combined with the con-
+siderable diversity in legislation and management approaches make the
+https://doi.org/10.1016/j.apgeog.2018.07.011
+Received 27 June 2017; Received in revised form 2 July 2018; Accepted 3 July 2018
+∗ Corresponding author.
+E-mail address: marco.conedera@wsl.ch (M. Conedera).
+Applied Geography 98 (2018) 87–99
+Available online 18 July 2018
+0143-6228/ © 2018 Elsevier Ltd. All rights reserved.
+T
+
+PAGE 2
+Alpine region a particularly challenging case study for determining
+subareas with homogeneous ﬁre characteristics. Unfortunately, ob-
+taining consistent forest ﬁre data in a politically and administratively
+fragmented area such as the Alpine region is a very demanding task. As
+a result, data has been published in the past for speci ﬁc regions (e.g.,
+Arpaci, Malowerschnig, Sass, & Vacik, 2014 ; Fréjaville & Curt, 2015;
+Pedrolli, 1984; Pezzatti, Zumbrunnen, Burgi, Ambrosetti, & Conedera,
+2013; Stefanì, 1989; Vacik et al., 2011 ) or for particular ﬁre char-
+acteristics ( Conedera, Cesti, Pezzatti, Zumbrunnen, & Spinedi, 2006 ;
+Reineking, Weibel, Conedera, & Bugmann, 2010 ; Wastl et al., 2013 ),
+but to date no synthesis exists on present pyrogeography for the whole
+European Alpine region (see also Valese, Conedera, Held, & Ascoli,
+2014).
+Within the framework of the two Alpine Space Interreg projects
+MANFRED (www.manfredproject.eu) and ALPFFIRS ( www.alpﬃ rs.eu),
+it was possible, for the ﬁrst time, to create a decennial (2000 –2009)
+Alpine forest ﬁre database compiling records and statistics from na-
+tional and local forest services and ﬁre brigades. Based on these e ﬀorts,
+the aim of this paper is to de ﬁne the current main homogeneous
+pryroregions in the Alpine space, and to discuss their possible socio-
+economic, environmental, and climatic drivers.
+2. Study area
+The geographical extent of the Alpine region can be identi ﬁed in
+diﬀerent ways based on di ﬀerent purposes. For example, boundaries
+may be deﬁned based on the Alpine Convention ( www.alpconv.org) for
+developing regional policies, the European Alpine Space Programme
+(www.alpine-space.eu) which sets the context of European funded
+projects, or the Greater Alpine Region ( Auer et al., 2007 ) for de ﬁning
+regional climatology. In our study, we consider the Alpine area as de-
+ﬁned by the Alpine Convention. In practical terms, we retained all three
+levels used in the European Nomenclature of Units for Territorial Sta-
+tistics classi ﬁcation system (NUTS, hereafter referred to as NUTS3) in-
+cluded in or cross-bordering the limits of the Alpine Convention Region
+(Fig. 1). NUTS refers to the hierarchical system used to divide up the
+economic territory of the European Union for the collection, develop-
+ment, and harmonization of socio-economic analyses of each region.
+The three categories include major socio-economic regions at the
+highest level (NUTS1), basic regions for the application of regional
+policies
+(NUTS2) and small regions (< 800,000 inhabitants) for speci ﬁc
+diagnoses (NUTS3) ( http://ec.europa.eu/eurostat/web/nuts/). The
+study area so deﬁ ned includes 82 NUTS3 for a total area of
+249,184 km2.
+From a climatic point of view, the Alpine area is part of the tran-
+sition at the continental scale from “temperate westerly ” to
+“Mediterranean subtropical ” climate as deﬁ ned by Auer et al. (2007)
+when referring to the Greater Alpine Region. As highlighted by the
+authors, the climate within the Greater Alpine Region can be used to
+identify a northern sector, comprising most of Germany, Austria, and
+northern Switzerland, and a southern sector, including Italy, France,
+Slovenia, part of Austria (Carinthia), and part of Switzerland (Canton
+Ticino and minor parts of the Cantons Valais and Grisons) ( Fig. 1). In
+the northern sector, the precipitation series show a distinct maximum
+during the warm season ( Fig. 2, meteorological station of Garmisch-
+Partenkirchen), whereas in the southern sector, autumn precipitation
+exceeds that of the summer season ( Fig. 2, Embrun, Brescia, and Aur-
+onzo). The southern sector is warmer and more a ﬀected by dry kata-
+batic fall winds (foehn), especially on the western side (Piemonte, Aosta
+Valley and Lombardia; Fig. 2, Brescia). In the lake region across the
+Swiss-Italian border, the special case of the Insubric climate is char-
+acterized by sub-tropical-like climatic conditions ( Fig. 2, Locarno
+Monti) whereas the French part of the study area is strongly inﬂ uenced
+by the Mediterranean climate ( Fig. 2, Embrun). Further distinctions
+regarding Alpine climatology emerge when considering distance from
+the sea (continentality) and elevation (altitude gradient). Auer et al.
+(2007) identify an inner Alpine sector characterized by internal valleys
+at high elevation which are much drier than on the northern side of the
+Alps ( Fig. 2 , Umhausen), even if the seasonal distribution of pre-
+cipitation is similar.
+Finally, a great number of forest and vegetation types are found in
+the Alps as a consequence of the heterogeneous climatic and topo-
+graphic patterns, ranging from pseudo-Mediterranean and
+Mediterranean forests (near seas and lakes, as well as in the foothills) to
+boreal-like conifer stands at higher elevation. In contrast, in the low to
+medium range, temperate broadleaved forests dominate ( EEA 2007).
+The spatial distribution of environmental features and especially the
+continuous change from favorable to adverse ﬁre propagation condi-
+tions such as slope orientation (south/north), steepness (cli ﬀ vs. valley
+vegetation), abundance of conifers vs. broadleaved species, and acces-
+sibility (managed vs. unmanaged forests) lead to highly variable char-
+acteristics in terms of ﬁre ignition and behavior.
+3. Material and methods
+3.1. Forest ﬁre data
+Within the framework of the ALPFFIRS and MANFRED European
+funded Alpine Space projects, it was possible, for the ﬁrst time, to
+collect a high-resolution ten-year dataset of forest ﬁres for the entire
+Alpine area of France, Italy, Switzerland, Germany, Austria, and
+Slovenia. All ﬁre records contained information on location (munici-
+pality), date of ignition, and total burnt area. Information on ignition
+sources was not available in all cases, preventing us from using ﬁre
+cause as a discriminating ﬁre
+metric. The original dataset consisted of
+19,072 forest ﬁres that occurred between 2000 and 2009 in the 82
+NUTS3 regions of the study area. The number of ﬁres and burnt area
+varied greatly among NUTS3 regions ranging from 17 to 2906 events
+and from 1 to 29,865 ha burnt area, respectively. For statistical reasons,
+we discarded NUTS3 regions with highly incomplete data series, e.g.,
+with ﬁre data series of fewer than ﬁve years or fewer than two events
+per year on average. This led to the exclusion of 18 NUTS3 regions from
+further analysis. The ﬁnal dataset consisted of 17,862 forest ﬁres be-
+longing to 64 NUTS3 regions distributed from France to Slovenia ( Fig. 1
+and Table 1). At the country level, German forest ﬁre data did not go
+beyond 2005 and had to be discarded.
+We are aware that ﬁre statistics data spanning ten years is rather
+short for deﬁ ning ﬁre regimes. Unfortunately, ﬁre records covering
+most of the study area were available for the period 2000 –2009 only.
+Here, the term ﬁre regime refers to NUTS3 ﬁre characteristics under the
+current (2000 –2009) ﬁre regime.
+3.2. Fire regime metrics
+Fire metrics were deﬁ ned in order to take ﬁre density (relative
+average frequency and burnt area) and phenology (seasonal periodi-
+city) into account. Speci ﬁcally, we calculated four density-related and
+three phenology-related metrics (see Table 2).
+The two density-related metrics (i.e., number of ﬁres and burnt area
+per square kilometer of combustible area and year) aim at describing
+susceptibility to ignition and ﬁre spread (i.e., the number of ﬁres and
+burnt area per combustible area). In addition, we considered the
+average size of a ﬁre at the NUTS3 level.
+Phenological metrics were derived from previous studies dealing
+with ﬁre seasonality in speci ﬁc Alpine regions ( Cesti & Cerise, 1992;
+Pezzatti et al., 2013; Vacik et al., 2011 ; Zumbrunnen, Bugmann,
+Conedera, & Burgi, 2009 ). In particular, we deﬁ ned two phenological
+metrics describing the share of ﬁre frequency and burnt area in the non-
+growing season (from the beginning of December to the end of April,
+hereafter referred to as winter ﬁres)
+and during the vegetative period
+(May to November, hereafter, summer ﬁres). In order to limit the in-
+ﬂuence of single large ﬁres, we created two additional metrics by log-
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+88
+
+PAGE 3
+transforming the burnt area ( Table 2).
+3.3. Climatic, environmental, and socioeconomic parameters
+Concerning climate variables, various sources of daily and monthly
+gridded observational datasets were exploited to calculate the main
+climate characteristics for each NUTS3 region. In particular, the E-OBS
+dataset (v10.0) of the European Climate Assessment & Dataset (ECA&D)
+was used to describe temperature patterns in the form of multi-year
+monthly means. From the high resolution Alpine Precipitation Grid
+Dataset (EURO4M-APGD) we calculated several parameters describing
+rainfall patterns as well as the incidence of dry periods. Wind speed and
+relative humidity conditions were calculated using two di ﬀerent ap-
+proaches. First, we extracted mean monthly wind speed and relative
+humidity data from the gridded climatology datasets released by the
+Climatic Research Unit of the University of East Anglia (CRU CL v2.0).
+Secondly, we used daily-modeled data from the ERA-Interim re-
+presenting the latest global atmospheric reanalysis produced by the
+European Centre for Medium-Range Weather Forecasts (ECMWF) to
+calculate mean monthly wind speeds and the number of consecutive
+days per month with low relative humidity conditions. Finally, the
+Global Aridity and Potential Evapotranspiration (PET) Database was
+used to estimate the monthly average PET.
+The topographic parameters mean elevation, mean slope, and
+dominant aspect were derived from the NASA Shuttle Radar
+Topographic Mission (SRTM) 90 m digital elevation database (v4.1).
+Distance and geographic position with respect to the main Alpine
+drainage divide were calculated based on the catchment and river
+network system data (ECRINS v1.1) of the European Environment
+Agency (EEA), whereas the distribution of the direction of the main
+rivers (in 4 and 8 classes) was based on the CCM river and catchment
+database (v2.1). Land cover, land use, and vegetation characteristics
+were obtained from the Corine European database (inventory of land
+cover in 44 classes, scale of 1:100 000).
+We also used the Eurostat database (the EU Statistical O ﬃ ce) to
+calculate basic socioeconomic parameters describing population size,
+density, and change over time, the gross domestic product, as well as
+the relative importance of di ﬀerent economic sectors and di ﬀerent le-
+vels of education at the NUTS3 level.
+As a general rule, we selected and used only datasets belonging to
+the same time period as the forest ﬁre database (i.e., 2000 –2009) and
+with a spatial resolution that permitted the reliable calculation of mean
+values at the NUTS3 level. Table 3 lists the ﬁre regime-related climatic,
+environmental, and socio-economic variables that were found to be
+most suitable and were thus retained for the ﬁnal analysis, whereas
+Annex 1 report details on all calculated variables.
+3.4. Statistical analyses
+Diﬀerent clustering and grouping techniques have been used in
+other studies to deﬁ ne areas with similar ﬁre regimes (e.g., k-means
+algorithm by Moreno & Chuvieco, 2013 ; Random Forests by Boulanger
+et al., 2013; ArcGis grouping analysis tools by Wu, He, Yang, & Liang,
+2015). In the present study, we grouped the NUTS3 according to their
+ﬁre regimes by performing hierarchical clustering on ﬁve pyrogeo-
+graphic metrics ( Table 2) based on the Bray-Curtis dissimilarity ( Bray &
+Fig. 1. Geographic distribution of the 64 NUTS3 regions and representative meteorological stations for each Alpine climatic sector (see Fig. 2 ).
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+89
+
+PAGE 4
+Fig. 2. Climatic diagrams of representative meteorological stations for the Alpine climatic sectors. Grey lines with circles represent monthly average temperatures
+(units on the left axis); Black lines with squares show precipitation (units on the right axis). Period of reference: 1971 –2000.
+Table 1
+Number of NUTS3 considered and corresponding ﬁres and burnt areas during the study period 2000 –2009.
+country nr NUTS3 considered total area (km2) combustible area a (km2) forest area b (km2) nr forest ﬁres (n) burnt area (ha) yearly ratio of area burnt c
+Austria 24 63,339 48,905 30,650 955 594 0.132
+France 6 33,124 23,312 12,928 6256 45,330 19.445
+Italy 24 73,373 47,193 27,202 9419 66,980 14.193
+Germany 0 –– – – – –
+Slovenia 5 10,857 8854 6610 385 3150 3.558
+Switzerland 5 24,357 15,441 7283 847 2088 1.355
+Total 64 205,050 143,705 84,672 17,862 118,141 -
+a Combustible area = olive groves (Corinne land cover 17), pastures (18), agriculture land with signi ﬁcant areas of natural vegetation (21), agro-forestry areas
+(22). Forest area (see below b), natural grasslands (26), moors and heathlands (27), sclerophyllous vegetation (28), transitional woodland-shrub (29), sparsely
+vegetated areas (32), burnt areas (33), peat bogs (36).
+b Forest area = broad-leaved forest (23), coniferous forest, (24), mixed forest (25).
+c Yearly area burnt in ha per 10,000 ha of combustible area.
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+90
+
+PAGE 5
+Curtis, 1957 ) and by using the average-linkage method. We used the
+Bray-Curtis dissimilarity coe ﬃ cient because of its linear response to
+gradual changes in the data (see Ricotta & Podani, 2017 ) and the
+average-linkage method because it represents a good compromise be-
+tween the methodological extremes of space-dilating and space-con-
+tracting approaches. Space-contracting methods may leave some clus-
+ters undetected even if they are apparent, whereas space-dilating
+methods are known to identify clusters even if the data does not show a
+clear group structure ( Gordon, 1999 ). In contrast, the average-linkage
+method usually preserves a larger portion of the original dissimilarity
+structure in the dendrogram when compared to other clustering stra-
+tegies (Podani & Schmera, 2006 ). In addition, the burnt areas were log-
+transformed before the calculation to avoid an exaggerated inﬂ uence of
+single or few very large ﬁres within a NUTS3 region.
+We then searched for possible di ﬀerences in the climatic, environ-
+mental, and socio-economic characteristics of the obtained ﬁre regime
+clusters in order to detect the underlying drivers. To that end, we ﬁrst
+performed a redundancy analysis (RDA) to assess the in ﬂuence of se-
+lected climatic, environmental, and socio-economic variables on the
+pyrological characteristics of the di ﬀerent clusters. RDA is an asym-
+metric canonical ordination technique that measures the proportion of
+the total variance of one set of response variables explained by a ca-
+nonical ordination from another set of explanatory variables. RDA can
+be described as a constrained principal component analysis (PCA) in
+which the ordination axes of the response variables are also constrained
+to be a linear combination of the predictor variables, such that the RDA
+axes represent the percentage of the variance of the response variables
+explained by the predictors ( Legendre & Legendre, 1998). In our case,
+the predictor variables were the principal axes obtained from the or-
+dination of the climatic, environmental, and socio-economic variables,
+respectively, while the response variables were all the ﬁre-regime me-
+trics in Table 2. Finally, we tested the signi ﬁcance of di ﬀerences in the
+distribution of the environmental, socio-economic, and climatic char-
+acteristics among the proposed clusters by means of the non-parametric
+Wilcoxon signed-rank test. All statistical analyses were performed using
+R statistical software (version 3.4.0) and the Vegan package.
+Table 2
+Fire metrics used in this study.
+Acronym Deﬁnition (unit) Formula
+ﬁre density Fires Combustible/ Average number of ﬁre events per year divided by combustible area
+(n x km −2xy −1)
+∑y
+k FNry k
+CoAr
+,1 /
+Burnt Combustible/ Average burnt area per year divided by combustible area
+(ha x km −2 xy −1)
+∑y
+k BAry k
+CoAr
+,1 /
+Mean Burnt Average burnt area per ﬁre event (ha) ∑
+∑
+y
+k BAry
+y
+k FNry
+,1
+,1
+Mean Log Burnt Average log-transformed burnt area per ﬁre event ∑+
+∑
+y
+k BAry
+y
+k FNry
+,1 log( 1)
+,1
+ﬁre phenology Winter Fires Ratio between number of ﬁre events in winter (December to April) and total number of ﬁre events ∑∑
+∑
+y
+k
+mD e c
+Apr FNrmy
+y
+k FNry
+,1 ,
+,1
+Winter Burnt Ratio between burnt area in winter (December to April) and total burnt area ∑∑
+∑
+y
+k
+mD e c
+Apr BArmy
+y
+k BAry
+,1 ,
+,1
+Winter Log Burnt Ratio between log-transformed burnt area in winter and total log-transformed burnt area ∑∑ +
+∑+
+y
+k
+mD e c
+Apr BArmy
+y
+k BAry
+,1 , log( 1)
+,1 log( 1)
+Legend: FNr = number of ﬁres; y = year; BAr = burnt area; CoAr = combustible area; Apr = April; Dec = December; combustible area: see legend to Table 1 .
+Table 3
+Explanatory climatic, environmental, and socio-economic variables used for RDA analysis.
+Category Parameter Variable acronym Description Unit Source and periods considered
+climatic temperature Temp.MarApr bi-monthly mean (March and
+April)
+°C Europe Climate Assessment & Dataset (E-OBS v10.0) (1995 –2013)
+drought period
+(DP)
+LongDP.mean longest period during the year days Alpine Precipitation Grid Dataset (EURO4M-APGD) (1991 –2008)
+DP30.mean Periods longer than 30 days n/y
+wind speed Wind.JulAug bi-monthly mean (July and
+August)
+m/sec European Centre for Medium-Range Weather Forecasts (ERA Interim
+climate reanalysis) (1990 –2010; evaporation 2000 –2009)
+relative humidity
+(Rh)
+Rh.JulAug bi-monthly mean (July and
+August)
+%
+dry days a (DD) DD.Feb monthly mean (February) days
+evaporation Evapo.MarApr bi-monthly mean (March and
+April)
+m
+environmental Elevation (Alt) Alt.mean mean value m USGS/NASA SRTM data, Shuttle Radar Topography Mission, SRTM
+Digital Elevation Database v4.1
+main rivers
+direction
+RivDir4.S portion of south-oriented rivers % Catchment Characterisation and Modelling (CCM v2.1)
+distance to the Alps DistRid distance to the Alpine ridge km EEA Catchments and Rivers Network System (ECRINS v1.1)
+forest cover ConifFor portion of coniferous % EEA (European Environment Agency) Corine Land Cover 2006
+ScleroFor portion of sclerophyllous %
+socio-economic population PopDens population density inh./km
+2 “Eurostat [demo_r_pjanaggr3] [nama_r_e3gdp] NACE Rev.1.1
+[cens_01ractz] ISCED97 ”(2001–2003)economic sectors EconSect1 portion of people in the primary
+sector
+%
+education Education portion of people with basic
+educational level (0 –2)
+%
+a Days with less than 50% of daily mean relative air humidity.
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+91
+
+PAGE 6
+4. Results
+4.1. Dominant ﬁre regimes in the Alps
+The cluster analysis identi ﬁed ﬁve di ﬀerent clusters ( Fig. 3). The
+uniqueness of the ﬁve clusters was evaluated by means of a permuta-
+tional multivariate analysis of variance (PERMANOVA; Anderson,
+2001) on the Bray-Curtis dissimilarity matrix comparing each pair of
+NUTS3 regions (F = 29.05; p < 0.0001; 10,000 randomizations). Ac-
+cording to their consistency and geographical position, we labeled the
+three main clusters as Northern (33 - NUTS3 regions), Southern (21),
+and Maritime (5) Alps, whereas the two remaining clusters are referred
+to as the Austrian (4) and French (1) outliers ( Fig. 4). The Northern Alps
+cover the whole northern slope of the Swiss and Austrian Alps (with the
+exception of the Austrian outliers), the mountainous French depart-
+ments of Isère (FR714), Savoie (FR717) and Haute-Savoie (FR718), the
+continental and dry Italian regions of Aosta Valley (ITC20) and South
+Tyrol (ITH10), and the Central and North-Western Slovenian regions of
+Savinja (SI014), Central Slovenia (SI021), Upper Carniola (SI022), and
+Gorizia (SI023). The Austrian outliers include the mountainous region
+of Western Upper Styria (AT224), the Steyr-Kirchdorf (AT314) and
+Traunviertel (AT315) regions in Upper Austria, as well as East Tyrol
+(AT333). The Southern Alps cluster includes all NUTS3 regions on the
+Italian southern slope of the Alps from Cuneo (ITC16) in Western
+Piedmont to Udine (ITH42) in Friuli-Venezia Giulia, the southernmost
+Swiss Canton of Ticino (CH070), and the Littoral –Inner Carniola region
+in Slovenia (SI018). The Maritime Alps include the coastal Alpes-Mar-
+itimes (FR823) and Var (FR825) in the French Côte d'Azur department
+and the Italian Provinces of Imperia (ITC31) and Savona (ITC32) in
+Liguria, and Gorizia (ITH43) in Friuli-Venezia Giulia. The department
+of Vaucluse in Provence represents the single NUTS3 cluster labeled as
+a French outlier. Assigned ﬁre regime clusters and related main ﬁre
+metrics for each of the NUTS3 regions considered are reported in Annex
+1, whereas Table 4 reports the main ﬁre characteristics for the deﬁ ned
+clusters.
+Fig. 5 shows the monthly frequencies of ﬁre events and burnt areas
+for the ﬁre regime clusters. Fire phenology in terms of the number of
+events clearly di ﬀerentiates between the Maritime Alps with the French
+outlier, which have the highest frequency in July –August, and the
+Southern Alps, which experience the main ﬁre peak in spring, March in
+particular. The Northern Alps and the Austrian outliers, in contrast,
+display two distinct ﬁre peaks, the ﬁrst in spring (March –April), and the
+second during summer (July –August). Regarding the burnt area, the
+summer peak in the Maritime Alps and the French outlier is even more
+pronounced, whereas no spring peak exists in the Northern Alps. Fig. 6
+shows the ﬁre density in terms of the number of ﬁres, burnt area per
+combustible area, and mean burn area. The Maritime Alps is the ﬁre
+regime cluster with the highest ﬁre
+ frequency (0.071 events/100 km 2 of
+combustible area) and burnt area (0.531 ha/100 km 2 of combustible
+area), followed by the Southern Alps (0.018 events/100 km 2 and
+0.125 ha/100 km2, respectively). The Northern Alps and the Austrian
+outliers, in contrast, have signi ﬁcantly lower ﬁre density metrics.
+4.2. Driving factors that di ﬀerentiate ﬁre regimes
+Fig. 7a reports the results of the RDA analysis with the listed cli-
+matic ﬁre regime variables as predictors, whereas Fig. 7b shows the
+results of the RDA when using environmental and socio-economic
+variables as predictors. The small squares represent single NUTS3 re-
+gions, and the shaded areas represent the convex hulls of the ﬁre regime
+clusters. The length and direction of the arrows show the strength and
+the sign of correlation between predictor variables (i.e., potential ﬁre
+drivers) and the ﬁrst two axes of the RDA. The ﬁrst two axes obtained
+from the redundancy analysis of the climatic variables ( Fig. 7a) explain
+Fig. 3. Results of the cluster analysis.
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+92
+
+PAGE 7
+39.83% of the total variance of the response variables (RDA1 = 30.86%
+and RDA2 = 8.97%), whereas the variance explained by the environ-
+mental and socio-economic variables ( Fig. 7b) accounts for 39.12%
+(RDA1 = 28.51% and RDA2 = 10.61%). Both RDA plots show a clear
+separation among the convex hulls of the di ﬀerent ﬁre regimes. The
+ﬁrst RDA axis is mainly related to ﬁre density, while the second RDA
+axis is mainly related to ﬁre phenology. Accordingly, RDA1 shows the
+main distinction between low-density and high-density ﬁre regimes,
+while RDA2 shows the transition from winter to summer ﬁre phe-
+nology. The main environmental factor related to the ﬁre regime in the
+Maritime Alps is represented by the presence of sclerophyllous forests,
+whereas the July and August wind conditions represent the main cli-
+matic ﬁre driver. The French outlier displays similar drivers although to
+a lesser extent. Prolonged drought periods (LongDP.mean), especially in
+February (DD.Feb), and high evapotranspiration rates in March –April
+(Evapo.MarApr) are the main climatic ﬁre drivers in the Southern Alps.
+Here, the marked south orientation of the main valley (RivDir4.S), the
+high population density (PopDens), and the generally low level of
+education (Education) appear to play an important role. The Northern
+Alps and the Austrian outliers in particular are characterized by a re-
+latively high mean altitude (Alt.mean), a high proportion of coniferous
+forests (ConifFor), a consistent proportion of people that remain active
+in the primary sector (EconSect1), and relatively high air humidity
+conditions during summer (Rh.JulAug) ( Fig. 7a and b).
+The Wilcoxon rank-sum tests permitted the highlighting of sig-
+niﬁcant di ﬀerences in the distribution of the climatic ( Fig. 8 ) and en-
+vironmental and socioeconomic variables ( Fig. 9) among clusters. For
+instance, the drought period indicators (LongDP.mean, DP30.mean)
+Fig. 4. Geographic distribution of the proposed Alpine ﬁre regime clusters.
+Table 4
+Fire characteristics of the de ﬁned pyroregions.
+Pyrologic
+classes
+Nr NUTS3 Total area
+(km2)
+Combustible area a
+(km2)
+Forest
+area
+a
+(km2)
+Nr forest
+ﬁres (n)
+Burnt area
+(ha)
+Yearly nr
+forest ﬁres
+(n/y)
+Yearly burnt
+area (ha/y)
+Mean event
+burnt area
+(ha)
+Winter
+ﬁres (%)
+Winter burnt
+area (%)
+Northern Alps 33 114,383 83,710 48,219 2701 11,827 282 1186 4.2 40.6 22.2
+Austrian
+outliers
+4 9811 8086 5030 93 132 11 16 1.5 37.6 6.9
+Southern Alps 21 63,825 39,868 24,053 7185 49,704 719 4970 6.9 71.9 84.6
+Maritime Alps 5 13,458 10,474 6314 7388 55,600 739 5560 7.5 35.5 22.6
+French outlier 1 3573 1567 1056 489 871 49 87 1.8 25.2 11.1
+Total 64 205,050 143,705 84,672 17,856 118,135 1799 11820
+a Combustible area and Forest area: see legend to Table 1 .
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+93
+
+PAGE 8
+diﬀerentiate between northern (Northern Alps and Austrian Outliers)
+and southern (Southern and Maritime Alps) clusters, whereas February
+drought (DD.Feb) levels are signi ﬁcantly di ﬀerent within the southern
+regimes (Southern Alps vs Maritime Alps). Relative air humidity in
+July–August diﬀerentiates between the Northern Alps and the Austrian
+Outliers, while spring temperature and evapotranspiration
+Fig. 5. Monthly frequency of ﬁre events during the study period for the proposed Alpine ﬁre regime clusters.
+Fig. 6. Box plot of the distribution of ﬁre metrics with respect to the de ﬁned Alpine ﬁre regime clusters. Lines in bold represent the median. Boxes extend from the
+ﬁrst to the third quartile, whereas whiskers include the smallest and the largest non-outlier points, i.e., points within 1.5 times the extent of the interquartile range.
+Diﬀerent letters indicate signi ﬁcantly di ﬀerent distributions (p < 0.05, non-parametric Wilcoxon rank-sum test).
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+94
+
+PAGE 9
+(Temp.MarApr; Evapo MarApr) are signi ﬁcantly di ﬀerent between
+northern and southern clusters. Summer wind speed, in contrast, does
+not distinguish among clusters with the exception of the Southern Alps
+(Fig. 8 ). Environmental and socio-economic variables were much less
+meaningful in terms of discriminating among ﬁre regime clusters. Sig-
+niﬁcant variables include the marked south-north orientation of the
+main valleys in the Southern Alps, the higher proportion of Coniferous
+forests in the northern (Northern Alps and Austrian Outliers) clusters,
+and the diﬀerences in population density and level of education ( Fig. 9).
+5. Discussion
+Although the Alpine region is not considered a ﬁre-prone region on
+a global scale, wild ﬁres in the Alps have been recorded since pre-his-
+toric times (e.g., Blarquez, Bremond, & Carcaillet, 2010 ; Carcaillet
+et al., 2009; Tinner, Hubschmid, Wehrli, Ammann, & Conedera, 1999 ).
+Fire impact on the landscape and vegetation has increased since the
+Neolithic when humans systematically used ﬁre for woody fuel
+clearing, although with varying intensities according to local climatic
+conditions (Tinner, Conedera, Ammann, & Lotter, 2005). In the present
+study, the Alpine region is still found to be highly heterogeneous in
+terms of ﬁre regimes as is consistent with its steep climatic and en-
+vironmental gradient and the long-lasting human impact on the land-
+scape ( Conedera, Colombaroli, Tinner, Krebs, & Whitlock, 2017 ).
+From a geographic point of view, a clear di ﬀerence was found be-
+tween the high ﬁre density on the southern slope of the Alps and the
+substantially lower proportion of burnt area registered on the northern
+slope. This major contrast between the North (low danger) and the
+South (high danger) was also found by Dupire, Curt, and Bigot (2017)
+in the French Alps. The Italian regions of the Aosta Valley and South
+Tyrol are the two exceptions in the Central Alps, likely because of their
+markedly mountainous character and continental climate. The higher
+ﬁre conductivity in the southern clusters (Southern and Maritime Alps)
+is mainly due to the generally low elevation and high population den-
+sity of the areas combined with environmental and climatic factors that
+enhance ﬁre ignition and spread. The snow-free upper litter layers that
+accumulate in the lowland forests dominated by chestnuts, deciduous
+oaks, and hornbeam, together with prolonged periods without rain
+associated with episodic north-foehn winds, are the main factors con-
+tributing to increased ﬁre conductivity ( Moﬁdi et al., 2015; Reinhard,
+Rebetez, & Schlaepfer, 2005; Sharples, Mills, McRae, & Weber, 2010 )i n
+the southern Alps. Mediterranean vegetation, rich in sclerophyllous and
+pine tree species, combined with the presence of dry winds (e.g.
+summer Mistral), in turn render the Maritime Alps particularly prone to
+rapid spreading ﬁres in summer ( Fréjaville & Curt, 2015 ; Ogrin, 1996).
+As a general rule, such a Mediterranean in ﬂuence is much stronger in
+the
+western end of the Alpine region.
+Interestingly, our analysis did not identify wind speed as one of the
+major climatic drivers of highly conductive ﬁre conditions in winter for
+foehn regions. This is not really surprising given that foehn and Mistral
+are characterized by strong but irregular wind gusts, which renders
+average wind speed particularly unsuitable as an explanatory variable
+(Cesti, 1990 ; Plavcan, Mayr, & Zeileis, 2014 ; Richner, Duerr,
+Gutermann, & Bader, 2014). Nonetheless, the degree to which main
+valley axes deviate with respect to North-South and the average tem-
+perature in March and April may represent suitable indirect indicators
+of dominant foehn conditions. Summer wind speed, in contrast, was
+found to be relevant for areas with Mediterranean conditions, although
+without any markedly signi ﬁcant di ﬀerences among other ﬁre regime
+clusters with varying wind speed distributions.
+The socio-economic variable of population density ﬁts very well in
+the context of regions with high ﬁre density. The Wildland-Urban
+Interface (WUI) is usually strongly related to population density
+(Conedera et al., 2015 ; Ganteaume & Long-Fournel, 2015 ) which, in
+turn, may signi ﬁcantly increase ﬁre starts of voluntary or involuntary
+anthropogenic origin (e.g., Arndt, Vacik, Koch, Arpaci, & Gossow, 2013;
+Curt, Frejaville, & Lahaye, 2016 ; Regione Lombardia, 2009 , p. 387;
+Regione Piemonte, 2011, p. 387). The proportion of the population
+with a low level of education shows a similar relationship which may
+also be related to anthropogenic ﬁre ignitions. It is well known that the
+risk perception of natural and manmade disasters is related to the
+educational level ( Huang et al., 2013; Kellens, Terpstra, & De Maeyer,
+2013). It follows that those with low levels of education are less in-
+formed and concerned about the e ﬀects of forest ﬁres and may be
+correspondingly less careful when dealing with ﬁre (e.g., burning of
+wastes resulting from agricultural or forestry activities, camp ﬁres, and
+discarding cigarette butts).
+The northern regions of the Northern Alps and Austrian Outliers are
+characterized by a relatively high mean elevation and a signi ﬁcant
+presence of coniferous forests that make them particularly prone to
+summer ﬁres. In contrast, abundant snowfall in winter and persistent
+snow cover in spring tend to prevent winter/spring ﬁres in such
+mountain areas. Furthermore, lightning-induced forest ﬁres are fre-
+quent in coniferous-rich, steep mountain landscapes ( Cesti, Conedera, &
+Spinedi, 2005 ; Conedera et al., 2006; Müller et al., 2013 ; Reineking
+Fig. 7. Results of redundancy analysis for climatic (a) and environmental and
+socio-economic (b) variables. Squares represent single NUTS3 regions; shaded
+areas represent the convex hulls of the ﬁre regimes in ordination space ( ﬁre
+regime labels in italics are located at the centre of gravity of convex hulls).
+Circles represent response variables (i.e., the ﬁre regime metrics used in the
+cluster analysis in Fig. 3 ). Grey arrows represent predictor variables (i.e., po-
+tential ﬁre drivers considered in this study). The length and direction of the
+arrows indicate the strength and the sign of correlation between predictor
+variables and the ﬁrst two axes of the ordination space (RDA1 and RDA2),
+respectively.
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+95
+
+PAGE 10
+et al., 2010; Vacik et al., 2011 ). Due to the particular fuel conditions,
+such ﬁres tend to develop in the upper humus and soil layer, thus re-
+maining conﬁned in terms of burnt area ( Conedera et al., 2006; Pezzatti
+et al., 2013 ). Although extended dry periods in July and August may
+occur and enhance ﬁne fuel ﬂammability, overall ﬁre conductivity re-
+mains low ( Vacik et al., 2011 ).
+When looking in detail at the outliers, it becomes clear how dif-
+ferences with respect to the geographically adjacent cluster (i.e.,
+Northern Alps for the Austrian outliers and Maritime Alps for the
+French outlier) are due to anomalous ﬁre occurrence in speci ﬁc years
+(see Annexes 2 and 3). For the Austrian outliers, this is the case in 2003,
+when an extraordinarily high level of burnt area was reached in April as
+Fig. 8. Box plot of the distribution of the climatic variables retained in the RDA with respect to the de ﬁned Alpine ﬁre regime clusters. Lines in bold represent the
+median. Boxes extend from the ﬁrst to the third quartile, whereas whiskers include the smallest and the largest non-outlier points, namely, points within 1.5 times the
+extent of the interquartile range. Di ﬀerent letters indicate signi ﬁcantly di ﬀerent distributions (p < 0.05, non-parametric Wilcoxon rank-sum test).
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+96
+
+PAGE 11
+well as in 2007 and 2009, when an abnormally high number of ﬁre
+events occurred. The French outlier had an exceptionally high burnt
+area in August 2000 and in November 2007, which likely caused its
+exclusion from the Maritime Alps cluster. It is thus reasonable to as-
+sume that such anomalous years could be bu ﬀered by longer
+observation periods, resulting in the classi ﬁcation of these outliers into
+the appropriate adjacent main cluster, namely, the Northern Alps for
+the Austrian outliers and the Maritime Alps for the French outlier.
+According to Valese et al. (2014) , the reference period for this study
+(i.e., 2000–2009) coincides with a period of general reduction in overall
+Fig. 9. Box plot of the distribution of the environmental and socio-economic variables retained in the RDA with respect to the de ﬁned Alpine ﬁre regimes. Lines in
+bold represent the median. Boxes extend from the ﬁrst to the third quartile, whereas whiskers include the smallest and the largest non-outlier points, namely, points
+within 1.5 times the extent of the interquartile range. Di ﬀerent letters indicate signi ﬁcantly di ﬀerent distributions (p < 0.05, non-parametric Wilcoxon rank-sum
+test).
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+97
+
+PAGE 12
+ﬁre density in the Alpine environment as a consequence of generally
+ﬁre-unsuitable climatic conditions and the e ﬀectiveness of newly im-
+plemented ﬁre management and ﬁre suppression measures. On the
+other hand, uncommonly large ﬁres episodically took place during the
+study period, also outside of the usual ﬁre season ( Schunk, Wastl,
+Leuchner, Schuster, & Menzel, 2013). In view of predicted climatic
+shifts ( Schunk et al., 2013; Wastl, Schunk, Leuchner, Pezzatti, &
+Menzel, 2012) and ongoing land-use changes in mountain areas ( Cocca,
+Sturaro, Gallo, & Ramanzin, 2012 ; Kulakowski, Bebi, & Rixen, 2011 )
+particular attention should be paid in monitoring the evolution of Al-
+pine ﬁre regimes and of anomalous ﬁre seasons (e.g., Müller et al.,
+2013, 2015).
+6. Conclusions
+In the present study, we propose for the ﬁrst time a systematic ﬁre
+regime classi ﬁcation of the whole European Alpine area based on ﬁre
+regime metrics that describe general ﬁre density (relative frequency
+and burnt area with respect to available combustible area) and ﬁre
+phenology ( ﬁre seasonality).
+Despite the short timeframe of the available data (ten years), the
+resulting classi ﬁcation scheme enabled us to deﬁ ne three main distinct
+ﬁre regime clusters, including the detection of their main climatic,
+environmental, and socio-economic drivers. These ﬁre regime clusters
+may represent an important baseline for detecting future ﬁre regime
+shifts or anomalous ﬁre seasons. Although forest ﬁres do not currently
+have a major impact compared to the damage and costs of other natural
+disturbances (e.g., storms and bark beetles) throughout in the Alpine
+region, future ﬁre regimes may evolve under the expected impact of
+climate and socioeconomic changes.
+Acknowledgments
+The forest ﬁre database used in this study was a common product of
+the MANFRED ( http://www.manfredproject.eu) and ALPFFIRS http://
+www.alpﬃ rs.eu) Alpine Space Interreg projects of the European Union.
+We thank all colleagues of the two projects involved in data collection
+and preparation, and all national agencies that provided ﬁre
+and en-
+vironmental data to them. Financial support is acknowledged from the
+European Union through the Alpine Space ALPFFIRS project (no.15-2-
+3-IT) and the FP7 (2007 –2013) ERC grant agreement number
+[282250], from the Technische Universität München – Institute for
+Advanced Study, a grant provided by the Austrian Science Fund under
+the AFFRI (Austrian Forest Fire Research Initiative), and several na-
+tional agencies, namely, the Swiss Federal O ﬃ ces for the Environment
+(FOEN) and the Spatial Development (ARE). We thank Curtis Gautschi
+for the English revision.
+Appendix A. Supplementary data
+Supplementary data related to this article can be found at https://
+doi.org/10.1016/j.apgeog.2018.07.011.
+References
+Anderson, M. J. (2001). A new method for non-parametric multivariate analysis of var-
+iance. Austral Ecology, 26 (1), 32 –46. https://doi.org/10.1111/j.1442-9993.2001.
+01070.
+Archibald, S., Lehmann, C. E. R., Gomez-Dans, J. L., & Bradstock, R. A. (2013). De ﬁning
+pyromes and global syndromes of ﬁre regimes. Proceedings of the National Academy of
+Sciences of the United States of America, 110 (16), 6442 –6447. https://doi.org/10.
+1073/pnas.1211466110.
+Arndt, N., Vacik, H., Koch, V., Arpaci, A., & Gossow, H. (2013). Modeling human-caused
+forest ﬁre ignition for assessing forest ﬁre danger in Austria. Iforest-Biogeosciences and
+Forestry, 6 . https://doi.org/10.3832/ifor0936-006.
+Arpaci, A., Malowerschnig, B., Sass, O., & Vacik, H. (2014). Using multi variate data
+mining techniques for estimating ﬁre susceptibility of Tyrolean forests. Applied
+Geography, 53 , 258 –270. https://doi.org/10.1016/j.apgeog.2014.05.015.
+Auer, I., Boehm, R., Jurkovic, A., Lipa, W., Orlik, A., Potzmann, R., et al. (2007). HISTALP
+- historical instrumental climatological surface time series of the Greater Alpine
+Region. International Journal of Climatology, 27 (1), 17 –46. https://doi.org/10.1002/
+joc.1377.
+Blarquez, O., Bremond, L., & Carcaillet, C. (2010). Holocene ﬁres and a herb-dominated
+understorey track wetter climates in subalpine forests. Journal of Ecology, 98 (6),
+1358–1368. https://doi.org/10.1111/j.1365-2745.2010.01721.x.
+Boulanger, Y., Gauthier, S., Gray, D. R., Le Go ﬀ, H., Lefort, P., & Morissette, J. (2013). Fire
+regime zonation under current and future climate over eastern Canada. Ecological
+Applications, 23 (4), 904 –923. https://doi.org/10.1890/12-0698.1.
+Bowman, D., Balch, J., Artaxo, P., Bond, W. J., Cochrane, M. A., D'Antonio, C. M., et al.
+(2011). The human dimension of ﬁre regimes on Earth. Journal of Biogeography,
+38(12), 2223 –2236. https://doi.org/10.1111/j.1365-2699.2011.02595.x.
+Bowman, D., O'Brien, J. A., & Goldammer, J. G. (2013). Pyrogeography and the global
+quest for sustainable ﬁre management. In A. Gadgil, & D. M. Liverman (Vol. Eds.),
+Annual review of environment and resources: Vol. 38 , (pp. 57 –80). . https://doi.org/10.
+1146/annurev-environ-082212-134049.
+Bradstock, R. A., Gill, A. M., & Williams, J. E. (2012). Flammable Australia: Fire regimes,
+biodiversity and ecosystems in a changing world. CSIRO Publishing.
+Bray, J. R., & Curtis, J. T. (1957). An ordination of the upland forest communities of
+Southern Wisconsin. Ecological Monographs, 27 (4), 326 –349. https://doi.org/10.
+2307/1942268.
+Carcaillet, C., Ali, A. A., Blarquez, O., Genries, A., Mourier, B., & Bremond, L. (2009).
+Spatial variability of ﬁre history in subalpine forests: From natural to cultural re-
+gimes. Ecoscience, 16 (1), 1 –12. https://doi.org/10.2980/16-1-3189.
+Cesti, G. (1990). Il vento e gli incendi boschivi. Indagine sulla ventosità invernale in Valle
+d'Aosta. Regione Autonoma Valle d'Aosta, Châtillon .
+Cesti, G., & Cerise, A. (1992). Aspetti degli incendi boschivi. Analisi dei comportamenti par-
+ticolari del fuoco e delle sue tipologie negli incendi boschivi. Esame di una realtà alpina.
+Quart (AO): Mosuimeci Editore .
+Cesti, G., Conedera, M., & Spinedi, F. (2005). Considerazioni sugli incendi boschivi
+causati da fulmini. Schweizerische Zeitschrift für das Forstwesen, 156 (9), 353 –361.
+Cocca, G., Sturaro, E., Gallo, L., & Ramanzin, M. (2012). Is the abandonment of traditional
+livestock farming systems the main driver of mountain landscape change in Alpine
+areas? Land Use Policy, 29 (4), 878 –886. https://doi.org/10.1016/j.landusepol.2012.
+01.005.
+Conedera, M., Cesti, G., Pezzatti, G. B., Zumbrunnen, T., & Spinedi, F. (2006). Lightning-
+induced ﬁres in the Alpine region: An increasing problem. In D. X. Viegas (Ed.). V
+international conference on forest ﬁre Research (pp. 9). Portugal: ADAI/CEIF, University
+of Coimbra, Figueira da Foz Vol. CD-Rom .
+Conedera, M., Colombaroli, D., Tinner, W., Krebs, P., & Whitlock, C. (2017). Insights
+about past forest dynamics as a tool for present and future forest management in
+Switzerland. Forest Ecology and Management, 388 , 100–112. https://doi.org/10.1016/
+j.foreco.2016.10.027.
+Conedera, M., Tonini, M., Oleggini, L., Orozco, C. V., Leuenberger, M., & Pezzatti, G. B.
+(2015). Geospatial approach for de ﬁning the Wild land-Urban Interface in the Alpine
+environment. Computers Environment and Urban Systems, 52 ,1 0 –20. https://doi.org/
+10.1016/j.compenvurbsys.2015.02.003.
+Coughlan, M. R., & Petty, A. M. (2012). Linking humans and ﬁre: A proposal for a
+transdisciplinary ﬁre ecology. International Journal of Wildland Fire, 21 (5), 477 –487.
+https://doi.org/10.1071/wf11048.
+Curt, T., Frejaville, T., & Lahaye, S. (2016). Modelling the spatial patterns of ignition
+causes and ﬁre regime features in southern France: Implications for ﬁre prevention
+policy. International Journal of Wildland Fire, 25 (7),
+ 785–796. https://doi.org/10.
+1071/wf15205.
+Dupire, S., Curt, T., & Bigot, S. (2017). Spatio-temporal trends in ﬁre weather in the
+French Alps. Science of The Total Environment, 595 , 801 –817. https://doi.org/10.
+1016/j.scitotenv.2017.04.027.
+European Environmental Agency, E.E.A (2007). European Forest types. Categories and
+types for sustainable forest management, reporting, and policy. EEA technical report:
+Vol. 9 , (pp. 111 –). Copenhagen .
+Falk, D. A., & Swetnam, T. W. (2003). Scaling rules and probability models for surface ﬁre
+regimes in ponderosa pine forests. In U. F. S. P. RMRS-P-29 (Ed.). USDA forest service
+proceedings RMRS-P-29 (pp. 301 –318). .
+Fernandes, P. M. (2013). Fire-smart management of forest landscapes in the
+Mediterranean basin under global change. Landscape and Urban Planning, 110 ,
+175–182. https://doi.org/10.1016/j.landurbplan.2012.10.014.
+Fréjaville, T., & Curt, T. (2015). Spatiotemporal patterns of changes in ﬁre regime and
+climate: De ﬁning the pyroclimates of south-eastern France (mediterranean basin).
+Climatic Change, 129 (1–2), 239 –251. https://doi.org/10.1007/s10584-015-1332-3.
+Ganteaume, A., & Long-Fournel, M. (2015). Driving factors of ﬁre density can spatially
+vary at the local scale in south-eastern France. International Journal of Wildland Fire,
+24(5), 650 –664. https://doi.org/10.1071/wf13209.
+Gordon, A. D. (1999). Classiﬁcation (2nd ed.). Monographs on Statistics & Applied
+Probability, Chapman & Hall/CRC .
+Huang, L., Zhou, Y., Han, Y. T., Hammitt, J. K., Bi, J., & Liu, Y. (2013). E ﬀect of the
+Fukushima nuclear accident on the risk perception of residents near a nuclear power
+plant in China. Proceedings of the National Academy of Sciences of the United States of
+America, 110 (49), 19742 –19747. https://doi.org/10.1073/pnas.1313825110.
+Kellens, W., Terpstra, T., & De Maeyer, P. (2013). Perception and communication of ﬂood
+risks: A systematic review of empirical Research. Risk Analysis, 33 (1), 24–49. https://
+doi.org/10.1111/j.1539-6924.2012.01844.x.
+Krebs, P., Pezzatti, G. B., Mazzoleni, S., Talbot, L. M., & Conedera, M. (2010). Fire regime:
+History and de ﬁnition
+ of a key concept in disturbance ecology. Theory in Biosciences,
+129(1), 53 –69. https://doi.org/10.1007/s12064-010-0082-z.
+Kulakowski, D., Bebi, P., & Rixen, C. (2011). The interacting e ﬀects of land use change,
+climate change and suppression of natural disturbances on landscape forest structure
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+98
+
+PAGE 13
+in the Swiss Alps. Oikos, 120 (2), 216 –225. https://doi.org/10.1111/j.1600-0706.
+2010.18726.x.
+Legendre, P., & Legendre, L. (1998). Numerical ecology. Amsterdam: Elsevier .
+Moﬁdi, A., Soltanzadeh, I., Youseﬁ , Y., Zarrin, A., Soltani, M., Samakosh, J. M., et al.
+(2015). Modeling the exceptional south Foehn event (Garmij) over the Alborz
+Mountains during the extreme forest ﬁre of December 2005. Natural Hazards, 75 (3),
+2489–2518. https://doi.org/10.1007/s11069-014-1440-9.
+Moreno, M. V., & Chuvieco, E. (2013). Characterising ﬁre regimes in Spain from ﬁre
+statistics. International Journal of Wildland Fire, 22 (3), 296 –305. https://doi.org/10.
+1071/wf12061.
+Morgan, P., Hardy, C. C., Swetnam, T. W., Rollins, M. G., & Long, D. G. (2001). Mapping
+ﬁre regimes across time and space: Understanding coarse and ﬁne-scale ﬁre patterns.
+International Journal of Wildland Fire, 10 (3–4), 329 –342. https://doi.org/10.1071/
+wf01032.
+Müller, M. M., Vacik, H., Diendorfer, G., Arpaci, A., Formayer, H., & Gossow, H. (2013).
+Analysis of lightning-induced forest ﬁres in Austria. Theoretical and Applied
+Climatology, 111 (1–2), 183 –193. https://doi.org/10.1007/s00704-012-0653-7.
+Müller, M. M., Vacik, H., & Valese, E. (2015). Anomalies of the Austrian forest ﬁre regime
+in comparison with other alpine countries: A Research note. Forests, 6 (4), 903 –913.
+https://doi.org/10.3390/f6040903.
+Ogrin, D. (1996). Podnebni tipi v Sloveniji [The climate types in Slovenia]. Geografski
+vestnik, 68 ,3 9 –56.
+Pausas, J. G., & Paula, S. (2012). Fuel shapes the ﬁre-climate relationship: Evidence from
+mediterranean ecosystems. Global Ecology and Biogeography, 21 (11), 1074 –1082.
+https://doi.org/10.1111/j.1466-8238.2012.00769.x.
+Pedrolli, M. (1984). Gli incendi boschivi in Trentino. Schweizerische Zeitschrift für das
+Forstwesen, 135 (7), 607 –612.
+Pezzatti,
+G. B., Zumbrunnen, T., Burgi, M., Ambrosetti, P., & Conedera, M. (2013). Fire
+regime shifts as a consequence of ﬁre policy and socio-economic development: An
+analysis based on the change point approach. Forest Policy and Economics, 29 ,7 –18.
+https://doi.org/10.1016/j.forpol.2011.07.002.
+Plavcan, D., Mayr, G. J., & Zeileis, A. (2014). Automatic and probabilistic foehn diagnosis
+with a statistical mixture model. Journal of Applied Meteorology and Climatology,
+53(3), 652 –659. https://doi.org/10.1175/jamc-d-13-0267.1.
+Podani, J., & Schmera, D. (2006). On dendrogram-based measures of functional diversity.
+Oikos, 115 (1), 179 –185. https://doi.org/10.1111/j.2006.0030-1299.15048.x.
+Pyne, S. J. (1997). World Fire: The culture of ﬁre on Earth. University of Washington Press .
+Regione Lombardia (2009). Piano regionale delle attività di previsione, prevenzione e lotta
+attiva contro gli incendi boschivi. downloaded from April 2015, http://www.ersa-
+f.lombardia.it/upload/ersaf/gestionedocumentale/PIANO%20ANTINCENDIO
+%20BOSCHIVO%202014-2016_784_16934.pdf.
+Regione Piemonte (2011). Piano regionale per la programmazione delle attività di previsione,
+prevenzione e lotta attiva contro gli incendi boschivi 2011-2014. downloaded from,
+Accessed date: April 2015 http://www.regione.piemonte.it/protezionecivile/dwd/
+piano_aib.pdf.
+Reineking, B., Weibel, P., Conedera, M., & Bugmann, H. (2010). Environmental de-
+terminants of lightning- v. human-induced forest ﬁre ignitions di ﬀer in a temperate
+mountain region of Switzerland. International Journal of Wildland Fire, 19 (5),
+541–557. https://doi.org/10.1071/wf08206.
+Reinhard, M., Rebetez, M., & Schlaepfer, R. (2005). Recent climate change: Rethinking
+drought in the context of forest ﬁre Research in Ticino, south of Switzerland.
+Theoretical and Applied Climatology, 82 (1–2), 17 –25. https://doi.org/10.1007/
+s00704-005-0123-6.
+Richner, H., Duerr, B., Gutermann, T., & Bader, S. (2014). The use of automatic station
+data for continuing the long time series (1864 to 2008) of foehn in Altdorf.
+Meteorologische Zeitschrift, 23 (2), 159 –166. https://doi.org/10.1127/0941-2948/
+2014/0528.
+Ricotta, C., & Podani, J. (2017). On some properties of the Bray-Curtis dissimilarity and
+their ecological meaning. Ecological Complexity, 31 , 201 –205. https://doi.org/10.
+1016/j.ecocom.2017.07.003.
+Schunk, C., Wastl, C., Leuchner, M., Schuster, C., & Menzel, A. (2013). Forest ﬁre danger
+rating in complex topography - results from a case study in the Bavarian Alps in
+autumn 2011. Natural Hazards and Earth System Sciences, 13 (9), 2157–216710
+ 5194/
+nhess-13-2157-2013.
+Sharples, J. J., Mills, G. A., McRae, R. H. D., & Weber, R. O. (2010). Foehn-like winds and
+elevated ﬁre danger conditions in southeastern Australia. Journal of Applied
+Meteorology and Climatology, 49 (6), 1067 –1095. https://doi.org/10.1175/
+2010jamc2219.1.
+Stefanì, A. (1989). Boschi e incendi in Lombardia. Dendronatura, 10 ,4 1 –47.
+Tinner, W., Conedera, M., Ammann, B., & Lotter, A. F. (2005). Fire ecology north and
+south of the Alps since the last ice age. Holocene, 15(8), 1214–1226. https://doi.org/
+10.1191/0959683605hl892rp.
+Tinner, W., Hubschmid, P., Wehrli, M., Ammann, B., & Conedera, M. (1999). Long-term
+forest ﬁre ecology and dynamics in southern Switzerland. Journal of Ecology, 87 (2),
+273–289. https://doi.org/10.1046/j.1365-2745.1999.00346.x.
+Vacik, H., Arndt, N., Arpaci, A., Koch, V., Müller, M., & Gossow, H. (2011).
+Characterisation of forest ﬁres in Austria. Australian Journal of Science, 128 (1), 1–31.
+Valese, E., Conedera, M., Held, A. C., & Ascoli, D. (2014). Fire, humans and landscape in
+the european alpine region during the holocene. Anthropocene, 6 (0), 63 –74. https://
+doi.org/10.1016/j.ancene.2014.06.006.
+Wastl, C., Schunk, C., Leuchner, M., Pezzatti, G. B., & Menzel, A. (2012). Recent climate
+change: Long-term trends in meteorological forest ﬁre danger in the Alps. Agricultural
+and Forest Meteorology, 162 ,1 –13. https://doi.org/10.1016/j.agrformet.2012.04.001.
+Wastl, C., Schunk, C., Luepke, M., Cocca, G., Conedera, M., Valese, E., et al. (2013). Large-
+scale weather types, forest ﬁre danger, and wild ﬁre occurrence in the Alps.
+Agricultural and Forest Meteorology, 168 ,1 5–25. https://doi.org/10.1016/j.agrformet.
+2012.08.011.
+Wu, Z. W., He, H. S., Yang, J., & Liang, Y. (2015). De ﬁning ﬁre environment zones in the
+boreal forests of northeastern China. Science of the Total Environment, 518 , 106 –116.
+https://doi.org/10.1016/j.scitotenv.2015.02.063.
+Zumbrunnen, T., Bugmann, H., Conedera, M., & Burgi, M. (2009). Linking forest ﬁre
+regimes and climate-a historical analysis in a dry inner alpine valley. Ecosystems,
+12(1),
+73–86. https://doi.org/10.1007/s10021-008-9207-3.
+M. Conedera et al. Applied Geography 98 (2018) 87–99
+99

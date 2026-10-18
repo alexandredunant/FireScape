@@ -1,0 +1,1039 @@
+PAGE 1
+Cross-regional modelling of fire occurrence in the Alps and
+the Mediterranean Basin
+˙Ismail Bekar A,F, C¸a g˘atay Tavs-anog˘luB, G. Boris Pezzatti C, Harald Vacik D,
+Juli G. Pausas E, Harald Bugmann A and Gunnar Petter A
+AForest Ecology, Institute of Terrestrial Ecosystems, Swiss Federal Institute of Technology, ETH
+Zurich, Universita¨tstrasse 16, 8092 Zu¨ rich, Switzerland.
+BDivision of Ecology, Department of Biology, Hacettepe University, Beytepe 06800, Ankara,
+Turkey.
+CInsubric Ecosystems Research Group, Swiss Federal Research Institute for forest, snow and
+landscape research WSL, Campus Cadenazzo, A Ramel 18, 6593 Cadenazzo, Switzerland.
+DInstitute of Silviculture, University of Natural Resources and Life Sciences (BOKU), Peter Jordan
+Str. 82, 1190 Vienna, Austria.
+ECentro de Investigaciones sobre Desertificacio´ n, Consejo Superior de Investigaciones Cientı ´ficas
+(CIDE-CSIC), 46113 Valencia, Spain.
+FCorresponding author. Email: ibekar@ethz.ch
+Abstract. In recent decades, changes in fire activity have been observed in Europe. Fires can have large consequences
+for the provisioning of ecosystem services and for human well-being. Therefore, understanding the drivers of fire
+occurrence and improving the predictive capability of fire occurrence models is of utmost importance. So far, most studies
+have focused on individual regions with rather low spatial resolution, and have lacked the ability to apply the models in
+different regions. Here, a species distribution modelling approach (Maxent) was used to model fire occurrence in four
+regions across the Mediterranean Basin and the Alps using several environmental variables at two spatial resolutions.
+Additionally, a cross-regional model was developed and spatial transferability tested. Most models showed good
+performance, with fine resolution models always featuring somewhat higher performance than coarse resolution models.
+When transferred across regions, the performance of regional models was good only under similar environmental
+conditions. The cross-regional model showed a higher performance than the regional models in the transfer tests. The
+results suggest that a cross-regional approach is most robust when aiming to use fire occurrence models at the regional
+scale but beyond current environmental conditions, for example in scenario analyses of the impacts of climate change.
+Additional keywords: fire ignition, grain size, Maxent, spatial resolution, species distribution model.
+Received 1 October 2019, accepted 9 March 2020, published online 6 April 2020
+Introduction
+Wildfires play an important role in many terrestrial ecosystems
+and have a variety of ecological, evolutionary and economic
+effects ( Bond et al. 2005; Pausas and Keeley 2009 ). In recent
+decades, changing trends in fire activity have been observed in
+many parts of the world (Schelhaas et al. 2003; Westerling et al.
+2006; Pausas and Ferna ´ndez-Mun˜oz 2012 ; Turco et al. 2016),
+with further changes likely ( Schumacher and Bugmann 2006 ;
+Jolly et al. 2015). The increasing fingerprint of human activity
+on landscape properties and anthropogenic climate change are
+the main reasons for these trends ( Dimitrakopoulos et al. 2011;
+Seidl et al. 2011). The disruption of natural fire regimes may
+have far-reaching consequences for ecosystem functions and
+services, and ultimately for human well-being ( Pausas and
+Keeley 2019). A better understanding of the spatial and temporal
+distribution of wildfire occurrence and a better predictive
+capability are therefore of utmost importance.
+In Europe, fire regimes differ substantially across regions.
+The Mediterranean Basin is most fire-prone, accounting for up
+to 90% of the forest area burnt in Europe (Seidl et al. 2011). Fire
+occurrence in this area has recently increased significantly
+owing to climatic ( Dimitrakopoulos et al. 2011; Seidl et al.
+2011) and land-use changes ( Pausas and Ferna ´ndez-Mun˜oz
+2012). Ongoing climate change may increase fire risk also in
+parts of the continent where it currently has only modest effects,
+such as Central or Northern Europe (Schumacher and Bugmann
+2006; Mu¨ller et al. 2015). Additionally, anthropogenic influ-
+ences such as land abandonment, grazing or changes of forest
+management have already led to changes in fire activity in
+Europe (Pausas and Keeley 2014 ). An analysis of both climatic
+CSIRO PUBLISHING
+International Journal of Wildland Fire
+https://doi.org/10.1071/WF19158
+Journal compilation /C211IAWF 2020 www.publish.csiro.au/journals/ijwf
+
+
+PAGE 2
+and anthropogenic factors is therefore crucial to better under-
+stand potential changes of fire occurrence.
+Several modelling approaches have been used to simulate
+the spatial distribution of fire occurrence, for example Gener-
+alised Linear Models ( Camp and Krawchuk 2017 ), Maximum
+Entropy Models (Maxent; Renard et al. 2012) or Zero-Inflated
+Regression Models ( Bekar and Tavs -anog˘lu 2017 ). These
+models are methodologically and conceptually related to
+species distribution models (SDMs; Guisan and Zimmermann
+2000; Elith and Leathwick 2009 ). Although the distributions of
+species and wildfires seem to have little in common at first
+sight, from a statistical modelling point of view both describe a
+certain probability of occurrence of an entity (fire, species) in
+space and time, being determined by a range of factors. Among
+the many SDM methods, Maxent models have shown compa-
+rably high prediction accuracies ( Elith et al. 2006), perform
+well even with small sample sizes ( Guisan et al. 2007b)a n d
+have already been used for modelling fire risk ( Parisien and
+Moritz 2009 ; Parisien et al. 2012; Renard et al. 2012; Arpaci
+et al. 2014; De Angelis et al. 2015). Apart from assessing
+prediction accuracy, these models allow for evaluating the
+relative importance of the different factors potentially influ-
+encing fire occurrence ( Arpaci et al. 2014).
+The importance of climatic, ecological and anthropogenic
+factors influencing fire occurrence can differ substantially
+among different regions in Europe ( Conedera et al. 2018). For
+example, the spatial variability of fire occurrence in the western
+part of the Mediterranean Basin was strongly influenced by
+anthropogenic factors (Spain; Chergui et al. 2017), whereas
+natural factors were the main driver in the eastern part of the
+basin (Turkey; Bekar and Tavs-anog˘lu 2017). Our knowledge of
+the small-scale drivers of fire occurrence has significantly
+increased in recent decades ( Moreira et al. 2001; Vilar et al.
+2010); however, small-scale studies on the importance of factors
+for fire occurrence are often not directly comparable and thus do
+not provide adequate information to assess the relative impor-
+tance of factors at continental scales. Large-scale studies on fire
+occurrence would therefore be valuable, but previous studies
+have used coarse resolutions that are not sufficient to capture
+small-scale drivers ( Koutsias et al. 2005
+, 2010).
+The spatial resolution of SDMs was found to have a consider-
+able effect on model results (Guisan et al.2007a; Gottschalket al.
+2011). However, results from previous studies are not consistent.
+While increasing spatial resolution tends to make small-scale
+features more distinguishable, it can also lead to accuracy errors if
+the spatial accuracy of the presence data is low (Gottschalk et al.
+2011). Specifically,Cardille et al. (2001) found that an increased
+resolution in fire occurrence models resulted in a decrease in their
+performance, while the relative importance of the predictor
+variables was unaffected. In contrast, other studies found a
+positive effect of increasing spatial resolution on model perfor-
+mance for various target organisms (Guisan et al. 2007a, 2007b;
+Gottschalk et al. 2011; Ross et al. 2015). Moreover, Guisan et al.
+(2007b) suggested that the effect of spatial resolution on environ-
+mental variables is likely to be regionally variable. Thus, further
+research on the influence of spatial resolution is required,
+particularly in the fire modelling context.
+Spatial transferability of statistical models is an important
+feature, one that may allow us to reduce research cost and save
+time by using models in areas where data availability is insuffi-
+cient or lacking entirely. However, transferability requires
+models that are capable of predicting phenomena beyond the
+range of data for which they were developed. Thus, a better
+understanding of the transferability of fire occurrence models in
+time or across space is required before applying them under
+novel conditions. Weibel (2009) tested the generality of fire
+occurrence models in Switzerland, showing that model transfer
+was possible in time but not in space. Alternatively,Parisien and
+Moritz (2009) used a multi-spatial scale approach in the USA
+and found that model transfers performed better from a larger
+region to an embedded sub-region. However, no attempt has
+been made so far to test these findings for fire occurrence models
+in a large-scale study in Europe.
+In the present study, the first goal was to investigate the
+importance of predictors and the spatial resolution for fire
+occurrence (regardless of fire cause) across several regions in
+the Alps and the Mediterranean Basin. We developed regional
+Maxent models for four regions in different countries
+(Switzerland, Austria, Turkey and Spain), as well as one
+cross-regional model, and assessed the region-specific relative
+importance of the predictors of wildfire occurrence and the
+effect of two spatial resolutions (grid cell size: 1 km and 100 m)
+on model performance. The second goal was to investigate the
+transferability of the models in space. We used multiple indi-
+cators of model performance to determine how these models
+perform when being transferred across regions and relative to
+the cross-regional model.
+Methods
+Study areas and fire data
+We chose four study regions across the Alps (Carinthia in
+Southern Austria, hereafter Austria; Southern Alps of Switzerland,
+hereafter, Switzerland; Fig. 1 ) and the Mediterranean Basin
+(Valencia in Eastern Spain, hereafter Spain; South-western
+Turkey hereafter, Turkey; Fig. 1). They cover a broad spectrum
+of ecological, climatic and topographic conditions and represent
+distinctly different fire regimes. The selection of the regions was
+partly driven by data availability and the existence of fire ecology
+studies ( Pausas 2004 ; Zumbrunnen 2010; Grima 2011 ; Bekar
+2016). For these countries, fire occurrence data (i.e. data speci-
+fying the georeferenced location and time of wildfires) were
+available. More details on the four regions and fire data are pro-
+vided in Table 1
+and Figs S1–4, Supplementary Material.
+Environmental variables
+We used 19 bioclimatic variables from the WorldClim database
+(version 2.0) with a spatial resolution of 30 arc seconds
+(,1k m 2) for the years 1970–2000 ( Fick and Hijmans 2017 ;
+Table 2 ) as climate input data. Anthropogenic factors were
+represented by road line density (m km /C02), the fraction of area
+occupied by human settlements (%) and categorical land cover
+data (Table 2). Road line density was calculated based on road
+network data using the Line Density tool in ArcGIS (v10.4.1,
+ESRI, Redlands, CA; Haklay and Weber 2008 ). Tree cover
+density and forest type data were used to represent vegetation-
+related variables; aspect and slope were used to represent
+topography (Table 2).
+B Int. J. Wildland Fire I. Bekar et al.
+
+PAGE 3
+For the coarse-resolution analyses, all variables except
+climate were resampled to 1-km resolution using the Resample
+tool in ArcGIS. For the fine-resolution analysis, climate and
+topographical variables were resampled to 100 m. We used a
+bilinear resampling rule for continuous data, which calculates
+the new value of the cell based on a weighted distance average of
+the four nearest cell centres, whereas for categorical variables
+(land cover, forest type), the majority rule was used, which
+determines the new cell value based on the most common values
+across the neighbouring cells.
+Spatial fire distribution model
+We modelled fire occurrence using Maxent, a machine-learning
+method based on maximum entropy that was initially developed
+mainly for modelling species distributions from presence-only
+records (Phillips et al. 2006). By default, Maxent provides a few
+Table 1. Total area, number of fires, number of cells with at least one fire and fire causes in the study areas
+A lower number of cells with fire than the total number of fires indicates more than one fire occurrence in a cell. a, Anthropogenic; n, natural; u, unkno wn
+Period Area (km 2) Number of fires Fire causes (%) Number of cells
+with fire (fine
+resolution)
+Number of cells
+with fire (coarse
+resolution)
+anu
+Switzerland 2000–16 9536 831 57 21 10 806 709
+Austria 2000–17 15 141 491 80 20 0 485 456
+Spain 2001–14 23 255 2688 76 21 3 2514 1844
+Turkey 2013–17 32 831 2512 28 20 52 2398 2061
+Table 2. Characteristics of the variables used as predictors in the Maxent model (for a full list of variables, see Table S1 in Supplementary Material)
+Variable Category Description Resolution Year
+Bioclimatic variablesA Temperature, Precipitation 19 variables 1 km 2 1970–2000
+Road networkB Anthropogenic Road line density (m km /C02) Vector 2018
+Human settlementC Anthropogenic Percentage of built-up area (%) 100 m 2 2012
+Land coverC Anthropogenic Categorical land cover data 100 m 2 2012
+Tree cover density C Forest Tree cover density (%) 100 m 2 2012
+Forest typeC Forest Categorical forest type data (broadleaved or coniferous) 100 m 2 2012
+AspectC Topography Direction that a slope faces (0–360 8)2 5 m 2
+SlopeC Topography ( 8)2 5 m 2
+AWorldClim (http://www.worldclim.org/current, verified March 2020)
+BOpenStreetMap (https://www.openstreetmap.org/, verified March 2020)
+CCopernicus (https://land.copernicus.eu/, verified March 2020)
+0N 250 500 km
+Carinthia
+Study areas
+Valencia
+Southern Switzerland
+Southwestern Turkey
+Fig. 1. Location of the study regions in Spain, Switzerland, Austria and Turkey.
+Cross-regional modelling of fire occurrence Int. J. Wildland Fire C
+
+PAGE 4
+evaluation metrics, one of them being the Area Under the Curve
+(AUC) of the Receiver-Operating Characteristic (ROC). An
+AUC graph shows sensitivity (true positives) against 1-specificity
+(true negatives). It is worth noting that for Maxent the maximum
+achievable AUC is ,1 because it compares presence points with
+background points instead of absence points ( Parisien et al.
+2012). For all simulations, we used 10 replicates with a 50 : 50
+split of training v. test data. A subsampling method was used to
+create randomly selected test and training data. We used the
+Maxent algorithm as implemented in the dismo package of the
+statistical software R (Hijmans et al. 2017; R Core Team 2018).
+Preliminary model diagnostics
+Caution is warranted when comparing AUC values among
+models from different regions and/or with different resolutions,
+because it can be influenced by the ratio between presence and
+background points ( Yackulic et al. 2013). By default, Maxent
+uses 10 000 background points, but because the total number of
+cells differs strongly among regions and within regions when
+different spatial resolutions are used, a fixed number of back-
+ground points may not be adequate. We therefore calculated
+additional diagnostics to ensure that the models are showing
+their best performance and that results are comparable.
+First, to determine the optimal number of background points
+for both spatial resolutions, we tested model performance under
+varying ratios of background cells to total cells, instead of using
+fixed cell numbers. For the coarse resolution, ratios between 10
+and 50% were tested, and for the fine resolution, ratios between
+0.5 and 5.0%. This test showed that AUC values increased with
+increasing number of background points but reached a satura-
+tion point at ,40% for the coarse resolution and at ,2% for the
+fine-resolution analysis (Fig. S5). We used these fractions of
+background points for all simulations.
+Second, we tested the effects of different time periods of the
+predictor variables and the sample size of fire events on model
+performance, because neither the number of fires nor the number
+of years for which fire data were available were consistent
+among regions. We achieved this with two analyses. (1) We
+subsampled shorter periods (i.e. temporal extents, e.g. the years
+2000–04 or 2005–09) in each dataset and evaluated model
+performance. This analysis showed that the performance of
+the models for Turkey and for Switzerland was stable, irrespec-
+tive of the sampled period. The models for Austria and Spain
+showed slight performance differences among different groups
+of years, but all groups were sufficiently close to the perfor-
+mance of the full model (Fig. S6). (2) We randomly subsampled
+30, 50 and 70% of the datasets and tested how the models
+performed with these rarefied datasets. The effect of sample size
+was even lower than that of different time periods. The largest
+differences were observed in Austria, where AUC values
+increased with increasing sample size (Fig. S7). In general,
+however, neither the temporal extent nor the sample size had a
+large effect on model performance, indicating that AUC values
+from the different regions are comparable.
+Importance of predictors and spatial resolution for fire
+occurrence
+To evaluate the importance of spatial resolution for predictions
+of fire occurrence, we fitted regional, cross-regional and
+sub-regional models at both coarse and fine spatial resolution.
+Regional models were fitted for Switzerland, Austria, Spain,
+and Turkey. For the cross-regional model, we combined the
+data from these regions and created a joint model based on the
+entire dataset. Finally, sub-regional models were calculated for
+the cantons of Ticino, Graubu¨nden and Valais in Switzerland,
+where the most detailed data of the present study were
+available.
+To assess the importance of the environmental variables, we
+used the relative contribution of each variable as provided by
+Maxent. We focused on categories of variables instead of
+individual variables ( Table 2). Because using highly correlated
+variables can lead to misinterpretations of the results, we
+performed a correlation analysis and removed highly correlated
+variables in a first step. To achieve this, the BIOCLIM variables
+were evaluated using a cross-correlation matrix. If two or more
+variables had a correlation (Pearson’s r) higher than 0.7, their
+independent jack-knife test gain was checked and the variable
+with the lower test gain was removed. This process was repeated
+until no highly correlated variables remained. If the test gain of
+two correlated variables did not differ significantly, we favoured
+annual over seasonal variables (e.g. we kept annual mean
+temperature instead of the mean temperature of the warmest
+quarter; cf. discussion by Parisien and Moritz 2009). In a second
+step, we compared the model’s AUC with and without each
+variable and omitted those variables that did not improve the
+model’s AUC. To analyse model performances, we used AUC
+(see below for more information). We classified models as
+successful if their AUC $ 0.7.
+Model transferability
+We systematically applied the models that were developed for
+one region to all other regions (for details, see below). On the
+one hand, the four regional models were transferred to each
+other, and on the other hand, the cross-regional model was
+applied to the four regions. All model transfers were performed
+at both coarse and fine spatial resolution.
+For model evaluation, we used a range of diagnostics. First,
+we used AUC values and lowered the threshold for ‘success’ to
+0.6, because transferring models is a greater challenge than
+model calibration ( Parisien and Moritz 2009 ). However, AUC
+is a single metric and may not necessarily capture spatial
+differences in performance. Therefore, as a second metric,
+we performed a correlation analysis between the prediction
+maps of the transferred models and the prediction maps of the
+original models to quantify the overlap. Because this is a
+standard correlation analysis and different threshold values
+for R
+2 have been used (Parisien and Moritz 2009 ; Parisien et al.
+2012), we assumed that a model produces a successful predic-
+tion map if R2 is larger than 0.75 (i.e. the model explains at least
+75% of the variation in the data). Third, we calculated the
+predicted ‘suitable’ (i.e. fire-prone) area because a high corre-
+lation does not imply that the level (intercept) of the datasets is
+comparable. We used a threshold of 0.5 to determine the fire-
+prone area (i.e. any cell with an ignition probability .0.5)
+qualified as being fire-prone. We assumed that a model
+produces a successful prediction map if change in fire-prone
+area is #0.25.
+D Int. J. Wildland Fire I. Bekar et al.
+
+PAGE 5
+Results
+Importance of predictors and spatial resolution for fire
+occurrence
+The comparison of the importance of the predictor variables
+showed that the cross-regional model had a higher contribution of
+climatic variables (mean ¼ 68%, averaged over coarse and fine
+resolution models) than the regional models (mean ¼ 49%;
+Fig. 2). Although seasonal climatic variables such as mean tem-
+perature of the wettest and driest quarters were the most important
+climatic variables in the cross-regional model, annual climatic
+variables (e.g. annual mean temperature) were the most important
+in the regional models (Table S2). In general, temperature vari-
+ables were the main climatic contributors in all models except in
+the coarse resolution Turkey model, where the relative contri-
+bution of precipitation (42%) was higher compared with tem-
+perature variables (18%) ( Fig. 2 ). The largest anthropogenic
+contribution was observed in Spain (mean ¼ 43%).
+According to the AUC values, most models had a successful
+performance (AUC . 0.7; Fig. 3 ). There were 6/8 successful
+Predictor categories
+Anthropogenic
+Forest
+Precipitation
+Temperature
+Topography
+CR
+Coarse Fine Coarse Fine Coarse Fine Coarse Fine Coarse Fine
+CR AT AT ES ES TR TR CH CH
+0
+25
+50
+75
+100Relative importance of predictor categories (%)
+Fig. 2. Relative contribution of predictor variable categories in Maxent models at different resolutions for different
+regions (CR, cross-regional model; AT, Austria; ES, Spain; TR, Turkey; CH, Switzerland). For the relative
+contribution of individual predictor variables see Table S2 in Supplementary Material.
+Resolution
+Model type
+Coarse
+Fine
+Cross-regional
+Regional
+Sub-regional
+Model region
+Test AUC
+CR
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+ES TR AT CH CHV CHG CHT
+Fig. 3. Performance of cross-regional, regional and sub-regional Maxent models at coarse and
+fine resolution (CR, cross-regional; ES, Spain; TR, Turkey; AT, Austria; CH, Switzerland; CHV,
+Valais; CHG, Graubu¨nden; CHT, Ticino).
+Cross-regional modelling of fire occurrence Int. J. Wildland Fire E
+
+PAGE 6
+regional models at coarse resolution and 8/8 at fine resolution.
+Of all models, Switzerland had the best AUC performance at
+both resolutions and Spain had the lowest ( Fig. 3 ). At both
+resolutions, the cross-regional models showed a relatively good
+performance (i.e. in between the best-performing Switzerland
+and the other regional models; Fig. 3 ). The three sub-regional
+models in Switzerland showed good performances that were,
+however, lower than that of the full Switzerland model. Note
+that the sub-regional Switzerland models are, of course, not
+independent from the Switzerland model, so their similar
+performance is not surprising. Therefore, we do not emphasise
+these models in the remainder of the results.
+Spatial resolution played an important role for model perfor-
+mance. The fine resolution models performed consistently
+better than their coarse resolution equivalents (Fig. 3). Improve-
+ments in AUC ranged from 0.020 (Switzerland) to 0.082
+(Austria). When comparing the relative contribution of the
+different categories of predictor variables between spatial reso-
+lutions within a region, they remained similar for the cross-
+regional, Switzerland and Spain models (Fig. 2). However, some
+differences were notable in Austria and Turkey. In Austria,
+forest variables were more important at the fine (42.5%) than at
+the coarse resolution (2.3%), and anthropogenic variables were
+less important. This was mostly because of tree cover density,
+whose contribution was much larger at the fine resolution
+(Table S2). In addition, in the coarse resolution Austria model,
+,90% of the contribution came from merely two variables (i.e.
+annual mean temperature and road network), whereas at the fine
+resolution, the same percentage was achieved using four vari-
+ables (annual mean temperature, road network, tree cover
+density and aspect; Table S2). In Turkey, the difference was
+mostly a result of changes in the importance of climatic vari-
+ables. Precipitation variables contributed to the model more at
+the coarse (42.8%) than at the fine resolution (12.2%). Similar to
+Austria, forest variables also had a higher contribution at the fine
+(30%) than at the coarse resolution (21%) in Turkey. Individual
+variables that were important at one resolution typically
+appeared in the other resolution as well (Table S2), but in a
+few cases different but highly correlated variables appeared in
+both resolutions.
+Model transferability
+Most model transfers were successful when assessed by AUC
+(Fig. 4 ). At the coarse resolution, 12 of the 16 transfers (four
+regional models transferred to the three other regions, plus the
+cross-regional model transferred to the four regions) were suc-
+cessful, whereas at the fine resolution, 13 of the 16 transfers
+were successful (AUC $ 0.6). In all regions, the cross-regional
+model was successful at both resolutions when assessed for each
+region individually. The AUC values of model transfers were
+strongly influenced by the region to which the model was
+transferred. For instance, all models that were transferred to
+Switzerland showed very high AUC values, similar to the
+Switzerland model itself, whereas the models transferred to
+Turkey exhibited much lower performance and considerably
+more inter-model divergence ( Fig. 4).
+Model
+AUC values of the original model
+CR
+CH
+ES
+TR
+AT
+CH
+ES
+TR
+AT
+AUC values in transfer regions
+Target area
+Coarse resolution Fine resolution
+0.5
+0.5
+0.6
+0.7
+0.8
+0.9
+0.6 0.7 0.8 0.9 0.5 0.6 0.7 0.8 0.9
+Fig. 4. Transferability results. The dots on the black line have the same performance in the original models and the transferred
+area (original models are also included in the graphs). Background colours indicate model performance thresholds: red, poor
+performance; green, good performance. CR, cross-regional model; AT, Austria; ES, Spain; TR, Turkey; CH, Switzerland.
+F Int. J. Wildland Fire I. Bekar et al.
+
+PAGE 7
+In addition to assessing model performance based on AUC,
+the spatial patterns of the prediction maps were compared
+between the transferred models and the original models using
+a correlation analysis in terms of the predicted fire-prone area
+(for the predicted fire occurrence maps, see Figs. S8–15). The
+prediction maps of the successful models (judged by AUC) most
+often showed a spatial pattern similar to those of the original
+models, with some exceptions. For instance, the coarse resolu-
+tion Turkey model featured prediction maps that were highly
+different from the original model outcomes when it was applied
+to the other regions, despite having ‘successful’ AUC values
+(Fig. S14). Overall, however, of the 12 successful models at
+coarse resolution (judged by AUC), seven maps were highly
+correlated (r $ 0.7) with the original prediction map, and at fine
+resolution, nine out of 13 successful models produced highly
+correlated maps ( Tables 3, 4).
+Finally, the comparison of the predicted fire-prone area
+across models showed that, at the coarse resolution, five out of
+the seven successful models featured a similar area (Dfire-prone
+area #0.25). For the fine resolution, six out of nine successful
+models showed similar values of the predicted fire-prone area
+(cf. Table 4). Overall, five and six models at the coarse and fine
+resolution, respectively, yielded (1) a high AUC, (2) highly
+correlated prediction maps and (3) similar predicted fire-prone
+areas. Notably, the cross-regional model was among this set in
+three cases (Switzerland, Turkey and Austria) for both resolu-
+tions (Tables 3, 4). Only in Spain did the cross-regional model
+predict a much larger fire-prone area than the original model
+outcome at both resolutions; the other metrics still indicated a
+high model performance.
+Discussion
+Importance of predictors and spatial resolution for fire
+occurrence modelling
+Our results suggest that the importance of predictor variables
+differs between the regional and the cross-regional models. The
+most striking difference is the decisively higher contribution of
+climatic predictors in the cross-regional model in comparison
+with regional models. This indicates that at the regional level,
+anthropogenic factors and land cover and/or land use are
+important for differentiating the occurrence of wildfires at this
+spatial scale, but at the cross-regional (continental) scale the
+climatic factors gain in importance. Our results are consistent
+with findings from previous studies showing that the impact of
+climate is dominant at the macro scale (Pearson et al. 2002), and
+that the influence of climate-related factors can be overridden by
+other factors at smaller scales ( Wiens 1989).
+Our analyses further showed that the importance of factors
+varies among regions, but sometimes also between different
+resolutions within a region. Between Spain and Switzerland,
+where the results were only slightly influenced by the resolution,
+the significance of anthropogenic factors differed distinctly. The
+strong influence of anthropogenic factors that we found for
+Spain is consistent with the findings of Padilla and Vega-Garcı´a
+(2011), in which road density was the most important explana-
+tory variable for a large part of the Valencia region. The low
+importance of anthropogenic factors in Switzerland, however,
+does not agree with the results of Zumbrunnen et al. (2012)
+showing a pronounced influence of humans on wildfires. That
+study, however, considered additional anthropogenic factors
+Table 3. Coarse-resolution model transferability results
+All regional models and the cross-regional model were transferred to all areas. For all metrics we used in model evaluation (Area Under the Curve (AUC) ,
+correlation and Dfire-prone area), the values above (AUC, correlation) or below ( Dfire-prone area) the threshold we defined as the minimum requirement for
+success are marked in bold. Asterisks indicate models that were successful in all evaluation metrics. DFire-prone area is the difference between fire prone area
+of the original model and fire prone area of the model in transferred region. Values inside the parenthesis represent relative change in Dfire-prone area
+Model Transfer area AUC Correlation Fire-prone area (%) DFire-prone area
+Austria 0.689 0.44
+Switzerland* Austria 0.637 0.82 0.55 0.11 (25%)
+Spain Austria 0.569 0.50 0.00 /C00.44 (/C0100%)
+Turkey Austria 0.659 0.57 0.00 /C00.44 (/C0100%)
+Cross-regional* Austria 0.670 0.85 0.22 20.22 (/C050%)
+Switzerland 0.865 0.15
+Austria* Switzerland 0.815 0.79 0.28 0.13 (87%)
+Spain Switzerland 0.770 0.33 0.00 20.15 (/C0100%)
+Turkey Switzerland 0.831 0.62 0.00 20.15 (/C0100%)
+Cross-regional* Switzerland 0.868 0.90 0.15 0.00 (0%)
+Spain 0.673 0.45
+Austria Spain 0.677 0.50 0.25 20.21 (/C044%)
+Switzerland Spain 0.488 0.28 0.55 0.10 (22%)
+Turkey Spain 0.683 0.76 0.00 /C00.45 (/C0100%)
+Cross-regional Spain 0.715 0.88 0.86 0.41 (91%)
+Turkey 0.707 0.50
+Austria Turkey 0.620 0.33 0.89 0.39 (78%)
+Switzerland Turkey 0.578 0.24 0.00 /C00.50 (/C0100%)
+Spain Turkey 0.462 0.08 0.06 /C00.44 (/C088%)
+Cross-regional* Turkey 0.714 0.95 0.35 20.15 (/C030%)
+Cross-regional modelling of fire occurrence Int. J. Wildland Fire G
+
+PAGE 8
+such as population density, which we did not include owing to
+the lack of high-resolution population data across all regions.
+Thus, the choice of factors used in a modelling study can
+considerably influence the results and their interpretation,
+rendering comparisons between studies difficult. An assessment
+of the relative importance of factors should therefore always be
+considered with caution. In steep mountain conditions, for
+instance, the road network depends on the geomorphologic
+constraints, making it a totally different proxy for anthropogenic
+influence with respect to hilly or flat regions ( Conedera et al.
+2015). Similarly, in mountain regions, settlements are clustered
+on valley floors or slope terraces. Under such conditions, the
+increasing distance from settlements or roads when following
+the altitudinal gradient may be highly correlated with the
+temperature, which in turn tends to decrease with altitude,
+making the analysis of potential fire drivers based on such
+proxies quite speculative. However, strong regional differences
+in the wildland–urban interface in Switzerland could also be
+responsible for not finding a common pattern ( Conedera et al.
+2015). Finally, it is worth mentioning that Pezzatti et al. (2013)
+found clear fire regime shifts in the Ticino and Valais regions
+from 1904 to 2008 that were traceable to land use or legal
+changes, indicating increasing anthropogenic influences in
+those regions.
+In contrast to Spain and Switzerland, the importance of
+variables differed between spatial resolutions in Austria and
+Turkey. In Austria, the increasing importance of forest variables
+at fine resolution may be connected with the prevailing small-
+scale mosaic of irregularly shaped forest plots. Because forest
+fires are important in that area ( Arndt et al. 2013), the
+distribution of forest area may be captured sufficiently at the
+fine resolution only, explaining the high importance of this
+variable. The insufficient representation of forest area at low
+resolution may also be a reason why the performance of that
+model was much lower compared with the fine scale model. In
+Turkey, our results showed the dominance of non-
+anthropogenic factors in the region, which is in accordance with
+the findings of Bekar (2016 ; see also Bekar and Tavs-anog˘lu
+2017). In that study, temperature and precipitation were found to
+be the most important factors for the distribution of fire occur-
+rence. Bekar (2016) further found that elevation strongly influ-
+ences the importance of temperature and precipitation (i.e.
+temperature was important for mid-elevations), whereas precip-
+itation was important at very low and high elevations. Our
+results showed that although temperature and forest variables
+were the dominant variables at the fine resolution, precipitation
+was more important at the coarse resolution in Turkey. These
+results highlight that spatial resolution is important for overall
+model performance and sometimes also for the relative contri-
+bution of factors.
+Fire occurrence is influenced by a variety of factors.
+Although important climatic and topographic factors can be
+represented relatively well in spatial models, accounting for
+anthropogenic influences is more challenging because it
+requires the identification, quantification and mapping of beha-
+vioural factors ( Vilar et al. 2016b), which may differ further
+between regions. In the present study, the two best performing
+models (cross-regional and Switzerland) had a low contribution
+from anthropogenic variables, and the worst performing models
+(Spain and coarse resolution Austria) had a high contribution.
+Table 4. Fine-resolution model transferability results
+All regional models and the cross-regional model were transferred to all areas. For all metrics we used in model evaluation (Area Under the Curve (AUC) ,
+correlation and Dfire-prone area), the values above (AUC, Correlation) or below (DFire-prone area) the threshold we defined as the minimum requirement for
+success are marked in bold. Asterisks indicate models that were successful in all evaluation metrics.DFire-prone area is the difference between fire prone area
+of the original model and fire prone area of the model in transferred region. Values inside the parenthesis represent relative change in Dfire-prone area
+Model Transfer area AUC Correlation Fire-prone area (%) DFire-prone area
+Austria 0.771 0.25
+Switzerland* Austria 0.707 0.88 0.38 0.14 (52%)
+Spain Austria 0.674 0.67 0.00 20.25 (/C0100%)
+Turkey Austria 0.703 0.83 0.67 0.42 (168%)
+Cross-regional* Austria 0.736 0.85 0.16 20.08 (/C036%)
+Switzerland 0.885 0.12
+Austria* Switzerland 0.854 0.84 0.12 0.00 (0%)
+Spain Switzerland 0.693 0.21 0.02 20.10 (/C083%)
+Turkey* Switzerland 0.832 0.78 0.22 0.11 (83%)
+Cross-regional* Switzerland 0.869 0.90 0.12 0.00 (0%)
+Spain 0.718 0.31
+Austria Spain 0.580 0.40 0.38 0.07 (23%)
+Switzerland Spain 0.644 0.49 0.00 /C00.31 (/C0100%)
+Turkey Spain 0.673 0.71 0.00 /C00.31 (/C0100%)
+Cross-regional Spain 0.736 0.86 0.71 0.39 (129%)
+Turkey 0.735 0.40
+Austria Turkey 0.661 0.58 0.32 20.08 (/C020%)
+Switzerland Turkey 0.581 0.19 0.00 /C00.40 (/C0100%)
+Spain Turkey 0.503 0.24 0.00 /C00.40 (/C0100%)
+Cross-regional* Turkey 0.734 0.94 0.19 20.21 (/C053%)
+H Int. J. Wildland Fire I. Bekar et al.
+
+PAGE 9
+A possible reason for the lower performance of the latter models
+may lie with the high importance of some other anthropogenic
+variables that are missing in our dataset (cf. Parisien and Moritz
+2009). For instance, several studies showed the importance of
+the extent and nature of the wildland–urban interface for fire
+occurrence in Spain (Vilar et al. 2010; Martı´nez-Ferna´ndez et al.
+2013; Vilar et al. 2016a). Thus, to better represent human
+influences on fire occurrence, variables such as the population
+density in the wildland–urban interface may need to be included
+in further studies ( Martı´nez-Ferna´ndez et al. 2013).
+Our results clearly demonstrate that spatial resolution is an
+important factor affecting model performance. To our knowl-
+edge, only Cardille et al. (2001) investigated the effect of spatial
+resolution on the performance of fire occurrence models, sur-
+prisingly finding decreasing model performance with increas-
+ing resolution (from 10 km to 5 km), which is in contrast to our
+results. However, studies that analysed the effect of resolution
+for other entities in SDMs repeatedly showed increased perfor-
+mance with increasing resolution ( Guisan et al. 2007a; Guisan
+et al. 2007b; Gottschalk et al. 2011; Ross et al. 2015). Clearly,
+further modelling studies evaluating the effect of different
+spatial resolutions on fire occurrence predictions are needed,
+and we advocate using a range of different resolutions to get a
+clearer picture.
+There is no consensus regarding the effect of spatial resolution
+on the importance of predictors. Some studies show that spatial
+resolution clearly influences the relative importance of the vari-
+ables ( Hanberry 2013; Sua´rez-Seoane et al. 2014), but others
+show no significant effects (Cardille et al. 2001; Pradervandet al.
+2014). These ambiguous results may be a result of variations in
+the absolute or relative differences of the resolutions compared in
+the respective studies. For instance, an increase in resolution from
+10 km to 5 km does not necessarily have to better capture the
+relevant factors, but could be possible with an increase from 1 km
+to 100 m. In the present study the differences in resolution were
+consistent across regions, but we still observed regional differ-
+ences. While the relative importance was similar in Switzerland
+and Spain, distinct differences were observed in Austria and
+Turkey, where forest variables were considerably more important
+at fine resolution. In accordance with the study by Guisan et al.
+(2007a), this result indicates that the effect of spatial resolution on
+contributing factors can vary regionally. In homogenous land-
+scapes, a coarse resolution may be sufficient, but in complex,
+environmentally and topographically heterogeneous landscapes,
+a fine resolution may be required to capture the essential mecha-
+nism. Although further research that systematically tests the
+effect of grain size on model performance is needed, it is worth
+mentioning that the aim should not be to identify the ‘gold
+standard’ for spatial resolution in fire occurrence models, but to
+identify the most appropriate resolution for the relevant para-
+meters considered in the study object.
+Model transferability
+We used three metrics to evaluate model transfers because using
+only AUC could lead to misleading results. For instance, the
+AUC of the models was partly determined by the region to which
+the model was transferred. Particularly in Switzerland, all
+models had a successful AUC performance, most likely because
+non-fire-prone areas (absences) were much more common
+owing to the complex topography of the region, consisting of
+many high-elevation, high-precipitation areas. Most of the
+models were able to predict these absences accurately, resulting
+in high AUC even though presences may not be predicted well.
+The Austria model was the only one that also accurately pre-
+dicted presences for Switzerland, as indicated by the other
+metrics. This shows that despite high AUC values, models may
+produce different prediction maps when they are transferred,
+thus it is important to apply multi-criteria assessments.
+Spatial transferability is a desirable feature of models,
+because it underpins their general applicability ( Randin et al.
+2006). In the present study, all of the spatial transfers of the
+regional models were not successful (when assessed by multiple
+criteria), with some exceptions. For instance, a successful
+regional model transfer was possible between Switzerland and
+Austria. These two Alpine regions had overlapping explanatory
+variables in their final models and therefore the transfer was
+successful. Successful transfer was not possible between the
+Mediterranean regions, because although they are climatically
+similar, they differ considerably in the non-climatic factors.
+These results show that model transfer between regions is only
+possible if there is a certain overlap among the environmental
+conditions between the origin and target area of the model.
+In contrast to regional model transfers, the cross-regional
+model performed successfully in nearly all regions. This is not
+surprising considering that the data from all regions were used to
+fit it. However, this alone does not necessarily guarantee
+successful performance at the level of the individual regions.
+If the drivers of fire occurrence were considerably different
+between regions, a cross-regional model would unlikely be able
+to predict these differences. In our case, the drivers of fire
+occurrence in Spain differed notably from those in the other
+regions, with a much higher contribution of anthropogenic
+factors. This may be the reason why Spain was the only region
+in which the cross-regional model failed in one assessment
+criterion. When attempting to simulate future effects of climate
+change on fire occurrence, the cross-regional model may make
+more reasonable predictions in the former three regions than in
+the regional models, because it was calibrated to a wider
+climatic range and has a higher contribution of climatic predic-
+tor variables. However, owing to the large importance of
+anthropogenic factors in Spain, future predictions by the
+cross-regional model are uncertain – more research on the
+ability to predict future fire occurrences by regional and cross-
+regional models is needed.
+Conclusion
+We found that the predictions of the cross-regional model when
+transferred to the different regions are more robust than those of
+the transferred regional models. The performance of transferred
+regional models can be poor even between climatically similar
+regions because anthropogenic factors often differ substantially.
+Cross-regional models may be better suited to predict the future
+effects of climate change on fire occurrence, owing to their
+better representation of climatic differences. However, further
+research is required.
+We demonstrated that spatial resolution influences perfor-
+mance and sometimes also the relative importance of the
+predictor variables of fire occurrence models. The spatial
+Cross-regional modelling of fire occurrence Int. J. Wildland Fire I
+
+PAGE 10
+distribution of factors influencing wildfires can differ consider-
+ably between regions, and some landscape patterns may only be
+sufficiently well represented at a specific resolution. This
+indicates that when modelling fire occurrence, attention should
+be given to finding an appropriate spatial resolution, and that we
+generally need a better understanding of the effects of scale and
+resolution in fire occurrence models.
+Conflicts of interest
+The authors declare no conflicts of interest.
+Acknowledgements
+We thank Timothy Thrippleton for his help with programming in R. This
+project is partly funded by a Swiss Government Excellence Scholarship. JGP
+thanks the PROMETEO/2016/021 project.
+References
+Arndt N, Vacik H, Koch V, Arpaci A, Gossow H (2013) Modeling human-
+caused forest fire ignition for assessing forest fire danger in Austria.
+IForest 6, 315–325. doi: 10.3832/IFOR0936-006
+Arpaci A, Malowerschnig B, Sass O, Vacik H (2014) Using multi variate
+data mining techniques for estimating fire susceptibility of Tyrolean
+forests. Applied Geography 53, 258–270. doi: 10.1016/J.APGEOG.
+2014.05.015
+Bekar ˙I (2016) Akdeniz ekosistemlerinde gu ¨nu¨mu¨z yangin rejimlerinin
+s-ekillenmesinde dog˘al ve antropojen fakto¨rlerin rolu¨. Translated title:
+The role of anthropogenic and natural factors in shaping recent fire
+regimes in Mediterranean ecosystems. M.Sc. Thesis, Hacettepe Univer-
+sity, Ankara, Turkey. [In Turkish] Available at http://www.openaccess.
+hacettepe.edu.tr:8080/xmlui/handle/11655/4914 [Verified March 2020]
+Bekar ˙I, Tavs-anog˘lu C¸ (2017) Modelling the drivers of natural fire activity:
+the bias created by cropland fires.International Journal of Wildland Fire
+26, 845–851. doi:10.1071/WF16183
+Bond WJ, Woodward FI, Midgley GF (2005) The global distribution of
+ecosystems in a world without fire. New Phytologist 165, 525–538.
+doi:10.1111/J.1469-8137.2004.01252.X
+Camp PE, Krawchuk MA (2017) Spatially varying constraints of human-
+caused fire occurrence in British Columbia, Canada. International
+Journal of Wildland Fire 26, 219–229. doi: 10.1071/WF16108
+Cardille JA, Ventura SJ, Turner MG (2001) Environmental and social
+factors influencing wildfires in the Upper Midwest, United States.
+Ecological Applications 11, 111–127. doi: 10.1890/1051-
+0761(2001)011[0111:EASFIW]2.0.CO;2
+Chergui B, Fahd S, Santos X, Pausas JG (2017) Socioeconomic factors
+drive fire-regime variability in the Mediterranean Basin. Ecosystems
+21, 1–10.
+Conedera M, Tonini M, Oleggini L, Vega Orozco C, Leuenberger M,
+Pezzatti GB (2015) Geospatial approach for defining the wildland–
+urban interface in the alpine environment. Computers, Environment and
+Urban Systems 52, 10–20. doi: 10.1016/J.COMPENVURBSYS.2015.
+02.003
+Conedera M, Krebs P, Valese E, Cocca G, Schunk C, Menzel A, Vacik H,
+Cane D, Japelj A, Muri B, Ricotta C, Oliveri S, Pezzatti GB (2018)
+Characterizing alpine pyrogeography from fire statistics. Applied Geog-
+raphy 98, 87–99. doi: 10.1016/J.APGEOG.2018.07.011
+De Angelis A, Ricotta C, Conedera M, Pezzatti GB (2015) Modelling the
+meteorological forest fire niche in heterogeneous pyrologic conditions.
+PLoS One 10, e0116875. doi: 10.1371/JOURNAL.PONE.0116875
+Dimitrakopoulos AP, Vlahou M, Anagnostopoulou CG, Mitsopoulos ID
+(2011) Impact of drought on wildland fires in Greece: implications of
+climatic change? Climatic Change 109, 331–347. doi:10.1007/S10584-
+011-0026-8
+Elith J, Leathwick JR (2009) Species distribution models: ecological
+explanation and prediction across space and time.
+Annual Review of
+Ecology Evolution and Systematics 40, 677–697. doi: 10.1146/
+ANNUREV.ECOLSYS.110308.120159
+Elith J, Graham CH, Anderson RP, Dudik M, Ferrier S, Guisan A, Hijmans
+RJ, Huettmann F, Leathwick JR, Lehmann A, Li J, Lohmann LG,
+Loiselle BA, Manion G, Moritz C, Nakamura M, Nakazawa Y, Overton
+JM, Peterson AT, Phillips SJ, Richardson K, Scachetti-Pereira R,
+Schapire RE, Soberon J, Williams S, Wisz MS, Zimmermann NE
+(2006) Novel methods improve prediction of species’ distributions from
+occurrence data. Ecography 29, 129–151. doi: 10.1111/J.2006.0906-
+7590.04596.X
+Fick SE, Hijmans RJ (2017) WorldClim 2: new 1-km spatial resolution
+climate surfaces for global land areas. International Journal of Clima-
+tology 37, 4302–4315. doi: 10.1002/JOC.5086
+Gottschalk TK, Aue B, Hotes S, Ekschmitt K (2011) Influence of grain size
+on species-habitat models. Ecological Modelling 222, 3403–3412.
+doi:10.1016/J.ECOLMODEL.2011.07.008
+Grima N (2011) Forest fire hazard mapping in Carinthia (Southern Austria).
+M.Sc. Thesis, University of Natural Resources and Applied Life
+Sciences (BOKU), Vienna. Available at http://bit.ly/2EwTETb [Veri-
+fied March 2020]
+Guisan A, Zimmermann NE (2000) Predictive habitat distribution models in
+ecology. Ecological Modelling 135, 147–186. doi: 10.1016/S0304-
+3800(00)00354-9
+Guisan A, Graham CH, Elith J, Huettmann F, Dudik M, Ferrier S, Hijmans
+R, Lehmann A, Li J, Lohmann LG, Loiselle B, Manion G, Moritz C,
+Nakamura M, Nakazawa Y, Overton JMC, Peterson AT, Phillips SJ,
+Richardson K, Scachetti-Pereira R, Schapire RE, Williams SE, Wisz
+MS, Zimmermann NE (2007 a) Sensitivity of predictive species distri-
+bution models to change in grain size.Diversity & Distributions13, 332–
+340. doi:10.1111/J.1472-4642.2007.00342.X
+Guisan AA, Zimmermann NE, Elith J, Graham CH, Phillips S, Guisan A,
+Zimmermann NE, Elith J, Graham CH, Phillips S, Peterson AT (2007 b)
+What matters for predicting the occurrences of trees: techniques, data, or
+species’ characteristics? Ecological Monographs 77, 615–630. doi: 10.
+1890/06-1060.1
+Haklay M, Weber P (2008) OpenStreetMap: user-generated street maps.
+Pervasive Computing 7, 12–18. doi: 10.1109/MPRV.2008.80
+Hanberry BB (2013) Finer grain size increases effects of error and changes
+influence of environmental predictors on species distribution models.
+Ecological Informatics 15, 8–13. doi: 10.1016/J.ECOINF.2013.02.003
+Hijmans RJ, Phillips S, Leathwick J, Elith J (2017) ‘dismo: species distribu-
+tion modeling.’ R package version 1.1–4. Available at https://cran.
+r-project.org/web/packages/dismo/index.html [Verified March 2020]
+Jolly WM, Cochrane MA, Freeborn PH, Holden ZA, Brown TJ, Williamson
+GJ, Bowman DMJS (2015) Climate-induced variations in global wild-
+fire danger from 1979 to 2013. Nature Communications 6, 7537. doi:10.
+1038/NCOMMS8537
+Koutsias N, Martı´nez-Ferna´ndez J, Chuvieco E, Allgo¨wer B (2005) Model-
+ling wildland fire occurrence in southern Europe by geographically
+weighted regression approach. In ‘Proceedings of the 5th International
+Workshop on Remote Sensing and GIS Applications to Forest Fire
+Management: Fire Effects Assessment’, 16–18 June 2005, Zaragoza,
+Spain. (Eds J De La Riva, F Pe ´rez-Cabello, E Chuvieco) pp. 57–60.
+(Universidad de Zaragoza: Zaragoza, Spain)
+Koutsias N, Martı´nez-Ferna´ndez J, Allgo¨wer B (2010) Do factors causing
+wildfires vary in space? Evidence from geographically weighted regres-
+sion. GIScience & Remote Sensing
+47, 221–240. doi: 10.2747/1548-
+1603.47.2.221
+Martı´nez-Ferna´ndez J, Chuvieco E, Koutsias N (2013) Modelling long-
+term fire occurrence factors in Spain by accounting for local variations
+with geographically weighted regression. Natural Hazards and Earth
+System Sciences 13, 311–327. doi: 10.5194/NHESS-13-311-2013
+J Int. J. Wildland Fire I. Bekar et al.
+
+PAGE 11
+Moreira F, Rego FC, Ferreira PG (2001) Temporal (1958–1995) pattern of
+change in a cultural landscape of northwestern Portugal: implications for
+fire occurrence. Landscape Ecology 16, 557–567. doi: 10.1023/
+A:1013130528470
+Mu¨ller M, Vacik H, Valese E (2015) Anomalies of the Austrian forest fire
+regime in comparison with other alpine countries: a research note.
+Forests 6, 903–913. doi: 10.3390/F6040903
+Padilla M, Vega-Garcı ´a C (2011) On the comparative importance of fire
+danger rating indices and their integration with spatial and temporal
+variables for predicting daily human-caused fire occurrences in Spain.
+International Journal of Wildland Fire20,4 6 – 5 8 .d o i :10.1071/WF09139
+Parisien MA, Moritz MA (2009) Environmental controls on the distribution
+of wildfire at multiple spatial scales. Ecological Monographs 79, 127–
+154. doi:10.1890/07-1289.1
+Parisien MA, Snetsinger S, Greenberg JA, Nelson CR, Schoennagel T,
+Dobrowski SZ, Moritz MA (2012) Spatial variability in wildfire
+probability across the western United States. International Journal of
+Wildland Fire 21, 313–327. doi: 10.1071/WF11044
+Pausas JG (2004) Changes in fire and climate in the eastern Iberian
+Peninsula (Mediterranean Basin). Climatic Change 63, 337–350.
+doi:10.1023/B:CLIM.0000018508.94901.9C
+Pausas JG, Ferna´ndez-Mun˜oz S (2012) Fire regime changes in the western
+Mediterranean Basin: from fuel-limited to drought-driven fire regime.
+Climatic Change 110, 215–226. doi: 10.1007/S10584-011-0060-6
+Pausas JG, Keeley JE (2009) A burning story: the role of fire in the history of
+life. Bioscience 59, 593–601. doi: 10.1525/BIO.2009.59.7.10
+Pausas JG, Keeley JE (2014) Abrupt climate-independent fire regime
+changes. Ecosystems 17, 1109–1120. doi: 10.1007/S10021-014-9773-5
+Pausas JG, Keeley JE (2019) Wildfires as an ecosystem service.Frontiers in
+Ecology and the Environment 17, 289–295. doi: 10.1002/FEE.2044
+Pearson RG, Dawson TP, Berry PM, Harrison PA (2002) SPECIES: a
+spatial evaluation of climate impact on the envelope of species.Ecologi-
+cal Modelling 154, 289–300. doi: 10.1016/S0304-3800(02)00056-X
+Pezzatti GB, Zumbrunnen T, Bu¨rgi M, Ambrosetti P, Conedera M (2013)
+Fire regime shifts as a consequence of fire policy and socio-economic
+development: an analysis based on the change point approach. Forest
+Policy and Economics 29, 7–18. doi: 10.1016/J.FORPOL.2011.07.002
+Phillips SJ, Anderson RP, Schapire RE (2006) Maximum entropy modeling
+of species geographic distributions.Ecological Modelling 190, 231–259.
+doi:10.1016/J.ECOLMODEL.2005.03.026
+Pradervand J-N, Dubuis A, Pellissier L, Guisan A, Randin C (2014) Very
+high resolution environmental predictors in species distribution models:
+moving beyond topography? Progress in Physical Geography 38
+, 79–
+96. doi:10.1177/0309133313512667
+R Core Team (2018) ‘R: A Language and Environment for Statistical
+Computing.’ (R Foundation for Statistical Computing: Vienna) Avail-
+able at https://www.R-project.org [Verified March 2020]
+Randin CF, Dirnbo¨ck T, Dullinger S, Zimmermann NE, Zappa M, Guisan
+A (2006) Are niche-based species distribution models transferable in
+space? Journal of Biogeography 33, 1689–1703. doi: 10.1111/J.1365-
+2699.2006.01466.X
+Renard Q, P/C19lissier R, Ramesh BR, Kodandapani N (2012) Environmental
+susceptibility model for predicting forest fire occurrence in the western
+ghats of India. International Journal of Wildland Fire 21, 368–379.
+doi:10.1071/WF10109
+Ross LK, Ross RE, Stewart HA, Howell KL (2015) The influence of data
+resolution on predicted distribution and estimates of extent of current
+protection of three ‘listed’ deep-sea habitats. PLoS One 10, e0140061.
+doi:10.1371/JOURNAL.PONE.0140061
+Schelhaas M-J, Nabuurs G-J, Schuck A (2003) Natural disturbances in the
+European forests in the 19th and 20th Centuries. Global Change Biology
+9, 1620–1633. doi: 10.1046/J.1365-2486.2003.00684.X
+Schumacher S, Bugmann H (2006) The relative importance of climatic
+effects, wildfires and management for future forest landscape dynamics
+in the Swiss Alps. Global Change Biology 12, 1435–1450. doi:10.1111/
+J.1365-2486.2006.01188.X
+Seidl R, Schelhaas MJ, Lexer MJ (2011) Unraveling the drivers of
+intensifying forest disturbance regimes in Europe. Global Change
+Biology 17, 2842–2852. doi: 10.1111/J.1365-2486.2011.02452.X
+Sua´rez-Seoane S, Virgo ´s E, Terroba O, Pardavila X, Barea-Azco ´n JM
+(2014) Scaling of species distribution models across spatial resolutions
+and extents along a biogeographic gradient. The case of the Iberian mole
+Talpa occidentalis. Ecography 37, 279–292. doi: 10.1111/J.1600-0587.
+2013.00077.X
+Turco M, Bedia J, Liberto FD, Fiorucci P, von Hardenberg J, Koutsias N,
+Llasat M-C, Xystrakis F, Provenzale A (2016) Decreasing fires
+in Mediterranean Europe. PLOS ONE 11, e0150663. doi: 10.1371/
+JOURNAL.PONE.0150663
+Vilar L, Woolford DG, Martell DL, Martn MP (2010) A model for
+predicting human-caused wildfire occurrence in the region of Madrid,
+Spain. International Journal of Wildland Fire19, 325–337. doi:10.1071/
+WF09030
+Vilar L, Camia A, San-Miguel-Ayanz J, Martı ´n MP (2016 a) Modeling
+temporal changes in human-caused wildfires in Mediterranean Europe
+based on land use–land cover interfaces. Forest Ecology and Manage-
+ment 378, 68–78. doi: 10.1016/J.FORECO.2016.07.020
+Vilar L, Go´mez I, Martı ´nez-Vega J, Echavarrı´a P, Rian˜o D, Martı´n MP
+(2016b) Multitemporal modelling of socio-economic wildfire drivers in
+central Spain between the 1980s and the 2000s: comparing generalized
+linear models to machine learning algorithms. PLoS One
+11, e0161344.
+doi:10.1371/JOURNAL.PONE.0161344
+Weibel P (2009) Modelling and assessing fire regimes in mountain forests of
+Switzerland. Ph.D. Thesis, Swiss Federal Institute of Technology,
+Zu¨rich. Available at https://www.research-collection.ethz.ch/handle/
+20.500.11850/21817 [Verified March 2020]
+Westerling AL, Hidalgo HL, Cayan DR, Swetnam TW (2006) Warming
+and earlier spring increase western U.S. forest wildfire activity. Science
+313, 940–943. doi: 10.1126/SCIENCE.1128834
+Wiens JA (1989) Spatial scaling in ecology. Functional Ecology 3, 385–
+397. doi:10.2307/2389612
+Yackulic CB, Chandler R, Zipkin EF, Royle JA, Nichols JD, Campbell
+Grant EH, Veran S (2013) Presence-only modelling using MAXENT:
+when can we trust the inferences? Methods in Ecology and Evolution
+4, 236–243. doi: 10.1111/2041-210X.12004
+Zumbrunnen T (2010) Reconstructing and analyzing the fire history in a dry
+continental valley (Valais) of the Swiss Alps. Ph.D. Thesis, Swiss
+Federal Institute of Technology, Zu ¨rich. Available at https://www.
+research-collection.ethz.ch/handle/20.500.11850/114055 [Verified
+March 2020]
+Zumbrunnen T, Mene ´ndez P, Bugmann H, Conedera M, Gimmi U,
+Bu¨rgi M (2012) Human impacts on fire occurrence: a case study of
+hundred years of forest fires in a dry alpine valley in Switzerland.
+Regional Environmental Change 12, 935–949. doi: 10.1007/S10113-
+012-0307-4
+www.publish.csiro.au/journals/ijwf
+Cross-regional modelling of fire occurrence Int. J. Wildland Fire K
