@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import re
 import hashlib
+import subprocess
 import sys
 from pathlib import Path
 
@@ -43,13 +44,18 @@ def main() -> None:
         if "/mnt/CEPH_PROJECTS/" in text:
             fail(f"machine-specific path remains in {source.relative_to(ROOT)}")
 
+    # Only tracked files are published; local inputs under Data/ may be large.
+    tracked = subprocess.run(
+        ["git", "ls-files", "-z"], cwd=ROOT, capture_output=True, check=True, text=True
+    ).stdout.split("\0")
     oversized = [
-        path.relative_to(ROOT)
-        for path in ROOT.rglob("*")
-        if path.is_file() and ".git" not in path.parts and path.stat().st_size > MAX_FILE_BYTES
+        relative
+        for relative in tracked
+        if relative and (ROOT / relative).is_file()
+        and (ROOT / relative).stat().st_size > MAX_FILE_BYTES
     ]
     if oversized:
-        fail(f"files larger than 50 MiB: {', '.join(map(str, oversized))}")
+        fail(f"files larger than 50 MiB: {', '.join(oversized)}")
 
     cff = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
     for field in ("cff-version:", "title:", "authors:", "version:"):
