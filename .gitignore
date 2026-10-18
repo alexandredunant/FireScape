@@ -1,6 +1,10 @@
 # Local and restricted inputs
 data/*
 !data/README.md
+/Data/
+
+# Copyrighted literature for the review (not redistributable)
+/review/papers/
 
 # Generated analysis products
 output/
