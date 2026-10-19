@@ -24,7 +24,7 @@ Alexandre Dunant (lead), Alice Crespi, Michael de Rachewiltz, Christian Hoffmann
 
 ## Abstract (draft, ~260 words)
 
-Global fire science classifies fire regimes using satellite measures of fire size, frequency, intensity, season and extent, and by the degree of human control over burning. Mountains barely register in these classifications, because their fires are mostly small and the products used have coarse resolution and miss many small fires. We argue that mountain wildfire is not a scaled-down lowland regime but a structurally different one, and we review the evidence process by process, from ignition to consequence.
+Wildfire is becoming more frequent in mountain environments where it has historically been rare, yet fire science has been built mainly on lowland, Mediterranean and boreal regimes, and global classifications of fire regimes barely resolve mountains. We argue that mountain wildfire is not a scaled-down lowland regime but a structurally different one, and we review the evidence process by process, from ignition to consequence.
 
 The European Alps are the anchor case. They hold the densest record of small fires, protective-forest management and post-fire hazard observations of any mountain system. Each finding is tested against mountain systems chosen to span global fire-regime types:
 - **Himalaya and Hengduan:** human-set, dry-season fires.
@@ -37,7 +37,7 @@ Three features define the mountain case:
 - **Upslope migration.** Across eight European mountain regions, the median elevation of fires larger than 30 ha rose by about 72 m per decade between 2000 and 2025. The shift is led by the Balkans, Iberia and Turkey and is still weak in the Alps.
 - **Consequence.** It is decoupled from burnt area, because fire acts on forests that hold rock, snow and sediment above settlements. Damage therefore runs through a geomorphic cascade in which fire lowers the rainfall threshold for erosion, debris flow and rockfall.
 
-Land abandonment is moving such regimes away from tight human control towards larger and more variable fires. We show why assessment that produces hazard without exposure and vulnerability cannot yet produce risk in mountains, and close with a research agenda scaled to what the observational record can support.
+Land abandonment is moving such regimes away from tight human control towards larger and more variable fires. We show why assessment that produces hazard without exposure and vulnerability cannot yet produce risk in mountains. We close by discussing what the evidence implies for fire management and governance in steep terrain, and how the community could detect and prepare for a regime shift.
 
 ## Framing: mountains in global fire-regime space
 
@@ -81,9 +81,10 @@ Japan, Taiwan and New Zealand are included only where the search finds post-fire
 5. **Climate and mountain meteorology.** Valley and slope winds, foehn and the thermal belt. Lightning and convection. Elevation-dependent warming and what fire projections omit.
 6. **Water and the post-fire geomorphic cascade.** The drought and fuel-moisture chain. Soil alteration. Rainfall thresholds for debris flow and rockfall. Snow, ice and black carbon.
 7. **Forest change and protective function.** Fuel continuity after land abandonment. The protective-forest recovery window. Silviculture, fuel treatment and prescribed fire in steep terrain.
-8. **From hazard to risk.** Exposure, vulnerability and governance constraints in mountain settings.
+8. **From hazard to risk.** Exposure and vulnerability in mountain settings.
 9. **Synthesis across regimes.** A matrix of mountain systems against processes, showing what is general to mountains, what is specific to a regime type, and where evidence is missing.
-10. **Research agenda and conclusions.**
+10. **Discussion: preparing for a shift in mountain fire.** What the evidence implies for fire management and governance in steep terrain (access-limited suppression, prevention, cross-border coordination). What observations and monitoring would detect a regime shift early. A research agenda scaled to the observational record.
+11. **Conclusions.**
 
 Supporting information: the search protocol and screening register, structured evidence notes for every cited source, and a glossary. The manuscript will include Key Points and a Plain Language Summary, with roughly 8–10 figures and tables: the mountain systems placed in pyrome and macroregime space, a process-chain schematic, the cross-system matrix, and a map of the systems covered.
 
@@ -111,7 +112,7 @@ We found no review of mountain fire meteorology, nor of satellite detection limi
 
 The review places mountain wildfire within the satellite-based description of global fire regimes and treats it as a coupled geophysical process chain: atmospheric dynamics in complex terrain, land-surface and snow hydrology, and post-fire geomorphology. It connects three recent *Reviews of Geophysics* syntheses (fire trends, elevation-dependent climate change, and mountain process chains) through a hazard none of them centres on. It shows where global fire-regime products under-represent mountains and what observations would close the gap. That serves researchers working on fire-weather prediction, remote sensing, Earth-system fire modelling and hazard cascades.
 
-## Accessibility and dynamic content
+## Accessibility
 
 The review is written for geoscientists outside fire science. Each section opens from a process familiar to an adjacent discipline:
 - boundary-layer and valley meteorology
@@ -121,10 +122,10 @@ The review is written for geoscientists outside fire science. Each section opens
 
 Each then shows what fire changes in it. Fire-specific terms (fire regime, pyrome, burn severity, fire danger indices) are defined at first use and collected in a glossary. A single process-chain figure links ignition, spread, the geomorphic and hydrological response, and loss.
 
-We propose two pieces of dynamic content for the supporting information:
-- **An interactive map** of the mountain systems covered, each placed in pyrome and macroregime space and linked to its evidence.
-- **A browsable version of the cross-system evidence matrix**, linking each mountain system and process to the sources behind it and to their structured evidence notes.
+## Why now
+
+Mountain fire regimes may be at the start of a shift that recent fire seasons have only begun to reveal. A synthesis now could help the geoscience and hazard communities prepare for coming events rather than learn from them afterwards. It could also serve as a common reference for a community of practice across mountain regions, linking researchers and practitioners who currently work on the same processes in isolation.
 
 ## Timeline
 
-A full draft of the Alpine-anchored manuscript exists: about 30,000 words with 150 sources. Every citation has been checked against its source document, and a second, blind check of a sample confirmed the audit. The international extension and the restructuring for *Reviews of Geophysics* can be completed within three months of an invitation.
+The proposal builds on an extensive synthesis of the Alpine evidence that the author team has already compiled. The comparative systems and the restructuring for *Reviews of Geophysics* can be completed within three months of an invitation.
