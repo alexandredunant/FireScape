@@ -111,6 +111,20 @@ We found no review of mountain fire meteorology, nor of satellite detection limi
 
 The review places mountain wildfire within the satellite-based description of global fire regimes and treats it as a coupled geophysical process chain: atmospheric dynamics in complex terrain, land-surface and snow hydrology, and post-fire geomorphology. It connects three recent *Reviews of Geophysics* syntheses (fire trends, elevation-dependent climate change, and mountain process chains) through a hazard none of them centres on. It shows where global fire-regime products under-represent mountains and what observations would close the gap. That serves researchers working on fire-weather prediction, remote sensing, Earth-system fire modelling and hazard cascades.
 
+## Accessibility and dynamic content
+
+The review is written for geoscientists outside fire science. Each section opens from a process familiar to an adjacent discipline:
+- boundary-layer and valley meteorology
+- snow and catchment hydrology
+- hillslope geomorphology
+- remote sensing of the land surface
+
+Each then shows what fire changes in it. Fire-specific terms (fire regime, pyrome, burn severity, fire danger indices) are defined at first use and collected in a glossary. A single process-chain figure links ignition, spread, the geomorphic and hydrological response, and loss.
+
+We propose two pieces of dynamic content for the supporting information:
+- **An interactive map** of the mountain systems covered, each placed in pyrome and macroregime space and linked to its evidence.
+- **A browsable version of the cross-system evidence matrix**, linking each mountain system and process to the sources behind it and to their structured evidence notes.
+
 ## Timeline
 
 A full draft of the Alpine-anchored manuscript exists: about 30,000 words with 150 sources. Every citation has been checked against its source document, and a second, blind check of a sample confirmed the audit. The international extension and the restructuring for *Reviews of Geophysics* can be completed within three months of an invitation.

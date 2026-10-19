@@ -39,8 +39,27 @@ Line numbers are those of v5.
 | 844 | La Porta 2025 | Threshold recovery is now attributed to Colorado only (Rengers 2024). The claim that window duration matters more is stated as our expectation, and the text adds that no Alpine record yet tracks the recovery. |
 | 878 | Mantero 2020 | The search rationale is now stated as our own choice. Mantero is cited only as an English-only database review that acknowledges it may miss literature. |
 
+## The 207 partly supported citations (second pass, 19 October 2026)
+
+All 207 were revised in 164 edits; where several citations shared a sentence, one edit covers them. Every edit is listed with its before and after text and its source evidence in `v6_partial_fixes.md`.
+
+The most consequential changes:
+- **Upslope migration:** the 72 m/decade shift is no longer attributed to the Alps (Beloiu 2026).
+- **Protective value:** "protective value far exceeds timber value" is withdrawn, because no cited source computes a timber value.
+- **Fire danger:** current Alpine danger is described as low, not moderate.
+- **Water repellency:** Negri 2026 found that the wildfire *lowered* the naturally high water repellency of pine soils.
+- **Smoke and glacier melt:** smoke reduced melt and only soot increased it (one Canadian glacier).
+- **Debris-flow thresholds:** Rengers' 33.7 mm/h was a fixed rule, not a result of vegetation recovery.
+- **Faunal loss:** "never measured" became "measured only in part" (Rey 2019).
+- **Index name:** Cardil's index is renamed the Initial Attack Assessment index.
+- **Scope:** single-site and non-Alpine evidence is now marked throughout.
+
+The abstract's 72 m/decade sentence now refers to the elevation of large fires across European mountains.
+
+After these edits, v6 compiles to 81 pages with 150 references, no undefined citations, no LaTeX errors and no bibtex warnings.
+
 ## Not yet done
 
-- **207 partly supported citations.** They are listed in `reference_audit_report.md`, each with a proposed fix.
-- **Abstract, Introduction and Conclusions.** The abstract still says fire activity "has migrated upslope by roughly 72 m per decade" without the European-pooled qualifier. The Introduction (v5 lines 111 and 121) still describes Melzner 2025 as measuring the duration of protection loss. Both are PARTIAL items and will be handled with that batch.
 - **PDFs to replace with the version of record:** `senf_mapping_2021`, `riviere_mapping_2023`, `santi_wildfire_2022`.
+- **Sources to add once their PDFs are available:** Staley et al. 2017 (line 339), and the Swiss participatory vegetation-belt study (line 549).
+- **Reframing for *Reviews of Geophysics*:** title, abstract, Introduction, the new global-regime section, and the AGU template. This waits for the decision on the proposal.
