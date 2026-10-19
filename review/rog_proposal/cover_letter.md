@@ -20,7 +20,7 @@ We believe the topic suits the journal's readership because mountain wildfire is
 - the review of elevation-dependent climate change in mountains (Pepin et al., 2022)
 - the review of geomorphic process chains in high-mountain regions (Mani et al., 2023)
 
-[NOVELTY SENTENCE: to be inserted after the literature check.] We will write for geoscientists outside fire science, defining fire-specific terms at first use.
+Existing reviews treat mountain fire meteorology (Sharples, 2009; Clements, 2016) and satellite fire mapping (Chuvieco et al., 2019; Wooster et al., 2021) separately, and none that is known to us examines how steep terrain jointly shapes fire weather, detectability and consequence. We will write for geoscientists outside fire science, defining fire-specific terms at first use.
 
 The review is also timely. Mountain fire regimes may be at the start of a shift that recent seasons have only begun to reveal. A synthesis now could help the geoscience and hazard communities prepare for the events ahead rather than learn from them afterwards, and it could serve as a common reference for a community of practice across mountain regions.
 
@@ -40,4 +40,5 @@ alexandre.dunant@eurac.edu
 - *Author expertise:* confirm the list of fields in the second-to-last paragraph with the co-authors.
 - *International co-authors:* name them if any are confirmed before sending; the editors weigh the author list.
 - *Claims to verify before sending:* the descriptions of the comparative systems (human-set, pre-monsoon fires in the Himalaya; large-fire research and post-fire debris flows in the Cordillera; multi-jurisdiction management in the Australian Alps) are the selection rationale. Each needs at least one cited source in the proposal before it goes out.
+- *Novelty sentence:* checked in `novelty_check.md`. Before sending, also search the full texts of Chuvieco et al. 2019 and Wooster et al. 2021 for "topograph" or "terrain"; only their abstracts could be checked.
 - *Attachment:* export `proposal.md` to PDF and remove its "Note for the author team" paragraph and the DRAFT status line first.

@@ -105,8 +105,10 @@ No published review makes the cross-regime, process-based case that mountain wil
 - **Melzner et al. (2025, *Landslides* 22, 3989–4011):** wildfire-induced geohydrological risk in the Alps, with a first Alpine inventory.
 - **Moos et al. (2023, *Front. For. Glob. Change* 6, 1223934):** global-change impacts on protective forests, with fire one disturbance among several.
 - **Vukomanovic & Steelman (2019, *Landsc. Ecol.* 34, 1179–1194):** mountain wildfire and ecosystem services, mainly in the Colorado Front Range.
+- **Sharples (2009, *Int. J. Wildland Fire* 18, 737–754)** and **Clements (2016, USDA Forest Service PNW-GTR-891, ch. 2):** mountain meteorological effects on fire behaviour (foehn and downslope winds, slope and valley flows, inversions, wind modelling), without links to detection or post-fire consequence.
+- **Chuvieco et al. (2019, *Remote Sens. Environ.* 225, 45–64)** and **Wooster et al. (2021, *Remote Sens. Environ.* 267, 112694):** satellite burned-area and active-fire mapping globally; terrain effects on detection are documented only in case studies.
 
-We found no review of mountain fire meteorology, nor of satellite detection limits in steep terrain. The review also gives a peer-reviewed, indexed update of the 2020 EUSALP consensus statement on forest fires in the Alps (Müller et al., 2020), which is grey literature.
+Existing reviews treat mountain fire meteorology (Sharples, 2009; Clements, 2016) and satellite fire mapping (Chuvieco et al., 2019; Wooster et al., 2021) separately, and none that is known to us examines how steep terrain jointly shapes fire weather, detectability and consequence. The review also gives a peer-reviewed, indexed update of the 2020 EUSALP consensus statement on forest fires in the Alps (Müller et al., 2020), which is grey literature.
 
 ## Benefit to the readership of *Reviews of Geophysics*
 
