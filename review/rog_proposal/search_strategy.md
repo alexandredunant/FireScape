@@ -1,97 +1,99 @@
-# Search strategy for the international extension
+# Search strategy for the comparable mountain ranges
 
-Draft, 19 October 2026. To be run after the *Reviews of Geophysics* invitation; the deadline is about three months.
+Revised 21 October 2026. To be run after the *Reviews of Geophysics* invitation; the deadline is about three months.
 
 ## Scope
 
-**Comparative systems,** chosen by global fire-regime type (see `proposal.md`):
+**Comparable ranges** are those retained by the screen in `../range_screening/` (README and `outputs/shortlist_final.csv`). Each was selected for its similarity to the Alps in climate, elevation, forest type and fire regime.
 
-| Group | Systems | Expected regime type |
-|---|---|---|
-| A | Himalaya / Hindu Kush Himalaya (Nepal, Bhutan, Indian Himalaya), Hengduan margin of the Tibetan Plateau | Intermediate–cool–small; human-set, dry-season fire |
-| B | North American Cordillera (Rocky Mountains incl. Colorado Front Range and Canadian Rockies, Sierra Nevada, Cascades) | Rare–intense–large; wild |
-| C | South-east Australian Alps (Victorian Alps, Snowy Mountains / Kosciuszko); Japan, Taiwan and New Zealand only if post-fire hazard evidence exists | Rare–intense–large (Australian Alps) |
+| Group | Ranges (GMBA rank of similarity to the Alps) |
+|---|---|
+| E. European ranges | Carpathians (11), Dinaric Alps (7), Pyrenees (20), Rila–Rhodope Massif (9), Balkan Mountains (37) |
+| C. Caucasus | Greater and Lesser Caucasus (6) |
+| R. Rocky Mountains | Southern (19), Western (27) and Canadian (33) Rockies |
+| S. Altai–Sayan | Northern Altai (3), Eastern Sayan (5), Western Sayan (16) |
 
-**Excluded:** tropical montane systems (East African mountains, Andean páramo and puna), for the reason stated in the proposal.
+**Inclusion rule:** the same as Section 2 of the manuscript. A source is admitted when it documents a process the review treats in one of its six domains:
+- hazard
+- climate and weather
+- water
+- forest
+- risk
+- governance
 
-**Inclusion rule:** the same as Section 2 of the manuscript. A source from a comparative system is admitted when it documents a process shared with the Alpine case: ignition, spread on slopes, terrain meteorology, post-fire geomorphic response, snow and water, protective function, or exposure. Mechanisms transfer between systems; coefficients do not, and Alpine parameters come from Alpine data only.
+Mechanisms transfer between ranges; coefficients do not, and Alpine parameters come from Alpine data only.
 
-**Period:** 2010–2026. Earlier landmark studies are admitted through citation chaining.
+**Other ranges:** evidence from ranges outside the shortlist may still be cited for a specific process (for example, post-fire debris-flow thresholds in Colorado), marked as such. These ranges are not searched systematically.
+
+**Period:** 2010–2026; earlier landmark studies enter through citation chaining.
 
 **Databases:**
 - Scopus and Web of Science for the keyword search.
-- OpenAlex and Crossref (free APIs) for backward and forward chaining, metadata verification and DOI resolution.
-- National and agency reports from these sources:
-  - ICIMOD for the Hindu Kush Himalaya
-  - USGS and the US Forest Service for the Cordillera
-  - Australian state agencies for the Australian Alps
+- OpenAlex and Crossref for chaining, metadata verification and DOI resolution.
+- For group S, also eLIBRARY.ru (Russian) and CNKI (Chinese Altai). Non-English sources are cited only where a co-author or a reliable translation can confirm the content.
 
 ## Query blocks
 
-Each search is **[SYSTEM] AND [FIRE] AND [DOMAIN]**, run once for each of the six domains. Field: title, abstract and keywords. The syntax is Scopus; adapt it for Web of Science.
+Each search is **[RANGE] AND [FIRE] AND [DOMAIN]**, in title, abstract and keywords. The syntax is Scopus; adapt it for Web of Science.
 
 **[FIRE]**
 
 ```
-(wildfire* OR "forest fire*" OR "wildland fire*" OR bushfire* OR "vegetation fire*" OR "fire regime*" OR "burn* area" OR "burn severity" OR "post-fire" OR postfire)
+(wildfire* OR "forest fire*" OR "wildland fire*" OR "vegetation fire*" OR "fire regime*" OR "burn* area" OR "burn severity" OR "post-fire" OR postfire)
 ```
 
-**[SYSTEM]**
+**[RANGE].** The terms are curated because GMBA names often differ from usage, which is why the screen's automatic literature counts are only indicative.
 
-Group A:
+Group E:
 ```
-(Himalaya* OR "Hindu Kush" OR HKH OR Nepal* OR Bhutan* OR Uttarakhand OR "Himachal Pradesh" OR "Jammu and Kashmir" OR Sikkim OR Hengduan OR "Tibetan Plateau" OR Sichuan OR Yunnan OR "Yajiang")
-```
-
-Group B:
-```
-("Rocky Mountains" OR "Front Range" OR "Canadian Rockies" OR "Sierra Nevada" OR Cascades OR "Pacific Northwest" OR Colorado OR Montana OR Idaho OR Wyoming OR "British Columbia" OR Alberta)
-AND (mountain* OR montane OR subalpine OR alpine OR slope* OR terrain)
+(Carpathian* OR Karpaty OR Carpați OR Tatra* OR Dinaric OR Dinarides OR Velebit OR Pyrenees OR Pirineos OR Pyrénées OR Pirineus OR Rhodope* OR Rodopi OR Rila OR Pirin OR "Balkan Mountains" OR "Stara Planina")
 ```
 
 Group C:
 ```
-("Australian Alps" OR "Victorian Alps" OR "Snowy Mountains" OR Kosciuszko OR "alpine ash" OR "Eucalyptus delegatensis" OR (Japan* AND mountain*) OR (Taiwan* AND mountain*) OR ("New Zealand" AND (mountain* OR "high country" OR tussock)))
+(Caucasus OR Caucasian OR Kavkaz OR "Greater Caucasus" OR "Lesser Caucasus" OR Georgia* OR Armenia* OR Azerbaijan* OR "North Caucasus")
+AND (mountain* OR montane OR forest*)
+```
+
+Group R:
+```
+("Rocky Mountains" OR Rockies OR "Front Range" OR "Canadian Rockies" OR "San Juan Mountains" OR "Sangre de Cristo" OR Wasatch OR Uinta OR Colorado OR Wyoming OR Montana OR Idaho OR Alberta OR "British Columbia")
+AND (mountain* OR montane OR subalpine OR alpine OR slope* OR terrain)
+```
+
+Group S:
+```
+(Altai OR Altay OR Sayan OR "Altai-Sayan" OR Tuva OR Khakassia OR "Krasnoyarsk" OR "Kuznetsk Alatau")
+AND (mountain* OR montane OR forest* OR taiga)
 ```
 
 **[DOMAIN]**, one query per domain:
 
 | Domain | Terms |
 |---|---|
-| D1 Hazard: ignition, spread, danger, data | `(ignition* OR "fire occurrence" OR "rate of spread" OR "slope effect*" OR "fire danger" OR "fire weather" OR FWI OR susceptibility OR "active fire*" OR MODIS OR VIIRS OR "small fire*" OR "burned area product*")` |
-| D2 Climate and meteorology | `(foehn OR föhn OR chinook OR "katabatic" OR "valley wind*" OR "mountain-valley" OR "thermal belt" OR inversion OR lightning OR convection OR "elevation-dependent" OR "upslope" OR "fire elevation")` |
-| D3 Water and the geomorphic cascade | `("debris flow*" OR "rainfall threshold*" OR "rockfall" OR "landslide*" OR erosion OR "water repellency" OR "sediment yield" OR runoff OR snowpack OR "snow melt" OR glacier* OR "black carbon" OR albedo OR "water supply")` |
-| D4 Forest and protective function | `("protection forest*" OR "protective forest*" OR "avalanche" OR treeline OR "tree line" OR regeneration OR "fuel treatment*" OR "prescribed burn*" OR "land abandonment" OR "fuel continuity")` |
-| D5 Exposure and vulnerability | `(exposure OR vulnerability OR "wildland-urban interface" OR WUI OR infrastructure OR "risk assessment" OR tourism OR "power line*")` |
-| D6 Governance and suppression | `(suppression OR "initial attack" OR "aerial firefighting" OR "fire management" OR governance OR "community forest*" OR "cross-border" OR policy)` |
+| D1 Hazard: ignition, spread, danger, data | `(ignition* OR "fire occurrence" OR "rate of spread" OR "slope effect*" OR "fire danger" OR "fire weather" OR FWI OR susceptibility OR "active fire*" OR MODIS OR VIIRS OR "small fire*")` |
+| D2 Climate and weather | `(foehn OR föhn OR chinook OR katabatic OR "valley wind*" OR "thermal belt" OR inversion OR lightning OR convection OR "elevation-dependent" OR upslope OR "fire elevation")` |
+| D3 Water and the geomorphic cascade | `("debris flow*" OR "rainfall threshold*" OR rockfall OR landslide* OR erosion OR "water repellency" OR "sediment yield" OR runoff OR snowpack OR "snow melt" OR glacier* OR "black carbon" OR albedo)` |
+| D4 Forest | `("protection forest*" OR "protective forest*" OR avalanche OR treeline OR "tree line" OR regeneration OR "fuel treatment*" OR "prescribed burn*" OR "land abandonment" OR "fuel continuity")` |
+| D5 Risk | `(exposure OR vulnerability OR "wildland-urban interface" OR WUI OR infrastructure OR "risk assessment" OR tourism OR "power line*")` |
+| D6 Governance | `(suppression OR "initial attack" OR "fire management" OR governance OR policy OR "cross-border" OR economic* OR cost*)` |
 
-**Example,** Group A × D3:
+## Procedure
 
-```
-TITLE-ABS-KEY((Himalaya* OR "Hindu Kush" OR Nepal* OR Bhutan* OR Uttarakhand OR Hengduan OR "Tibetan Plateau" OR Sichuan OR Yunnan)
-  AND (wildfire* OR "forest fire*" OR "post-fire" OR postfire OR "burn severity")
-  AND ("debris flow*" OR "rainfall threshold*" OR rockfall OR landslide* OR erosion OR snowpack OR glacier* OR "black carbon" OR albedo))
-  AND PUBYEAR > 2009
-```
+1. **Screening:** titles and abstracts are screened against the inclusion rule, with each decision and its reason recorded in `supplementary/FireScape_Alps_screening_register.xlsx`. New tier: "B2 Comparable range", with a column for the group (E, C, R or S).
+2. **Seeds:** the most relevant syntheses per group. Run one round of backward and forward chaining from them through OpenAlex.
+3. **Full text:** read before citing. Open-access PDFs go into `papers/` under the `FirstAuthor_Year_First_five_title_words.pdf` convention. Paywalled ones go on a want-list for the authors.
+4. **Bookkeeping:** each newly cited source gets a structured note in `supplementary/FireScape_evidence_notes.md`, a Crossref-verified bibliography entry, and a row in `papers/FireScape_review_reference_list.csv`. Claims are checked against the PDF using the procedure in `audit/`.
+5. **Writing:** evidence from the comparable ranges enters within each domain section, next to the Alpine evidence, and in the closing mountain versus non-mountain comparison of that section. There are no separate regional sections.
 
-## Screening and chaining
+## Already in the collection
 
-1. **Screening:** titles and abstracts are screened against the inclusion rule, with each decision and its reason recorded in `supplementary/FireScape_Alps_screening_register.xlsx`. New tier: "B2 Mountain fire (non-European)", with a column for the regime group (A, B or C).
-2. **Seeds:** the three to five most relevant reviews or syntheses per group. Run one round of backward and forward chaining from them through OpenAlex.
-3. **Full text:** read before citing. Open-access PDFs go into `papers/` under the `FirstAuthor_Year_First_five_title_words.pdf` convention. Paywalled ones go on a want-list for the authors. Nothing is cited without its PDF being read.
-4. **Bookkeeping:** each newly cited source gets a structured note in `supplementary/FireScape_evidence_notes.md`, a Crossref-verified entry in the bibliography, and a row in `papers/FireScape_review_reference_list.csv`. Claims are checked against the PDF using the same procedure as `audit/`.
+Several comparable ranges are already cited in v6:
+- Carpathians (Manczinger 2025)
+- Pyrenees (Oliveras 2025)
+- Dinarides and Tatras (Cagliero 2022, Šeben 2024)
+- Rocky Mountains (Rengers 2024, Rogeau 2018, Aubry-Wake 2022)
 
-## Screen first: unused entries already in `FireScape_master_v7.bib`
+The bibliography also holds uncited Rocky Mountain entries (Kulakowski, Coop 2009, Sadegh 2021, Harvey 2016; Cannon, Staley and Kean on post-fire debris flows). Screen these first; Staley 2017 is also needed at v5 line 339.
 
-A scan of the bibliography on 18 October 2026 listed the following uncited entries as candidates. They are not yet verified, so each must pass the inclusion rule and be checked against its PDF.
-
-- **Group B, Cordillera:**
-  - Kulakowski 2002/2003/2012, Coop 2009, Sadegh 2021 (upslope advance), Benefield 2022, Harvey 2016, Turner 1999/2019
-  - Post-fire debris flows: Cannon 2001/2003/2008/2010, Staley 2013/2017/2018, Kean 2011/2019, Rengers 2016/2021, Wall 2020
-  - Snow: Maxwell 2019, Stevens 2017
-  - Canadian Rockies: Jordan 2009, Martin 2011
-  - Staley 2017 is also needed for the debris-flow model now described at v5 line 339.
-- **Group C, Australian Alps:** Williams 2008, Zylstra 2006, Williamson 2014, Green 2006, Camac 2013, Walsh 2004, McDougall 2007, plus the entries on post-fire hillslope response and wind characteristics.
-- **Group A, Hengduan / Tibet:** Yang 2022 (Hengduan), and the Yajiang fire studies ("SpatiotemporalDistribution2025", "PostWildfire2025b").
-
-The corpus is thinnest for Group A: the screening register includes only one Himalaya record. Expect that group to need the most new searching.
+The Caucasus and Altai–Sayan are not yet represented in the corpus, so they will need the most new searching.

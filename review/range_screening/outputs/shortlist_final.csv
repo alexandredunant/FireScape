@@ -1,0 +1,14 @@
+group,range,gmba_id,rank,gower,climate_dist,elevation_dist,forest_dist,fire_dist,main_climate,forest_share,needle_share,forest_median_elev_m,gfa_fires_2003_2023,passes_filters
+Anchor,European Alps,10001,1,0.0,0.0,0.0,0.0,0.0,Df_warm,0.6,0.48,1035,310,True
+European core,Carpathian Mountains,11201,11,0.169,0.065,0.161,0.228,0.222,Df_warm,0.89,0.23,757,609,True
+European core,Dinaric Alps,11300,7,0.153,0.039,0.131,0.251,0.189,Df_warm,0.75,0.11,794,1819,True
+European core,Pyrenees,11756,20,0.187,0.123,0.041,0.253,0.332,Cf,0.71,0.23,900,1231,True
+European core,Rila-Rhodope Massif,15148,9,0.165,0.035,0.125,0.312,0.187,Df_warm,0.84,0.15,826,260,True
+European core,Balkan Mountains,11149,37,0.197,0.05,0.17,0.435,0.131,Df_warm,0.83,0.02,695,164,True
+Caucasus,Caucasus Mountains,12686,6,0.151,0.045,0.058,0.384,0.118,Df_warm,0.45,0.08,1100,5405,True
+Rocky Mountains,Southern Rocky Mountains,12208,19,0.187,0.055,0.274,0.235,0.184,Df_warm,0.63,0.77,2750,2093,True
+Rocky Mountains,Western Rocky Mountains,17682,27,0.191,0.054,0.238,0.238,0.233,Df_warm,0.48,0.68,2353,753,True
+Rocky Mountains,Canadian Rockies,12199,33,0.193,0.148,0.161,0.287,0.177,Df_cold,0.64,0.92,1651,548,True
+Altai-Sayan,Northern Altai,18508,3,0.116,0.12,0.05,0.171,0.123,Df_cold,0.44,0.6,1302,1649,True
+Altai-Sayan,Eastern Sayan,12044,5,0.142,0.161,0.05,0.172,0.186,Dw,0.72,0.73,1072,1122,True
+Altai-Sayan,Western Sayan,12097,16,0.182,0.152,0.097,0.257,0.224,Df_cold,0.7,0.86,1284,1239,True

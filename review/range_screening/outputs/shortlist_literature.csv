@@ -1,0 +1,26 @@
+range,search_term,gower,rank,openalex_fire_papers
+Pontic Mountains,Pontic,0.085,2,5
+Northern Altai,Altai,0.116,3,60
+Eastern Sayan,Sayan,0.142,5,17
+Caucasus Mountains,Caucasus,0.151,6,23
+Dinaric Alps,Dinaric Alps,0.153,7,4
+Southern Scandes,Scandes,0.163,8,2
+Rila-Rhodope Massif,Rila-Rhodope,0.165,9,0
+Carpathian Mountains,Carpathian,0.169,11,53
+Sistema Iberico,Sistema Iberico,0.171,12,0
+Coast Mountains,Coast,0.18,13,1414
+Colorado Plateau,Colorado Plateau,0.182,14,51
+Mackenzie Mountains,Mackenzie,0.182,15,80
+Western Sayan,Sayan,0.182,16,17
+Southern Rocky Mountains,Rocky,0.187,19,1121
+Pyrenees,Pyrenees,0.187,20,67
+Far Northern Rockies,Rockies,0.19,22,1121
+Middle Atlas,Middle Atlas,0.19,23,7
+Yan Mountains,Yan,0.19,24,13
+Western Rocky Mountains,Rocky,0.191,27,1121
+South-Central Alaska,Alaska,0.192,28,1329
+Columbia Mountains,Columbia,0.193,29,1171
+Hellenides,Hellenides,0.193,30,0
+British Columbia Interior,British Columbia Interior,0.193,31,2
+Anatolian Plateau,Anatolian Plateau,0.193,32,0
+Canadian Rockies,Canadian Rockies,0.193,33,63
