@@ -1069,3 +1069,51 @@ Scope change: mountain fire evidence worldwide is now a first-class tier rather 
 - **Governance:** since 1986 an MOU between four governments supports a cooperative management programme (Australian Alps Liaison Committee) treating the range as one biogeographic region for fire, water, invasive species and Aboriginal engagement, resilient to political and funding cycles and major fires. The authors argue for network governance in a system they place in a release phase driven by climate change.
 - **Limitations:** adaptive-cycle trajectory is a hypothesis; fire findings are secondary, drawn from cited literature.
 - **How used:** §8.3, as a single imported case of standing cross-jurisdictional coordination in a mountain range and of the politics of fuel arguments; Table 1.
+
+
+---
+
+## Expansion set 12 (2026-11-02): global fire syntheses, mountain climate and methodological reviews
+
+### 133. Archibald, Lehmann, Gómez-Dans & Bradstock (2013) — Defining pyromes and global syndromes of fire regimes. PNAS 110(16):6442–6447. doi:10.1073/pnas.1211466110.
+- **Setting and data:** Global satellite fire records aggregated on a 0.5° grid across five fire-regime characteristics (size, frequency, intensity, season and extent).
+- **Method and results:** Bayesian clustering identifies five global "pyromes" (frequent-intense-large, frequent-cool-small, rare-intense-large, rare-cool-small, and intermediate/human-engineered), distinguishing crown-, litter- and grass-fuelled syndromes alongside human-dominated regimes.
+- **Mountain coverage:** Contains no mountain category and no terrain, slope, elevation or topographic variable in the classification.
+- **How used:** §1.2, as baseline evidence that half-degree global pyrogeographies do not resolve mountain fire regimes.
+
+### 134. Pereira, Oom, Silva & Benali (2022) — Wild, tamed, and domesticated: Three fire macroregimes for global pyrogeography in the Anthropocene. Ecological Applications 32(6):e2588. doi:10.1002/eap.2588.
+- **Setting and data:** 15 years of MODIS active-fire detections (MCD14ML) aggregated on a 1° global grid across six fire descriptors, interpreted against anthromes and Köppen-Geiger climate zones.
+- **Results:** Classifies global burning into three fire macroregimes (wild, tamed and domesticated). Managed burning (tamed and domesticated) accounts for roughly 86–90% of active fires and ~70% of combustible area, whereas wild fires (<10% of active fires) concentrate in cold wildlands and drylands.
+- **Mountain coverage:** One-degree grid and anthrome/climate covariates contain no mountain category or topographic variable.
+- **How used:** §1.2, alongside Archibald et al. (2013), showing that coarse-grid global fire classifications leave steep mountain relief unresolved.
+
+### 135. Sayedi et al. (2024) — Assessing changes in global fire regimes. Fire Ecology 20:18. doi:10.1186/s42408-023-00237-9.
+- **Setting and method:** Expert elicitation across seven biogeographic realms and eleven terrestrial biomes synthesising Holocene, contemporary and projected (to 2100 under RCP pathways) fire-regime trajectories.
+- **Mountain coverage:** Aggregates across broad terrestrial biomes without an explicit mountain biome or altitudinal stratification (elevation mentioned only once in passing for western North American conifer forests).
+- **How used:** §1.2, showing that biome-scale fire-regime syntheses aggregate over altitudinal belts rather than resolving mountain fire systems.
+
+### 136. Jones et al. (2022) — Global and regional trends and drivers of fire under climate change. Reviews of Geophysics 60(3):e2020RG000726. doi:10.1029/2020RG000726.
+- **Scope and results:** Global and regional synthesis of fire-weather and burned-area trends. Documents pervasive increases in fire-weather frequency and extremity over 1979–2019 (already emerging beyond pre-industrial variability in the Mediterranean) and burned-area increases of roughly 50% or more in several extratropical forest ecoregions, despite an approximately 27% decline in global burned area over 2001–2019 driven largely by savanna contraction.
+- **Methodological and terrain caveats:** Notes that purely burned-area satellite products (~500 m resolution) omit many small fires unless combined with active-fire detections, and that most fire-enabled dynamic global vegetation models omit topographic controls on fire spread beyond coarse landscape fragmentation. Provides no separate synthesis of mountain fire regimes.
+- **How used:** §1.1 (global divergence between declining total burned area and rising fire-weather extremity / extratropical forest burning), §1.2 (positioning relative to global fire synthesis), Table 2 and §3.4 (small-fire omission below ~500 m and omission of topographic spread effects in fire-enabled DGVMs).
+
+### 137. Pepin et al. (2022) — Climate changes and their elevational patterns in the mountains of the world. Reviews of Geophysics 60(1):e2020RG000730. doi:10.1029/2020RG000730.
+- **Scope and data:** Global review of mountain temperature, precipitation and snow/ice trends since 1900 combining paired mountain/lowland stations with gridded observational, reanalysis (including ERA5 at 0.25°) and climate-model datasets.
+- **Results:** Pooled global datasets show no universal amplification of warming with elevation, whereas paired adjacent stations more often record faster warming at higher altitude, particularly near the retreating snowline via snow-albedo feedback (amplified where black carbon deposits on snow and ice). Mountain precipitation increases are weaker than adjacent lowland increases across midlatitude ranges, weakening elevational precipitation gradients. In the European Alps, snow-cover duration and depth show strong negative trends below 2,000 m and glacier area had declined by ~50% by 2000.
+- **Observational caveat:** Quarter-degree reanalyses (~20 km in the European Alps, comparable to ridge-to-valley spacing) smooth peaks and valleys and carry substantial winter errors in complex relief. Wildfire is mentioned only once in passing.
+- **How used:** §1.2 (mountain climate synthesis without wildfire), §4.1 (paired-station snowline warming vs pooled global EDW, midlatitude precipitation gradient weakening, Alpine snow decline below 2,000 m), §4.4 (~20 km reanalysis smoothing in the Alps), §4.5, §5.4 (Alpine snowpack decline and black-carbon albedo amplification), and §9.
+
+### 138. Jain, Coogan, Subramanian, Crowley, Taylor & Flannigan (2020) — A review of machine learning applications in wildfire science and management. Environmental Reviews 28(4):478–505. doi:10.1139/er-2020-0019.
+- **Scope:** Scoping review of 300 publications (through 2019) applying machine learning across six wildfire domains (fuels, detection, fire weather/climate, occurrence/susceptibility, spread/behaviour, and impacts/management).
+- **Limitations identified (§5.7):** Machine-learning methods depend on large, high-quality datasets often lacking at multi-decadal management scales and fine spatiotemporal spread scales; require domain-informed feature and architecture selection ("no free lunch"); face transferability and extrapolation limits across regions and under climate change; and exhibit a wide gap between research prototypes and operational agency adoption.
+- **How used:** §1.2, §3.4 and §9, supporting parsimonious, physically structured Alpine models over data-hungry parameterisations where records are short and sparse.
+
+### 139. Mohapatra & Trinh (2022) — Early wildfire detection technologies in practice: a review. Sustainability 14(19):12270. doi:10.3390/su141912270.
+- **Scope:** Comparative review of four operational early-detection technology families: satellite surveillance, stationary camera networks, uncrewed aerial vehicles (UAVs) and ground-based wireless sensor nodes.
+- **Constraints identified:** Satellites trade spatial resolution against multi-hour revisit times; stationary camera towers are immobile and constrained by power, tethering and terrain sightlines; UAVs have high power demand preventing continuous patrol; wireless ground sensor nodes are difficult to deploy and maintain in remote, rugged terrain, risk fire destruction, and require line-of-sight links unless relayed across multi-hop meshes or UAVs.
+- **How used:** §1.2, §3.4 and Table 3, expanding the Alpine early-detection discussion across all four technology families in complex relief.
+
+### 140. Or, Furtak-Cole, Berli, Shillito, Ebrahimian, Vahdat-Aboueshagh & McKenna (2023) — Review of wildfire modeling considering effects on land surfaces. Earth-Science Reviews 245:104569. doi:10.1016/j.earscirev.2023.104569.
+- **Scope:** Reviews physical, semi-empirical (Rothermel/BEHAVE, FARSITE) and coupled fire-atmosphere wildfire spread models from the perspective of hydrology, soil science and post-fire land-surface processes.
+- **Core finding:** Existing wildfire spread models focus on flame propagation and energy release while omitting fire effects on underlying soil processes. They do not supply the quantitative surface thermal boundary conditions needed to predict soil water repellency, aggregate and mechanical stability loss, erodibility, surface runoff and post-fire mudslides or debris flows, leaving soil representation in ecohydrological response and recovery largely qualitative.
+- **How used:** §1.2, §5.2 and §9, linking the spread-modelling intensity gap directly to the disconnection between simulated fire behaviour and post-fire soil and debris-flow modelling.

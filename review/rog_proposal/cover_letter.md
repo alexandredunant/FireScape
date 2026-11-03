@@ -1,5 +1,5 @@
 **To:** reviewsgeophysics@agu.org
-**Subject:** Review proposal: What makes mountain wildfire different? Evidence from the European Alps and comparable mountain ranges
+**Subject:** Review proposal: Wildfire in Mountain Terrain: Regimes, Protective Forests and Post-Fire Cascades in the European Alps and Comparable Ranges
 **Attachment:** FireScape_RoG_proposal.pdf (export of `proposal.md`)
 
 ---

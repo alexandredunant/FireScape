@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: review_paper_v6.aux
 The style file: apalike.bst
 Database file #1: FireScape_master_v7.bib
-You've used 150 entries,
+You've used 158 entries,
             1935 wiz_defined-function locations,
-            1231 strings with 42706 characters,
-and the built_in function-call counts, 73574 in all, are:
-= -- 6701
-> -- 4762
-< -- 21
-+ -- 1754
-- -- 1726
-* -- 7176
-:= -- 13257
-add.period$ -- 459
-call.type$ -- 150
-change.case$ -- 1610
-chr.to.int$ -- 150
-cite$ -- 150
-duplicate$ -- 2121
-empty$ -- 4185
-format.name$ -- 1900
-if$ -- 13686
-int.to.chr$ -- 1
+            1271 strings with 44833 characters,
+and the built_in function-call counts, 78323 in all, are:
+= -- 7120
+> -- 5106
+< -- 24
++ -- 1885
+- -- 1854
+* -- 7671
+:= -- 14097
+add.period$ -- 483
+call.type$ -- 158
+change.case$ -- 1713
+chr.to.int$ -- 157
+cite$ -- 158
+duplicate$ -- 2239
+empty$ -- 4436
+format.name$ -- 2038
+if$ -- 14568
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 145
-newline$ -- 757
-num.names$ -- 454
-pop$ -- 1323
+missing$ -- 153
+newline$ -- 797
+num.names$ -- 478
+pop$ -- 1409
 preamble$ -- 1
-purify$ -- 1611
+purify$ -- 1714
 quote$ -- 0
-skip$ -- 1524
+skip$ -- 1611
 stack$ -- 0
-substring$ -- 4420
-swap$ -- 162
-text.length$ -- 3
+substring$ -- 4722
+swap$ -- 177
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 900
+type$ -- 948
 warning$ -- 0
-while$ -- 500
+while$ -- 529
 width$ -- 0
-write$ -- 1965
+write$ -- 2070

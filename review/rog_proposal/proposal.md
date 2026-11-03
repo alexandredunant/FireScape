@@ -7,7 +7,7 @@
 
 ## Working title
 
-**What makes mountain wildfire different? Evidence from the European Alps and comparable mountain ranges**
+**Wildfire in Mountain Terrain: Regimes, Protective Forests and Post-Fire Cascades in the European Alps and Comparable Ranges**
 
 ## Potential authors
 
