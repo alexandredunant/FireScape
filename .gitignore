@@ -20,6 +20,13 @@ report/*.fls
 report/*.log
 report/*.out
 report/*.synctex.gz
+review/*.aux
+review/*.blg
+review/*.fdb_latexmk
+review/*.fls
+review/*.log
+review/*.out
+review/*.synctex.gz
 
 # Editors and operating systems
 .DS_Store

@@ -1,27 +1,18 @@
 # FireScape Alps Review: folder guide
 
-Review paper: *What Makes Mountain Wildfire Different? Evidence from the European Alps and Other Ranges* (Eurac Research). Folder tidied on 7 October 2026.
+Review paper: *Wildfires in the European Alps: An Interdisciplinary Review* (Eurac Research). Updated on 18 November 2026 (`review_paper_v7`).
 
 ## Current working set (this folder)
-- `review_paper_v5.tex` and `review_paper_v5.pdf`: the current manuscript (v26 of the drafting history). Compile with pdflatex, then bibtex, then pdflatex twice.
-- `FireScape_master_v6.bib`: the bibliography the manuscript compiles against. It must stay next to the `.tex` file.
-- `STYLE_SHEET.md`: the writing rules for the manuscript.
+- `review_paper_v7.tex` and `review_paper_v7.pdf`: the current manuscript (`\aguformattrue` toggle at the top controls AGU Key Points and Plain Language Summary for *Reviews of Geophysics* vs. *Earth-Science Reviews* / *NHESS* export). Compile inside `review/` with `pdflatex`, `bibtex`, and `pdflatex` twice.
+- `FireScape_master_v7.bib`: the Crossref-audited bibliography (159 cited sources) that `review_paper_v7.tex` compiles against. Keep next to the `.tex` file.
+- `STYLE_SHEET.md`: writing and register conventions for the manuscript.
 
 ## Subfolders
-- `papers/`: the PDF of every cited source, named `FirstAuthor_Year_First_five_title_words.pdf`, plus `FireScape_review_reference_list.docx/.csv`, which maps each citation key to its DOI and file.
-- `supplementary/`: material described in Appendix A of the paper.
-  - `FireScape_Alps_screening_register.xlsx`: every screened record with its decision and reason.
-  - `FireScape_evidence_notes.md`: a structured note for each cited source.
-  - `FireScape.bib`: the initial set of 49 publications from Step 2.
-- `contents/`: a stand-alone table of contents (`review_paper_contents.tex/.toc/.pdf`). To regenerate it, see the project status notes.
-- `_archive/`: superseded material, kept for reference.
-  - Earlier drafts: `review_paper.tex`, and `review_paper_v2` to `v4`.
-  - The parallel revision of 7 October: `review_paper_v5_parallel_0953.tex`.
-  - Earlier bibliographies: `FireScape_master.bib`, and `FireScape_master_v2` to `v5`.
-  - `references.bib`: most entries failed verification, so do not cite from it.
-  - `PDF_WANTLIST.md`: outdated.
-  - `tmp/`: working files, including the full-text source audit of 7 October.
-- `_to_delete/`: exact duplicates and failed downloads, safe to delete.
-  - `review_paper_v5_alt`: identical to the current manuscript.
-  - `Claude outputs/`: an outdated PDF copy.
-  - `_to_review/`: four 3 KB failed downloads, and duplicate copies of the Gerberding 2025, Reilly 2022 and Conedera 2024 PDFs.
+- `rog_proposal/`: pre-submission inquiry package (`proposal.md`, `FireScape_RoG_proposal.pdf`, `cover_letter.md/.pdf/.docx`, `rog_requirements_and_venue_strategy.md/.pdf`, `novelty_check.md`) aligned with `review_paper_v7` for *Reviews of Geophysics*, with dual-track redirect notes for *Earth-Science Reviews* and *NHESS*.
+- `papers/`: PDFs of cited sources (`FirstAuthor_Year_First_five_title_words.pdf`, shared via Zotero) plus `FireScape_review_reference_list.docx/.csv` mapping citation keys to DOIs.
+- `supplementary/`: material described in Appendix A (`FireScape_Alps_screening_register.xlsx`, `FireScape_evidence_notes.md`, `FireScape.bib`).
+- `contents/`: standalone table of contents (`review_paper_contents.tex/.toc/.pdf`), synchronised with `review_paper_v7`.
+- `_archive/`: superseded material kept for reference:
+  - Earlier drafts (`review_paper.tex`, `review_paper_v2` to `v6`) and bibliographies (`FireScape_master.bib`, `v2` to `v6`).
+  - `global_range_screening_2026-11/`: retired GMBA v2 global mountain range screening scripts, outputs, diagram, and search strategy.
+  - `audit_2026-10/` and `tmp/`: full-text citation and metadata audit working files from October 2026.
