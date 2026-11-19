@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Block commits that add files larger than MAX_MB (keeps the repo Overleaf-friendly).
+# Bypass for a single commit with: git commit --no-verify
+MAX_MB=${GIT_MAX_FILE_MB:-10}
+max_bytes=$((MAX_MB * 1024 * 1024))
+status=0
+while IFS= read -r -d '' file; do
+  size=$(git cat-file -s ":$file" 2>/dev/null) || continue
+  if [ "$size" -gt "$max_bytes" ]; then
+    echo "pre-commit: '$file' is $((size / 1024 / 1024)) MB (limit ${MAX_MB} MB)." >&2
+    status=1
+  fi
+done < <(git diff --cached --name-only --diff-filter=AM -z)
+if [ "$status" -ne 0 ]; then
+  echo "Large files blocked. Add them to .gitignore, or bypass with --no-verify." >&2
+fi
+exit $status

@@ -7,13 +7,46 @@ review/papers/
 # Generated analysis products
 output/
 
+# Archived drafts and screening runs (kept locally, not on GitHub/Overleaf)
+archive/
+review/_archive/
+
+# Large geodata, rasters and binary data (never commit; keep under Data/)
+*.gpkg
+*.tif
+*.tiff
+*.nc
+*.nc4
+*.h5
+*.hdf5
+*.zarr/
+*.parquet
+*.feather
+*.npy
+*.npz
+*.pkl
+*.joblib
+*.pt
+*.ckpt
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
 # Python
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
 
-# LaTeX intermediates (keep the released PDF)
+# LaTeX intermediates and compiled PDFs (Overleaf builds its own)
+report/*.pdf
+review/*.pdf
 report/*.aux
 report/*.fdb_latexmk
 report/*.fls
