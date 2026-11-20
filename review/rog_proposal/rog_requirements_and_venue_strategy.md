@@ -39,6 +39,7 @@ Working note, revised 20 November 2026 (aligned with the shortened, evidence-gra
 - **Discussion** now opens with the five findings that recur across independent studies, and the imported-tools contrast table (*Table 3*) follows as their consequence.
 - **Corrections verified against the source PDFs:** the Gelabert et al. (2025) fuel-moisture ranking; Cardil et al. (2025) now marked as Californian (imported) evidence; the Moos et al. (2021) per-hectare value introduced in the economics section; and the Avouris et al. (2025) preprint result hedged.
 - **136 sources cited** (23 removed, mainly single non-Alpine examples). The search protocol and glossary moved to Supporting Information.
+- **Claims aligned with the evidence (20 Nov 2026):** the paper and all RoG material no longer state that damage "decouples" from or "does not scale" with burnt area, nor that small fires remove protection. This is now presented as the review's argument (the asset lies downslope; no Alpine study relates damage to burnt area), and protection loss for decades as the finding of the few sites studied (moderate and high-severity fire). The upslope shift is described as marked after 2015, not as 72 m per decade since 2000.
 - **Abstract softened (20 Nov 2026):** forest and agricultural policy "may matter as much as climate" in shaping outcomes, consistent with the hedged body text.
 
 ### 1.4 Author list for GEMS submission
