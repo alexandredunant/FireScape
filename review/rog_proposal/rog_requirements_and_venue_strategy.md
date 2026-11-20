@@ -45,7 +45,7 @@ Working note, revised 20 November 2026 (aligned with the shortened, evidence-gra
 
 ## 2. Dual-Track Redirect Strategy (If *RoG* Declines the Proposal)
 
-Because all ten co-authors are at Eurac Research and the manuscript synthesises hazard, climate, hydrology, silviculture, risk and governance specifically for **the European Alps**, the *RoG* Editorial Board could potentially judge the scope either too regional or too management-oriented for an AGU geophysics journal. `review_paper_v7.tex` has been structured so it can be **redirected within one day** without rewriting the scientific argument or screening new literature.
+Because all nine co-authors are at Eurac Research and the manuscript synthesises hazard, climate, hydrology, silviculture, risk and governance specifically for **the European Alps**, the *RoG* Editorial Board could potentially judge the scope either too regional or too management-oriented for an AGU geophysics journal. `review_paper_v7.tex` has been structured so it can be **redirected within one day** without rewriting the scientific argument or screening new literature.
 
 ### Option A (First Redirect): *Earth-Science Reviews* (Elsevier)
 - **Why it fits:** Publishes comprehensive, authoritative Earth- and environmental-science syntheses, including major mountain-arc benchmarks (European Alps, Tibetan Plateau, Andes) where physical hazards intersect land-use change and remote sensing; **no strict word limit** for comprehensive reviews.

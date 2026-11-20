@@ -11,7 +11,7 @@
 
 ## Potential authors
 
-Alexandre Dunant (lead), Alice Crespi, Michael de Rachewiltz, Christian Hoffmann, Marco Mina, Massimiliano Pittore, Uta Schirpke, Stefano Terzi, Jenny Ufer, Marc Zebisch (Eurac Research, Bolzano, Italy).
+Alexandre Dunant (lead), Paulina Bartkowiak, Alice Crespi, Christian Hoffmann, Marco Mina, Massimiliano Pittore, Uta Schirpke, Stefano Terzi, Marc Zebisch (Eurac Research, Bolzano, Italy).
 
 ## Scientific questions
 
