@@ -12,12 +12,12 @@ Fire danger has risen in the Alps (Wastl et al., 2012) and is projected to rise 
 
 We argue that Alpine wildfire is not a scaled-down Mediterranean problem. Much Alpine forest is managed to hold rock, snow and sediment above valley settlements and transport corridors, so we argue that where a fire burns may matter more for its consequences than how large it is; no Alpine study has yet related damage to burnt area directly. At the few Alpine sites studied, moderate and high-severity fire reduced protection against rockfall and shallow landslides for decades, and at two sites burnt slopes produced debris flows after brief, moderate rainfall. The review also examines where standard tools lose reliability: valley-interpolated weather indices can miss foehn winds and mid-slope thermal belts, coarse burnt-area products omit roughly four fifths of recorded fires, and, at the single Alpine sites where this has been tested, spread simulators diverge on fireline intensity and spectral severity indices do not track soil water repellency.
 
-We believe the review suits the readership of *Reviews of Geophysics* because it connects three recent *Reviews of Geophysics* syntheses that do not yet meet on steep-terrain fire risk:
-- global wildfire trends and climate drivers (Jones et al., 2022)
-- elevation-dependent warming and snowline retreat in mountains (Pepin et al., 2022)
-- geomorphic process chains in high-mountain environments (Mani et al., 2023)
+We believe the review suits the readership of *Reviews of Geophysics* because three recent articles in the journal approach mountain wildfire from different sides without addressing it directly:
+- Jones et al. (2022) synthesise global fire trends and drivers and call for more work on how topography affects fire spread;
+- Pepin et al. (2022) synthesise elevation-dependent warming in mountains and note that it may push forest fire lines upslope;
+- Mani et al. (2023) classify high-mountain hazard process chains, none of which is triggered by fire.
 
-It also links them to recent reviews of wildfire effects on land surfaces and geomorphic processes (Or et al., 2023; McGuire et al., 2024).
+Our review takes mountain wildfire as its subject, and links these strands to recent reviews of wildfire effects on land surfaces and geomorphic processes (Or et al., 2023; McGuire et al., 2024).
 
 Existing reviews treat mountain fire meteorology (Sharples, 2009; Werth et al., 2016) and satellite fire detection (Chuvieco et al., 2019; Wooster et al., 2021) separately; we found none that examines how complex relief jointly governs atmospheric forcing, remote-sensing observability, protective-forest loss and post-fire hydrogeomorphic cascades. The text is written to be accessible to geoscientists across disciplines, defining fire- and forestry-specific terms at first use.
 

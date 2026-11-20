@@ -45,11 +45,13 @@ The review is built from a structured search of 3,228 records, of which 136 sour
 
 ## 6. Analysis of recent similar review articles
 
-We found no peer-reviewed synthesis that follows wildfire in steep mountain terrain across the atmosphere, the land surface, hydrology, forest ecology and risk governance. We also found none that tests standard European fire tools against the detailed ground records available for the Alps. Three recent *Reviews of Geophysics* articles each cover part of this ground, and the review connects them.
+We found no peer-reviewed synthesis that follows wildfire in steep mountain terrain across the atmosphere, the land surface, hydrology, forest ecology and risk governance. We also found none that tests standard European fire tools against the detailed ground records available for the Alps. Three recent *Reviews of Geophysics* articles each approach mountain wildfire from a different side and stop short of it. We propose to address it directly.
 
-- **Jones et al. (2022), *Rev. Geophys.* 60, e2020RG000726.** Global and regional fire trends and their drivers. Steep mountain fire regimes are not treated separately.
-- **Pepin et al. (2022), *Rev. Geophys.* 60, e2020RG000730.** Elevation-dependent climate change and snow loss in mountains. Fire is mentioned only in passing.
-- **Mani et al. (2023), *Rev. Geophys.* 61, e2022RG000791.** A classification of natural-hazard process chains in high mountains, centred on chains associated with glacier retreat and permafrost degradation. Wildfire does not appear among the chains it classifies.
+- **Jones et al. (2022), *Rev. Geophys.* 60, e2020RG000726.** A synthesis of global and regional fire trends and their drivers. It notes that most fire-enabled vegetation models do not include topographic effects on fire spread and that "more work is required to understand the ranging impact of topography on fire spread", but mountain fire regimes are not treated separately.
+- **Pepin et al. (2022), *Rev. Geophys.* 60, e2020RG000730.** A synthesis of elevation-dependent climate change and snow loss in mountains. It notes that warming may affect mountain ecology through "upslope advances of forest fire lines", without pursuing this further.
+- **Mani et al. (2023), *Rev. Geophys.* 61, e2022RG000791.** A classification of natural-hazard process chains in high mountains, including chains altered by changes in vegetation. It is centred on chains associated with glacier retreat and permafrost degradation, and wildfire-triggered chains are not among those it classifies.
+
+Together, these reviews describe the fire drivers, the mountain warming and the hazard chains that meet in mountain wildfire, but not the phenomenon itself. Our review takes it as its subject, using the Alps, where dense ground records allow imported tools to be tested, as the case.
 
 Other recent reviews each address a single strand.
 
