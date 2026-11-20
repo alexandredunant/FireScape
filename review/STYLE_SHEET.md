@@ -25,7 +25,7 @@ The draft had drifted into a flattened register: a short topic sentence, a run o
 | Non-citation parentheses | 159 | 144 | 12 | **40–80** |
 | Median paragraph length (words) | 177 | 154 | 118 | **130–170** |
 
-Measure with `temp/` copies of the comparison script (`style_metrics.py`): citations are stripped before counting.
+Measure with `scripts/style_metrics.py DIR review/review_paper_v7.tex`, where `DIR` holds `nhess.txt` and `frontiers.txt` (`pdftotext` output of the two papers; not stored in the repository). Citations are stripped before counting.
 
 ## Sentence construction
 - Build reasoning inside the sentence through subordination: *Because we lack…, we instead use…*; *…, whereas…*; *…, which…*; *Even so, …*.

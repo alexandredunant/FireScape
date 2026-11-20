@@ -1,7 +1,7 @@
 # Shortening plan: review_paper_v7 (≈31k → ≈15k words)
 
 Status: **executed 2026-11-20**: main text 13,488 words (was ≈29,900), 45 pp (was 78); 136 cited sources (was 159; 23 dropped, all on the §5 list); search protocol and glossary moved to `review_paper_v7_SI.tex`. Awaiting author review before commit.
-Basis: claim-by-claim evidence audit of the restyled v7 (commit `02c52f5`); per-section audits in `temp/shorten/audit_*.md`.
+Basis: claim-by-claim evidence audit of the restyled v7 (commit `02c52f5`); the per-section audit files were working material and have been removed; their conclusions are consolidated in §3–§5 below.
 
 ## 1. Principle
 
