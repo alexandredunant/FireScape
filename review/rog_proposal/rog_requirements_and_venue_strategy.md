@@ -41,6 +41,22 @@ Working note, revised 20 November 2026 (aligned with the shortened, evidence-gra
 - **136 sources cited** (23 removed, mainly single non-Alpine examples). The search protocol and glossary moved to Supporting Information.
 - **Open point for the author team:** the abstract states that forest and agricultural policy "rival climate in shaping outcomes", whereas the body now presents the one continental modelling study behind the management-versus-climate comparison as suggestive. Decide whether to soften the abstract or keep the stronger claim, which the abstract derives from the protective-service argument.
 
+### 1.4 Author list for GEMS submission
+
+From the Eurac Research staff pages and ORCID (checked 20 Nov 2026). All authors are at Eurac Research, Bolzano, Italy.
+
+| # | Author | Eurac unit | ORCID |
+|---|---|---|---|
+| 1 | Alexandre Dunant (corresponding) | Center for Climate Change and Transformation | *to confirm*: 0000-0002-8961-5292 (Durham/GNS history) or 0009-0009-4377-4747 (Eurac) |
+| 2 | Paulina Bartkowiak | Institute for Earth Observation | 0000-0002-1172-5942 |
+| 3 | Alice Crespi | Center for Climate Change and Transformation | 0000-0003-4186-8474 |
+| 4 | Christian Hoffmann | Institute for Regional Development | 0000-0002-9291-2570 |
+| 5 | Marco Mina | Institute for Alpine Environment | 0000-0002-7489-7688 |
+| 6 | Massimiliano Pittore | Center for Climate Change and Transformation | 0000-0003-4940-3444 |
+| 7 | Uta Schirpke | Institute for Alpine Environment | 0000-0002-2075-6118 |
+| 8 | Stefano Terzi | Center for Climate Change and Transformation | 0000-0003-0491-6772 |
+| 9 | Marc Zebisch | Center for Climate Change and Transformation | 0000-0002-3530-7219 |
+
 ---
 
 ## 2. Dual-Track Redirect Strategy (If *RoG* Declines the Proposal)

@@ -20,7 +20,7 @@ We believe the review suits the readership of *Reviews of Geophysics* because it
 
 Existing reviews treat mountain fire meteorology (Sharples, 2009; Werth et al., 2016) and satellite fire detection (Chuvieco et al., 2019; Wooster et al., 2021) separately; none examines how complex relief jointly governs atmospheric forcing, remote-sensing observability, protective-forest loss and post-fire hydrogeomorphic cascades. The text is written to be accessible to geoscientists across disciplines, defining fire- and forestry-specific terms at first use.
 
-Because the author team at Eurac Research (Bolzano, Italy)—spanning natural hazards and multi-risk assessment, mountain climatology, hydrology, forest ecology, ecosystem services and governance—has already completed the 3,228-record screening and a complete draft (about 13,500 words, 136 cited sources), a polished manuscript can be submitted well within three months of an invitation.
+Because the author team at Eurac Research (Bolzano, Italy)—spanning climate and disaster risk assessment, mountain climatology, Earth observation of vegetation and land-surface water balance, water-related multi-risk, forest ecology and modelling, ecosystem services, and agricultural and forest economics—has already completed the 3,228-record screening and a complete draft (about 13,500 words, 136 cited sources), a polished manuscript can be submitted well within three months of an invitation.
 
 Thank you for considering this proposal. We would be glad to adjust its emphasis or framing in light of the Board's advice.
 
@@ -33,5 +33,5 @@ alexandre.dunant@eurac.edu
 ---
 
 *Notes for the author team (delete before sending):*
-- *Author list & expertise:* confirm author order and disciplinary descriptions with all co-authors.
+- *Author list & expertise:* disciplinary descriptions taken from the Eurac Research staff pages (20 Nov 2026); confirm author order with all co-authors.
 - *Export:* export `proposal.md` to `FireScape_RoG_proposal.pdf` after removing its DRAFT status line.

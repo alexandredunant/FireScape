@@ -13,6 +13,8 @@
 
 Alexandre Dunant (lead), Paulina Bartkowiak, Alice Crespi, Christian Hoffmann, Marco Mina, Massimiliano Pittore, Uta Schirpke, Stefano Terzi, Marc Zebisch (Eurac Research, Bolzano, Italy).
 
+The team brings together the Center for Climate Change and Transformation (climate and disaster risk, climatology, water-related multi-risk), the Institute for Earth Observation (remote sensing of vegetation and land-surface water balance), the Institute for Alpine Environment (forest ecology and modelling, ecosystem services) and the Institute for Regional Development (agricultural and forest economics).
+
 ## Scientific questions
 
 1. **How is the wildfire regime of the European Alps structured, and how is it shifting?** Across intra-Alpine sub-regions, seasons and elevations, how do warming, snowline retreat and land-abandonment fuel infilling interact to reshape fire danger and occurrence?
