@@ -1,6 +1,6 @@
 **To:** reviewsgeophysics@agu.org
 **Subject:** Review proposal: Wildfires in the European Alps: An Interdisciplinary Review
-**Attachment:** FireScape_RoG_proposal.pdf
+**Attachment:** RoG_proposal.pdf
 
 ---
 

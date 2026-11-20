@@ -1,6 +1,6 @@
 **To:** reviewsgeophysics@agu.org
 **Subject:** Review proposal: Wildfires in the European Alps: An Interdisciplinary Review
-**Attachment:** FireScape_RoG_proposal.pdf (export of `proposal.md`)
+**Attachment:** RoG_proposal.pdf (export of `proposal.md`)
 
 ---
 
@@ -35,4 +35,4 @@ alexandre.dunant@eurac.edu
 
 *Notes for the author team (delete before sending):*
 - *Author list & expertise:* disciplinary descriptions taken from the Eurac Research staff pages (20 Nov 2026); confirm author order with all co-authors.
-- *Export:* `FireScape_RoG_proposal.pdf` is exported from `proposal.md` and is ready to attach.
+- *Export:* `RoG_proposal.pdf` is exported from `proposal.md` and is ready to attach.
