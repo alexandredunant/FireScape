@@ -65,3 +65,6 @@ review/*.synctex.gz
 .DS_Store
 .idea/
 .vscode/
+
+# Scratch work (style samples, intermediate drafts)
+temp/
