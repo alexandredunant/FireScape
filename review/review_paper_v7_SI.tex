@@ -1,0 +1,133 @@
+\documentclass[11pt,a4paper]{article}
+
+% -------------------------------------------------------
+% Page layout and typography
+% -------------------------------------------------------
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+% -------------------------------------------------------
+% Tables, figures and maths
+% -------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{xltabular}
+\setlength{\LTcapwidth}{\textwidth}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{gensymb}
+
+% -------------------------------------------------------
+% TikZ figures
+% -------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{
+    arrows.meta,
+    positioning,
+    shapes.geometric,
+    shapes.misc,
+    calc,
+    fit,
+    backgrounds
+}
+
+% -------------------------------------------------------
+% References and links
+% -------------------------------------------------------
+\usepackage[round,authoryear]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+% -------------------------------------------------------
+% Venue toggle (set \aguformatfalse when exporting for ESR / NHESS)
+% -------------------------------------------------------
+\newif\ifaguformat
+\aguformattrue
+
+% -------------------------------------------------------
+% Metadata
+% -------------------------------------------------------
+\title{Supporting Information for\\
+Wildfires in the European Alps: An Interdisciplinary Review}
+
+\author{
+% DRAFT author list: order, institutes and e-mail to be confirmed by the author team
+Alexandre Dunant$^{1,*}$, Alice Crespi$^{1}$, Michael de Rachewiltz$^{1}$, Christian Hoffmann$^{1}$,\\
+Marco Mina$^{1}$, Massimiliano Pittore$^{1}$, Uta Schirpke$^{1}$, Stefano Terzi$^{1}$,\\
+Jenny Ufer$^{1}$, Marc Zebisch$^{1}$ \\
+\small $^{1}$Eurac Research, Bolzano, Italy \\
+\small $^{*}$Corresponding author: [e-mail to be added]
+}
+
+\date{}
+
+% -------------------------------------------------------
+% Begin document
+% -------------------------------------------------------
+\begin{document}
+\maketitle
+
+\noindent Section, figure and table numbers in this document refer to the main text. References are listed in full in the main text.
+
+% =======================================================
+% =======================================================
+
+\section*{Text S1. Search Protocol and Screening Register}
+\label{app:protocol}
+
+\subsection*{Counts at each step}
+
+Below we give the six steps of Section~2 and Figure~2 together with the numbers that each produced. We chose to combine starting documents, a keyword search and citation chaining because the literature is administratively fragmented, multilingual and heavily dependent on national technical reports. Database searches restricted to English, of the kind used in the recent global review of land-abandonment effects by \citet{mantero_influence_2020}, acknowledge that they may miss part of such a literature.
+
+\textbf{Step 1, starting documents.} The EUSALP white paper \emph{Forest fires in the Alps: state of knowledge, future challenges and options for an integrated fire management} \citep{muller_forest_2020} covers the whole Alpine Convention area and combines harmonised fire statistics for the arc, a survey of authorities, scientists and fire services across the Alpine countries, and costed recommendations for prevention, suppression, post-fire management and knowledge transfer. Its reference list contains 120 publications and web sources, and it draws on six national fire databases. Alongside it, the study by \citet{gerberding_mapping_2025}, co-authored at Eurac Research, maps the probability of forest fire hazard across the arc under climate change scenarios.
+
+\textbf{Step 2, keyword search.} The Google Scholar searches combined the terms wildfire, mountain and Alps, and subsequently wildfire and mountains. We kept publications where they fell within a discipline represented at Eurac Research (natural hazards and risk, climate, drought and water, forest science, and economics and governance), which are also the disciplines of the co-authors who review the sections in Step~6. The initial set holds 49 publications, including the Eurac Research study, of which 47 were available in full text. Of the 49, 31 were published in 2020 or later; three also appear in the white paper's reference list and six cite it.
+
+\textbf{Step 3, citation chaining.} Working backward, we compiled the reference lists of the white paper and of 45 of the initial publications (two had no usable reference list), which together contained 3{,}575 references, 120 of them from the white paper. Once duplicates were removed, 3{,}375 distinct publications remained; of the white paper's 120 references, 62 were also reached through the initial publications and 58 through the white paper alone. Working forward, we used the OpenCitations index to look up the publications citing the 14 initial publications most central to the Alpine question. This search returned 508 citing publications, of which 319 could be identified with full bibliographic details, whereas the other 189 are kept in the register for a later search.
+
+\textbf{Step 4, targeted additions.} We limited additions to publications whose full text could be obtained and archived. This step therefore weights the literature towards open-access and recent publications, and it is also the step that can least be reproduced from the initial set alone.
+
+\textbf{Step 5, screening.} Once duplicates across all sources had been removed, we screened 3{,}228 publications and assigned each to one of four levels, recording the reason: \emph{include} (fire content in the European Alps or an Alpine Convention country); \emph{process benchmark} (fire content in another mountain system, admitted selectively where an Alpine process link is unmeasured or thinly covered, following the transfer rule of Section~2); \emph{context} (Alpine hazard or forest processes without fire, or European and global fire tools and policies applied to the Alps); and \emph{exclude} (general fire science with no bearing on the Alpine chain). Screening excluded 2{,}332 publications and retained 896: 290 at the include level, 194 external process benchmarks and 412 context. We then read the retained publications in order of their relevance to the thematic sections. Together with the starting documents and the targeted additions from Step~4, 136 sources are cited in the main text, each summarised in an evidence note (see below).
+
+\textbf{Step 6, discipline review.} Climatologists review the climate and meteorology evidence of Section~4, drought and water researchers Section~5, and forest scientists Section~6, while specialists in natural hazards and risk review Sections~3 and~7 and economists and governance researchers review Section~8. Publications added by the reviewers go through Steps~3 and~5 in the same way as the rest of the literature.
+
+\subsection*{What was recorded for each source}
+\label{app:recorded}
+
+Each screened record carries a tier, a decision, a reason and a mapping to one or more sections of this review. For every source cited in the text, we also captured a structured evidence note recording study region, method, quantitative results and stated limitations, and archived it alongside the screening register; both are provided as supplementary material. Where a claim in the text rests on fewer than three independent cases, the number is stated in the text, and mechanisms imported from outside the Alps are identified as imported at the point of use. Our synthesis is thematic rather than quantitative, for the reasons of definitional and administrative heterogeneity set out in Section~2.
+
+\subsection*{What the method determines about the corpus}
+
+Our method shapes what the corpus contains, and its effects should be read as constraints on coverage rather than on the reliability of individual sources. Because citation chaining reproduces the coverage of its starting point, topics well represented in the white paper and among the seeds tend to be recovered densely, whereas topics absent from both are recovered only weakly. Forward chaining, in turn, operates on open citation infrastructure, which indexes journal literature comprehensively but national technical reporting and non-English publication sparsely; this may be a material consideration for a range whose fire statistics were harmonised only recently \citep{valese_wildfires_2011}. Similarly, the expansion phase was confined to material whose full text could be retrieved, which weights the added corpus towards open-access and recent publication.
+
+To address these constraints, a subsequent iteration should add database searching with recorded strings and dates, resolve the 189 forward records held over, and target the national fire and forest reporting of the Alpine Convention countries directly, since much of the operational and grey-literature knowledge base resides there.
+
+\section*{Text S2. Glossary of Terms}
+
+\begin{description}
+    \item[Fire danger] The meteorological and fuel-condition potential for ignition and spread, expressed by an index; a statement about conditions, not about realised fire.
+    \item[Fire regime] The realised distribution of fire frequency, size, severity, seasonality and cause over a region and period.
+    \item[Burn severity] The degree of fire-induced change to vegetation and soil, commonly estimated remotely; see Section~5 for the limits of this proxy.
+    \item[Fuel connectivity] The extent and spatial aggregation of contiguous burnable vegetation, distinct from fuel load.
+    \item[Protection forest] Forest whose primary managed function is mitigation of gravitational natural hazards affecting assets below.
+    \item[Geohydrological process] Collective term used in the Alpine literature for erosion, rockfall, slides and debris flows driven by the interaction of water and slope material.
+    \item[Cascade] A sequence in which one hazard alters the susceptibility of a system to a subsequent, distinct hazard.
+    \item[Firebreak] A linear strip from which fuel is removed entirely, intended to stop fire spread.
+    \item[Fuel break (\emph{coupure de combustible})] A linear strip in which fuel load and vertical continuity are reduced but the stand is retained; functions primarily as a platform for ground suppression rather than as a barrier.
+    \item[Exposure] The elements (people, buildings, infrastructure, habitats, protective forest, livestock and pasture) located where a hazard and its consequences can reach them.
+    \item[Vulnerability] The susceptibility of an exposed element to loss given a hazard of stated intensity; distinct from exposure and from hazard, and measured by damage-calibrated or judgement-weighted indicators.
+    \item[Ecological vulnerability] Potential loss of ecological value integrated over the post-fire recovery period, combining the value of what burns, the resistance of the vegetation to fire and the time taken to return to pre-fire condition.
+\end{description}
+
+\bibliographystyle{apalike}
+\bibliography{FireScape_master_v7}
+\end{document}

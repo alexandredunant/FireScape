@@ -1,22 +1,10 @@
 \begin{thebibliography}{}
 
-\bibitem[Abrham et~al., 2024]{abrham_wildfires_2024}
-Abrham, J., Soukupova, J., and Prochazka, P. (2024).
-\newblock Wildfires and tourism in the {Mediterranean}: {Balancing}
-  conservation and economic interests.
-\newblock {\em BioResources}, 20(1):500--526.
-
 \bibitem[Accastello et~al., 2019]{accastello_asforesee_2019}
 Accastello, C., Bianchi, E., Blanc, S., and Brun, F. (2019).
 \newblock {ASFORESEE}: a harmonized model for economic evaluation of forest
   protection against rockfall.
 \newblock {\em Forests}, 10(7):578.
-
-\bibitem[Ager et~al., 2023]{ager_optimizing_2023}
-Ager, A.~A., Day, M.~A., Apar{\'i}cio, B.~A., Houtman, R., and Stinchfield, A.
-  (2023).
-\newblock Optimizing the implementation of a forest fuel break network.
-\newblock {\em PLOS ONE}, 18(12):e0295392.
 
 \bibitem[Archibald et~al., 2013]{archibald_defining_2013}
 Archibald, S., Lehmann, C. E.~R., G{\'o}mez-Dans, J.~L., and Bradstock, R.~A.
@@ -68,17 +56,6 @@ Avouris, E., Marrs, C., Beetz, K., Kudl{\'a}{\v c}kov{\'a}, L., Kranz, J.,
 \newblock Exposure of settlements to wildfires in a transboundary
   wildland--urban--interface region in {Central} {Europe}.
 \newblock {\em Natural Hazards and Earth System Sciences}, 26:4013--4044.
-
-\bibitem[Bakke et~al., 2023]{bakke_datadriven_2023}
-Bakke, S.~J., Wanders, N., van~der Wiel, K., and Tallaksen, L.~M. (2023).
-\newblock A data-driven model for {Fennoscandian} wildfire danger.
-\newblock {\em Natural Hazards and Earth System Sciences}, 23:65--89.
-
-\bibitem[Baranovskiy, 2021]{baranovskiy_deterministic_2021}
-Baranovskiy, N.~V. (2021).
-\newblock Deterministic--probabilistic approach to predict lightning-caused
-  forest fires in mountain areas.
-\newblock {\em Forecasting}, 3(4):695--715.
 
 \bibitem[Bardsley et~al., 2021]{bardsley_wildfire_2021}
 Bardsley, A.~M., Bardsley, D.~K., Conedera, M., P{\"u}tz, M., Robinson, G.~M.,
@@ -149,15 +126,6 @@ Billing, M., Forrest, M., Bowring, S. P.~K., Oberhagemann, L., Neidermeier,
   importance of human action.
 \newblock {\em Global Change Biology}, 32:e71043.
 
-\bibitem[Bo{\v z}i{\v c}ek et~al., 2023]{bozicek_impact_2023}
-Bo{\v z}i{\v c}ek, A., {\DJ}urovi{\'c}, M., Filipovi{\'c}-Gr{\v c}i{\'c}, B.,
-  Stipeti{\'c}, N., and Franc, B. (2023).
-\newblock Impact of lightning-induced wildfires on power system based on
-  satellite data and climatological projections.
-\newblock In Kyriakopoulos, G.~L., editor, {\em New Energy and Future Energy
-  Systems}, volume~50 of {\em Advances in Transdisciplinary Engineering}, pages
-  1--8. IOS Press.
-
 \bibitem[Brodie et~al., 2024]{brodie_forest_2024}
 Brodie, E.~G., Knapp, E.~E., Brooks, W.~R., Drury, S.~A., and Ritchie, M.~W.
   (2024).
@@ -171,13 +139,6 @@ Burton, C.~A., Di~Giuseppe, F., Jones, M.~W., Kelley, D.~I., Barbosa, M. L.~F.,
 \newblock State of wildfires 2025--2026.
 \newblock {\em Earth System Science Data Discussions}.
 \newblock Preprint in open discussion.
-
-\bibitem[Cagliero, 2022]{cagliero_effect_2022}
-Cagliero, E. (2022).
-\newblock {\em Effect of fires, human impact, and climate change on long-term
-  forest dynamics in mountain areas: the case of the central {Dinaric} {Alps}}.
-\newblock PhD thesis, Universit{\'e} de Montpellier and Universit{\`a} degli
-  Studi di Padova.
 
 \bibitem[Cardil et~al., 2025]{cardil_assessing_2025}
 Cardil, A., Jim{\'e}nez-Ruano, A., Monedero, S., SeLegue, P., Ortega, M.,
@@ -229,12 +190,6 @@ Costa, M., Marchi, N., Bettella, F., Bolzon, P., Berger, F., and Lingua, E.
 \newblock Biological legacies and rockfall: the protective effect of a
   windthrown forest.
 \newblock {\em Forests}, 12(9):1141.
-
-\bibitem[Couto et~al., 2024]{couto_numerical_2024}
-Couto, F.~T., Filippi, J.-B., Baggio, R., Campos, C., and Salgado, R. (2024).
-\newblock Numerical investigation of the {Pedr{\'o}g{\~a}o} {Grande}
-  pyrocumulonimbus using a fire to atmosphere coupled model.
-\newblock {\em Atmospheric Research}, 299:107223.
 
 \bibitem[De~Angelis et~al., 2015]{de_angelis_modelling_2015}
 De~Angelis, A., Ricotta, C., Conedera, M., and Pezzatti, G.~B. (2015).
@@ -336,24 +291,11 @@ Gerberding, K. and Schirpke, U. (2025).
   {Alps} under climate change scenarios.
 \newblock {\em Journal of Environmental Management}, 377:124600.
 
-\bibitem[Ghodrat et~al., 2021]{ghodrat_existing_2021}
-Ghodrat, M., Shakeriaski, F., Nelson, D.~J., and Simeoni, A. (2021).
-\newblock Existing improvements in simulation of fire--wind interaction and its
-  effects on structures.
-\newblock {\em Fire}, 4(2):27.
-
 \bibitem[Giuggiola et~al., 2010]{giuggiola_droughtinduced_2010}
 Giuggiola, A., Kuster, T.~M., and Saha, S. (2010).
 \newblock Drought-induced mortality of {Scots} pines at the southern limits of
   its distribution in {Europe}: causes and consequences.
 \newblock {\em iForest --- Biogeosciences and Forestry}, 3:95--97.
-
-\bibitem[Gomez-Gallego et~al., 2022]{gomezgallego_interaction_2022}
-Gomez-Gallego, M., Galiano, L., Mart{\'\i}nez-Vilalta, J., Stenlid, J.,
-  Capador-Barreto, H.~D., Elfstrand, M., Camarero, J.~J., and Oliva, J. (2022).
-\newblock Interaction of drought- and pathogen-induced mortality in {Norway}
-  spruce and {Scots} pine.
-\newblock {\em Plant, Cell \& Environment}, 45:2292--2305.
 
 \bibitem[Gon{\c c}alves et~al., 2025]{goncalves_fostering_2025}
 Gon{\c c}alves, J., Portela, A.~P., Regos, A., Sil, {\^A}., Marcos, B., Alonso,
@@ -368,11 +310,6 @@ G{\'o}rriz-Mifsud, E. and Rovellada~Ballesteros, M. (2026).
 \newblock Current experiences in economic incentives boosting coordinated fuel
   reduction for wildfire risk mitigation in {Catalonia} ({Spain}).
 \newblock {\em Fire}, 9(2):70.
-
-\bibitem[Guti{\'e}rrez and De~Miguel, 2021]{demiguel_fires_2021}
-Guti{\'e}rrez, J. and De~Miguel, J. (2021).
-\newblock Fires in nature: a review of the challenges for wild animals.
-\newblock {\em European Journal of Ecology}, 7(1):95--117.
 
 \bibitem[Hayajneh et~al., 2026]{hayajneh_wind_2026}
 Hayajneh, S.~M., Alzghoul, M.~I., and Naser, J. (2026).
@@ -420,16 +357,6 @@ Jones, M.~W., Abatzoglou, J.~T., Veraverbeke, S., Andela, N., Lasslop, G.,
   Le~Qu{\'e}r{\'e}, C. (2022).
 \newblock Global and regional trends and drivers of fire under climate change.
 \newblock {\em Reviews of Geophysics}, 60(3):e2020RG000726.
-
-\bibitem[Kalapodis et~al., 2025]{kalapodis_towards_2025}
-Kalapodis, N., Sakkas, G., Kazantzidou-Firtinidou, D., Alcasena, F.,
-  Cardarilli, M., Eftychidis, G., Koerner, C., Moore-Merrell, L., Gugliandolo,
-  E., Demestichas, K., Kolaitis, D., Eid, M., Varela, V., Berchtold, C.,
-  Kalabokidis, K., Roussou, O., Chandramouli, K., Pantazidou, M., Cox, M., and
-  Schultz, A. (2025).
-\newblock Towards resilient critical infrastructure in the face of extreme
-  wildfire events: lessons and policy pathways from the {US} and {EU}.
-\newblock {\em Infrastructures}, 10(9):246.
 
 \bibitem[Keeping et~al., 2026]{keeping_attribution_2026}
 Keeping, T.~R., Zachariah, M., Haas, O., Grillakis, M., Barnes, C., Clay,
@@ -493,24 +420,12 @@ Lockwood, M., Mitchell, M., Moore, S.~A., and Clement, S. (2014).
   transformation in the {Australian} {Alps}.
 \newblock {\em Ecology and Society}, 19(2):art13.
 
-\bibitem[Majlingova, 2025]{majlingova_sustainability_2025}
-Majlingova, A. (2025).
-\newblock From sustainability to regeneration: a systems approach to mountain
-  forestscape restoration.
-\newblock {\em Sustainability}, 17(9):4001.
-
 \bibitem[Malanchini et~al., 2025]{malanchini_modeling_2025}
 Malanchini, L., Perello, N., Trucchia, A., Rossi, L.~M., Fiorucci, P., and
   Vacchiano, G. (2025).
 \newblock Modeling wildfires in the {Alpine} context: {Lessons} learnt from
   real case studies.
 \newblock {\em Environmental Challenges}, 21:101357.
-
-\bibitem[Malandra et~al., 2022]{malandra_burn_2022}
-Malandra, F., Vitali, A., Morresi, D., Garbarino, M., Foster, D.~E., Stephens,
-  S.~L., and Urbinati, C. (2022).
-\newblock Burn severity drivers in {Italian} large wildfires.
-\newblock {\em Fire}, 5(6):180.
 
 \bibitem[Manczinger et~al., 2025]{manczinger_fire_2025}
 Manczinger, M., Kov{\'a}cs, L., and Kov{\'a}cs, T. (2025).
@@ -580,14 +495,6 @@ Miller, J., Touma, D., and Brunner, M.~I. (2025).
   {Europe}.
 \newblock {\em Communications Earth \& Environment}, 6(1):1005.
 
-\bibitem[Miranda et~al., 2023]{miranda_widespread_2023}
-Miranda, A., Syphard, A.~D., Berdugo, M., Carrasco, J., G{\'o}mez-Gonz{\'a}lez,
-  S., Ovalle, J.~F., Delpiano, C.~A., Vargas, S., Squeo, F.~A., Miranda, M.~D.,
-  Dobbs, C., Mentler, R., Lara, A., and Garreaud, R. (2023).
-\newblock Widespread synchronous decline of {Mediterranean}-type forest driven
-  by accelerated aridity.
-\newblock {\em Nature Plants}, 9(11):1810--1817.
-
 \bibitem[Misseyanni et~al., 2025]{misseyanni_impact_2025}
 Misseyanni, A., Christopoulou, A., Kougkoulos, I., Vassilakis, E., and
   Arianoutsou, M. (2025).
@@ -611,13 +518,6 @@ Moos, C., Guisan, A., Randin, C.~F., and Lischke, H. (2021).
 \newblock Climate change impacts the protective effect of forests: a case study
   in {Switzerland}.
 \newblock {\em Frontiers in Forests and Global Change}, 4:682923.
-
-\bibitem[Morales-Molino et~al., 2021]{moralesmolino_longterm_2021}
-Morales-Molino, C., Steffen, M., Samartin, S., van Leeuwen, J. F.~N.,
-  H{\"u}rlimann, D., Vescovi, E., and Tinner, W. (2021).
-\newblock Long-term responses of {Mediterranean} mountain forests to climate
-  change, fire and human activities in the {Northern} {Apennines}.
-\newblock {\em Ecosystems}, 24:1361--1377.
 
 \bibitem[Morell et~al., 2021]{morell_sediment_2021}
 Morell, K.~D., Alessio, P., Dunne, T., and Keller, E. (2021).
@@ -747,13 +647,6 @@ Papathoma-K{\"o}hle, M., Schl{\"o}gl, M., Garlichs, C., Diakakis, M.,
 \newblock A wildfire vulnerability index for buildings.
 \newblock {\em Scientific Reports}, 12:6378.
 
-\bibitem[Payne et~al., 2020]{payne_nature_2020}
-Payne, D., Snethlage, M., Geschke, J., Spehn, E.~M., and Fischer, M. (2020).
-\newblock Nature and people in the {Andes}, {East} {African} mountains,
-  {European} {Alps}, and {Hindu} {Kush} {Himalaya}: current research and future
-  directions.
-\newblock {\em Mountain Research and Development}, 40(2).
-
 \bibitem[Pede et~al., 2022]{pede_mountain_2022}
 Pede, E.~C., Barbato, G., Buffa, A., Ellena, M., Mercogliano, P., Ricciardi,
   G., and Staricco, L. (2022).
@@ -798,12 +691,6 @@ Rangwala, I. and Miller, J.~R. (2012).
   and its possible causes.
 \newblock {\em Climatic Change}, 114(3-4):527--547.
 
-\bibitem[Reilly et~al., 2022]{reilly_drivers_2022}
-Reilly, M.~J., Norman, S.~P., O'Brien, J.~J., and Loudermilk, E.~L. (2022).
-\newblock Drivers and ecological impacts of a wildfire outbreak in the southern
-  {Appalachian} {Mountains} after decades of fire exclusion.
-\newblock {\em Forest Ecology and Management}, 524:120500.
-
 \bibitem[Rengers et~al., 2024]{rengers_evaluating_2024}
 Rengers, F.~K., Bower, S., Knapp, A., Kean, J.~W., vonLembke, D.~W., Thomas,
   M.~A., Kostelnik, J., Barnhart, K.~R., Bethel, M., Gartner, J.~E., Hille, M.,
@@ -820,14 +707,6 @@ Rey, L., K{\'e}ry, M., Sierro, A., Posse, B., Arlettaz, R., and Jacot, A.
 \newblock Effects of forest wildfire on inner-{Alpine} bird community dynamics.
 \newblock {\em PLOS ONE}, 14(4):e0214644.
 
-\bibitem[Rigolot et~al., 2003]{rigolot_recommendations_2003}
-Rigolot, E., Castelli, L., Cohen, M., Costa, M., and Duch{\'e}, Y. (2003).
-\newblock Recommendations for fuel-break design and fuel management at the
-  wildland urban interface: an empirical approach in south eastern {France}.
-\newblock In {\em Warm International Workshop: Forest Fires in the
-  Wildland--Urban Interface and Rural Areas in Europe}. National Institute of
-  Agronomical Research, Mediterranean Forestry Research Unit, Avignon.
-
 \bibitem[Rivi{\`e}re et~al., 2023]{riviere_mapping_2023}
 Rivi{\`e}re, M., Lenglet, J., Noirault, A., Pimont, F., and Dupuy, J.-L.
   (2023).
@@ -841,12 +720,6 @@ Rodrigues, M., Resco~de Dios, V., Sil, {\^A}., Cunill~Camprub{\'i}, A., and
 \newblock {VPD}-based models of dead fine fuel moisture provide best estimates
   in a global dataset.
 \newblock {\em Agricultural and Forest Meteorology}, 346:109868.
-
-\bibitem[Rogeau et~al., 2018]{rogeau_effect_2018}
-Rogeau, M.-P., Barber, Q.~E., and Parisien, M.-A. (2018).
-\newblock Effect of topography on persistent fire refugia of the {Canadian}
-  {Rocky} {Mountains}.
-\newblock {\em Forests}, 9:285.
 
 \bibitem[Rouet-Leduc et~al., 2021]{rouetleduc_effects_2021}
 Rouet-Leduc, J., Pe'er, G., Moreira, F., Bonn, A., Helmer, W., Shahsavan~Zadeh,
@@ -916,14 +789,6 @@ Sharples, J.~J. (2009).
   behaviour and bushfire risk.
 \newblock {\em International Journal of Wildland Fire}, 18(7):737--754.
 
-\bibitem[Snyder et~al., 2026]{snyder_taxonomic_2026}
-Snyder, M.~D., Coates, T.~A., Possinger, A.~R., Haak, D.~C., Oishi, A.~C.,
-  Caldwell, P.~V., Aylward, F.~O., and Barrett, J.~E. (2026).
-\newblock Taxonomic and multifunctional response of soil microbial communities
-  to wildfire, prescribed fire, and partial harvesting in the {Southern
-  Appalachian Mountains}, {United States}.
-\newblock {\em Frontiers in Forests and Global Change}, 9:1694825.
-
 \bibitem[Spadoni et~al., 2023]{spadoni_active_2023}
 Spadoni, G.~L., Moris, J.~V., Vacchiano, G., Elia, M., Garbarino, M., Sibona,
   E., Tomao, A., Barbati, A., Sallustio, L., Salvati, L., Ferrara, C.,
@@ -992,12 +857,6 @@ Vukomanovic, J. and Steelman, T. (2019).
   ecosystem services.
 \newblock {\em Landscape Ecology}, 34(5):1179--1194.
 
-\bibitem[Wang et~al., 2023]{wang_seasonal_2023}
-Wang, W., Zhao, F., Wang, Y., Huang, X., and Ye, J. (2023).
-\newblock Seasonal differences in the spatial patterns of wildfire drivers and
-  susceptibility in the southwest mountains of {China}.
-\newblock {\em Science of The Total Environment}, 869:161782.
-
 \bibitem[Wang et~al., 2026]{wang_dynamic_2026}
 Wang, Y., Zhao, L., Yang, X., Yuan, X., Wang, Z., and Song, J. (2026).
 \newblock The dynamic influence of mountain-valley breeze circulation on
@@ -1017,13 +876,6 @@ Wastl, C., Schunk, C., L{\"u}pke, M., Cocca, G., Conedera, M., Valese, E., and
   occurrence in the {Alps}.
 \newblock {\em Agricultural and Forest Meteorology}, 168:15--25.
 
-\bibitem[Wilson et~al., 2022]{wilson_distribution_2022}
-Wilson, B.~R., Tulau, M., Kuginis, L., McInnes-Clarke, S., Grover, S., Milford,
-  H., and Jenkins, B.~R. (2022).
-\newblock Distribution, nature and threats to soils of the {Australian} {Alps}:
-  {A} review.
-\newblock {\em Austral Ecology}, 47(2):166--188.
-
 \bibitem[Xu et~al., 2026]{xu_how_2026}
 Xu, S., Zhu, X., Ren, H., Yan, X., Fang, X., Ahmed, S., and Wang, Q. (2026).
 \newblock How can grazing mitigate wildfires? {A} review of fuel management,
@@ -1040,12 +892,6 @@ Zacharakis, I. and Tsihrintzis, V.~A. (2023).
 Zong, X., Wang, X., Coogan, S. C.~P., and Flannigan, M.~D. (2026).
 \newblock Effectiveness of firebreaks: a review.
 \newblock {\em Fire Ecology}, 22(1):17.
-
-\bibitem[Zumbrunnen, 2010]{zumbrunnen_reconstructing_2010}
-Zumbrunnen, T. (2010).
-\newblock {\em Reconstructing and analyzing the fire history in a dry
-  continental valley ({Valais}) of the {Swiss} {Alps}}.
-\newblock PhD thesis, ETH Zurich.
 
 \bibitem[Zumbrunnen et~al., 2012]{zumbrunnen_human_2012}
 Zumbrunnen, T., Men{\'e}ndez, P., Bugmann, H., Conedera, M., Gimmi, U., and
