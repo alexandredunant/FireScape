@@ -49,15 +49,15 @@ We found no peer-reviewed synthesis that follows wildfire in steep mountain terr
 
 - **Jones et al. (2022), *Rev. Geophys.* 60, e2020RG000726.** Global and regional fire trends and their drivers. Steep mountain fire regimes are not treated separately.
 - **Pepin et al. (2022), *Rev. Geophys.* 60, e2020RG000730.** Elevation-dependent climate change and snow loss in mountains. Fire is mentioned only in passing.
-- **Mani et al. (2023), *Rev. Geophys.* 61, e2022RG000791.** A classification of natural-hazard process chains in high mountains, centred on chains associated with glacier retreat and permafrost degradation.
+- **Mani et al. (2023), *Rev. Geophys.* 61, e2022RG000791.** A classification of natural-hazard process chains in high mountains, centred on chains associated with glacier retreat and permafrost degradation. Wildfire does not appear among the chains it classifies.
 
 Other recent reviews each address a single strand.
 
 - **Or et al. (2023), *Earth-Sci. Rev.* 245, 104569**, and **McGuire et al. (2024), *Nat. Rev. Earth Environ.* 5, 486–503.** General reviews of wildfire effects on land surfaces and on geomorphic processes. Neither is centred on mountain protection forests or on the Alps.
 - **Melzner et al. (2025), *Landslides* 22, 3989–4011.** Wildfire-induced geohydrological risk in the Alps, built on four case studies, a catalogue of burn-severity indicators (including satellite indices) and protection-forest considerations. It is centred on post-fire geohydrological hazards rather than on fire regimes, fire danger, spread or exposure across the Alpine arc.
-- **Moos et al. (2023), *Front. For. Glob. Change* 6, 1223934.** A systematic review of 72 publications on how global change affects protective forests, covering natural disturbances as a group rather than focusing on fire.
+- **Moos et al. (2023), *Front. For. Glob. Change* 6, 1223934.** A systematic review of 72 publications on how global change affects protective forests. Forest fire is the disturbance it addresses most often (11 studies), mainly through its effects on floods, root reinforcement and protective function; fire weather, fire regimes, fire danger and ignition are outside its scope.
 - **Sharples (2009), *Int. J. Wildland Fire* 18, 737–754**, **Werth et al. (2016), USDA PNW-GTR-891**, and **Hayajneh et al. (2026), *Fire* 9, 100.** Mountain fire meteorology, extreme fire behaviour, and the effects of wind and slope on fire spread. Their focus is fire behaviour, not satellite observation or post-fire consequences.
-- **Chuvieco et al. (2019), *Remote Sens. Environ.* 225, 45–64**, and **Wooster et al. (2021), *Remote Sens. Environ.* 267, 112694.** Global reviews of satellite burnt-area and active-fire mapping. Detection problems specific to steep mountain terrain are not their focus.
+- **Chuvieco et al. (2019), *Remote Sens. Environ.* 225, 45–64**, and **Wooster et al. (2021), *Remote Sens. Environ.* 267, 112694.** Global reviews of satellite burnt-area and active-fire mapping. Detection problems specific to steep mountain terrain are not their focus; Wooster et al. do not treat mountain terrain separately.
 
 The most direct predecessor is the 2020 policy white paper of the EU Strategy for the Alpine Region (EUSALP) on forest fires in the Alps (Müller et al., 2020). Because it is not peer reviewed, we take it as our starting point and test its positions against the empirical work published since.
 
