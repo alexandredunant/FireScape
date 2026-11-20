@@ -30,9 +30,3 @@ With kind regards,
 Alexandre Dunant, on behalf of the author team
 Eurac Research, Bolzano, Italy
 alexandre.dunant@eurac.edu
-
----
-
-*Notes for the author team (delete before sending):*
-- *Author list & expertise:* disciplinary descriptions taken from the Eurac Research staff pages (20 Nov 2026); confirm author order with all co-authors.
-- *Export:* `RoG_proposal.pdf` is exported from `proposal.md` and is ready to attach.

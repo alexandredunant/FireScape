@@ -45,7 +45,7 @@ Working note, revised 20 November 2026 (aligned with the shortened, evidence-gra
 
 ### 1.4 Author list for GEMS submission
 
-From the Eurac Research staff pages and ORCID (checked 20 Nov 2026). All authors are at Eurac Research, Bolzano, Italy.
+From the Eurac Research staff pages and ORCID (checked 20 Nov 2026). All authors are at Eurac Research, Bolzano, Italy. **Author list and order confirmed with all co-authors (20 Nov 2026).**
 
 | # | Author | Eurac unit | ORCID |
 |---|---|---|---|
