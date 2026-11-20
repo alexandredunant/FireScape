@@ -26,7 +26,7 @@ Working note, revised 20 November 2026 (aligned with the shortened, evidence-gra
 | Element | *RoG* / AGU Rule | Status in `review_paper_v7.tex` (20 Nov 2026) | Action needed if invited |
 |---|---|---|---|
 | **Page limit & charges** | **None** at *RoG* (AGU's general ~30 PU review guideline is advisory) | 45 pages total (pp. 1–33 main text, ~13,500 words; pp. 34–45 references, 136 cited sources). Estimated ~32 PU (~27 PU of text plus 5 figures and tables), close to the ~30 PU guideline (was 78 pages and ~64 PU) | **Ready**; no further cuts needed |
-| **Abstract** | Single paragraph, **< 250 words** | **244 words** | **Ready** (review the "rival climate" sentence, see §1.3) |
+| **Abstract** | Single paragraph, **< 250 words** | **248 words** | **Ready** |
 | **Key Points** | Up to **3 bullets**, each **$\le$ 140 characters**, no abbreviations | **3 bullets** (127, 124 and 127 characters; zero abbreviations), controlled by `\ifaguformat` | **Ready** |
 | **Plain Language Summary** | **Required** (~150–200 words for non-specialists) | **Included** (146 words), controlled by `\ifaguformat` | **Ready** |
 | **Visual synthesis** | ~5–6 figures/tables recommended | **2 TikZ figures** (`fig:cascade`, `fig:flow`) + **3 synthesis tables** (`tab:regimes`, `tab:models`, `tab:contrast`) = **5 visual items** | Optional map of Alpine Convention pyroregions if desired |
@@ -39,7 +39,7 @@ Working note, revised 20 November 2026 (aligned with the shortened, evidence-gra
 - **Discussion** now opens with the five findings that recur across independent studies, and the imported-tools contrast table (*Table 3*) follows as their consequence.
 - **Corrections verified against the source PDFs:** the Gelabert et al. (2025) fuel-moisture ranking; Cardil et al. (2025) now marked as Californian (imported) evidence; the Moos et al. (2021) per-hectare value introduced in the economics section; and the Avouris et al. (2025) preprint result hedged.
 - **136 sources cited** (23 removed, mainly single non-Alpine examples). The search protocol and glossary moved to Supporting Information.
-- **Open point for the author team:** the abstract states that forest and agricultural policy "rival climate in shaping outcomes", whereas the body now presents the one continental modelling study behind the management-versus-climate comparison as suggestive. Decide whether to soften the abstract or keep the stronger claim, which the abstract derives from the protective-service argument.
+- **Abstract softened (20 Nov 2026):** forest and agricultural policy "may matter as much as climate" in shaping outcomes, consistent with the hedged body text.
 
 ### 1.4 Author list for GEMS submission
 
@@ -47,7 +47,7 @@ From the Eurac Research staff pages and ORCID (checked 20 Nov 2026). All authors
 
 | # | Author | Eurac unit | ORCID |
 |---|---|---|---|
-| 1 | Alexandre Dunant (corresponding) | Center for Climate Change and Transformation | *to confirm*: 0000-0002-8961-5292 (Durham/GNS history) or 0009-0009-4377-4747 (Eurac) |
+| 1 | Alexandre Dunant (corresponding) | Center for Climate Change and Transformation | 0009-0009-4377-4747 |
 | 2 | Paulina Bartkowiak | Institute for Earth Observation | 0000-0002-1172-5942 |
 | 3 | Alice Crespi | Center for Climate Change and Transformation | 0000-0003-4186-8474 |
 | 4 | Christian Hoffmann | Institute for Regional Development | 0000-0002-9291-2570 |
