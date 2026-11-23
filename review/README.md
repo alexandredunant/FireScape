@@ -5,7 +5,7 @@ Review paper: *Wildfires in the European Alps: An Interdisciplinary Review* (Eur
 ## Current working set (this folder)
 - `review_paper_v7.tex` and `review_paper_v7.pdf`: the current manuscript (`\aguformattrue` toggle at the top controls AGU Key Points and Plain Language Summary for *Reviews of Geophysics* vs. *Earth-Science Reviews* / *NHESS* export). Compile inside `review/` with `pdflatex`, `bibtex`, and `pdflatex` twice.
 - `review_paper_v7_SI.tex`: Supporting Information (Text S1 search protocol and screening register; Text S2 glossary). Compiles on its own against the same `.bib`.
-- `FireScape_master_v7.bib`: the Crossref-audited bibliography (136 sources cited in the main text; the `.bib` also holds entries no longer cited) that `review_paper_v7.tex` compiles against. Keep next to the `.tex` file.
+- `FireScape_master_v7.bib`: the Crossref-audited bibliography (138 sources cited in the main text; the `.bib` also holds entries no longer cited) that `review_paper_v7.tex` compiles against. Keep next to the `.tex` file.
 - `STYLE_SHEET.md`: writing and register conventions for the manuscript.
 
 ## Subfolders

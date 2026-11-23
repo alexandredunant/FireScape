@@ -12,7 +12,7 @@ Fire management in Europe has developed mainly around large summer fires in the 
 
 We believe the review suits the journal's broad readership. Three recent Reviews of Geophysics articles approach the topic from different sides: Jones et al. (2022) call for more work on how topography affects fire spread, Pepin et al. (2022) note that warming may push forest fire lines upslope, and Mani et al. (2023) classify high-mountain hazard chains that do not yet include fire. Our review addresses mountain wildfire directly. It is written for geoscientists outside fire science, with technical terms defined at first use and a glossary.
 
-A complete draft (about 13,500 words, 136 cited sources) already exists, so we can submit a polished manuscript within three months of an invitation.
+A complete draft (about 13,700 words, 138 cited sources) already exists, so we can submit a polished manuscript within three months of an invitation.
 
 Thank you for considering this proposal. We would be glad to adjust its scope or emphasis in light of the Board's advice.
 

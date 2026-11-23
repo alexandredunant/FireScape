@@ -28,7 +28,7 @@ European fire science relies on tools, satellite products and doctrines develope
 
 ## 5. Outline
 
-The review is built from a structured search of 3,228 records, of which 136 sources are cited. Its organising rule is evidence grading. Each section opens with the trends that at least three independent studies support. Findings resting on one or two studies are reported with their case count and stated cautiously. Evidence from outside the Alps is used only to show that a mechanism exists, and is marked as such.
+The review is built from a structured search of 3,228 records, of which 138 sources are cited. Its organising rule is evidence grading. Each section opens with the trends that at least three independent studies support. Findings resting on one or two studies are reported with their case count and stated cautiously. Evidence from outside the Alps is used only to show that a mechanism exists, and is marked as such.
 
 1. **Introduction.** The Alps as an emerging fire frontier, and why tools and doctrines imported from other fire regions can misread Alpine risk. *Figure 1* maps the chain of Alpine fire processes against the points where imported tools fail.
 2. **Review design and scope.** Contrasting fire regimes within the Alps (*Table 1*), the search and screening procedure (*Figure 2*), and the evidence-grading rule.
