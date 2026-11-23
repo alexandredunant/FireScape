@@ -16,5 +16,7 @@ A complete draft (about 13,700 words, 138 cited sources) already exists, so we c
 
 Thank you for considering this proposal. We would be glad to adjust its scope or emphasis in light of the Board's advice.
 
-With kind regards,
-Dr Alexandre Dunant, on behalf of the author team
+With kind regards,  
+Dr Alexandre Dunant, on behalf of the author team  
+Center for Climate Change and Transformation, Eurac Research, Bolzano, Italy  
+alexandre.dunant@eurac.edu · ORCID 0009-0009-4377-4747
