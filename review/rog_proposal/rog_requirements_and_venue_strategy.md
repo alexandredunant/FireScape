@@ -10,7 +10,7 @@ Working note, revised 20 November 2026 (aligned with the shortened, evidence-gra
 
 *Reviews of Geophysics* (RoG) is **invitation-only**:
 
-1. **Send a brief proposal** (e-mail text in `email_to_rog.md`, attachment `RoG_proposal.pdf` exported from `proposal.md`; the longer `cover_letter.md` is an optional alternative) to **reviewsgeophysics@agu.org** containing:
+1. **Send a brief proposal** (e-mail text in `email_to_rog.md`, attachment `RoG_proposal.pdf` exported from `proposal.md`; no cover letter is required, so the earlier draft was removed on 23 Nov 2026) to **reviewsgeophysics@agu.org** containing:
    - proposed paper title and potential authors;
    - scientific questions to be addressed;
    - draft abstract (< 250 words);

@@ -11,11 +11,11 @@ alexandre.dunant@eurac.edu · ORCID 0009-0009-4377-4747 · November 2026
 
 Alexandre Dunant (lead and corresponding author), Paulina Bartkowiak, Alice Crespi, Christian Hoffmann, Marco Mina, Massimiliano Pittore, Uta Schirpke, Stefano Terzi and Marc Zebisch, all at Eurac Research, Bolzano, Italy.
 
-The team spans four Eurac Research units. The Center for Climate Change and Transformation covers climate and disaster risk, climatology and water-related multi-risk. The Institute for Earth Observation covers remote sensing of vegetation and the land-surface water balance. The Institute for Alpine Environment covers forest ecology, forest modelling and ecosystem services, and the Institute for Regional Development covers agricultural and forest economics.
+Between them, the authors span four Eurac Research units: the Center for Climate Change and Transformation (climate and disaster risk, climatology and water-related multi-risk), the Institute for Earth Observation (remote sensing of vegetation and the land-surface water balance), the Institute for Alpine Environment (forest ecology, forest modelling and ecosystem services) and the Institute for Regional Development (agricultural and forest economics).
 
 ## 3. Scientific questions
 
-Most of Europe's burnt area lies in the Mediterranean, and much of European fire statistics, danger rating and prevention practice has developed there. Large fires in European mountains have become more frequent and are moving upslope, and fire hazard is projected to rise across the Alps, where terrain is steep and valleys are densely settled. Fire science has not yet fully adapted to these conditions. The review asks four questions.
+Because most of Europe's burnt area lies in the Mediterranean, much of European fire statistics, danger rating and prevention practice has developed there. Large fires in European mountains, however, have become more frequent and are moving upslope, and fire hazard is projected to rise across the Alps, where terrain is steep and valleys are densely settled. We argue that fire science has not yet fully adapted to these conditions, and we organise the review around the following questions.
 
 1. **How is the Alpine fire regime structured, and how is it changing?** How do warming, snow-cover loss and the regrowth of forest on abandoned pasture combine to change when, where and how often fires occur, and could they shift the regime towards more frequent large fires?
 2. **Do the standard tools of fire science work in steep mountain terrain?** We ask how far fire-danger indices, spread models and satellite fire products, developed largely for larger fires outside mountain terrain, can be translated to complex relief.
@@ -28,7 +28,7 @@ European fire science relies on tools, satellite products and doctrines develope
 
 ## 5. Outline
 
-The review is built from a structured search of 3,228 records, of which 138 sources are cited. Its organising rule is evidence grading. Each section opens with the trends that at least three independent studies support. Findings resting on one or two studies are reported with their case count and stated cautiously. Evidence from outside the Alps is used only to show that a mechanism exists, and is marked as such.
+We built the review from a structured search of 3,228 records, of which 138 sources are cited, and organised it by evidence grading. Each section therefore opens with the trends that at least three independent studies support, whereas findings resting on one or two studies are reported with their case count and stated cautiously. Evidence from outside the Alps is used only to show that a mechanism exists, and is marked as such.
 
 1. **Introduction.** The Alps as an emerging fire frontier, and why tools and doctrines imported from other fire regions can misread Alpine risk. *Figure 1* maps the chain of Alpine fire processes against the points where imported tools fail.
 2. **Review design and scope.** Contrasting fire regimes within the Alps (*Table 1*), the search and screening procedure (*Figure 2*), and the evidence-grading rule.
@@ -45,15 +45,15 @@ The review is built from a structured search of 3,228 records, of which 138 sour
 
 ## 6. Analysis of recent similar review articles
 
-We found no peer-reviewed synthesis that follows wildfire in steep mountain terrain across the atmosphere, the land surface, hydrology, forest ecology and risk governance. We also found none that tests standard European fire tools against the detailed ground records available for the Alps. Three recent *Reviews of Geophysics* articles each approach mountain wildfire from a different side and stop short of it. We propose to address it directly.
+We found no peer-reviewed synthesis that follows wildfire in steep mountain terrain across the atmosphere, the land surface, hydrology, forest ecology and risk governance, nor one that tests standard European fire tools against the detailed ground records available for the Alps. Recent *Reviews of Geophysics* articles have, however, approached mountain wildfire from different sides while stopping short of it, and we propose to address it directly.
 
 - **Jones et al. (2022), *Rev. Geophys.* 60, e2020RG000726.** A synthesis of global and regional fire trends and their drivers. It notes that most fire-enabled vegetation models do not include topographic effects on fire spread and that "more work is required to understand the ranging impact of topography on fire spread", but mountain fire regimes are not treated separately.
 - **Pepin et al. (2022), *Rev. Geophys.* 60, e2020RG000730.** A synthesis of elevation-dependent climate change and snow loss in mountains. It notes that warming may affect mountain ecology through "upslope advances of forest fire lines", without pursuing this further.
 - **Mani et al. (2023), *Rev. Geophys.* 61, e2022RG000791.** A classification of natural-hazard process chains in high mountains, including chains altered by changes in vegetation. It is centred on chains associated with glacier retreat and permafrost degradation, and wildfire-triggered chains are not among those it classifies.
 
-Together, these reviews describe the fire drivers, the mountain warming and the hazard chains that meet in mountain wildfire, but not the phenomenon itself. Our review takes it as its subject, using the Alps, where dense ground records allow imported tools to be tested, as the case.
+Taken together, these reviews describe the fire drivers, the mountain warming and the hazard chains that meet in mountain wildfire, but not the phenomenon itself. Our review takes it as its subject and uses the Alps as the case, because their dense ground records allow imported tools to be tested.
 
-Other recent reviews each address a single strand.
+Other recent reviews, by contrast, each address a single strand.
 
 - **Or et al. (2023), *Earth-Sci. Rev.* 245, 104569**, and **McGuire et al. (2024), *Nat. Rev. Earth Environ.* 5, 486–503.** General reviews of wildfire effects on land surfaces and on geomorphic processes. Neither discusses protection forests or treats the Alps.
 - **Melzner et al. (2025), *Landslides* 22, 3989–4011.** Wildfire-induced geohydrological risk in the Alps, built on four case studies, a catalogue of burn-severity indicators (including satellite indices) and protection-forest considerations. It is centred on post-fire geohydrological hazards rather than on fire regimes, fire danger, spread or exposure across the Alpine arc.
@@ -61,11 +61,11 @@ Other recent reviews each address a single strand.
 - **Sharples (2009), *Int. J. Wildland Fire* 18, 737–754**, **Werth et al. (2016), USDA PNW-GTR-891**, and **Hayajneh et al. (2026), *Fire* 9, 100.** Mountain fire meteorology, extreme fire behaviour, and the effects of wind and slope on fire spread. Their focus is fire behaviour, not satellite observation or post-fire consequences.
 - **Chuvieco et al. (2019), *Remote Sens. Environ.* 225, 45–64**, and **Wooster et al. (2021), *Remote Sens. Environ.* 267, 112694.** Global reviews of satellite burnt-area and active-fire mapping. Chuvieco et al. note that fires below 100 ha are commonly missed by global products and that topography degrades retrievals, but treat both as general sources of error; neither review treats mountain terrain specifically.
 
-The most direct predecessor is the 2020 policy white paper of the EU Strategy for the Alpine Region (EUSALP) on forest fires in the Alps (Müller et al., 2020). Because it is not peer reviewed, we take it as our starting point and test its positions against the empirical work published since.
+Closest to our scope is the 2020 policy white paper of the EU Strategy for the Alpine Region (EUSALP) on forest fires in the Alps (Müller et al., 2020). Because it is not peer reviewed, we take it as our starting point and test its positions against the empirical work published since.
 
 ## 7. Benefit to the readership of *Reviews of Geophysics*
 
-The review is relevant across several disciplines.
+We expect the review to be of use across several disciplines.
 
 - **Atmospheric scientists and climate modellers** will see why gridded weather data and fire-danger indices can miss foehn winds and the warm layers above valley inversions, and what this means for projections in complex terrain, including the open question of whether rising fire danger will bring more large fires.
 - **Hydrologists and geomorphologists** will find fire treated as a trigger of multi-hazard chains, from debris flows after moderate rainfall on burnt slopes to effects on snow, glaciers and water supply.
@@ -73,6 +73,6 @@ The review is relevant across several disciplines.
 - **Ecologists and forest scientists** will see how forest regrowth on abandoned land, protective function and fire interact over decades.
 - **Hazard and risk researchers** will find the missing steps from hazard maps to risk assessment, together with their governance implications.
 
-Because each section separates what several independent studies agree on from what rests on a single case, the review also gives readers an explicit map of what is established in Alpine fire science and what remains open. The same distinction may be useful in other mountain ranges where small fires, steep terrain and forest-protected settlements coincide.
+Because each section separates what several independent studies agree on from what rests on a single case, the review also gives readers an explicit map of what is established in Alpine fire science and what remains open. This distinction may also prove useful in other mountain ranges where small fires, steep terrain and forest-protected settlements coincide.
 
-**Accessibility.** The review is written for geoscientists outside fire science. Technical terms from meteorology, fire behaviour, forestry and risk assessment are defined at first use and collected in a glossary. Figure 1 and Table 3 show at a glance how physical and institutional links connect across disciplines. A Plain Language Summary and three Key Points are provided.
+**Accessibility.** We have written the review for geoscientists outside fire science, so technical terms from meteorology, fire behaviour, forestry and risk assessment are defined at first use and collected in a glossary. Figure 1 and Table 3 show at a glance how physical and institutional links connect across disciplines, and a Plain Language Summary and three Key Points are provided.

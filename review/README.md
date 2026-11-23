@@ -9,7 +9,7 @@ Review paper: *Wildfires in the European Alps: An Interdisciplinary Review* (Eur
 - `STYLE_SHEET.md`: writing and register conventions for the manuscript.
 
 ## Subfolders
-- `rog_proposal/`: pre-submission inquiry package (`proposal.md`, `RoG_proposal.pdf`, `cover_letter.md/.pdf/.docx`, `rog_requirements_and_venue_strategy.md/.pdf`, `novelty_check.md`) aligned with `review_paper_v7` for *Reviews of Geophysics*, with dual-track redirect notes for *Earth-Science Reviews* and *NHESS*.
+- `rog_proposal/`: pre-submission inquiry package (`proposal.md`, `RoG_proposal.pdf`, `email_to_rog.md`, `rog_requirements_and_venue_strategy.md/.pdf`, `novelty_check.md`) aligned with `review_paper_v7` for *Reviews of Geophysics*, with dual-track redirect notes for *Earth-Science Reviews* and *NHESS*.
 - `papers/`: PDFs of cited sources (`FirstAuthor_Year_First_five_title_words.pdf`, shared via Zotero) plus `FireScape_review_reference_list.docx/.csv` mapping citation keys to DOIs.
 - `supplementary/`: material described in Supporting Information Text S1 (`FireScape_Alps_screening_register.xlsx`, `FireScape_evidence_notes.md`, `FireScape.bib`).
 - `contents/`: standalone table of contents (`review_paper_contents.tex/.toc/.pdf`), synchronised with `review_paper_v7`.
